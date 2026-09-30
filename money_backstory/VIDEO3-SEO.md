@@ -53,3 +53,6 @@ Elemento video: il video 1 (Social Security at 62 vs 70), perché il blocco 21 d
 
 ## Nota
 Orari dei capitoli calcolati dal copione e calibrati su 2:10 (inizio blocco 7) e fine voce ~7:22: possono sbagliare di pochi secondi.
+
+## Formato definitivo (identico al video 2)
+Vedi la risposta in chat del 30/09/2026: 1 Titolo (+2 alternative per Testa e confronta), 2 Descrizione (sopra il testo automatico, con hashtag nuovi al posto dei vecchi), 3 Tag, 4 Commento fissato, 5 Impostazioni (miniatura, IA No, promozione No, schermata finale, orario di pubblicazione).
