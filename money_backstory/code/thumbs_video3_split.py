@@ -74,12 +74,12 @@ def s1():
     """Titolo 1: 59 (rosso, giu') vs 59 1/2 (verde, su') - 10.000 $"""
     im = split_bg(); d = ImageDraw.Draw(im)
     top_box(d, "THE 59½ RULE")
-    outlined(d, "59", FN(330), 300, 90)
-    outlined(d, "59½", FN(330), 950, 90)
+    outlined(d, "59", FN(190), 215, 150)
+    outlined(d, "59½", FN(190), 960, 150)
     f = FN(64); d.text((595, 270), "VS", font=f, fill=YEL, anchor="mm", stroke_width=8, stroke_fill=(0, 0, 0))
-    small_arrow(d, 240, 400, False, RED); small_arrow(d, 985, 400, True, (40, 200, 90))
-    d.text((240, 540), "10% PENALTY", font=FN(44), fill=(255, 255, 255), anchor="mm", stroke_width=5, stroke_fill=(0, 0, 0))
-    d.text((985, 540), "PENALTY GONE", font=FN(44), fill=(255, 255, 255), anchor="mm", stroke_width=5, stroke_fill=(0, 0, 0))
+    small_arrow(d, 215, 405, False, RED); small_arrow(d, 960, 405, True, (40, 200, 90))
+    d.text((215, 540), "10% PENALTY", font=FN(44), fill=(255, 255, 255), anchor="mm", stroke_width=5, stroke_fill=(0, 0, 0))
+    d.text((960, 540), "PENALTY GONE", font=FN(44), fill=(255, 255, 255), anchor="mm", stroke_width=5, stroke_fill=(0, 0, 0))
     bottom_pill(d, "#4 IS A TRAP", YEL, (15, 15, 15), 44, 606)
     return im
 
