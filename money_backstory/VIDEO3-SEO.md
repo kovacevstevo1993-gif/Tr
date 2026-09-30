@@ -5,31 +5,34 @@
 
 Alternativa se vuoi un titolo più corto: 401k 59 1/2 Rule: 5 Changes You Must Check (#4 Is a Trap)
 
-## Descrizione
-59 1/2 rule retirement explained: what really changes the day you turn 59½. The 10% early withdrawal penalty, 401(k) in-service withdrawals, the Roth IRA 5-year rule, the SEPP / 72(t) trap and the bigger 2026 catch-up limit. Number 4 surprises almost everyone.
+## Descrizione (stesso formato del video 2: incollala sopra il testo predefinito)
+```
+On the day you turn 59½, the IRS changes five things about your retirement accounts, and one of them can lock you into payments you cannot stop. In this video you'll see the 59 1/2 rule explained with real 2026 numbers: the 10% early withdrawal penalty that disappears (but not the tax), 401(k) in-service withdrawals, the Roth IRA 5-year rule, the SEPP / 72(t) trap, and the bigger 2026 catch-up limit.
 
-Chapters
-0:00 The day you turn 59½
-[T_MAPPA] What we cover
-[T_FRANK] Frank and Mary
-[T_PENALTY] 1. The 10% penalty disappears (but not the tax)
-[T_INSERVICE] 2. In-service withdrawals from your 401(k)
-[T_ROTH] 3. The Roth IRA 5-year rule
-[T_SEPP] 4. The SEPP / 72(t) trap
-[T_CATCHUP] 5. Bigger catch-up contributions in 2026
-[T_RESULT] Where Frank and Mary end up
-[T_CHECK] What to do the week you turn 59½
+WATCH NEXT: When to claim Social Security, 62 vs 70 (the $124,800 decision)
+https://youtu.be/rPaLdR1E31s
 
-Sources: IRS Publication 590-B, IRS Section 72(t), IRS Notice 2025-67 (2026 contribution limits).
+CHAPTERS
+0:00 [orario] The day you turn 59½
+[orario del blocco 2] What changes at 59½: the 5 things
+[orario del blocco 3] Frank vs Mary
+[orario del blocco 4] Change #1: The 10% penalty disappears (but not the tax)
+[orario del blocco 7] Change #2: In-service withdrawals from your 401(k)
+[orario del blocco 10] Change #3: The Roth IRA 5-year rule
+[orario del blocco 13] Change #4: The SEPP / 72(t) trap
+[orario del blocco 16] Change #5: Bigger catch-up contributions in 2026
+[orario del blocco 19] Frank vs Mary: where they end up
+[orario del blocco 20] Your 59½ checklist
 
-Rules, limits and plan options vary by account and employer, so confirm with your plan administrator or a tax professional. General information only, not medical, tax or financial advice.
+Sources: IRS (Publication 590-B, Section 72(t), Notice 2025-67), Fidelity.
 
-Subscribe: rules change and deadlines pass.
+#59andahalfrule #401k #retirementplanning #retirement #rothira
+```
 
-#59and12rule #401k #retirement
-
-## Tag (411 caratteri su 500)
-59 1/2 rule retirement, 401k 59 1/2 rule, 59 1/2 rule, retirement strategy 59 1/2 rule, how to retire at 59 1/2, 401k withdrawal rules, 401k withdrawal age, 10 percent early withdrawal penalty, in service withdrawal 401k, roth ira 5 year rule, roth conversion 5 year rule after 59 1/2, sepp 72t, 72t payments, 401k catch up limit 2026, catch up contributions 2026, retirement planning over 50, retirement age 59
+## Tag (395 caratteri su 500, nel formato del video 2)
+```
+59 1/2 rule retirement,401k 59 1/2 rule,59 1/2 rule,retirement strategy 59 1/2 rule,how to retire at 59 1/2,401k withdrawal rules,401k withdrawal age,10 percent early withdrawal penalty,in service withdrawal 401k,roth ira 5 year rule,roth conversion 5 year rule after 59 1/2,sepp 72t,72t payments,401k catch up limit 2026,catch up contributions 2026,retirement planning over 50,retirement age 59
+```
 
 ## Commento da fissare
 Which of the 5 changes surprised you most? Tell us below 👇
