@@ -277,10 +277,70 @@ def t3c():
     return im
 
 
+def gold_frame(im):
+    """cornice 3D oro + sfondo navy con griglia, come le slide (stile del video 2)"""
+    im = im.convert("RGBA")
+    g = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(g).ellipse([100, -120, 1180, 700], fill=(34, 66, 104, 255))
+    im = Image.alpha_composite(im, g.filter(ImageFilter.GaussianBlur(160)))
+    gr = Image.new("RGBA", (W, H), (0, 0, 0, 0)); gd = ImageDraw.Draw(gr)
+    for y in range(0, H, 44): gd.line([0, y, W, y], fill=(255, 255, 255, 9), width=1)
+    for x in range(0, W, 44): gd.line([x, 0, x, H], fill=(255, 255, 255, 9), width=1)
+    im = Image.alpha_composite(im, gr)
+    M = 22
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(glow).rounded_rectangle([M - 4, M - 4, W - M + 4, H - M + 4], radius=26, outline=(230, 185, 90, 210), width=18)
+    im = Image.alpha_composite(im, glow.filter(ImageFilter.GaussianBlur(16)))
+    grad = Image.new("RGBA", (W, H)); g2 = ImageDraw.Draw(grad)
+    for y in range(H):
+        t = y / H; g2.line([0, y, W, y], fill=(int(255 - 95 * t), int(226 - 100 * t), int(150 - 95 * t), 255))
+    ring = Image.new("L", (W, H), 0); rd = ImageDraw.Draw(ring)
+    rd.rounded_rectangle([M, M, W - M, H - M], radius=24, fill=255)
+    rd.rounded_rectangle([M + 11, M + 11, W - M - 11, H - M - 11], radius=16, fill=0)
+    bev = Image.new("RGBA", (W, H), (0, 0, 0, 0)); bev.paste(grad, (0, 0), ring)
+    return Image.alpha_composite(im, bev).convert("RGB")
+
+
+def final_a():
+    """A - chiara, soldi che crollano (stile concorrenti USA)"""
+    return t1a()
+
+
+def final_b():
+    """B - scura con cornice oro, grafico che crolla (stile slide)"""
+    im = gold_frame(Image.new("RGB", (W, H), (10, 24, 40))); d = ImageDraw.Draw(im)
+    GL = (246, 214, 140)
+    text(d, "THE 59\u00bd RULE", F(48), W // 2, 60, GL, "c")
+    text(d, "59\u00bd", F(220, True), 60, 130, WHITE, "l", stroke=6)
+    text(d, "5 CHANGES", F(58), 760, 130, WHITE, "l")
+    text(d, "THAT COST", F(58), 760, 200, GL, "l")
+    text(d, "THOUSANDS", F(58), 760, 270, GL, "l")
+    cx, cy = chart_cliff(d, 120, 1150, 560, 380)
+    d.line([120, 560, 1150, 560], fill=GOLD, width=3)
+    d.ellipse([cx - 18, cy - 18, cx + 18, cy + 18], fill=RED, outline=WHITE, width=4)
+    pill(d, 380, 590, "#4 = TRAP", 46, RED, ow=4, h=78)
+    return im
+
+
+def final_c():
+    """C - giallo pieno, lucchetto e 10% barrato (alto contrasto)"""
+    im = Image.new("RGB", (W, H), (255, 214, 60)); d = ImageDraw.Draw(im)
+    for i in range(-H, W, 60):
+        d.line([i, H, i + H, 0], fill=(255, 200, 30), width=26)
+    d.rounded_rectangle([40, 40, 720, 330], radius=30, fill=NAVY, outline=BLK, width=7)
+    text(d, "10% PENALTY", F(72), 380, 70, WHITE, "c")
+    text(d, "DISAPPEARS", F(72), 380, 165, YEL, "c")
+    d.line([90, 130, 670, 130], fill=RED, width=12)
+    text(d, "BUT...", F(150), 60, 360, RED, "l", stroke=8, sc=WHITE)
+    text(d, "#4 TRAPS", F(84), 60, 540, NAVY, "l", stroke=4, sc=WHITE)
+    text(d, "THOUSANDS", F(84), 60, 620, NAVY, "l", stroke=4, sc=WHITE)
+    padlock(d, 1000, 330, 170, open_=False, fill=RED)
+    text(d, "59\u00bd", F(120, True), 1000, 580, NAVY, "c", stroke=6, sc=WHITE)
+    return im
+
+
 VARIANTS = {
-    "T1-A-cash-arrow": t1a, "T1-B-split-verde-rosso": t1b, "T1-C-10000-grafico": t1c,
-    "T2-A-lucchetto": t2a, "T2-B-checklist": t2b, "T2-C-scuro-59": t2c,
-    "T3-A-porte": t3a, "T3-B-frank-vs-mary": t3b, "T3-C-5-regole": t3c,
+    "miniatura-A-chiara-soldi": final_a, "miniatura-B-scura-oro-grafico": final_b, "miniatura-C-gialla-lucchetto": final_c,
 }
 
 if __name__ == "__main__":
