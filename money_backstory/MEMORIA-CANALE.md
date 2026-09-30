@@ -1,4 +1,4 @@
-[updated: 2026-09-28T18:45:35.956650+00:00] [size: 12535 of 49152 bytes — 36617 free] [version: 7d15f654f667] (pass as if_version on your next write or edit of this path)
+[updated: 2026-09-29T10:35:35.872042+00:00] [size: 15265 of 49152 bytes — 33887 free] [version: 38f5384b1be2] (pass as if_version on your next write or edit of this path)
 ---
 name: nuovo-canale-youtube-cpm-alto
 description: Canale YouTube faceless The Money Backstory (pensione USA over 50): regole fisse di produzione, ricerche vidIQ, concorrenti, video 1 e 2, piano 20 video
@@ -68,3 +68,15 @@ aliases: [nuovo canale, canale cpm alto, canale video lunghi, the money backstor
 - [stated] "5 mistakes that quietly ruin retirement", 25 blocchi, ~9.600 caratteri ≈ 10,5-11 min; aggancio con $185.000 per la sanità; errori: 1 pianificare pochi anni (SSA: 1 su 3 supera i 90), 2 sanità (Fidelity 2026 $185.500; americani si aspettano $75.000; Part B 2026 $202,90; HSA; IRMAA), 3 sorpresa = troppa prudenza/inflazione (regola del 72, secchi), 4 assistenza lungo periodo (~70%, Medicare max 100 giorni, ~$115.000/anno), 5 tasse 401k/IRA (RMD 73/75); lista finale in 5 passi; finale rimanda al video 1; stile nuovo con cornice 3D oro approvato
 - [stated] video 2: slide di tutti i 25 blocchi consegnate il 27/09/2026 (fine video 11:09); ultima slide con riquadro tratteggiato a destra per l'elemento video della schermata finale (= video 1)
 - [stated] quando la chat è piena di immagini, manda una registrazione dello schermo della timeline: Claude legge inizio e fine dal primo e dall'ultimo fotogramma della registrazione
+
+## VIDEO 5 — in lavorazione (28/09/2026, chat nuova con kit completo)
+- [stated] video 5 = "Social Security Benefits Explained"; su sua richiesta il copione completo (senza altro) va consegnato subito in un solo messaggio, a blocchi numerati in riquadri di codice; durata sempre oltre 10 minuti, aggancio forte, non noioso; ogni video deve migliorare rispetto al precedente, controlli ovunque
+- [stated] copione v5: 31 blocchi, ~11.090 caratteri ≈ 12:45; aggancio = regola dei 35 anni (5 zeri costano oltre $3.200/anno); 5 punti: 35 anni, formula (bend points 2026 $1.286/$7.749, 90/32/15), età di richiesta (70%→124%), earnings test ($24.480, 1 ogni 2; i soldi trattenuti tornano a FRA), coniuge/superstite; chiusura trust fund (Trustees giugno 2026: OASI 4° trim. 2032 → 78%; combinato 2034 → 83%); finale rimanda al video 1
+- [stated] dati 2026 verificati su SSA.gov: COLA 2,8%, assegno medio $2.071, tetto contributivo $184.500, massimo a FRA $4.152, limite guadagni $24.480 / $65.160 anno FRA, coniuge fino 50% del PIA (37,5% se 36 mesi prima), superstite dal 71,5% a 60 anni fino 100% a FRA
+- [stated] correzione 29/09/2026: negli screenshot della timeline vanno guardati SEMPRE anche i fotogrammi (la fine della voce è frazionaria: es. 00:27 + 2f, 00:51 + 8f); calcolare la durata dal tempo assoluto in fotogrammi, non solo dai secondi
+- [stated] correzione 29/09/2026: il pubblico sono anziani, quindi dalle slide del blocco 2 del video 5 in poi: meno movimento, scene un po' più lente, testi grandi e chiari (deve capire bene); blocco 1 del video 5 rifatto una volta con più dettagli/oggetti su sua richiesta
+- [stated] video 5: voci dei blocchi 2-10 già generate il 29/09/2026 (fine blocco 10 a 4:10 + 12f); slide dei blocchi 2-10 da fare in un colpo con le fine-voce esatte
+- [stated] correzione 29/09/2026: "meno movimento" NON significa togliere gli oggetti: le slide del video 5 devono tenere qualche oggetto a tema (soldi, monete, banconote, ecc.) come le prime clip, solo con movimento più calmo e lento; non stravolgere lo stile, altrimenti sembra un video diverso dalle prime clip (blocchi 2-10 consegnati erano troppo spogli)
+- [stated] video 5: blocchi 2-10 restano come consegnati (non rifarli); voci blocchi 11-20 generate il 29/09/2026 (fine blocco 20 a 8:14 + 26f), slide 11-20 consegnate con oggetti a tema; da fare: blocchi 21-31
+- [stated] "restano come sono, non ho detto uguale ma migliorato sempre": ogni nuovo blocco deve essere un po' migliore dei precedenti, non identico
+- [stated] correzione 29/09/2026: prima di mandare le slide Claude deve guardare i video MP4 finiti (fotogrammi estratti dai file), non solo le anteprime, e correggere da solo gli errori prima di consegnare
