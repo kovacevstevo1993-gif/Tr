@@ -13,16 +13,16 @@ WATCH NEXT: When to claim Social Security, 62 vs 70 (the $124,800 decision)
 https://youtu.be/rPaLdR1E31s
 
 CHAPTERS
-0:00 [orario] The day you turn 59½
-[orario del blocco 2] What changes at 59½: the 5 things
-[orario del blocco 3] Frank vs Mary
-[orario del blocco 4] Change #1: The 10% penalty disappears (but not the tax)
-[orario del blocco 7] Change #2: In-service withdrawals from your 401(k)
-[orario del blocco 10] Change #3: The Roth IRA 5-year rule
-[orario del blocco 13] Change #4: The SEPP / 72(t) trap
-[orario del blocco 16] Change #5: Bigger catch-up contributions in 2026
-[orario del blocco 19] Frank vs Mary: where they end up
-[orario del blocco 20] Your 59½ checklist
+0:00 The day you turn 59½
+0:22 What changes at 59½: the 5 things
+0:52 Frank vs Mary
+1:11 Change #1: The 10% penalty disappears (but not the tax)
+2:10 Change #2: In-service withdrawals from your 401(k)
+3:05 Change #3: The Roth IRA 5-year rule
+3:56 Change #4: The SEPP / 72(t) trap
+5:01 Change #5: Bigger catch-up contributions in 2026
+5:58 Frank vs Mary: where they end up
+6:24 Your 59½ checklist
 
 Sources: IRS (Publication 590-B, Section 72(t), Notice 2025-67), Fidelity.
 
@@ -50,3 +50,6 @@ Elemento video: il video 1 (Social Security at 62 vs 70), perché il blocco 21 d
 - "retirement strategy 59 1/2 rule": 4.307/mese, conc. 16,5
 - "roth conversion 5 year rule after 59 1/2": 3.392/mese, conc. 20,9
 - "401k withdrawal rules": 4.683/mese, conc. 13
+
+## Nota
+Orari dei capitoli calcolati dal copione e calibrati su 2:10 (inizio blocco 7) e fine voce ~7:22: possono sbagliare di pochi secondi.
