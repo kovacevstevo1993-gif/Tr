@@ -339,8 +339,26 @@ def final_c():
     return im
 
 
+def final_t3():
+    """Titolo 3 - fondo giallo, 'RETIRE AT 59 1/2?' con porte chiuse"""
+    im = Image.new("RGB", (W, H), (255, 214, 60)); d = ImageDraw.Draw(im)
+    for i in range(-H, W, 60):
+        d.line([i, H, i + H, 0], fill=(255, 200, 30), width=26)
+    text(d, "HOW TO RETIRE AT", F(64), 60, 30, NAVY, "l", stroke=3, sc=WHITE)
+    text(d, "59\u00bd?", F(250, True), 50, 110, RED, "l", stroke=10, sc=WHITE)
+    d.rounded_rectangle([50, 440, 700, 540], radius=18, fill=NAVY, outline=BLK, width=6)
+    text(d, "THE 5 RULES", F(64), 375, 458, WHITE, "c")
+    pill(d, 50, 570, "NOBODY WARNS YOU", 52, RED, ow=6, h=95)
+    for i in range(3):
+        x = 880 + i * 120
+        d.rounded_rectangle([x, 300 + i * 40, x + 105, 640], radius=10, fill=(120, 80, 40), outline=BLK, width=7)
+        d.ellipse([x + 72, 500, x + 90, 518], fill=YEL, outline=BLK, width=3)
+    padlock(d, 1030, 170, 65)
+    return im
+
+
 VARIANTS = {
-    "miniatura-A-chiara-soldi": final_a, "miniatura-B-scura-oro-grafico": final_b, "miniatura-C-gialla-lucchetto": final_c,
+    "titolo1-miniatura-scura-oro": final_b, "titolo2-miniatura-checklist": t2b, "titolo3-miniatura-gialla-porte": final_t3,
 }
 
 if __name__ == "__main__":
