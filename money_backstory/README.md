@@ -14,9 +14,9 @@ Canale YouTube faceless **@TheMoneyBackstoryUSA**: pensione USA per over 50 (Soc
 ## Stato (aggiornato al 29/09/2026, dalla memoria più recente)
 1. Video 1 (Social Security at 62 vs 70): pubblicato.
 2. Video 2 (5 mistakes that quietly ruin retirement): pubblicato.
-3. Video 3 (What changes at 59½): slide consegnate. Da fare: titolo, descrizione con capitoli, tag, miniatura, caricamento.
-4. Video 4 (Why 61 is the most important age): slide consegnate (31 blocchi, 11:22). Da fare: titolo, descrizione, tag, miniatura, caricamento.
-5. **Video 5 (Social Security Benefits Explained)**: copione da 31 blocchi (~12:45). Voci e slide consegnate fino al blocco 20 (fine voce 8:14 + 26 fotogrammi). **Da fare: blocchi 21-31**, poi titolo, descrizione, tag, miniatura. Dettagli e correzioni in `MEMORIA-CANALE.md` (sezione VIDEO 5).
+3. Video 3 (What changes at 59½): slide consegnate. Titolo/descrizione: da verificare, la memoria diceva "da fare" ma la memoria è indietro rispetto alle chat.
+4. Video 4 (Why 61 is the most important age): copione, slide, **titolo, tag e idea miniatura già fatti**: titolo "Why 61 Is the Most Important Age for Retirement (The $974 Medicare Trap)", vedi `chat/2026-09-27_32_*` (cerca "Titolo"). Capitoli: richiesti gli orari dalla timeline.
+5. Video 5 (Social Security Benefits Explained): la memoria si ferma al blocco 20 di 31 (29/09). **Probabilmente è più avanti/finito: la memoria non è aggiornata.**
 - Il canale ha anche degli Shorts (sconti, aiuti per over 60). Sono nella chat `chat/2026-09-27_31_*`.
 
 ## Cosa manca
