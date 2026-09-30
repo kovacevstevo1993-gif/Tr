@@ -1,112 +1,117 @@
-"""Miniature video 3 nello stile rosso/verde del video 1 e 2 (diagonale, numeri bianchi con contorno, riquadro bianco in alto)."""
-import os, sys, math
+"""Miniature video 3 nello stile rosso/verde dei video 1 e 2 (misurate dallo screenshot di 'Social Security 62 vs 70')."""
+import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import thumbs_video3 as T
 
 W, H = 1280, 720
 OUT = T.OUT
-LN = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
-LNN = "/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold.ttf"
-if not os.path.exists(LNN):
-    LNN = LN
+FD = os.path.join(os.path.dirname(__file__), "fonts")
+XB, BLACKF = f"{FD}/Poppins-ExtraBold.ttf", f"{FD}/Poppins-Black.ttf"
+NAVY = (20, 38, 105)
+YEL = (254, 214, 67)
+BLK = (0, 0, 0)
+WHITE = (255, 255, 255)
 
 
-def FN(size):
-    return ImageFont.truetype(LNN, size)
+def P(size, black=False):
+    return ImageFont.truetype(BLACKF if black else XB, size)
 
 
-def split_bg(cut_top=640, cut_bot=520):
-    """rosso a sinistra, verde a destra, con luce radiale e taglio diagonale"""
-    im = Image.new("RGB", (W, H))
-    px = im.load()
+def bg(cut_top=690, cut_bot=585):
+    """rosso scuro a sinistra, verde a destra, luce interna e cucitura scura al centro"""
+    im = Image.new("RGB", (W, H)); px = im.load()
     for y in range(H):
         xc = cut_top + (cut_bot - cut_top) * y / H
         for x in range(W):
             if x < xc:
-                dx = (x - 300) / 700; dy = (y - 300) / 500
-                v = max(0.0, 1 - (dx * dx + dy * dy) * .8)
-                px[x, y] = (int(120 + 90 * v), int(15 + 25 * v), int(25 + 30 * v))
+                dx = (x - 290) / 560; dy = (y - 330) / 520
+                v = max(0.0, 1 - (dx * dx + dy * dy))
+                seam = min(1.0, (xc - x) / 220)
+                k = v * (0.55 + 0.45 * seam)
+                px[x, y] = (int(105 + 95 * k), int(14 + 34 * k), int(22 + 30 * k))
             else:
-                dx = (x - 980) / 700; dy = (y - 380) / 500
-                v = max(0.0, 1 - (dx * dx + dy * dy) * .8)
-                px[x, y] = (int(8 + 15 * v), int(90 + 110 * v), int(45 + 45 * v))
+                dx = (x - 1010) / 560; dy = (y - 300) / 520
+                v = max(0.0, 1 - (dx * dx + dy * dy))
+                seam = min(1.0, (x - xc) / 220)
+                k = v * (0.5 + 0.5 * seam)
+                px[x, y] = (int(4 + 34 * k), int(60 + 135 * k), int(22 + 62 * k))
     return im
 
 
-def outlined(d, s, font, cx, y, fill=(255, 255, 255), stroke=10):
-    b = d.textbbox((0, 0), s, font=font, stroke_width=stroke)
-    d.text((cx - (b[2] - b[0]) / 2 - b[0], y - b[1]), s, font=font, fill=fill,
-           stroke_width=stroke, stroke_fill=(0, 0, 0))
+def otext(d, s, font, cx, cy, fill=WHITE, stroke=8, sc=BLK):
+    d.text((cx, cy), s, font=font, fill=fill, anchor="mm", stroke_width=stroke, stroke_fill=sc)
 
 
-def top_box(d, s, size=52):
-    f = FN(size)
+def fit_font(d, s, maxw, start, black=False):
+    size = start
+    while size > 20 and d.textlength(s, font=P(size, black)) > maxw:
+        size -= 2
+    return P(size, black)
+
+
+def label(d, s, y0=20, h=100, maxw=760):
+    f = fit_font(d, s, maxw, 76)
     tw = d.textlength(s, font=f)
-    x0 = W / 2 - tw / 2 - 40
-    d.rounded_rectangle([x0, 22, x0 + tw + 80, 22 + size + 40], radius=14, fill=(255, 255, 255), outline=(0, 0, 0), width=4)
-    d.text((W / 2, 22 + (size + 40) / 2), s, font=f, fill=(20, 32, 90), anchor="mm")
+    x0 = W / 2 - tw / 2 - 46
+    d.rounded_rectangle([x0, y0, x0 + tw + 92, y0 + h], radius=22, fill=WHITE, outline=BLK, width=5)
+    d.text((W / 2, y0 + h / 2 + 2), s, font=f, fill=NAVY, anchor="mm")
 
 
-def bottom_pill(d, s, fill, fg, size=64, y=590):
-    f = FN(size)
+def pill(d, s, y0=562, h=136, maxw=880, fill=YEL, fg=(20, 20, 20)):
+    f = fit_font(d, s, maxw, 92)
     tw = d.textlength(s, font=f)
-    x0 = W / 2 - tw / 2 - 45
-    d.rounded_rectangle([x0, y, x0 + tw + 90, y + size + 44], radius=26, fill=fill, outline=(0, 0, 0), width=6)
-    d.text((W / 2, y + (size + 44) / 2 + 2), s, font=f, fill=fg, anchor="mm")
+    x0 = W / 2 - tw / 2 - 52
+    d.rounded_rectangle([x0, y0, x0 + tw + 104, y0 + h], radius=34, fill=fill, outline=BLK, width=6)
+    d.text((W / 2, y0 + h / 2 + 3), s, font=f, fill=fg, anchor="mm")
 
 
-def small_arrow(d, cx, top, up, col):
-    h = 95; w = 40
+def arrow(d, cx, top, up):
+    """frecce come nel video 1: piccole, con contorno nero e tinta chiara"""
+    col = (98, 232, 140) if up else (236, 80, 80)
+    w, h, sh = 78, 118, 34
     if up:
-        pts = [(cx - w, top + h * .5), (cx, top), (cx + w, top + h * .5), (cx + w * .5, top + h * .5), (cx + w * .5, top + h), (cx - w * .5, top + h), (cx - w * .5, top + h * .5)]
+        pts = [(cx, top), (cx + w, top + h * .5), (cx + sh, top + h * .5), (cx + sh, top + h), (cx - sh, top + h), (cx - sh, top + h * .5), (cx - w, top + h * .5)]
     else:
-        pts = [(cx - w, top + h * .5), (cx, top + h), (cx + w, top + h * .5), (cx + w * .5, top + h * .5), (cx + w * .5, top), (cx - w * .5, top), (cx - w * .5, top + h * .5)]
-    d.polygon(pts, fill=col, outline=(0, 0, 0))
-    d.line(pts + [pts[0]], fill=(0, 0, 0), width=5)
-
-
-YEL = (255, 214, 60)
-RED = (224, 40, 40)
+        pts = [(cx - sh, top), (cx + sh, top), (cx + sh, top + h * .5), (cx + w, top + h * .5), (cx, top + h), (cx - w, top + h * .5), (cx - sh, top + h * .5)]
+    d.polygon(pts, fill=col)
+    d.line(pts + [pts[0]], fill=BLK, width=6, joint="curve")
 
 
 def s1():
-    """Titolo 1: 59 (rosso, giu') vs 59 1/2 (verde, su') - 10.000 $"""
-    im = split_bg(); d = ImageDraw.Draw(im)
-    top_box(d, "THE 59½ RULE")
-    outlined(d, "59", FN(190), 215, 150)
-    outlined(d, "59½", FN(190), 960, 150)
-    f = FN(64); d.text((595, 270), "VS", font=f, fill=YEL, anchor="mm", stroke_width=8, stroke_fill=(0, 0, 0))
-    small_arrow(d, 215, 405, False, RED); small_arrow(d, 960, 405, True, (40, 200, 90))
-    d.text((215, 540), "10% PENALTY", font=FN(44), fill=(255, 255, 255), anchor="mm", stroke_width=5, stroke_fill=(0, 0, 0))
-    d.text((960, 540), "PENALTY GONE", font=FN(44), fill=(255, 255, 255), anchor="mm", stroke_width=5, stroke_fill=(0, 0, 0))
-    bottom_pill(d, "#4 IS A TRAP", YEL, (15, 15, 15), 44, 606)
+    """Titolo 1: 59 (giu') vs 59 1/2 (su')"""
+    im = bg(); d = ImageDraw.Draw(im)
+    label(d, "THE 59½ RULE")
+    otext(d, "59", P(250, True), 250, 275)
+    otext(d, "59½", P(250, True), 965, 275)
+    otext(d, "VS", P(80, True), 600, 300, fill=YEL, stroke=7)
+    arrow(d, 250, 420, False); arrow(d, 965, 420, True)
+    pill(d, "$10,000 SAVED OR TRAPPED?", maxw=1000)
     return im
 
 
 def s2():
-    """Titolo 2: 5 con triangolo + testo a destra + banda rossa"""
-    im = split_bg(560, 470); d = ImageDraw.Draw(im)
-    top_box(d, "401k 59½ RULE")
-    outlined(d, "5", FN(400), 250, 115, stroke=12)
-    T.warn(d, 250, 520, 70)
-    for k, (line, col) in enumerate([("CHANGES", (255, 255, 255)), ("YOU MUST", YEL), ("CHECK", YEL)]):
-        d.text((900, 220 + k * 105), line, font=FN(96), fill=col, anchor="mm", stroke_width=7, stroke_fill=(0, 0, 0))
-    d.rounded_rectangle([260, 600, 1240, 700], radius=16, fill=RED, outline=(255, 255, 255), width=4)
-    d.text((750, 650), "#4 IS A TRAP", font=FN(76), fill=(255, 255, 255), anchor="mm")
+    """Titolo 2: sul modello del secondo test del video 2 - grande 5, triangolo, testo a destra, banda rossa"""
+    im = bg(660, 600); d = ImageDraw.Draw(im)
+    label(d, "401k 59½ RULE", maxw=640)
+    otext(d, "5", P(350, True), 275, 270, stroke=10)
+    T.warn(d, 275, 490, 58)
+    for k, (line, col) in enumerate([("CHANGES", WHITE), ("YOU MUST", WHITE), ("CHECK", YEL)]):
+        d.text((730, 210 + k * 112), line, font=P(92), fill=col, anchor="lm", stroke_width=7, stroke_fill=BLK)
+    d.rounded_rectangle([170, 600, 1110, 704], radius=18, fill=(224, 40, 40), outline=WHITE, width=5)
+    d.text((640, 654), "#4 IS A TRAP", font=P(78), fill=WHITE, anchor="mm")
     return im
 
 
 def s3():
-    """Titolo 3: Frank (rosso, X) vs Mary (verde, V)"""
-    im = split_bg(); d = ImageDraw.Draw(im)
-    top_box(d, "HOW TO RETIRE AT 59½", 50)
-    outlined(d, "FRANK", FN(120), 290, 135, stroke=8)
-    outlined(d, "MARY", FN(120), 970, 135, stroke=8)
-    T.cross(d, 290, 390, 80); T.check(d, 970, 390, 80)
-    d.text((290, 520), "THINKS IT'S OVER", font=FN(40), fill=(255, 255, 255), anchor="mm", stroke_width=5, stroke_fill=(0, 0, 0))
-    d.text((970, 520), "CHECKS THE 5 RULES", font=FN(40), fill=(255, 255, 255), anchor="mm", stroke_width=5, stroke_fill=(0, 0, 0))
-    bottom_pill(d, "NOBODY WARNS YOU", YEL, (15, 15, 15), 46, 596)
+    """Titolo 3: Frank (rosso) vs Mary (verde)"""
+    im = bg(); d = ImageDraw.Draw(im)
+    label(d, "RETIRE AT 59½")
+    otext(d, "FRANK", P(128, True), 285, 250)
+    otext(d, "MARY", P(128, True), 985, 250)
+    otext(d, "VS", P(80, True), 640, 330, fill=YEL, stroke=7)
+    T.cross(d, 285, 440, 62); T.check(d, 985, 440, 62)
+    pill(d, "NOBODY WARNS YOU", maxw=900)
     return im
 
 
