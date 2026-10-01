@@ -4,7 +4,7 @@ import os, sys, math
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from long1_b01 import *  # engine 1920x1080, pop, T, spaced, person, register, stamp_x, tile_icon, cart, ...
 
-BLOCK_FRAMES = {2: 554, 3: 576, 4: 465, 5: 752, 6: 631}
+BLOCK_FRAMES = {2: 534, 3: 576, 4: 465, 5: 752, 6: 631}
 
 
 def show(img, t, st, fn, dur=.5, rise=40, scale0=.9, **kw):
