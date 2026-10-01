@@ -82,5 +82,83 @@ def item(t=3.0):
     return img
 
 
+def receipt(img, x0, y0, x1, y1):
+    """scontrino dettagliato: righe, sconto senior evidenziato, totale"""
+    panel(img, [x0, y0, x1, y1], radius=26, fill=(246, 241, 229), border=(200, 190, 165), bw=4)
+    d = ImageDraw.Draw(img); dark = GREEN_D
+    d.text(((x0 + x1) / 2, y0 + 55), "RECEIPT", font=font(FONT_SANS, 40), fill=dark, anchor="mm")
+    d.line([x0 + 40, y0 + 95, x1 - 40, y0 + 95], fill=(170, 160, 135), width=3)
+    rows = [("Burger", "$12.50"), ("Fries", "$4.00"), ("Drink", "$3.50")]
+    y = y0 + 140
+    for a, b in rows:
+        d.text((x0 + 50, y), a, font=font(FONT_SANS_M, 36), fill=dark, anchor="lm")
+        d.text((x1 - 50, y), b, font=font(FONT_SANS_M, 36), fill=dark, anchor="rm"); y += 62
+    d.line([x0 + 40, y - 10, x1 - 40, y - 10], fill=(170, 160, 135), width=3)
+    d.text((x0 + 50, y + 35), "Subtotal", font=font(FONT_SANS_M, 36), fill=dark, anchor="lm")
+    d.text((x1 - 50, y + 35), "$20.00", font=font(FONT_SANS_M, 36), fill=dark, anchor="rm")
+    d.rounded_rectangle([x0 + 30, y + 80, x1 - 30, y + 160], radius=16, fill=GOLD)
+    d.text((x0 + 46, y + 120), "SENIOR 10%", font=font(FONT_SANS, 34), fill=GREEN_D, anchor="lm")
+    d.text((x1 - 46, y + 120), "\u2212$2.00", font=font(FONT_SANS, 34), fill=GREEN_D, anchor="rm")
+    d.text((x0 + 50, y + 215), "TOTAL", font=font(FONT_SANS, 44), fill=dark, anchor="lm")
+    d.text((x1 - 50, y + 215), "$18.00", font=font(FONT_SANS, 44), fill=dark, anchor="rm")
+
+
+def item2(t=3.0):
+    """luogo 1 piu' dettagliato: anello %, scontrino, piatto, didascalia grande"""
+    img = background(t); d = ImageDraw.Draw(img)
+    spaced(img, "PLACE #1  \u00b7  RESTAURANTS", W // 2, 90, 42)
+    cx, cy, r = 430, 450, 240
+    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=CARD, outline=SAGE_D, width=6)
+    d.arc([cx - r + 28, cy - r + 28, cx + r - 28, cy + r - 28], -90, 270, fill=(30, 80, 64), width=30)
+    d.arc([cx - r + 28, cy - r + 28, cx + r - 28, cy + r - 28], -90, -90 + 360 * .10, fill=GOLD, width=30)
+    shadow_text(img, (cx, cy - 15), "10%", font(FONT_SERIF, 190), IVORY, off=(6, 10), blur=12)
+    d.text((cx, cy + 110), "OFF", font=font(FONT_SANS, 56), fill=SAGE, anchor="mm")
+    lay = new_layer(); price_tag(lay[0], lay[1], cx, 780, "AGE 55+", 420, 160); paste_rot(img, lay, -5, (cx, 780))
+    receipt(img, 850, 190, 1330, 850)
+    # piatto con cloche accanto allo scontrino
+    lay = new_layer(); rgb, mask = lay; r_, m_ = ImageDraw.Draw(rgb), ImageDraw.Draw(mask)
+    px, py = 1590, 640
+    for dr, c in ((r_, (232, 228, 214)), (m_, 255)):
+        dr.ellipse([px - 250, py + 40, px + 250, py + 160], fill=c)
+    r_.ellipse([px - 205, py + 58, px + 205, py + 138], fill=(246, 241, 229))
+    for dr, c in ((r_, (190, 196, 190)), (m_, 255)):
+        dr.pieslice([px - 170, py - 85, px + 170, py + 155], 180, 360, fill=c)
+        dr.rounded_rectangle([px - 190, py + 135, px + 190, py + 160], radius=12, fill=c)
+        dr.ellipse([px - 22, py - 110, px + 22, py - 66], fill=c)
+    r_.pieslice([px - 125, py - 55, px - 20, py + 25], 200, 300, fill=(225, 230, 225))
+    for k in range(3):
+        sx = px - 70 + k * 70
+        for dr, c in ((r_, (170, 200, 180)), (m_, 200)):
+            dr.arc([sx - 25, py - 195, sx + 25, py - 125], 90, 270, fill=c, width=7)
+    alpha_layer(img, lay, 1)
+    # didascalia grande e chiara (per chi legge da lontano)
+    panel(img, [180, 920, 1740, 1030], radius=34, border=GOLD, bw=5)
+    d = ImageDraw.Draw(img)
+    d.text((960, 975), "CHILI'S: 10% OFF FROM AGE 55", font=font(FONT_SANS, 62), fill=IVORY, anchor="mm")
+    d.text((960, 1058), "Varies by location \u00b7 confirm with the business", font=font(FONT_SANS_M, 26), fill=SAGE, anchor="mm")
+    return img
+
+
+def closing(t=3.0):
+    """ultima slide: disclaimer in chiaro + spazio per la schermata finale"""
+    img = background(t); d = ImageDraw.Draw(img)
+    spaced(img, "BEFORE YOU GO", W // 2, 120, 44)
+    shadow_text(img, (560, 330), "ALWAYS ASK", font(FONT_SANS, 110), IVORY)
+    shadow_text(img, (560, 470), "BEFORE YOU PAY", font(FONT_SANS, 90), GOLD)
+    panel(img, [100, 620, 1020, 960], radius=34, border=SAGE_D, bw=4)
+    d = ImageDraw.Draw(img)
+    lines = ["Discounts, ages and prices change", "and differ by location and plan.", "Always confirm with the business", "or the official source before you rely on them.", "General information, not financial advice."]
+    for i, l in enumerate(lines):
+        d.text((560, 670 + i * 56), l, font=font(FONT_SANS_M, 36), fill=IVORY if i < 4 else SAGE, anchor="mm")
+    # riquadro tratteggiato per la schermata finale di YouTube
+    bx0, by0, bx1, by1 = 1150, 250, 1830, 710
+    for x in range(bx0 + 20, bx1 - 20, 40):
+        d.line([x, by0, x + 20, by0], fill=GOLD, width=4); d.line([x, by1, x + 20, by1], fill=GOLD, width=4)
+    for y in range(by0 + 20, by1 - 20, 40):
+        d.line([bx0, y, bx0, y + 20], fill=GOLD, width=4); d.line([bx1, y, bx1, y + 20], fill=GOLD, width=4)
+    d.text(((bx0 + bx1) / 2, by1 + 50), "WATCH NEXT", font=font(FONT_SANS, 40), fill=GOLD, anchor="mm")
+    return img
+
+
 if __name__ == "__main__":
-    hook().save(f"{OUT}/1-gancio.png"); item().save(f"{OUT}/2-luogo-1-ristoranti.png"); print("ok")
+    hook().save(f"{OUT}/1-gancio.png"); item2().save(f"{OUT}/2-luogo-1-ristoranti.png"); closing().save(f"{OUT}/3-finale-disclaimer.png"); print("ok")

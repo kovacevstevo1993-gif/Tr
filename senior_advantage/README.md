@@ -78,3 +78,13 @@ Tutti i dati vanno **verificati su più fonti ufficiali** prima del copione.
 - Short 3 finale: 720x1278 (export CapCut), 33 s, in `riferimenti/short3-finale.mp4`. Pagina del canale e copertina in `riferimenti/`.
 - Le chat esportate arrivano fino al 29/09: lo short 4 (bollette) non risulta fatto.
 - File export di oggi: memoria completa del canale in `MEMORIA-CANALE.md`.
+
+## Disclaimer e monetizzazione (deciso il 01/10/2026)
+- Il disclaimer **non protegge** da YouTube: la monetizzazione dipende da contenuto originale e utile, da dati corretti e da niente promesse esagerate. Resta una buona pratica e si usa **in 4 punti**:
+  1. Descrizione (già nel testo predefinito).
+  2. Commento fissato.
+  3. Scritto in piccolo in ogni slide dei luoghi: "Varies by location · confirm with the business".
+  4. Slide finale con il disclaimer in chiaro (`anteprima/3-finale-disclaimer.png`) + una frase detta a voce nel blocco finale.
+- Non metterlo all'inizio del video (fa perdere spettatori).
+- Rischi da evitare: contenuto "a modello" identico tra i video (regola "inauthentic content": slideshow/modelli senza valore aggiunto), persone/avatar AI che si presentano come esperti, promesse di guadagno. Quindi: ogni video con dati verificati, fonti scritte, struttura e oggetti diversi per argomento.
+- Anteprime del video lungo 1 in `anteprima/` (codice: `code/long1_anteprima.py`).
