@@ -4,7 +4,7 @@ import os, sys, math
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from long1_blocks3 import *  # show, txt_in, pill, chip, id_card, coupon, ring, ticket, train_big, phone_icon, aarp_card, bubble, ...
 
-BLOCK_FRAMES4 = {21: 882, 22: 507, 23: 505, 24: 505, 25: 543, 26: 455, 27: 709, 28: 459, 29: 433, 30: 416,
+BLOCK_FRAMES4 = {21: 862, 22: 507, 23: 505, 24: 505, 25: 543, 26: 455, 27: 709, 28: 459, 29: 433, 30: 416,
                  31: 553, 32: 782, 33: 534, 34: 353, 35: 319, 36: 594}
 
 
