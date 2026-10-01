@@ -25,3 +25,6 @@ La chat in cui hai lavorato ai blocchi di slide del video 5 non è in questo exp
 ## Note
 - Le immagini, i video, le miniature e i .zip del kit non sono nell'export: c'è solo il testo. Si rigenerano col codice in `code/`.
 - I crediti vidIQ si rinnovano il 14/10/2026.
+
+## Disclaimer finale (regola, 01/10/2026)
+Alla fine di ogni **video lungo** di The Money Backstory (non negli short): slide finale con il disclaimer in chiaro (stile navy/oro del canale) + frase detta a voce nell'ultimo blocco. Modello della struttura: `senior_advantage/anteprima/3-finale-disclaimer.png`. Vedi `CLAUDE.md`.

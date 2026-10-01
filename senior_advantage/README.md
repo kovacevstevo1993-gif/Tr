@@ -88,3 +88,6 @@ Tutti i dati vanno **verificati su più fonti ufficiali** prima del copione.
 - Non metterlo all'inizio del video (fa perdere spettatori).
 - Rischi da evitare: contenuto "a modello" identico tra i video (regola "inauthentic content": slideshow/modelli senza valore aggiunto), persone/avatar AI che si presentano come esperti, promesse di guadagno. Quindi: ogni video con dati verificati, fonti scritte, struttura e oggetti diversi per argomento.
 - Anteprime del video lungo 1 in `anteprima/` (codice: `code/long1_anteprima.py`).
+
+## Disclaimer finale (regola)
+Alla fine di ogni **video lungo** (non negli short): slide finale con il disclaimer + frase detta a voce. Vedi `CLAUDE.md` e `anteprima/3-finale-disclaimer.png`.
