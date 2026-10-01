@@ -76,7 +76,7 @@ def b2c2(img, t):
     show(img, t, 1.0, lambda r, m: bubble(r, m, 880, 360, 760, 190) or (T(r, m, (880, 335), "Do you offer a", font(FONT_SERIF, 54), IVORY), T(r, m, (880, 395), "senior discount?", font(FONT_SERIF, 54), GOLD)), .5)
     show(img, t, 2.2, lambda r, m: (person(r, m, 1500, 560, 1.3), register(r, m, 1430, 790)), .6)
     show(img, t, 3.6, lambda r, m: price_tag(r, m, 1230, 560, "55+", 280, 160), .5, angle=-8)
-    show(img, t, 4.4, lambda r, m: T(r, m, (1500, 360), "YES!", font(FONT_SERIF, 120), GOLD), .5)
+    show(img, t, 4.4, lambda r, m: T(r, m, (1560, 245), "YES!", font(FONT_SERIF, 120), GOLD), .5)
     txt_in(img, t, 5.4, (W // 2, 960), "SAY ONE SENTENCE AND IT APPEARS", 56, IVORY)
 
 
@@ -154,7 +154,7 @@ def b3c3(img, t):
 # ============================== BLOCCO 4: la regola ==============================
 def b4c1(img, t):
     spaced(img, "ONE RULE THAT WORKS EVERYWHERE", W // 2, 100, 44, a=ease(seg(t, 0, .5)))
-    steps = [(480, "ASK", "?"), (960, "TOTAL RUNG UP", "$20"), (1440, "YOU PAY", "✓")]
+    steps = [(480, "ASK", "?"), (960, "TOTAL RUNG UP", "$20"), (1440, "YOU PAY", "OK")]
     for i, (x, lab, sym) in enumerate(steps):
         st = .4 + i * .9
         on = i == 0
