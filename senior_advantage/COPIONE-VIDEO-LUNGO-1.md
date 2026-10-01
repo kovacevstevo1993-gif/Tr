@@ -121,12 +121,12 @@ It covers entrance fees and standard day-use fees at federal recreation sites, a
 
 **BLOCCO 24**
 ```
-And if you don't want to wait for a card in the mail, there's a digital pass through Recreation dot gov, with immediate access. You can also order online and have it mailed, but that can take up to three weeks. Keep it on your phone or in your wallet, and you're ready for the next trip.
+And there's a cheaper way to start: an annual pass costs twenty dollars. But do the math. Eighty divided by twenty is four. If you plan to use it for more than four years, the lifetime pass is the smarter buy. That's the one I would pick first.
 ```
 
 **BLOCCO 25**
 ```
-And there's a cheaper way to start: an annual pass costs twenty dollars. But do the math. Eighty divided by twenty is four. If you plan to use it for more than four years, the lifetime pass is the smarter buy. That's the one I would pick first.
+And if you don't want to wait for a card in the mail, there's a digital pass through Recreation dot gov, with immediate access. You can also order online and have it mailed, but that can take up to three weeks. Keep it on your phone or in your wallet, and you're ready for the next trip.
 ```
 
 **BLOCCO 26**
