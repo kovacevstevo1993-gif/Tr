@@ -35,10 +35,23 @@ Font: **Lora** (numeri e titoli serif) e **Poppins Bold/Medium** (testi). Sono i
 - **Video lungo**: lo stesso motore in orizzontale 1920×1080, senza cambiare colori o stile: `SA_W=1920 SA_H=1080 python3 ...`. Provato: stessi colori e stessi oggetti, vedi sotto.
 - Serve `ffmpeg` e `pip install pillow numpy`.
 
+## Come lavori (preferenze salvate in memoria, valgono anche qui)
+- Risposte corte. Niente "hai ragione" e niente scuse: direttamente la cosa da fare.
+- Una cosa alla volta. Il piano completo lo prepara e lo tiene Claude; prima di iniziare un video vuoi il piano completo e pronto.
+- Verificare da soli prima di dare un'indicazione: ogni modifica da rifare ti costa tempo.
+- **Non spendere crediti vidIQ senza dirtelo e chiederlo prima.** Dirti il costo prima di ogni generazione.
+- Slide e grafica le fa Claude con il codice, gratis. Mai generatori a crediti.
+- Titolo, descrizione e tag già completi da incollare così come sono (Subscribe e disclaimer compresi).
+- Dirti PRIMA, senza che tu chieda, dove va ogni nuovo video (playlist, cosa creare o cancellare su YouTube).
+- Le miniature devono avere la frase/hook che hai in mente tu: rileggere i tuoi messaggi prima di rifarle.
+- Durate: le detta la tua timeline CapCut. Voce CapCut circa 11 caratteri al secondo (+ qualche decimo per ogni "…" o "—").
+- Non farti rifare quello che hai già montato. Non proporti mai di fermarti o rimandare.
+- **Mai mischiare questo canale con The Money Backstory** (pensione, Social Security, Medicare, tasse): due canali con argomenti diversi.
+
 ## Gli short pubblicati (testi in `chat/`)
 1. **"Senior Discounts Start at 55 — Not 65 (Most Never Ask)"** (promo, quello più cercato). Gancio: "Most senior discounts in America start at fifty-five. Not sixty-five." 7 frasi, ~33 s. Dopo 24 ore: 21 view; 18,2% delle view da ricerca "senior discounts". Ritenzione ~75%.
 2. **"Senior Discounts Nobody Tells You About (55, 60 & 62+)"**: Chili's 10% da 55, piani telefonici AT&T/T-Mobile/Verizon da 55, AMC da 60, National Parks Senior Pass $80 a vita da 62.
-3. **"Senior Meals Can Be Delivered to Your Door (Meals on Wheels 60+)"**: Eldercare Locator 1-800-677-1116, eldercare.acl.gov. Playlist "aiuti" a parte.
+3. (pubblicato il 30/09) **"Senior Meals Can Be Delivered to Your Door (Meals on Wheels 60+)"**: Eldercare Locator 1-800-677-1116, eldercare.acl.gov. Playlist "aiuti" a parte.
 - Short 4 previsto: aiuto per pagare le bollette di luce e riscaldamento.
 - Playlist: "Senior Discounts" (short 1 e 2), una separata per gli aiuti (short 3 e successivi).
 
@@ -59,3 +72,9 @@ Struttura proposta:
 5. Come non farsi imbrogliare (condizioni, "varia per sede").
 6. Checklist finale e rimando al video successivo.
 Tutti i dati vanno **verificati su più fonti ufficiali** prima del copione.
+
+## Stato al 01/10/2026 (dalla pagina del canale)
+- 1,71K iscritti, 3 video (3 short). Views: short 1 "Start at 55 / Not 65" 67; short 2 "4 places" 38; short 3 "Hot meals at your door" 20. Tutte le views degli short arrivano da ricerca YouTube; feed Shorts a zero.
+- Short 3 finale: 720x1278 (export CapCut), 33 s, in `riferimenti/short3-finale.mp4`. Pagina del canale e copertina in `riferimenti/`.
+- Le chat esportate arrivano fino al 29/09: lo short 4 (bollette) non risulta fatto.
+- File export di oggi: memoria completa del canale in `MEMORIA-CANALE.md`.
