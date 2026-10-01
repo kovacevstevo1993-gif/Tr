@@ -1,0 +1,11 @@
+CONTI IN PENSIONE (@ContiInPensione) - canale YouTube italiano, pensioni e INPS per over 55
+
+01-identita-canale/   logo (immagine profilo) e banner 2560x1440
+02-short-1-cedolino-ottobre/
+    clip/             blocco1.mp4 ... blocco7.mp4 (1080x1920, 30 fps), da mettere in ordine in CapCut sotto la voce
+    miniature/        miniatura-FINALE.png (+ 2 versioni scartate)
+    copione-blocchi.txt
+    titolo-descrizione-tag.txt
+03-sorgenti-grafica/  codice che genera le clip (Playwright + ffmpeg), per rifare o modificare le animazioni
+
+Nota: testo del kit canale (nome, descrizione, parole chiave) non incluso qui: era nella chat precedente.
