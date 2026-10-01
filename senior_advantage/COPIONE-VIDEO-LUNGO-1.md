@@ -1,8 +1,8 @@
-# Copione video lungo 1 — The Senior Advantage
+# Copione video lungo 1 — The Senior Advantage (versione con soli dati da fonti ufficiali)
 
 Titolo: Senior Discounts Start at 55, Not 65: 12 Places That Give Them (Most Never Ask)
 
-36 blocchi, 8987 caratteri (~10.7 min a 14 c/s; ~13.6 min a 11 c/s)
+36 blocchi, 9385 caratteri (~11.2 min a 14 c/s; ~14.2 min a 11 c/s)
 
 **BLOCCO 1**
 ```
@@ -16,7 +16,7 @@ Here's the problem. Senior discounts are almost never advertised. A store doesn'
 
 **BLOCCO 3**
 ```
-So here's the plan. First, restaurants and drugstores. Then four stores with a special senior day. Then your phone bill, the movies and the train. And the last three can save you the most over time, so stay until the end, because number eleven is the one I would pick first.
+So here's the plan. First, restaurants and drugstores. Then stores with a special senior day. Then your phone bill, the movies and the train. And the last three can save you the most over time, so stay until the end, because number eleven is the one I would pick first.
 ```
 
 **BLOCCO 4**
@@ -26,17 +26,17 @@ Before we start, one rule that works everywhere. Ask before the total is rung up
 
 **BLOCCO 5**
 ```
-Here's what to bring. First, a photo ID, because some places will ask for it. Second, the free app or rewards account of the stores you use, because a few of these discounts, like Walgreens and Michaels, need one. And third, about five seconds of patience, because the cashier may need to press a button they've never pressed. If they don't know, politely ask them to check with a manager.
+Here's what to bring. First, a photo ID, because some places will ask for it. Second, the free app or rewards account of the stores you use, because a few of these discounts, like Walgreens, need one. And third, about five seconds of patience, because the cashier may need to press a button they've never pressed. If they don't know, politely ask them to check with a manager.
 ```
 
 **BLOCCO 6**
 ```
-Number one: restaurants. Chili's takes ten percent off for guests fifty-five and older at many of its locations. Denny's offers a discount to AARP members. And some other chains start at fifty-five or sixty, depending on the restaurant. It's not a company-wide rule, so ask your server before you order.
+Number one: restaurants. Denny's has a menu made for guests fifty-five and older, and IHOP has one too, with lower prices on classic dishes. Denny's also gives AARP members fifteen percent off the check at participating locations, up to ten dollars. Ask your server which one fits you.
 ```
 
 **BLOCCO 7**
 ```
-Here's why it matters. Ten percent on a twenty-dollar meal is two dollars. That sounds like nothing. But if you eat out once a week, that's about one hundred and four dollars a year, for asking one question. And you usually need to say it when you order, not when the bill arrives.
+Here's why it matters. Say you're an AARP member and you eat at Denny's once a month, and the check is thirty dollars. Fifteen percent is four dollars and fifty cents. That's fifty-four dollars a year, for scanning a card. And you say it before the server runs the check, not after.
 ```
 
 **BLOCCO 8**
@@ -46,12 +46,12 @@ Number two: Walgreens. On the first Tuesday of every month, customers fifty-five
 
 **BLOCCO 9**
 ```
-Do the math on this one. Say you spend fifty dollars on the first Tuesday. Twenty percent is ten dollars back. Twelve first Tuesdays in a year, that's one hundred and twenty dollars. Add the restaurant habit, and you're already at two hundred and twenty-four dollars a year, and we're only at number two.
+Do the math on this one. Say you spend fifty dollars on the first Tuesday. Twenty percent is ten dollars back. Twelve first Tuesdays in a year, that's one hundred and twenty dollars. Add the Denny's habit, and you're already at one hundred and seventy-four dollars a year, and we're only at number two.
 ```
 
 **BLOCCO 10**
 ```
-Now, the next four places all have one thing in common: they drop the price on one specific day of the week. And almost nobody who shops there knows it.
+Now, the next three places drop the price on one specific day of the week, and a fourth works every day. And almost nobody who shops there knows it.
 ```
 
 **BLOCCO 11**
@@ -61,17 +61,17 @@ Number three: Ross Dress for Less. Ten percent off every Tuesday for shoppers fi
 
 **BLOCCO 12**
 ```
-Number four: Kohl's. Fifteen percent off on Wednesdays for customers sixty and older, and it works in the store, not online. If you already shop there, picking the right day is free money.
+Number four: Kohl's. Fifteen percent off every Wednesday for customers sixty and older, in the store only. You need an ID, it's one per customer, and it can't be used with other percent-off coupons. But dollar-off coupons and Kohl's Cash are applied first, so you can still use those.
 ```
 
 **BLOCCO 13**
 ```
-Number five: thrift stores. Goodwill takes ten to thirty percent off one day a week, usually Tuesday or Wednesday, and it changes from store to store. Savers gives thirty percent off on Tuesdays for customers fifty-five and older, except on new merchandise.
+Number five: thrift stores. Savers has Senior Tuesday: thirty percent off for customers fifty-five and older, except on new merchandise. Goodwill is different. There's no national rule, but some local Goodwill stores run a senior day, so ask at yours.
 ```
 
 **BLOCCO 14**
 ```
-Number six: Michaels, for crafts and hobbies. Ten percent off for customers fifty-five and older, and it's not just one day. You'll need a Rewards membership or proof of age. If you paint, knit or build anything, this one quietly adds up.
+Number six: Michaels, for crafts and hobbies. Ten percent off your entire purchase, even sale items, for customers fifty-five and older, any day of the week. Show your ID at checkout or add it to your free Rewards account. A few things are excluded, like clearance, custom framing and books, and it's one senior discount per day.
 ```
 
 **BLOCCO 15**
@@ -86,12 +86,12 @@ Quick pause. If you've been keeping score, you already have restaurants, a drugs
 
 **BLOCCO 17**
 ```
-Number seven: your phone plan. AT&T and T-Mobile both have plans made for customers fifty-five and older, with unlimited talk, text and data and a lower price for one or two lines. Verizon's version has been limited to certain states. Prices and rules change often, so check the plan page or ask in the store before you switch.
+Number seven: your phone plan. AT&T has a fifty-five-plus plan: forty dollars a month for one line, or thirty-five dollars per line for two, and you prove your age with an ID. T-Mobile has three fifty-five-plus plans, starting at thirty dollars per line for two lines. Verizon's fifty-five-plus plan is only for Florida residents. Prices change, so check the company's page before you switch.
 ```
 
 **BLOCCO 18**
 ```
-Number eight: the movies. AMC sells senior tickets to guests sixty and older, any day of the week. How much you save depends on the theater and the showtime, usually a few dollars a ticket, and they may ask for a photo ID. When you buy online, just pick the senior ticket at checkout.
+Number eight: the movies. AMC offers senior pricing to guests sixty and older, all day, every day. When you buy online, you choose the senior ticket at checkout. The price depends on the theater and the showtime, and AMC also has discounted matinees before four p.m., so compare the prices for your theater.
 ```
 
 **BLOCCO 19**
@@ -106,7 +106,7 @@ One catch with Amtrak: sleeping accommodations are not included, and the discoun
 
 **BLOCCO 21**
 ```
-Number ten: your local bus or subway. If a transit system gets federal funding, it can't charge older riders more than half of the regular fare during off-peak hours. The federal definition of senior is sixty-five, but some cities start at sixty-two. Search your city's transit website for senior fare or reduced fare.
+Number ten: your local bus or subway. Federal rules say that transit systems using federal funds can't charge older riders more than half of the regular peak fare during off-peak hours, and the rule counts everyone sixty-five and older. Big systems in New York, Boston, Washington and Chicago all offer reduced fares from sixty-five. Search your city's transit website for reduced fare, and bring an ID.
 ```
 
 **BLOCCO 22**
@@ -136,7 +136,7 @@ Number twelve is the one that opens the most doors at once: AARP. And you can jo
 
 **BLOCCO 27**
 ```
-Members can save up to thirty percent on car rentals with Avis and Budget, get discounts on hotels from chains like Best Western and Choice Hotels, and save at restaurants like Denny's. So before you book your next trip, check what a membership would save you.
+Members can save up to thirty-five percent off base rates on Avis and Budget rentals when they pay at booking, or up to thirty percent when they pay later. AARP also lists hotel discounts, like Best Western and Choice Hotels, and restaurant savings at places like Denny's. So before you book your next trip, check what a membership would save you.
 ```
 
 **BLOCCO 28**
@@ -161,7 +161,7 @@ Mistake three: assuming discounts add up. Many can't be combined with other offe
 
 **BLOCCO 32**
 ```
-Let's put it all together. Fifty-five: Walgreens, Ross, Goodwill, Savers, Michaels, your phone plan, and Chili's at many locations. Sixty: Kohl's and AMC. Sixty-two: the national parks pass. Sixty-five: Amtrak and half-fare transit. And fifty for AARP. See the pattern? Almost all of it starts before sixty-five.
+Let's put it all together. Fifty-five: Walgreens, Ross, Savers, Michaels, the Denny's and IHOP senior menus, and your phone plan. Sixty: Kohl's and AMC. Sixty-two: the national parks pass. Sixty-five: Amtrak and half-fare transit. And fifty for AARP. See the pattern? Almost all of it starts before sixty-five.
 ```
 
 **BLOCCO 33**
