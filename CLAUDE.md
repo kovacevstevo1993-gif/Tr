@@ -19,3 +19,7 @@ Due canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 - Gli orari dei capitoli si prendono dalla timeline dell'utente, non si stimano dal testo.
 - Non rifare quello che ha già montato. Non proporgli mai di fermarsi.
 - Le miniature devono avere la frase che ha in mente lui; stile rosso/verde dei suoi video 1 e 2 (Money Backstory), font Montserrat ExtraBold.
+
+## Stile slide (feedback utente 01/10/2026, dopo il primo video lungo di Senior Advantage)
+- Il primo video va bene ma è "sciatto e basico". Dai prossimi video: slide più movimentate, più dettagliate, più oggetti disegnati in ogni didascalia (più guardabili, anche se il pubblico è anziano).
+- Durate dei blocchi: partire SEMPRE dalla fine del blocco precedente letta nello screenshot dell'utente, mai dalla somma dei miei clip.
