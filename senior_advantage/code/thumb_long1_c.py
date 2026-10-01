@@ -161,10 +161,29 @@ def hand(im, x, y, flip=False):
     d.rectangle([P(x - 60), P(y + 130), P(x + 80), P(y + 180)], fill=GREEN_L, outline=BLK, width=P(4))
 
 
+def sticker(im, cx, cy, big, small, w, h, ang, fill, fg, bigsz=70, smallsz=26):
+    W_, H_ = P(w), P(h)
+    lay = Image.new("RGBA", (W_, H_), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    d.rounded_rectangle([P(6), P(6), W_ - P(6), H_ - P(6)], radius=P(22), fill=fill, outline=BLK, width=P(6))
+    for k in range(7): d.line([(P(24) + k * (W_ - P(48)) / 6, P(18)), (P(24) + k * (W_ - P(48)) / 6 + P(10), P(18))], fill=fg, width=P(4))
+    d.text((W_ / 2, H_ * .46), big, font=F(P(bigsz), "Black"), fill=fg, anchor="mm")
+    d.text((W_ / 2, H_ * .80), small, font=F(P(smallsz)), fill=fg, anchor="mm")
+    sh = Image.new("RGBA", lay.size, (0, 0, 0, 0)); sh.paste(Image.new("RGBA", lay.size, (0, 0, 0, 150)), (0, 0), lay.split()[3]); sh = sh.filter(ImageFilter.GaussianBlur(P(6)))
+    lay = lay.rotate(ang, expand=True, resample=Image.BICUBIC); sh = sh.rotate(ang, expand=True, resample=Image.BICUBIC)
+    x, y = int(P(cx) - lay.width / 2), int(P(cy) - lay.height / 2)
+    base = im.convert("RGBA"); base.alpha_composite(sh, (x + P(6), y + P(10))); base.alpha_composite(lay, (x, y))
+    return base.convert("RGB")
+
+
 def build():
     im = bg()
+    im = sticker(im, 655, 70, "-30%", "SAVERS TUESDAY", 270, 120, 6, RED, IVORY)
     im = grandpa(im, 930, 300)
+    im = sticker(im, 1160, 300, "-20%", "WALGREENS", 190, 112, -8, (30, 150, 80), IVORY, 56, 22)
     im = pricetag(im, 1120, 590, -8)
+    im = sticker(im, 1160, 60, "$80", "PARKS FOR LIFE", 230, 112, 7, GOLD, GREEN_D, 62, 22)
+    im = sticker(im, 740, 585, "-15%", "KOHL'S", 190, 100, -6, IVORY, RED, 54, 24)
+    im = sticker(im, 790, 676, "-10%", "ROSS · MICHAELS", 270, 90, 3, GREEN_L, IVORY, 48, 22)
 
     # titolo
     L = [("STOP", 95, GREEN_D), ("PAYING", 255, GREEN_D), ("FULL", 415, RED), ("PRICE", 560, RED)]
