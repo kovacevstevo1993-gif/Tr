@@ -141,7 +141,7 @@ def stamp_x(img, cx, cy, p):
 def s2(img, t):
     d = ImageDraw.Draw(img)
     spaced(img, "AND ALMOST NOBODY TELLS YOU", W // 2, 105, 44, a=ease(seg(t, 0, .5)))
-    cards = [(380, "THE CASHIER", lambda r, m, cx, cy: (person(r, m, cx, cy - 20, 1.0), register(r, m, cx + 30, cy + 150))),
+    cards = [(380, "THE CASHIER", lambda r, m, cx, cy: (person(r, m, cx, cy - 70, 0.95), register(r, m, cx + 20, cy + 95))),
              (960, "THE MANAGER", lambda r, m, cx, cy: person(r, m, cx, cy + 20, 1.1, tie=True, badge="MANAGER")),
              (1540, "THE SIGN ON THE DOOR", lambda r, m, cx, cy: door(r, m, cx, cy + 10))]
     starts = [.4, 2.0, 3.6]
@@ -153,7 +153,7 @@ def s2(img, t):
         dm = ImageDraw.Draw(mask); dm.rounded_rectangle(box, radius=34, fill=255)
         ImageDraw.Draw(rgb).rounded_rectangle(box, radius=34, fill=CARD, outline=SAGE_D, width=4)
         icon(rgb, mask, cx, 520 + off)
-        T(rgb, mask, (cx, 800 + off), label, font(FONT_SANS, 44), IVORY)
+        T(rgb, mask, (cx, 840 + off), label, font(FONT_SANS, 42), IVORY)
         alpha_layer(img, lay, a)
         stamp_x(img, cx + 190, 300 + off, seg(t, st + 1.2, .5))
     if t > 5.0:
@@ -161,10 +161,48 @@ def s2(img, t):
 
 
 # ------------------------------------------------------------------ SLIDE 3: 12 posti, $80 una volta
+def tile_icon(kind, rgb, mask, cx, cy):
+    d, dm = ImageDraw.Draw(rgb), ImageDraw.Draw(mask)
+    box = [cx - 85, cy - 85, cx + 85, cy + 85]
+    dm.rounded_rectangle(box, radius=26, fill=255)
+    d.rounded_rectangle(box, radius=26, fill=CARD, outline=SAGE_D, width=4)
+    P = lambda *a, **k: d.polygon(*a, **k); E_ = lambda *a, **k: d.ellipse(*a, **k); R = lambda *a, **k: d.rounded_rectangle(*a, **k)
+    if kind == "plate":
+        E_([cx - 62, cy + 8, cx + 62, cy + 44], fill=IVORY); d.pieslice([cx - 46, cy - 46, cx + 46, cy + 40], 180, 360, fill=(190, 196, 190)); E_([cx - 8, cy - 58, cx + 8, cy - 42], fill=(190, 196, 190))
+    elif kind == "pharmacy":
+        R([cx - 48, cy - 48, cx + 48, cy + 48], radius=14, fill=IVORY); d.rectangle([cx - 10, cy - 34, cx + 10, cy + 34], fill=RED); d.rectangle([cx - 34, cy - 10, cx + 34, cy + 10], fill=RED)
+    elif kind == "shirt":
+        P([(cx - 30, cy - 50), (cx - 70, cy - 20), (cx - 48, cy + 6), (cx - 36, cy - 6), (cx - 36, cy + 52), (cx + 36, cy + 52), (cx + 36, cy - 6), (cx + 48, cy + 6), (cx + 70, cy - 20), (cx + 30, cy - 50), (cx, cy - 30)], fill=SAGE)
+    elif kind == "tag":
+        P([(cx - 60, cy), (cx - 20, cy - 46), (cx + 60, cy - 46), (cx + 60, cy + 46), (cx - 20, cy + 46)], fill=GOLD); E_([cx - 40, cy - 8, cx - 24, cy + 8], fill=GREEN_D); d.text((cx + 18, cy), "%", font=font(FONT_SANS, 44), fill=GREEN_D, anchor="mm")
+    elif kind == "hanger":
+        d.arc([cx - 14, cy - 58, cx + 14, cy - 28], 180, 450, fill=IVORY, width=7); d.line([(cx, cy - 30), (cx, cy - 14)], fill=IVORY, width=7); P([(cx, cy - 14), (cx + 64, cy + 36), (cx - 64, cy + 36)], outline=IVORY, width=7)
+    elif kind == "craft":
+        E_([cx - 54, cy - 46, cx + 54, cy + 46], fill=(170, 130, 90))
+        for dx, dy, col in ((-24, -18, RED), (6, -26, GOLD), (28, -2, SAGE), (-18, 14, IVORY)): E_([cx + dx - 11, cy + dy - 11, cx + dx + 11, cy + dy + 11], fill=col)
+    elif kind == "phone":
+        R([cx - 34, cy - 58, cx + 34, cy + 58], radius=14, fill=IVORY); R([cx - 26, cy - 44, cx + 26, cy + 36], radius=6, fill=GREEN_D); E_([cx - 7, cy + 42, cx + 7, cy + 54], fill=SAGE_D); d.text((cx, cy - 4), "55+", font=font(FONT_SANS, 20), fill=GOLD, anchor="mm")
+    elif kind == "ticket":
+        R([cx - 66, cy - 40, cx + 66, cy + 40], radius=10, fill=GOLD); E_([cx - 78, cy - 12, cx - 54, cy + 12], fill=CARD); E_([cx + 54, cy - 12, cx + 78, cy + 12], fill=CARD); d.text((cx, cy), "SENIOR", font=font(FONT_SANS, 24), fill=GREEN_D, anchor="mm")
+    elif kind == "train":
+        R([cx - 54, cy - 52, cx + 54, cy + 36], radius=18, fill=IVORY); R([cx - 40, cy - 38, cx + 40, cy - 2], radius=8, fill=GREEN_D); E_([cx - 40, cy + 8, cx - 22, cy + 26], fill=GOLD); E_([cx + 22, cy + 8, cx + 40, cy + 26], fill=GOLD); d.line([(cx - 40, cy + 56), (cx + 40, cy + 56)], fill=SAGE, width=6)
+    elif kind == "bus":
+        R([cx - 62, cy - 42, cx + 62, cy + 34], radius=12, fill=GOLD)
+        for i in range(3): R([cx - 50 + i * 36, cy - 30, cx - 22 + i * 36, cy - 4], radius=4, fill=GREEN_D)
+        E_([cx - 46, cy + 22, cx - 20, cy + 48], fill=IVORY); E_([cx + 20, cy + 22, cx + 46, cy + 48], fill=IVORY)
+    elif kind == "park":
+        E_([cx + 26, cy - 52, cx + 52, cy - 26], fill=GOLD); P([(cx - 66, cy + 46), (cx - 14, cy - 34), (cx + 30, cy + 46)], fill=SAGE); P([(cx - 10, cy + 46), (cx + 36, cy - 14), (cx + 68, cy + 46)], fill=SAGE_D)
+    elif kind == "aarp":
+        R([cx - 62, cy - 40, cx + 62, cy + 40], radius=12, fill=RED); d.text((cx, cy - 4), "50+", font=font(FONT_SANS, 40), fill=IVORY, anchor="mm")
+
+
+KINDS = ["plate", "pharmacy", "shirt", "tag", "hanger", "craft", "phone", "ticket", "train", "bus", "park", "aarp"]
+
+
 def s3(img, t):
     d = ImageDraw.Draw(img)
-    spaced(img, "IN THE NEXT FEW MINUTES", W // 2, 105, 44, a=ease(seg(t, 0, .5)))
-    cx, cy, r = 520, 520, 300
+    spaced(img, "IN THE NEXT FEW MINUTES", W // 2, 100, 44, a=ease(seg(t, 0, .5)))
+    cx, cy, r = 560, 500, 330
     a = ease(seg(t, .2, .6))
     lay = new_layer(); rgb, mask = lay; dd, dm = ImageDraw.Draw(rgb), ImageDraw.Draw(mask)
     for dr, c in ((dd, CARD), (dm, 255)):
@@ -173,19 +211,26 @@ def s3(img, t):
     alpha_layer(img, lay, a)
     for i in range(12):
         ang = -math.pi / 2 + i * 2 * math.pi / 12
-        x, y = cx + (r - 38) * math.cos(ang), cy + (r - 38) * math.sin(ang)
+        x, y = cx + (r - 40) * math.cos(ang), cy + (r - 40) * math.sin(ang)
         on = ease(seg(t, .8 + i * .33, .3))
         col = tuple(int(SAGE_D[k] + (GOLD[k] - SAGE_D[k]) * on) for k in range(3))
-        rr = 14 + 8 * on
+        rr = 15 + 9 * on
         d.ellipse([x - rr, y - rr, x + rr, y + rr], fill=col)
     p = ease_back(seg(t, .5, .7))
-    pop(img, lambda r_, m_: T(r_, m_, (cx, cy - 25), "12", font(FONT_SERIF, 300), IVORY), p, a=ease(seg(t, .5, .3)))
+    pop(img, lambda r_, m_: T(r_, m_, (cx, cy - 30), "12", font(FONT_SERIF, 330), IVORY), p, a=ease(seg(t, .5, .3)))
     a = ease(seg(t, 1.4, .5))
     if a > 0:
-        lay = new_layer(); T(lay[0], lay[1], (cx, cy + 125), "PLACES", font(FONT_SANS, 60), SAGE); alpha_layer(img, lay, a)
+        lay = new_layer(); T(lay[0], lay[1], (cx, cy + 135), "PLACES", font(FONT_SANS, 66), SAGE); alpha_layer(img, lay, a)
     a = ease(seg(t, 4.5, .5))
     if a > 0:
-        lay = new_layer(); T(lay[0], lay[1], (cx, 905), "THAT TAKE MONEY OFF YOUR BILL", font(FONT_SANS, 50), IVORY); alpha_layer(img, lay, a)
+        lay = new_layer(); T(lay[0], lay[1], (cx, 960), "THAT TAKE MONEY OFF YOUR BILL", font(FONT_SANS, 58), IVORY); alpha_layer(img, lay, a)
+    # le 12 icone dei posti, una per ogni puntino che si accende
+    gfade = 1 - ease(seg(t, 5.7, .4))
+    for i, kind in enumerate(KINDS):
+        st = .95 + i * .33
+        col_, row_ = i % 4, i // 4
+        gx, gy = 1060 + col_ * 200, 300 + row_ * 215
+        pop(img, lambda r_, m_, k=kind, x=gx, y=gy: tile_icon(k, r_, m_, x, y), ease_back(seg(t, st, .45)), a=ease(seg(t, st, .25)) * gfade)
     # tessera "una volta, per sempre"
     st = 6.0
     def card(r_, m_):
@@ -199,7 +244,7 @@ def s3(img, t):
     pop(img, card, 0.7 + 0.3 * ease_back(seg(t, st, .7)), a=ease(seg(t, st, .4)), dy=math.sin(t * 2) * 5 if t > st + .8 else 0, angle=-4)
     a = ease(seg(t, st + 1.6, .5))
     if a > 0:
-        lay = new_layer(); T(lay[0], lay[1], (1410, 870), "AND IT LASTS FOR LIFE", font(FONT_SANS, 52), GOLD); alpha_layer(img, lay, a)
+        lay = new_layer(); T(lay[0], lay[1], (1410, 880), "AND IT LASTS FOR LIFE", font(FONT_SANS, 56), GOLD); alpha_layer(img, lay, a)
 
 
 if __name__ == "__main__":
