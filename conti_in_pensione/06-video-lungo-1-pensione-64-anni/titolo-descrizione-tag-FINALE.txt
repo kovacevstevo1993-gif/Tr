@@ -1,4 +1,4 @@
-VIDEO LUNGO 1 - TITOLO, DESCRIZIONE, HASHTAG E TAG (versione finale)
+VIDEO LUNGO 1 - TITOLO, DESCRIZIONE, HASHTAG E TAG (versione finale, descrizione completa)
 
 === TITOLO (consigliato) ===
 Pensione a 64 anni nel 2027: legge o proposta? La verità
@@ -44,6 +44,11 @@ Si può andare in pensione a 64 anni? Sì, con la pensione anticipata contributi
 Quanti anni servono per la pensione di vecchiaia nel 2027? 67 anni e 1 mese, con 20 anni di contributi.
 Come controllo i miei contributi? Su inps.it, con Spid, nel fascicolo previdenziale: estratto conto contributivo.
 
+📌 Iscriviti a Conti in Pensione e attiva la campanella: la pensione spiegata con i numeri giusti, con notizie controllate su fonti ufficiali (inps.it, lavoro.gov.it, mef.gov.it).
+Canale: https://www.youtube.com/@ContiInPensione
+
+⚠️ Contenuto informativo, non è consulenza previdenziale, fiscale o legale. Le norme cambiano: verifica sempre sui canali ufficiali (inps.it) o rivolgiti a un patronato, a un CAF o a un consulente abilitato.
+
 #pensione #pensioneanticipata #inps #pensioni2027 #pensioneA64anni #manovra2027 #quota41 #apesociale #etapensionabile #maiinps #pensami #novitapensioni #pensionati
 
 === TAG (da incollare nel campo Tag) ===
@@ -53,6 +58,6 @@ pensione a 64 anni, pensione a 64 anni 2027, pensione anticipata contributiva, p
 In che anno pensi di andare in pensione? Scrivilo qui sotto: leggo tutto e le vostre domande diventano i prossimi video!
 
 === NOTE ===
-- Niente riga "Iscriviti" e niente disclaimer: sono nella descrizione predefinita del canale.
+- La descrizione predefinita del canale è vuota: Iscriviti, link e disclaimer sono quindi dentro la descrizione di ogni video.
 - I capitoli partono da 0:00 e hanno almeno 10 secondi l'uno: YouTube li accetta. Se sposti dei tagli nel montaggio, aggiorna i tempi.
 - Gli hashtag mostrati sopra il titolo sono i primi tre: #pensione #pensioneanticipata #inps.
