@@ -1,123 +1,382 @@
-VIDEO LUNGO 1 - PENSIONE A 64 ANNI NEL 2027: COSA È LEGGE E COSA È SOLO UNA PROPOSTA
-(un blocco = una frase da registrare in CapCut = una o più slide. Per la voce: scrivi "Inps" e "Mai Inps", così non viene letto lettera per lettera.)
+# Copione video lungo 1 - Conti in Pensione: Pensione a 64 anni nel 2027
+
+Titolo: Pensione a 64 anni nel 2027: cosa è legge e cosa è solo una proposta
+
+69 blocchi, 13623 caratteri (~16.7 min a 13,6 c/s; ~15.1 min a 15 c/s). Un blocco = una voce CapCut = uno screenshot di fine blocco. Le slide dentro ogni blocco le fisso io sulla tua timeline.
+
+Per la voce: scrivi "Inps" e "Mai Inps".
 
 
-=== HOOK ===
-1. Nel 2027 l'età per andare in pensione SALE! E nello stesso momento, tutti parlano di pensione a 64 anni... Com'è possibile?
-2. Dal primo gennaio 2027, per la pensione di vecchiaia servono 67 anni e 1 mese. Eppure, per alcune persone, la pensione a 64 anni esiste GIÀ!
-3. E per altre... c'è una proposta in manovra che potrebbe tagliare l'assegno! Secondo i calcoli della Cgil, chi ha uno stipendio alto potrebbe perdere più di 365 euro al mese!
-4. Confuso? È normale! Ma tra pochi minuti ti sarà tutto chiaro. In questo video ti spiego tre cose, e solo con fonti ufficiali.
-5. Uno: cosa è GIÀ legge nel 2027. Due: cosa è soltanto una proposta, e quanto potrebbe costarti.
-6. Tre: il controllo da cinque minuti su Mai Inps che quasi nessuno fa... e che può evitarti errori che costano molto caro.
-7. Resta fino alla fine! Perché nell'ultimo punto ti dico l'errore numero uno che fanno i lavoratori vicini alla pensione... e probabilmente non è quello che pensi.
+## HOOK
 
-=== IL PROBLEMA: TROPPA CONFUSIONE ===
-8. Prima, però, ti spiego perché c'è tutta questa confusione.
-9. Ogni giorno leggi titoli diversi: "Pensione a 64 anni!", "Quota 41!", "Stop all'aumento dell'età!"
-10. Il problema è che quei titoli mescolano tre cose completamente diverse: quello che è già legge, quello che è solo una proposta, e quello che è soltanto un'idea.
-11. E se decidi in base a un titolo... rischi due cose: lasciare il lavoro troppo presto, oppure aspettare per niente.
-12. Per questo, in tutto il video, uso un semaforo. Verde: è già legge. Giallo: è una proposta, non è ancora decisa. Rosso: è chiusa, non esiste più.
-13. Pronto? Partiamo dal verde!
+**BLOCCO 1**
+```
+Nel 2027 l'età per andare in pensione SALE! E nello stesso momento, tutti parlano di pensione a 64 anni... Com'è possibile? Dal primo gennaio 2027, per la pensione di vecchiaia servono 67 anni e 1 mese. Eppure, per alcune persone, la pensione a 64 anni esiste GIÀ!
+```
 
-=== VERDE: COSA È LEGGE NEL 2027 ===
-14. Primo verde: la pensione di vecchiaia. Oggi servono 67 anni di età e almeno 20 anni di contributi.
-15. Dal primo gennaio 2027, l'età sale a 67 anni e 1 mese. E dal 2028, a 67 anni e 3 mesi.
-16. I contributi, invece, restano 20 anni. Questi numeri sono nella circolare dell'Inps, la numero 28 del 16 marzo 2026. Quindi non sono voci... sono ufficiali!
-17. Perché sale? Perché ogni due anni la legge adegua l'età pensionabile all'aumento della speranza di vita. Si chiama "adeguamento alla speranza di vita".
-18. E questa volta la legge di bilancio 2026 ha deciso di farlo gradualmente: un mese nel 2027, e altri due mesi nel 2028. In tutto, tre mesi.
-19. Secondo verde: la pensione anticipata, quella che non guarda l'età, ma solo i contributi.
-20. Oggi servono 42 anni e 10 mesi di contributi per gli uomini, e 41 anni e 10 mesi per le donne.
-21. Dal 2027 diventano 42 anni e 11 mesi per gli uomini, e 41 anni e 11 mesi per le donne. Nel 2028, 43 anni e 1 mese, e 42 anni e 1 mese.
-22. Attenzione, però, a un dettaglio che molti dimenticano: dopo aver maturato i contributi, c'è una finestra di tre mesi prima che la pensione parta davvero.
-23. Cioè? Se maturi i requisiti a dicembre, la pensione non parte a dicembre... ma tre mesi dopo! E questo può cambiare il calcolo della parte contributiva, perché i coefficienti si aggiornano.
-24. E poi c'è un'altra regola: se sei un lavoratore dipendente, per incassare la pensione anticipata devi aver smesso di lavorare. Tienilo a mente... perché tra poco ti servirà!
-25. Ricapitoliamo il primo verde: vecchiaia a 67 anni e 1 mese. Anticipata a 42 anni e 11 mesi per gli uomini, e 41 anni e 11 mesi per le donne.
+**BLOCCO 2**
+```
+E per altre... c'è una proposta in manovra che potrebbe tagliare l'assegno! Secondo i calcoli della Cgil, chi ha uno stipendio alto potrebbe perdere più di 365 euro al mese!
+```
 
-=== VERDE: LA PENSIONE A 64 ANNI CHE ESISTE GIÀ ===
-26. E adesso, la domanda che ti stai facendo: ma allora, questa pensione a 64 anni, esiste o no?
-27. Sì, esiste! È legge! Ma attenzione, perché c'è un trucco... e il trucco sta in tre condizioni.
-28. Condizione numero uno: il tuo primo contributo deve essere stato versato dal primo gennaio 1996 in poi. Cioè devi essere nel sistema contributivo puro.
-29. Se hai anche solo un contributo prima del 1996, questa strada, così com'è, non è per te. Tienilo a mente!
-30. Condizione numero due: servono almeno 20 anni di contributi effettivi, cioè versati davvero. Dal 2027, 20 anni e 1 mese. Dal 2028, 20 anni e 3 mesi.
-31. E l'età? 64 anni oggi, 64 anni e 1 mese dal 2027, e 64 anni e 3 mesi dal 2028.
-32. E poi arriva la condizione numero tre, la più difficile da rispettare: l'importo!
-33. La tua prima rata di pensione deve essere almeno 3 volte l'assegno sociale. Nel 2026 l'assegno sociale è di 546 euro e 24 centesimi. Quindi servono almeno 1.638 euro e 72 al mese!
-34. Per le donne con un figlio la soglia scende a 2,8 volte: circa 1.529 euro. Con due o più figli, a 2,6 volte: circa 1.420 euro.
-35. Facciamo un conto concreto. Per avere 1.638 euro al mese, in 13 mensilità, servono circa 21.300 euro di pensione all'anno.
-36. Con il coefficiente di trasformazione di oggi, a 64 anni, che è il 5,088 per cento, ti serve un montante contributivo di circa 419 mila euro!
-37. Il montante è la somma di tutti i contributi che hai versato, rivalutati negli anni. E 419 mila euro... non sono pochi!
-38. Ed è per questo che, per tantissimi lavoratori, la pensione a 64 anni resta... sulla carta. Esiste, ma non tutti ci arrivano.
-39. C'è anche una novità che non tutti conoscono. Era previsto che si potessero contare anche le rendite dei fondi pensione per raggiungere quella soglia. Con la legge di bilancio 2026 questa possibilità è stata cancellata!
-40. Quindi oggi la soglia si raggiunge solo con l'assegno dell'Inps. E c'è anche un tetto: fino all'età della pensione di vecchiaia, l'assegno non può superare 5 volte il trattamento minimo.
-41. Ecco il trucco che ti dicevo: la pensione a 64 anni c'è, ma è per una platea ristretta. Chi ha cominciato dopo il 1996, con una carriera lunga e stipendi medio-alti.
+**BLOCCO 3**
+```
+Confuso? È normale! Ma tra pochi minuti ti sarà tutto chiaro. In questo video ti spiego tre cose, e solo con fonti ufficiali. Uno: cosa è GIÀ legge nel 2027. Due: cosa è soltanto una proposta, e quanto potrebbe costarti.
+```
 
-=== VERDE: LE ALTRE PORTE CHE ESISTONO ===
-42. Ma non finisce qui! Ci sono altre strade verdi, e molte persone non sanno nemmeno di averle.
-43. Prima strada: l'APE sociale. È un anticipo della pensione, dai 63 anni e 5 mesi, con almeno 30 anni di contributi.
-44. Ma solo per chi si trova in una di queste situazioni: disoccupati che hanno finito la disoccupazione, persone che assistono un familiare con disabilità grave, persone con invalidità civile di almeno il 74 per cento, oppure chi fa lavori gravosi.
-45. L'assegno arriva fino a 1.500 euro al mese, per 12 mesi l'anno, fino alla pensione di vecchiaia.
-46. Attenzione alle date! L'APE sociale è prevista fino al 31 dicembre 2026. Le domande si possono presentare entro il 30 novembre, ma dopo il 15 luglio vengono accolte solo se restano fondi. E dal 2027... dipende dalla manovra!
-47. Seconda strada: la Quota 41 per i precoci. Servono 41 anni di contributi, ma almeno 12 mesi versati prima dei 19 anni, e una condizione di tutela: disoccupato, caregiver, invalido, oppure lavoro gravoso.
-48. Dal 2027, per molti di loro, i contributi richiesti diventano 41 anni e 1 mese.
-49. Terza strada: i lavori usuranti. Chi li fa può uscire anche a 61 anni e 7 mesi, con 35 anni di contributi e una quota minima. E per queste categorie, l'aumento del 2027 non vale!
-50. Anche per i lavori gravosi ci sono regole di favore: per la pensione anticipata, 42 anni e 10 mesi per gli uomini e 41 anni e 10 mesi per le donne, senza il mese in più.
-51. E adesso, un attimo di rosso! Quota 103 e Opzione donna non sono state prorogate. Sono chiuse per chi non aveva già maturato i requisiti, entro il 31 dicembre 2025 per la Quota 103 e il 31 dicembre 2024 per l'Opzione donna.
-52. Chi i requisiti li aveva già maturati, però, il diritto non lo perde. Quindi se qualcuno ti dice "vai con Quota 103"... controlla bene la data in cui li hai maturati!
+**BLOCCO 4**
+```
+Tre: il controllo da cinque minuti su Mai Inps che quasi nessuno fa... e che può evitarti errori che costano molto caro.
+```
 
-=== TRE PERSONE, TRE SITUAZIONI (ESEMPI) ===
-53. Facciamo tre esempi, così capisci come funziona. Sono persone inventate, ma i numeri sono quelli veri!
-54. Marco ha iniziato a lavorare a gennaio del 1985, senza buchi. A dicembre 2027 avrà 42 anni e 11 mesi di contributi: il requisito per la pensione anticipata!
-55. Ma la pensione non parte a dicembre. Parte tre mesi dopo, a marzo 2028. Se si dimette prima, resta tre mesi senza stipendio e senza pensione!
-56. Giulia ha 64 anni e ha iniziato a lavorare nel 1997, dopo aver cresciuto due figli. Ha oltre 20 anni di contributi, quindi la strada dei 64 anni è possibile.
-57. Con due figli, la sua soglia è 2,6 volte l'assegno sociale: circa 1.420 euro. Se la sua pensione stimata è di 1.500 euro, può uscire. Se è di 1.300... deve aspettare!
-58. Luca ha 61 anni, ha iniziato nel 1988, e ha letto "pensione a 64 anni" su un titolo. Ma lui ha contributi prima del 1996!
-59. Per lui oggi quella strada non esiste. Esiste solo come proposta... e con un ricalcolo che potrebbe ridurgli l'assegno. Ma di questo parliamo adesso!
-
-=== GIALLO: LE PROPOSTE DELLA MANOVRA ===
-60. Adesso passiamo al semaforo giallo. Quello delle proposte. Qui attenzione: NIENTE di quello che sto per dirti è legge!
-61. Proposta numero uno: lo stop all'aumento dell'età del 2027. La Lega vuole bloccare l'adeguamento alla speranza di vita. Ma al momento è solo una richiesta: dipende dai costi e da cosa decide il Ministero dell'Economia.
-62. Proposta numero due: l'uscita a 64 anni anche per chi ha contributi prima del 1996! Sembra una bella notizia, vero?
-63. Ma c'è il rovescio della medaglia. Secondo le proposte in discussione, l'assegno verrebbe ricalcolato interamente con il metodo contributivo. E questo, in genere, vuol dire una pensione più bassa.
-64. Quanto più bassa? Secondo l'osservatorio previdenza della Cgil: con uno stipendio di 35 mila euro all'anno, si perderebbero circa 182 euro al mese, cioè il 10,6 per cento. Con 50 mila euro, circa 261 euro al mese. Con 70 mila, oltre 365 euro al mese!
-65. Capisci? Uscire a 64 anni sembra un regalo... ma potrebbe costarti centinaia di euro ogni mese, per tutta la vita!
-66. Attenzione: sono stime di un sindacato, su una proposta ancora non definita. Mancano perfino la soglia minima e gli anni di contributi richiesti.
-67. Proposta numero tre: la Quota 41 per tutti. Pensione con 41 anni di contributi, a qualsiasi età. Ma oggi non c'è ancora un progetto tecnico, né i soldi per finanziarla.
-68. E poi c'è la pensione minima: nel 2026 è di 611 euro e 85 al mese. Si parla di portarla verso 700 o 800 euro, ma non c'è ancora nulla di deciso.
-69. Quando si decide? Di solito la legge di bilancio viene presentata al Parlamento entro il 20 ottobre e approvata entro la fine di dicembre. Quindi la risposta definitiva arriva tra poche settimane.
-70. E qui nasce l'errore più pericoloso: prendere decisioni importanti basandosi su una proposta. Ma ci arrivo tra un attimo.
-
-=== LA SOLUZIONE: IL CONTROLLO DA CINQUE MINUTI ===
-71. Adesso la parte più utile del video: cosa puoi fare TU, oggi, senza aspettare la manovra!
-72. Passo numero uno: entra nel tuo Mai Inps. Ti serve lo Spid, la Cie o la Cns. Se non ce li hai, puoi chiedere aiuto a un patronato!
-73. Cerca il "Fascicolo previdenziale" e apri l'"Estratto conto contributivo".
-74. Qui trovi tutti i contributi che risultano versati a tuo nome, anno per anno. Guardali uno per uno, con calma!
-75. Cerchi tre cose: gli anni che mancano, i periodi in cui i contributi non risultano, e la data del tuo primo contributo. Perché è quella che decide in quale sistema sei: retributivo, misto o contributivo!
-76. Se trovi un buco, per esempio un periodo di lavoro che non risulta, c'è una funzione per segnalare l'anomalia direttamente dal tuo Mai Inps. Fallo subito: più aspetti, più è difficile recuperare i documenti!
-77. Passo numero due: prova "Pensami", il simulatore dell'Inps. Inserisci i tuoi dati e ti mostra gli scenari possibili: quando potresti andare in pensione e, più o meno, con quale importo.
-78. Ricorda: è una simulazione, non una promessa. Ma ti dà una base concreta, molto meglio di un titolo di giornale!
-79. Passo numero tre: scrivi su un foglio tre date. Quando maturi i contributi per l'anticipata, quando compi l'età della vecchiaia, e quando scade la finestra di tre mesi.
-80. Passo numero quattro: porta tutto a un patronato. Di solito il servizio è gratuito, e loro verificano la tua posizione e ti dicono quale strada è davvero la più conveniente per te.
-81. Passo numero cinque: non decidere nulla di irreversibile prima che la manovra sia approvata. Niente dimissioni, niente scelte affrettate. Aspetta il testo definitivo!
-
-=== I TRE ERRORI CHE COSTANO DI PIÙ ===
-82. Ed ecco i tre errori che si vedono più spesso. Segnali bene!
-83. Errore numero tre: dimettersi prima che la pensione sia davvero in pagamento. Ricordi la finestra di tre mesi? Se ti dimetti troppo presto, rischi di restare tre mesi senza stipendio e senza pensione!
-84. Errore numero due: fidarsi di un titolo. "Pensione a 64 anni per tutti" non esiste! Esiste una regola precisa, con soglie precise. Controlla sempre chi la propone, e se è già stata approvata.
-85. E adesso, l'errore numero uno! Quello che ti avevo promesso all'inizio.
-86. L'errore numero uno è... controllare i contributi troppo tardi! Aspettare l'ultimo anno, quando mancano pochi mesi, e scoprire solo allora che un periodo di lavoro non risulta versato.
-87. Recuperare un contributo mancante, con buste paga o certificazioni di anni fa, può richiedere mesi. E ogni mese di ritardo... è un mese in più di lavoro!
-88. Per questo il controllo da cinque minuti su Mai Inps, quello che ti ho spiegato prima, vale più di mille titoli di giornale.
-
-=== RIEPILOGO E CHIUSURA ===
-89. Facciamo un riepilogo veloce, così non ti perdi niente!
-90. Semaforo verde: dal 2027, vecchiaia a 67 anni e 1 mese. Anticipata a 42 anni e 11 mesi per gli uomini, e 41 anni e 11 mesi per le donne.
-91. Verde anche la pensione a 64 anni, ma solo per i contributivi puri: almeno 20 anni di contributi effettivi e un assegno di almeno 3 volte l'assegno sociale.
-92. Giallo: stop all'aumento, uscita a 64 anni con ricalcolo contributivo, Quota 41, minime più alte. Sono solo proposte, e la risposta arriva con la manovra!
-93. Rosso: Quota 103 e Opzione donna non sono più aperte per chi non aveva già i requisiti.
-94. E adesso una domanda per te: in che anno pensi di andare in pensione? Scrivilo nei commenti! Leggo tutto, e le vostre domande diventano i prossimi video!
-95. Se questo video ti è stato utile, iscriviti a Conti in Pensione e attiva la campanella: quando la manovra sarà approvata, ti spiego subito cosa cambia davvero, con fonti ufficiali!
-96. Le informazioni di questo video sono a scopo divulgativo e non sostituiscono la consulenza di un patronato o dell'Inps. Verifica sempre sui canali ufficiali, come inps.it. Grazie per aver guardato fino alla fine... e alla prossima!
+**BLOCCO 5**
+```
+Resta fino alla fine! Perché nell'ultimo punto ti dico l'errore numero uno che fanno i lavoratori vicini alla pensione... e probabilmente non è quello che pensi.
+```
 
 
-Totale: 96 blocchi, 13596 caratteri, circa 2400 parole.
-Durata stimata: circa 16.7 minuti a 13,6 caratteri al secondo (il tuo ritmo dello short 2); 15.1 minuti a 15 caratteri al secondo.
+## IL PROBLEMA: TROPPA CONFUSIONE
+
+**BLOCCO 6**
+```
+Prima, però, ti spiego perché c'è tutta questa confusione. Ogni giorno leggi titoli diversi: "Pensione a 64 anni!", "Quota 41!", "Stop all'aumento dell'età!"
+```
+
+**BLOCCO 7**
+```
+Il problema è che quei titoli mescolano tre cose completamente diverse: quello che è già legge, quello che è solo una proposta, e quello che è soltanto un'idea.
+```
+
+**BLOCCO 8**
+```
+E se decidi in base a un titolo... rischi due cose: lasciare il lavoro troppo presto, oppure aspettare per niente. Per questo, in tutto il video, uso un semaforo. Verde: è già legge. Giallo: è una proposta, non è ancora decisa. Rosso: è chiusa, non esiste più. Pronto? Partiamo dal verde!
+```
+
+
+## VERDE: COSA È LEGGE NEL 2027
+
+**BLOCCO 9**
+```
+Primo verde: la pensione di vecchiaia. Oggi servono 67 anni di età e almeno 20 anni di contributi. Dal primo gennaio 2027, l'età sale a 67 anni e 1 mese. E dal 2028, a 67 anni e 3 mesi.
+```
+
+**BLOCCO 10**
+```
+I contributi, invece, restano 20 anni. Questi numeri sono nella circolare dell'Inps, la numero 28 del 16 marzo 2026. Quindi non sono voci... sono ufficiali!
+```
+
+**BLOCCO 11**
+```
+Perché sale? Perché ogni due anni la legge adegua l'età pensionabile all'aumento della speranza di vita. Si chiama "adeguamento alla speranza di vita".
+```
+
+**BLOCCO 12**
+```
+E questa volta la legge di bilancio 2026 ha deciso di farlo gradualmente: un mese nel 2027, e altri due mesi nel 2028. In tutto, tre mesi. Secondo verde: la pensione anticipata, quella che non guarda l'età, ma solo i contributi.
+```
+
+**BLOCCO 13**
+```
+Oggi servono 42 anni e 10 mesi di contributi per gli uomini, e 41 anni e 10 mesi per le donne. Dal 2027 diventano 42 anni e 11 mesi per gli uomini, e 41 anni e 11 mesi per le donne. Nel 2028, 43 anni e 1 mese, e 42 anni e 1 mese.
+```
+
+**BLOCCO 14**
+```
+Attenzione, però, a un dettaglio che molti dimenticano: dopo aver maturato i contributi, c'è una finestra di tre mesi prima che la pensione parta davvero.
+```
+
+**BLOCCO 15**
+```
+Cioè? Se maturi i requisiti a dicembre, la pensione non parte a dicembre... ma tre mesi dopo! E questo può cambiare il calcolo della parte contributiva, perché i coefficienti si aggiornano.
+```
+
+**BLOCCO 16**
+```
+E poi c'è un'altra regola: se sei un lavoratore dipendente, per incassare la pensione anticipata devi aver smesso di lavorare. Tienilo a mente... perché tra poco ti servirà!
+```
+
+**BLOCCO 17**
+```
+Ricapitoliamo il primo verde: vecchiaia a 67 anni e 1 mese. Anticipata a 42 anni e 11 mesi per gli uomini, e 41 anni e 11 mesi per le donne.
+```
+
+
+## VERDE: LA PENSIONE A 64 ANNI CHE ESISTE GIÀ
+
+**BLOCCO 18**
+```
+E adesso, la domanda che ti stai facendo: ma allora, questa pensione a 64 anni, esiste o no? Sì, esiste! È legge! Ma attenzione, perché c'è un trucco... e il trucco sta in tre condizioni.
+```
+
+**BLOCCO 19**
+```
+Condizione numero uno: il tuo primo contributo deve essere stato versato dal primo gennaio 1996 in poi. Cioè devi essere nel sistema contributivo puro. Se hai anche solo un contributo prima del 1996, questa strada, così com'è, non è per te. Tienilo a mente!
+```
+
+**BLOCCO 20**
+```
+Condizione numero due: servono almeno 20 anni di contributi effettivi, cioè versati davvero. Dal 2027, 20 anni e 1 mese. Dal 2028, 20 anni e 3 mesi. E l'età? 64 anni oggi, 64 anni e 1 mese dal 2027, e 64 anni e 3 mesi dal 2028.
+```
+
+**BLOCCO 21**
+```
+E poi arriva la condizione numero tre, la più difficile da rispettare: l'importo! La tua prima rata di pensione deve essere almeno 3 volte l'assegno sociale. Nel 2026 l'assegno sociale è di 546 euro e 24 centesimi. Quindi servono almeno 1.638 euro e 72 al mese!
+```
+
+**BLOCCO 22**
+```
+Per le donne con un figlio la soglia scende a 2,8 volte: circa 1.529 euro. Con due o più figli, a 2,6 volte: circa 1.420 euro. Facciamo un conto concreto. Per avere 1.638 euro al mese, in 13 mensilità, servono circa 21.300 euro di pensione all'anno.
+```
+
+**BLOCCO 23**
+```
+Con il coefficiente di trasformazione di oggi, a 64 anni, che è il 5,088 per cento, ti serve un montante contributivo di circa 419 mila euro! Il montante è la somma di tutti i contributi che hai versato, rivalutati negli anni. E 419 mila euro... non sono pochi!
+```
+
+**BLOCCO 24**
+```
+Ed è per questo che, per tantissimi lavoratori, la pensione a 64 anni resta... sulla carta. Esiste, ma non tutti ci arrivano.
+```
+
+**BLOCCO 25**
+```
+C'è anche una novità che non tutti conoscono. Era previsto che si potessero contare anche le rendite dei fondi pensione per raggiungere quella soglia. Con la legge di bilancio 2026 questa possibilità è stata cancellata!
+```
+
+**BLOCCO 26**
+```
+Quindi oggi la soglia si raggiunge solo con l'assegno dell'Inps. E c'è anche un tetto: fino all'età della pensione di vecchiaia, l'assegno non può superare 5 volte il trattamento minimo.
+```
+
+**BLOCCO 27**
+```
+Ecco il trucco che ti dicevo: la pensione a 64 anni c'è, ma è per una platea ristretta. Chi ha cominciato dopo il 1996, con una carriera lunga e stipendi medio-alti.
+```
+
+
+## VERDE: LE ALTRE PORTE CHE ESISTONO
+
+**BLOCCO 28**
+```
+Ma non finisce qui! Ci sono altre strade verdi, e molte persone non sanno nemmeno di averle. Prima strada: l'APE sociale. È un anticipo della pensione, dai 63 anni e 5 mesi, con almeno 30 anni di contributi.
+```
+
+**BLOCCO 29**
+```
+Ma solo per chi si trova in una di queste situazioni: disoccupati che hanno finito la disoccupazione, persone che assistono un familiare con disabilità grave, persone con invalidità civile di almeno il 74 per cento, oppure chi fa lavori gravosi.
+```
+
+**BLOCCO 30**
+```
+L'assegno arriva fino a 1.500 euro al mese, per 12 mesi l'anno, fino alla pensione di vecchiaia.
+```
+
+**BLOCCO 31**
+```
+Attenzione alle date! L'APE sociale è prevista fino al 31 dicembre 2026. Le domande si possono presentare entro il 30 novembre, ma dopo il 15 luglio vengono accolte solo se restano fondi. E dal 2027... dipende dalla manovra!
+```
+
+**BLOCCO 32**
+```
+Seconda strada: la Quota 41 per i precoci. Servono 41 anni di contributi, ma almeno 12 mesi versati prima dei 19 anni, e una condizione di tutela: disoccupato, caregiver, invalido, oppure lavoro gravoso.
+```
+
+**BLOCCO 33**
+```
+Dal 2027, per molti di loro, i contributi richiesti diventano 41 anni e 1 mese. Terza strada: i lavori usuranti. Chi li fa può uscire anche a 61 anni e 7 mesi, con 35 anni di contributi e una quota minima. E per queste categorie, l'aumento del 2027 non vale!
+```
+
+**BLOCCO 34**
+```
+Anche per i lavori gravosi ci sono regole di favore: per la pensione anticipata, 42 anni e 10 mesi per gli uomini e 41 anni e 10 mesi per le donne, senza il mese in più.
+```
+
+**BLOCCO 35**
+```
+E adesso, un attimo di rosso! Quota 103 e Opzione donna non sono state prorogate. Sono chiuse per chi non aveva già maturato i requisiti, entro il 31 dicembre 2025 per la Quota 103 e il 31 dicembre 2024 per l'Opzione donna.
+```
+
+**BLOCCO 36**
+```
+Chi i requisiti li aveva già maturati, però, il diritto non lo perde. Quindi se qualcuno ti dice "vai con Quota 103"... controlla bene la data in cui li hai maturati!
+```
+
+
+## TRE PERSONE, TRE SITUAZIONI (ESEMPI)
+
+**BLOCCO 37**
+```
+Facciamo tre esempi, così capisci come funziona. Sono persone inventate, ma i numeri sono quelli veri! Marco ha iniziato a lavorare a gennaio del 1985, senza buchi. A dicembre 2027 avrà 42 anni e 11 mesi di contributi: il requisito per la pensione anticipata!
+```
+
+**BLOCCO 38**
+```
+Ma la pensione non parte a dicembre. Parte tre mesi dopo, a marzo 2028. Se si dimette prima, resta tre mesi senza stipendio e senza pensione!
+```
+
+**BLOCCO 39**
+```
+Giulia ha 64 anni e ha iniziato a lavorare nel 1997, dopo aver cresciuto due figli. Ha oltre 20 anni di contributi, quindi la strada dei 64 anni è possibile.
+```
+
+**BLOCCO 40**
+```
+Con due figli, la sua soglia è 2,6 volte l'assegno sociale: circa 1.420 euro. Se la sua pensione stimata è di 1.500 euro, può uscire. Se è di 1.300... deve aspettare! Luca ha 61 anni, ha iniziato nel 1988, e ha letto "pensione a 64 anni" su un titolo. Ma lui ha contributi prima del 1996!
+```
+
+**BLOCCO 41**
+```
+Per lui oggi quella strada non esiste. Esiste solo come proposta... e con un ricalcolo che potrebbe ridurgli l'assegno. Ma di questo parliamo adesso!
+```
+
+
+## GIALLO: LE PROPOSTE DELLA MANOVRA
+
+**BLOCCO 42**
+```
+Adesso passiamo al semaforo giallo. Quello delle proposte. Qui attenzione: NIENTE di quello che sto per dirti è legge!
+```
+
+**BLOCCO 43**
+```
+Proposta numero uno: lo stop all'aumento dell'età del 2027. La Lega vuole bloccare l'adeguamento alla speranza di vita. Ma al momento è solo una richiesta: dipende dai costi e da cosa decide il Ministero dell'Economia.
+```
+
+**BLOCCO 44**
+```
+Proposta numero due: l'uscita a 64 anni anche per chi ha contributi prima del 1996! Sembra una bella notizia, vero?
+```
+
+**BLOCCO 45**
+```
+Ma c'è il rovescio della medaglia. Secondo le proposte in discussione, l'assegno verrebbe ricalcolato interamente con il metodo contributivo. E questo, in genere, vuol dire una pensione più bassa.
+```
+
+**BLOCCO 46**
+```
+Quanto più bassa? Secondo l'osservatorio previdenza della Cgil: con uno stipendio di 35 mila euro all'anno, si perderebbero circa 182 euro al mese, cioè il 10,6 per cento. Con 50 mila euro, circa 261 euro al mese. Con 70 mila, oltre 365 euro al mese!
+```
+
+**BLOCCO 47**
+```
+Capisci? Uscire a 64 anni sembra un regalo... ma potrebbe costarti centinaia di euro ogni mese, per tutta la vita! Attenzione: sono stime di un sindacato, su una proposta ancora non definita. Mancano perfino la soglia minima e gli anni di contributi richiesti.
+```
+
+**BLOCCO 48**
+```
+Proposta numero tre: la Quota 41 per tutti. Pensione con 41 anni di contributi, a qualsiasi età. Ma oggi non c'è ancora un progetto tecnico, né i soldi per finanziarla.
+```
+
+**BLOCCO 49**
+```
+E poi c'è la pensione minima: nel 2026 è di 611 euro e 85 al mese. Si parla di portarla verso 700 o 800 euro, ma non c'è ancora nulla di deciso.
+```
+
+**BLOCCO 50**
+```
+Quando si decide? Di solito la legge di bilancio viene presentata al Parlamento entro il 20 ottobre e approvata entro la fine di dicembre. Quindi la risposta definitiva arriva tra poche settimane.
+```
+
+**BLOCCO 51**
+```
+E qui nasce l'errore più pericoloso: prendere decisioni importanti basandosi su una proposta. Ma ci arrivo tra un attimo.
+```
+
+
+## LA SOLUZIONE: IL CONTROLLO DA CINQUE MINUTI
+
+**BLOCCO 52**
+```
+Adesso la parte più utile del video: cosa puoi fare TU, oggi, senza aspettare la manovra! Passo numero uno: entra nel tuo Mai Inps. Ti serve lo Spid, la Cie o la Cns. Se non ce li hai, puoi chiedere aiuto a un patronato!
+```
+
+**BLOCCO 53**
+```
+Cerca il "Fascicolo previdenziale" e apri l'"Estratto conto contributivo". Qui trovi tutti i contributi che risultano versati a tuo nome, anno per anno. Guardali uno per uno, con calma!
+```
+
+**BLOCCO 54**
+```
+Cerchi tre cose: gli anni che mancano, i periodi in cui i contributi non risultano, e la data del tuo primo contributo. Perché è quella che decide in quale sistema sei: retributivo, misto o contributivo!
+```
+
+**BLOCCO 55**
+```
+Se trovi un buco, per esempio un periodo di lavoro che non risulta, c'è una funzione per segnalare l'anomalia direttamente dal tuo Mai Inps. Fallo subito: più aspetti, più è difficile recuperare i documenti!
+```
+
+**BLOCCO 56**
+```
+Passo numero due: prova "Pensami", il simulatore dell'Inps. Inserisci i tuoi dati e ti mostra gli scenari possibili: quando potresti andare in pensione e, più o meno, con quale importo. Ricorda: è una simulazione, non una promessa. Ma ti dà una base concreta, molto meglio di un titolo di giornale!
+```
+
+**BLOCCO 57**
+```
+Passo numero tre: scrivi su un foglio tre date. Quando maturi i contributi per l'anticipata, quando compi l'età della vecchiaia, e quando scade la finestra di tre mesi.
+```
+
+**BLOCCO 58**
+```
+Passo numero quattro: porta tutto a un patronato. Di solito il servizio è gratuito, e loro verificano la tua posizione e ti dicono quale strada è davvero la più conveniente per te.
+```
+
+**BLOCCO 59**
+```
+Passo numero cinque: non decidere nulla di irreversibile prima che la manovra sia approvata. Niente dimissioni, niente scelte affrettate. Aspetta il testo definitivo!
+```
+
+
+## I TRE ERRORI CHE COSTANO DI PIÙ
+
+**BLOCCO 60**
+```
+Ed ecco i tre errori che si vedono più spesso. Segnali bene! Errore numero tre: dimettersi prima che la pensione sia davvero in pagamento. Ricordi la finestra di tre mesi? Se ti dimetti troppo presto, rischi di restare tre mesi senza stipendio e senza pensione!
+```
+
+**BLOCCO 61**
+```
+Errore numero due: fidarsi di un titolo. "Pensione a 64 anni per tutti" non esiste! Esiste una regola precisa, con soglie precise. Controlla sempre chi la propone, e se è già stata approvata. E adesso, l'errore numero uno! Quello che ti avevo promesso all'inizio.
+```
+
+**BLOCCO 62**
+```
+L'errore numero uno è... controllare i contributi troppo tardi! Aspettare l'ultimo anno, quando mancano pochi mesi, e scoprire solo allora che un periodo di lavoro non risulta versato.
+```
+
+**BLOCCO 63**
+```
+Recuperare un contributo mancante, con buste paga o certificazioni di anni fa, può richiedere mesi. E ogni mese di ritardo... è un mese in più di lavoro! Per questo il controllo da cinque minuti su Mai Inps, quello che ti ho spiegato prima, vale più di mille titoli di giornale.
+```
+
+
+## RIEPILOGO E CHIUSURA
+
+**BLOCCO 64**
+```
+Facciamo un riepilogo veloce, così non ti perdi niente! Semaforo verde: dal 2027, vecchiaia a 67 anni e 1 mese. Anticipata a 42 anni e 11 mesi per gli uomini, e 41 anni e 11 mesi per le donne.
+```
+
+**BLOCCO 65**
+```
+Verde anche la pensione a 64 anni, ma solo per i contributivi puri: almeno 20 anni di contributi effettivi e un assegno di almeno 3 volte l'assegno sociale.
+```
+
+**BLOCCO 66**
+```
+Giallo: stop all'aumento, uscita a 64 anni con ricalcolo contributivo, Quota 41, minime più alte. Sono solo proposte, e la risposta arriva con la manovra! Rosso: Quota 103 e Opzione donna non sono più aperte per chi non aveva già i requisiti.
+```
+
+**BLOCCO 67**
+```
+E adesso una domanda per te: in che anno pensi di andare in pensione? Scrivilo nei commenti! Leggo tutto, e le vostre domande diventano i prossimi video!
+```
+
+**BLOCCO 68**
+```
+Se questo video ti è stato utile, iscriviti a Conti in Pensione e attiva la campanella: quando la manovra sarà approvata, ti spiego subito cosa cambia davvero, con fonti ufficiali!
+```
+
+**BLOCCO 69**
+```
+Le informazioni di questo video sono a scopo divulgativo e non sostituiscono la consulenza di un patronato o dell'Inps. Verifica sempre sui canali ufficiali, come inps.it. Grazie per aver guardato fino alla fine... e alla prossima!
+```
