@@ -53,7 +53,7 @@ Subscribe to The Money Backstory for more clear explanations of retirement for A
 #SocialSecurity #Retirement #SocialSecurityBenefits
 
 ## Tag
-social security benefits explained, how is social security calculated, how social security is calculated, social security 35 year rule, social security formula, social security bend points, social security bend points 2026, when to claim social security, social security at 62 vs 70, social security earnings limit 2026, social security spousal benefits, social security survivor benefits, will social security run out, social security trust fund, social security cola 2026, social security 2026, retirement over 50
+social security benefits explained, how is social security calculated, how social security is calculated, social security 35 year rule, social security formula, social security bend points, social security bend points 2026, when to claim social security, social security at 62 vs 70, social security earnings limit 2026, social security spousal benefits, social security survivor benefits, will social security run out, social security trust fund, social security cola 2026, retirement over 50
 
 ## Commento da fissare
 Which of the 5 things surprised you most? For most people it's the 35-year rule, because missing years count as zeros. Tell me below. This video is education only, not advice. Check your own numbers at ssa.gov.
