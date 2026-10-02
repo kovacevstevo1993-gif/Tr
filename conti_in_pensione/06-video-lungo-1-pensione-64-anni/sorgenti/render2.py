@@ -1,7 +1,7 @@
 import sys,subprocess,asyncio,os
 from playwright.async_api import async_playwright
 H=os.path.dirname(os.path.abspath(__file__))
-D={2:17.47,3:18.67,4:19.43,5:10.17}
+D={2:17.47,3:18.67,4:19.43,5:10.17,6:10.13,7:15.5,8:20.23,9:16.27,10:9.97,11:13.9,12:16.1333,13:18.4667,14:7.7667,15:8.7667}
 async def main(b,mode):
     frames=round(D[b]*30)
     async with async_playwright() as p:
