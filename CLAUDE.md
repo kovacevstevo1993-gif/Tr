@@ -23,3 +23,7 @@ Due canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 ## Stile slide (feedback utente 01/10/2026, dopo il primo video lungo di Senior Advantage)
 - Il primo video va bene ma è "sciatto e basico". Dai prossimi video: slide più movimentate, più dettagliate, più oggetti disegnati in ogni didascalia (più guardabili, anche se il pubblico è anziano).
 - Durate dei blocchi: partire SEMPRE dalla fine del blocco precedente letta nello screenshot dell'utente, mai dalla somma dei miei clip.
+
+## Miniature: i due canali devono sembrare diversi (feedback 02/10/2026)
+- Senior Advantage = giallo a raggi, verde bosco/avorio, ricevute, tag, personaggi disegnati. NON usare questi elementi per Money Backstory.
+- Money Backstory = blu notte + oro, rosso/verde, grafici (barre, griglie), numeri grandi. Layout diversi tra le due miniature di un test A/B.

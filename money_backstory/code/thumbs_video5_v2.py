@@ -21,31 +21,36 @@ def starburst(d, cx, cy, r1, r2, n, fill, outline=BLK, ow=9, rot=0):
 
 
 def A():
-    """A: assegno inclinato su sfondo giallo a raggi, '-$274' in stella rossa. Niente banner, niente banda."""
+    """A: confronto a barre su blu notte (identita' Money Backstory: navy, oro, rosso/verde). Nessun giallo a raggi."""
     im = Image.new("RGB", (W, H)); px = im.load()
     for y in range(H):
         for x in range(W):
-            ang = math.atan2(y - 360, x - 800); ray = (math.sin(ang * 14) > 0)
-            g = max(0.0, 1 - (((x - 800) / 800) ** 2 + ((y - 360) / 500) ** 2))
-            base = (255, 226, 70) if ray else (255, 204, 30)
-            px[x, y] = tuple(int(c * (0.78 + 0.22 * g)) for c in base)
+            g = max(0.0, 1 - (((x - 900) / 700) ** 2 + ((y - 380) / 480) ** 2))
+            px[x, y] = (int(8 + 18 * g), int(20 + 38 * g), int(44 + 62 * g))
     d = ImageDraw.Draw(im)
-    # assegno su layer ruotato
-    L = Image.new("RGBA", (640, 420), (0, 0, 0, 0)); ld = ImageDraw.Draw(L)
-    ld.rounded_rectangle([6, 6, 634, 414], radius=26, fill=(247, 249, 252), outline=BLK, width=8)
-    ld.rounded_rectangle([6, 6, 634, 100], radius=26, fill=(60, 110, 200), outline=BLK, width=8)
-    ld.rectangle([10, 70, 630, 100], fill=(60, 110, 200))
-    ld.text((320, 54), "SOCIAL SECURITY", font=P(46, True), fill=WHITE, anchor="mm")
-    ld.text((320, 180), "$2,665", font=P(110, True), fill=(120, 120, 130), anchor="mm")
-    ld.line([120, 205, 520, 150], fill=RED, width=14)
-    ld.text((320, 320), "$2,391", font=P(150, True), fill=(20, 20, 20), anchor="mm")
-    L = L.rotate(-6, expand=True, resample=Image.BICUBIC)
-    im.paste(L, (590, 120), L)
-    d = ImageDraw.Draw(im)
-    starburst(d, 280, 330, 285, 210, 14, RED, rot=0.1)
-    d.text((280, 300), "-$274", font=P(150, True), fill=WHITE, anchor="mm", stroke_width=11, stroke_fill=BLK)
-    d.text((280, 425), "EVERY MONTH", font=P(58, True), fill=WHITE, anchor="mm", stroke_width=8, stroke_fill=BLK)
-    d.rounded_rectangle([0, 0, W - 1, H - 1], radius=10, outline=BLK, width=10)
+    for yy in range(80, 640, 70):  # griglia sottile del grafico
+        d.line([640, yy, 1240, yy], fill=(40, 70, 110), width=2)
+    # testo a sinistra
+    for txt, y, size, col in [("SAME", 140, 150, WHITE), ("WAGES", 280, 150, WHITE), ("DIFFERENT", 410, 82, GOLD), ("CHECK?", 520, 130, (255, 80, 80))]:
+        d.text((330, y), txt, font=P(size, True), fill=col, anchor="mm", stroke_width=9, stroke_fill=BLK)
+    # barre (scala reale: 2.391 / 2.665)
+    base = 650; hm = 440; hf = int(hm * 2391 / 2665)
+    d.rounded_rectangle([690, base - hm, 890, base], radius=14, fill=(40, 180, 90), outline=BLK, width=8)
+    d.rounded_rectangle([960, base - hf, 1160, base], radius=14, fill=(224, 50, 50), outline=BLK, width=8)
+    # pezzo mancante tratteggiato sopra Frank (scala reale) + callout rosso
+    ytop = base - hm
+    for x in range(960, 1160, 28):
+        d.line([x, ytop, x + 16, ytop], fill=(255, 140, 140), width=6)
+    for y in range(ytop, base - hf, 12):
+        d.line([960, y, 960, y + 6], fill=(255, 140, 140), width=6); d.line([1160, y, 1160, y + 6], fill=(255, 140, 140), width=6)
+    d.rounded_rectangle([930, 80, 1190, 175], radius=26, fill=(224, 50, 50), outline=WHITE, width=6)
+    d.text((1060, 128), "-$274", font=P(76, True), fill=WHITE, anchor="mm", stroke_width=3, stroke_fill=BLK)
+    d.polygon([(1030, 176), (1090, 176), (1060, ytop - 4)], fill=(224, 50, 50), outline=WHITE)
+    d.text((790, base - hm + 62), "$2,665", font=P(56, True), fill=WHITE, anchor="mm", stroke_width=6, stroke_fill=BLK)
+    d.text((1060, base - hf + 62), "$2,391", font=P(56, True), fill=WHITE, anchor="mm", stroke_width=6, stroke_fill=BLK)
+    d.text((790, 688), "MARY", font=P(54, True), fill=(120, 255, 150), anchor="mm", stroke_width=7, stroke_fill=BLK)
+    d.text((1060, 688), "FRANK", font=P(54, True), fill=(255, 130, 130), anchor="mm", stroke_width=7, stroke_fill=BLK)
+    d.text((1060, 40), "EVERY MONTH", font=P(36, True), fill=(200, 215, 235), anchor="mm", stroke_width=5, stroke_fill=BLK)
     return im
 
 
@@ -80,5 +85,5 @@ def B():
 
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
-    for n, f in {"video5-A2-assegno-giallo": A, "video5-B2-griglia-35-anni": B}.items():
+    for n, f in {"video5-A3-barre-stesso-stipendio": A, "video5-B2-griglia-35-anni": B}.items():
         f().save(f"{OUT}/{n}.png"); print("ok", n)
