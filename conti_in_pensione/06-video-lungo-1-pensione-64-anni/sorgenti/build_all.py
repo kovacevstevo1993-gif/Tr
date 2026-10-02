@@ -1,4 +1,4 @@
-a=open('blocks.js',encoding='utf-8').read();b=open('blocks_b.js',encoding='utf-8').read();c=open('blocks_c.js',encoding='utf-8').read()+'\n'+open('blocks_d.js',encoding='utf-8').read()+'\n'+open('blocks_e.js',encoding='utf-8').read()
+a=open('blocks.js',encoding='utf-8').read();b=open('blocks_b.js',encoding='utf-8').read();c=open('blocks_c.js',encoding='utf-8').read()+'\n'+open('blocks_d.js',encoding='utf-8').read()+'\n'+open('blocks_e.js',encoding='utf-8').read()+'\n'+open('blocks_f.js',encoding='utf-8').read()+'\n'+open('blocks_g.js',encoding='utf-8').read()
 marker='// =================== regia ==================='
 a=a.replace(marker,b+'\n'+c+'\n'+marker)
 open('blocks_all.js','w',encoding='utf-8').write(a)
