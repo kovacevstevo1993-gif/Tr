@@ -57,4 +57,4 @@ Which of the 5 reasons surprised you most? For most people it's reason #3: a Rot
 
 ## Playlist / schermata finale
 Playlist "Retirement After 50". Schermata finale (ultima slide, riquadro tratteggiato) → video 3 (59½). Contenuto sintetico: No. Promozione: No. Togliere i sottotitoli CapCut prima di esportare.
-Miniatura: DA FARE.
+Miniatura: money_backstory/miniature_video4/video4-A-1-dollaro-974.png (principale) e video4-B-61-trappola.png (alternativa).
