@@ -19,3 +19,7 @@ FONTI VERIFICATE (02/10/2026)
 - Esclusi dall'adeguamento: lavoratori art. 67 D.Lgs. 67/2011 (usuranti) per tutto il biennio.
 - Confermato da più fonti indipendenti (Manageritalia, MySolution, Ipsoa, EC News, PMI.it).
 NON dire nel video: rivalutazione 2027 (non è ancora ufficiale: la percentuale arriva con decreto MEF a novembre).
+
+DURATE CLIP (lette dalle tue schermate CapCut, 30 fps)
+1: 4,63 s - 2: 9,93 s - 3: 5,40 s - 4: 8,20 s - 5: 3,60 s - 6: 6,17 s - 7: 6,40 s - 8: 4,77 s   (totale 49,10 s)
+Clip pronte in clip/blocco1.mp4 ... blocco8.mp4 (1080x1920, 30 fps). Sorgenti in sorgenti/ (build.py + render.py).
