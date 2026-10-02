@@ -83,3 +83,5 @@ credit/debiti scartati (credit repair 108K, get out of debt 67K); pensione: reti
 
 
 NOTA: la cartella 10 (93 MP4 del video 5) non è in questo zip per il limite di peso: gli MP4 sono già stati inviati uno per uno in chat.
+
+NOTA 02/10 (riordino): la cartella 10 contiene 97 MP4 (blocchi 1-31). Quelli del blocco 3 (v5-b3-01..04, 188+199+236+249 = 872 frame) mancavano nei file ricevuti e sono stati rigenerati dal codice in 04-codice/v5b2_5.py. Le versioni vecchie del kit (28/09) sono in 01-documenti-precedenti/versioni-28-09 e 11-archivio-zip-kit-vecchi. La cartella 09 contiene solo gli screenshot della timeline.
