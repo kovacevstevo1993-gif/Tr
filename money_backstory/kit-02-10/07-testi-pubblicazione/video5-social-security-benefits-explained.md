@@ -61,4 +61,4 @@ Which of the 5 things surprised you most? For most people it's the 35-year rule,
 ## Programmazione e impostazioni
 Playlist "Retirement After 50". Schermata finale (ultima slide, riquadro tratteggiato) → video 1. Contenuto sintetico: No. Promozione: No. Sottotitoli CapCut tolti prima di esportare.
 Orario consigliato: 16:00 ora italiana (= 10:00 ora della costa Est USA, come il video 2). Orari non verificabili con i dati del canale: se vidIQ/Studio mostra l'orario in cui il pubblico e' online, usa quello.
-Miniature test A/B: money_backstory/miniature_video5/video5-A-5-zeri.png (A) e video5-B-frank-vs-mary.png (B). Numeri veri dal video: Frank $2.391,50 vs Mary $2.665,80 = -$274 al mese, -$3.292 all anno.
+Miniature test A/B: money_backstory/miniature_video5/video5-A2-assegno-giallo.png (A: assegno e -$274 al mese) e video5-B2-griglia-35-anni.png (B: griglia dei 35 anni con 5 zeri). Numeri veri dal video: Frank $2.391,50 vs Mary $2.665,80 = -$274 al mese, -$3.292 all anno.
