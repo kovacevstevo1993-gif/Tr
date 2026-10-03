@@ -671,7 +671,8 @@ def frame(i):
             img = Image.composite(nxt, prv, m)
             d0 = ImageDraw.Draw(img, "RGBA")
             for q in range(3):
-                rr = r - q * 10; d0.ellipse([mx - rr, my - rr, mx + rr, my + rr], outline=(255, 238, 150, int(230 - q * 70)), width=14 - q * 4)
+                rr = r - q * 10
+                if rr > 2: d0.ellipse([mx - rr, my - rr, mx + rr, my + rr], outline=(255, 238, 150, int(230 - q * 70)), width=14 - q * 4)
             for q in range(18):
                 a = q * 2.4 + t * 3; star4(d0, mx + math.cos(a) * r, my + math.sin(a) * r, 18 + 8 * (q % 3), (255, 245, 190, 255))
     img = Image.blend(img, ImageChops.multiply(img, Image.new("RGB", (W, H), (255, 246, 232))), 0.4)
