@@ -19,7 +19,7 @@ Leggere: CLAUDE.md, poi questo file. README.md e MEMORIA-CANALE.md non sono aggi
 - Se chiedo il pacchetto: solo titolo, descrizione, tag, commento fissato gia completi da incollare (Subscribe e disclaimer compresi, niente segnaposto).
 - Disclaimer solo nei video lunghi: slide finale in chiaro con la frase a voce nell'ultimo blocco, piu descrizione e commento fissato. Negli short solo nella descrizione.
 - Fatti solo da fonti ufficiali. Niente promesse di guadagno. Contenuto originale.
-- Testo per la voce CapCut: niente trattini (legge "dash"), niente cifre ne simboli, telefoni a parole con virgole, "snap" minuscolo.
+- Testo per la voce CapCut: niente trattini (legge "dash"), niente cifre ne simboli, telefoni a parole con virgole, "snap" minuscolo (parola). Sigle a lettere separate: "C S F P", "U S D A", "L I H E A P". Vale per tutti i video e short.
 - Poppins non ha i simboli check, freccia, stella. Non usare pkill -f. git checkout sui .pyc modificati prima di committare.
 - Slide e grafica le fai tu col codice. Devono essere movimentate, dettagliate, con tanti oggetti disegnati.
 - CONTROLLA le slide (fotogrammi in vari momenti) PRIMA di mandarle e correggi subito i difetti.
