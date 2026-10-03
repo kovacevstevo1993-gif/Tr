@@ -1,0 +1,6 @@
+__pycache__/
+parco/test_*.png
+parco/sheet.png
+parco/render.log
+parco/video_muto.mp4
+parco/audio/*_raw.mp3
