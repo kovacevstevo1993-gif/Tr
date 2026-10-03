@@ -6,7 +6,7 @@ from multiprocessing import Pool
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageChops
 from render import lerp, ease
 
-W, H, FPS, DUR = 1080, 1920, 24, 52.0
+W, H, FPS, DUR = 1080, 1920, 24, 52.4
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 FLY = 0.55
@@ -31,7 +31,7 @@ _V = [("N1", 0.4, "narr", "In un bellissimo parco, il piccolo topolino scopre un
       ("N7", 40.2, "narr", "Ed ecco il parco... pulito e bellissimo!"),
       ("C3", 43.5, "chip", "Evviva!"),
       ("S3", 44.4, "spike", "Evviva!"),
-      ("M6", 45.5, "mouse", "Grazie, amici! Ciao ciao, bambini!")]
+      ("M6", 45.5, "mouse", "Grazie, amici! Bambini Ciao Ciao! Iscrivetevi al canale!")]
 VOICES = [(k, t, w, x, _D[k]) for k, t, w, x in _V]
 
 # ---------------------------------------------------------------- layout
@@ -209,7 +209,8 @@ def sprite_name(name, t):
     b = 1 if blinking(name, t) else 0
     ml = mouth_level(name, t)
     if name == "mouse":
-        if t >= CHEER_T: return "assets/v/mouse_braccia_su.png"
+        if t >= CHEER_T and (t < 45.4 or t >= 49.0): return "assets/v/mouse_braccia_su.png"
+        if t >= CHEER_T: pass
         if 5.0 < t < 9.4: return "assets/v/mouse_triste.png"
         if 14.0 < t < 17.0: return "assets/v/mouse_braccia_su.png"
         return f"assets/v/mouse_{'parla' if ml >= 1 else 'neutro'}_b{b}.png"
@@ -225,6 +226,22 @@ def draw_flower(d, x, y, s, col):
         a = i*2*math.pi/5; cx, cy = x+math.cos(a)*14*s, y+math.sin(a)*14*s
         d.ellipse([cx-11*s, cy-11*s, cx+11*s, cy+11*s], fill=col)
     d.ellipse([x-8*s, y-8*s, x+8*s, y+8*s], fill=(255, 200, 40))
+
+def subscribe_button(img, t, t0, cy=1480):
+    """Pulsante 'Iscriviti' dentro la scena (non una slide): compare con rimbalzo, la campanella dondola."""
+    if t < t0: return
+    u = (1 + 2.7*((min(1, max(0, (t-t0)/0.45))-1)**3 + 0*1) + 1.7*(min(1, max(0, (t-t0)/0.45))-1)**2); s = max(0.05, u)*(1+0.03*math.sin((t-t0)*6))
+    w, h = 520, 130; Sx = 2; cv = Image.new("RGBA", (w*Sx, h*Sx+20), (0, 0, 0, 0)); d = ImageDraw.Draw(cv)
+    d.rounded_rectangle([6*Sx, 10*Sx, (w-6)*Sx, (h-6)*Sx], radius=34*Sx, fill=(0, 0, 0, 70))
+    d.rounded_rectangle([0, 0, (w-12)*Sx, (h-16)*Sx], radius=34*Sx, fill=(232, 36, 36, 255), outline=(255, 255, 255, 255), width=4*Sx)
+    f = ImageFont.truetype(FONT, 54*Sx); d.text((((w-12)/2+34)*Sx, (h-16)/2*Sx), "ISCRIVITI", font=f, fill=(255, 255, 255, 255), anchor="mm")
+    bell = Image.new("RGBA", (90*Sx, 90*Sx), (0, 0, 0, 0)); bd = ImageDraw.Draw(bell)
+    bd.pieslice([20*Sx, 12*Sx, 70*Sx, 62*Sx], 180, 360, fill=(255, 255, 255, 255)); bd.polygon([(20*Sx, 38*Sx), (70*Sx, 38*Sx), (78*Sx, 62*Sx), (12*Sx, 62*Sx)], fill=(255, 255, 255, 255))
+    bd.ellipse([36*Sx, 62*Sx, 54*Sx, 78*Sx], fill=(255, 255, 255, 255)); bd.ellipse([40*Sx, 4*Sx, 50*Sx, 14*Sx], fill=(255, 255, 255, 255))
+    bell = bell.rotate(math.sin((t-t0)*14)*16*max(0, 1-(t-t0)/1.8), resample=Image.BICUBIC, center=(45*Sx, 14*Sx))
+    cv.paste(bell, (24*Sx, int(((h-16)/2-45)*Sx)), bell)
+    cv = cv.resize((int(w*s), int((h+10)*s)), Image.LANCZOS); img.paste(cv, (int(W/2-cv.width/2), int(cy-cv.height/2)), cv)
+
 
 def text(d, s, x, y, size, fill, out, ow):
     f = ImageFont.truetype(FONT, size); d.text((x, y), s, font=f, fill=fill, anchor="mm", stroke_width=ow, stroke_fill=out)
@@ -312,17 +329,7 @@ def frame(i):
             for ln in lines: text(d, ln, W/2, yy, 66, SPK_COL[who]+(int(255*u),), (60, 40, 20, int(255*u)), 7); yy += 82
             break
     if t < 3.2: text(d, "PULIAMO IL PARCO!", W/2, 95, 70, (255, 255, 255, int(255*min(1, (3.2-t)/0.6))), (230, 90, 60), 10)
-    if t > 49.6:
-        u = ease((t-49.6)/0.6)
-        img = Image.blend(img, Image.new("RGB", (W, H), (255, 245, 210)), 0.92*u); d = ImageDraw.Draw(img, "RGBA")
-        by = 520+(1-u)*60
-        text(d, "Ricicla anche tu!", W/2, by, 86, (60, 160, 70), (255, 255, 255), 8)
-        for j, col in enumerate(((245, 200, 40), (60, 120, 220), (140, 90, 55))):
-            d.ellipse([240+j*300-70, by+150-70, 240+j*300+70, by+150+70], fill=col, outline=(255, 255, 255), width=6)
-        text(d, "Plastica  ·  Carta  ·  Umido", W/2, by+300, 52, (90, 70, 50), None, 0)
-        text(d, "Bambini Ciao Ciao", W/2, by+450, 92, (230, 90, 60), (255, 255, 255), 8)
-        text(d, "Un nuovo video ogni settimana!", W/2, by+550, 46, (110, 90, 70), None, 0)
-        put(img, load("assets/v/mouse_braccia_su.png"), W/2, 1820-abs(math.sin(t*5))*30, 520)
+    subscribe_button(img, t, 48.9, cy=1450)
     return img.tobytes()
 
 if __name__ == "__main__":

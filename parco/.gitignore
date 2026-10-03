@@ -24,3 +24,15 @@ parco/render4.log
 parco/audio3/*_raw.mp3
 parco/audio3/*_a.wav
 parco/audio3/*_b.wav
+parco/test_scene*.png
+parco/sheet*.png
+parco/sp_*.png
+parco/video_muto*.mp4
+parco/render*.log
+parco/audioA/*_raw.mp3
+parco/audioA/*_a.wav
+parco/audioA/*_b.wav
+parco/audioB/*_raw.mp3
+parco/audioB/*_a.wav
+parco/audioB/*_b.wav
+parco/ref/
