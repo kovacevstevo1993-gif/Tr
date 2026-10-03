@@ -10,9 +10,9 @@ from PIL import Image, ImageFilter
 HERE = os.path.dirname(os.path.abspath(__file__))
 CW, CH = 760, 1180
 AX, AY = 380, 1120
-K = 6
-TARGET_H = {"mouse": 640, "chip": 600, "spike": 560}   # altezza (px) del personaggio in posa 'tiene' alla scala 1
-CACHE = "/tmp/claude-0/morph_cache"
+K = 8
+TARGET_H = {"mouse": 640, "chip": 600, "spike": 560, "ele": 660}   # altezza (px) del personaggio in posa 'tiene' alla scala 1
+CACHE = "/tmp/claude-0/morph_cache8"
 os.makedirs(CACHE, exist_ok=True)
 _al = {}
 
