@@ -2,7 +2,7 @@
 
 Titolo: Quanto prenderai di PENSIONE? I 3 numeri che decidono tutto
 
-41 blocchi, 8069 caratteri (~9.6 min a 14 c/s). Un blocco = una voce CapCut = uno screenshot di fine blocco.
+57 blocchi, 11253 caratteri (~11.5 min a 16,3 c/s, la velocità reale del video 1). Un blocco = una voce CapCut = uno screenshot di fine blocco.
 
 
 ## HOOK
@@ -14,15 +14,20 @@ Due colleghi. Stesso stipendio, stessi contributi. Uno va in pensione a sessanta
 
 **BLOCCO 2**
 ```
-E non è tutto! Oggi scopri anche il numero che quasi nessuno guarda sul proprio estratto conto... e perché un solo anno senza contributi può pesare sulla tua pensione ogni mese, per tutta la vita!
+E non è tutto! Oggi scopri il numero che quasi nessuno guarda sul proprio estratto conto... e perché un solo anno senza contributi può pesare sulla tua pensione ogni mese, per tutta la vita!
 ```
 
 **BLOCCO 3**
 ```
-Attenzione: quello che vedrai è un esempio semplificato, con numeri tondi. Serve a capire come ragiona il calcolo, non a dirti la tua pensione. La tua la scopri con i dati ufficiali... e ti spiego come!
+Resta fino alla fine! Nell'ultima parte ti faccio un test di tre domande, vero o falso, e ti mostro un controllo da cinque minuti su Mai Inps. Ma prima, una cosa importante.
 ```
 
 **BLOCCO 4**
+```
+Quello che vedrai è un esempio semplificato, con numeri tondi. Serve a capire come ragiona il calcolo, non a dirti la tua pensione. La tua la scopri con i dati ufficiali... e ti spiego come!
+```
+
+**BLOCCO 5**
 ```
 Partiamo da un errore che fanno quasi tutti: pensare che la pensione sia una percentuale dell'ultimo stipendio. Per tanti non è così! Dipende dal sistema di calcolo... e ce ne sono tre.
 ```
@@ -30,75 +35,80 @@ Partiamo da un errore che fanno quasi tutti: pensare che la pensione sia una per
 
 ## I TRE SISTEMI
 
-**BLOCCO 5**
+**BLOCCO 6**
 ```
 Il primo si chiama retributivo: guarda le retribuzioni degli ultimi anni. Il secondo è il contributivo: conta tutto quello che hai versato, dal primo all'ultimo giorno. Il terzo è il misto: un po' dell'uno e un po' dell'altro.
 ```
 
-**BLOCCO 6**
+**BLOCCO 7**
 ```
 Quale vale per te? Dipende da una data: il trentuno dicembre millenovecentonovantacinque. Tre casi, tre porte. Scegli la tua!
 ```
 
-**BLOCCO 7**
+**BLOCCO 8**
 ```
 Porta numero uno: hai iniziato a versare contributi dal primo gennaio millenovecentonovantasei in poi. Per te vale solo il sistema contributivo, per tutta la carriera.
 ```
 
-**BLOCCO 8**
+**BLOCCO 9**
 ```
 Porta numero due: a fine millenovecentonovantacinque avevi meno di diciotto anni di contributi. Per te il misto: retributivo fino al millenovecentonovantacinque, contributivo da lì in poi.
 ```
 
-**BLOCCO 9**
+**BLOCCO 10**
 ```
 Porta numero tre: a quella data avevi almeno diciotto anni di contributi. Con la riforma Fornero, retributivo fino al duemilaundici, e contributivo dal primo gennaio duemiladodici.
 ```
 
-**BLOCCO 10**
+**BLOCCO 11**
 ```
-Hai visto? In tutte e tre le porte compare il contributivo! Capire come funziona serve a tutti... compreso te. E ora una domanda: su cento euro del tuo stipendio lordo, quanti vanno nel salvadanaio della pensione? Dieci? Venti? Trentatré?
+Hai scelto la tua porta? Se non sei sicuro, niente paura: più avanti ti mostro dove si scopre, in due minuti. Intanto una cosa è certa: in tutte e tre le porte compare il contributivo. Quindi capirlo serve a tutti!
 ```
 
 
 ## IL SALVADANAIO
 
-**BLOCCO 11**
-```
-La risposta, per un lavoratore dipendente, è trentatré! L'Inps usa un'aliquota del trentatré per cento: su ogni cento euro lordi, trentatré entrano nel tuo montante contributivo. Sì, proprio come un salvadanaio!
-```
-
 **BLOCCO 12**
 ```
-Facciamo un esempio. Bruno guadagna trentacinquemila euro lordi l'anno. Il trentatré per cento fa undicimilacinquecentocinquanta euro: ecco quanto entra nel suo salvadanaio ogni anno di lavoro!
+E ora una domanda! Su cento euro del tuo stipendio lordo, quanti vanno nel salvadanaio della pensione? Dieci? Venti? Trentatré? Pensaci un secondo... pronto?
 ```
 
 **BLOCCO 13**
 ```
-Se Bruno lavora quarant'anni con lo stesso stipendio, il salvadanaio arriva a quattrocentosessantaduemila euro. Per semplicità non conto la rivalutazione. Nella realtà il montante si rivaluta ogni anno, in base alla crescita media del Pil nominale degli ultimi cinque anni.
+La risposta, per un lavoratore dipendente, è trentatré! L'Inps usa un'aliquota del trentatré per cento: su ogni cento euro lordi, trentatré entrano nel tuo montante contributivo. Sì, proprio come un salvadanaio!
 ```
 
 **BLOCCO 14**
 ```
-Bene! Ma il salvadanaio non diventa pensione da solo. Serve un ultimo passaggio... ed è proprio il numero che quasi nessuno guarda! Si chiama coefficiente di trasformazione.
+Facciamo un esempio. Bruno guadagna trentacinquemila euro lordi l'anno. Il trentatré per cento fa undicimilacinquecentocinquanta euro: ecco quanto entra nel suo salvadanaio ogni anno di lavoro!
 ```
 
 **BLOCCO 15**
 ```
-Funziona così: moltiplichi il montante per il coefficiente, e ottieni la pensione di un anno. Il coefficiente cambia con l'età in cui vai in pensione, e il Ministero del Lavoro lo aggiorna ogni due anni.
+Se Bruno lavora quarant'anni con lo stesso stipendio, il salvadanaio arriva a quattrocentosessantaduemila euro. Per semplicità non conto la rivalutazione: nella realtà il montante si rivaluta ogni anno, seguendo il Pil nominale degli ultimi cinque anni.
 ```
 
 **BLOCCO 16**
 ```
-Per chi va in pensione nel duemilaventicinque e nel duemilaventisei, a sessantasette anni il coefficiente è cinque virgola seicentotto per cento. Quindi: quattrocentosessantaduemila euro per cinque virgola seicentotto per cento...
+Bene! Ma il salvadanaio non diventa pensione da solo. Serve un ultimo passaggio... ed è proprio il numero che quasi nessuno guarda! Si chiama coefficiente di trasformazione.
 ```
 
 **BLOCCO 17**
 ```
-...fa circa venticinquemilanovecentonove euro l'anno! Divisi per tredici mensilità: circa millenovecentonovantatré euro lordi al mese. Ecco la pensione di Bruno a sessantasette anni, nel nostro esempio!
+Funziona così: moltiplichi il montante per il coefficiente, e ottieni la pensione di un anno. Il coefficiente cambia con l'età in cui vai in pensione, e il Ministero del Lavoro lo aggiorna ogni due anni.
 ```
 
 **BLOCCO 18**
+```
+Per chi va in pensione nel duemilaventicinque e nel duemilaventisei, a sessantasette anni il coefficiente è cinque virgola seicentotto per cento. Quindi: quattrocentosessantaduemila euro per cinque virgola seicentotto per cento...
+```
+
+**BLOCCO 19**
+```
+...fa circa venticinquemilanovecentonove euro l'anno! Divisi per tredici mensilità: circa millenovecentonovantatré euro lordi al mese. Ecco la pensione di Bruno a sessantasette anni, nel nostro esempio!
+```
+
+**BLOCCO 20**
 ```
 Attenzione: sono euro lordi, cioè prima delle tasse. Sul conto arriva il netto, e dipende dall'Irpef e dalla tua situazione. Per questo la cifra che vedi sul cedolino è più bassa!
 ```
@@ -106,27 +116,42 @@ Attenzione: sono euro lordi, cioè prima delle tasse. Sul conto arriva il netto,
 
 ## NUMERO UNO: L'ETÀ
 
-**BLOCCO 19**
-```
-Ora il momento che aspettavi! Bruno, invece che a sessantasette, va in pensione a sessantaquattro anni, con lo stesso salvadanaio. Cambia solo il coefficiente: cinque virgola zero ottantotto per cento. Indovina di quanto scende la pensione?
-```
-
-**BLOCCO 20**
-```
-Quattrocentosessantaduemila euro per cinque virgola zero ottantotto per cento: circa ventitremilacinquecentosei euro l'anno. Cioè circa milleottocentotto euro lordi al mese.
-```
-
 **BLOCCO 21**
 ```
-Sono circa centottantacinque euro lordi in meno, ogni mese, per tutta la vita! Per uscire tre anni prima. In pratica, ogni anno di anticipo costa più di sessanta euro al mese.
+Ora il momento che aspettavi! Guarda come cambia il coefficiente con l'età. A sessantaquattro anni: cinque virgola zero ottantotto. A sessantacinque: cinque virgola duecentocinquanta. A sessantasei: cinque virgola quattrocentoventitré.
 ```
 
 **BLOCCO 22**
 ```
-Attenzione: nella realtà, chi esce prima ha anche meno anni di contributi. Quindi la differenza di solito è ancora più grande! Il nostro esempio tiene il salvadanaio uguale, per far vedere solo l'effetto dell'età.
+E a sessantasette: cinque virgola seicentotto! Hai visto? Ogni anno che aspetti, il coefficiente sale. È come una scala: più sali, più la pensione cresce. E nessuno te lo dice!
 ```
 
 **BLOCCO 23**
+```
+Tradotto in euro, sempre per Bruno: a sessantaquattro anni circa milleottocentotto euro lordi al mese. A sessantacinque, milleottocentosessantasei. A sessantasei, millenovecentoventisette. A sessantasette, millenovecentonovantatré.
+```
+
+**BLOCCO 24**
+```
+Quindi ogni anno in più vale circa sessanta euro lordi al mese, per tutta la vita da pensionato! Il conto totale tra sessantaquattro e sessantasette però lo faccio alla fine, perché c'è una sorpresa!
+```
+
+**BLOCCO 25**
+```
+Lavorare un anno in più fa due cose insieme: aggiunge un anno di contributi al salvadanaio, e alza il coefficiente! Per Bruno, un anno in più vale due effetti nello stesso momento. Vediamo quanto!
+```
+
+**BLOCCO 26**
+```
+Bruno a sessantasei anni, con trentanove anni di contributi: circa milleottocentosettantanove euro lordi al mese. A sessantasette, con quaranta: circa millenovecentonovantatré. Un solo anno in più vale circa centoquattordici euro al mese!
+```
+
+**BLOCCO 27**
+```
+Attenzione: nella realtà, chi esce prima ha anche meno anni di contributi. Quindi la differenza di solito è ancora più grande! Il nostro esempio tiene il salvadanaio uguale, per far vedere solo l'effetto dell'età.
+```
+
+**BLOCCO 28**
 ```
 Questo è il numero uno che decide la tua pensione: l'età in cui esci. E il numero tre... è quello che costa di più, e quasi nessuno ci pensa! Ci arriviamo tra poco. Prima, il numero due.
 ```
@@ -134,89 +159,150 @@ Questo è il numero uno che decide la tua pensione: l'età in cui esci. E il num
 
 ## NUMERO DUE: QUANTO GUADAGNI
 
-**BLOCCO 24**
+**BLOCCO 29**
 ```
 Numero due: quanto guadagni. Ecco Anna, Bruno e Carla. Stesso percorso: quarant'anni di contributi, uscita a sessantasette anni. Anna guadagna venticinquemila euro lordi l'anno, Bruno trentacinquemila, Carla cinquantamila.
 ```
 
-**BLOCCO 25**
+**BLOCCO 30**
 ```
-Risultati, nel nostro esempio: Anna circa millequattrocentoventiquattro euro lordi al mese. Bruno millenovecentonovantatré. Carla circa duemilaottocentoquarantasette. Più guadagni, più il salvadanaio si riempie!
+Risultati, nel nostro esempio: Anna circa millequattrocentoventiquattro euro lordi al mese. Bruno circa millenovecentonovantatré. Carla circa duemilaottocentoquarantasette. Più guadagni, più il salvadanaio si riempie!
 ```
 
-**BLOCCO 26**
+**BLOCCO 31**
 ```
 Hai notato? In tutti e tre i casi la pensione è circa il settantaquattro per cento dello stipendio! Ma attenzione: è il caso perfetto, con stipendio sempre uguale e nessun buco. E la vita vera non è così!
+```
+
+**BLOCCO 32**
+```
+E se lavori part-time? Lo stipendio è più basso, quindi nel salvadanaio entra meno: sempre il trentatré per cento, ma su una cifra più piccola. Per questo conta guardare quanto è stato versato davvero, anno per anno.
 ```
 
 
 ## NUMERO TRE: I BUCHI
 
-**BLOCCO 27**
+**BLOCCO 33**
 ```
-Ed ecco il numero tre, il più pericoloso: gli anni senza contributi. Un buco può nascere da lavoro non versato, da una dimenticanza dell'azienda, o da una carriera spezzata. Ed è quello che quasi nessuno controlla!
+Ed ecco il numero tre, il più pericoloso: gli anni senza contributi. E qui succede una cosa che sorprende molti... perché un buco non si vede sullo stipendio. Si vede solo dopo, sulla pensione!
 ```
 
-**BLOCCO 28**
+**BLOCCO 34**
 ```
 Torniamo a Bruno. Un solo anno senza contributi significa non aggiungere undicimilacinquecentocinquanta euro al salvadanaio. A sessantasette anni, sono circa cinquanta euro lordi in meno, ogni mese!
 ```
 
-**BLOCCO 29**
+**BLOCCO 35**
 ```
-Cinquanta euro al mese sembrano pochi? Per tredici mensilità sono circa seicentocinquanta euro l'anno... ogni anno, per tutta la vita da pensionato! Ecco perché un buco non va mai ignorato.
+Cinquanta euro al mese sembrano pochi? Per tredici mensilità sono circa seicentocinquanta euro l'anno... ogni anno, per tutta la vita da pensionato! E se gli anni di buco sono cinque?
+```
+
+**BLOCCO 36**
+```
+Cinque anni senza contributi: circa duecentoquarantanove euro lordi in meno al mese! Quasi come uscire a sessantaquattro invece che a sessantasette... ma senza averlo scelto!
+```
+
+**BLOCCO 37**
+```
+E da dove nascono i buchi? Lavoro non versato, dimenticanze dell'azienda, periodi senza contributi, carriere spezzate. La buona notizia? Se li trovi, li puoi segnalare e far correggere con i documenti!
+```
+
+
+## TEST: VERO O FALSO
+
+**BLOCCO 38**
+```
+Ora il test! Tre domande, vero o falso. Rispondi a voce alta, io aspetto... Domanda uno: la pensione è sempre una percentuale dell'ultimo stipendio. Vero o falso? Falso! Nel contributivo conta tutta la carriera.
+```
+
+**BLOCCO 39**
+```
+Domanda due: il montante contributivo si rivaluta ogni anno. Vero o falso? Vero! Si rivaluta in base alla crescita del Pil nominale degli ultimi cinque anni. Ecco perché i contributi più vecchi non restano fermi.
+```
+
+**BLOCCO 40**
+```
+Domanda tre: a parità di contributi, uscire prima non cambia l'importo della pensione. Vero o falso? Falso! Il coefficiente cambia con l'età, e uscire prima lo abbassa. Quante ne hai azzeccate?
+```
+
+
+## CALCOLATI DA SOLO
+
+**BLOCCO 41**
+```
+Adesso fai il conto da solo, in tre passi! Passo uno: prendi lo stipendio lordo annuo e calcola il trentatré per cento. Passo due: moltiplica per gli anni di contributi. Passo tre: moltiplica per il coefficiente.
+```
+
+**BLOCCO 42**
+```
+Poi dividi per tredici, e hai la pensione lorda al mese! Con la calcolatrice del telefono ci metti un minuto. Ma ricorda: è una stima semplificata. Per la tua cifra vera serve il controllo ufficiale.
 ```
 
 
 ## COME CONTROLLARE
 
-**BLOCCO 30**
+**BLOCCO 43**
 ```
-E allora come controlli il tuo salvadanaio? Con un controllo da cinque minuti. Entra su inps punto it con Spid, carta d'identità elettronica o carta nazionale dei servizi, e cerca il fascicolo previdenziale.
+E allora come controlli il tuo salvadanaio? Con un controllo da cinque minuti su Mai Inps. Entra su inps punto it con Spid, carta d'identità elettronica o carta nazionale dei servizi, e cerca il fascicolo previdenziale.
 ```
 
-**BLOCCO 31**
+**BLOCCO 44**
 ```
 Apri l'estratto conto contributivo: è l'elenco di tutti i tuoi contributi, anno per anno. Controlla due cose: che non manchino anni, e che le retribuzioni siano giuste. Per ogni riga, chiediti: questo anno c'è?
 ```
 
-**BLOCCO 32**
+**BLOCCO 45**
+```
+Ti ricordi le tre porte? Guarda l'anno del tuo primo contributo: è così che scopri se sei nel contributivo puro, nel misto o nel retributivo con la riforma Fornero. Due minuti, e sai qual è la tua!
+```
+
+**BLOCCO 46**
 ```
 Se trovi un buco o un errore, usa la funzione per segnalare l'anomalia. Poi porta buste paga e contratti a un patronato: ti possono aiutare a far correggere la tua posizione.
 ```
 
-**BLOCCO 33**
+**BLOCCO 47**
 ```
 Poi c'è Pensami, il simulatore dell'Inps: ti mostra una stima della pensione in base ai tuoi dati. Provalo con età di uscita diverse e guarda come cambia l'importo... è proprio quello che abbiamo fatto noi adesso!
+```
+
+**BLOCCO 48**
+```
+Riassunto da fare oggi, in tre mosse! Uno: apri l'estratto conto su Mai Inps. Due: conta gli anni e cerca i buchi. Tre: se qualcosa non torna, segnala l'anomalia e vai da un patronato. Quanto ti serve? Pochi minuti!
 ```
 
 
 ## I TRE ERRORI
 
-**BLOCCO 34**
+**BLOCCO 49**
 ```
 Occhio a tre errori! Primo: fidarti di un calcolo trovato in rete, senza controllare i tuoi contributi. Secondo: decidere quando lasciare il lavoro prima di aver verificato l'estratto conto.
 ```
 
-**BLOCCO 35**
+**BLOCCO 50**
 ```
 E il terzo, il più comune: aspettare l'ultimo anno per guardare la propria posizione. Correggere un buco richiede tempo e documenti. Meglio guardarla oggi... mentre hai ancora tutto il tempo!
 ```
 
 
-## RIEPILOGO
+## RIEPILOGO E SORPRESA
 
-**BLOCCO 36**
+**BLOCCO 51**
 ```
 Ricapitoliamo! Tre numeri decidono la tua pensione. Uno: l'età in cui esci, che sceglie il coefficiente. Due: quanto guadagni, che riempie il salvadanaio. Tre: quanti anni sono davvero coperti da contributi.
 ```
 
-**BLOCCO 37**
+**BLOCCO 52**
 ```
-E adesso la risposta alla domanda iniziale! Stesso stipendio, stessi contributi: uscire a sessantaquattro invece che a sessantasette costa, nel nostro esempio, circa centottantacinque euro lordi al mese. Ci avevi pensato?
+E adesso il conto che ti avevo promesso! Stesso stipendio, stessi contributi: uscire a sessantaquattro invece che a sessantasette costa, nel nostro esempio, circa centottantacinque euro lordi al mese. Ci avevi pensato?
 ```
 
-**BLOCCO 38**
+**BLOCCO 53**
+```
+Ed ecco la sorpresa! Se la pensione dura venti anni, sono circa quarantottomila euro lordi in meno. Quarantottomila euro, per una scelta di tre anni! Ecco perché vale la pena guardare i numeri prima di decidere.
+```
+
+**BLOCCO 54**
 ```
 Ricorda: è un esempio semplificato, con numeri tondi. Nella realtà contano il tuo sistema di calcolo, la rivalutazione, la carriera e gli anni coperti. Per la tua cifra controlla inps punto it, oppure chiedi a un patronato.
 ```
@@ -224,17 +310,17 @@ Ricorda: è un esempio semplificato, con numeri tondi. Nella realtà contano il 
 
 ## CHIUSURA
 
-**BLOCCO 39**
+**BLOCCO 55**
 ```
 Adesso tocca a te! Scrivimi nei commenti: in che anno sei nato e a che età pensi di andare in pensione? Leggo tutto, e le vostre domande diventano i prossimi video!
 ```
 
-**BLOCCO 40**
+**BLOCCO 56**
 ```
 Iscriviti a Conti in Pensione e attiva la campanella: il prossimo video riguarda un tema che tocca tutti i pensionati. Non perderlo!
 ```
 
-**BLOCCO 41**
+**BLOCCO 57**
 ```
 Verifica sempre sui canali ufficiali, inps punto it. Contenuto informativo, non è consulenza previdenziale.
 ```
