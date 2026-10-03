@@ -889,8 +889,8 @@ CAM = [  # (t, cx, cy, z)
     (V["s1"], 470, 1250, 1.6), (V["n4"] - 0.1, 540, 1000, 1.05), (T_W2, 540, 1000, 1.0), (V["t2"] - 0.2, 540, 1250, 1.3),
     (E("t2"), 540, 1350, 1.2), (V["c2"] - 0.1, 400, 1220, 1.55), (T_CLIMB0 + 0.6, 440, 1130, 1.28), (T_CLIMB1, 480, 1000, 1.45),
     (T_PATCH + 0.7, 520, 1180, 1.25), (V["e1"] - 0.1, 650, 1280, 1.62), (T_BLOW0 + 0.2, 560, 1120, 1.3), (T_UP + 1.2, 540, 1000, 1.05),
-    (T_W3, 540, 1000, 1.0), (V["n7"] + 0.6, 540, 1000, 1.05), (V["n7"] + 3.2, 540, 1180, 1.22), (V["s2"] - 0.2, 540, 1250, 1.36),
-    (V["t3"] - 0.1, 560, 1250, 1.36), (V["end"] - 0.1, 560, 1230, 1.4), (DUR, 560, 1200, 1.3),
+    (T_W3, 540, 1000, 1.0), (V["n7"] + 0.6, 540, 1000, 1.05), (V["n7"] + 3.2, 540, 1180, 1.22), (V["s2"] - 0.2, 540, 1250, 1.27),
+    (V["t3"] - 0.1, 540, 1250, 1.27), (V["end"] - 0.1, 540, 1240, 1.29), (DUR, 540, 1210, 1.24),
 ]
 SHAKES = [(T_LIFT, 8), (T_POP, 30), (T_POP + 0.3, 14), (T_DIP, 26), (T_DIP + 0.45, 10), (T_UP, 10), (T_PATCH, 8), (T_W2 - 0.3, 10)]
 def camera(t):
@@ -1005,7 +1005,7 @@ def frame(i):
     d = ImageDraw.Draw(img, "RGBA")
     if t < 2.5:                                                       # HOOK
         u = back(t / 0.35); a = int(255 * clamp((2.5 - t) / 0.4))
-        text(d, "SI VOLA!", W / 2, 215 - 10 * math.sin(t * 6), int(215 * max(0.62, u)), (255, 240, 120, a), (190, 40, 70, a), 13)
+        text(d, "SI VOLA!", W / 2, 215 - 10 * math.sin(t * 6), int(176 * clamp(max(0.62, u), 0, 1.0)), (255, 240, 120, a), (190, 40, 70, a), 13)
     for k, t0, who, txt, dur in VOICES:                              # sottotitoli
         if t0 - 0.05 <= t <= t0 + dur + 0.3:
             u = ease((t - t0 + 0.05) / 0.18); f = ImageFont.truetype(FONT, 66 if who == "narr" else 78); lines = []; cur = ""
@@ -1039,6 +1039,13 @@ if __name__ == "__main__":
         print("fatto in", round(time.time() - t0), "s")
     elif cmd == "test":
         for ts in sys.argv[2:]: Image.frombytes("RGB", (W, H), frame(int(float(ts) * FPS))).save(f"test_m_{ts}.png")
+    elif cmd == "renderpart":
+        a, b, out = int(sys.argv[2]), int(sys.argv[3]), sys.argv[4]; b = min(b, int(DUR * FPS))
+        ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
+                               "-i", "-", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "18", "-preset", "medium", out], stdin=subprocess.PIPE)
+        with Pool(4) as pool:
+            for n, fr in enumerate(pool.imap(frame, range(a, b), chunksize=4)): ff.stdin.write(fr)
+        ff.stdin.close(); ff.wait()
     else:
         out = sys.argv[2]; N = int(DUR * FPS)
         ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),

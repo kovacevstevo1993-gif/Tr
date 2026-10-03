@@ -23,7 +23,7 @@ def tall():
         d.polygon([(880, 140), (x1 - 120, y1), (x1 + 120, y1)], fill=(255, 245, 190, 38))
     lay = lay.filter(ImageFilter.GaussianBlur(10)); img.paste(lay, (0, 0), lay)
     for (x, y, r) in ((130, 520, 40), (960, 430, 46), (150, 1180, 30), (950, 1030, 34), (560, 300, 26)): sparkle(img, x, y, r)
-    outline_text(img, "LA MONGOLFIERA", 540, 118, 112, (255, 244, 120), (200, 40, 70), 12, rot=0)
+    outline_text(img, "LA MONGOLFIERA", 540, 122, 92, (255, 244, 120), (200, 40, 70), 12, rot=0)
     outline_text(img, "dei 4 AMICI!", 540, 1815, 138, (255, 255, 255), (30, 100, 170), 12, rot=-2)
     # fumetto POP!
     d = ImageDraw.Draw(img, "RGBA"); cx, cy = 880, 1010
