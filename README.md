@@ -11,20 +11,6 @@ Un progetto Python che genera automaticamente un video educativo di 20 secondi i
 - ⏱️ **Durata perfetta** - Circa 20 secondi, ideale per l'attenzione dei bambini
 - 🎬 **Video ad alta qualità** - Risoluzione 1280x720p
 
-## 🎨 Pose del topolino (Pollinations)
-
-`genera_pose.py` genera le pose del personaggio con l'API di [Pollinations](https://pollinations.ai) (modello `flux`) e le salva come PNG trasparenti in `pose/`:
-
-`saluto`, `indica`, `conta`, `pollice`, `gioia`, `pensa`, `ciao`
-
-```bash
-pip install pillow requests
-python genera_pose.py              # tutte le pose
-python genera_pose.py saluto gioia # solo alcune
-```
-
-Il personaggio è un topolino originale (pelo grigio, salopette blu, maglietta gialla, scarpe arancioni). Le pose si possono sovrapporre al video al posto dell'emoji 🐭.
-
 ## 🎯 Contenuto del Video
 
 ### Sezioni:
