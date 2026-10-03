@@ -38,6 +38,15 @@ POSE = {
     "lancia": "throwing: one arm pulled far back over the shoulder about to throw, other arm forward for balance, determined smile",
     "saluta": "standing and waving hello with one hand raised high, big smile",
     "sorpreso": "surprised: mouth open in a round 'O', eyes wide, both hands raised near the cheeks",
+    "neutro": "standing relaxed facing the camera, both arms hanging naturally at the sides, legs together, gentle smile",
+    "corre": "running toward the camera, leaning forward, arms pumping, one knee high, big excited smile, mid-air",
+    "sbircia": "sneaking forward on tiptoes, leaning in with curious wide eyes, one hand raised to the mouth in a 'shh' gesture",
+    "indica": "excitedly pointing with one arm stretched out to the right, other hand on the hip, big open smile",
+    "mangia": "holding a round chocolate chip cookie in both hands near the mouth, taking a bite, eyes closed with delight, happy chewing",
+    "balla": "dancing happily, body leaning to the left, one arm up and one arm down, one leg lifted, joyful open smile",
+    "salto": "jumping high in the air with arms and legs spread wide, joyful, mouth wide open, laughing",
+    "afferra": "leaping forward with both arms stretched out in front trying to catch something, mouth open in excitement",
+    "guarda_su": "looking up with an amazed open mouth and wide eyes, one hand raised pointing up",
     "ride": "laughing happily with both arms raised up high, eyes closed with joy, mouth wide open",
 }
 
