@@ -27,6 +27,7 @@ RIFERIMENTI = {
     "topo": "assets/topo/neutro_full.png",
     "chip": "assets/s/chip.png",
     "spike": "assets/s/spike.png",
+    "ele": "assets/s/ele.png",
 }
 
 POSE = {
@@ -60,6 +61,15 @@ POSE = {
     "mangia_mela": "holding a shiny red apple with both hands up near the mouth and taking a big bite, eyes closed with delight",
     "mangia_mela2": "chewing happily with puffed cheeks and eyes closed with joy, holding a red apple with a bite missing in both hands at chest height",
     "ride": "laughing happily with both arms raised up high, eyes closed with joy, mouth wide open",
+    # --- storia 'castello di sabbia' ---
+    "passa_dx": "classic cartoon walk cycle PASSING pose, front view: the character's left leg is lifted with the knee bent passing forward, the right leg is straight and supports the body, arms hanging close to the body swinging slightly, relaxed happy walking, small bounce",
+    "batte_sabbia": "kneeling on both knees leaning forward with both hands pressed flat in front of the knees as if patting something on the ground, head up looking forward at the camera with a happy concentrated smile, ONLY the character, no sand, no ground, no objects",
+    "triste": "sad: head tilted down, shoulders slumped, both arms hanging down, eyebrows raised in the middle, mouth turned down, big sad eyes",
+    "fuggi": "jumping backward in fright, both arms thrown up in the air, eyes wide, mouth wide open in surprise, one leg lifted",
+    "riempie": "leaning forward and bending down with the TRUNK pointing straight down, one hand on the knee, curious happy eyes looking down at the trunk tip, NO water, NO sand, NO ground, only the character",
+    "spruzza": "head tilted back, the TRUNK RAISED STRAIGHT UP high above the head like a trumpet with the trunk tip open, both arms raised up in joy, eyes closed, big open smile, NO water, NO fountain, only the character",
+    "spruzza_giu": "standing and the TRUNK stretched out forward and pointing down in front of the body, proud smile looking at the trunk tip, one hand on the hip, NO water, NO sand, NO ground, only the character",
+    "tiene_bandiera": "holding a small wooden pole upright with both hands in front of the chest, excited wide smile, looking up",
 }
 
 
