@@ -11,16 +11,19 @@ from scipy.ndimage import binary_dilation, label
 import colorsys
 
 
-def ritaglia(img, lo=10, span=45, vetro=False):
+def ritaglia(img, lo=10, span=45, vetro=False, magenta=False):
     """chiave verde più severa di quella dei personaggi (via ombre a terra); con vetro=True corregge la tinta verde vista attraverso il vetro"""
     a = np.asarray(img).astype(float); r, g, b = a[..., 0], a[..., 1], a[..., 2]
-    verde = g - np.maximum(r, b)
+    verde = (np.minimum(r, b) - g) if magenta else (g - np.maximum(r, b))
     alpha = np.clip(1 - (verde - lo) / span, 0, 1); alpha[verde > lo + span] = 0
     solido = alpha > 0.5; lab, n = label(solido)
     if n:
         dim = np.bincount(lab.ravel())[1:]; solido = lab == (1 + int(np.argmax(dim)))
         alpha = np.where(binary_dilation(solido, iterations=3), alpha, 0)
-    sp = g > np.maximum(r, b); a[..., 1] = np.where(sp, np.maximum(r, b), g)          # despill del bordo
+    if magenta:                                                                        # despill magenta sul bordo
+        m = np.clip(np.minimum(r, b) - g, 0, None) * (alpha < 0.999); a[..., 0] = r - m; a[..., 2] = b - m
+    else:
+        sp = g > np.maximum(r, b); a[..., 1] = np.where(sp, np.maximum(r, b), g)          # despill del bordo
     if vetro:                                                                          # biscotti visti attraverso il vetro: via il verde-oliva
         h = np.zeros(r.shape); 
         mx = np.maximum(np.maximum(r, g), b); mn = np.minimum(np.minimum(r, g), b)
@@ -35,7 +38,14 @@ EDIT = "https://gen.pollinations.ai/v1/images/edits"
 STILE = ("3D Pixar animation style, soft studio lighting, rich colors, highly detailed, front view, centered, "
          "plain flat pure green #00FF00 background, no ground, no shadow, no text, no watermark")
 
+STILE_M = STILE.replace("pure green #00FF00", "pure magenta #FF00FF")
 OGG = {
+    "tree": (None, "a giant magical apple tree with a thick friendly trunk, big roots at the base and a huge round lush green crown full of shiny red apples, whole tree visible from roots to top, " + STILE_M, (768, 1376)),
+    "seed": (None, "one tiny glowing golden magic seed with sparkles around it, " + STILE_M, (768, 768)),
+    "sprout": (None, "a small cute green sprout with two round leaves growing from a little mound of brown soil, " + STILE_M, (768, 768)),
+    "apple": (None, "one shiny juicy red apple with a small green leaf on its stem, " + STILE_M, (768, 768)),
+    "cloud": (None, "a cute fluffy white rain cloud with a tiny smiling face and a light grey-blue underside, " + STILE_M, (768, 768)),
+    "bird": (None, "a cute small blue bird with big shiny eyes flying with its wings open, " + STILE_M, (768, 768)),
     "jar": (None, "a big transparent glass cookie jar with a cute round red plastic lid with a small yellow knob, filled to the top with many chocolate chip cookies, " + STILE, (768, 1024)),
     "jar_open": ("jar", "the exact same glass cookie jar, but WITHOUT the lid: open top, no lid at all, cookies visible inside up to the rim; everything else identical", (768, 1024)),
     "lid": ("jar", "only the red round lid with the yellow knob of this jar, alone, floating, slightly seen from above, nothing else in the picture", (768, 768)),
@@ -84,7 +94,7 @@ def main():
             ref = Image.open(os.path.join(OUT, f"{da}.png"))
         raw = chiedi(prompt, size, ref)
         raw.save(os.path.join(OUT, "raw", f"{nome}.jpg"), quality=93)
-        im = ritaglia(raw, vetro=(nome in ('jar', 'jar_open')))
+        im = ritaglia(raw, vetro=(nome in ('jar', 'jar_open')), magenta=('FF00FF' in prompt))
         bb = im.getchannel("A").point(lambda v: 255 if v > 20 else 0).getbbox()
         im.crop(bb).save(f)
     print("✅ fatto")

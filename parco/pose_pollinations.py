@@ -56,6 +56,9 @@ POSE = {
     "indica_giu": "smiling at the camera and pointing downward with one index finger toward the ground in front, other hand on the hip",
     "parla_a": "exactly the same pose as the reference, only the mouth is wide open as if saying 'ah', nothing else changes",
     "parla_o": "exactly the same pose as the reference, only the mouth is a small round 'o' shape as if saying 'oh', nothing else changes",
+    "tiene_mela": "holding one big shiny red apple with both hands in front of the chest, looking down at the apple with delighted wide eyes and a big smile",
+    "mangia_mela": "holding a shiny red apple with both hands up near the mouth and taking a big bite, eyes closed with delight",
+    "mangia_mela2": "chewing happily with puffed cheeks and eyes closed with joy, holding a red apple with a bite missing in both hands at chest height",
     "ride": "laughing happily with both arms raised up high, eyes closed with joy, mouth wide open",
 }
 
