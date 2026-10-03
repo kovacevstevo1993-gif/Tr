@@ -114,9 +114,9 @@ def eat(n):
 
 EV = {
     "mouse": [(0.0, "neutro", 0.01)] + walk("mouse", 0.0, T_ARR) + [
-        (T_ARR, "sorpreso", 0.2), (T_PICK, "china", 0.3), (T_HOLD, "tiene", 0.3), (V["n3"] + 0.5, "neutro", 0.3)]
+        (T_ARR, "sorpreso", 0.2), (T_PICK, "china_m", 0.3), (T_HOLD, "tiene", 0.3), (V["n3"] + 0.5, "neutro", 0.3)]
         + walk("mouse", V["n3"] + 0.9, T_PLANT) + [
-        (T_PLANT, "china", 0.3), (T_SEED_IN + 0.6, "neutro", 0.3), (V["n4"] + 0.3, "sorpreso", 0.2), (RAIN0 - 0.2, "riceve", 0.3),
+        (T_PLANT, "china_m", 0.3), (T_SEED_IN + 0.6, "neutro", 0.3), (V["n4"] + 0.3, "sorpreso", 0.2), (RAIN0 - 0.2, "riceve", 0.3),
         (V["t2"] - 0.15, "salto", 0.2), (V["t2"] + 0.55, "ride", 0.25), (T_SPR - 0.1, "sorpreso", 0.15), (T_SPR + 0.8, "ride", 0.25),
         (V["n6"] + 0.3, "indica_m", 0.3), (V["t3"] - 0.05, "saluta2", 0.25), (E("t3") + 0.1, "neutro", 0.3),
         (G0 - 0.1, "guarda_su", 0.3), (V["s2"], "ride", 0.25), (FALL0, "guarda_su_m", 0.25), (FALL0 + 0.9, "salto", 0.2),
@@ -141,9 +141,9 @@ MOUTH = {"mouse": (4, 0.62), "chip": (4, 0.62), "spike": (4, 0.62)}
 SEEDH = (0, 0.42)                                                      # seme tra le mani del topolino in posa 'tiene'
 
 KF = {   # posizioni (t, x, y)
-    "mouse": [(0, 380, 1240), (T_ARR, 480, 1530), (V["n3"] + 0.9, 480, 1530), (T_PLANT, 560, 1640), (999, 560, 1640)],
-    "chip": [(0, 300, 1250), (T_CHIP, 300, 1250), (T_CHIP_END, 300, 1670), (999, 300, 1670)],
-    "spike": [(0, 850, 1250), (T_SPIKE, 850, 1250), (T_SPIKE_END, 880, 1690), (999, 880, 1690)],
+    "mouse": [(0, 190, 1240), (T_ARR, 480, 1530), (V["n3"] + 0.9, 480, 1530), (T_PLANT, 560, 1640), (999, 560, 1640)],
+    "chip": [(0, 330, 1250), (T_CHIP, 330, 1250), (T_CHIP_END, 330, 1670), (999, 330, 1670)],
+    "spike": [(0, 830, 1250), (T_SPIKE, 830, 1250), (T_SPIKE_END, 830, 1690), (999, 830, 1690)],
 }
 CHARS = ["spike", "chip", "mouse"]
 H_CH = {"mouse": 640, "chip": 600, "spike": 560}
@@ -173,7 +173,7 @@ def pose_state(name, t):
     ev = EV[name]; idx = 0
     for i, e in enumerate(ev):
         if e[0] <= t: idx = i
-    t0, pose, dur = ev[idx]
+    t0, pose, dur = ev[idx]; dur = min(dur, 0.17)               # cambi di posa rapidi: niente 'fantasmi' a metà strada
     prev = ev[idx - 1][1] if idx > 0 else pose
     if prev != pose and t < t0 + dur: return prev, pose, (t - t0) / dur
     return pose, pose, 1.0
@@ -326,10 +326,10 @@ CAM = [  # (t, cx, cy, z)
     (0.0, 575, 1560, 2.4), (1.0, 575, 1540, 2.3), (2.6, 560, 1450, 1.45), (V["n2"], 560, 1450, 1.35), (T_PICK, 560, 1520, 1.55),
     (V["t1"] + 0.3, 580, 1480, 1.6), (V["n3"] + 0.6, 600, 1400, 1.2), (TB + 0.6, 620, 1400, 1.2),
     (T_PLANT - 0.2, 640, 1500, 1.5), (T_SEED_IN + 0.3, 700, 1580, 1.8), (V["n4"] + 1.0, 700, 1250, 1.2), (CL0 + 0.6, 700, 1020, 1.22),
-    (RAIN0 + 1.5, 680, 1040, 1.25), (T_SPR - 0.3, 740, 1500, 1.5), (T_SPR + 0.5, 750, 1560, 1.95), (V["n6"] + 0.1, 700, 1400, 1.25),
-    (V["t3"] + 0.4, 640, 1300, 1.05), (G0 - 0.3, 700, 1450, 1.5), (G0 + 1.6, 720, 1150, 1.25), (G1, 650, 960, 1.0),
-    (FALL0 + 0.5, 600, 1000, 1.0), (V["t4"] - 0.2, 600, 1400, 1.2), (TC + 0.2, 540, 1400, 1.15),
-    (V["n9"] + 1.0, 470, 1330, 1.15), (ET["chip"] + 0.8, 480, 1400, 1.2), (V["n10"], 520, 1300, 1.05),
+    (RAIN0 + 1.5, 680, 1040, 1.25), (T_SPR - 0.3, 740, 1500, 1.5), (T_SPR + 0.5, 660, 1540, 1.7), (V["n6"] + 0.1, 700, 1400, 1.25),
+    (V["t3"] + 0.4, 640, 1300, 1.05), (G0 - 0.3, 580, 1450, 1.3), (G0 + 1.6, 600, 1150, 1.15), (G1, 600, 960, 1.0),
+    (FALL0 + 0.5, 600, 1000, 1.0), (V["t4"] - 0.2, 600, 1400, 1.2), (TC + 0.2, 560, 1400, 1.12),
+    (V["n9"] + 1.0, 540, 1330, 1.12), (ET["chip"] + 0.8, 540, 1400, 1.15), (V["n10"], 540, 1300, 1.05),
     (V["end"] - 0.2, 560, 1420, 1.0), (DUR, 560, 1400, 0.98),
 ]
 SHAKES = [(G0 + 0.4, 14), (G0 + 1.5, 14), (G0 + 2.6, 18), (G1, 22), (T_SEED_IN, 5), (T_SPR, 6)]
@@ -475,8 +475,8 @@ def ambient(c, sid, t):
         px = bx + math.sin(t * 0.6 * sp + ph) * 60; py = by + math.sin(t * 0.8 * sp + ph * 1.7) * 40 - (t * 12 * sp) % 120
         a = 0.35 + 0.65 * max(0.0, math.sin(t * 2.1 * sp + ph))
         r = (3 + 3 * sp) * Z; col = (255, 235, 130) if sid != "giardino" else (255, 250, 210)
-        c.gd.ellipse([X(px) - r * 2.4, Y(py) - r * 2.4, X(px) + r * 2.4, Y(py) + r * 2.4], fill=tuple(int(v * a * 0.22) for v in col))
-        c.gd.ellipse([X(px) - r, Y(py) - r, X(px) + r, Y(py) + r], fill=tuple(int(v * a) for v in col)); c.glow_used = True
+        c.d.ellipse([X(px) - r * 2.6, Y(py) - r * 2.6, X(px) + r * 2.6, Y(py) + r * 2.6], fill=col + (int(46 * a),))
+        c.d.ellipse([X(px) - r, Y(py) - r, X(px) + r, Y(py) + r], fill=col + (int(235 * a),))
     # foglie che cadono (bosco e giardino)
     if sid in ("bosco", "giardino"):
         rng = np.random.default_rng(21)
@@ -562,7 +562,7 @@ def props(c, sid, t, hero):
                 tr = Image.fromarray(np.dstack([np.clip(np.asarray(tr)[..., :3].astype(np.float32) * np.array([1.0, 0.9, 0.8]), 0, 255).astype(np.uint8), np.asarray(tr)[..., 3]]), "RGBA")
             c.img.paste(tr, (int(X(px) - tr.width / 2), int(Y(py) - tr.height + 12 * Z)), tr)
             if G0 <= t < G1 + 0.6:
-                sparkles(c, px, py - TREE_H * 0.55 * ts, G0, G1 - G0 + 0.6, n=26, spread=300, rise=40, size=20, seed=4)
+                sparkles(c, px, py - TREE_H * ts * 0.95 - 40, G0, G1 - G0 + 0.6, n=22, spread=220, rise=30, size=20, seed=4)
         # nuvoletta e pioggia
         if sid == "giardino" and CL0 <= t < CL1 + 1.6:
             if t < CL0 + 1.6: u = ease((t - CL0) / 1.6); cxp = lerp(1350, 700, u); cyp = 650 + 30 * math.sin(t * 2)
