@@ -66,12 +66,12 @@ def shore_y(sid, x):
 T_W = V["n2"] + 2.35                  # l'onda arriva al castello (Splash!)
 T_WS = T_W - 1.4                      # il fronte entra sulla sabbia
 T_WE = T_W + 3.0
-CASTLE1 = (640, 1665)
-BUCKET0 = (905, 1712)
+CASTLE1 = (600, 1665)
+BUCKET0 = (910, 1752)
 HEAP_X = CASTLE1
 # S1: elefantino
 T_E_IN = V["n3"] + 0.9
-ELE_X, ELE_Y = 905, 1640
+ELE_X, ELE_Y = 925, 1640
 T_E_ARR = V["e1"] - 0.55
 T_FILL0 = V["n4"] + 0.15              # inizia a riempire
 T_FILL1 = T_FILL0 + 1.5
@@ -80,7 +80,7 @@ T_SPRAY1 = TB - 0.45
 # S2: costruzione
 T_BUILD = [V["n5"] + 0.7, V["n5"] + 1.6, V["n5"] + 2.5, V["n5"] + 3.4]
 BUILD_S = [0.34, 0.58, 0.80, 1.0]
-CASTLE2 = (560, 1660)
+CASTLE2 = (610, 1660)
 CASTLE_H = 800
 T_CHIP_IN = V["n5"] + 2.0
 T_LANCIA = V["c1"] - 0.2
@@ -90,7 +90,7 @@ T_FOUNT0 = V["n6"] + 0.5
 T_FOUNT1 = T_FOUNT0 + 2.5
 T_RAIN = V["n6"] + 1.1
 # S3
-CASTLE3 = (700, 1600)
+CASTLE3 = (850, 1610)
 T_DANCE = V["n7"] + 0.9
 T_SPR3 = V["n7"] + 3.0
 
@@ -132,7 +132,7 @@ EV = {
               (V["t2"] - 0.25, "triste", 0.25), (V["e1"] + 0.4, "sorpreso", 0.15), (V["n4"] + 0.3, "neutro", 0.25),
               (T_SPRAY0 + 0.6, "sorpreso", 0.15), (T_SPRAY0 + 1.3, "ride", 0.2), (TB - 0.6, "neutro", 0.3)]
              + walk("mouse", TB + 0.05, TB + 0.95) +
-             [(V["n5"] - 0.1, "batte_sabbia", 0.2), (T_BUILD[3] + 0.5, "ride", 0.2), (V["c1"] - 0.15, "sorpreso", 0.15),
+             [(max(V["n5"] - 0.1, TB + 1.05), "batte_sabbia", 0.2), (T_BUILD[3] + 0.5, "ride", 0.2), (V["c1"] - 0.15, "sorpreso", 0.15),
               (T_FLAG1 - 0.1, "salto", 0.15), (T_FLAG1 + 1.0, "ride", 0.2), (T_FOUNT0 - 0.1, "salto", 0.15), (T_FOUNT0 + 1.0, "ride", 0.2),
               (V["e2"] - 0.1, "saluta2", 0.2), (E("e2") + 0.2, "neutro", 0.3)]
              + walk("mouse", TC + 0.25, TC + 1.55) + [(TC + 1.6, "neutro", 0.3), (V["n7"] + 0.5, "saluta2", 0.2)]
@@ -161,15 +161,16 @@ APPEAR = {"mouse": 0.0, "ele": T_E_IN - 0.5, "chip": T_CHIP_IN - 0.3}
 ALIAS = {"ele": {"salto": "spruzza", "balla": "saluta2", "saluta": "saluta2", "indica": "saluta2", "corre": "cammina_dx", "guarda_su": "sorpreso",
                  "parla_o": "parla_a", "lancia": "saluta2"}}
 HAS_MOUTH = {"mouse": ("parla_a", "parla_o"), "chip": ("parla_a", "parla_o"), "ele": ("parla_a",)}
-H_CH = {"mouse": 640, "chip": 600, "ele": 660}
+CS = 0.86                              # scala generale dei personaggi
+H_CH = {"mouse": 640 * CS, "chip": 600 * CS, "ele": 660 * CS}
 CHARS = ["mouse", "ele", "chip"]
 
 KF = {   # (t, x, y)
-    "mouse": [(0, 360, 1670), (T_W - 0.8, 360, 1670), (T_W + 0.3, 250, 1690), (TB, 250, 1690), (TB + 0.95, 330, 1685),
-              (TC, 330, 1685), (TC + 1.55, 300, 1745), (999, 300, 1745)],
-    "ele": [(0, 1300, ELE_Y), (T_E_IN, 1300, ELE_Y), (T_E_ARR, ELE_X, ELE_Y), (TB, ELE_X, ELE_Y), (TB + 0.9, 790, 1665),
-            (TC, 790, 1665), (TC + 1.55, 800, 1755), (999, 800, 1755)],
-    "chip": [(0, -250, 1745), (T_CHIP_IN, -250, 1745), (T_LANCIA - 0.35, 190, 1745), (TC, 190, 1745), (TC + 1.4, 560, 1775), (999, 560, 1775)],
+    "mouse": [(0, 320, 1670), (T_W - 0.8, 320, 1670), (T_W + 0.3, 290, 1690), (TB, 290, 1690), (TB + 0.95, 390, 1690),
+              (TC, 390, 1690), (TC + 1.55, 255, 1745), (999, 255, 1745)],
+    "ele": [(0, 1300, ELE_Y), (T_E_IN, 1300, ELE_Y), (T_E_ARR, ELE_X, ELE_Y), (TB, ELE_X, ELE_Y), (TB + 0.9, 860, 1665),
+            (TC, 860, 1665), (TC + 1.55, 690, 1755), (999, 690, 1755)],
+    "chip": [(0, -250, 1745), (T_CHIP_IN, -250, 1745), (T_LANCIA - 0.35, 130, 1750), (TC, 130, 1750), (TC + 1.4, 470, 1775), (999, 470, 1775)],
 }
 # punti utili sulle pose (frazione dell'altezza, rispetto ai piedi): (dx, dy_alto)
 TIP = {"riempie": (0.0, 0.40), "spruzza_giu": (-0.15, 0.53), "spruzza": (0.02, 1.37)}
@@ -202,13 +203,26 @@ def rp(name, pose):
     b = al.get(b, b); return b + ("_m" if m else "")
 
 
+_iou = {}
+def pair_dur(name, A, B, dur):
+    """più la sagoma cambia, più il passaggio è breve (niente 'fantasmi' a metà strada)"""
+    key = (name, rp(name, A), rp(name, B))
+    if key not in _iou:
+        a = MO.aligned(name, key[1])[..., 3] > 128; b = MO.aligned(name, key[2])[..., 3] > 128
+        _iou[key] = float((a & b).sum() / max(1, (a | b).sum()))
+    q = _iou[key]
+    return min(dur, 0.22 if q > 0.85 else (0.14 if q > 0.70 else 0.09))
+
+
 def pose_state(name, t):
     ev = EV[name]; idx = 0
     for i, e in enumerate(ev):
         if e[0] <= t: idx = i
-    t0, pose, dur = ev[idx]; dur = min(dur, 0.24)
+    t0, pose, dur = ev[idx]
     prev = ev[idx - 1][1] if idx > 0 else pose
-    if prev != pose and t < t0 + dur: return prev, pose, (t - t0) / dur
+    if prev != pose:
+        dur = pair_dur(name, prev, pose, dur)
+        if t < t0 + dur: return prev, pose, (t - t0) / dur
     return pose, pose, 1.0
 
 
@@ -359,15 +373,15 @@ def text(d, s, x, y, size, fill, out, ow):
 
 
 # ------------------------------------------------------------------ camera
-CAM = [  # (t, cx, cy, z)
-    (0.0, 560, 1480, 1.55), (1.8, 560, 1500, 1.5), (3.5, 560, 1500, 1.4), (V["t1"] + 0.2, 520, 1540, 1.55),
-    (V["n2"] + 0.5, 600, 1330, 1.15), (T_W - 0.3, 600, 1480, 1.35), (T_W + 0.6, 560, 1560, 1.5), (V["t2"] + 0.2, 300, 1560, 1.7),
-    (V["n3"] + 0.4, 600, 1500, 1.2), (T_E_ARR, 760, 1540, 1.35), (E("e1"), 760, 1500, 1.3), (T_FILL0 + 0.5, 880, 1470, 1.6),
-    (T_FILL1 + 0.2, 800, 1450, 1.4), (T_SPRAY0 + 0.6, 760, 1400, 1.35), (TB - 0.3, 640, 1500, 1.1), (TB + 0.9, 560, 1480, 1.15),
-    (V["n5"] + 0.4, 560, 1540, 1.4), (T_BUILD[2], 560, 1420, 1.25), (T_BUILD[3] + 0.4, 560, 1300, 1.1), (V["c1"] - 0.2, 420, 1450, 1.25),
-    (T_FLAG1, 520, 1250, 1.2), (T_FOUNT0 - 0.2, 560, 1300, 1.12), (T_FOUNT0 + 0.8, 560, 1000, 1.0), (T_FOUNT1, 560, 1100, 1.0),
-    (TC + 0.3, 540, 1400, 1.1), (V["n7"] + 0.9, 560, 1500, 1.25), (V["c2"], 560, 1480, 1.3), (V["end"] - 0.3, 560, 1560, 1.15),
-    (DUR, 560, 1520, 1.1),
+CAM = [  # (t, cx, cy, z): cy è sempre "in basso" (la camera si ferma al bordo dell'immagine)
+    (0.0, 480, 1900, 1.4), (1.6, 500, 1900, 1.32), (3.5, 540, 1900, 1.25), (V["t1"] + 0.2, 480, 1900, 1.34),
+    (V["n2"] + 0.5, 600, 1900, 1.15), (T_W - 0.3, 600, 1900, 1.3), (T_W + 0.6, 540, 1900, 1.25), (V["t2"] + 0.2, 480, 1900, 1.3),
+    (V["n3"] + 0.4, 600, 1900, 1.1), (T_E_ARR, 600, 1900, 1.1), (E("e1"), 600, 1900, 1.1), (T_FILL0 + 0.5, 700, 1900, 1.18),
+    (T_FILL1 + 0.2, 640, 1900, 1.12), (T_SPRAY0 + 0.6, 620, 1900, 1.12), (TB - 0.3, 700, 1900, 1.15), (TB + 0.9, 560, 1900, 1.2),
+    (V["n5"] + 0.4, 600, 1900, 1.2), (T_BUILD[2], 600, 1900, 1.12), (T_BUILD[3] + 0.4, 580, 1900, 1.06), (V["c1"] - 0.2, 520, 1900, 1.1),
+    (T_FLAG1, 560, 1900, 1.08), (T_FOUNT0 - 0.2, 580, 1900, 1.06), (T_FOUNT0 + 0.8, 580, 1900, 1.0), (T_FOUNT1, 580, 1900, 1.02),
+    (TC + 0.3, 540, 1900, 1.05), (V["n7"] + 0.9, 520, 1900, 1.06), (V["c2"], 520, 1900, 1.1), (V["end"] - 0.3, 540, 1900, 1.06),
+    (DUR, 540, 1900, 1.02),
 ]
 SHAKES = [(T_W, 26), (T_W + 0.25, 12), (T_BUILD[0], 5), (T_BUILD[1], 6), (T_BUILD[2], 7), (T_BUILD[3], 9), (T_FLAG1, 6)]
 def camera(t):
@@ -429,9 +443,9 @@ def cast_shadow(c, name, x, y, s, hop, r, nw, nh, sid):
     else:
         M = np.float32([[1, 0, 0], [0, k, fy * (1 - k)]])
     sh = cv2.warpAffine(al, M, (nw + int(abs(shx) * nh * 0.6) + 40, nh + ext), flags=cv2.INTER_LINEAR)
-    sig = max(3.0, 7 * c.Z * s); sh = cv2.GaussianBlur(sh, (0, 0), sig)
+    sig = max(4.0, 11 * c.Z * s); sh = cv2.GaussianBlur(sh, (0, 0), sig)
     fall = clamp(1 - hop / 160.0, 0.4, 1)
-    a = (sh * (0.40 if sid != "spiaggia_tramonto" else 0.34) * fall * 255).astype(np.uint8)
+    a = (sh * (0.30 if sid != "spiaggia_tramonto" else 0.28) * fall * 255).astype(np.uint8)
     lay = Image.new("RGBA", (sh.shape[1], sh.shape[0]), (20, 22, 40, 0)); lay.putalpha(Image.fromarray(a))
     px, py = c.X(x) - fx, c.Y(y) - fy
     c.img.paste(lay, (int(px), int(py)), lay)
@@ -442,14 +456,14 @@ def draw_char(c, name, t):
     cv, pose = char_canvas(name, t)
     im = Image.fromarray(np.ascontiguousarray(cv), "RGBA")
     if rot: im = im.rotate(rot, resample=Image.BILINEAR, center=(MO.AX, MO.AY))
-    f = s * c.Z
+    f = s * c.Z * CS
     nw, nh = max(2, int(MO.CW * f / math.sqrt(sq))), max(2, int(MO.CH * f * sq))
     r = im.resize((nw, nh), Image.LANCZOS if f < 1 else Image.BICUBIC)
     px, py = c.X(x) - MO.AX * nw / MO.CW, c.Y(y - hop * s) - MO.AY * nh / MO.CH
     sid = c.sid
     cast_shadow(c, name, x, y, s, hop, r, nw, nh, sid)
     # contatto a terra (macchia scura sotto i piedi)
-    wsh = H_CH[name] * 0.42 * c.Z * s
+    wsh = H_CH[name] * 0.45 * c.Z * s
     ell = Image.new("RGBA", (int(wsh * 2.4), int(wsh * 0.7)), (0, 0, 0, 0)); ImageDraw.Draw(ell).ellipse([wsh * 0.2, wsh * 0.12, wsh * 2.2, wsh * 0.58], fill=(15, 15, 30, int(95 * clamp(1 - hop / 130, 0.3, 1))))
     ell = ell.filter(ImageFilter.GaussianBlur(max(3, 6 * c.Z))); c.img.paste(ell, (int(c.X(x) - ell.width / 2), int(c.Y(y) - ell.height * 0.5)), ell)
     # luce: tinta dell'ambiente + riflesso di bordo
@@ -645,51 +659,98 @@ def dust_puff(c, x, y, t0, big=1.0, seed=0):
     lay = lay.filter(ImageFilter.GaussianBlur(8)); c.img.paste(lay, (0, 0), lay)
 
 
+def wave_D(t):
+    if t < T_WS or t > T_WE: return None
+    if t < T_W + 0.45: return 330 * ease((t - T_WS) / (T_W + 0.45 - T_WS)) ** 0.8
+    return 330 * (1 - ease((t - T_W - 0.45) / (T_WE - T_W - 0.45)))
+
+
 def wave_front(sid, x, t):
-    """posizione y del fronte dell'onda sulla sabbia in x (None se assente)"""
-    if not (T_WS - 1.6 <= t <= T_WE): return None
-    sh = float(shore_y(sid, x)); g = 0.42 + 0.58 * math.exp(-((x - 640) / 330.0) ** 2)
-    if t < T_WS: return None
-    if t < T_W + 0.45: D = 330 * ease((t - T_WS) / (T_W + 0.45 - T_WS)) ** 0.8
-    else: D = 330 * (1 - ease((t - T_W - 0.45) / (T_WE - T_W - 0.45)))
-    return sh + D * g + 10 * math.sin(x * 0.02 + t * 3)
+    """posizione y del fronte dell'onda sulla sabbia in x (None se assente); x può essere un array"""
+    D_ = wave_D(t)
+    if D_ is None: return None
+    sh = shore_y(sid, x); g = 0.42 + 0.58 * np.exp(-((x - 640) / 330.0) ** 2)
+    return sh + D_ * g + 10 * np.sin(x * 0.02 + t * 3)
+
+
+_noise = None
+def noise_tex():
+    global _noise
+    if _noise is None:
+        rng = np.random.default_rng(5); n = rng.random((64, 36)).astype(np.float32)
+        n = cv2.GaussianBlur(cv2.resize(n, (W // 2, H // 2), interpolation=cv2.INTER_CUBIC), (0, 0), 5); _noise = ((n - n.min()) / (n.max() - n.min())).astype(np.float32)
+    return _noise
+
+
+def water_sheet(c, t):
+    """acqua che invade la sabbia: trasparente verso riva, più densa e schiumosa al fronte"""
+    Dw = wave_D(t)
+    if Dw is None: return
+    Z = c.Z; y0 = int(max(0, c.Y(1180))); y1 = int(min(H, c.Y(2000)))
+    if y1 - y0 < 4: return
+    yy, xx = np.mgrid[y0:y1, 0:W].astype(np.float32)
+    wx = (xx - W / 2) / Z + c.cx; wy = (yy - H / 2) / Z + c.cy
+    sh = shore_y("spiaggia", wx).astype(np.float32); fr = wave_front("spiaggia", wx, t).astype(np.float32)
+    d = (wy - sh) / np.maximum(fr - sh, 1.0)
+    inside = ((d > 0) & (d < 1)).astype(np.float32)
+    fade = clamp((T_WE - t) / 0.9)
+    nz = noise_tex(); nh, nw_ = nz.shape
+    u = ((xx * 0.5 + t * 22) % nw_).astype(np.float32); v = ((yy * 0.5 - t * 14) % nh).astype(np.float32)
+    n1 = cv2.remap(nz, u, v, cv2.INTER_LINEAR, borderMode=cv2.BORDER_WRAP)
+    alpha = np.clip(d * 2.2, 0, 1) ** 1.2 * 0.62 * inside
+    near = np.exp(-((wy - fr) / (26.0)) ** 2) * (0.55 + 0.9 * n1)           # schiuma al fronte
+    near2 = np.exp(-((wy - fr + 54) / 14.0) ** 2) * (0.25 + 0.7 * n1) * 0.7
+    foam = np.clip(near + near2, 0, 1) * (wy < fr + 18)
+    base = np.array([60, 184, 206], np.float32); lite = np.array([150, 232, 240], np.float32)
+    col = base[None, None, :] * (1 - n1[..., None] * 0.6) + lite[None, None, :] * (n1[..., None] * 0.6)
+    reg = np.asarray(c.img.crop((0, y0, W, y1))).astype(np.float32)
+    out = reg * (1 - (alpha * fade)[..., None]) + col * (alpha * fade)[..., None]
+    out = out * (1 - (foam * fade)[..., None]) + 255.0 * (foam * fade)[..., None]
+    c.img.paste(Image.fromarray(np.clip(out, 0, 255).astype(np.uint8)), (0, y0))
+
+
+def noise_at(xx, yy, t, sx=22.0, sy=-14.0):
+    nz = noise_tex(); nh, nw_ = nz.shape
+    u = ((xx * 0.5 + t * sx) % nw_).astype(np.float32); v = ((yy * 0.5 + t * sy) % nh).astype(np.float32)
+    return cv2.remap(nz, u, v, cv2.INTER_LINEAR, borderMode=cv2.BORDER_WRAP)
+
+
+def crest(c, t):
+    """cresta dell'onda gigante che avanza sul mare: faccia scura trasparente + schiuma rumorosa (niente poligoni piatti)"""
+    sid = "spiaggia"; Z = c.Z
+    u2 = clamp(t / (T_WS + 0.2)) ** 1.4; fade = 1 - clamp((t - T_WS - 0.1) / 0.5)
+    if fade <= 0: return
+    y0 = int(max(0, c.Y(HZ + 10))); y1 = int(min(H, c.Y(1620)))
+    if y1 - y0 < 4: return
+    yy, xx = np.mgrid[y0:y1, 0:W].astype(np.float32)
+    wx = (xx - W / 2) / Z + c.cx; wy = (yy - H / 2) / Z + c.cy
+    sh = shore_y(sid, wx).astype(np.float32)
+    yc = (HZ + 90) * (1 - u2) + (sh - 30) * u2 + 6 * np.sin(wx * 0.02 + t * 2)
+    hg = (30 + 75 * u2) * (0.78 + 0.22 * np.sin(wx * 0.011 + 1.3))
+    r = (wy - yc) / hg
+    n1 = noise_at(xx, yy, t)
+    face = np.clip(1 - np.abs(r + 0.15) / 0.85, 0, 1) ** 1.4 * (0.30 + 0.35 * u2) * fade
+    foam = (np.exp(-((r + 0.85) / 0.16) ** 2) * (0.55 + 0.9 * n1) + np.exp(-((r + 0.55) / 0.30) ** 2) * (0.20 + 0.5 * n1) * 0.8)
+    foam = np.clip(foam, 0, 1) * (0.45 + 0.55 * u2) * fade
+    reg = np.asarray(c.img.crop((0, y0, W, y1))).astype(np.float32)
+    out = reg * (1 - face[..., None]) + np.array([28, 132, 168], np.float32) * face[..., None]
+    out = out * (1 - foam[..., None]) + 255.0 * foam[..., None]
+    c.img.paste(Image.fromarray(np.clip(out, 0, 255).astype(np.uint8)), (0, y0))
 
 
 def big_wave(c, t):
-    """onda gigante: prima una cresta bianca che avanza sul mare, poi l'acqua che invade la sabbia"""
+    """onda gigante: prima una cresta che avanza sul mare, poi l'acqua che invade la sabbia"""
     sid = "spiaggia"; X, Y, Z = c.X, c.Y, c.Z
-    if t < T_WE:
-        # cresta lontana che cresce e si avvicina (tutto il tempo del racconto)
-        u = clamp(t / (T_WS + 0.2)); u2 = u ** 1.5
-        pts_t, pts_b = [], []
-        for x in range(-60, 1150, 30):
-            sh = float(shore_y(sid, x)); yy = lerp(HZ + 90, sh - 25, u2) + 6 * math.sin(x * 0.02 + t * 2)
-            hgt = lerp(8, 95, u2) * (0.75 + 0.25 * math.sin(x * 0.011 + 1.3))
-            pts_t.append((X(x), Y(yy - hgt))); pts_b.append((X(x), Y(yy + hgt * 0.25)))
-        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
-        ld.polygon(pts_t + pts_b[::-1], fill=(34, 150, 190, int(120 * u2 + 40)))
-        ld.line(pts_t, fill=(255, 255, 255, int(235 * min(1, u2 + 0.3))), width=max(3, int((5 + 12 * u2) * Z)))
-        lay = lay.filter(ImageFilter.GaussianBlur(2.5 * Z)); c.img.paste(lay, (0, 0), lay)
-    if T_WS <= t < T_WE:
-        pts_t, pts_b, ptf = [], [], []
-        for x in range(-60, 1150, 24):
-            sh = float(shore_y(sid, x)); fy = wave_front(sid, x, t)
-            pts_t.append((X(x), Y(sh - 18))); pts_b.append((X(x), Y(fy))); ptf.append((X(x), Y(fy)))
-        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
-        fade = clamp((T_WE - t) / 0.8)
-        ld.polygon(pts_t + pts_b[::-1], fill=(70, 196, 214, int(125 * fade)))
-        for off, wd, al in ((0, 30, 235), (-26, 14, 150), (-52, 8, 90)):
-            ld.line([(a, b + off * Z) for a, b in ptf], fill=(255, 255, 255, int(al * fade)), width=max(2, int(wd * Z)))
-        lay = lay.filter(ImageFilter.GaussianBlur(3 * Z)); c.img.paste(lay, (0, 0), lay)
-    # sabbia bagnata che resta (si asciuga piano)
-    if t >= T_W + 0.5:
+    if t < T_WS + 0.7: crest(c, t)
+    if T_WS <= t < T_WE: water_sheet(c, t)
+    if t >= T_W + 0.5:                                       # sabbia bagnata che resta (si asciuga piano)
         w_ = clamp(1 - (t - T_W - 0.5) / 14.0, 0.0, 1.0) * clamp((t - T_W - 0.5) / 0.6)
         pts_t, pts_b = [], []
         for x in range(-60, 1150, 30):
             sh = float(shore_y(sid, x)); g = 0.42 + 0.58 * math.exp(-((x - 640) / 330.0) ** 2)
             pts_t.append((X(x), Y(sh))); pts_b.append((X(x), Y(sh + 300 * g + 12)))
-        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ImageDraw.Draw(lay).polygon(pts_t + pts_b[::-1], fill=(84, 62, 28, int(70 * w_)))
-        lay = lay.filter(ImageFilter.GaussianBlur(10 * Z)); c.img.paste(lay, (0, 0), lay)
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ImageDraw.Draw(lay).polygon(pts_t + pts_b[::-1], fill=(84, 62, 28, int(64 * w_)))
+        lay = lay.filter(ImageFilter.GaussianBlur(14 * Z)); c.img.paste(lay, (0, 0), lay)
 
 
 def castle1_scale(t):
@@ -710,30 +771,36 @@ def props_s1(c, t):
     sv = sized("shovel", h=210 * Z); c.img.paste(sv, (int(X(520) - sv.width / 2), int(Y(1706) - sv.height * 0.92)), sv)
     # castello / macerie
     if t < T_W + 0.05:
-        s = castle1_scale(t); cs = sized("castle_small", w=430 * s * Z)
+        s = castle1_scale(t); cs = sized("castle_small", w=520 * s * Z)
         if t >= T_WS + 0.4:                                         # trema all'arrivo dell'onda
             cs = cs.rotate(2.0 * math.sin(t * 40) * clamp((t - T_WS - 0.4) / 0.9), resample=Image.BICUBIC, expand=True)
         c.img.paste(cs, (int(X(cx) - cs.width / 2), int(Y(cy) - cs.height * 0.86)), cs)
         for kt in (0.9, 1.9, 2.9): dust_puff(c, cx, cy, kt, 0.8, seed=kt)
     else:
-        he = sized("sand_heap", w=480 * Z)
+        he = sized("sand_heap", w=500 * Z)
         wet = clamp((t - T_SPRAY0 - 0.7) / 1.2)
         if wet > 0:
             arr = np.asarray(he).astype(np.float32); arr[..., :3] *= (1 - 0.30 * wet); he = Image.fromarray(arr.astype(np.uint8), "RGBA")
         c.img.paste(he, (int(X(cx) - he.width / 2), int(Y(cy + 20) - he.height * 0.72)), he)
         if wet > 0 and t < T_SPRAY1 + 1.0:
             sparkles(c, cx, cy - 40, T_SPRAY0 + 0.7, 2.6, n=8, spread=140, rise=20, size=11, seed=5)
-    # secchiello (a terra, si riempie)
+def fg_s1(c, t):
+    """secchiello in primo piano (davanti all'elefantino) che si riempie e poi si svuota"""
+    X, Y, Z = c.X, c.Y, c.Z
     bx, by = BUCKET0
-    bk = sized("bucket", w=250 * Z)
-    c.img.paste(bk, (int(X(bx) - bk.width / 2), int(Y(by) - bk.height * 0.9)), bk)
+    bk = sized("bucket", w=190 * Z)
+    x0, y0 = int(X(bx) - bk.width / 2), int(Y(by) - bk.height * 0.9)
+    c.img.paste(bk, (x0, y0), bk)
     fill = clamp((t - T_FILL0 - 0.35) / (T_FILL1 - T_FILL0 - 0.35)) * (1 - 0.55 * clamp((t - T_SPRAY0 - 0.2) / (T_SPRAY1 - T_SPRAY0)))
     if fill > 0.02:
-        wy_ = by - bk.height / Z * 0.9 + 52 - fill * 36
         lay = Image.new("RGBA", bk.size, (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
-        ex, ey = bk.width * 0.5, bk.height * 0.22
-        ld.ellipse([ex - bk.width * 0.37, bk.height * 0.18 - fill * 4 * Z, ex + bk.width * 0.37, bk.height * 0.18 + bk.height * 0.2], fill=(70, 186, 232, 235), outline=(210, 245, 255, 255), width=3)
-        c.img.paste(lay, (int(X(bx) - bk.width / 2), int(Y(by) - bk.height * 0.9)), lay)
+        ld.ellipse([bk.width * 0.14, bk.height * (0.20 - 0.03 * fill), bk.width * 0.86, bk.height * (0.20 - 0.03 * fill) + bk.height * 0.2], fill=(70, 186, 232, 235), outline=(215, 246, 255, 255), width=3)
+        c.img.paste(lay, (x0, y0), lay)
+
+
+def bucket_rim(): return BUCKET0[1] - 0.72 * (190 * 0.9)
+
+
 
 
 def tip_world(name, pose, t):
@@ -744,14 +811,14 @@ def tip_world(name, pose, t):
 def jets_s1(c, t):
     # riempie il secchiello
     if T_FILL0 + 0.3 <= t < T_FILL1 + 0.8:
-        stream(c, lambda tau: tip_world("ele", "riempie", min(max(tau, T_FILL0), T_FILL1)), lambda tau: (-20, 160), T_FILL0 + 0.3, T_FILL1 - 0.1, BUCKET0[1] - 150, wid=14)
-        if T_FILL0 + 0.7 < t < T_FILL1 + 0.5: splash(c, BUCKET0[0] - 10, BUCKET0[1] - 150, t - (t * 12 % 0.2), 0.3, 6, 120, seed=int(t * 12))
+        land = stream(c, lambda tau: tip_world("ele", "riempie", min(max(tau, T_FILL0), T_FILL1)), lambda tau: (-8, 120), T_FILL0 + 0.3, T_FILL1 - 0.1, bucket_rim(), wid=22)
+        if land: splash(c, land[0], land[1], t - (t * 12 % 0.2), 0.3, 6, 140, seed=int(t * 12))
     # spruzza sul mucchio di sabbia
     if T_SPRAY0 + 0.3 <= t < T_SPRAY1 + 0.9:
         def vel(tau):
             sw = math.sin((tau - T_SPRAY0) * 3.0)
-            return (-250 + 130 * sw, -230)
-        land = stream(c, lambda tau: tip_world("ele", "spruzza_giu", min(max(tau, T_SPRAY0), T_SPRAY1)), vel, T_SPRAY0 + 0.3, T_SPRAY1, CASTLE1[1] - 60, wid=19)
+            return (-470 + 120 * sw, -210)
+        land = stream(c, lambda tau: tip_world("ele", "spruzza_giu", min(max(tau, T_SPRAY0), T_SPRAY1)), vel, T_SPRAY0 + 0.3, T_SPRAY1, CASTLE1[1] - 70, wid=28)
         if land:
             splash(c, land[0], land[1], t - (t * 9 % 0.35), 0.5, 10, 260, seed=int(t * 9))
 
@@ -760,8 +827,8 @@ def props_s2(c, t):
     X, Y, Z = c.X, c.Y, c.Z
     cx, cy = CASTLE2
     # secchiello e pala accanto
-    bk = sized("bucket", w=230 * Z); c.img.paste(bk, (int(X(880) - bk.width / 2), int(Y(1740) - bk.height * 0.9)), bk)
-    sv = sized("shovel", h=200 * Z); c.img.paste(sv, (int(X(150) - sv.width / 2), int(Y(1730) - sv.height * 0.92)), sv)
+    bk = sized("bucket", w=190 * Z); c.img.paste(bk, (int(X(985) - bk.width / 2), int(Y(1790) - bk.height * 0.9)), bk)
+    sv = sized("shovel", h=200 * Z); c.img.paste(sv, (int(X(705) - sv.width / 2), int(Y(1790) - sv.height * 0.92)), sv)
     st = 0.0; tl = None
     for i, tb_ in enumerate(T_BUILD):
         if t >= tb_: st = BUILD_S[i]; tl = tb_; i0 = i
@@ -823,7 +890,7 @@ def jets_s2(c, t):
 def props_s3(c, t):
     X, Y, Z = c.X, c.Y, c.Z
     cx, cy = CASTLE3
-    cs = sized("castle_big", h=CASTLE_H * 0.82 * Z)
+    cs = sized("castle_big", h=CASTLE_H * 0.78 * Z)
     arr = np.asarray(cs).astype(np.float32); arr[..., :3] = np.clip(arr[..., :3] * np.array([1.0, 0.82, 0.68]) + np.array([14, 4, 0]), 0, 255)
     cs = Image.fromarray(arr.astype(np.uint8), "RGBA")
     # ombra lunga del castello verso la camera
@@ -832,7 +899,7 @@ def props_s3(c, t):
     sh = cv2.GaussianBlur(sh, (0, 0), 10 * Z); lay = Image.new("RGBA", (sh.shape[1], sh.shape[0]), (20, 20, 40, 0)); lay.putalpha(Image.fromarray((sh * 90).astype(np.uint8)))
     c.img.paste(lay, (int(X(cx) - cs.width / 2), int(Y(cy + 8) - cs.height * 0.97)), lay)
     c.img.paste(cs, (int(X(cx) - cs.width / 2), int(Y(cy + 8) - cs.height * 0.97)), cs)
-    flag_draw(c, t, (cx, cy), CASTLE_H * 0.82)
+    flag_draw(c, t, (cx, cy), CASTLE_H * 0.78)
     if T_SPR3 <= t < T_SPR3 + 2.6:
         x0, y0 = tip_world("ele", "spruzza", T_SPR3 + 0.01) if False else (None, None)
 
@@ -856,7 +923,7 @@ def scene_img(sid, t, cx, cy, Z):
     base = bg_arr(sid).resize((W, H), Image.BICUBIC, box=(cx - 540 / Z, cy - 960 / Z, cx + 540 / Z, cy + 960 / Z))
     arr = sway(np.asarray(base), sid, t, cx, cy, Z)
     img = Image.fromarray(arr).filter(ImageFilter.GaussianBlur(0.4 + 0.9 * max(0, Z - 1)))
-    c = Ctx(); c.img = img; c.d = ImageDraw.Draw(img, "RGBA"); c.t = t; c.Z = Z; c.sid = sid
+    c = Ctx(); c.img = img; c.d = ImageDraw.Draw(img, "RGBA"); c.t = t; c.Z = Z; c.sid = sid; c.cx = cx; c.cy = cy
     c.X = lambda x: (x - cx) * Z + W / 2; c.Y = lambda y: (y - cy) * Z + H / 2
     c.glow = Image.new("RGB", (W, H), (0, 0, 0)); c.gd = ImageDraw.Draw(c.glow); c.glow_used = False
     foam_line(c, sid, t)
@@ -866,17 +933,17 @@ def scene_img(sid, t, cx, cy, Z):
         props_s1(c, t); big_wave(c, t)
     if sid == "spiaggia_baia": props_s2(c, t)
     if sid == "spiaggia_tramonto": props_s3(c, t)
-    vis = [n for n in CHARS if t >= APPEAR[n]]
-    for n in sorted(vis, key=lambda n: kf_pos(n, t)[1]): draw_char(c, n, t)
-    if sid == "spiaggia": jets_s1(c, t)
-    if sid == "spiaggia_baia": jets_s2(c, t)
-    if sid == "spiaggia_tramonto": jets_s3(c, t)
-    if sid == "spiaggia" and T_W <= t < T_W + 0.9:                  # Splash sul castello
-        for k in range(3): splash(c, CASTLE1[0] + (k - 1) * 120, CASTLE1[1] - 40, T_W + k * 0.05, 0.85, 22, 520, seed=k + 7)
     if sid == "spiaggia_tramonto" and t >= V["n7"] + 0.4:           # cuori
         for k in range(10):
             uu = ((t - V["n7"]) * 0.45 + k / 10) % 1.0; hpx = c.X(220 + k * 70 + math.sin(uu * 8 + k) * 40); hpy = c.Y(1450 - uu * 640)
             heart(c.d, hpx, hpy, 28 * Z * (0.6 + 0.4 * math.sin(math.pi * uu)), (255, 120, 160, int(220 * math.sin(math.pi * uu))))
+    vis = [n for n in CHARS if t >= APPEAR[n]]
+    for n in sorted(vis, key=lambda n: kf_pos(n, t)[1]): draw_char(c, n, t)
+    if sid == "spiaggia": fg_s1(c, t); jets_s1(c, t)
+    if sid == "spiaggia_baia": jets_s2(c, t)
+    if sid == "spiaggia_tramonto": jets_s3(c, t)
+    if sid == "spiaggia" and T_W <= t < T_W + 0.9:                  # Splash sul castello
+        for k in range(3): splash(c, CASTLE1[0] + (k - 1) * 120, CASTLE1[1] - 40, T_W + k * 0.05, 0.85, 22, 520, seed=k + 7)
     if c.glow_used:
         g2 = c.glow.filter(ImageFilter.GaussianBlur(10)); img = ImageChops.add(ImageChops.add(img, c.glow), g2)
     if sid == "spiaggia_baia": img = Image.blend(img, ImageChops.multiply(img, Image.new("RGB", (W, H), (255, 232, 196))), 0.18)
@@ -915,8 +982,8 @@ def frame(i):
     d = ImageDraw.Draw(img, "RGBA")
     if t < 2.5:                                                      # HOOK
         u = back(t / 0.35); a = int(255 * clamp((2.5 - t) / 0.4))
-        text(d, "ARRIVA", W / 2, 300 - 10 * math.sin(t * 6), int(190 * max(0.1, u)), (255, 240, 120, a), (190, 40, 70, a), 12)
-        text(d, "L'ONDA!", W / 2, 490, int(150 * max(0.1, back((t - 0.4) / 0.35))), (255, 255, 255, a), (30, 90, 160, a), 10)
+        text(d, "ARRIVA", W / 2, 205 - 10 * math.sin(t * 6), int(180 * max(0.1, u)), (255, 240, 120, a), (190, 40, 70, a), 12)
+        if t >= 0.4: text(d, "L'ONDA!", W / 2, 370, int(140 * max(0.1, back((t - 0.4) / 0.35))), (255, 255, 255, a), (30, 90, 160, a), 10)
     for k, t0, who, txt, dur in VOICES:                              # sottotitoli
         if t0 - 0.05 <= t <= t0 + dur + 0.3:
             u = ease((t - t0 + 0.05) / 0.18); f = ImageFont.truetype(FONT, 66 if who == "narr" else 78); lines = []; cur = ""
@@ -924,7 +991,7 @@ def frame(i):
                 tl_ = (cur + " " + wd).strip(); bb = d.textbbox((0, 0), tl_, font=f, anchor="mm", stroke_width=6)
                 if bb[2] - bb[0] > 930 and cur: lines.append(cur); cur = wd
                 else: cur = tl_
-            lines.append(cur); yy = (1660 if t < 2.5 else 250) - 41 * (len(lines) - 1) + (1 - u) * 14
+            lines.append(cur); yy = (640 if t < 2.5 else 250) - 41 * (len(lines) - 1) + (1 - u) * 14
             for ln in lines: text(d, ln, W / 2, yy, 66 if who == "narr" else 78, COL[who] + (int(255 * u),), (50, 40, 30, int(255 * u)), 7); yy += 84
             break
     subscribe_button(img, t, V["end"] + 0.9, cy=1810)
