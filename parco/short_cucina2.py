@@ -47,7 +47,7 @@ E = lambda k: V[k] + D[k]
 SAY = {"n1": "narr", "t1": "mouse", "n2": "narr", "t2": "mouse", "c1": "chip", "s1": "spike", "n3": "narr", "t3": "mouse",
        "c3": "chip", "s3": "spike", "o1": "mouse", "o2": "chip", "n4": "narr", "c2": "chip", "s2": "spike", "n5": "narr",
        "t4": "mouse", "n6": "narr", "c4": "chip", "s4": "spike", "n7": "narr", "end": "mouse"}
-TXT = {"n1": "Shhh... sentite? Qualcosa bussa nel barattolo dei biscotti!", "t1": "Toc toc? Chi c'è?",
+TXT = {"n1": "Zitti, zitti... sentite? Qualcosa bussa nel barattolo dei biscotti!", "t1": "Toc toc? Chi c'è?",
        "n2": "Il topolino chiama i suoi amici.", "t2": "Chip! Spike! Venite!", "c1": "Arrivo!", "s1": "Aspettami!",
        "n3": "Ora tutti insieme... contiamo fino a tre!", "t3": "Uno!", "c3": "Due!", "s3": "Tre!", "o1": "Oooh!", "o2": "Oooh!",
        "n4": "Ma guarda! È una farfalla magica!", "c2": "Che bella!", "s2": "Prendiamola!",
@@ -95,7 +95,7 @@ EV = {
         (T_WALK, "sbircia", 0.35), (4.4, "sorpreso", 0.16), (4.9, "sbircia", 0.3), (V["t1"] + 0.3, "sbircia", 0.2),
         (E("t1") + 0.2, "neutro", 0.3), (V["n2"] + 0.25, "indica", 0.3), (V["t2"], "saluta", 0.25),
         (E("t2") + 0.1, "neutro", 0.3), (V["n3"] - 0.2, "tiene", 0.3), (V["t3"] - 0.18, "salto", 0.2), (V["t3"] + 0.42, "tiene", 0.25),
-        (TP - 0.04, "sorpreso", 0.12), (V["o1"], "guarda_su", 0.25), (V["s2"] - 0.2, "indica", 0.25), (V["n5"] + 0.4, "guarda_su", 0.3),
+        (TP - 0.04, "sorpreso", 0.12), (V["o1"], "guarda_su", 0.25), (V["s2"] - 0.2, "indica", 0.25), (V["n5"] + 0.4, "guarda_su", 0.3), (TP + 8.2, "triste", 0.35),
         (V["t4"] - 0.1, "saluta", 0.25), (E("t4") + 0.1, "tiene", 0.3), (V["s4"] + 0.2, "mangia", 0.3)]
         + dance(V["n7"] - 0.1, V["end"] - 0.15, "balla") + [(V["end"] - 0.1, "saluta", 0.25)],
     "chip": [(0.0, "neutro", 0.01)] + run("chip", T_CHIP, T_CHIP_END - 0.3) + [
@@ -286,7 +286,7 @@ def text(d, s, x, y, size, fill, out, ow, rot=0):
     d.text((x, y), s, font=ImageFont.truetype(FONT, size), fill=fill, anchor="mm", stroke_width=ow, stroke_fill=out)
 
 
-def pop_text(c, s, wx, wy, t0, dur, size, fill, out, rot=0, ow=10):
+def pop_text(c, s, wx, wy, t0, dur, size, fill, out, rot=0, ow=10, margin=330):
     """testo grande che 'salta fuori' (coordinate mondo) e svanisce"""
     t = c.t
     if not (t0 <= t < t0 + dur): return
@@ -294,7 +294,7 @@ def pop_text(c, s, wx, wy, t0, dur, size, fill, out, rot=0, ow=10):
     f = ImageFont.truetype(FONT, max(10, int(size * c.Z * max(0.05, u)))); lay = Image.new("RGBA", (900, 500), (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
     ld.text((450, 250), s, font=f, fill=fill + (a,), anchor="mm", stroke_width=max(2, int(ow * c.Z)), stroke_fill=out + (a,))
     lay = lay.rotate(rot + 5 * math.sin((t - t0) * 12), resample=Image.BICUBIC)
-    sx = clamp(c.X(wx), 330, W - 330); sy = clamp(c.Y(wy), 300, H - 400)
+    sx = clamp(c.X(wx), margin, W - margin); sy = clamp(c.Y(wy), 300, H - 400)
     c.img.paste(lay, (int(sx - 450), int(sy - 250)), lay)
 
 
@@ -374,6 +374,28 @@ def shadow(img, x, y, w, k=1.0):
     img.paste(s2, (int(x - s2.width / 2), int(y - s2.height / 2)), s2)
 
 
+def dust(c, t):
+    """nuvolette di polvere ai piedi: a ogni appoggio della corsa/camminata e agli atterraggi"""
+    ev = []
+    for (name, t0, t1, per, kind) in GAIT:
+        q = per / 2 if kind == "run" else per / 2; k = 0
+        while t0 + k * q < t1:
+            ev.append((name, t0 + k * q + 0.02, 1.0 if kind == "run" else 0.55)); k += 1
+    for name, evl in EV.items():
+        for (te, pose, dur) in evl:
+            if pose in ("salto", "afferra"): ev.append((name, te + 0.72, 1.3))
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
+    for (name, te, amp) in ev:
+        u = (t - te) / 0.5
+        if not 0 <= u < 1 or t < APPEAR[name]: continue
+        x, y, _ = kf_pos(name, te); s = persp(y)
+        for j in range(3):
+            dx = (j - 1) * 46 * s * amp + math.sin(j * 2.1) * 10; r = (14 + 46 * u) * s * amp * c.Z; a = int(110 * (1 - u) * amp)
+            px, py = c.X(x + dx + (j - 1) * 40 * u), c.Y(y - 6 * s - 24 * u * s)
+            ld.ellipse([px - r, py - r * 0.7, px + r, py + r * 0.7], fill=(246, 232, 210, min(150, a)))
+    lay = lay.filter(ImageFilter.GaussianBlur(7)); c.img.paste(lay, (0, 0), lay)
+
+
 def draw_char(img, c, name, t):
     x, y, s, hop, rot, sq = cstate(name, t)
     cv, pose = char_canvas(name, t)
@@ -446,11 +468,6 @@ def frame(i):
             rr = (60 + 700 * u) * Z; ga = 1 - u / 0.35
             c.gd.ellipse([X(JAR[0]) - rr, Y(JAR[1] - 300) - rr * 0.8, X(JAR[0]) + rr, Y(JAR[1] - 300) + rr * 0.8], outline=(int(190 * ga), int(170 * ga), int(100 * ga)), width=int(12 * Z)); c.glow_used = True
 
-    # numeri del conto
-    for key, nm, num, colr in (("t3", "mouse", "1", (255, 120, 120)), ("c3", "chip", "2", (255, 210, 80)), ("s3", "spike", "3", (120, 200, 255))):
-        x, y, s, *_ = cstate(nm, V[key])
-        pop_text(c, num, x, y - H_CH[nm] * s - 70, V[key] - 0.05, 0.85, 200, colr, (60, 40, 120), rot=-6, ow=14)
-
     # personaggi, dal più lontano
     vis = [n for n in CHARS if t >= APPEAR[n]]
     order = sorted(vis, key=lambda n: kf_pos(n, t)[1])
@@ -462,6 +479,19 @@ def frame(i):
             if kt <= t < kt + 0.5 and 0.5 < kt < V["n3"]:
                 pop_text(c, "TOC!" if (KNOCKS.index(kt) % 2 == 0) else "TOC TOC!", JAR[0] + 40, JAR[1] - 470 - 30 * (KNOCKS.index(kt) % 3), kt, 0.5, 100, (255, 232, 90), (170, 50, 40), rot=8 if KNOCKS.index(kt) % 2 else -8)
 
+    # numeri del conto
+    for key, nm, num, colr in (("t3", "mouse", "1", (255, 120, 120)), ("c3", "chip", "2", (255, 210, 80)), ("s3", "spike", "3", (120, 200, 255))):
+        x, y, s, *_ = cstate(nm, V[key])
+        pop_text(c, num, x, y - H_CH[nm] * s - 70, V[key] - 0.05, 0.85, 200, colr, (60, 40, 120), rot=-6, ow=14, margin=170)
+
+    # onde del TOC sul barattolo
+    for kt in KNOCKS:
+        if kt <= t < kt + 0.45 and t < TP:
+            u = (t - kt) / 0.45
+            for q in range(2):
+                rr = (60 + 230 * (u - 0.12 * q)) * Z
+                if rr > 0: c.d.ellipse([X(JAR[0]) - rr, Y(JAR[1] - 170) - rr * 0.85, X(JAR[0]) + rr, Y(JAR[1] - 170) + rr * 0.85], outline=(255, 245, 200, int(190 * (1 - u))), width=max(2, int(7 * Z * (1 - u))))
+    dust(c, t)
     # biscotti: dal barattolo alle mani; poi alla bocca, con i morsi
     ck = cookie_sprite()
     for k, n in enumerate(("spike", "chip", "mouse")):

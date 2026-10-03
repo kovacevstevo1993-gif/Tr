@@ -12,14 +12,15 @@ OUT = os.path.join(HERE, "audioD")
 
 # voce edge-tts, rate, pitch (Hz), rialzo del tono in post (rapporto), guadagno
 VOCE = {
+    # tono alzato dal motore neurale (naturale) + solo un ritocco minimo in post: così non suona robotico
     "narr": ("it-IT-IsabellaNeural", "-4%", "+3Hz", 1.0),
-    "mouse": ("it-IT-DiegoNeural", "+6%", "+6Hz", 1.30),
-    "chip": ("it-IT-ElsaNeural", "+8%", "+8Hz", 1.34),
-    "spike": ("it-IT-GiuseppeMultilingualNeural", "+0%", "+4Hz", 1.24),
+    "mouse": ("it-IT-DiegoNeural", "+8%", "+34Hz", 1.07),
+    "chip": ("it-IT-ElsaNeural", "+10%", "+40Hz", 1.05),
+    "spike": ("it-IT-GiuseppeMultilingualNeural", "+2%", "+26Hz", 1.08),
 }
 
 RIGHE = [
-    ("n1", "narr", "Shhh... sentite? Qualcosa bussa nel barattolo dei biscotti!"),
+    ("n1", "narr", "Zitti, zitti... sentite? Qualcosa bussa nel barattolo dei biscotti!"),
     ("t1", "mouse", "Toc toc? Chi c'è?"),
     ("n2", "narr", "Il topolino chiama i suoi amici."),
     ("t2", "mouse", "Chip! Spike! Venite!"),
