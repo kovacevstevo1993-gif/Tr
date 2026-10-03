@@ -165,3 +165,11 @@ Riprendi Bambini Ciao Ciao.
 Leggi `parco/docs/PASSAGGIO_Bambini_Ciao_Ciao_v3.md` nel repo kovacevstevo1993-gif/Tr, branch claude/fervent-johnson-ob5dk7, e i due documenti che cita. Rispetta le regole del §1 (risposte corte, niente VidIQ, niente personaggi nuovi, controlla il repo prima di generare).
 Ho collegato un nuovo account Pollinations: fai prima UNA generazione di prova, poi genera le pose mancanti (§9) e rifai lo Short "Il barattolo misterioso" più movimentato e con le voci dei bambini più naturali.
 ```
+
+
+---
+## 12. AGGIORNAMENTO (3 ott. 2026, sera) — Short v4 "Il barattolo misterioso" (`short_barattolo_v4.mp4`, 45 s)
+**Fatto:** pose mancanti di tutti e 3 (`mangia, balla, salto, afferra, guarda_su`, `chip_indica`) + pose nuove con l'oggetto GIÀ nelle mani: `orecchio, riceve, tiene_biscotto, mangia2, saluta2, parla_a/parla_o` (Spike senza parla_*; `indica_giu` è venuta male: non usarla). Oggetti 3D in `assets/obj/` (`jar, jar_open, lid, cookie, bf_open`; `jar_open`/`lid` sono ritagli di `jar`). Generatore: `oggetti_pollinations.py`.
+**Voci:** `voci_cucina3.py` → `audioE/`. Solo voci native it-IT (Isabella, Diego, Elsa): la `GiuseppeMultilingual` sbaglia le doppie ("Aspatami") ed è esclusa. Bambini = edge-tts a tono quasi naturale + Praat (Change gender). **Ogni battuta viene riascoltata con `trascrivi.py`** (Pollinations whisper, costo irrisorio) e rifatta se non coincide col testo. Questo è il modo di "ascoltare" la pronuncia.
+**Regia:** `short_cucina3.py` (+ `mix_cucina3.py`): biscotto che atterra nelle mani (posa `riceve`) → già nella posa (`tiene_biscotto`/`mangia`/`mangia2` alternati = masticare); mouse con l'orecchio al barattolo (`orecchio_m`); saluto a due mani; barattolo/biscotto/farfalla 3D. Rendering: ~4 min (4 core).
+**Saldo Pollinations del 2° account: di nuovo 0** (HTTP 402). Da generare quando c'è saldo: `spike_parla_a/o`, `bf_closed` (ali chiuse), un vero `indica_giu`, pose di camminata con braccia opposte per Chip/Spike.
