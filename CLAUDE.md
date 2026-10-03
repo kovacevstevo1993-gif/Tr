@@ -16,6 +16,7 @@ Due canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 - REGOLA ASSOLUTA (03/10/2026): i blocchi di voce / copioni vanno SEMPRE scritti direttamente in chat, numerati, uno per blocco, pronti da copiare in CapCut. MAI in un file, MAI con SendUserFile. Solo gli MP4 si mandano come file.
 - Eccezione: passaggio chat e riepiloghi lunghi richiesti: file con SendUserFile, non in chat. I copioni e i blocchi di voce restano SEMPRE in chat.
 - Gancio (04/10/2026): ogni video ha un gancio DIVERSO. Mai ripetere la stessa apertura (es. "Wait." l'hanno già short 5 e 6: non riusarla). Variare formula e primo suono.
+- Sigle per la voce: SNAP = "snap" (parola, minuscolo). CSFP, USDA, LIHEAP ecc. a lettere separate: "C S F P", "U S D A". Siti: "f n s dot u s d a dot gov".
 - Risposte corte, niente scuse né "hai ragione". Una cosa alla volta. Verificare prima di dare un'indicazione.
 - Mai spendere crediti vidIQ senza dirlo e chiedere prima (eccetto quando l'utente lo autorizza esplicitamente nel messaggio).
 - Slide e grafica le fa Claude con il codice (gratis). Titolo, descrizione e tag già completi da incollare, Subscribe e disclaimer compresi.
