@@ -32,6 +32,8 @@ Messaggio da incollare nella nuova chat (anche in fondo, §11).
 - **Hook** nei primi 2 secondi (nell'ultimo: testo gigante "COSA C'È NEL BOSCO?" + seme che brilla).
 - Voce narrante: ragazza dolce (Isabella). **Bambini: solo battute di 1–3 parole**, voci diverse, **italiane native** e con pronuncia corretta ("c'è qualche parola che la sbagliano": vedi §5 trascrizione).
 - Con ogni video l'utente vuole anche: **titolo, descrizione con parole chiave SEO, hashtag, tag, miniatura che attira l'attenzione** (e **anche la miniatura VERTICALE 1080x1920 — la vuole, mandarla da sola**), sottotitoli `.srt`, descrizione playlist.
+- **NIENTE miniatura orizzontale: l'utente vuole SOLO la verticale 1080x1920** (non generarla né mandarla). Consegna = video + miniatura verticale + `.srt` + testi in chat.
+- Se trova errori: **raccogliere TUTTI gli errori prima, poi UN solo rendering** (ogni rendering costa ~7 min; l'utente si arrabbia se si rifà più volte).
 - Dare i testi **direttamente nella chat** (in blocchi da copiare), non solo come file.
 - Etichetta "Realizzato per bambini", categoria Istruzione, pubblicazione martedì e venerdì ~16. Mai riprodurre video altrui.
 - Gli allegati mandati dall'utente MENTRE l'assistente lavora non vengono salvati: chiedere di rimandarli a assistente fermo.
