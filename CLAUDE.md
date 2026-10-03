@@ -12,6 +12,7 @@ Due canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 - Il disclaimer non protegge da YouTube: contano contenuto originale, dati verificati su fonti ufficiali, niente promesse di guadagno, niente persone/avatar AI che si presentano come esperti.
 
 ## Come lavora l'utente
+- REGOLA ASSOLUTA (03/10/2026): rispondere SOLO a quello che chiede, il minimo. Niente spiegazioni, riepiloghi, tabelle, note, offerte o domande non richieste. Ogni parola in più spreca crediti e chat (non sono illimitati). Se chiede il pacchetto (titolo, descrizione, tag), dare solo quello.
 - Risposte corte, niente scuse né "hai ragione". Una cosa alla volta. Verificare prima di dare un'indicazione.
 - Mai spendere crediti vidIQ senza dirlo e chiedere prima (eccetto quando l'utente lo autorizza esplicitamente nel messaggio).
 - Slide e grafica le fa Claude con il codice (gratis). Titolo, descrizione e tag già completi da incollare, Subscribe e disclaimer compresi.
