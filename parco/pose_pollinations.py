@@ -90,6 +90,9 @@ def su_verde(path):
 def chiedi(ref_png, posa, tentativi=6):
     buf = io.BytesIO()
     su_verde(ref_png).save(buf, "PNG")
+    if ref_png.endswith("ele.png"):
+        posa += (". IMPORTANT: this is a baby ELEPHANT: its long grey trunk MUST be clearly visible hanging down from the middle of the face, "
+                 "same length, thickness and shape as in the reference, with huge round ears. Never remove or shorten the trunk, never make a mouse nose")
     prompt = (
         "Use the attached character exactly as it is (same face, fur, clothes, colors, proportions, "
         "3D Pixar style, same camera angle and same size in the frame). Only change the pose: " + posa +
