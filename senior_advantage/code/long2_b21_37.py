@@ -345,7 +345,7 @@ def b29b(img, t):
     if ar > 0:
         lay = new_layer(); g = D(*lay); x1 = 1380 - 780 * ar
         g.ln([(1380, 470), (x1, 470)], GOLD, 24); g.pg([(x1, 410), (x1 - 80, 470), (x1, 530)], GOLD); alpha_layer(img, lay, 1)
-    txt_in(img, t, 3.8, (960, 330), "BENEFITS GO BACK", 70, GOLD)
+    txt_in(img, t, 3.8, (960, 250), "BENEFITS GO BACK", 70, GOLD)
     txt_in(img, t, 5.0, (W // 2, 930), "TO THE DATE YOU APPLIED", 70, IVORY)
 
 
