@@ -147,8 +147,9 @@ def b12c(img, t):
     title(img, t, "BUT WITH SOMEONE SIXTY OR OLDER")
     p = ease(seg(t, 1.6, 1.4))
     show(img, t, .3, lambda r, m: house(r, m, 560, 620, 2.0), .7)
-    lay = new_layer(); g = D(*lay)
-    g.rr([150 - 120 * p, 150 - 340 * p, 970 - 120 * p, 215 - 340 * p], 14, RED); alpha_layer(img, lay, 1 - ease(seg(t, 2.6, .4)))
+    cp = seg(t, 1.6, .6)
+    if cp < 1:
+        lay = new_layer(); g = D(*lay); g.rr([150, 150, 970, 215], 14, RED); g.tx((560, 183), 'CAP: $769', font(FONT_SANS, 42), IVORY); alpha_layer(img, lay, 1 - ease(cp))
     stamp(img, 560, 330, seg(t, 3.0, .6), "NO CAP", GOLD, -6, 84)
     # barra del reddito: meta' e oltre
     x0, y, tw = 1000, 380, 780

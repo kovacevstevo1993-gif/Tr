@@ -35,13 +35,13 @@ def b16a(img, t):
 def b16b(img, t):
     title(img, t, "HALF OF HER ADJUSTED INCOME")
     x0, tw, vmax = 220, 1480, 1400
-    txt_in(img, t, .3, (x0 + 330, 260), "ADJUSTED INCOME  $1,383", 40, SAGE)
+    txt_in(img, t, .3, (x0 + 250, 260), "ADJUSTED INCOME  $1,383", 40, SAGE)
     barpair(img, t, .6, x0, 340, tw, [(1383, SAGE_D)], vmax, 80)
     mk = ease(seg(t, 1.8, .5))
     if mk > 0:
         mx = x0 + tw * 691.5 / vmax
         ImageDraw.Draw(img).line([mx, 270, mx, 640], fill=GOLD, width=8)
-        txt_in(img, t, 2.0, (mx, 245), "HALF  ≈ $691", 36, GOLD)
+        txt_in(img, t, 2.0, (mx + 120, 225), "HALF  ≈ $691", 36, GOLD)
     txt_in(img, t, 3.0, (x0 + 290, 540), "SHELTER COSTS  $1,100", 40, SAGE)
     barpair(img, t, 3.2, x0, 620, tw, [(691.5, SAGE_D), (408.5, GOLD)], vmax, 80, 1.4)
     txt_in(img, t, 4.8, (x0 + tw * (691.5 + 204) / vmax, 740), "EXTRA ≈ $408", 56, GOLD)
@@ -164,8 +164,8 @@ def b20a(img, t):
     txt_in(img, t, 1.2, (560, 860), "STRAIGHT FROM THEIR PAGE", 48, GOLD)
     show(img, t, 2.4, lambda r, m: (person(r, m, 1230, 500, 1.6), person(r, m, 1450, 500, 1.6)), .6)
     txt_in(img, t, 3.4, (1340, 740), "A COUPLE · BOTH ELDERLY", 44, IVORY)
-    show(img, t, 4.6, lambda r, m: (D(r, m).rr([1080, 800, 1590, 920], 26, CARD, GOLD, 5), D(r, m).tx((1335, 860), "$1,200 INCOME", font(FONT_SANS, 44), GOLD)), .5)
-    show(img, t, 6.0, lambda r, m: (D(r, m).rr([1620, 800, 1880, 920], 26, CARD, RED, 5), D(r, m).tx((1750, 860), "+$300 MED", font(FONT_SANS, 34), RED)), .5)
+    show(img, t, 4.6, lambda r, m: (D(r, m).rr([1000, 800, 1480, 920], 26, CARD, GOLD, 5), D(r, m).tx((1240, 860), "$1,200 INCOME", font(FONT_SANS, 44), GOLD)), .5)
+    show(img, t, 6.0, lambda r, m: (D(r, m).rr([1510, 800, 1820, 920], 26, CARD, RED, 5), D(r, m).tx((1665, 860), "+$300 MEDICAL", font(FONT_SANS, 34), RED)), .5)
 
 
 def b20b(img, t):
