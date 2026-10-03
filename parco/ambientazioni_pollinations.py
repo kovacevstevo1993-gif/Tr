@@ -21,7 +21,7 @@ OUT = os.path.join(HERE, "assets", "amb")
 
 AMB = {
     "cucina": "a cozy bright children's kitchen interior with a wooden table, cabinets, a window with sunlight, fruit bowl on the counter",
-    "spiaggia": "a sunny sandy beach with gentle blue sea waves, a few shells and a distant sailboat, palm trees on the sides",
+    "spiaggia": ("a sunny tropical beach with gentle turquoise sea waves, a distant sailboat, soft fluffy clouds, two palm trees at the far sides", "smooth flat golden sand, wet sand near the water, no wood, no planks, no tiles, free of objects and shells"),
     "asilo": "a colorful kindergarten classroom with small tables, shelves full of toys and books, big window, paintings on the wall",
     "giardino": ("a bright sunny garden meadow in the early morning with colorful flowers, a small wooden fence, a little vegetable patch, a big blue sky with soft fluffy clouds, a few round trees and hills in the distance", "short flat green grass lawn, free of objects"),
     "bosco": ("an enchanted magical forest clearing with tall friendly trees, soft golden sunbeams through the leaves, ferns, tiny glowing flowers and mossy rocks at the sides", "flat soft green grass and moss ground, free of objects"),
