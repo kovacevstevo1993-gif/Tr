@@ -11,7 +11,7 @@ Leggere: CLAUDE.md, poi questo file. README.md e MEMORIA-CANALE.md non sono aggi
 2. The Money Backstory (@TheMoneyBackstoryUSA), cartella money_backstory/. Pensione USA over 50, slide blu navy e oro. Ignorarlo in questa chat.
 
 ## REGOLE FERREE
-- Rispondi SOLO a quello che chiedo, il minimo. Niente poemi, spiegazioni, riepiloghi, tabelle, note, offerte o domande non richieste. Niente scuse ne "hai ragione". Se serve un testo lungo, FAI UN FILE e mandalo con SendUserFile, non scriverlo in chat.
+- Rispondi SOLO a quello che chiedo, il minimo. Niente poemi, spiegazioni, riepiloghi, tabelle, note, offerte o domande non richieste. Niente scuse ne "hai ragione". I blocchi di voce / copioni vanno SEMPRE scritti in chat, numerati, pronti da copiare in CapCut: MAI in un file. Solo gli MP4 si mandano con SendUserFile.
 - Una cosa alla volta. Verifica prima di dare un'indicazione. Esegui SOLO quello che dico. Non rifare quello che ho gia montato. Non proporre di fermarmi.
 - Non creare file o cartelle che non ho chiesto (tranne quando chiedo un file).
 - Mai spendere crediti vidIQ senza chiedermi (saldo 145, si rinnovano il 25/10/2026).
