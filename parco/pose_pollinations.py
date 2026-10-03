@@ -14,7 +14,7 @@ La chiave Pollinations è iniettata dal proxy della sessione: non serve scriverl
 import base64, io, os, sys, time
 import numpy as np
 import requests
-from PIL import Image
+from PIL import Image, ImageOps
 from scipy.ndimage import binary_dilation, label
 
 URL = "https://gen.pollinations.ai/v1/images/edits"
@@ -30,8 +30,9 @@ RIFERIMENTI = {
 }
 
 POSE = {
-    "cammina_sx": "walking, left foot stepping forward, arms swinging naturally, mid-step, looking forward",
-    "cammina_dx": "walking, right foot stepping forward, arms swinging naturally, mid-step, looking forward",
+    # Passo con braccio opposto alla gamba avanti. cammina_sx NON si genera: è lo specchio di cammina_dx
+    # (il personaggio è simmetrico), così i due passi sono sempre alternati e sincronizzati.
+    "cammina_dx": "classic cartoon walk cycle CONTACT pose, front view, opposite arm and leg: the character's right leg steps far forward toward the camera, the character's left arm swings forward, the character's right arm swings backward, left leg stays behind with heel lifted, exaggerated clear walking pose",
     "china": "bending down and reaching to the ground with one hand to pick something up, knees bent, looking down",
     "tiene": "standing and holding both hands together in front of the belly at belly height, as if carrying a small object, smiling",
     "lancia": "throwing: one arm pulled far back over the shoulder about to throw, other arm forward for balance, determined smile",
@@ -42,14 +43,20 @@ POSE = {
 
 
 def su_verde(path):
+    """Ritaglio del personaggio su verde #00FF00, in 768x1376 SENZA stirarlo (proporzioni mantenute,
+    centrato in orizzontale e appoggiato in basso)."""
     im = Image.open(path).convert("RGBA")
-    im.putalpha(Image.fromarray(np.where(np.array(im)[..., 3] > 40, 255, 0).astype("uint8")))  # alpha netto
-    bg = Image.new("RGBA", im.size, (0, 255, 0, 255))
-    bg.alpha_composite(im)
-    return bg.convert("RGB").resize(SIZE)
+    a = np.array(im)
+    a[..., 3] = np.where(a[..., 3] > 40, 255, 0)
+    im = Image.fromarray(a, "RGBA")
+    k = min(SIZE[0] * 0.9 / im.width, SIZE[1] * 0.9 / im.height)
+    im = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)
+    bg = Image.new("RGBA", SIZE, (0, 255, 0, 255))
+    bg.alpha_composite(im, ((SIZE[0] - im.width) // 2, SIZE[1] - im.height - round(SIZE[1] * 0.04)))
+    return bg.convert("RGB")
 
 
-def chiedi(ref_png, posa, tentativi=4):
+def chiedi(ref_png, posa, tentativi=6):
     buf = io.BytesIO()
     su_verde(ref_png).save(buf, "PNG")
     prompt = (
@@ -97,16 +104,26 @@ def ritaglia(img):
     return im
 
 
+SPECCHIO = {"cammina_sx": "cammina_dx"}   # posa -> posa da specchiare
+
+
 def main():
     chi = sys.argv[1] if len(sys.argv) > 1 else "topo"
     if chi not in RIFERIMENTI:
         sys.exit(f"Personaggio sconosciuto: {chi} ({', '.join(RIFERIMENTI)})")
-    scelte = sys.argv[2:] or list(POSE)
+    scelte = [a for a in sys.argv[2:] if not a.startswith('--')] or (list(POSE) + list(SPECCHIO))
     os.makedirs(os.path.join(OUT, "raw"), exist_ok=True)
     ref = os.path.join(HERE, RIFERIMENTI[chi])
     for nome in scelte:
+        if os.path.exists(os.path.join(OUT, f"{chi}_{nome}.png")) and "--rifai" not in sys.argv:
+            print(f"⏭️  {chi} / {nome} già fatta (usa --rifai per rigenerarla)")
+            continue
         print(f"🎨 {chi} / {nome}")
-        raw = chiedi(ref, POSE[nome])
+        if nome in SPECCHIO:
+            src = os.path.join(OUT, "raw", f"{chi}_{SPECCHIO[nome]}.jpg")
+            raw = ImageOps.mirror(Image.open(src).convert("RGB"))
+        else:
+            raw = chiedi(ref, POSE[nome])
         raw.save(os.path.join(OUT, "raw", f"{chi}_{nome}.jpg"), quality=93)
         ritaglia(raw).save(os.path.join(OUT, f"{chi}_{nome}.png"))
     print("✅ fatto →", OUT)
