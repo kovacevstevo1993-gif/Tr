@@ -283,21 +283,22 @@ ITEMS = ITEMS[:6]
 FLY = 0.55
 
 # voci: (chiave, start, personaggio, testo, durata)
-VOICES = [
- ("m1", 0.6, "mouse", "Oh no! Quanti rifiuti nel parco!", 2.58),
- ("m2", 3.6, "mouse", "Chiamiamo gli amici! Chip! Spike!", 2.95),
- ("c1", 7.6, "chip", "Eccomi!", 0.83),
- ("s1", 8.6, "spike", "Siamo qui!", 1.04),
- ("m3", 10.2, "mouse", "Puliamo tutto insieme!", 1.7),
- ("m4", 14.5, "mouse", "La bottiglia va nel giallo!", 2.03),
- ("c2", 17.0, "chip", "La carta va nel blu!", 1.64),
- ("s2", 19.1, "spike", "La buccia va nel marrone!", 1.97),
- ("m5", 22.0, "mouse", "Bravissimi! Ancora un po'!", 2.2),
- ("m6", 27.7, "mouse", "Il parco è pulito!", 1.55),
- ("c3", 29.6, "chip", "Evviva!", 0.85),
- ("s3", 30.4, "spike", "Grazie amici!", 1.28),
- ("m7", 32.0, "mouse", "Ciao ciao bambini!", 1.53),
-]
+import json, os
+_D = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "audio/durate.json")))
+_V = [("m1", 0.6, "mouse", "Oh no! Quanti rifiuti nel parco!"),
+ ("m2", 4.2, "mouse", "Chiamiamo gli amici! Chip! Spike!"),
+ ("c1", 8.7, "chip", "Eccomi!"),
+ ("s1", 9.6, "spike", "Siamo qui!"),
+ ("m3", 10.8, "mouse", "Puliamo tutto insieme!"),
+ ("m4", 14.5, "mouse", "La bottiglia va nel giallo!"),
+ ("c2", 17.0, "chip", "La carta va nel blu!"),
+ ("s2", 19.1, "spike", "La buccia va nel marrone!"),
+ ("m5", 22.0, "mouse", "Bravissimi! Ancora un po'!"),
+ ("m6", 27.7, "mouse", "Il parco è pulito!"),
+ ("c3", 29.6, "chip", "Evviva!"),
+ ("s3", 30.4, "spike", "Grazie amici!"),
+ ("m7", 32.0, "mouse", "Ciao ciao bambini!")]
+VOICES = [(k, t, w, x, _D[k]) for k, t, w, x in _V]
 SPK_COL = {"mouse": (255, 200, 60), "chip": (255, 150, 90), "spike": (120, 180, 255)}
 
 def interp(kf, t):
