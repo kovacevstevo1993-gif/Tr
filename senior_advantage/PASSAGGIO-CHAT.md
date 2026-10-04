@@ -138,7 +138,7 @@ Did you know about the $35 medical rule? Tell me below 👇 Rules and limits var
 
 ## DA FARE
 0. Pacchetto video lungo 2: FATTO (sopra). Resta: pubblicare.
-1. Miniatura del video lungo SNAP (la frase la decido io).
+1. Miniatura del video lungo SNAP: FATTE 3 versioni per il test A/B (04/10), codice senior_advantage/code/thumb_long2.py: A = verde stile video 1 "ONLY 55 OUT OF 100"; B = nonno su giallo "THE $35 RULE"; C = chiara "SKIP THE INCOME TEST AFTER AGE 60". Resta: l'utente sceglie / carica.
 2. Capitoli: FATTI (nella descrizione sopra).
 3. Pubblicare il video lungo. POI aprire lo SHORT 5 in YouTube Studio (Contenuti, Short, Dettagli) e nel campo "Video correlato" dello short scegliere il video lungo SNAP. Il campo si imposta sullo short, mai sul video lungo.
 4. Poi: video CSFP (scatola mensile gratuita di cibo per over 60, USDA; verificare sui siti ufficiali prima del copione) o short 6.
