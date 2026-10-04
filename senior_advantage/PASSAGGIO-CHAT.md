@@ -1,31 +1,30 @@
-# PASSAGGIO CHAT - The Senior Advantage (03/10/2026)
+# PASSAGGIO CHAT - The Senior Advantage (aggiornato 04/10/2026)
 
 Incolla nella nuova chat: "Leggi senior_advantage/PASSAGGIO-CHAT.md e CLAUDE.md, poi aspetta quello che ti chiedo."
 
 ## REPO
-kovacevstevo1993-gif/Tr, cartella /home/user/Tr. Ramo: claude/ecstatic-shannon-wl7kwf (fai git fetch). Commit e push sempre su quel ramo.
-Leggere: CLAUDE.md, poi questo file. README.md e MEMORIA-CANALE.md non sono aggiornati: vale questo file. Chat vecchie in senior_advantage/chat/ (fino al 29/09).
+kovacevstevo1993-gif/Tr, cartella /home/user/Tr. Ramo: claude/ecstatic-shannon-wl7kwf (git fetch, checkout di quel ramo). Commit e push sempre su quel ramo.
+Leggere SEMPRE prima: CLAUDE.md (regole), questo file (stato), MODELLO-DESCRIZIONE-VIDEO-1.md (pacchetto video lungo), MODELLO-PACCHETTO-SHORT.md (pacchetto short). README.md e MEMORIA-CANALE.md sono vecchi: vale questo file.
+Altre chat: esportate in senior_advantage/chat/ (fino al 29/09) e leggibili con i tool list_sessions / list_events (sessioni utili: 01WeZD3EBshsBb5mxg9qdvnt = setup, short 4, pacchetto video 1; 01VdcN6aGh1CnYp1K1Fxe615 = pacchetto originale video 1; 01LADTs8xMTy5ijgQHHcdpHE = short 5; 01JUxymSGwEfoRbmuDNuBFFx = slide video lungo 2). Se manca qualcosa, cercarlo li e salvarlo nel repo, non chiederlo all'utente.
 
 ## DUE CANALI SEPARATI, MAI MESCOLARE
 1. The Senior Advantage (@TheSeniorAdvantage), cartella senior_advantage/. Sconti, benefici e aiuti per over 60 USA. Slide verde bosco e avorio (oro e rosso accenti). Short 1080x1920, lunghi 1920x1080. Circa 1.700 iscritti americani. Niente pensione, Medicare, tasse, Social Security come tema.
-2. The Money Backstory (@TheMoneyBackstoryUSA), cartella money_backstory/. Pensione USA over 50, slide blu navy e oro. Ignorarlo in questa chat.
+2. The Money Backstory (@TheMoneyBackstoryUSA), cartella money_backstory/. Ignorarlo in questa chat.
 
-## REGOLE FERREE
-- Rispondi SOLO a quello che chiedo, il minimo. Niente poemi, spiegazioni, riepiloghi, tabelle, note, offerte o domande non richieste. Niente scuse ne "hai ragione". I blocchi di voce / copioni vanno SEMPRE scritti in chat, numerati, pronti da copiare in CapCut: MAI in un file. Solo gli MP4 si mandano con SendUserFile.
-- Una cosa alla volta. Verifica prima di dare un'indicazione. Esegui SOLO quello che dico. Non rifare quello che ho gia montato. Non proporre di fermarmi.
-- Non creare file o cartelle che non ho chiesto (tranne quando chiedo un file).
-- Mai spendere crediti vidIQ senza chiedermi (saldo 145, si rinnovano il 25/10/2026).
+## REGOLE FERREE (l'utente le ha ripetute centinaia di volte: non fargliele ripetere)
+- SALVARE TUTTO subito nel repo (commit + push), senza che lo chieda. CONTROLLARE PRIMA come sono fatti i precedenti dello stesso tipo e rifarli IDENTICI; mai inventare formati nuovi.
+- Rispondi SOLO a quello che chiedo, il minimo. Niente poemi, spiegazioni, riepiloghi, note, offerte, domande non richieste. Niente scuse ne "hai ragione". Una cosa alla volta. Non rifare quello che ho gia montato. Non proporre di fermarmi.
+- COPIONI / BLOCCHI DI VOCE: sempre in chat, numerati, pronti da copiare in CapCut (mai in file). PACCHETTO (titolo, descrizione, tag, commento fisso): in chat, ogni campo in un blocco di codice, ordine: Dove va, Titolo, Descrizione, Tag, Commento da fissare, Impostazioni. Solo gli MP4 (e immagini) si mandano come file; passaggio chat = file.
+- Descrizione: sul modello dei file MODELLO-*. NIENTE URL interi (https://...) tranne il link Subscribe; fonti = nomi pagine + dominio. DISCLAIMER sempre presente con etichetta "Disclaimer:" e frase "This channel is not affiliated with ..." (lunghi e short). Lunghi: anche slide finale + frase a voce nell'ultimo blocco + capitoli (orari dalla mia timeline). Tag lunghi: virgole senza spazi; tag short: virgola + spazio.
+- Video correlato: si imposta SOLO sullo short (campo "Video correlato" nei dettagli), mai nel video lungo.
 - Dimmi PRIMA dove va ogni nuovo video (playlist, cosa creare o cancellare).
-- Se chiedo il pacchetto: solo titolo, descrizione, tag, commento fissato gia completi da incollare (Subscribe e disclaimer compresi, niente segnaposto).
-- Disclaimer solo nei video lunghi: slide finale in chiaro con la frase a voce nell'ultimo blocco, piu descrizione e commento fissato. Negli short solo nella descrizione.
-- Fatti solo da fonti ufficiali. Niente promesse di guadagno. Contenuto originale.
-- Testo per la voce CapCut: niente trattini (legge "dash"), niente cifre ne simboli, telefoni a parole con virgole, "snap" minuscolo (parola). Sigle a lettere separate: "C S F P", "U S D A", "L I H E A P". Vale per tutti i video e short.
-- Poppins non ha i simboli check, freccia, stella. Non usare pkill -f. git checkout sui .pyc modificati prima di committare.
-- Slide e grafica le fai tu col codice. Devono essere movimentate, dettagliate, con tanti oggetti disegnati.
-- CONTROLLA le slide (fotogrammi in vari momenti) PRIMA di mandarle e correggi subito i difetti.
-- Mandami i file in ordine e tutti insieme (MP4 con SendUserFile, mai nel repo).
-- Dal prossimo video: montaggio PIU' DETTAGLIATO (non piu' tagliato) e slide che si capiscono meglio; ogni slide deve finire dentro la sua frase/blocco, tutto completo e visibile prima del blocco dopo.
-- Gancio diverso per ogni video ("Wait" gia' usato negli short 5 e 6). Sigle voce: "snap" parola, altre a lettere ("C S F P").
+- Mai spendere crediti vidIQ senza chiedermi (saldo 5, si rinnovano il 29/10/2026).
+- Fatti solo da fonti ufficiali. Niente promesse di guadagno. Contenuto originale. Non scrivere "free" se non verificato.
+- Voce CapCut: niente trattini, niente cifre ne simboli, telefoni a parole con virgole. "snap" parola minuscola; altre sigle a lettere separate: "C S F P", "U S D A", "L I H E A P"; siti "f n s dot u s d a dot gov". Vale per tutti i video e short.
+- Gancio DIVERSO per ogni video ("Wait" gia usato negli short 5 e 6).
+- Slide e grafica col codice (gratis): movimentate, dettagliate, tanti oggetti. Dal prossimo video: montaggio PIU DETTAGLIATO e slide che si capiscono meglio; ogni slide finisce DENTRO la sua frase (tutto completo e visibile prima del blocco dopo). CONTROLLA i fotogrammi prima di mandare. Mandami i file in ordine e tutti insieme.
+- Miniature: 3 versioni diverse per test A/B, una coerente con la prima del video (verde, numero gigante). Frase scelta da me se l'utente non la da. Font Montserrat ExtraBold.
+- Poppins non ha check, freccia, stella. Non usare pkill -f. git checkout sui .pyc modificati prima di committare.
 - Sono molto nervoso quando aspetti o mi fai cercare le cose: veloce e preciso.
 
 ## COME LEGGERE LA TIMELINE CAPCUT
@@ -33,7 +32,7 @@ Durate dei blocchi dai miei screenshot, sempre dalla fine del blocco precedente.
 
 ## CODICE (senior_advantage/code/)
 - Motore engine.py + eng2.py (pip install pillow numpy, serve ffmpeg).
-- Short: scenes2.py..scenes5.py. Copertine: cover*.py. Video lungo 1: long1_*.py.
+- Short: scenes2.py..scenes6.py (uso S6_OUT=cartella python3 scenes6.py <clip>). Copertine: cover*.py (cover6.py = short 6). Miniature video lungo: thumb_long1*.py, thumb_long2.py (3 versioni video 2). Video lungo 1: long1_*.py.
 - Video lungo 2 (SNAP): long2_b01.py, long2_b02_05.py, long2_b06_10.py, long2_b11_15.py, long2_b16_20.py, long2_b21_37.py. Il testo di voce di ogni blocco e nei dizionari BLOCKS di quei file (blocco 1 in long2_b01.py).
 - Uso: OUT=cartella SA_TMP=/tmp/x python3 long2_b21_37.py <blocco> [clip]. Blocchi 1-10: long2_b06_10.py <blocco>. 11-15: long2_b11_15.py. 16-20: long2_b16_20.py.
 - Ogni processo ha il suo SA_TMP. 4 core, circa 5 fotogrammi/s in totale: lancia 4 processi in parallelo. Il container puo riavviarsi e uccidere i render: controlla i file finiti e rilancia solo i mancanti.
@@ -41,10 +40,10 @@ Durate dei blocchi dai miei screenshot, sempre dalla fine del blocco precedente.
 
 ## SHORT PUBBLICATI
 1 e 2: playlist "Senior Discounts". 3 (Meals on Wheels, Eldercare Locator 1-800-677-1116) e 4 (bollette LIHEAP, 1-866-674-6327, energyhelp.us): playlist "aiuti".
-Short 5 (SNAP, 3 regole, gancio solo 55 su 100 senior idonei prendono SNAP): da pubblicare, playlist "aiuti". Titolo: SNAP for Seniors 60+: 3 Income Rules Most Never Hear About. Video correlato = il video lungo SNAP (impostazioni: IA No, promozione No).
+Short 5 (SNAP, 3 regole): da pubblicare, playlist "aiuti"; pacchetto completo in MODELLO-PACCHETTO-SHORT.md. Dopo la pubblicazione del video lungo SNAP: sullo short 5 impostare Video correlato = video lungo SNAP.
 
 ## SHORT 6 (CSFP, scatola di cibo mensile over 60) - FATTO IL 04/10
-Slide fatte e mandate (8 clip, senior_advantage/code/scenes6.py, uso: S6_OUT=cartella python3 scenes6.py <clip>). Durate in fotogrammi: 375 170 160 324 246 345 279 112. Playlist "aiuti". Da fare: titolo, descrizione, tag, commento fissato (solo se li chiedo). Blocco 7 voce: "snap" minuscolo. Fonti: fns.usda.gov/csfp/commodity-supplemental-food-program, /csfp/factsheet, /csfp/applicant-recipient, /csfp/program-contacts. Il sito USDA da' 130% o 150% del livello di poverta: non citare percentuali. "Free" non verificato: non usarlo.
+Slide fatte e mandate (8 clip, senior_advantage/code/scenes6.py, uso: S6_OUT=cartella python3 scenes6.py <clip>). Durate in fotogrammi: 375 170 160 324 246 345 279 112. Playlist "aiuti". Blocco 7 voce: "snap" minuscolo. Fonti: fns.usda.gov/csfp/commodity-supplemental-food-program, /csfp/factsheet, /csfp/applicant-recipient, /csfp/program-contacts. Il sito USDA da' 130% o 150% del livello di poverta: non citare percentuali. "Free" non verificato: non usarlo.
 
 Voce blocchi 1-8 (testo nel codice scenes6.py e qui):
 1 Wait. Once a month, the government can send you a box of food. And almost no one over sixty knows it exists. Stay to the end, because I'll show you where to check if you can get it.
@@ -58,12 +57,24 @@ Voce blocchi 1-8 (testo nel codice scenes6.py e qui):
 
 Pacchetto short 6 (formato short 4, fatto il 04/10): playlist "aiuti"; video correlato = video lungo SNAP (dopo la pubblicazione); IA No; promozione No. Copertina: senior_advantage/code/cover6.py ("MONTHLY FOOD BOX", scatola CSFP, "WHO GETS IT?", "NOBODY TELLS YOU").
 Titolo: CSFP: Monthly Food Box for Seniors 60+ Most Never Hear About
-Descrizione (struttura identica allo short 5): frase keyword + fatti / Find your state CSFP agency (fns.usda.gov/csfp/program-contacts) / Sources: nomi pagine USDA (fns.usda.gov) senza https / Subscribe line / disclaimer corto / #Shorts #CSFP #seniorbenefits #foodassistance. (testo esatto consegnato in chat il 04/10)
+Descrizione (testo esatto, struttura = short 5):
+Monthly food box for seniors 60+: CSFP, the Commodity Supplemental Food Program, is a USDA program for adults age 60 and older with low income. It supplements their diet with a monthly package of USDA foods. Each state sets its own income limit, and the program is not available in every area.
+
+To apply, contact your state CSFP agency (fns.usda.gov/csfp/program-contacts)
+
+Sources: USDA CSFP program page, USDA CSFP fact sheet, USDA CSFP applicant information (fns.usda.gov)
+
+Subscribe for more help most seniors never claim: https://www.youtube.com/@TheSeniorAdvantage?sub_confirmation=1
+
+Disclaimer: Rules, amounts and ages change and differ by location and plan. Always confirm with the official source before you rely on them. General information, not financial advice. This channel is not affiliated with the USDA or any government agency.
+
+#Shorts #CSFP #seniorbenefits #foodassistance
 Tag: CSFP, commodity supplemental food program, monthly food box for seniors, food box for seniors, senior food assistance, food assistance for seniors over 60, USDA food program for seniors, CSFP food package, how to get CSFP, help with groceries for seniors, low income seniors food help, government benefits for seniors, senior benefits, senior assistance programs
-Commento fisso: Did you know CSFP existed? Tell me below 👇 Rules and limits vary by state, so contact your state agency to confirm.
+Commento fisso: Did you know CSFP existed? Tell me below 👇 Rules and limits vary by state, so contact your state agency to confirm. The full video about SNAP is right below this short.
+Stato: slide, copertina e pacchetto FATTI; da pubblicare (playlist "aiuti"). Video correlato = video lungo SNAP (impostarlo sullo short dopo la pubblicazione del lungo).
 
 ## VIDEO LUNGO 1 (pubblicato)
-"Senior Discounts Start at 55, Not 65: 12 Hidden Places (Most Never Ask)", 11:01, vidIQ 94/100, playlist "Senior Discounts". Da fare: controllare gli orari dei capitoli, seconda miniatura per "Test e confronta".
+"Senior Discounts Start at 55, Not 65: 12 Hidden Places (Most Never Ask)", 11:01, vidIQ 94/100, playlist "Senior Discounts". Pacchetto completo (titolo, descrizione con capitoli, tag, commento): MODELLO-DESCRIZIONE-VIDEO-1.md. Da fare: controllare gli orari dei capitoli, seconda miniatura per "Test e confronta".
 
 ## VIDEO LUNGO 2 (SNAP over 60) - STATO
 Playlist "aiuti". 37 blocchi, circa 10.400 caratteri, 11-12 minuti, fonti USDA. Voce registrata in CapCut. Slide dei blocchi 1-37 fatte, controllate e mandate.
@@ -86,7 +97,7 @@ Dati USDA verificati (dal 1/10/2026 al 30/9/2027, 48 stati e D.C.):
 - Partecipazione: 55% degli over 60 idonei, 32% se vivono con altri (anno fiscale 2022).
 - Fonti: fns.usda.gov/snap/recipient/eligibility, /snap/eligibility/elderly-disabled-special-rules, /research/snap/national-participation-rates/fy20and22, /contact-us.
 
-### Titolo
+### Titolo (pacchetto video lungo 2, da incollare)
 SNAP for Seniors 60+: The Income Rules Most People Never Hear About (Full Guide + Math)
 
 ### Descrizione (formato = senior_advantage/MODELLO-DESCRIZIONE-VIDEO-1.md; capitoli dalle fine-blocco dell'utente)
@@ -142,12 +153,11 @@ SNAP for seniors,SNAP benefits for seniors,food stamps for seniors,SNAP eligibil
 ### Commento fisso
 Did you know about the $35 medical rule? Tell me below 👇 Rules and limits vary by state, so confirm with your state SNAP office. This is general information, not financial advice. If this helped you, please like and subscribe. It helps us a lot.
 
-## DA FARE
-0. Pacchetto video lungo 2: FATTO (sopra). Resta: pubblicare.
-1. Miniatura del video lungo SNAP: FATTE 3 versioni per il test A/B (04/10), codice senior_advantage/code/thumb_long2.py: A = verde stile video 1 "ONLY 55 OUT OF 100"; B = nonno su giallo "THE $35 RULE"; C = chiara "SKIP THE INCOME TEST AFTER AGE 60". Resta: l'utente sceglie / carica.
-2. Capitoli: FATTI (nella descrizione sopra).
-3. Pubblicare il video lungo. POI aprire lo SHORT 5 in YouTube Studio (Contenuti, Short, Dettagli) e nel campo "Video correlato" dello short scegliere il video lungo SNAP. Il campo si imposta sullo short, mai sul video lungo.
-4. Poi: video CSFP (scatola mensile gratuita di cibo per over 60, USDA; verificare sui siti ufficiali prima del copione) o short 6.
+## DA FARE (in ordine)
+1. Pubblicare video lungo SNAP (pacchetto sopra; playlist "aiuti"; IA No; promozione No; schermata finale 20 s) con 1 delle 3 miniature (A verde "ONLY 55 OUT OF 100", B nonno "THE $35 RULE", C chiara "SKIP THE INCOME TEST"): test A/B.
+2. Pubblicare short 5 e short 6 (playlist "aiuti"); poi impostare su entrambi Video correlato = video lungo SNAP.
+3. Controllare gli orari capitoli del video 1 e fare la seconda miniatura per "Test e confronta".
+4. Prossimo video lungo: CSFP (scatola mensile di cibo over 60, USDA; verificare sui siti ufficiali prima del copione: soglia reddito 130% o 150%? "free"? numero di Stati?) o altro short. Gancio nuovo, montaggio piu dettagliato.
 
 ## DATI vidIQ (US)
 "senior discounts" 12.828/mese (conc. 26,3). "senior discount" 9.826. "senior citizen discounts" 4.821. "hidden senior discounts" 4.045. "senior savings" 3.786. "senior assistance programs" 4.229 (conc. 21). "low income relief" 24.886. "senior meals" 7.069. "snap benefits" 11.295 (+164%). "snap for seniors" 5.338 (conc. 28). "food stamps" 6.331 (+84%). "government benefits for seniors" 4.323 (conc. 19,6, la migliore).
