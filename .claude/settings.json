@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && echo '=== LEGGI ED ESEGUI: stato e regole del progetto The Senior Advantage (da senior_advantage/PASSAGGIO-CHAT.md). L utente NON deve ripetere niente. Le chat intere sono in senior_advantage/chat/. ===' && cat senior_advantage/PASSAGGIO-CHAT.md"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,5 +1,7 @@
 # Regole permanenti (valgono sempre, in ogni sessione)
 
+**Questo repo ha un hook SessionStart (.claude/settings.json) che carica automaticamente senior_advantage/PASSAGGIO-CHAT.md a ogni nuova chat: tenerlo SEMPRE aggiornato e completo.**
+
 **PRIMA REGOLA: SALVARE TUTTO (04/10/2026): ogni cosa fatta o decisa (copioni, pacchetti, durate, regole, stato dei video) va salvata SUBITO in senior_advantage/PASSAGGIO-CHAT.md o in CLAUDE.md, con commit e push, senza che l'utente lo chieda. Prima di scrivere qualsiasi cosa, leggere CLAUDE.md, PASSAGGIO-CHAT.md e i file modello: l'utente non deve ripetere niente.**
 
 **"TUTTO" = VERAMENTE TUTTO (04/10/2026): quando l'utente dice "tutto" (salvare, passare alla chat nuova, leggere le altre chat) significa ogni singola riga, intera, senza riassumere, senza filtrare per argomento, senza tagliare. Esempio: passaggio chat = file di stato + testo INTERO di tutte le chat del progetto in senior_advantage/chat/ (esportate con list_sessions/list_events). Mai a meta'.**
