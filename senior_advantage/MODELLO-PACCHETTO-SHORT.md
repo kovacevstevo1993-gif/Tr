@@ -1,4 +1,4 @@
-# MODELLO PACCHETTO SHORT (recuperato dalle chat vecchie il 04/10). Ogni short va fatto IDENTICO a questo. Ordine: Dove va, Titolo, Descrizione, Tag, Commento fisso, Impostazioni (con Video correlato). Tag degli short: virgola + spazio. Niente URL interi (https://...) nelle fonti: solo dominio/percorso; unico link intero = Subscribe.
+# (Il disclaimer va sempre con l'etichetta "Disclaimer:" e la frase "This channel is not affiliated with ...") MODELLO PACCHETTO SHORT (recuperato dalle chat vecchie il 04/10). Ogni short va fatto IDENTICO a questo. Ordine: Dove va, Titolo, Descrizione, Tag, Commento fisso, Impostazioni (con Video correlato). Tag degli short: virgola + spazio. Niente URL interi (https://...) nelle fonti: solo dominio/percorso; unico link intero = Subscribe.
 
 ## SHORT 5 (SNAP) - versione consegnata il 03/10
 Dove va: playlist "aiuti" (con short 3 e 4). Non creare ne cancellare niente.
@@ -17,7 +17,7 @@ Sources: USDA SNAP eligibility, USDA special rules for the elderly or disabled, 
 
 Subscribe for more help most seniors never claim: https://www.youtube.com/@TheSeniorAdvantage?sub_confirmation=1
 
-Rules, amounts and ages change and differ by location and plan. Always confirm with the official source before you rely on them. General information, not financial advice.
+Disclaimer: Rules, amounts and ages change and differ by location and plan. Always confirm with the official source before you rely on them. General information, not financial advice. This channel is not affiliated with the USDA or any government agency.
 
 #Shorts #SNAP #seniorbenefits #foodassistance
 
