@@ -58,8 +58,8 @@ Voce blocchi 1-8 (testo nel codice scenes6.py e qui):
 
 Pacchetto short 6 (formato short 4, fatto il 04/10): playlist "aiuti"; video correlato = video lungo SNAP (dopo la pubblicazione); IA No; promozione No. Copertina: senior_advantage/code/cover6.py ("MONTHLY FOOD BOX", scatola CSFP, "WHO GETS IT?", "NOBODY TELLS YOU").
 Titolo: CSFP: Monthly Food Box for Seniors 60+ Most Never Hear About
-Descrizione: Monthly food box for seniors 60+: CSFP, the Commodity Supplemental Food Program, is a USDA program that gives older adults with low income a monthly package of food. Each state sets its own income limit, and it is not available in every area. / Find your state agency on fns.usda.gov (CSFP program contacts). / Sources: official pages of the USDA Food and Nutrition Service (fns.usda.gov). / Subscribe line + disclaimer corto / #Shorts #CSFP #seniorbenefits #foodassistance
-Tag: CSFP,commodity supplemental food program,monthly food box for seniors,food box for seniors,senior food assistance,food assistance for seniors over 60,USDA food program for seniors,CSFP food package,how to get CSFP,help with groceries for seniors,low income seniors food help,government benefits for seniors,senior benefits,senior assistance programs
+Descrizione (struttura identica allo short 5): frase keyword + fatti / Find your state CSFP agency (fns.usda.gov/csfp/program-contacts) / Sources: nomi pagine USDA (fns.usda.gov) senza https / Subscribe line / disclaimer corto / #Shorts #CSFP #seniorbenefits #foodassistance. (testo esatto consegnato in chat il 04/10)
+Tag: CSFP, commodity supplemental food program, monthly food box for seniors, food box for seniors, senior food assistance, food assistance for seniors over 60, USDA food program for seniors, CSFP food package, how to get CSFP, help with groceries for seniors, low income seniors food help, government benefits for seniors, senior benefits, senior assistance programs
 Commento fisso: Did you know CSFP existed? Tell me below 👇 Rules and limits vary by state, so contact your state agency to confirm.
 
 ## VIDEO LUNGO 1 (pubblicato)
