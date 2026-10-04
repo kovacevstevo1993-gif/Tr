@@ -24,6 +24,8 @@ Leggere: CLAUDE.md, poi questo file. README.md e MEMORIA-CANALE.md non sono aggi
 - Slide e grafica le fai tu col codice. Devono essere movimentate, dettagliate, con tanti oggetti disegnati.
 - CONTROLLA le slide (fotogrammi in vari momenti) PRIMA di mandarle e correggi subito i difetti.
 - Mandami i file in ordine e tutti insieme (MP4 con SendUserFile, mai nel repo).
+- Dal prossimo video: montaggio piu' tagliato e slide che si capiscono meglio; ogni slide deve finire dentro la sua frase/blocco, tutto completo e visibile prima del blocco dopo.
+- Gancio diverso per ogni video ("Wait" gia' usato negli short 5 e 6). Sigle voce: "snap" parola, altre a lettere ("C S F P").
 - Sono molto nervoso quando aspetti o mi fai cercare le cose: veloce e preciso.
 
 ## COME LEGGERE LA TIMELINE CAPCUT
@@ -40,6 +42,9 @@ Durate dei blocchi dai miei screenshot, sempre dalla fine del blocco precedente.
 ## SHORT PUBBLICATI
 1 e 2: playlist "Senior Discounts". 3 (Meals on Wheels, Eldercare Locator 1-800-677-1116) e 4 (bollette LIHEAP, 1-866-674-6327, energyhelp.us): playlist "aiuti".
 Short 5 (SNAP, 3 regole, gancio solo 55 su 100 senior idonei prendono SNAP): da pubblicare, playlist "aiuti". Titolo: SNAP for Seniors 60+: 3 Income Rules Most Never Hear About. Video correlato = il video lungo SNAP (impostazioni: IA No, promozione No).
+
+## SHORT 6 (CSFP, scatola di cibo mensile over 60) - FATTO IL 04/10
+Slide fatte e mandate (8 clip, senior_advantage/code/scenes6.py, uso: S6_OUT=cartella python3 scenes6.py <clip>). Durate in fotogrammi: 375 170 160 324 246 345 279 112. Playlist "aiuti". Da fare: titolo, descrizione, tag, commento fissato (solo se li chiedo). Blocco 7 voce: "snap" minuscolo. Fonti: fns.usda.gov/csfp/commodity-supplemental-food-program, /csfp/factsheet, /csfp/applicant-recipient, /csfp/program-contacts. Il sito USDA da' 130% o 150% del livello di poverta: non citare percentuali. "Free" non verificato: non usarlo.
 
 ## VIDEO LUNGO 1 (pubblicato)
 "Senior Discounts Start at 55, Not 65: 12 Hidden Places (Most Never Ask)", 11:01, vidIQ 94/100, playlist "Senior Discounts". Da fare: controllare gli orari dei capitoli, seconda miniatura per "Test e confronta".
