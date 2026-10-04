@@ -35,3 +35,8 @@
 ## REGOLA N.2 (utente, 04/10/2026): LAVORARE A FONDO, SENZA SCUSE
 - Se un lavoro è venuto male, si RIFÀ per intero e bene. Non scaricare sui problemi tecnici, non fare le cose a metà, non dire "fatto" se non è all'altezza.
 - Niente giustificazioni lunghe: lavorare, consegnare completo.
+
+## REGOLA N.3 (utente, 04/10/2026): OGNI VIDEO HA UN MODELLO DI SLIDE DIVERSO
+- Cambiare lo stile/modello grafico delle slide (colori, forme, impostazione, tipo di oggetti, animazioni) per OGNI nuovo video lungo e per ogni short, così i video non sono tutti uguali.
+- NON cambiare il video 2 adesso (resta com'è). Si applica a partire dal PROSSIMO video (video lungo 3 e short successivi).
+- Il canale resta riconoscibile (nome, logo, verde acqua come colore base), ma cambiano layout, forme, sfondo, tipo di didascalia e di oggetti.
