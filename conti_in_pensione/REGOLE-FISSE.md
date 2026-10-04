@@ -69,3 +69,4 @@
 - Da applicare: ritmo più lento (più tempo di lettura per ogni slide, meno cose per slide), animazioni meno veloci (la grafica in movimento RESTA: va lasciato il movimento, ma deve FINIRE BENE, cioè completarsi con calma e restare ferma il tempo di leggere), testi grandi e leggibili, ogni elemento fermo e completo con tempo per essere letto. Se serve una scelta di metodo, chiedere PRIMA.
 - Il video 2 resta com'è (già montato).
 - (utente, 04/10/2026) Per i prossimi video: MIGLIORARE e basta (il video, le slide e il modo di far capire meglio), più DETTAGLIATO. Niente altri cambiamenti: si migliora quello che c'è, senza stravolgere.
+- (utente, 04/10/2026) Nel video 2 le slide NON FINIVANO BENE (animazioni non completate in tempo). Dal prossimo video va risolto: ogni slide deve completare tutto il movimento e restare ferma e leggibile per un tempo sufficiente PRIMA della dissolvenza, controllando TUTTI i fotogrammi (regole di controllo in cima a questo file).
