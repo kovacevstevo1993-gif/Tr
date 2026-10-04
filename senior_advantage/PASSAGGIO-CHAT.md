@@ -140,7 +140,7 @@ Did you know about the $35 medical rule? Tell me below 👇 Rules and limits var
 0. Pacchetto video lungo 2: FATTO (sopra). Resta: pubblicare.
 1. Miniatura del video lungo SNAP (la frase la decido io).
 2. Capitoli: FATTI (nella descrizione sopra).
-3. Pubblicare il video lungo e impostarlo come correlato dello short 5.
+3. Pubblicare il video lungo. POI aprire lo SHORT 5 in YouTube Studio (Contenuti, Short, Dettagli) e nel campo "Video correlato" dello short scegliere il video lungo SNAP. Il campo si imposta sullo short, mai sul video lungo.
 4. Poi: video CSFP (scatola mensile gratuita di cibo per over 60, USDA; verificare sui siti ufficiali prima del copione) o short 6.
 
 ## DATI vidIQ (US)
