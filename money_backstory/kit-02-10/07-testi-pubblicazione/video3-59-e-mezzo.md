@@ -39,7 +39,7 @@ Subscribe to The Money Backstory for more clear explanations of retirement for A
 59 1/2 rule, 59 1/2 rule retirement, age 59 1/2 rule, 401k withdrawal rules, 401k withdrawal age 59 1/2, early withdrawal penalty 401k, 10 percent early withdrawal penalty, in-service withdrawal 401k, roth ira 5 year rule, SEPP 72t, 72t payments, 401k catch up contributions 2026, super catch up contribution 60 63, retirement over 50, retirement rules 2026
 
 ## Commento da fissare
-Which of the 5 changes surprised you most? Number 4 catches the most people off guard. Tell me below. This video is education only, not advice. Confirm the details with your plan administrator or a fiduciary advisor.
+Which of the 5 changes surprised you most? Number 4 catches the most people off guard. Tell me below.
 
 ## Playlist / schermata finale
 Playlist "Retirement After 50" (con video 1 e 2; crearla se non esiste). Schermata finale → video 1.

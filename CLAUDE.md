@@ -8,7 +8,7 @@ Due canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 - Il disclaimer va **alla fine del video**, in una **slide finale** in chiaro (testo grande), con la frase detta a voce nell'ultimo blocco. Modello: `senior_advantage/anteprima/3-finale-disclaimer.png` (nel canale Money Backstory stessa struttura, ma con colori e stile di quel canale).
 - Testo (adattare al tema): "Rules, amounts and ages change and differ by location and plan. Always confirm with the official source before you rely on them. General information, not financial advice."
 - Non metterlo all'inizio. Negli short non serve.
-- In più, sempre: descrizione (riga Subscribe + Disclaimer) e commento fissato.
+- In più, sempre: descrizione (riga Subscribe + Disclaimer). Il commento fissato NON ha il disclaimer (deciso il 04/10/2026): solo una domanda al pubblico.
 - Il disclaimer non protegge da YouTube: contano contenuto originale, dati verificati su fonti ufficiali, niente promesse di guadagno, niente persone/avatar AI che si presentano come esperti.
 
 ## Come lavora l'utente

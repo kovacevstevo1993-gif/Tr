@@ -53,7 +53,7 @@ Subscribe to The Money Backstory for more clear explanations of retirement for A
 irmaa, medicare irmaa, irmaa brackets, irmaa brackets 2026, medicare irmaa brackets, irmaa explained, medicare irmaa explained, income related monthly adjustment amount, irmaa appeal, medicare irmaa appeal, medicare part b premium 2026, medicare two year lookback, roth conversion irmaa, roth conversion medicare, how to avoid irmaa, is social security taxable, retirement income planning, retirement at 61, age 63 medicare, medicare at 65, retirement over 50
 
 ## Commento da fissare
-Which of the 5 reasons surprised you most? For most people it's reason #3: a Roth conversion can make part of your Social Security taxable. Tell me below. This video is education only, not advice. Check the current numbers at medicare.gov and ssa.gov.
+Which of the 5 reasons surprised you most? For most people it's reason #3: a Roth conversion can make part of your Social Security taxable. Tell me below.
 
 ## Playlist / schermata finale
 Playlist "Retirement After 50". Schermata finale (ultima slide, riquadro tratteggiato) → video 3 (59½). Contenuto sintetico: No. Promozione: No. Togliere i sottotitoli CapCut prima di esportare.
