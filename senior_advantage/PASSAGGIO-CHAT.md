@@ -46,6 +46,16 @@ Short 5 (SNAP, 3 regole, gancio solo 55 su 100 senior idonei prendono SNAP): da 
 ## SHORT 6 (CSFP, scatola di cibo mensile over 60) - FATTO IL 04/10
 Slide fatte e mandate (8 clip, senior_advantage/code/scenes6.py, uso: S6_OUT=cartella python3 scenes6.py <clip>). Durate in fotogrammi: 375 170 160 324 246 345 279 112. Playlist "aiuti". Da fare: titolo, descrizione, tag, commento fissato (solo se li chiedo). Blocco 7 voce: "snap" minuscolo. Fonti: fns.usda.gov/csfp/commodity-supplemental-food-program, /csfp/factsheet, /csfp/applicant-recipient, /csfp/program-contacts. Il sito USDA da' 130% o 150% del livello di poverta: non citare percentuali. "Free" non verificato: non usarlo.
 
+Voce blocchi 1-8 (testo nel codice scenes6.py e qui):
+1 Wait. Once a month, the government can send you a box of food. And almost no one over sixty knows it exists. Stay to the end, because I'll show you where to check if you can get it.
+2 It's called C S F P, the Commodity Supplemental Food Program, run by the U S D A.
+3 The rule is simple. You must be at least sixty years old, and have a low income.
+4 Inside the box, you can find milk, cheese, juice, cereal, rice, pasta, peanut butter, and dry beans. Plus canned meat, fruit and vegetables.
+5 But here is the catch. Every state sets its own income limit. And the program is not available in every area.
+6 So contact your state agency. The list is on the U S D A website, f n s dot u s d a dot gov, slash c s f p, slash program contacts.
+7 This is one of many benefits most seniors never claim. Want another one? Watch my short about the three snap rules. Click below.
+8 Follow The Senior Advantage, so you don't miss the next one.
+
 ## VIDEO LUNGO 1 (pubblicato)
 "Senior Discounts Start at 55, Not 65: 12 Hidden Places (Most Never Ask)", 11:01, vidIQ 94/100, playlist "Senior Discounts". Da fare: controllare gli orari dei capitoli, seconda miniatura per "Test e confronta".
 
@@ -73,21 +83,52 @@ Dati USDA verificati (dal 1/10/2026 al 30/9/2027, 48 stati e D.C.):
 ### Titolo
 SNAP for Seniors 60+: The Income Rules Most People Never Hear About (Full Guide + Math)
 
-### Descrizione
-Only 55 out of 100 eligible seniors over 60 get SNAP. In this full guide you'll see the three rules that change everything after 60: you skip the gross income test, medical costs over $35 a month come off your income, and you can keep $4,750 in savings while your home doesn't count. We also run the math step by step, with USDA's own example, and show how to apply in three steps.
+### Descrizione (formato = senior_advantage/MODELLO-DESCRIZIONE-VIDEO-1.md; capitoli dalle fine-blocco dell'utente)
+Only 55 out of 100 eligible seniors over 60 get SNAP, and most never hear why. In this video you'll see the three rules that change everything after 60: you skip the gross income test, medical costs over $35 a month come off your income, and you can keep $4,750 in savings while your home doesn't count. We run the math step by step with USDA's own example, and show how to apply in three steps.
 
-Official sources (USDA Food and Nutrition Service):
-https://www.fns.usda.gov/snap/recipient/eligibility
-https://www.fns.usda.gov/snap/eligibility/elderly-disabled-special-rules
-https://www.fns.usda.gov/research/snap/national-participation-rates/fy20and22
-SNAP information line: 1-800-221-5689
-Find your state office: https://www.fns.usda.gov/snap/state-directory
+The one rule to remember: never decide by yourself that you earn too much. Apply and let your state SNAP office decide.
+
+CHAPTERS
+0:00 Only 55 out of 100 seniors get SNAP
+0:34 What is SNAP?
+0:54 Why most seniors never apply
+1:16 Rule 1: you're elderly at 60
+1:36 The two income tests
+1:57 The income limits
+2:20 Example: $1,800 Social Security
+2:42 Deductions: gross to net income
+2:58 Rule 2: medical costs
+3:17 What counts
+3:39 What doesn't count
+3:56 Shelter costs
+4:17 Rent, mortgage, taxes and utilities
+4:34 The full math: step 1
+4:48 Step 2: medical
+5:03 Step 3: shelter
+5:21 The net income test
+5:37 How much she gets
+6:19 USDA's own example
+6:41 Rule 3: savings
+6:59 Your home doesn't count
+7:14 What about your car?
+7:53 Who's in your household
+8:18 Why seniors who live with others miss out
+8:36 No work requirement
+8:50 How to apply: 3 steps
+9:58 Need food fast? Urgent help
+10:16 Can't leave the house?
+10:35 Mistakes that cost you SNAP
+10:55 The new 2025 law
+11:13 Quick recap
+11:37 Before you go
+
+Sources: official pages of the USDA Food and Nutrition Service (fns.usda.gov).
 
 Subscribe to The Senior Advantage: https://www.youtube.com/@TheSeniorAdvantage?sub_confirmation=1
 
-Disclaimer: This video is general information, not financial or legal advice. Rules, amounts and ages change and differ by state. Always confirm with your official state SNAP office before you rely on them.
+Disclaimer: Rules, amounts and ages change and differ by state. Always confirm with your official state SNAP office before you rely on them. General information, not financial or legal advice. This channel is not affiliated with the USDA or any government agency.
 
-#SNAP #seniorbenefits #foodassistance #seniors #governmentbenefits
+#snapbenefits #seniorbenefits #over60
 
 ### Tag
 SNAP for seniors, SNAP benefits for seniors, food stamps for seniors, SNAP eligibility seniors over 60, SNAP income limits seniors, SNAP medical deduction, how to apply for SNAP, senior food assistance, food assistance for seniors, EBT for seniors, government benefits for seniors, senior benefits, senior assistance programs, help with food costs seniors, SNAP rules 2026
@@ -96,8 +137,9 @@ SNAP for seniors, SNAP benefits for seniors, food stamps for seniors, SNAP eligi
 Did you know about the $35 medical rule? Tell me below 👇 Rules and limits vary by state, so confirm with your state SNAP office. This is general information, not financial advice. If this helped you, please like and subscribe. It helps us a lot.
 
 ## DA FARE
+0. Pacchetto video lungo 2: FATTO (sopra). Resta: pubblicare.
 1. Miniatura del video lungo SNAP (la frase la decido io).
-2. Capitoli dalle mie fine-blocco (orari presi dalla timeline).
+2. Capitoli: FATTI (nella descrizione sopra).
 3. Pubblicare il video lungo e impostarlo come correlato dello short 5.
 4. Poi: video CSFP (scatola mensile gratuita di cibo per over 60, USDA; verificare sui siti ufficiali prima del copione) o short 6.
 
