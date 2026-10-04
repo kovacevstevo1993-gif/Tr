@@ -1,2 +1,1 @@
-Fine dei blocchi letta dalle timeline CapCut (30 fps) - Video lungo 2
-B1 424 | B2 341 | B3 352 | B4 328 | B5 305 | B6 401 | B7 262 | B8 310 | B9 369 | B10 305 | B11 405 | B12 346 | B13 428 | B14 381 | B15 448 (frame)
+Blocchi 1-57: fotogrammi a 30 fps letti dalle timeline CapCut (vedi FR in sorgenti/render.py)
