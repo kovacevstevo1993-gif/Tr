@@ -36,10 +36,11 @@
 - Se un lavoro è venuto male, si RIFÀ per intero e bene. Non scaricare sui problemi tecnici, non fare le cose a metà, non dire "fatto" se non è all'altezza.
 - Niente giustificazioni lunghe: lavorare, consegnare completo.
 
-## REGOLA N.3 (utente, 04/10/2026): OGNI VIDEO HA UN MODELLO DI SLIDE DIVERSO
-- Cambiare lo stile/modello grafico delle slide (colori, forme, impostazione, tipo di oggetti, animazioni) per OGNI nuovo video lungo e per ogni short, così i video non sono tutti uguali.
-- NON cambiare il video 2 adesso (resta com'è). Si applica a partire dal PROSSIMO video (video lungo 3 e short successivi).
-- Il canale resta riconoscibile (nome, logo, verde acqua come colore base), ma cambiano layout, forme, sfondo, tipo di didascalia e di oggetti.
+## REGOLA N.3 (utente, 04/10/2026): NOMI DEI FILE DIVERSI PER OGNI VIDEO
+- I file delle slide/clip hanno sempre lo stesso nome (blocco1.mp4, blocco2.mp4...) e in CapCut si confondono tra un video e l'altro. Rinominarli per OGNI video e short con un prefisso che identifica il video.
+- Formato: `V3-blocco01.mp4`, `V3-blocco02.mp4`... (V3 = video lungo 3; per gli short: `S4-blocco01.mp4`, ...). Numeri a due cifre, così restano in ordine.
+- NON farlo adesso per il video 2 (restano blocco1.mp4...blocco57.mp4). Si applica dal PROSSIMO video lungo e dai prossimi short.
+- (Errore di Claude: all'inizio aveva capito "cambiare il modello grafico delle slide": NON era questo. La grafica non cambia per questa regola.)
 
 ## REGOLA N.4 (utente, 04/10/2026): SALVARE SEMPRE TUTTO QUELLO CHE DICE L'UTENTE
 - Ogni istruzione, preferenza o correzione dell'utente va scritta SUBITO in questo file (nel repo, committata e pushata), senza aspettare che lo chieda.
@@ -57,6 +58,6 @@
 - Descrizione di ogni video: intera con "Iscriviti", disclaimer e hashtag (descrizione predefinita di YouTube vuota); hashtag 5-12 (max 15); tag sotto 500 caratteri; commento da fissare (dopo la pubblicazione, mai su video programmato).
 - Short: pubblicato a mano (circa 7:30) il giorno dopo il video lungo, rimanda al video lungo ("video correlato" + commento fissato con link); miniatura che attira il click.
 - Miniature: frase che ha in mente l'utente; attira click.
-- Modello di slide DIVERSO per ogni video (dal video 3 in poi, il video 2 resta com'è).
+- Nomi dei file DIVERSI per ogni video (es. V3-blocco01.mp4), dal prossimo video in poi; il video 2 resta com'è.
 - Kit completo per cambiare chat: KIT-1 (testi, chat, regole) + zip dei video; messaggio di ripartenza in 07-KIT-COMPLETO/00-LEGGIMI-PRIMA.md; leggere anche REGOLE-FISSE.md.
 - Eseguire SOLO gli ordini, nessuna scelta propria, lavorare a fondo senza scuse.
