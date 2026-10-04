@@ -56,6 +56,12 @@ Voce blocchi 1-8 (testo nel codice scenes6.py e qui):
 7 This is one of many benefits most seniors never claim. Want another one? Watch my short about the three snap rules. Click below.
 8 Follow The Senior Advantage, so you don't miss the next one.
 
+Pacchetto short 6 (formato short 4, fatto il 04/10): playlist "aiuti"; video correlato = video lungo SNAP (dopo la pubblicazione); IA No; promozione No. Copertina: senior_advantage/code/cover6.py ("MONTHLY FOOD BOX", scatola CSFP, "WHO GETS IT?", "NOBODY TELLS YOU").
+Titolo: CSFP: Monthly Food Box for Seniors 60+ Most Never Hear About
+Descrizione: Monthly food box for seniors 60+: CSFP, the Commodity Supplemental Food Program, is a USDA program that gives older adults with low income a monthly package of food. Each state sets its own income limit, and it is not available in every area. / Find your state agency: https://www.fns.usda.gov/csfp/program-contacts / Sources: fns.usda.gov/csfp/commodity-supplemental-food-program, fns.usda.gov/csfp/factsheet, fns.usda.gov/csfp/applicant-recipient / Subscribe line + disclaimer corto / #Shorts #CSFP #seniorbenefits #foodassistance
+Tag: CSFP,commodity supplemental food program,monthly food box for seniors,food box for seniors,senior food assistance,food assistance for seniors over 60,USDA food program for seniors,CSFP food package,how to get CSFP,help with groceries for seniors,low income seniors food help,government benefits for seniors,senior benefits,senior assistance programs
+Commento fisso: Did you know CSFP existed? Tell me below 👇 Rules and limits vary by state, so contact your state agency to confirm.
+
 ## VIDEO LUNGO 1 (pubblicato)
 "Senior Discounts Start at 55, Not 65: 12 Hidden Places (Most Never Ask)", 11:01, vidIQ 94/100, playlist "Senior Discounts". Da fare: controllare gli orari dei capitoli, seconda miniatura per "Test e confronta".
 
