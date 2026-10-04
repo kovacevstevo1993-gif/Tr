@@ -19,3 +19,9 @@
 - Descrizione di ogni video: intera, con Iscriviti, disclaimer e hashtag (la descrizione predefinita di YouTube è vuota). Hashtag 5-12, mai oltre 15. Tag sotto i 500 caratteri.
 - vidIQ: spendere crediti solo se l'utente lo chiede.
 - Le altre regole sono in `07-KIT-COMPLETO/00-LEGGIMI-PRIMA.md` (nel KIT-1).
+
+## Velocità (regola dell'utente 04/10/2026: "usa la testa, deve essere veloce")
+- Il collo di bottiglia è il render (uno screenshot per fotogramma). Renderizzare SEMPRE tutti i blocchi in parallelo, 4 alla volta (la macchina ha 4 processori):
+  `printf '%s\n' 1 2 3 ... | xargs -P 4 -I{} python3 render.py {} video`
+- Fare il controllo QA e l'anteprima a fogli PRIMA del render, così non si rifà niente. Mai renderizzare un blocco alla volta.
+- Costruire più blocchi per volta, non uno per messaggio. Rispondere all'utente appena i file sono pronti.

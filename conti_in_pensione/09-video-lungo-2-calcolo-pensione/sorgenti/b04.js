@@ -1,0 +1,50 @@
+// ===== BLOCCO 4 (328 fotogrammi = 10,93 s): esempio semplificato =====
+const SB=[];const TOT=328/30;
+SB[0]={s:0,e:3.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'ESEMPIO SEMPLIFICATO');
+ o.c=[['35.000 €','STIPENDIO LORDO'],['40 ANNI','DI CONTRIBUTI'],['33%','ALIQUOTA']].map(d=>{const c=el('g',{},g);
+  el('rect',{x:-190,y:-140,width:380,height:280,rx:32,fill:'url(#g_paper)',filter:'url(#g_sh)'},c);
+  txt(c,d[0],0,20,62,INK,'900');txt(c,d[1],0,96,30,GRN,'bold');return c;});
+ o.tg=el('g',{},g);tag(o.tg,'NUMERI TONDI',520,AMB,'#5A3300',50);
+ o.cap=el('g',{},g);cap(o.cap,'UN ESEMPIO SEMPLIFICATO, CON NUMERI TONDI',54);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ o.c.forEach((c,i)=>T(c,[480,960,1440][i],520,[-3,0,3][i],0.95*pop(t,0.2+i*0.3,0.7+i*0.3)));
+ T(o.tg,960,770,0,pop(t,1.4,1.9));
+ T(o.cap,960,950,0,pop(t,0.3,0.9));
+ }};
+SB[1]={s:3.4,e:7.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'COME RAGIONA IL CALCOLO');
+ o.b=[['STIPENDIO','ANNUO'],['MONTANTE','CONTRIBUTIVO'],['PENSIONE','ANNUA']].map((d,i)=>{const c=el('g',{},g);
+  el('rect',{x:-190,y:-90,width:380,height:180,rx:30,fill:i==2?'url(#g_badge)':'url(#g_paper)',filter:'url(#g_sh)'},c);
+  txt(c,d[0],0,-6,50,i==2?'#fff':INK,'900');txt(c,d[1],0,50,34,i==2?'#fff':GRN,'bold');return c;});
+ o.a=[0,1].map(i=>arrowRight(g,AMB));
+ o.op=[tag(g,'× 33%',200,'#0B4A50','#fff',44),tag(g,'× COEFF.',280,'#0B4A50','#fff',44)];
+ o.st=el('g',{},g);stamp(o.st,'NON È LA TUA PENSIONE',900,RED_,52);
+ o.cap=el('g',{},g);cap(o.cap,'SERVE A CAPIRE COME RAGIONA IL CALCOLO',54);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ o.b.forEach((c,i)=>T(c,[340,960,1580][i],520,0,pop(t,0.2+i*0.4,0.7+i*0.4)));
+ o.a.forEach((a,i)=>T(a,[650,1270][i],520,0,0.9*pop(t,0.6+i*0.4,1.0+i*0.4)));
+ o.op.forEach((a,i)=>T(a,[650,1270][i],390,0,pop(t,0.8+i*0.4,1.2+i*0.4)));
+ T(o.st,960,740,-3,t>1.9?lerp(2.4,1,eo3(seg(t,1.9,2.3))):0);op(o.st,clamp(seg(t,1.9,2.2)*2));
+ T(o.cap,960,950,0,pop(t,0.2,0.8));
+ }};
+SB[2]={s:7.0,e:10.93,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LA TUA CIFRA');
+ o.br=el('g',{},g);browser(o.br,'inps.it',1000,500);
+ o.r=[row(o.br,'Il tuo estratto conto',0,-40,860,true),row(o.br,'I tuoi dati ufficiali',0,60,860,true)];
+ o.ch=el('g',{},g);checkBadge(o.ch,90);
+ o.tg=el('g',{},g);tag(o.tg,'DATI UFFICIALI',560,'url(#g_badge)','#fff',48);
+ o.cap=el('g',{},g);cap(o.cap,'LA TUA LA SCOPRI CON I DATI UFFICIALI',54);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ T(o.br,860,500,0,pop(t,0.1,0.7));
+ o.r.forEach((r,i)=>op(r,seg(t,0.7+i*0.3,1.0+i*0.3)));
+ T(o.ch,1540,500,0,pop(t,1.5,2.1));
+ T(o.tg,960,810,0,pop(t,1.8,2.4));
+ T(o.cap,960,950,0,pop(t,0.2,0.8));
+ }};

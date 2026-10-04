@@ -6,14 +6,6 @@ function payslip(p,title){const g=el('g',{},p);
  [-90,-50,-10,30].forEach((y,i)=>{el('rect',{x:-100,y:y,width:i%2?130:190,height:14,rx:7,fill:'#C3D3D7'},g);});
  el('circle',{cx:70,cy:110,r:34,fill:AMB,stroke:'#fff','stroke-width':4},g);txt(g,'€',70,124,44,'#5A3300','900');
  return g;}
-function tag(p,s,w,fill,col,fs){fs=fs||40;const g=el('g',{},p);
- el('rect',{x:-w/2,y:-38,width:w,height:76,rx:38,fill:fill,stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);
- txt(g,s,0,fs*0.36,fs,col||'#fff','bold');return g;}
-function calc(p){const g=el('g',{filter:'url(#g_sh)'},p);
- el('rect',{x:-110,y:-150,width:220,height:300,rx:30,fill:'#0B4A50',stroke:'#fff','stroke-width':6},g);
- el('rect',{x:-86,y:-124,width:172,height:62,rx:12,fill:'#D6F5EC'},g);txt(g,'=',60,-76,48,INK,'900','end');
- for(let r=0;r<3;r++)for(let c=0;c<3;c++)el('rect',{x:-86+c*62,y:-40+r*58,width:48,height:42,rx:10,fill:c==2&&r==2?AMB:'#2FBF9B'},g);
- return g;}
 const SB=[];
 // --- Scena 1 (0 - 3.4): i due colleghi ---
 SB[0]={s:0,e:3.4,build(g){const o={};
@@ -34,13 +26,13 @@ SB[0]={s:0,e:3.4,build(g){const o={};
  T(o.ta,560,540,0,Math.max(0,eob(seg(t,0.5,0.9))));T(o.tb,1360,540,0,Math.max(0,eob(seg(t,0.7,1.1))));
  T(o.pa,250,340,-5,0.9*Math.max(0,eob(seg(t,1.0,1.5))));T(o.pb,1670,340,5,0.9*Math.max(0,eob(seg(t,1.1,1.6))));
  T(o.eq,960,340,0,Math.max(0,eob(seg(t,0.9,1.4)))*(1+0.05*Math.sin(t*6)));
- T(o.r1,960,770,0,Math.max(0,eob(seg(t,1.2,1.7))));
- T(o.da.g,560,640,0,1);T(o.db.g,1360,640,0,1);T(o.la,560,700,0,1);T(o.lb,1360,700,0,1);
+ T(o.r1,960,760,0,Math.max(0,eob(seg(t,1.2,1.7))));
+ T(o.da.g,560,615,0,1);T(o.db.g,1360,615,0,1);T(o.la,560,672,0,1);T(o.lb,1360,672,0,1);
  op(o.la,seg(t,1.4,1.7));op(o.lb,seg(t,1.4,1.7));
  const nd=Math.floor(clamp((t-1.6)/0.05,0,12));
  o.da.a.forEach((d,i)=>lightDot(d,i<nd,0.5));o.db.a.forEach((d,i)=>lightDot(d,i<nd,0.5));
  op(o.da.g,seg(t,1.4,1.7));op(o.db.g,seg(t,1.4,1.7));
- T(o.r2,960,840,0,Math.max(0,eob(seg(t,2.0,2.5))));
+ T(o.r2,960,845,0,Math.max(0,eob(seg(t,2.0,2.5))));
  T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.4,1.0))));
  }};
 // --- Scena 2 (3.4 - 8.0): 64 contro 67 ---
@@ -127,18 +119,3 @@ SB[3]={s:11.0,e:14.1334,build(g){const o={};
  T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.2,0.8))));
  }};
 const TOT=14.1333;
-const bok=document.getElementById('bok');
-for(let i=0;i<16;i++){el('circle',{cx:(i*271)%1920,cy:(i*197)%1080,r:30+((i*37)%80),fill:'#8FF5DC',opacity:.06+((i*13)%7)*0.01},bok);}
-const sceneG=document.getElementById('scene');const camG=document.getElementById('cam');
-let curS=-1;
-function drawBlock(t){
- let i=SB.length-1;for(let k=0;k<SB.length;k++){if(t<SB[k].e){i=k;break;}}
- const S0=SB[i];
- if(curS!==i){sceneG.innerHTML='';S0.build(sceneG);curS=i;}
- const lt=t-S0.s;
- S0.update(lt);
- const fin=eo3(seg(lt,0,0.3)),fout=(i<SB.length-1)?1-eio(seg(t,S0.e-0.3,S0.e)):1;
- sceneG.setAttribute('opacity',Math.min(fin,fout));
- const z=1+0.02*(t/TOT);camG.setAttribute('transform','translate(960 540) scale('+z+') translate(-960 -540)');
-}
-function draw(i,t){drawBlock(t);}
