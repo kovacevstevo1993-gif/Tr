@@ -63,8 +63,8 @@
 - Eseguire SOLO gli ordini, nessuna scelta propria, lavorare a fondo senza scuse.
 
 ## REGOLA N.5 (utente, 04/10/2026): DAL PROSSIMO VIDEO, SLIDE PIÙ LENTE E CHIARE, TUTTO MIGLIORATO
-- Feedback sul video 2: era TROPPO VELOCE, quasi tutto non si riusciva a capire bene; le slide in movimento sono BRUTTE.
+- Feedback sul video 2: era TROPPO VELOCE, quasi tutto non si riusciva a capire bene; le slide in movimento NON erano brutte, erano VELOCI (il problema è la velocità, non l'aspetto).
 - Dal PROSSIMO video lungo (e dai prossimi short): fare MEGLIO, in modo che si capisca bene. Migliorare TUTTO.
 - Non cambiare da zero: MIGLIORARE quello che c'è (regola n.1). Salvare sempre (regola n.4).
-- Da applicare: ritmo più lento (più tempo di lettura per ogni slide, meno cose per slide), meno movimento/animazioni disordinate, testi grandi e leggibili, ogni elemento fermo e completo con tempo per essere letto. Se serve una scelta di metodo, chiedere PRIMA.
+- Da applicare: ritmo più lento (più tempo di lettura per ogni slide, meno cose per slide), animazioni meno veloci (la grafica in movimento resta, va rallentata), testi grandi e leggibili, ogni elemento fermo e completo con tempo per essere letto. Se serve una scelta di metodo, chiedere PRIMA.
 - Il video 2 resta com'è (già montato).
