@@ -40,3 +40,23 @@
 - Cambiare lo stile/modello grafico delle slide (colori, forme, impostazione, tipo di oggetti, animazioni) per OGNI nuovo video lungo e per ogni short, così i video non sono tutti uguali.
 - NON cambiare il video 2 adesso (resta com'è). Si applica a partire dal PROSSIMO video (video lungo 3 e short successivi).
 - Il canale resta riconoscibile (nome, logo, verde acqua come colore base), ma cambiano layout, forme, sfondo, tipo di didascalia e di oggetti.
+
+## REGOLA N.4 (utente, 04/10/2026): SALVARE SEMPRE TUTTO QUELLO CHE DICE L'UTENTE
+- Ogni istruzione, preferenza o correzione dell'utente va scritta SUBITO in questo file (nel repo, committata e pushata), senza aspettare che lo chieda.
+- A inizio di ogni nuova chat: leggere questo file per primo.
+
+## ELENCO ISTRUZIONI DELL'UTENTE (sessione 02-04/10/2026)
+- Notizie e dati: li cerca e verifica Claude su fonti ufficiali; le proposte si dicono sempre come proposte.
+- Risposte corte, una cosa alla volta.
+- Testi (copioni, titoli, descrizioni, tag) sempre scritti in chat, interi, pronti da copiare (non solo nella cartella).
+- Copioni video lunghi: blocchi da ~15 secondi, video sopra i 10 minuti, hook che trattiene, intrattenimento fino all'ultimo secondo, cercare su vidIQ cosa è cercato e cosa va virale (spendere crediti vidIQ solo se serve alla richiesta).
+- Voce: frasi punteggiate come parlato, numeri in lettere, "Inps", "Mai Inps", "inps punto it".
+- L'utente registra la voce in CapCut e manda lo screenshot di fine blocco; le durate partono dalla fine del blocco precedente (fotogrammi a 30 fps).
+- Slide: fatte col codice, dettagliate, con oggetti, verde acqua; devono avere il tempo di FINIRE prima della dissolvenza; controllo OBBLIGATORIO di tutte le lettere su TUTTI i fotogrammi, mai a campione.
+- Qualità mai abbassata (neanche per velocità); non rifare da zero ma migliorare; render in parallelo.
+- Descrizione di ogni video: intera con "Iscriviti", disclaimer e hashtag (descrizione predefinita di YouTube vuota); hashtag 5-12 (max 15); tag sotto 500 caratteri; commento da fissare (dopo la pubblicazione, mai su video programmato).
+- Short: pubblicato a mano (circa 7:30) il giorno dopo il video lungo, rimanda al video lungo ("video correlato" + commento fissato con link); miniatura che attira il click.
+- Miniature: frase che ha in mente l'utente; attira click.
+- Modello di slide DIVERSO per ogni video (dal video 3 in poi, il video 2 resta com'è).
+- Kit completo per cambiare chat: KIT-1 (testi, chat, regole) + zip dei video; messaggio di ripartenza in 07-KIT-COMPLETO/00-LEGGIMI-PRIMA.md; leggere anche REGOLE-FISSE.md.
+- Eseguire SOLO gli ordini, nessuna scelta propria, lavorare a fondo senza scuse.
