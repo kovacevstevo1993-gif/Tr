@@ -24,7 +24,7 @@ Leggere: CLAUDE.md, poi questo file. README.md e MEMORIA-CANALE.md non sono aggi
 - Slide e grafica le fai tu col codice. Devono essere movimentate, dettagliate, con tanti oggetti disegnati.
 - CONTROLLA le slide (fotogrammi in vari momenti) PRIMA di mandarle e correggi subito i difetti.
 - Mandami i file in ordine e tutti insieme (MP4 con SendUserFile, mai nel repo).
-- Dal prossimo video: montaggio piu' tagliato e slide che si capiscono meglio; ogni slide deve finire dentro la sua frase/blocco, tutto completo e visibile prima del blocco dopo.
+- Dal prossimo video: montaggio PIU' DETTAGLIATO (non piu' tagliato) e slide che si capiscono meglio; ogni slide deve finire dentro la sua frase/blocco, tutto completo e visibile prima del blocco dopo.
 - Gancio diverso per ogni video ("Wait" gia' usato negli short 5 e 6). Sigle voce: "snap" parola, altre a lettere ("C S F P").
 - Sono molto nervoso quando aspetti o mi fai cercare le cose: veloce e preciso.
 
