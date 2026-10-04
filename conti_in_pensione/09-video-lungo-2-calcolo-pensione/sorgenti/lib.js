@@ -60,5 +60,5 @@ function doorN(p,n,fill){const g=el('g',{},p);const d=el('g',{},g);door(d);
 function avatar(p,r){const g=el('g',{},p);medal(g,r);return g;}
 function bill(p,s){const g=el('g',{filter:'url(#g_sh)'},p);
  el('rect',{x:-190,y:-100,width:380,height:200,rx:22,fill:'#D6F5EC',stroke:'#1B9F81','stroke-width':8},g);
- el('circle',{r:64,fill:'#fff',stroke:'#1B9F81','stroke-width':6},g);txt(g,s,0,16,46,INK,'900');
- txt(g,'€',-150,-48,44,'#1B9F81','900');txt(g,'€',150,76,44,'#1B9F81','900');return g;}
+ el('rect',{x:-150,y:-62,width:300,height:124,rx:40,fill:'#fff',stroke:'#1B9F81','stroke-width':6},g);txt(g,s,0,14,Math.min(52,260/Math.max(1,s.length*0.78)),INK,'900');
+ return g;}

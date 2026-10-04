@@ -99,7 +99,7 @@ BLK[53]={scenes:[
  {w:.65,lab:'LA SORPRESA',cap:'SE LA PENSIONE DURA 20 ANNI: CIRCA 48.000 € IN MENO',items:[A(C('PERDI','185 €','AL MESE','r',300),0),A(OP('×'),.18),A(C('MENSILITÀ','13','','p',260),.34),A(OP('×'),.5),A(C('ANNI','20','','p',260),.64),A(AR(),.78),A(C('IN TOTALE','48.000 €','LORDI','r',420),.9)],tags:[]},
  {w:.35,lab:'UNA SCELTA DI TRE ANNI',cap:'48.000 €, PER UNA SCELTA DI TRE ANNI!',items:[C('SCELTA DI','3 ANNI','','d',380),AR(),C('COSTO','≈ 48.000 €','','r',460)],tags:[T_('GUARDA I NUMERI PRIMA DI DECIDERE','g')]}]};
 BLK[54]={scenes:[
- {w:.3,lab:'RICORDA',cap:'È UN ESEMPIO SEMPLIFICATO, CON NUMERI TONDI',items:[W_(),ST('ESEMPIO SEMPLIFICATO',RED_)],tags:[]},
+ {w:.3,lab:'RICORDA',cap:'È UN ESEMPIO SEMPLIFICATO, CON NUMERI TONDI',items:[ST('ESEMPIO SEMPLIFICATO',RED_),W_()],tags:[]},
  {w:.4,lab:'NELLA REALTÀ CONTANO',cap:'NELLA REALTÀ CONTANO QUATTRO COSE',items:[C('1','SISTEMA|DI CALCOLO','','p',330),C('2','RIVALUTAZIONE','','p',330),C('3','CARRIERA','','p',330),C('4','ANNI|COPERTI','','p',330)],tags:[]},
  {w:.3,lab:'PER LA TUA CIFRA',cap:'CONTROLLA INPS PUNTO IT, OPPURE CHIEDI A UN PATRONATO',cs:48,items:[BR('inps.it',['La tua posizione ufficiale'],760,360),C('OPPURE','PATRONATO','','g',380)],tags:[]}]};
 BLK[55]={scenes:[

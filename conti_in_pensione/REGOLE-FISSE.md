@@ -25,3 +25,13 @@
   `printf '%s\n' 1 2 3 ... | xargs -P 4 -I{} python3 render.py {} video`
 - Fare il controllo QA e l'anteprima a fogli PRIMA del render, così non si rifà niente. Mai renderizzare un blocco alla volta.
 - Costruire più blocchi per volta, non uno per messaggio. Rispondere all'utente appena i file sono pronti.
+
+## REGOLA N.1 (utente, 04/10/2026): ESEGUIRE SOLO GLI ORDINI
+- Fare SOLO quello che l'utente ordina. Mai prendere decisioni proprie su qualità, semplificazioni, scorciatoie o cambi di metodo.
+- Mai abbassare la qualità per andare più veloce: la velocità si ottiene con render più rapido, non con slide più povere.
+- Mai rifare da zero il lavoro già fatto: si riusa e si MIGLIORA quello che c'è (aggiungere dettaglio sopra).
+- Se serve una scelta, chiedere PRIMA, non dopo. Stesso livello di dettaglio per TUTTI i blocchi di un video (nessun video mezzo semplice e mezzo dettagliato).
+
+## REGOLA N.2 (utente, 04/10/2026): LAVORARE A FONDO, SENZA SCUSE
+- Se un lavoro è venuto male, si RIFÀ per intero e bene. Non scaricare sui problemi tecnici, non fare le cose a metà, non dire "fatto" se non è all'altezza.
+- Niente giustificazioni lunghe: lavorare, consegnare completo.
