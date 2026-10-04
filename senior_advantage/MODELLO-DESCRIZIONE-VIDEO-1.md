@@ -1,4 +1,9 @@
-# MODELLO DESCRIZIONE (copiata dallo screenshot dell'utente, video lungo 1). Ogni video lungo va fatto IDENTICO a questo.
+# MODELLO PACCHETTO VIDEO LUNGO 1 (recuperato dalle chat vecchie e dallo screenshot dell'utente). Ogni video lungo va fatto IDENTICO a questo: stessi blocchi, stesso ordine, stesso stile.
+
+## TITOLO (vidIQ 94/100)
+Senior Discounts Start at 55, Not 65: 12 Hidden Places (Most Never Ask)
+
+## DESCRIZIONE
 
 Senior discounts start at 55 at many stores, not 65, and most cashiers will never mention them. In this video you'll see 12 places that take money off your bill: restaurants, Walgreens, Ross, Kohl's, Savers, Michaels, phone plans, AMC movies, Amtrak, buses and subways, the $80 lifetime National Parks Senior Pass, and AARP (from age 50).
 
@@ -36,3 +41,16 @@ Subscribe to The Senior Advantage: https://www.youtube.com/@TheSeniorAdvantage?s
 Disclaimer: Discounts, ages and prices change and differ by location and plan. Always confirm with the business or the official source before you rely on them. General information, not financial advice. This channel is not affiliated with any company mentioned.
 
 #seniordiscounts #seniorsavings #over55
+
+## TAG (448 caratteri, separati da virgola SENZA spazi, massimo 500)
+senior discounts,senior discounts at 55,senior citizen discounts,hidden senior discounts,senior discount list,stores with senior discounts,senior discounts restaurants,discounts for seniors over 55,senior savings,senior benefits,senior discount age,walgreens senior discount,kohl's senior discount,amtrak senior discount,national parks senior pass,aarp discounts,senior phone plans,senior discounts 2026,senior discounts usa,ask for senior discount
+
+## COMMENTO FISSATO
+Which of the 12 places did you NOT know about? Tell me below 👇 And save this video: prices and ages change, and I'll keep it updated.
+
+## IMPOSTAZIONI
+- Playlist esistente "Senior Discounts", video messo per primo. Non creare ne cancellare nulla su YouTube.
+- Miniatura: il PNG scelto dall'utente. Uso IA: No. Promozione a pagamento: No.
+- Schermata finale negli ultimi 20 secondi (Subscribe + miglior video della playlist; il riquadro tratteggiato nella slide finale mostra dove metterli).
+- Parola chiave principale ("senior discounts") nei primi 125 caratteri della descrizione.
+- Dati vidIQ usati: vedi PASSAGGIO-CHAT.md.
