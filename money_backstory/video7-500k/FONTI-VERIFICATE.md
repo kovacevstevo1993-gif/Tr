@@ -35,3 +35,11 @@ Legenda: P = letto su fonte primaria in questa sessione; S = confermato da piu' 
 - SS a 70: 2.071 x 1,24 = 2.568,04 (+497,04/mese = +5.964/anno). 3 anni senza assegno = 74.556; pareggio = 12,5 anni dopo i 70 (senza rendimenti ne' Cola).
 - Rendita meta': 3.075 / 2 = 1.537,50 + (250.000 x 3,9% / 12 = 812,50) = 2.350/mese contro 1.625 (+725).
 - Flessibile 5,7%: 28.500/anno = 2.375/mese (+750).
+
+## Fine voce blocchi (dallo screenshot CapCut dell'utente, voce 1.0, copione a 53 blocchi) — 05/10/2026
+- Blocco 1: 00:12 + 28f = 388 fotogrammi (durata 388).
+- Blocco 2: 00:26 + 7f (etichetta 6f a x=298, cursore a x=360 = 6,9) = 787 assoluti; durata 399.
+- Blocco 3: 00:43 + 15f (14f a x=271, punto 15f a x=338, cursore 15,3) = 1305; durata 518.
+- Blocco 4: 00:57 + 19f (18f a x=314, cursore 18,7) = 1729; durata 424.
+- Blocco 5: 01:23 + 24f (24f a x=348, cursore 24,2) = 2514; durata 785.
+- Mary = $250.000 Roth + $250.000 tradizionale (usato nei calcoli del blocco 21).

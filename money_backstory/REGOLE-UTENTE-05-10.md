@@ -10,3 +10,5 @@
 - SALVARE TUTTO nel repo e non cambiare niente di quello gia' deciso. Se manca una regola, lo dice e va scritta subito qui, parola per parola.
 - Prima di ogni nuovo video dire la playlist ("Retirement After 50").
 - Durate dei blocchi: SOLO dal suo screenshot della timeline.
+- PIU' PROFESSIONALE: "E tutto quello che puoi fare piu' professionale?" (05/10, per le slide del video 7: dettagliate, si deve capire benissimo sia le slide che le parole).
+- Salvare nel repo OGNI dato dello screenshot appena arriva (fine voce dei blocchi).
