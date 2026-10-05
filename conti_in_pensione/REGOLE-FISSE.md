@@ -70,3 +70,7 @@
 - Il video 2 resta com'è (già montato).
 - (utente, 04/10/2026) Per i prossimi video: MIGLIORARE e basta (il video, le slide e il modo di far capire meglio), più DETTAGLIATO. Niente altri cambiamenti: si migliora quello che c'è, senza stravolgere.
 - (utente, 04/10/2026) Nel video 2 le slide NON FINIVANO BENE (animazioni non completate in tempo). Dal prossimo video va risolto: ogni slide deve completare tutto il movimento e restare ferma e leggibile per un tempo sufficiente PRIMA della dissolvenza, controllando TUTTI i fotogrammi (regole di controllo in cima a questo file).
+
+## ISTRUZIONI UTENTE (05/10/2026)
+- Gli short 1, 2 e 3 sono GIÀ PUBBLICATI. Lo short da fare adesso è lo SHORT 4 = teaser del video lungo 2 (nomi file S4-blocco01.mp4...). Hook super interessante che tiene attaccati fino alla fine e convince a guardare il video lungo completo; con didascalia (descrizione).
+- Nei commenti e nelle descrizioni degli short i link NON funzionano: negli short non dire "il link è nel commento"; dire "tocca il video correlato" (funzione "Video correlato" di YouTube Studio).
