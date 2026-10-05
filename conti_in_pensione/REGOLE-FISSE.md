@@ -80,3 +80,7 @@
 - Come mandarla: ogni didascalia SEPARATA, una per blocco/clip, ciascuna nel suo riquadro (```), numerata, pronta da copiare una alla volta (come nel copione del video 2). NON in un unico testo continuo (provato il 05/10: l'utente ha risposto "Separate").
 - Descrizione, titolo, tag e commento da fissare: a parte, come sempre (descrizione completa, tutto insieme in un riquadro).
 - Da applicare in ogni chat, per ogni video e short, senza che l'utente lo ripeta.
+
+## ISTRUZIONI UTENTE (05/10/2026, short 4)
+- Short 4: l'utente ha registrato la voce e mandato 6 screenshot di fine blocco. Le clip vanno fatte "migliorate rispetto agli altri, meglio e più dettagliate" e "deve capirsi benissimo le slide" (regola n.5: più lente, movimento che finisce bene, ferme e leggibili prima della fine).
+- L'utente scrive le didascalie in CapCut sopra le clip (testo bianco circa al 33% dell'altezza): lasciare libera la fascia centrale-alta (circa y 330-680 su 1920) e tenere le grafiche principali sotto.
