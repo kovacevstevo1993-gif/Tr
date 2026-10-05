@@ -31,7 +31,7 @@ Tre canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 
 ---
 
-# CANALE "CONTI IN PENSIONE" (@ContiInPensione) - LEGGERE PRIMA DI FARE QUALSIASI COSA
+# CANALE "CONTI IN PENSIONE" (@ContiInPensione) - queste regole valgono SOLO quando si lavora su quel canale (cartella conti_in_pensione/)
 
 1. PRIMA di ogni risposta, e di nuovo PRIMA di ogni consegna all'utente, leggere per intero `conti_in_pensione/REGOLE-FISSE.md` e applicarlo alla lettera, senza interpretazioni proprie.
 2. Eseguire SOLO gli ordini dell'utente. Se una frase non è chiara: UNA domanda sola, PRIMA di fare qualsiasi cosa. Mai inventare, mai aggiungere cose non chieste.
