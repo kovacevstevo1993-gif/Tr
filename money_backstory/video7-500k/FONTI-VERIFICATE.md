@@ -53,3 +53,8 @@ Legenda: P = letto su fonte primaria in questa sessione; S = confermato da piu' 
 - Blocco 13: 03:48 + 24f (24f a x=341, cursore 24,3) = 6864; durata 306.
 - Blocco 14: 04:05 + 2f (etichetta '04:05' = 0f a x=247, cursore 1,7) = 7352; durata 488.
 - Blocco 15: 04:23 + 4f (2f a x=236, cursore 3,9) = 7894; durata 542.
+- Blocco 16: 04:38 + 13,2f (12f a x=277, punto 13f a 344, cursore 13,2) = 8353 assoluti; durata 459.
+- Blocco 17: 04:57 + 3,4f (punto 1f a 201, 2f a 269, punto 3f a 335) = 8913; durata 560.
+- Blocco 18: 05:16 + 10,8f (10f a x=306, cursore 10,8) = 9491; durata 578.
+- Blocco 19: 05:36 + 17,8f (punto 17f a 310, cursore 17,8) = 10098; durata 607.
+- Blocco 20: 05:52 + 2,1f (etichetta 05:52 = 0f, 2f a 352) = 10562; durata 464.
