@@ -45,3 +45,9 @@ Esempio tasse: "imponibile" = parte dell'assegno che conta; se esce un'imposta d
 - Blocco 18: 07:48 + 20f = 14060; durata 1019.
 - Blocco 19: 08:13 + 28f = 14818; durata 758.
 - Blocco 20: 08:44 + 10f = 15730; durata 912.
+- Blocco 21: 09:17 + 16f = 16726 assoluti; durata 996.
+- Blocco 22: 09:40 + 24f = 17424; durata 698.
+- Blocco 23: 09:58 + 20f = 17960; durata 536.
+- Blocco 24: 10:23 + 2f = 18692; durata 732.
+- Blocco 25: 10:46 + 28f = 19408; durata 716.
+- ERRORE TROVATO 05/10 (registrazione schermo utente): mancava la slide v6-b15-03 nella timeline (slide successive 8,8 s in anticipo). Inserire a 06:11+16f.
