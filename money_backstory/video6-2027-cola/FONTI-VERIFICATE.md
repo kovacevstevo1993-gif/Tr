@@ -23,3 +23,6 @@ Legenda: P = letto direttamente sulla fonte primaria in questa sessione; S = con
 | Calcoli Frank e Mary (3,5%): 2.071 -> 2.143 (+72); Part B 202,90 -> 209,50; deposito 1.868,10 -> 1.933,50 (+65,40); Mary combined income ~12.400; Frank ~32.400, +216 imponibile | calcolati | aritmetica del copione, rifare col COLA ufficiale |
 
 Esempio tasse: "imponibile" = parte dell'assegno che conta; se esce un'imposta dipende dalle detrazioni (il copione lo dice).
+
+## Fine voce blocchi (voce velocità 1.0, da screenshot utente)
+- Blocco 1: 00:28 + 21f = 861 fotogrammi (letto: ruler 4f / punto / 16f, cursore a x=360, ~10,6 px per fotogramma).
