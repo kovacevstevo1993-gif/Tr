@@ -73,6 +73,8 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 
 - INVIO SLIDE: mandare SOLO quello che l'utente chiede e solo dal blocco indicato ("da qua" = da quel blocco in poi). MAI rimandare slide già consegnate. Errore 05/10: rimandate tutte le 110 slide invece dei blocchi 26-30.
 
+- SALVARE TUTTO: MAI cancellare file, versioni o testi già fatti, nemmeno se sembrano duplicati. Se ci sono due versioni, tenerle entrambe e dire all'utente dove sono. Errore 05/10: cancellata una versione dei testi del video 6 (ripristinata).
+
 ## MINIATURE
 1280×720, Montserrat ExtraBold, curiosita' forte, numeri enormi con bordo nero, stile rosso/verde dei video 1-2 oppure blu notte/oro con grafici (barre, griglie). Per i test A/B: due miniature con layout e idea DIVERSI tra loro. Le frasi sono sue: se ne ha una in mente, usare quella. Mai somigliare a Senior Advantage.
 
