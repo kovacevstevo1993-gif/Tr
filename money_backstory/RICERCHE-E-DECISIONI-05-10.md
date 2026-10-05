@@ -59,3 +59,6 @@ Schema comune dei titoli virali: numero preciso o data + promessa + pericolo/seg
 
 ## Decisione 05/10 sera: PUBBLICAZIONE VIDEO 6 IL 06/10/2026
 Il video esce PRIMA del 14/10: niente attesa del numero ufficiale e niente rifacimenti. Il copione usa la stima 3,5% come esempio dichiarato. Non proporre mai di aspettare l'annuncio.
+
+## Piano dopo il 14/10/2026 (deciso dall'utente 05/10)
+Video 6 esce il 06/10 com'è (resta pubblicato, non si cancella e non si rifà). DOPO il 14/10, con l'annuncio ufficiale, si fa un NUOVO video sullo stesso argomento (COLA 2027), tutto aggiornato con i numeri ufficiali (SSA, Part B CMS se già uscito, soglie/limiti 2027) e con contenuti diversi dal video 6, non una copia. Scrivere il copione nuovo solo dopo aver letto i numeri ufficiali.

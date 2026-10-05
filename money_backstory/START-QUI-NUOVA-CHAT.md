@@ -51,5 +51,6 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 - Video 1-5 pubblicati con tutto fatto.
 - VIDEO 6 (in corso): "2027 COLA". Copione di 30 blocchi SCRITTO e verificato in `money_backstory/video6-2027-cola/` (copione-video6.md, FONTI-VERIFICATE.md). Prossimo passo: l'utente registra la voce e manda lo screenshot della timeline; poi slide (più dettagliate, per anziani). Il video 6 si pubblica il 06/10/2026, PRIMA del 14/10: usa la stima 3,5% come esempio. NON aspettare l'annuncio. Vedi RICERCHE-E-DECISIONI-05-10.md.
 - VIDEO 7: "Retirement Income from $500,000".
+- DOPO il 14/10/2026: fare un NUOVO video sul COLA 2027 con i numeri ufficiali e contenuti diversi dal video 6 (deciso dall'utente). Vedi RICERCHE-E-DECISIONI-05-10.md.
 - Aperto: titolo con "2027" (parola chiave) vs regola "senza anno".
 - Crediti vidIQ: 100 rimasti al 05/10 (chiedere prima di spenderli).
