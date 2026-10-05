@@ -73,3 +73,8 @@ Legenda: P = letto su fonte primaria in questa sessione; S = confermato da piu' 
 - Blocco 33: 10:03 + 19,0f (18f a x=293, punto 19f a 359) = 18109; durata 631.
 - Blocco 34: 10:19 + 10,6f (10f a x=321) = 18581; durata 472.
 - Blocco 35: 10:35 + 19,5f (18f a 263, punto 19f a 329) = 19070; durata 489.
+- Blocco 36: 10:58 + 14,2f (12f a x=216, 14f a 349) = 19754 assoluti; durata 684.
+- Blocco 37: 11:15 + 16,8f (14f a 174, 16f a 307) = 20267; durata 513.
+- Blocco 38: 11:31 + 1,2f (etichetta 11:31 = 0f a x=278, punto 1f a 347) = 20731; durata 464.
+- Blocco 39: 11:47 + 21,6f (20f a x=257, punto 21f a 322) = 21232; durata 501.
+- Blocco 40: 11:58 + 8,4f (6f a 203, 8f a 336) = 21548; durata 316.
