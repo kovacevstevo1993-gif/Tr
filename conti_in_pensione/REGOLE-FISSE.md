@@ -90,3 +90,7 @@
 - Il testo bianco che l'utente scrive in CapCut mentre registra la voce serve solo per segnare i blocchi: lo cancella. NON è la didascalia del video e NON va evitato nelle clip.
 - La didascalia visibile sta DENTRO la slide (titoletto in alto, grafica al centro, didascalia nel riquadro in basso), come nei video 1 e 2. Le clip dello short 4 con la didascalia in basso (commit cad4b42) sono quelle GIUSTE.
 - (Errore di Claude del 05/10: aveva tolto la didascalia dalle clip e rifatto tutto: sbagliato, ripristinato.)
+
+## REGOLA N.8 (utente, 05/10/2026): TITOLO, DESCRIZIONE, TAG E COMMENTO SEMPRE IN RIQUADRI SEPARATI
+- Ogni parte (titolo, descrizione, hashtag se separati, tag/parole chiave, commento da fissare) va in un RIQUADRO SUO (```), da copiare uno alla volta. Mai tutto in un unico riquadro.
+- Il titolo NON contiene hashtag (#shorts nel titolo era un'iniziativa sbagliata di Claude).
