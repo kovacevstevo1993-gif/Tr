@@ -68,3 +68,8 @@ Legenda: P = letto su fonte primaria in questa sessione; S = confermato da piu' 
 - Blocco 28: 08:22 + 6,3f (6f a x=339) = 15066; durata 548.
 - Blocco 29: 08:42 + 8,2f (8f a x=345) = 15668; durata 602.
 - Blocco 30: 08:58 + 4,9f (4f a x=303, la prima etichetta e' coperta dal display) = 16145; durata 477.
+- Blocco 31: 09:21 + 5,3f (4f a x=272, punto 5f a 337, cursore 5,3) = 16835 assoluti; durata 690.
+- Blocco 32: 09:42 + 18,3f (18f a x=341) = 17478; durata 643.
+- Blocco 33: 10:03 + 19,0f (18f a x=293, punto 19f a 359) = 18109; durata 631.
+- Blocco 34: 10:19 + 10,6f (10f a x=321) = 18581; durata 472.
+- Blocco 35: 10:35 + 19,5f (18f a 263, punto 19f a 329) = 19070; durata 489.
