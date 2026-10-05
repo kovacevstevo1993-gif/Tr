@@ -25,4 +25,4 @@ Legenda: P = letto direttamente sulla fonte primaria in questa sessione; S = con
 Esempio tasse: "imponibile" = parte dell'assegno che conta; se esce un'imposta dipende dalle detrazioni (il copione lo dice).
 
 ## Fine voce blocchi (voce velocità 1.0, da screenshot utente)
-- Blocco 1: 00:28 + 21f = 861 fotogrammi (letto: ruler 4f / punto / 16f, cursore a x=360, ~10,6 px per fotogramma).
+- Blocco 1: 00:28 + 17f = 857 fotogrammi. ERRORE CORRETTO: la prima lettura (21f = 861) era sbagliata perché l'etichetta '14f' era coperta dal display del tempo e sembrava '4f'. Verifica: nel secondo screenshot le slide sporgevano ~3-4 fotogrammi oltre la voce.

@@ -10,7 +10,7 @@ S = ["On October fourteenth, the Social Security Administration will announce th
      "The early estimate is about three point five percent, which would be roughly seventy two dollars more on the average check.",
      "But here is the part almost nobody talks about: by the time that raise reaches your bank account, a piece of it may already be spoken for.",
      "Stay until the end, because number three is the one that surprises almost everyone."]
-TOTF = 861   # fine voce blocco 1 = 00:28 + 21f dallo screenshot dell'utente
+TOTF = 857   # fine voce blocco 1 = 00:28 + 17f (corretto: prima avevo letto 21f per errore)
 def wtot(text): return len(text) + 3 * (text.count(',') + text.count(':'))
 gw = [len(s) + 10 for s in S]
 FS = [round(w / sum(gw) * TOTF) for w in gw]; FS[-1] = TOTF - sum(FS[:-1])

@@ -44,6 +44,8 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 - Pubblico anziano: meno movimento ma tenere gli oggetti; testi grandi (≥44 px); qualcosa visibile entro 1-1,5 s; niente glifo "½" nei font.
 - Capitoli: orari dalla sua timeline (o dai frame reali dei blocchi nel codice, che vengono dalle sue letture).
 
+- LETTURA TIMELINE (errore già fatto 05/10): il display '00:28 / 00:54' in alto a sinistra COPRE la prima etichetta del righello (es. '14f' sembra '4f'). Passo fra etichette = 2 fotogrammi = ~133 px (66 px per fotogramma). Usare sempre le etichette vicine al cursore (x=360), non quella coperta. Dopo il montaggio, controllare che le slide non sporgano oltre la fine della voce.
+
 ## MINIATURE
 1280×720, Montserrat ExtraBold, curiosita' forte, numeri enormi con bordo nero, stile rosso/verde dei video 1-2 oppure blu notte/oro con grafici (barre, griglie). Per i test A/B: due miniature con layout e idea DIVERSI tra loro. Le frasi sono sue: se ne ha una in mente, usare quella. Mai somigliare a Senior Advantage.
 
