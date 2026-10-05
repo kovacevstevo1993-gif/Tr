@@ -75,8 +75,9 @@
 - Gli short 1, 2 e 3 sono GIÀ PUBBLICATI. Lo short da fare adesso è lo SHORT 4 = teaser del video lungo 2 (nomi file S4-blocco01.mp4...). Hook super interessante che tiene attaccati fino alla fine e convince a guardare il video lungo completo; con didascalia (descrizione).
 - Nei commenti e nelle descrizioni degli short i link NON funzionano: negli short non dire "il link è nel commento"; dire "tocca il video correlato" (funzione "Video correlato" di YouTube Studio).
 
-## REGOLA N.6 (utente, 05/10/2026): LE DIDASCALIE SI MANDANO TUTTE INSIEME, IN UN UNICO TESTO
-- Frase dell'utente: "Anche le didascalie li mandi sempre nei blocchi, come se descrizioni e tutto separate. Devono essere tutte le didascalie. Salvalo, ogni chat lo sto ripetendo."
-- Interpretazione applicata: titolo + descrizione (con Iscriviti, disclaimer, hashtag) + tag + commento da fissare vanno scritti in chat come UN SOLO testo completo, in un unico riquadro da copiare, NON in pezzi separati (titolo qui, descrizione là, tag altrove).
-- Il copione a blocchi (una clip per blocco) resta a blocchi: la regola riguarda la didascalia.
-- Da applicare in ogni chat e per ogni video e short, senza che l'utente lo ripeta.
+## REGOLA N.6 (utente, 05/10/2026): "DIDASCALIA" = IL TESTO DA METTERE NEL VIDEO (voce/scritte), SI MANDA TUTTO INSIEME
+- Frasi dell'utente: "Anche le didascalie le mandi sempre nei blocchi, devono essere tutte le didascalie. Salvalo, ogni chat lo sto ripetendo." / "La descrizione l'hai già mandata giusta: ho detto la didascalia da mettere nel video."
+- Significato: "didascalia" (o "didascalia/voce") = il TESTO CHE VA NEL VIDEO (quello letto dalla voce / scritto sul video), NON la descrizione YouTube. La descrizione, i tag, il titolo e il commento da fissare sono un'altra cosa e si mandano come sempre (descrizione completa).
+- Come mandarla: TUTTE le didascalie in UN SOLO TESTO continuo e completo, in un unico riquadro da copiare, non spezzettate in blocchi numerati.
+- (Errore di Claude del 05/10: aveva capito che "didascalia" fosse titolo+descrizione+tag.)
+- Da applicare in ogni chat, per ogni video e short, senza che l'utente lo ripeta.
