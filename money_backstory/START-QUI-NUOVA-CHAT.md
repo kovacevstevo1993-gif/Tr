@@ -10,6 +10,23 @@ Se sei un Claude in una chat nuova: leggi questo file, poi `CLAUDE.md` (regole p
 - `money_backstory/code/`: codice miniature (thumbs_video3*.py, thumbs_video4.py, thumbs_video5_v2.py). `money_backstory/miniature_video3|4|5/`: miniature fatte.
 - `senior_advantage/`: ALTRO canale, separato. Non mescolare.
 
+
+## STATO AL 05/10/2026 SERA (fine sessione "video 6")
+- Branch di lavoro: `claude/lucid-cerf-4jmcl8` (NON unito a main: leggere e lavorare QUI). Tutto il video 6 è in `money_backstory/video6-2027-cola/` (copione-video6.md, blocks.txt, FONTI-VERIFICATE.md, slide/ = 110 MP4, code/ = codice slide). Ricerche e decisioni: `money_backstory/RICERCHE-E-DECISIONI-05-10.md`.
+- VIDEO 6 "Social Security 2027 COLA": copione 30 blocchi FATTO e verificato; voce registrata dall'utente (velocità 1.0, CapCut "Analista preciso"); slide di TUTTI i 30 blocchi FATTE e consegnate (110 MP4). Blocco 26 rifatto dopo che l'utente ha rigenerato la voce (939 fotogrammi); fine video 12:39+8f = 22778 fotogrammi. L'utente le sta montando; pubblica il 06/10/2026 PRIMA dell'annuncio ufficiale del 14/10 (usa la stima 3,5% come esempio dichiarato).
+- DA FARE per il video 6 (non ancora fatti): titolo (con "2027 COLA" come parola chiave, anno OK), descrizione (capitoli dalla sua timeline finale, fonti, riga Subscribe, disclaimer, 3 hashtag), tag (<500 caratteri), commento fisso (solo domanda al pubblico, SENZA disclaimer), miniatura A/B (Montserrat ExtraBold, blu notte+oro, numeri grandi, layout diversi tra le due), playlist "Retirement After 50", schermata finale -> video 1. Dire PRIMA la playlist.
+- DOPO il 14/10/2026: NUOVO video sul COLA 2027 con numeri ufficiali (SSA, Part B CMS, soglie 2027) e contenuti diversi dal video 6. Poi VIDEO 7 "Retirement Income from $500,000".
+- Crediti vidIQ: 100 rimasti (rinnovo 25/10). Chiedere prima di spenderli.
+- Voce: COLA si scrive sempre "Cola" (KOH-lah). Durate sempre dagli screenshot timeline dell'utente.
+- COME SI LEGGE LA TIMELINE: vedi regole sotto (display tempo copre la prima etichetta; ~66,5 px per fotogramma, cursore a x=360).
+- COME MONTA L'UTENTE: mette in CapCut le slide MP4 in ordine dopo la voce di ogni blocco; manda lo screenshot con il cursore alla fine voce del blocco. Se una slide non si carica in CapCut: ricodificare (h264 Main, faststart).
+
+## ALTRI CANALI (NON MISCHIARE): il lavoro non ancora in main sta su altri branch
+- Senior Advantage: branch `claude/ecstatic-shannon-wl7kwf` e `claude/funny-knuth-jqpa31` (cartella senior_advantage/).
+- Conti in Pensione: `claude/new-session-79n9mt`, `claude/wizardly-galileo-uh8q18`, `claude/youthful-einstein-uctfje` (cartella conti_in_pensione/; leggere REGOLE-FISSE.md).
+- Bambini Ciao Ciao (cartella parco/): `claude/festive-brown-pk4m7q`, `claude/nifty-brown-0jnc8w`, `claude/zealous-mendel-8m8aas`, `claude/fervent-johnson-ob5dk7`, `claude/lucid-volta-myb2ye`, `claude/upbeat-einstein-f0m1jz`.
+- L'utente ha chiesto di unire tutto in main ma l'operazione è stata bloccata dal sistema: se serve, chiedere di nuovo il permesso.
+
 ## Il canale
 The Money Backstory (@TheMoneyBackstoryUSA), creato 25/09/2026, faceless, in inglese, pubblico americani over 50. Nicchia: pensione USA (Social Security, Medicare, tasse in pensione, 401k/IRA). Obiettivo: monetizzare con CPM alto. Narratori: Frank e Mary (due persone fittizie, presentati da zero in ogni video).
 Identita' visiva: blu notte + oro (cornice 3D oro), rosso/verde per i confronti, font Gloock (titoli slide), InstrumentSans (testi), Montserrat ExtraBold (miniature). NIENTE giallo a raggi/ricevute/verde bosco (sono di Senior Advantage).
