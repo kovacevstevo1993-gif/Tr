@@ -21,6 +21,9 @@ Se sei un Claude in una chat nuova: leggi questo file, poi `CLAUDE.md` (regole p
 - COME SI LEGGE LA TIMELINE: vedi regole sotto (display tempo copre la prima etichetta; ~66,5 px per fotogramma, cursore a x=360).
 - COME MONTA L'UTENTE: mette in CapCut le slide MP4 in ordine dopo la voce di ogni blocco; manda lo screenshot con il cursore alla fine voce del blocco. Se una slide non si carica in CapCut: ricodificare (h264 Main, faststart).
 
+## VIDEO 7 (05/10/2026): "Can You Retire With $500,000?" — cartella money_backstory/video7-500k/
+- Copione di 33 blocchi SCRITTO (copione-video7.md, blocks.txt), fonti e calcoli in FONTI-VERIFICATE.md, parole chiave e strategia in RICERCA-E-STRATEGIA.md. Frank e Mary 67 anni. Playlist "Retirement After 50", schermata finale -> video 1. Prossimo passo: l'utente registra la voce e manda lo screenshot della timeline; poi slide. Crediti vidIQ: 95 (1 ricerca spesa, autorizzata). VIDEO 6: miniature A/B in miniature_video6/ (da lui valutate come non ancora buone: aspetta la sua frase/idea).
+
 ## ALTRI CANALI (NON MISCHIARE): il lavoro non ancora in main sta su altri branch
 - Senior Advantage: branch `claude/ecstatic-shannon-wl7kwf` e `claude/funny-knuth-jqpa31` (cartella senior_advantage/).
 - Conti in Pensione: `claude/new-session-79n9mt`, `claude/wizardly-galileo-uh8q18`, `claude/youthful-einstein-uctfje` (cartella conti_in_pensione/; leggere REGOLE-FISSE.md).
