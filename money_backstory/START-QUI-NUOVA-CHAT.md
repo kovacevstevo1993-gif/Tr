@@ -54,6 +54,8 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 
 - SLIDE (feedback 05/10): tutto deve comparire PRIMA, entro metà della durata della slide, e restare fermo e leggibile; ogni slide con una frase-didascalia grande che spiega l'idea. Niente slide con oggetti che arrivano solo alla fine. Blocchi 1-5 del video 6 consegnati prima di questa regola: restano come sono.
 
+- INVIO SLIDE: mandare SOLO quello che l'utente chiede e solo dal blocco indicato ("da qua" = da quel blocco in poi). MAI rimandare slide già consegnate. Errore 05/10: rimandate tutte le 110 slide invece dei blocchi 26-30.
+
 ## MINIATURE
 1280×720, Montserrat ExtraBold, curiosita' forte, numeri enormi con bordo nero, stile rosso/verde dei video 1-2 oppure blu notte/oro con grafici (barre, griglie). Per i test A/B: due miniature con layout e idea DIVERSI tra loro. Le frasi sono sue: se ne ha una in mente, usare quella. Mai somigliare a Senior Advantage.
 
