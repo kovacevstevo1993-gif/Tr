@@ -27,3 +27,4 @@ Esempio tasse: "imponibile" = parte dell'assegno che conta; se esce un'imposta d
 ## Fine voce blocchi (voce velocità 1.0, da screenshot utente)
 - Blocco 1: 00:28 + 17f = 857 fotogrammi. ERRORE CORRETTO: la prima lettura (21f = 861) era sbagliata perché l'etichetta '14f' era coperta dal display del tempo e sembrava '4f'. Verifica: nel secondo screenshot le slide sporgevano ~3-4 fotogrammi oltre la voce.
 - Blocco 2: 00:54 + 2f = 1622 assoluti; durata = 1622 - 857 = 765 fotogrammi (letto: etichette 00:54 / punto / 2f, cursore a x=360).
+- Blocco 3: 01:20 + 15f = 2415 assoluti; durata = 2415 - 1622 = 793 fotogrammi (etichette 14f / punto 13f / 12f coperta; cursore tra 14f e 15f, arrotondato a 15).
