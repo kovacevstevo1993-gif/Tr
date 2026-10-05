@@ -12,3 +12,5 @@
 - Durate dei blocchi: SOLO dal suo screenshot della timeline.
 - PIU' PROFESSIONALE: "E tutto quello che puoi fare piu' professionale?" (05/10, per le slide del video 7: dettagliate, si deve capire benissimo sia le slide che le parole).
 - Salvare nel repo OGNI dato dello screenshot appena arriva (fine voce dei blocchi).
+- SLIDE, 80% (precisato 05/10 notte): l'ultimo elemento deve comparire AL 80% della durata della slide, non prima. "Se la regola e' 80 perche' la fai ancora a 60?". Quindi gli elementi si distribuiscono fino all'80% e poi la slide resta ferma e leggibile per il restante 20%.
+- CONTROLLO TOTALE su TUTTI i video di TUTTI i progetti (tutti i canali): guardare i video finiti (fotogrammi estratti da inizio, meta', 80% e fine di ogni file), verificare testo tagliato, sovrapposizioni, regola 80%, conteggio fotogrammi. Mai consegnare senza averlo fatto.

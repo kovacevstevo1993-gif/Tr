@@ -12,6 +12,11 @@ Tre canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 - In più, sempre: descrizione (riga Subscribe + Disclaimer). Il commento fissato NON ha il disclaimer (deciso il 04/10/2026): solo una domanda al pubblico.
 - Il disclaimer non protegge da YouTube: contano contenuto originale, dati verificati su fonti ufficiali, niente promesse di guadagno, niente persone/avatar AI che si presentano come esperti.
 
+## Regole valide per TUTTI i progetti (05/10/2026)
+- Controllare completamente ogni video/slide finito prima di consegnarlo (fotogrammi estratti a inizio, meta', 80%, fine; testo tagliato, sovrapposizioni, conteggio fotogrammi). Vale per tutti i canali.
+- Slide: l'ultimo elemento compare al 80% della durata della slide (non prima). Altre regole alla lettera in money_backstory/REGOLE-UTENTE-05-10.md.
+- Ogni regola nuova dell'utente va scritta subito nel repo, parola per parola.
+
 ## Come lavora l'utente
 - Risposte corte, niente scuse né "hai ragione". Una cosa alla volta. Verificare prima di dare un'indicazione.
 - Mai spendere crediti vidIQ senza dirlo e chiedere prima (eccetto quando l'utente lo autorizza esplicitamente nel messaggio).
