@@ -26,15 +26,12 @@ def chip(fr, text, cx, y, t, t0, col=goldL, size=44, fillc=None, tcol=None):
     d.text((cx - (b[2] - b[0]) / 2 - b[0], y + h / 2 - (b[3] - b[1]) / 2 - b[1]), text, font=f, fill=(tcol or col) + (255,))
     return A_(fr, C, (cx - w / 2 - 10, y - 10, cx + w / 2 + 10, y + h + 10), t, t0, 0.5)
 
+_LOGO = Image.open('/home/user/Tr/money_backstory/kit-02-10/06-immagini/logo/logo-the-money-backstory-pro2.png').convert('RGBA')
+_m = Image.new('L', _LOGO.size, 0); ImageDraw.Draw(_m).ellipse([1024 / 2 - 452, 1024 / 2 - 452, 1024 / 2 + 452, 1024 / 2 + 452], fill=255)
+_LOGO.putalpha(_m); _LOGO = _LOGO.crop((60, 60, 964, 964))
 def logo(C, cx, cy, r):
-    d = ImageDraw.Draw(C)
-    d.ellipse([cx - r - 14, cy - r - 14, cx + r + 14, cy + r + 14], fill=goldD + (255,))
-    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(14, 30, 52, 255), outline=gold + (255,), width=10)
-    d.ellipse([cx - r + 24, cy - r + 24, cx + r - 24, cy + r - 24], outline=goldL + (255,), width=3)
-    txt(C, 'MB', SER(int(r * 0.95)), cy - r * 0.62, goldL, 255, x=cx)
-    for k, h_ in enumerate([0.22, 0.34, 0.5]):
-        x0 = cx - r * 0.45 + k * r * 0.34
-        d.rectangle([x0, cy + r * 0.62 - r * h_, x0 + r * 0.22, cy + r * 0.62], fill=gold + (255,))
+    d = int(2 * r + 30); im = _LOGO.resize((d, d), Image.LANCZOS)
+    C.alpha_composite(im, (int(cx - d / 2), int(cy - d / 2)))
 
 def drawA(t):
     fr = base(t); fr = amb(fr, t, 6, 7, 55)

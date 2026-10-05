@@ -48,6 +48,8 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 
 - COLA: si pronuncia KOH-lah (come la bibita). Scrivere SEMPRE 'Cola' in tutto il copione, mai 'C O L A' in un posto e 'Cola' in un altro.
 
+- LOGO: nelle slide usare SEMPRE il file vero `kit-02-10/06-immagini/logo/logo-the-money-backstory-pro2.png`, mai un logo disegnato a mano (errore 05/10, blocco 2 slide 1).
+
 ## MINIATURE
 1280×720, Montserrat ExtraBold, curiosita' forte, numeri enormi con bordo nero, stile rosso/verde dei video 1-2 oppure blu notte/oro con grafici (barre, griglie). Per i test A/B: due miniature con layout e idea DIVERSI tra loro. Le frasi sono sue: se ne ha una in mente, usare quella. Mai somigliare a Senior Advantage.
 
