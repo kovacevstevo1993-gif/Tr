@@ -78,7 +78,7 @@
 ## REGOLA N.6 (utente, 05/10/2026): DIDASCALIE (TESTO NEL VIDEO) SEPARATE, UNA PER BLOCCO, OGNUNA IN UN SUO RIQUADRO DA COPIARE
 - "Didascalia" (o "didascalia/voce") = il TESTO CHE VA NEL VIDEO (letto dalla voce / scritto sul video), NON la descrizione YouTube.
 - Come mandarla: ogni didascalia SEPARATA, una per blocco/clip, ciascuna nel suo riquadro (```), numerata, pronta da copiare una alla volta (come nel copione del video 2). NON in un unico testo continuo (provato il 05/10: l'utente ha risposto "Separate").
-- Descrizione, titolo, tag e commento da fissare: a parte, come sempre (descrizione completa, tutto insieme in un riquadro).
+- Descrizione, titolo, tag e commento da fissare: ognuno in un RIQUADRO SUO, separato, da copiare uno alla volta (mai tutto in un unico riquadro). Il titolo non contiene hashtag.
 - Da applicare in ogni chat, per ogni video e short, senza che l'utente lo ripeta.
 
 ## ISTRUZIONI UTENTE (05/10/2026, short 4)
@@ -90,7 +90,3 @@
 - Il testo bianco che l'utente scrive in CapCut mentre registra la voce serve solo per segnare i blocchi: lo cancella. NON è la didascalia del video e NON va evitato nelle clip.
 - La didascalia visibile sta DENTRO la slide (titoletto in alto, grafica al centro, didascalia nel riquadro in basso), come nei video 1 e 2. Le clip dello short 4 con la didascalia in basso (commit cad4b42) sono quelle GIUSTE.
 - (Errore di Claude del 05/10: aveva tolto la didascalia dalle clip e rifatto tutto: sbagliato, ripristinato.)
-
-## REGOLA N.8 (utente, 05/10/2026): TITOLO, DESCRIZIONE, TAG E COMMENTO SEMPRE IN RIQUADRI SEPARATI
-- Ogni parte (titolo, descrizione, hashtag se separati, tag/parole chiave, commento da fissare) va in un RIQUADRO SUO (```), da copiare uno alla volta. Mai tutto in un unico riquadro.
-- Il titolo NON contiene hashtag (#shorts nel titolo era un'iniziativa sbagliata di Claude).
