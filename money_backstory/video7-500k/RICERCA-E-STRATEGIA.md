@@ -23,5 +23,5 @@ Gia' note (05/10 mattina): retirement income strategies 22.233; retirement incom
 ## Titolo suggerito (evergreen, senza anno)
 "Can You Retire With $500,000? The Real Monthly Income (Exact Math)"
 
-## Struttura (33 blocchi, ~15-16 minuti a 16 car/s)
+## Struttura (53 blocchi (da 10-25 s), ~15-16 minuti a 16 car/s)
 1 hook (spesa media $5.100/mese vs cio' che rende) | 2 Frank e Mary | 3 mappa 5 punti | 4 dove sta $500.000 (SCF) | 5-7 regola 4% / Morningstar 3,9% -> $1.625/mese | 8 + Social Security -> $3.696 lordo | 9-15 Medicare Part B, Fidelity, tasse (Frank $0 / senza deduzione $481, Mary $0), netto $3.493 | 16-21 il divario ($17.080/anno), longevita', inflazione, crollo -20% | 22-28 le 4 leve (eta' di richiesta, rendita, flessibilita', data di pensione) | 29-30 confronto finale | 31 fonti | 32 riepilogo | 33 like + video 1 | disclaimer.
