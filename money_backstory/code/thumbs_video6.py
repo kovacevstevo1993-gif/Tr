@@ -41,16 +41,16 @@ def rrect(d, box, r, fill, outline=BLK, w=6):
     d.rounded_rectangle([sc(v) for v in box], radius=sc(r), fill=fill, outline=outline, width=sc(w))
 
 
-def bill(w=330, h=150, rot=0, tint=(92, 170, 105)):
+def bill(w=330, h=150, rot=0, tint=(92, 170, 105), val="100", dark=(25, 85, 40)):
     """banconota da 100 dollari disegnata"""
     b = Image.new("RGBA", (sc(w), sc(h)), (0, 0, 0, 0)); d = ImageDraw.Draw(b)
     d.rounded_rectangle([0, 0, sc(w) - 1, sc(h) - 1], radius=sc(10), fill=tint, outline=(20, 60, 30), width=sc(5))
     d.rounded_rectangle([sc(12), sc(12), sc(w - 12), sc(h - 12)], radius=sc(6), outline=(190, 235, 190), width=sc(3))
     d.ellipse([sc(w / 2 - 38), sc(h / 2 - 38), sc(w / 2 + 38), sc(h / 2 + 38)], fill=(150, 205, 150), outline=(20, 60, 30), width=sc(4))
-    d.text((sc(w / 2), sc(h / 2)), "$", font=P(sc(54), True), fill=(25, 85, 40), anchor="mm")
+    d.text((sc(w / 2), sc(h / 2)), "$", font=P(sc(54), True), fill=dark, anchor="mm")
     for cx in (sc(40), sc(w - 40)):
-        d.text((cx, sc(34)), "100", font=P(sc(30), True), fill=(25, 85, 40), anchor="mm")
-        d.text((cx, sc(h - 34)), "100", font=P(sc(30), True), fill=(25, 85, 40), anchor="mm")
+        d.text((cx, sc(34)), val, font=P(sc(30), True), fill=dark, anchor="mm")
+        d.text((cx, sc(h - 34)), val, font=P(sc(30), True), fill=dark, anchor="mm")
     return b.rotate(rot, expand=True, resample=Image.BICUBIC)
 
 
@@ -123,55 +123,62 @@ def done(im):
     return im.resize((W, H), Image.LANCZOS)
 
 
+def med_cross(d, cx, cy, r):
+    d.ellipse([sc(cx - r), sc(cy - r), sc(cx + r), sc(cy + r)], fill=WHITE, outline=BLK, width=sc(7))
+    t, l = r * .24, r * .62
+    d.rectangle([sc(cx - t), sc(cy - l), sc(cx + t), sc(cy + l)], fill=RED); d.rectangle([sc(cx - l), sc(cy - t), sc(cx + l), sc(cy + t)], fill=RED)
+
+
 def a():
-    """A: $72 barrato -> $65, pila di banconote con forbici, pill rossa 'WHERE'S THE REST?'"""
-    im = canvas(420, 330, glow=(60, 50, 110))
+    """A: schermo diviso verde/rosso: +$864 di aumento contro -$2.435 di Medicare ogni anno"""
+    im = canvas(640, 360, rays=False)
+    ov = Image.new("RGBA", im.size, (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
+    od.polygon([(0, 0), (sc(690), 0), (sc(590), sc(H)), (0, sc(H))], fill=(20, 140, 60, 255))
+    od.polygon([(sc(690), 0), (sc(W), 0), (sc(W), sc(H)), (sc(590), sc(H))], fill=(170, 24, 30, 255))
+    im = Image.alpha_composite(im.convert("RGBA"), ov).convert("RGB")
     d = ImageDraw.Draw(im)
-    txt(d, (350, 78), "2027 COLA", 104, YEL, 9)
-    # $72 barrato
-    txt(d, (260, 235), "$72", 190, WHITE, 11)
-    d.line([sc(95), sc(300), sc(430), sc(170)], fill=RED, width=sc(24)); d.line([sc(95), sc(300), sc(430), sc(170)], fill=(255, 150, 150), width=sc(5))
-    arrow_down(d, 520, 150, 330, w=48)
-    txt(d, (330, 440), "$65", 230, GREEN, 12)
-    # pila + forbici a destra
-    cash_stack(im, 700, 330, n=5, w=420, h=190)
-    sc_a = scissors(300, open_deg=20, rot=205); cxy = tip_center(770, 430, 300, 205); place(im, sc_a, *cxy)
+    for k in range(6):  # luce: sfumatura piu' chiara al centro di ogni meta'
+        pass
+    rrect(d, (440, 20, 840, 100), 22, YEL, BLK, 6)
+    txt(d, (640, 62), "2027 COLA", 54, (15, 15, 15), 0)
+    txt(d, (310, 195), "YOUR RAISE", 62, WHITE, 8)
+    txt(d, (310, 325), "+$864", 150, WHITE, 10)
+    txt(d, (975, 195), "MEDICARE", 62, WHITE, 8)
+    txt(d, (975, 325), "-$2,435", 128, WHITE, 10)
+    txt(d, (310, 435), "A YEAR", 54, WHITE, 7)
+    txt(d, (975, 435), "A YEAR", 54, WHITE, 7)
+    cash_stack(im, 120, 560, n=3, w=250, h=112)
     d = ImageDraw.Draw(im)
-    rrect(d, (130, 570, 1150, 690), 36, RED, WHITE, 7)
-    txt(d, (640, 632), "WHERE'S THE REST?", 90, WHITE, 6)
-    rrect(d, (840, 36, 1250, 126), 22, YEL, BLK, 6)
-    txt(d, (1045, 82), "-$6.60 MEDICARE", 38, (15, 15, 15), 0)
+    med_cross(d, 975, 535, 60)
+    d.ellipse([sc(580), sc(470), sc(676), sc(566)], fill=YEL, outline=BLK, width=sc(7))
+    txt(d, (628, 519), "VS", 48, (15, 15, 15), 0)
+    rrect(d, (700, 600, 1250, 700), 30, YEL, BLK, 6)
+    txt(d, (975, 650), "WHO WINS?", 66, (15, 15, 15), 0)
     return done(im)
 
 
 def b():
-    """B: assegno Social Security a cui le forbici tagliano via un pezzo da -$6.60"""
-    im = canvas(640, 400, glow=(120, 40, 50))
+    """B: 1 dollaro su 10 se ne va a Medicare prima che arrivi: 9 banconote verdi + 1 rossa che esce"""
+    im = canvas(640, 380, glow=(120, 40, 50))
     d = ImageDraw.Draw(im)
-    txt(d, (640, 78), "YOUR 2027 RAISE", 104, WHITE, 10)
-    cw, ch, cut = 700, 290, 520
-    chk = check_card(cw, ch, "$2,143.00")
-    left = chk.crop((0, 0, sc(cut), sc(ch)))
-    dl = ImageDraw.Draw(left); dl.line([sc(cut) - 3, 0, sc(cut) - 3, sc(ch)], fill=(40, 50, 80), width=sc(6))
-    shadow_paste(im, left.rotate(2, expand=True, resample=Image.BICUBIC), 60, 165)
-    piece = Image.new("RGBA", (sc(cw - cut), sc(ch)), (0, 0, 0, 0)); dp = ImageDraw.Draw(piece)
-    dp.rounded_rectangle([sc(-20), 0, sc(cw - cut) - 1, sc(ch) - 1], radius=sc(16), fill=(247, 244, 232), outline=(40, 50, 80), width=sc(6))
-    dp.rectangle([sc(-20), sc(6), sc(cw - cut) - sc(6), sc(54)], fill=(24, 52, 120))
-    dp.text((sc((cw - cut) / 2), sc(170)), "-$6.60", font=P(sc(50), True), fill=RED, anchor="mm", stroke_width=sc(2), stroke_fill=BLK)
-    dp.text((sc((cw - cut) / 2), sc(220)), "MEDICARE", font=P(sc(24), True), fill=(20, 20, 30), anchor="mm")
-    shadow_paste(im, piece.rotate(-14, expand=True, resample=Image.BICUBIC), 770, 160)
-    # linea di taglio tratteggiata e forbici sul taglio
+    txt(d, (640, 108), "EVERY $10 OF YOUR CHECK", 74, WHITE, 8)
+    for k in range(9):
+        r, c = divmod(k, 3)
+        shadow_paste(im, bill(215, 98, rot=(-2, 1, -1)[c], tint=(80 + 4 * r, 170, 100), val="10"), 40 + c * 225, 190 + r * 122)
+    red = bill(330, 148, rot=8, tint=(215, 50, 55), val="10", dark=(110, 15, 20))
+    shadow_paste(im, red, 820, 215)
     d = ImageDraw.Draw(im)
-    for yy in range(176, 470, 34):
-        d.line([sc(594), sc(yy), sc(594), sc(yy + 18)], fill=WHITE, width=sc(6))
-    sc_b = scissors(200, open_deg=16, rot=-90); place(im, sc_b, *tip_center(594, 440, 200, -90))
-    d = ImageDraw.Draw(im)
-    txt(d, (640, 575), "GETS CUT", 140, (255, 70, 70), 12)
-    rrect(d, (150, 630, 1130, 714), 28, YEL, BLK, 6)
-    txt(d, (640, 672), "BEFORE IT REACHES YOUR BANK", 52, (15, 15, 15), 0)
+    pts = [(715, 310), (775, 310), (775, 282), (825, 332), (775, 382), (775, 354), (715, 354)]
+    d.polygon([(sc(a), sc(b2)) for a, b2 in pts], fill=YEL, outline=BLK); d.line([(sc(a), sc(b2)) for a, b2 in pts + [pts[0]]], fill=BLK, width=sc(6), joint="curve")
+    txt(d, (990, 440), "-$1", 120, (255, 90, 90), 10)
+    med_cross(d, 1165, 215, 44)
+    rrect(d, (90, 575, 1190, 700), 34, RED, WHITE, 7)
+    txt(d, (640, 637), "GOES TO MEDICARE FIRST", 82, WHITE, 6)
+    rrect(d, (480, 12, 800, 62), 16, YEL, BLK, 5)
+    txt(d, (640, 37), "2027 COLA", 34, (15, 15, 15), 0)
     return done(im)
 
 
 if __name__ == "__main__":
-    for n, f in {"video6-A-72-diventa-65": a, "video6-B-assegno-tagliato": b}.items():
+    for n, f in {"video6-A-aumento-vs-medicare": a, "video6-B-1-dollaro-su-10": b}.items():
         f().save(f"{OUT}/{n}.png"); print("ok", n)
