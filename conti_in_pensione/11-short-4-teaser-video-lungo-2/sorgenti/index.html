@@ -117,6 +117,7 @@ const CAPY=1560;
 // entrata dal basso con dissolvenza (lenta): nessun elemento entra da fuori quadro
 function rise(t,a,d,n,y,dy,sc){const k=sl(t,a,d||.9);T(n,n._x,y+(1-k)*(dy||140),0,(sc||1));op(n,seg(t,a,a+(d||.9)*.6));}
 const S=[
+// Layout (regola n.7): titoletto in alto (y130), fascia y 520-760 LIBERA per la didascalia che l'utente mette in CapCut, grafica sopra e sotto.
 // ---- 1: DUE COLLEGHI 64 vs 67 ----
 {D:305/30,build(p){const o={};
  o.lab=topLabelV(p,'DUE COLLEGHI');
@@ -126,16 +127,14 @@ const S=[
  o.ca=circleN(p,112,'64','url(#g_red)');o.cb=circleN(p,112,'67','url(#g_badge)');
  o.aa=el('g',{},p);txt(o.aa,'ANNI',0,0,60,'#fff','bold');o.ab=el('g',{},p);txt(o.ab,'ANNI',0,0,60,'#fff','bold');
  o.l1=pillS(p,'STESSO STIPENDIO',940,64,'#0B4A50');o.l2=pillS(p,'STESSI CONTRIBUTI',940,64,'#0B4A50');
- o.cap=capV(p,['64 O 67 ANNI: QUANTO','CAMBIA L\'ASSEGNO?']);
  o.l1._x=540;o.l2._x=540;
  return o;},
  update(t,o){T(o.lab,540,130,0,pop(t,0,.8));
-  T(o.pa,260,560,0,1.6*pop(t,.3,.9));T(o.pb,820,560,0,1.6*pop(t,.9,.9));
-  const sw=sl(t,7.3,.6);T(o.eq,540,680,0,pop(t,2.0,.8)*(1-sw));T(o.q,540,690,0,pop(t,7.9,.9));
-  T(o.ca,170,905,0,pop(t,4.8,.9));T(o.aa,170,1070,0,pop(t,4.8,.9));
-  T(o.cb,910,905,0,pop(t,6.2,.9));T(o.ab,910,1070,0,pop(t,6.2,.9));
-  rise(t,2.7,.9,o.l1,1190);rise(t,3.8,.9,o.l2,1330);
-  T(o.cap,540,CAPY,0,pop(t,8.3,.9));}},
+  rise(t,2.7,.9,o.l1,290);rise(t,3.8,.9,o.l2,420);
+  T(o.pa,260,960,0,1.6*pop(t,.3,.9));T(o.pb,820,960,0,1.6*pop(t,.9,.9));
+  const sw=sl(t,7.3,.6);T(o.eq,540,1080,0,pop(t,2.0,.8)*(1-sw));T(o.q,540,1090,0,pop(t,7.9,.9));
+  T(o.ca,170,1290,0,pop(t,4.8,.9));T(o.aa,170,1455,0,pop(t,4.8,.9));
+  T(o.cb,910,1290,0,pop(t,6.2,.9));T(o.ab,910,1455,0,pop(t,6.2,.9));}},
 // ---- 2: TRE NUMERI ----
 {D:186/30,build(p){const o={};
  o.lab=topLabelV(p,'TRE NUMERI');
@@ -143,13 +142,11 @@ const S=[
  o.c=[1,2,3].map(n=>circleN(p,140,String(n),n==3?'url(#g_red)':'url(#g_badge)'));
  o.q=[1,2,3].map(()=>{const g=el('g',{},p);ttl(g,'?',190,YEL);return g;});
  o.eye=eye(p);
- o.cap1=capV(p,['3 NUMERI DECIDONO','LA TUA PENSIONE']);o.cap2=capV(p,['QUASI NESSUNO','LI GUARDA!']);
  return o;},
  update(t,o){T(o.lab,540,130,0,pop(t,0,.8));
-  const s=seg(t,.1,1.0);T(o.s,540,400,-4,s>0?lerp(.6,1,eo3(s)):0);op(o.s,clamp(s*2.5));
-  [0,1,2].forEach(i=>{const a=2.3+i*.5;T(o.c[i],[175,540,905][i],780,0,pop(t,a,.8));T(o.q[i],[175,540,905][i],1070,0,pop(t,a+.2,.8));});
-  const x=sl(t,3.8,.6);T(o.cap1,540,CAPY,0,pop(t,2.4,.8)*(1-x));T(o.cap2,540,CAPY,0,pop(t,4.5,.8));
-  T(o.eye,540,1290,0,1.5*pop(t,4.1,.8));}},
+  const s=seg(t,.1,1.0);T(o.s,540,330,-4,s>0?lerp(.6,1,eo3(s)):0);op(o.s,clamp(s*2.5));
+  [0,1,2].forEach(i=>{const a=2.3+i*.5;T(o.c[i],[175,540,905][i],900,0,pop(t,a,.8));T(o.q[i],[175,540,905][i],1190,0,pop(t,a+.2,.8));});
+  T(o.eye,540,1480,0,1.5*pop(t,4.1,.8));}},
 // ---- 3: UN SOLO ANNO SENZA CONTRIBUTI ----
 {D:222/30,build(p){const o={};
  o.lab=topLabelV(p,'UN ANNO DI BUCO');
@@ -162,20 +159,20 @@ const S=[
  o.ar=bigArrow(p);
  o.coins=el('g',{},p);for(let i=0;i<4;i++){const c=goldCoin(o.coins,0,-i*30,100,32,24);if(i==3)o.top=c;}
  o.pl=el('g',{},p);plateRect(o.pl,-330,-150,660,300,56);txt(o.pl,'−50 €',0,52,150,RED,'bold');txt(o.pl,'AL MESE · LORDI',0,122,52,INK,'bold');o.pl._x=620;
- o.cap=capV(p,['PER TUTTA LA VITA','DA PENSIONATO']);
+ o.v=pillS(p,'PER TUTTA LA VITA!',900,68,'url(#g_badge)');o.v._x=540;
  return o;},
  update(t,o){T(o.lab,540,130,0,pop(t,0,.8));
-  o.bx.forEach((g,i)=>{T(g,108+168*i,500,0,1.2*pop(t,.3+i*.3,.7));});
-  rise(t,2.6,.8,o.tag,720,100);
-  T(o.ar,612,880,0,.8*pop(t,3.3,.8));
-  rise(t,3.7,.9,o.pl,1130,200,1.15);
-  T(o.coins,120,1190,0,1.15*pop(t,3.9,.8));
+  rise(t,2.6,.8,o.tag,330,100);
+  o.bx.forEach((g,i)=>{T(g,108+168*i,900,0,1.2*pop(t,.3+i*.3,.7));});
+  T(o.ar,612,1065,0,.8*pop(t,3.3,.8));
+  rise(t,3.7,.9,o.pl,1320,200,1.15);
+  T(o.coins,120,1380,0,1.15*pop(t,3.9,.8));
   const f=seg(t,4.6,5.5);o.top.setAttribute('transform','translate('+(f*220)+' '+(-f*160)+')');op(o.top,1-f);
-  T(o.cap,540,CAPY,0,pop(t,6.0,.8));}},
+  rise(t,6.0,.8,o.v,1600,100);}},
 // ---- 4: IL CONTO FINALE ----
 {D:257/30,build(p){const o={};
  o.lab=topLabelV(p,'IL CONTO FINALE');
- o.a=circleN(p,150,'64','url(#g_red)');o.b=circleN(p,150,'67','url(#g_badge)');
+ o.a=circleN(p,140,'64','url(#g_red)');o.b=circleN(p,140,'67','url(#g_badge)');
  o.aa=el('g',{},p);txt(o.aa,'ANNI',0,0,64,'#fff','bold');o.ab=el('g',{},p);txt(o.ab,'ANNI',0,0,64,'#fff','bold');
  o.ar=el('path',{d:'M-90 -22 H40 V-62 L120 0 L40 62 V22 H-90Z',fill:YEL,stroke:'#fff','stroke-width':8,'stroke-linejoin':'round',filter:'url(#g_sh2)'},p);
  o.pl=el('g',{},p);plateRect(o.pl,-420,-130,840,260,56);txt(o.pl,'??? €',0,50,150,'#C99700','bold');
@@ -186,49 +183,46 @@ const S=[
  el('path',{d:'M-405 -14 L-381 0 L-405 14Z',fill:'#fff'},o.bar);
  o.flag=el('g',{},o.bar);el('rect',{x:396,y:-62,width:8,height:78,fill:'#fff'},o.flag);el('path',{d:'M404 -62 h54 l-14 20 l14 20 h-54Z',fill:RED,stroke:'#fff','stroke-width':3},o.flag);
  o.mk=el('circle',{r:32,fill:YEL,stroke:'#fff','stroke-width':8,filter:'url(#g_sh2)'},p);
- o.cap=capV(p,['LA CIFRA LA SCOPRI SOLO','NEL VIDEO COMPLETO']);
  return o;},
  update(t,o){T(o.lab,540,130,0,pop(t,0,.8));
-  T(o.a,215,500,0,pop(t,.5,.9));T(o.aa,215,730,0,pop(t,.5,.9));
-  T(o.b,865,500,0,pop(t,1.4,.9));T(o.ab,865,730,0,pop(t,1.4,.9));
-  T(o.ar,540,500,0,1.2*pop(t,2.3,.9));
+  T(o.a,215,330,0,pop(t,.5,.9));T(o.aa,215,538,0,pop(t,.5,.9));
+  T(o.b,865,330,0,pop(t,1.4,.9));T(o.ab,865,538,0,pop(t,1.4,.9));
+  T(o.ar,540,330,0,1.2*pop(t,2.3,.9));
   T(o.pl,540,1010,0,1.1*pop(t,3.3,.9));T(o.lk,935,860,12,pop(t,3.9,.8));
-  rise(t,5.0,.8,o.pill,1250,100);
-  T(o.bar,540,1370,0,pop(t,5.2,.8));
-  const m=eio(seg(t,6.3,7.7));const x=lerp(-405,405,m);o.fill.setAttribute('width',Math.max(0,x+430));T(o.mk,540+x,1370,0,pop(t,5.4,.8));
-  T(o.cap,540,CAPY,0,pop(t,6.0,.8));}},
+  rise(t,5.0,.8,o.pill,1290,100);
+  T(o.bar,540,1430,0,pop(t,5.2,.8));
+  const m=eio(seg(t,6.3,7.7));const x=lerp(-405,405,m);o.fill.setAttribute('width',Math.max(0,x+430));T(o.mk,540+x,1430,0,pop(t,5.4,.8));}},
 // ---- 5: COSA TROVI NEL VIDEO ----
 {D:238/30,build(p){const o={};
- o.lab=topLabelV(p,'NEL VIDEO');
+ o.lab=topLabelV(p,'COSA TROVI');
+ o.t=el('g',{},p);ttl(o.t,'NEL VIDEO:',130,YEL);
  const defs=[['CALCOLO','PASSO PASSO'],['TEST','VERO O FALSO'],['CONTROLLO','SU MAI INPS']];
- o.c=defs.map((d,i)=>{const g=el('g',{},p);plateRect(g,-480,-150,960,300,56);
+ o.c=defs.map((d,i)=>{const g=el('g',{},p);plateRect(g,-480,-140,960,280,56);
   const ic=el('g',{},g);ic.setAttribute('transform','translate(-345 0) scale(1.15)');
   el('circle',{r:84,fill:'url(#g_badge)',stroke:'#fff','stroke-width':7},ic);
   if(i==0){el('rect',{x:-40,y:-52,width:80,height:104,rx:12,fill:'#fff'},ic);el('rect',{x:-30,y:-42,width:60,height:24,rx:6,fill:'#0B4A50'},ic);for(let r=0;r<3;r++)for(let c=0;c<3;c++)el('circle',{cx:-20+c*20,cy:-4+r*22,r:6,fill:'#1B9F81'},ic);}
   if(i==1){const a=check(ic,34);a.setAttribute('transform','translate(-26 -4)');const b=crossC(ic,34);b.setAttribute('transform','translate(30 24)');}
   if(i==2){el('rect',{x:-44,y:-52,width:64,height:84,rx:10,fill:'#fff'},ic);[-30,-12,6].forEach(y=>el('rect',{x:-32,y:y,width:40,height:8,rx:4,fill:'#9FB4B9'},ic));el('circle',{cx:14,cy:14,r:26,fill:'none',stroke:YEL,'stroke-width':10},ic);el('line',{x1:32,y1:34,x2:52,y2:56,stroke:YEL,'stroke-width':12,'stroke-linecap':'round'},ic);}
-  txt(g,d[0],-215,-10,78,INK,'bold','start');txt(g,d[1],-215,78,78,'#1B9F81','bold','start');g._x=540;return g;});
+  txt(g,d[0],-215,-8,78,INK,'bold','start');txt(g,d[1],-215,78,78,'#1B9F81','bold','start');g._x=540;return g;});
  o.k=defs.map(()=>check(p,46));
- o.cap=capV(p,['CALCOLO, TEST E CONTROLLO','SU MAI INPS']);
  return o;},
- update(t,o){T(o.lab,540,130,0,pop(t,0,.8));
-  [.5,2.8,4.6].forEach((a,i)=>{rise(t,a,.9,o.c[i],[500,860,1220][i],160);});
-  [5.4,5.8,6.2].forEach((a,i)=>T(o.k[i],975,[385,745,1105][i],0,pop(t,a,.7)));
-  T(o.cap,540,CAPY,0,pop(t,5.0,.8));}},
+ update(t,o){T(o.lab,540,130,0,pop(t,0,.8));T(o.t,540,330,0,pop(t,.2,.9));
+  [.8,2.8,4.6].forEach((a,i)=>{rise(t,a,.9,o.c[i],[900,1200,1500][i],160);});
+  [5.4,5.8,6.2].forEach((a,i)=>T(o.k[i],975,[785,1085,1385][i],0,pop(t,a,.7)));}},
 // ---- 6: GUARDALO ADESSO ----
 {D:150/30,build(p){const o={};
- o.lab=topLabelV(p,'GUARDALO ADESSO');
+ o.lab=topLabelV(p,'VIDEO COMPLETO');
+ o.t1=el('g',{},p);ttl(o.t1,'GUARDALO',130,'#fff');o.t2=el('g',{},p);ttl(o.t2,'ADESSO!',130,YEL);
  o.pb=playBtn(p);o.pill=pillS(p,'VIDEO CORRELATO',940,76,'#0B4A50');o.pill._x=540;
  o.r1=el('circle',{r:40,fill:'none',stroke:'#fff','stroke-width':10},p);o.r2=el('circle',{r:40,fill:'none',stroke:'#fff','stroke-width':10},p);
  o.ar=bigArrow(p);
- o.cap=capV(p,['PRIMA DI DECIDERE QUANDO','SMETTERE DI LAVORARE']);
  return o;},
  update(t,o){T(o.lab,540,130,0,pop(t,0,.8));
-  T(o.pb,540,600,0,1.2*pop(t,.3,.9));
-  rise(t,1.2,.8,o.pill,1010,100);
-  [[o.r1,1.8],[o.r2,2.3]].forEach(([r,a])=>{const k=seg(t,a,a+.9);T(r,620,640,0,k>0?lerp(.6,4.2,eo3(k)):0);op(r,k>0?(1-k)*.9:0);});
-  T(o.ar,540,1260,0,1.3*pop(t,2.5,.8));
-  T(o.cap,540,CAPY,0,pop(t,3.2,.8));}},
+  T(o.t1,540,290,0,pop(t,.1,.9));T(o.t2,540,430,0,pop(t,.4,.9));
+  T(o.pb,540,980,0,1.15*pop(t,.7,.9));
+  rise(t,1.4,.8,o.pill,1330,100);
+  [[o.r1,1.8],[o.r2,2.3]].forEach(([r,a])=>{const k=seg(t,a,a+.9);T(r,615,1010,0,k>0?lerp(.6,4.0,eo3(k)):0);op(r,k>0?(1-k)*.9:0);});
+  T(o.ar,540,1540,0,1.1*pop(t,2.6,.8));}},
 ];
 S.forEach(s=>{s.sb=[{s:0,e:s.D}];});
 
