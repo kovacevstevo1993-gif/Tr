@@ -56,3 +56,6 @@ Schema comune dei titoli virali: numero preciso o data + promessa + pericolo/seg
 2. L'utente genera la voce CapCut "Analista preciso" e manda lo screenshot della timeline -> durate dai suoi screenshot.
 3. Slide MP4 1920x1080 30fps col codice in kit-02-10/04-codice (cambiare i path: font in 08-font, output nella cartella di lavoro; installare Pillow).
 4. Poi: titolo, descrizione, tag, commento fisso (senza disclaimer, solo domanda), miniatura A/B (Montserrat ExtraBold, blu notte+oro, rosso/verde, grafici, numeri enormi). Dire PRIMA la playlist ("Retirement After 50").
+
+## Decisione 05/10 sera: PUBBLICAZIONE VIDEO 6 IL 06/10/2026
+Il video esce PRIMA del 14/10: niente attesa del numero ufficiale e niente rifacimenti. Il copione usa la stima 3,5% come esempio dichiarato. Non proporre mai di aspettare l'annuncio.
