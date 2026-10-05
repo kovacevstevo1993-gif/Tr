@@ -50,6 +50,8 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 
 - LOGO: nelle slide usare SEMPRE il file vero `kit-02-10/06-immagini/logo/logo-the-money-backstory-pro2.png`, mai un logo disegnato a mano (errore 05/10, blocco 2 slide 1).
 
+- RISPOSTE: cortissime. NON raccontare cosa fai o hai fatto (l'utente lo sa). Solo: file consegnati + domanda/dato necessario. Dopo ogni consegna: salvare nel repo (commit+push).
+
 ## MINIATURE
 1280×720, Montserrat ExtraBold, curiosita' forte, numeri enormi con bordo nero, stile rosso/verde dei video 1-2 oppure blu notte/oro con grafici (barre, griglie). Per i test A/B: due miniature con layout e idea DIVERSI tra loro. Le frasi sono sue: se ne ha una in mente, usare quella. Mai somigliare a Senior Advantage.
 
