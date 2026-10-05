@@ -1,6 +1,6 @@
 # VIDEO 6 — Social Security 2027 COLA — COPIONE (verificato 05/10/2026, pubblicazione 06/10/2026)
 
-Voce CapCut 'Analista preciso'. COLA si pronuncia COH-lah. Nel testo: 'Cola'; blocco 4 anche 'C O L A'. Se CapCut la legge male: 'Coh-la'.
+Voce CapCut 'Analista preciso'. COLA si pronuncia KOH-lah (come la bibita). In TUTTO il copione si scrive sempre e solo 'Cola' (mai 'C O L A'). Se CapCut la legge male: provare 'Koh-la'.
 
 DECISIONE UTENTE 05/10: il video si pubblica il 06/10, PRIMA dell'annuncio ufficiale del 14/10. Il copione funziona senza il numero ufficiale: usa la stima 3,5% come ESEMPIO ('se il raise è 3,5%') e spiega come rifare il calcolo col numero vero. NON aspettare il 14, NON rifare i blocchi.
 
@@ -18,7 +18,7 @@ BLOCCO 3
 Here is the plan. Five things about your twenty twenty seven raise. One, what Cola really is, and how the number is picked. Two, why a raise can feel smaller than your bills. Three, what Medicare takes before the money reaches you. Four, what happens with taxes. And five, the other numbers that change on the same day. At the end, we put it all together on one real check.
 
 BLOCCO 4
-Number one: what Cola is. Cola, spelled C O L A, is short for cost of living adjustment. It is the yearly raise that keeps Social Security checks from losing value as prices go up. It has been automatic since nineteen seventy five, which means nobody votes on it. The number comes from a formula, and that formula uses one inflation measure, the Consumer Price Index for Wage Earners, known as C P I W.
+Number one: what Cola is. Cola is short for cost of living adjustment. It is the yearly raise that keeps Social Security checks from losing value as prices go up. It has been automatic since nineteen seventy five, which means nobody votes on it. The number comes from a formula, and that formula uses one inflation measure, the Consumer Price Index for Wage Earners, known as C P I W.
 
 BLOCCO 5
 Here is how the formula works. The Bureau of Labor Statistics measures prices every month. Social Security takes only three of those months, July, August and September, and averages them. Then it compares that average with the same three months of the year before. If prices went up, the percentage increase, rounded to the nearest tenth of one percent, becomes your raise. That is why the number can only be announced after the September prices come out.

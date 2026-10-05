@@ -4,7 +4,7 @@ Welcome to The Money Backstory, where we explain retirement for Americans over f
 ---
 Here is the plan. Five things about your twenty twenty seven raise. One, what Cola really is, and how the number is picked. Two, why a raise can feel smaller than your bills. Three, what Medicare takes before the money reaches you. Four, what happens with taxes. And five, the other numbers that change on the same day. At the end, we put it all together on one real check.
 ---
-Number one: what Cola is. Cola, spelled C O L A, is short for cost of living adjustment. It is the yearly raise that keeps Social Security checks from losing value as prices go up. It has been automatic since nineteen seventy five, which means nobody votes on it. The number comes from a formula, and that formula uses one inflation measure, the Consumer Price Index for Wage Earners, known as C P I W.
+Number one: what Cola is. Cola is short for cost of living adjustment. It is the yearly raise that keeps Social Security checks from losing value as prices go up. It has been automatic since nineteen seventy five, which means nobody votes on it. The number comes from a formula, and that formula uses one inflation measure, the Consumer Price Index for Wage Earners, known as C P I W.
 ---
 Here is how the formula works. The Bureau of Labor Statistics measures prices every month. Social Security takes only three of those months, July, August and September, and averages them. Then it compares that average with the same three months of the year before. If prices went up, the percentage increase, rounded to the nearest tenth of one percent, becomes your raise. That is why the number can only be announced after the September prices come out.
 ---
