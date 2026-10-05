@@ -30,3 +30,8 @@ Esempio tasse: "imponibile" = parte dell'assegno che conta; se esce un'imposta d
 - Blocco 3: 01:20 + 15f = 2415 assoluti; durata = 2415 - 1622 = 793 fotogrammi (etichette 14f / punto 13f / 12f coperta; cursore tra 14f e 15f, arrotondato a 15).
 - Blocco 4: 01:46 + 8f = 3188 assoluti; durata 773 fotogrammi.
 - Blocco 5: 02:14 + 21f (letto 20,5) = 4041 assoluti; durata 853 fotogrammi.
+- Blocco 6: 02:38 + 3f = 4743 assoluti; durata 702 fotogrammi.
+- Blocco 7: 03:04 + 12f = 5532; durata 789.
+- Blocco 8: 03:33 + 18f = 6408; durata 876.
+- Blocco 9: 03:56 + 2f = 7082; durata 674.
+- Blocco 10: 04:20 + 22f = 7822; durata 740.
