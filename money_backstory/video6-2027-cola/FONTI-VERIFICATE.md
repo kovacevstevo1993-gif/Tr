@@ -51,3 +51,9 @@ Esempio tasse: "imponibile" = parte dell'assegno che conta; se esce un'imposta d
 - Blocco 24: 10:23 + 2f = 18692; durata 732.
 - Blocco 25: 10:46 + 28f = 19408; durata 716.
 - ERRORE TROVATO 05/10 (registrazione schermo utente): mancava la slide v6-b15-03 nella timeline (slide successive 8,8 s in anticipo). Inserire a 06:11+16f.
+- Blocco 26: 11:00 + 22f = 19822 assoluti; durata 414 (ANOMALIA: la voce contiene solo le ultime 2 frasi del blocco, da 'The headline percentage…'; slide fatte su quelle).
+- Blocco 27: 11:25 + 10f = 20560; durata 738.
+- Blocco 28: 11:54 + 5f = 21425; durata 865.
+- Blocco 29: 12:09 + 27f = 21897; durata 472.
+- Blocco 30: 12:21 + 25f = 22255; durata 358. FINE VIDEO = 22255 fotogrammi (12:22,8).
+- Ultima slide (blocco 30): disclaimer in chiaro + riquadro WATCH NEXT + cerchio SUBSCRIBE (elementi schermata finale).
