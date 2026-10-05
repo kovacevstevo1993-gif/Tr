@@ -48,7 +48,7 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 
 ## DA FARE / APERTO
 - Video 1-5 pubblicati con tutto fatto.
-- VIDEO 6 (in corso): "2027 COLA". Prossimo passo: copione intero a blocchi. COLA ufficiale esce il 14/10/2026 (stime 3,5-3,6%): verificare su ssa.gov. Vedi RICERCHE-E-DECISIONI-05-10.md.
+- VIDEO 6 (in corso): "2027 COLA". Copione di 30 blocchi SCRITTO e verificato in `money_backstory/video6-2027-cola/` (copione-video6.md, FONTI-VERIFICATE.md). Prossimo passo: l'utente registra la voce e manda lo screenshot della timeline; poi slide (più dettagliate, per anziani). COLA ufficiale esce il 14/10/2026 (stime 3,5-3,6%): verificare su ssa.gov. Vedi RICERCHE-E-DECISIONI-05-10.md.
 - VIDEO 7: "Retirement Income from $500,000".
 - Aperto: titolo con "2027" (parola chiave) vs regola "senza anno".
 - Crediti vidIQ: 100 rimasti al 05/10 (chiedere prima di spenderli).
