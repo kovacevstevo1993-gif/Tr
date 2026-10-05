@@ -84,3 +84,8 @@
 ## ISTRUZIONI UTENTE (05/10/2026, short 4)
 - Short 4: l'utente ha registrato la voce e mandato 6 screenshot di fine blocco. Le clip vanno fatte "migliorate rispetto agli altri, meglio e più dettagliate" e "deve capirsi benissimo le slide" (regola n.5: più lente, movimento che finisce bene, ferme e leggibili prima della fine).
 - L'utente scrive le didascalie in CapCut sopra le clip (testo bianco circa al 33% dell'altezza): lasciare libera la fascia centrale-alta (circa y 330-680 su 1920) e tenere le grafiche principali sotto.
+
+## REGOLA N.7 (utente, 05/10/2026): NELLE CLIP DELLO SHORT NON METTERE LA DIDASCALIA, LA METTE L'UTENTE IN CAPCUT
+- Frase dell'utente: "Ma quale cazzo di video ho detto di mettere la didascalia che si vede? Mi prendi per culo?"
+- La didascalia (testo letto dalla voce) la scrive/mette l'UTENTE in CapCut, sopra le clip, in bianco, circa a un terzo dell'altezza (y circa 570-700 su 1920). Le clip NON devono contenere il riquadro didascalia in basso (errore di Claude nelle prime clip dello short 4, 05/10).
+- Le clip hanno: titoletto in alto, grafica (anche con scritte-oggetto brevi come "64", "-50 €", "ALLA FINE DEL VIDEO") e fascia centrale-alta (y circa 520-760) LIBERA, per non coprire la didascalia dell'utente.
