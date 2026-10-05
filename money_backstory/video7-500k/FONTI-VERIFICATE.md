@@ -78,3 +78,8 @@ Legenda: P = letto su fonte primaria in questa sessione; S = confermato da piu' 
 - Blocco 38: 11:31 + 1,2f (etichetta 11:31 = 0f a x=278, punto 1f a 347) = 20731; durata 464.
 - Blocco 39: 11:47 + 21,6f (20f a x=257, punto 21f a 322) = 21232; durata 501.
 - Blocco 40: 11:58 + 8,4f (6f a 203, 8f a 336) = 21548; durata 316.
+- Blocco 41: 12:15 + 5,2f (4f a x=279, punto 5f a 344) = 22055 assoluti; durata 507.
+- Blocco 42: 12:28 + 8,3f (6f a x=205, punto 7f a 270, 8f a 337) = 22448; durata 393.
+- Blocco 43: 12:43 + 23,5f (22f a x=265, punto 23f a 329) = 22914; durata 466.
+- Blocco 44: 12:59 + 7,1f (6f a x=286, punto 7f a 351) = 23377; durata 463.
+- Blocco 45: 13:14 + 10,0f (8f a x=228, punto 9f a 293) = 23830; durata 453.
