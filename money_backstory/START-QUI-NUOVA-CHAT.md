@@ -1,5 +1,7 @@
 # THE MONEY BACKSTORY — LEGGI QUESTO PER PRIMO (aggiornato 05/10/2026)
 
+**LEGGI SUBITO `money_backstory/REGOLE-UTENTE-05-10.md`: le regole dell'utente con le sue parole. Hanno la precedenza su tutto il resto di questo file.**
+
 **LEGGI ANCHE `money_backstory/RICERCHE-E-DECISIONI-05-10.md`: video 6 = "2027 COLA" (deciso), video 7 = "Retirement Income from $500,000". Ricerche vidIQ e web già fatte lì: non rifarle.**
 
 Se sei un Claude in una chat nuova: leggi questo file, poi `CLAUDE.md` (regole permanenti) e `money_backstory/kit-02-10/00-LEGGIMI-PRIMA-DI-TUTTO.md` (metodo e stile completi). Non reinventare niente: stile, metodo e regole sono già decisi dall'utente.
