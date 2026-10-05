@@ -35,6 +35,7 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 - Confermare di QUALE video si parla prima di fare titolo/descrizione (errore passato: era il video 3, non il 5).
 
 ## METODO SLIDE (video nuovi)
+0. FORMATO CONSEGNA COPIONE (deciso 05/10): ogni blocco in un riquadro di codice SEPARATO con dentro SOLO il testo da leggere. Il numero del blocco sta FUORI dal riquadro (riga sopra, es. **BLOCCO 7**). Non cambiare mai questo formato.
 1. Copione in blocchi numerati (un blocco = una voce CapCut), consegnato intero in riquadri di codice.
 2. Lui genera la voce e manda screenshot della timeline: la fine voce si legge in secondi + fotogrammi a 30 fps; durata blocco = fine[n] − fine[n−1], sempre dal suo screenshot, mai dal testo.
 3. Slide MP4 1920×1080 30 fps, 4-12 s l'una, un oggetto/grafico diverso per slide, tutte nello stesso messaggio in ordine. Poi controllare i VIDEO finiti (ffprobe frame totali = durata; contact sheet).
