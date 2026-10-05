@@ -85,7 +85,8 @@
 - Short 4: l'utente ha registrato la voce e mandato 6 screenshot di fine blocco. Le clip vanno fatte "migliorate rispetto agli altri, meglio e più dettagliate" e "deve capirsi benissimo le slide" (regola n.5: più lente, movimento che finisce bene, ferme e leggibili prima della fine).
 - L'utente scrive le didascalie in CapCut sopra le clip (testo bianco circa al 33% dell'altezza): lasciare libera la fascia centrale-alta (circa y 330-680 su 1920) e tenere le grafiche principali sotto.
 
-## REGOLA N.7 (utente, 05/10/2026): NELLE CLIP DELLO SHORT NON METTERE LA DIDASCALIA, LA METTE L'UTENTE IN CAPCUT
-- Frase dell'utente: "Ma quale cazzo di video ho detto di mettere la didascalia che si vede? Mi prendi per culo?"
-- La didascalia (testo letto dalla voce) la scrive/mette l'UTENTE in CapCut, sopra le clip, in bianco, circa a un terzo dell'altezza (y circa 570-700 su 1920). Le clip NON devono contenere il riquadro didascalia in basso (errore di Claude nelle prime clip dello short 4, 05/10).
-- Le clip hanno: titoletto in alto, grafica (anche con scritte-oggetto brevi come "64", "-50 €", "ALLA FINE DEL VIDEO") e fascia centrale-alta (y circa 520-760) LIBERA, per non coprire la didascalia dell'utente.
+## REGOLA N.7 (utente, 05/10/2026): IL TESTO CHE L'UTENTE METTE IN CAPCUT E' SOLO UN SEGNAPOSTO, LO TOGLIE LUI; LA DIDASCALIA STA NELLA SLIDE
+- Frase dell'utente: "Il mio testo su CapCut lo tolgo io. Dove hai mai visto che metto io le didascalie nel video?"
+- Il testo bianco che l'utente scrive in CapCut mentre registra la voce serve solo per segnare i blocchi: lo cancella. NON è la didascalia del video e NON va evitato nelle clip.
+- La didascalia visibile sta DENTRO la slide (titoletto in alto, grafica al centro, didascalia nel riquadro in basso), come nei video 1 e 2. Le clip dello short 4 con la didascalia in basso (commit cad4b42) sono quelle GIUSTE.
+- (Errore di Claude del 05/10: aveva tolto la didascalia dalle clip e rifatto tutto: sbagliato, ripristinato.)
