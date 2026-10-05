@@ -1,5 +1,7 @@
 # THE MONEY BACKSTORY — LEGGI QUESTO PER PRIMO (aggiornato 05/10/2026)
 
+**LEGGI ANCHE `money_backstory/RICERCHE-E-DECISIONI-05-10.md`: video 6 = "2027 COLA" (deciso), video 7 = "Retirement Income from $500,000". Ricerche vidIQ e web già fatte lì: non rifarle.**
+
 Se sei un Claude in una chat nuova: leggi questo file, poi `CLAUDE.md` (regole permanenti) e `money_backstory/kit-02-10/00-LEGGIMI-PRIMA-DI-TUTTO.md` (metodo e stile completi). Non reinventare niente: stile, metodo e regole sono già decisi dall'utente.
 
 ## Dove sta tutto
@@ -45,5 +47,8 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 1280×720, Montserrat ExtraBold, curiosita' forte, numeri enormi con bordo nero, stile rosso/verde dei video 1-2 oppure blu notte/oro con grafici (barre, griglie). Per i test A/B: due miniature con layout e idea DIVERSI tra loro. Le frasi sono sue: se ne ha una in mente, usare quella. Mai somigliare a Senior Advantage.
 
 ## DA FARE / APERTO
-- I video 1-5 sono pubblicati con tutto fatto: non c'è nulla da caricare/programmare per loro.
-- Prossimo lavoro: video 6 del piano (vedi 00-LEGGIMI sezione 7): 6 No Retirement Savings in Your 60s; 7 What Medicare Doesn't Tell Seniors; 8 401(k) Fees; ... Aspettare l'ordine dell'utente.
+- Video 1-5 pubblicati con tutto fatto.
+- VIDEO 6 (in corso): "2027 COLA". Prossimo passo: copione intero a blocchi. COLA ufficiale esce il 14/10/2026 (stime 3,5-3,6%): verificare su ssa.gov. Vedi RICERCHE-E-DECISIONI-05-10.md.
+- VIDEO 7: "Retirement Income from $500,000".
+- Aperto: titolo con "2027" (parola chiave) vs regola "senza anno".
+- Crediti vidIQ: 100 rimasti al 05/10 (chiedere prima di spenderli).
