@@ -83,3 +83,11 @@ Legenda: P = letto su fonte primaria in questa sessione; S = confermato da piu' 
 - Blocco 43: 12:43 + 23,5f (22f a x=265, punto 23f a 329) = 22914; durata 466.
 - Blocco 44: 12:59 + 7,1f (6f a x=286, punto 7f a 351) = 23377; durata 463.
 - Blocco 45: 13:14 + 10,0f (8f a x=228, punto 9f a 293) = 23830; durata 453.
+- Blocco 46: 13:35 + 4,9f (4f a x=298) = 24455 assoluti; durata 625.
+- Blocco 47: 13:53 + 25,1f (24f a x=288) = 25015; durata 560.
+- Blocco 48: 14:09 + 5,4f (5f a x=331) = 25475; durata 460.
+- Blocco 49: 14:21 + 14,8f (13f a x=240, punto 14f a 306) = 25845; durata 370.
+- Blocco 50: 14:36 + 23,4f (23f a x=332) = 26303; durata 458.
+- Blocco 51: 14:58 + 30,1f (29f a x=288; = 14:59 + 0,1f) = 26970; durata 667.
+- Blocco 52: 15:14 + 14,5f (13f a x=260, punto 14f a 326) = 27435; durata 465.
+- Blocco 53: 15:26 + 11,6f (11f a x=318) = 27792; durata 357. FINE VIDEO = 27792 fotogrammi (15:26,4).
