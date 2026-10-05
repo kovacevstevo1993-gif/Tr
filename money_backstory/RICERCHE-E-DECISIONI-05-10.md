@@ -10,7 +10,7 @@ Solo canale Money Backstory. Non mescolare con Senior Advantage / Conti in Pensi
 
 ## Richieste di stile per il video 6 (e successivi)
 - Hook forte che tiene fino alla fine; curioso; da capire bene.
-- Slide più dettagliate, più chiare, MIGLIORI dell'ultimo video fatto (il 5). Ogni slide deve finire completa PRIMA della fine del suo tempo (tutto compare presto e resta leggibile). Si devono capire benissimo.
+- Slide più dettagliate, più chiare, MIGLIORI dell'ultimo video fatto (il 5). Ogni slide deve finire completa entro l'80% della sua durata (tutto compare presto e resta leggibile). Si devono capire benissimo.
 - "Migliora tutto, non togliere niente": tenere gli oggetti disegnati e i grafici, aggiungere dettaglio.
 - Didascalie/testi grandi e chiari.
 

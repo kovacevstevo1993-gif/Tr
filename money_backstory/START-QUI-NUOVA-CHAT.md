@@ -72,7 +72,7 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 
 - RISPOSTE: cortissime. NON raccontare cosa fai o hai fatto (l'utente lo sa). Solo: file consegnati + domanda/dato necessario. Dopo ogni consegna: salvare nel repo (commit+push).
 
-- SLIDE (feedback 05/10): tutto deve comparire PRIMA, entro metà della durata della slide, e restare fermo e leggibile; ogni slide con una frase-didascalia grande che spiega l'idea. Niente slide con oggetti che arrivano solo alla fine. Blocchi 1-5 del video 6 consegnati prima di questa regola: restano come sono.
+- SLIDE (feedback 05/10): tutto deve comparire PRIMA, entro l'80% della durata della slide (regola decisa dall'utente: 80%, NON metà), e restare fermo e leggibile; ogni slide con una frase-didascalia grande che spiega l'idea. Niente slide con oggetti che arrivano solo alla fine. Blocchi 1-5 del video 6 consegnati prima di questa regola: restano come sono.
 
 - INVIO SLIDE: mandare SOLO quello che l'utente chiede e solo dal blocco indicato ("da qua" = da quel blocco in poi). MAI rimandare slide già consegnate. Errore 05/10: rimandate tutte le 110 slide invece dei blocchi 26-30.
 
