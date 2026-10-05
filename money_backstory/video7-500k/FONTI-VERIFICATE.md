@@ -43,3 +43,8 @@ Legenda: P = letto su fonte primaria in questa sessione; S = confermato da piu' 
 - Blocco 4: 00:57 + 19f (18f a x=314, cursore 18,7) = 1729; durata 424.
 - Blocco 5: 01:23 + 24f (24f a x=348, cursore 24,2) = 2514; durata 785.
 - Mary = $250.000 Roth + $250.000 tradizionale (usato nei calcoli del blocco 21).
+- Blocco 6: 01:40 + 14f (12f a x=235, punto 13f a 302, cursore 13,9) = 3014 assoluti; durata 500.
+- Blocco 7: 01:55 + 23f (22f a x=281, cursore 23,2) = 3473; durata 459.
+- Blocco 8: 02:18 + 7f (6f a x=286, cursore 7,1) = 4147; durata 674.
+- Blocco 9: 02:39 + 15f (14f a x=291, cursore 15,0) = 4785; durata 638.
+- Blocco 10: 02:57 + 17f (16f a x=281, cursore 17,2) = 5327; durata 542.
