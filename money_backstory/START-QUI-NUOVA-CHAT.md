@@ -12,7 +12,7 @@ Se sei un Claude in una chat nuova: leggi questo file, poi `CLAUDE.md` (regole p
 The Money Backstory (@TheMoneyBackstoryUSA), creato 25/09/2026, faceless, in inglese, pubblico americani over 50. Nicchia: pensione USA (Social Security, Medicare, tasse in pensione, 401k/IRA). Obiettivo: monetizzare con CPM alto. Narratori: Frank e Mary (due persone fittizie, presentati da zero in ogni video).
 Identita' visiva: blu notte + oro (cornice 3D oro), rosso/verde per i confronti, font Gloock (titoli slide), InstrumentSans (testi), Montserrat ExtraBold (miniature). NIENTE giallo a raggi/ricevute/verde bosco (sono di Senior Advantage).
 
-## Stato dei video (05/10/2026)
+## Stato dei video (05/10/2026) — TUTTI E 5 SONO GIÀ PUBBLICATI (confermato dall'utente il 05/10). Titolo, descrizione, tag, commento, miniature, playlist e schermate finali: già fatti. NON riproporli. Le righe qui sotto sono storico di produzione.
 1. "Social Security at 62 vs 70: The $124,800 Mistake (Exact Math)" — PUBBLICATO 26/09, 7:41, youtu.be/rPaLdR1E31s. Commento fisso pronto.
 2. "5 mistakes that quietly ruin retirement" — 11:09, programmato 28/09 16:00 (ora italiana).
 3. "The 59½ Rule: 5 Things That Change (Number 4 Traps Thousands)" — 7:33, slide consegnate, testi + miniature pronti. DA DECIDERE da lui: nel blocco 14 la voce dice "three years past this milestone" ma da 59½ a 61 sono 1,5 anni.
@@ -45,7 +45,5 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 1280×720, Montserrat ExtraBold, curiosita' forte, numeri enormi con bordo nero, stile rosso/verde dei video 1-2 oppure blu notte/oro con grafici (barre, griglie). Per i test A/B: due miniature con layout e idea DIVERSI tra loro. Le frasi sono sue: se ne ha una in mente, usare quella. Mai somigliare a Senior Advantage.
 
 ## DA FARE / APERTO
-- Decisione dell'utente sul blocco 14 del video 3 (frase "three years").
-- Caricare/programmare i video 3, 4, 5 (testi pronti in 07), impostare playlist e schermate finali.
-- Commento fisso del video 2 (non salvato nei file).
-- Prossimi video del piano (vedi 00-LEGGIMI sezione 7): 6 No Retirement Savings in Your 60s; 7 What Medicare Doesn't Tell Seniors; 8 401(k) Fees; ...
+- I video 1-5 sono pubblicati con tutto fatto: non c'è nulla da caricare/programmare per loro.
+- Prossimo lavoro: video 6 del piano (vedi 00-LEGGIMI sezione 7): 6 No Retirement Savings in Your 60s; 7 What Medicare Doesn't Tell Seniors; 8 401(k) Fees; ... Aspettare l'ordine dell'utente.
