@@ -114,7 +114,7 @@ def s29b(t):
 
 # ============ BLOCCO 30 (358) ============
 B30 = Blk2(["Rules, amounts and ages change and differ by location and plan.", "Always confirm with the official source before you rely on them.", "This is general information, not financial advice."],
-           [[0, 1, 2]], 358)
+           [[0, 1, 2]], 357)
 def s30a(t):
     fr = base_(t, 331, 'IMPORTANT', 64); T = lambda m: B30.tt(0, m)
     if t > 0.3:
@@ -126,37 +126,57 @@ def s30a(t):
     return frame(fr)
 
 
-# ============ BLOCCO 26 (414) — voce letta dallo screenshot: contiene solo le ultime 2 frasi ============
-B26 = Blk2(["The headline percentage is only the starting point.",
+# ============ BLOCCO 26 (939) — voce completa, rifatta dall'utente ============
+B26 = Blk2(["Over twelve months, sixty five dollars a month would be about seven hundred eighty five dollars.", "That is not nothing.",
+            "But compare it with the eight hundred sixty four dollars the headline promised, and you can see why so many retirees say the raise never feels like the number on the news.",
+            "The headline percentage is only the starting point.",
             "And when the official number comes out, you can redo this math yourself in a minute: multiply your check by the raise, then subtract any increase in the Part B premium."],
-           [[0], [1]], 414)
+           [[0, 1], [2], [3], [4]], 939)
 def s26a(t):
-    fr = base_(t, 291, 'ONLY THE STARTING POINT'); T = lambda m: B26.tt(0, m)
+    fr = base_(t, 281, 'OVER TWELVE MONTHS'); T = lambda m: B26.tt(0, m)
     if t > 0.3:
-        C = new(); d = ImageDraw.Draw(C); d.ellipse([200, 300, 620, 720], fill=gold + (255,), outline=goldL + (255,), width=10); txt(C, '3.5%', BOLD(150), 410, navy, 255, x=410); txt(C, 'THE HEADLINE', BOLD(52), 590, navy, 255, x=410); fr = A_(fr, C, (180, 280, 640, 740), t, 0.3)
-    t2 = T('only the starting')
-    L = new(); arrow_r(L, 660, 880, 510, goldL, 255 * E_(t, t2 - 0.2)); fr = Image.alpha_composite(fr, L)
-    if t > t2 - 0.2:
-        C = new(); card_(C, 920, 300, 1780, 720, green); txt(C, 'OUR EXAMPLE: WHAT', BOLD(50), 340, white, 255, x=1350); txt(C, 'REACHES THE BANK', BOLD(50), 405, white, 255, x=1350); txt(C, 'ABOUT $65', BOLD(130), 500, green, 255, x=1350); fr = A_(fr, C, (900, 280, 1800, 740), t, t2 - 0.2)
-    fr = P(fr, 'THE HEADLINE IS ONLY THE STARTING POINT', 810, t, 1.0, goldL, navy, 54)
+        C = new(); txt(C, '$65.40  x  12 MONTHS', BOLD(100), 270, white, 255, x=960); fr = A_(fr, C, (140, 250, 1780, 420), t, 0.3)
+    fr = months(fr, t, 460, 0.6, hl=tuple(range(12)), step=0.05)
+    t2 = T('about seven hundred') - 0.3
+    if t > t2: fr = P(fr, '= ABOUT $785 A YEAR', 700, t, t2, green, navy, 84)
+    t3 = T('not nothing') - 0.2
+    if t > t3: fr = P(fr, 'THAT IS NOT NOTHING', 850, t, t3, goldL, navy, 52)
     return frame(fr)
 def s26b(t):
-    fr = base_(t, 292, 'REDO THE MATH YOURSELF'); T = lambda m: B26.tt(1, m)
+    fr = base_(t, 282, 'HEADLINE VS REAL'); T = lambda m: B26.tt(1, m)
     if t > 0.3:
-        C = new(); cal_card(C, 140, 280, 520, 580, 'OFFICIAL NUMBER', '14', bigsize=120, headcol=red); txt(C, 'OCTOBER', BOLD(46), 500, (70, 84, 108), 255, x=330); fr = A_(fr, C, (120, 260, 540, 580), t, 0.3)
-    items = [('multiply your check', 'YOUR CHECK', blue, 620), ('by the raise', 'x THE RAISE', green, 1000), ('then subtract', '- PART B INCREASE', red, 1380)]
-    for k, (m, lab, col, x0) in enumerate(items):
+        C = new(); C.alpha_composite(bar(330, gold, 300), (260, 760 - 330)); txt(C, '$864', BOLD(110), 330, goldL, 255, x=410); txt(C, 'HEADLINE', BOLD(46), 775, white, 255, x=410); txt(C, 'PROMISED', BOLD(46), 825, white, 255, x=410); fr = A_(fr, C, (200, 280, 640, 890), t, 0.3)
+    t2 = T('compare it') - 0.1
+    if t > max(0.8, t2):
+        C = new(); C.alpha_composite(bar(300, green, 300), (760, 760 - 300)); txt(C, '$785', BOLD(110), 360, green, 255, x=910); txt(C, 'REACHES', BOLD(46), 775, white, 255, x=910); txt(C, 'THE BANK', BOLD(46), 825, white, 255, x=910); fr = A_(fr, C, (700, 310, 1140, 890), t, max(0.8, t2))
+    t3 = T('you can see why')
+    if t > t3 - 0.3:
+        C = new(); card_(C, 1220, 300, 1790, 760, red); txt(C, 'RETIREES SAY:', BOLD(54), 340, white, 255, x=1505); txt(C, 'IT NEVER FEELS', BOLD(54), 420, red, 255, x=1505); txt(C, 'LIKE THE NUMBER', BOLD(54), 490, red, 255, x=1505); txt(C, 'ON THE NEWS', BOLD(54), 560, red, 255, x=1505); fr = A_(fr, C, (1200, 280, 1810, 780), t, t3 - 0.3)
+    return frame(fr)
+def s26c(t):
+    fr = base_(t, 291, 'ONLY THE STARTING POINT'); T = lambda m: B26.tt(2, m)
+    if t > 0.3:
+        C = new(); d = ImageDraw.Draw(C); d.ellipse([200, 300, 620, 720], fill=gold + (255,), outline=goldL + (255,), width=10); txt(C, '3.5%', BOLD(150), 410, navy, 255, x=410); txt(C, 'THE HEADLINE', BOLD(52), 590, navy, 255, x=410); fr = A_(fr, C, (180, 280, 640, 740), t, 0.3)
+    L = new(); arrow_r(L, 660, 880, 510, goldL, 255 * E_(t, 0.9)); fr = Image.alpha_composite(fr, L)
+    if t > 0.9:
+        C = new(); card_(C, 920, 300, 1780, 720, green); txt(C, 'OUR EXAMPLE: WHAT', BOLD(50), 340, white, 255, x=1350); txt(C, 'REACHES THE BANK', BOLD(50), 405, white, 255, x=1350); txt(C, 'ABOUT $65', BOLD(130), 500, green, 255, x=1350); fr = A_(fr, C, (900, 280, 1800, 740), t, 0.9)
+    fr = P(fr, 'THE HEADLINE IS ONLY THE STARTING POINT', 810, t, 1.2, goldL, navy, 54)
+    return frame(fr)
+def s26d(t):
+    fr = base_(t, 292, 'REDO THE MATH YOURSELF'); T = lambda m: B26.tt(3, m)
+    if t > 0.3:
+        C = new(); cal_card(C, 140, 280, 520, 580, 'OFFICIAL NUMBER', '14', bigsize=120, headcol=red); txt(C, 'OCTOBER', BOLD(46), 500, (70, 84, 108), 255, x=330); fr = A_(fr, C, (120, 260, 540, 600), t, 0.3)
+    items = [('multiply your check', blue, 620), ('by the raise', green, 1000), ('then subtract', red, 1380)]
+    for k, (m, col, x0) in enumerate(items):
         t0 = max(0.5, T(m) - 0.1)
         if t < t0: continue
-        C = new(); card_(C, x0, 300, x0 + 340, 520, col); l = lab.split(' ', 1) if k != 2 else ['- PART B', 'INCREASE']
-        if k == 0: l = ['YOUR', 'CHECK']
-        if k == 1: l = ['x THE', 'RAISE']
+        C = new(); card_(C, x0, 300, x0 + 340, 520, col); l = [['YOUR', 'CHECK'], ['x THE', 'RAISE'], ['- PART B', 'INCREASE']][k]
         txt(C, l[0], BOLD(60), 350, white, 255, x=x0 + 170); txt(C, l[1], BOLD(60), 425, col, 255, x=x0 + 170); fr = A_(fr, C, (x0 - 20, 280, x0 + 360, 540), t, t0)
     t4 = T('in a minute')
     if t > t4 - 0.5: fr = P(fr, '= YOUR REAL RAISE, IN A MINUTE', 700, t, t4 - 0.5, gold, navy, 66)
     return frame(fr)
 
-FNS5 = {26: [s26a, s26b], 27: [s27a, s27b, s27c, s27d], 28: [s28a, s28b, s28c, s28d, s28e], 29: [s29a, s29b], 30: [s30a]}
+FNS5 = {26: [s26a, s26b, s26c, s26d], 27: [s27a, s27b, s27c, s27d], 28: [s28a, s28b, s28c, s28d, s28e], 29: [s29a, s29b], 30: [s30a]}
 BLK5 = {26: B26, 27: B27, 28: B28, 29: B29, 30: B30}
 if __name__ == '__main__':
     mode = sys.argv[1]; b = int(sys.argv[2]); fns = FNS5[b]; FS = BLK5[b].FS

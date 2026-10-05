@@ -57,3 +57,8 @@ Esempio tasse: "imponibile" = parte dell'assegno che conta; se esce un'imposta d
 - Blocco 29: 12:09 + 27f = 21897; durata 472.
 - Blocco 30: 12:21 + 25f = 22255; durata 358. FINE VIDEO = 22255 fotogrammi (12:22,8).
 - Ultima slide (blocco 30): disclaimer in chiaro + riquadro WATCH NEXT + cerchio SUBSCRIBE (elementi schermata finale).
+
+## AGGIORNAMENTO 05/10 sera: voce rifatta dall'utente (blocco 26 completo)
+- Fine blocco 25: 10:46 + 26,6f. Blocco 26: fine 11:18 + 5,5f -> durata 939 (voce completa, 4 frasi + ultime due). Blocchi 27, 28, 29 invariati (738, 865, 472).
+- Blocco 30: fine video 12:39 + 8,3f = 22778 -> durata 357.
+- Slide del blocco 26 rifatte (4 slide, 939 fotogrammi). Le slide dei blocchi 1-25 e 27-29 restano uguali.
