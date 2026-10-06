@@ -534,7 +534,7 @@ Object.keys(D2).forEach(b=>{D2[b].forEach((it2,i)=>{if(BLK[b]&&BLK[b].scenes[i])
 function payslip(p,title,amount){const g=el('g',{},p);
  el('rect',{x:-150,y:-190,width:300,height:380,rx:20,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);
  el('rect',{x:-150,y:-190,width:300,height:60,rx:20,fill:GRN},g);el('rect',{x:-150,y:-160,width:300,height:30,fill:GRN},g);
- txt(g,title,0,-148,27,'#fff','bold');
+ txt(g,title,0,-148,24,'#fff','bold');
  [-90,-50,-10].forEach((y,i)=>{el('rect',{x:-115,y:y,width:i%2?140:210,height:14,rx:7,fill:'#C3D3D7'},g);});
  if(amount){el('rect',{x:-120,y:40,width:240,height:96,rx:22,fill:'#D6F5EC',stroke:GRN,'stroke-width':5},g);txt(g,amount,0,98,44,INK,'900');}
  return g;}
@@ -629,7 +629,7 @@ Object.assign(BUILD,{
  hl:(g,s,fill)=>{const w=s.length*38*0.7+110;el('rect',{x:-w/2,y:-70,width:w,height:140,rx:24,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);el('rect',{x:-w/2,y:-70,width:w,height:44,rx:24,fill:fill||RED_},g);el('rect',{x:-w/2,y:-48,width:w,height:22,fill:fill||RED_},g);txt(g,'TITOLO',0,-40,28,'#fff','bold');txt(g,s,0,40,56,INK,'900');},
 });
 
-const SB=[];const N=40;const TOT=263/30;const TXT="Domanda tre: se la rivalutazione è il tre per cento, sul conto ti arriva il tre per cento in più. Vero o falso? ... Falso! Il tre per cento è sull'importo lordo. Il netto, cioè quello che incassi, sale meno. Quante ne hai azzeccate?";
+const SB=[];const N=40;const TOT=500/30;const TXT="Domanda tre: se la rivalutazione è il tre per cento, sul conto ti arriva il tre per cento in più. Vero o falso? ... Falso! Il tre per cento è sull'importo lordo. Il netto, cioè quello che incassi, sale meno. Quante ne hai azzeccate?";
 
 // ===== V3 blocchi 6-30: ogni elemento compare quando la voce lo dice =====
 const SPECS={};
@@ -934,10 +934,10 @@ SPECS[30]=()=>mkBlk(TXT,TOT,[
 SPECS[31]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'IL DECRETO DICE DUE COSE',cap:'IL DECRETO DICE DUE COSE: LA PERCENTUALE DEFINITIVA E QUELLA PROVVISORIA',capSize:40,items:[
   I('doc',['DECRETO',380,330,GRN,40],330,470,'Il decreto dice due cose'),
-  VN('DEFINITIVA',1330,340,'Primo: la percentuale definitiva',{fs:80,fill:GF_,sub:'DELL’AUMENTO CHE HAI GIÀ PRESO QUEST’ANNO',minw:900}),
-  VN('PROVVISORIA',1330,600,'Secondo: la percentuale provvisoria',{fs:80,fill:AMB,sub:'PER QUELLO CHE ARRIVA A GENNAIO',minw:900})]},
+  VN('DEFINITIVA',1250,340,'Primo: la percentuale definitiva',{fs:80,fill:GF_,sub:'DELL’AUMENTO CHE HAI GIÀ PRESO QUEST’ANNO',minw:900}),
+  VN('PROVVISORIA',1250,600,'Secondo: la percentuale provvisoria',{fs:80,fill:AMB,sub:'PER QUELLO CHE ARRIVA A GENNAIO',minw:900})]},
  {at:'Provvisoria! Perché',top:'PERCHÉ PROVVISORIA?',cap:'PROVVISORIA: L’ANNO NON È FINITO E I PREZZI DI DICEMBRE NON CI SONO',capSize:40,items:[
-  I('cal',['DICEMBRE','?',110,'PREZZI MANCANTI'],440,490,'prezzi di dicembre',0.85),
+  I('cal',['DICEMBRE','2026',110,'NON ANCORA'],440,490,'prezzi di dicembre',0.85),
   VT('PROVVISORIA!',1300,330,'Provvisoria! Perché',RF_,44),
   VT('L’ANNO NON È ANCORA FINITO',1300,500,'non è ancora finito',AMB,40),
   VT('I PREZZI DI DICEMBRE NON CI SONO',1300,660,'prezzi di dicembre non ci sono',GF_,40)]},
@@ -1032,7 +1032,7 @@ SPECS[38]=()=>mkBlk(TXT,TOT,[
 SPECS[39]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'DOMANDA 2',cap:'DOMANDA 2: LA PERCENTUALE LA DECIDE L’INPS A GENNAIO?',items:[
   I('circ',['2','url(#g_head)'],240,380,'Domanda due'),
-  VT('LA DECIDE L’INPS, A GENNAIO, GUARDANDO L’INFLAZIONE',1050,380,'la percentuale la decide',AMB,34),
+  VT('LA DECIDE L’INPS, A GENNAIO, GUARDANDO L’INFLAZIONE',1180,380,'la percentuale la decide',AMB,32),
   I('vf',[true],760,600,'Vero o falso?'),I('vf',[false],1160,600,['Vero o falso?',0.3])]},
  {at:'Falso!',top:'FALSO!',cap:'LA FISSA UN DECRETO DEI MINISTERI, DI SOLITO A NOVEMBRE: ALL’INIZIO È PROVVISORIA',capSize:38,items:[
   I('stamp',['FALSO!',RED_,70],400,330,'Falso!'),
@@ -1112,7 +1112,7 @@ SPECS[45]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'CONFRONTA DUE CEDOLINI',cap:'DICEMBRE E GENNAIO: LA DIFFERENZA DELL’IMPORTO LORDO È IL TUO AUMENTO',capSize:40,items:[
   I('pay',['DICEMBRE','LORDO'],420,450,'quello di dicembre',1),
   VO('−',770,450,'quello di gennaio'),
-  I('pay',['GENNAIO','LORDO'],1120,450,'quello di gennaio',1),
+  I('pay',['GENNAIO','LORDO'],1120,450,['quello di gennaio',0.12],1),
   VO('=',1470,450,'la differenza'),
   VN('AUMENTO',1700,450,'è il tuo aumento',{fs:44,fill:GF_,minw:240})]},
  {at:'Poi guarda se compare',top:'LA VOCE DI CONGUAGLIO',cap:'SE C’È UNA VOCE DI CONGUAGLIO È LA CORREZIONE DELL’ANNO PRIMA: VA LETTA A PARTE',capSize:36,items:[
@@ -1147,8 +1147,8 @@ SPECS[47]=()=>mkBlk(TXT,TOT,[
 SPECS[48]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'ERRORE NUMERO DUE',cap:'ERRORE 2: ASPETTARSI LO STESSO AUMENTO DI UN AMICO O DI UN VICINO',capSize:40,items:[
   I('circ',['2','url(#g_head)'],220,430,'Errore numero due'),
-  I('med',[],640,430,'di un amico',0.55),I('medm',[],1060,430,'o di un vicino',0.55),
-  VT('LO STESSO AUMENTO?',1500,430,'lo stesso aumento',AMB,44)]},
+  I('med',[],560,430,'di un amico',0.55),I('medm',[],940,430,'o di un vicino',0.55),
+  VT('LO STESSO AUMENTO?',1530,430,'lo stesso aumento',AMB,44)]},
  {at:'Con fasce diverse',top:'EURO DIVERSI',cap:'FASCE DIVERSE, IMPORTI DIVERSI, SITUAZIONI FISCALI DIVERSE: EURO DIVERSI SUL CONTO',capSize:36,items:[
   VT('FASCE DIVERSE',560,330,'Con fasce diverse',GF_,44),
   VT('IMPORTI DIVERSI',1280,330,'importi diversi',AMB,44),
@@ -1161,7 +1161,7 @@ SPECS[49]=()=>mkBlk(TXT,TOT,[
   I('circ',['1',RF_],260,430,'E l’errore numero uno'),
   VT('FIDARSI DELLA PRIMA CIFRA CHE TROVANO',1100,430,'fidarsi della prima cifra',RF_,42)]},
  {at:'Titoli con il tre',top:'TITOLI SENZA CONTESTO',cap:'TITOLI CON IL 3, IL 4, IL 5 %, SENZA DIRE QUALE INDICE, QUALE PERIODO, SE È UNA STIMA',capSize:36,items:[
-  I('hl',['3 %'],480,330,'Titoli con il tre',0.8),I('hl',['4 %'],960,330,'il quattro',0.8),I('hl',['5 %'],1440,330,'il cinque per cento',0.8),
+  I('hl',['3 %'],480,330,'Titoli con il tre',1.25),I('hl',['4 %'],960,330,'il quattro',1.25),I('hl',['5 %'],1440,330,'il cinque per cento',1.25),
   VT('QUALE INDICE?',480,540,'quale indice',GF_,44),VT('QUALE PERIODO?',1070,540,'quale periodo',AMB,44),VT('È UNA STIMA?',960,690,'se è una stima',RF_,44)]},
  {at:'Se manca questo',sh:0.5,top:'NON È UNA NOTIZIA',cap:'SE MANCA QUESTO, NON È UNA NOTIZIA: È SOLO UN TITOLO',items:[
   I('stamp',['NON È UNA NOTIZIA',RED_,64],960,400,'non è una notizia'),
@@ -1191,7 +1191,7 @@ SPECS[51]=()=>mkBlk(TXT,TOT,[
 // ---------- BLOCCO 52 ----------
 SPECS[52]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'ADESSO TOCCA A TE',cap:'SCRIVIMI NEI COMMENTI: QUANTO PRENDI DI PENSIONE LORDA E QUANTO TI ASPETTI DI AUMENTO?',capSize:36,items:[
-  I('bubble',[560,300],520,420,'Scrivimi nei commenti',1.1),
+  I('bubble',[560,300],330,420,'Scrivimi nei commenti',0.9),
   VT('QUANTO PRENDI DI PENSIONE LORDA?',1330,330,'quanto prendi di pensione lorda',AMB,40),
   VT('QUANTO TI ASPETTI DI AUMENTO?',1330,490,'quanto ti aspetti di aumento',GF_,40),
   VT('NON SERVE L’IMPORTO ESATTO',1330,650,'Non serve l’importo esatto',GF_,40)]},
@@ -1214,9 +1214,9 @@ SPECS[53]=()=>mkBlk(TXT,TOT,[
 SPECS[54]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'DISCLAIMER',cap:'GRAZIE PER AVER GUARDATO FINO ALLA FINE… E ALLA PROSSIMA!',items:[
   VT('INFORMAZIONI A SCOPO DIVULGATIVO',960,250,'Le informazioni di questo video',AMB,50),
-  VT('NON SOSTITUISCONO LA CONSULENZA DI UN PATRONATO O DELL’INPS',960,380,'non sostituiscono',GF_,42),
+  VT('NON SOSTITUISCONO LA CONSULENZA DI UN PATRONATO O DELL’INPS',960,380,'non sostituiscono',GF_,34),
   VT('GLI IMPORTI SONO ESEMPI, NON PREVISIONI',960,510,'Gli importi sono esempi',AMB,50),
-  VT('VERIFICA SEMPRE SUI CANALI UFFICIALI, COME INPS.IT',960,640,'Verifica sempre',GF_,44),
+  VT('VERIFICA SEMPRE SUI CANALI UFFICIALI, COME INPS.IT',960,640,'Verifica sempre',GF_,36),
   VT('GRAZIE PER AVER GUARDATO!',960,780,'Grazie per aver guardato',RF_,56)]},
 ]);
 
