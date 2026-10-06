@@ -7,6 +7,7 @@
 4. Obiettivo dell'utente: video che superino 10.000 view. Poche ricerche + poca concorrenza NON basta. Contano tema con video gia sopra 100.000 view, titolo/miniatura con promessa, durata dei vincenti.
 5. FORMATO BLOCCHI DI VOCE (ULTIMO, 07/10/2026, annulla quello vecchio senza riquadri): **Blocco N** in grassetto, sotto il riquadro di codice ``` col solo testo, riga vuota tra i blocchi, tutti in chat in un colpo. MAI testo semplice fuori dai riquadri, MAI elenco numerato, MAI file. Regola anche in CLAUDE.md.
 7. DECIDE SOLO L'UTENTE, MAI CLAUDE (07/10/2026): non decidere mai quanto controllare o fare. CONTROLLO FOTOGRAMMA PER FOTOGRAMMA (tutti i 30 al secondo) di OGNI blocco PRIMA di mandare gli MP4, nessuna scorciatoia, nessun campionamento. Vedi CLAUDE.md.
+8. NON DIRE "FATTO/MANDATO" SE NON E VERO (07/10/2026): dire "mandato" solo dopo conferma di SendUserFile; altrimenti "in corso". L'utente si e sentito preso in giro. Vedi CLAUDE.md.
 6. Niente "hai ragione", niente scuse, niente liste di offerte. Risposte corte. Salvare tutto nel repo subito.
 
 Incolla nella nuova chat: "Leggi senior_advantage/PASSAGGIO-CHAT.md e CLAUDE.md, poi aspetta quello che ti chiedo."
