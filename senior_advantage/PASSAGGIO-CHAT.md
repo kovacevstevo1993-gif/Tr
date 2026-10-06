@@ -1,5 +1,12 @@
 # PASSAGGIO CHAT - The Senior Advantage (aggiornato 06/10/2026)
 
+## ERRORI CHE SI RIPETONO IN OGNI CHAT: LEGGERE PER PRIMI, PRIMA DI RISPONDERE (l'utente e esausto)
+1. Fare SOLO quello che l'utente ordina. Mai copione, slide, miniature o pacchetto "gia che ci sono". Dopo una ricerca: risultato in poche righe e FERMARSI.
+2. PRIMA di cercare o spendere crediti vidIQ: grep in RICERCHE-VIDIQ.md e in chat/. Se c'e gia, usarlo e dirlo. Crediti vidIQ: mai senza chiedere.
+3. PRIMA di consegnare qualsiasi cosa, controllare che sia completa: durata (caratteri) confrontata con i video gia fatti, fatti verificati, regole di questo file. Mai consegnare una cosa e poi dire che manca qualcosa.
+4. Obiettivo dell'utente: video che superino 10.000 view. Poche ricerche + poca concorrenza NON basta. Contano tema con video gia sopra 100.000 view, titolo/miniatura con promessa, durata dei vincenti.
+5. Niente "hai ragione", niente scuse, niente liste di offerte. Risposte corte. Salvare tutto nel repo subito.
+
 Incolla nella nuova chat: "Leggi senior_advantage/PASSAGGIO-CHAT.md e CLAUDE.md, poi aspetta quello che ti chiedo."
 
 ## REPO
