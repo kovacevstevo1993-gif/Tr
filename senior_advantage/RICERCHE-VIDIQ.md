@@ -122,3 +122,11 @@ Risultati di ricerca YouTube (titolo | canale | view | eta | durata):
 ---------------------------------------------------------------------
 ## 6. DATI vidIQ PIU VECCHI (dalle chat precedenti, vedi anche PASSAGGIO-CHAT.md sezione DATI vidIQ)
 "senior discounts" 12.828/mese (concorrenza 26,3). "senior discount" 9.826 (20,7). "senior citizen discounts" 4.821 (30,8). "hidden senior discounts" 4.045 (23,6). "senior savings" 3.786 (26,2). "senior assistance programs" 4.229 (21). "low income relief" 24.886. "senior meals" 7.069. "snap benefits" 11.295 (+164%). "snap for seniors" 5.338 (28). "food stamps" 6.331 (+84%). "government benefits for seniors" 4.323 (19,6). Titolo lungo 1 punteggio vidIQ 94/100 ("Senior Discounts Start at 55, Not 65: 12 Hidden Places (Most Never Ask)"), alternativa 90/100. Le chat 01LADT (short 5) hanno speso 15 crediti (ricerca keyword, video virali, video concorrenti SNAP): risultati nel file chat/2026-10-03_sessione-01LADT-short5.md.
+
+---------------------------------------------------------------------
+## 7. FATTI UFFICIALI COSTCO (06/10/2026, ricerca web gratuita su siti Costco) - per il video lungo Costco
+- Costco NON offre sconti ne iscrizioni scontate per gli over 60 (pagina ufficiale: customerservice.costco.com, "Does Costco offer free or discounted memberships?"). Iscrizione Gold Star 65 dollari l'anno, Executive 65 dollari in piu, uguale per tutte le eta.
+- Farmacia: non serve essere iscritti per comprare farmaci con ricetta, online o in magazzino (customerservice.costco.com, "Do I need a membership to purchase prescription drugs?").
+- Centro apparecchi acustici: test dell'udito gratuito per iscritti dai 18 anni, assistenza gratuita inclusa con l'acquisto; prezzi da 1.599,99 dollari (Philips HearLink 9050, ricaricabile con caricatore) e 1.699,99 (Jabra Enhance Pro 30). Serve la tessera.
+- Ottica: lenti a contatto online solo per iscritti.
+- Conseguenza: un titolo "Costco Is Hiding N Discounts From Seniors" sarebbe falso. Angolo onesto: "Costco has no senior discount, but these N things save seniors money" (parole chiave: "costco for seniors" 5.235/mese conc. 12; "costco senior discount" 3.269 conc. 19).
