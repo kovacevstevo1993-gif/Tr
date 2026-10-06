@@ -2,7 +2,7 @@
 function payslip(p,title,amount){const g=el('g',{},p);
  el('rect',{x:-150,y:-190,width:300,height:380,rx:20,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);
  el('rect',{x:-150,y:-190,width:300,height:60,rx:20,fill:GRN},g);el('rect',{x:-150,y:-160,width:300,height:30,fill:GRN},g);
- txt(g,title,0,-148,30,'#fff','bold');
+ txt(g,title,0,-148,24,'#fff','bold');
  [-90,-50,-10].forEach((y,i)=>{el('rect',{x:-115,y:y,width:i%2?140:210,height:14,rx:7,fill:'#C3D3D7'},g);});
  if(amount){el('rect',{x:-120,y:40,width:240,height:96,rx:22,fill:'#D6F5EC',stroke:GRN,'stroke-width':5},g);txt(g,amount,0,98,44,INK,'900');}
  return g;}
@@ -17,5 +17,5 @@ function qMark(p,r,fill){const g=el('g',{},p);
  el('circle',{r:r,fill:fill||'url(#g_badge)',stroke:'#fff','stroke-width':r*0.1,filter:'url(#g_sh2)'},g);
  txt(g,'?',0,r*0.4,r*1.25,'#fff','900');return g;}
 function vf(p,vero){const g=el('g',{},p);
- el('rect',{x:-86,y:-40,width:172,height:80,rx:40,fill:vero?'url(#g_badge)':'url(#g_red)',stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);
- txt(g,vero?'VERO':'FALSO',0,15,40,'#fff','900');return g;}
+ el('rect',{x:-100,y:-40,width:200,height:80,rx:40,fill:vero?'url(#g_badge)':'url(#g_red)',stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);
+ txt(g,vero?'VERO':'FALSO',0,14,36,'#fff','900');return g;}

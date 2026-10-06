@@ -297,3 +297,292 @@ SPECS[30]=()=>mkBlk(TXT,TOT,[
   VT('L’ANNO SCORSO: 19 NOVEMBRE',1370,380,'l’anno scorso è stato il diciannove',GF_,44),
   VT('QUEST’ANNO: PIÙ O MENO UGUALE',1370,560,'Quest’anno, probabilmente',AMB,40)]},
 ]);
+// ---------- BLOCCO 31 ----------
+SPECS[31]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'IL DECRETO DICE DUE COSE',cap:'IL DECRETO DICE DUE COSE: LA PERCENTUALE DEFINITIVA E QUELLA PROVVISORIA',capSize:40,items:[
+  I('doc',['DECRETO',380,330,GRN,40],330,470,'Il decreto dice due cose'),
+  VN('DEFINITIVA',1250,340,'Primo: la percentuale definitiva',{fs:80,fill:GF_,sub:'DELL’AUMENTO CHE HAI GIÀ PRESO QUEST’ANNO',minw:900}),
+  VN('PROVVISORIA',1250,600,'Secondo: la percentuale provvisoria',{fs:80,fill:AMB,sub:'PER QUELLO CHE ARRIVA A GENNAIO',minw:900})]},
+ {at:'Provvisoria! Perché',top:'PERCHÉ PROVVISORIA?',cap:'PROVVISORIA: L’ANNO NON È FINITO E I PREZZI DI DICEMBRE NON CI SONO',capSize:40,items:[
+  I('cal',['DICEMBRE','2026',110,'NON ANCORA'],440,490,'prezzi di dicembre',0.85),
+  VT('PROVVISORIA!',1300,330,'Provvisoria! Perché',RF_,44),
+  VT('L’ANNO NON È ANCORA FINITO',1300,500,'non è ancora finito',AMB,40),
+  VT('I PREZZI DI DICEMBRE NON CI SONO',1300,660,'prezzi di dicembre non ci sono',GF_,40)]},
+]);
+// ---------- BLOCCO 32 ----------
+SPECS[32]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'I NUMERI VERI',cap:'GENNAIO 2025: DEFINITIVA 0,8 %   |   GENNAIO 2026: PROVVISORIA 1,4 %',capSize:42,items:[
+  VN('0,8 %',500,430,'zero virgola otto per cento',{fs:130,fill:GF_,sub:'GENNAIO 2025: DEFINITIVA',minw:640}),
+  VN('1,4 %',1380,430,'uno virgola quattro per cento',{fs:130,fill:AMB,sub:'GENNAIO 2026: PROVVISORIA',minw:700})]},
+ {at:'Lo dice la circolare',top:'LA CIRCOLARE INPS',cap:'LO DICE LA CIRCOLARE DELL’INPS NUMERO 153 DEL 19 DICEMBRE',items:[
+  I('doc',['CIRCOLARE INPS',560,330,GRN,44],960,450,'Lo dice la circolare'),
+  VT('NUMERO 153 DEL 19 DICEMBRE',960,700,'numero centocinquantatré',AMB,44)]},
+]);
+// ---------- BLOCCO 33 ----------
+SPECS[33]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'IL CONGUAGLIO',cap:'TERZA TRAPPOLA: IL CONGUAGLIO. PROVVISORIA VUOL DIRE CHE PUÒ ESSERCI UNA CORREZIONE',capSize:38,items:[
+  I('circ',['3',GF_],240,440,'Terza trappola'),
+  VN('CONGUAGLIO',720,440,'il conguaglio',{fs:70,minw:640}),
+  VT('UNA CORREZIONE',1450,440,'una correzione',AMB,44)]},
+ {at:'Se a novembre',top:'SE È UGUALE',cap:'SE A NOVEMBRE IL DATO DEFINITIVO È UGUALE AL PROVVISORIO, NON SUCCEDE NIENTE',capSize:40,items:[
+  ...EQ(380,[['num','DEFINITIVO','Se a novembre'],['op','=','uguale a quello provvisorio'],['num','PROVVISORIO','uguale a quello provvisorio']],56,360),
+  VT('NON SUCCEDE NIENTE',960,640,'non succede niente',GF_,48)]},
+ {at:'Se è diverso',top:'SE È DIVERSO',cap:'SE È DIVERSO, A GENNAIO C’È IL CONGUAGLIO',items:[
+  ...EQ(380,[['num','DEFINITIVO','Se è diverso'],['op','≠',['Se è diverso',0.4]],['num','PROVVISORIO',['Se è diverso',0.7]]],56,360),
+  VT('A GENNAIO C’È IL CONGUAGLIO',960,640,'a gennaio c’è il conguaglio',RF_,48)]},
+ {at:'A gennaio duemilaventisei, per esempio',top:'UN ESEMPIO: GENNAIO 2026',cap:'A GENNAIO 2026: NESSUN CONGUAGLIO DOVUTO',items:[
+  I('cal',['GENNAIO','2026',150,'PER ESEMPIO'],560,490,'A gennaio duemilaventisei, per esempio',0.85),
+  I('stamp',['NESSUN CONGUAGLIO',GRN,56],1330,470,'nessun conguaglio dovuto')]},
+]);
+// ---------- BLOCCO 34 ----------
+SPECS[34]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'RIASSUNTO',cap:'IL TITOLO È L’INFLAZIONE DI UN MESE. LA TUA PERCENTUALE È LA MEDIA DEL FOI, DI NOVEMBRE, PROVVISORIA',capSize:36,items:[
+  VN('IL TITOLO',520,400,'il titolo spesso',{fs:84,fill:RF_,sub:'INFLAZIONE DI UN MESE',minw:600}),
+  VN('LA TUA %',1400,400,'La tua percentuale',{fs:84,fill:GF_,sub:'MEDIA DELL’INDICE FOI',minw:640}),
+  VT('FISSATA A NOVEMBRE E PROVVISORIA',960,660,'fissata a novembre e provvisoria',AMB,44)]},
+ {at:'Davanti a una cifra',top:'DAVANTI A UNA CIFRA',cap:'DAVANTI A UNA CIFRA CHIEDITI: QUALE INDICE? QUALE PERIODO? UFFICIALE O STIMA?',capSize:40,items:[
+  I('q',[100],300,450,'chiediti'),
+  VT('QUALE INDICE?',1100,300,'quale indice?',GF_,50),
+  VT('QUALE PERIODO?',1100,470,'Quale periodo?',AMB,50),
+  VT('UFFICIALE O STIMA?',1100,640,'È ufficiale o è una stima?',RF_,50)]},
+]);
+// ---------- BLOCCO 35 ----------
+SPECS[35]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'FAI IL CONTO DA SOLO',cap:'FAI IL CONTO DA SOLO, IN TRE PASSI: PASSO 1, PASSO 2, PASSO 3',items:[
+  I('trow',[1500,'LA PENSIONE LORDA MENSILE DAL CEDOLINO','PASSO 1',GF_],960,330,'Passo uno: prendi'),
+  VT('QUELLA PRIMA DELLE TASSE',1000,470,'quella prima delle tasse',AMB,44)]},
+ {at:'Passo due',top:'PASSO 2: LA FASCIA',cap:'PASSO 2: IN QUALE FASCIA SEI? SUPERI CIRCA 2.450 € AL MESE?',items:[
+  I('trow',[1500,'LA PENSIONE LORDA MENSILE DAL CEDOLINO','PASSO 1',GF_],960,300,0.4),
+  I('trow',[1500,'IN QUALE FASCIA SEI?','PASSO 2',AMB],960,470,'Passo due'),
+  VN('≈ 2.450 €',960,700,'duemilaquattrocentocinquanta',{fs:90,fill:GF_,sub:'SUPERI QUESTA SOGLIA AL MESE?',minw:700})]},
+]);
+// ---------- BLOCCO 36 ----------
+SPECS[36]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'PASSO 3: SOTTO SOGLIA',cap:'SOTTO SOGLIA: PENSIONE × 0,03 (IL 3 %) = AUMENTO',items:[
+  VT('SE SEI SOTTO SOGLIA',960,280,'se sei sotto soglia',AMB,44),
+  ...EQ(470,[['num','PENSIONE','moltiplichi per la percentuale'],['op','×','Con il tre per cento'],['num','0,03','zero virgola zero tre',{sub:'IL 3 %'}],['op','=','zero virgola zero tre'],['num','AUMENTO','zero virgola zero tre',{fill:GF_,fs:50}]],56,340),
+  VT('CON IL 3 % MOLTIPLICHI PER 0,03',960,720,'Con il tre per cento',GF_,44)]},
+ {at:'Se sei sopra',top:'SE SEI SOPRA LA SOGLIA',cap:'SOPRA SOGLIA: LA PARTE PIENA + LA PARTE NELLA FASCIA AL 90 % O AL 75 %',capSize:40,items:[
+  I('seg',[640,150,GF_,'PARTE PIENA','AL 100 %'],500,440,'calcoli la parte piena'),
+  VO('+',960,440,['poi aggiungi',0]),
+  I('seg',[640,150,AMB,'PARTE NELLA FASCIA','AL 90 % O AL 75 %'],1420,440,'nella fascia al novanta')]},
+]);
+// ---------- BLOCCO 37 ----------
+SPECS[37]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'UN MINUTO',cap:'CON LA CALCOLATRICE DEL TELEFONO CI METTI UN MINUTO',items:[
+  I('calc',[],560,470,'Con la calcolatrice',1.5),
+  VT('CON LA CALCOLATRICE: UN MINUTO',1330,470,'ci metti un minuto',AMB,44)]},
+ {at:'Quando uscirà',sh:0.4,top:'LA PERCENTUALE UFFICIALE',cap:'CAMBI SOLO QUEL NUMERO E RIFAI IL CONTO',items:[
+  VN('3 %',480,430,'Quando uscirà',{fs:130,minw:420,sub:'ESEMPIO'}),
+  I('arR',[],900,430,'cambi solo quel numero',1),
+  VN('% UFFICIALE',1350,430,'cambi solo quel numero',{fs:90,fill:GF_,minw:560,sub:'DAL DECRETO'}),
+  VT('RIFAI IL CONTO',960,700,'rifai il conto',AMB,50)]},
+ {at:'Ecco perché il metodo',sh:0.5,top:'IL METODO',cap:'IL METODO CONTA PIÙ DELLA CIFRA: VALE OGGI E ANCHE L’ANNO PROSSIMO',capSize:42,items:[
+  I('chk',[110],400,440,'Ecco perché il metodo'),
+  VT('IL METODO CONTA PIÙ DELLA CIFRA',1130,340,'conta più della cifra',GF_,44),
+  VT('VALE OGGI',1130,500,'vale oggi',AMB,44),
+  VT('E VARRÀ ANCHE L’ANNO PROSSIMO',1130,640,'varrà anche l’anno prossimo',GF_,44)]},
+]);
+// ---------- BLOCCO 38 ----------
+SPECS[38]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'IL TEST',cap:'IL TEST: TRE DOMANDE, VERO O FALSO. RISPONDI A VOCE ALTA!',items:[
+  I('circ',['1',GF_],560,430,'tre domande'),I('circ',['2','url(#g_head)'],960,430,['tre domande',0.5]),I('circ',['3',RF_],1360,430,['tre domande',1.0]),
+  VT('VERO O FALSO',960,640,'vero o falso!',AMB,50),
+  VT('RISPONDI A VOCE ALTA',960,770,'Rispondi a voce alta',GF_,44)]},
+ {at:'Domanda uno',top:'DOMANDA 1',cap:'DOMANDA 1: LA RIVALUTAZIONE È UGUALE PER TUTTE LE PENSIONI?',capSize:42,items:[
+  VT('LA RIVALUTAZIONE È UGUALE PER TUTTE LE PENSIONI',960,280,'la rivalutazione è uguale',AMB,40),
+  I('vf',[true],760,440,'Vero o falso?'),I('vf',[false],1160,440,['Vero o falso?',0.3]),
+  I('stamp',['FALSO!',RED_,70],960,630,'Falso!'),
+  VT('SOPRA LA PRIMA SOGLIA PRENDE IL 90 % O IL 75 %',960,810,'Sopra la prima soglia',GF_,40)]},
+]);
+// ---------- BLOCCO 39 ----------
+SPECS[39]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'DOMANDA 2',cap:'DOMANDA 2: LA PERCENTUALE LA DECIDE L’INPS A GENNAIO?',items:[
+  I('circ',['2','url(#g_head)'],240,380,'Domanda due'),
+  VT('LA DECIDE L’INPS, A GENNAIO, GUARDANDO L’INFLAZIONE',1180,380,'la percentuale la decide',AMB,32),
+  I('vf',[true],760,600,'Vero o falso?'),I('vf',[false],1160,600,['Vero o falso?',0.3])]},
+ {at:'Falso!',top:'FALSO!',cap:'LA FISSA UN DECRETO DEI MINISTERI, DI SOLITO A NOVEMBRE: ALL’INIZIO È PROVVISORIA',capSize:38,items:[
+  I('stamp',['FALSO!',RED_,70],400,330,'Falso!'),
+  VT('LA FISSA UN DECRETO DEI MINISTERI',1300,330,'La fissa un decreto',GF_,40),
+  VT('DI SOLITO A NOVEMBRE',1300,470,'di solito a novembre',AMB,40),
+  VT('L’INPS LA APPLICA',1300,610,'L’Inps la applica',GF_,40),
+  VT('ALL’INIZIO È PROVVISORIA, CON CONGUAGLIO',960,780,'E all’inizio è provvisoria',RF_,40)]},
+]);
+// ---------- BLOCCO 40 ----------
+SPECS[40]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'DOMANDA 3',cap:'DOMANDA 3: SE LA RIVALUTAZIONE È IL 3 %, TI ARRIVA IL 3 % IN PIÙ?',capSize:42,items:[
+  I('circ',['3',RF_],230,400,'Domanda tre'),
+  VT('IL 3 % SUL CONTO: TI ARRIVA IL 3 % IN PIÙ?',1090,400,'sul conto ti arriva',AMB,36),
+  I('vf',[true],760,620,'Vero o falso?'),I('vf',[false],1160,620,['Vero o falso?',0.2])]},
+ {at:'Falso!',sh:0.5,top:'FALSO!',cap:'IL 3 % È SUL LORDO. IL NETTO SALE MENO. QUANTE NE HAI AZZECCATE?',capSize:42,items:[
+  I('stamp',['FALSO!',RED_,70],480,360,'Falso!'),
+  VT('IL 3 % È SUL LORDO',1230,320,'sull’importo lordo',AMB,40),
+  VT('IL NETTO SALE MENO',1230,470,'sale meno',GF_,40),
+  VT('QUANTE NE HAI AZZECCATE?',960,720,'Quante ne hai azzeccate',RF_,50)]},
+]);
+// ---------- BLOCCO 41 ----------
+SPECS[41]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'LORDO E NETTO',cap:'LORDO E NETTO: LA DOMANDA CHE SI FANNO TUTTI',items:[
+  VN('LORDO',560,430,'Parliamo di lordo',{fs:100,fill:AMB,sub:'PRIMA DELLE TASSE',minw:560}),
+  VN('NETTO',1360,430,'e netto',{fs:100,fill:GF_,sub:'QUELLO CHE INCASSI',minw:560})]},
+ {at:'Se la pensione lorda sale',top:'+ 60 € LORDI',cap:'SE IL LORDO SALE DI 60 €, UNA PARTE VA IN IRPEF E ADDIZIONALI: SUL CONTO ARRIVA MENO',capSize:36,items:[
+  VN('+ 60 €',400,430,'sale di sessanta euro',{fs:110,fill:AMB,sub:'LORDI',minw:440}),
+  I('arR',[],780,430,'una parte di quei sessanta',1),
+  VT('IRPEF',1330,300,'va in Irpef',RF_,44),
+  VT('ADDIZIONALE REGIONALE',1330,420,'regionale',RF_,40),
+  VT('ADDIZIONALE COMUNALE',1330,540,'comunale',RF_,40),
+  VN('< 60 €',1330,730,'arriva meno di sessanta',{fs:90,fill:GF_,sub:'SUL CONTO',minw:520})]},
+]);
+// ---------- BLOCCO 42 ----------
+SPECS[42]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'QUANTO MENO?',cap:'QUANTO MENO? DIPENDE DA TE',items:[
+  I('q',[85],260,450,'Quanto meno?'),
+  VT('QUANTO PERCEPISCI IN TOTALE',1150,280,'da quanto percepisci',AMB,42),
+  VT('LA REGIONE',1150,420,'dalla regione',GF_,42),
+  VT('IL COMUNE',1150,560,'dal comune',AMB,42),
+  VT('LE DETRAZIONI',1150,700,'dalle detrazioni',GF_,42)]},
+ {at:'Per questo non ti do',top:'NIENTE CIFRA UNICA',cap:'LA CIFRA GIUSTA È NEL TUO CEDOLINO, ALLA VOCE IMPORTO NETTO',items:[
+  I('stamp',['NESSUNA CIFRA UNICA',AMB,50],560,330,'Per questo non ti do'),
+  I('pay',['CEDOLINO','NETTO'],1350,440,'La cifra giusta è nel tuo cedolino',1.1),
+  VT('VOCE: IMPORTO NETTO',1350,740,'importo netto',GF_,42)]},
+]);
+// ---------- BLOCCO 43 ----------
+SPECS[43]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'UNA POSSIBILE NOVITÀ',cap:'NEL DIBATTITO SULLA MANOVRA: CAMBIARE L’IRPEF, ANCHE PER I PENSIONATI',capSize:42,items:[
+  I('doc',['MANOVRA',420,330,GRN,38],430,450,'sulla manovra'),
+  VN('IRPEF',1000,430,'cambiare l’Irpef',{fs:100,fill:AMB,minw:420}),
+  VT('ANCHE PER I PENSIONATI',1420,640,'anche per i pensionati',GF_,40)]},
+ {at:'Ma attenzione',top:'MA ATTENZIONE',cap:'AL MOMENTO È SOLO UNA PROPOSTA, NON È LEGGE',items:[
+  I('warn',[],360,430,'Ma attenzione',0.9),
+  I('stamp',['SOLO UNA PROPOSTA',AMB,56],1150,330,'solo una proposta'),
+  I('stamp',['NON È LEGGE',RED_,56],1150,520,'non è legge')]},
+ {at:'Se passerà',sh:0.5,top:'SE PASSERÀ',cap:'CAMBIERÀ IL NETTO, NON LA RIVALUTAZIONE LORDA',items:[
+  VN('NETTO',540,430,'cambierà il netto',{fs:100,fill:GF_,sub:'CAMBIA',minw:520}),
+  VN('LORDA',1380,430,'non la rivalutazione lorda',{fs:100,minw:520,sub:'RIVALUTAZIONE'}),
+  I('cross',[200,100],1380,430,['non la rivalutazione lorda',0.4])]},
+]);
+// ---------- BLOCCO 44 ----------
+SPECS[44]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'COME CONTROLLI',cap:'CON IL TUO CEDOLINO, SU MAI INPS',items:[
+  I('br',['inps.it',1000,560],620,470,'Come controlli'),
+  I('row',['MAI INPS',820,true],620,380,'su Mai Inps'),
+  I('row',['CEDOLINO DELLA PENSIONE',820,true],620,480,'cedolino'),
+  I('chk',[100],1560,470,'Con il tuo cedolino')]},
+ {at:'Entra su inps punto it',sh:0.5,top:'COME ENTRI',cap:'ENTRA SU INPS.IT CON LO SPID, LA CARTA D’IDENTITÀ ELETTRONICA O LA CARTA NAZIONALE DEI SERVIZI',capSize:34,items:[
+  VT('SPID',960,280,'con lo Spid',GF_,48),
+  VT('CARTA D’IDENTITÀ ELETTRONICA',960,420,'la carta d’identità elettronica',AMB,44),
+  VT('CARTA NAZIONALE DEI SERVIZI',960,560,'la carta nazionale dei servizi',GF_,44),
+  VT('POI: CERCA IL CEDOLINO DELLA PENSIONE',960,730,'cerca il cedolino',RF_,44)]},
+]);
+// ---------- BLOCCO 45 ----------
+SPECS[45]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'CONFRONTA DUE CEDOLINI',cap:'DICEMBRE E GENNAIO: LA DIFFERENZA DELL’IMPORTO LORDO È IL TUO AUMENTO',capSize:40,items:[
+  I('pay',['DICEMBRE','LORDO'],420,450,'quello di dicembre',1),
+  VO('−',770,450,'quello di gennaio'),
+  I('pay',['GENNAIO','LORDO'],1120,450,['quello di gennaio',0.12],1),
+  VO('=',1470,450,'la differenza'),
+  VN('AUMENTO',1700,450,'è il tuo aumento',{fs:44,fill:GF_,minw:240})]},
+ {at:'Poi guarda se compare',top:'LA VOCE DI CONGUAGLIO',cap:'SE C’È UNA VOCE DI CONGUAGLIO È LA CORREZIONE DELL’ANNO PRIMA: VA LETTA A PARTE',capSize:36,items:[
+  I('row',['VOCE: CONGUAGLIO',820,true],700,360,'voce di conguaglio'),
+  VT('LA CORREZIONE DELL’ANNO PRIMA',1130,560,'la correzione dell’anno prima',AMB,42),
+  VT('VA LETTA A PARTE',1130,710,'va letta a parte',GF_,44)]},
+]);
+// ---------- BLOCCO 46 ----------
+SPECS[46]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'RIFAI IL CONTO',cap:'RIFAI IL CONTO CON IL METODO DI PRIMA: SE LA DIFFERENZA TORNA, TUTTO BENE',capSize:40,items:[
+  I('calc',[],420,470,'Rifai il conto',1.3),
+  I('chk',[110],1200,430,'tutto bene'),
+  VT('LA DIFFERENZA TORNA: TUTTO BENE',1200,640,'tutto bene',GF_,44)]},
+ {at:'Se non torna',sh:0.7,top:'SE NON TORNA',cap:'NIENTE PANICO: PRIMA LA FASCIA, POI IL CONGUAGLIO',items:[
+  I('circ',['1',GF_],520,380,'guarda prima la fascia'),VT('LA FASCIA',1150,380,'guarda prima la fascia',GF_,48),
+  I('circ',['2','url(#g_head)'],520,560,'poi il conguaglio'),VT('IL CONGUAGLIO',1150,560,'poi il conguaglio',AMB,48)]},
+ {at:'Se hai ancora dubbi',sh:0.5,top:'ANCORA DUBBI?',cap:'PORTA IL CEDOLINO A UN PATRONATO: DI SOLITO IL SERVIZIO È GRATUITO',capSize:40,items:[
+  I('pay',['CEDOLINO',''],440,450,'porta il cedolino',1),
+  VT('PORTA IL CEDOLINO A UN PATRONATO',1230,380,'a un patronato',AMB,42),
+  VT('DI SOLITO IL SERVIZIO È GRATUITO',1230,540,'è gratuito',GF_,42)]},
+]);
+// ---------- BLOCCO 47 ----------
+SPECS[47]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'I TRE ERRORI PIÙ COMUNI',cap:'ERRORE 3: SPENDERE L’AUMENTO PRIMA DI VEDERE IL CEDOLINO',items:[
+  I('circ',['3',RF_],300,430,'Errore numero tre'),
+  VT('SPENDERE L’AUMENTO PRIMA DI VEDERE IL CEDOLINO',1150,430,'spendere l’aumento',RF_,34)]},
+ {at:'Fino a novembre',top:'PERCHÉ?',cap:'FINO A NOVEMBRE È UNA STIMA; A GENNAIO IL NETTO DIPENDE DA TASSE E CONGUAGLI',capSize:38,items:[
+  VT('FINO A NOVEMBRE: UNA STIMA',960,330,'è una stima',AMB,46),
+  VT('A GENNAIO IL NETTO DIPENDE DA TASSE E CONGUAGLI',960,520,'l’importo netto dipende',GF_,42)]},
+]);
+// ---------- BLOCCO 48 ----------
+SPECS[48]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'ERRORE NUMERO DUE',cap:'ERRORE 2: ASPETTARSI LO STESSO AUMENTO DI UN AMICO O DI UN VICINO',capSize:40,items:[
+  I('circ',['2','url(#g_head)'],220,430,'Errore numero due'),
+  I('med',[],560,430,'di un amico',0.55),I('medm',[],940,430,'o di un vicino',0.55),
+  VT('LO STESSO AUMENTO?',1530,430,'lo stesso aumento',AMB,44)]},
+ {at:'Con fasce diverse',top:'EURO DIVERSI',cap:'FASCE DIVERSE, IMPORTI DIVERSI, SITUAZIONI FISCALI DIVERSE: EURO DIVERSI SUL CONTO',capSize:36,items:[
+  VT('FASCE DIVERSE',560,330,'Con fasce diverse',GF_,44),
+  VT('IMPORTI DIVERSI',1280,330,'importi diversi',AMB,44),
+  VT('SITUAZIONI FISCALI DIVERSE',960,500,'situazioni fiscali diverse',GF_,44),
+  VT('LA STESSA PERCENTUALE: EURO DIVERSI SUL CONTO',960,700,'euro diversi sul conto',RF_,44)]},
+]);
+// ---------- BLOCCO 49 ----------
+SPECS[49]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'ERRORE NUMERO UNO',cap:'ERRORE 1: FIDARSI DELLA PRIMA CIFRA CHE TROVANO',items:[
+  I('circ',['1',RF_],260,430,'E l’errore numero uno'),
+  VT('FIDARSI DELLA PRIMA CIFRA CHE TROVANO',1100,430,'fidarsi della prima cifra',RF_,42)]},
+ {at:'Titoli con il tre',top:'TITOLI SENZA CONTESTO',cap:'TITOLI CON IL 3, IL 4, IL 5 %, SENZA DIRE QUALE INDICE, QUALE PERIODO, SE È UNA STIMA',capSize:36,items:[
+  I('hl',['3 %'],480,330,'Titoli con il tre',1.25),I('hl',['4 %'],960,330,'il quattro',1.25),I('hl',['5 %'],1440,330,'il cinque per cento',1.25),
+  VT('QUALE INDICE?',480,540,'quale indice',GF_,44),VT('QUALE PERIODO?',1070,540,'quale periodo',AMB,44),VT('È UNA STIMA?',960,690,'se è una stima',RF_,44)]},
+ {at:'Se manca questo',sh:0.5,top:'NON È UNA NOTIZIA',cap:'SE MANCA QUESTO, NON È UNA NOTIZIA: È SOLO UN TITOLO',items:[
+  I('stamp',['NON È UNA NOTIZIA',RED_,64],960,400,'non è una notizia'),
+  VT('È SOLO UN TITOLO',960,620,'è solo un titolo',AMB,50)]},
+]);
+// ---------- BLOCCO 50 ----------
+SPECS[50]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'RICAPITOLIAMO',cap:'1: POTERE D’ACQUISTO, INDICE FOI   2: DECRETO DI NOVEMBRE   3: FASCE 100 / 90 / 75 %',capSize:36,items:[
+  I('circ',['1',GF_],180,340,'Uno:'),VT('DIFENDE IL POTERE D’ACQUISTO: INDICE FOI',1080,340,'difende il potere',GF_,36),
+  I('circ',['2','url(#g_head)'],180,520,'Due:'),VT('DECRETO DI NOVEMBRE: PROVVISORIA, CON CONGUAGLIO',1080,520,'la fissa un decreto',AMB,36),
+  I('circ',['3',RF_],180,700,'Tre:'),VT('SI APPLICA PER FASCE: 100 %, 90 %, 75 %',1080,700,'si applica per fasce',RF_,36)]},
+]);
+// ---------- BLOCCO 51 ----------
+SPECS[51]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'E MARTA?',cap:'MARTA: 1.500 € × 3 % = 45 € IN PIÙ AL MESE, FASCIA PIENA',items:[
+  I('med',[],170,440,'E Marta?',0.6),
+  ...EQ(440,[['num','1.500 €','millecinquecento euro lordi'],['op','×','al tre per cento'],['num','3 %','al tre per cento'],['op','=','quarantacinque euro'],['num','45 €','quarantacinque euro',{fill:GF_}]],76,260).map(it=>({...it,x:it.x+90})),
+  VT('FASCIA PIENA',1500,640,'fascia piena',GF_,40)]},
+ {at:'Chi supera la soglia',sh:0.5,top:'CHI SUPERA LA SOGLIA',cap:'CHI SUPERA LA SOGLIA NE PRENDE MENO, E IL NETTO È DIVERSO',items:[
+  VT('CHI SUPERA LA SOGLIA NE PRENDE MENO',960,380,'ne prende meno',AMB,46),
+  VT('IL NETTO È DIVERSO',960,560,'il netto è diverso',GF_,46)]},
+ {at:'La percentuale vera arriva',sh:0.4,top:'A NOVEMBRE',cap:'LA PERCENTUALE VERA ARRIVA A NOVEMBRE. TU HAI GIÀ IL METODO!',items:[
+  I('cal',['NOVEMBRE','',150,'LA % VERA'],420,490,'La percentuale vera arriva',0.85),
+  I('chk',[110],1100,450,'Tu però hai già il metodo'),
+  VT('TU HAI GIÀ IL METODO!',1330,700,'hai già il metodo',GF_,46)]},
+]);
+// ---------- BLOCCO 52 ----------
+SPECS[52]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'ADESSO TOCCA A TE',cap:'SCRIVIMI NEI COMMENTI: QUANTO PRENDI DI PENSIONE LORDA E QUANTO TI ASPETTI DI AUMENTO?',capSize:36,items:[
+  I('bubble',[560,300],330,420,'Scrivimi nei commenti',0.9),
+  VT('QUANTO PRENDI DI PENSIONE LORDA?',1330,330,'quanto prendi di pensione lorda',AMB,40),
+  VT('QUANTO TI ASPETTI DI AUMENTO?',1330,490,'quanto ti aspetti di aumento',GF_,40),
+  VT('NON SERVE L’IMPORTO ESATTO',1330,650,'Non serve l’importo esatto',GF_,40)]},
+ {at:'Leggo tutto',top:'LE VOSTRE DOMANDE',cap:'LEGGO TUTTO, E LE VOSTRE DOMANDE DIVENTANO I PROSSIMI VIDEO!',items:[
+  VT('LEGGO TUTTO',960,330,'Leggo tutto',AMB,56),
+  VT('LE VOSTRE DOMANDE DIVENTANO I PROSSIMI VIDEO',960,520,'diventano i prossimi video',GF_,48)]},
+]);
+// ---------- BLOCCO 53 ----------
+SPECS[53]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'ISCRIVITI',cap:'ISCRIVITI A CONTI IN PENSIONE E ATTIVA LA CAMPANELLA',items:[
+  I('btn',['ISCRIVITI'],700,420,'Iscriviti a Conti in Pensione'),
+  I('bell',[],1300,420,'attiva la campanella',1.4),
+  VT('CONTI IN PENSIONE',700,600,'Conti in Pensione e',AMB,44)]},
+ {at:'quando uscirà il decreto',top:'QUANDO ESCE IL DECRETO',cap:'QUANDO ESCE IL DECRETO, TI SPIEGO SUBITO COSA CAMBIA PER LA TUA PENSIONE, CON FONTI UFFICIALI',capSize:34,items:[
+  I('doc',['DECRETO',380,300,GRN,40],400,450,'quando uscirà il decreto'),
+  VT('TI SPIEGO SUBITO COSA CAMBIA',1250,380,'ti spiego subito',GF_,42),
+  VT('CON FONTI UFFICIALI',1250,540,'con fonti ufficiali',AMB,42)]},
+]);
+// ---------- BLOCCO 54 (slide finale con il disclaimer, in chiaro) ----------
+SPECS[54]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'DISCLAIMER',cap:'GRAZIE PER AVER GUARDATO FINO ALLA FINE… E ALLA PROSSIMA!',items:[
+  VT('INFORMAZIONI A SCOPO DIVULGATIVO',960,250,'Le informazioni di questo video',AMB,50),
+  VT('NON SOSTITUISCONO LA CONSULENZA DI UN PATRONATO O DELL’INPS',960,380,'non sostituiscono',GF_,34),
+  VT('GLI IMPORTI SONO ESEMPI, NON PREVISIONI',960,510,'Gli importi sono esempi',AMB,50),
+  VT('VERIFICA SEMPRE SUI CANALI UFFICIALI, COME INPS.IT',960,640,'Verifica sempre',GF_,36),
+  VT('GRAZIE PER AVER GUARDATO!',960,780,'Grazie per aver guardato',RF_,56)]},
+]);
