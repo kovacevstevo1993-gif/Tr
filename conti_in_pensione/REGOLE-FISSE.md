@@ -98,3 +98,5 @@
 - Video lungo 3 = RIVALUTAZIONE 2027 (scelto dall'utente). Prefisso file: V3-blocco01.mp4...
 - Fare ricerche su vidIQ su TUTTO (utente le ha ordinate: crediti ok): come lavorano gli altri su argomenti simili, come sono strutturati, video virali della nicchia pensioni, per far diventare virale anche il nostro.
 - Il video deve essere più PROFESSIONALE, più CURIOSO e spiegato BENISSIMO, sia con le slide sia con la voce.
+- (utente, 06/10/2026) Dopo le ricerche sugli altri canali/vidIQ, deve dire CLAUDE se il copione va bene e correggerlo da solo in base alla ricerca: NON chiedere all'utente "va bene?". L'utente ha fatto fare le ricerche apposta. Il copione va confrontato con i video virali: numeri/risposta subito, poi spiegazione.
+- (utente, 06/10/2026) Le chat non vanno riempite inutilmente: risposte corte; quando la chat è piena si passa a una nuova con kit e messaggio di ripartenza.
