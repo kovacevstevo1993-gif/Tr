@@ -52,8 +52,8 @@ Fatti verificati: RICERCHE-VIDIQ.md sezioni 7, 8e, 8f, 8g. Modello: video virali
 48 Twelve. Your receipts, online. Costco keeps your in warehouse receipts for two years. Sign in to your Costco account, select Orders and Purchases, and open the In Warehouse tab.
 49 Why does this matter? Because the receipt is what you need for a return, a price adjustment, and the Concierge phone number. No more looking for a faded paper in a drawer.
 50 Let me say it plainly. None of these twelve things is a discount for your age. They are tools that Costco already offers to every member, and many seniors never use them because nobody explains them.
-51 Now, two more that are worth knowing. They are not free, so I will tell you the costs plainly.
-52 Also, a quick note on money. Seniors on a fixed income should never feel pushed to spend. Costco membership is worth it only if you will really use these things, and you are the only one who can judge that.
+51 Also, a quick note on money. Seniors on a fixed income should never feel pushed to spend. Costco membership is worth it only if you will really use these things, and you are the only one who can judge that.
+52 Now, two more that are worth knowing. They are not free, so I will tell you the costs plainly.
 53 Thirteen. Vaccines at the pharmacy. Costco's pharmacists give many C D C recommended vaccines, including the flu shot, covid boosters, shingles and pneumonia vaccines.
 54 You can walk in, depending on the wait, or book through the Costco app. Non members are welcome to use the pharmacy too. Ask the pharmacist what the vaccine costs for you, and whether your insurance covers it.
 55 Fourteen. The Executive membership. And here is the honest math. It costs sixty five dollars more than the basic card.
