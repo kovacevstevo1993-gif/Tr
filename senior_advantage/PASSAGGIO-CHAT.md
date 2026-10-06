@@ -166,3 +166,9 @@ Concorrenti: un video sulle regole SNAP per over 60 ha fatto 509.000 view da un 
 
 ## MONETIZZAZIONE
 Dal 1/2/2027 servono 8.000 ore o 20 milioni di view Short (oggi 1.000 iscritti + 4.000 ore): servono i video lunghi.
+
+## ID VIDEO PUBBLICATI E CAPITOLI (verificato il 06/10/2026 leggendo YouTube)
+- Video lungo 1: id Tqw_9LMUJYE. Titolo pubblicato SENZA due punti e parentesi: "Senior Discounts Start at 55, Not 65 12 Hidden Places Most Never Ask". Descrizione corretta con 23 capitoli (tutti link), ma YouTube NON ha creato i segmenti nella barra (nessun chapterRenderer).
+- Video lungo 2 (SNAP): id KDYxb4tKm1Q. Pubblicato, 33 capitoli, i segmenti nella barra funzionano.
+- Differenza trovata: nel video 1 i titoli dei capitoli hanno "#" ("#1 Denny's and IHOP") e parentesi; nel video 2 no. Causa non certa. Fix da provare: ri-salvare la descrizione del video 1 con i capitoli senza "#".
+- Filigrana canale: senior_advantage/filigrana-senior-advantage.png (codice code/watermark.py), da caricare in Studio > Personalizzazione > Branding.
