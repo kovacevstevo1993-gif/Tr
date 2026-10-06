@@ -56,3 +56,4 @@ Blocco 53: fine 12:30 + 13f = 22513 fotogrammi (durata 311 = 10.37 s)
 Blocco 54: fine 12:46 + 16f = 22996 fotogrammi (durata 483 = 16.10 s)
 (Blocco 40 corretto a 500 fotogrammi. Le durate degli altri blocchi restano quelle degli screenshot, l'utente sposta i blocchi sulla timeline: ogni blocco parte dalla fine del precedente.)
 (arrivati blocchi 1-54, tutti. Totale video 12:46 + 16f = 22996 fotogrammi)
+CLIP FATTE 06-10-2026/07-10: clip/V3-blocco01..54.mp4 (1920x1080, 30 fps, tutti i fotogrammi controllati con qa_slide.py + verifica fotogrammi/durate con ffprobe + ultimi 0,6 s fermi). Slide dei blocchi 6-54 sincronizzate sulla voce: sorgenti/specs-v3.js + b-sync.js (python3 build.py N; python3 prev.py N; python3 render.py N).
