@@ -6,6 +6,8 @@
 
 **"TUTTO" = VERAMENTE TUTTO (04/10/2026): quando l'utente dice "tutto" (salvare, passare alla chat nuova, leggere le altre chat) significa ogni singola riga, intera, senza riassumere, senza filtrare per argomento, senza tagliare. Esempio: passaggio chat = file di stato + testo INTERO di tutte le chat del progetto in senior_advantage/chat/ (esportate con list_sessions/list_events). Mai a meta'.**
 
+**MAPPA DI TUTTO IL PROGETTO (4 progetti, rami, file di stato): /PASSAGGIO-GENERALE.md. "Tutto" / "dalla A alla Z" = tutto il progetto, si fa senza chiedere "vuoi che lo faccia?" (07/10/2026).**
+
 Tre canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o dati.
 - `senior_advantage/` — **The Senior Advantage** (@TheSeniorAdvantage): sconti, benefici e aiuti per over 60 USA. Slide verde bosco e avorio. Short verticali 1080x1920, video lunghi 1920x1080.
 - `money_backstory/` — **The Money Backstory** (@TheMoneyBackstoryUSA): pensione USA over 50 (Social Security, Medicare, tasse). Slide blu navy e oro con cornice 3D. Per iniziare in una chat nuova: leggere `money_backstory/START-QUI-NUOVA-CHAT.md`.
