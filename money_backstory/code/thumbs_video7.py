@@ -24,12 +24,12 @@ def A():
     """A: rosso/verde (stile video 1-4). $500,000 -> $1,625 al mese."""
     im = bg(660, 600); d = ImageDraw.Draw(im)
     label(d, "RETIRE WITH $500,000?", maxw=900)
-    f1 = fit_font(d, "$500,000", 560, 200, True); f2 = fit_font(d, "$1,625", 560, 230, True)
-    otext(d, "$500,000", f1, 320, 300, stroke=10)
-    d.text((320, 410), "SAVED", font=P(70, True), fill=(200, 255, 215), anchor="mm", stroke_width=7, stroke_fill=BLK)
-    otext(d, "$1,625", f2, 965, 290, fill=WHITE, stroke=11)
-    d.text((965, 415), "A MONTH?!", font=P(78, True), fill=YEL, anchor="mm", stroke_width=8, stroke_fill=BLK)
-    pts = [(560, 285), (620, 285), (620, 255), (690, 305), (620, 355), (620, 325), (560, 325)]
+    f1 = fit_font(d, "$500,000", 490, 200, True); f2 = fit_font(d, "$1,625", 520, 230, True)
+    otext(d, "$500,000", f1, 285, 300, stroke=10)
+    d.text((285, 410), "SAVED", font=P(70, True), fill=(200, 255, 215), anchor="mm", stroke_width=7, stroke_fill=BLK)
+    otext(d, "$1,625", f2, 960, 290, fill=WHITE, stroke=11)
+    d.text((960, 415), "A MONTH?!", font=P(78, True), fill=YEL, anchor="mm", stroke_width=8, stroke_fill=BLK)
+    pts = [(548, 285), (590, 285), (590, 262), (640, 305), (590, 348), (590, 325), (548, 325)]
     d.polygon(pts, fill=YEL); d.line(pts + [pts[0]], fill=BLK, width=6, joint="curve")
     pill(d, "THE REAL NUMBER", y0=545, h=130, maxw=860)
     return im
