@@ -165,7 +165,7 @@ def draw11(img, t):
         burst(img, t, ts[6] + 1.2, 1490, 682, n=8, seed=3, rad=130)
     ex = pop(t, ts[7], 0.45)
     if ex[2] > 0:
-        put(img, pill_spr("ASK THEM TO EXPLAIN THE DIFFERENCE", 30, 790, 56, IVORY, GREEN_D, GOLD), 1420, 754, scale=ex[0], alpha=ex[1], shadow=6)
+        put(img, pill_spr("ASK THEM TO EXPLAIN THE DIFFERENCE", 30, 790, 56, IVORY, GREEN_D, GOLD), 1420, 742, scale=ex[0], alpha=ex[1], shadow=6)
     sp = pop(t, ts[8], 0.5)
     if sp[2] > 0:
         put(img, strip11(), 960, 915, scale=sp[0], alpha=sp[1], shadow=10)
