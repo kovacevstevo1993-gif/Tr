@@ -1,0 +1,54 @@
+// ===== V3 BLOCCO 1 (435 fotogrammi = 14,50 s): hook, Marta e i 1.500 euro =====
+const SB=[];const TOT=435/30;
+SB[0]={s:0,e:5.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'MARTA');
+ o.m=el('g',{},g);medal(o.m,true);
+ o.tg=el('g',{},g);tag(o.tg,'MARTA',300,'url(#g_red)','#fff',44);
+ o.ps=el('g',{},g);payslip(o.ps,'PENSIONE','1.500 €');
+ o.ar=el('g',{},g);arrowRight(o.ar,AMB);
+ o.lb=el('g',{},g);tag(o.lb,'LORDI AL MESE',520,AMB,'#5A3300',44);
+ o.cap=el('g',{},g);cap(o.cap,'MARTA PRENDE MILLECINQUECENTO EURO LORDI DI PENSIONE',46);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ T(o.m,560,450,0,0.9*pop(t,0.2,0.9));
+ T(o.tg,560,690,0,pop(t,0.9,1.5));
+ T(o.ar,960,450,0,0.9*pop(t,1.5,2.1));
+ T(o.ps,1360,450,0,1.05*pop(t,2.0,2.8));
+ T(o.lb,1360,750,0,pop(t,2.9,3.5));
+ T(o.cap,960,950,0,pop(t,0.4,1.1));
+ }};
+SB[1]={s:5.0,e:10.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'A GENNAIO');
+ o.cal=el('g',{},g);o.cc=calendarPage(o.cal,'GENNAIO','+ ?',200,'RIVALUTAZIONE');
+ o.q1=el('g',{},g);o.q1a=qMark(o.q1,90);
+ o.p1=el('g',{},g);bigNum(o.p1,'3 % ?',110,'url(#g_paper)');
+ o.p2=el('g',{},g);bigNum(o.p2,'45 € ?',110,'url(#g_paper)');
+ o.tg=el('g',{},g);tag(o.tg,'QUANTO IN PIÙ SI ASPETTA?',860,AMB,'#5A3300',46);
+ o.cap=el('g',{},g);cap(o.cap,'A GENNAIO ARRIVA LA RIVALUTAZIONE: QUANTO IN PIÙ SI ASPETTA?',46);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ T(o.cal,560,190,0,0.95*pop(t,0.2,0.9));
+ T(o.p1,1300,350,0,pop(t,1.4,2.0));
+ T(o.p2,1300,570,0,pop(t,2.2,2.8));
+ T(o.q1,1640,300,0,0.8*pop(t,1.8,2.4));
+ T(o.tg,1300,760,0,pop(t,3.0,3.6));
+ T(o.cap,960,950,0,pop(t,0.3,0.9));
+ }};
+SB[2]={s:10.0,e:14.5,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'ASPETTA A RISPONDERE');
+ o.w=el('g',{},g);warn(o.w);
+ o.p1=el('g',{},g);bigNum(o.p1,'3 %  =  45 €',100,'url(#g_paper)');
+ o.x=el('g',{},g);el('path',{d:'M-330 -110 L330 110 M330 -110 L-330 110',stroke:RED_,'stroke-width':30,'stroke-linecap':'round',opacity:.92},o.x);
+ o.tg=el('g',{},g);tag(o.tg,'IL CONTO PER MOLTI È PIÙ STRANO!',960,RED_,'#fff',50);
+ o.cap=el('g',{},g);cap(o.cap,'IL CONTO, PER MOLTI, È PIÙ STRANO DI COSÌ!',50);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ T(o.w,960,330,0,0.8*pop(t,0.2,0.8));
+ T(o.p1,960,620,0,pop(t,0.8,1.4));
+ T(o.x,960,620,0,pop(t,1.6,2.1)*0.95);
+ T(o.tg,960,810,0,pop(t,2.3,2.9));
+ T(o.cap,960,950,0,pop(t,0.2,0.8));
+ }};

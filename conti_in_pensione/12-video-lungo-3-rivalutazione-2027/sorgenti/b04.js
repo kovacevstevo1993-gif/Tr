@@ -1,0 +1,52 @@
+// ===== V3 BLOCCO 4 (429 fotogrammi = 14,30 s): test, Mai Inps, inflazione =====
+const SB=[];const TOT=429/30;
+SB[0]={s:0,e:4.6,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'IL TEST');
+ o.q=[1,2,3].map(i=>{const c=el('g',{},g);
+  el('rect',{x:-230,y:-150,width:460,height:320,rx:34,fill:'url(#g_paper)',filter:'url(#g_sh)'},c);
+  const n=el('g',{},c);n.setAttribute('transform','translate(0 -214)');circN(n,52,String(i),'url(#g_head)');
+  txt(c,'DOMANDA',0,-10,44,INK,'900');
+  const v=el('g',{},c);v.setAttribute('transform','translate(-112 95) scale(0.9)');vf(v,true);const f=el('g',{},c);f.setAttribute('transform','translate(112 95) scale(0.9)');vf(f,false);return c;});
+ o.tg=el('g',{},g);tag(o.tg,'VERO O FALSO',560,AMB,'#5A3300',48);
+ o.cap=el('g',{},g);cap(o.cap,'RESTA FINO ALLA FINE: C’È UN TEST DI TRE DOMANDE, VERO O FALSO',46);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ o.q.forEach((c,i)=>T(c,[420,960,1500][i],510,0,1.1*pop(t,0.5+i*0.6,1.1+i*0.6)));
+ T(o.tg,960,760,0,pop(t,2.6,3.2));
+ T(o.cap,960,950,0,pop(t,0.2,0.8));
+ }};
+SB[1]={s:4.6,e:9.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'MAI INPS');
+ o.br=el('g',{},g);browser(o.br,'inps.it',1000,560);
+ o.r1=el('g',{},g);row(o.r1,'MAI INPS',0,0,820,true);
+ o.r2=el('g',{},g);row(o.r2,'CEDOLINO DELLA PENSIONE',0,0,820,true);
+ o.r3=el('g',{},g);row(o.r3,'IMPORTO LORDO',0,0,820,true);
+ o.mg=el('g',{},g);magnifier(o.mg);
+ o.tg=el('g',{},g);tag(o.tg,'DOVE CONTROLLARE L’AUMENTO',760,AMB,'#5A3300',44);
+ o.cap=el('g',{},g);cap(o.cap,'TI MOSTRO DOVE CONTROLLARE L’AUMENTO SUL TUO CEDOLINO, SU MAI INPS',44);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ T(o.br,860,470,0,pop(t,0.2,0.9));
+ T(o.r1,860,370,0,pop(t,0.9,1.4));T(o.r2,860,470,0,pop(t,1.4,1.9));T(o.r3,860,570,0,pop(t,1.9,2.4));
+ T(o.mg,1560,500,0,pop(t,2.4,3.0));
+ T(o.tg,860,810,0,pop(t,3.0,3.5));
+ T(o.cap,960,950,0,pop(t,0.2,0.8));
+ }};
+SB[2]={s:9.4,e:14.3,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'INFLAZIONE E PENSIONE');
+ o.a=el('g',{},g);bigNum(o.a,'4,2 %',200,'url(#g_red)','INFLAZIONE DI SETTEMBRE','#fff');
+ o.ne=el('g',{},g);el('circle',{r:80,fill:'#fff',stroke:AMB,'stroke-width':10,filter:'url(#g_sh)'},o.ne);txt(o.ne,'≠',0,34,110,INK,'900');
+ o.b=el('g',{},g);bigNum(o.b,'?',200,'url(#g_badge)','LA TUA PENSIONE','#fff');
+ o.tg=el('g',{},g);tag(o.tg,'NON È LA STESSA PERCENTUALE',860,AMB,'#5A3300',46);
+ o.cap=el('g',{},g);cap(o.cap,'LA INFLAZIONE AL QUATTRO VIRGOLA DUE NON È LA PERCENTUALE DELLA TUA PENSIONE',40);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ T(o.a,500,440,0,pop(t,0.3,1.0));
+ T(o.ne,960,440,0,pop(t,1.2,1.8));
+ T(o.b,1420,440,0,pop(t,1.8,2.5));
+ T(o.tg,960,780,0,pop(t,2.9,3.5));
+ T(o.cap,960,950,0,pop(t,0.2,0.8));
+ }};
