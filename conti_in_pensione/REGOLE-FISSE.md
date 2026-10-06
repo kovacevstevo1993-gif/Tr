@@ -100,3 +100,8 @@
 - Il video deve essere più PROFESSIONALE, più CURIOSO e spiegato BENISSIMO, sia con le slide sia con la voce.
 - (utente, 06/10/2026) Dopo le ricerche sugli altri canali/vidIQ, deve dire CLAUDE se il copione va bene e correggerlo da solo in base alla ricerca: NON chiedere all'utente "va bene?". L'utente ha fatto fare le ricerche apposta. Il copione va confrontato con i video virali: numeri/risposta subito, poi spiegazione.
 - (utente, 06/10/2026) Le chat non vanno riempite inutilmente: risposte corte; quando la chat è piena si passa a una nuova con kit e messaggio di ripartenza.
+
+## REGOLA N.8 (utente, 06/10/2026): OGNI CHAT NUOVA DEVE SAPERE GIA' TUTTO DEL PROGETTO, DALLA A ALLA Z
+- Se un file/kit/chat non e' tra gli allegati, trovarlo DA SOLI (rami del repo `git fetch` + `git ls-tree`, tool list_sessions/list_events) e leggerlo; mai dire "non l'ho ricevuto" e aspettare. L'utente non deve rimandare niente.
+- Dal 06/10/2026 TUTTO il progetto sta in questo ramo (`claude/trusting-mendel-d1bg54`, cartella conti_in_pensione/): cartelle 00-12 (canale, short 1-4, video lungo 1-3, kit, sorgenti, qa), chat intere in `07-KIT-COMPLETO/chat/chat-completa.md` (chat 0), `10-KIT-COMPLETO-V2/chat/` (chat 1 e 2), `12-KIT-05-10/chat-sessione-3-completa.md`, `chat/chat-sessione-4-completa.md`; stato in `12-KIT-05-10/00-LEGGIMI-PRIMA.md` + `STATO-06-10-2026.md`. Il vecchio branch con tutto: youthful-einstein (00-07), wizardly-galileo (06,08,09,10), new-session-79n9mt (09,11,12-KIT), eager-davinci (video 3).
+- Quando i blocchi del copione sono richiesti: rimandarli SEMPRE in chat, numerati, ognuno nel suo riquadro.
