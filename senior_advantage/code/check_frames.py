@@ -8,7 +8,9 @@ mod = importlib.import_module(sys.argv[1]); b = int(sys.argv[2])
 from PIL import Image
 import eng2
 W, H = eng2.W, eng2.H
-mod.ambient = lambda *a, **k: None
+for _m in list(sys.modules.values()):
+    if _m is not None and hasattr(_m, 'ambient') and getattr(_m, '__name__', '').startswith(('long3', 'eng2')):
+        _m.ambient = lambda *a, **k: None
 n = mod.DUR[b]
 fn = mod.DRAW[b]
 prev = None; bad = []; hist = []; minm = 9999
