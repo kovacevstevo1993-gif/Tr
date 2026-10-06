@@ -13,6 +13,8 @@ Se sei un Claude in una chat nuova: leggi questo file, poi `CLAUDE.md` (regole p
 - `senior_advantage/`: ALTRO canale, separato. Non mescolare.
 
 
+**MODELLO UNICO (06/10): per i video NUOVI (dall'8) usare SOLO `money_backstory/modello-unico/` (modello_unico.py + MODELLO-UNICO.md). Video 1-7 non si rifanno.**
+
 ## STATO AL 06/10/2026 (fine sessione "video 7")
 - Branch di lavoro: `claude/lucid-cerf-4jmcl8` (NON unito a main). Leggere PRIMA `money_backstory/REGOLE-UTENTE-05-10.md` (regole dell'utente alla lettera) e `CLAUDE.md`.
 - VIDEO 6 "2027 Cola": slide 30 blocchi consegnate. Testi di pubblicazione (titolo, descrizione con capitoli, tag, commento) FATTI in `kit-02-10/07-testi-pubblicazione/video6-2027-cola.md` (consegnati). Link finale nella descrizione -> video 1 (come video 3 e 5). MINIATURA A/B: ne ho fatte 4 versioni in `miniature_video6/` + `code/thumbs_video6.py`, l'utente le ha giudicate brutte ("fanno schifo", "non attirano curiosita'"): ultima versione = A "+$864 vs -$2.435 Medicare" e B "1 dollaro su 10". NON approvata. Aspettare la sua frase/idea; stile: numeri grandi, curiosita' forte, coerente con i video 1-5, tutto a codice (niente crediti), controllare a vista prima di inviare.
