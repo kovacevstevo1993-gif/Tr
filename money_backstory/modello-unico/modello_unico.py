@@ -19,6 +19,14 @@ from v7b6_15 import fit, stage, card_, eq, P2, pill_last, sp, ring_, bars3, CUR,
 from v7b2_5 import tracker, numcard, ic_med, ic_ss, ic_coins, ic_time, ic_levers
 from v7b46_53 import dashed, dashed_circle, warn, thumb
 
+from sync_voce import Voice
+_V = {'v': None}; CUE = {'blk': None, 't0': 0.0}
+def cue(phrase):
+    """Istante (s dall'inizio della SLIDE) in cui la voce dice `phrase` (parole del copione). Mai oltre l'80% della slide.
+    Se manca il file di sincronia: errore (non si stima piu' a occhio)."""
+    if _V['v'] is None: raise SystemExit('manca il file di sincronia voce (sync_voce.py): niente audio, niente slide')
+    return max(0.15, min(_V['v'].at(CUE['blk'], phrase) - CUE['t0'], LASTA()))
+
 # ---- POSIZIONI FISSE (uguali in tutti i video) ----
 TITLE_Y = 90          # titolo Gloock oro, centrato, size 56-64 (stage lo fa)
 PILL_Y = 800          # pillola-didascalia grande: SEMPRE l'ultimo elemento, compare all'80%
@@ -50,12 +58,15 @@ def check80(fn, n, first=0.8):
     a = np.asarray(fn(n / 30 * 0.84).convert('RGB'), dtype='int16'); b = np.asarray(fn(n / 30 * 0.97).convert('RGB'), dtype='int16')
     diff = np.abs(a - b).max(axis=2); return float((diff > 40).mean())   # frazione di pixel cambiati dopo l'84%
 
-def run(SPEC, SLIDES, prefix, OUT, argv=None):
+def run(SPEC, SLIDES, prefix, OUT, argv=None, voice=None):
     """python3 v8b1_5.py preview|render|check <blocco> [slide,slide]. SPEC[blocco]=[fotogrammi per slide] (somma = durata dallo screenshot)."""
     argv = argv or sys.argv
     mode = argv[1]; blk = int(argv[2]); sel = [int(x) for x in argv[3].split(',')] if len(argv) > 3 else None
     os.makedirs(OUT, exist_ok=True)
+    if voice: _V['v'] = Voice(voice)
+    CUE['blk'] = blk; off = 0
     for i, (fn, f) in enumerate(zip(SLIDES[blk], SPEC[blk]), 1):
+        CUE['t0'] = off / 30; off += f
         if sel and i not in sel: continue
         CUR['D'] = f / 30
         if mode == 'preview':

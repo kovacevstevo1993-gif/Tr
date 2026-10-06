@@ -17,3 +17,11 @@ Regola dell'utente: i video devono essere fatti tutti allo stesso modo. Da qui i
 - Loghi/font: solo file veri del repo (`kit-02-10/06-immagini/logo/logo-the-money-backstory-pro2.png`, `kit-02-10/08-font`).
 - Controllo prima di consegnare: `check`, poi fotogrammi a inizio, meta', 80%, fine di OGNI mp4 guardati a vista; conteggio fotogrammi = SPEC.
 - Durate: SOLO dagli screenshot della timeline dell'utente (fine voce di ogni blocco).
+
+## SINCRONIA CON LA VOCE (obbligatoria dal video 8)
+- Serve l'AUDIO della voce (tutto il video, mp3/wav/mp4 esportato da CapCut). Senza audio non si fanno le slide.
+- `python3 sync_voce.py voce.mp3 copione.md sync.json fine_blocchi.txt` misura quando la voce dice ogni parola (faster-whisper in locale, gratis, nessun credito). `fine_blocchi.txt` = fine voce in fotogrammi dagli screenshot dell'utente (una riga per blocco).
+- `Voice(sync.json).plan(blocco, n)` propone SPEC: tagli delle slide ai confini delle frasi, somma = durata del blocco.
+- Nelle slide: `cue('parola chiave del copione')` = istante in cui la voce la dice (mai oltre l'80%); ogni elemento compare con il suo cue, la didascalia finale con l'ultimo.
+- `test_sync.py` = esempio funzionante, provato con una voce di prova (copione video 7, blocchi 1-3: 84% parole agganciate, le altre sono i numeri scritti in lettere e vengono interpolate).
+- Dopo il render: a vista i fotogrammi dei punti in cui la voce dice le parole chiave (la slide deve gia' mostrare l'oggetto).
