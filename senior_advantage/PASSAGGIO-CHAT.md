@@ -192,3 +192,5 @@ Passo 6 in corso: Video correlato sugli short, uno alla volta. Sconti (XCRw0E4eT
 Regola: verificare SEMPRE su YouTube (curl innertube /next, /oembed, browse) ogni passo fatto dall'utente prima di dare il successivo.
 Passo 6 FATTO (06/10/2026): Video correlato impostato su tutti i 6 short (sconti -> video 1; SNAP, CSFP, LIHEAP, Meals on Wheels -> video SNAP).
 Passo 7 in corso: descrizioni degli short 1-5 pubblicati da rifare con "Disclaimer:" e senza https (modello MODELLO-PACCHETTO-SHORT.md), uno alla volta: SNAP, LIHEAP, Meals on Wheels, sconti (2).
+Passo 7 FATTO e verificato su YouTube (06/10/2026): descrizioni dei 6 short con "Disclaimer:" e senza https (SNAP, LIHEAP, Meals on Wheels, sconti x2, CSFP).
+Prossimo passo 8: nuovo lungo con marchio famoso (Costco), formato "X Is Hiding N Discounts From Seniors Over 60 (Here's Every One)", poi lungo CSFP con scatola vera. Gancio nuovo, slide piu dettagliate.
