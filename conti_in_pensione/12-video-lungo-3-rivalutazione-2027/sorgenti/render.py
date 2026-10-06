@@ -2,7 +2,7 @@ import sys,subprocess,os
 from playwright.sync_api import sync_playwright
 H=os.path.dirname(os.path.abspath(__file__))
 # fotogrammi a 30 fps, fine blocco letta dalle timeline CapCut (DURATE.txt)
-FR={1:435,2:416,3:436,4:429,5:405}
+import json;FR={int(k):v for k,v in json.load(open(os.path.join(H,"durate.json"))).items()}
 b=int(sys.argv[1]);mode=sys.argv[2] if len(sys.argv)>2 else 'video'
 with sync_playwright() as p:
     br=p.chromium.launch(executable_path='/opt/pw-browsers/chromium-1194/chrome-linux/chrome',args=['--no-sandbox']);pg=br.new_page(viewport={'width':1920,'height':1080})
