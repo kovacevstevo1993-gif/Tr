@@ -25,4 +25,9 @@ Blocco 22: fine 05:15 + 23f = 9473 (durata 447 = 14,90 s)
 Blocco 23: fine 05:28 + 26f = 9866 (durata 393 = 13,10 s)
 Blocco 24: fine 05:43 + 12f = 10302 (durata 436 = 14,53 s)
 Blocco 25: fine 05:55 + 28f = 10678 (durata 376 = 12,53 s)
-(arrivati blocchi 1-25; mancano 26-54. L'utente manda 5 screenshot alla volta fino al blocco 30. Velocita' voce circa 15-17 caratteri/s)
+Blocco 26: fine 06:08 + 19f = 11059 fotogrammi (durata 381 = 12,70 s)
+Blocco 27: fine 06:20 + 17f = 11417 (durata 358 = 11,93 s)
+Blocco 28: fine 06:35 + 26f = 11876 (durata 459 = 15,30 s) [riga sul segno 26f]
+Blocco 29: fine 06:49 + 30f (= 06:50) = 12300 (durata 424 = 14,13 s)
+Blocco 30: fine 07:03 + 22f = 12712 (durata 412 = 13,73 s) [riga sul segno 22f]
+(arrivati blocchi 1-30. PROSSIMO: costruire tutti i blocchi 6-30 insieme, sincronizzati sulla voce)
