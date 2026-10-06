@@ -5,7 +5,7 @@
 2. PRIMA di cercare o spendere crediti vidIQ: grep in RICERCHE-VIDIQ.md e in chat/. Se c'e gia, usarlo e dirlo. Crediti vidIQ: mai senza chiedere.
 3. PRIMA di consegnare qualsiasi cosa, controllare che sia completa: durata (caratteri) confrontata con i video gia fatti, fatti verificati, regole di questo file. Mai consegnare una cosa e poi dire che manca qualcosa.
 4. Obiettivo dell'utente: video che superino 10.000 view. Poche ricerche + poca concorrenza NON basta. Contano tema con video gia sopra 100.000 view, titolo/miniatura con promessa, durata dei vincenti.
-5. FORMATO BLOCCHI DI VOCE (l'utente l'ha detto centinaia di volte): identico a short 6, chat/2026-10-04_sessione-016BFAJ-short6-pacchetti-regole.md riga 72: riga **Blocco N**, a capo il testo semplice, riga vuota tra i blocchi. MAI riquadri di codice, MAI elenco numerato, MAI numero+testo sulla stessa riga. Regola anche in CLAUDE.md.
+5. FORMATO BLOCCHI DI VOCE (ULTIMO, 07/10/2026, annulla quello vecchio senza riquadri): **Blocco N** in grassetto, sotto il riquadro di codice ``` col solo testo, riga vuota tra i blocchi, tutti in chat in un colpo. MAI testo semplice fuori dai riquadri, MAI elenco numerato, MAI file. Regola anche in CLAUDE.md.
 6. Niente "hai ragione", niente scuse, niente liste di offerte. Risposte corte. Salvare tutto nel repo subito.
 
 Incolla nella nuova chat: "Leggi senior_advantage/PASSAGGIO-CHAT.md e CLAUDE.md, poi aspetta quello che ti chiedo."
