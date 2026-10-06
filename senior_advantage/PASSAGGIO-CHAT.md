@@ -1,4 +1,4 @@
-# PASSAGGIO CHAT - The Senior Advantage (aggiornato 04/10/2026)
+# PASSAGGIO CHAT - The Senior Advantage (aggiornato 06/10/2026)
 
 Incolla nella nuova chat: "Leggi senior_advantage/PASSAGGIO-CHAT.md e CLAUDE.md, poi aspetta quello che ti chiedo."
 
@@ -195,3 +195,13 @@ Passo 7 in corso: descrizioni degli short 1-5 pubblicati da rifare con "Disclaim
 Passo 7 FATTO e verificato su YouTube (06/10/2026): descrizioni dei 6 short con "Disclaimer:" e senza https (SNAP, LIHEAP, Meals on Wheels, sconti x2, CSFP).
 Prossimo passo 8: nuovo lungo con marchio famoso (Costco), formato "X Is Hiding N Discounts From Seniors Over 60 (Here's Every One)", poi lungo CSFP con scatola vera. Gancio nuovo, slide piu dettagliate.
 Passi 8-12 FATTI (06/10/2026): titolo SNAP con "2026" (verificato): "SNAP for Seniors 60+: The Income Rules Most People Never Hear About (2026 Full Guide + Math)"; schermata finale video 1 (-> SNAP) e video SNAP (-> video 1) fatte dall'utente (non verificabili da fuori); commento fissato su entrambi i lunghi fatto dall'utente. Canale sistemato. Prossimo: video lungo Costco (verificare fatti su siti ufficiali Costco prima del copione).
+
+## STATO AL 06/10/2026 (fine chat sistemazione canale) - DA LEGGERE PER PRIMO
+- Canale SISTEMATO e verificato su YouTube: titolo e capitoli e miniatura video 1; descrizione e parole chiave canale; Video correlato su tutti e 6 gli short; descrizioni dei 6 short con "Disclaimer:" e senza https; titolo SNAP con "2026"; schermate finali e commenti fissati dei 2 lunghi (fatti dall'utente). Dettagli nelle sezioni sotto (ID VIDEO, AUDIT, DATI vidIQ, PASSI).
+- ID: lungo 1 Tqw_9LMUJYE; lungo SNAP KDYxb4tKm1Q; short SNAP 96JkWmUbRF4, CSFP Mk6ZIS9JMBQ, LIHEAP EGDTj4NTlQw, Meals on Wheels bkZ8pOaoX3g, sconti XCRw0E4eTaE e sj4vzbjii_k. Canale UC3mqeyFLRtxoHy5unytlNwQ.
+- Tutte le ricerche vidIQ gia fatte: RICERCHE-VIDIQ.md (NON rifarle). Crediti vidIQ: 30 (rinnovo 25/10/2026).
+- PROSSIMO LAVORO: video lungo COSTCO, da fare in una chat nuova. Fatti ufficiali gia in RICERCHE-VIDIQ.md sezione 7: Costco NON ha sconti senior, iscrizione 65 dollari per tutti; farmacia senza iscrizione; apparecchi acustici da 1.599,99 dollari (serve tessera). Titolo proposto (onesto, NO "Costco Is Hiding discounts"): "Costco Has No Senior Discount: 9 Ways Seniors Over 60 Still Save Money (Here's Every One)". Parole chiave: "costco for seniors" 5.235/mese (conc. 12), "costco senior discount" 3.269 (conc. 19). L'utente deve ancora confermare l'angolo onesto. Poi cercare i 9 modi reali su pagine ufficiali Costco (farmacia, apparecchi acustici, ottica, viaggi, ecc.), copione a blocchi in chat (gancio NUOVO, non "Wait"; sigle a lettere; niente cifre ne trattini), poi slide piu dettagliate, miniature 3 versioni, pacchetto.
+- Poi: lungo CSFP con scatola vera (serie mensile che vince: "What's inside a senior commodity food box?" 45-58K view).
+- Metodo che l'utente vuole: UNA cosa alla volta; dopo ogni passo che fa lui, VERIFICARE su YouTube (curl) prima del passo successivo; mai dare per fatto o non fatto cio che non si puo vedere da fuori (Video correlato, schermata finale, commento fissato: chiedere "c'e gia o fatto").
+- Strumento gratuito per leggere YouTube pubblico (0 crediti): curl POST https://www.youtube.com/youtubei/v1/next?prettyPrint=false con body {"videoId":"ID","context":{"client":{"clientName":"WEB","clientVersion":"2.20260929.07.00","hl":"en","gl":"US"}}}; da li description (attributedDescriptionBodyText), capitoli (chapterRenderer). Browse del canale con browseId UC3mqeyFLRtxoHy5unytlNwQ (metadata, parole chiave, tab). oembed per il titolo.
+
