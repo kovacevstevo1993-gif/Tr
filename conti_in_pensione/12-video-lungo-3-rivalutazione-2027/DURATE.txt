@@ -3,5 +3,5 @@ Blocco 1: fine 00:14 + 15f = 435 fotogrammi (durata 435 = 14,50 s)
 Blocco 2: fine 00:28 + 11f = 851 (durata 416 = 13,87 s)
 Blocco 3: fine 00:42 + 27f = 1287 (durata 436 = 14,53 s)
 Blocco 4: fine 00:57 + 6f = 1716 (durata 429 = 14,30 s)
-Blocco 5: fine 01:10 + 21f = 2121 (durata 405 = 13,50 s) - ruler poco leggibile ("3f" sbiadito letto come 18f): da verificare
+Blocco 5: fine 01:10 + 21f = 2121 (durata 405 = 13,50 s) (puntino sotto la riga bianca subito dopo 20f)
 (arrivati blocchi 1-5; mancano 6-54)
