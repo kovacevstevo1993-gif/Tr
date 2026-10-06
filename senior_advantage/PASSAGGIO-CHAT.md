@@ -4,7 +4,7 @@ Incolla nella nuova chat: "Leggi senior_advantage/PASSAGGIO-CHAT.md e CLAUDE.md,
 
 ## REPO
 kovacevstevo1993-gif/Tr, cartella /home/user/Tr. Ramo: claude/ecstatic-shannon-wl7kwf (git fetch, checkout di quel ramo). Commit e push sempre su quel ramo.
-Leggere SEMPRE prima: CLAUDE.md (regole), questo file (stato), MODELLO-DESCRIZIONE-VIDEO-1.md (pacchetto video lungo), MODELLO-PACCHETTO-SHORT.md (pacchetto short). README.md e MEMORIA-CANALE.md sono vecchi: vale questo file.
+Leggere SEMPRE prima: CLAUDE.md (regole), questo file (stato), RICERCHE-VIDIQ.md (tutte le ricerche vidIQ e analytics gia fatti: non rifarle, crediti limitati), MODELLO-DESCRIZIONE-VIDEO-1.md (pacchetto video lungo), MODELLO-PACCHETTO-SHORT.md (pacchetto short). README.md e MEMORIA-CANALE.md sono vecchi: vale questo file.
 CHAT INTERE (testo completo, in senior_advantage/chat/): 2026-09-27_31 rilancio canale; 2026-10-01 sessione 01VdcN6 (video lungo 1, pacchetto, short 1-2, regole); 2026-10-01 sessione 01WeZD3 (short 4, copertine, video correlati); 2026-10-03 sessione 01LADT (short 5); 2026-10-03 sessione 01JUxym (slide video lungo 2); 2026-10-04 sessione 016BFAJ (short 6, pacchetti, miniature, regole). Per i dettagli di qualsiasi cosa: grep in quella cartella prima di chiedere all'utente.
 Altre chat: leggibili anche con i tool list_sessions / list_events (sessioni utili: 01WeZD3EBshsBb5mxg9qdvnt = setup, short 4, pacchetto video 1; 01VdcN6aGh1CnYp1K1Fxe615 = pacchetto originale video 1; 01LADTs8xMTy5ijgQHHcdpHE = short 5; 01JUxymSGwEfoRbmuDNuBFFx = slide video lungo 2). Se manca qualcosa, cercarlo li e salvarlo nel repo, non chiederlo all'utente.
 
