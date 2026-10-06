@@ -1,0 +1,1770 @@
+// override con autoadattamento del testo
+function chip(p,label,w){w=w||300;const fs=Math.min(54,(w-70)/(label.length*0.76));const g=el('g',{},p);
+ el('rect',{x:-w/2,y:-46,width:w,height:92,rx:46,fill:AMB,filter:'url(#g_sh2)'},g);
+ el('rect',{x:-w/2,y:-46,width:w,height:92,rx:46,fill:'none',stroke:'#fff','stroke-width':5,'stroke-opacity':.85},g);
+ const t=txt(g,label,0,fs*0.36,fs,'#5A3300');return {g,t};}
+function pill(p,label,w,fs,fill){fs=Math.min(fs,(w-80)/(label.length*0.76));const g=el('g',{},p);
+ el('rect',{x:-w/2,y:-fs*0.9,width:w,height:fs*1.8,rx:fs*0.9,fill:fill||AMB,filter:'url(#g_sh2)'},g);
+ el('rect',{x:-w/2,y:-fs*0.9,width:w,height:fs*1.8,rx:fs*0.9,fill:'none',stroke:'#fff','stroke-width':4,'stroke-opacity':.85},g);
+ txt(g,label,0,fs*0.36,fs,fill?'#fff':'#5A3300');return g;}
+// ===== oggetti nuovi =====
+function coinA(p,r){const g=el('g',{},p);
+ el('circle',{r:r,fill:AMB,stroke:'#fff','stroke-width':r*0.1,filter:'url(#g_sh3)'},g);
+ el('circle',{r:r*0.72,fill:'none',stroke:'#C98A1A','stroke-width':r*0.06},g);
+ txt(g,'€',0,r*0.34,r*1.05,'#7A4A00','900');return g;}
+function scissors(p){const g=el('g',{filter:'url(#g_sh2)'},p);
+ const mk=(sgn)=>{const h=el('g',{},g);const k=el('g',{transform:'scale(1 '+sgn+')'},h);
+  el('path',{d:'M0 0 L-210 -6 L-210 10 L0 18 Z',fill:'url(#g_metal)',stroke:'#6F878C','stroke-width':3},k);
+  el('line',{x1:0,y1:9,x2:90,y2:24,stroke:'#C9D6D8','stroke-width':16,'stroke-linecap':'round'},k);
+  el('circle',{cx:110,cy:44,r:36,fill:'none',stroke:'#E4412C','stroke-width':16},k);return h;};
+ const a=mk(1),b=mk(-1);el('circle',{r:12,fill:'#0B4A50'},g);return {g,a,b};}
+function slipCard(p,label,amount){const c=el('g',{},p);
+ el('rect',{x:-260,y:-160,width:520,height:320,rx:30,fill:'url(#g_paper)',filter:'url(#g_sh)'},c);
+ el('rect',{x:-260,y:-160,width:520,height:76,rx:30,fill:'url(#g_head)'},c);el('rect',{x:-260,y:-120,width:520,height:36,fill:'url(#g_head)'},c);
+ txt(c,label,0,-106,38,'#fff');
+ const amt=txt(c,amount,0,64,112,INK,'900');
+ el('rect',{x:-200,y:96,width:400,height:10,rx:5,fill:'#C9D6D8'},c);
+ return {g:c,amt};}
+function semaforo(p){const o=el('g',{},p);
+ el('rect',{x:-26,y:230,width:52,height:300,fill:'#0A2B30'},o);
+ el('rect',{x:-125,y:-300,width:250,height:600,rx:62,fill:'#0A2B30',stroke:'#7FA9AE','stroke-width':8,filter:'url(#g_sh)'},o);
+ const L=[];[['#E4412C',-190],['#FFB838',0],['#2FBF9B',190]].forEach(([c,y])=>{
+  el('circle',{cx:0,cy:y,r:72,fill:'#17383D'},o);
+  const glow=el('circle',{cx:0,cy:y,r:118,fill:c,opacity:0,filter:'url(#g_glow)'},o);
+  const on=el('circle',{cx:0,cy:y,r:72,fill:c,opacity:0.08},o);
+  L.push({on,glow});});
+ return {g:o,L};}
+function setL(L,i,v){L.forEach((l,k)=>{const x=(k===i)?v:0;l.on.setAttribute('opacity',0.08+0.92*x);l.glow.setAttribute('opacity',0.75*x);});}
+function lockO(p){const o=el('g',{},p);
+ el('path',{d:'M-62 -20 L-62 -78 A62 62 0 0 1 62 -78 L62 -20',fill:'none',stroke:'#C9D6D8','stroke-width':26,'stroke-linecap':'round'},o);
+ el('rect',{x:-98,y:-30,width:196,height:150,rx:26,fill:AMB,stroke:'#fff','stroke-width':8,filter:'url(#g_sh2)'},o);
+ el('circle',{cx:0,cy:38,r:20,fill:'#5A3300'},o);el('rect',{x:-8,y:38,width:16,height:46,rx:6,fill:'#5A3300'},o);return o;}
+function hourglass(p){const o=el('g',{},p);
+ el('rect',{x:-110,y:-176,width:220,height:26,rx:13,fill:AMB},o);el('rect',{x:-110,y:150,width:220,height:26,rx:13,fill:AMB},o);
+ el('path',{d:'M-90 -150 L90 -150 L12 0 L90 150 L-90 150 L-12 0 Z',fill:'#EAF7F4',stroke:'#fff','stroke-width':6},o);
+ el('path',{d:'M-70 -136 L70 -136 L10 -10 L-10 -10 Z',fill:AMB},o);
+ el('path',{d:'M-70 136 L70 136 L40 66 L-40 66 Z',fill:AMB},o);return o;}
+function phoneO(p){const o=el('g',{},p);
+ el('rect',{x:-210,y:0,width:420,height:700,rx:56,fill:'#0A2B30',filter:'url(#g_sh)'},o);
+ el('rect',{x:-210,y:0,width:420,height:700,rx:56,fill:'none',stroke:'#7FA9AE','stroke-width':5},o);
+ el('rect',{x:-186,y:26,width:372,height:648,rx:36,fill:'#EAF7F4'},o);
+ return o;}
+function card3(p,label,col,w,h){w=w||440;h=h||170;const g=el('g',{},p);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:30,fill:col,stroke:'#fff','stroke-width':8,filter:'url(#g_sh2)'},g);
+ txt(g,label,0,h*0.16,Math.min(72,w/label.length*1.35),'#fff','900');return g;}
+const BLK={};
+// =================== BLOCCO 2 ===================
+BLK[2]={D:17.47,S:[
+{s:0,e:4.1,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LA MANOVRA');
+ o.doc=el('g',{},g);
+ el('rect',{x:-250,y:-300,width:500,height:600,rx:26,fill:'url(#g_paper)',filter:'url(#g_sh)'},o.doc);
+ txt(o.doc,'MANOVRA',0,-210,70,INK,'900');txt(o.doc,'2027',0,-130,70,GRN,'900');
+ for(let i=0;i<6;i++)el('rect',{x:-190,y:-70+i*58,width:380-(i%3)*60,height:16,rx:8,fill:'#C9D6D8'},o.doc);
+ o.stamp=el('g',{},o.doc);el('rect',{x:-210,y:-52,width:420,height:104,rx:14,fill:'none',stroke:AMB,'stroke-width':12},o.stamp);txt(o.stamp,'PROPOSTA',0,24,74,AMB,'900');
+ o.card=slipCard(g,'ASSEGNO DI PENSIONE','€ 1.800');
+ o.strip=el('g',{},g);el('rect',{x:-260,y:100,width:520,height:60,rx:6,fill:'url(#g_paper)'},o.strip);el('line',{x1:-260,y1:100,x2:260,y2:100,stroke:'#E4412C','stroke-width':6,'stroke-dasharray':'18 12'},o.strip);
+ o.sc=scissors(g);
+ o.mn=el('g',{},g);el('circle',{r:70,fill:'url(#g_red)',stroke:'#fff','stroke-width':10,filter:'url(#g_sh2)'},o.mn);el('rect',{x:-36,y:-8,width:72,height:16,rx:8,fill:'#fff'},o.mn);
+ o.cap=el('g',{},g);cap(o.cap,"UNA PROPOSTA IN MANOVRA POTREBBE TAGLIARE L'ASSEGNO",52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.doc,520,470,-3,Math.max(0,eob(seg(t,0.1,0.8))));
+ const st=eob(seg(t,0.8,1.4));T(o.stamp,0,0,-12,Math.max(0,st));
+ T(o.card.g,1380,430,0,Math.max(0,eob(seg(t,0.4,1.1))));
+ // forbici
+ const sx=lerp(1900,1230,eio(seg(t,1.3,2.5)));const open=Math.abs(Math.sin(t*16))*22;
+ T(o.sc.g,sx,lerp(700,590,seg(t,1.3,1.8)),0,Math.max(0,eob(seg(t,1.2,1.7))));
+ o.sc.a.setAttribute('transform','rotate('+(-open)+')');o.sc.b.setAttribute('transform','rotate('+(open)+')');
+ const cut=t>2.5;
+ const fall=cut?(t-2.5):0;
+ T(o.strip,1380,430+fall*fall*900,cut?18*fall:0,1);op(o.strip,cut?Math.max(0,1-fall*1.2):1);
+ o.strip.setAttribute('transform','translate(1380 '+(430+fall*fall*900)+') rotate('+(cut?18*fall:0)+')');
+ if(!cut||true){op(o.strip,cut?Math.max(0,1-fall*1.1):(t>1.0?1:0));}
+ op(o.sc.g,t<3.4?1:Math.max(0,1-seg(t,3.4,3.9)));
+ T(o.mn,1720,300,0,Math.max(0,eob(seg(t,2.6,3.2))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.5,1.1))));}},
+{s:4.1,e:10.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'SECONDO LA CGIL');
+ o.pay=el('g',{},g);
+ el('rect',{x:-250,y:-290,width:500,height:580,rx:26,fill:'url(#g_paper)',filter:'url(#g_sh)'},o.pay);
+ el('rect',{x:-250,y:-290,width:500,height:84,rx:26,fill:'url(#g_head)'},o.pay);el('rect',{x:-250,y:-250,width:500,height:44,fill:'url(#g_head)'},o.pay);
+ txt(o.pay,'BUSTA PAGA',0,-230,46,'#fff');
+ txt(o.pay,'STIPENDIO ALTO',0,-130,52,INK,'900');
+ for(let i=0;i<5;i++){el('rect',{x:-190,y:-80+i*66,width:260,height:18,rx:9,fill:'#C9D6D8'},o.pay);el('rect',{x:110,y:-80+i*66,width:80,height:18,rx:9,fill:'#9AD9C8'},o.pay);}
+ o.up=el('g',{},o.pay);el('path',{d:'M-34 20 L0 -26 L34 20 L12 20 L12 70 L-12 70 L-12 20 Z',fill:AMB,stroke:'#fff','stroke-width':4,transform:'translate(190 -130) scale(0.9)'},o.up);
+ o.coins=[];for(let i=0;i<7;i++){const c=el('g',{},g);coinA(c,38+(i%3)*8);o.coins.push(c);}
+ o.num=txt(g,'',0,0,200,'#FF6A55','900');o.unit=txt(g,'AL MESE',0,0,84,'#fff','900');
+ o.chip=el('g',{},g);chip(o.chip,'STIMA DELLA CGIL',640);
+ o.cap=el('g',{},g);cap(o.cap,'OLTRE 365 EURO IN MENO AL MESE (STIPENDI ALTI)',52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.pay,520,470,-3,Math.max(0,eob(seg(t,0.1,0.8))));
+ o.coins.forEach((c,i)=>{const s0=2.4+i*0.35;const k=seg(t,s0,s0+1.6);T(c,lerp(760,1100+i*14,k),lerp(450,230-(i%3)*60,k)+Math.sin(k*3.14)*-80,k*360,k>0&&k<1?1:0);op(c,k>0&&k<1?1-k*0.6:0);});
+ const v=Math.round(eio(seg(t,3.0,4.9))*365);
+ o.num.textContent=t>3.0?('− '+v+' €'):'';o.num.setAttribute('transform','translate(1380 480)');
+ o.unit.setAttribute('transform','translate(1380 590)');op(o.unit,seg(t,3.0,3.6));
+ T(o.chip,1380,720,-2,Math.max(0,eob(seg(t,1.0,1.7))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.6,1.2))));}},
+{s:10.0,e:17.47,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'IN QUESTO VIDEO');
+ o.sem=semaforo(g);
+ o.l1=el('g',{},g);card3(o.l1,'GIÀ LEGGE','#2FBF9B',560,150);
+ o.l2=el('g',{},g);card3(o.l2,'SOLO PROPOSTA','#E09A1A',680,150);
+ o.ph=el('g',{},g);const ph=phoneO(o.ph);
+ txt(ph,'I TUOI CONTRIBUTI',0,90,34,INK,'900');
+ for(let i=0;i<5;i++){txt(ph,''+(2022+i),-150,170+i*80,28,INK,'bold','start');el('rect',{x:-50,y:148+i*80,width:200,height:28,rx:14,fill:'#C9D6D8'},ph);el('rect',{x:-50,y:148+i*80,width:200,height:28,rx:14,fill:'url(#g_badge)'},ph);}
+ o.tm=el('g',{},g);el('circle',{r:100,fill:'#06303A',stroke:AMB,'stroke-width':12,filter:'url(#g_sh2)'},o.tm);txt(o.tm,'5',0,26,100,'#fff','900');txt(o.tm,'MINUTI',0,66,28,LT,'900');
+ o.ring=el('circle',{r:112,fill:'none',stroke:LT,'stroke-width':8,'stroke-dasharray':'704','stroke-dashoffset':'704',transform:'rotate(-90)'},o.tm);
+ o.c1=el('g',{},g);cap(o.c1,'COSA È GIÀ LEGGE',54);o.c2=el('g',{},g);cap(o.c2,'COSA È SOLO UNA PROPOSTA',54);o.c3=el('g',{},g);cap(o.c3,'COME CONTROLLARE SU MAI INPS IN 5 MINUTI',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.sem.g,420,470,0,Math.max(0,eob(seg(t,0.1,0.8)))*0.85);
+ setL(o.sem.L,2,t<2.4?seg(t,0.4,0.9):0);
+ if(t>=2.4)setL(o.sem.L,1,seg(t,2.4,2.9));
+ if(t>=4.6)setL(o.sem.L,-1,0);
+ T(o.l1,1060,330,-3,Math.max(0,eob(seg(t,0.6,1.3))));
+ T(o.l2,1180,560,3,Math.max(0,eob(seg(t,2.6,3.3))));
+ op(o.l1,t<4.6?1:Math.max(0,1-seg(t,4.6,5.0)));op(o.l2,t<4.6?1:Math.max(0,1-seg(t,4.6,5.0)));
+ T(o.ph,1170,150,-2,Math.max(0,eob(seg(t,4.7,5.4))));
+ T(o.tm,1500,700,0,Math.max(0,eob(seg(t,5.2,5.8))));o.ring.setAttribute('stroke-dashoffset',704-704*seg(t,5.4,7.2));
+ op(o.c1,t<2.4?1:0);op(o.c2,(t>=2.4&&t<4.6)?1:0);op(o.c3,t>=4.6?1:0);
+ [o.c1,o.c2,o.c3].forEach(c=>T(c,960,950,0,1));}}
+]};
+// =================== BLOCCO 3 ===================
+BLK[3]={D:18.67,S:[
+{s:0,e:9.07,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'RESTA FINO ALLA FINE');
+ o.chest=el('g',{},g);
+ el('rect',{x:-230,y:-60,width:460,height:260,rx:26,fill:'#0B4A50',stroke:'#2FBF9B','stroke-width':10,filter:'url(#g_sh)'},o.chest);
+ el('path',{d:'M-230 -60 A230 150 0 0 1 230 -60 Z',fill:'#0F6068',stroke:'#2FBF9B','stroke-width':10},o.chest);
+ for(let i=-1;i<=1;i+=2)el('rect',{x:i*130-18,y:-190,width:36,height:390,rx:10,fill:AMB,opacity:.9},o.chest);
+ txt(o.chest,'1',0,150,150,'#fff','900');
+ o.lock=el('g',{},o.chest);const L=lockO(o.lock);L.setAttribute('transform','translate(0 20) scale(0.8)');
+ o.q=el('g',{},g);qBubble(o.q,100);
+ o.tag=el('g',{},g);pill(o.tag,"ERRORE NUMERO UNO",820,56,'#E4412C');
+ o.bar=el('g',{},g);
+ el('rect',{x:-700,y:0,width:1400,height:34,rx:17,fill:'#0A3F45',opacity:.85,stroke:LT,'stroke-width':3},o.bar);
+ o.fill=el('rect',{x:-700,y:0,width:10,height:34,rx:17,fill:'url(#g_badge)'},o.bar);
+ o.flag=el('g',{},o.bar);el('line',{x1:0,y1:-10,x2:0,y2:-110,stroke:'#fff','stroke-width':8,'stroke-linecap':'round'},o.flag);el('path',{d:'M0 -110 L90 -85 L0 -60 Z',fill:'#E4412C'},o.flag);
+ txt(o.bar,'FINE DEL VIDEO',560,86,32,LT,'900');
+ o.cap=el('g',{},g);cap(o.cap,"RESTA FINO ALLA FINE: L'ERRORE NUMERO UNO TI SORPRENDERÀ",50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.chest,960,400,t>2?2*Math.sin(t*3):0,1.3*Math.max(0,eob(seg(t,0.2,1.0))));
+ const lk=t>0.9?1:0;
+ T(o.tag,960,690,0,Math.max(0,eob(seg(t,1.4,2.1))));
+ T(o.q,1420,240,10*Math.sin(t*4),Math.max(0,eob(seg(t,6.2,6.9)))*(1+0.05*Math.sin(t*6)));
+ T(o.bar,960,790,0,1);o.fill.setAttribute('width',10+1390*eio(seg(t,0.5,8.8)));
+ T(o.flag,700,0,0,Math.max(0,eob(seg(t,0.4,1.0))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.6,1.2))));}},
+{s:9.07,e:15.8,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'OGNI GIORNO LEGGI');
+ o.ph=el('g',{},g);const ph=phoneO(o.ph);
+ o.feed=el('g',{},ph);o.cl=el('clipPath',{id:'feedclip'},ph);el('rect',{x:-186,y:26,width:372,height:648,rx:36},o.cl);o.feed.setAttribute('clip-path','url(#feedclip)');
+ o.items=[];const texts=['PENSIONE A 64 ANNI!','QUOTA 41!','STOP ALL’AUMENTO!','NOVITÀ PENSIONI','ULTIM’ORA'];
+ texts.forEach((s,i)=>{const it=el('g',{},o.feed);el('rect',{x:-166,y:50+i*150,width:332,height:128,rx:18,fill:'#fff',stroke:'#C9D6D8','stroke-width':3},it);el('rect',{x:-166,y:50+i*150,width:332,height:34,rx:18,fill:'#E4412C'},it);txt(it,s.length>14?s:s,0,128+i*150,s.length>14?27:36,INK,'900');o.items.push(it);});
+ o.b1=el('g',{},g);card3(o.b1,'PENSIONE A 64 ANNI!','#E4412C',640,140);
+ o.b2=el('g',{},g);card3(o.b2,'QUOTA 41!','#E09A1A',520,140);
+ o.b3=el('g',{},g);card3(o.b3,'STOP ALL’AUMENTO!','#2FBF9B',640,140);
+ o.cap=el('g',{},g);cap(o.cap,'OGNI GIORNO LEGGI TITOLI COME QUESTI',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.ph,520,150,-3,Math.max(0,eob(seg(t,0.1,0.8))));
+ o.feed.setAttribute('transform','translate(0 '+(-t*55)+')');
+ T(o.b1,1380,310,4,Math.max(0,eob(seg(t,1.0,1.7))));
+ T(o.b2,1330,520,-3,Math.max(0,eob(seg(t,2.6,3.3))));
+ T(o.b3,1400,730,3,Math.max(0,eob(seg(t,4.2,4.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.4,1.0))));}},
+{s:15.8,e:18.67,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'TRE COSE DIVERSE');
+ o.k=[card3(g,'LEGGE','#2FBF9B',460,180),card3(g,'PROPOSTA','#E09A1A',520,180),card3(g,'CHIUSO','#E4412C',460,180)].map(x=>x);
+ o.q=el('g',{},g);qBubble(o.q,110);
+ o.cap=el('g',{},g);cap(o.cap,'MA QUEI TITOLI LE MESCOLANO TUTTE E TRE',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ const sp=[[400,420],[960,420],[1520,420]];
+ o.k.forEach((k,i)=>{const a=eob(seg(t,0.1+i*0.25,0.7+i*0.25));const m=eio(seg(t,1.2,2.2));
+  const x=lerp(sp[i][0],960+(i-1)*70,m),y=lerp(sp[i][1],520+(i-1)*40,m);T(k,x,y,lerp(0,(i-1)*14,m),Math.max(0,a));});
+ T(o.q,960,330,10*Math.sin(t*5),Math.max(0,eob(seg(t,2.0,2.6))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 4 ===================
+BLK[4]={D:19.43,S:[
+{s:0,e:4.97,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'TRE COSE, TRE COLORI');
+ o.cards=[];[['GIÀ LEGGE','#2FBF9B'],['SOLO UNA PROPOSTA','#E09A1A'],['CHIUSO','#E4412C']].forEach(([s,c],i)=>{
+  const w=el('g',{},g);el('rect',{x:-270,y:-280,width:540,height:560,rx:36,fill:'url(#g_paper)',filter:'url(#g_sh)'},w);
+  el('rect',{x:-270,y:-280,width:540,height:150,rx:36,fill:c},w);el('rect',{x:-270,y:-190,width:540,height:60,fill:c},w);
+  txt(w,s,0,-165,s.length>12?48:62,'#fff','900');
+  const ic=el('g',{transform:'translate(0 70)'},w);
+  if(i==0){const cb=el('g',{transform:'scale(1.6)'},ic);checkBadge(cb,70);}
+  if(i==1){el('rect',{x:-90,y:-110,width:180,height:230,rx:14,fill:'#fff',stroke:c,'stroke-width':8},ic);for(let k=0;k<4;k++)el('rect',{x:-60,y:-70+k*40,width:120,height:12,rx:6,fill:'#C9D6D8'},ic);txt(ic,'?',70,90,150,c,'900');}
+  if(i==2){const lk=el('g',{transform:'scale(1.15)'},ic);lockO(lk);}
+  o.cards.push(w);});
+ o.cap=el('g',{},g);cap(o.cap,'GIÀ LEGGE, SOLO UNA PROPOSTA, CHIUSO',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ [380,960,1540].forEach((x,i)=>{const a=eob(seg(t,0.3+i*1.2,0.9+i*1.2));T(o.cards[i],x,500,(i-1)*3,Math.max(0,a)*0.88);});
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:4.97,e:11.69,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PER QUESTO USO UN SEMAFORO');
+ o.sem=semaforo(g);
+ o.a=el('g',{},g);card3(o.a,'VERDE: È LEGGE','#2FBF9B',760,150);
+ o.b=el('g',{},g);card3(o.b,'GIALLO: È UNA PROPOSTA','#E09A1A',900,150);
+ o.c=el('g',{},g);card3(o.c,'ROSSO: È CHIUSO','#E4412C',760,150);
+ o.cap=el('g',{},g);cap(o.cap,'PER QUESTO USO UN SEMAFORO!',58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.sem.g,520,470,0,Math.max(0,eob(seg(t,0.1,0.8))));
+ const i=t<1.9?-1:(t<4.0?2:(t<5.9?1:0));
+ setL(o.sem.L,t<1.9?-1:(t<4.0?2:(t<5.9?1:0)),t<1.9?0:1);
+ T(o.a,1350,300,-2,Math.max(0,eob(seg(t,1.9,2.5))));
+ T(o.b,1300,500,2,Math.max(0,eob(seg(t,4.0,4.6))));
+ T(o.c,1350,700,-2,Math.max(0,eob(seg(t,5.9,6.5))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:11.69,e:18.2,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'DECIDERE IN BASE A UN TITOLO');
+ o.m=el('g',{},g);medal(o.m,false);
+ o.ql=el('g',{},g);qBubble(o.ql,70);
+ o.l=el('g',{},g);
+ el('rect',{x:-340,y:-130,width:680,height:260,rx:34,fill:'url(#g_paper)',stroke:'#E4412C','stroke-width':10,filter:'url(#g_sh)'},o.l);
+ const dr=el('g',{transform:'translate(-230 0) scale(0.55)'},o.l);el('rect',{x:-90,y:-150,width:180,height:300,rx:16,fill:'#0B4A50'},dr);el('rect',{x:-70,y:-130,width:140,height:110,rx:10,fill:'none',stroke:'#2FBF9B','stroke-width':6},dr);
+ txt(o.l,'LASCIARE IL LAVORO',60,-8,38,INK,'900');txt(o.l,'TROPPO PRESTO',60,50,48,'#E4412C','900');
+ o.r=el('g',{},g);
+ el('rect',{x:-340,y:-130,width:680,height:260,rx:34,fill:'url(#g_paper)',stroke:AMB,'stroke-width':10,filter:'url(#g_sh)'},o.r);
+ const hg=el('g',{transform:'translate(-230 0) scale(0.55)'},o.r);hourglass(hg);
+ txt(o.r,'ASPETTARE',70,-8,48,INK,'900');txt(o.r,'PER NIENTE',70,50,48,'#C98A1A','900');
+ o.al=el('g',{},g);el('path',{d:'M0 0 L-150 60',stroke:'#E4412C','stroke-width':14,'stroke-linecap':'round',fill:'none'},o.al);
+ o.ar=el('g',{},g);el('path',{d:'M0 0 L150 60',stroke:AMB,'stroke-width':14,'stroke-linecap':'round',fill:'none'},o.ar);
+ o.cap=el('g',{},g);cap(o.cap,'SE DECIDI IN BASE A UN TITOLO, RISCHI...',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.m,960,330,0,0.85*Math.max(0,eob(seg(t,0.2,0.9))));
+ T(o.ql,1130,200,10*Math.sin(t*4),Math.max(0,eob(seg(t,0.8,1.4))));
+ T(o.al,820,520,0,1);T(o.ar,1100,520,0,1);op(o.al,seg(t,1.4,1.8));op(o.ar,seg(t,3.0,3.4));
+ T(o.l,520,760,-2,Math.max(0,eob(seg(t,1.6,2.3))));
+ T(o.r,1400,760,2,Math.max(0,eob(seg(t,3.2,3.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:18.2,e:19.43,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PARTIAMO DAL VERDE');
+ o.sem=semaforo(g);setL(o.sem.L,2,1);
+ o.go=el('g',{},g);card3(o.go,'VIA!','#2FBF9B',400,170);
+ o.cap=el('g',{},g);cap(o.cap,'PARTIAMO DAL VERDE!',60);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.sem.g,720,470,0,1.0);setL(o.sem.L,2,1);
+ T(o.go,1250,480,-4,Math.max(0,eob(seg(t,0.15,0.7))));
+ T(o.cap,960,950,0,1);}}
+]};
+// =================== BLOCCO 5 ===================
+BLK[5]={D:10.17,S:[
+{s:0,e:5.6,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'VERDE: PENSIONE DI VECCHIAIA');
+ o.p1=el('g',{},g);o.pl1=plate(o.p1,'67','ANNI');
+ o.p2=el('g',{},g);o.pl2=plate(o.p2,'20','ANNI DI CONTRIBUTI');o.pl2.s.setAttribute('font-size',30);
+ o.sq=el('g',{},g);o.sqs=[];for(let i=0;i<20;i++){o.sqs.push(el('rect',{x:-380+i*38,y:0,width:32,height:44,rx:8,fill:'#0A3F45',opacity:.6,stroke:LT,'stroke-width':2},o.sq));}
+ o.plus=txt(g,'+',0,0,150,'#fff','900');
+ o.ok=el('g',{},g);checkBadge(o.ok,70);
+ o.cap=el('g',{},g);cap(o.cap,'VECCHIAIA OGGI: 67 ANNI DI ETÀ + 20 DI CONTRIBUTI',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.p1,500,420,0,1.45*Math.max(0,eob(seg(t,0.2,0.9))));
+ o.plus.setAttribute('transform','translate(960 470)');op(o.plus,seg(t,1.4,1.8));
+ T(o.p2,1420,420,0,1.45*Math.max(0,eob(seg(t,2.0,2.7))));
+ T(o.sq,960,790,0,Math.max(0,eob(seg(t,2.6,3.2))));
+ o.sqs.forEach((q,i)=>{const on=t>3.2+i*0.07;q.setAttribute('fill',on?'#2FBF9B':'#0A3F45');q.setAttribute('opacity',on?1:.6);});
+ T(o.ok,1000,230,0,1.2*Math.max(0,eob(seg(t,4.6,5.2))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.4,1.0))));}},
+{s:5.6,e:10.17,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'DAL PRIMO GENNAIO 2027');
+ o.cal=calendarPage(g,'GENNAIO','1',320,'2027');
+ o.p=el('g',{},g);o.pl=plate(o.p,'67','ANNI');
+ o.dr=dotsRow(o.p,12,225);
+ o.chip=el('g',{},g);chip(o.chip,'+1 MESE',340);
+ o.sp=ring(g,100);
+ o.cap=el('g',{},g);cap(o.cap,'DAL 1° GENNAIO 2027: 67 ANNI E 1 MESE',56);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ const p=eob(seg(t,0.1,0.9));T(o.cal.g,500,lerp(-700,200,p),t>0.9?5*Math.exp(-2.4*(t-0.9))*Math.sin(8*(t-0.9)):0,1.1);
+ T(o.p,1360,500,0,1.45*Math.max(0,eob(seg(t,0.8,1.5))));op(o.dr.g,seg(t,1.2,1.7));
+ const pc=eob(seg(t,2.4,3.1));T(o.chip,lerp(1800,1660,eo3(seg(t,2.4,2.9))),lerp(100,265,pc),lerp(18,8,pc),Math.max(0,pc));
+ if(t>2.9){lightDot(o.dr.a[0],true,seg(t,2.9,3.4));o.pl.s.textContent='ANNI E 1 MESE';o.pl.s.setAttribute('font-size',34);}
+ const rr=seg(t,2.9,3.5);o.sp.setAttribute('r',lerp(30,200,rr));o.sp.setAttribute('opacity',t>2.9?(1-rr)*0.8:0);T(o.sp,1660,275,0,1);
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// ===== oggetti extra =====
+function sealO(p,r){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('circle',{r:r,fill:'#0B4A50',stroke:AMB,'stroke-width':r*0.1},g);
+ el('circle',{r:r*0.82,fill:'none',stroke:'#fff','stroke-width':3,'stroke-dasharray':'6 8'},g);
+ const a=[];for(let i=0;i<5;i++){const an=-Math.PI/2+i*2*Math.PI/5,bn=an+Math.PI/5;a.push([Math.cos(an)*r*0.34,Math.sin(an)*r*0.34-r*0.18],[Math.cos(bn)*r*0.15,Math.sin(bn)*r*0.15-r*0.18]);}
+ el('polygon',{points:a.map(q=>q.join(',')).join(' '),fill:AMB},g);
+ txt(g,'UFFICIALE',0,r*0.62,r*0.2,'#fff','900');return g;}
+function docO(p,w,h,l1,l2,l3){const g=el('g',{},p);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:26,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:90,rx:26,fill:'url(#g_head)'},g);el('rect',{x:-w/2,y:-h/2+50,width:w,height:40,fill:'url(#g_head)'},g);
+ txt(g,l1,0,-h/2+62,46,'#fff','900');
+ txt(g,l2,0,-h/2+170,78,INK,'900');txt(g,l3,0,-h/2+240,44,GRN,'900');
+ for(let i=0;i<6;i++)el('rect',{x:-w/2+50,y:-h/2+290+i*50,width:w-100-(i%3)*70,height:14,rx:7,fill:'#C9D6D8'},g);
+ return g;}
+function briefcase(p){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:'M-60 -90 L-60 -130 Q-60 -150 -40 -150 L40 -150 Q60 -150 60 -130 L60 -90',fill:'none',stroke:'#6F878C','stroke-width':22},g);
+ el('rect',{x:-170,y:-100,width:340,height:230,rx:30,fill:'#0B4A50',stroke:'#2FBF9B','stroke-width':8},g);
+ el('rect',{x:-170,y:-10,width:340,height:20,fill:'#2FBF9B',opacity:.5},g);
+ el('rect',{x:-26,y:-24,width:52,height:48,rx:10,fill:AMB},g);return g;}
+function stopSign(p){const g=el('g',{filter:'url(#g_sh2)'},p);
+ const pts=[];for(let i=0;i<8;i++){const a=Math.PI/8+i*Math.PI/4;pts.push((Math.cos(a)*140).toFixed(1)+','+(Math.sin(a)*140).toFixed(1));}
+ el('polygon',{points:pts.join(' '),fill:'#E4412C',stroke:'#fff','stroke-width':10},g);
+ txt(g,'STOP',0,26,76,'#fff','900');return g;}
+function sticky(p,l1,l2){const g=el('g',{filter:'url(#g_sh)'},p);
+ el('rect',{x:-330,y:-200,width:660,height:400,rx:14,fill:'#FFE680'},g);
+ txt(g,l1,0,-40,86,'#5A3300','900');txt(g,l2,0,70,50,'#7A4A00','900');
+ el('circle',{cx:0,cy:-200,r:30,fill:'#E4412C',stroke:'#fff','stroke-width':6},g);return g;}
+function magnifier(p){const g=el('g',{},p);
+ el('line',{x1:100,y1:100,x2:230,y2:230,stroke:'#0A3F45','stroke-width':44,'stroke-linecap':'round'},g);
+ el('line',{x1:100,y1:100,x2:230,y2:230,stroke:'url(#g_metal)','stroke-width':30,'stroke-linecap':'round'},g);
+ el('circle',{r:140,fill:'#E9FBF6',opacity:.9},g);el('circle',{r:140,fill:'none',stroke:'url(#g_metal)','stroke-width':26},g);return g;}
+function medalS(p,f,s){const g=el('g',{transform:'scale('+s+')'},p);medal(g,f);return g;}
+// =================== BLOCCO 6 ===================
+BLK[6]={D:10.13,S:[
+{s:0,e:4.3,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'DAL 2028');
+ o.cal=calendarPage(g,'GENNAIO','1',320,'2028');
+ o.p=el('g',{},g);o.pl=plate(o.p,'67','ANNI');o.dr=dotsRow(o.p,12,225);
+ o.chip=el('g',{},g);chip(o.chip,'+3 MESI',340);
+ o.sq=el('g',{},g);o.sqs=[];for(let i=0;i<20;i++)o.sqs.push(el('rect',{x:-380+i*38,y:0,width:32,height:44,rx:8,fill:'#0A3F45',opacity:.6,stroke:LT,'stroke-width':2},o.sq));
+ o.lab=el('g',{},g);pill(o.lab,'CONTRIBUTI: RESTANO 20 ANNI',900,52,'#2FBF9B');
+ o.c1=el('g',{},g);cap(o.c1,'DAL 2028: 67 ANNI E 3 MESI',56);o.c2=el('g',{},g);cap(o.c2,'I CONTRIBUTI RESTANO 20 ANNI',56);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ const p=eob(seg(t,0.1,0.8));T(o.cal.g,480,lerp(-700,170,p),t>0.9?5*Math.exp(-2.4*(t-0.9))*Math.sin(8*(t-0.9)):0,0.95);
+ T(o.p,1340,350,0,1.35*Math.max(0,eob(seg(t,0.5,1.2))));op(o.dr.g,seg(t,0.9,1.4));
+ o.pl.s.textContent='ANNI E 3 MESI';o.pl.s.setAttribute('font-size',34);
+ [0,1,2].forEach(i=>lightDot(o.dr.a[i],t>1.2+i*0.35,seg(t,1.2+i*0.35,1.7+i*0.35)));
+ T(o.chip,1640,150,8,Math.max(0,eob(seg(t,1.1,1.8))));
+ T(o.sq,960,850,0,Math.max(0,eob(seg(t,2.7,3.2))));
+ o.sqs.forEach((q,i)=>{const on=t>3.0+i*0.04;q.setAttribute('fill',on?'#2FBF9B':'#0A3F45');q.setAttribute('opacity',on?1:.6);});
+ T(o.lab,960,775,0,Math.max(0,eob(seg(t,2.9,3.5))));
+ op(o.c1,t<2.7?1:0);op(o.c2,t>=2.7?1:0);T(o.c1,960,950,0,1);T(o.c2,960,950,0,1);}},
+{s:4.3,e:10.13,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LO DICE LA CIRCOLARE');
+ o.doc=el('g',{},g);docO(o.doc,560,720,'CIRCOLARE','N. 28','16 MARZO 2026');
+ o.seal=el('g',{},g);sealO(o.seal,95);
+ o.bub=el('g',{},g);const bb=el('g',{},o.bub);el('rect',{x:-200,y:-90,width:400,height:180,rx:60,fill:'#fff',filter:'url(#g_sh2)'},bb);txt(bb,'VOCI?',0,34,100,INK,'900');
+ o.x=el('g',{},g);el('line',{x1:-230,y1:-110,x2:230,y2:110,stroke:'#E4412C','stroke-width':22,'stroke-linecap':'round'},o.x);el('line',{x1:-230,y1:110,x2:230,y2:-110,stroke:'#E4412C','stroke-width':22,'stroke-linecap':'round'},o.x);
+ o.ok=el('g',{},g);pill(o.ok,'UFFICIALI!',620,92,'#2FBF9B');
+ o.ck=el('g',{},g);checkBadge(o.ck,90);
+ o.cap=el('g',{},g);cap(o.cap,'CIRCOLARE INPS N. 28 DEL 16 MARZO 2026',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.doc,520,520,-2,Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.seal,720,760,-12,Math.max(0,eob(seg(t,1.6,2.3))));
+ T(o.bub,1380,330,-3,Math.max(0,eob(seg(t,3.4,4.0))));T(o.x,1380,330,0,Math.max(0,eob(seg(t,4.1,4.5))));op(o.x,seg(t,4.1,4.4));
+ T(o.ok,1380,640,-4,Math.max(0,eob(seg(t,4.8,5.4))));
+ T(o.ck,1700,640,0,Math.max(0,eob(seg(t,5.0,5.6))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.4,1.0))));}}
+]};
+// =================== BLOCCO 7 ===================
+BLK[7]={D:15.5,S:[
+{s:0,e:5.6,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PERCHÉ SALE?');
+ o.q=el('g',{},g);qBubble(o.q,160);
+ o.gr=el('g',{},g);
+ el('rect',{x:-380,y:-290,width:760,height:580,rx:36,fill:'url(#g_paper)',filter:'url(#g_sh)'},o.gr);
+ txt(o.gr,'SPERANZA DI VITA',0,-215,50,INK,'900');
+ el('line',{x1:-310,y1:210,x2:310,y2:210,stroke:'#6F878C','stroke-width':6},o.gr);el('line',{x1:-310,y1:210,x2:-310,y2:-150,stroke:'#6F878C','stroke-width':6},o.gr);
+ o.line=el('path',{d:'M-300 170 L-190 130 L-70 90 L50 30 L170 -30 L290 -110',fill:'none',stroke:'#2FBF9B','stroke-width':16,'stroke-linecap':'round','stroke-linejoin':'round','stroke-dasharray':'800','stroke-dashoffset':'800'},o.gr);
+ o.pts=[[-300,170],[-190,130],[-70,90],[50,30],[170,-30],[290,-110]].map(q=>el('circle',{cx:q[0],cy:q[1],r:14,fill:AMB,stroke:'#fff','stroke-width':4,opacity:0},o.gr));
+ o.loop=el('g',{},g);el('circle',{r:130,fill:'#06303A',stroke:AMB,'stroke-width':14,filter:'url(#g_sh2)'},o.loop);txt(o.loop,'2',0,28,110,'#fff','900');txt(o.loop,'ANNI',0,82,36,LT,'900');
+ o.arc=el('path',{d:'M0 -156 A156 156 0 1 1 -110 110',fill:'none',stroke:LT,'stroke-width':12,'stroke-linecap':'round'},o.loop);
+ o.ev=el('g',{},g);pill(o.ev,'OGNI 2 ANNI',560,60);
+ o.up=el('g',{},g);pill(o.up,'ETÀ PENSIONABILE ▲',720,60,'#E4412C');
+ o.cap=el('g',{},g);cap(o.cap,"OGNI 2 ANNI L'ETÀ SI ADEGUA ALLA SPERANZA DI VITA",50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ const qs=eob(seg(t,0.1,0.7));T(o.q,lerp(960,1650,eio(seg(t,0.8,1.5))),lerp(430,170,eio(seg(t,0.8,1.5))),8*Math.sin(t*4),Math.max(0,qs)*lerp(1,0.5,eio(seg(t,0.8,1.5))));
+ T(o.gr,520,500,-2,Math.max(0,eob(seg(t,0.9,1.6))));
+ o.line.setAttribute('stroke-dashoffset',800-800*eio(seg(t,1.6,3.6)));
+ o.pts.forEach((c,i)=>{op(c,t>1.8+i*0.35?1:0);});
+ T(o.loop,1400,370,0,Math.max(0,eob(seg(t,2.6,3.3))));o.arc.setAttribute('transform','rotate('+(t*90)+')');
+ T(o.ev,1400,590,-3,Math.max(0,eob(seg(t,3.0,3.6))));
+ T(o.up,1400,740,2,Math.max(0,eob(seg(t,4.2,4.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.8,1.4))));}},
+{s:5.6,e:10.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LEGGE DI BILANCIO 2026');
+ o.doc=el('g',{},g);docO(o.doc,560,720,'LEGGE DI BILANCIO','2026','NOVITÀ PENSIONI');
+ o.st=el('g',{},g);pill(o.st,'GRADUALMENTE',640,70,'#2FBF9B');
+ o.stairs=el('g',{},g);o.steps=[0,1,2].map(i=>{const h=120+i*110;return {r:el('rect',{x:i*190-285,y:230-h,width:170,height:h,rx:18,fill:i==2?'url(#g_badge)':'#CFE9E3',stroke:'#fff','stroke-width':4},o.stairs),h};});
+ o.cap=el('g',{},g);cap(o.cap,'LA LEGGE DI BILANCIO 2026: AUMENTO GRADUALE',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.doc,520,520,-2,Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.st,520,540,-10,Math.max(0,eob(seg(t,1.8,2.5))));
+ T(o.stairs,1400,500,0,1);
+ o.steps.forEach((s,i)=>{const k=eob(seg(t,2.4+i*0.55,2.9+i*0.55));s.r.setAttribute('transform','translate(0,230) scale(1,'+Math.max(0,k)+') translate(0,-230)');});
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.4,1.0))));}},
+{s:10.4,e:15.5,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'COSA CAMBIA');
+ o.c1=calendarPage(g,'ANNO','2027',150,'');o.c2=calendarPage(g,'ANNO','2028',150,'');
+ o.k1=el('g',{},g);chip(o.k1,'+1 MESE',320);o.k2=el('g',{},g);chip(o.k2,'+2 MESI',320);
+ o.ar=el('g',{},g);el('path',{d:'M-60 0 L60 0 M30 -30 L60 0 L30 30',fill:'none',stroke:'#fff','stroke-width':14,'stroke-linecap':'round','stroke-linejoin':'round'},o.ar);
+ o.tot=el('g',{},g);el('circle',{r:170,fill:'url(#g_badge)',stroke:'#fff','stroke-width':12,filter:'url(#g_sh)'},o.tot);txt(o.tot,'3',0,30,150,'#fff','900');txt(o.tot,'IN TUTTO',0,98,36,'#fff','900');
+ o.dr=dotsRow(g,12,0);
+ o.cap=el('g',{},g);cap(o.cap,'1 MESE NEL 2027, 2 MESI NEL 2028: IN TUTTO 3 MESI',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.c1.g,420,170,0,0.9*Math.max(0,eob(seg(t,0.2,0.9))));T(o.c2.g,980,170,0,0.9*Math.max(0,eob(seg(t,2.4,3.1))));
+ T(o.ar,700,430,0,Math.max(0,eob(seg(t,2.2,2.8))));
+ T(o.k1,420,690,-3,Math.max(0,eob(seg(t,1.0,1.7))));T(o.k2,980,690,3,Math.max(0,eob(seg(t,3.2,3.9))));
+ T(o.tot,1590,420,0,Math.max(0,eob(seg(t,3.9,4.6))));
+ o.dr.g.setAttribute('transform','translate(960 850)');
+ lightDot(o.dr.a[0],t>1.4,seg(t,1.4,1.9));lightDot(o.dr.a[1],t>3.5,seg(t,3.5,4.0));lightDot(o.dr.a[2],t>3.8,seg(t,3.8,4.3));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 8 ===================
+BLK[8]={D:20.23,S:[
+{s:0,e:3.9,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PENSIONE ANTICIPATA');
+ o.a=el('g',{},g);
+ el('rect',{x:-290,y:-300,width:580,height:600,rx:36,fill:'url(#g_paper)',filter:'url(#g_sh)'},o.a);txt(o.a,'ETÀ',0,-170,100,INK,'900');
+ const cal=el('g',{transform:'translate(0 20)'},o.a);el('rect',{x:-100,y:-100,width:200,height:200,rx:24,fill:'#EAF7F4',stroke:'#C9D6D8','stroke-width':6},cal);txt(cal,'67',0,30,100,'#6F878C','900');
+ o.x=el('g',{},g);el('line',{x1:-250,y1:-250,x2:250,y2:250,stroke:'#E4412C','stroke-width':34,'stroke-linecap':'round'},o.x);el('line',{x1:-250,y1:250,x2:250,y2:-250,stroke:'#E4412C','stroke-width':34,'stroke-linecap':'round'},o.x);
+ o.b=el('g',{},g);
+ el('rect',{x:-290,y:-300,width:580,height:600,rx:36,fill:'url(#g_paper)',filter:'url(#g_sh)'},o.b);txt(o.b,'CONTRIBUTI',0,-190,54,INK,'900');
+ for(let i=0;i<4;i++){const c=el('g',{transform:'translate('+(-120+i*80)+' '+(120-i*45)+')'},o.b);el('rect',{x:-34,y:-110,width:68,height:230,rx:12,fill:'#2FBF9B'},c);}
+ o.ck=el('g',{},g);checkBadge(o.ck,90);
+ o.cap=el('g',{},g);cap(o.cap,'CONTA SOLO IL NUMERO DI ANNI DI CONTRIBUTI',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.a,520,500,-3,Math.max(0,eob(seg(t,0.1,0.8))));T(o.x,520,500,0,Math.max(0,eob(seg(t,0.9,1.5))));op(o.x,seg(t,0.9,1.3));
+ T(o.b,1400,500,3,Math.max(0,eob(seg(t,1.5,2.2))));T(o.ck,1700,260,0,Math.max(0,eob(seg(t,2.4,3.0))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:3.9,e:20.23,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'ANNI DI CONTRIBUTI NECESSARI');
+ o.tb=el('g',{},g);el('rect',{x:-880,y:-330,width:1760,height:640,rx:40,fill:'url(#g_paper)',filter:'url(#g_sh)'},o.tb);
+ o.mm=el('g',{},o.tb);const m1=el('g',{transform:'translate(0 -255)'},o.mm);medalS(m1,false,0.3);txt(o.mm,'UOMINI',0,-175,44,INK,'900');
+ const m2=el('g',{transform:'translate(560 -255)'},o.mm);medalS(m2,true,0.3);txt(o.mm,'DONNE',560,-175,44,INK,'900');
+ el('rect',{x:-820,y:-140,width:1640,height:6,rx:3,fill:'#C9D6D8'},o.tb);
+ o.rows=[['OGGI','42 anni e 10 mesi','41 anni e 10 mesi','#2FBF9B',-60],['DAL 2027','42 anni e 11 mesi','41 anni e 11 mesi','#E09A1A',80],['DAL 2028','43 anni e 1 mese','42 anni e 1 mese','#E4412C',220]].map(r=>{
+  const w=el('g',{},o.tb);el('rect',{x:-840,y:r[4]-55,width:1680,height:120,rx:26,fill:r[3],opacity:0.14},w);
+  const lb=el('g',{transform:'translate(-640 '+r[4]+')'},w);pill(lb,r[0],300,44,r[3]);
+  txt(w,r[1],0,r[4]+16,46,INK,'900');txt(w,r[2],560,r[4]+16,46,INK,'900');return w;});
+ o.cs=[cap(g,'OGGI: 42 ANNI E 10 MESI / 41 ANNI E 10 MESI',54),cap(g,'DAL 2027: 42 ANNI E 11 MESI / 41 ANNI E 11 MESI',54),cap(g,'DAL 2028: 43 ANNI E 1 MESE / 42 ANNI E 1 MESE',54)];
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.tb,960,490,0,Math.max(0,eob(seg(t,0.1,0.8)))*0.95);
+ const tm=[0.4,5.6,10.7];
+ o.rows.forEach((r,i)=>{op(r,seg(t,tm[i],tm[i]+0.5));});
+ const idx=t<tm[1]?0:(t<tm[2]?1:2);
+ o.cs.forEach((c,i)=>{op(c,i===idx?1:0);T(c,960,950,0,1);});}}
+]};
+// =================== BLOCCO 9 ===================
+BLK[9]={D:16.27,S:[
+{s:0,e:2.9,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'ATTENZIONE');
+ o.w=el('g',{},g);warn(o.w);
+ o.m=el('g',{},g);magnifier(o.m);txt(o.m,'!',0,44,130,'#E4412C','900');
+ o.cap=el('g',{},g);cap(o.cap,'ATTENZIONE A UN DETTAGLIO CHE MOLTI DIMENTICANO',52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.w,640,500,0,1.5*Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.m,1300,430,0,Math.max(0,eob(seg(t,0.7,1.4)))*(1+0.03*Math.sin(t*5)));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:2.9,e:8.5,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LA FINESTRA DI TRE MESI');
+ o.fl=el('g',{},g);o.line=el('rect',{x:-700,y:-8,width:1400,height:16,rx:8,fill:'#0A3F45',stroke:LT,'stroke-width':3},g);
+ o.flag=el('g',{},g);el('line',{x1:0,y1:0,x2:0,y2:-190,stroke:'#fff','stroke-width':10,'stroke-linecap':'round'},o.flag);el('path',{d:'M0 -190 L130 -150 L0 -110 Z',fill:'#2FBF9B'},o.flag);
+ o.fl2=txt(g,'CONTRIBUTI MATURATI',0,0,36,'#fff','900');
+ o.cals=[0,1,2].map(i=>{const c=el('g',{},g);el('rect',{x:-95,y:-95,width:190,height:190,rx:26,fill:'url(#g_paper)',filter:'url(#g_sh2)'},c);el('rect',{x:-95,y:-95,width:190,height:56,rx:26,fill:'url(#g_head)'},c);el('rect',{x:-95,y:-60,width:190,height:21,fill:'url(#g_head)'},c);txt(c,'MESE',0,-52,34,'#fff','900');txt(c,''+(i+1),0,60,90,INK,'900');return c;});
+ o.coin=el('g',{},g);coinA(o.coin,100);o.pp=el('g',{},g);pill(o.pp,'LA PENSIONE PARTE',640,54,'#2FBF9B');
+ o.cap=el('g',{},g);cap(o.cap,'DOPO I CONTRIBUTI: UNA FINESTRA DI TRE MESI',52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.line,960,540,0,1);
+ T(o.flag,300,540,0,Math.max(0,eob(seg(t,0.1,0.7))));o.fl2.setAttribute('transform','translate(300 620)');op(o.fl2,seg(t,0.4,0.9));
+ o.cals.forEach((c,i)=>{T(c,640+i*270,420,(i-1)*3,Math.max(0,eob(seg(t,0.8+i*1.0,1.4+i*1.0))));});
+ T(o.coin,1640,430,0,Math.max(0,eob(seg(t,3.9,4.6)))*(1+0.04*Math.sin(t*6)));
+ T(o.pp,1500,690,-3,Math.max(0,eob(seg(t,4.2,4.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:8.5,e:13.3,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LAVORATORE DIPENDENTE');
+ o.b=el('g',{},g);briefcase(o.b);
+ o.bl=el('g',{},g);pill(o.bl,'LAVORO DIPENDENTE',620,54);
+ o.ar=el('g',{},g);el('path',{d:'M-90 0 L90 0 M50 -45 L90 0 L50 45',fill:'none',stroke:'#fff','stroke-width':18,'stroke-linecap':'round','stroke-linejoin':'round'},o.ar);
+ o.s=el('g',{},g);stopSign(o.s);
+ o.coin=el('g',{},g);coinA(o.coin,90);
+ o.sl=el('g',{},g);pill(o.sl,'SMETTI DI LAVORARE',700,54,'#E4412C');
+ o.cap=el('g',{},g);cap(o.cap,'PER INCASSARLA DEVI AVER SMESSO DI LAVORARE',52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.b,460,430,-4,1.3*Math.max(0,eob(seg(t,0.1,0.8))));T(o.bl,460,690,-2,Math.max(0,eob(seg(t,0.6,1.3))));
+ T(o.ar,960,440,0,Math.max(0,eob(seg(t,1.2,1.8))));
+ T(o.s,1380,420,0,1.2*Math.max(0,eob(seg(t,1.8,2.5))));T(o.sl,1380,690,3,Math.max(0,eob(seg(t,2.4,3.1))));
+ T(o.coin,1700,250,0,Math.max(0,eob(seg(t,3.3,3.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:13.3,e:16.27,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'TIENILO A MENTE');
+ o.n=el('g',{},g);sticky(o.n,'RICORDA!','3 MESI DI FINESTRA');txt(o.n,'+ SMETTERE DI LAVORARE',0,150,40,'#7A4A00','900');
+ o.q=el('g',{},g);qBubble(o.q,90);
+ o.cap=el('g',{},g);cap(o.cap,'TIENILO A MENTE... TRA POCO TI SERVIRÀ!',56);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.n,960,470,-4+2*Math.sin(t*3),1.2*Math.max(0,eob(seg(t,0.1,0.9))));
+ T(o.q,1560,250,10*Math.sin(t*4),Math.max(0,eob(seg(t,1.4,2.0))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 10 ===================
+BLK[10]={D:9.97,S:[
+{s:0,e:5.3,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LA DOMANDA');
+ o.sg=el('g',{},g);el('rect',{x:-260,y:-120,width:520,height:240,rx:36,fill:'url(#g_badge)',stroke:'#fff','stroke-width':12,filter:'url(#g_sh)'},o.sg);txt(o.sg,'64',-80,46,150,'#fff','900');txt(o.sg,'ANNI',120,36,56,'#fff','900');
+ o.q=el('g',{},g);qBubble(o.q,150);
+ o.m=el('g',{},g);medal(o.m,false);
+ o.yes=el('g',{},g);pill(o.yes,'ESISTE',420,60,'#2FBF9B');o.no=el('g',{},g);pill(o.no,'NON ESISTE',560,60,'#E4412C');
+ o.cap=el('g',{},g);cap(o.cap,'QUESTA PENSIONE A 64 ANNI ESISTE O NO?',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.m,360,420,0,0.85*Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.sg,960,360,0,Math.max(0,eob(seg(t,0.5,1.2))));
+ T(o.q,1560,350,10*Math.sin(t*4),Math.max(0,eob(seg(t,1.2,1.9))));
+ T(o.yes,780,690,-3,Math.max(0,eob(seg(t,2.2,2.9))));T(o.no,1260,690,3,Math.max(0,eob(seg(t,2.8,3.5))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:5.3,e:6.8,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LA RISPOSTA');
+ o.ck=el('g',{},g);checkBadge(o.ck,200);
+ o.st=el('g',{},g);pill(o.st,'SÌ! È LEGGE!',900,110,'#2FBF9B');
+ o.sp=ring(g,200);
+ o.cap=el('g',{},g);cap(o.cap,'SÌ, ESISTE! È LEGGE!',60);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.ck,960,380,0,Math.max(0,eob(seg(t,0.05,0.5))));
+ T(o.st,960,700,-3,Math.max(0,eob(seg(t,0.3,0.8))));
+ const rr=seg(t,0.1,0.8);o.sp.setAttribute('r',lerp(100,420,rr));o.sp.setAttribute('opacity',(1-rr)*0.8);T(o.sp,960,380,0,1);
+ T(o.cap,960,950,0,1);}},
+{s:6.8,e:9.97,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'IL TRUCCO');
+ o.k=[0,1,2].map(i=>{const c=el('g',{},g);el('circle',{r:150,fill:'url(#g_paper)',filter:'url(#g_sh)'},c);el('circle',{r:150,fill:'none',stroke:['#2FBF9B','#E09A1A','#E4412C'][i],'stroke-width':14},c);txt(c,''+(i+1),0,60,170,INK,'900');const lk=el('g',{transform:'translate(100 100) scale(0.5)'},c);lockO(lk);return c;});
+ o.cap=el('g',{},g);cap(o.cap,"C'È UN TRUCCO: TRE CONDIZIONI",58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ [440,960,1480].forEach((x,i)=>{T(o.k[i],x,480,(i-1)*4,Math.max(0,eob(seg(t,0.5+i*0.6,1.1+i*0.6)))*1.2);});
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.2,0.8))));}}
+]};
+
+// =================== BLOCCO 11 ===================
+function yx(y){return -800+(y-1980)*32;}
+BLK[11]={D:13.9,S:[
+{s:0,e:13.9,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'CONDIZIONE NUMERO UNO');
+ o.n=el('g',{},g);el('circle',{r:80,fill:'url(#g_badge)',stroke:'#fff','stroke-width':10,filter:'url(#g_sh2)'},o.n);txt(o.n,'1',0,36,110,'#fff','900');
+ o.tl=el('g',{},g);
+ el('rect',{x:-800,y:-150,width:yx(1996)+800,height:300,rx:20,fill:'#E4412C',opacity:.22},o.tl);
+ el('rect',{x:yx(1996),y:-150,width:800-yx(1996),height:300,rx:20,fill:'#2FBF9B',opacity:.25},o.tl);
+ el('rect',{x:-800,y:-6,width:1600,height:12,rx:6,fill:'#fff',opacity:.85},o.tl);
+ [1980,1990,2000,2010,2020,2030].forEach(y=>{el('rect',{x:yx(y)-3,y:-22,width:6,height:44,fill:'#fff'},o.tl);txt(o.tl,''+y,yx(y),84,34,'#E9FBF6','900');});
+ el('rect',{x:yx(1996)-5,y:-190,width:10,height:380,rx:5,fill:AMB},o.tl);
+ txt(o.tl,'1996',yx(1996),-215,70,AMB,'900');
+ txt(o.tl,'PRIMA DEL 1996',(yx(1996)-800)/2,138,40,'#FFB3A8','900');txt(o.tl,'DAL 1996 IN POI',(800+yx(1996))/2,138,40,'#9FF5DC','900');
+ o.fl=el('g',{},g);el('line',{x1:0,y1:0,x2:0,y2:-170,stroke:'#fff','stroke-width':10,'stroke-linecap':'round'},o.fl);el('path',{d:'M0 -170 L180 -130 L0 -90 Z',fill:'#2FBF9B'},o.fl);txt(o.fl,'1° CONTRIBUTO',90,-120,28,'#fff','900');
+ o.pure=el('g',{},g);pill(o.pure,'SISTEMA CONTRIBUTIVO PURO',960,54,'#2FBF9B');
+ o.red=el('g',{},g);coinA(o.red,70);
+ o.x=el('g',{},g);el('line',{x1:-90,y1:-90,x2:90,y2:90,stroke:'#E4412C','stroke-width':22,'stroke-linecap':'round'},o.x);el('line',{x1:-90,y1:90,x2:90,y2:-90,stroke:'#E4412C','stroke-width':22,'stroke-linecap':'round'},o.x);
+ o.no=el('g',{},g);pill(o.no,'UN SOLO CONTRIBUTO PRIMA: NON FA PER TE',1300,50,'#E4412C');
+ o.c1=el('g',{},g);cap(o.c1,'IL PRIMO CONTRIBUTO DAL 1° GENNAIO 1996 IN POI',50);
+ o.c2=el('g',{},g);cap(o.c2,'CON UN SOLO CONTRIBUTO PRIMA DEL 1996 NON FA PER TE',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.n,200,260,0,Math.max(0,eob(seg(t,0.1,0.7))));
+ T(o.tl,960,520,0,Math.max(0,eob(seg(t,0.2,0.9))));
+ const fp=eob(seg(t,2.2,2.9));T(o.fl,960+yx(2006),lerp(150,520,fp)-0,0,Math.max(0,fp));o.fl.setAttribute('transform','translate('+(960+yx(2006))+' '+lerp(180,540,fp)+') scale('+Math.max(0,fp)+')');
+ T(o.pure,960,780,0,Math.max(0,eob(seg(t,5.4,6.0))));
+ const rd=eob(seg(t,8.4,9.1));T(o.red,960+yx(1988),lerp(150,520,rd),0,Math.max(0,rd));
+ T(o.x,960+yx(1988),520,0,Math.max(0,eob(seg(t,9.4,9.9))));
+ T(o.no,960,780,-2,Math.max(0,eob(seg(t,9.9,10.5))));
+ op(o.pure,t<8.2?1:Math.max(0,1-seg(t,8.2,8.6)));
+ op(o.c1,t<8.2?1:0);op(o.c2,t>=8.2?1:0);T(o.c1,960,950,0,1);T(o.c2,960,950,0,1);}}
+]};
+// =================== BLOCCO 12 ===================
+BLK[12]={D:16.13,S:[
+{s:0,e:5.1,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'CONDIZIONE NUMERO DUE');
+ o.n=el('g',{},g);el('circle',{r:80,fill:'url(#g_badge)',stroke:'#fff','stroke-width':10,filter:'url(#g_sh2)'},o.n);txt(o.n,'2',0,36,110,'#fff','900');
+ o.p=el('g',{},g);o.pl=plate(o.p,'20','ANNI DI CONTRIBUTI');o.pl.s.setAttribute('font-size',30);
+ o.sq=el('g',{},g);o.sqs=[];for(let i=0;i<20;i++)o.sqs.push(el('rect',{x:-380+i*38,y:0,width:32,height:44,rx:8,fill:'#0A3F45',opacity:.6,stroke:LT,'stroke-width':2},o.sq));
+ o.slip=el('g',{},g);const sc=slipCard(o.slip,'BUSTA PAGA','CONTRIBUTI');sc.amt.setAttribute('font-size',66);
+ o.st=el('g',{},g);pill(o.st,'VERSATI DAVVERO',560,60,'#2FBF9B');o.ck=el('g',{},g);checkBadge(o.ck,70);
+ o.cap=el('g',{},g);cap(o.cap,'ALMENO 20 ANNI DI CONTRIBUTI EFFETTIVI: VERSATI DAVVERO',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.n,200,260,0,Math.max(0,eob(seg(t,0.1,0.7))));
+ T(o.p,640,420,0,1.45*Math.max(0,eob(seg(t,0.4,1.1))));
+ T(o.sq,960,810,0,Math.max(0,eob(seg(t,1.0,1.6))));
+ o.sqs.forEach((q,i)=>{const on=t>1.5+i*0.06;q.setAttribute('fill',on?'#2FBF9B':'#0A3F45');q.setAttribute('opacity',on?1:.6);});
+ T(o.slip,1480,400,3,0.85*Math.max(0,eob(seg(t,2.4,3.1))));
+ T(o.st,1480,640,-4,Math.max(0,eob(seg(t,3.4,4.0))));T(o.ck,1760,300,0,Math.max(0,eob(seg(t,3.6,4.2))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.4,1.0))));}},
+{s:5.1,e:16.13,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'COSA CAMBIA');
+ o.cal=calendarPage(g,'ANNO','2027',150,'');
+ o.pa=el('g',{},g);o.pla=plate(o.pa,'20','ANNI E 1 MESE');o.pla.s.setAttribute('font-size',34);
+ o.pb=el('g',{},g);o.plb=plate(o.pb,'64','ANNI E 1 MESE');o.plb.s.setAttribute('font-size',34);
+ o.lb1=el('g',{},g);pill(o.lb1,'CONTRIBUTI',420,46,'#2FBF9B');o.lb2=el('g',{},g);pill(o.lb2,'ETÀ',300,46,'#E09A1A');
+ o.k1=el('g',{},g);o.kt1=chip(o.k1,'+1 MESE',300);o.k2=el('g',{},g);o.kt2=chip(o.k2,'+1 MESE',300);
+ o.c1=el('g',{},g);cap(o.c1,'DAL 2027: 20 ANNI E 1 MESE, ETÀ 64 ANNI E 1 MESE',50);
+ o.c2=el('g',{},g);cap(o.c2,'DAL 2028: 20 ANNI E 3 MESI, ETÀ 64 ANNI E 3 MESI',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ const f=seg(t,5.8,6.6);const sc=f<0.5?1-f*2:(f-0.5)*2;
+ o.cal.big.textContent=f<0.5?'2027':'2028';
+ o.cal.g.setAttribute('transform','translate(300 '+(140+280)+') scale('+(0.95)+' '+(0.95*Math.max(0.03,Math.abs(sc)))+') translate(0 -280)');
+ T(o.pa,960,420,0,1.2*Math.max(0,eob(seg(t,0.3,1.0))));T(o.pb,1500,420,0,1.2*Math.max(0,eob(seg(t,0.8,1.5))));
+ T(o.lb1,960,210,0,Math.max(0,eob(seg(t,0.5,1.1))));T(o.lb2,1500,210,0,Math.max(0,eob(seg(t,1.0,1.6))));
+ const three=t>6.6;
+ o.pla.s.textContent=three?'ANNI E 3 MESI':'ANNI E 1 MESE';o.plb.s.textContent=three?'ANNI E 3 MESI':'ANNI E 1 MESE';
+ o.kt1.t.textContent=three?'+3 MESI':'+1 MESE';o.kt2.t.textContent=three?'+3 MESI':'+1 MESE';
+ T(o.k1,960,700,-3,Math.max(0,eob(seg(t,1.6,2.3))));T(o.k2,1500,700,3,Math.max(0,eob(seg(t,2.0,2.7))));
+ op(o.c1,t<5.8?1:0);op(o.c2,t>=5.8?1:0);T(o.c1,960,950,0,1);T(o.c2,960,950,0,1);}}
+]};
+// =================== BLOCCO 13 ===================
+function kettle(p){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:'M-80 -150 Q-80 -240 0 -240 Q80 -240 80 -150',fill:'none',stroke:'#0B4A50','stroke-width':34,'stroke-linecap':'round'},g);
+ el('path',{d:'M-190 140 Q-210 -140 0 -140 Q210 -140 190 140 Z',fill:'#0B4A50',stroke:'#2FBF9B','stroke-width':10},g);
+ el('rect',{x:-170,y:130,width:340,height:34,rx:14,fill:'#06303A'},g);txt(g,'3×',0,70,130,'#fff','900');return g;}
+BLK[13]={D:18.47,S:[
+{s:0,e:2.9,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'CONDIZIONE NUMERO TRE');
+ o.n=el('g',{},g);el('circle',{r:80,fill:'url(#g_badge)',stroke:'#fff','stroke-width':10,filter:'url(#g_sh2)'},o.n);txt(o.n,'3',0,36,110,'#fff','900');
+ o.k=el('g',{},g);kettle(o.k);o.c=el('g',{},g);coinA(o.c,150);
+ o.st=el('g',{},g);pill(o.st,'LA PIÙ DIFFICILE: L’IMPORTO',900,64,'#E4412C');
+ o.cap=el('g',{},g);cap(o.cap,"TRE, LA CONDIZIONE PIÙ DIFFICILE: L'IMPORTO!",54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.n,200,260,0,Math.max(0,eob(seg(t,0.1,0.7))));
+ T(o.k,640,470,-4,1.1*Math.max(0,eob(seg(t,0.2,0.9))));T(o.c,1330,460,10*Math.sin(t*3),Math.max(0,eob(seg(t,0.8,1.5))));
+ T(o.st,960,760,-2,Math.max(0,eob(seg(t,1.4,2.1))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:2.9,e:7.7,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LA PRIMA RATA DI PENSIONE');
+ o.sl=slipCard(g,'PRIMA RATA','≥');o.slg=o.sl.g;
+ o.eq=el('g',{},g);txt(o.eq,'≥',0,60,200,'#fff','900');
+ o.as=[0,1,2].map(i=>{const c=el('g',{},g);el('rect',{x:-150,y:-100,width:300,height:200,rx:26,fill:'url(#g_paper)',filter:'url(#g_sh2)'},c);txt(c,'ASSEGNO',0,-30,40,INK,'900');txt(c,'SOCIALE',0,20,40,GRN,'900');const cc=el('g',{transform:'translate(0 72) scale(0.5)'},c);coinA(cc,60);return c;});
+ o.x3=el('g',{},g);txt(o.x3,'× 3',0,50,130,AMB,'900');
+ o.cap=el('g',{},g);cap(o.cap,"LA PRIMA RATA: ALMENO TRE VOLTE L'ASSEGNO SOCIALE",52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.slg,420,470,-2,0.8*Math.max(0,eob(seg(t,0.2,0.9))));
+ o.slg.querySelectorAll('text').forEach((x,i)=>{if(i==1)x.textContent='≥ 3×';});
+ T(o.eq,820,470,0,Math.max(0,eob(seg(t,1.0,1.6))));
+ [0,1,2].forEach(i=>{T(o.as[i],1020+i*270+0,470+(i-1)*0,(i-1)*3,0.78*Math.max(0,eob(seg(t,1.6+i*0.5,2.2+i*0.5))));});
+ T(o.x3,1330,720,0,Math.max(0,eob(seg(t,3.3,3.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:7.7,e:18.47,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'IL CONTO');
+ o.a=el('g',{},g);
+ el('rect',{x:-290,y:-190,width:580,height:380,rx:36,fill:'url(#g_paper)',filter:'url(#g_sh)'},o.a);
+ txt(o.a,'ASSEGNO SOCIALE 2026',0,-110,36,GRN,'900');txt(o.a,'€ 546,24',0,50,96,INK,'900');
+ const cc=el('g',{transform:'translate(210 -150)'},o.a);coinA(cc,60);
+ o.m=el('g',{},g);txt(o.m,'× 3',0,50,150,AMB,'900');
+ o.r=el('g',{},g);
+ el('rect',{x:-330,y:-190,width:660,height:380,rx:36,fill:'url(#g_badge)',stroke:'#fff','stroke-width':10,filter:'url(#g_sh)'},o.r);
+ txt(o.r,'AL MESE',0,-100,52,'#fff','900');txt(o.r,'€ 1.638,72',0,50,84,'#fff','900');
+ o.ck=el('g',{},g);checkBadge(o.ck,80);
+ o.c1=el('g',{},g);cap(o.c1,"L'ASSEGNO SOCIALE 2026: 546,24 EURO",56);
+ o.c2=el('g',{},g);cap(o.c2,'SERVONO ALMENO 1.638,72 EURO AL MESE!',56);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.a,480,470,-2,Math.max(0,eob(seg(t,0.2,0.9))));
+ T(o.m,940,470,0,Math.max(0,eob(seg(t,3.0,3.6))));
+ T(o.r,1480,470,2,0.95*Math.max(0,eob(seg(t,6.2,6.9))));T(o.ck,1760,290,0,Math.max(0,eob(seg(t,7.0,7.6))));
+ op(o.c1,t<6.2?1:0);op(o.c2,t>=6.2?1:0);T(o.c1,960,950,0,1);T(o.c2,960,950,0,1);}}
+]};
+// =================== BLOCCO 14 ===================
+function kid(p,s){const g=el('g',{transform:'scale('+s+')'},p);el('circle',{r:46,fill:'#F7D5B5',stroke:'#fff','stroke-width':6},g);el('path',{d:'M-46 -6 Q-40 -56 0 -52 Q40 -56 46 -6 Q20 -30 0 -28 Q-20 -30 -46 -6 Z',fill:'#7A4A00'},g);el('circle',{cx:-16,cy:6,r:5,fill:INK},g);el('circle',{cx:16,cy:6,r:5,fill:INK},g);el('path',{d:'M-12 24 Q0 34 12 24',fill:'none',stroke:'#C0583F','stroke-width':5,'stroke-linecap':'round'},g);return g;}
+BLK[14]={D:7.77,S:[
+{s:0,e:7.77,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'DONNE CON FIGLI');
+ o.rows=[['1 FIGLIO','2,8 VOLTE','€ 1.529',1],['2 O PIÙ FIGLI','2,6 VOLTE','€ 1.420',2]].map(r=>{
+  const w=el('g',{},g);el('rect',{x:-840,y:-130,width:1680,height:260,rx:40,fill:'url(#g_paper)',filter:'url(#g_sh)'},w);
+  const m=el('g',{transform:'translate(-680 0)'},w);medalS(m,true,0.5);
+  for(let k=0;k<r[3];k++){const kk=el('g',{transform:'translate('+(-560+k*70)+' 70)'},w);kid(kk,0.9);}
+  txt(w,r[0],-380,-10,46,INK,'900');txt(w,r[1],60,28,62,AMB,'900');txt(w,'= '+r[2],560,28,76,GRN,'900');return w;});
+ o.ref=el('g',{},g);pill(o.ref,'PER GLI ALTRI: € 1.638,72 (3 VOLTE)',1100,50,'#06303A');
+ o.dn=el('g',{},g);el('path',{d:'M0 -60 L-50 0 L-18 0 L-18 60 L18 60 L18 0 L50 0 Z',fill:'#2FBF9B',stroke:'#fff','stroke-width':6},o.dn);
+ o.c1=el('g',{},g);cap(o.c1,'DONNE CON UN FIGLIO: SOGLIA A CIRCA 1.529 EURO',52);
+ o.c2=el('g',{},g);cap(o.c2,'CON DUE O PIÙ FIGLI: CIRCA 1.420 EURO',52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.rows[0],960,370,-1,Math.max(0,eob(seg(t,0.2,0.9))));T(o.rows[1],960,680,1,Math.max(0,eob(seg(t,4.8,5.5))));
+ T(o.ref,960,845,0,Math.max(0,eob(seg(t,1.4,2.0))));
+ op(o.c1,t<4.8?1:0);op(o.c2,t>=4.8?1:0);T(o.c1,960,950,0,1);T(o.c2,960,950,0,1);}}
+]};
+// =================== BLOCCO 15 ===================
+BLK[15]={D:8.77,S:[
+{s:0,e:8.77,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'FACCIAMO UN CONTO');
+ o.calc=el('g',{},g);
+ el('rect',{x:-290,y:-380,width:580,height:760,rx:50,fill:'#0A2B30',stroke:'#7FA9AE','stroke-width':8,filter:'url(#g_sh)'},o.calc);
+ el('rect',{x:-250,y:-340,width:500,height:150,rx:22,fill:'#BFEFE3'},o.calc);
+ o.disp=txt(o.calc,'',230,-225,70,INK,'900','end');
+ for(let r=0;r<4;r++)for(let c=0;c<4;c++)el('rect',{x:-250+c*130,y:-150+r*130,width:110,height:110,rx:24,fill:c==3?AMB:'#17383D'},o.calc);
+ o.m=el('g',{},g);for(let i=0;i<13;i++){const c=el('g',{},o.m);el('rect',{x:-70,y:-70,width:140,height:140,rx:22,fill:'url(#g_paper)',filter:'url(#g_sh3)'},c);el('rect',{x:-70,y:-70,width:140,height:40,rx:22,fill:'url(#g_head)'},c);el('rect',{x:-70,y:-46,width:140,height:16,fill:'url(#g_head)'},c);txt(c,''+(i+1),0,52,60,INK,'900');}
+ o.mc=[...o.m.children];
+ o.lab=el('g',{},g);pill(o.lab,'13 MENSILITÀ',500,56,'#E09A1A');
+ o.res=el('g',{},g);
+ el('rect',{x:-420,y:-130,width:840,height:260,rx:40,fill:'url(#g_badge)',stroke:'#fff','stroke-width':10,filter:'url(#g_sh)'},o.res);
+ txt(o.res,'CIRCA',0,-62,46,'#fff','900');txt(o.res,'€ 21.300 L’ANNO',0,64,74,'#fff','900');
+ o.cap=el('g',{},g);cap(o.cap,'1.638,72 EURO AL MESE × 13 MENSILITÀ = CIRCA 21.300 EURO',46);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.calc,460,500,-2,0.85*Math.max(0,eob(seg(t,0.1,0.8))));
+ o.disp.textContent=t<1.4?'':(t<3.2?'1638,72':(t<5.0?'1638,72×13':'= 21303'));
+ o.mc.forEach((c,i)=>{const col=i%7,row=Math.floor(i/7);T(c,1010+col*125,280+row*160,(i%3-1)*3,0.9*Math.max(0,eob(seg(t,2.2+i*0.18,2.7+i*0.18))));});
+ T(o.lab,1330,565,-2,Math.max(0,eob(seg(t,3.2,3.8))));
+ T(o.res,1330,775,2,Math.max(0,eob(seg(t,5.1,5.8))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+
+// =================== BLOCCO 16 ===================
+function bag(p,s){const g=el('g',{transform:'scale('+s+')'},p);
+ el('path',{d:'M-120 140 Q-170 -20 -80 -100 L80 -100 Q170 -20 120 140 Z',fill:'#0B4A50',stroke:'#2FBF9B','stroke-width':10,filter:'url(#g_sh2)'},g);
+ el('rect',{x:-90,y:-130,width:180,height:44,rx:18,fill:'#0A3F45',stroke:'#2FBF9B','stroke-width':8},g);
+ txt(g,'€',0,70,170,AMB,'900');return g;}
+BLK[16]={D:12.93,S:[
+{s:0,e:3.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'IL COEFFICIENTE A 64 ANNI');
+ o.b=el('g',{},g);o.bb=card3(o.b,'64 ANNI','#2FBF9B',460,170);
+ o.pc=el('g',{},g);el('circle',{r:210,fill:'url(#g_paper)',filter:'url(#g_sh)'},o.pc);el('circle',{r:210,fill:'none',stroke:AMB,'stroke-width':16},o.pc);txt(o.pc,'5,088%',0,34,92,INK,'900');txt(o.pc,'COEFFICIENTE',0,100,32,GRN,'900');
+ o.cap=el('g',{},g);cap(o.cap,'CON IL COEFFICIENTE DI OGGI A 64 ANNI: 5,088%',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.b,560,470,-3,Math.max(0,eob(seg(t,0.1,0.8))));T(o.pc,1320,470,0,Math.max(0,eob(seg(t,0.7,1.5)))*(1+0.02*Math.sin(t*5)));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:3.4,e:8.5,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'IL MONTANTE');
+ o.bags=[0,1,2].map(i=>{const c=el('g',{},g);bag(c,1.1);return c;});
+ o.big=el('g',{},g);
+ el('rect',{x:-420,y:-130,width:840,height:260,rx:40,fill:'url(#g_badge)',stroke:'#fff','stroke-width':10,filter:'url(#g_sh)'},o.big);
+ txt(o.big,'MONTANTE',0,-62,46,'#fff','900');o.num=txt(o.big,'',0,64,100,'#fff','900');
+ o.cap=el('g',{},g);cap(o.cap,'SERVE UN MONTANTE DI CIRCA 419 MILA EURO!',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ [380,640,900].forEach((x,i)=>T(o.bags[i],x,430+(i%2)*40,(i-1)*6,Math.max(0,eob(seg(t,0.2+i*0.35,0.8+i*0.35)))));
+ T(o.big,1360,480,2,Math.max(0,eob(seg(t,1.5,2.2))));
+ o.num.textContent='€ '+Math.round(eio(seg(t,2.0,4.0))*419).toLocaleString('it-IT')+'.000'.replace('.000','.000');
+ o.num.textContent='€ '+Math.round(eio(seg(t,2.0,4.0))*419)+' MILA';
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:8.5,e:12.93,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PER TANTI');
+ o.doc=el('g',{},g);docO(o.doc,560,700,'PENSIONE','64 ANNI','CONDIZIONE IMPORTO');
+ o.st=el('g',{},g);el('rect',{x:-330,y:-70,width:660,height:140,rx:16,fill:'none',stroke:'#E09A1A','stroke-width':14},o.st);txt(o.st,'SULLA CARTA',0,34,88,'#E09A1A','900');
+ o.q=el('g',{},g);qBubble(o.q,100);
+ o.man=el('g',{},g);medal(o.man,false);
+ o.cap=el('g',{},g);cap(o.cap,'PER TANTI LA PENSIONE A 64 ANNI RESTA SULLA CARTA',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.doc,520,490,-3,Math.max(0,eob(seg(t,0.1,0.8))));T(o.st,520,540,-12,Math.max(0,eob(seg(t,1.4,2.0))));
+ T(o.man,1280,430,0,0.9*Math.max(0,eob(seg(t,0.8,1.5))));T(o.q,1550,230,10*Math.sin(t*4),Math.max(0,eob(seg(t,2.2,2.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 17 ===================
+BLK[17]={D:19.41,S:[
+{s:0,e:3.2,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'USCIRE PRIMA');
+ o.door=el('g',{},g);door(o.door);
+ o.tag=el('g',{},g);el('rect',{x:-220,y:-90,width:440,height:180,rx:24,fill:AMB,stroke:'#fff','stroke-width':8,filter:'url(#g_sh2)'},o.tag);el('circle',{cx:-180,cy:0,r:16,fill:'#fff'},o.tag);txt(o.tag,'HA UN',20,-10,50,'#5A3300','900');txt(o.tag,'PREZZO',20,48,64,'#5A3300','900');
+ o.cap=el('g',{},g);cap(o.cap,'E USCIRE PRIMA HA UN PREZZO',58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.door,620,500,0,Math.max(0,eob(seg(t,0.1,0.8)))*0.95);T(o.tag,1180,480,lerp(-30,6,eob(seg(t,0.6,1.5))),Math.max(0,eob(seg(t,0.6,1.3))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:3.2,e:10.2,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'COEFFICIENTE E ET\u00c0');
+ o.ax=el('g',{},g);el('line',{x1:-800,y1:0,x2:800,y2:0,stroke:'#fff','stroke-width':6,opacity:.7},o.ax);
+ o.b1=el('g',{},g);o.b2=el('g',{},g);
+ o.r1=el('rect',{x:-130,y:-10,width:260,height:10,rx:14,fill:'#E09A1A'},o.b1);o.r2=el('rect',{x:-130,y:-10,width:260,height:10,rx:14,fill:'#2FBF9B'},o.b2);
+ o.l1=txt(g,'64 ANNI',0,0,60,'#fff','900');o.l2=txt(g,'67 ANNI',0,0,60,'#fff','900');
+ o.v1=txt(g,'5,088%',0,0,70,'#FFD27F','900');o.v2=txt(g,'5,608%',0,0,70,'#9FF5DC','900');
+ o.cap=el('g',{},g);cap(o.cap,'A 64 ANNI 5,088%, A 67 ANNI 5,608%',56);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.ax,960,780,0,1);
+ const h1=eio(seg(t,0.4,2.0))*(5.088/5.608)*470,h2=eio(seg(t,1.8,3.6))*470;
+ o.r1.setAttribute('y',-h1);o.r1.setAttribute('height',Math.max(4,h1));o.r2.setAttribute('y',-h2);o.r2.setAttribute('height',Math.max(4,h2));
+ T(o.b1,600,780,0,1);T(o.b2,1320,780,0,1);
+ o.l1.setAttribute('transform','translate(600 850)');o.l2.setAttribute('transform','translate(1320 850)');
+ o.v1.setAttribute('transform','translate(600 '+(760-h1-30)+')');o.v2.setAttribute('transform','translate(1320 '+(760-h2-30)+')');op(o.v1,seg(t,1.8,2.4));op(o.v2,seg(t,3.5,4.0));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:10.2,e:17.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LO STESSO MONTANTE');
+ o.m=el('g',{},g);bag(o.m,1.2);
+ o.s1=el('g',{},g);const a=slipCard(o.s1,'USCITA A 64 ANNI','€ 21.300');a.amt.setAttribute('font-size',84);
+ o.s2=el('g',{},g);const b=slipCard(o.s2,'ATTESA FINO A 67 ANNI','€ 23.500');b.amt.setAttribute('font-size',84);
+ o.pl=el('g',{},g);pill(o.pl,'+10% L’ANNO',560,76,'#2FBF9B');
+ o.ar=el('g',{},g);el('path',{d:'M0 80 L0 -80 M-50 -30 L0 -90 L50 -30',fill:'none',stroke:'#2FBF9B','stroke-width':26,'stroke-linecap':'round','stroke-linejoin':'round'},o.ar);
+ o.cap=el('g',{},g);cap(o.cap,'CON LO STESSO MONTANTE: ASPETTARE DA CIRCA IL 10% IN PIÙ',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.m,960,330,0,Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.s1,520,620,-3,0.95*Math.max(0,eob(seg(t,1.2,2.0))));T(o.s2,1400,620,3,0.95*Math.max(0,eob(seg(t,3.2,4.0))));
+ T(o.ar,1740,520,0,Math.max(0,eob(seg(t,4.6,5.2))));T(o.pl,1400,330,-3,Math.max(0,eob(seg(t,5.0,5.7))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:17.0,e:19.41,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'STESSO LAVORO');
+ o.k=el('g',{},g);card3(o.k,'ASSEGNO PIÙ ALTO','#2FBF9B',900,200);
+ o.ck=el('g',{},g);checkBadge(o.ck,110);
+ o.cap=el('g',{},g);cap(o.cap,'STESSO LAVORO, ASSEGNO PIÙ ALTO!',58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.k,960,470,-2,Math.max(0,eob(seg(t,0.1,0.8))));T(o.ck,1480,360,0,Math.max(0,eob(seg(t,0.6,1.2))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.2,0.8))));}}
+]};
+// =================== BLOCCO 18 ===================
+function piggy(p){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('ellipse',{cx:0,cy:0,rx:170,ry:130,fill:'#F4A5B8',stroke:'#fff','stroke-width':8},g);
+ el('circle',{cx:120,cy:-20,r:42,fill:'#F29AAF',stroke:'#fff','stroke-width':6},g);el('circle',{cx:135,cy:-20,r:7,fill:'#7A3A4A'},g);el('circle',{cx:112,cy:-20,r:7,fill:'#7A3A4A'},g);
+ el('circle',{cx:70,cy:-60,r:12,fill:'#7A3A4A'},g);
+ el('path',{d:'M-60 -120 L-30 -165 L0 -120',fill:'#F29AAF',stroke:'#fff','stroke-width':6},g);
+ el('rect',{x:-130,y:110,width:36,height:60,rx:12,fill:'#F29AAF'},g);el('rect',{x:70,y:110,width:36,height:60,rx:12,fill:'#F29AAF'},g);
+ el('rect',{x:-60,y:-132,width:80,height:12,rx:6,fill:'#7A3A4A'},g);return g;}
+BLK[18]={D:15.89,S:[
+{s:0,e:3.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'DUE PALETTI');
+ o.a=el('g',{},g);card3(o.a,'PALETTO 1','#E09A1A',520,170);o.b=el('g',{},g);card3(o.b,'PALETTO 2','#E4412C',520,170);
+ o.w=el('g',{},g);warn(o.w);
+ o.cap=el('g',{},g);cap(o.cap,'CI SONO ALTRI DUE PALETTI',58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.a,500,480,-4,Math.max(0,eob(seg(t,0.4,1.1))));T(o.b,1420,480,4,Math.max(0,eob(seg(t,0.9,1.6))));T(o.w,960,470,0,1.1*Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:3.0,e:10.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PALETTO 1');
+ o.pg=el('g',{},g);piggy(o.pg);txt(o.pg,'FONDO PENSIONE',0,240,48,'#fff','900');
+ o.x=el('g',{},g);el('line',{x1:-230,y1:-170,x2:230,y2:190,stroke:'#E4412C','stroke-width':30,'stroke-linecap':'round'},o.x);el('line',{x1:-230,y1:190,x2:230,y2:-170,stroke:'#E4412C','stroke-width':30,'stroke-linecap':'round'},o.x);
+ o.ar=el('g',{},g);el('path',{d:'M-130 0 L130 0 M70 -55 L130 0 L70 55',fill:'none',stroke:'#fff','stroke-width':20,'stroke-linecap':'round','stroke-linejoin':'round'},o.ar);
+ o.th=el('g',{},g);const sc=slipCard(o.th,'SOGLIA','≥ 3×');sc.amt.setAttribute('font-size',100);
+ o.on=el('g',{},g);pill(o.on,'CONTA SOLO L’ASSEGNO DELL’INPS',1000,56,'#2FBF9B');
+ o.cap=el('g',{},g);cap(o.cap,'LE RENDITE DEI FONDI PENSIONE NON SI CONTANO PIÙ',52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.pg,460,450,-2,Math.max(0,eob(seg(t,0.1,0.8))));T(o.x,460,450,0,Math.max(0,eob(seg(t,1.8,2.4))));op(o.x,seg(t,1.8,2.2));
+ T(o.ar,960,450,0,Math.max(0,eob(seg(t,2.4,3.0))));T(o.th,1440,450,2,Math.max(0,eob(seg(t,2.6,3.3))));
+ T(o.on,960,790,-1,Math.max(0,eob(seg(t,4.4,5.1))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:10.0,e:15.89,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PALETTO 2');
+ o.roof=el('g',{},g);el('rect',{x:-420,y:-14,width:840,height:28,rx:12,fill:'#E4412C'},o.roof);for(let i=0;i<9;i++)el('rect',{x:-420+i*100,y:14,width:36,height:20,fill:'#E4412C',opacity:.6},o.roof);
+ o.rt=el('g',{},g);pill(o.rt,'TETTO: 5 VOLTE LA MINIMA',820,50,'#E4412C');
+ o.min=el('g',{},g);o.mins=[0,1,2,3,4].map(i=>{const c=el('g',{},o.min);el('rect',{x:-70,y:-90,width:140,height:180,rx:20,fill:'url(#g_paper)',filter:'url(#g_sh2)'},c);txt(c,'MINIMA',0,0,28,GRN,'900');const cc=el('g',{transform:'translate(0 48) scale(0.5)'},c);coinA(cc,52);return c;});
+ o.mm=el('g',{},g);pill(o.mm,'FINO ALL’ETÀ DELLA VECCHIAIA',900,50,'#06303A');
+ o.cap=el('g',{},g);cap(o.cap,"FINO ALLA VECCHIAIA L'ASSEGNO NON PUÒ SUPERARE 5 VOLTE IL MINIMO",44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.roof,960,330,0,Math.max(0,eob(seg(t,0.2,0.9))));T(o.rt,960,250,0,Math.max(0,eob(seg(t,0.8,1.5))));
+ o.mins.forEach((c,i)=>T(c,520+i*220,lerp(100,640-i*55,eob(seg(t,1.2+i*0.5,1.8+i*0.5))),(i-2)*2,Math.max(0,eob(seg(t,1.2+i*0.5,1.8+i*0.5)))));
+ T(o.mm,960,790,0,Math.max(0,eob(seg(t,4.2,4.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 19 ===================
+function jobs(p){return {cal:null};}
+BLK[19]={D:19.85,S:[
+{s:0,e:3.6,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'ALTRE STRADE VERDI');
+ o.sem=semaforo(g);setL(o.sem.L,2,1);
+ o.ar=el('g',{},g);for(let i=0;i<3;i++)el('path',{d:'M'+(i*90)+' -60 L'+(i*90+60)+' 0 L'+(i*90)+' 60',fill:'none',stroke:'#2FBF9B','stroke-width':26,'stroke-linecap':'round','stroke-linejoin':'round'},o.ar);
+ o.cap=el('g',{},g);cap(o.cap,'MA CI SONO ALTRE STRADE VERDI!',58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.sem.g,640,470,0,0.95*Math.max(0,eob(seg(t,0.1,0.8))));setL(o.sem.L,2,1);
+ T(o.ar,960,470,0,Math.max(0,eob(seg(t,0.8,1.5))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:3.6,e:9.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'APE SOCIALE');
+ o.sign=el('g',{},g);el('rect',{x:-300,y:-110,width:600,height:220,rx:36,fill:'url(#g_badge)',stroke:'#fff','stroke-width':12,filter:'url(#g_sh)'},o.sign);txt(o.sign,'APE SOCIALE',0,24,70,'#fff','900');
+ o.a=el('g',{},g);o.pa=plate(o.a,'63','ANNI E 5 MESI');o.pa.s.setAttribute('font-size',30);
+ o.b=el('g',{},g);o.pb=plate(o.b,'30','ANNI DI CONTRIBUTI');o.pb.s.setAttribute('font-size',28);
+ o.sq=el('g',{},g);o.sqs=[];for(let i=0;i<30;i++)o.sqs.push(el('rect',{x:-390+i*26,y:0,width:22,height:40,rx:6,fill:'#0A3F45',opacity:.6,stroke:LT,'stroke-width':2},o.sq));
+ o.cap=el('g',{},g);cap(o.cap,"L'APE SOCIALE: UN ANTICIPO DAI 63 ANNI E 5 MESI CON 30 ANNI DI CONTRIBUTI",44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.sign,960,260,-2,Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.a,520,540,0,1.35*Math.max(0,eob(seg(t,1.0,1.7))));T(o.b,1400,540,0,1.35*Math.max(0,eob(seg(t,2.4,3.1))));
+ T(o.sq,960,810,0,Math.max(0,eob(seg(t,3.0,3.6))));o.sqs.forEach((q,i)=>{const on=t>3.4+i*0.06;q.setAttribute('fill',on?'#2FBF9B':'#0A3F45');q.setAttribute('opacity',on?1:.6);});
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:9.4,e:17.2,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PER CHI?');
+ const mk=(label,build)=>{const c=el('g',{},g);el('rect',{x:-210,y:-240,width:420,height:480,rx:34,fill:'url(#g_paper)',filter:'url(#g_sh)'},c);const ic=el('g',{transform:'translate(0 -60)'},c);build(ic);const w=label.length>14?27:40;txt(c,label,0,160,w,INK,'900');return c;};
+ o.c1=mk('DISOCCUPATI',ic=>{const b=el('g',{transform:'scale(1.0)'},ic);briefcase(b);el('line',{x1:-120,y1:-100,x2:120,y2:110,stroke:'#E4412C','stroke-width':20,'stroke-linecap':'round'},ic);});
+ o.c2=mk('CHI ASSISTE UN FAMILIARE',ic=>{const m=el('g',{transform:'translate(-70 0)'},ic);medalS(m,true,0.3);const n=el('g',{transform:'translate(70 20)'},ic);medalS(n,false,0.24);el('path',{d:'M-130 100 Q0 140 130 100',fill:'none',stroke:'#E4412C','stroke-width':14,'stroke-linecap':'round'},ic);});
+ o.c3=mk('INVALIDITÀ DEL 74%',ic=>{el('circle',{r:100,fill:'#EAF7F4',stroke:'#2FBF9B','stroke-width':14},ic);txt(ic,'74%',0,26,76,INK,'900');});
+ o.c4=mk('LAVORI GRAVOSI',ic=>{const h=el('g',{transform:'translate(0 20)'},ic);hardhat(h);});
+ o.cap=el('g',{},g);cap(o.cap,'DISOCCUPATI, CAREGIVER, INVALIDITÀ DEL 74%, LAVORI GRAVOSI',46);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ [o.c1,o.c2,o.c3,o.c4].forEach((c,i)=>{T(c,330+i*420,500,(i-1.5)*2,0.95*Math.max(0,eob(seg(t,0.4+i*1.5,1.0+i*1.5))));});
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:17.2,e:19.85,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'FINO A');
+ o.r=el('g',{},g);el('rect',{x:-480,y:-170,width:960,height:340,rx:46,fill:'url(#g_badge)',stroke:'#fff','stroke-width':12,filter:'url(#g_sh)'},o.r);txt(o.r,'FINO A',0,-60,56,'#fff','900');txt(o.r,'€ 1.500',-130,70,130,'#fff','900');txt(o.r,'AL MESE',290,70,48,'#fff','900');
+ o.c=el('g',{},g);coinA(o.c,100);
+ o.cap=el('g',{},g);cap(o.cap,'FINO A 1.500 EURO AL MESE',58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.r,960,470,-2,Math.max(0,eob(seg(t,0.1,0.8))));T(o.c,1560,260,12*Math.sin(t*4),Math.max(0,eob(seg(t,0.6,1.3))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.2,0.8))));}}
+]};
+// =================== BLOCCO 20 ===================
+BLK[20]={D:18.67,S:[
+{s:0,e:4.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'ATTENZIONE ALLE DATE');
+ o.cal=calendarPage(g,'DICEMBRE','31',320,'2026');
+ o.w=el('g',{},g);warn(o.w);
+ o.pl=el('g',{},g);pill(o.pl,'APE SOCIALE FINO AL 2026',900,56,'#E09A1A');
+ o.cap=el('g',{},g);cap(o.cap,"L'APE SOCIALE È PREVISTA FINO AL 31 DICEMBRE 2026",52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ const p=eob(seg(t,0.1,0.8));T(o.cal.g,520,lerp(-700,180,p),t>0.9?5*Math.exp(-2.4*(t-0.9))*Math.sin(8*(t-0.9)):0,1.15);
+ T(o.w,1400,430,0,1.2*Math.max(0,eob(seg(t,0.9,1.6))));T(o.pl,1400,730,-3,Math.max(0,eob(seg(t,1.8,2.5))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:4.4,e:9.6,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LE DOMANDE');
+ o.line=el('g',{},g);el('rect',{x:-760,y:-8,width:1520,height:16,rx:8,fill:'#fff',opacity:.85},o.line);
+ const pts=[[-700,'LUGLIO','15'],[-100,'NOVEMBRE','30']];
+ o.pts=pts.map((q,i)=>{const c=el('g',{},g);el('circle',{r:26,fill:i?'#E4412C':AMB,stroke:'#fff','stroke-width':6},c);return c;});
+ o.l1=el('g',{},g);o.c1=calendarPage(o.l1,'LUGLIO','15',240,'');o.l2=el('g',{},g);o.c2=calendarPage(o.l2,'NOVEMBRE','30',240,'');
+ o.n1=el('g',{},g);pill(o.n1,'DOPO: SOLO SE RESTANO FONDI',900,50,'#E09A1A');o.n2=el('g',{},g);pill(o.n2,'ULTIMO GIORNO PER LA DOMANDA',900,50,'#E4412C');
+ o.coin=el('g',{},g);coinA(o.coin,70);
+ o.cap=el('g',{},g);cap(o.cap,'DOMANDE ENTRO IL 30 NOVEMBRE: DOPO IL 15 LUGLIO SOLO SE RESTANO FONDI',44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.l1,520,160,0,0.78*Math.max(0,eob(seg(t,0.4,1.1))));T(o.l2,1400,160,0,0.78*Math.max(0,eob(seg(t,2.2,2.9))));
+ T(o.n1,520,690,-2,Math.max(0,eob(seg(t,1.4,2.1))));T(o.n2,1400,690,2,Math.max(0,eob(seg(t,3.1,3.8))));
+ T(o.coin,1000,420,0,Math.max(0,eob(seg(t,1.6,2.2)))*(t>2.2?1+0.06*Math.sin(t*6):1));
+ o.line.setAttribute('transform','translate(960 560)');
+ T(o.pts[0],520,560,0,1);T(o.pts[1],1400,560,0,1);
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:9.6,e:18.67,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'QUOTA 41 PER I PRECOCI');
+ o.p=el('g',{},g);o.pl=plate(o.p,'41','ANNI DI CONTRIBUTI');o.pl.s.setAttribute('font-size',28);
+ o.k=el('g',{},g);const kk=el('g',{transform:'scale(2)'},o.k);kid(kk,1.0);
+ o.f=el('g',{},g);o.fl=plate(o.f,'12','MESI PRIMA DEI 19 ANNI');o.fl.s.setAttribute('font-size',28);
+ o.t=el('g',{},g);o.ts=['DISOCCUPATO','CAREGIVER','INVALIDO','LAVORO GRAVOSO'].map((s,i)=>{const c=el('g',{},o.t);pill(c,s,330,40,['#2FBF9B','#E09A1A','#E4412C','#6F878C'][i]);return c;});
+ o.sh=el('g',{},g);shield(o.sh);
+ o.c1=el('g',{},g);cap(o.c1,'LA QUOTA 41 PER I PRECOCI: 41 ANNI DI CONTRIBUTI',52);
+ o.c2=el('g',{},g);cap(o.c2,'ALMENO 12 MESI VERSATI PRIMA DEI 19 ANNI',52);
+ o.c3=el('g',{},g);cap(o.c3,'E UNA CONDIZIONE DI TUTELA',52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.p,500,430,0,1.3*Math.max(0,eob(seg(t,0.2,0.9))));
+ T(o.k,1000,300,0,Math.max(0,eob(seg(t,3.2,3.9))));T(o.f,1450,430,0,1.3*Math.max(0,eob(seg(t,3.6,4.3))));
+ T(o.sh,960,430,0,0.8*Math.max(0,eob(seg(t,6.2,6.9))));
+ o.ts.forEach((c,i)=>{const a=eob(seg(t,6.8+i*0.5,7.3+i*0.5));T(c,i<2?600+i*720:600+(i-2)*720,i<2?780:870,(i%2?3:-3),Math.max(0,a));});
+ const fade=seg(t,6.0,6.4);op(o.p,1-fade);op(o.f,1-fade);op(o.k,1-fade);
+ op(o.c1,t<3.4?1:0);op(o.c2,(t>=3.4&&t<6.0)?1:0);op(o.c3,t>=6.0?1:0);[o.c1,o.c2,o.c3].forEach(c=>T(c,960,950,0,1));}}
+]};
+
+// =================== helper blocchi 21-25 ===================
+function meter(p,max,thr,val,label){const g=el('g',{},p);const W=900;
+ el('rect',{x:-W/2,y:-30,width:W,height:60,rx:30,fill:'#0A3F45',stroke:LT,'stroke-width':3},g);
+ const f=el('rect',{x:-W/2,y:-30,width:10,height:60,rx:30,fill:'url(#g_badge)'},g);
+ const tx=-W/2+W*thr/max;
+ el('rect',{x:tx-4,y:-80,width:8,height:160,rx:4,fill:AMB},g);txt(g,'SOGLIA '+label,tx,-96,38,AMB,'900');
+ const v=txt(g,'',0,100,60,'#fff','900');
+ return {g,f,W,max,thr,tx,v};}
+function setMeter(m,val,k,col){m.f.setAttribute('width',Math.max(10,m.W*val/m.max*k));m.f.setAttribute('fill',col||'url(#g_badge)');}
+// =================== BLOCCO 21 ===================
+BLK[21]={D:18.94,S:[
+{s:0,e:7.8,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LAVORI USURANTI');
+ o.h=el('g',{},g);hardhat(o.h);
+ o.p1=el('g',{},g);o.pl1=plate(o.p1,'61','ANNI E 7 MESI');o.pl1.s.setAttribute('font-size',28);
+ o.p2=el('g',{},g);o.pl2=plate(o.p2,'35','ANNI DI CONTRIBUTI');o.pl2.s.setAttribute('font-size',28);
+ o.sh=el('g',{},g);shield(o.sh);o.chip=el('g',{},g);chip(o.chip,'+1 MESE',320);
+ o.no=el('g',{},g);pill(o.no,'PER LORO NON VALE',760,60,'#2FBF9B');
+ o.cap=el('g',{},g);cap(o.cap,'USURANTI: ANCHE A 61 ANNI E 7 MESI, CON 35 ANNI DI CONTRIBUTI',46);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.h,960,330,0,1.2*Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.p1,500,600,0,1.2*Math.max(0,eob(seg(t,1.2,1.9))));T(o.p2,1420,600,0,1.2*Math.max(0,eob(seg(t,2.4,3.1))));
+ T(o.sh,960,640,0,0.7*Math.max(0,eob(seg(t,4.6,5.3))));
+ const cx=t<5.3?lerp(1800,1100,eo3(seg(t,4.0,5.3))):lerp(1100,1750,eo3(seg(t,5.4,6.4)));
+ T(o.chip,cx,lerp(300,500,seg(t,4.0,5.3)),t>5.3?-10:6,t<4.0||t>6.6?0:1);
+ T(o.no,960,790,-2,Math.max(0,eob(seg(t,6.2,6.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:7.8,e:13.2,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'UN PO’ DI ROSSO');
+ o.sem=semaforo(g);setL(o.sem.L,0,1);
+ o.a=el('g',{},g);card3(o.a,'QUOTA 103','#E4412C',560,170);o.b=el('g',{},g);card3(o.b,'OPZIONE DONNA','#E4412C',680,170);
+ o.xa=el('g',{},g);o.xb=el('g',{},g);[o.xa,o.xb].forEach(x=>{el('line',{x1:-80,y1:-80,x2:80,y2:80,stroke:'#fff','stroke-width':22,'stroke-linecap':'round'},x);el('line',{x1:-80,y1:80,x2:80,y2:-80,stroke:'#fff','stroke-width':22,'stroke-linecap':'round'},x);});
+ o.pr=el('g',{},g);pill(o.pr,'NON PROROGATE',700,64,'#06303A');
+ o.cap=el('g',{},g);cap(o.cap,'QUOTA 103 E OPZIONE DONNA NON SONO STATE PROROGATE',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.sem.g,420,470,0,0.85*Math.max(0,eob(seg(t,0.1,0.8))));setL(o.sem.L,0,seg(t,0.4,0.9));
+ T(o.a,1240,330,-3,Math.max(0,eob(seg(t,0.8,1.5))));T(o.b,1240,560,3,Math.max(0,eob(seg(t,1.6,2.3))));
+ T(o.xa,1620,330,0,Math.max(0,eob(seg(t,2.4,2.9))));T(o.xb,1660,560,0,Math.max(0,eob(seg(t,2.9,3.4))));
+ T(o.pr,1240,780,-2,Math.max(0,eob(seg(t,3.4,4.0))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:13.2,e:18.94,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'MA ATTENZIONE');
+ o.doc=el('g',{},g);docO(o.doc,520,640,'REQUISITI','MATURATI','ENTRO LA DATA');
+ o.seal=el('g',{},g);sealO(o.seal,95);
+ o.ar=el('g',{},g);el('path',{d:'M-130 0 L130 0 M70 -55 L130 0 L70 55',fill:'none',stroke:'#fff','stroke-width':20,'stroke-linecap':'round','stroke-linejoin':'round'},o.ar);
+ o.k=el('g',{},g);card3(o.k,'DIRITTO CONSERVATO','#2FBF9B',760,170);o.ck=el('g',{},g);checkBadge(o.ck,90);
+ o.cap=el('g',{},g);cap(o.cap,'CHI AVEVA GIÀ I REQUISITI NON PERDE IL DIRITTO!',52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.doc,420,470,-3,Math.max(0,eob(seg(t,0.1,0.8))));T(o.seal,560,720,-12,Math.max(0,eob(seg(t,0.9,1.5))));
+ T(o.ar,820,470,0,Math.max(0,eob(seg(t,1.4,2.0))));T(o.k,1400,450,2,Math.max(0,eob(seg(t,1.8,2.5))));T(o.ck,1760,330,0,Math.max(0,eob(seg(t,2.5,3.1))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 22 ===================
+BLK[22]={D:19.25,S:[
+{s:0,e:4.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'UN ESEMPIO: MARCO');
+ o.m=el('g',{},g);medal(o.m,false);
+ o.cal=calendarPage(g,'GENNAIO','1',320,'1985');
+ o.nb=el('g',{},g);pill(o.nb,'SENZA BUCHI',560,60,'#2FBF9B');
+ o.cap=el('g',{},g);cap(o.cap,'MARCO HA INIZIATO A LAVORARE A GENNAIO DEL 1985, SENZA BUCHI',46);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.m,520,440,0,1.1*Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.cal.g,1300,lerp(-700,170,eob(seg(t,0.6,1.4))),t>1.4?5*Math.exp(-2.4*(t-1.4))*Math.sin(8*(t-1.4)):0,1.15);
+ T(o.nb,1300,820,-2,Math.max(0,eob(seg(t,2.2,2.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:4.0,e:8.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'42 ANNI E 11 MESI');
+ o.bar=el('g',{},g);el('rect',{x:-800,y:-24,width:1600,height:48,rx:24,fill:'#0A3F45',stroke:LT,'stroke-width':3},o.bar);o.fill=el('rect',{x:-800,y:-24,width:10,height:48,rx:24,fill:'url(#g_badge)'},o.bar);
+ txt(o.bar,'1985',-800,80,44,'#fff','900','middle');txt(o.bar,'DICEMBRE 2027',700,80,40,'#fff','900','middle');
+ o.m=el('g',{},g);medal(o.m,false);
+ o.b=el('g',{},g);el('rect',{x:-380,y:-110,width:760,height:220,rx:40,fill:'url(#g_badge)',stroke:'#fff','stroke-width':10,filter:'url(#g_sh)'},o.b);txt(o.b,'42 ANNI E 11 MESI',0,26,84,'#fff','900');
+ o.ck=el('g',{},g);checkBadge(o.ck,90);
+ o.cap=el('g',{},g);cap(o.cap,'A DICEMBRE 2027 AVRÀ 42 ANNI E 11 MESI DI CONTRIBUTI',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.bar,960,700,0,1);o.fill.setAttribute('width',10+1590*eio(seg(t,0.4,3.0)));
+ T(o.m,-800+960+1590*eio(seg(t,0.4,3.0)),590,0,0.28);
+ T(o.b,960,350,0,Math.max(0,eob(seg(t,2.6,3.3))));T(o.ck,1480,260,0,Math.max(0,eob(seg(t,3.2,3.8))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:8.4,e:13.6,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LA PENSIONE PARTE DOPO');
+ o.c1=calendarPage(g,'DICEMBRE','2027',150,'');o.c2=calendarPage(g,'MARZO','2028',150,'');
+ o.mm=[0,1,2].map(i=>{const c=el('g',{},g);el('rect',{x:-85,y:-85,width:170,height:170,rx:24,fill:'url(#g_paper)',filter:'url(#g_sh2)'},c);el('rect',{x:-85,y:-85,width:170,height:50,rx:24,fill:'#E09A1A'},c);el('rect',{x:-85,y:-60,width:170,height:25,fill:'#E09A1A'},c);txt(c,'MESE',0,-48,30,'#fff','900');txt(c,''+(i+1),0,50,84,INK,'900');return c;});
+ o.ar=el('g',{},g);el('path',{d:'M-40 0 L40 0 M10 -30 L40 0 L10 30',fill:'none',stroke:'#fff','stroke-width':12,'stroke-linecap':'round'},o.ar);
+ o.coin=el('g',{},g);coinA(o.coin,90);
+ o.cap=el('g',{},g);cap(o.cap,'MA LA PENSIONE PARTE TRE MESI DOPO, A MARZO 2028',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.c1.g,300,150,0,0.85*Math.max(0,eob(seg(t,0.1,0.8))));T(o.c2.g,1620,150,0,0.85*Math.max(0,eob(seg(t,3.2,3.9))));
+ [0,1,2].forEach(i=>T(o.mm[i],700+i*260,520,(i-1)*3,Math.max(0,eob(seg(t,1.2+i*0.6,1.8+i*0.6)))));
+ T(o.ar,540,520,0,Math.max(0,eob(seg(t,1.0,1.6))));
+ T(o.coin,1620,700,10*Math.sin(t*4),Math.max(0,eob(seg(t,4.0,4.6))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:13.6,e:19.25,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'SE SI DIMETTE PRIMA');
+ o.b=el('g',{},g);briefcase(o.b);o.s=el('g',{},g);stopSign(o.s);
+ o.w=el('g',{},g);
+ el('path',{d:'M-170 -90 L170 -90 L170 130 L-170 130 Z',fill:'#6F4A2A',stroke:'#fff','stroke-width':8,filter:'url(#g_sh2)'},o.w);
+ el('rect',{x:-170,y:-90,width:340,height:60,fill:'#8A5B33'},o.w);txt(o.w,'0',0,98,100,'#fff','900');
+ o.l1=el('g',{},g);pill(o.l1,'NESSUNO STIPENDIO',700,52,'#E4412C');o.l2=el('g',{},g);pill(o.l2,'NESSUNA PENSIONE',700,52,'#E4412C');
+ o.q=el('g',{},g);o.qq=[0,1,2].map(i=>{const c=el('g',{},g);el('rect',{x:-85,y:-85,width:170,height:170,rx:24,fill:'#E4412C',opacity:.9},c);txt(c,''+(i+1),0,28,70,'#fff','900');return c;});
+ o.cap=el('g',{},g);cap(o.cap,'SE SI DIMETTE PRIMA: TRE MESI SENZA STIPENDIO E SENZA PENSIONE!',48);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.b,400,400,-4,1.1*Math.max(0,eob(seg(t,0.1,0.8))));T(o.s,400,400,0,0);
+ T(o.w,1320,400,3,1.1*Math.max(0,eob(seg(t,1.2,1.9))));
+ [0,1,2].forEach(i=>T(o.qq[i],760+i*200,620,(i-1)*3,0.8*Math.max(0,eob(seg(t,2.0+i*0.5,2.5+i*0.5)))));
+ T(o.l1,600,800,-2,Math.max(0,eob(seg(t,3.2,3.9))));T(o.l2,1360,800,2,Math.max(0,eob(seg(t,3.8,4.5))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 23 ===================
+BLK[23]={D:12.69,S:[
+{s:0,e:4.6,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'UN ESEMPIO: GIULIA');
+ o.m=el('g',{},g);medal(o.m,true);
+ o.k1=el('g',{},g);kid(o.k1,1.4);o.k2=el('g',{},g);kid(o.k2,1.4);
+ o.p=el('g',{},g);o.pl=plate(o.p,'64','ANNI');
+ o.cal=el('g',{},g);pill(o.cal,'HA INIZIATO NEL 1997',720,56,'#2FBF9B');
+ o.cap=el('g',{},g);cap(o.cap,'GIULIA HA 64 ANNI, HA INIZIATO NEL 1997 E HA DUE FIGLI',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.m,440,420,0,1.1*Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.k1,720,560,0,Math.max(0,eob(seg(t,1.2,1.8))));T(o.k2,860,560,0,Math.max(0,eob(seg(t,1.6,2.2))));
+ T(o.p,1380,430,0,1.4*Math.max(0,eob(seg(t,0.8,1.5))));
+ T(o.cal,1300,770,-2,Math.max(0,eob(seg(t,2.4,3.1))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:4.6,e:8.6,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LA SUA SOGLIA');
+ o.m=meter(g,2000,1420,0,'€ 1.420');o.mm=o.m.g;
+ o.big=el('g',{},g);el('rect',{x:-380,y:-100,width:760,height:200,rx:40,fill:'url(#g_paper)',filter:'url(#g_sh)'},o.big);txt(o.big,'SOGLIA',0,-30,40,GRN,'900');txt(o.big,'€ 1.420',0,60,100,INK,'900');
+ o.d=el('g',{},g);medal(o.d,true);
+ o.cap=el('g',{},g);cap(o.cap,'CON DUE FIGLI LA SUA SOGLIA È CIRCA 1.420 EURO',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.mm,960,720,0,Math.max(0,eob(seg(t,0.1,0.8))));setMeter(o.m,1420,eio(seg(t,0.8,2.6)),'#E09A1A');
+ T(o.big,960,350,0,Math.max(0,eob(seg(t,0.4,1.1))));T(o.d,260,360,0,0.5*Math.max(0,eob(seg(t,0.4,1.0))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:8.6,e:12.69,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PENSIONE STIMATA');
+ o.m=meter(g,2000,1420,0,'€ 1.420');o.mm=o.m.g;
+ o.est=el('g',{},g);el('rect',{x:-380,y:-100,width:760,height:200,rx:40,fill:'url(#g_badge)',stroke:'#fff','stroke-width':10,filter:'url(#g_sh)'},o.est);txt(o.est,'STIMATA',0,-30,40,'#fff','900');txt(o.est,'€ 1.500',0,60,100,'#fff','900');
+ o.ok=el('g',{},g);pill(o.ok,'PUÒ USCIRE!',560,80,'#2FBF9B');o.ck=el('g',{},g);checkBadge(o.ck,90);
+ o.cap=el('g',{},g);cap(o.cap,'PENSIONE STIMATA 1.500 EURO: PUÒ USCIRE!',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.mm,960,720,0,1);setMeter(o.m,1500,eio(seg(t,0.4,2.0)),'url(#g_badge)');
+ T(o.est,960,350,0,Math.max(0,eob(seg(t,0.1,0.8))));T(o.ok,960,520,-2,Math.max(0,eob(seg(t,2.0,2.7))));T(o.ck,1500,330,0,Math.max(0,eob(seg(t,2.4,3.0))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 24 ===================
+BLK[24]={D:9.36,S:[
+{s:0,e:3.7,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'E SE FOSSE MILLE E TRECENTO?');
+ o.m=meter(g,2000,1420,0,'€ 1.420');o.mm=o.m.g;
+ o.est=el('g',{},g);el('rect',{x:-380,y:-100,width:760,height:200,rx:40,fill:'#E4412C',stroke:'#fff','stroke-width':10,filter:'url(#g_sh)'},o.est);txt(o.est,'STIMATA',0,-30,40,'#fff','900');txt(o.est,'€ 1.300',0,60,100,'#fff','900');
+ o.hg=el('g',{},g);hourglass(o.hg);
+ o.cap=el('g',{},g);cap(o.cap,'SE È 1.300, DEVE ASPETTARE!',58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.mm,960,720,0,1);setMeter(o.m,1300,eio(seg(t,0.4,1.8)),'#E4412C');
+ T(o.est,700,350,0,Math.max(0,eob(seg(t,0.1,0.8))));T(o.hg,1500,380,0,0.9*Math.max(0,eob(seg(t,1.8,2.5)))*(1+0.02*Math.sin(t*5)));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:3.7,e:9.36,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'UN ALTRO ESEMPIO: LUCA');
+ o.m=el('g',{},g);medal(o.m,false);
+ o.tl=el('g',{},g);el('rect',{x:-700,y:-6,width:1400,height:12,rx:6,fill:'#fff',opacity:.85},o.tl);
+ el('rect',{x:-700,y:-90,width:500,height:180,rx:20,fill:'#E4412C',opacity:.25},o.tl);el('rect',{x:-200,y:-90,width:900,height:180,rx:20,fill:'#2FBF9B',opacity:.25},o.tl);
+ el('rect',{x:-205,y:-130,width:10,height:260,rx:5,fill:AMB},o.tl);txt(o.tl,'1996',-200,-150,56,AMB,'900');txt(o.tl,'1988',-460,80,44,'#FFB3A8','900');
+ o.c=el('g',{},g);coinA(o.c,56);
+ o.sg=el('g',{},g);el('rect',{x:-260,y:-100,width:520,height:200,rx:36,fill:'url(#g_badge)',stroke:'#fff','stroke-width':10,filter:'url(#g_sh)'},o.sg);txt(o.sg,'64 ANNI',0,34,100,'#fff','900');
+ o.x=el('g',{},g);el('line',{x1:-300,y1:-130,x2:300,y2:130,stroke:'#E4412C','stroke-width':30,'stroke-linecap':'round'},o.x);el('line',{x1:-300,y1:130,x2:300,y2:-130,stroke:'#E4412C','stroke-width':30,'stroke-linecap':'round'},o.x);
+ o.cap=el('g',{},g);cap(o.cap,'LUCA HA CONTRIBUTI PRIMA DEL 1996: I 64 ANNI, OGGI, NON ESISTONO',46);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.m,360,370,0,0.85*Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.tl,1160,730,0,Math.max(0,eob(seg(t,0.4,1.1))));
+ T(o.c,1160-460,730,0,Math.max(0,eob(seg(t,1.2,1.8))));
+ T(o.sg,1260,360,0,Math.max(0,eob(seg(t,2.6,3.3))));T(o.x,1260,360,0,Math.max(0,eob(seg(t,3.4,3.9))));op(o.x,seg(t,3.4,3.7));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 25 ===================
+function ministry(p){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:'M-220 -40 L0 -170 L220 -40 Z',fill:'#6F878C',stroke:'#fff','stroke-width':6},g);
+ el('rect',{x:-220,y:-40,width:440,height:30,fill:'#C9D6D8'},g);
+ for(let i=-2;i<=2;i++)el('rect',{x:i*80-22,y:-10,width:44,height:170,rx:8,fill:'#EAF7F4'},g);
+ el('rect',{x:-240,y:160,width:480,height:36,rx:8,fill:'#6F878C'},g);txt(g,'MEF',0,-70,56,'#fff','900');return g;}
+BLK[25]={D:16.85,S:[
+{s:0,e:5.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'IL SEMAFORO GIALLO');
+ o.sem=semaforo(g);
+ o.pr=el('g',{},g);card3(o.pr,'LE PROPOSTE','#E09A1A',620,170);
+ o.st=el('g',{},g);el('rect',{x:-420,y:-80,width:840,height:160,rx:20,fill:'none',stroke:'#E4412C','stroke-width':14},o.st);txt(o.st,'NIENTE È LEGGE!',0,34,88,'#E4412C','900');
+ o.cap=el('g',{},g);cap(o.cap,'SEMAFORO GIALLO: LE PROPOSTE. NIENTE DI QUELLO CHE DICO È LEGGE!',48);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.sem.g,420,470,0,0.85*Math.max(0,eob(seg(t,0.1,0.8))));setL(o.sem.L,1,seg(t,0.5,1.0));
+ T(o.pr,1240,350,-3,Math.max(0,eob(seg(t,0.8,1.5))));T(o.st,1240,600,-8,Math.max(0,eob(seg(t,2.2,2.9)))*(t>2.9?1+0.03*Math.sin((t-2.9)*7):1));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:5.0,e:10.6,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PRIMA PROPOSTA');
+ o.cal=calendarPage(g,'ANNO','2027',150,'');
+ o.st=el('g',{},g);stopSign(o.st);
+ o.ch=el('g',{},g);chip(o.ch,'+1 MESE',320);
+ o.lg=el('g',{},g);pill(o.lg,'LO CHIEDE LA LEGA',740,60,'#06303A');
+ o.rq=el('g',{},g);pill(o.rq,'SOLO UNA RICHIESTA',740,60,'#E09A1A');
+ o.cap=el('g',{},g);cap(o.cap,"PRIMA PROPOSTA: STOP ALL'AUMENTO DELL'ETÀ DEL 2027",50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.cal.g,500,150,0,1.1*Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.ch,500,700,-3,Math.max(0,eob(seg(t,0.8,1.5))));T(o.st,1330,430,0,1.3*Math.max(0,eob(seg(t,1.8,2.5))));
+ T(o.lg,1330,720,-2,Math.max(0,eob(seg(t,3.0,3.7))));T(o.rq,1330,830,2,Math.max(0,eob(seg(t,4.0,4.7))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:10.6,e:16.85,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'DIPENDE DA...');
+ o.mi=el('g',{},g);ministry(o.mi);
+ o.c=[0,1,2,3].map(i=>{const c=el('g',{},g);coinA(c,54);return c;});
+ o.q=el('g',{},g);qBubble(o.q,100);
+ o.k=el('g',{},g);pill(o.k,'I COSTI',460,64,'#E09A1A');o.d=el('g',{},g);pill(o.d,'IL MINISTERO DELL’ECONOMIA',900,56,'#06303A');
+ o.cap=el('g',{},g);cap(o.cap,"DIPENDE DAI COSTI E DAL MINISTERO DELL'ECONOMIA",52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.mi,1360,430,0,1.2*Math.max(0,eob(seg(t,0.1,0.8))));
+ o.c.forEach((c,i)=>{const k=eob(seg(t,0.8+i*0.4,1.4+i*0.4));T(c,300+i*150,lerp(200,560,k)+Math.sin(t*3+i)*6,i*20,Math.max(0,k));});
+ T(o.k,520,760,-3,Math.max(0,eob(seg(t,2.2,2.9))));T(o.d,1360,760,2,Math.max(0,eob(seg(t,3.2,3.9))));
+ T(o.q,1000,300,10*Math.sin(t*4),Math.max(0,eob(seg(t,4.0,4.7))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+
+// =================== BLOCCO 26 ===================
+function calcO(p,label,col){const g=el('g',{},p);
+ el('rect',{x:-190,y:-260,width:380,height:520,rx:44,fill:'#0A2B30',stroke:'#7FA9AE','stroke-width':8,filter:'url(#g_sh)'},g);
+ el('rect',{x:-155,y:-225,width:310,height:110,rx:18,fill:'#BFEFE3'},g);
+ for(let r=0;r<3;r++)for(let c=0;c<3;c++)el('rect',{x:-155+c*105,y:-90+r*105,width:95,height:90,rx:18,fill:'#17383D'},g);
+ const pl=el('g',{transform:'translate(0 330)'},g);pill(pl,label,520,48,col);return g;}
+BLK[26]={D:16.27,S:[
+{s:0,e:5.5,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'SECONDA PROPOSTA');
+ o.door=el('g',{},g);door(o.door);
+ o.sg=el('g',{},g);el('rect',{x:-260,y:-100,width:520,height:200,rx:36,fill:'url(#g_badge)',stroke:'#fff','stroke-width':10,filter:'url(#g_sh)'},o.sg);txt(o.sg,'64 ANNI',0,34,100,'#fff','900');
+ o.tl=el('g',{},g);el('rect',{x:-380,y:-6,width:760,height:12,rx:6,fill:'#fff',opacity:.85},o.tl);el('rect',{x:-380,y:-60,width:290,height:120,rx:16,fill:'#E4412C',opacity:.3},o.tl);el('rect',{x:-90,y:-60,width:470,height:120,rx:16,fill:'#2FBF9B',opacity:.3},o.tl);
+ el('rect',{x:-94,y:-90,width:8,height:180,rx:4,fill:AMB},o.tl);txt(o.tl,'1996',-90,-110,40,AMB,'900');
+ o.c=el('g',{},g);coinA(o.c,46);
+ o.ck=el('g',{},g);checkBadge(o.ck,80);
+ o.cap=el('g',{},g);cap(o.cap,"SECONDA PROPOSTA: L'USCITA A 64 ANNI ANCHE PER CHI HA CONTRIBUTI PRIMA DEL 1996",44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.door,480,520,0,0.9*Math.max(0,eob(seg(t,0.1,0.8))));T(o.sg,480,230,0,Math.max(0,eob(seg(t,0.4,1.1))));
+ T(o.tl,1330,520,0,Math.max(0,eob(seg(t,1.4,2.1))));T(o.c,1330-230,520,0,Math.max(0,eob(seg(t,2.4,3.0))));
+ T(o.ck,1700,300,0,Math.max(0,eob(seg(t,3.6,4.2))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:5.5,e:9.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'BELLA NOTIZIA?');
+ o.m=el('g',{},g);medal(o.m,false);o.q=el('g',{},g);qBubble(o.q,120);
+ o.a=el('g',{},g);card3(o.a,'BELLA NOTIZIA?','#2FBF9B',620,160);o.b=el('g',{},g);card3(o.b,'DIPENDE...','#E09A1A',620,160);
+ o.cap=el('g',{},g);cap(o.cap,'BELLA NOTIZIA? DIPENDE...',58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.m,460,470,0,1.1*Math.max(0,eob(seg(t,0.1,0.8))));T(o.q,760,260,10*Math.sin(t*4),Math.max(0,eob(seg(t,0.5,1.1))));
+ T(o.a,1380,360,-3,Math.max(0,eob(seg(t,0.8,1.4))));T(o.b,1380,600,3,Math.max(0,eob(seg(t,1.8,2.4))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:9.0,e:16.27,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'IL RICALCOLO');
+ o.c1=el('g',{},g);calcO(o.c1,'METODO MISTO','#6F878C');o.c2=el('g',{},g);calcO(o.c2,'TUTTO CONTRIBUTIVO','#E4412C');
+ o.ar=el('g',{},g);el('path',{d:'M-90 0 L90 0 M50 -45 L90 0 L50 45',fill:'none',stroke:'#fff','stroke-width':18,'stroke-linecap':'round','stroke-linejoin':'round'},o.ar);
+ o.s1=el('g',{},g);const a=slipCard(o.s1,'ASSEGNO','€ 1.800');a.amt.setAttribute('font-size',70);
+ o.s2=el('g',{},g);const b=slipCard(o.s2,'ASSEGNO','€ 1.600');b.amt.setAttribute('font-size',70);
+ o.dn=el('g',{},g);el('path',{d:'M0 -60 L0 60 M-50 10 L0 66 L50 10',fill:'none',stroke:'#E4412C','stroke-width':26,'stroke-linecap':'round','stroke-linejoin':'round'},o.dn);
+ o.lo=el('g',{},g);pill(o.lo,'PENSIONE PIÙ BASSA',720,60,'#E4412C');
+ o.cap=el('g',{},g);cap(o.cap,'RICALCOLO TUTTO CONTRIBUTIVO: IN GENERE UNA PENSIONE PIÙ BASSA',46);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.c1,330,500,-2,0.7*Math.max(0,eob(seg(t,0.2,0.9))));T(o.c2,1000,500,2,0.7*Math.max(0,eob(seg(t,2.0,2.7))));
+ T(o.ar,660,420,0,Math.max(0,eob(seg(t,1.6,2.2))));
+ T(o.s1,330,200,-3,0.55*Math.max(0,eob(seg(t,1.0,1.7))));T(o.s2,1000,240+seg(t,3.6,4.6)*80,3,0.55*Math.max(0,eob(seg(t,3.0,3.7))));
+ T(o.dn,1620,430,0,Math.max(0,eob(seg(t,4.2,4.9))));T(o.lo,1480,720,-3,Math.max(0,eob(seg(t,4.8,5.5))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 27 ===================
+function cgilBadge(p){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('rect',{x:-330,y:-110,width:660,height:220,rx:34,fill:'#E4412C',stroke:'#fff','stroke-width':10},g);txt(g,'CGIL',-130,26,100,'#fff','900');txt(g,'OSSERVATORIO',130,-10,34,'#fff','900');txt(g,'PREVIDENZA',130,40,34,'#fff','900');return g;}
+function donut(p,pct,col,label){const g=el('g',{},p);const r=150,c=2*Math.PI*r;
+ el('circle',{r:r,fill:'none',stroke:'#0A3F45','stroke-width':44},g);
+ const a=el('circle',{r:r,fill:'none',stroke:col,'stroke-width':44,'stroke-dasharray':c+' '+c,'stroke-dashoffset':c,transform:'rotate(-90)','stroke-linecap':'round'},g);
+ const t=txt(g,'',0,26,92,'#fff','900');txt(g,label,0,96,34,LT,'900');return {g,a,t,c};}
+BLK[27]={D:11.9,S:[
+{s:0,e:3.6,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'QUANTO PIÙ BASSA?');
+ o.q=el('g',{},g);qBubble(o.q,150);o.c=el('g',{},g);cgilBadge(o.c);
+ o.cap=el('g',{},g);cap(o.cap,"QUANTO PIÙ BASSA? SECONDO L'OSSERVATORIO PREVIDENZA DELLA CGIL",48);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.q,560,470,10*Math.sin(t*4),Math.max(0,eob(seg(t,0.1,0.8))));T(o.c,1280,470,-2,Math.max(0,eob(seg(t,0.9,1.6))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:3.6,e:11.9,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'STIPENDIO DI 35 MILA EURO');
+ o.pay=el('g',{},g);
+ el('rect',{x:-250,y:-290,width:500,height:580,rx:26,fill:'url(#g_paper)',filter:'url(#g_sh)'},o.pay);el('rect',{x:-250,y:-290,width:500,height:84,rx:26,fill:'url(#g_head)'},o.pay);el('rect',{x:-250,y:-250,width:500,height:44,fill:'url(#g_head)'},o.pay);
+ txt(o.pay,'STIPENDIO',0,-230,46,'#fff');txt(o.pay,'€ 35.000',0,-90,86,INK,'900');txt(o.pay,'L’ANNO',0,-30,40,GRN,'900');
+ for(let i=0;i<4;i++)el('rect',{x:-190,y:30+i*58,width:380-(i%2)*80,height:16,rx:8,fill:'#C9D6D8'},o.pay);
+ o.big=el('g',{},g);o.num=txt(o.big,'',0,0,190,'#FF6A55','900');o.un=txt(o.big,'AL MESE IN MENO',0,100,60,'#fff','900');
+ o.d=donut(g,10.6,'#E4412C','DEL 100%');
+ o.cap=el('g',{},g);cap(o.cap,'35 MILA EURO DI STIPENDIO: CIRCA 182 EURO IN MENO, IL 10,6%',48);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.pay,480,470,-3,Math.max(0,eob(seg(t,0.1,0.8))));
+ const v=Math.round(eio(seg(t,1.0,3.0))*182);o.num.textContent=t>1.0?('− '+v+' €'):'';
+ T(o.big,1330,330,0,Math.max(0,eob(seg(t,0.8,1.5))));
+ T(o.d.g,1330,720,0,0.8*Math.max(0,eob(seg(t,3.0,3.7))));
+ const k=eio(seg(t,3.4,5.4));o.d.a.setAttribute('stroke-dashoffset',o.d.c*(1-0.106*k*4));
+ o.d.t.textContent=Math.round(k*106)/10+'%'.replace('.',',');o.d.t.textContent=(Math.round(k*106)/10).toString().replace('.',',')+'%';
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 28 ===================
+BLK[28]={D:11.14,S:[
+{s:0,e:3.9,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'STIPENDIO DI 50 MILA EURO');
+ o.pay=el('g',{},g);docO(o.pay,480,600,'BUSTA PAGA','€ 50.000','L’ANNO');
+ o.big=el('g',{},g);o.num=txt(o.big,'',0,0,190,'#FF6A55','900');txt(o.big,'AL MESE IN MENO',0,100,56,'#fff','900');
+ o.cap=el('g',{},g);cap(o.cap,'CON 50 MILA EURO: CIRCA 261 EURO',58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.pay,500,470,-3,Math.max(0,eob(seg(t,0.1,0.8))));
+ o.num.textContent=t>0.8?('− '+Math.round(eio(seg(t,0.8,2.6))*261)+' €'):'';T(o.big,1330,450,0,Math.max(0,eob(seg(t,0.6,1.3))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:3.9,e:7.5,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'STIPENDIO DI 70 MILA EURO');
+ o.pay=el('g',{},g);docO(o.pay,480,600,'BUSTA PAGA','€ 70.000','L’ANNO');
+ o.big=el('g',{},g);o.num=txt(o.big,'',0,0,170,'#FF6A55','900');txt(o.big,'AL MESE IN MENO',0,100,56,'#fff','900');
+ o.cap=el('g',{},g);cap(o.cap,'CON 70 MILA: OLTRE 365 EURO AL MESE!',58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.pay,500,470,-3,Math.max(0,eob(seg(t,0.1,0.8))));
+ o.num.textContent=t>0.8?('− '+Math.round(eio(seg(t,0.8,2.4))*365)+'+ €'):'';T(o.big,1330,450,0,Math.max(0,eob(seg(t,0.6,1.3))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:7.5,e:11.14,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'ATTENZIONE');
+ o.c=el('g',{},g);cgilBadge(o.c);
+ o.st=el('g',{},g);el('rect',{x:-390,y:-80,width:780,height:160,rx:20,fill:'none',stroke:'#E09A1A','stroke-width':14},o.st);txt(o.st,'PROPOSTA NON DEFINITA',0,22,54,'#E09A1A','900');
+ o.q=el('g',{},g);qBubble(o.q,90);
+ o.cap=el('g',{},g);cap(o.cap,'SONO STIME DI UN SINDACATO, SU UNA PROPOSTA ANCORA NON DEFINITA',48);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.c,960,350,-2,Math.max(0,eob(seg(t,0.1,0.8))));T(o.st,960,640,-3,Math.max(0,eob(seg(t,1.0,1.7)))*(t>1.7?1+0.03*Math.sin((t-1.7)*7):1));
+ T(o.q,1560,330,10*Math.sin(t*4),Math.max(0,eob(seg(t,1.8,2.4))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 29 ===================
+BLK[29]={D:19.27,S:[
+{s:0,e:6.5,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'TERZA PROPOSTA');
+ o.p=el('g',{},g);o.pl=plate(o.p,'41','ANNI DI CONTRIBUTI');o.pl.s.setAttribute('font-size',28);
+ o.ages=el('g',{},g);o.ag=[55,58,61,64,67].map((a,i)=>{const c=el('g',{},o.ages);el('rect',{x:-90,y:-60,width:180,height:120,rx:24,fill:'url(#g_paper)',filter:'url(#g_sh2)'},c);txt(c,'ETÀ',0,-14,28,GRN,'900');txt(c,'?',0,44,64,INK,'900');return c;});
+ o.pr=el('g',{},g);pill(o.pr,'QUOTA 41 PER TUTTI',760,60,'#E09A1A');
+ o.cap=el('g',{},g);cap(o.cap,'TERZA PROPOSTA: LA QUOTA 41 PER TUTTI, A QUALSIASI ETÀ',48);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.p,700,380,0,1.3*Math.max(0,eob(seg(t,0.1,0.8))));
+ o.ag.forEach((c,i)=>T(c,420+i*270,720,(i-2)*3,Math.max(0,eob(seg(t,1.8+i*0.4,2.4+i*0.4)))));
+ T(o.ages,0,0,0,1);T(o.pr,1480,560,3,Math.max(0,eob(seg(t,1.2,1.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:6.5,e:12.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'MA MANCA QUALCOSA');
+ o.bp=el('g',{},g);docO(o.bp,500,640,'PROGETTO','TECNICO','NON ANCORA');
+ o.x1=el('g',{},g);el('line',{x1:-220,y1:-260,x2:220,y2:260,stroke:'#E4412C','stroke-width':26,'stroke-linecap':'round'},o.x1);el('line',{x1:-220,y1:260,x2:220,y2:-260,stroke:'#E4412C','stroke-width':26,'stroke-linecap':'round'},o.x1);
+ o.pg=el('g',{},g);piggy(o.pg);o.q=el('g',{},g);txt(o.q,'0',0,30,140,'#fff','900');
+ o.l1=el('g',{},g);pill(o.l1,'NESSUN PROGETTO TECNICO',700,48,'#E4412C');o.l2=el('g',{},g);pill(o.l2,'NESSUN SOLDO',560,48,'#E4412C');
+ o.cap=el('g',{},g);cap(o.cap,"NON C'È ANCORA UN PROGETTO TECNICO NÉ I SOLDI PER FINANZIARLA",48);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.bp,480,450,-3,Math.max(0,eob(seg(t,0.1,0.8))));T(o.x1,480,450,0,Math.max(0,eob(seg(t,1.2,1.8))));op(o.x1,seg(t,1.2,1.6));
+ T(o.l1,480,780,-2,Math.max(0,eob(seg(t,1.8,2.4))));
+ T(o.pg,1380,450,2,1.0*Math.max(0,eob(seg(t,2.6,3.3))));T(o.q,1380,450,0,Math.max(0,eob(seg(t,3.4,3.9))));
+ T(o.l2,1380,780,2,Math.max(0,eob(seg(t,3.8,4.4))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:12.0,e:19.27,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LA PENSIONE MINIMA');
+ o.s=el('g',{},g);const sc=slipCard(o.s,'MINIMA 2026','€ 611,85');sc.amt.setAttribute('font-size',84);
+ o.ar=el('g',{},g);el('path',{d:'M0 60 L0 -60 M-40 -20 L0 -64 L40 -20',fill:'none',stroke:AMB,'stroke-width':22,'stroke-linecap':'round','stroke-linejoin':'round'},o.ar);
+ o.t1=el('g',{},g);card3(o.t1,'€ 700','#E09A1A',380,150);o.t2=el('g',{},g);card3(o.t2,'€ 800','#E09A1A',380,150);
+ o.q=el('g',{},g);qBubble(o.q,110);
+ o.st=el('g',{},g);pill(o.st,'NULLA È DECISO',640,64,'#06303A');
+ o.cap=el('g',{},g);cap(o.cap,'LA MINIMA: 611,85 NEL 2026. SI PARLA DI 700 O 800 EURO, MA NULLA È DECISO',44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.s,520,520,-2,Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.ar,960,520,0,Math.max(0,eob(seg(t,1.8,2.4))));
+ T(o.t1,1400,360,-3,Math.max(0,eob(seg(t,2.6,3.2))));T(o.t2,1400,610,3,Math.max(0,eob(seg(t,3.4,4.0))));
+ T(o.q,1750,480,10*Math.sin(t*4),Math.max(0,eob(seg(t,4.6,5.2))));
+ T(o.st,960,790,-1,Math.max(0,eob(seg(t,5.2,5.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 30 ===================
+BLK[30]={D:13.49,S:[
+{s:0,e:4.7,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'QUANDO SI DECIDE?');
+ o.c1=calendarPage(g,'OTTOBRE','20',320,'ENTRO IL');o.c2=calendarPage(g,'DICEMBRE','31',320,'ENTRO FINE');
+ o.ar=el('g',{},g);el('path',{d:'M-80 0 L80 0 M40 -45 L80 0 L40 45',fill:'none',stroke:'#fff','stroke-width':20,'stroke-linecap':'round','stroke-linejoin':'round'},o.ar);
+ o.pr=el('g',{},g);pill(o.pr,'LEGGE DI BILANCIO',720,56,'#2FBF9B');
+ o.cap=el('g',{},g);cap(o.cap,'LA LEGGE DI BILANCIO: PRESENTATA ENTRO IL 20 OTTOBRE, APPROVATA ENTRO DICEMBRE',44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.c1.g,420,170,0,1.0*Math.max(0,eob(seg(t,0.1,0.8))));T(o.c2.g,1500,170,0,1.0*Math.max(0,eob(seg(t,1.6,2.3))));
+ T(o.ar,960,480,0,Math.max(0,eob(seg(t,1.2,1.8))));T(o.pr,960,800,-1,Math.max(0,eob(seg(t,2.6,3.2))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:4.7,e:8.3,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'POCHE SETTIMANE');
+ o.h=el('g',{},g);hourglass(o.h);
+ o.cs=[0,1,2,3,4,5].map(i=>{const c=el('g',{},g);el('rect',{x:-70,y:-70,width:140,height:140,rx:22,fill:'url(#g_paper)',filter:'url(#g_sh3)'},c);el('rect',{x:-70,y:-70,width:140,height:40,rx:22,fill:'url(#g_head)'},c);el('rect',{x:-70,y:-46,width:140,height:16,fill:'url(#g_head)'},c);txt(c,'SETT.',0,-40,24,'#fff','900');txt(c,''+(i+1),0,52,60,INK,'900');return c;});
+ o.cap=el('g',{},g);cap(o.cap,'LA RISPOSTA ARRIVA TRA POCHE SETTIMANE',56);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.h,480,470,0,1.3*Math.max(0,eob(seg(t,0.1,0.8)))*(1+0.02*Math.sin(t*5)));
+ o.cs.forEach((c,i)=>T(c,860+(i%3)*220,360+Math.floor(i/3)*220,(i-2.5)*2,Math.max(0,eob(seg(t,0.8+i*0.3,1.3+i*0.3)))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:8.3,e:13.49,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'L’ERRORE PIÙ PERICOLOSO');
+ o.w=el('g',{},g);warn(o.w);
+ o.d=el('g',{},g);docO(o.d,420,520,'PROPOSTA','NON LEGGE','');
+ o.dec=el('g',{},g);card3(o.dec,'DECISIONE IMPORTANTE','#E4412C',760,160);
+ o.ar=el('g',{},g);el('path',{d:'M0 -60 L0 60 M-40 20 L0 64 L40 20',fill:'none',stroke:'#fff','stroke-width':20,'stroke-linecap':'round','stroke-linejoin':'round'},o.ar);
+ o.cap=el('g',{},g);cap(o.cap,"L'ERRORE PIÙ PERICOLOSO: DECIDERE BASANDOSI SU UNA PROPOSTA",48);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.w,430,430,0,1.4*Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.d,1050,370,-4,0.8*Math.max(0,eob(seg(t,1.0,1.7))));T(o.ar,1450,560,0,Math.max(0,eob(seg(t,1.8,2.4))));
+ T(o.dec,1400,780,2,Math.max(0,eob(seg(t,2.4,3.0))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+
+// =================== helper 31-42 ===================
+function idCard(p,label,col){const g=el('g',{},p);
+ el('rect',{x:-150,y:-95,width:300,height:190,rx:22,fill:'url(#g_paper)',filter:'url(#g_sh2)'},g);
+ el('rect',{x:-150,y:-95,width:300,height:54,rx:22,fill:col},g);el('rect',{x:-150,y:-66,width:300,height:25,fill:col},g);
+ txt(g,label,0,-52,34,'#fff','900');el('circle',{cx:-80,cy:20,r:34,fill:'#C9D6D8'},g);
+ el('rect',{x:-30,y:0,width:150,height:14,rx:7,fill:'#C9D6D8'},g);el('rect',{x:-30,y:28,width:110,height:14,rx:7,fill:'#C9D6D8'},g);return g;}
+function menuBtn(p,label,w,col){const g=el('g',{},p);
+ el('rect',{x:-w/2,y:-48,width:w,height:96,rx:28,fill:col||'#fff',stroke:'#2FBF9B','stroke-width':6,filter:'url(#g_sh2)'},g);
+ txt(g,label,0,12,Math.min(40,(w-60)/(label.length*0.62)),col?'#fff':INK,'900');return g;}
+function finger(p){const g=el('g',{},p);
+ el('circle',{r:44,fill:'#fff',opacity:.55},g);el('circle',{r:22,fill:'#fff',opacity:.9},g);return g;}
+function scrn(p,title){const g=el('g',{},p);
+ el('rect',{x:-420,y:-250,width:840,height:500,rx:36,fill:'#0A2B30',stroke:'#7FA9AE','stroke-width':8,filter:'url(#g_sh)'},g);
+ el('rect',{x:-390,y:-220,width:780,height:440,rx:20,fill:'#EAF7F4'},g);
+ el('rect',{x:-390,y:-220,width:780,height:76,rx:20,fill:'url(#g_head)'},g);el('rect',{x:-390,y:-190,width:780,height:46,fill:'url(#g_head)'},g);
+ txt(g,title,0,-168,40,'#fff','900');return g;}
+// =================== BLOCCO 31 ===================
+BLK[31]={D:18.77,S:[
+{s:0,e:7.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PASSO UNO');
+ o.m=el('g',{},g);medal(o.m,false);o.tu=el('g',{},g);pill(o.tu,'TU, OGGI',460,64,'#2FBF9B');
+ o.sc=el('g',{},g);scrn(o.sc,'MAI INPS');
+ o.i=[idCard(g,'SPID','#2FBF9B'),idCard(g,'CARTA IDENTITÀ','#E09A1A'),idCard(g,'CARTA SERVIZI','#6F878C')];
+ o.pa=el('g',{},g);pill(o.pa,'OPPURE: UN PATRONATO',760,52,'#06303A');
+ o.cap=el('g',{},g);cap(o.cap,'ENTRA NEL TUO MAI INPS CON SPID, CARTA D’IDENTITÀ O CARTA DEI SERVIZI',44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.m,260,430,0,0.85*Math.max(0,eob(seg(t,0.1,0.8))));T(o.tu,260,680,-3,Math.max(0,eob(seg(t,0.6,1.2))));
+ T(o.sc,960,430,0,0.78*Math.max(0,eob(seg(t,0.8,1.5))));
+ o.i.forEach((c,i)=>T(c,1500,230+i*220,(i-1)*3,0.72*Math.max(0,eob(seg(t,2.0+i*0.7,2.6+i*0.7)))));
+ T(o.pa,1000,790,-1,Math.max(0,eob(seg(t,5.0,5.7))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:7.0,e:18.77,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'FASCICOLO PREVIDENZIALE');
+ o.m1=el('g',{},g);menuBtn(o.m1,'FASCICOLO PREVIDENZIALE',760);o.m2=el('g',{},g);menuBtn(o.m2,'ESTRATTO CONTO CONTRIBUTIVO',860,'#2FBF9B');
+ o.f=el('g',{},g);finger(o.f);
+ o.sc=el('g',{},g);scrn(o.sc,'ESTRATTO CONTO');
+ o.rw=[];for(let i=0;i<5;i++){const r=el('g',{},o.sc);txt(r,''+(2022+i),-330,-100+i*70,36,INK,'900','start');el('rect',{x:-190,y:-124+i*70,width:420,height:34,rx:17,fill:'#C9D6D8'},r);const f=el('rect',{x:-190,y:-124+i*70,width:10,height:34,rx:17,fill:'url(#g_badge)'},r);o.rw.push({r,f});}
+ o.cap=el('g',{},g);cap(o.cap,'LI TROVI TUTTI I CONTRIBUTI VERSATI A TUO NOME, ANNO PER ANNO',48);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.m1,960,360,0,Math.max(0,eob(seg(t,0.1,0.8)))*(t<2.4?1:Math.max(0,1-seg(t,2.4,2.8))));
+ T(o.m2,960,540,0,Math.max(0,eob(seg(t,0.8,1.5)))*(t<5.0?1:Math.max(0,1-seg(t,5.0,5.4))));
+ const fx=t<2.0?lerp(1500,960,eo3(seg(t,1.0,2.0))):lerp(960,960,0),fy=t<2.0?lerp(800,360,eo3(seg(t,1.0,2.0))):lerp(360,540,eio(seg(t,3.2,4.2)));
+ T(o.f,fx,fy,0,t<1.0||t>4.8?0:1);
+ T(o.sc,960,460,0,Math.max(0,eob(seg(t,5.2,5.9))));o.sc.setAttribute('transform','translate(960 460) scale('+Math.max(0,eob(seg(t,5.2,5.9)))+')');
+ o.rw.forEach((x,i)=>x.f.setAttribute('width',Math.max(10,420*eo3(seg(t,6.0+i*0.7,6.8+i*0.7)))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 32 ===================
+BLK[32]={D:19.27,S:[
+{s:0,e:9.2,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'CERCA TRE COSE');
+ o.c=[['ANNI CHE MANCANO','#E09A1A',0],['PERIODI NON RISULTANO','#E4412C',1],['DATA DEL 1° CONTRIBUTO','#2FBF9B',2]].map(([s,c,i])=>{const w=el('g',{},g);
+  el('rect',{x:-260,y:-250,width:520,height:500,rx:36,fill:'url(#g_paper)',filter:'url(#g_sh)'},w);el('rect',{x:-260,y:-250,width:520,height:120,rx:36,fill:c},w);el('rect',{x:-260,y:-190,width:520,height:60,fill:c},w);
+  txt(w,s,0,-168,s.length>18?32:38,'#fff','900');
+  const ic=el('g',{transform:'translate(0 40)'},w);
+  if(i==0){for(let k=0;k<5;k++)el('rect',{x:-190+k*80,y:-60,width:66,height:110,rx:12,fill:k==3?'none':'#2FBF9B',stroke:k==3?'#E09A1A':'none','stroke-width':6,'stroke-dasharray':'12 8'},ic);txt(ic,'?',74,40,110,'#E09A1A','900');}
+  if(i==1){const m=el('g',{transform:'translate(-20 -10) scale(0.75)'},ic);magnifier(m);}
+  if(i==2){el('line',{x1:-190,y1:30,x2:190,y2:30,stroke:'#C9D6D8','stroke-width':10},ic);const f=el('g',{transform:'translate(-120 30)'},ic);el('line',{x1:0,y1:0,x2:0,y2:-110,stroke:INK,'stroke-width':8},f);el('path',{d:'M0 -110 L90 -85 L0 -60 Z',fill:'#2FBF9B'},f);}
+  return w;});
+ o.cap=el('g',{},g);cap(o.cap,'CERCA: GLI ANNI CHE MANCANO, I PERIODI NON RISULTANO, LA DATA DEL PRIMO CONTRIBUTO',42);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ [380,960,1540].forEach((x,i)=>T(o.c[i],x,500,(i-1)*3,0.88*Math.max(0,eob(seg(t,0.3+i*2.4,0.9+i*2.4)))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:9.2,e:14.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'IN QUALE SISTEMA SEI?');
+ o.b=[['RETRIBUTIVO','#6F878C'],['MISTO','#E09A1A'],['CONTRIBUTIVO','#2FBF9B']].map(([s,c])=>{const w=el('g',{},g);card3(w,s,c,560,200);return w;});
+ o.fl=el('g',{},g);el('line',{x1:0,y1:0,x2:0,y2:-170,stroke:'#fff','stroke-width':10,'stroke-linecap':'round'},o.fl);el('path',{d:'M0 -170 L180 -130 L0 -90 Z',fill:'#2FBF9B'},o.fl);txt(o.fl,'1° CONTRIBUTO',90,-120,28,'#fff','900');
+ o.cap=el('g',{},g);cap(o.cap,'LA DATA DEL PRIMO CONTRIBUTO DECIDE IL TUO SISTEMA',52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ [380,960,1540].forEach((x,i)=>T(o.b[i],x,560,(i-1)*3,Math.max(0,eob(seg(t,0.4+i*0.6,1.0+i*0.6)))));
+ T(o.fl,960,400,0,Math.max(0,eob(seg(t,0.2,0.8))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:14.4,e:19.27,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'TROVI UN BUCO?');
+ o.bar=el('g',{},g);for(let i=0;i<12;i++)el('rect',{x:-720+i*125,y:-50,width:112,height:100,rx:16,fill:(i==5||i==6)?'none':'#2FBF9B',stroke:(i==5||i==6)?'#E4412C':'none','stroke-width':8,'stroke-dasharray':'14 10'},o.bar);
+ o.q=el('g',{},g);txt(o.q,'BUCO!',0,0,90,'#E4412C','900');
+ o.bt=el('g',{},g);menuBtn(o.bt,'SEGNALA L’ANOMALIA',760,'#E4412C');o.f=el('g',{},g);finger(o.f);
+ o.cap=el('g',{},g);cap(o.cap,'SE TROVI UN BUCO, SEGNALALO DAL TUO MAI INPS: PIÙ ASPETTI, PIÙ È DIFFICILE',44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.bar,960,380,0,Math.max(0,eob(seg(t,0.1,0.8))));T(o.q,960,250,-3,Math.max(0,eob(seg(t,0.9,1.5)))*(1+0.04*Math.sin(t*6)));
+ T(o.bt,960,640,0,Math.max(0,eob(seg(t,1.6,2.3))));
+ T(o.f,lerp(1500,1000,eo3(seg(t,2.4,3.4))),lerp(850,650,eo3(seg(t,2.4,3.4))),0,t>2.4&&t<4.2?1:0);
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 33 ===================
+BLK[33]={D:15.86,S:[
+{s:0,e:7.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PASSO DUE: PENSAMI');
+ o.sc=el('g',{},g);scrn(o.sc,'PENSAMI');
+ o.sl=[0,1,2].map(i=>{const r=el('g',{},o.sc);txt(r,['ETÀ','STIPENDIO','CONTRIBUTI'][i],-340,-90+i*70,30,INK,'900','start');el('rect',{x:-100,y:-112+i*70,width:400,height:14,rx:7,fill:'#C9D6D8'},r);const k=el('circle',{cx:-100,cy:-105+i*70,r:20,fill:AMB,stroke:'#fff','stroke-width':4},r);return {r,k};});
+ o.res=el('g',{},g);el('rect',{x:-290,y:-130,width:580,height:260,rx:36,fill:'url(#g_badge)',stroke:'#fff','stroke-width':10,filter:'url(#g_sh)'},o.res);txt(o.res,'QUANDO',0,-30,56,'#fff','900');txt(o.res,'E QUANTO',0,60,56,'#fff','900');
+ o.sg=el('g',{},g);pill(o.sg,'IL SIMULATORE DELL’INPS',760,50,'#06303A');
+ o.cap=el('g',{},g);cap(o.cap,'PROVA PENSAMI, IL SIMULATORE DELL’INPS: QUANDO E CON QUALE IMPORTO',44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.sc,620,430,0,0.85*Math.max(0,eob(seg(t,0.1,0.8))));
+ o.sl.forEach((s,i)=>s.k.setAttribute('cx',lerp(-100,300,eio(seg(t,1.0+i*0.7,2.4+i*0.7)))));
+ T(o.res,1560,420,3,Math.max(0,eob(seg(t,3.6,4.3))));T(o.sg,1100,820,-1,Math.max(0,eob(seg(t,4.6,5.3))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:7.4,e:15.86,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'SIMULAZIONE, NON PROMESSA');
+ o.st=el('g',{},g);el('rect',{x:-380,y:-90,width:760,height:180,rx:20,fill:'none',stroke:'#E09A1A','stroke-width':14},o.st);txt(o.st,'NON UNA PROMESSA',0,28,66,'#E09A1A','900');
+ o.nw=el('g',{},g);o.nd=docO(o.nw,420,560,'GIORNALE','TITOLO','');
+ o.vs=el('g',{},g);txt(o.vs,'MEGLIO',0,30,80,'#fff','900');
+ o.sim=el('g',{},g);scrn(o.sim,'SIMULAZIONE');o.ck=el('g',{},g);checkBadge(o.ck,90);
+ o.cap=el('g',{},g);cap(o.cap,'È UNA SIMULAZIONE, NON UNA PROMESSA: MEGLIO DI UN TITOLO DI GIORNALE',44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.st,960,300,-4,Math.max(0,eob(seg(t,0.2,0.9)))*(t>0.9?1+0.03*Math.sin((t-0.9)*7):1));
+ T(o.nw,420,640,-4,0.8*Math.max(0,eob(seg(t,1.6,2.3))));T(o.vs,960,640,0,Math.max(0,eob(seg(t,3.0,3.6))));
+ T(o.sim,1480,640,3,0.6*Math.max(0,eob(seg(t,3.6,4.3))));T(o.ck,1760,470,0,Math.max(0,eob(seg(t,4.6,5.2))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 34 ===================
+BLK[34]={D:17.09,S:[
+{s:0,e:7.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PASSO TRE: TRE DATE');
+ o.n=el('g',{},g);const pad=el('g',{},o.n);el('rect',{x:-260,y:-250,width:520,height:500,rx:20,fill:'#FFE680',filter:'url(#g_sh)'},pad);
+ o.d=[['ANTICIPATA','#E09A1A'],['VECCHIAIA','#2FBF9B'],['FINESTRA 3 MESI','#E4412C']].map(([s,c],i)=>{const w=el('g',{},g);el('rect',{x:-250,y:-110,width:500,height:220,rx:28,fill:'url(#g_paper)',stroke:c,'stroke-width':10,filter:'url(#g_sh2)'},w);txt(w,s,0,-30,s.length>12?40:50,c,'900');txt(w,'DATA: __ / __ / ____',0,60,44,INK,'900');return w;});
+ o.cap=el('g',{},g);cap(o.cap,'SCRIVI TRE DATE: ANTICIPATA, VECCHIAIA E FINESTRA DI TRE MESI',46);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.n,960,470,0,1.35*Math.max(0,eob(seg(t,0.1,0.8))));op(o.n,0.35);
+ o.d.forEach((w,i)=>T(w,960,260+i*230,(i-1)*2,Math.max(0,eob(seg(t,0.8+i*1.8,1.4+i*1.8)))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:7.4,e:12.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PASSO QUATTRO');
+ o.p=el('g',{},g);o.pc=docO(o.p,520,640,'PORTA TUTTO','PATRONATO','');
+ o.pa=el('g',{},g);card3(o.pa,'PATRONATO','#2FBF9B',560,170);o.m=el('g',{},g);medal(o.m,true);
+ o.ar=el('g',{},g);el('path',{d:'M-90 0 L90 0 M50 -45 L90 0 L50 45',fill:'none',stroke:'#fff','stroke-width':18,'stroke-linecap':'round','stroke-linejoin':'round'},o.ar);
+ o.fr=el('g',{},g);pill(o.fr,'DI SOLITO GRATUITO',640,52,'#E09A1A');
+ o.cap=el('g',{},g);cap(o.cap,'PORTA TUTTO A UN PATRONATO',58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.p,430,470,-3,Math.max(0,eob(seg(t,0.1,0.8))));T(o.ar,820,470,0,Math.max(0,eob(seg(t,1.0,1.6))));
+ T(o.m,1160,400,0,0.8*Math.max(0,eob(seg(t,1.4,2.1))));T(o.pa,1500,640,3,Math.max(0,eob(seg(t,2.0,2.7))));T(o.fr,1360,820,-2,Math.max(0,eob(seg(t,3.0,3.7))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:12.4,e:17.09,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'PASSO CINQUE');
+ o.b=el('g',{},g);briefcase(o.b);o.s=el('g',{},g);stopSign(o.s);
+ o.cal=calendarPage(g,'MANOVRA','OK',200,'');
+ o.nx=el('g',{},g);pill(o.nx,'NIENTE SCELTE IRREVERSIBILI',900,52,'#E4412C');
+ o.cap=el('g',{},g);cap(o.cap,'NIENTE DIMISSIONI PRIMA CHE LA MANOVRA SIA APPROVATA!',52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.b,430,430,-3,1.2*Math.max(0,eob(seg(t,0.1,0.8))));T(o.s,430,430,0,1.2*Math.max(0,eob(seg(t,1.0,1.7))));
+ T(o.cal.g,1420,170,0,1.0*Math.max(0,eob(seg(t,1.8,2.5))));T(o.nx,960,790,-1,Math.max(0,eob(seg(t,2.6,3.3))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 35 ===================
+BLK[35]={D:11.54,S:[
+{s:0,e:3.6,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'I TRE ERRORI PIÙ COSTOSI');
+ o.e=[0,1,2].map(i=>{const c=el('g',{},g);el('circle',{r:150,fill:'url(#g_red)',stroke:'#fff','stroke-width':12,filter:'url(#g_sh)'},c);txt(c,''+(3-i),0,60,170,'#fff','900');return c;});
+ o.cap=el('g',{},g);cap(o.cap,'ECCO I TRE ERRORI PIÙ COSTOSI',58);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ o.e.forEach((c,i)=>T(c,420+i*540,480,(i-1)*5,Math.max(0,eob(seg(t,0.2+i*0.4,0.8+i*0.4)))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:3.6,e:11.54,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'ERRORE NUMERO TRE');
+ o.n=el('g',{},g);el('circle',{r:100,fill:'url(#g_red)',stroke:'#fff','stroke-width':10},o.n);txt(o.n,'3',0,40,120,'#fff','900');
+ o.b=el('g',{},g);briefcase(o.b);o.ar=el('g',{},g);el('path',{d:'M-90 0 L90 0 M50 -45 L90 0 L50 45',fill:'none',stroke:'#fff','stroke-width':18,'stroke-linecap':'round'},o.ar);
+ o.w=el('g',{},g);el('rect',{x:-170,y:-90,width:340,height:220,rx:20,fill:'#6F4A2A',stroke:'#fff','stroke-width':8},o.w);txt(o.w,'0',0,70,100,'#fff','900');
+ o.mm=[0,1,2].map(i=>{const c=el('g',{},g);el('rect',{x:-70,y:-70,width:140,height:140,rx:22,fill:'#E4412C'},c);txt(c,'MESE '+(i+1),0,14,36,'#fff','900');return c;});
+ o.cap=el('g',{},g);cap(o.cap,'DIMETTERSI PRIMA: CON LA FINESTRA DI TRE MESI RISCHI DI RESTARE SENZA NULLA',44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.n,200,260,0,Math.max(0,eob(seg(t,0.1,0.7))));T(o.b,420,400,-3,1.1*Math.max(0,eob(seg(t,0.2,0.9))));T(o.ar,820,400,0,Math.max(0,eob(seg(t,1.0,1.6))));
+ T(o.w,1300,400,3,Math.max(0,eob(seg(t,1.4,2.1))));
+ o.mm.forEach((c,i)=>T(c,660+i*200,720,(i-1)*3,Math.max(0,eob(seg(t,2.2+i*0.6,2.8+i*0.6)))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 36 ===================
+BLK[36]={D:15.67,S:[
+{s:0,e:7.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'ERRORE NUMERO DUE');
+ o.n=el('g',{},g);el('circle',{r:100,fill:'url(#g_red)',stroke:'#fff','stroke-width':10},o.n);txt(o.n,'2',0,40,120,'#fff','900');
+ o.h=el('g',{},g);o.hd=headline(o.h,'PENSIONE A 64 ANNI PER TUTTI!',1000,40);
+ o.x=el('g',{},g);el('line',{x1:-440,y1:-120,x2:440,y2:120,stroke:'#E4412C','stroke-width':26,'stroke-linecap':'round'},o.x);el('line',{x1:-440,y1:120,x2:440,y2:-120,stroke:'#E4412C','stroke-width':26,'stroke-linecap':'round'},o.x);
+ o.no=el('g',{},g);pill(o.no,'NON ESISTE!',560,76,'#E4412C');
+ o.cap=el('g',{},g);cap(o.cap,'ERRORE NUMERO DUE: FIDARSI DI UN TITOLO',54);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.n,200,260,0,Math.max(0,eob(seg(t,0.1,0.7))));T(o.h,960,420,-2,1.15*Math.max(0,eob(seg(t,0.4,1.1))));
+ T(o.x,960,420,0,Math.max(0,eob(seg(t,2.6,3.2))));op(o.x,seg(t,2.6,3.0));T(o.no,960,700,-3,Math.max(0,eob(seg(t,3.2,3.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:7.4,e:11.2,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'UNA REGOLA PRECISA');
+ o.r=el('g',{},g);docO(o.r,480,600,'REGOLA','SOGLIE','PRECISE');o.q=el('g',{},g);qBubble(o.q,100);o.ok=el('g',{},g);checkBadge(o.ok,80);
+ o.w=el('g',{},g);pill(o.w,'CHI LA PROPONE? È APPROVATA?',1000,52,'#06303A');
+ o.cap=el('g',{},g);cap(o.cap,'CONTROLLA SEMPRE CHI LA PROPONE, E SE È GIÀ STATA APPROVATA',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.r,520,430,-3,Math.max(0,eob(seg(t,0.1,0.8))));T(o.q,1100,300,10*Math.sin(t*4),Math.max(0,eob(seg(t,0.8,1.4))));T(o.ok,1500,300,0,Math.max(0,eob(seg(t,1.6,2.2))));
+ T(o.w,1250,640,-2,Math.max(0,eob(seg(t,1.2,1.9))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:11.2,e:15.67,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'ADESSO...');
+ o.chest=el('g',{},g);
+ el('rect',{x:-230,y:-60,width:460,height:260,rx:26,fill:'#0B4A50',stroke:'#2FBF9B','stroke-width':10,filter:'url(#g_sh)'},o.chest);
+ el('path',{d:'M-230 -60 A230 150 0 0 1 230 -60 Z',fill:'#0F6068',stroke:'#2FBF9B','stroke-width':10},o.chest);
+ for(let i=-1;i<=1;i+=2)el('rect',{x:i*130-18,y:-190,width:36,height:390,rx:10,fill:AMB,opacity:.9},o.chest);
+ o.lk=el('g',{},o.chest);const L=lockO(o.lk);L.setAttribute('transform','translate(0 20) scale(0.8)');
+ o.pl=el('g',{},g);pill(o.pl,'ERRORE NUMERO UNO',820,60,'#E4412C');
+ o.cap=el('g',{},g);cap(o.cap,'E ADESSO, L’ERRORE NUMERO UNO: QUELLO CHE TI AVEVO PROMESSO!',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.chest,960,420,2*Math.sin(t*3),1.3*Math.max(0,eob(seg(t,0.2,1.0))));T(o.pl,960,780,0,Math.max(0,eob(seg(t,1.0,1.7))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 37 ===================
+BLK[37]={D:14.12,S:[
+{s:0,e:6.2,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'CONTROLLARE TROPPO TARDI');
+ o.bar=el('g',{},g);for(let i=0;i<12;i++)el('rect',{x:-720+i*125,y:-50,width:112,height:100,rx:16,fill:(i==5||i==6)?'none':'#2FBF9B',stroke:(i==5||i==6)?'#E4412C':'none','stroke-width':8,'stroke-dasharray':'14 10'},o.bar);
+ o.last=el('g',{},g);pill(o.last,'ULTIMO ANNO',460,56,'#E09A1A');
+ o.cal=calendarPage(g,'ULTIMO','1',320,'ANNO');
+ o.bu=el('g',{},g);txt(o.bu,'BUCO!',0,0,90,'#E4412C','900');
+ o.cap=el('g',{},g);cap(o.cap,"ASPETTARE L'ULTIMO ANNO E SCOPRIRE UN PERIODO CHE NON RISULTA VERSATO",44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.bar,960,300,0,Math.max(0,eob(seg(t,0.1,0.8))));
+ T(o.cal.g,420,420,-2,0.8*Math.max(0,eob(seg(t,1.0,1.7))));T(o.last,420,820,-3,Math.max(0,eob(seg(t,1.6,2.3))));
+ T(o.bu,1260,590,-4,1.2*Math.max(0,eob(seg(t,3.0,3.7)))*(1+0.04*Math.sin(t*6)));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:6.2,e:14.12,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'RECUPERARE UN CONTRIBUTO');
+ o.d=[0,1,2].map(i=>docO(g,300,380,'BUSTA PAGA',''+(2010+i*6),''));
+ o.m=el('g',{},g);magnifier(o.m);o.h=el('g',{},g);hourglass(o.h);
+ o.mm=[0,1,2,3].map(i=>{const c=el('g',{},g);el('rect',{x:-70,y:-70,width:140,height:140,rx:22,fill:'#E09A1A'},c);txt(c,'+1',0,16,56,'#fff','900');txt(c,'MESE',0,56,26,'#fff','900');return c;});
+ o.cap=el('g',{},g);cap(o.cap,'RECUPERARE UN CONTRIBUTO PUÒ RICHIEDERE MESI: OGNI MESE IN PIÙ DI LAVORO',44);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ o.d.forEach((d,i)=>T(d,360+i*300,470,(i-1)*4,0.8*Math.max(0,eob(seg(t,0.2+i*0.5,0.8+i*0.5)))));
+ const mx=lerp(300,1000,eio(seg(t,1.4,4.0)));T(o.m,mx,lerp(700,500,eio(seg(t,1.4,4.0))),0,Math.max(0,eob(seg(t,1.2,1.8))));
+ T(o.h,1600,430,0,Math.max(0,eob(seg(t,3.6,4.3)))*0.9*(1+0.02*Math.sin(t*5)));
+ o.mm.forEach((c,i)=>T(c,1260+i*0,0,0,0));
+ o.mm.forEach((c,i)=>T(c,560+i*220,780,(i-1.5)*3,Math.max(0,eob(seg(t,4.4+i*0.7,5.0+i*0.7)))*0.85));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 38 ===================
+BLK[38]={D:12.28,S:[
+{s:0,e:12.28,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'RIEPILOGO: VERDE');
+ o.sem=semaforo(g);setL(o.sem.L,2,1);
+ o.p1=el('g',{},g);o.pl1=plate(o.p1,'67','ANNI E 1 MESE');o.pl1.s.setAttribute('font-size',28);
+ o.k1=el('g',{},g);pill(o.k1,'VECCHIAIA DAL 2027',520,44,'#2FBF9B');
+ o.mu=el('g',{},g);o.pm=plate(o.mu,'42','ANNI E 11 MESI');o.pm.s.setAttribute('font-size',28);
+ o.md=el('g',{},g);o.pd=plate(o.md,'41','ANNI E 11 MESI');o.pd.s.setAttribute('font-size',28);
+ o.m1=el('g',{},g);medal(o.m1,false);o.m2=el('g',{},g);medal(o.m2,true);
+ o.k2=el('g',{},g);pill(o.k2,'ANTICIPATA DAL 2027',560,44,'#E09A1A');
+ o.cap=el('g',{},g);cap(o.cap,'VERDE: DAL 2027 VECCHIAIA A 67 ANNI E 1 MESE, ANTICIPATA 42 ANNI E 11 MESI / 41 ANNI E 11 MESI',38);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.sem.g,260,470,0,0.7*Math.max(0,eob(seg(t,0.1,0.8))));setL(o.sem.L,2,1);
+ T(o.p1,780,380,0,1.1*Math.max(0,eob(seg(t,0.8,1.5))));T(o.k1,780,590,-2,Math.max(0,eob(seg(t,1.4,2.0))));
+ T(o.mu,1240,380,0,0.9*Math.max(0,eob(seg(t,4.4,5.1))));T(o.md,1680,380,0,0.9*Math.max(0,eob(seg(t,6.4,7.1))));
+ T(o.m1,1240,640,0,0.34*Math.max(0,eob(seg(t,4.8,5.4))));T(o.m2,1680,640,0,0.34*Math.max(0,eob(seg(t,6.8,7.4))));
+ T(o.k2,1460,810,2,Math.max(0,eob(seg(t,7.6,8.2))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 39 ===================
+BLK[39]={D:9.36,S:[
+{s:0,e:9.36,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'VERDE: ANCHE A 64 ANNI');
+ o.sem=semaforo(g);setL(o.sem.L,2,1);
+ o.a=el('g',{},g);o.pa=plate(o.a,'64','ANNI');o.b=el('g',{},g);o.pb=plate(o.b,'20','ANNI DI CONTRIBUTI');o.pb.s.setAttribute('font-size',26);
+ o.c=el('g',{},g);card3(o.c,'3 \u00d7 ASSEGNO SOCIALE','#2FBF9B',720,150);
+ o.k=el('g',{},g);pill(o.k,'SOLO CONTRIBUTIVI PURI',720,50,'#E09A1A');
+ o.cap=el('g',{},g);cap(o.cap,'VERDE ANCHE A 64 ANNI: PER I CONTRIBUTIVI PURI, 20 ANNI E 3 VOLTE L\u2019ASSEGNO SOCIALE',40);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.sem.g,260,470,0,0.7*Math.max(0,eob(seg(t,0.1,0.8))));setL(o.sem.L,2,1);
+ T(o.a,780,350,0,1.1*Math.max(0,eob(seg(t,0.6,1.3))));T(o.b,1260,350,0,1.1*Math.max(0,eob(seg(t,2.2,2.9))));
+ T(o.c,1020,640,-2,Math.max(0,eob(seg(t,4.0,4.7))));T(o.k,1020,800,2,Math.max(0,eob(seg(t,6.0,6.7))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 40 ===================
+BLK[40]={D:16.68,S:[
+{s:0,e:10.2,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'GIALLO: SONO SOLO PROPOSTE');
+ o.sem=semaforo(g);setL(o.sem.L,1,1);
+ o.l=['STOP ALL\u2019AUMENTO','USCITA A 64 ANNI CON RICALCOLO','QUOTA 41','MINIME PI\u00d9 ALTE'].map((s,i)=>{const w=el('g',{},g);card3(w,s,'#E09A1A',1000,130);return w;});
+ o.cap=el('g',{},g);cap(o.cap,'GIALLO: STOP ALL\u2019AUMENTO, USCITA A 64 ANNI CON RICALCOLO, QUOTA 41, MINIME PI\u00d9 ALTE',40);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.sem.g,300,470,0,0.7*Math.max(0,eob(seg(t,0.1,0.8))));setL(o.sem.L,1,1);
+ o.l.forEach((w,i)=>T(w,1130,220+i*180,(i%2?2:-2),Math.max(0,eob(seg(t,0.6+i*1.8,1.2+i*1.8)))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:10.2,e:16.68,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'LA RISPOSTA');
+ o.ma=el('g',{},g);docO(o.ma,420,560,'MANOVRA','2027','LA RISPOSTA');
+ o.sem=semaforo(g);setL(o.sem.L,0,1);
+ o.a=el('g',{},g);card3(o.a,'QUOTA 103','#E4412C',520,140);o.b=el('g',{},g);card3(o.b,'OPZIONE DONNA','#E4412C',620,140);
+ o.cl=el('g',{},g);pill(o.cl,'CHIUSE PER CHI NON AVEVA I REQUISITI',1100,48,'#06303A');
+ o.cap=el('g',{},g);cap(o.cap,'ROSSO: QUOTA 103 E OPZIONE DONNA SONO CHIUSE PER CHI NON AVEVA GI\u00c0 I REQUISITI',40);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.ma,420,430,-3,0.85*Math.max(0,eob(seg(t,0.1,0.8))));T(o.sem.g,860,430,0,0.7*Math.max(0,eob(seg(t,1.8,2.5))));setL(o.sem.L,0,seg(t,2.2,2.8));
+ T(o.a,1430,330,-2,Math.max(0,eob(seg(t,2.6,3.2))));T(o.b,1470,520,2,Math.max(0,eob(seg(t,3.2,3.8))));
+ T(o.cl,1250,790,-1,Math.max(0,eob(seg(t,4.0,4.7))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 41 ===================
+BLK[41]={D:13.52,S:[
+{s:0,e:6.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'TOCCA A TE');
+ o.q=el('g',{},g);qBubble(o.q,170);
+ o.c=el('g',{},g);[0,1,2].forEach(i=>{const b=el('g',{transform:'translate(0 '+(i*130)+')'},o.c);el('rect',{x:-420,y:-52,width:840,height:104,rx:52,fill:'url(#g_paper)',filter:'url(#g_sh2)'},b);el('circle',{cx:-360,cy:0,r:34,fill:['#2FBF9B','#E09A1A','#E4412C'][i]},b);el('rect',{x:-300,y:-14,width:[620,520,420][i],height:28,rx:14,fill:'#C9D6D8'},b);});
+ o.t=el('g',{},g);pill(o.t,'IN CHE ANNO PENSI DI ANDARE IN PENSIONE?',1300,56,'#2FBF9B');
+ o.cap=el('g',{},g);cap(o.cap,'IN CHE ANNO PENSI DI ANDARE IN PENSIONE? SCRIVILO NEI COMMENTI!',48);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.q,360,400,10*Math.sin(t*4),Math.max(0,eob(seg(t,0.1,0.8))));T(o.t,1200,250,-1,Math.max(0,eob(seg(t,0.6,1.3))));
+ [0,1,2].forEach(i=>{});T(o.c,1200,500,0,1);o.c.children[0]&&0;
+ [...o.c.children].forEach((b,i)=>op(b,seg(t,1.8+i*1.0,2.4+i*1.0)));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}},
+{s:6.0,e:13.52,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'ISCRIVITI');
+ o.hero=el('g',{},g);el('circle',{r:170,fill:'url(#g_badge)',stroke:'#fff','stroke-width':12,filter:'url(#g_sh)'},o.hero);txt(o.hero,'CP',0,50,150,'#fff','900');
+ o.pill=el('g',{},g);o.pb=pill(o.pill,'ISCRIVITI',560,90,'#E4412C');
+ o.bell=el('g',{},g);el('path',{d:'M-70 50 Q-70 -80 0 -80 Q70 -80 70 50 L90 80 L-90 80 Z',fill:AMB,stroke:'#fff','stroke-width':8,filter:'url(#g_sh2)'},o.bell);el('circle',{cx:0,cy:100,r:22,fill:AMB},o.bell);
+ o.f=el('g',{},g);finger(o.f);o.ck=el('g',{},g);checkBadge(o.ck,80);
+ o.mn=el('g',{},g);pill(o.mn,'QUANDO LA MANOVRA SAR\u00c0 APPROVATA',1100,50,'#06303A');
+ o.cap=el('g',{},g);cap(o.cap,'ISCRIVITI A CONTI IN PENSIONE E ATTIVA LA CAMPANELLA!',50);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.hero,540,400,0,0.9*Math.max(0,eob(seg(t,0.1,0.8))));T(o.pill,1300,420,0,Math.max(0,eob(seg(t,0.8,1.5)))*(1-0.1*Math.sin(clamp(seg(t,2.6,3.0))*Math.PI)));
+ T(o.f,lerp(1700,1300,eo3(seg(t,1.8,2.6))),lerp(700,440,eo3(seg(t,1.8,2.6))),0,t>1.8&&t<3.2?1:0);
+ o.ck.setAttribute('transform','translate(1660 420) scale('+Math.max(0,eob(seg(t,3.0,3.6)))+')');
+ const sw=t>3.2?20*Math.exp(-1.2*(t-3.2))*Math.sin((t-3.2)*13):0;T(o.bell,1300,640,sw,Math.max(0,eob(seg(t,3.2,3.8))));
+ T(o.mn,960,820,-1,Math.max(0,eob(seg(t,4.6,5.3))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,0.3,0.9))));}}
+]};
+// =================== BLOCCO 42 ===================
+BLK[42]={D:15.48,S:[
+{s:0,e:15.48,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'IMPORTANTE');
+ o.card=el('g',{},g);el('rect',{x:-820,y:-300,width:1640,height:600,rx:50,fill:'url(#g_paper)',filter:'url(#g_sh)'},o.card);
+ el('rect',{x:-820,y:-300,width:1640,height:110,rx:50,fill:'url(#g_head)'},o.card);el('rect',{x:-820,y:-230,width:1640,height:40,fill:'url(#g_head)'},o.card);
+ txt(o.card,'INFORMAZIONI A SCOPO DIVULGATIVO',0,-215,56,'#fff','900');
+ o.l=['NON SOSTITUISCONO LA CONSULENZA','DI UN PATRONATO O DELL\u2019INPS','VERIFICA SEMPRE SUI CANALI UFFICIALI'].map((s,i)=>txt(o.card,s,0,-70+i*85,i==2?58:52,i==2?GRN:INK,'900'));
+ txt(o.card,'INPS.IT',0,255,80,'#E09A1A','900');
+ o.sh=el('g',{},g);shield(o.sh);
+ o.cap=el('g',{},g);cap(o.cap,'GRAZIE PER AVER GUARDATO FINO ALLA FINE... E ALLA PROSSIMA!',52);
+ this.o=o;},
+ update(t){const o=this.o;T(o.top,960,100,0,1);
+ T(o.card,960,470,0,Math.max(0,eob(seg(t,0.1,0.9))));
+ o.l.forEach((x,i)=>op(x,seg(t,0.8+i*0.9,1.4+i*0.9)));
+ T(o.sh,1780,120,0,0.3*Math.max(0,eob(seg(t,2.0,2.7))));
+ T(o.cap,960,950,0,Math.max(0,eob(seg(t,6.0,6.8))));}}
+]};
+
+// =================== regia ===================
+const bok=document.getElementById('bok');
+for(let i=0;i<16;i++){el('circle',{cx:(i*271)%1920,cy:(i*197)%1080,r:30+((i*37)%80),fill:'#8FF5DC',opacity:.06+((i*13)%7)*0.01},bok);}
+const sceneG=document.getElementById('scene');const camG=document.getElementById('cam');
+let curB=-1,curS=-1;
+function draw(b,t){
+ const B=BLK[b];let i=B.S.length-1;for(let k=0;k<B.S.length;k++){if(t<B.S[k].e){i=k;break;}}
+ const S0=B.S[i];
+ if(curB!==b||curS!==i){sceneG.innerHTML='';S0.build(sceneG);curB=b;curS=i;}
+ const lt=t-S0.s;S0.update(lt);
+ const fin=eo3(seg(lt,0,0.3)),fout=(i<B.S.length-1)?1-eio(seg(t,S0.e-0.3,S0.e)):1;
+ sceneG.setAttribute('opacity',Math.min(fin,fout));
+ const z=1+0.02*(t/B.D);camG.setAttribute('transform','translate(960 540) scale('+z+') translate(-960 -540)');
+}

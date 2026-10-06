@@ -1,0 +1,4 @@
+Fine dei blocchi letta dalle timeline CapCut (30 fps), Short 3
+Blocco 1: 198 frame (6,60 s) - Blocco 2: 191 (6,37 s) - Blocco 3: 209 (6,97 s) - Blocco 4: 334 (11,13 s)
+Blocco 5: 126 (4,20 s) - Blocco 6: 352 (11,73 s) - Blocco 7: 168 (5,60 s)
+Totale 1578 frame = 52,60 s
