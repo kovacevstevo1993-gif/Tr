@@ -577,12 +577,14 @@ SPECS[53]=()=>mkBlk(TXT,TOT,[
   VT('TI SPIEGO SUBITO COSA CAMBIA',1250,380,'ti spiego subito',GF_,42),
   VT('CON FONTI UFFICIALI',1250,540,'con fonti ufficiali',AMB,42)]},
 ]);
-// ---------- BLOCCO 54 (slide finale con il disclaimer, in chiaro) ----------
+// ---------- BLOCCO 54 (slide finale con il disclaimer, stile video 2; centro-basso e destra-basso LIBERI per la schermata finale) ----------
 SPECS[54]=()=>mkBlk(TXT,TOT,[
- {at:0,top:'DISCLAIMER',cap:'GRAZIE PER AVER GUARDATO FINO ALLA FINE… E ALLA PROSSIMA!',items:[
-  VT('INFORMAZIONI A SCOPO DIVULGATIVO',960,250,'Le informazioni di questo video',AMB,50),
-  VT('NON SOSTITUISCONO LA CONSULENZA DI UN PATRONATO O DELL’INPS',960,380,'non sostituiscono',GF_,34),
-  VT('GLI IMPORTI SONO ESEMPI, NON PREVISIONI',960,510,'Gli importi sono esempi',AMB,50),
-  VT('VERIFICA SEMPRE SUI CANALI UFFICIALI, COME INPS.IT',960,640,'Verifica sempre',GF_,36),
-  VT('GRAZIE PER AVER GUARDATO!',960,780,'Grazie per aver guardato',RF_,56)]},
+ {at:0,top:'VERIFICA SEMPRE',cap:'VERIFICA SEMPRE SUI CANALI UFFICIALI: INPS.IT. GRAZIE PER AVER GUARDATO!',capSize:42,items:[
+  I('dbg',[1060,330],1280,330,'Le informazioni di questo video'),
+  I('dline',['INFORMAZIONI A SCOPO DIVULGATIVO','#fff',32],1280,320,'scopo divulgativo'),
+  I('dline',['NON SOSTITUISCE UN PATRONATO O L’INPS','#7FF0D2',30],1280,380,'non sostituiscono'),
+  I('dline',['GLI IMPORTI SONO ESEMPI, NON PREVISIONI','#FFB838',30],1280,440,'Gli importi sono esempi'),
+  I('br',['inps.it',600,330],400,330,'Verifica sempre'),
+  I('row',['CANALI UFFICIALI',460,true],400,360,'canali ufficiali'),
+  I('med',[],200,700,'Grazie per aver guardato',0.45),I('medm',[],360,700,['Grazie per aver guardato',0.4],0.45)]},
 ]);

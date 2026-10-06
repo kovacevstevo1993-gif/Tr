@@ -74,3 +74,8 @@ Object.assign(BUILD,{
  bell:(g)=>{el('path',{d:'M0 -120 Q-100 -120 -100 -20 V50 L-130 90 H130 L100 50 V-20 Q100 -120 0 -120 Z',fill:AMB,stroke:'#fff','stroke-width':8,filter:'url(#g_sh)'},g);el('circle',{cx:0,cy:120,r:26,fill:AMB,stroke:'#fff','stroke-width':6},g);el('circle',{cx:0,cy:-140,r:16,fill:AMB},g);},
  hl:(g,s,fill)=>{const w=s.length*38*0.7+110;el('rect',{x:-w/2,y:-70,width:w,height:140,rx:24,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);el('rect',{x:-w/2,y:-70,width:w,height:44,rx:24,fill:fill||RED_},g);el('rect',{x:-w/2,y:-48,width:w,height:22,fill:fill||RED_},g);txt(g,'TITOLO',0,-40,28,'#fff','bold');txt(g,s,0,40,56,INK,'900');},
 });
+Object.assign(BUILD,{
+ dbg:(g,w,h)=>{el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:26,fill:'#0B4A50',filter:'url(#g_sh)'},g);
+  el('rect',{x:-w/2,y:-h/2,width:w,height:74,rx:26,fill:GRN},g);el('rect',{x:-w/2,y:-h/2+44,width:w,height:30,fill:GRN},g);txt(g,'DISCLAIMER',0,-h/2+50,38,'#fff','bold');},
+ dline:(g,s,col,fs)=>txt(g,s,0,0,fs,col,'bold'),
+});
