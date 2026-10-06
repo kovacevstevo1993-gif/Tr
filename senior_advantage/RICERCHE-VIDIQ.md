@@ -130,3 +130,56 @@ Risultati di ricerca YouTube (titolo | canale | view | eta | durata):
 - Centro apparecchi acustici: test dell'udito gratuito per iscritti dai 18 anni, assistenza gratuita inclusa con l'acquisto; prezzi da 1.599,99 dollari (Philips HearLink 9050, ricaricabile con caricatore) e 1.699,99 (Jabra Enhance Pro 30). Serve la tessera.
 - Ottica: lenti a contatto online solo per iscritti.
 - Conseguenza: un titolo "Costco Is Hiding N Discounts From Seniors" sarebbe falso. Angolo onesto: "Costco has no senior discount, but these N things save seniors money" (parole chiave: "costco for seniors" 5.235/mese conc. 12; "costco senior discount" 3.269 conc. 19).
+
+---------------------------------------------------------------------
+## 8. RICERCA VIDEO COSTCO (06/10/2026) - 5 crediti vidIQ (saldo 25) + ricerche pubbliche gratuite
+Autorizzata dall'utente ("fai tutte le ricerche, parole chiave SEO").
+
+### 8a. Video Costco per over 60 che vanno (YouTube, ricerca "costco senior discount" e "costco for seniors"; titolo | canale | view | eta | durata)
+- **If You're Over 60, Costco Owes You These 15 Free Things** | Robin MBA | 457.040 | 3 sett. | 15:42 (15 servizi inclusi nella tessera; alla fine 2 a pagamento con costi dichiarati: vaccini e upgrade Executive)
+- **15 HIDDEN Costco Senior Discounts They Never Advertise in 2026** | Walt - Senior Money Watch | 335.640 | 3 mesi | 21:52 (apre con: apparecchi acustici 1.500 contro 3.500-7.000, "usati una volta pagano 20 anni di tessera"; rivolto a coppie di over 60 in due)
+- 15 "Hidden" Senior Discounts Costco Never Advertises | The Retiree Wallet | 177.195 | 4 mesi | 25:06 (apre con storia di una donna di 60 anni, apparecchi acustici, 3.000 dollari risparmiati; ammette "Costco non ha un vero sconto senior")
+- **13 Ways Seniors Can Shop Costco Without Ever Paying for a Membership** | The Retiree Wallet | 101.960 | 3 mesi | 21:59
+- Costco Senior Deals Most Members Never Find | FrugalFinds4U | 95.738 | 4 mesi | 22:31
+- 15 "Hidden" Senior Discounts Costco Canada Never Advertises | The Canadian Senior Wallet | 44.057 | 3 mesi
+- 13 Senior Secrets Only Costco Employees Know | The Smart Steward | 20.418 | 1 mese | 13:53
+- 18 Costco Senior Deals You'll Regret Missing This Month | John Prepares | 15.616 | 4 mesi | 38:03
+- Costco Is Hiding 17 Discounts From Seniors Over 60 | The Smart Steward | 11.258 | 1 mese | 10:19
+- Over 55? Then You Can Use These Costco HIDDEN Senior Discounts | Tragic Faith | 6.972 | 12:36
+- Decine di copie dello stesso titolo ("15 Hidden Senior Discounts Costco Never Advertises") fanno 100-700 view: il formato inflazionato non basta, vince chi e primo/ha canale forte o titolo diverso.
+Durata dei video che vincono: 15-25 minuti (i vincitori Robin MBA 15:42, Walt 21:52, Retiree Wallet 22-25). Il canale piccolo Smart Steward fa solo 10-14 min e 11-20K.
+
+### 8b. Cosa contengono (trascrizioni dei 4 migliori)
+- Robin MBA (15 cose incluse nella tessera): assistenza tecnica telefonica gratis (Concierge) per elettronica; seconda garanzia di 2 anni su articoli selezionati; manutenzione gomme gratis se comprate li; test dell'udito gratis (dai 18 anni); controllo 30 giorni sul prezzo (rimborso differenza); reso 100% soddisfatti senza limite di tempo sulla maggior parte; programma farmaci per iscritti gratis; farmacia senza tessera; ecc.
+- Walt (15): farmacia senza tessera; apparecchi acustici (Kirkland non esiste piu); esame vista senza tessera; Member Prescription Program; 4,9 dollari pollo arrosto; Kirkland Signature; benzina; carta Costco Anywhere Visa (cashback); libretto coupon mensile; adeguamento prezzo 30 giorni; garanzia al posto della garanzia estesa; la tessera piu famosa (pranzo/food court); seconda porta senza tessera propria (tessera familiare).
+- Retiree Wallet "senza tessera" (13): accompagnare un socio; tessera familiare gratuita; shop card; farmacia; vaccini; alcol in certi Stati; esame vista; test udito; Costco.com da non socio; Instacart; Uber Eats; garanzia 100% come prova gratuita; bonus carta regalo all'iscrizione.
+- Retiree Wallet "15 hidden": programma farmaci fino a 80%; apparecchi acustici; occhiali; Executive 2% cashback; orari mattina per Executive; viaggi; assicurazioni; Kirkland; vitamine; assaggi; benzina; consegna farmaci; Costco Auto; resi; carta Visa.
+- Parola chiave usata da Walt (tag): costco senior discounts, costco for seniors, costco discounts 2026, senior savings, costco membership worth it, costco pharmacy no membership, costco hearing aids, costco executive membership, kirkland signature, costco price adjustment, costco return policy, costco gas savings, fixed income savings, retirement savings, discounts for seniors over 60, costco tips, senior money, warehouse club savings, costco coupon book, costco anywhere visa.
+Descrizione di Robin MBA: gancio ("Bring a question, not a coupon"), disclaimer con "not affiliated with Costco Wholesale Corporation", fonti = nomi pagine costco.com.
+
+### 8c. Autocompletamento YouTube (gratis)
+"costco senior" -> costco seniors, costco special, costco services. "costco for seniors" -> costco food warning for seniors, costco for single person. "does costco have a senior discount" -> ... senior discount card, ... senior discount day. (le persone cercano anche "senior discount day" e "senior discount card": rispondere nel video che NON esistono).
+
+### 8d. vidIQ matching_terms "costco seniors" (US, 5 crediti): parola | ricerche/mese | concorrenza | punteggio
+- costco free seniors | 9.292 | 14,5 | 69,7 (MIGLIORE)
+- costco for seniors | 5.235 | 12,3 | 68,4
+- items seniors should never buy at costco | 4.632 | 19,1 | 65,2
+- costco food warning seniors | 4.384 | 18,3 | 65,3
+- something is changing at costco - what seniors need to know | 4.431 | 17,9 | 65,5
+- 12 ways seniors can shop costco without ever paying for a membership | 4.340 | 19,1 | 64,9
+- costco discounts for seniors | 4.449 | 38,7 | 57,2
+- costco worth for seniors | 3.945 | 24,2 | 62,5
+- seniors saving at costco | 3.602 | 21,5 | 63,3
+- seniors costco | 3.594 | 20,9 | 63,5
+- 13 ways seniors can shop costco without ever paying for a membership | 3.609 | 22,1 | 63,0
+- 15 costco discounts seniors never use | 3.394 | 22,7 | 62,5
+- 13 more things seniors don't know costco gives for free | 3.989 | 37 | 57,5
+- (titoli di video usati come parole: "costco weird facts", "shopping mistakes", "never buy" = altri angoli ma allarmisti, non adatti: niente promesse false)
+
+### 8e. Fatti ufficiali Costco verificati (ricerca web su costco.com e customerservice.costco.com, 06/10/2026)
+- Member Prescription Program: NON e assicurazione, sconti sui farmaci fino a 80% o piu secondo il farmaco, nessuna iscrizione ne costo extra, si usa la tessera Costco gia in tasca, vale anche in farmacie partecipanti (Albertsons, Kroger, Safeway, Walgreens...) (costco.com/member-prescription-program.html).
+- Centro apparecchi acustici: test udito gratis, prezzo esposto = prezzo pagato, garanzia gratis (varia per modello), perdita/danno senza franchigia, controlli e pulizie gratis (costco.com/hearing-aid-information.html). L'uso e un beneficio per i soci.
+- Ottica: NON serve la tessera per fissare la visita dall'ottico indipendente in/vicino al magazzino; la tessera serve per comprare occhiali e lenti (customerservice.costco.com, "Do I need a membership to purchase glasses or contacts?").
+- Adeguamento prezzo: acquisti scesi di prezzo entro 30 giorni danno diritto al rimborso della differenza (customerservice.costco.com a_id 628); credito di solito in 5-10 giorni lavorativi.
+- Reso: "Risk-Free 100% Satisfaction Guarantee"; alcuni elettronici (TV, computer, tablet, telefoni, ecc.) entro 90 giorni (customerservice.costco.com a_id 1191).
+- Ancora da verificare sul sito prima del copione: Concierge (assistenza tecnica, numero), garanzia 2 anni, manutenzione gomme, vaccini farmacia, tessera familiare gratuita, shop card, benzina, libretto coupon, carta Visa, prezzo pollo, regole alcol per Stato.
