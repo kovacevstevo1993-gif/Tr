@@ -6,7 +6,7 @@ import os, sys, math
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from long3_b26_30 import *
 
-DUR.update({31: 628, 32: 222, 33: 398, 34: 358, 35: 422})
+DUR.update({31: 628, 32: 222, 33: 398, 34: 358, 35: 393})
 PHRASES.update({
     31: ["Now the fine print, because it matters.", "The second year mirrors the manufacturer's warranty.",
          "If something is not covered in the first year, it is not covered in the second.",
