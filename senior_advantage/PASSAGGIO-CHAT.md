@@ -6,6 +6,7 @@
 3. PRIMA di consegnare qualsiasi cosa, controllare che sia completa: durata (caratteri) confrontata con i video gia fatti, fatti verificati, regole di questo file. Mai consegnare una cosa e poi dire che manca qualcosa.
 4. Obiettivo dell'utente: video che superino 10.000 view. Poche ricerche + poca concorrenza NON basta. Contano tema con video gia sopra 100.000 view, titolo/miniatura con promessa, durata dei vincenti.
 5. FORMATO BLOCCHI DI VOCE (ULTIMO, 07/10/2026, annulla quello vecchio senza riquadri): **Blocco N** in grassetto, sotto il riquadro di codice ``` col solo testo, riga vuota tra i blocchi, tutti in chat in un colpo. MAI testo semplice fuori dai riquadri, MAI elenco numerato, MAI file. Regola anche in CLAUDE.md.
+7. CONTROLLO FOTOGRAMMI PRIMA DI MANDARE (07/10/2026, l'utente si e arrabbiato): contact sheet con un fotogramma ogni 0,5 s di OGNI blocco + ultimo fotogramma, guardati TUTTI prima di mandare gli MP4. Mai mandare prima e controllare dopo. Vedi CLAUDE.md.
 6. Niente "hai ragione", niente scuse, niente liste di offerte. Risposte corte. Salvare tutto nel repo subito.
 
 Incolla nella nuova chat: "Leggi senior_advantage/PASSAGGIO-CHAT.md e CLAUDE.md, poi aspetta quello che ti chiedo."
