@@ -111,3 +111,7 @@
 - Le altre clip (dal blocco 6) devono avere i tempi calcolati sulla VELOCITA' DELLA VOCE: ogni elemento compare quando la voce dice quella parola/frase (velocita' reale ~16-17 caratteri al secondo, ricavata dal testo del blocco e dalla durata dello screenshot, con pause alle virgole e ai punti). Mai slide troppo veloci: ogni cosa ferma e leggibile mentre la voce ne parla, e tutto FINITO prima che la voce passi alla frase dopo.
 - Le slide devono SPIEGARE (calcoli passo passo, schemi, esempi che si capiscono), non solo oggetti che volano qua e la'. Migliorare, non semplificare.
 - Gli screenshot arrivano 5 alla volta fino al blocco 30: si costruiscono TUTTI i blocchi insieme (render in parallelo), controllo COMPLETO su tutti i fotogrammi (QA automatico + guardare, non solo ogni mezzo secondo). Lavorare da professionista, niente a meta'.
+
+## ISTRUZIONI UTENTE (07/10/2026, video 3 - tempi dei blocchi)
+- Gli screenshot danno le durate: ogni blocco parte dalla fine del precedente. Se l'utente corregge lo screenshot di un blocco (es. blocco 40: fine 09:40+1f, 500 fotogrammi), cambia SOLO la durata di quel blocco; le durate degli altri restano quelle dei loro screenshot (l'utente sposta i blocchi sulla timeline). Il blocco 41 resta di 417 fotogrammi.
+- Il segno sotto la riga bianca del cursore e' il fotogramma; se la riga e' tra due segni si arrotonda per eccesso.
