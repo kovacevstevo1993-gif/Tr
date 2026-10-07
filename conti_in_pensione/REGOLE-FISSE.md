@@ -134,3 +134,6 @@
 - Video lungo 4: l'utente ha ordinato di CONTROLLARE e scegliere Claude l'argomento migliore ("scegli tu il migliore"). Scelto da Claude sui dati vidIQ: AUMENTO PENSIONI INVALIDITA' 2027 (pensioni invalidita' 4.399/mese conc. 28; aumento pensioni invalidita' 5.415/mese conc. 33; precedente Mr LUL 440k). Reversibilita' scartata (3.411/mese, conc. 39).
 - Non chiedere all'utente di scegliere tra due opzioni dopo una ricerca: scegliere e dirlo. Crediti vidIQ: ogni ricerca keyword costa 5 crediti; ora 0 (rinnovo 25/10).
 - Struttura del video 4 (vedi 12-.../analisi-fidelizzazione-07-10.md): 6-8 minuti, gancio 20 s con chicca finale, cerchi aperti, tesi forte, teaser finale. L'utente: "proviamo a farne uno cosi', poi vediamo come va".
+
+## REGOLA N.11 (utente, 07/10/2026): NIENTE SEMAFORI NELLE SLIDE
+- Dal PROSSIMO video (video lungo 4 in poi) non usare piu' i semafori (luci verde/giallo/rosso) nelle slide: "non ha senso e sembra per bambini". Usare altri elementi grafici seri (schede, tabelle, importi, calcoli, timbri, frecce). Valido anche per gli short.
