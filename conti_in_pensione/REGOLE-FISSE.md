@@ -138,7 +138,8 @@
 ## REGOLA N.11 (utente, 07/10/2026): NIENTE SEMAFORI NELLE SLIDE
 - Dal PROSSIMO video (video lungo 4 in poi) non usare piu' i semafori (luci verde/giallo/rosso) nelle slide: "non ha senso e sembra per bambini". Usare altri elementi grafici seri (schede, tabelle, importi, calcoli, timbri, frecce). Valido anche per gli short.
 
-## REGOLA N.12 (utente, 07/10/2026): TUTTO PIU' PROFESSIONALE, NIENTE DA BAMBINI
-- Il pubblico e' fatto di adulti: nei prossimi video e short TUTTO deve essere piu' professionale (slide, grafica, icone, personaggi, colori, toni), niente elementi infantili o da cartone (semafori, faccine, oggetti giocattolo, personaggi caricaturali). Preferire: tabelle, schede, importi in grande, calcoli passo passo, schemi, frecce, timbri sobri.
+## REGOLA N.12 (utente, 07/10/2026): PIU' PROFESSIONALE MA SEMPRE COERENTE CON I VIDEO VECCHI (NON STRAVOLGERE)
+- Lo stile resta quello dei video vecchi (verde acqua, titoletto in alto, grafica al centro, didascalia nel riquadro in basso, stessi colori e stessa impostazione). NON stravolgere niente: si migliora e basta (regola n.1 e n.5).
+- Cambia SOLO questo: togliere gli elementi che sembrano da bambini (semafori e simili) e tenere un tono serio per adulti. Il resto della grafica resta coerente con short 1-5 e video lungo 1-3.
 - I video gia' fatti (short 1-5, video lungo 1-3) "vanno bene cosi'": non rifarli.
 - Vale dal video lungo 4 (V4-blocco01.mp4...) in poi.
