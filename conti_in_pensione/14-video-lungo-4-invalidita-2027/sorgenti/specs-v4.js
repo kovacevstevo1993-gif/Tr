@@ -189,3 +189,185 @@ SPECS[15]=()=>mkBlk(TXT,TOT,[
  {at:'L’importo base',top:'IMPORTO BASE 2026',cap:'ASSEGNO SOCIALE: 546,24 € AL MESE',items:[
   VN('546,24 €',960,380,'cinquecentoquarantasei',{fs:150,fill:GF_,sub:'ASSEGNO SOCIALE · 2026'})]},
 ]);
+// ---------- BLOCCO 16 ----------
+SPECS[16]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'DOPO I 67 ANNI',cap:'REGOLE DI REDDITO DIVERSE, CHE GUARDANO ANCHE IL CONIUGE',items:[
+  VN('IMPORTO',560,400,'L’importo può salire',{fs:96,fill:GF_,sub:'PUÒ SALIRE',minw:640}),
+  VT('REGOLE DI REDDITO DIVERSE',1420,380,'regole di reddito diverse',AMB,40),
+  VT('GUARDANO ANCHE IL CONIUGE',1420,520,['che guardano',-0.2],AMB,40)]},
+ {at:'Se ti avvicini',top:'SE TI AVVICINI AI 67 ANNI',cap:'CHIEDI ALL’INPS COSA CAMBIA NEL TUO CASO, O A UN PATRONATO',items:[
+  VN('67 ANNI',560,400,'ai sessantasette anni',{fs:110,sub:'SE TI AVVICINI'}),
+  I('br',['inps.it',620,300],1330,420,'chiedi all’Inps'),
+  VT('O A UN PATRONATO',1330,640,'o a un patronato',GF_,44)]},
+ {at:'Ora, il test!',top:'ORA, IL TEST!',cap:'TRE DOMANDE: VERO O FALSO',items:[
+  I('q',[110],960,430,'Ora, il test!')]},
+]);
+// ---------- BLOCCO 17 ----------
+SPECS[17]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'TEST · DOMANDA 1',cap:'L’ACCOMPAGNAMENTO AUMENTA SEMPRE DEL 3 %?',items:[
+  I('circ',['1',GF_],440,400,'Tre domande'),
+  VN('3 %',1100,400,'del tre per cento',{fs:130,sub:'COME LE PENSIONI'}),
+  VT('VERO O FALSO?',1100,640,'Vero o falso?',AMB,48)]},
+ {at:'Falso! Segue',top:'RISPOSTA',cap:'FALSO: SEGUE UN ALTRO INDICE, NON ANCORA PUBBLICATO',items:[
+  I('vf',[false],560,420,'Falso! Segue'),
+  VT('ALTRO INDICE',1330,380,'un altro indice',AMB,44),
+  VT('RETRIBUZIONI DEGLI OPERAI',1330,520,'retribuzioni degli operai',AMB,40),
+  I('stamp',['NON ANCORA PUBBLICATO',RED_,44],1330,680,'ancora pubblicato')]},
+]);
+// ---------- BLOCCO 18 ----------
+SPECS[18]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'TEST · DOMANDA 2',cap:'LA PERCENTUALE LA DECIDE L’INPS A GENNAIO?',items:[
+  I('circ',['2','url(#g_head)'],440,400,'Due:'),
+  VN('INPS',1100,400,'decide l’Inps',{fs:130,sub:'A GENNAIO?'}),
+  VT('VERO O FALSO?',1100,640,'Vero o falso?',AMB,48)]},
+ {at:'Falso! La fissa',top:'RISPOSTA',cap:'FALSO: LA FISSA UN DECRETO DEI MINISTERI, DI SOLITO A NOVEMBRE',items:[
+  I('vf',[false],560,420,'Falso! La fissa'),
+  I('doc',['DECRETO DEI MINISTERI',640,300,undefined,34],1330,420,'un decreto dei ministeri'),
+  VT('DI SOLITO A NOVEMBRE',1330,640,'di solito a novembre',AMB,44)]},
+ {at:'L’Inps la applica',top:'L’INPS LA APPLICA',cap:'A GENNAIO, CON UN POSSIBILE CONGUAGLIO',items:[
+  VN('GENNAIO',560,400,'L’Inps la applica',{fs:110,fill:GF_,sub:'APPLICAZIONE',minw:760}),
+  VT('POSSIBILE CONGUAGLIO',1420,430,'possibile conguaglio',AMB,44)]},
+]);
+// ---------- BLOCCO 19 ----------
+SPECS[19]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'TEST · DOMANDA 3',cap:'SE LA PENSIONE SALE DI 10 €, IL TOTALE SALE DI 10 €?',items:[
+  I('circ',['3',RF_],440,400,'Tre:'),
+  VN('+ 10 €',1100,400,'sale di dieci euro',{fs:130,fill:GF_,sub:'LA PENSIONE'}),
+  VT('VERO O FALSO?',1100,640,'Vero o falso?',AMB,48)]},
+ {at:'Falso! Adesso',top:'RISPOSTA',cap:'FALSO: NEL 2026 IL TOTALE È SALITO DI SOLI 45 CENTESIMI',items:[
+  I('vf',[false],560,420,'Falso! Adesso'),
+  VN('0,45 €',1330,400,'quarantacinque centesimi',{fs:130,fill:RF_,sub:'NEL 2026'}),
+  VT('ADESSO TI MOSTRO UN CASO',1330,640,'ti mostro un caso',AMB,44)]},
+]);
+// ---------- BLOCCO 20 ----------
+SPECS[20]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'LA CHICCA',cap:'L’INCREMENTO AL MILIONE: UNA SOMMA IN PIÙ',items:[
+  VT('ECCO LA CHICCA',960,300,'Ecco la chicca',RF_,56),
+  VN('INCREMENTO AL MILIONE',960,500,['Esiste una somma',0.4],{fs:80,fill:GF_,sub:'SOMMA IN PIÙ',minw:1400}),
+  VT('UNA SOMMA IN PIÙ',960,740,['Esiste una somma',0.9],AMB,44)]},
+ {at:'per gli invalidi totali',top:'PER CHI?',cap:'INVALIDI TOTALI TRA I 18 E I 65 ANNI, REDDITI MOLTO BASSI',items:[
+  VN('18 – 65',560,400,'tra i diciotto',{fs:110,sub:'ANNI'}),
+  VT('INVALIDI TOTALI',1330,380,'invalidi totali',AMB,44),
+  VT('REDDITI MOLTO BASSI',1330,520,'redditi molto bassi',RF_,44)]},
+ {at:'Vediamo cosa è successo',top:'2025 · 2026',cap:'COSA È SUCCESSO TRA IL 2025 E IL 2026',items:[
+  VN('2025',560,400,'tra il duemilaventicinque',{fs:130,sub:'PRIMA'}),
+  I('arR',[],960,400,['e il duemilaventisei',-0.3]),
+  VN('2026',1400,400,'e il duemilaventisei',{fs:130,fill:GF_,sub:'DOPO'})]},
+]);
+// ---------- BLOCCO 21 ----------
+SPECS[21]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'NEL 2025',cap:'PENSIONE 336,00 € + INCREMENTO 411,84 €',items:[
+  ...EQ(400,[['num','336,00 €','la pensione era',{sub:'PENSIONE'}],['op','+','e l’incremento'],['num','411,84 €','quattrocentoundici',{fill:AMB,sub:'INCREMENTO'}]],68,300)]},
+ {at:'Totale:',top:'TOTALE 2025',cap:'TOTALE: 747,84 € AL MESE',items:[
+  VN('747,84 €',960,380,'settecentoquarantasette',{fs:150,fill:GF_,sub:'TOTALE · 2025'}),
+  VT('SEGNATI QUESTO NUMERO',960,660,'Segnati questo numero',RF_,48)]},
+]);
+// ---------- BLOCCO 22 ----------
+SPECS[22]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'NEL 2026',cap:'LA PENSIONE SALE A 340,71 €',items:[
+  VN('340,71 €',960,380,'trecentoquaranta euro',{fs:130,fill:GF_,sub:'PENSIONE · 2026'}),
+  VT('TI ASPETTI UN TOTALE PIÙ ALTO?',960,640,'Ti aspetti un totale',AMB,44)]},
+ {at:'Invece l’incremento',top:'INVECE',cap:'L’INCREMENTO SCENDE A 407,58 €',items:[
+  VN('407,58 €',960,380,'quattrocentosette',{fs:130,fill:RF_,sub:'INCREMENTO · SCENDE'})]},
+ {at:'Totale: settecentoquarantotto',top:'TOTALE 2026',cap:'TOTALE: 748,29 € AL MESE',items:[
+  VN('748,29 €',960,380,'settecentoquarantotto',{fs:150,fill:GF_,sub:'TOTALE · 2026'})]},
+]);
+// ---------- BLOCCO 23 ----------
+SPECS[23]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'LA DIFFERENZA',cap:'748,29 € − 747,84 € = 0,45 €',items:[
+  ...EQ(400,[['num','748,29 €','settecentoquarantotto'],['op','−','meno'],['num','747,84 €','settecentoquarantasette'],['op','=','Quarantacinque centesimi'],['num','0,45 €','Quarantacinque centesimi',{fill:RF_}]],70,260)]},
+ {at:'La pensione è cresciuta',top:'DOVE VANNO I SOLDI',cap:'LA PENSIONE CRESCE DI 4,71 €, L’INCREMENTO SCENDE DI 4,26 €',items:[
+  VN('+ 4,71 €',560,400,'quattro euro e settantuno',{fs:120,fill:GF_,sub:'LA PENSIONE CRESCE'}),
+  VN('− 4,26 €',1380,400,'sceso di quattro euro e ventisei',{fs:120,fill:RF_,sub:'L’INCREMENTO SCENDE'})]},
+]);
+// ---------- BLOCCO 24 ----------
+SPECS[24]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'PERCHÉ?',cap:'L’INCREMENTO ARRIVA FINO A UN TETTO DI REDDITO',items:[
+  I('q',[100],440,420,'Perché?'),
+  VN('TETTO',1100,380,'un tetto di reddito',{fs:110,sub:'DI REDDITO'}),
+  VT('9.727,77 € ALL’ANNO · 2026',1100,640,'novemilasettecentoventisette',AMB,44)]},
+ {at:'Se la pensione sale',top:'COME FUNZIONA',cap:'SE LA PENSIONE SALE, L’INCREMENTO SCENDE E RESTA NEL TETTO',items:[
+  VN('PENSIONE',520,400,'Se la pensione sale',{fs:90,fill:GF_,sub:'SALE',minw:640}),
+  I('arR',[],945,400,'l’incremento fa'),
+  VN('INCREMENTO',1420,400,'un passo indietro',{fs:90,fill:AMB,sub:'FA UN PASSO INDIETRO',minw:760}),
+  VT('RESTA DENTRO IL TETTO',960,660,'dentro il tetto',GF_,44)]},
+]);
+// ---------- BLOCCO 25 ----------
+SPECS[25]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'SENZA ALTRI REDDITI',cap:'VALE PER CHI NON HA ALTRI REDDITI',items:[
+  I('chk',[100],560,420,'Vale per chi'),
+  VT('NESSUN ALTRO REDDITO',1250,420,'non ha altri redditi',AMB,44)]},
+ {at:'Se sei sposato',top:'SE SEI SPOSATO',cap:'TETTO 16.828,89 € · SI GUARDANO ANCHE I REDDITI DEL CONIUGE',items:[
+  VN('16.828,89 €',560,400,'sedicimilaottocentoventotto',{fs:90,fill:AMB,sub:'TETTO · SE SEI SPOSATO',minw:760}),
+  VT('REDDITI DEL CONIUGE',1380,420,'redditi del coniuge',GF_,44)]},
+ {at:'Nel duemilaventisette vedremo',top:'NEL 2027',cap:'NEL 2027 VEDREMO QUANTO CAMBIA',items:[
+  VN('2027',960,400,'Nel duemilaventisette vedremo',{fs:140,sub:'NUOVI IMPORTI'}),
+  VT('QUANDO ESCONO I NUOVI IMPORTI',960,640,'i nuovi importi',AMB,44)]},
+]);
+// ---------- BLOCCO 26 ----------
+SPECS[26]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'COME CONTROLLI',cap:'ENTRA SU MAI INPS CON SPID O CARTA D’IDENTITÀ ELETTRONICA',items:[
+  I('br',['inps.it',700,320],560,420,'Come controlli'),
+  VT('MAI INPS',1380,360,'Mai Inps',GF_,48),
+  VT('SPID O CARTA D’IDENTITÀ',1380,500,'Spid o la carta',AMB,44)]},
+ {at:'guarda il cedolino',top:'IL CEDOLINO DI GENNAIO',cap:'IMPORTO BASE, EVENTUALE INCREMENTO, ALTRE VOCI',items:[
+  I('doc',['CEDOLINO DI GENNAIO',560,340,undefined,34],560,430,'il cedolino di gennaio'),
+  I('row',['IMPORTO BASE',520,true],1380,360,'importo base'),
+  I('row',['EVENTUALE INCREMENTO',660,true],1380,460,['importo base',0.7]),
+  I('row',['ALTRE VOCI',520,true],1380,560,['importo base',1.4])]},
+ {at:'Confrontalo con quello',top:'CONFRONTA',cap:'CONFRONTALO CON QUELLO DI DICEMBRE',items:[
+  VN('DICEMBRE',560,400,'Confrontalo',{fs:90,sub:'CEDOLINO',minw:720}),
+  VN('GENNAIO',1400,400,['Confrontalo',0.3],{fs:90,fill:GF_,sub:'CEDOLINO',minw:720})]},
+]);
+// ---------- BLOCCO 27 ----------
+SPECS[27]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'SE NON TORNA',cap:'RIFAI IL CONTO: IMPORTO BASE × PERCENTUALE',items:[
+  ...EQ(420,[['num','IMPORTO','rifai il conto',{sub:'BASE'}],['op','×',['rifai il conto',0.4]],['num','%',['rifai il conto',0.8],{sub:'PERCENTUALE'}]],80,300)]},
+ {at:'poi controlla',top:'POI CONTROLLA',cap:'SE HAI L’INCREMENTO E SE IL TETTO È CAMBIATO',items:[
+  I('chk',[100],440,420,'poi controlla'),
+  VT('HAI L’INCREMENTO?',1250,380,'hai l’incremento',AMB,44),
+  VT('IL TETTO È CAMBIATO?',1250,520,'il tetto è cambiato',AMB,44)]},
+ {at:'Se hai ancora dubbi',top:'ANCORA DUBBI?',cap:'PORTA IL CEDOLINO A UN PATRONATO: DI SOLITO È GRATUITO',items:[
+  I('q',[100],440,420,'Se hai ancora dubbi'),
+  I('doc',['CEDOLINO',520,300,undefined,36],1100,420,'porta il cedolino'),
+  VT('PATRONATO · DI SOLITO GRATUITO',1100,650,'patronato',GF_,40)]},
+]);
+// ---------- BLOCCO 28 ----------
+SPECS[28]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'RICAPITOLO',cap:'UNO: LA PERCENTUALE LA FISSA UN DECRETO A NOVEMBRE',items:[
+  I('circ',['1',GF_],440,400,'Uno:'),
+  VT('DECRETO A NOVEMBRE',1130,380,'un decreto a novembre',AMB,44),
+  VT('L’INPS APPLICA A GENNAIO',1130,520,['un decreto a novembre',0.8],GF_,44)]},
+ {at:'Due:',top:'DUE',cap:'L’ACCOMPAGNAMENTO HA UN ALTRO INDICE',items:[
+  I('circ',['2','url(#g_head)'],440,420,'Due:'),
+  VT('ALTRO INDICE',1130,420,['Due:',0.5],AMB,48)]},
+ {at:'Tre:',top:'TRE',cap:'INCREMENTO AL MILIONE: IL TOTALE CRESCE POCHISSIMO',items:[
+  I('circ',['3',RF_],440,400,'Tre:'),
+  VN('0,45 €',1130,400,'quarantacinque centesimi',{fs:130,fill:RF_,sub:'IL TOTALE · 2026'}),
+  VT('CRESCE POCHISSIMO',1130,640,'salire pochissimo',AMB,44)]},
+]);
+// ---------- BLOCCO 29 ----------
+SPECS[29]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'METTI MI PIACE',cap:'METTI MI PIACE E ISCRIVITI A CONTI IN PENSIONE',items:[
+  VT('MI PIACE',520,420,'metti mi piace',GF_,56),
+  I('btn',['ISCRIVITI'],1150,420,'iscriviti'),
+  I('bell',[],1650,420,['iscriviti',0.5])]},
+ {at:'a novembre',top:'A NOVEMBRE',cap:'QUANDO ESCE IL DECRETO TI DICO LA PERCENTUALE UFFICIALE',items:[
+  I('doc',['DECRETO',520,300,undefined,36],560,420,'quando esce il decreto'),
+  I('arR',[],960,420,'ti dico'),
+  VN('% UFFICIALE',1400,400,'percentuale ufficiale',{fs:90,fill:GF_,sub:'NOVEMBRE',minw:700})]},
+ {at:'Scrivimi nei commenti',top:'SCRIVIMI',cap:'SCRIVIMI NEI COMMENTI COSA PRENDI TU',items:[
+  I('bubble',[700,300],960,420,'Scrivimi nei commenti'),
+  VT('COSA PRENDI TU?',960,700,'cosa prendi tu',AMB,48)]},
+]);
+// ---------- BLOCCO 30 (slide finale con il disclaimer, come video 3; centro-basso e destra-basso LIBERI per la schermata finale) ----------
+SPECS[30]=()=>mkBlk(TXT,TOT,[
+ {at:0,top:'VERIFICA SEMPRE',cap:'VERIFICA SEMPRE SUI CANALI UFFICIALI: INPS.IT. GRAZIE PER AVER GUARDATO!',capSize:42,items:[
+  I('dbg',[1060,330],1280,330,'Le informazioni di questo video'),
+  I('dline',['INFORMAZIONI A SCOPO DIVULGATIVO','#fff',32],1280,320,'scopo divulgativo'),
+  I('dline',['NON SOSTITUISCE UN PATRONATO O L’INPS','#7FF0D2',30],1280,380,'non sostituiscono'),
+  I('dline',['IMPORTI 2026 UFFICIALI · AL 3 % SOLO ESEMPI','#FFB838',30],1280,440,'Gli importi del duemilaventisei'),
+  I('br',['inps.it',600,330],400,330,'Verifica sempre'),
+  I('row',['CANALI UFFICIALI',460,true],400,360,'inps punto it'),
+  I('med',[],200,700,'Verifica sempre',1.2),I('medm',[],360,700,['Verifica sempre',1.6],0.45)]},
+]);
