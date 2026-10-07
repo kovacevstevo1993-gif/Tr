@@ -129,3 +129,8 @@
 ## OSSERVAZIONE UTENTE (07/10/2026, video 3 - visualizzazione media)
 - Video 3: va forte ma la visualizzazione media e' 2:05 su 12:54. Ipotesi dell'utente: "diciamo subito tutto e se ne vanno". Controllo: 2:05 cade a fine capitolo "Il conto subito" (1:10-2:03); chi ha meno di ~2.450 euro ha la risposta li' e se ne va. Prima ci sono 70 s di promesse (blocchi 2-5) senza numeri.
 - PROPOSTA (non ancora decisa dall'utente) per i prossimi video: intro breve (~20 s), niente elenco di promesse, risposta tenuta per dopo con "cerchi aperti" (caso sorprendente da 3.000/4.000 euro prima, casi semplici da 1.000/1.500 piu' avanti, cifra finale a fine video). Da verificare con il grafico di fidelizzazione di YouTube Studio (da chiedere all'utente).
+
+## ISTRUZIONI UTENTE (07/10/2026, video lungo 4)
+- Video lungo 4: l'utente ha ordinato di CONTROLLARE e scegliere Claude l'argomento migliore ("scegli tu il migliore"). Scelto da Claude sui dati vidIQ: AUMENTO PENSIONI INVALIDITA' 2027 (pensioni invalidita' 4.399/mese conc. 28; aumento pensioni invalidita' 5.415/mese conc. 33; precedente Mr LUL 440k). Reversibilita' scartata (3.411/mese, conc. 39).
+- Non chiedere all'utente di scegliere tra due opzioni dopo una ricerca: scegliere e dirlo. Crediti vidIQ: ogni ricerca keyword costa 5 crediti; ora 0 (rinnovo 25/10).
+- Struttura del video 4 (vedi 12-.../analisi-fidelizzazione-07-10.md): 6-8 minuti, gancio 20 s con chicca finale, cerchi aperti, tesi forte, teaser finale. L'utente: "proviamo a farne uno cosi', poi vediamo come va".
