@@ -8,11 +8,21 @@ function bigNum(p,s,fs,fill,sub,subfill,minw){const g=el('g',{},p);
  if(sub)txt(g,sub,0,fs*0.3+62,36,subfill||(paper?GRN:(fill===AMB?'#5A3300':'#fff')),'bold');
  return g;}
 // ---- tempi del parlato: ogni frase ha il suo istante, calcolato sul testo e sulla durata ----
-function speech(text,dur){const lead=0.2,tail=0.35;const w=[];let tot=0;text=text.replace(/’/g,"'");
- for(const ch of text){let x=1;if(',:;'.includes(ch))x=5;else if('.!?'.includes(ch))x=9;w.push(x);tot+=x;}
+function speech(text,dur){const lead=0.35,tail=0.5;text=text.replace(/’/g,"'");
+ // modello calibrato su 69 blocchi reali: 0,145 s per sillaba + pause alla punteggiatura (virgola 0,13; due punti 0,36; punto 0,34; !? 0,47; ... 0,56)
+ const T=new Array(text.length+1).fill(0);let t=0;let i=0;
+ while(i<text.length){const ch=text[i];
+  if(/[A-Za-zàèéìòùÀÈÉÌÒÙ]/.test(ch)){let j=i;while(j<text.length&&/[A-Za-zàèéìòùÀÈÉÌÒÙ]/.test(text[j]))j++;
+   const w=text.slice(i,j);const sy=Math.max(1,(w.toLowerCase().match(/[aeiouàèéìòù]+/g)||[]).length);const d=0.145*sy;
+   for(let k=i;k<j;k++)T[k]=t+d*(k-i)/(j-i);t+=d;i=j;continue;}
+  T[i]=t;
+  if(ch===',')t+=0.129;else if(ch===':'||ch===';')t+=0.363;else if(ch==='!'||ch==='?')t+=0.467;
+  else if(ch==='.'){t+=(text[i+1]==='.'||text[i-1]==='.')?0.187:0.336;}
+  i++;}
+ T[text.length]=t;const tot=t;
  return function(p){let off=0;if(typeof p==='number')return p;if(Array.isArray(p)){off=p[1];p=p[0];}p=p.replace(/’/g,"'");
-  const i=text.indexOf(p);if(i<0)throw new Error('frase non trovata: '+p);
-  let c=0;for(let k=0;k<i;k++)c+=w[k];return lead+(c/tot)*(dur-lead-tail)+off;};}
+  const k=text.indexOf(p);if(k<0)throw new Error('frase non trovata: '+p);
+  return lead+(T[k]/tot)*(dur-lead-tail)+off;};}
 const I=(k,a,x,y,at,s,r)=>({k,a,x,y,at,s,r});
 function EQ(y,parts,fs0,minw0){fs0=fs0||76;minw0=minw0||280;const gap=34;
  const ws=parts.map(p=>p[0]=='op'?100:bnW(p[1],(p[3]&&p[3].fs)||fs0,p[3]&&p[3].sub,minw0));

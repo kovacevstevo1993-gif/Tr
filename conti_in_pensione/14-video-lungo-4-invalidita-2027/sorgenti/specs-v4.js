@@ -89,7 +89,7 @@ SPECS[7]=()=>mkBlk(TXT,TOT,[
   VT('NON DIPENDE DAL REDDITO',960,640,'non dipende dal reddito',AMB,44)]},
  {at:'Occhio:',top:'OCCHIO',cap:'PER QUESTA NON VALE LA STESSA PERCENTUALE DI AUMENTO',items:[
   I('warn',[],560,430,'Occhio:'),
-  VN('% DIVERSA',1300,420,'non vale la stessa percentuale',{fs:84,fill:RF_,sub:'DI AUMENTO'}),
+  VN('% DIVERSA',1300,420,'non vale la stessa percentuale',{fs:84,fill:RF_,sub:'DI AUMENTO',minw:760}),
   VT('CI ARRIVO TRA UN ATTIMO',1300,660,'Ci arrivo tra un attimo',AMB,40)]},
 ]);
 // ---------- BLOCCO 8 ----------
@@ -118,11 +118,11 @@ SPECS[10]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'PRIMA TRAPPOLA',cap:'L’ACCOMPAGNAMENTO NON SEGUE IL 3 %',items:[
   I('circ',['1',RF_],460,420,'Prima trappola'),
   VN('3 %',1130,400,'non segue il tre per cento',{fs:130,sub:'NON LO SEGUE'}),
-  I('cross',[190,110],1130,400,['non segue il tre per cento',0.7])]},
+  I('cross',[190,110],1130,400,['non segue il tre per cento',0.2])]},
  {at:'L’Inps usa un altro indice',top:'UN ALTRO INDICE',cap:'INDICE DELLE RETRIBUZIONI DEGLI OPERAI',items:[
   I('doc',['INDICE DI RIVALUTAZIONE',700,320,undefined,36],560,440,'L’Inps usa un altro indice'),
   VT('RETRIBUZIONI DEGLI OPERAI',1410,440,'delle retribuzioni degli operai',AMB,40)]},
- {at:'Nel duemilaventisei è passato',top:'ACCOMPAGNAMENTO · 2025 → 2026',cap:'DA 542,02 € A 552,57 € AL MESE',items:[
+ {at:'Nel duemilaventisei è passato',top:'ACCOMPAGNAMENTO 2025-2026',cap:'DA 542,02 € A 552,57 € AL MESE',items:[
   VN('542,02 €',500,400,'da cinquecentoquarantadue',{fs:100,sub:'2025'}),
   I('arR',[],960,400,'a cinquecentocinquantadue'),
   VN('552,57 €',1420,400,'e cinquantasette',{fs:100,fill:GF_,sub:'2026'})]},
@@ -155,11 +155,11 @@ SPECS[13]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'PERCHÉ CONTA?',cap:'SE IL TUO REDDITO SUPERA IL LIMITE, PERDI LA PRESTAZIONE',items:[
   I('q',[100],560,420,'Perché conta?'),
   VN('REDDITO',1100,330,'il tuo reddito supera',{fs:96,sub:'SOPRA IL LIMITE'}),
-  I('stamp',['PERDI LA PRESTAZIONE',RED_,52],1100,600,'perdi la prestazione')]},
+  I('stamp',['PERDI LA PRESTAZIONE',RED_,52],1100,600,['perdi la prestazione',-0.6])]},
  {at:'Anche un piccolo aumento',top:'ATTENZIONE',cap:'ANCHE UN PICCOLO AUMENTO PUÒ FARTI SUPERARE LA SOGLIA',items:[
   I('warn',[],560,430,'Anche un piccolo aumento'),
   VT('AUMENTO DI UN’ALTRA PENSIONE',1300,430,'un’altra pensione',AMB,40),
-  VT('SOGLIA SUPERATA',1300,640,'superare la soglia',RF_,44)]},
+  VT('SOGLIA SUPERATA',1300,640,['superare la soglia',-0.7],RF_,44)]},
  {at:'Controlla ogni anno',top:'CONTROLLA OGNI ANNO',cap:'IL TUO REDDITO RISPETTO AL LIMITE',items:[
   I('chk',[100],560,430,'Controlla ogni anno'),
   VN('REDDITO ≤ LIMITE',1250,430,'rispetto al limite',{fs:80,fill:GF_,sub:'OGNI ANNO'})]},
@@ -171,7 +171,7 @@ SPECS[14]=()=>mkBlk(TXT,TOT,[
   VT('ANCORA PIÙ STRETTA',960,640,'ancora più stretta',AMB,48)]},
  {at:'Qui basta poco',top:'BASTA POCO',cap:'BASTA POCO PER SUPERARLA',items:[
   I('warn',[],960,420,'Qui basta poco'),
-  VT('SOGLIA FACILE DA SUPERARE',960,640,['Qui basta poco',0.6],RF_,44)]},
+  VT('SOGLIA FACILE DA SUPERARE',960,640,['Qui basta poco',0.2],RF_,44)]},
  {at:'E dopo il test',top:'DOPO IL TEST',cap:'IL CASO DEI 45 CENTESIMI, PROMESSO!',items:[
   VN('0,45 €',960,380,'quarantacinque centesimi',{fs:150,fill:RF_,sub:'IL CASO PROMESSO'}),
   VT('DOPO IL TEST',960,640,'dopo il test',AMB,44)]},
