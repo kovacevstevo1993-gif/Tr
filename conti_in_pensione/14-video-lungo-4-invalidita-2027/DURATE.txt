@@ -16,3 +16,4 @@ Blocco 14: fine 03:11+18f = 5748 -> durata 394
 Blocco 15: fine 03:26+20f = 6200 -> durata 452
 (blocchi 16-30: screenshot da ricevere)
 CLIP FATTE 07/10/2026: V4-blocco01..05.mp4 in clip/ (1920x1080, 30 fps, QA su tutti i fotogrammi OK). Sorgenti in sorgenti/ (specs-v4.js, build.py N, prev.py N, render.py N). Motore: quello del video 3 (sincronizzato alla voce).
+CLIP FATTE 07/10/2026: V4-blocco06..15.mp4 in clip/ (1920x1080, 30 fps, QA OK su tutti i fotogrammi, durate = fotogrammi attesi). Tempi di comparsa: modello calibrato su 69 blocchi reali (0,145 s/sillaba + pause di punteggiatura). I blocchi 1-5 consegnati prima restano quelli in clip/.
