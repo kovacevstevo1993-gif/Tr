@@ -152,3 +152,9 @@
 - Il motore stima i tempi dal numero di caratteri (approssimato): NON basta. Per i tempi esatti serve l'AUDIO della voce: trascrivere/allineare l'audio parola per parola (vosk con modello italiano, scaricabile; whisper) e usare i tempi veri al posto della stima. Chiedere all'utente l'audio della voce (una volta, per tutto il video) invece di stimare.
 - Video 4: blocchi 1-5 consegnati con tempi stimati (da rifare con l'audio); blocchi 6-15 costruiti ma NON ancora renderizzati, in attesa dell'audio.
 - (07/10/2026) Errore di Claude: ho ri-renderizzato anche i blocchi 1-5 del video 4 senza ordine. Regola: i blocchi gia' consegnati NON si rifanno e NON si rimandano se l'utente non lo ordina. Restano validi i V4-blocco01..05.mp4 gia' consegnati (cartella clip/); dei nuovi render si consegnano solo i blocchi dal 6 in poi.
+
+## REGOLA N.15 (utente, 07/10/2026): SLIDE CAPIBILI: TUTTO FINITO ALL'80 % DELLA SLIDE, ANIMAZIONI NON VELOCI
+- L'utente (detto piu' di 10 volte): "le slide sono troppo veloci, devono essere capibili, e non finiscono all'80 % prima di finire la slide, cosi' si leggono".
+- REGOLA: in ogni slide (scena) tutti gli elementi devono essere COMPLETI e fermi entro l'80 % della durata della slide; il restante 20 % (almeno) resta tutto fermo per leggere. Se la voce arriva tardi su una parola, l'elemento compare un po' PRIMA ma sempre entro l'80 %.
+- Animazioni di comparsa lente (0,9 s, non 0,5 s). Dal video 4 il motore (b-sync.js, mkBlk) comprime i tempi di comparsa per rispettare l'80 %.
+- Vale dal PROSSIMO video (video 5 in poi). Il video 4 (blocchi 1-30) resta come e' (l'utente: "queste vanno bene"): NON rifare i blocchi 1-15, i blocchi 16-30 si fanno come i precedenti. Il motore con l'80 % e' salvato in 14-video-lungo-4-invalidita-2027/sorgenti/b-sync-80.js (da usare nel video 5 al posto di b-sync.js).

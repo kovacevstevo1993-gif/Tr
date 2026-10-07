@@ -840,9 +840,9 @@ SPECS[15]=()=>mkBlk(TXT,TOT,[
 // ---------- BLOCCO 16 ----------
 SPECS[16]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'DOPO I 67 ANNI',cap:'REGOLE DI REDDITO DIVERSE, CHE GUARDANO ANCHE IL CONIUGE',items:[
-  VN('IMPORTO',560,400,'L’importo può salire',{fs:110,fill:GF_,sub:'PUÒ SALIRE',minw:760}),
-  VT('REGOLE DI REDDITO DIVERSE',1380,380,'regole di reddito diverse',AMB,44),
-  VT('GUARDANO ANCHE IL CONIUGE',1380,520,['che guardano',-0.2],AMB,44)]},
+  VN('IMPORTO',560,400,'L’importo può salire',{fs:96,fill:GF_,sub:'PUÒ SALIRE',minw:640}),
+  VT('REGOLE DI REDDITO DIVERSE',1420,380,'regole di reddito diverse',AMB,40),
+  VT('GUARDANO ANCHE IL CONIUGE',1420,520,['che guardano',-0.2],AMB,40)]},
  {at:'Se ti avvicini',top:'SE TI AVVICINI AI 67 ANNI',cap:'CHIEDI ALL’INPS COSA CAMBIA NEL TUO CASO, O A UN PATRONATO',items:[
   VN('67 ANNI',560,400,'ai sessantasette anni',{fs:110,sub:'SE TI AVVICINI'}),
   I('br',['inps.it',620,300],1330,420,'chiedi all’Inps'),
@@ -874,7 +874,7 @@ SPECS[18]=()=>mkBlk(TXT,TOT,[
   VT('DI SOLITO A NOVEMBRE',1330,640,'di solito a novembre',AMB,44)]},
  {at:'L’Inps la applica',top:'L’INPS LA APPLICA',cap:'A GENNAIO, CON UN POSSIBILE CONGUAGLIO',items:[
   VN('GENNAIO',560,400,'L’Inps la applica',{fs:110,fill:GF_,sub:'APPLICAZIONE',minw:760}),
-  VT('POSSIBILE CONGUAGLIO',1330,430,'possibile conguaglio',AMB,44)]},
+  VT('POSSIBILE CONGUAGLIO',1420,430,'possibile conguaglio',AMB,44)]},
 ]);
 // ---------- BLOCCO 19 ----------
 SPECS[19]=()=>mkBlk(TXT,TOT,[
@@ -905,7 +905,7 @@ SPECS[20]=()=>mkBlk(TXT,TOT,[
 // ---------- BLOCCO 21 ----------
 SPECS[21]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'NEL 2025',cap:'PENSIONE 336,00 € + INCREMENTO 411,84 €',items:[
-  ...EQ(400,[['num','336,00 €','la pensione era',{sub:'PENSIONE'}],['op','+','e l’incremento'],['num','411,84 €','quattrocentoundici',{fill:AMB,sub:'INCREMENTO'}]],80,300)]},
+  ...EQ(400,[['num','336,00 €','la pensione era',{sub:'PENSIONE'}],['op','+','e l’incremento'],['num','411,84 €','quattrocentoundici',{fill:AMB,sub:'INCREMENTO'}]],68,300)]},
  {at:'Totale:',top:'TOTALE 2025',cap:'TOTALE: 747,84 € AL MESE',items:[
   VN('747,84 €',960,380,'settecentoquarantasette',{fs:150,fill:GF_,sub:'TOTALE · 2025'}),
   VT('SEGNATI QUESTO NUMERO',960,660,'Segnati questo numero',RF_,48)]},
@@ -935,9 +935,9 @@ SPECS[24]=()=>mkBlk(TXT,TOT,[
   VN('TETTO',1100,380,'un tetto di reddito',{fs:110,sub:'DI REDDITO'}),
   VT('9.727,77 € ALL’ANNO · 2026',1100,640,'novemilasettecentoventisette',AMB,44)]},
  {at:'Se la pensione sale',top:'COME FUNZIONA',cap:'SE LA PENSIONE SALE, L’INCREMENTO SCENDE E RESTA NEL TETTO',items:[
-  VN('PENSIONE',560,400,'Se la pensione sale',{fs:100,fill:GF_,sub:'SALE'}),
+  VN('PENSIONE',520,400,'Se la pensione sale',{fs:90,fill:GF_,sub:'SALE',minw:640}),
   I('arR',[],945,400,'l’incremento fa'),
-  VN('INCREMENTO',1400,400,'un passo indietro',{fs:100,fill:AMB,sub:'FA UN PASSO INDIETRO',minw:760}),
+  VN('INCREMENTO',1420,400,'un passo indietro',{fs:90,fill:AMB,sub:'FA UN PASSO INDIETRO',minw:760}),
   VT('RESTA DENTRO IL TETTO',960,660,'dentro il tetto',GF_,44)]},
 ]);
 // ---------- BLOCCO 25 ----------
@@ -961,16 +961,16 @@ SPECS[26]=()=>mkBlk(TXT,TOT,[
  {at:'guarda il cedolino',top:'IL CEDOLINO DI GENNAIO',cap:'IMPORTO BASE, EVENTUALE INCREMENTO, ALTRE VOCI',items:[
   I('doc',['CEDOLINO DI GENNAIO',560,340,undefined,34],560,430,'il cedolino di gennaio'),
   I('row',['IMPORTO BASE',520,true],1380,360,'importo base'),
-  I('row',['EVENTUALE INCREMENTO',520,true],1380,460,'eventuale incremento'),
-  I('row',['ALTRE VOCI',520,true],1380,560,'altre voci')]},
+  I('row',['EVENTUALE INCREMENTO',660,true],1380,460,['importo base',0.7]),
+  I('row',['ALTRE VOCI',520,true],1380,560,['importo base',1.4])]},
  {at:'Confrontalo con quello',top:'CONFRONTA',cap:'CONFRONTALO CON QUELLO DI DICEMBRE',items:[
-  VN('DICEMBRE',560,400,'Confrontalo',{fs:100,sub:'CEDOLINO',minw:620}),
-  VN('GENNAIO',1400,400,['Confrontalo',0.3],{fs:100,fill:GF_,sub:'CEDOLINO',minw:620})]},
+  VN('DICEMBRE',560,400,'Confrontalo',{fs:90,sub:'CEDOLINO',minw:720}),
+  VN('GENNAIO',1400,400,['Confrontalo',0.3],{fs:90,fill:GF_,sub:'CEDOLINO',minw:720})]},
 ]);
 // ---------- BLOCCO 27 ----------
 SPECS[27]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'SE NON TORNA',cap:'RIFAI IL CONTO: IMPORTO BASE × PERCENTUALE',items:[
-  ...EQ(420,[['num','IMPORTO','importo base',{sub:'BASE'}],['op','×','per la percentuale'],['num','%','per la percentuale',{sub:'PERCENTUALE'}]],80,300)]},
+  ...EQ(420,[['num','IMPORTO','rifai il conto',{sub:'BASE'}],['op','×',['rifai il conto',0.4]],['num','%',['rifai il conto',0.8],{sub:'PERCENTUALE'}]],80,300)]},
  {at:'poi controlla',top:'POI CONTROLLA',cap:'SE HAI L’INCREMENTO E SE IL TETTO È CAMBIATO',items:[
   I('chk',[100],440,420,'poi controlla'),
   VT('HAI L’INCREMENTO?',1250,380,'hai l’incremento',AMB,44),
@@ -985,10 +985,10 @@ SPECS[28]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'RICAPITOLO',cap:'UNO: LA PERCENTUALE LA FISSA UN DECRETO A NOVEMBRE',items:[
   I('circ',['1',GF_],440,400,'Uno:'),
   VT('DECRETO A NOVEMBRE',1130,380,'un decreto a novembre',AMB,44),
-  VT('L’INPS APPLICA A GENNAIO',1130,520,'la applica a gennaio',GF_,44)]},
+  VT('L’INPS APPLICA A GENNAIO',1130,520,['un decreto a novembre',0.8],GF_,44)]},
  {at:'Due:',top:'DUE',cap:'L’ACCOMPAGNAMENTO HA UN ALTRO INDICE',items:[
   I('circ',['2','url(#g_head)'],440,420,'Due:'),
-  VT('ALTRO INDICE',1130,420,'un altro indice',AMB,48)]},
+  VT('ALTRO INDICE',1130,420,['Due:',0.5],AMB,48)]},
  {at:'Tre:',top:'TRE',cap:'INCREMENTO AL MILIONE: IL TOTALE CRESCE POCHISSIMO',items:[
   I('circ',['3',RF_],440,400,'Tre:'),
   VN('0,45 €',1130,400,'quarantacinque centesimi',{fs:130,fill:RF_,sub:'IL TOTALE · 2026'}),
@@ -999,7 +999,7 @@ SPECS[29]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'METTI MI PIACE',cap:'METTI MI PIACE E ISCRIVITI A CONTI IN PENSIONE',items:[
   VT('MI PIACE',520,420,'metti mi piace',GF_,56),
   I('btn',['ISCRIVITI'],1150,420,'iscriviti'),
-  I('bell',[],1650,420,'Conti in Pensione')]},
+  I('bell',[],1650,420,['iscriviti',0.5])]},
  {at:'a novembre',top:'A NOVEMBRE',cap:'QUANDO ESCE IL DECRETO TI DICO LA PERCENTUALE UFFICIALE',items:[
   I('doc',['DECRETO',520,300,undefined,36],560,420,'quando esce il decreto'),
   I('arR',[],960,420,'ti dico'),
