@@ -122,3 +122,6 @@
 - SHORT 5 = teaser del video lungo 3 (nomi file S5-blocco01.mp4...). Obiettivo: curiosita' che porta nel video lungo, iscrizione e mi piace (chiusura: "tocca il video correlato, guardalo, iscriviti e metti mi piace"). "Video correlato" = video lungo 3. Gancio diverso dagli altri short. Informarsi prima (dati pubblici YouTube gratis con curl, niente crediti vidIQ).
 - (07/10/2026) Short 5: 6 clip S5-blocco01..06.mp4 fatte e controllate (QA su tutti i fotogrammi OK, 1080x1920, 30 fps, 1774 fotogrammi = 59,1 s). Cartella 13-short-5-teaser-video-lungo-3 (clip, sorgenti, DURATE.txt, copione-blocchi.txt). Da fare: miniatura e pacchetto.
 - (07/10/2026) Le clip si mandano come FILE MP4 SINGOLI (S5-blocco01.mp4...), MAI in uno zip. Errore di Claude sullo short 5: mandato uno zip; l'utente non l'ha accettato.
+
+## REGOLA N.10 (utente, 07/10/2026): RILEGGERE REGOLE-FISSE.md SEMPRE, AD OGNI MESSAGGIO
+- Non "dalla prossima consegna": ad OGNI messaggio dell'utente, PRIMA di fare o rispondere qualsiasi cosa, rileggere REGOLE-FISSE.md (e CLAUDE.md) e applicarlo. Sempre, senza eccezioni.
