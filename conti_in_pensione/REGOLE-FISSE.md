@@ -115,3 +115,8 @@
 ## ISTRUZIONI UTENTE (07/10/2026, video 3 - tempi dei blocchi)
 - Gli screenshot danno le durate: ogni blocco parte dalla fine del precedente. Se l'utente corregge lo screenshot di un blocco (es. blocco 40: fine 09:40+1f, 500 fotogrammi), cambia SOLO la durata di quel blocco; le durate degli altri restano quelle dei loro screenshot (l'utente sposta i blocchi sulla timeline). Il blocco 41 resta di 417 fotogrammi.
 - Il segno sotto la riga bianca del cursore e' il fotogramma; se la riga e' tra due segni si arrotonda per eccesso.
+
+## ISTRUZIONI UTENTE (07/10/2026, short 5)
+- Video lungo 3 PUBBLICATO (07/10: 747 visualizzazioni in poche ore, e' "esploso" quella mattina; video 1: 314, video 2: 34). Tutto il resto e' pubblicato.
+- Appena un video/short e' finito, l'utente lo PROGRAMMA subito: non dire "da pubblicare il giorno dopo", pacchetto pronto subito dopo le clip.
+- SHORT 5 = teaser del video lungo 3 (nomi file S5-blocco01.mp4...). Obiettivo: curiosita' che porta nel video lungo, iscrizione e mi piace (chiusura: "tocca il video correlato, guardalo, iscriviti e metti mi piace"). "Video correlato" = video lungo 3. Gancio diverso dagli altri short. Informarsi prima (dati pubblici YouTube gratis con curl, niente crediti vidIQ).
