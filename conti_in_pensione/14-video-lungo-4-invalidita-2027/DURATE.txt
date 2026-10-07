@@ -4,5 +4,10 @@ Blocco 2: fine 00:29+6f = 876  -> durata 393
 Blocco 3: fine 00:41+13f = 1243 -> durata 367
 Blocco 4: fine 00:55+4f = 1654 -> durata 411
 Blocco 5: fine 01:09+9f = 2079 -> durata 425
-(blocchi 6-30: screenshot da ricevere)
+Blocco 6: fine 01:22+18f = 2478 -> durata 399
+Blocco 7: fine 01:34+22f = 2842 -> durata 364
+Blocco 8: fine 01:48+2f = 3242 -> durata 400
+Blocco 9: fine 02:01+1f = 3631 -> durata 389
+Blocco 10: fine 02:17+4f = 4114 -> durata 483
+(blocchi 11-30: screenshot da ricevere)
 CLIP FATTE 07/10/2026: V4-blocco01..05.mp4 in clip/ (1920x1080, 30 fps, QA su tutti i fotogrammi OK). Sorgenti in sorgenti/ (specs-v4.js, build.py N, prev.py N, render.py N). Motore: quello del video 3 (sincronizzato alla voce).
