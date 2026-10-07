@@ -61,7 +61,7 @@ Subscribe to The Money Backstory for more clear explanations of retirement for A
 #Retirement #RetirementIncome #SocialSecurity
 
 ## Tag (471 caratteri)
-can you retire with 500k, can you retire with $500,000, retire with 500k, can i retire with 500k, can i retire with 500k in 401k, can i retire at 62 with 500k, can i retire at 60 with 500k, how to retire early with 500k, can you retire with 300k 500k or 1 million, how much income does 500k give in retirement, 4 percent rule, safe withdrawal rate, retirement income, retirement income strategies, how much do i need to retire, medicare part b premium, retirement over 50
+can you retire with 500k, retire with 500k, can i retire with 500k, can i retire with 500k in 401k, can i retire at 62 with 500k, can i retire at 60 with 500k, how to retire early with 500k, can you retire with 300k 500k or 1 million, how much income does 500k give in retirement, 4 percent rule, safe withdrawal rate, retirement income, retirement income strategies, how much do i need to retire, medicare part b premium, retirement over 50
 
 ## Commento da fissare
 Be honest: is $500,000 enough for your own monthly budget, or does the gap between what you get and what you spend worry you? Tell me below.
