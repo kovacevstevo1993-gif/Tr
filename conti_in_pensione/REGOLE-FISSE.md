@@ -125,3 +125,7 @@
 
 ## REGOLA N.10 (utente, 07/10/2026): RILEGGERE REGOLE-FISSE.md SEMPRE, AD OGNI MESSAGGIO
 - Non "dalla prossima consegna": ad OGNI messaggio dell'utente, PRIMA di fare o rispondere qualsiasi cosa, rileggere REGOLE-FISSE.md (e CLAUDE.md) e applicarlo. Sempre, senza eccezioni.
+
+## OSSERVAZIONE UTENTE (07/10/2026, video 3 - visualizzazione media)
+- Video 3: va forte ma la visualizzazione media e' 2:05 su 12:54. Ipotesi dell'utente: "diciamo subito tutto e se ne vanno". Controllo: 2:05 cade a fine capitolo "Il conto subito" (1:10-2:03); chi ha meno di ~2.450 euro ha la risposta li' e se ne va. Prima ci sono 70 s di promesse (blocchi 2-5) senza numeri.
+- PROPOSTA (non ancora decisa dall'utente) per i prossimi video: intro breve (~20 s), niente elenco di promesse, risposta tenuta per dopo con "cerchi aperti" (caso sorprendente da 3.000/4.000 euro prima, casi semplici da 1.000/1.500 piu' avanti, cifra finale a fine video). Da verificare con il grafico di fidelizzazione di YouTube Studio (da chiedere all'utente).
