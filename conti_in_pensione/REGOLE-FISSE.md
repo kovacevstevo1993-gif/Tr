@@ -146,3 +146,8 @@
 
 ## REGOLA N.13 (utente, 07/10/2026): UNA DOMANDA = SOLO UNA RISPOSTA, MAI MODIFICHE
 - Se l'utente fa una DOMANDA (es. "45 centesimi incuriosisce?", "va bene cosi'?", "c'entra col canale?"), si risponde SOLO alla domanda. Non si riscrive, non si cambia, non si salva niente di nuovo nel lavoro. Si cambia solo se l'utente ORDINA di cambiare. (Errore del 07/10: dopo la domanda sul blocco 1 del video 4 ho riscritto il blocco senza ordine; ripristinato.)
+
+## REGOLA N.14 (utente, 07/10/2026): OGNI ELEMENTO SULLA PAROLA ESATTA DELLA VOCE
+- L'utente: "non riesci a calcolare parola per parola e fare le slide nel momento giusto? Perche' devo ripeterlo ogni video?". Le slide devono comparire esattamente sulla parola che la voce dice.
+- Il motore stima i tempi dal numero di caratteri (approssimato): NON basta. Per i tempi esatti serve l'AUDIO della voce: trascrivere/allineare l'audio parola per parola (vosk con modello italiano, scaricabile; whisper) e usare i tempi veri al posto della stima. Chiedere all'utente l'audio della voce (una volta, per tutto il video) invece di stimare.
+- Video 4: blocchi 1-5 consegnati con tempi stimati (da rifare con l'audio); blocchi 6-15 costruiti ma NON ancora renderizzati, in attesa dell'audio.
