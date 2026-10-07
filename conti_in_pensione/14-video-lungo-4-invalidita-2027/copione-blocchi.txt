@@ -1,10 +1,10 @@
-VIDEO LUNGO 4 - AUMENTO PENSIONI INVALIDITA' 2027 (versione 1, 30 blocchi, ~6:40). Prefisso file: V4-blocco01.mp4
+VIDEO LUNGO 4 - AUMENTO PENSIONI INVALIDITA' 2027 (versione 2, 30 blocchi, ~6:40). Prefisso file: V4-blocco01.mp4
 
 ## HOOK
 BLOCCO 1
-Quarantacinque centesimi. Tanto è aumentato, nel duemilaventisei, il totale mensile di certi invalidi civili, mentre i giornali parlavano di aumenti. Chi sono? Lo scopri alla fine, con i numeri ufficiali dell'Inps.
+Quarantacinque centesimi. Tanto è aumentato, nel duemilaventisei, il totale mensile di certi invalidi civili, mentre tutti parlano di aumenti. Chi sono? Te lo mostro prima della fine, con i numeri ufficiali dell'Inps.
 BLOCCO 2
-Ti faccio il conto vero: di quanto aumenta a gennaio la pensione di invalidità civile, l'assegno e l'accompagnamento. Perché non seguono la stessa regola, e questa è la prima cosa che quasi nessuno ti dice.
+Ti faccio il conto vero. Perché i titoli parlano di percentuali, ma a te interessano gli euro che arrivano davvero. E pensione, assegno e accompagnamento non seguono la stessa regola: quasi nessuno te lo dice.
 BLOCCO 3
 Una premessa onesta: la percentuale ufficiale del duemilaventisette non esiste ancora, la fissa un decreto a novembre. Uso il tre per cento come esempio. Ma gli importi di partenza sono quelli ufficiali dell'Inps.
 
@@ -16,7 +16,7 @@ Pensione di inabilità: nel duemilaventisei sono trecentoquaranta euro e settant
 BLOCCO 6
 Assegno mensile, dal settantaquattro al novantanove per cento: stesso importo, trecentoquaranta euro e settantuno. Ma il limite di reddito è molto più basso: cinquemilaottocentocinquantadue euro e ventuno all'anno.
 BLOCCO 7
-L'accompagnamento è un'altra cosa: cinquecentocinquantadue euro e cinquantasette al mese, e non dipende dal reddito. Occhio: per lui non vale la stessa percentuale di aumento. Ci arrivo tra un attimo.
+L'accompagnamento è un'altra cosa: cinquecentocinquantadue euro e cinquantasette al mese, e non dipende dal reddito. Occhio: per questa non vale la stessa percentuale di aumento. Ci arrivo tra un attimo.
 
 ## IL CONTO AL TRE PER CENTO
 BLOCCO 8
@@ -28,7 +28,7 @@ In un anno, con tredici mensilità, sono circa centotrentatré euro in più. Poc
 BLOCCO 10
 Prima trappola: l'accompagnamento non segue il tre per cento. L'Inps usa un altro indice, quello delle retribuzioni degli operai. Nel duemilaventisei è passato da cinquecentoquarantadue euro e due a cinquecentocinquantadue e cinquantasette.
 BLOCCO 11
-Quindi se leggi aumento del tre per cento e hai l'accompagnamento, il conto non è tre per cento di cinquecentocinquantadue. Il suo importo del duemilaventisette dipende da quell'altro indice, e al momento non è ancora noto.
+Quindi se leggi aumento del tre per cento e hai l'accompagnamento, il conto non è tre per cento di cinquecentocinquantadue. Il suo importo del duemilaventisette dipende da quell'altro indice, e l'Inps non lo ha ancora pubblicato.
 
 ## SECONDA TRAPPOLA: I LIMITI DI REDDITO
 BLOCCO 12
@@ -46,7 +46,7 @@ L'importo può salire, ma con regole di reddito diverse, che guardano anche il c
 
 ## TEST: VERO O FALSO
 BLOCCO 17
-Tre domande, vero o falso. Uno: l'accompagnamento aumenta sempre del tre per cento come le pensioni. Vero o falso? ... Falso! Segue un altro indice, quello delle retribuzioni degli operai, e non è ancora noto.
+Tre domande, vero o falso. Uno: l'accompagnamento aumenta sempre del tre per cento come le pensioni. Vero o falso? ... Falso! Segue un altro indice, quello delle retribuzioni degli operai, e l'Inps non l'ha ancora pubblicato.
 BLOCCO 18
 Due: la percentuale di aumento la decide l'Inps a gennaio. Vero o falso? ... Falso! La fissa un decreto dei ministeri, di solito a novembre. L'Inps la applica a gennaio, con un possibile conguaglio.
 BLOCCO 19
