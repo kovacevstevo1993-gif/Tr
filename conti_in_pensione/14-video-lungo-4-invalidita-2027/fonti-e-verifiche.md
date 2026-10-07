@@ -1,0 +1,8 @@
+# Fonti e verifiche - video 4 (07/10/2026). Tutto da Inps, circolare n. 153 del 19/12/2025, Allegato n. 2 (tabelle M.3, M.4, M.5) e schede inps.it lette di persona.
+- Pensione di inabilita' (invalidi totali 100%, 18-67 anni): 340,71 euro/mese, 13 mensilita', limite reddito personale 20.029,55 (2025: 336,00 e 19.772,50; limiti +1,3%, importi +1,4%). A 67 anni si trasforma in assegno sociale sostitutivo.
+- Assegno mensile di assistenza (74-99%, 18-67 anni): 340,71, limite 5.852,21 (2025: 5.771,35). Scheda inps.it cita 340 euro; la tabella M.3 dice 340,71.
+- Indennita' di accompagnamento: 552,57 (2025: 542,02), indipendente dal reddito; rivalutata con indice retribuzioni operai industria (circolare par. 4.3: quota perequabile +4,16%).
+- Incremento al milione (art. 38 L. 448/2001, tabella M.5), invalidi totali 18-65: 2025 pensione 336,00 + incremento max 411,84 = 747,84; limiti 9.721,92 (solo) / 16.724,89 (coniugato). 2026 pensione 340,71 + incremento max 407,58 = 748,29; limiti 9.727,77 / 16.828,89. Differenza totale +0,45 euro/mese (calcolo nostro: 748,29 - 747,84). Formula: incremento = [limite - (reddito personale + INVCIV annuo)] / 13. Nota: nella tabella il testo del 2025 riporta "5.249,92" ma 9.721,92 - 4.368,00 = 5.353,92 = 411,84 x 13: usato 411,84.
+- Assegno sociale 2026: 7.101,12/13 = 546,24; eta' 67 anni nel 2026 (eta' dal 2027 non verificata: non citata).
+- Percentuale 2027: non esiste ancora (decreto interministeriale di novembre). Esempio al 3% = nostro calcolo: 340,71 x 0,03 = 10,22 -> 350,93; x13 = circa 133 euro/anno.
+- NON verificato (non citato nel video): tassazione Irpef di queste prestazioni, importi 2027, maggiorazione sociale +20 euro.
