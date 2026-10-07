@@ -1,0 +1,7 @@
+VIDEO 4 - fine blocco cumulativa (30 fps), letta dagli screenshot dell'utente 07/10/2026 (riga tra due segni = arrotondata per eccesso)
+Blocco 1: fine 00:16+3f = 483  -> durata 483
+Blocco 2: fine 00:29+6f = 876  -> durata 393
+Blocco 3: fine 00:41+13f = 1243 -> durata 367
+Blocco 4: fine 00:55+4f = 1654 -> durata 411
+Blocco 5: fine 01:09+9f = 2079 -> durata 425
+(blocchi 6-30: screenshot da ricevere)
