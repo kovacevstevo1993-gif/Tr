@@ -4,4 +4,4 @@ Blocco 2: fine 00:20+10f = 610  -> durata 293
 Blocco 3: fine 00:30+2f  = 902  -> durata 292
 Blocco 4: fine 00:40+7f  = 1207 -> durata 305
 Blocco 5: fine 00:51+5f  = 1535 -> durata 328
-Blocco 6: manca lo screenshot
+Blocco 6: fine 00:59+4f  = 1774 -> durata 239 (riga tra 3f e 4f, arrotondato per eccesso)
