@@ -143,3 +143,6 @@
 - Cambia SOLO questo: togliere gli elementi che sembrano da bambini (semafori e simili) e tenere un tono serio per adulti. Il resto della grafica resta coerente con short 1-5 e video lungo 1-3.
 - I video gia' fatti (short 1-5, video lungo 1-3) "vanno bene cosi'": non rifarli.
 - Vale dal video lungo 4 (V4-blocco01.mp4...) in poi.
+
+## REGOLA N.13 (utente, 07/10/2026): UNA DOMANDA = SOLO UNA RISPOSTA, MAI MODIFICHE
+- Se l'utente fa una DOMANDA (es. "45 centesimi incuriosisce?", "va bene cosi'?", "c'entra col canale?"), si risponde SOLO alla domanda. Non si riscrive, non si cambia, non si salva niente di nuovo nel lavoro. Si cambia solo se l'utente ORDINA di cambiare. (Errore del 07/10: dopo la domanda sul blocco 1 del video 4 ho riscritto il blocco senza ordine; ripristinato.)
