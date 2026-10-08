@@ -153,7 +153,7 @@ def draw61(img, t):
     seq(img, t, ts[1] + 0.9, stamp("PAID OFF", 300, 90, SAGE, size=40), 460, 870, rot=-3, shadow=8)
     seq(img, t, ts[1] + 1.3, sprite("old61", 200, 200, lambda c: ic_house(c, 100, 100, 1.5, col=(170, 160, 140), roof=(120, 90, 80))), 820, 380, shadow=8, scale=0.8)
     seq(img, t, ts[1] + 1.5, txt("GETTING OLD", 28, SAGE, 3), 820, 500)
-    slide_in(img, t, ts[2], sprite("sc61", 900, 480, lambda c: (c.rrect((5, 5, 895, 475), 40, fill=PANEL_FILL, outline=GOLD, width=7), c.line([(450, 120), (450, 250)], SAGE, 10), c.line([(200, 250), (700, 250)], SAGE, 10), c.line([(200, 250), (200, 300)], SAGE, 6), c.line([(700, 250), (700, 300)], SAGE, 6), c.rrect((90, 300, 310, 360), 10, fill=GOLD), c.text((200, 330), "WORTH SOMETHING", FONT_SANS, 24, GREEN_D, track=1), c.rrect((590, 300, 810, 360), 10, fill=CORAL), c.text((700, 330), "NOT AFFORDABLE", FONT_SANS, 24, GREEN_D, track=1), ic_house(c, 200, 190, 0.6, col=IVORY), ic_repair(c, 700, 190, 0.6), c.text((450, 430), "THE HOUSE VS THE REPAIRS", FONT_SANS, 30, SAGE, track=3))), 1400, 600, dx=60, dur=0.55, shadow=14, scale=0.95)
+    slide_in(img, t, ts[2], sprite("sc61", 900, 480, lambda c: (c.rrect((5, 5, 895, 475), 40, fill=PANEL_FILL, outline=GOLD, width=7), c.line([(450, 120), (450, 250)], SAGE, 10), c.line([(200, 250), (700, 250)], SAGE, 10), c.line([(200, 250), (200, 300)], SAGE, 6), c.line([(700, 250), (700, 300)], SAGE, 6), c.rrect((50, 300, 350, 360), 10, fill=GOLD), c.text((200, 330), "WORTH SOMETHING", FONT_SANS, 22, GREEN_D, track=0), c.rrect((550, 300, 850, 360), 10, fill=CORAL), c.text((700, 330), "NOT AFFORDABLE", FONT_SANS, 22, GREEN_D, track=0), ic_house(c, 200, 190, 0.6, col=IVORY), ic_repair(c, 700, 190, 0.6), c.text((450, 430), "THE HOUSE VS THE REPAIRS", FONT_SANS, 30, SAGE, track=3))), 1400, 600, dx=60, dur=0.55, shadow=14, scale=0.95)
 
 # ============================================================ BLOCCO 62
 def draw62(img, t):
@@ -193,11 +193,11 @@ def draw64(img, t):
     seq(img, t, ts[0] + 0.4, txt("LOCATOR", 120, IVORY, 6), 960, 350, shadow=10)
     slide_in(img, t, ts[1], panel(1240, 220, border=GOLD), 960, 570, dy=40, dur=0.5, shadow=14)
     typed(img, t, ts[1] + 0.2, ts[2] - 0.3, "1-800-677-1116", 130, GOLD, 960, 570, track=4)
-    seq(img, t, ts[2], sprite("ph64", 200, 200, lambda c: ic_phone(c, 100, 100, 1.5)), 420, 850, shadow=8)
+    seq(img, t, ts[2], sprite("ph64", 200, 200, lambda c: ic_phone(c, 100, 100, 1.5)), 420, 800, shadow=8)
     p = ease(seg(t, ts[2] + 0.4, 0.5))
     if p > 0:
-        put(img, rarrow(GOLD, 150, 100), 620, 850, alpha=p)
-    seq(img, t, ts[2] + 0.8, sprite("aoa64", 760, 260, lambda c: (c.rrect((5, 5, 755, 255), 40, fill=PANEL_FILL, outline=SAGE, width=7), ic_gov(c, 130, 130, 1.2), c.text((470, 100), "YOUR LOCAL AGENCY", FONT_SANS, 38, IVORY, track=2), c.text((470, 160), "ON AGING", FONT_SANS, 52, GOLD, track=3))), 1150, 850, shadow=12, scale=0.9)
+        put(img, rarrow(GOLD, 150, 100), 620, 800, alpha=p)
+    seq(img, t, ts[2] + 0.8, sprite("aoa64", 760, 260, lambda c: (c.rrect((5, 5, 755, 255), 40, fill=PANEL_FILL, outline=SAGE, width=7), ic_gov(c, 130, 130, 1.2), c.text((470, 100), "YOUR LOCAL AGENCY", FONT_SANS, 38, IVORY, track=2), c.text((470, 160), "ON AGING", FONT_SANS, 52, GOLD, track=3))), 1150, 800, shadow=12, scale=0.9)
     ban(img, t, ts[3] + 0.3, "THEY KNOW THESE PROGRAMS WHERE YOU LIVE", cy=985, w=1320, size=46)
 
 # ============================================================ BLOCCO 65

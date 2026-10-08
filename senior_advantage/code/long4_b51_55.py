@@ -140,8 +140,8 @@ def draw55(img, t):
     seq(img, t, ts[1] + 1.0, txt("HOMEOWNERS 62 OR OLDER", 34, IVORY, 3), 520, 930)
     s, a, p = pop(t, ts[2], 0.5)
     if p > 0:
-        put(img, sprite("nl55", 380, 220, lambda c: (c.rrect((5, 5, 375, 215), 40, fill=PANEL_FILL, outline=RED, width=8), c.text((190, 90), "LOANS", FONT_SANS, 64, RED, track=3), ic_x(c, 190, 100, 1.5, RED, 10))), 1360, 560, scale=s, alpha=a, rot=-3, shadow=12)
-    seq(img, t, ts[2] + 0.1, txt("NOT LOANS", 36, RED, 4), 1360, 710)
+        put(img, sprite("nl55", 380, 220, lambda c: (c.rrect((5, 5, 375, 215), 40, fill=PANEL_FILL, outline=RED, width=8), c.text((190, 90), "LOANS", FONT_SANS, 64, RED, track=3), ic_x(c, 190, 100, 1.5, RED, 10))), 1450, 550, scale=s, alpha=a, rot=-3, shadow=12)
+    seq(img, t, ts[2] + 0.1, txt("NOT LOANS", 36, RED, 4), 1450, 690)
     s, a, p = pop(t, ts[3] - 0.6, 0.5)
     if p > 0:
         put(img, sprite("gr55", 600, 240, lambda c: (c.rrect((5, 5, 595, 235), 44, fill=GOLD, outline=(168, 118, 40), width=8), c.text((300, 124), "GRANTS", FONT_SANS, 110, GREEN_D, track=4))), 1500, 880, scale=s, alpha=a, rot=2, shadow=16)
