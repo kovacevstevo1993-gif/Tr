@@ -219,3 +219,19 @@ Cause probabili: iscritti vecchi inattivi (2 view dagli iscritti in 30 giorni: Y
 - Walmart Owes You 11 Free Things (Frugal Frannie) 5.737 in 2 giorni; Sam's Club Owes You 15 Things (Robin MBA) 644; National Park Senior Pass: tutti sotto 1.000 (tema senza domanda)
 ### 9c. Struttura dei virali (dai capitoli)
 Gancio identita + perdita + data nei primi 30 s; numero di punti annunciato; titoli dei punti misteriosi (non svelano la risposta); il punto piu forte NON per primo; "bonus" verso la fine; dopo la lista "la regola che decide tutti" (anello aperto chiuso solo alla fine); "cosa NON succede/errori"; riepilogo con date; "mandalo a una persona over 60/65". Durata 13-25 min.
+### 9d. vidIQ 08/10/2026 (autorizzato dall'utente; 20 crediti spesi, saldo 15, rinnovo 29/10)
+Outliers "seniors over 60 benefits bills discounts", lunghi, questo mese, canali <100K (view | iscritti canale | durata | titolo):
+- 2.094.048 | 22.700 | 13:08 | 5 Bills You Don't Have To Pay After 65 (Most People Don't Know) (breakout 15.308)
+- 1.103.083 | 6.570 | 17:13 | Flying Over 65? Why Airlines Quietly Treat You Different (Flight Attendants Wish Seniors Knew This!)
+- 980.195 | 28.300 | 9:23 | Every Senior Must Do This Before October 1 - Most Never Do
+- 546.051 | 7.690 | 14:22 | New Laws Start OCTOBER 1st - Is Your State on the List?
+- 543.266 | Vision Tribe | New Food Assistance Rules for Seniors Start October 1
+- 465.442 | 6.670 | 15:42 | If You're Over 60, Costco Owes You These 15 Free Things
+- **401.168 | 1.770 iscritti! | 16:14 | 5 Bills You Can Legally Stop Paying the Day You Turn 65 (Joseph Retires)**: un canale piu piccolo del nostro ha copiato il formato e fatto 400K in 4 settimane.
+- 326.056 | 17.700 | 17:22 | 7 Things They Can't Take From You After 65 - Not Even the IRS
+- 247.236 | Kevin Explains | 9 Programs. One Call. Nobody Ever Tells You.
+- 234.777 | UK | 5 Bills You Don't Have to Pay After 65 in the UK
+- 230.271 | 10 Things I Avoid Now That I Live Alone at 69; 126.991 Aldi 9 Things (If You Ask); 108.051 Flight Attendants 12 Things
+- 10.133 | 2.060 | Seniors STOP Paying Property Tax - You're Legally Exempt
+Parole chiave (matching_terms "bills seniors", ricerche/mese | concorrenza): "5 bills seniors should be" 21.779 | 22; "seniors stop paying these 5 bills after 65 - you're legally exempt" 16.319 | 30; "the government quietly erases these 5 bills for seniors after 65" 14.839 | 24 (+240%); "5 bills seniors" 9.592 | 22 (+85%); "seniors over 65: check these 7 bills - you may be paying more than required" 7.417 | 13; "6 bills you can legally stop paying after 65" 7.113 | 19; "seniors never pay these 5 bills" 5.380 | 11. Seme "bills seniors don't have to pay" 4.951 | 22,7; "seniors in debt" 3.723 | 17,5.
+Trascrizione "5 Bills You Don't Have To Pay After 65" (struttura): gancio "born before 1961... legally exempt... and you're paying every one right now; nobody whose paycheck depends on it will call you"; anticipa le obiezioni di 3 gruppi ("se hai la casa pagata... se vivi di Social Security... se sei in affitto non andare via: uno di questi decide quanto sale l'affitto"); "Stick around for the fifth one: it's the highest value item and the easiest to claim" (anello aperto); ogni voce = cos'e + errore comune ("people get wrong constantly") + chi aiuta di piu + azione in 1 frase; voce 4 piccola ammessa ("smaller in dollars but still real"); voce 5 = la promessa; bonus; frase finale "being exempt and keeping the money are two different things; the only bridge is a form"; "what to do this week, none of it costs a dollar"; disclaimer; "send it to one person over 65". Contenuto: deduzione 6.000 (tasse), tassa casa (3 moduli), Medicare Part B + Medicare Savings Program, Lifeline + LIHEAP, deduzione standard senior. CIOE quasi tutto tasse e Medicare.
