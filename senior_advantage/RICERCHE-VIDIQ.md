@@ -200,3 +200,22 @@ Descrizione di Robin MBA: gancio ("Bring a question, not a coupon"), disclaimer 
 - Benzina: solo per soci (eccezione: chi paga con Costco Shop Card prepagata); benzina Kirkland Signature certificata TOP TIER, 5 volte il detergente richiesto dall'EPA. Il sito NON dice che costa meno: NON promettere risparmio (costco.com/f/-/gasoline-qanda).
 - Food court: serve la tessera; hot dog con bibita 1,50 dollari e pollo arrosto 4,99 compaiono nei risultati ma NON confermati da una pagina ufficiale letta: NON inserire finche non confermati.
 - Punti verificati per il video: 14 (farmacia senza tessera; programma farmaci; apparecchi acustici; esame vista; Concierge; 2o anno garanzia; gomme; adeguamento prezzo; resi; tessera Household; vaccini; libretto sconti; scontrini online; Executive con conto onesto). Decisione: 14 punti (i video virali ne hanno 13-15).
+
+---------------------------------------------------------------------
+## 9. RICERCA PROSSIMO VIDEO LUNGO + DIAGNOSI CANALE (08/10/2026, 0 crediti, ricerca YouTube "questo mese" ordinata per view)
+### 9a. Stato canale (letto da YouTube)
+Lungo 1 (Tqw_9LMUJYE, 1/10) 2 view; lungo SNAP (KDYxb4tKm1Q, 4/10) 7 view; lungo Costco (w-GQwECwTXA, 7/10) 6 view in 1 giorno. Short: 87, 78, 72, 41, 37, 28, short 7 Costco (gxin3OHc7aQ) 16.
+Cause probabili: iscritti vecchi inattivi (2 view dagli iscritti in 30 giorni: YouTube mostra il video prima a loro, nessuno clicca, segnale negativo); 0 view da home e suggeriti (69% solo ricerca); solo 3 lunghi; arriviamo sui formati gia saturi (Costco 4 settimane dopo); titoli in negativo/tecnici invece della promessa dei vincenti ("Costco Has No Senior Discount" contro "Costco Owes You These 15 Free Things"); durata 11-13 min contro 15-25; miniature 60-77/100. Mancano CTR, impressioni e durata media (Studio o vidIQ analytics 10 crediti).
+### 9b. Video virali della nicchia (ultime 4 settimane; view | eta | durata | canale | titolo)
+- 2.094.057 | 3 sett | 13:08 | Vision Tribe Money | 5 Bills You Don't Have To Pay After 65 (Most People Don't Know) (capitoli: gancio "born before 1961, legally exempt and still paying"; 5 bollette 1-2 min l'una; Bonus a 7:45; colpo finale "Being exempt and keeping the money are two different things"; "Send this to one person over 65". Contenuto: deduzione 6.000, tassa casa, Medicare Part B/MSP, telefono-internet-utenze Lifeline e LIHEAP, deduzione standard)
+- 980.196 | 2 sett | 9:23 | Nia Prescott | Every Senior Must Do This Before October 1 - Most Never Do (capitoli misteriosi che non rivelano: "The paper already inside your house", "Thirty days that belong to the over-sixties alone"; dopo la lista "The one line that decides all five"; "What does NOT happen"; riepilogo con date)
+- 543.422 e 232.000 | New Food Assistance Rules for Seniors Start October 1 (Vision Tribe Money, Robin MBA)
+- 465.561 | 4 sett | 15:42 | Robin MBA | If You're Over 60, Costco Owes You These 15 Free Things
+- 378.021 | 3 sett | 19:37 | Saving Savers | Grandma's 25 Winter Survival Tricks for Seniors Living Alone (That Cost Pennies!)
+- 312.425 | 3 sett | 25:07 | Kevin Explains | 6 Places Seniors Should Never Keep Their Cash Before Nov 1
+- 210.214 | 3 sett | 11:20 | Low Income Relief | These Senior Benefits Start at Age 50 (Not 65!)
+- 128.833 | 2 giorni | 23:31 | The Smart Steward | If You're Over 65, Aldi Will Give You These 9 Things (If You Ask); 63.061 Aldi Owes You 13 Free Things
+- 102.348 | 4 sett | 22:38 | The Airport Lounge Secret Most Seniors Never Use (And It's Free); 64.941 7 Things Travelers Over 60 Should ALWAYS Ask for at the Airport; Amtrak per senior 10-33K
+- Walmart Owes You 11 Free Things (Frugal Frannie) 5.737 in 2 giorni; Sam's Club Owes You 15 Things (Robin MBA) 644; National Park Senior Pass: tutti sotto 1.000 (tema senza domanda)
+### 9c. Struttura dei virali (dai capitoli)
+Gancio identita + perdita + data nei primi 30 s; numero di punti annunciato; titoli dei punti misteriosi (non svelano la risposta); il punto piu forte NON per primo; "bonus" verso la fine; dopo la lista "la regola che decide tutti" (anello aperto chiuso solo alla fine); "cosa NON succede/errori"; riepilogo con date; "mandalo a una persona over 60/65". Durata 13-25 min.
