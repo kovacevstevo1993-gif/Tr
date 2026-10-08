@@ -166,3 +166,4 @@
 - Schermata finale del video 4: video lungo 3 (Pensioni 2027: quanto aumenta DAVVERO?), Iscriviti in basso a destra.
 - Prossimo: l'utente programma il video 4 subito. Poi (solo se ordinato) short 6 teaser del video 4 ("video correlato" = video 4), video 5 con motore b-sync-80.js e regola N.15. Video lungo 3: visualizzazione media 2:05 su 12:54; vedere proposte di fidelizzazione sopra.
 - ERRORI DA NON RIPETERE: fare cose non ordinate; copiare lo stile dei concorrenti invece di quello dei nostri video; mandare zip; scegliere angoli (45 centesimi) che non interessano al pubblico.
+- Chat intera di questa sessione (07-08/10/2026): conti_in_pensione/chat/chat-sessione-6-completa.md (testo intero, 160 messaggi; le chat 4 e 5 sono in chat/ e 12-KIT-05-10/). Messaggio per ripartire: leggere REGOLE-FISSE.md + CLAUDE.md + 14-.../pacchetto.txt, poi aspettare l'ordine.
