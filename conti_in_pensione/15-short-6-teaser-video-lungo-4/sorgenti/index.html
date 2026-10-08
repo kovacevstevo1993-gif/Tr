@@ -1,0 +1,260 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}svg{display:block}</style></head><body>
+<svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920"><defs>
+<radialGradient id="g_bg" cx="0.5" cy="0.35" r="0.95"><stop offset="0" stop-color="#1E9096"/><stop offset="0.5" stop-color="#0D5158"/><stop offset="1" stop-color="#041F23"/></radialGradient>
+<linearGradient id="g_paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE7EA"/></linearGradient>
+<linearGradient id="g_head" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FDDB7"/><stop offset="1" stop-color="#1B9F81"/></linearGradient>
+<linearGradient id="g_metal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8FA3A8"/><stop offset="0.45" stop-color="#F4F8F9"/><stop offset="1" stop-color="#7F9398"/></linearGradient>
+<linearGradient id="g_rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9BF0DB"/><stop offset="1" stop-color="#127F70"/></linearGradient>
+<linearGradient id="g_disc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3ECBAB"/><stop offset="1" stop-color="#0C5F5C"/></linearGradient>
+<linearGradient id="g_badge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE3BE"/><stop offset="1" stop-color="#159078"/></linearGradient>
+<linearGradient id="g_silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3F8F9"/><stop offset="1" stop-color="#9FB4B9"/></linearGradient>
+<linearGradient id="g_red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A63"/><stop offset="1" stop-color="#D23A25"/></linearGradient>
+<linearGradient id="g_spot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.0"/><stop offset="1" stop-color="#9BF0DB" stop-opacity="0.35"/></linearGradient>
+<clipPath id="cal"><rect x="190" y="200" width="420" height="420" rx="56"/></clipPath>
+<filter id="g_sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="26" stdDeviation="22" flood-color="#021A1D" flood-opacity="0.6"/></filter>
+<filter id="g_sh2" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#032226" flood-opacity="0.55"/></filter>
+<filter id="g_sh3" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#032226" flood-opacity="0.5"/></filter>
+<filter id="g_glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1080" height="1920" fill="url(#g_bg)"/>
+<g id="bok"></g><g id="cam"><g id="scene"></g></g>
+<rect id="vig" width="1080" height="1920" fill="none"/>
+</svg>
+<script>
+const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in (attrs||{}))e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const eo3=x=>1-Math.pow(1-x,3);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eob=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2);};
+function T(n,x,y,r,s){r=r||0;s=(s===undefined?1:s);n.setAttribute('transform','translate('+x+' '+y+') rotate('+r+') scale('+s+')');}
+function op(n,o){n.setAttribute('opacity',o);}
+const FONT='DejaVu Sans, Liberation Sans, Arial, sans-serif';
+function txt(p,s,x,y,size,fill,weight,anchor){const t=el('text',{x:x,y:y,'font-size':size,fill:fill,'font-family':FONT,'font-weight':weight||'bold','text-anchor':anchor||'middle'},p);t.textContent=s;return t;}
+function euro(p,cx,cy,s,color,sw){const g=el('g',{fill:'none',stroke:color,'stroke-width':(sw||17)*s,'stroke-linecap':'round'},p);
+ el('path',{d:`M${cx+37*s} ${cy-37*s} A${54*s} ${54*s} 0 1 0 ${cx+37*s} ${cy+37*s}`},g);
+ el('line',{x1:cx-48*s,y1:cy-12*s,x2:cx+18*s,y2:cy-12*s},g);
+ el('line',{x1:cx-48*s,y1:cy+14*s,x2:cx+18*s,y2:cy+14*s},g);return g;}
+function coin(p,cx,cy,r){const g=el('g',{},p);
+ el('circle',{cx:cx,cy:cy,r:r,fill:'url(#g_rim)'},g);
+ el('circle',{cx:cx,cy:cy,r:r,fill:'none',stroke:'#fff','stroke-opacity':.55,'stroke-width':r*0.027},g);
+ el('circle',{cx:cx,cy:cy,r:r*0.84,fill:'url(#g_disc)'},g);
+ el('circle',{cx:cx,cy:cy,r:r*0.71,fill:'none',stroke:'#B5F5E4','stroke-opacity':.55,'stroke-width':r*0.022,'stroke-dasharray':(r*.03)+' '+(r*.06)},g);
+ el('path',{d:`M${cx-r*.6} ${cy-r*.28} A${r*.7} ${r*.7} 0 0 1 ${cx+r*.16} ${cy-r*.6}`,fill:'none',stroke:'#fff','stroke-opacity':.4,'stroke-width':r*.06,'stroke-linecap':'round'},g);
+ euro(g,cx,cy,r/112,'#fff',17);return g;}
+function silverCoin(p,cx,cy,rx,ry,h){ // flat stacked coin (ellipse) with thickness
+ const g=el('g',{},p);
+ el('ellipse',{cx:cx,cy:cy+h,rx:rx,ry:ry,fill:'#6F878C'},g);
+ el('rect',{x:cx-rx,y:cy,width:rx*2,height:h,fill:'#8AA1A6'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,fill:'url(#g_silver)'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx*.68,ry:ry*.68,fill:'none',stroke:'#5B7378','stroke-width':2,opacity:.6},g);
+ return g;}
+function goldCoin(p,cx,cy,rx,ry,h){const g=el('g',{},p);
+ el('ellipse',{cx:cx,cy:cy+h,rx:rx,ry:ry,fill:'#127F70'},g);
+ el('rect',{x:cx-rx,y:cy,width:rx*2,height:h,fill:'#1A9C86'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,fill:'url(#g_rim)'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx*.68,ry:ry*.68,fill:'none',stroke:'#0B5A55','stroke-width':2,opacity:.5},g);
+ return g;}
+function paper(p,w,h,shadow){const g=el('g',{},p);
+ el('rect',{x:-w/2,y:0,width:w,height:h,rx:26,fill:'url(#g_paper)',filter:shadow===false?'':'url(#g_sh)'},g);
+ el('rect',{x:-w/2,y:0,width:w,height:h,rx:26,fill:'none',stroke:'#fff','stroke-opacity':.7,'stroke-width':3},g);
+ return g;}
+function metalRing(p,x,y,w,h){const g=el('g',{filter:'url(#g_sh3)'},p);
+ el('rect',{x:x-w/2,y:y,width:w,height:h,rx:w/2,fill:'url(#g_metal)'},g);
+ el('rect',{x:x-w*.2,y:y+h*.15,width:w*.4,height:h*.7,rx:w*.2,fill:'#0A3F45',opacity:.85},g);return g;}
+// cedolino rows
+function rows(p,labels,w,y0,gap,ink){const out=[];labels.forEach((l,i)=>{const y=y0+i*gap;
+ el('rect',{x:-w/2+40,y:y+gap-22,width:w-80,height:3,fill:'#C9D6D8'},p);
+ txt(p,l,-w/2+50,y+gap-38,32,ink||'#0B4A50','bold','start');
+ el('rect',{x:w/2-250,y:y+gap-66,width:200,height:30,rx:15,fill:'#BFD0D3'},p);out.push(y);});return out;}
+
+const LT='#9BF0DB',INK='#0D5158',YEL='#FFD43B',RED='#E8503A';
+function plateRect(p,x,y,w,h,r,fill){const g=el('g',{},p);el('rect',{x:x,y:y,width:w,height:h,rx:r,fill:fill||'url(#g_paper)',filter:'url(#g_sh)'},g);el('rect',{x:x,y:y,width:w,height:h,rx:r,fill:'none',stroke:'#fff','stroke-opacity':.6,'stroke-width':3},g);return g;}
+function pillS(p,label,w,fs,fill,col){const g=el('g',{},p);el('rect',{x:-w/2,y:-fs*0.95,width:w,height:fs*1.9,rx:fs*0.95,fill:fill,stroke:'#fff','stroke-width':6,filter:'url(#g_sh2)'},g);txt(g,label,0,fs*0.36,fs,col||'#fff','bold');return g;}
+function circleN(p,r,n,fill){const g=el('g',{},p);el('circle',{r:r,fill:fill,stroke:'#fff','stroke-width':9,filter:'url(#g_sh2)'},g);el('path',{d:`M${-r*.62} ${-r*.2} A${r*.7} ${r*.7} 0 0 1 ${r*.1} ${-r*.66}`,fill:'none',stroke:'#fff','stroke-opacity':.45,'stroke-width':r*.07,'stroke-linecap':'round'},g);txt(g,n,0,r*0.36,r*1.1,'#fff','bold');return g;}
+function tri(p,s){const g=el('g',{filter:'url(#g_sh2)'},p);el('path',{d:`M0 ${-s} L${s*1.05} ${s*.8} L${-s*1.05} ${s*.8}Z`,fill:YEL,stroke:'#fff','stroke-width':8,'stroke-linejoin':'round'},g);txt(g,'!',0,s*0.55,s*1.2,'#7A2A00','bold');return g;}
+function stamp(p,label,w,fs,col){const g=el('g',{},p);el('rect',{x:-w/2,y:-fs*.9,width:w,height:fs*1.8,rx:18,fill:'rgba(255,255,255,0.92)',stroke:col,'stroke-width':10},g);txt(g,label,0,fs*0.34,fs,col,'bold');return g;}
+function light(p,cx,cy,r,grad){const g=el('g',{},p);const dim=el('circle',{cx:cx,cy:cy,r:r,fill:'#17282B'},g);const on=el('circle',{cx:cx,cy:cy,r:r,fill:'url(#'+grad+')',stroke:'#fff','stroke-width':6,opacity:0},g);const gl=el('circle',{cx:cx,cy:cy,r:r*1.5,fill:grad==='tg'?'#35E39A':grad==='ty'?'#FFD43B':'#FF5A43',opacity:0,filter:'url(#g_glow)'},g);return {on,gl,g};}
+function playBtn(p){const g=el('g',{filter:'url(#g_sh)'},p);el('rect',{x:-330,y:-205,width:660,height:410,rx:90,fill:'url(#g_red)',stroke:'#fff','stroke-width':10},g);el('path',{d:'M-70 -110 L130 0 L-70 110Z',fill:'#fff','stroke-linejoin':'round',stroke:'#fff','stroke-width':26},g);return g;}
+
+// ===== SHORT 6 - teaser video lungo 4 (1080x1920, 30 fps) =====
+// Regola n.5: movimenti LENTI (>=0.7 s), tutto completo almeno 0.5 s prima della fine, poi FERMO. Fascia y 330-680 libera per le didascalie di CapCut.
+const eob2=x=>{const c1=1.0,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2);};
+const pop=(t,a,d)=>Math.max(0,eob2(seg(t,a,a+(d||.8))));
+const sl=(t,a,d)=>eo3(seg(t,a,a+(d||.8)));
+function ttl(p,s,size,fill){const t=txt(p,s,0,0,size,fill||'#fff','bold');t.setAttribute('stroke','#06282C');t.setAttribute('stroke-width',size*0.16);t.setAttribute('stroke-linejoin','round');t.setAttribute('paint-order','stroke');return t;}
+function person(p,shirt,hair){const g=el('g',{},p);
+ el('path',{d:'M-135 232 Q-135 92 0 92 Q135 92 135 232 Z',fill:shirt,stroke:'#fff','stroke-width':7,'stroke-linejoin':'round',filter:'url(#g_sh2)'},g);
+ el('path',{d:'M-38 98 L0 158 L38 98 Z',fill:'#fff'},g);el('path',{d:'M-11 158 L0 226 L11 158 Z',fill:'#0B3A3F'},g);
+ el('rect',{x:-26,y:48,width:52,height:56,rx:16,fill:'#EDBE92'},g);
+ el('circle',{cx:0,cy:0,r:80,fill:'#F7D3B0',stroke:'#fff','stroke-width':6},g);
+ el('path',{d:'M-82 -8 Q-84 -96 0 -96 Q84 -96 82 -8 Q44 -52 -8 -50 Q-52 -48 -82 -8Z',fill:hair},g);
+ el('circle',{cx:-27,cy:10,r:9,fill:'#0B3A3F'},g);el('circle',{cx:27,cy:10,r:9,fill:'#0B3A3F'},g);
+ el('path',{d:'M-28 40 Q0 66 28 40',fill:'none',stroke:'#B5523B','stroke-width':8,'stroke-linecap':'round'},g);return g;}
+function eye(p){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:'M-120 0 Q0 -105 120 0 Q0 105 -120 0Z',fill:'#fff',stroke:'#0B4A50','stroke-width':8,'stroke-linejoin':'round'},g);
+ el('circle',{cx:0,cy:0,r:44,fill:'#1B9F81'},g);el('circle',{cx:0,cy:0,r:20,fill:'#0A1C1F'},g);
+ el('line',{x1:-100,y1:-80,x2:100,y2:80,stroke:RED,'stroke-width':20,'stroke-linecap':'round'},g);return g;}
+function check(p,r,col){const g=el('g',{},p);el('circle',{r:r,fill:col||'#1B9F81',stroke:'#fff','stroke-width':r*.16},g);
+ el('path',{d:`M${-r*.45} ${r*.02} l${r*.3} ${r*.32} l${r*.6} ${-r*.66}`,fill:'none',stroke:'#fff','stroke-width':r*.26,'stroke-linecap':'round','stroke-linejoin':'round'},g);return g;}
+function crossC(p,r){const g=el('g',{},p);el('circle',{r:r,fill:RED,stroke:'#fff','stroke-width':r*.16},g);
+ el('path',{d:`M${-r*.4} ${-r*.4} L${r*.4} ${r*.4} M${r*.4} ${-r*.4} L${-r*.4} ${r*.4}`,stroke:'#fff','stroke-width':r*.26,'stroke-linecap':'round'},g);return g;}
+function lockG(p,s){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:`M${-38*s} ${-10*s} V${-50*s} a${38*s} ${38*s} 0 0 1 ${76*s} 0 V${-10*s}`,fill:'none',stroke:'#fff','stroke-width':16*s,'stroke-linecap':'round'},g);
+ el('rect',{x:-58*s,y:-12*s,width:116*s,height:90*s,rx:20*s,fill:YEL,stroke:'#fff','stroke-width':7*s},g);el('circle',{cx:0,cy:30*s,r:12*s,fill:'#7A2A00'},g);return g;}
+function bigArrow(p){return el('path',{d:'M-60 -90 H60 V0 H110 L0 110 L-110 0 H-60Z',fill:YEL,stroke:'#fff','stroke-width':8,'stroke-linejoin':'round',filter:'url(#g_sh2)'},p);}
+
+function topLabelV(p,s){const fs=58,sp=8;const w=s.length*(fs*0.72+sp)+80;const t=el('g',{},p);
+ el('polygon',{points:'-16,-16 0,-32 16,-16 0,0',fill:'#7FF0D2',transform:'translate('+(-w/2+18)+' 0)'},t);
+ const x=txt(t,s,-w/2+64,fs*0.36,fs,'#7FF0D2','bold','start');x.setAttribute('letter-spacing',sp);return t;}
+function capV(p,lines,fs){fs=fs||58;const mx=Math.max(...lines.map(l=>l.length));fs=Math.min(fs,(1000-130)/(mx*0.76));const w=Math.min(1000,mx*fs*0.76+130);const h=lines.length*(fs*1.42)+54;const c=el('g',{},p);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:Math.min(60,h/2),fill:'#06303A',filter:'url(#g_sh2)'},c);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:Math.min(60,h/2),fill:'none',stroke:'#FFB020','stroke-width':6},c);
+ lines.forEach((l,i)=>txt(c,l,0,-h/2+27+fs*1.08+i*fs*1.42,fs,'#FFFFFF','bold'));return c;}
+const CAPY=1560;
+// entrata dal basso con dissolvenza (lenta): nessun elemento entra da fuori quadro
+function rise(t,a,d,n,y,dy,sc){const k=sl(t,a,d||.9);T(n,n._x,y+(1-k)*(dy||140),0,(sc||1));op(n,seg(t,a,a+(d||.9)*.6));}
+
+function thumb(p,s){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('rect',{x:-96*s,y:-8*s,width:44*s,height:96*s,rx:10*s,fill:'#0B4A50',stroke:'#fff','stroke-width':6*s},g);
+ el('path',{d:`M${-40*s} ${-4*s} L${-6*s} ${-78*s} Q${20*s} ${-96*s} ${32*s} ${-64*s} L${24*s} ${-26*s} H${86*s} Q${112*s} ${-24*s} ${104*s} ${8*s} L${92*s} ${62*s} Q${86*s} ${88*s} ${60*s} ${88*s} H${-40*s}Z`,fill:YEL,stroke:'#fff','stroke-width':7*s,'stroke-linejoin':'round'},g);return g;}
+function bell(p,s){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:`M${-70*s} ${50*s} Q${-60*s} ${30*s} ${-60*s} ${-10*s} Q${-60*s} ${-70*s} 0 ${-76*s} Q${60*s} ${-70*s} ${60*s} ${-10*s} Q${60*s} ${30*s} ${70*s} ${50*s}Z`,fill:YEL,stroke:'#fff','stroke-width':7*s,'stroke-linejoin':'round'},g);
+ el('circle',{cx:0,cy:68*s,r:16*s,fill:YEL,stroke:'#fff','stroke-width':5*s},g);return g;}
+function card(p,x,y,w,h,r){const g=el('g',{},p);plateRect(g,-w/2,-h/2,w,h,r||50);return g;}
+// tempi sulla voce (stima a caratteri dal testo del blocco e dalla durata dello screenshot); regola N.15: tutto completo entro l'80% del blocco
+const DUR=[344,322,346,340,322,250].map(x=>x/30);
+const TX=[
+"Hai l'accompagnamento, o una pensione di invalidità? Allora attento: quando leggi \"pensioni più tre per cento\", per te il conto può essere un altro. E quasi nessuno lo spiega.",
+"Sotto la parola invalidità ci sono tre prestazioni diverse: pensione di inabilità, assegno mensile e accompagnamento. E non aumentano tutte con la stessa regola.",
+"L'accompagnamento, per esempio, segue un altro indice: quello delle retribuzioni degli operai. Nel duemilaventisei è passato da cinquecentoquarantadue a cinquecentocinquantadue euro.",
+"Poi c'è la trappola che può costare cara: i limiti di reddito. Se li superi, anche di poco, perdi la prestazione. Per l'assegno mensile la soglia è sotto i seimila euro l'anno!",
+"Nel video completo: gli importi ufficiali dell'Inps, il conto passo passo, la trappola dei sessantasette anni e un caso in cui l'aumento quasi sparisce.",
+"Tocca il video correlato e guardalo adesso! Poi iscriviti a Conti in Pensione e metti mi piace: a novembre ti dico la percentuale ufficiale."];
+function at(i,frag,d){const s=TX[i];const k=s.indexOf(frag);if(k<0)throw new Error('frag '+frag);return Math.max(0,Math.min(0.15+(DUR[i]-0.6)*k/s.length-0.15,0.8*DUR[i]-(d||.9)));}
+function stampIn(t,o,a,x,y,r){const s=seg(t,a,a+.8);T(o,x,y,r||-4,s>0?lerp(1.4,1,eo3(s)):0);op(o,clamp(s*2.5));}
+function rowCard(p,n,title,sub,col){const g=card(p,0,0,940,190,46);
+ const c=el('g',{transform:'translate(-370 0)'},g);circleN(c,62,n,col||'url(#g_badge)');
+ txt(g,title,-270,sub?-4:22,50,INK,'bold','start');if(sub)txt(g,sub,-270,58,38,'#1B9F81','bold','start');g._x=540;return g;}
+const S=[
+// ---- 1: HAI L'INVALIDITA'? IL +3% NON E' PER TUTTI ----
+{D:DUR[0],build(p){const o={};
+ o.lab=topLabelV(p,'INVALIDITÀ 2027');
+ o.p1=pillS(p,'ACCOMPAGNAMENTO',820,56,'#0B4A50');o.p1._x=540;
+ o.p2=pillS(p,'PENSIONE DI INVALIDITÀ',960,56,'#0B4A50');o.p2._x=540;
+ o.news=card(p,0,0,900,330,40);
+ el('rect',{x:-410,y:-130,width:820,height:56,rx:14,fill:'#0B4A50'},o.news);txt(o.news,'TITOLI DI GIORNALE',0,-90,36,'#fff','bold');
+ txt(o.news,'PENSIONI +3%',0,40,96,INK,'bold');
+ el('rect',{x:-330,y:80,width:660,height:16,rx:8,fill:'#C9D6D8'},o.news);el('rect',{x:-330,y:110,width:460,height:16,rx:8,fill:'#C9D6D8'},o.news);o.news._x=540;
+ o.alt=pillS(p,'E PER TE? UN ALTRO CONTO',980,56,'url(#g_red)');o.alt._x=540;
+ o.st=stamp(p,'QUASI NESSUNO LO SPIEGA',1000,54,RED);
+ o.cap=capV(p,['IL +3% NON VALE','UGUALE PER TUTTI']);
+ return o;},
+ update(t,o){const i=0;T(o.lab,540,130,0,pop(t,0,.8));
+  rise(t,at(i,'accompagnamento'),.9,o.p1,330,100);
+  rise(t,at(i,'pensione di invalidità'),.9,o.p2,480,100);
+  rise(t,at(i,'quando leggi'),.9,o.news,760,120);
+  rise(t,at(i,'per te il conto')+.3,.9,o.alt,1030,100);
+  stampIn(t,o.st,at(i,'quasi nessuno'),540,1250,-3);
+  T(o.cap,540,CAPY,0,pop(t,at(i,'quasi nessuno')+.2,.8));}},
+// ---- 2: TRE PRESTAZIONI ----
+{D:DUR[1],build(p){const o={};
+ o.lab=topLabelV(p,'TRE PRESTAZIONI');
+ o.r=[rowCard(p,'1','PENSIONE DI INABILITÀ','INVALIDI AL 100%'),rowCard(p,'2','ASSEGNO MENSILE','DAL 74% AL 99%'),rowCard(p,'3','ACCOMPAGNAMENTO','NON DIPENDE DAL REDDITO')];
+ o.inv=pillS(p,'SOTTO LA PAROLA INVALIDITÀ',1000,48,'#0B4A50');o.inv._x=540;
+ o.st=stamp(p,'REGOLE DIVERSE',760,72,RED);
+ o.cap=capV(p,['3 PRESTAZIONI,','3 REGOLE DIVERSE']);
+ return o;},
+ update(t,o){const i=1;T(o.lab,540,130,0,pop(t,0,.8));
+  rise(t,at(i,'Sotto'),.9,o.inv,330,90);
+  ['pensione di inabilità','assegno mensile','e accompagnamento'].forEach((f,k)=>rise(t,at(i,f),.9,o.r[k],[530,760,990][k],120));
+  stampIn(t,o.st,at(i,'non aumentano'),540,1240,-4);
+  T(o.cap,540,CAPY,0,pop(t,at(i,'stessa regola'),.8));}},
+// ---- 3: ACCOMPAGNAMENTO: UN ALTRO INDICE ----
+{D:DUR[2],build(p){const o={};
+ o.lab=topLabelV(p,'ACCOMPAGNAMENTO');
+ o.ix=card(p,0,0,940,250,48);txt(o.ix,'SEGUE UN ALTRO INDICE',0,-42,44,'#1B9F81','bold');txt(o.ix,'RETRIBUZIONI OPERAI',0,46,70,INK,'bold');
+ const bars=el('g',{transform:'translate(0 0)'},o.ix);o.ix._x=540;
+ o.yr=pillS(p,'NEL 2026 · INPS',620,52,'#0B4A50');o.yr._x=540;
+ o.a=card(p,0,0,400,220,44);txt(o.a,'PRIMA',0,-40,40,'#1B9F81','bold');txt(o.a,'542,02 €',0,44,74,INK,'bold');
+ o.b=card(p,0,0,400,220,44);txt(o.b,'2026',0,-40,40,'#1B9F81','bold');txt(o.b,'552,57 €',0,44,74,'#13805F','bold');
+ o.ar=el('path',{d:'M-46 -34 H6 V-70 L56 0 L6 70 V34 H-46Z',fill:YEL,stroke:'#fff','stroke-width':6,'stroke-linejoin':'round',filter:'url(#g_sh2)'},p);
+ o.plus=pillS(p,'+10,55 € AL MESE',760,60,'url(#g_badge)');o.plus._x=540;
+ o.cap=capV(p,['UN ALTRO INDICE,','UN ALTRO AUMENTO']);
+ return o;},
+ update(t,o){const i=2;T(o.lab,540,130,0,pop(t,0,.8));
+  rise(t,at(i,'segue un altro'),.9,o.ix,430,120);
+  rise(t,at(i,'Nel duemila'),.8,o.yr,690,80);
+  T(o.a,290,920,0,pop(t,at(i,'da cinquecento'),.9));
+  T(o.ar,540,920,0,pop(t,at(i,'a cinquecentocinquanta')-.2,.7));
+  T(o.b,790,920,0,pop(t,at(i,'a cinquecentocinquanta'),.9));
+  rise(t,at(i,'a cinquecentocinquanta')+.6,.9,o.plus,1180,100);
+  T(o.cap,540,CAPY,0,pop(t,at(i,'euro.'),.8));}},
+// ---- 4: SECONDA TRAPPOLA: LIMITI DI REDDITO ----
+{D:DUR[3],build(p){const o={};
+ o.lab=topLabelV(p,'LA TRAPPOLA');
+ o.w=tri(p,95);
+ o.gr=card(p,0,0,940,360,48);o.gr._x=540;
+ txt(o.gr,'IL TUO REDDITO',-400,-120,40,'#1B9F81','bold','start');
+ o.lim=el('g',{},o.gr);el('line',{x1:-410,y1:-10,x2:410,y2:-10,stroke:RED,'stroke-width':8,'stroke-dasharray':'26 16'},o.lim);
+ const lp=el('g',{transform:'translate(300 -10)'},o.lim);el('rect',{x:-110,y:-34,width:220,height:68,rx:34,fill:RED,stroke:'#fff','stroke-width':5},lp);txt(lp,'LIMITE',0,15,40,'#fff','bold');
+ o.bar=el('rect',{x:-260,y:0,width:200,height:0,rx:16,fill:'#1B9F81',stroke:'#fff','stroke-width':5},o.gr);
+ o.x=crossC(p,70);
+ o.lose=pillS(p,'PERDI LA PRESTAZIONE',900,62,'url(#g_red)');o.lose._x=540;
+ o.as=card(p,0,0,940,230,48);txt(o.as,'ASSEGNO MENSILE: SOGLIA',0,-36,46,'#1B9F81','bold');txt(o.as,'5.852,21 € L\'ANNO',0,54,78,INK,'bold');o.as._x=540;
+ o.cap=capV(p,['CONTROLLA IL REDDITO','OGNI ANNO']);
+ return o;},
+ update(t,o){const i=3;T(o.lab,540,130,0,pop(t,0,.8));
+  T(o.w,540,330,-5,pop(t,at(i,'trappola'),.9));
+  rise(t,at(i,'i limiti'),.9,o.gr,690,120);
+  const a=at(i,'Se li superi',1.4),k=eio(seg(t,a,a+1.4));const h=lerp(60,230,k);
+  o.bar.setAttribute('y',150-h);o.bar.setAttribute('height',h);o.bar.setAttribute('fill',150-h< -10?RED:'#1B9F81');
+  T(o.x,250,690,0,pop(t,at(i,'perdi'),.8));
+  rise(t,at(i,'perdi'),.9,o.lose,960,90);
+  rise(t,at(i,'Per l\'assegno'),.9,o.as,1220,110);
+  T(o.cap,540,CAPY,0,pop(t,at(i,'seimila'),.8));}},
+// ---- 5: NEL VIDEO COMPLETO ----
+{D:DUR[4],build(p){const o={};
+ o.lab=topLabelV(p,'NEL VIDEO COMPLETO');
+ o.r=[['IMPORTI UFFICIALI INPS',0],['IL CONTO PASSO PASSO',0],['LA TRAPPOLA DEI 67 ANNI',0],['L\'AUMENTO CHE SPARISCE',1]].map(d=>{const g=card(p,0,0,940,180,44);
+  const c=el('g',{transform:'translate(-380 0)'},g);if(d[1]){el('circle',{r:52,fill:RED,stroke:'#fff','stroke-width':8},c);txt(c,'?',0,26,76,'#fff','bold');}else check(c,52);
+  txt(g,d[0],-300,18,46,d[1]?RED:INK,'bold','start');g._x=540;return g;});
+ o.cap=capV(p,['GUARDALO FINO','ALLA FINE']);
+ return o;},
+ update(t,o){const i=4;T(o.lab,540,130,0,pop(t,0,.8));
+  ['gli importi','il conto passo','la trappola','un caso'].forEach((f,k)=>rise(t,at(i,f),.9,o.r[k],[420,640,860,1080][k],110));
+  T(o.cap,540,CAPY,0,pop(t,at(i,'quasi sparisce'),.8));}},
+// ---- 6: GUARDA, ISCRIVITI, MI PIACE ----
+{D:DUR[5],build(p){const o={};
+ o.lab=topLabelV(p,'GUARDALO ORA');
+ o.pb=playBtn(p);o.pill=pillS(p,'VIDEO CORRELATO',900,70,'#0B4A50');o.pill._x=540;
+ o.sub=pillS(p,'ISCRIVITI',440,72,'url(#g_red)');o.bl=bell(p,.7);o.lk=thumb(p,1.0);
+ o.nov=pillS(p,'A NOVEMBRE: % UFFICIALE',960,58,'#0B4A50');o.nov._x=540;
+ o.cap=capV(p,['GUARDA, ISCRIVITI','E METTI MI PIACE']);
+ return o;},
+ update(t,o){const i=5;T(o.lab,540,130,0,pop(t,0,.8));
+  T(o.pb,540,540,0,.95*pop(t,.2,.8));
+  rise(t,at(i,'video correlato'),.8,o.pill,860,90);
+  T(o.sub,290,1090,0,pop(t,at(i,'iscriviti'),.8));T(o.bl,590,1090,0,pop(t,at(i,'iscriviti')+.4,.7));
+  T(o.lk,830,1090,0,pop(t,at(i,'mi piace'),.8));
+  rise(t,at(i,'a novembre'),.8,o.nov,1320,90);
+  T(o.cap,540,CAPY,0,pop(t,at(i,'percentuale'),.8));}},
+];
+S.forEach(s=>{s.sb=[{s:0,e:s.D}];});
+function playBtn(p){const g=el('g',{filter:'url(#g_sh)'},p);el('rect',{x:-330,y:-205,width:660,height:410,rx:90,fill:'url(#g_red)',stroke:'#fff','stroke-width':10},g);el('path',{d:'M-70 -110 L130 0 L-70 110Z',fill:'#fff','stroke-linejoin':'round',stroke:'#fff','stroke-width':26},g);return g;}
+document.querySelector('defs').insertAdjacentHTML('beforeend','<linearGradient id="g_amber" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC93B"/><stop offset="1" stop-color="#C98500"/></linearGradient>');
+
+// defs aggiuntivi
+const defs=document.querySelector('defs');
+defs.insertAdjacentHTML('beforeend','<radialGradient id="tg" cx=".4" cy=".3" r=".8"><stop offset="0" stop-color="#9CFFD9"/><stop offset=".5" stop-color="#25D08C"/><stop offset="1" stop-color="#0B7C54"/></radialGradient><radialGradient id="ty" cx=".4" cy=".3" r=".8"><stop offset="0" stop-color="#FFF3A8"/><stop offset=".5" stop-color="#FFD43B"/><stop offset="1" stop-color="#C08A00"/></radialGradient><radialGradient id="tr" cx=".4" cy=".3" r=".8"><stop offset="0" stop-color="#FFB3A3"/><stop offset=".5" stop-color="#F0503A"/><stop offset="1" stop-color="#9E2112"/></radialGradient>');
+const bok=document.getElementById('bok');const BK=[];
+for(let i=0;i<14;i++){const c=el('circle',{r:30+((i*37)%70),fill:'#8FF5DC',opacity:.06+((i*13)%7)*0.01},bok);BK.push([c,(i*173)%1080,(i*311)%1920,20+(i*7)%30,i]);}
+let cur=-1,OBJ=null;const scene=document.getElementById('scene');const cam=document.getElementById('cam');
+function draw(i,t){if(cur!==i){scene.innerHTML='';OBJ=S[i].build(scene);cur=i;}
+ BK.forEach(([c,x,y,sp,k])=>{c.setAttribute('cx',(x+t*sp*0.15)%1200-60);c.setAttribute('cy',(y-t*sp*0.3)%2000+(y-t*sp*0.3<0?2000:0));});
+ 
+ S[i].update(t,OBJ);}
+
+</script></body></html>

@@ -1,0 +1,7 @@
+SHORT 6 - fine blocco cumulativa (30 fps), dagli screenshot dell'utente 08/10/2026
+Blocco 1: fine 00:11+14f = 344  -> durata 344
+Blocco 2: fine 00:22+6f  = 666  -> durata 322
+Blocco 3: fine 00:33+22f = 1012 -> durata 346
+Blocco 4: fine 00:45+2f  = 1352 -> durata 340
+Blocco 5: fine 00:55+24f = 1674 -> durata 322
+Blocco 6: fine 01:04+4f  = 1924 -> durata 250
