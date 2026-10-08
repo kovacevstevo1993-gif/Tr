@@ -9,7 +9,7 @@ from PIL import Image
 import eng2
 W, H = eng2.W, eng2.H
 for _m in list(sys.modules.values()):
-    if _m is not None and hasattr(_m, 'ambient') and getattr(_m, '__name__', '').startswith(('long3', 'eng2')):
+    if _m is not None and hasattr(_m, 'ambient') and getattr(_m, '__name__', '').startswith(('long3', 'long4', 'eng2')):
         _m.ambient = lambda *a, **k: None
 n = mod.DUR[b]
 fn = mod.DRAW[b]
