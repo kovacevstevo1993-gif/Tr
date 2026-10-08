@@ -1,6 +1,6 @@
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import long4_b01_10 as L
+import importlib; L = importlib.import_module(os.environ.get("L4MOD", "long4_b01_10"))
 from eng2 import background
 from PIL import Image
 out=sys.argv[1]; os.makedirs(out,exist_ok=True)
