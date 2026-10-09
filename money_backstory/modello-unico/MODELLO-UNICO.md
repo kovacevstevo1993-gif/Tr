@@ -25,3 +25,8 @@ Regola dell'utente: i video devono essere fatti tutti allo stesso modo. Da qui i
 - Nelle slide: `cue('parola chiave del copione')` = istante in cui la voce la dice (mai oltre l'80%); ogni elemento compare con il suo cue, la didascalia finale con l'ultimo.
 - `test_sync.py` = esempio funzionante, provato con una voce di prova (copione video 7, blocchi 1-3: 84% parole agganciate, le altre sono i numeri scritti in lettere e vengono interpolate).
 - Dopo il render: a vista i fotogrammi dei punti in cui la voce dice le parole chiave (la slide deve gia' mostrare l'oggetto).
+
+## SENZA AUDIO (10/10/2026, ordine dell'utente): sincronia CALCOLATA
+- `python3 calcola_sync.py copione.md fine_blocchi.txt sync.json` (fine_blocchi.txt = fine voce in fotogrammi dagli screenshot, una riga per blocco). Calcola il tempo di ogni parola (sillabe + pause) scalato sulla durata del blocco.
+- Nel codice del blocco: `V = Voice('sync.json')`, `tm('parola')` = istante in cui la voce dice la parola (clampato prima dell'ultimo elemento), `V.plan(blocco, n)` = tagli delle slide ai confini delle frasi, `frozen(fn)` = tutto fermo dall'80%. Esempio: `video8-bills-after-65/code/v8b1.py`.
+- Verifica fatta (10/10): 80% = ultimo elemento completo, dopo l'81% fotogrammi identici (nessun elemento si muove).
