@@ -69,6 +69,10 @@ POSE = {
     "riempie": "leaning forward and bending down with the TRUNK pointing straight down, one hand on the knee, curious happy eyes looking down at the trunk tip, NO water, NO sand, NO ground, only the character",
     "spruzza": "head tilted back, the TRUNK RAISED STRAIGHT UP high above the head like a trumpet with the trunk tip open, both arms raised up in joy, eyes closed, big open smile, NO water, NO fountain, only the character",
     "spruzza_giu": "standing and the TRUNK stretched out forward and pointing down in front of the body, proud smile looking at the trunk tip, one hand on the hip, NO water, NO sand, NO ground, only the character",
+    # --- storia 'mongolfiera' ---
+    "soffia": "side-on to the right: standing and leaning forward, the long TRUNK lifted and stretched out HORIZONTALLY to the right pointing straight ahead like a hose blowing a strong gust of air, big ears flapping backward, eyes squeezed shut with effort, both hands on the hips, NO wind lines, NO objects, only the character",
+    "arrampica": "climbing up: body upright, both arms stretched straight up above the head with both hands gripping, legs bent with knees up and feet together, determined face looking up, NO rope drawn, NO objects, only the character",
+    "ops": "embarrassed: both hands covering the mouth, wide worried eyes, shoulders raised, sheepish expression, NO objects, only the character",
     "tiene_bandiera": "holding a small wooden pole upright with both hands in front of the chest, excited wide smile, looking up",
 }
 
