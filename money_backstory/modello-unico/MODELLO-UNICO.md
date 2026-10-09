@@ -28,5 +28,5 @@ Regola dell'utente: i video devono essere fatti tutti allo stesso modo. Da qui i
 
 ## SENZA AUDIO (10/10/2026, ordine dell'utente): sincronia CALCOLATA
 - `python3 calcola_sync.py copione.md fine_blocchi.txt sync.json` (fine_blocchi.txt = fine voce in fotogrammi dagli screenshot, una riga per blocco). Calcola il tempo di ogni parola (sillabe + pause) scalato sulla durata del blocco.
-- Nel codice del blocco: `V = Voice('sync.json')`, `tm('parola')` = istante in cui la voce dice la parola (clampato prima dell'ultimo elemento), `V.plan(blocco, n)` = tagli delle slide ai confini delle frasi, `frozen(fn)` = tutto fermo dall'80%. Esempio: `video8-bills-after-65/code/v8b1.py`.
-- Verifica fatta (10/10): 80% = ultimo elemento completo, dopo l'81% fotogrammi identici (nessun elemento si muove).
+- Nel codice del blocco: `V = Voice('sync.json')`, `tm('parola')` = istante in cui la voce dice la parola (clampato prima dell'ultimo elemento), `V.plan(blocco, n)` = tagli delle slide ai confini delle frasi, `frozen(fn)` = elementi e testi fermi dall'80%, MA sfondo e particelle dietro continuano a muoversi (`stage_live`). Esempio: `video8-bills-after-65/code/v8b1.py`.
+- Verifica fatta (10/10): 80% = ultimo elemento completo; dopo l'81% gli elementi restano identici (posizioni uguali al fotogramma finale) e solo lo sfondo (banconote, monete, punti) continua a muoversi. Errore corretto: la prima versione congelava anche lo sfondo, e l'utente ha detto che non si muoveva niente dietro.

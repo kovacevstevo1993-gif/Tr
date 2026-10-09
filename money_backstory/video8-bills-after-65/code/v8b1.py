@@ -9,9 +9,14 @@ def tm(phrase, mx=None, mn=0.15):
     """istante della parola dal calcolo; mai oltre l'ultimo elemento (mx)"""
     return max(mn, min(V.at(CUE['blk'], phrase) - CUE['t0'], LASTP() - 0.3 if mx is None else mx))
 
+LIVE = {'t': 0.0}
+def stage_live(t, title, seed, size=60):
+    """sfondo e particelle sempre in movimento (tempo reale), titolo ed elementi sul tempo congelato"""
+    fr = base(LIVE['t']); fr = amb(fr, LIVE['t'], seed, 7, 55)
+    return title_layer(fr, title, t, size=size)
 # ---- SLIDE 1: "Born before 1962 ... stop, lower, or freeze a stack of bills" ----
 def s1(t):
-    fr = stage(t, 'BORN BEFORE 1962?', 81)
+    fr = stage_live(t, 'BORN BEFORE 1962?', 81)
     tc, tr = tm('born before', 3.0), tm('turned', 4.6)
     tb = tm('right', LASTP() - 1.6)
     tags = [tm('stop', LASTP() - 0.95), tm('lower', LASTP() - 0.65), tm('freeze', LASTP() - 0.35)]
@@ -40,7 +45,7 @@ def s1(t):
 # ---- SLIDE 2: "still paying every single one ... nobody will call you to say stop" ----
 BILLS = ['PROPERTY TAX', 'TAX ON SOCIAL SECURITY', 'INCOME TAX', 'MEDICARE PART B']
 def s2(t):
-    fr = stage(t, 'YOU MAY STILL BE PAYING THEM', 82, 58)
+    fr = stage_live(t, 'YOU MAY STILL BE PAYING THEM', 82, 58)
     t0 = tm('paying', 3.0); rows = [t0 + 0.55 * k for k in range(4)]
     for k, (nm, tk) in enumerate(zip(BILLS, rows)):
         if t > tk:
@@ -59,7 +64,9 @@ def s2(t):
 from v4b2_10 import cal_card
 def frozen(fn):
     """tutto fermo dall'80% (regola dell'utente 10/10): dopo l'80% il tempo si ferma, nessun elemento si muove"""
-    return lambda t: fn(min(t, 0.8 * D()))
+    def w(t):
+        LIVE['t'] = t; return fn(min(t, 0.8 * D()))
+    return w
 SLIDES = {1: [frozen(s1), frozen(s2)]}
 if __name__ == '__main__':
     SPEC = {1: V.plan(1, 2)}
