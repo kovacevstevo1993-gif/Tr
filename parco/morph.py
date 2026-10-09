@@ -10,9 +10,9 @@ from PIL import Image, ImageFilter
 HERE = os.path.dirname(os.path.abspath(__file__))
 CW, CH = 760, 1180
 AX, AY = 380, 1120
-K = 6
-TARGET_H = {"mouse": 640, "chip": 600, "spike": 560}   # altezza (px) del personaggio in posa 'tiene' alla scala 1
-CACHE = "/tmp/claude-0/morph_cache"
+K = 8
+TARGET_H = {"mouse": 640, "chip": 600, "spike": 560, "ele": 660}   # altezza (px) del personaggio in posa 'tiene' alla scala 1
+CACHE = "/tmp/claude-0/morph_cache8s"
 os.makedirs(CACHE, exist_ok=True)
 _al = {}
 
@@ -77,6 +77,9 @@ def _remap(img, flow, k):
     yy, xx = np.mgrid[0:CH, 0:CW].astype(np.float32)
     return cv2.remap(img, xx - k * flow[..., 0], yy - k * flow[..., 1], cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
 
+def SHARP(t):
+    u = min(1.0, max(0.0, (t - 0.44) / 0.12)); return u * u * (3 - 2 * u)
+
 def _build(chi, A, B):
     a, b = aligned(chi, A), aligned(chi, B)
     fab, fba = _flow(a, b), _flow(b, a)
@@ -84,7 +87,8 @@ def _build(chi, A, B):
     for i in range(K):
         t = (i + 1) / (K + 1)                       # istanti interni (A e B esclusi)
         wa = _remap(pa, fab, t); wb = _remap(pb, fba, 1 - t)
-        m = wa * (1 - t) + wb * t
+        w = SHARP(t)                                  # niente doppia esposizione: A fino a metà, B dopo, sfumatura stretta al centro
+        m = wa * (1 - w) + wb * w
         al = np.clip(m[..., 3:4], 1, 255)
         rgb = np.clip(m[..., :3] / al * 255.0, 0, 255)
         a2 = np.clip((m[..., 3:4] / 255.0) * 1.9, 0, 1) ** 0.8 * 255.0     # riempie le zone 'fantasma' (alpha parziale)
