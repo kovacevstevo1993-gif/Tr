@@ -109,3 +109,8 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 - DOPO il 14/10/2026: fare un NUOVO video sul COLA 2027 con i numeri ufficiali e contenuti diversi dal video 6 (deciso dall'utente). Vedi RICERCHE-E-DECISIONI-05-10.md.
 - Aperto: titolo con "2027" (parola chiave) vs regola "senza anno".
 - Crediti vidIQ: 100 rimasti al 05/10 (chiedere prima di spenderli).
+
+## STATO AL 09/10/2026 (sera)
+- Canale: 3 iscritti, video 1-7 tra 1 e 78 view. Video 6: titolo cambiato dall'utente in "2027 Social Security COLA: 3.5% Raise? What You'll Actually Keep (Oct 14)". PLAYLIST: sul canale non ne esiste nessuna (la "Retirement After 50" non e' mai stata creata).
+- VIDEO 8 = "5 Bills You Don't Have To Pay After 65": cartella `video8-bills-after-65/` (RICERCA-E-STRATEGIA.md, PIANO-VIRALE.md, copione-video8.md, blocks.txt 47 blocchi, FONTI-VERIFICATE.md). Copione consegnato 09/10. Prossimo: voce + screenshot timeline, poi slide (modello-unico), miniatura, pacchetto.
+- vidIQ: saldo 10 (rinnovo 29/10). Ricerche in RICERCHE-VIDIQ-LOG.md e RICERCA-VIRALI-09-10.md.
