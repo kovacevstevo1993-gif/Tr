@@ -20,6 +20,11 @@ Tre canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 - In più, sempre: descrizione (riga Subscribe + Disclaimer). Il commento fissato NON ha il disclaimer (deciso il 04/10/2026): solo una domanda al pubblico.
 - Il disclaimer non protegge da YouTube: contano contenuto originale, dati verificati su fonti ufficiali, niente promesse di guadagno, niente persone/avatar AI che si presentano come esperti.
 
+## Regole valide per TUTTI i progetti (05/10/2026)
+- Controllare completamente ogni video/slide finito prima di consegnarlo (fotogrammi estratti a inizio, meta', 80%, fine; testo tagliato, sovrapposizioni, conteggio fotogrammi). Vale per tutti i canali.
+- Slide: l'ultimo elemento compare al 80% della durata della slide (non prima). Altre regole alla lettera in money_backstory/REGOLE-UTENTE-05-10.md.
+- Ogni regola nuova dell'utente va scritta subito nel repo, parola per parola.
+
 ## Come lavora l'utente
 - REGOLA ASSOLUTA (03/10/2026): rispondere SOLO a quello che chiede, il minimo. Niente spiegazioni, riepiloghi, tabelle, note, offerte o domande non richieste. Ogni parola in più spreca crediti e chat (non sono illimitati). Se chiede il pacchetto (titolo, descrizione, tag), dare solo quello.
 - REGOLA ASSOLUTA (ultima parola dell'utente, 06-07/10/2026, annulla il formato senza riquadri): i blocchi di voce / copioni vanno SEMPRE scritti direttamente in chat, ogni blocco in un suo RIQUADRO DI CODICE (```) da copiare con un tocco in CapCut. FORMATO ESATTO: riga con l'etichetta in grassetto **Blocco N**, subito sotto il riquadro ``` col solo testo del blocco, riga vuota tra un blocco e l'altro. Prima riga del messaggio: titolo in grassetto (es. **COSTCO – Video lungo 3**). NIENTE elenco numerato, NIENTE testo semplice fuori dai riquadri. Mandarli TUTTI in un colpo. MAI in un file.
