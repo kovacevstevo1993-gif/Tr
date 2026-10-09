@@ -2,7 +2,7 @@
 Modello virali (RICERCHE-VIDIQ.md 9b-9d): "5 Bills You Don't Have To Pay After 65" 2,09M, "5 Bills You Can Legally Stop Paying..." 401K, "Every Senior Must Do This Before October 1" 980K. Parole chiave vidIQ: "5 bills seniors" 9.592/mese conc. 22, "5 bills seniors should be" 21.779, "7 bills ... you may be paying more than required" 7.417 conc. 13. Niente tasse/Medicare/Social Security (canale separato).
 
 ## Dove va
-Playlist esistente "aiuti". Non creare ne cancellare nulla su YouTube.
+Playlist esistente "Help Programs for Seniors: Meals, Bills & More". Non creare ne cancellare nulla su YouTube.
 
 ## Titolo (77 caratteri)
 7 Bills Seniors Over 60 Can Lower Before Winter (Most Keep Paying Full Price)
@@ -59,7 +59,7 @@ bills seniors,bills seniors can lower,5 bills seniors,seniors over 60 bills,help
 Which of the 7 bills did you NOT know you could lower? Tell me below 👇 And save this video: programs and deadlines change, and I'll keep it updated.
 
 ## Impostazioni
-- Playlist "aiuti". Uso IA: No. Promozione a pagamento: No.
+- Playlist "Help Programs for Seniors: Meals, Bills & More". Uso IA: No. Promozione a pagamento: No.
 - Miniatura: 3 versioni in miniature/bollette-miniatura-a.png, -b.png, -c.png (codice code/thumb_long4.py). Per il test A/B caricarle con "Test e confronta".
 - Schermata finale negli ultimi 20 secondi (Subscribe + miglior video; il riquadro tratteggiato "WATCH NEXT" nella slide finale mostra dove metterli).
 - Parola chiave principale "bills seniors" nei primi 125 caratteri del titolo/descrizione.
