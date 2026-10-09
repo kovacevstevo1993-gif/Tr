@@ -68,3 +68,67 @@ Subscribe to The Money Backstory for more clear explanations of retirement for A
 
 ## Commento da fissare
 Which of the 5 things surprised you most: the Medicare Part B premium, or the tax lines that never move? Tell me below.
+
+
+## CORREZIONE 09/10/2026 (titolo e descrizione da sostituire su YouTube; la versione sopra resta come storico)
+Motivo: 'Cola' scritto come per la voce era finito nel titolo; la frase cercata e' '2027 Social Security COLA' (modello del video vincente di Profit Dissected, 40K view in 4 giorni).
+
+### Titolo nuovo
+2027 Social Security COLA: 3.5% Raise? What You'll Actually Keep (Oct 14)
+
+### Descrizione nuova
+2027 Social Security COLA: how much of the raise you will actually keep after Medicare Part B and taxes, and how the number is calculated, and where it really goes once Medicare Part B and taxes take their share. We use the early 3.5% estimate (not the official number) so you can follow the math.
+
+The Social Security Administration announces the 2027 cost-of-living adjustment (COLA) on October 14, 2026. In this video we follow Frank and Mary, two retirees who both receive the average check of $2,071 a month, through five things about your 2027 raise: what COLA is and how the number is picked, why a raise can feel smaller than your bills, what Medicare Part B takes before the money reaches you (and who the hold harmless rule does not protect), what happens with taxes, and the other numbers that change on the same day. At the end we put it all on one real check, and show you how to redo the math yourself with the official number.
+
+CHAPTERS
+0:00 Your 2027 raise: the hook
+0:28 Welcome: Frank and Mary
+0:54 The 5 things about your 2027 raise
+1:20 #1 What COLA is
+1:46 How the COLA formula works
+2:14 Last year's raise, step by step
+2:38 This year's estimate: about 3.5%
+3:04 The last raises: from 8.7% to zero
+3:33 #2 Why the raise feels smaller than your bills
+3:56 Buying power: about 13.7% less than in 2016
+4:20 Frank and Mary: the real numbers
+4:43 #3 Medicare Part B takes its share first
+5:11 Part B is almost 10% of your check
+5:32 The 2027 Part B projection
+5:55 Where the raise really goes
+6:20 The hold harmless rule
+6:42 Who is not protected
+7:14 #4 Taxes on Social Security
+7:48 The tax lines that never move
+8:13 Frank and Mary: who owes more
+8:44 #5 The other numbers that change the same day
+9:17 Your future benefit grows too
+9:40 When the raise starts
+9:58 Beware of COLA scams
+10:23 Putting it all together
+10:46 Twelve months: $785 vs the $864 headline
+11:18 Sources
+11:42 Recap of the 5 things
+12:11 Subscribe and watch next
+12:27 Disclaimer
+
+WATCH NEXT
+Social Security at 62 vs 70: The $124,800 Mistake (Exact Math)
+https://youtu.be/rPaLdR1E31s
+
+SOURCES
+Social Security Administration (ssa.gov): COLA formula and history of automatic COLA
+Bureau of Labor Statistics: CPI-W
+Centers for Medicare & Medicaid Services (cms.gov): 2026 Part B premium fact sheet
+2026 Medicare Trustees Report: 2027 Part B projection
+Internal Revenue Service, Publication 915: taxable Social Security benefits
+The Senior Citizens League: 2027 COLA estimate and buying power study
+The 3.5% raise and the $209.50 Part B premium are estimates, not official numbers. The official 2027 numbers may be different.
+
+DISCLAIMER
+This video is for education only and is not financial, legal, or tax advice. Frank and Mary are fictional examples. Rules, amounts and ages change and differ by location and plan. Always confirm with the official source before you rely on them. Your own benefit depends on your work record: check your personal numbers in your my Social Security account at ssa.gov.
+
+Subscribe to The Money Backstory for more clear explanations of retirement for Americans over 50.
+
+#SocialSecurity #2027COLA #Retirement
