@@ -1,0 +1,48 @@
+// ===== VIDEO 2 - BLOCCO 2 (341 fotogrammi = 11,37 s): il numero che nessuno guarda / un solo anno senza contributi =====
+const SB=[];const TOT=341/30;
+SB[0]={s:0,e:5.4,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'E NON È TUTTO');
+ o.st=el('g',{},g);stamp(o.st,'E NON È TUTTO!',760,RED_,80);
+ o.doc=el('g',{},g);docCard(o.doc,'ESTRATTO CONTO CONTRIBUTIVO',940,470,GRN,38);
+ o.rows=[0,1,2,3].map(i=>{const r=el('g',{},o.doc);
+  el('rect',{x:-420,y:-120+i*70,width:200,height:34,rx:17,fill:'#C3D3D7'},r);
+  el('rect',{x:-190,y:-120+i*70,width:380,height:34,rx:17,fill:'#D6F5EC'},r);
+  el('rect',{x:240,y:-132+i*70,width:170,height:58,rx:16,fill:i==2?'#FFF3C4':'#EEF4F5',stroke:i==2?AMB:'#C3D3D7','stroke-width':i==2?6:3},r);
+  if(i==2)txt(r,'?',325,-82+i*70+0,56,'#B23A28','900');return r;});
+ o.mag=el('g',{},g);magnifier(o.mag);
+ o.cap=el('g',{},g);cap(o.cap,'OGGI SCOPRI IL NUMERO CHE QUASI NESSUNO GUARDA',52);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ T(o.st,960,250,-4,pop(t,0.1,0.6));
+ T(o.doc,960,640,0,pop(t,0.9,1.6));
+ o.rows.forEach((r,i)=>op(r,seg(t,1.5+i*0.2,1.9+i*0.2)));
+ T(o.mag,lerp(1500,1325,eo3(seg(t,2.4,3.1))),lerp(300,665,eo3(seg(t,2.4,3.1))),0,pop(t,2.3,2.8));
+ T(o.cap,960,950,0,pop(t,0.3,0.9));
+ }};
+SB[1]={s:5.4,e:11.37,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'UN SOLO ANNO');
+ o.tiles=[0,1,2,3,4,5].map(i=>{const t=el('g',{},g);
+  el('rect',{x:-85,y:-80,width:170,height:160,rx:22,fill:'url(#g_paper)',filter:'url(#g_sh2)'},t);
+  el('rect',{x:-85,y:-80,width:170,height:44,rx:22,fill:GRN},t);el('rect',{x:-85,y:-56,width:170,height:20,fill:GRN},t);
+  txt(t,'ANNO '+(i+1),0,-46,30,'#fff','bold');
+  const c=el('g',{},t);c.setAttribute('transform','translate(0 28)');coinS(c,38);return t;});
+ o.hole=el('g',{},g);
+ el('rect',{x:-85,y:-80,width:170,height:160,rx:22,fill:'#FFE3DE',stroke:RED_,'stroke-width':8,'stroke-dasharray':'18 12'},o.hole);
+ txt(o.hole,'ANNO 4',0,-34,30,RED_,'bold');txt(o.hole,'0 €',0,48,64,RED_,'900');
+ o.ar=el('g',{},g);arrowDown(o.ar,RED_);
+ o.pc=el('g',{},g);
+ el('rect',{x:-330,y:-100,width:660,height:200,rx:36,fill:'url(#g_paper)',filter:'url(#g_sh)'},o.pc);
+ txt(o.pc,'PENSIONE OGNI MESE',0,-30,50,INK,'bold');txt(o.pc,'€ ▼ PIÙ BASSA',0,52,56,RED_,'900');
+ o.lf=el('g',{},g);tag(o.lf,'PER TUTTA LA VITA',560,RED_,'#fff',46);
+ o.cap=el('g',{},g);cap(o.cap,'UN SOLO ANNO SENZA CONTRIBUTI PESA PER TUTTA LA VITA',48);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ o.tiles.forEach((tl,i)=>{if(i==3){T(tl,960+(i-2.5)*250,330,0,0);}else T(tl,960+(i-2.5)*250,330,0,1.2*pop(t,0.1+i*0.15,0.6+i*0.15));});
+ const h=pop(t,1.7,2.2);T(o.hole,960+0.5*250,330,0,1.2*h*(1+0.04*Math.sin((t-2.2)*8)*(t>2.2?1:0)));
+ T(o.ar,1085,520,0,0.85*pop(t,2.5,3.0));
+ T(o.pc,960,660,0,pop(t,2.9,3.5));
+ T(o.lf,960,820,0,pop(t,3.8,4.4));
+ T(o.cap,960,950,0,pop(t,0.3,0.9));
+ }};

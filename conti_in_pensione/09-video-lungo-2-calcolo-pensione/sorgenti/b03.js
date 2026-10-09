@@ -1,0 +1,54 @@
+// ===== BLOCCO 3 (352 fotogrammi = 11,73 s): resta fino alla fine / test / controllo Mai Inps / una cosa importante =====
+const SB=[];const TOT=352/30;
+SB[0]={s:0,e:5.0,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'RESTA FINO ALLA FINE');
+ o.bar=el('g',{},g);
+ el('rect',{x:-600,y:-20,width:1200,height:40,rx:20,fill:'#0A3F45',stroke:LT,'stroke-width':3},o.bar);
+ o.fill=el('rect',{x:-594,y:-14,width:12,height:28,rx:14,fill:'url(#g_badge)'},o.bar);
+ txt(o.bar,'ORA',-600,-52,34,LT,'bold','middle');txt(o.bar,'FINE',600,-52,34,LT,'bold','middle');
+ o.flag=el('g',{},g);el('rect',{x:-6,y:-90,width:12,height:110,fill:'#fff'},o.flag);el('path',{d:'M6 -90 L90 -65 L6 -40Z',fill:RED_,stroke:'#fff','stroke-width':4},o.flag);
+ o.cards=[1,2,3].map(i=>{const c=el('g',{},g);
+  el('rect',{x:-190,y:-130,width:380,height:260,rx:28,fill:'url(#g_paper)',filter:'url(#g_sh)'},c);
+  el('rect',{x:-190,y:-130,width:380,height:70,rx:28,fill:GRN},c);el('rect',{x:-190,y:-90,width:380,height:30,fill:GRN},c);
+  txt(c,'DOMANDA '+i,0,-82,38,'#fff','bold');
+  el('rect',{x:-175,y:-20,width:165,height:70,rx:35,fill:'#2FBF9B'},c);txt(c,'VERO',-92,26,32,'#fff','bold');
+  el('rect',{x:10,y:-20,width:165,height:70,rx:35,fill:RED_},c);txt(c,'FALSO',92,26,32,'#fff','bold');return c;});
+ o.cap=el('g',{},g);cap(o.cap,"NELL'ULTIMA PARTE: UN TEST DI TRE DOMANDE",54);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ T(o.bar,960,300,0,pop(t,0.1,0.5));o.fill.setAttribute('width',12+1176*eio(seg(t,0.3,1.5)));
+ T(o.flag,1650,300,0,pop(t,1.2,1.7));
+ o.cards.forEach((c,i)=>T(c,[480,960,1440][i],600,0,0.95*pop(t,1.6+i*0.4,2.1+i*0.4)));
+ T(o.cap,960,950,0,pop(t,0.3,0.9));
+ }};
+SB[1]={s:5.0,e:8.3,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'CONTROLLO DA 5 MINUTI');
+ o.br=el('g',{},g);browser(o.br,'inps.it · Mai Inps',960,540);
+ o.r=[row(o.br,'Fascicolo previdenziale',0,-60,820,true),row(o.br,'Estratto conto contributivo',0,40,820,true),row(o.br,'Segnala un\'anomalia',0,140,820,true)];
+ o.ck=el('g',{},g);o.ring=el('circle',{r:110,fill:'#fff',stroke:'#0B4A50','stroke-width':10},o.ck);
+ o.arc=el('path',{fill:'none',stroke:'#1B9F81','stroke-width':22,'stroke-linecap':'round'},o.ck);txt(o.ck,'5',0,28,92,INK,'bold');txt(o.ck,'MIN',0,78,38,INK,'bold');
+ o.cap=el('g',{},g);cap(o.cap,'UN CONTROLLO DA CINQUE MINUTI SU MAI INPS',54);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ T(o.br,700,520,0,pop(t,0.1,0.7));
+ o.r.forEach((r,i)=>op(r,seg(t,0.7+i*0.3,1.0+i*0.3)));
+ T(o.ck,1620,520,0,pop(t,0.9,1.4));
+ const f=eio(seg(t,1.2,2.2));const a=f*Math.PI*2-Math.PI/2,R=80;o.arc.setAttribute('d',f<=0.01?'':`M0 ${-R} A${R} ${R} 0 ${f>.5?1:0} 1 ${R*Math.cos(a)} ${R*Math.sin(a)}`);
+ T(o.cap,960,950,0,pop(t,0.2,0.8));
+ }};
+SB[2]={s:8.3,e:11.73,build(g){const o={};
+ o.top=el('g',{},g);topLabel(o.top,'MA PRIMA');
+ o.w=el('g',{},g);warn(o.w);
+ o.tg=el('g',{},g);tag(o.tg,'UNA COSA IMPORTANTE',880,AMB,'#5A3300',58);
+ o.sp=ring(g,100);
+ o.cap=el('g',{},g);cap(o.cap,'MA PRIMA, UNA COSA IMPORTANTE',58);
+ this.o=o;},
+ update(t){const o=this.o;
+ T(o.top,960,100,0,1);
+ T(o.w,960,430,0,0.95*pop(t,0.2,0.8));
+ T(o.tg,960,760,0,pop(t,0.9,1.5));
+ const rr=seg(t,0.6,1.2);o.sp.setAttribute('r',lerp(60,300,rr));o.sp.setAttribute('opacity',t>0.6?(1-rr)*0.7:0);T(o.sp,960,430,0,1);
+ T(o.cap,960,950,0,pop(t,0.2,0.8));
+ }};

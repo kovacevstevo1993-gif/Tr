@@ -1,0 +1,39 @@
+<!doctype html><html><head><meta charset="utf-8"><style>svg{display:block}
+html,body{margin:0;background:#000}
+.t{font-family:'DejaVu Sans','Liberation Sans',Arial,sans-serif;font-weight:900}
+</style></head><body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<defs>
+<radialGradient id="bg" cx="0.7" cy="0.4" r="1"><stop offset="0" stop-color="#1E9096"/><stop offset="0.55" stop-color="#0D5158"/><stop offset="1" stop-color="#041F23"/></radialGradient>
+<linearGradient id="body" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#33464A"/><stop offset="0.5" stop-color="#5A7378"/><stop offset="1" stop-color="#2A3B3F"/></linearGradient>
+<radialGradient id="gr" cx="0.4" cy="0.3" r="0.8"><stop offset="0" stop-color="#9CFFD9"/><stop offset="0.5" stop-color="#25D08C"/><stop offset="1" stop-color="#0B7C54"/></radialGradient>
+<radialGradient id="ye" cx="0.4" cy="0.3" r="0.8"><stop offset="0" stop-color="#FFF3A8"/><stop offset="0.5" stop-color="#FFD43B"/><stop offset="1" stop-color="#C08A00"/></radialGradient>
+<radialGradient id="re" cx="0.4" cy="0.3" r="0.8"><stop offset="0" stop-color="#FFB3A3"/><stop offset="0.5" stop-color="#F0503A"/><stop offset="1" stop-color="#9E2112"/></radialGradient>
+<filter id="sh" x="-30%" y="-30%" width="170%" height="170%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#021A1D" flood-opacity="0.7"/></filter>
+<filter id="gl"><feGaussianBlur stdDeviation="14"/></filter>
+</defs>
+<rect width="1280" height="720" fill="url(#bg)"/>
+<circle cx="1000" cy="360" r="300" fill="#2FE0B5" opacity="0.18" filter="url(#gl)"/>
+<!-- semaforo -->
+<g transform="translate(900 40)" filter="url(#sh)">
+<rect x="0" y="0" width="230" height="640" rx="56" fill="url(#body)" stroke="#9BF0DB" stroke-opacity="0.5" stroke-width="5"/>
+<rect x="18" y="18" width="194" height="604" rx="42" fill="#0A1C1F"/>
+<circle cx="115" cy="120" r="76" fill="url(#gr)" stroke="#fff" stroke-width="6"/>
+<circle cx="115" cy="320" r="76" fill="url(#ye)" stroke="#fff" stroke-width="6"/>
+<circle cx="115" cy="520" r="76" fill="url(#re)" stroke="#fff" stroke-width="6"/>
+<path d="M75 105 a48 48 0 0 1 60 -36" stroke="#fff" stroke-opacity="0.55" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M75 305 a48 48 0 0 1 60 -36" stroke="#fff" stroke-opacity="0.55" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M75 505 a48 48 0 0 1 60 -36" stroke="#fff" stroke-opacity="0.55" stroke-width="9" fill="none" stroke-linecap="round"/>
+<!-- simboli -->
+<path d="M78 122 L106 150 L156 92" stroke="#fff" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="115" y="352" class="t" font-size="96" text-anchor="middle" fill="#fff">?</text>
+<path d="M82 487 L148 553 M148 487 L82 553" stroke="#fff" stroke-width="20" stroke-linecap="round"/>
+</g>
+<!-- testi -->
+<g class="t" stroke="#06282C" stroke-width="14" stroke-linejoin="round" paint-order="stroke" text-anchor="start">
+<text x="50" y="210" font-size="104" fill="#FFD43B">PENSIONE</text>
+<text x="50" y="330" font-size="104" fill="#FFD43B">A 64 ANNI:</text>
+<text x="50" y="480" font-size="120" fill="#FFFFFF">VERO</text>
+<text x="50" y="610" font-size="120" fill="#FFFFFF">O FALSO?</text>
+</g>
+</svg></body></html>
