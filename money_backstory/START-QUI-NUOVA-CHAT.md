@@ -114,3 +114,9 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 - Canale: 3 iscritti, video 1-7 tra 1 e 78 view. Video 6: titolo cambiato dall'utente in "2027 Social Security COLA: 3.5% Raise? What You'll Actually Keep (Oct 14)". PLAYLIST: sul canale non ne esiste nessuna (la "Retirement After 50" non e' mai stata creata).
 - VIDEO 8 = "5 Bills You Don't Have To Pay After 65": cartella `video8-bills-after-65/` (RICERCA-E-STRATEGIA.md, PIANO-VIRALE.md, copione-video8.md, blocks.txt 48 blocchi, FONTI-VERIFICATE.md). Copione consegnato 09/10. Prossimo: voce + screenshot timeline, poi slide (modello-unico), miniatura, pacchetto.
 - vidIQ: saldo 10 (rinnovo 29/10). Ricerche in RICERCHE-VIDIQ-LOG.md e RICERCA-VIRALI-09-10.md.
+
+## STATO AL 10/10/2026 (video 8, "5 Bills You Don't Have To Pay After 65")
+- Branch di lavoro della sessione: claude/youthful-mendel-ijbe7x. Tutto il progetto (14 branch) e' stato unito in main il 09/10 (PR #1); CLAUDE.md ha la sezione AVVIO con i file di ogni canale.
+- Slide FATTE e consegnate: blocchi 1-5 (10 MP4 in `video8-bills-after-65/slide/`), durate dagli screenshot in `TIMELINE.md`, codice `code/v8b1.py` + `code/v8b2_5.py`, tempi parola per parola in `sync.json` (calcolati con `modello-unico/calcola_sync.py`, NON serve l'audio). Copione 48 blocchi in `copione-video8.md`/`blocks.txt`.
+- Prossimo: l'utente manda lo screenshot della fine voce del blocco 6 (e seguenti); aggiungere la riga a `fine_blocchi.txt` e `TIMELINE.md`, rigenerare `sync.json`, scrivere le slide del blocco (stile: grafica pulita, NIENTE personaggi, elementi fermi dall'80% ma sfondo in movimento).
+- Regole nuove dell'utente 09-10/10: vedi in fondo a `REGOLE-UTENTE-05-10.md`.
