@@ -89,3 +89,7 @@
 - Il testo bianco che l'utente scrive in CapCut mentre registra la voce serve solo per segnare i blocchi: lo cancella. NON è la didascalia del video e NON va evitato nelle clip.
 - La didascalia visibile sta DENTRO la slide (titoletto in alto, grafica al centro, didascalia nel riquadro in basso), come nei video 1 e 2. Le clip dello short 4 con la didascalia in basso (commit cad4b42) sono quelle GIUSTE.
 - (Errore di Claude del 05/10: aveva tolto la didascalia dalle clip e rifatto tutto: sbagliato, ripristinato.)
+
+## ISTRUZIONI UTENTE (05/10/2026, tag e miniatura short 4)
+- I TAG vanno riempiti fino a circa 500 caratteri (sotto il limite), non a metà: short 4 = 491 caratteri.
+- Miniatura dello short 4: deve attirare il click "per forza": `11-short-4-teaser-video-lungo-2/miniatura/miniatura-short4.png` (1080x1920).

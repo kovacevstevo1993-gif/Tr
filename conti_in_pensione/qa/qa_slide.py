@@ -33,7 +33,8 @@ with sync_playwright() as p:
     b=p.chromium.launch(executable_path='/opt/pw-browsers/chromium-1194/chrome-linux/chrome',args=['--no-sandbox'])
     pg=b.new_page(viewport={'width':W,'height':Hh});pg.on('pageerror',lambda e:print('ERR',e))
     pg.goto('file://'+html)
-    scenes=pg.evaluate("(typeof SB!=='undefined')?SB.map(s=>[s.s,s.e]):[]")
+    pg.evaluate('draw(%d,0)'%blk)   # le scene del blocco (S[blk].sb) si leggono dopo aver caricato il blocco
+    scenes=pg.evaluate("(typeof S!=='undefined'&&S[%d]&&S[%d].sb)?S[%d].sb.map(s=>[s.s,s.e]):((typeof SB!=='undefined')?SB.map(s=>[s.s,s.e]):[])"%(blk,blk,blk))
     data=[]
     for f in range(N):
         pg.evaluate('draw(%d,%f)'%(blk,f/30));data.append(pg.evaluate(JS))
