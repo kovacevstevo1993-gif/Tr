@@ -1,0 +1,113 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}svg{display:block}</style></head><body>
+<svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920"><defs>
+<radialGradient id="g_bg" cx="0.5" cy="0.35" r="0.95"><stop offset="0" stop-color="#1E9096"/><stop offset="0.5" stop-color="#0D5158"/><stop offset="1" stop-color="#041F23"/></radialGradient>
+<linearGradient id="g_paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE7EA"/></linearGradient>
+<linearGradient id="g_head" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FDDB7"/><stop offset="1" stop-color="#1B9F81"/></linearGradient>
+<linearGradient id="g_metal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8FA3A8"/><stop offset="0.45" stop-color="#F4F8F9"/><stop offset="1" stop-color="#7F9398"/></linearGradient>
+<linearGradient id="g_rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9BF0DB"/><stop offset="1" stop-color="#127F70"/></linearGradient>
+<linearGradient id="g_disc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3ECBAB"/><stop offset="1" stop-color="#0C5F5C"/></linearGradient>
+<linearGradient id="g_badge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE3BE"/><stop offset="1" stop-color="#159078"/></linearGradient>
+<linearGradient id="g_silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3F8F9"/><stop offset="1" stop-color="#9FB4B9"/></linearGradient>
+<linearGradient id="g_red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A63"/><stop offset="1" stop-color="#D23A25"/></linearGradient>
+<linearGradient id="g_spot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.0"/><stop offset="1" stop-color="#9BF0DB" stop-opacity="0.35"/></linearGradient>
+<clipPath id="cal"><rect x="190" y="200" width="420" height="420" rx="56"/></clipPath>
+<filter id="g_sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="26" stdDeviation="22" flood-color="#021A1D" flood-opacity="0.6"/></filter>
+<filter id="g_sh2" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#032226" flood-opacity="0.55"/></filter>
+<filter id="g_sh3" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#032226" flood-opacity="0.5"/></filter>
+<filter id="g_glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1080" height="1920" fill="url(#g_bg)"/>
+<g id="bok"></g><g id="cam"><g id="scene"></g></g>
+<rect id="vig" width="1080" height="1920" fill="none"/>
+</svg>
+<script>
+const LOGO_ART='<!-- calendar -->\n  <rect x="190" y="200" width="420" height="420" rx="56" fill="url(#g_paper)" filter="url(#g_sh)"/>\n  <g clip-path="url(#cal)">\n    <rect x="190" y="200" width="420" height="104" fill="url(#g_head)"/>\n    <rect x="190" y="200" width="420" height="10" fill="#FFFFFF" opacity="0.35"/>\n    <rect x="190" y="302" width="420" height="10" fill="#0B4A50" opacity="0.18"/>\n  <\/g>\n  <rect x="190" y="200" width="420" height="420" rx="56" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="3"/>\n  <!-- date grid -->\n  <g fill="#C3D3D7">\n    <g id="lrow">\n      <rect x="222" y="336" width="48" height="40" rx="10"/><rect x="292" y="336" width="48" height="40" rx="10"/><rect x="362" y="336" width="48" height="40" rx="10"/><rect x="432" y="336" width="48" height="40" rx="10"/><rect x="502" y="336" width="48" height="40" rx="10"/>\n    <\/g>\n    <use href="#lrow" y="62"/><use href="#lrow" y="124"/><use href="#lrow" y="186" opacity="0.9"/>\n  <\/g>\n  <rect x="222" y="336" width="48" height="40" rx="10" fill="#2FBF9B"/>\n  <!-- rings -->\n  <g filter="url(#g_sh3)">\n    <rect x="272" y="150" width="38" height="88" rx="19" fill="url(#g_metal)"/>\n    <rect x="490" y="150" width="38" height="88" rx="19" fill="url(#g_metal)"/>\n  <\/g>\n  <rect x="283" y="166" width="16" height="56" rx="8" fill="#0A3F45" opacity="0.85"/>\n  <rect x="501" y="166" width="16" height="56" rx="8" fill="#0A3F45" opacity="0.85"/>\n\n  <!-- coin -->\n  <g filter="url(#g_sh2)">\n    <circle cx="400" cy="462" r="112" fill="url(#g_rim)"/>\n  <\/g>\n  <circle cx="400" cy="462" r="112" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3"/>\n  <circle cx="400" cy="462" r="94" fill="url(#g_disc)"/>\n  <circle cx="400" cy="462" r="94" fill="none" stroke="#062E33" stroke-opacity="0.35" stroke-width="4"/>\n  <circle cx="400" cy="462" r="80" fill="none" stroke="#B5F5E4" stroke-opacity="0.55" stroke-width="2.5" stroke-dasharray="3 7"/>\n  <path d="M330 430 A78 78 0 0 1 430 388" fill="none" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>\n  <g filter="url(#g_sh3)" fill="none" stroke="#FFFFFF" stroke-width="17" stroke-linecap="round">\n    <path d="M437 425 A54 54 0 1 0 437 499"/>\n    <line x1="352" y1="450" x2="418" y2="450"/>\n    <line x1="352" y1="476" x2="418" y2="476"/>\n  <\/g>\n\n  <!-- coin stack -->\n  <g filter="url(#g_sh3)">\n    <ellipse cx="238" cy="648" rx="66" ry="22" fill="#6F878C"/>\n    <rect x="172" y="628" width="132" height="20" fill="#8AA1A6"/>\n    <ellipse cx="238" cy="628" rx="66" ry="22" fill="url(#g_silver)"/>\n    <ellipse cx="238" cy="612" rx="66" ry="22" fill="#6F878C"/>\n    <rect x="172" y="592" width="132" height="20" fill="#8AA1A6"/>\n    <ellipse cx="238" cy="592" rx="66" ry="22" fill="url(#g_silver)"/>\n    <ellipse cx="238" cy="592" rx="46" ry="13" fill="none" stroke="#5B7378" stroke-width="3" opacity="0.6"/>\n  <\/g>\n\n  <!-- check badge -->\n  <g filter="url(#g_sh2)"><circle cx="580" cy="606" r="66" fill="url(#g_badge)"/><\/g>\n  <circle cx="580" cy="606" r="66" fill="none" stroke="#FFFFFF" stroke-width="9"/>\n  <path d="M540 588 A48 48 0 0 1 600 552" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="7" stroke-linecap="round"/>\n  <g filter="url(#g_sh3)"><path d="M551 608 L573 631 L611 583" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><\/g>\n\n  <!-- sparkles -->\n  <g fill="#DFFBF3" opacity="0.85">\n    <path d="M650 200 l6 20 20 6 -20 6 -6 20 -6 -20 -20 -6 20 -6z"/>\n    <path d="M140 300 l4 13 13 4 -13 4 -4 13 -4 -13 -13 -4 13 -4z" opacity="0.7"/>\n  <\/g>\n';
+const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in (attrs||{}))e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const eo3=x=>1-Math.pow(1-x,3);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eob=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2);};
+function T(n,x,y,r,s){r=r||0;s=(s===undefined?1:s);n.setAttribute('transform','translate('+x+' '+y+') rotate('+r+') scale('+s+')');}
+function op(n,o){n.setAttribute('opacity',o);}
+const FONT='DejaVu Sans, Liberation Sans, Arial, sans-serif';
+function txt(p,s,x,y,size,fill,weight,anchor){const t=el('text',{x:x,y:y,'font-size':size,fill:fill,'font-family':FONT,'font-weight':weight||'bold','text-anchor':anchor||'middle'},p);t.textContent=s;return t;}
+function euro(p,cx,cy,s,color,sw){const g=el('g',{fill:'none',stroke:color,'stroke-width':(sw||17)*s,'stroke-linecap':'round'},p);
+ el('path',{d:`M${cx+37*s} ${cy-37*s} A${54*s} ${54*s} 0 1 0 ${cx+37*s} ${cy+37*s}`},g);
+ el('line',{x1:cx-48*s,y1:cy-12*s,x2:cx+18*s,y2:cy-12*s},g);
+ el('line',{x1:cx-48*s,y1:cy+14*s,x2:cx+18*s,y2:cy+14*s},g);return g;}
+function coin(p,cx,cy,r){const g=el('g',{},p);
+ el('circle',{cx:cx,cy:cy,r:r,fill:'url(#g_rim)'},g);
+ el('circle',{cx:cx,cy:cy,r:r,fill:'none',stroke:'#fff','stroke-opacity':.55,'stroke-width':r*0.027},g);
+ el('circle',{cx:cx,cy:cy,r:r*0.84,fill:'url(#g_disc)'},g);
+ el('circle',{cx:cx,cy:cy,r:r*0.71,fill:'none',stroke:'#B5F5E4','stroke-opacity':.55,'stroke-width':r*0.022,'stroke-dasharray':(r*.03)+' '+(r*.06)},g);
+ el('path',{d:`M${cx-r*.6} ${cy-r*.28} A${r*.7} ${r*.7} 0 0 1 ${cx+r*.16} ${cy-r*.6}`,fill:'none',stroke:'#fff','stroke-opacity':.4,'stroke-width':r*.06,'stroke-linecap':'round'},g);
+ euro(g,cx,cy,r/112,'#fff',17);return g;}
+function silverCoin(p,cx,cy,rx,ry,h){ // flat stacked coin (ellipse) with thickness
+ const g=el('g',{},p);
+ el('ellipse',{cx:cx,cy:cy+h,rx:rx,ry:ry,fill:'#6F878C'},g);
+ el('rect',{x:cx-rx,y:cy,width:rx*2,height:h,fill:'#8AA1A6'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,fill:'url(#g_silver)'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx*.68,ry:ry*.68,fill:'none',stroke:'#5B7378','stroke-width':2,opacity:.6},g);
+ return g;}
+function goldCoin(p,cx,cy,rx,ry,h){const g=el('g',{},p);
+ el('ellipse',{cx:cx,cy:cy+h,rx:rx,ry:ry,fill:'#127F70'},g);
+ el('rect',{x:cx-rx,y:cy,width:rx*2,height:h,fill:'#1A9C86'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,fill:'url(#g_rim)'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx*.68,ry:ry*.68,fill:'none',stroke:'#0B5A55','stroke-width':2,opacity:.5},g);
+ return g;}
+function paper(p,w,h,shadow){const g=el('g',{},p);
+ el('rect',{x:-w/2,y:0,width:w,height:h,rx:26,fill:'url(#g_paper)',filter:shadow===false?'':'url(#g_sh)'},g);
+ el('rect',{x:-w/2,y:0,width:w,height:h,rx:26,fill:'none',stroke:'#fff','stroke-opacity':.7,'stroke-width':3},g);
+ return g;}
+function metalRing(p,x,y,w,h){const g=el('g',{filter:'url(#g_sh3)'},p);
+ el('rect',{x:x-w/2,y:y,width:w,height:h,rx:w/2,fill:'url(#g_metal)'},g);
+ el('rect',{x:x-w*.2,y:y+h*.15,width:w*.4,height:h*.7,rx:w*.2,fill:'#0A3F45',opacity:.85},g);return g;}
+// cedolino rows
+function rows(p,labels,w,y0,gap,ink){const out=[];labels.forEach((l,i)=>{const y=y0+i*gap;
+ el('rect',{x:-w/2+40,y:y+gap-22,width:w-80,height:3,fill:'#C9D6D8'},p);
+ txt(p,l,-w/2+50,y+gap-38,32,ink||'#0B4A50','bold','start');
+ el('rect',{x:w/2-250,y:y+gap-66,width:200,height:30,rx:15,fill:'#BFD0D3'},p);out.push(y);});return out;}
+
+const g=document.getElementById('scene');
+const bok=document.getElementById('bok');
+for(let i=0;i<14;i++){el('circle',{cx:(i*173)%1080,cy:(i*311)%1920,r:30+((i*37)%70),fill:'#8FF5DC',opacity:.06+((i*13)%7)*0.01},bok);}
+function big(p,s,x,y,size,fill,sw){const t=txt(p,s,x,y,size,fill,'900');t.setAttribute('stroke','#04262B');t.setAttribute('stroke-width',sw||14);t.setAttribute('stroke-linejoin','round');t.setAttribute('paint-order','stroke');return t;}
+// titolo
+big(g,'PENSIONE 2027:',540,300,104,'#FFD43B',16);
+big(g,'SALE L’ETÀ!',540,462,150,'#FFFFFF',18);
+// carta
+const c=el('g',{},g);
+el('rect',{x:60,y:600,width:960,height:650,rx:50,fill:'url(#g_paper)',filter:'url(#g_sh)'},c);
+el('rect',{x:60,y:600,width:960,height:650,rx:50,fill:'none',stroke:'#fff','stroke-opacity':.8,'stroke-width':5},c);
+txt(c,'PENSIONE DI VECCHIAIA',540,700,44,'#1B9F81');
+el('rect',{x:140,y:728,width:800,height:4,fill:'#C9D6D8'},c);
+// 67 anni
+txt(c,'67',280,1030,300,'#0B4A50','900');
+txt(c,'ANNI',280,1135,66,'#1B9F81');
+// +
+const pl=el('g',{},c);txt(pl,'+',515,1005,150,'#E4412C','900');
+// mistero
+const mb=el('g',{filter:'url(#g_sh2)'},c);
+el('circle',{cx:800,cy:945,r:170,fill:'#FFB838'},mb);
+el('circle',{cx:800,cy:945,r:170,fill:'none',stroke:'#fff','stroke-width':10,'stroke-opacity':.9},mb);
+el('circle',{cx:800,cy:945,r:144,fill:'none',stroke:'#fff','stroke-width':4,'stroke-opacity':.5,'stroke-dasharray':'6 14'},mb);
+txt(mb,'???',800,975,130,'#5A3300','900');
+txt(mb,'MESI',800,1065,58,'#5A3300','900');
+// badge freccia su (rosso) in alto a destra
+const bd=el('g',{transform:'translate(960 620)'},g);
+el('circle',{r:92,fill:'url(#g_red)',stroke:'#fff','stroke-width':12,filter:'url(#g_sh2)'},bd);
+el('path',{d:'M0 -48 L-46 6 L-18 6 L-18 50 L18 50 L18 6 L46 6 Z',fill:'#fff'},bd);
+// badge calendario in alto a sinistra
+const cb=el('g',{transform:'translate(120 620)'},g);
+el('circle',{r:92,fill:'url(#g_badge)',stroke:'#fff','stroke-width':12,filter:'url(#g_sh2)'},cb);
+txt(cb,'2027',0,18,50,'#fff','900');
+// pill finale
+const pg=el('g',{transform:'translate(540 1385)'},g);
+el('rect',{x:-420,y:-82,width:840,height:164,rx:82,fill:'url(#g_red)',filter:'url(#g_sh)'},pg);
+el('rect',{x:-420,y:-82,width:840,height:164,rx:82,fill:'none',stroke:'#fff','stroke-width':8,'stroke-opacity':.9},pg);
+txt(pg,'TU CI RIENTRI?',0,30,84,'#fff','900');
+
+</script></body></html>

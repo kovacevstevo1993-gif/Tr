@@ -1,0 +1,65 @@
+KIT CANALE - CONTI IN PENSIONE (ricopiato dalle schermate della chat; le parti tagliate nelle schermate sono segnate)
+
+NOME CANALE
+Conti in Pensione
+
+HANDLE
+@ContiInPensione  (libero)
+Alternative libere: @ContiInPensioneIT, @PensioneSenzaSorprese
+@PensioneChiara = già preso
+
+DESCRIZIONE DEL CANALE
+Conti in Pensione: la pensione spiegata semplice, con i numeri giusti.
+
+Qui trovi le novità su pensioni e INPS: calcolo della pensione, pensione anticipata, età pensionabile, aumenti e rivalutazione, cedolino, fondi pensione, TFR e tasse sulla pensione. Ogni notizia viene controllata su fonti ufficiali (INPS, Ministero del Lavoro, MEF, Gazzetta Ufficiale) prima di essere pubblicata, senza allarmismi e senza titoli ingannevoli.
+
+Video chiari per chi sta per andare in pensione, per chi è già pensionato e per chi vuole sapere quanto prenderà.
+
+📌 Iscriviti e attiva la campanella per non perdere le novità sulle pensioni.
+
+⚠️ I contenuti sono informativi e non sono consulenza previdenziale, fiscale o legale. Per il tuo caso rivolgiti a un patronato, a un CAF o a un consulente abilitato, oppure controlla la tua posizione su inps.it (My IN... [TAGLIATO nella schermata: manca la fine della frase])
+
+PAROLE CHIAVE DEL CANALE (con le virgolette, come in YouTube) - [manca l'inizio dell'elenco, nella schermata si vede solo la parte finale]
+... pensioni "pensioni 2027" "calcolo pensione" "pensione anticipata" INPS "età pensionabile" "rivalutazione pensioni" "cedolino pensione" "fondo pensione" "pensione contributiva" "novità pensioni" "legge di bilancio 2027" "quando andrò in pensione" "pensione a 64 anni" TFR "assegno sociale" pensionati
+
+IMPOSTAZIONI
+- Paese: Italia
+- Lingua: italiano
+- Non per bambini
+- Categoria predefinita: Istruzione
+- Tag predefiniti: [NON visibili nelle schermate]
+- Descrizione predefinita video: [NON visibile nelle schermate]
+
+
+=== AGGIORNAMENTO (nuove schermate del 02/10/2026, dalla chat Cowork e da YouTube Studio) ===
+
+FINE DELLA DESCRIZIONE DEL CANALE (completata)
+... oppure controlla la tua posizione su inps.it (My INPS).
+
+PAROLE CHIAVE DEL CANALE (da YouTube Studio, 299/500 caratteri, come impostate)
+pensioni, pensioni 2027, calcolo pensione, pensione anticipata, INPS, età pensionabile, rivalutazione pensioni, cedolino pensione, fondo pensione, pensione contributiva, novità pensioni, legge di bilancio 2027, quando andrò in pensione, pensione a 64 anni, TFR, assegno sociale, pensionati
+(Il primo elemento "pensioni" è confermato dallo screenshot di Studio: l'elenco è quindi completo.)
+
+TAG PREDEFINITI
+pensioni, pensione INPS, calcolo pensione, pensione anticipata, novità pensioni 2027, età pensionabile, rivalutazione pensioni, cedolino pensione, INPS, pensionati
+(la parola dopo "pensione INPS," era coperta da un pulsante nello screenshot: "calco..." = "calcolo pensione")
+
+DESCRIZIONE PREDEFINITA DEI VIDEO (sotto il testo di ogni video) - la parte centrale è tagliata nelle schermate
+📌 Iscriviti a Conti in Pensione per capire la tua pensione con i numeri giusti.
+
+Fonti: inps.it · lavoro.gov.it · mef.gov.it
+
+⚠️ Contenuto informativo, non è consulenza previdenziale, [TAGLIATO: il resto della frase]
+
+[probabile blocco finale con gli hashtag, visto in una schermata:]
+#pensioni #INPS #pensione
+
+BANNER E LOGO
+- Testo banner: "PENSIONI SPIEGATE CON I NUMERI GIUSTI", sotto "Notizie controllate su INPS, Lavoro e MEF".
+- Logo (immagine profilo) caricata su YouTube: calendario con euro e spunta verde su fondo verde acqua. (Nel kit Claude aveva descritto un monogramma "CP" blu scuro con euro dorato: la versione poi usata è quella con il calendario.)
+- Nessuna promessa tipo "ogni settimana".
+
+STATO SU YOUTUBE (screenshot del 02/10/2026)
+- Canale impostato: nome, handle @ContiInPensione, banner, logo, descrizione, parole chiave.
+- Short 1 "Pensione di ottobre 2026: controlla il cedolino prima della cifra": dopo 1 giorno e 18 ore, 1,4K visualizzazioni, 71,8% di visualizzazione media, 9 mi piace, 0 commenti.
+- Link del canale: ancora da aggiungere.

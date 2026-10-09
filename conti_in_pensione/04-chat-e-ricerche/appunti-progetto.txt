@@ -1,0 +1,16 @@
+APPUNTI DEL PROGETTO (decisioni e regole fisse)
+- Canale: Conti in Pensione (@ContiInPensione), pensioni e previdenza INPS per over 55 italiani. Nicchia scelta il 29/09/2026 dopo ricerca su SEO, parole chiave e dati vidIQ.
+- Distinto da The Money Backstory (USA) e dagli altri canali. Logo diverso da tutti gli altri, dettagliato, con ombre.
+- Tutte le notizie le cerco e le verifico io su fonti ufficiali; l'utente non controlla niente.
+- Descrizione di ogni video: sempre INTERA, pronta da incollare (testo + riga Iscriviti + disclaimer + hashtag).
+- Parole chiave/tag: separati da virgole.
+- Slide e grafica: le fa Claude con codice, gratis.
+- Niente crediti vidIQ senza chiedere prima (restavano circa 55 dei 60, rinnovo 29/10/2026).
+- Concorrente principale visto: Mr LUL lepaghediale (451.000 iscritti), video su cedolino/pensioni mese per mese, 50-170 mila visualizzazioni; titoli con numeri ("4 Novità"), "ANTEPRIMA", "ERRORE INPS", arretrati e 730.
+- Prossimi argomenti verificati nella ricerca: rivalutazione 2027, requisiti 2027, manovra (vedi riassunto in chat-conservata-e-riassunto.md).
+
+SCHERMATE vidIQ (ricerche fatte all'inizio della chat, salvate in schermate-vidiq/)
+1. Outlier "pensione": video che superano di molto il loro canale (es. 100x+).
+2. Outlier "bonus INPS assegno ISEE legge 104 invalidità": es. "Legge 104 e novità della riforma sulla disabilità", 96,7 mila visualizzazioni.
+3. Parole chiave "pensione" (ricerche mensili): calcolo pensione 9.819, pianeta pensione 9.677, pensione anticipata 8.806 ...
+4. "pensione anticipata": punteggio 62, 8.806 ricerche al mese, concorrenza BASSA.
