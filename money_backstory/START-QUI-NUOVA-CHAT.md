@@ -13,6 +13,14 @@ Se sei un Claude in una chat nuova: leggi questo file, poi `CLAUDE.md` (regole p
 - `senior_advantage/`: ALTRO canale, separato. Non mescolare.
 
 
+## STATO AL 09/10/2026 (fine sessione "video 7 pubblicazione")
+- VIDEO 7: testi di pubblicazione FATTI (`kit-02-10/07-testi-pubblicazione/video7-500k.md`: titolo, descrizione con capitoli, tag, commento). Caricato su YouTube (id qdiX3Ul7sgk), programmato 08/10 13:45 UTC. MINIATURE: 3 prove fatte a codice in `miniature_video7/` (A rosso/verde "$500,000 -> $1,625", B barre "-$1,423", C cinque numeri col 4 "?"): l'utente NON ha ancora scelto/approvato. Codice `code/thumbs_video7.py`. Da fare: schermata finale -> video 1 e playlist "Retirement After 50" (verificare con l'utente se gia' fatte).
+- VIDEO 6 "2027 Cola" (XvE5qqQJg00): pubblico dal 06/10, 0 visualizzazioni dopo 33 ore; la miniatura A/B resta da approvare (l'utente ha un test miniature in corso con 3 versioni). Dopo il 14/10: nuovo video Cola con i numeri ufficiali.
+- ELENCO RICERCHE vidIQ GIA' FATTE (non ripeterle, costano): `RICERCHE-VIDIQ-LOG.md`. Saldo 10 crediti.
+- MODELLO UNICO + SINCRONIA VOCE per i video nuovi (dall'8): `modello-unico/` (MODELLO-UNICO.md). Servono: audio della voce + screenshot timeline. Mai stimare i tempi.
+- REGOLE NUOVE DELL'UTENTE 06-07/10 (alla lettera in `REGOLE-UTENTE-05-10.md`): non ripetergli cio' che sa; domanda = solo risposta, nessuna iniziativa; rispondere solo a quello che chiede; non stimare mai, calcolare; risolvere i problemi da soli; blocchi 2-5 del video 7 NON si rifanno; niente vidIQ senza ordine.
+- Scarsa fiducia dell'utente: risposte cortissime, nessuna scusa, niente spiegazioni non chieste.
+
 **MODELLO UNICO (06/10): per i video NUOVI (dall'8) usare SOLO `money_backstory/modello-unico/` (modello_unico.py + MODELLO-UNICO.md). Video 1-7 non si rifanno.**
 
 ## STATO AL 06/10/2026 (fine sessione "video 7")
