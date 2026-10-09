@@ -1,0 +1,12 @@
+# VIDEO 8 - fonti verificate (09/10/2026)
+- Property tax: esenzioni variano per stato. Texas: con l'esenzione 65+ le tasse scolastiche sul homestead non possono aumentare finche' possiedi e vivi nella casa (comptroller.texas.gov, Property Tax Exemptions; modulo 50-272 School Tax Ceiling).
+- Tasse Social Security: soglie $25.000/$32.000 (legge 1983, dal 1984) e $34.000/$44.000 (legge 1993, dal 1994), mai indicizzate (CRS R48613; IRS Pub. 915). Provisional income = altri redditi + 1/2 SS. Assegno medio $2.071 x12 = $24.852, meta' $12.426.
+- Stati che tassano la SS nel 2026: 8 (CO, CT, MN, MT, NM, RI, UT, VT) (Kiplinger 2026; West Virginia esente dal 2026).
+- 2026 (IRS Rev. Proc. 2025-32): standard deduction $16.100 single / $32.200 coppia; aggiuntiva 65+ $2.050 single / $1.650 per coniuge; scaglione 10% coppia fino a $24.800, 12% fino a $100.800.
+- Senior deduction (P.L. 119-21, IRS Schedule 1-A, Pub. 554, Topic 551): $6.000 a persona ($12.000 coppia), 2025-2028, anche con itemized, riduzione 6% del MAGI sopra $75.000/$150.000, zero a $175.000/$250.000; SSN valido; coppie devono fare dichiarazione congiunta. Per il 2025: nati prima del 2/1/1961 (per il 2026: prima del 2/1/1962).
+- Calcolo Frank e Mary (coppia, 66 anni, SS $43.200/anno, IRA $40.000): provisional $61.600; SS tassabile $20.960; AGI $60.960. Tassa: solo standard $32.200 -> $2.955,20; +$3.300 -> $2.559,20; +$12.000 -> $1.346,00. Risparmio $1.609,20 (verificato con codice).
+- Medicare 2026 (CMS fact sheet): Part B $202,90/mese (coppia $4.869,60/anno); deducibile $283; IRMAA primo scaglione +$81,20/mese (= $974,40/anno) sopra $109.000 single / $218.000 coppia (MAGI 2024) (SSA POMS HI 01101.020).
+- Medicare Savings Programs 2026 (SSA POMS HI 00815.023, medicare.gov): QMB $1.350/$1.824, SLMB $1.616/$2.184, QI $1.816/$2.455 al mese; risorse $9.950/$14.910; alcuni stati limiti piu' alti o niente test sui risparmi (NCOA). MSP = Extra Help automatico (medicare.gov Deemed Status Notice).
+- SSA-44: eventi che cambiano la vita (stop o riduzione lavoro, perdita pensione, morte del coniuge, matrimonio, divorzio...) (ssa.gov/forms/ssa-44.pdf).
+- W-4V: ritenuta su Social Security 7%, 10%, 12% o 22% (ssa.gov, irs.gov). Pensione: W-4P.
+- SHIP: consulenza Medicare gratuita (shiphelp.org).

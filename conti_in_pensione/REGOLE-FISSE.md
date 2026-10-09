@@ -89,3 +89,89 @@
 - Il testo bianco che l'utente scrive in CapCut mentre registra la voce serve solo per segnare i blocchi: lo cancella. NON è la didascalia del video e NON va evitato nelle clip.
 - La didascalia visibile sta DENTRO la slide (titoletto in alto, grafica al centro, didascalia nel riquadro in basso), come nei video 1 e 2. Le clip dello short 4 con la didascalia in basso (commit cad4b42) sono quelle GIUSTE.
 - (Errore di Claude del 05/10: aveva tolto la didascalia dalle clip e rifatto tutto: sbagliato, ripristinato.)
+
+## ISTRUZIONI UTENTE (05/10/2026, tag e miniatura short 4)
+- I TAG vanno riempiti fino a circa 500 caratteri (sotto il limite), non a metà: short 4 = 491 caratteri.
+- Miniatura dello short 4: deve attirare il click "per forza": `11-short-4-teaser-video-lungo-2/miniatura/miniatura-short4.png` (1080x1920).
+
+## ISTRUZIONI UTENTE (06/10/2026, video lungo 3)
+- Video lungo 3 = RIVALUTAZIONE 2027 (scelto dall'utente). Prefisso file: V3-blocco01.mp4...
+- Fare ricerche su vidIQ su TUTTO (utente le ha ordinate: crediti ok): come lavorano gli altri su argomenti simili, come sono strutturati, video virali della nicchia pensioni, per far diventare virale anche il nostro.
+- Il video deve essere più PROFESSIONALE, più CURIOSO e spiegato BENISSIMO, sia con le slide sia con la voce.
+- (utente, 06/10/2026) Dopo le ricerche sugli altri canali/vidIQ, deve dire CLAUDE se il copione va bene e correggerlo da solo in base alla ricerca: NON chiedere all'utente "va bene?". L'utente ha fatto fare le ricerche apposta. Il copione va confrontato con i video virali: numeri/risposta subito, poi spiegazione.
+- (utente, 06/10/2026) Le chat non vanno riempite inutilmente: risposte corte; quando la chat è piena si passa a una nuova con kit e messaggio di ripartenza.
+
+## REGOLA N.8 (utente, 06/10/2026): OGNI CHAT NUOVA DEVE SAPERE GIA' TUTTO DEL PROGETTO, DALLA A ALLA Z
+- Se un file/kit/chat non e' tra gli allegati, trovarlo DA SOLI (rami del repo `git fetch` + `git ls-tree`, tool list_sessions/list_events) e leggerlo; mai dire "non l'ho ricevuto" e aspettare. L'utente non deve rimandare niente.
+- Dal 06/10/2026 TUTTO il progetto sta in questo ramo (`claude/trusting-mendel-d1bg54`, cartella conti_in_pensione/): cartelle 00-12 (canale, short 1-4, video lungo 1-3, kit, sorgenti, qa), chat intere in `07-KIT-COMPLETO/chat/chat-completa.md` (chat 0), `10-KIT-COMPLETO-V2/chat/` (chat 1 e 2), `12-KIT-05-10/chat-sessione-3-completa.md`, `chat/chat-sessione-4-completa.md`; stato in `12-KIT-05-10/00-LEGGIMI-PRIMA.md` + `STATO-06-10-2026.md`. Il vecchio branch con tutto: youthful-einstein (00-07), wizardly-galileo (06,08,09,10), new-session-79n9mt (09,11,12-KIT), eager-davinci (video 3).
+- Quando i blocchi del copione sono richiesti: rimandarli SEMPRE in chat, numerati, ognuno nel suo riquadro.
+
+## REGOLA N.9 (utente, 07/10/2026, video 3): SLIDE SINCRONIZZATE ALLA VOCE, CAPIBILI, CONTROLLO TOTALE
+- Blocchi 1-5 del video 3 (V3-blocco01..05.mp4): l'utente dice "le lasciamo cosi'", NON rifarli.
+- Le altre clip (dal blocco 6) devono avere i tempi calcolati sulla VELOCITA' DELLA VOCE: ogni elemento compare quando la voce dice quella parola/frase (velocita' reale ~16-17 caratteri al secondo, ricavata dal testo del blocco e dalla durata dello screenshot, con pause alle virgole e ai punti). Mai slide troppo veloci: ogni cosa ferma e leggibile mentre la voce ne parla, e tutto FINITO prima che la voce passi alla frase dopo.
+- Le slide devono SPIEGARE (calcoli passo passo, schemi, esempi che si capiscono), non solo oggetti che volano qua e la'. Migliorare, non semplificare.
+- Gli screenshot arrivano 5 alla volta fino al blocco 30: si costruiscono TUTTI i blocchi insieme (render in parallelo), controllo COMPLETO su tutti i fotogrammi (QA automatico + guardare, non solo ogni mezzo secondo). Lavorare da professionista, niente a meta'.
+
+## ISTRUZIONI UTENTE (07/10/2026, video 3 - tempi dei blocchi)
+- Gli screenshot danno le durate: ogni blocco parte dalla fine del precedente. Se l'utente corregge lo screenshot di un blocco (es. blocco 40: fine 09:40+1f, 500 fotogrammi), cambia SOLO la durata di quel blocco; le durate degli altri restano quelle dei loro screenshot (l'utente sposta i blocchi sulla timeline). Il blocco 41 resta di 417 fotogrammi.
+- Il segno sotto la riga bianca del cursore e' il fotogramma; se la riga e' tra due segni si arrotonda per eccesso.
+
+## ISTRUZIONI UTENTE (07/10/2026, short 5)
+- Video lungo 3 PUBBLICATO (07/10: 747 visualizzazioni in poche ore, e' "esploso" quella mattina; video 1: 314, video 2: 34). Tutto il resto e' pubblicato.
+- Appena un video/short e' finito, l'utente lo PROGRAMMA subito: non dire "da pubblicare il giorno dopo", pacchetto pronto subito dopo le clip.
+- SHORT 5 = teaser del video lungo 3 (nomi file S5-blocco01.mp4...). Obiettivo: curiosita' che porta nel video lungo, iscrizione e mi piace (chiusura: "tocca il video correlato, guardalo, iscriviti e metti mi piace"). "Video correlato" = video lungo 3. Gancio diverso dagli altri short. Informarsi prima (dati pubblici YouTube gratis con curl, niente crediti vidIQ).
+- (07/10/2026) Short 5: 6 clip S5-blocco01..06.mp4 fatte e controllate (QA su tutti i fotogrammi OK, 1080x1920, 30 fps, 1774 fotogrammi = 59,1 s). Cartella 13-short-5-teaser-video-lungo-3 (clip, sorgenti, DURATE.txt, copione-blocchi.txt). Da fare: miniatura e pacchetto.
+- (07/10/2026) Le clip si mandano come FILE MP4 SINGOLI (S5-blocco01.mp4...), MAI in uno zip. Errore di Claude sullo short 5: mandato uno zip; l'utente non l'ha accettato.
+
+## REGOLA N.10 (utente, 07/10/2026): RILEGGERE REGOLE-FISSE.md SEMPRE, AD OGNI MESSAGGIO
+- Non "dalla prossima consegna": ad OGNI messaggio dell'utente, PRIMA di fare o rispondere qualsiasi cosa, rileggere REGOLE-FISSE.md (e CLAUDE.md) e applicarlo. Sempre, senza eccezioni.
+
+## OSSERVAZIONE UTENTE (07/10/2026, video 3 - visualizzazione media)
+- Video 3: va forte ma la visualizzazione media e' 2:05 su 12:54. Ipotesi dell'utente: "diciamo subito tutto e se ne vanno". Controllo: 2:05 cade a fine capitolo "Il conto subito" (1:10-2:03); chi ha meno di ~2.450 euro ha la risposta li' e se ne va. Prima ci sono 70 s di promesse (blocchi 2-5) senza numeri.
+- PROPOSTA (non ancora decisa dall'utente) per i prossimi video: intro breve (~20 s), niente elenco di promesse, risposta tenuta per dopo con "cerchi aperti" (caso sorprendente da 3.000/4.000 euro prima, casi semplici da 1.000/1.500 piu' avanti, cifra finale a fine video). Da verificare con il grafico di fidelizzazione di YouTube Studio (da chiedere all'utente).
+
+## ISTRUZIONI UTENTE (07/10/2026, video lungo 4)
+- Video lungo 4: l'utente ha ordinato di CONTROLLARE e scegliere Claude l'argomento migliore ("scegli tu il migliore"). Scelto da Claude sui dati vidIQ: AUMENTO PENSIONI INVALIDITA' 2027 (pensioni invalidita' 4.399/mese conc. 28; aumento pensioni invalidita' 5.415/mese conc. 33; precedente Mr LUL 440k). Reversibilita' scartata (3.411/mese, conc. 39).
+- Non chiedere all'utente di scegliere tra due opzioni dopo una ricerca: scegliere e dirlo. Crediti vidIQ: ogni ricerca keyword costa 5 crediti; ora 0 (rinnovo 25/10).
+- Struttura del video 4 (vedi 12-.../analisi-fidelizzazione-07-10.md): 6-8 minuti, gancio 20 s con chicca finale, cerchi aperti, tesi forte, teaser finale. L'utente: "proviamo a farne uno cosi', poi vediamo come va".
+
+## REGOLA N.11 (utente, 07/10/2026): NIENTE SEMAFORI NELLE SLIDE
+- Dal PROSSIMO video (video lungo 4 in poi) non usare piu' i semafori (luci verde/giallo/rosso) nelle slide: "non ha senso e sembra per bambini". Usare altri elementi grafici seri (schede, tabelle, importi, calcoli, timbri, frecce). Valido anche per gli short.
+
+## REGOLA N.12 (utente, 07/10/2026): PIU' PROFESSIONALE MA SEMPRE COERENTE CON I VIDEO VECCHI (NON STRAVOLGERE)
+- Lo stile resta quello dei video vecchi (verde acqua, titoletto in alto, grafica al centro, didascalia nel riquadro in basso, stessi colori e stessa impostazione). NON stravolgere niente: si migliora e basta (regola n.1 e n.5).
+- Cambia SOLO questo: togliere gli elementi che sembrano da bambini (semafori e simili) e tenere un tono serio per adulti. Il resto della grafica resta coerente con short 1-5 e video lungo 1-3.
+- I video gia' fatti (short 1-5, video lungo 1-3) "vanno bene cosi'": non rifarli.
+- Vale dal video lungo 4 (V4-blocco01.mp4...) in poi.
+
+## REGOLA N.13 (utente, 07/10/2026): UNA DOMANDA = SOLO UNA RISPOSTA, MAI MODIFICHE
+- Se l'utente fa una DOMANDA (es. "45 centesimi incuriosisce?", "va bene cosi'?", "c'entra col canale?"), si risponde SOLO alla domanda. Non si riscrive, non si cambia, non si salva niente di nuovo nel lavoro. Si cambia solo se l'utente ORDINA di cambiare. (Errore del 07/10: dopo la domanda sul blocco 1 del video 4 ho riscritto il blocco senza ordine; ripristinato.)
+
+## REGOLA N.14 (utente, 07/10/2026): OGNI ELEMENTO SULLA PAROLA ESATTA DELLA VOCE
+- L'utente: "non riesci a calcolare parola per parola e fare le slide nel momento giusto? Perche' devo ripeterlo ogni video?". Le slide devono comparire esattamente sulla parola che la voce dice.
+- Il motore stima i tempi dal numero di caratteri (approssimato): NON basta. Per i tempi esatti serve l'AUDIO della voce: trascrivere/allineare l'audio parola per parola (vosk con modello italiano, scaricabile; whisper) e usare i tempi veri al posto della stima. Chiedere all'utente l'audio della voce (una volta, per tutto il video) invece di stimare.
+- Video 4: blocchi 1-5 consegnati con tempi stimati (da rifare con l'audio); blocchi 6-15 costruiti ma NON ancora renderizzati, in attesa dell'audio.
+- (07/10/2026) Errore di Claude: ho ri-renderizzato anche i blocchi 1-5 del video 4 senza ordine. Regola: i blocchi gia' consegnati NON si rifanno e NON si rimandano se l'utente non lo ordina. Restano validi i V4-blocco01..05.mp4 gia' consegnati (cartella clip/); dei nuovi render si consegnano solo i blocchi dal 6 in poi.
+
+## REGOLA N.15 (utente, 07/10/2026): SLIDE CAPIBILI: TUTTO FINITO ALL'80 % DELLA SLIDE, ANIMAZIONI NON VELOCI
+- L'utente (detto piu' di 10 volte): "le slide sono troppo veloci, devono essere capibili, e non finiscono all'80 % prima di finire la slide, cosi' si leggono".
+- REGOLA: in ogni slide (scena) tutti gli elementi devono essere COMPLETI e fermi entro l'80 % della durata della slide; il restante 20 % (almeno) resta tutto fermo per leggere. Se la voce arriva tardi su una parola, l'elemento compare un po' PRIMA ma sempre entro l'80 %.
+- Animazioni di comparsa lente (0,9 s, non 0,5 s). Dal video 4 il motore (b-sync.js, mkBlk) comprime i tempi di comparsa per rispettare l'80 %.
+- Vale dal PROSSIMO video (video 5 in poi). Il video 4 (blocchi 1-30) resta come e' (l'utente: "queste vanno bene"): NON rifare i blocchi 1-15, i blocchi 16-30 si fanno come i precedenti. Il motore con l'80 % e' salvato in 14-video-lungo-4-invalidita-2027/sorgenti/b-sync-80.js (da usare nel video 5 al posto di b-sync.js).
+
+## STATO 07-08/10/2026 - VIDEO LUNGO 4 FINITO (per la chat nuova)
+- Video 4 (invalidita' 2027, cartella 14-video-lungo-4-invalidita-2027): 30 clip V4-blocco01..30.mp4 fatte, controllate e consegnate; l'utente le ha montate. Pacchetto in 14-.../pacchetto.txt (titolo, descrizione con capitoli, tag 478 caratteri, commento da fissare, impostazioni): consegnato in chat, tutto in riquadri.
+- Titolo: "Invalidita' 2027: quanto aumenta DAVVERO? Importi e 3 trappole". NIENTE "45 centesimi" in titolo, descrizione e miniature (l'utente: "a chi interessano 45 centesimi?"). Il 45 centesimi resta solo dentro il video (blocchi 1 e 20-25).
+- Miniature video 4: 3 (A, B, C) in 14-.../miniatura/, nello STILE DEI VIDEO PUBBLICATI (video 1-3: sfondo verde acqua a raggi, numeri giganti con contorno scuro, palline rosso/verde con VS, striscia bianca con bordo giallo in basso, tag rosso ATTENZIONE, scheda/tabella verde). NON usare stile dei concorrenti (fasce blu, strisce gialle, testo stretto): l'utente le ha rifiutate come "non coerenti". Le versioni scartate sono in miniatura/vecchie-*.
+- Schermata finale del video 4: video lungo 3 (Pensioni 2027: quanto aumenta DAVVERO?), Iscriviti in basso a destra.
+- Prossimo: l'utente programma il video 4 subito. Poi (solo se ordinato) short 6 teaser del video 4 ("video correlato" = video 4), video 5 con motore b-sync-80.js e regola N.15. Video lungo 3: visualizzazione media 2:05 su 12:54; vedere proposte di fidelizzazione sopra.
+- ERRORI DA NON RIPETERE: fare cose non ordinate; copiare lo stile dei concorrenti invece di quello dei nostri video; mandare zip; scegliere angoli (45 centesimi) che non interessano al pubblico.
+- Chat intera di questa sessione (07-08/10/2026): conti_in_pensione/chat/chat-sessione-6-completa.md (testo intero, 160 messaggi; le chat 4 e 5 sono in chat/ e 12-KIT-05-10/). Messaggio per ripartire: leggere REGOLE-FISSE.md + CLAUDE.md + 14-.../pacchetto.txt, poi aspettare l'ordine.
+
+## ISTRUZIONI UTENTE (08/10/2026, short 6)
+- SHORT 6 = teaser del video lungo 4 (invalidita' 2027), "video correlato" = video 4. Didascalie che attirano curiosita' verso il video lungo; "migliora tutto, professionale, facile da capire". Cartella 15-short-6-teaser-video-lungo-4 (copione-blocchi.txt). Gancio diverso dagli short precedenti; niente 45 centesimi come angolo.
+- Risposte ai commenti YouTube: scritte con i NUMERI in cifre (non in lettere: non sono voce), in un riquadro.
+- (08/10/2026) Short 6: 6 clip S6-blocco01..06.mp4 fatte (QA OK su tutti i fotogrammi, 1080x1920, 30 fps, 1924 fotogrammi = 64,1 s; tempi sulla voce stimati a caratteri, tutto completo entro l'80% del blocco). Cartella 15-short-6-teaser-video-lungo-4 (clip, sorgenti, DURATE.txt, copione-blocchi.txt). Da fare: miniatura e pacchetto (solo se ordinati).
+- Risposte ai commenti offensivi (es. "SOMARI"): chiedere con gentilezza di moderare i termini, spiegando che il canale e' solo informativo: non decide e non paga le pensioni.
+- (09/10/2026) Miniature degli short: ogni short ha un LAYOUT DIVERSO dal precedente (stesso stile del canale), non lo stesso schema con altri numeri. L'utente ha rifiutato la miniatura dello short 6 uguale allo short 5 ("cambia solo 2 numeri"): rifatta con tag ATTENZIONE, INVALIDI 2027 gigante, scheda accompagnamento, timbro NON E' 3%.
+- (09/10/2026) MAI usare "INVALIDI" da solo come etichetta per le persone (es. "INVALIDI 2027" in miniatura): offensivo. Usare "INVALIDITÀ". Va bene dentro una frase descrittiva (es. "INVALIDI AL 100%").

@@ -1,0 +1,33 @@
+VIDEO 4 - fine blocco cumulativa (30 fps), letta dagli screenshot dell'utente 07/10/2026 (riga tra due segni = arrotondata per eccesso)
+Blocco 1: fine 00:16+3f = 483  -> durata 483
+Blocco 2: fine 00:29+6f = 876  -> durata 393
+Blocco 3: fine 00:41+13f = 1243 -> durata 367
+Blocco 4: fine 00:55+4f = 1654 -> durata 411
+Blocco 5: fine 01:09+9f = 2079 -> durata 425
+Blocco 6: fine 01:22+18f = 2478 -> durata 399
+Blocco 7: fine 01:34+22f = 2842 -> durata 364
+Blocco 8: fine 01:48+2f = 3242 -> durata 400
+Blocco 9: fine 02:01+1f = 3631 -> durata 389
+Blocco 10: fine 02:17+4f = 4114 -> durata 483
+Blocco 11: fine 02:31+1f = 4531 -> durata 417
+Blocco 12: fine 02:46+9f = 4989 -> durata 458
+Blocco 13: fine 02:58+14f = 5354 -> durata 365
+Blocco 14: fine 03:11+18f = 5748 -> durata 394
+Blocco 15: fine 03:26+20f = 6200 -> durata 452
+Blocco 16: fine 03:38+29f = 6569 -> durata 369
+Blocco 17: fine 03:53+15f = 7005 -> durata 436
+Blocco 18: fine 04:06+6f = 7386 -> durata 381
+Blocco 19: fine 04:20+15f = 7815 -> durata 429
+Blocco 20: fine 04:34+24f = 8244 -> durata 429
+Blocco 21: fine 04:48+9f = 8649 -> durata 405
+Blocco 22: fine 05:02+1f = 9061 -> durata 412
+Blocco 23: fine 05:17+3f = 9513 -> durata 452
+Blocco 24: fine 05:31+6f = 9936 -> durata 423
+Blocco 25: fine 05:44+28f = 10348 -> durata 412
+Blocco 26: fine 05:58+13f = 10753 -> durata 405
+Blocco 27: fine 06:11+4f = 11134 -> durata 381
+Blocco 28: fine 06:26+18f = 11598 -> durata 464
+Blocco 29: fine 06:38+27f = 11967 -> durata 369
+Blocco 30: fine 06:53+29f = 12419 -> durata 452  (video intero 12419 fotogrammi = 6:54)
+CLIP FATTE 07/10/2026: V4-blocco01..05.mp4 in clip/ (1920x1080, 30 fps, QA su tutti i fotogrammi OK). Sorgenti in sorgenti/ (specs-v4.js, build.py N, prev.py N, render.py N). Motore: quello del video 3 (sincronizzato alla voce).
+CLIP FATTE 07/10/2026: V4-blocco06..15.mp4 in clip/ (1920x1080, 30 fps, QA OK su tutti i fotogrammi, durate = fotogrammi attesi). Tempi di comparsa: modello calibrato su 69 blocchi reali (0,145 s/sillaba + pause di punteggiatura). I blocchi 1-5 consegnati prima restano quelli in clip/.

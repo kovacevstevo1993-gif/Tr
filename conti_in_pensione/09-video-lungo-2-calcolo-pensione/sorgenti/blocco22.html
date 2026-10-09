@@ -1,0 +1,549 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}svg{display:block}</style></head><body>
+<svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><defs>
+<radialGradient id="g_bg" cx="0.5" cy="0.35" r="0.95"><stop offset="0" stop-color="#1E9096"/><stop offset="0.5" stop-color="#0D5158"/><stop offset="1" stop-color="#041F23"/></radialGradient>
+<linearGradient id="g_paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE7EA"/></linearGradient>
+<linearGradient id="g_head" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FDDB7"/><stop offset="1" stop-color="#1B9F81"/></linearGradient>
+<linearGradient id="g_metal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8FA3A8"/><stop offset="0.45" stop-color="#F4F8F9"/><stop offset="1" stop-color="#7F9398"/></linearGradient>
+<linearGradient id="g_rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9BF0DB"/><stop offset="1" stop-color="#127F70"/></linearGradient>
+<linearGradient id="g_disc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3ECBAB"/><stop offset="1" stop-color="#0C5F5C"/></linearGradient>
+<linearGradient id="g_badge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE3BE"/><stop offset="1" stop-color="#159078"/></linearGradient>
+<linearGradient id="g_silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3F8F9"/><stop offset="1" stop-color="#9FB4B9"/></linearGradient>
+<linearGradient id="g_red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A63"/><stop offset="1" stop-color="#D23A25"/></linearGradient>
+<linearGradient id="g_spot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.0"/><stop offset="1" stop-color="#9BF0DB" stop-opacity="0.35"/></linearGradient>
+<clipPath id="cal"><rect x="190" y="200" width="420" height="420" rx="56"/></clipPath>
+<filter id="g_sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="26" stdDeviation="22" flood-color="#021A1D" flood-opacity="0.6"/></filter>
+<filter id="g_sh2" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#032226" flood-opacity="0.55"/></filter>
+<filter id="g_sh3" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#032226" flood-opacity="0.5"/></filter>
+<filter id="g_glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1920" height="1080" fill="url(#g_bg)"/>
+<g id="bok"></g><g id="cam"><g id="scene"></g></g>
+<rect id="vig" width="1920" height="1080" fill="none"/>
+</svg>
+<script>
+const LOGO_ART='<!-- calendar -->\n  <rect x="190" y="200" width="420" height="420" rx="56" fill="url(#g_paper)" filter="url(#g_sh)"/>\n  <g clip-path="url(#cal)">\n    <rect x="190" y="200" width="420" height="104" fill="url(#g_head)"/>\n    <rect x="190" y="200" width="420" height="10" fill="#FFFFFF" opacity="0.35"/>\n    <rect x="190" y="302" width="420" height="10" fill="#0B4A50" opacity="0.18"/>\n  <\/g>\n  <rect x="190" y="200" width="420" height="420" rx="56" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="3"/>\n  <!-- date grid -->\n  <g fill="#C3D3D7">\n    <g id="lrow">\n      <rect x="222" y="336" width="48" height="40" rx="10"/><rect x="292" y="336" width="48" height="40" rx="10"/><rect x="362" y="336" width="48" height="40" rx="10"/><rect x="432" y="336" width="48" height="40" rx="10"/><rect x="502" y="336" width="48" height="40" rx="10"/>\n    <\/g>\n    <use href="#lrow" y="62"/><use href="#lrow" y="124"/><use href="#lrow" y="186" opacity="0.9"/>\n  <\/g>\n  <rect x="222" y="336" width="48" height="40" rx="10" fill="#2FBF9B"/>\n  <!-- rings -->\n  <g filter="url(#g_sh3)">\n    <rect x="272" y="150" width="38" height="88" rx="19" fill="url(#g_metal)"/>\n    <rect x="490" y="150" width="38" height="88" rx="19" fill="url(#g_metal)"/>\n  <\/g>\n  <rect x="283" y="166" width="16" height="56" rx="8" fill="#0A3F45" opacity="0.85"/>\n  <rect x="501" y="166" width="16" height="56" rx="8" fill="#0A3F45" opacity="0.85"/>\n\n  <!-- coin -->\n  <g filter="url(#g_sh2)">\n    <circle cx="400" cy="462" r="112" fill="url(#g_rim)"/>\n  <\/g>\n  <circle cx="400" cy="462" r="112" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3"/>\n  <circle cx="400" cy="462" r="94" fill="url(#g_disc)"/>\n  <circle cx="400" cy="462" r="94" fill="none" stroke="#062E33" stroke-opacity="0.35" stroke-width="4"/>\n  <circle cx="400" cy="462" r="80" fill="none" stroke="#B5F5E4" stroke-opacity="0.55" stroke-width="2.5" stroke-dasharray="3 7"/>\n  <path d="M330 430 A78 78 0 0 1 430 388" fill="none" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>\n  <g filter="url(#g_sh3)" fill="none" stroke="#FFFFFF" stroke-width="17" stroke-linecap="round">\n    <path d="M437 425 A54 54 0 1 0 437 499"/>\n    <line x1="352" y1="450" x2="418" y2="450"/>\n    <line x1="352" y1="476" x2="418" y2="476"/>\n  <\/g>\n\n  <!-- coin stack -->\n  <g filter="url(#g_sh3)">\n    <ellipse cx="238" cy="648" rx="66" ry="22" fill="#6F878C"/>\n    <rect x="172" y="628" width="132" height="20" fill="#8AA1A6"/>\n    <ellipse cx="238" cy="628" rx="66" ry="22" fill="url(#g_silver)"/>\n    <ellipse cx="238" cy="612" rx="66" ry="22" fill="#6F878C"/>\n    <rect x="172" y="592" width="132" height="20" fill="#8AA1A6"/>\n    <ellipse cx="238" cy="592" rx="66" ry="22" fill="url(#g_silver)"/>\n    <ellipse cx="238" cy="592" rx="46" ry="13" fill="none" stroke="#5B7378" stroke-width="3" opacity="0.6"/>\n  <\/g>\n\n  <!-- check badge -->\n  <g filter="url(#g_sh2)"><circle cx="580" cy="606" r="66" fill="url(#g_badge)"/><\/g>\n  <circle cx="580" cy="606" r="66" fill="none" stroke="#FFFFFF" stroke-width="9"/>\n  <path d="M540 588 A48 48 0 0 1 600 552" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="7" stroke-linecap="round"/>\n  <g filter="url(#g_sh3)"><path d="M551 608 L573 631 L611 583" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><\/g>\n\n  <!-- sparkles -->\n  <g fill="#DFFBF3" opacity="0.85">\n    <path d="M650 200 l6 20 20 6 -20 6 -6 20 -6 -20 -20 -6 20 -6z"/>\n    <path d="M140 300 l4 13 13 4 -13 4 -4 13 -4 -13 -13 -4 13 -4z" opacity="0.7"/>\n  <\/g>\n';
+const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in (attrs||{}))e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const eo3=x=>1-Math.pow(1-x,3);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eob=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2);};
+function T(n,x,y,r,s){r=r||0;s=(s===undefined?1:s);n.setAttribute('transform','translate('+x+' '+y+') rotate('+r+') scale('+s+')');}
+function op(n,o){n.setAttribute('opacity',o);}
+const FONT='DejaVu Sans, Liberation Sans, Arial, sans-serif';
+function txt(p,s,x,y,size,fill,weight,anchor){const t=el('text',{x:x,y:y,'font-size':size,fill:fill,'font-family':FONT,'font-weight':weight||'bold','text-anchor':anchor||'middle'},p);t.textContent=s;return t;}
+function euro(p,cx,cy,s,color,sw){const g=el('g',{fill:'none',stroke:color,'stroke-width':(sw||17)*s,'stroke-linecap':'round'},p);
+ el('path',{d:`M${cx+37*s} ${cy-37*s} A${54*s} ${54*s} 0 1 0 ${cx+37*s} ${cy+37*s}`},g);
+ el('line',{x1:cx-48*s,y1:cy-12*s,x2:cx+18*s,y2:cy-12*s},g);
+ el('line',{x1:cx-48*s,y1:cy+14*s,x2:cx+18*s,y2:cy+14*s},g);return g;}
+function coin(p,cx,cy,r){const g=el('g',{},p);
+ el('circle',{cx:cx,cy:cy,r:r,fill:'url(#g_rim)'},g);
+ el('circle',{cx:cx,cy:cy,r:r,fill:'none',stroke:'#fff','stroke-opacity':.55,'stroke-width':r*0.027},g);
+ el('circle',{cx:cx,cy:cy,r:r*0.84,fill:'url(#g_disc)'},g);
+ el('circle',{cx:cx,cy:cy,r:r*0.71,fill:'none',stroke:'#B5F5E4','stroke-opacity':.55,'stroke-width':r*0.022,'stroke-dasharray':(r*.03)+' '+(r*.06)},g);
+ el('path',{d:`M${cx-r*.6} ${cy-r*.28} A${r*.7} ${r*.7} 0 0 1 ${cx+r*.16} ${cy-r*.6}`,fill:'none',stroke:'#fff','stroke-opacity':.4,'stroke-width':r*.06,'stroke-linecap':'round'},g);
+ euro(g,cx,cy,r/112,'#fff',17);return g;}
+function silverCoin(p,cx,cy,rx,ry,h){ // flat stacked coin (ellipse) with thickness
+ const g=el('g',{},p);
+ el('ellipse',{cx:cx,cy:cy+h,rx:rx,ry:ry,fill:'#6F878C'},g);
+ el('rect',{x:cx-rx,y:cy,width:rx*2,height:h,fill:'#8AA1A6'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,fill:'url(#g_silver)'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx*.68,ry:ry*.68,fill:'none',stroke:'#5B7378','stroke-width':2,opacity:.6},g);
+ return g;}
+function goldCoin(p,cx,cy,rx,ry,h){const g=el('g',{},p);
+ el('ellipse',{cx:cx,cy:cy+h,rx:rx,ry:ry,fill:'#127F70'},g);
+ el('rect',{x:cx-rx,y:cy,width:rx*2,height:h,fill:'#1A9C86'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,fill:'url(#g_rim)'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx*.68,ry:ry*.68,fill:'none',stroke:'#0B5A55','stroke-width':2,opacity:.5},g);
+ return g;}
+function paper(p,w,h,shadow){const g=el('g',{},p);
+ el('rect',{x:-w/2,y:0,width:w,height:h,rx:26,fill:'url(#g_paper)',filter:shadow===false?'':'url(#g_sh)'},g);
+ el('rect',{x:-w/2,y:0,width:w,height:h,rx:26,fill:'none',stroke:'#fff','stroke-opacity':.7,'stroke-width':3},g);
+ return g;}
+function metalRing(p,x,y,w,h){const g=el('g',{filter:'url(#g_sh3)'},p);
+ el('rect',{x:x-w/2,y:y,width:w,height:h,rx:w/2,fill:'url(#g_metal)'},g);
+ el('rect',{x:x-w*.2,y:y+h*.15,width:w*.4,height:h*.7,rx:w*.2,fill:'#0A3F45',opacity:.85},g);return g;}
+// cedolino rows
+function rows(p,labels,w,y0,gap,ink){const out=[];labels.forEach((l,i)=>{const y=y0+i*gap;
+ el('rect',{x:-w/2+40,y:y+gap-22,width:w-80,height:3,fill:'#C9D6D8'},p);
+ txt(p,l,-w/2+50,y+gap-38,32,ink||'#0B4A50','bold','start');
+ el('rect',{x:w/2-250,y:y+gap-66,width:200,height:30,rx:15,fill:'#BFD0D3'},p);out.push(y);});return out;}
+
+// ---------- helper short 2 ----------
+let UID=0;
+const AMB='#FFB838',INK='#0B4A50',GRN='#1B9F81',LT='#7FF0D2';
+function calendarPage(p,headTxt,bigTxt,bigSize,subTxt){
+ const g=el('g',{},p);const id='cc'+(++UID);
+ el('rect',{x:-232,y:6,width:464,height:566,rx:34,fill:'#C9D6D8'},g);
+ el('rect',{x:-230,y:0,width:460,height:560,rx:34,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);
+ const cp=el('clipPath',{id:id},g);el('rect',{x:-230,y:0,width:460,height:560,rx:34},cp);
+ const hg=el('g',{'clip-path':'url(#'+id+')'},g);
+ el('rect',{x:-230,y:0,width:460,height:130,fill:'url(#g_head)'},hg);
+ el('rect',{x:-230,y:0,width:460,height:10,fill:'#fff',opacity:.35},hg);
+ el('rect',{x:-230,y:128,width:460,height:8,fill:INK,opacity:.15},hg);
+ const head=txt(g,headTxt,0,86,46,'#FFFFFF');
+ const big=txt(g,bigTxt,0,bigSize>200?400:376,bigSize,INK);
+ const sub=txt(g,subTxt||'',0,478,46,GRN);
+ for(let i=0;i<14;i++)el('rect',{x:-200+i*30,y:512,width:16,height:4,rx:2,fill:'#B7C7CA'},g);
+ metalRing(g,-120,-44,36,92);metalRing(g,120,-44,36,92);
+ return {g,head,big,sub};}
+function plate(p,big,small){
+ const g=el('g',{},p);
+ el('rect',{x:-210,y:-150,width:420,height:300,rx:44,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);
+ el('rect',{x:-210,y:-150,width:420,height:300,rx:44,fill:'none',stroke:'#fff','stroke-opacity':.8,'stroke-width':4},g);
+ const b=txt(g,big,0,48,230,INK);
+ const s=txt(g,small,0,118,38,GRN);
+ return {g,b,s};}
+function dotsRow(p,n,y){const g=el('g',{},p);const a=[];
+ for(let i=0;i<n;i++){const c=el('circle',{cx:(i-(n-1)/2)*42,cy:y,r:15,fill:'#0A3F45',opacity:.55,stroke:'#7FF0D2','stroke-width':2},g);a.push(c);}
+ return {g,a};}
+function lightDot(d,on,k){ // k = pop 0..1
+ d.setAttribute('fill',on?AMB:'#0A3F45');d.setAttribute('opacity',on?1:.55);d.setAttribute('r',15+(on?9*Math.sin(clamp(k)*Math.PI):0));}
+function chip(p,label,w){w=w||300;const g=el('g',{},p);
+ el('rect',{x:-w/2,y:-46,width:w,height:92,rx:46,fill:AMB,filter:'url(#g_sh2)'},g);
+ el('rect',{x:-w/2,y:-46,width:w,height:92,rx:46,fill:'none',stroke:'#fff','stroke-width':5,'stroke-opacity':.85},g);
+ const t=txt(g,label,0,19,54,'#5A3300');return {g,t};}
+function warn(p){const g=el('g',{},p);
+ el('path',{d:'M0 -150 L170 130 Q182 152 158 152 L-158 152 Q-182 152 -170 130 Z',fill:'#fff',stroke:'#E4412C','stroke-width':28,'stroke-linejoin':'round',filter:'url(#g_sh)'},g);
+ txt(g,'!',0,104,210,'#0B2E33');return g;}
+function qBubble(p,r){const g=el('g',{},p);
+ el('circle',{cx:0,cy:0,r:r,fill:'url(#g_badge)',stroke:'#fff','stroke-width':8,filter:'url(#g_sh2)'},g);
+ txt(g,'?',0,r*.38,r*1.25,'#fff');return g;}
+function medal(p,female){const g=el('g',{},p);
+ el('circle',{cx:0,cy:0,r:190,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);
+ el('circle',{cx:0,cy:0,r:190,fill:'none',stroke:'#fff','stroke-width':6,'stroke-opacity':.8},g);
+ const cp='mc'+(++UID);const c=el('clipPath',{id:cp},g);el('circle',{cx:0,cy:0,r:176},c);
+ const ig=el('g',{'clip-path':'url(#'+cp+')'},g);
+ el('circle',{cx:0,cy:0,r:176,fill:'#E4F5F1'},ig);
+ if(female){
+  el('circle',{cx:0,cy:-52,r:84,fill:'#0B4A50'},ig); // capelli
+  el('path',{d:'M-84 -52 L-96 70 Q0 96 96 70 L84 -52 Z',fill:'#0B4A50'},ig);
+  el('path',{d:'M-60 176 L-46 40 L46 40 L60 176 Z',fill:GRN},ig);
+  el('path',{d:'M-150 176 L-60 60 L60 60 L150 176 Z',fill:GRN},ig);
+  el('rect',{x:-22,y:20,width:44,height:34,fill:'#F2C9A5'},ig);
+  el('circle',{cx:0,cy:-42,r:60,fill:'#F7D5B5'},ig);
+  el('path',{d:'M-62 -52 Q-10 -120 62 -52 Q20 -80 -62 -52 Z',fill:'#0B4A50'},ig);
+  el('circle',{cx:-20,cy:-38,r:5,fill:'#0B4A50'},ig);el('circle',{cx:20,cy:-38,r:5,fill:'#0B4A50'},ig);
+  el('path',{d:'M-14 -14 Q0 -4 14 -14',fill:'none',stroke:'#C0583F','stroke-width':5,'stroke-linecap':'round'},ig);
+ }else{
+  el('path',{d:'M-140 176 Q-140 50 0 50 Q140 50 140 176 Z',fill:INK},ig);
+  el('polygon',{points:'-34,50 34,50 0,110',fill:'#fff'},ig);
+  el('polygon',{points:'-12,66 12,66 8,150 -8,150',fill:'#E4412C'},ig);
+  el('rect',{x:-24,y:20,width:48,height:40,fill:'#F2C9A5'},ig);
+  el('circle',{cx:0,cy:-30,r:62,fill:'#F7D5B5'},ig);
+  el('path',{d:'M-62 -40 Q-50 -100 0 -96 Q50 -100 62 -40 Q40 -70 0 -66 Q-40 -70 -62 -40 Z',fill:'#6F878C'},ig);
+  el('circle',{cx:-20,cy:-28,r:5,fill:INK},ig);el('circle',{cx:20,cy:-28,r:5,fill:INK},ig);
+  el('path',{d:'M-16 -4 Q0 8 16 -4',fill:'none',stroke:'#C0583F','stroke-width':5,'stroke-linecap':'round'},ig);
+ }
+ return g;}
+function hardhat(p){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:'M-135 40 A135 135 0 0 1 135 40 Z',fill:'#FFC21F'},g);
+ el('rect',{x:-30,y:-100,width:60,height:140,rx:18,fill:'#FFD65A'},g);
+ el('rect',{x:-170,y:34,width:340,height:40,rx:20,fill:'#F2A900'},g);
+ el('path',{d:'M-100 20 A110 110 0 0 1 -50 -70',fill:'none',stroke:'#fff','stroke-width':12,'stroke-linecap':'round',opacity:.6},g);
+ return g;}
+function shield(p){const g=el('g',{filter:'url(#g_sh)'},p);
+ el('path',{d:'M0 -200 L170 -135 L170 30 Q170 150 0 220 Q-170 150 -170 30 L-170 -135 Z',fill:'url(#g_badge)',stroke:'#fff','stroke-width':10,'stroke-linejoin':'round'},g);
+ el('path',{d:'M0 -170 L140 -118 L140 28 Q140 128 0 188 Q-140 128 -140 28 L-140 -118 Z',fill:'none',stroke:'#fff','stroke-width':3,opacity:.5},g);
+ return g;}
+function progress(p){const g=el('g',{},p);
+ const W=760,S=W/45;
+ el('rect',{x:-W/2,y:0,width:W,height:46,rx:23,fill:'#0A3F45',opacity:.7},g);
+ el('rect',{x:-W/2,y:0,width:W,height:46,rx:23,fill:'none',stroke:LT,'stroke-width':3,opacity:.6},g);
+ const fill=el('rect',{x:-W/2,y:0,width:10,height:46,rx:23,fill:'url(#g_badge)'},g);
+ for(let k=0;k<=40;k+=10){el('rect',{x:-W/2+k*S-1.5,y:56,width:3,height:16,fill:'#fff',opacity:.7},g);txt(g,''+k,-W/2+k*S,112,34,'#E9FBF6','bold','middle');}
+ const cnt=txt(g,'',0,-52,70,'#fff');
+ const lab=txt(g,'ANNI DI CONTRIBUTI',0,176,36,LT);
+ function set(v){fill.setAttribute('width',Math.max(0,v*S));const Y=Math.floor(v+1e-6),M=Math.round((v-Y)*12);cnt.textContent=Y+' anni e '+M+' mesi';}
+ return {g,set};}
+function pill(p,label,w,fs,fill){const g=el('g',{},p);
+ el('rect',{x:-w/2,y:-fs*0.9,width:w,height:fs*1.8,rx:fs*0.9,fill:fill||AMB,filter:'url(#g_sh2)'},g);
+ el('rect',{x:-w/2,y:-fs*0.9,width:w,height:fs*1.8,rx:fs*0.9,fill:'none',stroke:'#fff','stroke-width':4,'stroke-opacity':.85},g);
+ txt(g,label,0,fs*0.36,fs,fill?'#fff':'#5A3300');return g;}
+function checkBadge(p,r){const g=el('g',{},p);
+ el('circle',{cx:0,cy:0,r:r,fill:'url(#g_badge)',stroke:'#fff','stroke-width':r*0.12,filter:'url(#g_sh2)'},g);
+ el('path',{d:`M${-r*.42} ${r*.02} L${-r*.1} ${r*.34} L${r*.46} ${-r*.3}`,fill:'none',stroke:'#fff','stroke-width':r*.22,'stroke-linecap':'round','stroke-linejoin':'round'},g);return g;}
+function ring(p,r){return el('circle',{cx:0,cy:0,r:r,fill:'none',stroke:LT,'stroke-width':6,opacity:0},p);}
+
+
+// ===== BLOCCO 1 - video lungo 1 (1920x1080) =====
+const FW=1920,FH=1080;
+function topLabel(g,s){const t=el('g',{},g);
+ el('polygon',{points:'0,-14 14,0 0,14 -14,0',fill:'#7FF0D2'},t);
+ const x=txt(t,s,28,12,36,'#7FF0D2','bold','start');x.setAttribute('letter-spacing','9');
+ const w=s.length*36*0.72+s.length*9+60;t.setAttribute('data-w',w);return t;}
+function cap(g,s,size){size=size||62;size=Math.min(size,1700/(s.length*0.76));const w=Math.min(1800,s.length*size*0.76+110);const c=el('g',{},g);
+ el('rect',{x:-w/2,y:-62,width:w,height:124,rx:62,fill:'#06303A',filter:'url(#g_sh2)'},c);
+ el('rect',{x:-w/2,y:-62,width:w,height:124,rx:62,fill:'none',stroke:AMB,'stroke-width':6},c);
+ txt(c,s,0,size*0.36,size,'#FFFFFF','bold');return c;}
+function headline(g,s,w,fs){w=w||560;fs=fs||50;const c=el('g',{},g);
+ el('rect',{x:-w/2,y:-80,width:w,height:160,rx:22,fill:'url(#g_paper)',filter:'url(#g_sh)'},c);
+ el('rect',{x:-w/2,y:-80,width:w,height:46,rx:22,fill:'#E4412C'},c);
+ el('rect',{x:-w/2,y:-52,width:w,height:18,fill:'#E4412C'},c);
+ txt(c,'ULTIM’ORA',0,-44,30,'#fff','bold');
+ txt(c,s,0,46,fs,'#0B4A50','900');return c;}
+function door(g){const d=el('g',{},g);
+ // luce dietro la porta
+ el('rect',{x:-190,y:-300,width:380,height:600,rx:14,fill:'#FFF3C4'},d);
+ const rays=el('g',{opacity:.9},d);
+ el('rect',{x:-190,y:-300,width:380,height:600,rx:14,fill:'url(#g_spot)'},rays);
+ // stipite
+ el('rect',{x:-216,y:-326,width:432,height:640,rx:22,fill:'none',stroke:'#0B4A50','stroke-width':26},d);
+ el('rect',{x:-216,y:-326,width:432,height:640,rx:22,fill:'none',stroke:'#fff','stroke-opacity':.45,'stroke-width':4},d);
+ return d;}
+
+const MINT='#2FD0A8',AMB2='#FFB838',DIM='#2B6F77';
+const RED_='#E4412C';
+
+function tag(p,s,w,fill,col,fs){fs=fs||40;w=Math.max(w,s.length*fs*0.8+90);const g=el('g',{},p);
+ el('rect',{x:-w/2,y:-38,width:w,height:76,rx:38,fill:fill,stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);
+ txt(g,s,0,fs*0.36,fs,col||'#fff','bold');return g;}
+function stamp(p,s,w,col,fs){w=Math.max(w,s.length*fs*0.8+90);const g=el('g',{},p);
+ el('rect',{x:-w/2,y:-fs*0.85,width:w,height:fs*1.7,rx:16,fill:'#FFFFFF',stroke:col,'stroke-width':10,filter:'url(#g_sh2)'},g);
+ txt(g,s,0,fs*0.34,fs,col,'900');return g;}
+function docCard(p,title,w,h,hc,fs){hc=hc||GRN;fs=fs||36;const g=el('g',{},p);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:26,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:74,rx:26,fill:hc},g);el('rect',{x:-w/2,y:-h/2+44,width:w,height:30,fill:hc},g);
+ txt(g,title,0,-h/2+48,fs,'#fff','bold');return g;}
+function magnifier(p){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('circle',{r:74,fill:'rgba(255,255,255,0.22)',stroke:'#fff','stroke-width':14},g);
+ el('line',{x1:54,y1:54,x2:128,y2:128,stroke:AMB,'stroke-width':24,'stroke-linecap':'round'},g);return g;}
+function arrowDown(p,col){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:'M-40 -70 H40 V0 H80 L0 80 L-80 0 H-40Z',fill:col||AMB,stroke:'#fff','stroke-width':6,'stroke-linejoin':'round'},g);return g;}
+function arrowRight(p,col){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:'M-70 -36 H0 V-76 L80 0 L0 76 V36 H-70Z',fill:col||AMB,stroke:'#fff','stroke-width':6,'stroke-linejoin':'round'},g);return g;}
+function calc(p){const g=el('g',{filter:'url(#g_sh)'},p);
+ el('rect',{x:-110,y:-150,width:220,height:300,rx:30,fill:'#0B4A50',stroke:'#fff','stroke-width':6},g);
+ el('rect',{x:-86,y:-124,width:172,height:62,rx:12,fill:'#D6F5EC'},g);txt(g,'=',60,-76,48,INK,'900','end');
+ for(let r=0;r<3;r++)for(let c=0;c<3;c++)el('rect',{x:-86+c*62,y:-40+r*58,width:48,height:42,rx:10,fill:c==2&&r==2?AMB:'#2FBF9B'},g);
+ return g;}
+function circN(p,r,n,fill){const g=el('g',{},p);
+ el('circle',{r:r,fill:fill,stroke:'#fff','stroke-width':9,filter:'url(#g_sh2)'},g);txt(g,n,0,r*0.38,r*1.1,'#fff','900');return g;}
+function bars(p,n){const g=el('g',{},p);const r=[];const W=1100,gap=W/n,bw=gap*0.7;
+ el('rect',{x:-W/2-20,y:0,width:W+40,height:10,rx:5,fill:'#0A3F45',stroke:LT,'stroke-width':2},g);
+ for(let i=0;i<n;i++){const h=110+i*(300/(n-1));
+  const b=el('rect',{x:-W/2+i*gap+(gap-bw)/2,y:-h,width:bw,height:h,rx:10,fill:'#2B6F77',stroke:'#fff','stroke-opacity':.3,'stroke-width':2},g);r.push({b,h,x:-W/2+i*gap+gap/2});}
+ txt(g,'ANNI DI LAVORO  →',0,70,34,LT,'bold');return {g,r};}
+function setBar(o,i,k,col){const e=o.r[i];e.b.setAttribute('y',-e.h*k);e.b.setAttribute('height',Math.max(0.1,e.h*k));if(col)e.b.setAttribute('fill',col);}
+function browser(p,url,w,h){const g=el('g',{},p);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:26,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:80,rx:26,fill:'#0B4A50'},g);el('rect',{x:-w/2,y:-h/2+50,width:w,height:30,fill:'#0B4A50'},g);
+ [0,1,2].forEach(i=>el('circle',{cx:-w/2+44+i*38,cy:-h/2+40,r:12,fill:['#E4412C',AMB,'#2FBF9B'][i]},g));
+ el('rect',{x:-w/2+190,y:-h/2+14,width:w-260,height:52,rx:26,fill:'#D6F5EC'},g);txt(g,url,-w/2+190+(w-260)/2,-h/2+50,34,INK,'bold');
+ return g;}
+function row(p,label,x,y,w,ok){const g=el('g',{},p);
+ el('rect',{x:x-w/2,y:y-34,width:w,height:68,rx:18,fill:'#D6F5EC',stroke:'#1B9F81','stroke-width':4},g);
+ txt(g,label,x+30,y+12,34,INK,'bold');
+ if(ok)el('path',{d:'M'+(x-w/2+26)+' '+(y+2)+' l16 18 l30 -36',fill:'none',stroke:'#1B9F81','stroke-width':11,'stroke-linecap':'round','stroke-linejoin':'round'},g);return g;}
+
+const pop=(t,a,b)=>Math.max(0,eob(seg(t,a,b)));
+function piggy(p){const g=el('g',{filter:'url(#g_sh)'},p);
+ el('ellipse',{cx:0,cy:0,rx:190,ry:140,fill:'#FFB3A3',stroke:'#fff','stroke-width':8},g);
+ el('path',{d:'M-80 -120 L-40 -190 L10 -125Z',fill:'#F08A78',stroke:'#fff','stroke-width':6,'stroke-linejoin':'round'},g);
+ el('ellipse',{cx:170,cy:20,rx:50,ry:42,fill:'#F08A78',stroke:'#fff','stroke-width':6},g);
+ el('circle',{cx:160,cy:15,r:7,fill:'#7A2A00'},g);el('circle',{cx:182,cy:15,r:7,fill:'#7A2A00'},g);
+ el('circle',{cx:100,cy:-45,r:12,fill:'#7A2A00'},g);
+ el('rect',{x:-70,y:-148,width:130,height:16,rx:8,fill:'#7A2A00'},g);
+ [-110,-40,60,130].forEach(x=>el('rect',{x:x-22,y:112,width:44,height:60,rx:14,fill:'#F08A78',stroke:'#fff','stroke-width':6},g));
+ return g;}
+function coinS(p,r){const g=el('g',{filter:'url(#g_sh2)'},p);el('circle',{r:r,fill:AMB,stroke:'#fff','stroke-width':6},g);txt(g,'€',0,r*0.38,r*1.1,'#5A3300','900');return g;}
+function doorN(p,n,fill){const g=el('g',{},p);const d=el('g',{},g);door(d);
+ el('rect',{x:-110,y:-262,width:220,height:420,rx:12,fill:'#0B4A50'},g);
+ el('circle',{cx:70,cy:20,r:14,fill:AMB},g);
+ const b=el('g',{},g);b.setAttribute('transform','translate(0 -345)');circN(b,66,String(n),fill||'url(#g_badge)');return g;}
+function avatar(p,r){const g=el('g',{},p);medal(g,r);return g;}
+function bill(p,s){const g=el('g',{filter:'url(#g_sh)'},p);
+ el('rect',{x:-190,y:-100,width:380,height:200,rx:22,fill:'#D6F5EC',stroke:'#1B9F81','stroke-width':8},g);
+ el('rect',{x:-150,y:-62,width:300,height:124,rx:40,fill:'#fff',stroke:'#1B9F81','stroke-width':6},g);txt(g,s,0,14,Math.min(52,260/Math.max(1,s.length*0.78)),INK,'900');
+ return g;}
+// ===== motore slide: ogni scena = riga di oggetti + riga di etichette + didascalia, con disposizione automatica =====
+const FILL={p:['url(#g_paper)',INK,GRN],g:['url(#g_badge)','#fff','#D6F5EC'],r:['url(#g_red)','#fff','#FFE3DE'],d:['#0B4A50','#fff',LT],a:[AMB,'#5A3300','#5A3300'],m:[MINT,'#07302A','#07302A']};
+const TFILL={a:[AMB,'#5A3300'],g:[MINT,'#07302A'],r:[RED_,'#fff'],d:['#0B4A50','#fff'],w:['url(#g_badge)','#fff']};
+const C=(t,b,s,f,w)=>({k:'card',t,b,s,f,w}),OP=s=>({k:'op',s}),PG=()=>({k:'piggy'}),W_=()=>({k:'warn'}),K=()=>({k:'check'}),Q=()=>({k:'q'}),AR=()=>({k:'ar'}),AD=()=>({k:'ad'}),CA=()=>({k:'calc'}),MG=()=>({k:'mag'}),CO=()=>({k:'coin'});
+const PE=f=>({k:'person',f}),DR=(n,f)=>({k:'door',n,f}),CAL=(h,b,s,bs)=>({k:'cal',h,b,s,bs}),BR=(url,rows,w,h)=>({k:'br',url,rows,w,h}),DC=(t,lines,w,h,hc)=>({k:'doc',t,lines,w,h,hc}),BA=(n,hl)=>({k:'bars',n,hl}),DOT=n=>({k:'dots',n}),DN=p=>({k:'donut',p}),ST=(s,col)=>({k:'stamp',s,col});
+const STK=(n,s)=>({k:'stack',n,s}),TL=(a,b,hl,lab,step,w)=>({k:'tl',a,b,hl,lab,step,w}),NT=(n,s)=>({k:'notes',n,s}),BAL=(l,r,tilt)=>({k:'balance',l,r,tilt}),STP=(labels,on)=>({k:'steps',labels,on}),PIE=(p,s,col)=>({k:'pie',p,s,col}),CLK=s=>({k:'clock',s}),PPL=n=>({k:'people',n}),MB=(n,slope,hi,s)=>({k:'minibars',n,slope,hi,s});
+const T_=(s,f,w,fs)=>({s,f:f||'a',w,fs});
+function wlen(s,fs){return s.length*fs*0.86;}
+function mkItem(p,o){
+ const g=el('g',{},p);let w=100,h=100,oy=0,ox=0,upd=null;
+ switch(o.k){
+ case 'card':{w=o.w||440;const lines=String(o.b).split('|');const hasT=!!o.t,hasS=!!o.s;const h0=o.h||((hasT?300:250)+(lines.length>1?60:0));h=h0;
+  const [bg,fg,sg]=FILL[o.f||'p'];
+  el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:30,fill:bg,filter:'url(#g_sh)'},g);
+  let y0=-h/2;
+  if(hasT){const th=o.th||GRN;el('rect',{x:-w/2,y:-h/2,width:w,height:68,rx:30,fill:th},g);el('rect',{x:-w/2,y:-h/2+38,width:w,height:30,fill:th},g);
+   txt(g,o.t,0,-h/2+46,Math.min(36,(w-70)/(o.t.length*0.86)),'#fff','bold');y0+=68;}
+  const room=h-(hasT?68:0)-(hasS?64:0)-30;const ml=Math.max.apply(null,lines.map(x=>x.length));
+  const fs=Math.min(o.fs||100,(w-70)/(ml*0.86),room/(lines.length*1.25));
+  const cy=(y0+(h/2-(hasS?64:0)))/2;
+  lines.forEach((ln,i)=>txt(g,ln,0,cy+(i-(lines.length-1)/2)*fs*1.2+fs*0.34,fs,fg,'900'));
+  if(hasS)txt(g,o.s,0,h/2-26,Math.min(30,(w-70)/(o.s.length*0.86)),sg,'bold');
+  break;}
+ case 'op':{w=100;h=100;el('circle',{r:50,fill:'#0B4A50',stroke:'#fff','stroke-width':6},g);txt(g,o.s,0,20,54,'#fff','900');break;}
+ case 'piggy':{piggy(g);w=440;h=370;ox=-15;oy=9;break;}
+ case 'warn':{warn(g);w=370;h=310;oy=0;break;}
+ case 'check':{checkBadge(g,90);w=200;h=200;break;}
+ case 'q':{qBubble(g,100);w=210;h=210;break;}
+ case 'ar':{arrowRight(g,AMB);w=160;h=160;break;}
+ case 'ad':{arrowDown(g,AMB);w=170;h=160;break;}
+ case 'calc':{calc(g);w=230;h=310;break;}
+ case 'mag':{magnifier(g);w=240;h=240;ox=-26;oy=-26;break;}
+ case 'coin':{coinS(g,55);w=120;h=120;break;}
+ case 'person':{medal(g,!!o.f);w=390;h=390;break;}
+ case 'door':{doorN(g,o.n,o.f||['url(#g_red)','url(#g_badge)','url(#g_head)'][o.n-1]);w=440;h=730;oy=48;break;}
+ case 'cal':{calendarPage(g,o.h,o.b,o.bs||250,o.s||'');w=480;h=640;oy=-256;break;}
+ case 'br':{w=o.w||900;h=o.h||520;browser(g,o.url,w,h);(o.rows||[]).forEach((r,i)=>row(g,r,0,-h/2+170+i*96,w-90,true));break;}
+ case 'doc':{w=o.w||560;h=o.h||430;docCard(g,o.t,w,h,o.hc||GRN,Math.min(38,(w-70)/(o.t.length*0.86)));
+  (o.lines||[]).forEach((l,i)=>{const y=-h/2+130+i*62;el('rect',{x:-w/2+30,y:y-26,width:w-60,height:48,rx:14,fill:'#D6F5EC'},g);txt(g,l,0,y+10,Math.min(30,(w-100)/(l.length*0.86)),INK,'bold');});break;}
+ case 'bars':{const b=bars(g,o.n);w=1150;h=520;oy=160;
+  upd=(t,a)=>{for(let i=0;i<o.n;i++){const k=eo3(seg(t,a+i*0.06,a+0.5+i*0.06));let col=DIM;
+   (o.hl||[]).forEach((hl,gi)=>{if(i>=hl[0]&&i<hl[1]&&t>a+0.5+gi*0.7)col=hl[2]==='a'?AMB2:MINT;});setBar(b,i,k,col);}};break;}
+ case 'dots':{const d=dotsRow(g,o.n,0);w=o.n*42;h=40;upd=(t,a)=>{const nd=Math.floor(clamp((t-a-0.3)/0.06,0,o.n));d.a.forEach((c,i)=>lightDot(c,i<nd,0.5));};break;}
+ case 'donut':{const d=donut(g,170,64);w=420;h=420;upd=(t,a)=>setDonut(d,(o.p||0.33)*eio(seg(t,a+0.2,a+1.2)));break;}
+
+ case 'stack':{const n=o.n||5;w=Math.max(260,n*0+300);h=60+n*34+70;
+  for(let i=0;i<n;i++){const yy=h/2-60-i*34;goldCoin(g,0,yy-70,120,36,26);}
+  coinS(g,48).setAttribute('transform','translate(0 '+(-h/2+30)+')');if(o.s)txt(g,o.s,0,h/2-8,36,'#fff','bold');break;}
+ case 'tl':{const a=o.a,b=o.b,W=o.w||1500;w=W+80;h=170;
+  el('rect',{x:-W/2,y:-8,width:W,height:16,rx:8,fill:'#0A3F45',stroke:LT,'stroke-width':3},g);
+  const n=b-a;for(let i=0;i<=n;i++){const x=-W/2+i*W/n;const hi=(o.hl||[]).some(r=>i+a>=r[0]&&i+a<=r[1]);
+   el('circle',{cx:x,cy:0,r:hi?20:12,fill:hi?AMB:'#2B6F77',stroke:'#fff','stroke-width':3},g);
+   if(i%(o.step||1)===0)txt(g,String(a+i),x,66,Math.min(36,W/(n+1)*0.5),hi?AMB:'#fff','bold');}
+  if(o.lab)txt(g,o.lab,0,-56,38,LT,'bold');break;}
+ case 'notes':{const n=o.n||3;w=n*250+40;h=210;for(let i=0;i<n;i++){const b=bill(g,o.s||'€');b.setAttribute('transform','translate('+((i-(n-1)/2)*250)+' '+(i%2?-12:12)+') scale(0.62) rotate('+((i-1)*5)+')');}break;}
+ case 'balance':{w=760;h=330;el('rect',{x:-12,y:-120,width:24,height:260,rx:8,fill:'#8FA3A8'},g);el('rect',{x:-110,y:120,width:220,height:24,rx:10,fill:'#0B4A50'},g);
+  const bm=el('g',{},g);el('rect',{x:-330,y:-8,width:660,height:16,rx:8,fill:'#fff'},bm);
+  [[-330,o.l||'?'],[330,o.r||'?']].forEach(([x,l],i)=>{el('line',{x1:x,y1:0,x2:x,y2:90,stroke:'#fff','stroke-width':6},bm);el('rect',{x:x-110,y:90,width:220,height:70,rx:18,fill:i?'url(#g_red)':'url(#g_badge)',stroke:'#fff','stroke-width':5},bm);txt(bm,l,x,142,Math.min(40,190/Math.max(1,l.length*0.86)),'#fff','900');});
+  bm.setAttribute('transform','rotate('+(o.tilt||0)+')');break;}
+ case 'steps':{const n=o.labels.length;const sw_=260;w=n*sw_+(n-1)*60;h=190;
+  o.labels.forEach((l,i)=>{const x=(i-(n-1)/2)*(sw_+60);circN(g,46,String(i+1),i==o.on?'url(#g_red)':'url(#g_badge)').setAttribute('transform','translate('+x+' -50)');
+   el('rect',{x:x-sw_/2,y:14,width:sw_,height:64,rx:32,fill:'#fff'},g);txt(g,l,x,56,Math.min(30,(sw_-30)/(l.length*0.86)),INK,'bold');
+   if(i<n-1)el('path',{d:'M'+(x+sw_/2+8)+' -50 h34',stroke:AMB,'stroke-width':10,'stroke-linecap':'round'},g);});break;}
+ case 'pie':{w=360;h=360;const R=130;el('circle',{r:R,fill:'#2B6F77',stroke:'#fff','stroke-width':6},g);
+  const f=o.p||0.33,a=f*Math.PI*2;el('path',{d:`M0 0 L0 ${-R} A${R} ${R} 0 ${f>.5?1:0} 1 ${R*Math.sin(a)} ${-R*Math.cos(a)} Z`,fill:o.col||AMB2,stroke:'#fff','stroke-width':4},g);
+  if(o.s)txt(g,o.s,0,R+60,40,'#fff','900');h=R*2+80;break;}
+ case 'clock':{w=300;h=300;el('circle',{r:130,fill:'#fff',stroke:'#0B4A50','stroke-width':12,filter:'url(#g_sh2)'},g);
+  for(let i=0;i<12;i++){const a=i*Math.PI/6;el('line',{x1:Math.sin(a)*104,y1:-Math.cos(a)*104,x2:Math.sin(a)*120,y2:-Math.cos(a)*120,stroke:INK,'stroke-width':6},g);}
+  el('line',{x1:0,y1:0,x2:0,y2:-86,stroke:INK,'stroke-width':10,'stroke-linecap':'round'},g);el('line',{x1:0,y1:0,x2:60,y2:20,stroke:RED_,'stroke-width':10,'stroke-linecap':'round'},g);
+  if(o.s)txt(g,o.s,0,176,40,'#fff','900');h=340;break;}
+ case 'people':{const n=o.n||3;w=n*150;h=190;for(let i=0;i<n;i++){const m=el('g',{},g);medal(m,i%2===0);m.setAttribute('transform','translate('+((i-(n-1)/2)*150)+' 0) scale(0.36)');}break;}
+ case 'minibars':{w=620;h=300;const n=o.n||6;for(let i=0;i<n;i++){const hh=60+i*(o.slope||30);el('rect',{x:-w/2+i*(w/n)+8,y:130-hh,width:w/n-16,height:hh,rx:8,fill:(o.hi||[]).includes(i)?AMB2:MINT},g);}
+  el('rect',{x:-w/2,y:130,width:w,height:8,rx:4,fill:'#fff'},g);if(o.s)txt(g,o.s,0,186,36,LT,'bold');h=340;break;}
+ case 'stamp':{const col=o.col||RED_;const ww=o.s.length*52*0.86+80;stamp(g,o.s,ww,col,52);w=ww;h=100;break;}
+ }
+ return {g,w,h,oy,ox,upd};
+}
+function mk(spec,SB,TOT){
+ const sw=spec.scenes.reduce((a,s)=>a+(s.w||1),0);let acc=0;
+ spec.scenes.forEach((sc,si)=>{
+  const s0=acc/sw*TOT;acc+=(sc.w||1);const e0=(si===spec.scenes.length-1)?TOT:acc/sw*TOT;
+  SB.push({s:s0,e:e0,build(g){const o={};
+   o.top=el('g',{},g);topLabel(o.top,sc.lab);
+   o.items=(sc.items||[]).map(it=>mkItem(g,it));
+   o.tags=(sc.tags||[]).map(tg=>{const f=TFILL[tg.f||'a'];const gg=el('g',{},g);const fs=tg.fs||44;const w=Math.max(tg.w||0,wlen(tg.s,fs)+90);tag(gg,tg.s,w,f[0],f[1],fs);return {g:gg,w:w};});
+   o.cap=el('g',{},g);cap(o.cap,sc.cap,sc.cs||52);
+   // disposizione automatica
+   o.items2=(sc.items2||[]).map(it=>mkItem(g,it));const two=o.items2.length>0;
+   const hasT=o.tags.length>0;const cy=two?345:(hasT?(o.items.length?490:520):540);const gap=36;
+   const CAP1=two?300:430;
+   o.items.forEach(it=>{it.sc=Math.min(1.5,CAP1/it.h);});
+   if(two){let t2=o.items2.reduce((a,it)=>{it.sc=Math.min(1.2,200/it.h);return a+it.w*it.sc;},0)+gap*Math.max(0,o.items2.length-1);const k2=Math.min(1,1760/Math.max(t2,1));t2*=k2;let x2=960-t2/2;
+    o.items2.forEach(it=>{it.s=it.sc*k2;it.x=x2+it.w*it.s/2;x2+=it.w*it.s+gap*k2;it.y=640;});}
+   let tot=o.items.reduce((a,it)=>a+it.w*it.sc,0)+gap*Math.max(0,o.items.length-1);const k=Math.min(1,1760/Math.max(tot,1));
+   tot*=k;let x=960-tot/2;
+   o.items.forEach(it=>{it.s=it.sc*k;it.x=x+it.w*it.s/2;x+=it.w*it.s+gap*k;it.y=cy;});
+   let tt=o.tags.reduce((a,t)=>a+t.w,0)+44*Math.max(0,o.tags.length-1);const tk=Math.min(1,1740/Math.max(tt,1));tt*=tk;let tx=960-tt/2;
+   o.tags.forEach(t=>{t.s=tk;t.x=tx+t.w*tk/2;tx+=t.w*tk+44*tk;t.y=two?832:(o.items.length?790:520);});
+   this.o=o;},
+   update(t){const o=this.o;const dur=e0-s0;const n=o.items.length+o.tags.length;const Wd=Math.max(0.3,dur-1.7);
+    T(o.top,960,100,0,1);
+    const at=(i,f)=>0.3+(f!==undefined?f:(n>1?i/(n-1):0))*Wd;
+    o.items.forEach((it,i)=>{const a=at(i,spec.scenes[si].items[i].at);const p=pop(t,a,a+0.45);
+     T(it.g,it.x+it.ox*it.s,it.y+it.oy*it.s,0,it.s*p);if(it.upd)it.upd(t,a);});
+    o.items2.forEach((it,i2)=>{const a=0.3+0.35*(o.items.length+i2)*Wd/Math.max(1,(n-1))*0+Math.min(Wd,0.9+i2*0.5);const p=pop(t,a,a+0.45);T(it.g,it.x+it.ox*it.s,it.y+it.oy*it.s,0,it.s*p);if(it.upd)it.upd(t,a);});
+    o.tags.forEach((tg,j)=>{const i=o.items.length+j;const f=spec.scenes[si].tags[j].at;const a=at(i,f);T(tg.g,tg.x,tg.y,0,tg.s*pop(t,a,a+0.45));});
+    T(o.cap,960,950,0,pop(t,0.2,0.8));
+   }});
+ });
+}
+function donut(p,R,w){const g=el('g',{},p);
+ el('circle',{r:R,fill:'none',stroke:'#0A3F45','stroke-width':w},g);
+ const arc=el('path',{fill:'none',stroke:MINT,'stroke-width':w},g);txt(g,'33%',0,36,110,'#fff','900');return {g,arc,R};}
+function setDonut(d,f){const a=f*Math.PI*2;d.arc.setAttribute('d',f<=0.001?'':`M0 ${-d.R} A${d.R} ${d.R} 0 ${f>.5?1:0} 1 ${d.R*Math.sin(a)} ${-d.R*Math.cos(a)}`);}
+const BLK={};
+const A=(o,at)=>{o.at=at;return o;};
+BLK[21]={scenes:[
+ {w:.28,lab:'IL MOMENTO CHE ASPETTAVI',cap:"GUARDA COME CAMBIA IL COEFFICIENTE CON L'ETÀ",items:[C('COEFFICIENTE','?','CAMBIA CON L\'ETÀ','g',480),Q()],tags:[T_('ORA IL MOMENTO CHE ASPETTAVI','a')]},
+ {w:.72,lab:'COEFFICIENTE PER ETÀ',cap:'64, 65 E 66 ANNI: COSÌ CAMBIA IL COEFFICIENTE',items:[A(C('64 ANNI','5,088%','COEFFICIENTE','p',420),0),A(C('65 ANNI','5,250%','COEFFICIENTE','p',420),.4),A(C('66 ANNI','5,423%','COEFFICIENTE','p',420),.8)],tags:[T_('PIÙ ASPETTI, PIÙ SALE','g')]}]};
+BLK[22]={scenes:[
+ {w:.4,lab:'A 67 ANNI',cap:'A 67 ANNI: 5,608%!',items:[C('67 ANNI','5,608%','COEFFICIENTE','g',480)],tags:[T_('HAI VISTO?','a')]},
+ {w:.6,lab:'COME UNA SCALA',cap:'PIÙ SALI, PIÙ LA PENSIONE CRESCE',items:[BA(8,[[0,8,'g']])],tags:[T_('OGNI ANNO CHE ASPETTI, SALE','g'),T_('E NESSUNO TE LO DICE','r')]}]};
+BLK[23]={scenes:[
+ {w:1,lab:'TRADOTTO IN EURO',cap:'LA PENSIONE DI BRUNO, ETÀ PER ETÀ',items:[A(C('64 ANNI','1.808 €','LORDI AL MESE','p',400),.05),A(C('65 ANNI','1.866 €','LORDI AL MESE','p',400),.33),A(C('66 ANNI','1.927 €','LORDI AL MESE','p',400),.58),A(C('67 ANNI','1.993 €','LORDI AL MESE','g',400),.82)],tags:[T_('SEMPRE PER BRUNO','a')]}]};
+BLK[24]={scenes:[
+ {w:.5,lab:'UN ANNO IN PIÙ',cap:'OGNI ANNO IN PIÙ VALE CIRCA 60 € AL MESE',items:[C('OGNI ANNO IN PIÙ','+ 60 €','LORDI AL MESE','g',480)],tags:[T_('PER TUTTA LA VITA DA PENSIONATO','g')]},
+ {w:.5,lab:'UNA SORPRESA',cap:"IL CONTO TOTALE LO FACCIO ALLA FINE!",items:[C('DA 64 A 67 ANNI','? €','DIFFERENZA TOTALE','d',480),Q()],tags:[T_("C'È UNA SORPRESA!",'a')]}]};
+BLK[25]={scenes:[
+ {w:.5,lab:'EFFETTO NUMERO UNO',cap:'UN ANNO IN PIÙ AGGIUNGE CONTRIBUTI AL SALVADANAIO',items:[PG(),OP('+'),C('UN ANNO IN PIÙ','+ 11.550 €','NEL SALVADANAIO','g',460)],tags:[T_('PIÙ CONTRIBUTI','g')]},
+ {w:.5,lab:'EFFETTO NUMERO DUE',cap:'E ALZA IL COEFFICIENTE: DUE EFFETTI INSIEME',items:[C('COEFFICIENTE','▲','PIÙ ALTO','a',380),OP('+'),C('CONTRIBUTI','▲','PIÙ ALTI','g',380)],tags:[T_('DUE EFFETTI NELLO STESSO MOMENTO','a')]}]};
+BLK[26]={scenes:[
+ {w:.6,lab:'UN ANNO IN PIÙ, QUANTO VALE?',cap:'BRUNO A 66 ANNI E A 67 ANNI',items:[A(C('66 ANNI · 39 ANNI CONTR.','1.879 €','LORDI AL MESE','p',500),0),A(AR(),.4),A(C('67 ANNI · 40 ANNI CONTR.','1.993 €','LORDI AL MESE','g',500),.7)],tags:[]},
+ {w:.4,lab:'LA DIFFERENZA',cap:'UN SOLO ANNO IN PIÙ VALE CIRCA 114 € AL MESE',items:[C('UN SOLO ANNO IN PIÙ','+ 114 €','AL MESE, LORDI','g',520)],tags:[T_('PER TUTTA LA VITA','g')]}]};
+BLK[27]={scenes:[
+ {w:.45,lab:'ATTENZIONE',cap:'NELLA REALTÀ, CHI ESCE PRIMA HA MENO CONTRIBUTI',items:[W_()],tags:[T_('CHI ESCE PRIMA','r'),T_('HA MENO CONTRIBUTI','a')]},
+ {w:.55,lab:'NEL NOSTRO ESEMPIO',cap:"IL SALVADANAIO RESTA UGUALE: CAMBIA SOLO L'ETÀ",items:[PG(),OP('='),C('SALVADANAIO','UGUALE','SOLO L\'ETÀ CAMBIA','g',480)],tags:[T_("SI VEDE SOLO L'EFFETTO DELL'ETÀ",'a')]}]};
+BLK[28]={scenes:[
+ {w:.5,lab:'NUMERO UNO',cap:"IL NUMERO UNO: L'ETÀ IN CUI ESCI",items:[C('NUMERO UNO',"L'ETÀ",'IN CUI ESCI','g',460),K()],tags:[T_('DECIDE LA TUA PENSIONE','a')]},
+ {w:.5,lab:'PRIMA, IL NUMERO DUE',cap:'IL NUMERO TRE COSTA DI PIÙ... CI ARRIVIAMO!',items:[C('NUMERO TRE','?','COSTA DI PIÙ','r',420),AR(),C('PRIMA','NUMERO DUE','','d',420)],tags:[T_('QUASI NESSUNO CI PENSA','r')]}]};
+BLK[29]={scenes:[
+ {w:.25,lab:'NUMERO DUE',cap:'NUMERO DUE: QUANTO GUADAGNI',items:[C('NUMERO DUE','QUANTO|GUADAGNI','','g',520)],tags:[]},
+ {w:.3,lab:'TRE PERSONE',cap:"STESSO PERCORSO: 40 ANNI DI CONTRIBUTI, USCITA A 67",items:[PE(true),PE(false),PE(true)],tags:[T_('ANNA · BRUNO · CARLA','a'),T_('40 ANNI DI CONTRIBUTI','g')]},
+ {w:.45,lab:'LO STIPENDIO',cap:'ANNA, BRUNO E CARLA GUADAGNANO...',items:[A(C('ANNA','25.000 €','LORDI L\'ANNO','p',420),.05),A(C('BRUNO','35.000 €','LORDI L\'ANNO','p',420),.4),A(C('CARLA','50.000 €','LORDI L\'ANNO','p',420),.75)],tags:[]}]};
+BLK[30]={scenes:[
+ {w:1,lab:'RISULTATI',cap:'PIÙ GUADAGNI, PIÙ IL SALVADANAIO SI RIEMPIE!',items:[A(C('ANNA','1.424 €','AL MESE, LORDI','p',420),.02),A(C('BRUNO','1.993 €','AL MESE, LORDI','p',420),.3),A(C('CARLA','2.847 €','AL MESE, LORDI','g',420),.58)],tags:[T_('NEL NOSTRO ESEMPIO','a',null,40),T_('PIÙ GUADAGNI, PIÙ SI RIEMPIE','g',null,40)]}]};
+BLK[31]={scenes:[
+ {w:.5,lab:'HAI NOTATO?',cap:'IN TUTTI E TRE I CASI: CIRCA IL 74% DELLO STIPENDIO',items:[C('ANNA','74%','DELLO STIPENDIO','g',400),C('BRUNO','74%','DELLO STIPENDIO','g',400),C('CARLA','74%','DELLO STIPENDIO','g',400)],tags:[]},
+ {w:.5,lab:'ATTENZIONE',cap:'IL CASO PERFETTO: LA VITA VERA NON È COSÌ',items:[W_(),C('CASO PERFETTO','STIPENDIO UGUALE|NESSUN BUCO','','d',560)],tags:[T_('LA VITA VERA NON È COSÌ','r')]}]};
+BLK[32]={scenes:[
+ {w:.5,lab:'E SE LAVORI PART-TIME?',cap:"LO STIPENDIO È PIÙ BASSO: NEL SALVADANAIO ENTRA MENO",items:[Q(),C('PART-TIME','STIPENDIO|PIÙ BASSO','','a',460)],tags:[T_('NEL SALVADANAIO ENTRA MENO','r')]},
+ {w:.5,lab:'ANNO PER ANNO',cap:'CONTA QUANTO È STATO VERSATO DAVVERO, ANNO PER ANNO',items:[DN(0.33),OP('×'),C('CIFRA PIÙ PICCOLA','?','','p',380)],tags:[T_('SEMPRE IL 33%','g'),T_('GUARDA QUANTO È STATO VERSATO','a')]}]};
+BLK[33]={scenes:[
+ {w:.5,lab:'NUMERO TRE',cap:'NUMERO TRE, IL PIÙ PERICOLOSO: GLI ANNI SENZA CONTRIBUTI',items:[C('NUMERO TRE','I BUCHI','ANNI SENZA CONTRIBUTI','r',500),W_()],tags:[T_('IL PIÙ PERICOLOSO','r')]},
+ {w:.5,lab:'COSA SORPRENDE',cap:'UN BUCO NON SI VEDE SULLO STIPENDIO... SI VEDE DOPO',items:[C('SULLO STIPENDIO','NON|SI VEDE','','d',420),AR(),C('SULLA PENSIONE','SI|VEDE','','r',420)],tags:[T_('SI VEDE SOLO DOPO','a')]}]};
+BLK[34]={scenes:[
+ {w:.33,lab:'TORNIAMO A BRUNO',cap:'UN SOLO ANNO SENZA CONTRIBUTI',items:[PE(false),C('UN ANNO SENZA','0 €','CONTRIBUTI','r',420)],tags:[]},
+ {w:.33,lab:'NEL SALVADANAIO',cap:'NON AGGIUNGE 11.550 € AL SALVADANAIO',items:[PG(),OP('−'),C('MANCANO','11.550 €','','r',440)],tags:[]},
+ {w:.34,lab:'A 67 ANNI',cap:'CIRCA 50 € LORDI IN MENO, OGNI MESE!',items:[C('PENSIONE A 67 ANNI','− 50 €','AL MESE, LORDI','r',520)],tags:[T_('PER UN SOLO ANNO DI BUCO','a')]}]};
+BLK[35]={scenes:[
+ {w:.65,lab:'50 € SEMBRANO POCHI?',cap:"50 € AL MESE, PER 13 MENSILITÀ: 650 € L'ANNO",items:[A(C('AL MESE','50 €','','p',300),0),A(OP('×'),.2),A(C('MENSILITÀ','13','','p',300),.4),A(OP('='),.6),A(C("ALL'ANNO",'650 €','','g',340),.8)],tags:[T_('OGNI ANNO, PER TUTTA LA VITA DA PENSIONATO','r',null,40)]},
+ {w:.35,lab:'E SE I BUCHI SONO 5?',cap:'E SE GLI ANNI DI BUCO SONO CINQUE?',items:[C('ANNI DI BUCO','5','','r',320),Q()],tags:[]}]};
+BLK[36]={scenes:[
+ {w:.5,lab:'CINQUE ANNI DI BUCO',cap:'5 ANNI SENZA CONTRIBUTI: CIRCA 249 € IN MENO AL MESE',items:[C('5 ANNI','SENZA|CONTRIBUTI','','r',420),AR(),C('PENSIONE','− 249 €','AL MESE, LORDI','r',440)],tags:[]},
+ {w:.5,lab:'COME USCIRE PRIMA',cap:'QUASI COME USCIRE A 64 ANNI... SENZA SCEGLIERLO',items:[C('USCIRE A 64 ANNI','− 185 €','AL MESE','d',440),OP('≈'),C('5 ANNI DI BUCO','− 249 €','AL MESE','r',440)],tags:[T_('MA SENZA AVERLO SCELTO!','r')]}]};
+BLK[37]={scenes:[
+ {w:.62,lab:'DA DOVE NASCONO I BUCHI?',cap:"LAVORO NON VERSATO, DIMENTICANZE, CARRIERE SPEZZATE",items:[A(C('CAUSA 1','LAVORO|NON VERSATO','','p',400),0),A(C('CAUSA 2','DIMENTICANZE|DELL\'AZIENDA','','p',400),.3),A(C('CAUSA 3','PERIODI SENZA|CONTRIBUTI','','p',400),.6),A(C('CAUSA 4','CARRIERE|SPEZZATE','','p',400),.9)],tags:[]},
+ {w:.38,lab:'LA BUONA NOTIZIA',cap:'SE LI TROVI, LI PUOI SEGNALARE E FAR CORREGGERE',items:[C('LI TROVI','','','d',380),AR(),C('LI CORREGGI','','','g',380),K()],tags:[T_('CON I DOCUMENTI','g')]}]};
+BLK[38]={scenes:[
+ {w:.3,lab:'ORA IL TEST',cap:'ORA IL TEST! TRE DOMANDE, VERO O FALSO',items:[C('IL TEST','3 DOMANDE','VERO O FALSO?','g',520),Q()],tags:[T_('RISPONDI A VOCE ALTA','a')]},
+ {w:.4,lab:'DOMANDA UNO',cap:"LA PENSIONE È SEMPRE UN % DELL'ULTIMO STIPENDIO?",items:[C('DOMANDA 1','PENSIONE = %|ULTIMO STIPENDIO','','p',600)],tags:[T_('VERO','g',300),T_('FALSO','r',300)]},
+ {w:.3,lab:'LA RISPOSTA',cap:'FALSO! NEL CONTRIBUTIVO CONTA TUTTA LA CARRIERA',items:[C('RISPOSTA','FALSO!','','r',420),K()],tags:[T_('CONTA TUTTA LA CARRIERA','g')]}]};
+BLK[39]={scenes:[
+ {w:.4,lab:'DOMANDA DUE',cap:'IL MONTANTE CONTRIBUTIVO SI RIVALUTA OGNI ANNO?',items:[C('DOMANDA 2','MONTANTE|SI RIVALUTA?','','p',560)],tags:[T_('VERO','g',300),T_('FALSO','r',300)]},
+ {w:.6,lab:'LA RISPOSTA',cap:'VERO! SI RIVALUTA CON IL PIL NOMINALE DEGLI ULTIMI 5 ANNI',cs:46,items:[C('RISPOSTA','VERO!','','g',400),C('PIL NOMINALE','ULTIMI|5 ANNI','','d',400),C('RISULTATO','NON RESTANO|FERMI','','p',420)],tags:[T_('I CONTRIBUTI PIÙ VECCHI NON RESTANO FERMI','a',null,38)]}]};
+BLK[40]={scenes:[
+ {w:.45,lab:'DOMANDA TRE',cap:"USCIRE PRIMA NON CAMBIA L'IMPORTO DELLA PENSIONE?",items:[C('DOMANDA 3','USCIRE PRIMA|NON CAMBIA?','','p',560)],tags:[T_('VERO','g',300),T_('FALSO','r',300)]},
+ {w:.55,lab:'LA RISPOSTA',cap:"FALSO! IL COEFFICIENTE CAMBIA CON L'ETÀ",items:[C('RISPOSTA','FALSO!','','r',380),C('COEFFICIENTE','▼','PIÙ BASSO SE ESCI PRIMA','d',460)],tags:[T_('QUANTE NE HAI AZZECCATE?','a')]}]};
+BLK[41]={scenes:[
+ {w:.2,lab:'FAI IL CONTO DA SOLO',cap:'ADESSO FAI IL CONTO DA SOLO, IN TRE PASSI!',items:[CA()],tags:[T_('TRE PASSI','a')]},
+ {w:.8,lab:'TRE PASSI',cap:'33%, ANNI DI CONTRIBUTI, COEFFICIENTE',items:[A(C('PASSO 1','STIPENDIO|× 33%','LORDO ANNUO','g',420),0),A(C('PASSO 2','× ANNI|DI CONTRIBUTI','','p',420),.4),A(C('PASSO 3','× COEFFICIENTE','DELL\'ETÀ DI USCITA','d',420),.78)],tags:[]}]};
+BLK[42]={scenes:[
+ {w:.5,lab:'POI DIVIDI PER TREDICI',cap:'POI DIVIDI PER 13: ECCO LA PENSIONE LORDA AL MESE',items:[C('PENSIONE ANNUA','','','p',380),OP('÷'),C('MENSILITÀ','13','','p',300),OP('='),C('AL MESE','LORDA','','g',360)],tags:[]},
+ {w:.5,lab:'È UNA STIMA',cap:'UNA STIMA SEMPLIFICATA: SERVE IL CONTROLLO UFFICIALE',items:[CA(),C('CON LA CALCOLATRICE','1 MINUTO','','p',420),W_()],tags:[T_('PER LA CIFRA VERA: CONTROLLO UFFICIALE','a')]}]};
+BLK[43]={scenes:[
+ {w:.35,lab:'COME CONTROLLI',cap:'COME CONTROLLI IL TUO SALVADANAIO?',items:[PG(),Q()],tags:[T_('CONTROLLO DA 5 MINUTI SU MAI INPS','a')]},
+ {w:.65,lab:'ENTRA SU INPS PUNTO IT',cap:'SPID, CARTA D\'IDENTITÀ ELETTRONICA O CARTA SERVIZI',cs:48,items:[BR('inps.it · Mai Inps',['Accedi con Spid','Carta d\'identità elettronica','Carta nazionale dei servizi','Fascicolo previdenziale'],1000,540)],tags:[]}]};
+BLK[44]={scenes:[
+ {w:.45,lab:'ESTRATTO CONTO',cap:"L'ELENCO DI TUTTI I TUOI CONTRIBUTI, ANNO PER ANNO",items:[DC('ESTRATTO CONTO CONTRIBUTIVO',['2019 · contributi versati','2020 · contributi versati','2021 · ANNO MANCANTE?','2022 · contributi versati'],720,460)],tags:[]},
+ {w:.55,lab:'CONTROLLA DUE COSE',cap:"PER OGNI RIGA, CHIEDITI: QUESTO ANNO C'È?",items:[C('CONTROLLA 1','NON|MANCANO ANNI','','p',440),C('CONTROLLA 2','RETRIBUZIONI|GIUSTE','','p',440)],tags:[T_("QUESTO ANNO C'È?",'a')]}]};
+BLK[45]={scenes:[
+ {w:.45,lab:'LE TRE PORTE',cap:'TI RICORDI LE TRE PORTE?',items:[DR(1),DR(2),DR(3)],tags:[T_('CONTRIBUTIVO PURO · MISTO · FORNERO','a',null,38)]},
+ {w:.55,lab:'LA TUA PORTA',cap:"GUARDA L'ANNO DEL TUO PRIMO CONTRIBUTO",items:[C('PRIMO CONTRIBUTO','ANNO ?','','p',440),AR(),C('LA TUA PORTA','1 · 2 · 3','','g',440)],tags:[T_('DUE MINUTI, E SAI QUAL È LA TUA','g')]}]};
+BLK[46]={scenes:[
+ {w:.45,lab:'SE TROVI UN BUCO',cap:"USA LA FUNZIONE PER SEGNALARE L'ANOMALIA",items:[W_(),C('SEGNALA','L\'ANOMALIA','','d',440)],tags:[]},
+ {w:.55,lab:'POI IL PATRONATO',cap:'PORTA BUSTE PAGA E CONTRATTI A UN PATRONATO',items:[DC('BUSTE PAGA',['2020','2021'],380,330),DC('CONTRATTI',['lavoro','periodi'],380,330,'#0B4A50'),AR(),C('PATRONATO','TI AIUTA','A CORREGGERE','g',420)],tags:[]}]};
+BLK[47]={scenes:[
+ {w:.45,lab:'PENSAMI',cap:"PENSAMI, IL SIMULATORE DELL'INPS",items:[BR('inps.it · Pensami',['Simulatore pensione','Stima in base ai tuoi dati'],900,440)],tags:[T_('UNA STIMA DELLA TUA PENSIONE','a')]},
+ {w:.55,lab:'PROVALO',cap:"PROVALO CON ETÀ DI USCITA DIVERSE",items:[A(C('USCITA A 64','? €','','p',300),.0),A(C('USCITA A 65','? €','','p',300),.25),A(C('USCITA A 66','? €','','p',300),.5),A(C('USCITA A 67','? €','','g',300),.75)],tags:[T_("È QUELLO CHE ABBIAMO FATTO NOI ADESSO",'g',null,38)]}]};
+BLK[48]={scenes:[
+ {w:1,lab:'IN TRE MOSSE',cap:'RIASSUNTO DA FARE OGGI, IN TRE MOSSE!',items:[A(C('UNO','APRI|ESTRATTO CONTO','SU MAI INPS','g',430),.0),A(C('DUE','CONTA GLI ANNI|CERCA I BUCHI','','p',430),.38),A(C('TRE','SEGNALA|VAI AL PATRONATO','SE NON TORNA','d',430),.72)],tags:[T_('POCHI MINUTI','a')]}]};
+BLK[49]={scenes:[
+ {w:.4,lab:'OCCHIO',cap:'OCCHIO A TRE ERRORI!',items:[W_()],tags:[T_('TRE ERRORI','r')]},
+ {w:.6,lab:'ERRORE 1 E 2',cap:'PRIMO E SECONDO ERRORE',items:[C('ERRORE 1','FIDARTI DI|UN CALCOLO IN RETE','SENZA CONTROLLARE','r',520),C('ERRORE 2','LASCIARE IL LAVORO|PRIMA DI VERIFICARE','L\'ESTRATTO CONTO','r',520)],tags:[]}]};
+BLK[50]={scenes:[
+ {w:.5,lab:'ERRORE 3',cap:"ASPETTARE L'ULTIMO ANNO PER GUARDARE LA POSIZIONE",cs:48,items:[C('ERRORE 3','ASPETTARE|L\'ULTIMO ANNO','','r',460),CAL('ULTIMO','1','ANNO',170)],tags:[]},
+ {w:.5,lab:'MEGLIO OGGI',cap:'MEGLIO GUARDARLA OGGI, CON ANCORA TUTTO IL TEMPO',items:[C('OGGI','HAI ANCORA|TUTTO IL TEMPO','','g',480),K()],tags:[T_('CORREGGERE UN BUCO RICHIEDE TEMPO E DOCUMENTI','a',null,38)]}]};
+BLK[51]={scenes:[
+ {w:1,lab:'RICAPITOLIAMO',cap:'TRE NUMERI DECIDONO LA TUA PENSIONE',items:[A(C('NUMERO UNO','L\'ETÀ','CHE SCEGLIE IL COEFFICIENTE','g',500),.0),A(C('NUMERO DUE','QUANTO|GUADAGNI','RIEMPIE IL SALVADANAIO','p',500),.38),A(C('NUMERO TRE','ANNI|COPERTI','DA CONTRIBUTI','r',500),.72)],tags:[]}]};
+BLK[52]={scenes:[
+ {w:.3,lab:'IL CONTO PROMESSO',cap:'ECCO IL CONTO CHE TI AVEVO PROMESSO!',items:[CA(),Q()],tags:[T_('STESSO STIPENDIO, STESSI CONTRIBUTI','a',null,40)]},
+ {w:.7,lab:'64 CONTRO 67 ANNI',cap:'USCIRE A 64 INVECE CHE A 67 COSTA CIRCA 185 € AL MESE',cs:46,items:[A(C('67 ANNI','1.993 €','LORDI AL MESE','p',380),0),A(OP('−'),.2),A(C('64 ANNI','1.808 €','LORDI AL MESE','p',380),.4),A(OP('='),.6),A(C('COSTA','185 €','AL MESE, LORDI','r',380),.8)],tags:[]}]};
+BLK[53]={scenes:[
+ {w:.65,lab:'LA SORPRESA',cap:'SE LA PENSIONE DURA 20 ANNI: CIRCA 48.000 € IN MENO',items:[A(C('PERDI','185 €','AL MESE','r',300),0),A(OP('×'),.18),A(C('MENSILITÀ','13','','p',260),.34),A(OP('×'),.5),A(C('ANNI','20','','p',260),.64),A(AR(),.78),A(C('IN TOTALE','48.000 €','LORDI','r',420),.9)],tags:[]},
+ {w:.35,lab:'UNA SCELTA DI TRE ANNI',cap:'48.000 €, PER UNA SCELTA DI TRE ANNI!',items:[C('SCELTA DI','3 ANNI','','d',380),AR(),C('COSTO','≈ 48.000 €','','r',460)],tags:[T_('GUARDA I NUMERI PRIMA DI DECIDERE','g')]}]};
+BLK[54]={scenes:[
+ {w:.3,lab:'RICORDA',cap:'È UN ESEMPIO SEMPLIFICATO, CON NUMERI TONDI',items:[W_(),ST('ESEMPIO SEMPLIFICATO',RED_)],tags:[]},
+ {w:.4,lab:'NELLA REALTÀ CONTANO',cap:'NELLA REALTÀ CONTANO QUATTRO COSE',items:[C('1','SISTEMA|DI CALCOLO','','p',330),C('2','RIVALUTAZIONE','','p',330),C('3','CARRIERA','','p',330),C('4','ANNI|COPERTI','','p',330)],tags:[]},
+ {w:.3,lab:'PER LA TUA CIFRA',cap:'CONTROLLA INPS PUNTO IT, OPPURE CHIEDI A UN PATRONATO',cs:48,items:[BR('inps.it',['La tua posizione ufficiale'],760,360),C('OPPURE','PATRONATO','','g',380)],tags:[]}]};
+BLK[55]={scenes:[
+ {w:.6,lab:'TOCCA A TE',cap:'SCRIVIMI NEI COMMENTI: IN CHE ANNO SEI NATO?',items:[DC('COMMENTI',['Sono nato nel 1968…','Penso di uscire a 67 anni…'],640,380,'#0B4A50'),Q()],tags:[T_('IN CHE ANNO SEI NATO?','a'),T_('A CHE ETÀ VAI IN PENSIONE?','g')]},
+ {w:.4,lab:'I PROSSIMI VIDEO',cap:'LE VOSTRE DOMANDE DIVENTANO I PROSSIMI VIDEO',items:[C('LE VOSTRE DOMANDE','I PROSSIMI|VIDEO','LEGGO TUTTO','g',560)],tags:[]}]};
+
+BLK[56]={scenes:[
+ {w:.55,lab:'ISCRIVITI',cap:'ISCRIVITI A CONTI IN PENSIONE E ATTIVA LA CAMPANELLA',cs:50,items:[C('CONTI IN PENSIONE','ISCRIVITI','ATTIVA LA CAMPANELLA','r',560),K()],tags:[]},
+ {w:.45,lab:'IL PROSSIMO VIDEO',cap:'UN TEMA CHE TOCCA TUTTI I PENSIONATI. NON PERDERLO!',cs:50,items:[C('PROSSIMO VIDEO','UN TEMA CHE|TOCCA TUTTI','I PENSIONATI','g',560)],tags:[T_('NON PERDERLO!','a')]}]};
+BLK[57]={scenes:[
+ {w:1,lab:'VERIFICA SEMPRE',cap:'VERIFICA SEMPRE SUI CANALI UFFICIALI: INPS.IT',cs:50,items:[BR('inps.it',['Canali ufficiali'],760,380),C('DISCLAIMER','CONTENUTO INFORMATIVO','NON È CONSULENZA PREVIDENZIALE','d',900)],tags:[]}]};
+// dettagli aggiunti sopra le scene esistenti (seconda riga di oggetti disegnati)
+const D2={
+21:[[CLK('ORA'),MB(6,28,[],'COEFFICIENTE'),NT(2,'%')],[MB(3,40,[0],'64 · 65 · 66 ANNI'),TL(64,66,[64,66],'ETÀ DI USCITA',1,700)]],
+22:[[MB(8,26,[7],'67 ANNI: IL PIÙ ALTO'),STK(7,'+ PENSIONE')],[PPL(3),STK(8,'SALE OGNI ANNO'),CLK('ASPETTI')]],
+23:[[TL(64,67,[64,67],'DA 64 A 67 ANNI',1,900),STK(4,'1.808 → 1.993')]],
+24:[[STK(3,'+ 60 € / ANNO'),CLK('1 ANNO'),NT(3,'€')],[BAL('64 ANNI','67 ANNI',-10),CLK('FINE')]],
+25:[[NT(2,'€'),MB(4,30,[3],'CONTRIBUTI')],[MB(5,34,[4],'COEFFICIENTE'),CLK('1 ANNO')]],
+26:[[MB(5,30,[4],'66 ANNI'),TL(65,67,[66,67],'CONTRIBUTI',1,640),MB(6,30,[5],'67 ANNI')],[STK(5,'+ 114 € / MESE'),NT(3,'€')]],
+27:[[PPL(2),TL(60,67,[60,64],'MENO ANNI VERSATI',1,900)],[PIE(0.75,'SALVADANAIO',MINT),BAL('64','67',6)]],
+28:[[MB(6,30,[0],'ETÀ DI USCITA'),CLK('ETÀ')],[BAL('N.3','N.2',8),NT(2,'€'),STK(4,'')]],
+29:[[PPL(3),NT(2,'€')],[TL(27,67,[27,67],'40 ANNI DI CONTRIBUTI',5,1300)],[NT(2,'25.000'),NT(2,'35.000'),NT(3,'50.000')]],
+30:[[STK(3,'ANNA'),STK(5,'BRUNO'),STK(8,'CARLA')]],
+31:[[PIE(0.74,'74%',MINT),PIE(0.74,'74%',MINT),PIE(0.74,'74%',MINT)],[PIE(0.74,'IDEALE',AMB2),TL(1,40,[1,40],'NESSUN BUCO',3,900)]],
+32:[[CLK('ORE'),PIE(0.5,'PART-TIME',AMB2)],[MB(8,12,[],'ANNO PER ANNO'),NT(2,'€')]],
+33:[[MB(8,20,[4],'UN ANNO MANCA'),TL(1,10,[5,5],'ANNI SENZA CONTRIBUTI',1,800)],[STK(2,'STIPENDIO'),BAL('PENSIONE','',-12)]],
+34:[[NT(1,'35.000 €'),CLK('1 ANNO')],[STK(1,'11.550 €'),MB(6,28,[5],'SALVADANAIO')],[STK(3,'− 50 €/MESE'),NT(2,'−')]],
+35:[[NT(1,'50 €'),STK(2,'× 13'),NT(3,'650 €')],[TL(1,5,[1,5],'5 ANNI DI BUCO',1,800),CLK('5 ANNI')]],
+36:[[TL(1,5,[1,5],'5 ANNI',1,700),STK(5,'− 249 €')],[BAL('64 ANNI','5 BUCHI',-8),STK(4,'')]],
+37:[[PPL(4),NT(2,'€')],[STP(['TROVA','SEGNALA','CORREGGI'],0)]],
+38:[[CLK('TEST'),STP(['DOMANDA 1','DOMANDA 2','DOMANDA 3'],0)],[PIE(0.33,'33%',MINT),BAL('VERO','FALSO',0)],[NT(2,'€'),STK(3,'')]],
+39:[[STP(['DOMANDA 1','DOMANDA 2','DOMANDA 3'],1),MB(5,24,[4],'RIVALUTAZIONE')],[TL(1,5,[1,5],'ULTIMI 5 ANNI',1,700),STK(5,'MONTANTE')]],
+40:[[STP(['DOMANDA 1','DOMANDA 2','DOMANDA 3'],2),BAL('64','67',-8)],[MB(4,36,[0],'ESCI PRIMA'),STK(3,'MENO')]],
+41:[[NT(1,'35.000'),PIE(0.33,'33%',MINT)],[STP(['× 33%','× ANNI','× COEFF.'],0)]],
+42:[[STK(4,'ANNO'),CLK('÷ 13'),STP(['PENSIONE ANNUA','÷ 13','AL MESE'],1)],[CA(),NT(3,'€'),CLK('1 MINUTO')]],
+43:[[PPL(3),STP(['ENTRA','SPID / CIE / CNS','FASCICOLO'],0)]],
+44:[[MB(7,10,[3],'ANNO MANCANTE'),TL(2019,2023,[2021,2021],'ANNI VERSATI',1,800)],[MB(6,14,[],'RETRIBUZIONI'),STK(4,'DA CONTROLLARE')]],
+45:[[TL(1985,2005,[1996,1996],'PRIMO CONTRIBUTO',4,1100)],[STP(['ANNO','PORTA','TUA'],1),CLK('2 MIN')]],
+46:[[PPL(2),STP(['TROVI','SEGNALI','CORREGGI'],1)],[NT(2,'€'),PPL(3)]],
+47:[[STK(4,'STIMA'),CLK('SIMULATORE')],[MB(4,36,[3],'64 · 65 · 66 · 67'),TL(64,67,[67,67],'ETÀ DI USCITA',1,700)]],
+48:[[CLK('POCHI MINUTI'),STP(['APRI','CONTA','SEGNALA'],0)]],
+49:[[CLK('ERRORI'),NT(2,'?')],[BAL('RETE','ESTRATTO',-10),PPL(2)]],
+50:[[TL(1,10,[10,10],'ULTIMO ANNO',1,800),CLK('ULTIMO ANNO')],[TL(1,10,[1,3],'OGGI: TEMPO',1,800),STK(4,'')]],
+51:[[MB(8,26,[7],'ETÀ'),MB(6,36,[5],'GUADAGNI'),TL(1,8,[3,4],'BUCHI',1,640)]],
+52:[[MB(4,40,[3],'67 ANNI'),MB(4,40,[0],'64 ANNI')],[STK(6,'1.993'),BAL('67','64',-10),STK(4,'1.808')]],
+53:[[CLK('13 MESI'),TL(1,20,[1,20],'20 ANNI DI PENSIONE',5,1000),NT(3,'€')],[STK(7,'48.000 €'),BAL('3 ANNI','48.000 €',10)]],
+54:[[NT(2,'€'),CLK('ESEMPIO')],[STP(['SISTEMA','RIVALUT.','CARRIERA','ANNI'],0)],[PPL(3),NT(2,'€')]],
+55:[[PPL(3),NT(2,'?')],[PPL(4),STP(['LEGGO','RISPONDO','VIDEO'],2)]],
+56:[[CLK('SUBITO'),PPL(3)],[STK(5,'PROSSIMO VIDEO')]],
+57:[[STK(3,'UFFICIALE'),PPL(2)]]
+};
+Object.keys(D2).forEach(b=>{D2[b].forEach((it2,i)=>{if(BLK[b]&&BLK[b].scenes[i])BLK[b].scenes[i].items2=it2;});});
+
+const SB=[];const TOT=330/30;mk(BLK[22],SB,TOT);
+
+
+const bok=document.getElementById('bok');
+for(let i=0;i<16;i++){el('circle',{cx:(i*271)%1920,cy:(i*197)%1080,r:30+((i*37)%80),fill:'#8FF5DC',opacity:.06+((i*13)%7)*0.01},bok);}
+const sceneG=document.getElementById('scene');const camG=document.getElementById('cam');
+let curS=-1;
+function drawBlock(t){
+ let i=SB.length-1;for(let k=0;k<SB.length;k++){if(t<SB[k].e){i=k;break;}}
+ const S0=SB[i];
+ if(curS!==i){sceneG.innerHTML='';S0.build(sceneG);curS=i;}
+ const lt=t-S0.s;
+ S0.update(lt);
+ const fin=eo3(seg(lt,0,0.3)),fout=(i<SB.length-1)?1-eio(seg(t,S0.e-0.3,S0.e)):1;
+ sceneG.setAttribute('opacity',Math.min(fin,fout));
+ const z=1+0.02*(t/TOT);camG.setAttribute('transform','translate(960 540) scale('+z+') translate(-960 -540)');
+}
+function draw(i,t){drawBlock(t);}
+
+</script></body></html>

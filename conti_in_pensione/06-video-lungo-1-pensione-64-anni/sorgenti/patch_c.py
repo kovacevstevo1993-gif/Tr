@@ -1,0 +1,17 @@
+s=open('blocks_c.js',encoding='utf-8').read()
+def R(a,b):
+    global s
+    assert a in s,a; s=s.replace(a,b)
+R("txt(o.tl,'PRIMA DEL 1996',(yx(1996)-800)/2,-100,44,'#FFB3A8','900');txt(o.tl,'DAL 1996 IN POI',(800+yx(1996))/2,-100,44,'#9FF5DC','900');","txt(o.tl,'PRIMA DEL 1996',(yx(1996)-800)/2,138,40,'#FFB3A8','900');txt(o.tl,'DAL 1996 IN POI',(800+yx(1996))/2,138,40,'#9FF5DC','900');")
+R("o.k1=el('g',{},g);chip(o.k1,'+1 MESE',300);o.k2=el('g',{},g);chip(o.k2,'+1 MESE',300);","o.k1=el('g',{},g);o.kt1=chip(o.k1,'+1 MESE',300);o.k2=el('g',{},g);o.kt2=chip(o.k2,'+1 MESE',300);")
+R("const ck=three?'+3 MESI':'+1 MESE';\n T(o.k1,1190,640,-3,Math.max(0,eob(seg(t,1.6,2.3))));T(o.k2,1730,640,3,Math.max(0,eob(seg(t,2.0,2.7))));","o.kt1.t.textContent=three?'+3 MESI':'+1 MESE';o.kt2.t.textContent=three?'+3 MESI':'+1 MESE';\n T(o.k1,960,700,-3,Math.max(0,eob(seg(t,1.6,2.3))));T(o.k2,1500,700,3,Math.max(0,eob(seg(t,2.0,2.7))));")
+R("txt(o.a,'ASSEGNO SOCIALE 2026',0,-110,38,GRN,'900');txt(o.a,'€ 546,24',0,50,120,INK,'900');","txt(o.a,'ASSEGNO SOCIALE 2026',0,-110,36,GRN,'900');txt(o.a,'€ 546,24',0,50,96,INK,'900');")
+R("txt(o.r,'AL MESE',0,-100,52,'#fff','900');txt(o.r,'€ 1.638,72',0,50,126,'#fff','900');","txt(o.r,'AL MESE',0,-100,52,'#fff','900');txt(o.r,'€ 1.638,72',0,50,84,'#fff','900');")
+R("T(o.a,520,470,-2,Math.max(0,eob(seg(t,0.2,0.9))));\n T(o.m,960,470,0,","T(o.a,480,470,-2,Math.max(0,eob(seg(t,0.2,0.9))));\n T(o.m,940,470,0,")
+R("T(o.r,1440,470,2,Math.max(0,eob(seg(t,6.2,6.9))));T(o.ck,1740,300,0,","T(o.r,1480,470,2,0.95*Math.max(0,eob(seg(t,6.2,6.9))));T(o.ck,1760,290,0,")
+R("txt(w,r[0],-300,-10,54,INK,'900');txt(w,r[1],160,28,70,AMB,'900');txt(w,'= '+r[2],600,28,92,GRN,'900');return w;});","txt(w,r[0],-380,-10,46,INK,'900');txt(w,r[1],60,28,62,AMB,'900');txt(w,'= '+r[2],560,28,76,GRN,'900');return w;});")
+R("T(o.ref,960,830,0,","T(o.ref,960,845,0,")
+R("T(c,1000+col*140,280+row*160,","T(c,1010+col*125,280+row*160,")
+R("txt(o.res,'CIRCA',0,-62,46,'#fff','900');txt(o.res,'€ 21.300 L’ANNO',0,64,100,'#fff','900');","txt(o.res,'CIRCA',0,-62,46,'#fff','900');txt(o.res,'€ 21.300 L’ANNO',0,64,74,'#fff','900');")
+R("T(o.res,1330,770,2,","T(o.res,1330,750,2,")
+open('blocks_c.js','w',encoding='utf-8').write(s)

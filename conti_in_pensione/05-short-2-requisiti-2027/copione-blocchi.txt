@@ -1,0 +1,25 @@
+SHORT 2 - REQUISITI PENSIONE 2027 (un blocco = una clip: blocco1 ... blocco8)
+
+1. Aspetta! Se pensi di andare in pensione nel 2027... leggi questo, prima!   [72 caratteri]
+2. Dal primo gennaio 2027, l'età per la pensione di vecchiaia sale: da 67 anni... a 67 anni e un mese!   [99 caratteri]
+3. E non finisce qui! Dal 2028, diventano 67 anni e 3 mesi.   [56 caratteri]
+4. Pensione anticipata? Cambia anche lei! Nel 2027 servono 42 anni e 11 mesi di contributi per gli uomini...   [105 caratteri]
+5. ...e 41 anni e 11 mesi per le donne.   [36 caratteri]
+6. Attenzione, però: non vale per tutti! Chi fa lavori usuranti, per esempio, è escluso dall'aumento.   [98 caratteri]
+7. Controlla i tuoi contributi su Mai Inps, e se hai dubbi, chiedi a un patronato, prima di fare qualsiasi scelta!   [111 caratteri]
+8. Iscriviti a Conti in Pensione: ti spiego le novità sulle pensioni... con fonti ufficiali!   [89 caratteri]
+
+Totale: 666 caratteri (a ~14 caratteri al secondo la voce dura circa 48 secondi).
+(Per la voce: scrivi "Inps" e "Mai Inps", così non viene letto lettera per lettera. Le durate delle clip le detta la voce: mandami lo screenshot della timeline CapCut a fine di ogni frase.)
+
+FONTI VERIFICATE (02/10/2026)
+- INPS, notizia "Pensioni: requisiti aggiornati per il 2027 e il 2028" e Circolare INPS n. 28 del 16/03/2026 (attua la legge di bilancio 2026 e il decreto ministeriale sull'adeguamento alla speranza di vita).
+- Vecchiaia: 67 anni e 1 mese dal 1/1/2027, 67 anni e 3 mesi dal 2028 (20 anni di contributi minimi).
+- Anticipata: 2027 = 42 anni e 11 mesi uomini, 41 anni e 11 mesi donne; 2028 = 43 anni e 1 mese uomini, 42 anni e 1 mese donne.
+- Esclusi dall'adeguamento: lavoratori art. 67 D.Lgs. 67/2011 (usuranti) per tutto il biennio.
+- Confermato da più fonti indipendenti (Manageritalia, MySolution, Ipsoa, EC News, PMI.it).
+NON dire nel video: rivalutazione 2027 (non è ancora ufficiale: la percentuale arriva con decreto MEF a novembre).
+
+DURATE CLIP (lette dalle tue schermate CapCut, 30 fps)
+1: 4,63 s - 2: 9,93 s - 3: 5,40 s - 4: 8,20 s - 5: 3,60 s - 6: 6,17 s - 7: 6,40 s - 8: 4,77 s   (totale 49,10 s)
+Clip pronte in clip/blocco1.mp4 ... blocco8.mp4 (1080x1920, 30 fps). Sorgenti in sorgenti/ (build.py + render.py).

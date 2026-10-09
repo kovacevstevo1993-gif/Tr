@@ -1,10 +1,20 @@
 # Regole permanenti (valgono sempre, in ogni sessione)
 
-**Questo repo ha un hook SessionStart (.claude/settings.json) che carica automaticamente senior_advantage/PASSAGGIO-CHAT.md a ogni nuova chat: tenerlo SEMPRE aggiornato e completo.**
+**AVVIO DI OGNI CHAT NUOVA (09/10/2026, ordine dell'utente: "ogni chat nuova deve avere tutto il progetto", senza mischiare):**
+- Tutto il progetto (4 canali) e' su `main`: ogni chat nuova parte gia' con tutti i file. Non serve cercare altri branch.
+- I canali sono SEPARATI, ognuno nella sua cartella. Dal primo messaggio dell'utente capire su QUALE canale si lavora e leggere SOLO i file di avvio di quel canale, prima di rispondere:
+  - The Money Backstory -> `money_backstory/REGOLE-UTENTE-05-10.md` (regole con le parole dell'utente) + `money_backstory/START-QUI-NUOVA-CHAT.md` (stato) + `money_backstory/RICERCHE-VIDIQ-LOG.md`.
+  - The Senior Advantage -> `senior_advantage/PASSAGGIO-CHAT.md` + `senior_advantage/RICERCHE-VIDIQ.md`.
+  - Conti in Pensione -> `conti_in_pensione/REGOLE-FISSE.md` (per intero).
+  - Bambini Ciao Ciao -> `PROGETTO_COMPLETO_Bambini_Ciao_Ciao.md` + cartella `parco/`.
+- Non aprire ne' usare file, regole o stile di un altro canale. Le regole di questo file valgono per tutti.
+- Fine di ogni lavoro: salvare nel file di stato del canale, commit e push sul branch della sessione, poi unire su main (cosi' la chat dopo trova tutto).
 
 **PRIMA REGOLA: SALVARE TUTTO (04/10/2026): ogni cosa fatta o decisa (copioni, pacchetti, durate, regole, stato dei video) va salvata SUBITO in senior_advantage/PASSAGGIO-CHAT.md o in CLAUDE.md, con commit e push, senza che l'utente lo chieda. Prima di scrivere qualsiasi cosa, leggere CLAUDE.md, PASSAGGIO-CHAT.md e i file modello: l'utente non deve ripetere niente.**
 
 **"TUTTO" = VERAMENTE TUTTO (04/10/2026): quando l'utente dice "tutto" (salvare, passare alla chat nuova, leggere le altre chat) significa ogni singola riga, intera, senza riassumere, senza filtrare per argomento, senza tagliare. Esempio: passaggio chat = file di stato + testo INTERO di tutte le chat del progetto in senior_advantage/chat/ (esportate con list_sessions/list_events). Mai a meta'.**
+
+**MAPPA DI TUTTO IL PROGETTO (4 progetti, rami, file di stato): /PASSAGGIO-GENERALE.md. "Tutto" / "dalla A alla Z" = tutto il progetto, si fa senza chiedere "vuoi che lo faccia?" (07/10/2026).**
 
 Tre canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o dati.
 - `senior_advantage/` — **The Senior Advantage** (@TheSeniorAdvantage): sconti, benefici e aiuti per over 60 USA. Slide verde bosco e avorio. Short verticali 1080x1920, video lunghi 1920x1080.
@@ -18,19 +28,29 @@ Tre canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 - In più, sempre: descrizione (riga Subscribe + Disclaimer). Il commento fissato NON ha il disclaimer (deciso il 04/10/2026): solo una domanda al pubblico.
 - Il disclaimer non protegge da YouTube: contano contenuto originale, dati verificati su fonti ufficiali, niente promesse di guadagno, niente persone/avatar AI che si presentano come esperti.
 
+## Regole valide per TUTTI i progetti (05/10/2026)
+- Controllare completamente ogni video/slide finito prima di consegnarlo (fotogrammi estratti a inizio, meta', 80%, fine; testo tagliato, sovrapposizioni, conteggio fotogrammi). Vale per tutti i canali.
+- Slide: l'ultimo elemento compare al 80% della durata della slide (non prima). Altre regole alla lettera in money_backstory/REGOLE-UTENTE-05-10.md.
+- Ogni regola nuova dell'utente va scritta subito nel repo, parola per parola.
+
 ## Come lavora l'utente
 - REGOLA ASSOLUTA (03/10/2026): rispondere SOLO a quello che chiede, il minimo. Niente spiegazioni, riepiloghi, tabelle, note, offerte o domande non richieste. Ogni parola in più spreca crediti e chat (non sono illimitati). Se chiede il pacchetto (titolo, descrizione, tag), dare solo quello.
-- REGOLA ASSOLUTA (03/10/2026): i blocchi di voce / copioni vanno SEMPRE scritti direttamente in chat, numerati, uno per blocco, pronti da copiare in CapCut. MAI in un file, MAI con SendUserFile. Solo gli MP4 si mandano come file.
+- REGOLA ASSOLUTA (ultima parola dell'utente, 06-07/10/2026, annulla il formato senza riquadri): i blocchi di voce / copioni vanno SEMPRE scritti direttamente in chat, ogni blocco in un suo RIQUADRO DI CODICE (```) da copiare con un tocco in CapCut. FORMATO ESATTO: riga con l'etichetta in grassetto **Blocco N**, subito sotto il riquadro ``` col solo testo del blocco, riga vuota tra un blocco e l'altro. Prima riga del messaggio: titolo in grassetto (es. **COSTCO – Video lungo 3**). NIENTE elenco numerato, NIENTE testo semplice fuori dai riquadri. Mandarli TUTTI in un colpo. MAI in un file.
 - Eccezione: passaggio chat e riepiloghi lunghi richiesti: file con SendUserFile, non in chat. I copioni e i blocchi di voce restano SEMPRE in chat.
 - Gancio (04/10/2026): ogni video ha un gancio DIVERSO. Mai ripetere la stessa apertura (es. "Wait." l'hanno già short 5 e 6: non riusarla). Variare formula e primo suono.
 - Sigle per la voce (vale per TUTTI i video lunghi e gli short): SNAP = "snap" (parola, minuscolo). CSFP, USDA, LIHEAP ecc. a lettere separate: "C S F P", "U S D A". Siti: "f n s dot u s d a dot gov".
 - Slide (04/10/2026): dal prossimo video, montaggio PIÙ DETTAGLIATO (non più tagliato) e slide che si capiscono meglio. Ogni slide deve FINIRE dentro la sua frase/blocco: tutto ciò che compare deve essere completo e ben visibile prima che la voce passi al blocco dopo; niente elementi tagliati, coperti o ancora in animazione a fine blocco.
+- DECIDE SOLO L'UTENTE (07/10/2026, ORDINE ASSOLUTO): Claude non decide MAI da solo quanto controllare, quanto fare, cosa saltare o cosa e' 'abbastanza'. Si eseguono le regole alla lettera, sempre, anche se c'e' fretta. Se una regola non dice quanto, si fa il MASSIMO (tutto), mai il minimo.
+- NON DIRE "FATTO/MANDATO" SE NON E VERO (07/10/2026, ORDINE ASSOLUTO): scrivere "rifatto", "pronto" o "mandato" SOLO dopo che il render e finito, i fotogrammi sono controllati e SendUserFile ha confermato la consegna. Se una cosa e in corso o non e stata mandata, dirlo chiaro: "in corso" o "non ancora mandata". Mai annunciare un invio prima di farlo.
+- CONTROLLO FOTOGRAMMI PRIMA DI MANDARE (07/10/2026, ORDINE ASSOLUTO): prima di mandare QUALSIASI MP4 di slide, controllare OGNI SINGOLO FOTOGRAMMA (30 al secondo), fotogramma per fotogramma, di OGNI blocco, senza campionare e senza scorciatoie: niente tagliato, coperto, sovrapposto, in ritardo o ancora in animazione a fine blocco, e numero di fotogrammi uguale alla durata dell'utente. SOLO DOPO si manda. Mai mandare e controllare dopo. Nessun risparmio di fatica o di tempo.
 - PACCHETTO (formato FISSO, identico per ogni video e per ogni chat, mai cambiarlo): scrivere TUTTO in chat, ogni campo in un suo BLOCCO DI CODICE (```) da copiare con un tocco, con etichetta in grassetto sopra, in quest'ordine: **Dove va** (playlist, cosa creare/cancellare: di solito niente), **Titolo**, **Descrizione**, **Tag**, **Commento da fissare**, **Impostazioni** (IA No, promozione No, miniatura, schermata finale 20 s per i lunghi; per gli SHORT anche "Video correlato" = il video lungo del tema. Il video correlato si imposta SOLO sullo short, mai nelle impostazioni del video lungo). Contenuto sul modello di senior_advantage/MODELLO-DESCRIZIONE-VIDEO-1.md (LEGGERLO SEMPRE prima): descrizione con gancio, paragrafo "The one rule...", CHAPTERS (orari dalla timeline dell'utente, arrotondati per difetto), "Sources: official pages of ..." senza link lunghi, Subscribe, Disclaimer, 3 hashtag. Tag con virgole senza spazi. Niente note, niente spiegazioni. Mai usare i titoli ### in chat. NIENTE LINK/URL interi nella descrizione (ne' di fonti ne' di siti): solo il nome del sito (es. "fns.usda.gov") nella riga Sources; l'unico link ammesso e' quello Subscribe. Vale anche per gli SHORT.
 - DISCLAIMER NELLA DESCRIZIONE (04/10/2026): SEMPRE presente e ben visibile, con l'etichetta "Disclaimer:", in TUTTE le descrizioni (lunghi E short): "Disclaimer: Rules, amounts and ages change and differ by location and plan. Always confirm with the official source before you rely on them. General information, not financial advice. This channel is not affiliated with [ente/aziende citati]." Nel video lungo anche slide finale e voce; nello short solo descrizione.
 - MODELLI: pacchetto video lungo = senior_advantage/MODELLO-DESCRIZIONE-VIDEO-1.md (tag senza spazi); pacchetto SHORT = senior_advantage/MODELLO-PACCHETTO-SHORT.md (tag con ", "). Leggerli SEMPRE prima.
 - CONTROLLARE PRIMA, SEMPRE (04/10/2026): prima di produrre QUALSIASI cosa (pacchetto, descrizione, copione, slide, miniatura) guardare COME sono stati fatti i precedenti dello stesso tipo: file modello in senior_advantage/ (MODELLO-*), PASSAGGIO-CHAT.md e, se non bastano, le altre chat (tool list_sessions/list_events). Poi farlo IDENTICO. Quando manca un modello nel repo, recuperarlo dalle chat e SALVARLO subito in un file MODELLO-*.md con commit e push. Mai inventare un formato nuovo.
 - Risposte corte, niente scuse né "hai ragione". Una cosa alla volta. Verificare prima di dare un'indicazione.
 - RICERCHE vidIQ (06/10/2026): TUTTE le ricerche vidIQ e i dati analytics gia fatti sono in senior_advantage/RICERCHE-VIDIQ.md. LEGGERLO PRIMA di spendere crediti: non rifare mai una ricerca gia salvata. Ogni nuova ricerca va aggiunta subito a quel file (commit + push). Le informazioni pubbliche di YouTube (view, titoli, descrizioni, capitoli, concorrenti) si leggono gratis con curl, senza crediti.
+- NON ANTICIPARE I PASSI (06/10/2026): copione, blocchi di voce, slide, miniature, pacchetto si fanno SOLO quando l'utente li chiede. Dopo una ricerca: riportare il risultato e fermarsi; mai scrivere il copione "gia che ci sono". Prima di un nuovo video: ricerca, poi titolo/angolo da far confermare all'utente, poi (solo su suo ordine) i fatti e il copione. Se l'utente dice "come nell'altra chat" senza ordinare il copione, NON e un ordine di scriverlo.
+- PRIMA DI QUALSIASI RICERCA (06/10/2026, dopo crediti sprecati su Costco): fare grep della parola chiave/tema in senior_advantage/RICERCHE-VIDIQ.md E in senior_advantage/chat/ (tutte le chat salvate). Se la ricerca o il dato c'e gia, usarlo e NON rifarlo, NON rispiegarlo come nuovo. Dire all'utente in una riga cosa c'e gia e cosa manca davvero, PRIMA di cercare o spendere crediti. Zero crediti vidIQ senza chiedere, anche se l'utente dice "fai tutte le ricerche": prima elencare cosa manca e quanto costa.
 - Mai spendere crediti vidIQ senza dirlo e chiedere prima (eccetto quando l'utente lo autorizza esplicitamente nel messaggio).
 - Slide e grafica le fa Claude con il codice (gratis). Titolo, descrizione e tag già completi da incollare, Subscribe e disclaimer compresi.
 - Dire PRIMA dove va ogni nuovo video (playlist, cosa creare o cancellare su YouTube).
@@ -48,7 +68,7 @@ Tre canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 
 ---
 
-# CANALE "CONTI IN PENSIONE" (@ContiInPensione) - queste regole valgono SOLO quando si lavora su quel canale (cartella conti_in_pensione/)
+# CANALE "CONTI IN PENSIONE" (@ContiInPensione) - queste regole valgono SOLO quando si lavora su quel canale (cartella conti_in_pensione/) - LEGGERE PRIMA DI FARE QUALSIASI COSA
 
 1. PRIMA di ogni risposta, e di nuovo PRIMA di ogni consegna all'utente, leggere per intero `conti_in_pensione/REGOLE-FISSE.md` e applicarlo alla lettera, senza interpretazioni proprie.
 2. Eseguire SOLO gli ordini dell'utente. Se una frase non è chiara: UNA domanda sola, PRIMA di fare qualsiasi cosa. Mai inventare, mai aggiungere cose non chieste.

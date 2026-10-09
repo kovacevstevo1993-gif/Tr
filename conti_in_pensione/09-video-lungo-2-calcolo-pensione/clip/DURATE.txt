@@ -1,0 +1,1 @@
+Blocchi 1-57: fotogrammi a 30 fps letti dalle timeline CapCut (vedi FR in sorgenti/render.py)
