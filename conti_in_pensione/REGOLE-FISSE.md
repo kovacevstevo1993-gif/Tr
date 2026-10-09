@@ -172,3 +172,4 @@
 - SHORT 6 = teaser del video lungo 4 (invalidita' 2027), "video correlato" = video 4. Didascalie che attirano curiosita' verso il video lungo; "migliora tutto, professionale, facile da capire". Cartella 15-short-6-teaser-video-lungo-4 (copione-blocchi.txt). Gancio diverso dagli short precedenti; niente 45 centesimi come angolo.
 - Risposte ai commenti YouTube: scritte con i NUMERI in cifre (non in lettere: non sono voce), in un riquadro.
 - (08/10/2026) Short 6: 6 clip S6-blocco01..06.mp4 fatte (QA OK su tutti i fotogrammi, 1080x1920, 30 fps, 1924 fotogrammi = 64,1 s; tempi sulla voce stimati a caratteri, tutto completo entro l'80% del blocco). Cartella 15-short-6-teaser-video-lungo-4 (clip, sorgenti, DURATE.txt, copione-blocchi.txt). Da fare: miniatura e pacchetto (solo se ordinati).
+- Risposte ai commenti offensivi (es. "SOMARI"): chiedere con gentilezza di moderare i termini, spiegando che il canale e' solo informativo: non decide e non paga le pensioni.
