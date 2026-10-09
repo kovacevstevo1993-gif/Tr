@@ -1,4 +1,6 @@
-# PASSAGGIO GENERALE - TUTTO IL PROGETTO DALLA A ALLA Z (aggiornato 07/10/2026)
+# PASSAGGIO GENERALE - TUTTO IL PROGETTO DALLA A ALLA Z (aggiornato 09/10/2026)
+
+**09/10/2026: TUTTI i branch (14) sono stati uniti in un unico branch e poi su main. Il lavoro piu recente di OGNI canale e su main: le righe sui "rami" qui sotto sono solo storico. Ogni chat nuova legge i file del SUO canale (CLAUDE.md, sezione AVVIO).**
 Repo: kovacevstevo1993-gif/Tr, cartella /home/user/Tr. L'utente ha 4 progetti/canali SEPARATI (non mescolare mai). "Tutto" = tutto il progetto, non solo la chat corrente. Regole generali: CLAUDE.md (root). Un hook SessionStart carica senior_advantage/PASSAGGIO-CHAT.md.
 
 ## 1. The Senior Advantage (@TheSeniorAdvantage), cartella senior_advantage/
@@ -18,4 +20,4 @@ Animazioni per bambini (motore "Puliamo il parco!", short "Il seme magico", "La 
 - Elenco rami: git fetch origin; git branch -r. Contenuto di un ramo: git log origin/<ramo> e git ls-tree.
 - Tutte le chat di Claude Code dell'utente: tool list_sessions / list_events (titoli: "Canale YouTube Conti in Pensione", "The Money Backstory ...", "Bambini Ciao Ciao ...", "Senior ...").
 - Per ogni canale: leggere il suo file di stato (sopra) PRIMA di fare qualsiasi cosa. Non chiedere all'utente cose che stanno nei file.
-- main NON ha tutto: il lavoro recente di ogni canale e sui rami elencati. Non unire/cancellare rami senza ordine dell'utente.
+- Dal 09/10/2026 main ha tutto. Non cancellare rami senza ordine dell'utente.

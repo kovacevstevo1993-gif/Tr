@@ -1,6 +1,14 @@
 # Regole permanenti (valgono sempre, in ogni sessione)
 
-**Questo repo ha un hook SessionStart (.claude/settings.json) che carica automaticamente senior_advantage/PASSAGGIO-CHAT.md a ogni nuova chat: tenerlo SEMPRE aggiornato e completo.**
+**AVVIO DI OGNI CHAT NUOVA (09/10/2026, ordine dell'utente: "ogni chat nuova deve avere tutto il progetto", senza mischiare):**
+- Tutto il progetto (4 canali) e' su `main`: ogni chat nuova parte gia' con tutti i file. Non serve cercare altri branch.
+- I canali sono SEPARATI, ognuno nella sua cartella. Dal primo messaggio dell'utente capire su QUALE canale si lavora e leggere SOLO i file di avvio di quel canale, prima di rispondere:
+  - The Money Backstory -> `money_backstory/REGOLE-UTENTE-05-10.md` (regole con le parole dell'utente) + `money_backstory/START-QUI-NUOVA-CHAT.md` (stato) + `money_backstory/RICERCHE-VIDIQ-LOG.md`.
+  - The Senior Advantage -> `senior_advantage/PASSAGGIO-CHAT.md` + `senior_advantage/RICERCHE-VIDIQ.md`.
+  - Conti in Pensione -> `conti_in_pensione/REGOLE-FISSE.md` (per intero).
+  - Bambini Ciao Ciao -> `PROGETTO_COMPLETO_Bambini_Ciao_Ciao.md` + cartella `parco/`.
+- Non aprire ne' usare file, regole o stile di un altro canale. Le regole di questo file valgono per tutti.
+- Fine di ogni lavoro: salvare nel file di stato del canale, commit e push sul branch della sessione, poi unire su main (cosi' la chat dopo trova tutto).
 
 **PRIMA REGOLA: SALVARE TUTTO (04/10/2026): ogni cosa fatta o decisa (copioni, pacchetti, durate, regole, stato dei video) va salvata SUBITO in senior_advantage/PASSAGGIO-CHAT.md o in CLAUDE.md, con commit e push, senza che l'utente lo chieda. Prima di scrivere qualsiasi cosa, leggere CLAUDE.md, PASSAGGIO-CHAT.md e i file modello: l'utente non deve ripetere niente.**
 
@@ -60,8 +68,7 @@ Tre canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 
 ---
 
-# CANALE "CONTI IN PENSIONE" (@ContiInPensione) - queste regole valgono SOLO quando si lavora su quel canale (cartella conti_in_pensione/)
-# CANALE "CONTI IN PENSIONE" (@ContiInPensione) - LEGGERE PRIMA DI FARE QUALSIASI COSA
+# CANALE "CONTI IN PENSIONE" (@ContiInPensione) - queste regole valgono SOLO quando si lavora su quel canale (cartella conti_in_pensione/) - LEGGERE PRIMA DI FARE QUALSIASI COSA
 
 1. PRIMA di ogni risposta, e di nuovo PRIMA di ogni consegna all'utente, leggere per intero `conti_in_pensione/REGOLE-FISSE.md` e applicarlo alla lettera, senza interpretazioni proprie.
 2. Eseguire SOLO gli ordini dell'utente. Se una frase non è chiara: UNA domanda sola, PRIMA di fare qualsiasi cosa. Mai inventare, mai aggiungere cose non chieste.

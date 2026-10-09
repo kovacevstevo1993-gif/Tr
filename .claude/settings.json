@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" && echo '=== LEGGI ED ESEGUI: stato e regole del progetto The Senior Advantage (da senior_advantage/PASSAGGIO-CHAT.md). L utente NON deve ripetere niente. Le chat intere sono in senior_advantage/chat/. ===' && cat senior_advantage/PASSAGGIO-CHAT.md"
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && echo '=== AVVIO: 4 canali SEPARATI, tutto il progetto e su main. Dal primo messaggio capisci il canale e leggi SOLO i suoi file di avvio (elenco in CLAUDE.md, sezione AVVIO DI OGNI CHAT NUOVA) prima di rispondere. Money Backstory: money_backstory/REGOLE-UTENTE-05-10.md + money_backstory/START-QUI-NUOVA-CHAT.md + money_backstory/RICERCHE-VIDIQ-LOG.md. Senior Advantage: senior_advantage/PASSAGGIO-CHAT.md + senior_advantage/RICERCHE-VIDIQ.md. Conti in Pensione: conti_in_pensione/REGOLE-FISSE.md. Bambini Ciao Ciao: PROGETTO_COMPLETO_Bambini_Ciao_Ciao.md. L utente NON deve ripetere niente. ===' && cat PASSAGGIO-GENERALE.md"
           }
         ]
       }
