@@ -77,7 +77,7 @@ Motivo: 'Cola' scritto come per la voce era finito nel titolo; la frase cercata 
 2027 Social Security COLA: 3.5% Raise? What You'll Actually Keep (Oct 14)
 
 ### Descrizione nuova
-2027 Social Security COLA: how much of the raise you will actually keep after Medicare Part B and taxes, and how the number is calculated, and where it really goes once Medicare Part B and taxes take their share. We use the early 3.5% estimate (not the official number) so you can follow the math.
+2027 Social Security COLA: how the raise is calculated, and how much of it you will actually keep once Medicare Part B and taxes take their share. We use the early 3.5% estimate (not the official number) so you can follow the math.
 
 The Social Security Administration announces the 2027 cost-of-living adjustment (COLA) on October 14, 2026. In this video we follow Frank and Mary, two retirees who both receive the average check of $2,071 a month, through five things about your 2027 raise: what COLA is and how the number is picked, why a raise can feel smaller than your bills, what Medicare Part B takes before the money reaches you (and who the hold harmless rule does not protect), what happens with taxes, and the other numbers that change on the same day. At the end we put it all on one real check, and show you how to redo the math yourself with the official number.
 
