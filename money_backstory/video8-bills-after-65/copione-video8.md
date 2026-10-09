@@ -1,5 +1,5 @@
-# VIDEO 8 - 5 Bills You Don't Have To Pay After 65 - COPIONE (09/10/2026)
-Voce CapCut "Analista preciso". Numeri in lettere. 47 blocchi, circa 12.4 min a 16 car/s. Struttura copiata dal video da 2,1M (vedi RICERCA-E-STRATEGIA.md). Fonti in FONTI-VERIFICATE.md.
+# VIDEO 8 - 5 Bills You Don't Have To Pay After 65 - COPIONE (09/10/2026, rev. CTA)
+Voce CapCut "Analista preciso". Numeri in lettere. 48 blocchi, circa 12.5 min a 16 car/s. Struttura copiata dal video da 2,1M (vedi RICERCA-E-STRATEGIA.md). Fonti in FONTI-VERIFICATE.md.
 
 BLOCCO 1
 If you were born before nineteen sixty two, the day you turned sixty five, the law gave you the right to stop, lower, or freeze a stack of bills. And there is a good chance you are still paying every single one of them, because nobody whose job is to collect that money will ever call you to say stop.
@@ -134,11 +134,14 @@ BLOCCO 44
 A word about sources. The tax numbers come from the Internal Revenue Service. The Medicare numbers come from the Centers for Medicare and Medicaid Services and from medicare dot gov. The Social Security rules come from the Social Security Administration. Every source is listed in the description.
 
 BLOCCO 45
-If this helped, send it to one person you know who is over sixty five, a parent, a neighbor, a friend. It costs nothing, and it could put hundreds or even thousands of dollars back in their pocket. And tap like and subscribe to The Money Backstory.
+If this helped, send it to one person you know who is over sixty five, a parent, a neighbor, a friend. It costs nothing, and it could put hundreds or even thousands of dollars back in their pocket.
 
 BLOCCO 46
-And if you want to see how the age you claim Social Security can change your lifetime income by more than one hundred twenty four thousand dollars, that video is right on your screen now. See you there.
+And tell me in the comments: which of these five bills are you still paying? Tap like, subscribe to The Money Backstory, and turn on the bell, so you get the next video the day it comes out.
 
 BLOCCO 47
+And if you want to see how the age you claim Social Security can change your lifetime income by more than one hundred twenty four thousand dollars, that video is right on your screen now. See you there.
+
+BLOCCO 48
 Rules, amounts and ages change and differ by location and plan. Always confirm with the official source before you rely on them. This is general information, not financial advice.
 
