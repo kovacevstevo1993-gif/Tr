@@ -93,3 +93,10 @@
 ## ISTRUZIONI UTENTE (05/10/2026, tag e miniatura short 4)
 - I TAG vanno riempiti fino a circa 500 caratteri (sotto il limite), non a metà: short 4 = 491 caratteri.
 - Miniatura dello short 4: deve attirare il click "per forza": `11-short-4-teaser-video-lungo-2/miniatura/miniatura-short4.png` (1080x1920).
+
+## ISTRUZIONI UTENTE (06/10/2026, video lungo 3)
+- Video lungo 3 = RIVALUTAZIONE 2027 (scelto dall'utente). Prefisso file: V3-blocco01.mp4...
+- Fare ricerche su vidIQ su TUTTO (utente le ha ordinate: crediti ok): come lavorano gli altri su argomenti simili, come sono strutturati, video virali della nicchia pensioni, per far diventare virale anche il nostro.
+- Il video deve essere più PROFESSIONALE, più CURIOSO e spiegato BENISSIMO, sia con le slide sia con la voce.
+- (utente, 06/10/2026) Dopo le ricerche sugli altri canali/vidIQ, deve dire CLAUDE se il copione va bene e correggerlo da solo in base alla ricerca: NON chiedere all'utente "va bene?". L'utente ha fatto fare le ricerche apposta. Il copione va confrontato con i video virali: numeri/risposta subito, poi spiegazione.
+- (utente, 06/10/2026) Le chat non vanno riempite inutilmente: risposte corte; quando la chat è piena si passa a una nuova con kit e messaggio di ripartenza.
