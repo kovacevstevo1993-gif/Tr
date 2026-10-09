@@ -100,3 +100,18 @@
 - Il video deve essere più PROFESSIONALE, più CURIOSO e spiegato BENISSIMO, sia con le slide sia con la voce.
 - (utente, 06/10/2026) Dopo le ricerche sugli altri canali/vidIQ, deve dire CLAUDE se il copione va bene e correggerlo da solo in base alla ricerca: NON chiedere all'utente "va bene?". L'utente ha fatto fare le ricerche apposta. Il copione va confrontato con i video virali: numeri/risposta subito, poi spiegazione.
 - (utente, 06/10/2026) Le chat non vanno riempite inutilmente: risposte corte; quando la chat è piena si passa a una nuova con kit e messaggio di ripartenza.
+
+## REGOLA N.8 (utente, 06/10/2026): OGNI CHAT NUOVA DEVE SAPERE GIA' TUTTO DEL PROGETTO, DALLA A ALLA Z
+- Se un file/kit/chat non e' tra gli allegati, trovarlo DA SOLI (rami del repo `git fetch` + `git ls-tree`, tool list_sessions/list_events) e leggerlo; mai dire "non l'ho ricevuto" e aspettare. L'utente non deve rimandare niente.
+- Dal 06/10/2026 TUTTO il progetto sta in questo ramo (`claude/trusting-mendel-d1bg54`, cartella conti_in_pensione/): cartelle 00-12 (canale, short 1-4, video lungo 1-3, kit, sorgenti, qa), chat intere in `07-KIT-COMPLETO/chat/chat-completa.md` (chat 0), `10-KIT-COMPLETO-V2/chat/` (chat 1 e 2), `12-KIT-05-10/chat-sessione-3-completa.md`, `chat/chat-sessione-4-completa.md`; stato in `12-KIT-05-10/00-LEGGIMI-PRIMA.md` + `STATO-06-10-2026.md`. Il vecchio branch con tutto: youthful-einstein (00-07), wizardly-galileo (06,08,09,10), new-session-79n9mt (09,11,12-KIT), eager-davinci (video 3).
+- Quando i blocchi del copione sono richiesti: rimandarli SEMPRE in chat, numerati, ognuno nel suo riquadro.
+
+## REGOLA N.9 (utente, 07/10/2026, video 3): SLIDE SINCRONIZZATE ALLA VOCE, CAPIBILI, CONTROLLO TOTALE
+- Blocchi 1-5 del video 3 (V3-blocco01..05.mp4): l'utente dice "le lasciamo cosi'", NON rifarli.
+- Le altre clip (dal blocco 6) devono avere i tempi calcolati sulla VELOCITA' DELLA VOCE: ogni elemento compare quando la voce dice quella parola/frase (velocita' reale ~16-17 caratteri al secondo, ricavata dal testo del blocco e dalla durata dello screenshot, con pause alle virgole e ai punti). Mai slide troppo veloci: ogni cosa ferma e leggibile mentre la voce ne parla, e tutto FINITO prima che la voce passi alla frase dopo.
+- Le slide devono SPIEGARE (calcoli passo passo, schemi, esempi che si capiscono), non solo oggetti che volano qua e la'. Migliorare, non semplificare.
+- Gli screenshot arrivano 5 alla volta fino al blocco 30: si costruiscono TUTTI i blocchi insieme (render in parallelo), controllo COMPLETO su tutti i fotogrammi (QA automatico + guardare, non solo ogni mezzo secondo). Lavorare da professionista, niente a meta'.
+
+## ISTRUZIONI UTENTE (07/10/2026, video 3 - tempi dei blocchi)
+- Gli screenshot danno le durate: ogni blocco parte dalla fine del precedente. Se l'utente corregge lo screenshot di un blocco (es. blocco 40: fine 09:40+1f, 500 fotogrammi), cambia SOLO la durata di quel blocco; le durate degli altri restano quelle dei loro screenshot (l'utente sposta i blocchi sulla timeline). Il blocco 41 resta di 417 fotogrammi.
+- Il segno sotto la riga bianca del cursore e' il fotogramma; se la riga e' tra due segni si arrotonda per eccesso.
