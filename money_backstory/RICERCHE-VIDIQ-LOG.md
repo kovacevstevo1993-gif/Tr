@@ -18,3 +18,7 @@ Tabella parole chiave e concorrenza: vedi `video7-500k/RICERCA-E-STRATEGIA.md`.
 - Il 07/10 vidIQ era collegato a The Senior Advantage (UC3mqeyFLRtxoHy5unytlNwQ, account s_s_corporation@hotmail.com). Dopo che l'utente ha dato il permesso Analytics a The Money Backstory: canale UCH8AjyhSDLhmPt-y2NvOi9g (storie.truee@gmail.com). `vidiq_user_channels` e `vidiq_balance` costano 0.
 - Video Money Backstory visti il 07/10: video 6 "2027 Cola" XvE5qqQJg00 (pubblico dal 06/10 13:45 UTC, 0 visualizzazioni alla lettura); video 5 Zjb2M4qj2KM (60 view); video 7 qdiX3Ul7sgk (privato, programmato 08/10 13:45 UTC).
 - Errore da correggere su YouTube: nel video 7 il tag "$500,000" si e' spezzato per la virgola ("can you retire with $500" e "000"): cancellarli. Il testo salvato in `kit-02-10/07-testi-pubblicazione/video7-500k.md` e' gia' corretto.
+
+## 09/10/2026 (ordine dell'utente: "controlla su vidiq"): 25 crediti, saldo 35 -> 10 (rinnovo 29/10)
+- outliers 'social security seniors' ultimo mese <100K iscritti; keyword research '2027 social security cola' e "bills you don't have to pay after 65"; dettagli 6 video; trascrizione di ylB41LwI1vk (2,1M). Tutto in `video8-bills-after-65/RICERCA-E-STRATEGIA.md`.
+- Ricerca gratuita (curl) dello stesso giorno: `RICERCA-VIRALI-09-10.md`.
