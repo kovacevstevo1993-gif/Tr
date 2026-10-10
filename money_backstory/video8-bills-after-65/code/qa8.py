@@ -17,9 +17,11 @@ v8b1.amb = lambda fr, *a, **k: fr
 res = []
 for i, (fn, n) in enumerate(zip(M.SLIDES[blk], M.SPEC[blk]), 1):
     M.CUE['blk'] = blk; M.CUE['t0'] = sum(M.SPEC[blk][:i - 1]) / 30; M.CUR['D'] = n / 30
-    masks = []
+    masks = []; changes = []; prev = None
     for f in range(n):
         a = np.asarray(fn(f / 30).convert('RGB'))[::2, ::2]
+        cur = a.astype('int16')
+        changes.append(0 if prev is None else int((np.abs(cur - prev).max(axis=2)[75:506, 34:926] > 25).sum())); prev = cur   # cambiamento reale dei pixel (anche testo/numeri dentro le card)
         m = a.max(axis=2) > 40
         m[:75] = False; m[:, :34] = False; m[:, 926:] = False; m[506:] = False      # via titolo e cornice dorata
         masks.append(m)
@@ -33,7 +35,6 @@ for i, (fn, n) in enumerate(zip(M.SLIDES[blk], M.SPEC[blk]), 1):
         oob += int(band)
         if band:
             ys, xs = np.where(m); oobl.append((fi, int(xs.min() * 2), int(xs.max() * 2), int(ys.max() * 2)))
-    changes = [0] + [int((masks[f] ^ masks[f - 1]).sum()) for f in range(1, n)]
     n80 = int(0.80 * n); n81 = int(0.81 * n) + 1
     ratio80 = float(masks[min(n80 + 1, n - 1)].sum() / max(1, area_f))
     unstable = 0
