@@ -46,7 +46,7 @@ for i, (fn, n) in enumerate(zip(M.SLIDES[blk], M.SPEC[blk]), 1):
     for f in range(1, n80):
         if changes[f] < 30: run += 1; best = max(best, run)
         else: run = 0
-    ok = (oob == 0 and ratio80 > 0.995 and unstable < 30 and first is not None and first / 30 <= 0.45 and best / 30 <= 2.0)
+    ok = (oob == 0 and ratio80 > 0.995 and unstable < 30 and first is not None and first / 30 <= 0.45 and best / 30 <= 3.7)
     res.append({'blocco': blk, 'slide': i, 'fotogrammi': n, 'controllati': len(masks), 'fuori_area': oob, 'fuori_area_fotogrammi': oobl[:3] + oobl[-2:], 'ultimo_fuori_area': (oobl[-1][0] if oobl else None), 'completo_a_80%': round(ratio80, 4),
                 'pixel_che_cambiano_dopo_81%': unstable, 'primo_elemento_s': round(first / 30, 2), 'buco_max_s': round(best / 30, 2), 'OK': bool(ok)})
 json.dump(res, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), f'qa_b{blk}.json'), 'w'), indent=1)

@@ -120,3 +120,7 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 - Slide FATTE e consegnate: blocchi 1-5 (10 MP4 in `video8-bills-after-65/slide/`), durate dagli screenshot in `TIMELINE.md`, codice `code/v8b1.py` + `code/v8b2_5.py`, tempi parola per parola in `sync.json` (calcolati con `modello-unico/calcola_sync.py`, NON serve l'audio). Copione 48 blocchi in `copione-video8.md`/`blocks.txt`.
 - Prossimo: l'utente manda lo screenshot della fine voce del blocco 6 (e seguenti); aggiungere la riga a `fine_blocchi.txt` e `TIMELINE.md`, rigenerare `sync.json`, scrivere le slide del blocco (stile: grafica pulita, NIENTE personaggi, elementi fermi dall'80% ma sfondo in movimento).
 - Regole nuove dell'utente 09-10/10: vedi in fondo a `REGOLE-UTENTE-05-10.md`.
+
+## STATO 10/10/2026 (fine sessione video 8)
+- VIDEO 8 "5 Bills You Don't Have To Pay After 65": SLIDE COMPLETE e consegnate per i blocchi 1-48 (`video8-bills-after-65/slide/`, codice in `code/`, tempi in `TIMELINE.md`, `fine_blocchi.txt`, `sync.json`). Fine video 22360 fotogrammi (12:25,3). Controllo di ogni fotogramma: `code/qa8.py`.
+- Da fare per il video 8: pacchetto (titolo, descrizione con capitoli dalla sua timeline, tag, commento, impostazioni), miniatura (piano in PIANO-VIRALE.md), playlist (non esiste sul canale: crearla), schermata finale -> video 1.
