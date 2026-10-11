@@ -17,3 +17,5 @@
 - "risolvi che ci mette troppo tempo a farle" -> render in parallelo (4 processi), livelli fissi preparati una volta sola.
 - "E migliora ancora di più. E iniziamo andare tutto il video completo" -> video completo Pratica 001 finanziamento auto.
 - "E i sottotitoli sotto non servono a niente ci sono già su YouTube in automatico" -> NIENTE barra sottotitoli nei video.
+- 11/10/2026: "Cosa a cazzo serve a me il copione che devi farlo te stai solo sprecando crediti" -> il copione NON si manda all utente: Claude lo scrive e fa direttamente il video. Il copione si salva solo nel repo.
+Titolo scelto da Claude (ordine utente "deve scegliere quello migliore per YouTube"): "Rata da 199 €: la trappola nascosta nella maxirata". Immagine auto: brand/assets/auto_cc0.jpg (Openverse CC0, rawpixel).
