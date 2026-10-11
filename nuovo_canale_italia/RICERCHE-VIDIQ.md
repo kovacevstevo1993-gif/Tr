@@ -45,3 +45,10 @@ Richiesta utente: "i piu pagati in assoluto e scalabile in italiano", 5 idee. Au
   - "La trappola di Gardaland: ecco come ti svuotano il portafoglio" (Smettere di lavorare) 30.815, 5x.
 - Canali simili (similar_channels "trappole e conti veri sulle spese"): tutti di UN solo settore e quasi tutti con volto: Soluzioni Green (energia, 257k), iMOTORI (auto, 87k, media 107k views), Valerio Staffelli (truffe, 32k, media 140k views), Facile.it (azienda), Daniele Murgia (assicurazioni, 2k). Nessun canale senza volto copre TUTTE le grandi spese.
 - Conclusione: i canali italiani SENZA VOLTO tipo "verita senza filtri sui soldi" (Macchinando, Pelle e Promesse, Italia In Scaffale) stanno esplodendo adesso. Il posto libero e lo stesso formato applicato a tutte le grandi spese (auto, casa, energia, banca, assicurazioni). Idea confermata.
+
+## Produzione (11/10/2026): Claude fa TUTTO, video finito con la voce dentro (ordine utente)
+- Voce: Google Gemini TTS (gia collegato, gratis). Voce maschile "Charon". Prove in nuovo_canale_italia/prove_voce/ (A = gemini-2.5-flash-preview-tts, B = gemini-3.1-flash-tts-preview, C = gemini-3.8-flash-tts). Il modello pro e andato in limite (429). Il testo da leggere va passato SENZA istruzioni (il modello C le leggeva ad alta voce).
+- Controllo pronuncia: parco/trascrivi.py (Whisper su Pollinations) su ogni blocco.
+- Slide/grafica: codice Python (PIL + ffmpeg), come gli altri canali, 1920x1080, voce gia montata.
+- Immagini: Pollinations / Gemini image (gia collegati).
+- In attesa: l'utente sceglie la voce A, B o C.
