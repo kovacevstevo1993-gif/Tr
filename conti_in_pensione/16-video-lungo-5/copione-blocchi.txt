@@ -1,6 +1,6 @@
 1|Dicembre. L'Inps ti paga una mensilità in più. Se la tua pensione è di mille euro, in banca non arrivano mille euro. Arrivano molti meno. E il motivo non è quello che ti hanno raccontato.
 2|In giro girano titoloni: tredicesima detassata, tredicesima più alta. Non ti dico adesso se è vero o falso. Prima ti faccio vedere i conti veri, uno alla volta, con cinque pensioni diverse.
-3|E c'è un caso, uno solo, in cui la tredicesima arriva intera, senza perdere nemmeno un euro. Capirai tra pochissimo se ci sei dentro anche tu. Io sono Conti in Pensione. Cominciamo.
+3|Ci sono due cose che ti dico solo alla fine. Un caso in cui la tredicesima arriva intera, senza perdere un euro. E una voce di dicembre che fa salire quello che ti arriva in banca, e che quasi nessuno conta. Io sono Conti in Pensione.
 4|Partiamo da una cosa semplice. La tredicesima è una mensilità in più, pagata insieme alla rata di dicembre. Quest'anno la rata dovrebbe arrivare martedì primo dicembre. Non devi fare nessuna domanda.
 5|Quanto è, in lordo? Se sei in pensione da tutto l'anno, è esattamente una rata della tua pensione. Mille euro lordi al mese, mille euro lordi di tredicesima. Fin qui, nessuna sorpresa.
 6|Se sei andato in pensione durante l'anno, invece, la tredicesima è più piccola. Ne prendi un dodicesimo per ogni mese di pensione. Esempio: pensione da luglio, sei mesi, quindi la metà di una rata.
@@ -17,18 +17,21 @@
 17|In pratica: le rate normali pagano meno tasse, la tredicesima ne paga di più. Alla fine dell'anno il totale è lo stesso. Ma a dicembre quella mensilità in più sembra più magra. Adesso vedi di quanto.
 18|Primo caso, quello che ti avevo promesso. Pensione fino a circa seicentocinquanta euro al mese. Sul totale dell'anno sei sotto ottomilacinquecento euro, e l'Irpef non si paga. Seicento lordi, seicento netti.
 19|Secondo caso. Mille euro al mese. Il reddito dell'anno è tredicimila euro, quindi aliquota ventitré per cento. Sulla tredicesima si pagano duecentotrenta euro di Irpef. Netti, ne restano settecentosettanta.
-20|Una rata normale da mille euro, invece, arriva a circa novecento euro netti, perché dentro ci sono le detrazioni. Ecco la differenza: la tredicesima è più magra di circa centoquaranta euro.
+20|Una rata normale da mille euro, invece, arriva a circa novecento euro netti, perché dentro ci sono le detrazioni. La tredicesima è più magra di circa centoquaranta euro. E più sale la pensione, più la differenza si sente.
 21|Terzo caso. Millecinquecento euro al mese. Reddito annuo diciannovemilacinquecento, sempre aliquota ventitré per cento. Tredicesima lorda millecinquecento, Irpef trecentoquarantacinque, netti millecentocinquantacinque euro.
 22|Quarto caso. Duemila euro al mese. Reddito ventiseimila euro, ancora sotto i ventottomila, quindi ancora ventitré per cento. Irpef quattrocentosessanta euro, netti millecinquecentoquaranta euro.
 23|E adesso il quinto caso, quello che sorprende. Tremila euro al mese. Il reddito dell'anno arriva a trentanovemila euro, e l'ultima parte entra nello scaglione del trentatré per cento.
 24|Sulla tredicesima da tremila euro lordi, l'Irpef è di novecentonovanta euro. Restano duemiladieci euro netti. Quasi mille euro in meno del lordo, su quella che molti chiamano la rata più ricca dell'anno.
 25|Riassumiamo la tredicesima netta, caso per caso. Seicento euro per chi ne prende seicento. Settecentosettanta per mille. Millecentocinquantacinque per millecinquecento. Millecinquecentoquaranta per duemila. Duemiladieci per tremila.
 26|Attenzione: sono esempi. Ho preso un pensionato senza altri redditi e ho lasciato fuori le addizionali. Se hai altri redditi o altre pensioni, il tuo netto cambia. Il numero esatto te lo dice l'Inps.
-27|Ora torniamo alle pensioni basse, perché a dicembre c'è anche un extra. Si chiama importo aggiuntivo: centocinquantaquattro euro e novantaquattro centesimi. E sono esentasse.
-28|Lo ricevi se la pensione totale non supera circa settemilanovecentocinquantaquattro euro l'anno e il reddito personale è sotto undicimilanovecentotrentuno euro. Per chi è sposato, il limite di coppia è ventitremilaottocentosessantadue euro.
-29|Non spetta a chi prende solo assegno sociale, pensione sociale o prestazioni di invalidità civile. Non devi fare domanda: lo paga l'Inps. Se pensi di averne diritto e non lo vedi, puoi chiedere la ricostituzione.
-30|Ora il trucco pratico, per non fare calcoli a mano. Entra in My Inps con lo Spid. Vai su Pensione e previdenza, poi Cedolino della pensione, e apri il Certificato di pensione, il modello O bis em.
-31|Dentro trovi la tua pensione rata per rata, la tredicesima, le trattenute fiscali, il lordo e il netto. Quando l'Inps pubblica il cedolino di dicembre, controlla lì. È il numero vero, non una stima.
-32|Ricapitolo. La tredicesima è una rata lorda in più, non un aumento nuovo. La detassazione per ora è solo una proposta. E il netto è più basso perché la tredicesima non ha le detrazioni.
-33|Scrivimi nei commenti quanto prendi al mese, e ti rispondo con il tuo netto. A novembre esce il decreto sulla rivalutazione dell'anno prossimo: iscriviti e attiva la campanella, così non lo perdi.
-34|Regole, importi e aliquote cambiano e dipendono dal tuo caso. Verifica sempre sul sito dell'Inps o con un patronato. Informazione generale, non consulenza. Questo canale non è affiliato all'Inps.
+27|Ma il conto di dicembre non è finito. Mancano due voci. Una è un extra per le pensioni basse. L'altra riguarda quasi tutti, e può farti arrivare in banca più soldi di quanto pensi. Parto dall'extra.
+28|Ora torniamo alle pensioni basse, perché a dicembre c'è anche un extra. Si chiama importo aggiuntivo: centocinquantaquattro euro e novantaquattro centesimi. E sono esentasse.
+29|Lo ricevi se la pensione totale non supera circa settemilanovecentocinquantaquattro euro l'anno e il reddito personale è sotto undicimilanovecentotrentuno euro. Per chi è sposato, il limite di coppia è ventitremilaottocentosessantadue euro.
+30|Non spetta a chi prende solo assegno sociale, pensione sociale o invalidità civile. Non serve domanda: lo paga l'Inps. Non ci rientri? Resta: subito dopo c'è la voce che riguarda tutti.
+31|Eccola. Durante l'anno l'Inps ti trattiene a rate l'addizionale regionale dell'anno prima: undici rate, da gennaio a novembre. Novembre è l'ultima rata. Poi la trattenuta finisce.
+32|Se avevi anche le rate del conguaglio del settecentotrenta, devono chiudersi entro novembre. Risultato: nella rata di dicembre quelle trattenute non ci sono più, e la rata, di solito, sale.
+33|Quanto? Guarda il cedolino di novembre, alla voce addizionale regionale. Quella cifra, a dicembre, resta a te. Non è un aumento: sono soldi tuoi che prima ti venivano tolti. Ma da gennaio ripartono.
+34|Ora il trucco pratico, per non fare calcoli a mano. Entra in My Inps con lo Spid. Vai su Pensione e previdenza, poi Cedolino della pensione, e apri il Certificato di pensione, il modello O bis em.
+35|Dentro trovi la tua pensione rata per rata, la tredicesima, le trattenute fiscali, il lordo e il netto. Quando l'Inps pubblica il cedolino di dicembre, controlla lì. È il numero vero, non una stima.
+36|Ricapitolo. La tredicesima è una rata lorda in più. La detassazione è solo una proposta. E il tuo netto di dicembre sale anche perché le trattenute finiscono. Scrivimi quanto prendi, e ti rispondo con il tuo netto.
+37|A novembre esce il decreto sulla rivalutazione dell'anno prossimo: iscriviti e attiva la campanella. Regole e importi cambiano: verifica sul sito dell'Inps. Informazione generale, non consulenza. Canale non affiliato all'Inps.
