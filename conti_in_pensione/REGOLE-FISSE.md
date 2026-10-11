@@ -182,3 +182,13 @@
 - Dati canale 09-11/10: video lunghi ~19.000 visualizzazioni (video 3: 16 mila), short ~3.500, circa 40 iscritti; notifiche portano visualizzazioni anche ai non iscritti (notifiche di video consigliati).
 - NICCHIA (11/10): il canale e' partito ed e' creato. La nicchia RESTA pensioni/Inps over 55: NON si cambia e NON si propongono spostamenti o canali nuovi. La domanda dell'utente sulle nicchie piu' pagate era solo una domanda (regola N.13), non un ordine.
 - Regole nuove 09/10: mai "INVALIDI" da solo come etichetta per persone (ok "invalidi al 100%" in frase); miniature con layout DIVERSO dalla precedente.
+
+## REGOLA N.16 (utente, 11/10/2026): MAI CHIEDERE L'AUDIO DELLA VOCE, I TEMPI LI CALCOLA CLAUDE
+- L'utente: "quando mai te li ho mandati? Ogni chat lo chiedi... devi calcolarlo te". L'audio NON arriva mai e NON va mai chiesto (la regola n.14 che dice "chiedere l'audio" e' ANNULLATA).
+- I tempi di ogni elemento si calcolano da soli: testo del blocco + durata del blocco (screenshot) -> tempo di ogni parola in proporzione ai caratteri, con pause alle virgole e ai punti, ricalibrato sulla durata esatta del blocco. Ogni elemento compare sulla sua parola, tutto completo entro l'80% (regola n.15). Nessuna domanda all'utente su questo.
+- Se la chat e' nuova: leggere DURATE.txt e copione-blocchi.txt della cartella del video e procedere.
+
+## STATO 11/10/2026 - VIDEO LUNGO 5 (tredicesima 2026), cartella 16-video-lungo-5
+- Copione v2 a 37 blocchi (copione-blocchi.txt), durate dagli screenshot per TUTTI i 37 blocchi in DURATE.txt (totale 14137 fotogrammi = 07:51+7f). Ricerca in ricerca-11-10-2026.md (vidIQ: V3 perde 53 punti nel primo minuto; formula "tabella netti + TUTTA LA VERITA'" + trucco pratico).
+- Correzione voce blocco 34: "Mai Inps" e "Obis emme" (nel file del copione c'e' ancora "My Inps"/"O bis em": nelle slide usare Mai Inps / ObisM).
+- Prossimo: clip V5-blocco01..37.mp4 (1920x1080, 30 fps, motore b-sync-80.js, niente semafori, stile video vecchi), QA su tutti i fotogrammi, consegna come MP4 singoli.
