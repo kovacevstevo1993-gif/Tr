@@ -83,6 +83,7 @@ Mai usata in modo falso: la promessa del gancio va SEMPRE mantenuta nel video (Y
 - Fondo scrivania scura, 2 righe di titolo in Archivo Black bianco, il Contatore rosso grande, un pezzo di pratica storto con riga gialla, un timbro rosso (NON FIRMARE / TRAPPOLA / ATTENZIONE).
 - Max 5 parole. Nessuna faccia (il marchio e il Contatore).
 - Modello: `brand/tavola-3-miniatura-tipo.png`.
+- Attrazione massima (richiesta utente 11/10/2026): 3 miniature diverse per ogni video, punteggio vidIQ prima di pubblicare (chiedere prima, costa crediti), poi test A/B gratuito di YouTube Studio ("Prova e confronta") con tutte e 3: vince quella con piu tempo di visione. Nella miniatura il foglio chiaro e il contatore rosso devono occupare almeno meta immagine (visibili anche in modalita scura).
 
 ## 12. Pubblicazione
 - Ritmo consigliato: 1 video lungo a settimana + 3 short (uno per trappola) che rimandano al lungo.
