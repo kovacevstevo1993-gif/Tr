@@ -10,3 +10,7 @@
 - SSA-44: eventi che cambiano la vita (stop o riduzione lavoro, perdita pensione, morte del coniuge, matrimonio, divorzio...) (ssa.gov/forms/ssa-44.pdf).
 - W-4V: ritenuta su Social Security 7%, 10%, 12% o 22% (ssa.gov, irs.gov). Pensione: W-4P.
 - SHIP: consulenza Medicare gratuita (shiphelp.org).
+
+## CONTROLLO FONTI UFFICIALI (11/10, domanda dell'utente: "deve essere tutto ufficiale")
+- "Stati che tassano la SS nel 2026: 8": NON confermato da fonte ufficiale (viene da Kiplinger). CRS RL32552 (congress.gov) elenca 12 stati ma con dati 2020. Da verificare sui siti dei dipartimenti delle tasse statali. Frase nel blocco 18 del video (voce gia' registrata): "only eight states tax Social Security at all".
+- "Alcuni stati hanno limiti MSP piu' alti o niente test sui risparmi": CONFERMATO da fonti ufficiali: medicare.gov (Medicare Savings Programs e fact sheet 12132), SSA POMS HI 00815.023, CMS (medicare-savings.pdf), SHIP (shiphelp.org/cost-saving-programs).
