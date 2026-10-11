@@ -12,3 +12,8 @@
 - "No non attivo niente non sono ricco per pagare qualsiasi cosa." -> niente servizi a pagamento: voce Gemini gratuita, foto libere, grafica da codice.
 - "Mandami l'inizio del video di 15 secondo e vedo come Viene" -> demo/demo-gancio.mp4 (15,8 s, 474 fotogrammi controllati tutti), codice code/demo_gancio.py.
 - "Stai sprecando troppi crediti risolvi o fai fare ad altri le robe così non sprechi così tanto risolvi al. Meglio senza togliere qualità" -> lavorare con meno passaggi: controllo di tutti i fotogrammi in fogli da 100 + fotogrammi chiave a piena grandezza; niente prove inutili.
+- 11/10/2026: "Togli la psicologia inversa Usa solo la psicologia per tutto usala quando serve" -> MAI psicologia inversa (annulla sezione 7 inversa e la regola del 11/10 precedente).
+- "il contatore si capisce se dici 3000€ e il contatore e di 28:?? Si capisce subito che e 2800" -> il gancio NON dice la cifra e il contatore mostra solo "€ ?.???" fino al verdetto.
+- "risolvi che ci mette troppo tempo a farle" -> render in parallelo (4 processi), livelli fissi preparati una volta sola.
+- "E migliora ancora di più. E iniziamo andare tutto il video completo" -> video completo Pratica 001 finanziamento auto.
+- "E i sottotitoli sotto non servono a niente ci sono già su YouTube in automatico" -> NIENTE barra sottotitoli nei video.

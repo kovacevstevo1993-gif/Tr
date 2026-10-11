@@ -62,7 +62,8 @@ Regola: massimo 3 colori per inquadratura. Diverso da tutti gli altri canali del
 | 11:40–12:00 | **Prossima pratica** | Anticipo della pratica successiva (schermata finale 20 s). |
 | fine | **Disclaimer** | Slide finale + voce: "Regole, importi e condizioni cambiano. Controlla sempre la fonte ufficiale. Informazione generale, non consulenza finanziaria." |
 
-## 7. Psicologia (decisione: si usa quella che tiene di piu, l'utente ha lasciato scegliere)
+## 7. Psicologia [AGGIORNATO 11/10/2026: utente: MAI psicologia inversa; si usa solo psicologia diretta quando serve. Niente barra sottotitoli (YouTube li fa in automatico). Gancio senza cifra, contatore € ?.??? fino al verdetto.]
+## 7-old. Psicologia (decisione: si usa quella che tiene di piu, l'utente ha lasciato scegliere)
 Base del canale = psicologia diretta, perche e quella che tiene lo spettatore per tutto il video:
 - **Paura di perdere soldi** (piu forte del desiderio di guadagnarli): il Contatore mostra la perdita, non il risparmio.
 - **Curiosita aperta**: cifra finale nascosta, "TRAPPOLA 1 DI 3", "la terza e la peggiore, ci arrivo". Ogni domanda si chiude solo dopo averne aperta un'altra.
