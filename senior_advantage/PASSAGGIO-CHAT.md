@@ -3,6 +3,16 @@
 LEGGERE ANCHE /PASSAGGIO-GENERALE.md (root del repo): mappa di TUTTI i progetti (Senior Advantage, Money Backstory, Conti in Pensione, Bambini Ciao Ciao), rami e file di stato di ognuno. Quando l'utente dice "tutto" o "dalla A alla Z" intende tutto il progetto, non solo questa chat.
 CHAT INTERA di questa sessione (Costco, 63 slide, miniature, pacchetto, errori e regole): senior_advantage/chat/2026-10-07_sessione-01JMto9-slide-costco-63-blocchi-miniature-pacchetto.md
 
+## >>> STATO AGGIORNATO 11/10/2026 (LEGGERE PER PRIMO) <<<
+- Ramo di lavoro Senior Advantage: claude/affectionate-bell-7a1gzs (git fetch origin; git checkout claude/affectionate-bell-7a1gzs). Contiene tutto fino a oggi.
+- Video lungo 4 BOLLETTE ("7 Bills Seniors Over 60 Can Lower Before Winter (Most Keep Paying Full Price)"): copione COPIONE-VIDEO-BOLLETTE.md (72 blocchi); TUTTE le 72 slide MP4 fatte, controllate fotogramma per fotogramma e mandate (video_bollette/V4-blocco01..72.mp4; codice code/long4_*.py); pacchetto PACCHETTO-VIDEO-BOLLETTE.md (playlist "Help Programs for Seniors: Meals, Bills & More", 31 capitoli, 22 tag); 3 miniature miniature/bollette-miniatura-a/b/c.png (code/thumb_long4.py). Schermata finale: video SNAP lungo (KDYxb4tKm1Q) + Iscriviti. Impostazioni video: non per bambini, nessun limite di eta, promozione No, IA No.
+- Short 7 Costco: fatto e pubblicato dall'utente (copertina + pacchetto). Costco lungo pubblicato.
+- Prossimo, SOLO su ordine: short collegato al video BOLLETTE; ricerca del prossimo video lungo (prima grep in RICERCHE-VIDIQ.md e chat/; vidIQ: 15 crediti, rinnovo 29/10).
+- Playlist: "Help Programs for Seniors: Meals, Bills & More" (aiuti) e "Senior Discounts & Savings for Ages 55+" (sconti). Scrivere sempre il nome completo, non chiedere conferma.
+- Chat intera di questa sessione: senior_advantage/chat/2026-10-08_11_sessione-01EA3Wv-short7-bollette-72-blocchi-miniature-pacchetto.md. Tutte le chat Senior sono in senior_advantage/chat/. Le chat degli altri progetti NON sono state esportate in questo ramo (esportazione bloccata l'11/10): vedi le cartelle chat dei loro rami in /PASSAGGIO-GENERALE.md.
+- Errori da non rifare: dire "mandato/fatto" solo dopo consegna; non chiedere conferme su cose gia scritte nei file (es. nome playlist); screenshot gia inviati non richiederli; nei pacchetti scrivere nomi completi.
+
+
 ## ERRORI CHE SI RIPETONO IN OGNI CHAT: LEGGERE PER PRIMI, PRIMA DI RISPONDERE (l'utente e esausto)
 1. Fare SOLO quello che l'utente ordina. Mai copione, slide, miniature o pacchetto "gia che ci sono". Dopo una ricerca: risultato in poche righe e FERMARSI.
 2. PRIMA di cercare o spendere crediti vidIQ: grep in RICERCHE-VIDIQ.md e in chat/. Se c'e gia, usarlo e dirlo. Crediti vidIQ: mai senza chiedere.
