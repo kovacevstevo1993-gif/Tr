@@ -306,3 +306,4 @@ SHORT 7: copertina FATTA (miniatura/copertina-short-07.png, code/cover7.py: "COS
 
 ## 11/10/2026 - SHORT 8 BOLLETTE
 Regola utente: ogni short chiede SEMPRE like e iscrizione (blocco finale) e punta al lungo collegato (salvata in CLAUDE.md). Copione v2 7 blocchi (v1 scartata: spiegava tutto; lo short deve solo incuriosire): COPIONE-SHORT-8-BOLLETTE.md. Voce/slide/copertina/pacchetto: solo su ordine. Video correlato = lungo BOLLETTE.
+SHORT 8 BOLLETTE, durate dagli screenshot CapCut (11/10/2026), blocchi 1-5 (cumulative, fine di ogni blocco): fine 1 = 10 s + 15 f = 315; fine 2 = 20 s + 8 f = 608; fine 3 = 29 s + 5 f = 875; fine 4 = 35 s + 4 f = 1054; fine 5 = 40 s + 9 f = 1209 (linea tra due fotogrammi: scelto il minore). Durate: B1 315, B2 293, B3 267, B4 179, B5 155. Blocchi 6-7: da aspettare. Slide NON ancora ordinate.
