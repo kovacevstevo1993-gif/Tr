@@ -35,3 +35,13 @@ Richiesta utente: "i piu pagati in assoluto e scalabile in italiano", 5 idee. Au
   - Deboli: "costi nascosti" mediana 1,2k; "ti spettano soldi" mediana 468; "assicurazione auto risparmiare" mediana 5k.
 - Conclusione: il formato che fa piu views e "trappole + conti veri" sulle grandi spese (auto, casa, energia, banca). Oggi ogni canale copre UN solo settore (Quattroruote auto, Soluzioni Green energia, Tartaglia casa). Nessun canale senza volto le copre tutte.
 - PROPOSTA: canale "trappole e conti veri" su tutte le grandi spese degli italiani (auto, mutuo, fotovoltaico, pompa di calore, bollette, assicurazioni, conti, abbonamenti, outlet). Inserzionisti: banche, auto, energia, assicurazioni (i CPM piu alti). Da confermare con l'utente.
+
+## Terza ricerca vidIQ (11/10/2026): conferma dell'idea (15 crediti, restano 50)
+- Outlier italiani 6 mesi "conviene davvero soldi costi" e "trappola truffa ti fregano":
+  - "La verita sugli outlet: conviene davvero comprare?" (Alberto Filippini, 27,5k iscritti) 1.004.583 views, 69x la media del canale.
+  - Macchinando (senza volto, 44,8k) "15 auto che ormai non valgono quasi piu niente" 368.935 views, 40x.
+  - Pelle e Promesse (senza volto, 11,4k) "Eurospin vende la vera skincare di lusso a pochi euro" 309.333 views, 18x.
+  - Italia In Scaffale (senza volto, 144k) "11 marche di cioccolato che devi evitare" 112k.
+  - "La trappola di Gardaland: ecco come ti svuotano il portafoglio" (Smettere di lavorare) 30.815, 5x.
+- Canali simili (similar_channels "trappole e conti veri sulle spese"): tutti di UN solo settore e quasi tutti con volto: Soluzioni Green (energia, 257k), iMOTORI (auto, 87k, media 107k views), Valerio Staffelli (truffe, 32k, media 140k views), Facile.it (azienda), Daniele Murgia (assicurazioni, 2k). Nessun canale senza volto copre TUTTE le grandi spese.
+- Conclusione: i canali italiani SENZA VOLTO tipo "verita senza filtri sui soldi" (Macchinando, Pelle e Promesse, Italia In Scaffale) stanno esplodendo adesso. Il posto libero e lo stesso formato applicato a tutte le grandi spese (auto, casa, energia, banca, assicurazioni). Idea confermata.
