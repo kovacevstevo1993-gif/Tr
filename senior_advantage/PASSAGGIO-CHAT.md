@@ -303,3 +303,6 @@ SHORT 7: copertina FATTA (miniatura/copertina-short-07.png, code/cover7.py: "COS
 
 - 09/10/2026 BOLLETTE: PACCHETTO FATTO (PACCHETTO-VIDEO-BOLLETTE.md: titolo 77 car., descrizione con 31 capitoli dalla timeline, 22 tag 460 car., commento, impostazioni; playlist "aiuti") e 3 MINIATURE FATTE (miniature/bollette-miniatura-a/b/c.png, code/thumb_long4.py). A = "7" gigante oro + pila bollette + timbro PAYING FULL PRICE + BEFORE WINTER; B = nonno scioccato su raggi gialli, bolletta, STILL PAYING FULL PRICE?!; C = 6 icone + casa accesa #7 UP TO $10,000, WAIT FOR NUMBER 7. Da fare (solo su ordine): short collegato.
 - REGOLA: la playlist "aiuti" si chiama su YouTube "Help Programs for Seniors: Meals, Bills & More"; scrivere sempre il nome completo e non chiedere conferma. Quella degli sconti = "Senior Discounts & Savings for Ages 55+".
+
+## 11/10/2026 - SHORT 8 BOLLETTE
+Regola utente: ogni short chiede SEMPRE like e iscrizione (blocco finale) e punta al lungo collegato (salvata in CLAUDE.md). Copione 8 blocchi: COPIONE-SHORT-8-BOLLETTE.md (gancio: grant 10.000 dollari USDA 504, mandato in chat). Voce/slide/copertina/pacchetto: solo su ordine. Video correlato = lungo BOLLETTE.
