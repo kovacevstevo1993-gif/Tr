@@ -79,3 +79,9 @@ IA No. Promozione No. Schermata finale 20 s -> video 1. Miniatura A: "5 BILLS" o
 
 ## Miniature (11/10, a codice, 1280x720) - miniature_video8/
 A = blu notte + oro, "5 BILLS / YOU DON'T HAVE TO PAY / AFTER 65" su fascia rossa + 3 bollette col timbro EXEMPT (INCOME TAX $2,955, MEDICARE B $4,870, PROPERTY TAX BY STATE). B = rosso/verde, "$1,609 BACK EVERY YEAR / SAME COUPLE. SAME INCOME.". Codice code/thumbs_video8.py. Non ancora approvate dall'utente.
+
+## Playlist "Retirement After 50" - descrizione (11/10)
+Titolo playlist: Retirement After 50
+Descrizione:
+Clear, step-by-step explanations of retirement for Americans over 50, with official numbers: Social Security (when to claim, the 35-year rule, the yearly Cola raise), Medicare (Part B, IRMAA), taxes in retirement (the senior deduction, taxes on Social Security), 401(k) and IRA rules (the 59 1/2 rule), and how much income your savings really pay. We follow two fictional neighbors, Frank and Mary, and show the exact math. Start with the first video in the playlist and watch in order.
+Rules, amounts and ages change and differ by location and plan. Always confirm with the official source before you rely on them. General information, not financial advice.
