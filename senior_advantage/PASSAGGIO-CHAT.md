@@ -305,4 +305,4 @@ SHORT 7: copertina FATTA (miniatura/copertina-short-07.png, code/cover7.py: "COS
 - REGOLA: la playlist "aiuti" si chiama su YouTube "Help Programs for Seniors: Meals, Bills & More"; scrivere sempre il nome completo e non chiedere conferma. Quella degli sconti = "Senior Discounts & Savings for Ages 55+".
 
 ## 11/10/2026 - SHORT 8 BOLLETTE
-Regola utente: ogni short chiede SEMPRE like e iscrizione (blocco finale) e punta al lungo collegato (salvata in CLAUDE.md). Copione 8 blocchi: COPIONE-SHORT-8-BOLLETTE.md (gancio: grant 10.000 dollari USDA 504, mandato in chat). Voce/slide/copertina/pacchetto: solo su ordine. Video correlato = lungo BOLLETTE.
+Regola utente: ogni short chiede SEMPRE like e iscrizione (blocco finale) e punta al lungo collegato (salvata in CLAUDE.md). Copione v2 7 blocchi (v1 scartata: spiegava tutto; lo short deve solo incuriosire): COPIONE-SHORT-8-BOLLETTE.md. Voce/slide/copertina/pacchetto: solo su ordine. Video correlato = lungo BOLLETTE.
