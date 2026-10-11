@@ -219,3 +219,6 @@
 
 ## REGOLA N.20 (utente, 11/10/2026): "MAI INPS" SOLO A VOCE; NEI TESTI SCRITTI SI SCRIVE "MY INPS"
 - Titoli, descrizioni, tag, hashtag, commenti e slide: il portale si scrive "My Inps" (nome vero, come lo cercano le persone), tag "my inps", hashtag #myinps. "Mai Inps" e' SOLO la pronuncia nei blocchi di voce. Errore del 11/10: scritto "mai inps" nei tag, #maiinps e "Mai Inps" nella descrizione del video 5. Il modello si scrive "ObisM" (tag "obism"), non "obis m".
+
+## REGOLA N.21 (utente, 11/10/2026): TAG - NIENTE VIRGOLE DENTRO UN TAG E CONTEGGIO COME YOUTUBE
+- Errore del 11/10 (video 5): ho scritto il tag "importo aggiuntivo 154,94": YouTube lo ha spezzato in due tag ("154" e "94") e ho detto "499 caratteri" mentre YouTube ne contava 516/500 (rosso). Regole: (1) mai virgole o punti-virgola dentro un tag (usare "154 euro"); (2) il conteggio di YouTube = somma delle lunghezze dei tag, +2 per ogni tag che contiene uno spazio (virgolette), + 1 per ogni virgola di separazione (n-1). Controllare con questo calcolo (verificato: ha dato 516 come YouTube) e restare sotto 500 (meglio 490-496). Mai dire "sotto i 500" senza averlo calcolato cosi'.
