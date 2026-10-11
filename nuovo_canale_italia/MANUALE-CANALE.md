@@ -159,3 +159,11 @@ Richiesta utente: "Deve essere sempre monetizzabile il canale senza rischiare ni
 - Post della community: sondaggi ("Quanto paghi di rata?", "Prossima pratica: auto o mutuo?"), anteprima della miniatura della prossima pratica.
 - Playlist per settore + "Tutte le pratiche" in ordine di numero (fa guardare piu video di fila).
 - Dirette: no (canale senza volto); al loro posto, una volta al mese, "Pratica dei vostri commenti": si analizza un caso arrivato nei commenti.
+
+## 20. Continuita: ogni video identico anche se un servizio si blocca (11/10/2026)
+Domanda utente: "Si ma se ogni volta ti blocchi così come farà ad essere uguale ogni video?"
+- Tutto cio che si ripete in ogni video e GIA salvato nel repo e non dipende da nessun servizio esterno: scrivania (`brand/assets/scrivania.png`), caratteri (`brand/fonts/`), contatore a rulli, cartellina, lente, post-it, cartellini, scontrino, timbri, colori (tutto in `code/fotogrammi_v2.py`). Si rigenerano uguali al pixel, gratis, sempre.
+- Le foto che cambiano per ogni tema (auto, casa, pannelli, bollette): da archivi di foto libere senza limiti (Openverse CC0, Pexels, Unsplash, Wikimedia) + scontorno automatico in locale (rembg). Nessun credito necessario.
+- Immagini AI (Pollinations, Gemini): solo extra facoltativo. 11/10/2026: credito Pollinations esaurito, quota immagini Gemini gratuita = 0.
+- Voce A (Gemini TTS gratuito): ha limiti giornalieri (il modello "pro" ha dato errore 429; il modello della voce A ha funzionato). Per non dipendere dai limiti: attivare la fatturazione sulla chiave Gemini (costo di pochi centesimi a video) – DECIDE L'UTENTE.
+- Ricerche gia fatte (11/10/2026): il 44% delle ore di YouTube negli USA si guarda sulla TV (eMarketer 2026) -> grafica pensata per TV e telefono (testi grandi, niente dettagli minuscoli). Studio su 300.000 video virali: miniature con o senza faccia rendono in media uguale. Miniature con 1–5 parole rendono di piu di quelle con 11+. Miniature italiane che vincono nella nicchia (Quattroruote, Geopop, Macchinando, Italia In Scaffale, Alberto Filippini): oggetto concreto grande (auto, pannello, prodotto), cerchio rosso, 2–3 parole in riquadro bianco/giallo, colori accesi -> le nostre avranno sempre l'oggetto vero grande sotto la luce della lampada + contatore + timbro.
