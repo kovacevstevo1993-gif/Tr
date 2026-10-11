@@ -42,7 +42,8 @@ Regola: massimo 3 colori per inquadratura. Diverso da tutti gli altri canali del
 - Testi e sottotitoli: **Inter SemiBold**.
 
 ## 5. Formato
-- Video lungo 1920x1080, 30 fps, durata 10–14 minuti (sopra gli 8 minuti = pubblicita a meta video, categoria Business).
+- Video lungo progettato in 1920x1080 ma ESPORTATO in 2560x1440 (o 3840x2160): YouTube da piu qualita (codec migliore) ai video caricati sopra il 1080p. 30 fps, durata 10–14 minuti (sopra gli 8 minuti = pubblicita a meta video, categoria Business).
+- Audio voce: -14 LUFS integrati, picchi sotto -1 dB, niente fruscio; musica a -24 dB sotto la voce.
 - Voce: A (Gemini TTS, voce Charon), montata da Claude. Controllo pronuncia con trascrizione su ogni blocco.
 - Sottotitolo della frase chiave in basso (barra nera arrotondata, Inter bianco), solo le frasi forti, non tutto.
 - Short verticali 1080x1920: una trappola sola, contatore grande al centro, rimando al video lungo come "Video correlato".
@@ -102,3 +103,59 @@ Mai usata in modo falso: la promessa del gancio va SEMPRE mantenuta nel video (Y
 - Playlist per settore: Auto, Casa e mutui, Energia e bollette, Banca e carte, Assicurazioni, Spesa e acquisti.
 - Descrizione: gancio, capitoli, "Fonti: nome dei siti ufficiali" (senza link lunghi), riga Iscriviti, Disclaimer. Commento fissato: una domanda al pubblico.
 - Impostazioni: come negli altri canali dell'utente; nessuna persona finta che si presenta come esperto, dati solo da fonti ufficiali (Banca d'Italia, ARERA, ISTAT, IVASS, siti delle aziende).
+
+---
+# PARTE 2 – MONETIZZAZIONE SENZA RISCHI E MEDIA BRAND (11/10/2026)
+Richiesta utente: "Deve essere sempre monetizzabile il canale senza rischiare niente quando avrò accesso alla monetizzazione non devo aver nessun problema." Controllato sulle pagine ufficiali di YouTube (Norme sulla monetizzazione dei canali, Contenuti alterati o sintetici, Programma partner) e sulle Linee guida AGCOM influencer (luglio 2025).
+
+## 13. Le 4 regole YouTube che potrebbero toglierci la monetizzazione (e come le rispettiamo)
+1. **Contenuti "non autentici" (ex "ripetitivi", dal 15/07/2025).** Vietati: slideshow, storie a modello o testo che scorre "con poca o nessuna narrazione, commento o valore educativo", contenuti fatti con l'AI "con modelli generici" che danno l'idea di produzione di massa. Permessi: stessa intro/outro con contenuto diverso, serie in cui ogni video ha un focus distinto.
+   -> Ogni video ha: ricerca nuova, conti fatti apposta, copione originale scritto per quel tema, oggetti di scena diversi per settore (chiavi auto, bolletta, chiavi di casa, polizza…), trappole diverse. Mai due video con la stessa struttura di frasi. Mai piu di 1 video lungo al giorno. L'utente sceglie i temi e approva ogni copione (direzione creativa umana).
+2. **Contenuti riutilizzati.** Vietato leggere testi di altri (articoli, siti, notizie) o copiare video. -> Copioni sempre originali; le fonti ufficiali si citano, non si leggono.
+3. **Persona AI che si presenta come esperto umano su temi finanziari = NON monetizzabile.** -> La voce e una VOCE NARRANTE: non dice mai "sono un consulente/esperto/avvocato", non ha nome e cognome finti, nessun avatar o faccia AI. Parla di "noi" come canale e di "i conti" e "i documenti".
+4. **Truffe / soldi facili / titoli ingannevoli.** Vietati "diventa ricco", "guadagno garantito", promesse di soldi facili. Le regole valgono anche per titolo, miniatura, descrizione e tag. -> Noi spieghiamo come NON perdere soldi; ogni promessa del titolo si mantiene nel video.
+
+## 14. Etichetta "contenuti alterati o sintetici" (YouTube)
+- Va dichiarato solo il contenuto realistico che fa sembrare vero qualcosa che non e successo (persona reale che dice cose mai dette, scena realistica mai avvenuta, evento reale alterato, musica AI protagonista).
+- Non serve per: voce narrante sintetica generica (non imita una persona reale), grafiche, contatore, fogli, scritte, elementi non realistici, sfondi.
+- Nostra regola prudente: niente scene fotorealistiche AI di persone o eventi; per le foto dei prodotti (auto, case, pannelli) usare foto con licenza libera (Pexels/Unsplash) o grafiche disegnate. Se in un video serve un'immagine AI realistica di una scena -> si spunta "Si" in YouTube Studio (zero rischio).
+
+## 15. Regole italiane
+- **AGCOM influencer (delibera luglio 2025):** valgono per chi supera 500.000 iscritti o 1 milione di visualizzazioni medie al mese. Obblighi: pubblicita sempre dichiarata (#adv / "Contenuto sponsorizzato" + funzione YouTube "Include promozione a pagamento"), segnalare l'uso dell'AI, iscrizione al registro. -> Le applichiamo DA SUBITO: nella descrizione di ogni video la riga "Voce narrante e alcune immagini realizzate con strumenti digitali/AI. Dati da fonti ufficiali."; ogni sponsor o affiliazione dichiarata.
+- **Niente consulenza finanziaria personalizzata** (attivita riservata in Italia): mai "compra questo prodotto/titolo", sempre spiegazioni generali + disclaimer "Informazione generale, non consulenza finanziaria."
+- **Aziende citate:** solo dati pubblici e verificabili (contratti tipo, fogli informativi, Banca d'Italia, ARERA, IVASS, ISTAT), linguaggio neutro ("questa clausola costa X"), mai "truffa" riferito a un'azienda con nome. Niente loghi di marchi nelle miniature.
+- **Musica:** solo Libreria audio di YouTube (zero reclami Content ID). Caratteri: tutti con licenza libera OFL (gia controllato).
+- Prima di attivare affiliazioni su prestiti, mutui o carte (prodotti di credito): farle controllare a un commercialista/avvocato, perche in Italia la promozione del credito ha regole proprie. Le affiliazioni su comparatori e prodotti non finanziari sono piu semplici.
+
+## 16. Requisiti per la monetizzazione (da sapere)
+- Oggi (ufficiale): 1.000 iscritti + 4.000 ore di visualizzazione in 12 mesi, oppure 10 milioni di visualizzazioni Short in 90 giorni; verifica in 2 passaggi attiva; nessun avvertimento attivo; account AdSense.
+- Dal 1/02/2027 YouTube cambia il Programma partner (ufficiale: "aggiornamenti dal 1 febbraio 2027", termini da accettare entro il 31/01/2027). Fonti non ufficiali riportano soglie nuove per chi entra: 8.000 ore o 20 milioni di visualizzazioni Short. -> Strategia: video lunghi 10–14 minuti (piu ore per ogni visualizzazione) e video "sempreverdi" che fanno ore per anni.
+- Livello intermedio (500 iscritti, abbonamenti e Super Thanks) da usare appena possibile.
+
+## 17. Il canale come media brand (adattato dal piano dell'utente)
+- **Nicchia dominante:** le grandi spese delle famiglie italiane (auto, casa, energia, banca, assicurazioni, acquisti). Non "tutta la finanza".
+- **Valore unico:** competenza (conti veri e fonti ufficiali) + racconto visivo (la Pratica) + produzione da cinema (scrivania, contatore a rulli, suono).
+- **Entrate multiple, in ordine di arrivo:**
+  1. Pubblicita YouTube (AdSense).
+  2. Affiliazioni dichiarate: comparatori (luce/gas, assicurazioni, conti), strumenti utili (es. calcolatrici, app di budget). Controllo legale prima, vedi sez. 15.
+  3. "Kit anti-trappola": checklist PDF + calcolatore (foglio o pagina web) per ogni settore, fatti da Claude, venduti a pochi euro o dati in cambio dell'email (newsletter).
+  4. Sponsor di settore (dopo i primi 10.000 iscritti), sempre dichiarati.
+  5. Abbonamenti al canale (membership) con pratiche in anteprima.
+- **Attrezzatura:** non servono telecamere, microfoni o luci (canale senza volto): l'equivalente e la qualita digitale = voce pulita a -14 LUFS, render 1440p/4K, grafica a 30 fps controllata fotogramma per fotogramma, suono curato.
+
+## 18. Catena di produzione di ogni video (pipeline)
+1. **Ricerca:** tema con domanda alta (YouTube Italia + vidIQ), concorrenza, fonti ufficiali. Si annota tutto in RICERCHE-VIDIQ.md.
+2. **Titolo + 3 miniature PRIMA del copione** (se non si riesce a fare un titolo forte, il tema si scarta).
+3. **Copione con mappa della ritenzione:** gancio 0–30 s (promessa confermata entro 10 s, nessuna sigla), un nuovo "anello di curiosita" ogni 60–90 s, cambio visivo ogni 4–6 s, effetto/sorpresa ogni 10–15 s. Obiettivo: oltre il 60% degli spettatori dopo 30 s, oltre il 50% a meta video. L'utente approva.
+4. **Voce** (Gemini, voce A) + controllo con trascrizione.
+5. **Animazione e montaggio** da codice, controllo di ogni fotogramma.
+6. **Pacchetto:** titolo, descrizione con capitoli e fonti, tag, commento fissato, schermata finale verso il video successivo (tempo di sessione).
+7. **Pubblicazione** + test A/B miniature (Prova e confronta).
+8. **Analisi a 48 ore e 7 giorni** (CTR, durata media, punto dove escono) -> correzioni sul video dopo.
+
+## 19. Short e imbuto di crescita
+- 3–5 Short a settimana: ognuno = una trappola sola presa dal video lungo (non tagliata: rifatta in verticale con contatore grande), "Video correlato" = il lungo.
+- Video lungo 1 a settimana (stesso giorno e ora).
+- Post della community: sondaggi ("Quanto paghi di rata?", "Prossima pratica: auto o mutuo?"), anteprima della miniatura della prossima pratica.
+- Playlist per settore + "Tutte le pratiche" in ordine di numero (fa guardare piu video di fila).
+- Dirette: no (canale senza volto); al loro posto, una volta al mese, "Pratica dei vostri commenti": si analizza un caso arrivato nei commenti.
