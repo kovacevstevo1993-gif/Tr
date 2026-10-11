@@ -1,14 +1,14 @@
 # Regole permanenti (valgono sempre, in ogni sessione)
 
 **AVVIO DI OGNI CHAT NUOVA (09/10/2026, ordine dell'utente: "ogni chat nuova deve avere tutto il progetto", senza mischiare):**
-- Tutto il progetto (4 canali) e' su `main`: ogni chat nuova parte gia' con tutti i file. Non serve cercare altri branch.
+- NON UNIRE I BRANCH (ordine utente 11/10: "Non devi unire niente, ti cerchi tutto cosi' sai tutto"). Il lavoro sta su vari branch: a ogni avvio eseguire `./CERCA-TUTTO.sh` (lo fa anche l'hook SessionStart): mostra per ogni canale il branch con il lavoro piu' recente e gli ultimi commit di tutti i branch. Leggere i file da li' con `git show origin/<branch>:<percorso>`. Prima di chiedere QUALSIASI dato all'utente (screenshot, voce, durate, testi) cercarlo nei branch, nei file di stato e nelle chat (list_sessions/list_events). "Tutto il progetto" = tutti i branch e tutte le chat, non un solo branch.
 - I canali sono SEPARATI, ognuno nella sua cartella. Dal primo messaggio dell'utente capire su QUALE canale si lavora e leggere SOLO i file di avvio di quel canale, prima di rispondere:
   - The Money Backstory -> `money_backstory/REGOLE-UTENTE-05-10.md` (regole con le parole dell'utente) + `money_backstory/START-QUI-NUOVA-CHAT.md` (stato) + `money_backstory/RICERCHE-VIDIQ-LOG.md`.
   - The Senior Advantage -> `senior_advantage/PASSAGGIO-CHAT.md` + `senior_advantage/RICERCHE-VIDIQ.md`.
   - Conti in Pensione -> `conti_in_pensione/REGOLE-FISSE.md` (per intero).
   - Bambini Ciao Ciao -> `PROGETTO_COMPLETO_Bambini_Ciao_Ciao.md` + cartella `parco/`.
 - Non aprire ne' usare file, regole o stile di un altro canale. Le regole di questo file valgono per tutti.
-- Fine di ogni lavoro: salvare nel file di stato del canale, commit e push sul branch della sessione, poi unire su main (cosi' la chat dopo trova tutto).
+- Fine di ogni lavoro: salvare nel file di stato del canale, commit e push sul branch della sessione (la chat dopo lo trova con CERCA-TUTTO.sh; non si unisce su main se l'utente non lo ordina).
 
 **PRIMA REGOLA: SALVARE TUTTO (04/10/2026): ogni cosa fatta o decisa (copioni, pacchetti, durate, regole, stato dei video) va salvata SUBITO in senior_advantage/PASSAGGIO-CHAT.md o in CLAUDE.md, con commit e push, senza che l'utente lo chieda. Prima di scrivere qualsiasi cosa, leggere CLAUDE.md, PASSAGGIO-CHAT.md e i file modello: l'utente non deve ripetere niente.**
 
