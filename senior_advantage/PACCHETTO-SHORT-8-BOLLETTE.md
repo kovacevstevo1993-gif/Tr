@@ -26,4 +26,4 @@ Disclaimer: Rules, amounts and ages change and differ by location and plan. Alwa
 Which of these 7 bills did you not know about? Tell me below 👇 Rules and limits vary by state and area, so confirm with the official source. The full video with all 7 is right below this short.
 
 ## Impostazioni
-IA No. Promozione No. Miniatura = copertina short 8 (non ancora fatta, solo su ordine). Video correlato = video lungo BOLLETTE (si imposta sullo short, dopo la pubblicazione del lungo; se lo short esce prima, lasciare vuoto e impostarlo dopo).
+IA No. Promozione No. Miniatura = miniatura/copertina-short-08.png. Video correlato = video lungo BOLLETTE (si imposta sullo short, dopo la pubblicazione del lungo; se lo short esce prima, lasciare vuoto e impostarlo dopo).
