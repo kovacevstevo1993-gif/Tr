@@ -7,3 +7,4 @@
 - Nicchia: deve essere la piu pagata in assoluto, in italiano, scalabile, non uguale agli altri.
 - "Pure dei colori la struttura ecc tutto veramente tutto da professionista di yotuebe che lavora da 10 anni con canali virali" -> fatto MANUALE-CANALE.md + brand/tavola-1,2,3.
 - "Usa solo la psicologia non inversa o vedi se meglio quella inversa basta che attimo l'attenzione a tutti" -> deciso: base psicologia diretta (paura di perdere, curiosita, coinvolgimento), inversa solo nel gancio e max 2 volte per video (MANUALE-CANALE.md sezione 7).
+- "Le slide non ci puoi aggiungere quanta di più originale e bello da vwdere. Deve essere perfetto tutto per filo e segno dalla a alla z psicologia e tutto devi usare deve essere il migliore di tutto il. Mondo si strutturalmente visivamente e curiosamente tutto in pratica tutto quello che serve per fare diventare ogni video virale" -> fatta grafica v2 (MANUALE sezione 2b, brand/v2-*.png).

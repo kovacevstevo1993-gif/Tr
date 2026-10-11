@@ -12,6 +12,18 @@ Ogni video apre una PRATICA su una grande spesa degli italiani, trova le trappol
 5. **"Indovina"**: a metà video la voce chiede una cifra, 3 secondi di conto alla rovescia, poi la risposta.
 6. **Il Verdetto**: timbro finale CONVIENE (verde) / NON CONVIENE (rosso) / DIPENDE DA TE (giallo), con colpo sonoro di timbro.
 
+## 2b. Versione 2 della grafica (11/10/2026, richiesta utente: "piu originale e bello da vedere, perfetto dalla A alla Z")
+Fotogrammi tipo: `brand/v2-1-gancio.png`, `v2-2-apertura-pratica.png`, `v2-3-trappola.png`, `v2-4-indovina.png`, `v2-5-verdetto.png`. Codice: `code/fotogrammi_v2.py`.
+- **Scrivania fotorealistica** (`brand/assets/scrivania.png`): piano scuro, lampada calda in alto a sinistra, calcolatrice, penna stilografica, caffe. Uguale in tutti i video = il nostro "studio".
+- **Contatore a rulli meccanici** (come una pompa di benzina/tassametro): cifre rosse su rulli neri, spia rossa, i rulli GIRANO quando la cifra sale (con "tic" sonoro). Nel gancio le ultime cifre girano senza fermarsi: la cifra esatta si vede solo alla fine.
+- **Cartellina della pratica** con linguetta "N. 001", etichetta, note scritte a mano, polaroid del prodotto fermata con la graffetta, timbro RISERVATO.
+- **Lente d'ingrandimento** che scorre sul contratto e si ferma sulla cifra-trappola (evidenziata in giallo).
+- **Post-it giallo** scritto a mano ("riga 4! leggi qui") = la voce interiore dello spettatore.
+- **Indovina**: tre cartellini A/B/C sul tavolo + cerchio rosso del conto alla rovescia 3-2-1 + scritta a mano "Scrivilo nei commenti".
+- **Verdetto = scontrino**: lo scontrino della pratica elenca ogni trappola con la sua cifra e il TOTALE IN PIU in rosso, firma "Grazie per non aver firmato." + timbro + contatore finale + pillola verde "COME EVITARLO".
+- Caratteri aggiunti: Caveat (scrittura a mano), Permanent Marker (riserva).
+- Movimento: camera lenta sulla scrivania (zoom e scorrimento 2-4%), fogli che entrano con ombra, lente che scorre, penna che disegna il cerchio, timbro che cade con piccolo scossone dell'immagine.
+
 ## 3. Colori (fissi, mai altri)
 | Nome | Hex | Uso |
 |---|---|---|
