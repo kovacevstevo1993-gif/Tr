@@ -21,3 +21,17 @@ Richiesta utente: "i piu pagati in assoluto e scalabile in italiano", 5 idee. Au
 3. Casa, mutui, affitti
 4. Soldi e diritti legali (rimborsi, multe, eredita, contratti)
 5. Risparmio e investimenti semplici (conti deposito, BTP, ETF)
+
+## Seconda ricerca (11/10/2026): idea originale, la piu pagata, utile a tutti, adatta alle slide
+- vidIQ keyword research: country_search IT (gratis) non ha dati per truffa, mutuo, tasse, rimborso, eredita, come risparmiare. Research mode (5 crediti) su "truffe" da dati misti francesi: inutile per l'italiano, non rifarlo. Crediti spesi in totale oggi: 55 (restano 65).
+- Dati gratis da ricerca YouTube Italia (curl, top video per query):
+  - "leasing o finanziamento": Quattroruote "Finanziamenti auto: la trappola che nessuno racconta" 1,05M; Prestiter "Trappole finanziamento maxirata" 805k; mediana 30k.
+  - "fotovoltaico conviene": 766k, "Ho buttato 10.000 EUR sul tetto: 3 trappole" 661k (6 mesi), 569k; mediana 35k.
+  - "conviene davvero": "La verita sugli outlet: conviene davvero comprare?" 1,0M (3 settimane); mediana 27k.
+  - "auto elettrica conviene": 301k, 245k; mediana 73k.
+  - "comprare o affittare casa": 199k; mediana 34k. "bolletta luce gas": 217k, 200k.
+  - "quanto guadagna": 524k (interviste in strada, Money Stories Italia, Marcello Ascani).
+  - "trucchi supermercati": Geopop 860k. "come ti fregano": 2,7M (truffa specchietto).
+  - Deboli: "costi nascosti" mediana 1,2k; "ti spettano soldi" mediana 468; "assicurazione auto risparmiare" mediana 5k.
+- Conclusione: il formato che fa piu views e "trappole + conti veri" sulle grandi spese (auto, casa, energia, banca). Oggi ogni canale copre UN solo settore (Quattroruote auto, Soluzioni Green energia, Tartaglia casa). Nessun canale senza volto le copre tutte.
+- PROPOSTA: canale "trappole e conti veri" su tutte le grandi spese degli italiani (auto, mutuo, fotovoltaico, pompa di calore, bollette, assicurazioni, conti, abbonamenti, outlet). Inserzionisti: banche, auto, energia, assicurazioni (i CPM piu alti). Da confermare con l'utente.
