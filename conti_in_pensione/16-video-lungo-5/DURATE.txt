@@ -1,0 +1,7 @@
+# Durate blocchi video 5 (V5-blocco01.mp4...) - dagli screenshot CapCut dell'utente, 30 fps. Ogni blocco parte dalla fine del precedente. Segno sotto la riga bianca = fotogramma; tra due segni si arrotonda per eccesso.
+# blocco | fine cumulativa (mm:ss+f) | fotogrammi totali a fine | durata blocco (fotogrammi)
+1 | 00:12+5f | 365 | 365
+2 | 00:24+15f | 735 | 370
+3 | 00:38+6f | 1146 | 411
+4 | 00:49+22f | 1492 | 346
+5 | 01:00+26f | 1826 | 334
