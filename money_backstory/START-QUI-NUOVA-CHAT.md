@@ -124,3 +124,8 @@ Piano 20 video e ricerche: vedi 00-LEGGIMI sezioni 6-7.
 ## STATO 10/10/2026 (fine sessione video 8)
 - VIDEO 8 "5 Bills You Don't Have To Pay After 65": SLIDE COMPLETE e consegnate per i blocchi 1-48 (`video8-bills-after-65/slide/`, codice in `code/`, tempi in `TIMELINE.md`, `fine_blocchi.txt`, `sync.json`). Fine video 22360 fotogrammi (12:25,3). Controllo di ogni fotogramma: `code/qa8.py`.
 - Da fare per il video 8: pacchetto (titolo, descrizione con capitoli dalla sua timeline, tag, commento, impostazioni), miniatura (piano in PIANO-VIRALE.md), playlist (non esiste sul canale: crearla), schermata finale -> video 1.
+
+## STATO AL 11/10/2026 (VIDEO 8) - LEGGERE PRIMA DI CHIEDERE QUALSIASI COSA ALL'UTENTE
+- VIDEO 8 "5 Bills You Don't Have To Pay After 65": SLIDE COMPLETE (blocchi 1-48, 71+ MP4) in `video8-bills-after-65/slide/`, codice in `code/`, controllo fotogrammi in `code/qa_b*.json`. Fine voce di TUTTI i 48 blocchi (dagli screenshot dell'utente, gia' letti) in `video8-bills-after-65/TIMELINE.md` + `fine_blocchi.txt` + `sync.json`. Fine video 22360 fotogrammi = 12:25. NON chiedere all'utente screenshot/timeline: sono qui.
+- TESTI DI PUBBLICAZIONE FATTI: `video8-bills-after-65/PUBBLICAZIONE-VIDEO8.md` (titolo, descrizione con capitoli calcolati, tag, commento, impostazioni; struttura identica al video 7). Mancano: miniature (solo su ordine), schermata finale, playlist "Retirement After 50" (non esiste sul canale).
+- Il lavoro di una chat puo' stare su un ALTRO branch (qui: `claude/youthful-mendel-ijbe7x`, ora unito in `claude/great-tesla-hkd2tg`). Prima di dire "manca il dato": git fetch, cercare nei branch (`git ls-tree -r origin/<branch>`) e nelle chat (list_events), poi TIMELINE.md. Mai chiedere all'utente un dato che ha gia' mandato.
