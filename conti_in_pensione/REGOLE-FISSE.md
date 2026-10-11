@@ -228,3 +228,7 @@
 - REGOLA per ogni video lungo, dal prossimo: l'ultimo blocco (disclaimer / chiusura) deve avere gli ultimi 20 secondi con una zona LIBERA e vuota dove YouTube mette gli elementi (riquadro video correlato al centro-basso, Iscriviti in basso a destra), e il testo del disclaimer deve stare nella parte alta, mai sotto o dietro i riquadri. Le slide degli ultimi 20 s devono restare leggibili con gli elementi sopra.
 - Controllare nei fotogrammi finali, sovrapponendo le zone dei riquadri, che nessun testo sia coperto. La schermata finale dura 20 s: il video deve durare almeno 20 s di slide finale (i tempi partono da fine video meno 20 s).
 - Video 5: la slide finale (blocco 37) e' fatta col disclaimer a tutto schermo e NON ha spazio. Si rifa' solo se l'utente lo ORDINA.
+
+## REGOLA N.23 (utente, 11/10/2026): OGNI ERRORE MOSTRATO = SOLUZIONE SALVATA DA SOLO, SENZA CHE LO DICA L'UTENTE
+- L'utente: "quando ti faccio vedere gli errori devi salvare le soluzioni da solo, non devo dirtelo io". Appena l'utente mostra o segnala un errore (screenshot, frase, domanda), PRIMA di rispondere: scrivere in REGOLE-FISSE.md l'errore, la causa e la regola/soluzione, con commit e push (regola N.4). Poi rispondere in breve. Vale anche per gli errori scoperti da me. Non va aspettato l'ordine "salvalo".
+- Salvare solo la regola (non cambiare il lavoro: regola N.13).
