@@ -8,7 +8,7 @@ with sync_playwright() as p:
     br=p.chromium.launch(executable_path='/opt/pw-browsers/chromium-1194/chrome-linux/chrome',args=['--no-sandbox']);pg=br.new_page(viewport={'width':1920,'height':1080})
     pg.on('pageerror',lambda e:print('ERR',e))
     pg.goto('file://'+H+'/blocco%02d.html'%b)
-    if mode=='video':
+    if mode in ('video','check'):
         # ===== BLOCCO AUTOMATICO (regola N.18): se un controllo non passa, il render NON parte =====
         pg.evaluate('draw(0,0.1)');SC=pg.evaluate('window.__SC');IT=pg.evaluate('window.__IT')
         for (s0,e0),a_ in zip(SC,IT):
@@ -19,6 +19,9 @@ with sync_playwright() as p:
         print(q.stdout.strip())
         if q.returncode!=0:
             print('ERRORE QA FOTOGRAMMI: RENDER BLOCCATO');sys.exit(1)
+        print('CONTROLLI OK: tempi e fotogrammi')
+    if mode=='check':
+        br.close();sys.exit(0)
     if mode=='preview':
         os.makedirs(H+'/prev',exist_ok=True)
         for s in [float(x) for x in sys.argv[3:]]:
