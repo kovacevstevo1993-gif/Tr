@@ -62,13 +62,17 @@ const BUILD={
 function mkBlk(text,dur,scenes){const sp=speech(text,dur);
  const st=scenes.map((sc,i)=>i==0?0:Math.max(0.8,sp(sc.at)-0.3+(sc.sh||0)));
  scenes.forEach((sc,i)=>{const s=st[i],e=(i<scenes.length-1)?st[i+1]:dur;const L=e-s;
-  const D=Math.min(0.9,Math.max(0.4,0.28*L));sc._D=D;sc._L=L;
+  const D=0.9;sc._D=D;sc._L=L;
   // regola dell'utente: tutto completo entro l'80 % della slide (e almeno 0,8 s prima della dissolvenza), poi fermo
-  const A0=0.3;
+  const A0=0.5;
   sc.items.forEach(it=>{it._raw=Math.max(A0,sp(it.at)-0.2-s);});
   const lim=Math.max(A0+0.05,Math.min(0.8*L-D,L-0.8-D));const amax=Math.max(...sc.items.map(it=>it._raw));
   const k=(amax>lim)?(lim-A0)/Math.max(0.01,amax-A0):1;
   sc.items.forEach(it=>{it._a=A0+(it._raw-A0)*k;});
+  // almeno 0,45 s tra un elemento e il successivo (se c'e' spazio), sempre dentro il limite dell'80 %
+  {const ord=[...sc.items].sort((x,y)=>x._a-y._a);const n=ord.length;const gap=n>1?Math.min(0.45,(lim-A0)/(n-1)):0;
+   for(let q=1;q<n;q++){ord[q]._a=Math.max(ord[q]._a,ord[q-1]._a+gap);}
+   const mx=Math.max(...ord.map(o=>o._a));if(mx>lim&&n>1){const kk=(lim-A0)/(mx-A0);ord.forEach(o=>{o._a=A0+(o._a-A0)*kk;});}}
   SB.push({s,e,build(g){const o={items:[]};
    o.top=el('g',{},g);topLabel(o.top,sc.top);
    o.cap=el('g',{},g);cap(o.cap,sc.cap,sc.capSize||44);
@@ -76,7 +80,7 @@ function mkBlk(text,dur,scenes){const sp=speech(text,dur);
    this.o=o;},
   update(t){const o=this.o;T(o.top,960,100,0,1);T(o.cap,960,950,0,pop(t,0.15,Math.min(1.0,Math.max(0.45,L-0.8))));
    o.items.forEach(({n,it})=>{const a=it._a;T(n,it.x,it.y,it.r||0,(it.s||1)*pop(t,a,a+D));});}});});
- window.__SC=scenes.map((sc,i)=>[st[i],(i<scenes.length-1)?st[i+1]:dur]);}
+ window.__IT=scenes.map(sc=>sc.items.map(it=>it._a));window.__SC=scenes.map((sc,i)=>[st[i],(i<scenes.length-1)?st[i+1]:dur]);}
 Object.assign(BUILD,{
  calc:(g)=>calc(g),
  vf:(g,v)=>vf(g,v),
