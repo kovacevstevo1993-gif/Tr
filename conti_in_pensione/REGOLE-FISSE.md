@@ -192,3 +192,6 @@
 - Copione v2 a 37 blocchi (copione-blocchi.txt), durate dagli screenshot per TUTTI i 37 blocchi in DURATE.txt (totale 14137 fotogrammi = 07:51+7f). Ricerca in ricerca-11-10-2026.md (vidIQ: V3 perde 53 punti nel primo minuto; formula "tabella netti + TUTTA LA VERITA'" + trucco pratico).
 - Correzione voce blocco 34: "Mai Inps" e "Obis emme" (nel file del copione c'e' ancora "My Inps"/"O bis em": nelle slide usare Mai Inps / ObisM).
 - Prossimo: clip V5-blocco01..37.mp4 (1920x1080, 30 fps, motore b-sync-80.js, niente semafori, stile video vecchi), QA su tutti i fotogrammi, consegna come MP4 singoli.
+
+## REGOLA N.17 (utente, 11/10/2026): VIDEO 5 = REGOLE E STILE DEI BLOCCHI FINALI DEL VIDEO 4
+- L'utente: "segui tutte le regole dell'ultimo video, non quelle dei blocchi iniziali perche' li hai sbagliati, ma segui quelli finali che sono perfetti". Per il video 5: stesso stile, stessa densita' e stesso ritmo dei blocchi FINALI del video 4 (V4-blocco16..30, motore con tempi calibrati sulla voce), NON dei blocchi 1-5 del video 4. In piu' regola N.15 (tutto completo entro l'80 %), N.11 (niente semafori), N.12 (stile coerente con i video vecchi).
