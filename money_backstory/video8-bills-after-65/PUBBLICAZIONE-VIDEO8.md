@@ -76,3 +76,6 @@ Which of these 5 bills are you still paying? Tell me below, and send this to one
 
 ## Impostazioni
 IA No. Promozione No. Schermata finale 20 s -> video 1. Miniatura A: "5 BILLS" oro + "YOU DON'T HAVE TO PAY" bianco + "AFTER 65" su fascia rossa, bollette con timbro "EXEMPT". Miniatura B: "$1,609 BACK". Dopo l'upload cercare il titolo esatto su YouTube.
+
+## Miniature (11/10, a codice, 1280x720) - miniature_video8/
+A = blu notte + oro, "5 BILLS / YOU DON'T HAVE TO PAY / AFTER 65" su fascia rossa + 3 bollette col timbro EXEMPT (INCOME TAX $2,955, MEDICARE B $4,870, PROPERTY TAX BY STATE). B = rosso/verde, "$1,609 BACK EVERY YEAR / SAME COUPLE. SAME INCOME.". Codice code/thumbs_video8.py. Non ancora approvate dall'utente.
