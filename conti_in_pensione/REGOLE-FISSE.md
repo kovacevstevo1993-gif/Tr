@@ -211,3 +211,8 @@
 8. STATO: i 37 clip V5-blocco01..37.mp4 consegnati l'11/10 sono la versione 1 (slide troppo veloci, NON accettata dall'utente). La versione 2 (una scena per blocco) e' salvata nelle sorgenti (specs-v5.js) ma NON renderizzata e NON consegnata: si rifa' solo se l'utente lo ORDINA.
 - Script del controllo dei tempi: conti_in_pensione/qa/qa_tempi.py (da lanciare PRIMA di ogni render, insieme a qa_slide.py).
 - BLOCCO AUTOMATICO PROVATO (11/10/2026): in 16-video-lungo-5/sorgenti il motore (b-sync-80.js) RIFIUTA le scene sotto i 5 s (errore "REGOLA N.18") e render.py NON fa partire il render se i controlli dei tempi o dei fotogrammi non passano. Per provarlo senza creare video: python3 render.py <blocco> check. DAL VIDEO 6 e per ogni short: copiare b-sync-80.js e render.py da 16-video-lungo-5/sorgenti, non usare le versioni vecchie.
+
+## REGOLA N.19 (utente, 11/10/2026): MINIATURE E TITOLI = COPIARE TUTTO DAI VIRALI, SENZA CHE LO DICA L'UTENTE
+- L'utente: "non devo dirlo io, per quello ti dico di copiare tutto dagli altri". Quando l'ordine e' "come i video virali", si copia da quelli che vanno TUTTO cio' che funziona: parola chiave di tema ("PENSIONI" / "PENSIONE") GRANDE e subito leggibile, cosi' si capisce che e' la tredicesima della PENSIONE e non quella di tutti; domanda con "?"; promessa ("ECCO IL TUO IMPORTO", "TABELLA IMPORTI"); cedolino/documento con l'importo; freccia/spunta. Solo i colori e lo stile grafico restano quelli dei video dell'utente.
+- Titolo: parola calda in maiuscolo con "PENSIONI/PENSIONE" dentro il titolo (come i titoli virali), non solo "TREDICESIMA".
+- Errore del 11/10 (miniature video 5): tolta/omessa la parola PENSIONE dalle 3 miniature e dal titolo; non si capiva che era la tredicesima dei pensionati.
