@@ -216,3 +216,6 @@
 - L'utente: "non devo dirlo io, per quello ti dico di copiare tutto dagli altri". Quando l'ordine e' "come i video virali", si copia da quelli che vanno TUTTO cio' che funziona: parola chiave di tema ("PENSIONI" / "PENSIONE") GRANDE e subito leggibile, cosi' si capisce che e' la tredicesima della PENSIONE e non quella di tutti; domanda con "?"; promessa ("ECCO IL TUO IMPORTO", "TABELLA IMPORTI"); cedolino/documento con l'importo; freccia/spunta. Solo i colori e lo stile grafico restano quelli dei video dell'utente.
 - Titolo: parola calda in maiuscolo con "PENSIONI/PENSIONE" dentro il titolo (come i titoli virali), non solo "TREDICESIMA".
 - Errore del 11/10 (miniature video 5): tolta/omessa la parola PENSIONE dalle 3 miniature e dal titolo; non si capiva che era la tredicesima dei pensionati.
+
+## REGOLA N.20 (utente, 11/10/2026): "MAI INPS" SOLO A VOCE; NEI TESTI SCRITTI SI SCRIVE "MY INPS"
+- Titoli, descrizioni, tag, hashtag, commenti e slide: il portale si scrive "My Inps" (nome vero, come lo cercano le persone), tag "my inps", hashtag #myinps. "Mai Inps" e' SOLO la pronuncia nei blocchi di voce. Errore del 11/10: scritto "mai inps" nei tag, #maiinps e "Mai Inps" nella descrizione del video 5. Il modello si scrive "ObisM" (tag "obism"), non "obis m".
