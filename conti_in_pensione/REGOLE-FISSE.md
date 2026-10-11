@@ -222,3 +222,9 @@
 
 ## REGOLA N.21 (utente, 11/10/2026): TAG - NIENTE VIRGOLE DENTRO UN TAG E CONTEGGIO COME YOUTUBE
 - Errore del 11/10 (video 5): ho scritto il tag "importo aggiuntivo 154,94": YouTube lo ha spezzato in due tag ("154" e "94") e ho detto "499 caratteri" mentre YouTube ne contava 516/500 (rosso). Regole: (1) mai virgole o punti-virgola dentro un tag (usare "154 euro"); (2) il conteggio di YouTube = somma delle lunghezze dei tag, +2 per ogni tag che contiene uno spazio (virgolette), + 1 per ogni virgola di separazione (n-1). Controllare con questo calcolo (verificato: ha dato 516 come YouTube) e restare sotto 500 (meglio 490-496). Mai dire "sotto i 500" senza averlo calcolato cosi'.
+
+## REGOLA N.22 (utente, 11/10/2026): SLIDE FINALE CON SPAZIO LIBERO PER LA SCHERMATA FINALE DI YOUTUBE
+- Errore scoperto dall'utente dopo 5 video: la slide finale (disclaimer) riempie tutto lo schermo, quindi il riquadro del video correlato e il pulsante Iscriviti della schermata finale di YouTube (20 s) si sovrappongono al testo. Non c'e' spazio per niente.
+- REGOLA per ogni video lungo, dal prossimo: l'ultimo blocco (disclaimer / chiusura) deve avere gli ultimi 20 secondi con una zona LIBERA e vuota dove YouTube mette gli elementi (riquadro video correlato al centro-basso, Iscriviti in basso a destra), e il testo del disclaimer deve stare nella parte alta, mai sotto o dietro i riquadri. Le slide degli ultimi 20 s devono restare leggibili con gli elementi sopra.
+- Controllare nei fotogrammi finali, sovrapponendo le zone dei riquadri, che nessun testo sia coperto. La schermata finale dura 20 s: il video deve durare almeno 20 s di slide finale (i tempi partono da fine video meno 20 s).
+- Video 5: la slide finale (blocco 37) e' fatta col disclaimer a tutto schermo e NON ha spazio. Si rifa' solo se l'utente lo ORDINA.
