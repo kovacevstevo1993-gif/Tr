@@ -19,3 +19,4 @@
 - "E i sottotitoli sotto non servono a niente ci sono già su YouTube in automatico" -> NIENTE barra sottotitoli nei video.
 - 11/10/2026: "Cosa a cazzo serve a me il copione che devi farlo te stai solo sprecando crediti" -> il copione NON si manda all utente: Claude lo scrive e fa direttamente il video. Il copione si salva solo nel repo.
 Titolo scelto da Claude (ordine utente "deve scegliere quello migliore per YouTube"): "Rata da 199 €: la trappola nascosta nella maxirata". Immagine auto: brand/assets/auto_cc0.jpg (Openverse CC0, rawpixel).
+- 11/10/2026 sera: voce A = 10 richieste al giorno (quota Google sulla chiave Gemini, non sull account Claude). Pronti b01-b06; b07-b19 da fare in 2 richieste quando si ricarica (ripresa programmata 12/10 02:05 ora italiana).
