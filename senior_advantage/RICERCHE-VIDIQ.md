@@ -130,3 +130,108 @@ Risultati di ricerca YouTube (titolo | canale | view | eta | durata):
 - Centro apparecchi acustici: test dell'udito gratuito per iscritti dai 18 anni, assistenza gratuita inclusa con l'acquisto; prezzi da 1.599,99 dollari (Philips HearLink 9050, ricaricabile con caricatore) e 1.699,99 (Jabra Enhance Pro 30). Serve la tessera.
 - Ottica: lenti a contatto online solo per iscritti.
 - Conseguenza: un titolo "Costco Is Hiding N Discounts From Seniors" sarebbe falso. Angolo onesto: "Costco has no senior discount, but these N things save seniors money" (parole chiave: "costco for seniors" 5.235/mese conc. 12; "costco senior discount" 3.269 conc. 19).
+
+---------------------------------------------------------------------
+## 8. RICERCA VIDEO COSTCO (06/10/2026) - 5 crediti vidIQ (saldo 25) + ricerche pubbliche gratuite
+Autorizzata dall'utente ("fai tutte le ricerche, parole chiave SEO").
+
+### 8a. Video Costco per over 60 che vanno (YouTube, ricerca "costco senior discount" e "costco for seniors"; titolo | canale | view | eta | durata)
+- **If You're Over 60, Costco Owes You These 15 Free Things** | Robin MBA | 457.040 | 3 sett. | 15:42 (15 servizi inclusi nella tessera; alla fine 2 a pagamento con costi dichiarati: vaccini e upgrade Executive)
+- **15 HIDDEN Costco Senior Discounts They Never Advertise in 2026** | Walt - Senior Money Watch | 335.640 | 3 mesi | 21:52 (apre con: apparecchi acustici 1.500 contro 3.500-7.000, "usati una volta pagano 20 anni di tessera"; rivolto a coppie di over 60 in due)
+- 15 "Hidden" Senior Discounts Costco Never Advertises | The Retiree Wallet | 177.195 | 4 mesi | 25:06 (apre con storia di una donna di 60 anni, apparecchi acustici, 3.000 dollari risparmiati; ammette "Costco non ha un vero sconto senior")
+- **13 Ways Seniors Can Shop Costco Without Ever Paying for a Membership** | The Retiree Wallet | 101.960 | 3 mesi | 21:59
+- Costco Senior Deals Most Members Never Find | FrugalFinds4U | 95.738 | 4 mesi | 22:31
+- 15 "Hidden" Senior Discounts Costco Canada Never Advertises | The Canadian Senior Wallet | 44.057 | 3 mesi
+- 13 Senior Secrets Only Costco Employees Know | The Smart Steward | 20.418 | 1 mese | 13:53
+- 18 Costco Senior Deals You'll Regret Missing This Month | John Prepares | 15.616 | 4 mesi | 38:03
+- Costco Is Hiding 17 Discounts From Seniors Over 60 | The Smart Steward | 11.258 | 1 mese | 10:19
+- Over 55? Then You Can Use These Costco HIDDEN Senior Discounts | Tragic Faith | 6.972 | 12:36
+- Decine di copie dello stesso titolo ("15 Hidden Senior Discounts Costco Never Advertises") fanno 100-700 view: il formato inflazionato non basta, vince chi e primo/ha canale forte o titolo diverso.
+Durata dei video che vincono: 15-25 minuti (i vincitori Robin MBA 15:42, Walt 21:52, Retiree Wallet 22-25). Il canale piccolo Smart Steward fa solo 10-14 min e 11-20K.
+
+### 8b. Cosa contengono (trascrizioni dei 4 migliori)
+- Robin MBA (15 cose incluse nella tessera): assistenza tecnica telefonica gratis (Concierge) per elettronica; seconda garanzia di 2 anni su articoli selezionati; manutenzione gomme gratis se comprate li; test dell'udito gratis (dai 18 anni); controllo 30 giorni sul prezzo (rimborso differenza); reso 100% soddisfatti senza limite di tempo sulla maggior parte; programma farmaci per iscritti gratis; farmacia senza tessera; ecc.
+- Walt (15): farmacia senza tessera; apparecchi acustici (Kirkland non esiste piu); esame vista senza tessera; Member Prescription Program; 4,9 dollari pollo arrosto; Kirkland Signature; benzina; carta Costco Anywhere Visa (cashback); libretto coupon mensile; adeguamento prezzo 30 giorni; garanzia al posto della garanzia estesa; la tessera piu famosa (pranzo/food court); seconda porta senza tessera propria (tessera familiare).
+- Retiree Wallet "senza tessera" (13): accompagnare un socio; tessera familiare gratuita; shop card; farmacia; vaccini; alcol in certi Stati; esame vista; test udito; Costco.com da non socio; Instacart; Uber Eats; garanzia 100% come prova gratuita; bonus carta regalo all'iscrizione.
+- Retiree Wallet "15 hidden": programma farmaci fino a 80%; apparecchi acustici; occhiali; Executive 2% cashback; orari mattina per Executive; viaggi; assicurazioni; Kirkland; vitamine; assaggi; benzina; consegna farmaci; Costco Auto; resi; carta Visa.
+- Parola chiave usata da Walt (tag): costco senior discounts, costco for seniors, costco discounts 2026, senior savings, costco membership worth it, costco pharmacy no membership, costco hearing aids, costco executive membership, kirkland signature, costco price adjustment, costco return policy, costco gas savings, fixed income savings, retirement savings, discounts for seniors over 60, costco tips, senior money, warehouse club savings, costco coupon book, costco anywhere visa.
+Descrizione di Robin MBA: gancio ("Bring a question, not a coupon"), disclaimer con "not affiliated with Costco Wholesale Corporation", fonti = nomi pagine costco.com.
+
+### 8c. Autocompletamento YouTube (gratis)
+"costco senior" -> costco seniors, costco special, costco services. "costco for seniors" -> costco food warning for seniors, costco for single person. "does costco have a senior discount" -> ... senior discount card, ... senior discount day. (le persone cercano anche "senior discount day" e "senior discount card": rispondere nel video che NON esistono).
+
+### 8d. vidIQ matching_terms "costco seniors" (US, 5 crediti): parola | ricerche/mese | concorrenza | punteggio
+- costco free seniors | 9.292 | 14,5 | 69,7 (MIGLIORE)
+- costco for seniors | 5.235 | 12,3 | 68,4
+- items seniors should never buy at costco | 4.632 | 19,1 | 65,2
+- costco food warning seniors | 4.384 | 18,3 | 65,3
+- something is changing at costco - what seniors need to know | 4.431 | 17,9 | 65,5
+- 12 ways seniors can shop costco without ever paying for a membership | 4.340 | 19,1 | 64,9
+- costco discounts for seniors | 4.449 | 38,7 | 57,2
+- costco worth for seniors | 3.945 | 24,2 | 62,5
+- seniors saving at costco | 3.602 | 21,5 | 63,3
+- seniors costco | 3.594 | 20,9 | 63,5
+- 13 ways seniors can shop costco without ever paying for a membership | 3.609 | 22,1 | 63,0
+- 15 costco discounts seniors never use | 3.394 | 22,7 | 62,5
+- 13 more things seniors don't know costco gives for free | 3.989 | 37 | 57,5
+- (titoli di video usati come parole: "costco weird facts", "shopping mistakes", "never buy" = altri angoli ma allarmisti, non adatti: niente promesse false)
+
+### 8e. Fatti ufficiali Costco verificati (ricerca web su costco.com e customerservice.costco.com, 06/10/2026)
+- Member Prescription Program: NON e assicurazione, sconti sui farmaci fino a 80% o piu secondo il farmaco, nessuna iscrizione ne costo extra, si usa la tessera Costco gia in tasca, vale anche in farmacie partecipanti (Albertsons, Kroger, Safeway, Walgreens...) (costco.com/member-prescription-program.html).
+- Centro apparecchi acustici: test udito gratis, prezzo esposto = prezzo pagato, garanzia gratis (varia per modello), perdita/danno senza franchigia, controlli e pulizie gratis (costco.com/hearing-aid-information.html). L'uso e un beneficio per i soci.
+- Ottica: NON serve la tessera per fissare la visita dall'ottico indipendente in/vicino al magazzino; la tessera serve per comprare occhiali e lenti (customerservice.costco.com, "Do I need a membership to purchase glasses or contacts?").
+- Adeguamento prezzo: acquisti scesi di prezzo entro 30 giorni danno diritto al rimborso della differenza (customerservice.costco.com a_id 628); credito di solito in 5-10 giorni lavorativi.
+- Reso: "Risk-Free 100% Satisfaction Guarantee"; alcuni elettronici (TV, computer, tablet, telefoni, ecc.) entro 90 giorni (customerservice.costco.com a_id 1191).
+- Ancora da verificare sul sito prima del copione: Concierge (assistenza tecnica, numero), garanzia 2 anni, manutenzione gomme, vaccini farmacia, tessera familiare gratuita, shop card, benzina, libretto coupon, carta Visa, prezzo pollo, regole alcol per Stato.
+
+### 8f. Fatti ufficiali Costco verificati (seconda tornata, 06/10/2026, costco.com / customerservice.costco.com / citi.com)
+- Concierge (assistenza tecnica gratis): 1-866-861-0450, tutti i giorni 5-20 Pacific time (le trascrizioni dei concorrenti dicono 22: vale il sito Costco). Prodotti: TV, proiettori, desktop, laptop, all-in-one, grandi elettrodomestici, tablet touch, fotocamere, videocamere, home theater, lettori DVD, stampanti. Servono: nome, numero tessera, numero articolo dallo scontrino, modello, seriale, data acquisto (customerservice.costco.com a_id 9004).
+- Seconda garanzia: TV, schermi, proiettori, computer e grandi elettrodomestici fino a 2 anni dalla data di acquisto; replica la garanzia del produttore; tablet touch ESCLUSI (customerservice.costco.com a_id 9005).
+- Gomme: installazione inclusa + manutenzione per la vita delle gomme (rotazione, equilibratura, controllo pressione, riparazione forature) + garanzia road hazard 5 anni; solo gomme comprate da Costco (tires.costco.com/CostcoAdvantage).
+- Tessera Household gratis: una per persona sopra i 16 anni che vive allo stesso indirizzo (Gold Star 65 dollari, Executive 130; customerservice.costco.com a_id 855/857).
+- Vaccini in farmacia (influenza, covid, fuoco di Sant'Antonio/Shingrix, polmonite): i non soci possono usare la farmacia e le vaccinazioni; walk-in o app; i soci hanno prezzo scontato, i non soci prezzo cash (costco.com/pharmacy/adult-immunization-program.html, customerservice.costco.com a_id 796).
+- Executive: 130 dollari l'anno (65 in piu della base). Premio 2% fino a 1.250 dollari ogni 12 mesi (dal 1/9/2024). "Il premio non e garantito pari o superiore alla quota dell'upgrade." Pareggio dell'upgrade (65 dollari): 3.250 dollari di acquisti l'anno (65 / 0,02).
+- Carta Costco Anywhere Visa Citi: 5% benzina Costco, 4% altra benzina/EV fino a 7.000 dollari l'anno, 3% ristoranti e viaggi, 2% Costco, 1% resto. (Prodotto finanziario: NON inserita nel video.)
+- Non verificati, quindi NON nel video: benzina prezzo, libretto coupon, alcol per Stato, shop card come "senza tessera", viaggi, assicurazioni.
+
+### 8g. Terza tornata di verifica (06/10/2026, costco.com e customerservice.costco.com)
+- Adeguamento prezzo in magazzino: entro 30 giorni dall'acquisto; si chiede al banco RESI (Returns counter) del magazzino dove si e comprato, con lo scontrino (NON al banco iscrizioni). Scontrini degli acquisti in magazzino degli ultimi 2 anni visibili su Costco.com > Orders & Purchases > scheda In-Warehouse (customerservice.costco.com a_id 628, 10306, 696).
+- Libretto sconti (Savings Booklet): inviato al titolare principale (Gold Star, Executive, Business) dei soci attivi; nessun coupon da ritagliare, lo sconto si applica alla cassa; si trovano anche su Costco.com (View Warehouse Savings) e nell'app. Se non arriva: puo essere stato disattivato, indirizzo sbagliato o cambiato da meno di 3 mesi, iscritto da meno di 2 mesi, tessera scaduta: si chiede al banco iscrizioni (customerservice.costco.com a_id 623).
+- Benzina: solo per soci (eccezione: chi paga con Costco Shop Card prepagata); benzina Kirkland Signature certificata TOP TIER, 5 volte il detergente richiesto dall'EPA. Il sito NON dice che costa meno: NON promettere risparmio (costco.com/f/-/gasoline-qanda).
+- Food court: serve la tessera; hot dog con bibita 1,50 dollari e pollo arrosto 4,99 compaiono nei risultati ma NON confermati da una pagina ufficiale letta: NON inserire finche non confermati.
+- Punti verificati per il video: 14 (farmacia senza tessera; programma farmaci; apparecchi acustici; esame vista; Concierge; 2o anno garanzia; gomme; adeguamento prezzo; resi; tessera Household; vaccini; libretto sconti; scontrini online; Executive con conto onesto). Decisione: 14 punti (i video virali ne hanno 13-15).
+
+---------------------------------------------------------------------
+## 9. RICERCA PROSSIMO VIDEO LUNGO + DIAGNOSI CANALE (08/10/2026, 0 crediti, ricerca YouTube "questo mese" ordinata per view)
+### 9a. Stato canale (letto da YouTube)
+Lungo 1 (Tqw_9LMUJYE, 1/10) 2 view; lungo SNAP (KDYxb4tKm1Q, 4/10) 7 view; lungo Costco (w-GQwECwTXA, 7/10) 6 view in 1 giorno. Short: 87, 78, 72, 41, 37, 28, short 7 Costco (gxin3OHc7aQ) 16.
+Cause probabili: iscritti vecchi inattivi (2 view dagli iscritti in 30 giorni: YouTube mostra il video prima a loro, nessuno clicca, segnale negativo); 0 view da home e suggeriti (69% solo ricerca); solo 3 lunghi; arriviamo sui formati gia saturi (Costco 4 settimane dopo); titoli in negativo/tecnici invece della promessa dei vincenti ("Costco Has No Senior Discount" contro "Costco Owes You These 15 Free Things"); durata 11-13 min contro 15-25; miniature 60-77/100. Mancano CTR, impressioni e durata media (Studio o vidIQ analytics 10 crediti).
+### 9b. Video virali della nicchia (ultime 4 settimane; view | eta | durata | canale | titolo)
+- 2.094.057 | 3 sett | 13:08 | Vision Tribe Money | 5 Bills You Don't Have To Pay After 65 (Most People Don't Know) (capitoli: gancio "born before 1961, legally exempt and still paying"; 5 bollette 1-2 min l'una; Bonus a 7:45; colpo finale "Being exempt and keeping the money are two different things"; "Send this to one person over 65". Contenuto: deduzione 6.000, tassa casa, Medicare Part B/MSP, telefono-internet-utenze Lifeline e LIHEAP, deduzione standard)
+- 980.196 | 2 sett | 9:23 | Nia Prescott | Every Senior Must Do This Before October 1 - Most Never Do (capitoli misteriosi che non rivelano: "The paper already inside your house", "Thirty days that belong to the over-sixties alone"; dopo la lista "The one line that decides all five"; "What does NOT happen"; riepilogo con date)
+- 543.422 e 232.000 | New Food Assistance Rules for Seniors Start October 1 (Vision Tribe Money, Robin MBA)
+- 465.561 | 4 sett | 15:42 | Robin MBA | If You're Over 60, Costco Owes You These 15 Free Things
+- 378.021 | 3 sett | 19:37 | Saving Savers | Grandma's 25 Winter Survival Tricks for Seniors Living Alone (That Cost Pennies!)
+- 312.425 | 3 sett | 25:07 | Kevin Explains | 6 Places Seniors Should Never Keep Their Cash Before Nov 1
+- 210.214 | 3 sett | 11:20 | Low Income Relief | These Senior Benefits Start at Age 50 (Not 65!)
+- 128.833 | 2 giorni | 23:31 | The Smart Steward | If You're Over 65, Aldi Will Give You These 9 Things (If You Ask); 63.061 Aldi Owes You 13 Free Things
+- 102.348 | 4 sett | 22:38 | The Airport Lounge Secret Most Seniors Never Use (And It's Free); 64.941 7 Things Travelers Over 60 Should ALWAYS Ask for at the Airport; Amtrak per senior 10-33K
+- Walmart Owes You 11 Free Things (Frugal Frannie) 5.737 in 2 giorni; Sam's Club Owes You 15 Things (Robin MBA) 644; National Park Senior Pass: tutti sotto 1.000 (tema senza domanda)
+### 9c. Struttura dei virali (dai capitoli)
+Gancio identita + perdita + data nei primi 30 s; numero di punti annunciato; titoli dei punti misteriosi (non svelano la risposta); il punto piu forte NON per primo; "bonus" verso la fine; dopo la lista "la regola che decide tutti" (anello aperto chiuso solo alla fine); "cosa NON succede/errori"; riepilogo con date; "mandalo a una persona over 60/65". Durata 13-25 min.
+### 9d. vidIQ 08/10/2026 (autorizzato dall'utente; 20 crediti spesi, saldo 15, rinnovo 29/10)
+Outliers "seniors over 60 benefits bills discounts", lunghi, questo mese, canali <100K (view | iscritti canale | durata | titolo):
+- 2.094.048 | 22.700 | 13:08 | 5 Bills You Don't Have To Pay After 65 (Most People Don't Know) (breakout 15.308)
+- 1.103.083 | 6.570 | 17:13 | Flying Over 65? Why Airlines Quietly Treat You Different (Flight Attendants Wish Seniors Knew This!)
+- 980.195 | 28.300 | 9:23 | Every Senior Must Do This Before October 1 - Most Never Do
+- 546.051 | 7.690 | 14:22 | New Laws Start OCTOBER 1st - Is Your State on the List?
+- 543.266 | Vision Tribe | New Food Assistance Rules for Seniors Start October 1
+- 465.442 | 6.670 | 15:42 | If You're Over 60, Costco Owes You These 15 Free Things
+- **401.168 | 1.770 iscritti! | 16:14 | 5 Bills You Can Legally Stop Paying the Day You Turn 65 (Joseph Retires)**: un canale piu piccolo del nostro ha copiato il formato e fatto 400K in 4 settimane.
+- 326.056 | 17.700 | 17:22 | 7 Things They Can't Take From You After 65 - Not Even the IRS
+- 247.236 | Kevin Explains | 9 Programs. One Call. Nobody Ever Tells You.
+- 234.777 | UK | 5 Bills You Don't Have to Pay After 65 in the UK
+- 230.271 | 10 Things I Avoid Now That I Live Alone at 69; 126.991 Aldi 9 Things (If You Ask); 108.051 Flight Attendants 12 Things
+- 10.133 | 2.060 | Seniors STOP Paying Property Tax - You're Legally Exempt
+Parole chiave (matching_terms "bills seniors", ricerche/mese | concorrenza): "5 bills seniors should be" 21.779 | 22; "seniors stop paying these 5 bills after 65 - you're legally exempt" 16.319 | 30; "the government quietly erases these 5 bills for seniors after 65" 14.839 | 24 (+240%); "5 bills seniors" 9.592 | 22 (+85%); "seniors over 65: check these 7 bills - you may be paying more than required" 7.417 | 13; "6 bills you can legally stop paying after 65" 7.113 | 19; "seniors never pay these 5 bills" 5.380 | 11. Seme "bills seniors don't have to pay" 4.951 | 22,7; "seniors in debt" 3.723 | 17,5.
+Trascrizione "5 Bills You Don't Have To Pay After 65" (struttura): gancio "born before 1961... legally exempt... and you're paying every one right now; nobody whose paycheck depends on it will call you"; anticipa le obiezioni di 3 gruppi ("se hai la casa pagata... se vivi di Social Security... se sei in affitto non andare via: uno di questi decide quanto sale l'affitto"); "Stick around for the fifth one: it's the highest value item and the easiest to claim" (anello aperto); ogni voce = cos'e + errore comune ("people get wrong constantly") + chi aiuta di piu + azione in 1 frase; voce 4 piccola ammessa ("smaller in dollars but still real"); voce 5 = la promessa; bonus; frase finale "being exempt and keeping the money are two different things; the only bridge is a form"; "what to do this week, none of it costs a dollar"; disclaimer; "send it to one person over 65". Contenuto: deduzione 6.000 (tasse), tassa casa (3 moduli), Medicare Part B + Medicare Savings Program, Lifeline + LIHEAP, deduzione standard senior. CIOE quasi tutto tasse e Medicare.

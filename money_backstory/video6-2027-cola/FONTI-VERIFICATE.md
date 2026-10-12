@@ -1,0 +1,64 @@
+# Video 6 (2027 COLA) — fonti e stato di verifica (05/10/2026)
+Legenda: P = letto direttamente sulla fonte primaria in questa sessione; S = confermato da più fonti secondarie (la fonte primaria ssa.gov ha risposto 403 al nostro accesso: ricontrollare a mano o con lo screenshot dell'utente); K = dato già verificato su ssa.gov nelle chat precedenti (kit).
+
+| Dato nel copione | Stato | Fonte |
+|---|---|---|
+| Annuncio COLA 2027 il 14/10/2026 (CPI di settembre lo stesso giorno) | S | fool.com 19 e 22/09/2026 |
+| Stime 3,5% (Senior Citizens League) e 3,6% (AARP) | S | fool.com 10 e 22/09/2026, cnbc.com/select |
+| COLA 2026 = 2,8%; assegno medio $2.071 dopo il COLA; +$56; 71 milioni di beneficiari | S | ssa.gov fact sheet 2026 (citato da empower, kiplinger, axios) |
+| Medie CPI-W: 317,265 (3° trim. 2025) vs 308,729 (3° trim. 2024) = 2,8% | S | ssa.gov (citato nei risultati di ricerca) |
+| Formula: media luglio-agosto-settembre vs anno prima, arrotondata al decimo | S | ssa.gov/oact/cola/latestCOLA.html (snippet) |
+| COLA automatico dal 1975 | S | ssa.gov (History of Automatic COLAs, snippet) |
+| COLA 2023 8,7%; 2024 3,2%; 2025 2,5%; 2026 2,8%; zero nel 2010, 2011, 2016 (anno in cui l'aumento viene pagato, gennaio) | K/S | memoria + ssa.gov fact sheet (accesso bloccato). DA RICONTROLLARE su ssa.gov/oact/cola/colaseries.html (nota: SSA elenca anche per anno di dicembre, sfasato di 1) |
+| Buying power -13,7% dal 2016 (stima dell'associazione, studio 2026) | P | seniorsleague.org (pagina letta). La stessa pagina dice anche "83,6 centesimi": non usare |
+| Part B 2025 $185,00; 2026 $202,90; +$17,90 | P | cms.gov fact sheet 2026-medicare-parts-b-premiums-deductibles (letto) |
+| Part B 2027 proiettato $209,50 (+$6,60) dal Trustees Report 2026; ufficiale a novembre | S | medicarefaq.com (letto) + 4 siti; DA RICONTROLLARE con CMS a novembre |
+| Hold harmless: aumento Part B non può superare l'importo in dollari del COLA | P/S | medicarefaq (letto) + CMS (snippet) |
+| Esclusi dall'hold harmless: nuovi iscritti, chi paga IRMAA, chi non ha Part B trattenuta dall'assegno, chi non riceveva SS a novembre e dicembre | S | medicarefaq + getoutofdebt.org. (Tolto "7 su 10": non verificato su fonte primaria) |
+| Soglie tasse: $25.000 single / $32.000 coppia (50%); $34.000 / $44.000 (85%); calcolo = metà dell'assegno + altri redditi | P | irs.gov/publications/p915 (letta) |
+| Soglie fisse dal 1984 e 1993, mai indicizzate | S | CRS (RL32552), congress.gov |
+| Tetto contributivo 2026 $184.500; limite guadagni $24.480 / $65.160 | S/K | thetaxadviser, journalofaccountancy (ottobre 2025) + kit |
+| COLA vale dal dicembre, pagato a gennaio | S | ssa.gov (testo citato in ricerca) |
+| COLA si applica anche a chi non ha ancora chiesto la pensione dopo i 62 anni | K | regola SSA nota; DA RICONTROLLARE su ssa.gov |
+| Calcoli Frank e Mary (3,5%): 2.071 -> 2.143 (+72); Part B 202,90 -> 209,50; deposito 1.868,10 -> 1.933,50 (+65,40); Mary combined income ~12.400; Frank ~32.400, +216 imponibile | calcolati | aritmetica del copione, rifare col COLA ufficiale |
+
+Esempio tasse: "imponibile" = parte dell'assegno che conta; se esce un'imposta dipende dalle detrazioni (il copione lo dice).
+
+## Fine voce blocchi (voce velocità 1.0, da screenshot utente)
+- Blocco 1: 00:28 + 17f = 857 fotogrammi. ERRORE CORRETTO: la prima lettura (21f = 861) era sbagliata perché l'etichetta '14f' era coperta dal display del tempo e sembrava '4f'. Verifica: nel secondo screenshot le slide sporgevano ~3-4 fotogrammi oltre la voce.
+- Blocco 2: 00:54 + 2f = 1622 assoluti; durata = 1622 - 857 = 765 fotogrammi (letto: etichette 00:54 / punto / 2f, cursore a x=360).
+- Blocco 3: 01:20 + 15f = 2415 assoluti; durata = 2415 - 1622 = 793 fotogrammi (etichette 14f / punto 13f / 12f coperta; cursore tra 14f e 15f, arrotondato a 15).
+- Blocco 4: 01:46 + 8f = 3188 assoluti; durata 773 fotogrammi.
+- Blocco 5: 02:14 + 21f (letto 20,5) = 4041 assoluti; durata 853 fotogrammi.
+- Blocco 6: 02:38 + 3f = 4743 assoluti; durata 702 fotogrammi.
+- Blocco 7: 03:04 + 12f = 5532; durata 789.
+- Blocco 8: 03:33 + 18f = 6408; durata 876.
+- Blocco 9: 03:56 + 2f = 7082; durata 674.
+- Blocco 10: 04:20 + 22f = 7822; durata 740.
+- Blocco 11: 04:43 + 22f = 8512 assoluti; durata 690.
+- Blocco 12: 05:11 + 11f = 9341; durata 829.
+- Blocco 13: 05:32 + 23f (letto 22,5) = 9983; durata 642.
+- Blocco 14: 05:55 + 11f = 10661; durata 678.
+- Blocco 15: 06:20 + 11f = 11411; durata 750.
+- Blocco 16: 06:42 + 16f = 12076 assoluti; durata 665.
+- Blocco 17: 07:14 + 21f = 13041; durata 965.
+- Blocco 18: 07:48 + 20f = 14060; durata 1019.
+- Blocco 19: 08:13 + 28f = 14818; durata 758.
+- Blocco 20: 08:44 + 10f = 15730; durata 912.
+- Blocco 21: 09:17 + 16f = 16726 assoluti; durata 996.
+- Blocco 22: 09:40 + 24f = 17424; durata 698.
+- Blocco 23: 09:58 + 20f = 17960; durata 536.
+- Blocco 24: 10:23 + 2f = 18692; durata 732.
+- Blocco 25: 10:46 + 28f = 19408; durata 716.
+- ERRORE TROVATO 05/10 (registrazione schermo utente): mancava la slide v6-b15-03 nella timeline (slide successive 8,8 s in anticipo). Inserire a 06:11+16f.
+- Blocco 26: 11:00 + 22f = 19822 assoluti; durata 414 (ANOMALIA: la voce contiene solo le ultime 2 frasi del blocco, da 'The headline percentage…'; slide fatte su quelle).
+- Blocco 27: 11:25 + 10f = 20560; durata 738.
+- Blocco 28: 11:54 + 5f = 21425; durata 865.
+- Blocco 29: 12:09 + 27f = 21897; durata 472.
+- Blocco 30: 12:21 + 25f = 22255; durata 358. FINE VIDEO = 22255 fotogrammi (12:22,8).
+- Ultima slide (blocco 30): disclaimer in chiaro + riquadro WATCH NEXT + cerchio SUBSCRIBE (elementi schermata finale).
+
+## AGGIORNAMENTO 05/10 sera: voce rifatta dall'utente (blocco 26 completo)
+- Fine blocco 25: 10:46 + 26,6f. Blocco 26: fine 11:18 + 5,5f -> durata 939 (voce completa, 4 frasi + ultime due). Blocchi 27, 28, 29 invariati (738, 865, 472).
+- Blocco 30: fine video 12:39 + 8,3f = 22778 -> durata 357.
+- Slide del blocco 26 rifatte (4 slide, 939 fotogrammi). Le slide dei blocchi 1-25 e 27-29 restano uguali.

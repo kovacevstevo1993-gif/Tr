@@ -1,0 +1,147 @@
+# VIDEO 8 - 5 Bills You Don't Have To Pay After 65 - COPIONE (09/10/2026, rev. CTA)
+Voce CapCut "Analista preciso". Numeri in lettere. 48 blocchi, circa 12.5 min a 16 car/s. Struttura copiata dal video da 2,1M (vedi RICERCA-E-STRATEGIA.md). Fonti in FONTI-VERIFICATE.md.
+
+BLOCCO 1
+If you were born before nineteen sixty two, the day you turned sixty five, the law gave you the right to stop, lower, or freeze a stack of bills. And there is a good chance you are still paying every single one of them, because nobody whose job is to collect that money will ever call you to say stop.
+
+BLOCCO 2
+Some of you are thinking, this is only for people who are struggling. Others are thinking, this is only for wealthy people with lawyers. Both groups are wrong. A couple living on Social Security and a modest I R A can save more than a thousand dollars a year, and I will show you the exact math.
+
+BLOCCO 3
+Today, five bills you do not have to keep paying after sixty five. Some you can stop, some you can lower, and some you can freeze. And stay for number five, because it is the biggest one on the list, and it starts with a single phone call.
+
+BLOCCO 4
+Welcome to The Money Backstory, where we explain retirement for Americans over fifty, using official numbers. To keep it simple, we will follow a married couple, Frank and Mary. Both are sixty six. Together, they get three thousand six hundred dollars a month from Social Security.
+
+BLOCCO 5
+They also take forty thousand dollars a year from Frank's traditional I R A, and they own their home. Nothing special, a very normal retired couple. Now, let's see which bills they are paying that the law says they do not have to.
+
+BLOCCO 6
+Bill number one: your property tax. For most homeowners over sixty five, this is the biggest bill that keeps coming every year, even after the mortgage is gone. And it usually goes up every time the value of the house goes up.
+
+BLOCCO 7
+But most states and counties have three separate breaks, and they stack. Layer one is the homestead exemption. It removes part of your home's value before the county calculates the tax, so you pay tax on a smaller number.
+
+BLOCCO 8
+Here is the part people get wrong. In most places, the homestead exemption is not automatic. You have to file a short form with your county, usually by a deadline in the spring. File it once, and in many states it stays in place for as long as you own the home.
+
+BLOCCO 9
+Layer two is the senior exemption. In many places, at sixty five you can remove an extra piece of your home's value. The county will almost never tell you about it. You have to ask for it by name, and the amount depends on your state and sometimes on your income.
+
+BLOCCO 10
+Layer three is the one that matters most over time: the senior freeze. In some states, when you turn sixty five and apply, the county locks your taxable value, or even your tax amount, at that year's level.
+
+BLOCCO 11
+Texas, for example, puts a ceiling on school taxes for homeowners sixty five and older. Your house can double in value, and that part of the bill does not follow it. The rules are different in every state, so the action is simple. Call your county assessor and ask about all three by name.
+
+BLOCCO 12
+And if you rent, do not tune out. Property tax is part of what your landlord charges you, so these rules matter for the whole community. But the next four bills apply to almost every retiree, homeowner or not.
+
+BLOCCO 13
+Bill number two: tax on your Social Security. Here is something most people never hear. The income limits that decide whether your Social Security is taxed were written into law in nineteen eighty three and nineteen ninety three, and they have never been adjusted for inflation.
+
+BLOCCO 14
+For a single person, the line is twenty five thousand dollars. For a married couple, thirty two thousand. The second line, where up to eighty five percent of your benefit can be taxed, is thirty four thousand for a single person, and forty four thousand for a couple.
+
+BLOCCO 15
+But those lines do not use your full Social Security. The I R S counts only half of your benefit, plus your other income. That total is called provisional income, and it is the number that decides everything.
+
+BLOCCO 16
+Take someone single, whose only income is the average check of two thousand seventy one dollars a month. That is about twenty four thousand eight hundred dollars a year. Half of it is about twelve thousand four hundred. Far below twenty five thousand. So their federal tax on Social Security is zero.
+
+BLOCCO 17
+Many people in that situation still have federal tax taken out of every check, out of habit, or because a form was filled out years ago. That money is not lost, you get it back as a refund, but it is a loan to the government with zero interest, every single month.
+
+BLOCCO 18
+And in twenty twenty six, only eight states tax Social Security at all. So before you assume your benefit is taxed, add up your provisional income. For many retirees, the honest answer is that this bill is zero, or much smaller than they think.
+
+BLOCCO 19
+Bill number three: part of your income tax itself. At sixty five, the I R S gives you a bigger standard deduction. In twenty twenty six, the normal standard deduction is sixteen thousand one hundred dollars for a single person, and thirty two thousand two hundred for a married couple.
+
+BLOCCO 20
+At sixty five, a single person adds two thousand fifty dollars. A married couple adds one thousand six hundred fifty dollars for each spouse who is sixty five or older. So Frank and Mary add three thousand three hundred dollars, just because of their age.
+
+BLOCCO 21
+Here is the trap. This extra amount depends on your date of birth being right on the return. If you use tax software, check that both birth dates are entered. If someone prepares your return, ask them to confirm that the age sixty five amount is on the form. It takes two minutes.
+
+BLOCCO 22
+Bill number four is brand new, and that is exactly why so many people will miss it. Starting with the twenty twenty five tax year, and running through twenty twenty eight, every taxpayer sixty five or older can take a new senior deduction of up to six thousand dollars.
+
+BLOCCO 23
+It comes on top of the standard deduction, and on top of the age sixty five amount from bill number three. If you are married and both of you are sixty five or older, it is up to twelve thousand dollars. And you can take it even if you itemize.
+
+BLOCCO 24
+There is an income limit. The deduction starts to shrink when your modified adjusted gross income goes above seventy five thousand dollars for a single person, or one hundred fifty thousand for a married couple filing jointly. It disappears completely at one hundred seventy five thousand, and two hundred fifty thousand.
+
+BLOCCO 25
+To claim it, you need a valid Social Security number, and married couples must file a joint return. Now let's see what bills three and four do for Frank and Mary. This is where it gets interesting.
+
+BLOCCO 26
+Frank and Mary take forty thousand dollars from the I R A, plus half of their Social Security, twenty one thousand six hundred dollars. Their provisional income is sixty one thousand six hundred. That is above forty four thousand, so part of their Social Security is taxable.
+
+BLOCCO 27
+Using the I R S formula, twenty thousand nine hundred sixty dollars of their Social Security is taxable. Their total income for tax purposes is sixty thousand nine hundred sixty dollars. Now watch what each deduction does.
+
+BLOCCO 28
+With only the regular standard deduction, thirty two thousand two hundred dollars, their federal income tax for twenty twenty six would be about two thousand nine hundred fifty five dollars.
+
+BLOCCO 29
+Add the age sixty five amount, three thousand three hundred dollars, and it drops to about two thousand five hundred fifty nine. Add the new senior deduction, twelve thousand dollars for the two of them, and it drops to about one thousand three hundred forty six dollars.
+
+BLOCCO 30
+That is about one thousand six hundred nine dollars less, every year, for the same couple with the same income. And if their withholding was set years ago, before these deductions, they are also lending that money to the government all year long.
+
+BLOCCO 31
+Bill number five, the one I asked you to stay for: your Medicare Part B premium. In twenty twenty six, the standard premium is two hundred two dollars and ninety cents a month. It comes out of your Social Security before the money reaches you, which is why so many people forget they are paying it.
+
+BLOCCO 32
+For Frank and Mary, that is about four thousand eight hundred seventy dollars a year for the two of them. And there are two ways this bill can shrink, or disappear completely. The first is called the Medicare Savings Programs, and almost nobody explains them.
+
+BLOCCO 33
+If your income and savings are under the limits, your state pays your Part B premium for you. Not part of it. All of it. The most generous level, called Q M B, also covers your Part B deductible and most of your coinsurance.
+
+BLOCCO 34
+For twenty twenty six, the highest income limit, for the level called Q I, is about one thousand eight hundred sixteen dollars a month for one person, and two thousand four hundred fifty five for a couple. The savings limit is about nine thousand nine hundred fifty dollars, or fourteen thousand nine hundred ten for a couple.
+
+BLOCCO 35
+But here is what most people miss. Some states use higher limits, or do not count your savings at all. So people who think they make too much often qualify. And getting the Medicare Savings Program can also qualify you for Extra Help, which lowers what you pay for prescription drugs.
+
+BLOCCO 36
+The second way is for the opposite situation. If your income was high two years ago, you may be paying an extra Medicare charge called I R M A A. In twenty twenty six, it starts when your income from twenty twenty four was above one hundred nine thousand dollars, or two hundred eighteen thousand for a couple.
+
+BLOCCO 37
+The first level alone costs about nine hundred seventy four dollars a year, per person. But if your income dropped because of a life changing event, like stopping work, cutting your hours, losing a pension, or the death of a spouse, you can ask Social Security to use your new, lower income.
+
+BLOCCO 38
+The form is called S-S-A forty four. Social Security will not send it to you. You have to ask. One form, and the extra charge can be removed for the year.
+
+BLOCCO 39
+And one bonus that costs nothing. Look at the federal tax being taken out of your Social Security and your pension. For Social Security, form W-4V lets you choose seven, ten, twelve, or twenty two percent, or nothing at all. For a pension, the form is W-4P.
+
+BLOCCO 40
+If your tax is now lower, because of the deductions we just saw, your withholding should be lower too. Otherwise you keep paying every month, and you wait a year to get your own money back.
+
+BLOCCO 41
+So here is the point of this whole video. Being exempt from a bill and actually not paying it are two different things. The bridge between them is almost always a form, and the agencies are not going to fill it out for you.
+
+BLOCCO 42
+Here is what to do this week. One, call your county assessor and ask about the homestead exemption, the senior exemption, and the freeze. Two, add up your provisional income, and check what is withheld from your checks.
+
+BLOCCO 43
+Three, before your next tax return, make sure the age sixty five amount and the new senior deduction are on it. Four, call your State Health Insurance Assistance Program, called SHIP. It is free, and they can check if you qualify for a Medicare Savings Program, or help you with form S-S-A forty four.
+
+BLOCCO 44
+A word about sources. The tax numbers come from the Internal Revenue Service. The Medicare numbers come from the Centers for Medicare and Medicaid Services and from medicare dot gov. The Social Security rules come from the Social Security Administration. Every source is listed in the description.
+
+BLOCCO 45
+If this helped, send it to one person you know who is over sixty five, a parent, a neighbor, a friend. It costs nothing, and it could put hundreds or even thousands of dollars back in their pocket.
+
+BLOCCO 46
+And tell me in the comments: which of these five bills are you still paying? Tap like, subscribe to The Money Backstory, and turn on the bell, so you get the next video the day it comes out.
+
+BLOCCO 47
+And if you want to see how the age you claim Social Security can change your lifetime income by more than one hundred twenty four thousand dollars, that video is right on your screen now. See you there.
+
+BLOCCO 48
+Rules, amounts and ages change and differ by location and plan. Always confirm with the official source before you rely on them. This is general information, not financial advice.
+
