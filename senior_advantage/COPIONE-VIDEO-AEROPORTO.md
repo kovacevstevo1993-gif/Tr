@@ -7,7 +7,7 @@ DA NON DIRE (NON VERIFICATO su fonti ufficiali): sedia a rotelle GRATIS (382 non
 Onesta' chiave (blocco 15): i diritti 382 sono per disabilita, non per eta; per l'eta c'e solo la regola TSA 75+.
 
 1 At an airport security line, there is a rule written only for people seventy five and older. And the people it was written for often walk right past it, because nobody at the checkpoint says a word.
-2 I'm talking about eight things. Your photo I D. Help from the curb to your gate. Your cane. Your oxygen machine. Your pills. And one rule about a cancelled flight that can put real money back in your pocket. The biggest one is number eight.
+2 I'm talking about eight things. Your photo I D. Help from the curb to your gate. Your cane. Your oxygen machine. T S A Cares. The seventy five rule. Your pills. And one rule about a cancelled flight that can put real money back in your pocket. The biggest one is number eight.
 3 Now, some of you are thinking, I don't need any help at the airport. Others are thinking, I only fly once a year, so this isn't for me. Both are missing something, and I'll show you what in a minute.
 4 And if you've ever stood in a security line wondering if you were doing something wrong, stay with me. Most of these take thirty seconds to use, and they cost nothing.
 5 Stay until the end, because there is one sentence that makes almost all of these work. And most people only say it after the problem has already happened.
