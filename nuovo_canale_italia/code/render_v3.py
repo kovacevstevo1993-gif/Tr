@@ -409,12 +409,12 @@ class V3:
 
     def x_barsplit(self, L, tl, dur, P):
         cu = P["cues"]; x0, wb = 210, 1500; y = 520; h = 170
-        g = A(tl, 0.1, 0.8); total = wb * g
+        g = A(tl, 0.1, 0.8); total = max(wb * g, 40)
         d = ImageDraw.Draw(L); pop(L, tx("PREZZO AUTO  21.900 €", 70, CARTA), 960, 260, tl, 0.2)
         ant = wb * 3000 / 21900; sp = ease((tl - cu["a"]) / 0.6) if tl >= cu["a"] else 0
         if not sp: d.rounded_rectangle([x0, y, x0 + total, y + h], radius=14, fill=(120, 126, 140, 255))
         else:
-            d.rounded_rectangle([x0 + ant, y, x0 + total, y + h], radius=14, fill=GIALLO)
+            d.rounded_rectangle([x0 + ant, y, max(x0 + ant + 4, x0 + total), y + h], radius=14, fill=GIALLO)
             d.rounded_rectangle([x0, y + 300 * sp, x0 + ant, y + h + 300 * sp], radius=14, fill=VERDE)
             put(L, tx("ANTICIPO 3.000 €", 56, VERDEC, "titolo"), x0 + 260, y + 470, A(tl, cu["a"] + .4))
         if tl >= cu["b"]: pop(L, tx("DA FINANZIARE", 60, CARTA, "corpo"), 1100, y - 70, tl, cu["b"]); pop(L, tx("18.900 €", 190, GIALLO), 1100, y + 420, tl, cu["b"] + .15)
