@@ -31,7 +31,7 @@ Onesta' chiave (blocco 15): i diritti 382 sono per disabilita, non per eta; per 
 23 And if your wheelchair or mobility device has to be taken apart to be stored, the airline must put it back together, and return it promptly, in the condition it was received.
 24 If it comes back damaged, take a photo before you leave, and report it to the airline right there at the airport.
 25 So, who does this help? Anyone who flies with a cane or a walker. Your action is one sentence at the gate. This is my mobility aid, it doesn't count as my carry on.
-26 Number four. The one thing on this list that does need advance notice.
+26 Number four. One of only two things on this list that need advance notice.
 27 If you use a portable oxygen concentrator, a ventilator, a respirator, or a C P A P machine on the plane, federal rules let the airline ask you for forty eight hours notice.
 28 That is the exception, not the rule. And here's the mistake. People arrive with the machine, assume it's allowed, and learn at the gate that the airline needed to know two days earlier.
 29 Not every airline allows every oxygen model, either. T S A says to check with your airline and the maker of your device before you fly.
