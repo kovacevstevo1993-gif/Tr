@@ -58,7 +58,7 @@ Onesta' chiave (blocco 15): i diritti 382 sono per disabilita, non per eta; per 
 50 Now number eight, the one I promised. The biggest one. A cancelled flight.
 51 When an airline cancels your flight, or changes it a lot, and you don't take what they offer instead, federal rules say you are owed your money back, as a refund. Not a voucher.
 52 A voucher is allowed only if you choose it. It can't be pushed on you. You are allowed to say no.
-53 The refund also covers the taxes and fees. And it covers the part of the trip you didn't use.
+53 The refund also covers the taxes and the extra fees you paid.
 54 The common mistake is saying yes to the first thing offered at the counter, because you're tired, and the line is long.
 55 Who does this help? Anyone who books ahead, and a cancelled flight is exactly when it matters. Your action is one sentence. I'd like a refund to my original payment method, not a voucher.
 56 Quick recap. The star on your I D. Help from the curb to your gate. Your cane doesn't count as a bag. Notice for oxygen and C P A P. T S A Cares. The seventy five rule. Your pills. And the refund.
