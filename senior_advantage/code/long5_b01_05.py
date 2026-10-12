@@ -218,7 +218,7 @@ def draw2(img, t):
     if ts[7] <= t < ts[8]:
         ban(img, t, ts[7], "REAL MONEY BACK IN YOUR POCKET", cy=990, w=1260, h=96, size=48)
     if t >= ts[8]:
-        seq(img, t, ts[8], sprite("crown5", 120, 90, lambda c: (c.poly([(8, 76), (8, 22), (38, 52), (60, 8), (82, 52), (112, 22), (112, 76)], fill=GOLD), c.rrect((8, 70, 112, 86), 6, fill=(168, 118, 40)))), x8, y8 - 190, scale=0.9)
+        seq(img, t, ts[8], sprite("crown5", 120, 90, lambda c: (c.poly([(8, 76), (8, 22), (38, 52), (60, 8), (82, 52), (112, 22), (112, 76)], fill=GOLD), c.rrect((8, 70, 112, 86), 6, fill=(168, 118, 40)))), x8 + 142, y8 - 96, scale=0.62)
         ban(img, t, ts[8] + 0.1, "THE BIGGEST ONE IS NUMBER EIGHT", cy=990, w=1260, h=96, size=48)
 
 # ============================================================ BLOCCO 3
