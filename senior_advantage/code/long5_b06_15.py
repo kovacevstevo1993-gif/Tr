@@ -433,8 +433,8 @@ def draw15(img, t):
     seq(img, t, ts[4] + 0.7, txt("IS HARD", 40, GOLD, 2), 650, 825)
     seq(img, t, ts[5], card(740, 230, SAGE), 1400, 790, shadow=12)
     seq(img, t, ts[5] + 0.3, sprite("stand15", 200, 160, lambda c: (ic_person(c, 70, 80, 1.1, col=GOLD), ic_clockface(c, 150, 100, 36, 0.4))), 1250, 790)
-    seq(img, t, ts[5] + 0.5, txt("STANDING A LONG TIME", 30, IVORY, 1), 1570, 765)
-    seq(img, t, ts[5] + 0.7, txt("IS HARD", 40, GOLD, 2), 1570, 825)
+    seq(img, t, ts[5] + 0.5, txt("STANDING A LONG TIME", 28, IVORY, 1), 1548, 765)
+    seq(img, t, ts[5] + 0.7, txt("IS HARD", 40, GOLD, 2), 1548, 825)
     ban(img, t, ts[6], "THIS IS FOR YOU", cy=1010, w=800, h=84, size=52)
 
 DRAW = {6: draw6, 7: draw7, 8: draw8, 9: draw9, 10: draw10, 11: draw11, 12: draw12, 13: draw13, 14: draw14, 15: draw15}
