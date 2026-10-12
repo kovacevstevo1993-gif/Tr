@@ -183,43 +183,43 @@ def tile2e(n, fn, name, hl=False, hidden=False, filled=True):
             c.text((w / 2, 263), str(n), FONT_SERIF, 36, SAGE_D)
             return c.done()
         c.rrect((4, 4, w - 4, h - 4), 30, fill=(40, 70, 52) if hl else PANEL_FILL, outline=GOLD if hl else SAGE_D, width=9 if hl else 5)
-        c.ell((22, 20, 82, 80), fill=GOLD, outline=(168, 118, 40), width=4)
-        c.text((52, 51), str(n), FONT_SERIF, 42, GREEN_D)
+        if n is not None:
+            c.ell((22, 20, 82, 80), fill=GOLD, outline=(168, 118, 40), width=4)
+            c.text((52, 51), str(n), FONT_SERIF, 42, GREEN_D)
         fn(c, w / 2, 148, 1.15)
         c.text((w / 2, 276), name, FONT_SANS, 31, GOLD if hl else IVORY, track=0)
         return c.done()
     return cache(("tile5", n, name, hl, hidden, filled), mk)
 
-TILES = [(1, ic_idcard, "PHOTO I D"), (2, ic_gate, "HELP TO THE GATE"), (3, ic_cane, "YOUR CANE"),
-         (4, ic_oxygen, "OXYGEN MACHINE"), (5, None, ""), (6, None, ""), (7, ic_pills, "YOUR PILLS"),
-         (8, ic_refund, "CANCELLED FLIGHT")]
+SIX = [(ic_idcard, "PHOTO I D"), (ic_gate, "HELP TO THE GATE"), (ic_cane, "YOUR CANE"),
+       (ic_oxygen, "OXYGEN MACHINE"), (ic_pills, "YOUR PILLS"), (ic_refund, "CANCELLED FLIGHT")]
 def tile_pos(i):
-    return 330 + (i % 4) * 420, 330 + (i // 4) * 360
+    return 480 + (i % 3) * 480, 410 + (i // 3) * 370
 
 def draw2(img, t):
     ts = starts(2)
-    common(img, t, "EIGHT THINGS")
-    st = {1: ts[1], 2: ts[2], 3: ts[3], 4: ts[4], 7: ts[5], 8: ts[6]}
-    for i, (n, fn, name) in enumerate(TILES):
+    common(img, t, "THE LIST")
+    s_, a, p = pop(t, ts[0], 0.5)
+    if p > 0:
+        put(img, stamp("8 THINGS", 520, 120, GOLD, size=72), 960, 160, scale=s_, alpha=a, shadow=10)
+        burst(img, t, ts[0], 960, 160, n=12, color=GOLD, rad=240, seed=3)
+    st = [ts[1], ts[2], ts[3], ts[4], ts[5], ts[6]]
+    for i, (fn, name) in enumerate(SIX):
         x, y = tile_pos(i)
-        s, a, p = pop(t, ts[0] + 0.12 * i, 0.4)
-        hidden = n in (5, 6)
-        if p > 0 and (hidden or t < st[n]):
-            put(img, tile2e(n, fn, name, hidden=hidden, filled=False), x, y, scale=s, alpha=a)
-        if not hidden and t >= st[n]:
-            hl = (n == 8 and t > ts[8])
-            s2, a2, p2 = pop(t, st[n], 0.45)
-            put(img, tile2e(n, fn, name, hl=hl), x, y, scale=s2 * (1.05 if hl else 1.0), alpha=a2, shadow=10)
-            if p2 < 1 and n != 8:
-                burst(img, t, st[n], x, y, n=8, color=GOLD, rad=170, seed=n)
-    x8, y8 = tile_pos(7)
+        hl = (i == 5 and t > ts[8])
+        s2, a2, p2 = pop(t, st[i], 0.45)
+        if p2 > 0:
+            put(img, tile2e(8 if hl else None, fn, name, hl=hl), x, y, scale=s2 * (1.05 if hl else 1.0), alpha=a2, shadow=10)
+            if p2 < 1 and i != 5:
+                burst(img, t, st[i], x, y, n=8, color=GOLD, rad=170, seed=i + 1)
+    x6, y6 = tile_pos(5)
     if t >= ts[7]:
-        burst(img, t, ts[7], x8 + 60, y8 + 20, n=14, color=GOLD, rad=260, seed=11)
+        burst(img, t, ts[7], x6 + 60, y6 + 20, n=14, color=GOLD, rad=260, seed=11)
     if ts[7] <= t < ts[8]:
-        ban(img, t, ts[7], "REAL MONEY BACK IN YOUR POCKET", cy=990, w=1260, h=96, size=48)
+        ban(img, t, ts[7], "REAL MONEY BACK IN YOUR POCKET", cy=1010, w=1260, h=96, size=48)
     if t >= ts[8]:
-        seq(img, t, ts[8], sprite("crown5", 120, 90, lambda c: (c.poly([(8, 76), (8, 22), (38, 52), (60, 8), (82, 52), (112, 22), (112, 76)], fill=GOLD), c.rrect((8, 70, 112, 86), 6, fill=(168, 118, 40)))), x8 + 142, y8 - 96, scale=0.62)
-        ban(img, t, ts[8] + 0.1, "THE BIGGEST ONE IS NUMBER EIGHT", cy=990, w=1260, h=96, size=48)
+        seq(img, t, ts[8], sprite("crown5", 120, 90, lambda c: (c.poly([(8, 76), (8, 22), (38, 52), (60, 8), (82, 52), (112, 22), (112, 76)], fill=GOLD), c.rrect((8, 70, 112, 86), 6, fill=(168, 118, 40)))), x6 + 142, y6 - 96, scale=0.62)
+        ban(img, t, ts[8] + 0.1, "THE BIGGEST ONE IS NUMBER EIGHT", cy=1010, w=1260, h=96, size=48)
 
 # ============================================================ BLOCCO 3
 def chip(text, col):
