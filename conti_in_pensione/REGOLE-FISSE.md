@@ -236,3 +236,7 @@
 ## REGOLA N.24 (utente, 12/10/2026): MAI DIRE "L'HAI APPROVATO TU" SE NON C'E' PROVA; TITOLO SENZA "PENSIONI" = DIFETTO
 - Errore del 12/10: ho scritto all'utente che il titolo del video 4 "l'aveva approvato lui". Nel repo non c'e' nessuna approvazione del titolo (e' scritto da Claude; l'utente ha ordinato solo di togliere "45 centesimi"). Mai attribuire all'utente decisioni non documentate.
 - Titolo video 4 ("Invalidita' 2027: quanto aumenta DAVVERO? Importi e 3 trappole"): non contiene la parola "PENSIONI/PENSIONE" ne' una parola calda in maiuscolo come i titoli virali; la ricerca (vidIQ) dava le keyword "pensioni invalidita'" e "aumento pensioni invalidita'". Stesso difetto del primo titolo del video 5 (regola N.19). Non e' provato che sia questa la causa dei 149 view.
+
+## REGOLA N.25 (utente, 12/10/2026): VERIFICARE PRIMA DI DIRE "POSSO" O "NON POSSO"; MAI CORREGGERSI DOPO
+- Errore del 12/10: ho detto "le visualizzazioni le guardo gratis", dopo aver detto che da curl non potevo leggere i video; poi ho controllato e ho corretto me stesso. Regola: PRIMA di dire se una cosa si puo' o non si puo' fare (curl, vidIQ, crediti), provarla; poi dare una risposta sola. Non dire mai prima una cosa e poi smentirsi.
+- Dati verificati: dal curl funzionano le pagine elenco del canale (/videos e /shorts, danno titoli e visualizzazioni totali) e oembed (solo titolo); le pagine /watch sono bloccate (anti-robot): descrizioni e tag solo con vidIQ (5 crediti per chiamata, chiedere prima).
