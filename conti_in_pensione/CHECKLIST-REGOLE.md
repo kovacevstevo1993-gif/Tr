@@ -6,6 +6,8 @@ COME LAVORARE
 4. Ogni errore/correzione mostrata dall'utente: scriverla SUBITO in REGOLE-FISSE.md con la soluzione (commit+push) senza che lo ordini (N.4, N.23). Prima di consegnare: rileggere questa checklist e usare gli script di controllo.
 5. Mai chiedere l'audio della voce: i tempi si calcolano da testo+durate (N.16). Mai zip: clip MP4 singoli. Mai crediti vidIQ senza chiedere (saldo gratis con vidiq_balance; 5 crediti a chiamata). Dati pubblici canale: curl su /videos e /shorts (le pagine /watch sono bloccate).
 6. "Copiare dai virali" = copiare TUTTO cio' che funziona (parola PENSIONI grande, domanda con ?, promessa, cedolino con importo, freccia/spunta); solo colori e stile restano quelli dell'utente (N.19). Niente volti di persone reali ne' logo Inps.
+COPIONI (blocchi di voce)
+0. Prima di consegnare QUALSIASI copione: python3 conti_in_pensione/qa/qa_copione.py <copione-blocchi.txt> <parola-tema> short|lungo. Controlla: tema nominato nelle prime 8 parole del blocco 1 (N.27), numeri in lettere, Mai Inps a voce, chiusura short (video correlato, iscriviti, mi piace), gancio diverso dagli altri short, max 250 caratteri a blocco. Se non passa, non si consegna.
 TESTI (titolo, descrizione, tag, commento, impostazioni) - ognuno in un RIQUADRO ``` separato, in chat
 7. Lanciare SEMPRE: python3 conti_in_pensione/qa/qa_testi.py <file pacchetto>. Se un controllo non passa, non consegnare.
 8. Titolo: contiene PENSIONI/PENSIONE, parola calda in maiuscolo, domanda con ?, promessa; senza hashtag; max 100 caratteri.
