@@ -150,7 +150,7 @@ def bubble_dots():
 def draw1(img, t):
     ts = starts(1)
     common(img, t, "AIRPORT SECURITY")
-    slide_in(img, t, ts[0], checkpoint(), 470, 430, dx=-120, dur=0.6, shadow=16, scale=1.1)
+    slide_in(img, t, ts[0], checkpoint(), 520, 430, dx=-60, dur=0.6, shadow=16, scale=1.1)
     s_, a, p = pop(t, ts[1], 0.5)
     if p > 0:
         put(img, shield75(), 1190, 400, scale=s_ * 1.15, alpha=a, shadow=14)
