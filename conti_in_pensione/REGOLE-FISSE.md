@@ -232,3 +232,7 @@
 ## REGOLA N.23 (utente, 11/10/2026): OGNI ERRORE MOSTRATO = SOLUZIONE SALVATA DA SOLO, SENZA CHE LO DICA L'UTENTE
 - L'utente: "quando ti faccio vedere gli errori devi salvare le soluzioni da solo, non devo dirtelo io". Appena l'utente mostra o segnala un errore (screenshot, frase, domanda), PRIMA di rispondere: scrivere in REGOLE-FISSE.md l'errore, la causa e la regola/soluzione, con commit e push (regola N.4). Poi rispondere in breve. Vale anche per gli errori scoperti da me. Non va aspettato l'ordine "salvalo".
 - Salvare solo la regola (non cambiare il lavoro: regola N.13).
+
+## REGOLA N.24 (utente, 12/10/2026): MAI DIRE "L'HAI APPROVATO TU" SE NON C'E' PROVA; TITOLO SENZA "PENSIONI" = DIFETTO
+- Errore del 12/10: ho scritto all'utente che il titolo del video 4 "l'aveva approvato lui". Nel repo non c'e' nessuna approvazione del titolo (e' scritto da Claude; l'utente ha ordinato solo di togliere "45 centesimi"). Mai attribuire all'utente decisioni non documentate.
+- Titolo video 4 ("Invalidita' 2027: quanto aumenta DAVVERO? Importi e 3 trappole"): non contiene la parola "PENSIONI/PENSIONE" ne' una parola calda in maiuscolo come i titoli virali; la ricerca (vidIQ) dava le keyword "pensioni invalidita'" e "aumento pensioni invalidita'". Stesso difetto del primo titolo del video 5 (regola N.19). Non e' provato che sia questa la causa dei 149 view.
