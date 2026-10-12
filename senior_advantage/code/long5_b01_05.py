@@ -1,17 +1,17 @@
 """Video lungo 5 (AEROPORTO) - blocchi 1-5. 1920x1080, 30 fps. Voce: COPIONE-VIDEO-AEROPORTO.md.
-Durate dalla timeline dell'utente (12/10/2026): B1 381, B2 466, B3 382, B4 310, B5 306.
+Durate dalla timeline dell'utente (12/10/2026): B1 381, B2 567, B3 382, B4 310, B5 306.
 Uso: OUT=cartella SA_TMP=/tmp/x python3 long5_b01_05.py <blocco> [fotogrammi]
      python3 long5_b01_05.py frame <blocco> <secondi> <file.png>"""
 import os, sys, math
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from long4_b01_10 import *      # 1920x1080, motore, icone, banner, txt, seq, slide_in, panel, stamp, bubble3
 
-DUR = {1: 381, 2: 466, 3: 382, 4: 310, 5: 306}
+DUR = {1: 381, 2: 567, 3: 382, 4: 310, 5: 306}
 PHRASES = {
     1: ["At an airport security line,", "there is a rule written only for people seventy five and older.",
         "And the people it was written for often walk right past it,", "because nobody at the checkpoint says a word."],
     2: ["I'm talking about eight things.", "Your photo I D.", "Help from the curb to your gate.", "Your cane.",
-        "Your oxygen machine.", "Your pills.", "And one rule about a cancelled flight",
+        "Your oxygen machine.", "T S A Cares.", "The seventy five rule.", "Your pills.", "And one rule about a cancelled flight",
         "that can put real money back in your pocket.", "The biggest one is number eight."],
     3: ["Now, some of you are thinking,", "I don't need any help at the airport.", "Others are thinking,",
         "I only fly once a year, so this isn't for me.", "Both are missing something,", "and I'll show you what in a minute."],
@@ -212,24 +212,24 @@ def draw2(img, t):
     s_, a, p = pop(t, ts[0], 0.5)
     if p > 0:
         put(img, stamp("8 THINGS", 520, 120, GOLD, size=72), 960, 160, scale=s_, alpha=a, shadow=10)
-        burst(img, t, ts[0], 960, 160, n=12, color=GOLD, rad=240, seed=3)
-    st = {1: ts[1], 2: ts[2], 3: ts[3], 4: ts[4], 5: ts[4] + 0.5, 6: ts[4] + 0.95, 7: ts[5], 8: ts[6]}
+        burst(img, t, ts[0], 960, 160, n=12, color=GOLD, rad=130, seed=3)
+    st = {1: ts[1], 2: ts[2], 3: ts[3], 4: ts[4], 5: ts[5], 6: ts[6], 7: ts[7], 8: ts[8]}
     for i, (n, fn, name) in enumerate(TILES):
         x, y = tile_pos(i)
-        hl = (n == 8 and t > ts[8])
+        hl = (n == 8 and t > ts[10])
         s2, a2, p2 = pop(t, st[n], 0.45)
         if p2 > 0:
             put(img, tile2e(n, fn, name, hl=hl), x, y, scale=s2 * (1.05 if hl else 1.0), alpha=a2, shadow=10)
             if p2 < 1 and n != 8:
                 burst(img, t, st[n], x, y, n=8, color=GOLD, rad=170, seed=n)
     x8, y8 = tile_pos(7)
-    if t >= ts[7]:
-        burst(img, t, ts[7], x8 + 60, y8 + 20, n=14, color=GOLD, rad=260, seed=11)
-    if ts[7] <= t < ts[8]:
-        ban(img, t, ts[7], "REAL MONEY BACK IN YOUR POCKET", cy=1010, w=1260, h=96, size=48)
-    if t >= ts[8]:
-        seq(img, t, ts[8], sprite("crown5", 120, 90, lambda c: (c.poly([(8, 76), (8, 22), (38, 52), (60, 8), (82, 52), (112, 22), (112, 76)], fill=GOLD), c.rrect((8, 70, 112, 86), 6, fill=(168, 118, 40)))), x8 + 142, y8 - 96, scale=0.62)
-        ban(img, t, ts[8] + 0.1, "THE BIGGEST ONE IS NUMBER EIGHT", cy=1010, w=1260, h=96, size=48)
+    if t >= ts[9]:
+        burst(img, t, ts[9], x8 + 60, y8 + 20, n=14, color=GOLD, rad=260, seed=11)
+    if ts[9] <= t < ts[10]:
+        ban(img, t, ts[9], "REAL MONEY BACK IN YOUR POCKET", cy=1010, w=1260, h=96, size=48)
+    if t >= ts[10]:
+        seq(img, t, ts[10], sprite("crown5", 120, 90, lambda c: (c.poly([(8, 76), (8, 22), (38, 52), (60, 8), (82, 52), (112, 22), (112, 76)], fill=GOLD), c.rrect((8, 70, 112, 86), 6, fill=(168, 118, 40)))), x8 + 142, y8 - 96, scale=0.62)
+        ban(img, t, ts[10] + 0.1, "THE BIGGEST ONE IS NUMBER EIGHT", cy=1010, w=1260, h=96, size=48)
 
 # ============================================================ BLOCCO 3
 def chip(text, col):
