@@ -253,3 +253,7 @@
 ## STATO 12-13/10/2026 - SHORT 7 (teaser video lungo 5, tredicesima), cartella 17-short-7-teaser-video-lungo-5
 - Copione 6 blocchi (qa_copione.py OK), DURATE.txt dagli screenshot (329, 286, 365, 352, 321, 305 = 1958 fotogrammi = 65,3 s), 6 clip S7-blocco01..06.mp4 in clip/ (1080x1920, 30 fps, fotogrammi verificati con ffprobe). Sorgenti in sorgenti/ (scenes7.js, checktempi.py: tempi OK, qa7.sh: QA su TUTTI i fotogrammi OK, anteprima a 0,5 s guardata). Da fare solo se ordinato: miniatura e pacchetto (video correlato = video lungo 5).
 - (13/10/2026) Short 7: pacchetto.txt (qa_testi OK: titolo 64 caratteri, 25 tag = 494/500, 8 hashtag) e miniatura-short7.png (layout nuovo: barre 1.000 € lordo contro 770 € in banca con il pezzo mancante -230 €, PENSIONI TREDICESIMA, timbro NON È UN ERRORE, striscia "Dove sono finiti i 230 euro?") in 17-short-7-teaser-video-lungo-5. Video correlato = video lungo 5.
+
+## REGOLA N.28 (utente, 13/10/2026): SE NON E' UNA DOMANDA, NON RISPONDERE CON SPIEGAZIONI
+- Errore: l'utente ha scritto "il titolo e descrizione se va bene tutto, se e' scritto giusto" (un controllo da fare) e ho risposto con un lungo elenco di punti verificati. Lui: "Se io non [chiedo], non devi rispondere".
+- Regola: controllare in silenzio; se tutto e' a posto basta UNA riga ("Controllato, tutto giusto."). Mai elenchi di cio' che ho controllato se non li chiede. Se c'e' un errore: correggerlo e dire solo quale.
