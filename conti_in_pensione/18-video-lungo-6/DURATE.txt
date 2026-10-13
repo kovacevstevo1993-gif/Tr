@@ -1,3 +1,16 @@
 # Durate blocchi video 6 (V6-blocco01.mp4...) - dagli screenshot CapCut dell'utente, 30 fps. Ogni blocco parte dalla fine del precedente.
+# LETTURA (N.29): 1 fotogramma = circa 67 px nel righello dello screenshot; la riga bianca sta SEMPRE oltre l'ultimo segno disegnato (0,4-0,9 fotogrammi): fotogramma = ultimo segno + 1 (arrotondamento per eccesso).
 # blocco | fine cumulativa (mm:ss+f) | fotogrammi totali a fine | durata blocco (fotogrammi)
-1 | 00:23+22f | 712 | 712
+1 | 00:23+24f | 714 | 714
+2 | 00:40+9f | 1209 | 495
+3 | 01:01+22f | 1852 | 643
+4 | 01:20+19f | 2419 | 567
+5 | 01:43+2f | 3092 | 673
+6 | 02:09+3f | 3873 | 781
+7 | 02:30+4f | 4504 | 631
+8 | 03:00+3f | 5403 | 899
+9 | 03:18+12f | 5952 | 549
+10 | 03:43+6f | 6696 | 744
+11 | 04:05+12f | 7362 | 666
+12 | 04:31+24f | 8154 | 792
+13 | 04:52+8f | 8768 | 614

@@ -76,7 +76,7 @@ function mkBlk(text,dur,scenes){const sp=speech(text,dur);
    const mx=Math.max(...ord.map(o=>o._a));if(mx>lim&&n>1){const kk=(lim-A0)/(mx-A0);ord.forEach(o=>{o._a=A0+(o._a-A0)*kk;});}}
   SB.push({s,e,build(g){const o={items:[]};
    o.top=el('g',{},g);topLabel(o.top,sc.top);
-   o.cap=el('g',{},g);cap(o.cap,sc.cap,sc.capSize||44);
+   o.cap=el('g',{},g);if(sc.cap)cap(o.cap,sc.cap,sc.capSize||44);
    sc.items.forEach(it=>{const n=el('g',{},g);BUILD[it.k](n,...it.a);o.items.push({n,it});});
    this.o=o;},
   update(t){const o=this.o;T(o.top,960,100,0,1);T(o.cap,960,950,0,pop(t,0.15,Math.min(1.0,Math.max(0.45,L-0.8))));
