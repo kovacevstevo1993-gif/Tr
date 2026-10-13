@@ -21,3 +21,10 @@ Animazioni per bambini (motore "Puliamo il parco!", short "Il seme magico", "La 
 - Tutte le chat di Claude Code dell'utente: tool list_sessions / list_events (titoli: "Canale YouTube Conti in Pensione", "The Money Backstory ...", "Bambini Ciao Ciao ...", "Senior ...").
 - Per ogni canale: leggere il suo file di stato (sopra) PRIMA di fare qualsiasi cosa. Non chiedere all'utente cose che stanno nei file.
 - Dal 09/10/2026 main ha tutto. Non cancellare rami senza ordine dell'utente.
+
+## AGGIORNAMENTO 11/10/2026 - mappa sessioni -> rami (da list_sessions). Senior Advantage: dal 12/10 il ramo claude/affectionate-bell-7a1gzs (con short 8 Bollette) e unito su main.
+- Senior Advantage: ramo claude/affectionate-bell-7a1gzs (sessioni 01EA3Wv, 01JMto9, 013Acsz; ultima = BOLLETTE: 72 slide, pacchetto, 3 miniature); sessioni piu vecchie su claude/ecstatic-shannon-wl7kwf (01JUxym, 01LADT, 01WeZD3, 016BFAJ) e claude/funny-knuth-jqpa31 (01978T9). Chat salvate in senior_advantage/chat/.
+- Money Backstory: rami claude/great-tesla-hkd2tg (sessione 01Jn4Ejto, 11/10, video 8), claude/youthful-mendel-ijbe7x (01X914p, 09/10), claude/lucid-cerf-4jmcl8 (019XkZF, 013Vwsap, 018uVXx), claude/gifted-dirac-fu42fm (017CUhc, rami unificati), claude/money-backstory-project-bqq9ic (01VdcN6).
+- Conti in Pensione: rami claude/eloquent-knuth-abz2f7 (01Y9Gytb 08-09/10 e 017UXZ 07-08/10: lavoro piu recente), claude/trusting-mendel-d1bg54 (01EyHnD), claude/eager-davinci-vlhrsq (016pnTZ), claude/new-session-79n9mt (01VxKfz), claude/youthful-einstein-uctfje (013vvtZ), claude/wizardly-galileo-uh8q18 (01H5eap).
+- Bambini Ciao Ciao: claude/zealous-mendel-8m8aas, festive-brown-pk4m7q, nifty-brown-0jnc8w, fervent-johnson-ob5dk7, upbeat-einstein-f0m1jz, lucid-volta-myb2ye.
+- Le chat intere degli altri progetti si leggono con i tool list_sessions / list_events (id sessioni sopra); non sono copiate in questo ramo.
