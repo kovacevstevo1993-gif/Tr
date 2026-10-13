@@ -6,6 +6,7 @@ chiusura short (video correlato, iscriviti, mi piace), niente INVALIDI da solo /
 import re, sys, glob, os
 f, tema = sys.argv[1], sys.argv[2].lower()
 modo = sys.argv[3] if len(sys.argv) > 3 else 'short'
+maxc = int(sys.argv[4]) if len(sys.argv) > 4 else 250  # 4o argomento opzionale: limite caratteri a blocco (video 6: 500, su ordine utente 13/10)
 righe = [l.rstrip('\n') for l in open(f, encoding='utf-8')]
 blocchi = []
 for l in righe:
@@ -15,7 +16,7 @@ err = []
 if not blocchi: err.append('nessun blocco trovato')
 for n, t in blocchi:
     if re.search(r'\d', t): err.append(f'blocco {n}: cifre nel testo di voce (numeri in lettere)')
-    if len(t) > 250: err.append(f'blocco {n}: {len(t)} caratteri (max 250)')
+    if len(t) > maxc: err.append(f'blocco {n}: {len(t)} caratteri (max {maxc})')
     if re.search(r'my inps', t, re.I): err.append(f'blocco {n}: "My Inps" a voce (si dice Mai Inps)')
     if re.search(r'\binvalidi\b', t, re.I) and not re.search(r'invalidi al', t, re.I): err.append(f'blocco {n}: INVALIDI da solo')
     if re.search(r'45 centesimi|quarantacinque centesimi', t, re.I): err.append(f'blocco {n}: 45 centesimi')
