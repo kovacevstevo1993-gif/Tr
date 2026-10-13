@@ -1,0 +1,3 @@
+# Durate blocchi video 6 (V6-blocco01.mp4...) - dagli screenshot CapCut dell'utente, 30 fps. Ogni blocco parte dalla fine del precedente.
+# blocco | fine cumulativa (mm:ss+f) | fotogrammi totali a fine | durata blocco (fotogrammi)
+1 | 00:23+22f | 712 | 712
