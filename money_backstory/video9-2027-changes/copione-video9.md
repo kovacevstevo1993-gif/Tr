@@ -10,3 +10,84 @@ Meet Frank and Mary. Mary is sixty-seven and fully retired. Frank is sixty-three
 
 **BLOCCO 3**
 Every number in this video comes straight from Social Security's official fact sheet. Let's start with the raise itself, and what it really adds to a typical check.
+
+**BLOCCO 4**
+Number one: the raise. Three point six percent. Social Security says the average retirement check goes from two thousand ninety-five dollars to two thousand one hundred seventy dollars a month. That is about seventy-five dollars more, every month, starting with the January payment.
+
+**BLOCCO 5**
+Where does three point six come from? It is not a vote, and nobody in Washington picks it. It is a formula. Social Security compares an inflation index called the C P I W, from the third quarter of last year to the third quarter of this year. The rise in that index becomes your raise.
+
+**BLOCCO 6**
+Now Mary's check. Mary gets two thousand dollars a month today. Three point six percent of two thousand is seventy-two dollars. So her new check is about two thousand seventy-two dollars, before anything is taken out. Over a full year, that is eight hundred sixty-four dollars more.
+
+**BLOCCO 7**
+But here's the part people miss. That is the amount before deductions. If you're on Medicare, the Part B premium usually comes straight out of the same check, and Medicare announces the twenty twenty-seven premium separately. So the number that lands in your bank can be smaller than the raise you hear about on the news.
+
+**BLOCCO 8**
+There is one protection here, called the hold harmless rule. For most people who have Part B taken out of their Social Security, the increase in the Part B premium cannot be larger than the increase in their check. So for them, the net check does not go down from one year to the next.
+
+**BLOCCO 9**
+And there is a tax angle. If half of your benefits plus your other income is above twenty-five thousand dollars for a single person, or thirty-two thousand for a married couple filing jointly, part of your benefits becomes taxable. Those two lines are not adjusted for inflation, so every raise pushes a few more retirees closer to them.
+
+**BLOCCO 10**
+How will you know your exact number? Social Security mails a Cola notice in December. But if you sign up for paperless notices in your my Social Security account by November eighteenth, you can see your new amount online up to three weeks earlier.
+
+**BLOCCO 11**
+Number two: S S I. Supplemental Security Income is a separate program for people with very low income and savings. The federal payment for one person goes from nine hundred ninety-four dollars to one thousand twenty-nine dollars a month. For a couple, from one thousand four hundred ninety-one to one thousand five hundred forty-four.
+
+**BLOCCO 12**
+And the timing is different. S S I recipients get the higher amount first, with the payment on December thirty-first. The resource limits did not change: two thousand dollars for one person, three thousand for a couple. If you help a parent on S S I, this is worth checking.
+
+**BLOCCO 13**
+Number three is the one that can hold back thousands. It's called the earnings test. It only applies if you claim Social Security before your full retirement age and you keep working. For anyone born in nineteen sixty or later, full retirement age is sixty-seven.
+
+**BLOCCO 14**
+In twenty twenty-seven, you can earn up to twenty-five thousand five hundred sixty dollars a year. That is two thousand one hundred thirty dollars a month. Above that, Social Security holds back one dollar of benefits for every two dollars you earn over the limit.
+
+**BLOCCO 15**
+Let's run Frank's numbers. Frank is sixty-three, he claimed early, and his part time job pays thirty-five thousand five hundred sixty dollars a year. That is exactly ten thousand dollars over the limit. One dollar for every two means five thousand dollars of his benefits are held back.
+
+**BLOCCO 16**
+Now compare. If Frank had earned twenty-five thousand dollars instead, he would be under the limit, and nothing would be held back. Same job, fewer hours, and his full check arrives every month. That is a choice worth making on purpose, not by surprise.
+
+**BLOCCO 17**
+Five thousand dollars. And Frank didn't see it coming, because the raise made his check look bigger. This is why Mary said the raise is not the only number that matters.
+
+**BLOCCO 18**
+The rule changes in the year you reach full retirement age. In that year, the limit jumps to sixty-seven thousand nine hundred twenty dollars, and Social Security holds back one dollar for every three dollars above it. Only the months before your birthday month count.
+
+**BLOCCO 19**
+And from the month you reach full retirement age, there is no limit at all. You can earn any amount and keep your full check.
+
+**BLOCCO 20**
+Here is what most people get wrong. The money held back is not simply gone. When you reach full retirement age, Social Security recalculates your benefit and gives you credit for the months it withheld, so your monthly check goes up from then on. Delayed, not deleted. But you still need to plan for the gap.
+
+**BLOCCO 21**
+Number four: the taxable maximum. If you're still working, you pay six point two percent Social Security tax on your wages, up to a ceiling. For twenty twenty-seven, that ceiling rises from one hundred eighty-four thousand five hundred dollars to one hundred ninety-two thousand three hundred.
+
+**BLOCCO 22**
+Above that line, the Social Security tax stops for the rest of the year. The Medicare tax has no ceiling: it keeps going on every dollar. If you're self-employed, you pay both halves, twelve point four percent. For most retirees this changes nothing. For a high earner who still works, it means about four hundred eighty-four dollars more in Social Security tax.
+
+**BLOCCO 23**
+Number five: the price of a work credit. You need forty credits, about ten years of work, to qualify for retirement benefits. In twenty twenty-seven, one credit takes one thousand nine hundred seventy dollars in earnings, up from one thousand eight hundred ninety.
+
+**BLOCCO 24**
+You can earn at most four credits a year. So in twenty twenty-seven, you need seven thousand eight hundred eighty dollars of earnings to get all four. This matters if you or your spouse is still a few credits short of forty.
+
+**BLOCCO 25**
+One more number for the record. The maximum check for someone retiring at full retirement age goes from four thousand one hundred fifty-two dollars to four thousand one hundred eighty-eight dollars a month. Very few people get it: it takes thirty-five years of earnings at or above the taxable maximum.
+
+**BLOCCO 26**
+So, five numbers. One: the raise, three point six percent, about seventy-five dollars for the average retiree. Two: S S I, one thousand twenty-nine dollars for one person. Three: the earnings limit, twenty-five thousand five hundred sixty dollars. Four: the tax ceiling, one hundred ninety-two thousand three hundred. Five: one work credit, one thousand nine hundred seventy dollars.
+
+**BLOCCO 27**
+Three things to do this week. First, log in to your my Social Security account and turn on paperless notices before November eighteenth. Second, if you claimed early and still work, check your expected earnings against the limit. Third, watch for the Medicare Part B announcement, because that decides what you really keep.
+
+**BLOCCO 28**
+Frank called Social Security and reported his expected earnings, so the hold back won't surprise him in the middle of the year. Mary simply updated her budget with the new amount. Same raise, two very different years.
+
+**BLOCCO 29**
+If this helped, send it to one person who gets Social Security, especially someone who still works. And tell me in the comments: is the raise enough for you this year?
+
+**BLOCCO 30**
+Rules, amounts and ages change and differ by situation. Always confirm with the official source, s s a dot gov, before you rely on them. This is general information, not financial advice. Subscribe to The Money Backstory, so you don't miss the next one.
