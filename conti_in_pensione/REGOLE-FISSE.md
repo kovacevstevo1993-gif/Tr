@@ -289,3 +289,7 @@
 ## REGOLA N.32 (utente, 14/10/2026): CREDITI vidIQ = DIRE PRIMA QUANTI E PER COSA; NIENTE CHIAMATE A VUOTO
 - Errore del 14/10 (pacchetto video 6): su 35 crediti spesi, 10 sprecati (similar_thumbnails senza filtro paese = risultati non italiani; keyword matching_terms su una frase troppo specifica = zero risultati). Due punteggi del titolo erano in piu'.
 - Regola: anche quando l'utente autorizza vidIQ ("usa vidiq"), PRIMA di chiamare scrivere in una riga il piano (quali chiamate, quanti crediti in tutto, perche'). Fare per prime le chiamate piu' sicure (generate_titles, score_title con max 3 titoli, keyword_research con parole gia' cercate dagli italiani); le ricerche che possono uscire a vuoto o fuori lingua (matching_terms su frasi lunghe, similar_thumbnails) solo con filtri italiani e dopo aver provato l'alternativa gratuita (ricerca pubblica YouTube, miniature scaricate con curl). Dopo ogni chiamata controllare il risultato prima di farne un'altra. A fine lavoro dire quanti crediti sono andati sprecati.
+
+## STATO 14/10/2026 - SHORT 8 (teaser video lungo 6, novembre), cartella 19-short-8-teaser-video-lungo-6
+- Ultimo video pubblicato (verificato con curl /videos): video 6 "PENSIONI NOVEMBRE: pagamento lunedi 2 novembre...". Video correlato dello short 8 = video lungo 6.
+- Copione 6 blocchi (copione-blocchi.txt, qa_copione.py novembre short OK, 953 caratteri), consegnato in chat. Prossimo: screenshot delle durate, poi clip S8-blocco01..06.mp4.
