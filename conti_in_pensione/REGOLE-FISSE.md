@@ -292,4 +292,5 @@
 
 ## STATO 14/10/2026 - SHORT 8 (teaser video lungo 6, novembre), cartella 19-short-8-teaser-video-lungo-6
 - Ultimo video pubblicato (verificato con curl /videos): video 6 "PENSIONI NOVEMBRE: pagamento lunedi 2 novembre...". Video correlato dello short 8 = video lungo 6.
-- Copione 6 blocchi (copione-blocchi.txt, qa_copione.py novembre short OK, 953 caratteri), consegnato in chat. Prossimo: screenshot delle durate, poi clip S8-blocco01..06.mp4.
+- Copione 6 blocchi (copione-blocchi.txt, qa_copione.py novembre short OK, 953 caratteri), consegnato in chat.
+- Ordine utente 14/10: "slide un po piu differenti, non stravolgere, cambia pochissimo, piu professionale". Fatte: schede con filetto verde a sinistra, barra di avanzamento a 6 trattini sotto il titoletto, calendari (1 e 2 novembre), frecce giu/su per le due voci, righe numerate. Durate in DURATE.txt (311,317,274,322,282,274 = 1780 fotogrammi). Clip S8-blocco01..06.mp4 in clip/ (checktempi OK, qa_slide OK su tutti i fotogrammi, ffprobe = durate, sequenza a 0,5 s guardata), consegnate. Da fare solo se ordinato: miniatura e pacchetto.
