@@ -20,7 +20,7 @@ Disclaimer: Rules, amounts and ages change and differ by location and plan. Alwa
 #Shorts #flyingover60 #seniortravel #airporttips
 
 ## Tag
-flying over 60, airport tips for seniors, airport perks for seniors, things seniors can ask for at the airport, senior travel tips, seniors airport security, TSA rules for seniors, TSA 75 and older, TSA shoes seniors, TSA Cares, airport wheelchair assistance, flight cancelled refund, refund not voucher, airline rights seniors, travel tips over 60, senior travel, flying tips for seniors, airport secrets seniors, help most seniors never claim
+flying over 60, airport tips for seniors, airport perks for seniors, things seniors can ask for at the airport, senior travel tips, travel tips for seniors, senior flights, airport tips, seniors airport security, TSA rules for seniors, TSA 75 and older, TSA shoes seniors, TSA Cares, airport wheelchair assistance, flight cancelled refund, refund not voucher, airline rights seniors, travel tips over 60, senior travel, flying tips for seniors, help most seniors never claim
 
 ## Commento da fissare
 Which of these did you not know about? Tell me below 👇 Rules can change, so confirm with the TSA or your airline before you fly. The full video with all 8 is right below this short.
