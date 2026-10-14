@@ -928,7 +928,7 @@ def frame(i):
                 tl_ = (cur + " " + wd).strip(); bb = d.textbbox((0, 0), tl_, font=f, anchor="mm", stroke_width=6)
                 if bb[2] - bb[0] > 930 and cur: lines.append(cur); cur = wd
                 else: cur = tl_
-            lines.append(cur); yy = (330 if k == "end" else (560 if t >= T_W2 else 1850 - 84 * (len(lines) - 1))) + (1 - u) * 14
+            lines.append(cur); yy = (330 if k == "end" else (330 if t >= T_W2 else 1850 - 84 * (len(lines) - 1))) + (1 - u) * 14
             for ln in lines: text(d, ln, W / 2, yy, size, COL[who] + (int(255 * u),), (30, 40, 70, int(255 * u)), 7); yy += 84
             break
     subscribe_button(img, t, V["end"] + 0.9, cy=1810)
