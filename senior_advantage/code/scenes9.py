@@ -304,7 +304,7 @@ def c3(img, t):
     s, al, a = pop(t, 5.2, 0.5)
     if a > 0:
         put(img, stamp_spr("ALMOST NOBODY ASKS", 860, 140, CORAL), 540, 1620, scale=s, alpha=al, rot=-3, shadow=12)
-        burst(img, t, 5.2, 540, 1620, n=12, color=CORAL, dur=0.7, rad=380, seed=96)
+        burst(img, t, 5.2, 540, 1620, n=12, color=CORAL, dur=0.7, rad=200, seed=96)
 
 # ---------------------------------------------------------------- B4 (259 f = 8,6 s)
 def c4(img, t):
