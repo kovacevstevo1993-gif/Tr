@@ -44,6 +44,8 @@ Idea vidIQ "What Changes for Seniors 60+" scartata (Social Security = Money Back
 7. DECIDE SOLO L'UTENTE, MAI CLAUDE (07/10/2026): non decidere mai quanto controllare o fare. CONTROLLO FOTOGRAMMA PER FOTOGRAMMA (tutti i 30 al secondo) di OGNI blocco PRIMA di mandare gli MP4, nessuna scorciatoia, nessun campionamento. Vedi CLAUDE.md.
 8. NON DIRE "FATTO/MANDATO" SE NON E VERO (07/10/2026): dire "mandato" solo dopo conferma di SendUserFile; altrimenti "in corso". L'utente si e sentito preso in giro. Vedi CLAUDE.md.
 6. Niente "hai ragione", niente scuse, niente liste di offerte. Risposte corte. Salvare tutto nel repo subito.
+9. MINIATURE (14/10/2026, errore Aeroporto): PRIMA di disegnare, controllare che la miniatura dica a prima vista DI COSA parla il video (tema intero, non meta') e PER CHI e' (es. OVER 60 a caratteri grandi). Se il video copre due cose (aeroporto + compagnia aerea) la miniatura le deve coprire entrambe. Curiosita si', ma senza perdere chiarezza. Controllare il codice/layout PRIMA di renderizzare: niente giri di correzione a vuoto (ogni anteprima grande costa consumo).
+10. LAVORO E CONSUMO (14/10/2026): non rifare niente senza ordine; una DOMANDA dell'utente = solo risposta; un solo controllo/attesa per render (mai piu' watcher); guardare le anteprime una sola volta; rispondere alle domande subito e per prime. Hook regole-conti.py: ora si attiva solo con parole specifiche di Conti (vedi nota in fondo).
 
 Incolla nella nuova chat: "Leggi senior_advantage/PASSAGGIO-CHAT.md e CLAUDE.md, poi aspetta quello che ti chiedo."
 
