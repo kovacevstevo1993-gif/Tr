@@ -333,3 +333,4 @@
 - Video 7: aggiungere il MOVIMENTO DELLO SFONDO dietro le slide come negli short (sfondo animato lento).
 - Video 7: blocchi di voce lunghi fino a 500 caratteri (qa_copione.py ... lungo 500).
 - vidIQ: l'utente ha autorizzato altre ricerche per il video 7 ("controlla ancora quello che ti serve su vidiq").
+- (15/10) Video 7 blocco 1: durata 841 fotogrammi (screenshot: 00:28+1f). Motore in 20-video-lungo-7/sorgenti (copia del V6 + specs-v7.js + regia7.js con SFONDO IN MOVIMENTO: bolle che salgono + raggi lenti, tempo globale OFF+t cosi' continua tra un blocco e l'altro; elemento nuovo "scontrino" BUILD.rcpt). V7-blocco01.mp4 in clip/: tempi OK, QA su 841 fotogrammi OK, ffprobe 841, sequenza a 0,5 s guardata. Consegnato per prova ("vediamo come lo fai").

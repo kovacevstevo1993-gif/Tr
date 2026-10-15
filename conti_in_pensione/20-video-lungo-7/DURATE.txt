@@ -1,0 +1,4 @@
+# Durate blocchi video 7 (V7-blocco01.mp4...) - dagli screenshot CapCut dell'utente, 30 fps. Ogni blocco parte dalla fine del precedente.
+# LETTURA (N.29): fotogramma = ultimo segno disegnato prima della riga bianca + 1.
+# blocco | fine cumulativa (mm:ss+f) | fotogrammi totali a fine | durata blocco (fotogrammi)
+1 | 00:28+1f | 841 | 841
