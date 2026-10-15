@@ -22,5 +22,6 @@ SLIDE / CLIP (1920x1080 lunghi, 1080x1920 short, 30 fps; nomi V5-blocco01.mp4 / 
 16. Ultimo blocco: disclaimer nella parte ALTA e ultimi 20 s con zona libera in basso per riquadro video correlato + Iscriviti (N.22).
 17. Non rifare/rimandare blocchi gia' consegnati se l'utente non lo ORDINA.
 19. Testi e domande coerenti con la data di pubblicazione: mai chiedere al passato cose future (N.33).
+20. Prima di consegnare: rileggere tutto come lo spettatore nel giorno di pubblicazione (date, tempi verbali, numeri coerenti ovunque). Dubbi detti PRIMA, mai dopo (N.34).
 MINIATURE
 18. Stile dei video pubblicati (sfondo verde acqua a raggi, numeri giganti con contorno scuro, palline rosso/verde, striscia bianca con bordo giallo), layout DIVERSO dalla precedente, con la parola PENSIONI grande e la frase dell'utente. Controllare ogni immagine (testi tagliati/sovrapposti) prima di mandarla.
