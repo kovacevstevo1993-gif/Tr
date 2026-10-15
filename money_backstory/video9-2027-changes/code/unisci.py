@@ -3,7 +3,7 @@ import sys, subprocess, glob, os
 a, b = map(int, sys.argv[1].split('-')); fin = [int(x) for x in open('fine_blocchi.txt') if x.strip()]
 os.makedirs('consegna', exist_ok=True)
 for n in range(a, b + 1):
-    fs = sorted(glob.glob(f'slide/v9-b{n}-*.mp4')); lst = f'/tmp/claude-0/-home-user-Tr/cd642432-0877-5eed-a533-494290c2e47e/scratchpad/c{n}.txt'
+    fs = sorted(glob.glob(f'slide/v9-b{n}-*.mp4')); lst = f'/tmp/c{n}.txt'
     open(lst, 'w').write(''.join(f"file '{os.path.abspath(f)}'\n" for f in fs))
     out = f'consegna/V9-blocco{n:02d}.mp4'
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', lst, '-i', f'voce/b{n}_pad.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'libx264', '-profile:v', 'main', '-crf', '16', '-pix_fmt', 'yuv420p', '-r', '30', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', out], check=True)
