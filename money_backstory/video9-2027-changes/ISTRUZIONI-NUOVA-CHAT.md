@@ -3,7 +3,7 @@ Branch: claude/wonderful-volta-0848iy (git fetch origin claude/wonderful-volta-0
 
 ## Cosa fare: SOLO la voce dei blocchi 13-30. LE SLIDE NON SI RIFANNO (ordine utente).
 - Errore da correggere: b1-b12 voce gemini-2.5-flash-preview-tts, b13-b30 gemini-3.1-flash-tts-preview (modello diverso). Tutto deve essere gemini-2.5-flash-preview-tts, voce Fenrir, testo SENZA istruzioni davanti.
-- Testi dei blocchi: copione-video9.md (BLOCCO 13 ... BLOCCO 30). Script: code/tts_gemini.py (tts) - gruppi da 3 blocchi = 6 richieste: python3 code/gen_voce.py <cartella con tts.py> blk.json voce (blk.json = {"B": {numero: testo}, "groups": [[13,14,15],...,[28,29,30]]}); poi code/ritaglia.py blk.json voce/gNN.wav NN,NN+1,NN+2 per tagliare ai confini; controllo testo con code/verifica_voce.py. Prima di generare: cancellare voce/g13..g28.wav vecchi (altrimenti li riusa).
+- Testi dei blocchi: copione-video9.md (BLOCCO 13 ... BLOCCO 30). Script: code/tts.py - gruppi da 3 blocchi = 6 richieste: python3 code/gen_voce.py code code/blk_13_30.json voce (gia pronto); poi code/ritaglia.py code/blk_13_30.json voce/gNN.wav NN,NN+1,NN+2 per tagliare ai confini; controllo testo con code/verifica_voce.py. Prima di generare: cancellare voce/g13..g28.wav vecchi (altrimenti li riusa).
 - Se la quota finisce: FERMARSI e aspettare, MAI cambiare modello.
 - Controllo voce uguale: Gemini (gemini-3.8-flash o altro disponibile) ascolta b12.wav e b13.wav nuovi e conferma stessa voce; piu' confronto numerico di altezza e velocita'.
 
