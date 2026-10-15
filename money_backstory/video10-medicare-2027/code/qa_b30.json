@@ -1,0 +1,47 @@
+[
+ {
+  "blocco": 30,
+  "slide": 1,
+  "fotogrammi": 452,
+  "controllati": 452,
+  "fuori_area": 278,
+  "fuori_area_fotogrammi": [
+   [
+    0,
+    68,
+    1850,
+    1010
+   ],
+   [
+    1,
+    68,
+    1850,
+    1010
+   ],
+   [
+    2,
+    68,
+    1850,
+    1010
+   ],
+   [
+    450,
+    68,
+    1850,
+    1010
+   ],
+   [
+    451,
+    68,
+    1850,
+    1010
+   ]
+  ],
+  "ultimo_fuori_area": 451,
+  "completo_a_80%": 1.0,
+  "pixel_che_cambiano_dopo_81%": 0,
+  "primo_elemento_s": 0.0,
+  "buco_max_s": 0.0,
+  "OK": false
+ }
+]
