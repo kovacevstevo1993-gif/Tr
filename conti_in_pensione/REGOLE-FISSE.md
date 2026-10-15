@@ -320,9 +320,16 @@
 - Nel file c'era "Crediti vidIQ: 35 (rinnovo 11/11)"; vidiq_balance il 15/10 dice 0 crediti, rinnovo 25/10/2026. Regola (gia' scritta il 12/10, ribadita): il saldo si legge SEMPRE con vidiq_balance (gratis) prima di parlarne o pianificare; mai fidarsi del numero scritto nei file.
 
 ## STATO 15/10/2026 - VIDEO LUNGO 7, cartella 20-video-lungo-7
-- Ricerca fatta (ricerca-15-10-2026.md, dati gratis + vidIQ 15 crediti). Primo argomento (64 anni) SCARTATO: uguale al video 1 (N.36). Nuovo argomento proposto: quanto hanno perso le pensioni in 13 anni con i tagli della rivalutazione (conto per 1.500, 2.000, 3.000 euro). Da far confermare; poi (solo su ordine) fatti ufficiali e copione.
+- Argomento CONFERMATO dall utente (15/10): perdite della rivalutazione 2023-2026 + ipotesi 2027. Copione 17 blocchi (copione-blocchi.txt, max 500, qa_copione OK) consegnato in chat. Da fare solo su ordine: durate, slide (con sfondo in movimento come gli short, N.37), miniatura, pacchetto. Titolo provvisorio (vidIQ 68): "PENSIONI: quanto hai PERSO DAVVERO in 4 anni? Il CONTO per 2.500, 3.000 e 3.500 euro". Crediti vidIQ 45 (rinnovo 11/11).
 
 ## REGOLA N.36 (utente, 15/10/2026): MAI SCEGLIERE UN ARGOMENTO GIA' FATTO DAL CANALE
 - Errore del 15/10: per il video 7 ho proposto "pensione a 64 anni per tutti / quanto perdi col ricalcolo", quasi uguale al VIDEO 1 ("Pensione a 64 anni nel 2027: cosa e' legge e cosa e' solo una proposta", con il taglio dell'assegno). L'utente: "mica e' uguale al video che c'e' gia'?". Causa: ho scartato solo i video 3, 5 e 6 e non ho riletto i titoli e i copioni di TUTTI i video.
 - Regola: prima di proporre un argomento, confrontarlo con TUTTI i video e short del canale (cartelle 02-19: titoli e copioni). Se il tema e' gia' stato fatto, scartarlo o dire chiaramente cosa c'e' di diverso.
 - Saldo vidIQ: il 15/10 alle prime ore era 0, poi 75 crediti aggiunti (rinnovo 11/11): leggere sempre vidiq_balance al momento.
+
+## REGOLA N.37 (utente, 15/10/2026): VIDEO NON IN SERIE (MONETIZZAZIONE) + SFONDO IN MOVIMENTO + BLOCCHI 500
+- L'utente: "non dobbiamo essere ripetitivi perche' non ci danno la monetizzazione... fallo un po' piu' diverso cosi' non sembrano creati in serie... non stravolgere tutto, cambia ma non stravolgere".
+- Regola: ogni nuovo video deve avere qualcosa di DIVERSO dai precedenti (struttura del copione, gancio, tipo di grafica/schema), restando nello stile del canale (verde acqua, titoletto, grafica, didascalia). Mai la stessa sequenza di blocchi e le stesse formule di tutti i video (vedi N.28: rischio "contenuti a modello").
+- Video 7: aggiungere il MOVIMENTO DELLO SFONDO dietro le slide come negli short (sfondo animato lento).
+- Video 7: blocchi di voce lunghi fino a 500 caratteri (qa_copione.py ... lungo 500).
+- vidIQ: l'utente ha autorizzato altre ricerche per il video 7 ("controlla ancora quello che ti serve su vidiq").
