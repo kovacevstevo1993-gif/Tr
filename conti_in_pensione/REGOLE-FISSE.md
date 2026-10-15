@@ -305,3 +305,7 @@
 ## REGOLA N.34 (utente, 15/10/2026): GLI ERRORI SI TROVANO PRIMA DELLA CONSEGNA, NON DOPO LA PUBBLICAZIONE
 - L'utente: "correggi sempre quando e' finito tutto e pubblico... perche' non lo fai prima?". Causa: gli script controllano solo errori gia' capitati; tutto il resto lo scopre l'utente dopo.
 - Regola: prima di consegnare QUALSIASI cosa, oltre agli script, rileggere tutto come lo spettatore nel giorno in cui lo vedra' (data di pubblicazione, cosa sa gia', cosa non e' ancora successo), frase per frase: date e tempi verbali, numeri coerenti tra copione/slide/miniatura/descrizione, cose dette a voce = cose scritte. Ogni dubbio va risolto o detto all'utente PRIMA della consegna, mai dopo.
+
+## REGOLA N.35 (utente, 15/10/2026): MAI DARE PER SCONTATO CHE UN VIDEO NON SIA ANCORA PUBBLICATO
+- Errore del 15/10: ho ricontrollato lo short 8 e ho scritto "prima che tu lo pubblichi", ma l'utente lo aveva gia' pubblicato (regola: appena finito, lo programma subito). Non avevo verificato.
+- Regola: il controllo completo (N.34) si fa SEMPRE prima della consegna; dopo la consegna considerare il video gia' pubblicato/programmato. Se serve sapere se e' online: curl su /videos o /shorts PRIMA di dirlo.
