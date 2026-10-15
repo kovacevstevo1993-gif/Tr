@@ -320,7 +320,7 @@
 - Nel file c'era "Crediti vidIQ: 35 (rinnovo 11/11)"; vidiq_balance il 15/10 dice 0 crediti, rinnovo 25/10/2026. Regola (gia' scritta il 12/10, ribadita): il saldo si legge SEMPRE con vidiq_balance (gratis) prima di parlarne o pianificare; mai fidarsi del numero scritto nei file.
 
 ## STATO 15/10/2026 - VIDEO LUNGO 7, cartella 20-video-lungo-7
-- Ricerca fatta (ricerca-15-10-2026.md, solo dati gratis: vidIQ a 0 crediti). Argomento scelto da Claude: PENSIONE A 64 ANNI PER TUTTI, il conto di quanto si perde col ricalcolo contributivo. Da far confermare all'utente: titolo/angolo; poi (solo su ordine) fatti su fonti ufficiali e copione.
+- Ricerca fatta (ricerca-15-10-2026.md, dati gratis + vidIQ 15 crediti). Primo argomento (64 anni) SCARTATO: uguale al video 1 (N.36). Nuovo argomento proposto: quanto hanno perso le pensioni in 13 anni con i tagli della rivalutazione (conto per 1.500, 2.000, 3.000 euro). Da far confermare; poi (solo su ordine) fatti ufficiali e copione.
 
 ## REGOLA N.36 (utente, 15/10/2026): MAI SCEGLIERE UN ARGOMENTO GIA' FATTO DAL CANALE
 - Errore del 15/10: per il video 7 ho proposto "pensione a 64 anni per tutti / quanto perdi col ricalcolo", quasi uguale al VIDEO 1 ("Pensione a 64 anni nel 2027: cosa e' legge e cosa e' solo una proposta", con il taglio dell'assegno). L'utente: "mica e' uguale al video che c'e' gia'?". Causa: ho scartato solo i video 3, 5 e 6 e non ho riletto i titoli e i copioni di TUTTI i video.
