@@ -321,3 +321,8 @@
 
 ## STATO 15/10/2026 - VIDEO LUNGO 7, cartella 20-video-lungo-7
 - Ricerca fatta (ricerca-15-10-2026.md, solo dati gratis: vidIQ a 0 crediti). Argomento scelto da Claude: PENSIONE A 64 ANNI PER TUTTI, il conto di quanto si perde col ricalcolo contributivo. Da far confermare all'utente: titolo/angolo; poi (solo su ordine) fatti su fonti ufficiali e copione.
+
+## REGOLA N.36 (utente, 15/10/2026): MAI SCEGLIERE UN ARGOMENTO GIA' FATTO DAL CANALE
+- Errore del 15/10: per il video 7 ho proposto "pensione a 64 anni per tutti / quanto perdi col ricalcolo", quasi uguale al VIDEO 1 ("Pensione a 64 anni nel 2027: cosa e' legge e cosa e' solo una proposta", con il taglio dell'assegno). L'utente: "mica e' uguale al video che c'e' gia'?". Causa: ho scartato solo i video 3, 5 e 6 e non ho riletto i titoli e i copioni di TUTTI i video.
+- Regola: prima di proporre un argomento, confrontarlo con TUTTI i video e short del canale (cartelle 02-19: titoli e copioni). Se il tema e' gia' stato fatto, scartarlo o dire chiaramente cosa c'e' di diverso.
+- Saldo vidIQ: il 15/10 alle prime ore era 0, poi 75 crediti aggiunti (rinnovo 11/11): leggere sempre vidiq_balance al momento.
