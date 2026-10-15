@@ -55,6 +55,8 @@ else:
             if b-a<10:E(f'capitoli troppo vicini (<10 s) a {b//60}:{b%60:02d}')
         if sec!=sorted(sec):E('capitoli non in ordine')
 if com and re.search(r'https?://',com):E('commento fissato con link (negli short non funzionano)')
+import os as _o,sys as _s;_s.path.insert(0,_o.path.dirname(_o.path.abspath(__file__)));from check_data import errori_data
+for _e in errori_data(tutto):err.append(_e)
 print(f'TITOLO ({len(tit)}): {tit}');print(f'TAG: {len(L)} tag, {yt}/500 (conteggio YouTube) | HASHTAG: {len(set(hs))} | tipo: {"SHORT" if short else "VIDEO LUNGO"}')
 for w in warn:print('ATTENZIONE:',w)
 for e in err:print('ERRORE:',e)

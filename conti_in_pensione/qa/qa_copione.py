@@ -34,6 +34,8 @@ if blocchi:
                 m = re.match(r'^1[ |]\s*(.+)$', l)
                 if m and ' '.join(m.group(1).lower().split()[:3]) == ' '.join(blocchi[0][1].lower().split()[:3]):
                     err.append(f'gancio uguale a {g}')
+import os as _o,sys as _s;_s.path.insert(0,_o.path.dirname(_o.path.abspath(__file__)));from check_data import errori_data
+for _e in errori_data(' '.join(t for _,t in blocchi)):err.append(_e)
 print(f'{len(blocchi)} blocchi, {sum(len(t) for _, t in blocchi)} caratteri')
 for e in err: print('ERRORE:', e)
 print('QA COPIONE OK' if not err else f'QA COPIONE NON PASSATO ({len(err)} errori): NON CONSEGNARE')
