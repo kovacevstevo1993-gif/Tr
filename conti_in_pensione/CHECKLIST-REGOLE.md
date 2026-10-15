@@ -21,5 +21,6 @@ SLIDE / CLIP (1920x1080 lunghi, 1080x1920 short, 30 fps; nomi V5-blocco01.mp4 / 
 15. Prima di ogni invio: render.py + b-sync-80.js (blocco automatico), qa_tempi.py, qa_slide.py su TUTTI i fotogrammi, ffprobe durate = fotogrammi dell'utente. Il QA non misura il tempo di lettura: misurare con window.__SC / __IT e GUARDARE la sequenza.
 16. Ultimo blocco: disclaimer nella parte ALTA e ultimi 20 s con zona libera in basso per riquadro video correlato + Iscriviti (N.22).
 17. Non rifare/rimandare blocchi gia' consegnati se l'utente non lo ORDINA.
+19. Testi e domande coerenti con la data di pubblicazione: mai chiedere al passato cose future (N.33).
 MINIATURE
 18. Stile dei video pubblicati (sfondo verde acqua a raggi, numeri giganti con contorno scuro, palline rosso/verde, striscia bianca con bordo giallo), layout DIVERSO dalla precedente, con la parola PENSIONI grande e la frase dell'utente. Controllare ogni immagine (testi tagliati/sovrapposti) prima di mandarla.
