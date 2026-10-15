@@ -11,3 +11,9 @@
 - Motore: `short_neve.py` (base mongolfiera) + `voci_neve.py` (audioI/, parole.json con i tempi delle parole) + `mix_neve.py` + `miniatura_neve.py`. Video: `short_pupazzo_di_neve.mp4`. SEO: `docs/SEO_pupazzo_di_neve.md`.
 - "Etciù" la voce lo legge "Et tu": usare "Ecciù".
 - L'utente si lamenta della lentezza del rendering (~25 min per 44 s): bloom calcolato a 1/4 di risoluzione; usare renderpart per le correzioni.
+
+## REGOLE NUOVE (15/10/2026, parole dell'utente) — valgono per TUTTI i prossimi Short
+- "Falli più realistici i movimenti e tutto, creati altre posizioni dei personaggi, movimenti più naturali" -> generare pose nuove (passaggi, intermedie) prima di animare.
+- "Non mettere i sottotitoli che non hanno senso" -> NIENTE sottotitoli nel video (solo hook/scritte di scena se servono).
+- "Più centrale tutto" / "Perché i personaggi sono solo nella parte bassa e il resto è vuoto" -> personaggi GRANDI e al CENTRO dell'inquadratura (camera più vicina), niente metà alta vuota.
+- "Fanne anche altri 2, falli diversi dagli altri perché sembrano tutti uguali, e migliorali" -> dopo il razzo, altri 2 Short con struttura/regia/ambienti diversi.
