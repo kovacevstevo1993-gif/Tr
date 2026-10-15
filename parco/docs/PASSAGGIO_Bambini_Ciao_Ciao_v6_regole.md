@@ -20,3 +20,10 @@
 - 15/10: i modelli gratuiti Pollinations NON usano l'immagine di riferimento (flux-2-dev-free dà errore 400 su edits; sdxl-lightning-free inventa un altro personaggio: una volpe). Gemini: quota 0 (429). Pose nuove vere = solo con saldo Pollinations (klein).
 - 15/10, utente: "Va bene anche la volpe" -> la volpe (/tmp -> assets/s/volpe.png) è ammessa come nuovo personaggio. Attenzione: col modello gratuito ogni immagine è una volpe diversa, quindi si anima solo con la sua unica immagine (deformazioni del motore).
 - 15/10, utente: "È sempre un cambiamento, fai anche le altre storie, ingegnati per tutto, come fare e cosa fare, fai tutto te" -> decidere da soli storie, regia, asset, e consegnare.
+
+## Short fatti il 15/10/2026 (tutti consegnati in chat con miniatura e testi; SEO in docs/)
+- short_razzo_luna.mp4 (short_razzo.py: motore nuovo "corpo vivo" senza sottotitoli, personaggi grandi e centrali; base per i successivi)
+- short_nascondino.mp4 (short_nascondino.py, volpe = assets/pose/volpe_salto.png, unica posa; bosco_autunno = bosco ricolorato)
+- short_festa_sorpresa.mp4 (short_festa.py: stanza, luci spente/accese, candeline disegnate, panna sullo schermo, palloncini)
+- I nuovi motori importano short_razzo e sostituiscono EV/JUMPS/VOICES. Correzioni locali: renderpart + concat ffmpeg.
+- Trappola: word() trovava "soffia" dentro "soffiare": ora confronto esatto della parola.

@@ -38,6 +38,9 @@ E = E_
 
 
 def word(k, w, frac=0.5):
+    import re
+    for (ww, a, b) in WD.get(k, []):
+        if re.sub(r"[^\wàèéìòù']", "", ww.lower()) == w.lower(): return V[k] + a
     for (ww, a, b) in WD.get(k, []):
         if w.lower() in ww.lower(): return V[k] + a
     return V[k] + D[k] * frac
@@ -57,7 +60,7 @@ T_DISCO = word("n6", "compleanno") - 0.2
 
 CAKE = (600.0, 1330.0, 360.0)                    # torta sul tavolino (x, base, larghezza)
 GIFT = (560.0, 1800.0, 230.0)
-POS = {"chip": (200.0, 1620.0), "spike": (900.0, 1610.0), "mouse": (330.0, 1830.0), "ele": (810.0, 1820.0)}
+POS = {"chip": (140.0, 1610.0), "spike": (930.0, 1600.0), "mouse": (370.0, 1830.0), "ele": (820.0, 1820.0)}
 DOOR = (1080.0, 1650.0)
 
 
