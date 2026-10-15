@@ -299,3 +299,4 @@
 ## REGOLA N.33 (utente, 15/10/2026): TESTI COERENTI CON LA DATA DI PUBBLICAZIONE
 - Errore del 14/10 (commento fissato short 8): "A novembre ti hanno trattenuto qualcosa nel cedolino?" mentre lo short esce a meta' ottobre: novembre non e' ancora arrivato. L'utente: "che domanda e' che siamo a ottobre?".
 - Regola: prima di consegnare titolo, descrizione, commento e copione, controllare la data di oggi/pubblicazione: mai parlare al passato di cose future (cedolino, pagamento, trattenute). Domande al pubblico solo su cose che la gente puo' gia' sapere (quanto prende, se ha fatto il 730), o al futuro ("cosa aspettarti a novembre").
+- Stesso errore trovato il 15/10 nel video 6 gia' pubblicato: blocco 13 (chiusura) dice "se a novembre ti hanno trattenuto qualcosa". Il resto del video e lo short 8 sono al presente/futuro (corretti). Il video pubblicato non si cambia senza ordine dell'utente.
