@@ -315,3 +315,9 @@
 - Motore short 8: 19-.../sorgenti (scenes8.js + base.html + build.py + render.py + checktempi.py + sheet.py + qa7.sh). Migliorie decise 14/10: filetto verde sulle schede, barra di avanzamento 6 trattini, calendari, frecce su/giu'. Per il prossimo short copiare da li'. Serve `pip install playwright` (browser in /opt/pw-browsers/chromium-1194).
 - Regole nuove: N.33 (date/tempi verbali, script qa/check_data.py dentro qa_copione e qa_testi), N.34 (rilettura da spettatore PRIMA della consegna), N.35 (mai dare per scontato che non sia pubblicato).
 - Crediti vidIQ: 35 (rinnovo 11/11). Prossimo: solo su ordine dell'utente (video lungo 7, risposte ai commenti, fidelizzazione video 6).
+
+## ERRORE DEL 15/10/2026: SALDO vidIQ SCRITTO SBAGLIATO
+- Nel file c'era "Crediti vidIQ: 35 (rinnovo 11/11)"; vidiq_balance il 15/10 dice 0 crediti, rinnovo 25/10/2026. Regola (gia' scritta il 12/10, ribadita): il saldo si legge SEMPRE con vidiq_balance (gratis) prima di parlarne o pianificare; mai fidarsi del numero scritto nei file.
+
+## STATO 15/10/2026 - VIDEO LUNGO 7, cartella 20-video-lungo-7
+- Ricerca fatta (ricerca-15-10-2026.md, solo dati gratis: vidIQ a 0 crediti). Argomento scelto da Claude: PENSIONE A 64 ANNI PER TUTTI, il conto di quanto si perde col ricalcolo contributivo. Da far confermare all'utente: titolo/angolo; poi (solo su ordine) fatti su fonti ufficiali e copione.
