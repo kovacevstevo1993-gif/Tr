@@ -309,3 +309,9 @@
 ## REGOLA N.35 (utente, 15/10/2026): MAI DARE PER SCONTATO CHE UN VIDEO NON SIA ANCORA PUBBLICATO
 - Errore del 15/10: ho ricontrollato lo short 8 e ho scritto "prima che tu lo pubblichi", ma l'utente lo aveva gia' pubblicato (regola: appena finito, lo programma subito). Non avevo verificato.
 - Regola: il controllo completo (N.34) si fa SEMPRE prima della consegna; dopo la consegna considerare il video gia' pubblicato/programmato. Se serve sapere se e' online: curl su /videos o /shorts PRIMA di dirlo.
+
+## STATO 15/10/2026 - SHORT 8 FINITO E PUBBLICATO (per la chat nuova)
+- Short 8 (teaser video 6, cartella 19-short-8-teaser-video-lungo-6): copione, DURATE.txt, clip S8-blocco01..06.mp4, pacchetto.txt (commento corretto N.33, descrizione con "esempio"), miniatura-short8.png (con etichetta ESEMPIO). Pubblicato dall'utente.
+- Motore short 8: 19-.../sorgenti (scenes8.js + base.html + build.py + render.py + checktempi.py + sheet.py + qa7.sh). Migliorie decise 14/10: filetto verde sulle schede, barra di avanzamento 6 trattini, calendari, frecce su/giu'. Per il prossimo short copiare da li'. Serve `pip install playwright` (browser in /opt/pw-browsers/chromium-1194).
+- Regole nuove: N.33 (date/tempi verbali, script qa/check_data.py dentro qa_copione e qa_testi), N.34 (rilettura da spettatore PRIMA della consegna), N.35 (mai dare per scontato che non sia pubblicato).
+- Crediti vidIQ: 35 (rinnovo 11/11). Prossimo: solo su ordine dell'utente (video lungo 7, risposte ai commenti, fidelizzazione video 6).
