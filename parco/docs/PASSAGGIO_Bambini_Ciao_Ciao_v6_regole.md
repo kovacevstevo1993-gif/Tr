@@ -17,3 +17,6 @@
 - "Non mettere i sottotitoli che non hanno senso" -> NIENTE sottotitoli nel video (solo hook/scritte di scena se servono).
 - "Più centrale tutto" / "Perché i personaggi sono solo nella parte bassa e il resto è vuoto" -> personaggi GRANDI e al CENTRO dell'inquadratura (camera più vicina), niente metà alta vuota.
 - "Fanne anche altri 2, falli diversi dagli altri perché sembrano tutti uguali, e migliorali" -> dopo il razzo, altri 2 Short con struttura/regia/ambienti diversi.
+- 15/10: i modelli gratuiti Pollinations NON usano l'immagine di riferimento (flux-2-dev-free dà errore 400 su edits; sdxl-lightning-free inventa un altro personaggio: una volpe). Gemini: quota 0 (429). Pose nuove vere = solo con saldo Pollinations (klein).
+- 15/10, utente: "Va bene anche la volpe" -> la volpe (/tmp -> assets/s/volpe.png) è ammessa come nuovo personaggio. Attenzione: col modello gratuito ogni immagine è una volpe diversa, quindi si anima solo con la sua unica immagine (deformazioni del motore).
+- 15/10, utente: "È sempre un cambiamento, fai anche le altre storie, ingegnati per tutto, come fare e cosa fare, fai tutto te" -> decidere da soli storie, regia, asset, e consegnare.
