@@ -210,9 +210,9 @@ S[24] = [
 ]
 # ---- 25: MA OPEN ENROLLMENT ----
 S[25] = [
-    slide('ONE MORE WINDOW', 342, [E('cal', (180, 270, 780, 660), None, head='ADVANTAGE ONLY', big='JAN 1-MAR 31', col=gold, size=80),
-                                   E('step', (900, 330, 1790, 460), 'switch', n=1, text='SWITCH ADVANTAGE PLANS'),
-                                   E('step', (900, 500, 1790, 630), 'original', n=2, text='BACK TO ORIGINAL + DRUG PLAN')],
+    slide('ONE MORE WINDOW', 342, [E('cal', (180, 270, 780, 660), None, head='ADVANTAGE ONLY', big='JAN 1-MAR 31', sub='ONE MORE CHANCE', col=gold, size=80),
+                                   E('step', (880, 330, 1700, 460), 'switch', n=1, text='SWITCH ADVANTAGE PLANS'),
+                                   E('step', (880, 500, 1700, 630), 'original', n=2, text='BACK TO ORIGINAL + DRUG PLAN')],
           'FOR MEDICARE ADVANTAGE MEMBERS', gold),
 ]
 # ---- 26: RECAP ----
