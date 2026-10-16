@@ -109,7 +109,7 @@ def draw2(img, t):
         hl = (i == 9 and t >= ts[6])
         seq(img, t, ts[0] + 0.25 + i * 0.14, car(i + 1, hl), car_x(i), 260, shadow=6, dur=0.4)
     if t >= ts[6]:
-        burst(img, t, ts[6], car_x(9), 260, n=10, color=GOLD, rad=150, seed=4)
+        burst(img, t, ts[6], car_x(9), 260, n=10, color=GOLD, rad=70, seed=4)
     seq(img, t, ts[1], chip6w("RIDERS 65+", 400), 420, 450, shadow=6)
     seq(img, t, ts[2], chip6w("RIDERS WHO NEED A LITTLE HELP", 700), 1010, 450, shadow=6)
     seq(img, t, ts[3], pill_spr("WHEN THEY ASK", 40, 420, 76, GOLD, GREEN_D, border=(168, 118, 40), track=2), 1620, 450, shadow=8)
