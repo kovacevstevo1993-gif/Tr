@@ -1161,7 +1161,7 @@ def draw35(img, t):
     common(img, t, "NUMBER TEN")
     hero(img, t, ts, 10, "A NOTE FROM YOUR DOCTOR", it=2)
     seq(img, t, ts[1], pill("THE ONE ALMOST NOBODY KNOWS", 40, 820, 86, IVORY, GREEN_D, GOLD), 1120, 560, shadow=8)
-    s_, a, p = pop(t, last_t(35, ts[2]), 0.45)
+    s_, a, p = pop(t, last_t(35, ts[2]), 0.22)
     if p > 0:
         put(img, sprite("note35", 300, 360, lambda c: ic_doc_note(c, 150, 180, 2.4)), 430, 560, scale=s_, alpha=a, shadow=12, rot=-5)
 
@@ -1326,7 +1326,7 @@ def draw44(img, t):
     seq(img, t, ts[0], sprite("cm44", 460, 380, lambda c: ic_comment(c, 230, 180, 2.4)), 520, 500, shadow=12)
     seq(img, t, ts[0] + 0.4, T("WHICH ONE SURPRISED YOU MOST?", 44, IVORY, 900), 1260, 400)
     seq(img, t, ts[1], pill("TELL ME BELOW", 44, 500, 92, GOLD, GREEN_D, (168, 118, 40)), 1260, 560, shadow=10)
-    seq(img, t, last_t(44, ts[2]), T("I READ EVERY COMMENT", 40, SAGE, 800), 1260, 700)
+    seq(img, t, last_t(44, ts[2]), T("I READ EVERY COMMENT", 40, SAGE, 800), 1260, 700, dur=0.33)
 
 # ============================================================ BLOCCO 45 - like e iscriviti
 def draw45(img, t):
