@@ -3,6 +3,8 @@
 LEGGERE ANCHE /PASSAGGIO-GENERALE.md (root del repo): mappa di TUTTI i progetti (Senior Advantage, Money Backstory, Conti in Pensione, Bambini Ciao Ciao), rami e file di stato di ognuno. Quando l'utente dice "tutto" o "dalla A alla Z" intende tutto il progetto, non solo questa chat.
 CHAT INTERA di questa sessione (Costco, 63 slide, miniature, pacchetto, errori e regole): senior_advantage/chat/2026-10-07_sessione-01JMto9-slide-costco-63-blocchi-miniature-pacchetto.md
 
+## >>> 16/10/2026 - PROSSIMO LUNGO 6: ricerca gratuita fatta (RICERCHE-VIDIQ.md sezione 12). Short 9 Aeroporto = unico partito (309 view). Proposta in attesa di conferma: AMTRAK/TRENO over 65 (virale 177K in 8 giorni). Copione solo su ordine. <<<
+
 ## >>> STATO ATTUALE 13/10/2026 - VIDEO LUNGO 5 AEROPORTO (LEGGERE PER PRIMO; piu in basso nel file ci sono le note con le durate di tutti i blocchi) <<<
 - Slide 1-64 TUTTE fatte, controllate fotogramma per fotogramma e mandate (video_aeroporto/V5-blocco01..64.mp4; codice code/long5_b01_05.py, long5_b06_15.py, long5_b16_20.py, long5_b21_30.py, long5_b31_50.py, long5_b51_64.py). Blocco 2 rifatto con 8 caselle piene (567 fotogrammi). Copione corretto: blocco 26 e blocco 53 (COPIONE-VIDEO-AEROPORTO.md); rimborso verificato su eCFR 14 CFR 260.6.
 - Pacchetto FATTO e mandato in chat: senior_advantage/PACCHETTO-VIDEO-AEROPORTO.md (playlist "Help Programs for Seniors: Meals, Bills & More", titolo "Flying Over 60? Airports and Airlines Owe You These 8 Things (If You Ask)", capitoli dalle durate dell'utente, 22 tag, commento).

@@ -261,3 +261,18 @@ Trascrizione "5 Bills You Don't Have To Pay After 65" (struttura): gancio "born 
 - Titolo short "Flying Over 60? 8 Things You Can Ask for at the Airport (Almost Nobody Does) ✈️": punteggio vidIQ 96/100.
 - keyword "seniors airport" (research, US): seme <750/mese. Correlate utili: senior travel 57.592/mese (conc. 27); senior flights 36.240 (conc. 15); airport tips 34.006 (conc. 29, +27%); senior travel tips 32.126 (conc. 30); travel tips for seniors 24.138 (conc. 24, +381%); airport security 32.761 (conc. 64, alta). Nomi di canali concorrenti (the senior traveler, susan parker travel, passport pro) NON usati nei tag. Titoli concorrenti: "flight attendants wish seniors knew these 10 boarding secrets" 29.818; "flying after 60 in uk: 7 legally protected rights airlines hope you never claim" 33.797.
 - Tag short 9 aggiornati con: travel tips for seniors, senior flights, airport tips.
+
+## 12. RICERCA PROSSIMO LUNGO 6 (16/10/2026, 0 crediti, ricerca YouTube "questo mese" ordinata per view)
+### 12a. Stato canale (letto da YouTube 16/10)
+Short 9 AEROPORTO (v-u3n1zHSno) 309 view = l'unico partito (gli altri short 32-107). Lunghi: Aeroporto (ovA7BP_I-rU, 2 giorni) 2 view; Bollette (91MmakhwyjM) 41; Costco (w-GQwECwTXA) 9; SNAP 10; lungo 1 5. Conclusione: il tema VIAGGI funziona col nostro pubblico.
+### 12b. Cosa va ora (view | eta | durata | canale | titolo)
+- 1.122.723 | 3 sett | 17:13 | Sharon Dawson | Flying Over 65? Why Airlines Quietly Treat You Different
+- 411.334 | 2 sett | 14:12 | The Terminal Traveler | I Learned This Packing Trick From a Flight Attendant
+- **177.401 | 8 giorni | 17:48 | TheOriginPlate | 12 Things Amtrak Never Tells Seniors Until They're Onboard** (U4EAHZMKHLM); stesso canale 15.851 in 3 giorni "...Until They Get Off the Train"; 28K "7 Amtrak Mistakes Seniors Make on Their First Sleeper Trip"; 9,5K "5 Free Amtrak Perks Seniors Over 65 Almost Never Claim"
+- Olivia Brooks On Amtrak: 39.906 "Seniors: Don't Book an Amtrak Bedroom - Do This Instead!", 19.869, 19.595, 11.127
+- 102.108 | The Senior Traveler | Flying Over 60? What to Say When Asking for a First Class Upgrade!
+- 93.825 | 2 sett | 20:50 | Senior Travel Insider | 9 TSA Secrets Every Traveler Over 60 Should Know in 2026
+- 36.157 | 2 giorni | Sharon Dawson | If You're Over 65, Airlines Will Quietly Give You These 9 Things (If You Ask); 30.049 | 1 giorno | The Airport Lounge Secret Most Seniors Never Use (And It's FREE)
+- Crociere: 84.818 repositioning cruises; 70.424 15 cruise hacks; 47.410 7 best cruise lines; "Why Cruise Lines Quietly Treat Passengers Over 65 Differently" 20.175
+- Fuori tema canale (salute, Messico, Canada, banca): ignorati. Hotel: tutto sotto 300 view (tema morto). "Senior Benefits Start at Age 55 (Not 65!)" Low Income Relief 307.898.
+### 12c. Proposta: lungo 6 = AMTRAK / TRENO over 65 (seguito naturale dell'aeroporto, stessa formula dello short 9 che e partito). Fatti DA VERIFICARE su amtrak.com prima del copione (sconto senior 65+, assistenza, bagagli, posti, cancellazioni).
