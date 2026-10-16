@@ -35,6 +35,7 @@ Tre canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 - Ogni regola nuova dell'utente va scritta subito nel repo, parola per parola.
 
 ## Come lavora l'utente
+- LINGUA (16/10/2026, ordine utente): rispondere SEMPRE in ITALIANO. In inglese solo i testi per i video (copioni, titoli, descrizioni, tag).
 - REGOLA ASSOLUTA (03/10/2026): rispondere SOLO a quello che chiede, il minimo. Niente spiegazioni, riepiloghi, tabelle, note, offerte o domande non richieste. Ogni parola in più spreca crediti e chat (non sono illimitati). Se chiede il pacchetto (titolo, descrizione, tag), dare solo quello.
 - REGOLA ASSOLUTA (ultima parola dell'utente, 06-07/10/2026, annulla il formato senza riquadri): i blocchi di voce / copioni vanno SEMPRE scritti direttamente in chat, ogni blocco in un suo RIQUADRO DI CODICE (```) da copiare con un tocco in CapCut. FORMATO ESATTO: riga con l'etichetta in grassetto **Blocco N**, subito sotto il riquadro ``` col solo testo del blocco, riga vuota tra un blocco e l'altro. Prima riga del messaggio: titolo in grassetto (es. **COSTCO – Video lungo 3**). NIENTE elenco numerato, NIENTE testo semplice fuori dai riquadri. Mandarli TUTTI in un colpo. MAI in un file.
 - Eccezione: passaggio chat e riepiloghi lunghi richiesti: file con SendUserFile, non in chat. I copioni e i blocchi di voce restano SEMPRE in chat.
