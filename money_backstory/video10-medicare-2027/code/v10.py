@@ -174,8 +174,8 @@ S[20] = [
 ]
 # ---- 21: TWO MORE CHANGES ----
 S[21] = [
-    slide('TWO MORE CHANGES', 335, [E('icard', R2[0], 'telehealth', icon='phone', l1='TELEHEALTH FROM HOME', l2='COVERED THROUGH DEC 31, 2027', col=green, c2=green),
-                                    E('icard', R2[1], 'electronically,', icon='doc', l1='ELECTRONIC PRIOR APPROVALS', l2='ADVANTAGE PLANS, FROM JANUARY', col=gold)],
+    slide('TWO MORE CHANGES', 335, [E('icard', R2[0], None, icon='phone', l1='TELEHEALTH FROM HOME', l2='COVERED THROUGH DEC 31, 2027', col=green, c2=green),
+                                    E('icard', R2[1], 'starting', icon='doc', l1='ELECTRONIC PRIOR APPROVALS', l2='ADVANTAGE PLANS, FROM JANUARY', col=gold)],
           'DECISIONS IN YOUR PATIENT PORTAL', gold, psize=50),
 ]
 # ---- 22: THE LETTER ----

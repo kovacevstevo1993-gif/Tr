@@ -1,9 +1,9 @@
 """Un MP4 per blocco: slide in fila + voce del blocco (taglio esatto ai confini dei blocchi). Uso: unisci.py 4-30"""
 import sys, subprocess, glob, os
-a, b = map(int, sys.argv[1].split('-')); fin = [int(x) for x in open('fine_blocchi.txt') if x.strip()]
+LIST = [int(x) for x in sys.argv[1].split(',')]; fin = [int(x) for x in open('fine_blocchi.txt') if x.strip()]
 os.makedirs('consegna', exist_ok=True)
-for n in range(a, b + 1):
-    fs = sorted(glob.glob(f'slide/v10-b{n}-*.mp4')); lst = f'/tmp/c{n}.txt'
+for n in LIST:
+    fs = sorted(glob.glob(f'slide/v10-b{n}-*.mp4')); lst = f'/tmp/c10_{n}.txt'
     open(lst, 'w').write(''.join(f"file '{os.path.abspath(f)}'\n" for f in fs))
     out = f'consegna/V10-blocco{n:02d}.mp4'
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', lst, '-i', f'voce/b{n}_pad.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'libx264', '-profile:v', 'main', '-crf', '16', '-pix_fmt', 'yuv420p', '-r', '30', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', out], check=True)
