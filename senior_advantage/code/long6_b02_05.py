@@ -214,7 +214,11 @@ def rider():
 
 def heavy_bag():
     def fn(c):
-        ic_suitcase(c, 110, 120, 1.8)
+        x, y, k = 110, 120, 1.8
+        c.rrect((x - 30 * k, y - 56 * k, x + 30 * k, y - 36 * k), 8 * k, outline=(214, 164, 96), width=8 * k)
+        c.rrect((x - 44 * k, y - 40 * k, x + 44 * k, y + 40 * k), 12 * k, fill=(214, 164, 96), outline=(160, 112, 60), width=4)
+        c.rrect((x - 24 * k, y - 40 * k, x - 14 * k, y + 40 * k), 2, fill=(160, 112, 60))
+        c.rrect((x + 14 * k, y - 40 * k, x + 24 * k, y + 40 * k), 2, fill=(160, 112, 60))
         for k in range(3):
             c.line([(20 + k * 14, 210), (34 + k * 14, 226)], SAGE, 6)
     return sprite("hbag6", 240, 240, fn)
@@ -226,8 +230,8 @@ def dash_arc(img, t, t0):
     n = int(14 * p)
     for k in range(n):
         u = k / 13
-        x = 760 + 360 * u
-        y = 760 - 340 * math.sin(u * math.pi * 0.62)
+        x = 780 + 490 * u
+        y = 690 + 110 * u - 300 * math.sin(u * math.pi)
         put(img, sprite("dot6", 22, 22, lambda c: c.ell((2, 2, 20, 20), fill=GOLD)), x, y)
 
 def draw4(img, t):
@@ -241,7 +245,7 @@ def draw4(img, t):
     dash_arc(img, t, ts[2])
     s_, a, p = pop(t, ts[2] + 0.6, 0.45)
     if p > 0:
-        put(img, eq_circle("?", CORAL), 940, 330, scale=s_ * 1.1, alpha=a, shadow=10)
+        put(img, eq_circle("?", CORAL), 1025, 330, scale=s_ * 1.1, alpha=a, shadow=10)
     ban(img, t, last_t(4, ts[3]), "THIS VIDEO IS FOR YOU", cy=1010, w=980, h=84, size=46)
 
 # ============================================================ BLOCCO 5 - una frase, lucchetti, troppo tardi
@@ -298,7 +302,7 @@ def draw5(img, t):
     for i, (x, y) in enumerate(LOCKS):
         op = i != 9 and t >= ts[2] + 0.2 + i * 0.12
         seq(img, t, ts[1] + 0.3 + i * 0.05, lock(op), x, y, shadow=6, dur=0.35)
-    seq(img, t, ts[2] + 1.3, pill_spr("UNLOCKS ALMOST ALL", 38, 560, 72, IVORY, GREEN_D, border=GREEN_OK, track=2), 1350, 650, shadow=6)
+    seq(img, t, ts[2] + 1.3, pill_spr("UNLOCKS ALMOST ALL", 38, 560, 72, IVORY, GREEN_D, border=GREEN_OK, track=2), 1350, 745, shadow=6)
     seq(img, t, ts[3], pill_spr("MOST RIDERS SAY IT...", 40, 640, 80, IVORY, GREEN_D, border=GOLD, track=2), 470, 880, shadow=8)
     tl = last_t(5, ts[4])
     s_, a, p = pop(t, tl, 0.5)
