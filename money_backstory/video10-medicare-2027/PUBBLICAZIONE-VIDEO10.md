@@ -70,4 +70,4 @@ medicare 2027 changes,medicare 2027,medicare changes 2027,medicare open enrollme
 Did your Medicare premium go up or down for 2027? Tell me below, and send this to one person on Medicare before December 7.
 
 ## Impostazioni
-IA No. Promozione No. Schermata finale 20 s -> video 1. Miniatura: test A/B con miniature_video10/video10-A-dec7-trap.png e video10-B-959-vs-274.png.
+IA No. Promozione No. Schermata finale 20 s -> video 1. Miniatura: test A/B/C con miniature_video10/video10-A-dec7-trap.png, video10-B-959-vs-274.png, video10-C-medicare-changes-2027.png (C come i virali, 17/10).

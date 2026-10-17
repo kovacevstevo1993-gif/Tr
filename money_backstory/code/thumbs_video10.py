@@ -67,3 +67,48 @@ if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     for n, f in [("A-dec7-trap", A), ("B-959-vs-274", B)]:
         f().save(f"{OUT}/video10-{n}.png"); print("ok", n)
+
+
+def C():
+    """C: come i virali (Medicare on Video / Vision Tribe): 'MEDICARE / CHANGES / 2027' enormi a sinistra (MEDICARE su fascia gialla, 2027 rosso),
+    a destra foglio Medicare inclinato con checklist rossa (PREMIUMS, DRUG COSTS, DEDUCTIBLES, COVERAGE) + freccia rossa in giu' + fascia 'BEFORE DEC 7'."""
+    im = T7.navy_bg().convert("RGBA"); d = ImageDraw.Draw(im)
+    # raggi di luce dietro il testo
+    rays = Image.new("RGBA", (W, H), (0, 0, 0, 0)); rd = ImageDraw.Draw(rays)
+    import math
+    for k in range(14):
+        a = math.radians(k * 360 / 14)
+        rd.polygon([(360, 330), (360 + 1400 * math.cos(a), 330 + 1400 * math.sin(a)), (360 + 1400 * math.cos(a + 0.12), 330 + 1400 * math.sin(a + 0.12))], fill=(255, 255, 255, 18))
+    im = Image.alpha_composite(im, rays); d = ImageDraw.Draw(im)
+    # foglio Medicare inclinato
+    sh = Image.new("RGBA", (440, 520), (0, 0, 0, 0)); sd = ImageDraw.Draw(sh)
+    sd.rectangle([0, 0, 439, 519], fill=(248, 248, 244), outline=BLK, width=6)
+    sd.rectangle([6, 6, 433, 110], fill=(30, 70, 150))
+    sd.rectangle([6, 110, 433, 128], fill=RED)
+    sd.text((220, 60), "MEDICARE", font=P(64, True), fill=WHITE, anchor="mm", stroke_width=3, stroke_fill=BLK)
+    for i, t in enumerate(["PREMIUMS", "DRUG COSTS", "DEDUCTIBLES", "COVERAGE"]):
+        y = 185 + i * 92
+        sd.rectangle([40, y - 30, 100, y + 30], fill=WHITE, outline=BLK, width=5)
+        sd.line([(50, y), (66, y + 20), (104, y - 34)], fill=RED, width=13)
+        sd.text((125, y), t, font=fit_font(sd, "DEDUCTIBLES", 290, 50, True), fill=(25, 30, 45), anchor="lm")
+    sh = sh.rotate(-8, expand=True, resample=Image.BICUBIC)
+    shadow = Image.new("RGBA", sh.size, (0, 0, 0, 0)); shadow.paste((0, 0, 0, 150), mask=sh.split()[3])
+    im.alpha_composite(shadow, (713, 85)); im.alpha_composite(sh, (700, 72)); d = ImageDraw.Draw(im)
+    # freccia rossa in giu'
+    pts = [(1188, 300), (1238, 300), (1238, 520), (1268, 520), (1213, 640), (1158, 520), (1188, 520)]
+    d.polygon(pts, fill=RED); d.line(pts + [pts[0]], fill=BLK, width=7)
+    # testo enorme
+    f1 = fit_font(d, "MEDICARE", 650, 140, True)
+    bb = d.textbbox((360, 120), "MEDICARE", font=f1, anchor="mm")
+    d.polygon([(bb[0] - 30, bb[1] - 22), (bb[2] + 34, bb[1] - 30), (bb[2] + 26, bb[3] + 24), (bb[0] - 36, bb[3] + 30)], fill=YEL, outline=BLK)
+    d.text((360, 120), "MEDICARE", font=f1, fill=BLK, anchor="mm")
+    d.text((360, 270), "CHANGES", font=fit_font(d, "CHANGES", 660, 150, True), fill=WHITE, anchor="mm", stroke_width=12, stroke_fill=BLK)
+    d.text((360, 450), "2027", font=fit_font(d, "2027", 640, 230, True), fill=RED, anchor="mm", stroke_width=14, stroke_fill=WHITE)
+    d.text((360, 450), "2027", font=fit_font(d, "2027", 640, 230, True), fill=RED, anchor="mm", stroke_width=6, stroke_fill=BLK)
+    d.rounded_rectangle([700, 600, 1150, 690], radius=24, fill=YEL, outline=BLK, width=6)
+    d.text((925, 646), "BEFORE DEC 7", font=fit_font(d, "BEFORE DEC 7", 400, 70, True), fill=(20, 20, 20), anchor="mm")
+    return im.convert("RGB")
+
+
+if __name__ == "__main__" and "C" in sys.argv[1:]:
+    C().save(f"{OUT}/video10-C-medicare-changes-2027.png"); print("ok C")
