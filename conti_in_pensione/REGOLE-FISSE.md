@@ -352,3 +352,8 @@
 
 ## STATO 17/10/2026 - SHORT 9 (teaser video lungo 7, rivalutazione tagliata), cartella 21-short-9-teaser-video-lungo-7
 - Copione 6 blocchi (qa_copione rivalutazione short OK, 1084 caratteri) consegnato in chat; ricerca in ricerca-17-10-2026.md (vidIQ 10 crediti, saldo 115, rinnovo 16/11). Video correlato = video lungo 7. Da fare solo su ordine: durate, clip S9-blocco01..06, miniatura, pacchetto (parole chiave gia' nella ricerca).
+
+## REGOLA N.39 (utente, 17/10/2026): UN VIDEO SI CERCA PER DATA/ORDINE, NON PER IL TITOLO DEL PACCHETTO
+- Errore: ho detto che il video 7 "non e' ancora sulla pagina pubblica (forse programmato)". Era PUBBLICATO ed era il PRIMO della lista /videos, ma con il titolo scelto dall'utente ("Pensioni 2027: cosa succedera' davvero ai tuoi assegni?"), diverso da quelli del pacchetto. Io l'ho cercato per titolo e non l'ho riconosciuto.
+- Regola: il video piu' recente e' il PRIMO della lista /videos (o /shorts). L'utente puo' cambiare il titolo: mai dire "non pubblicato" perche' il titolo non coincide. Se il dubbio resta, confrontare la miniatura (i.ytimg.com/vi/<id>/maxresdefault.jpg) con quelle della cartella. Mai dire una cosa non verificata (N.25, N.35).
+- (17/10) Il video lungo 7 e' PUBBLICATO con titolo "Pensioni 2027: cosa succedera' davvero ai tuoi assegni?": e' il video correlato dello short 9.
