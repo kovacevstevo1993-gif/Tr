@@ -368,3 +368,7 @@
 ## REGOLA N.40 (utente, 17/10/2026): SISTEMARE SOLO IL PEZZO SBAGLIATO, MAI RIFARE TUTTO
 - L'utente: "devi capire che rifare sprechi e basta, devi solo sistemare, non rifare sempre tutto". Errore: sulla miniatura dello short 9 ho fatto 3 giri di render interi per spostare due scritte, e nei clip ho ri-renderizzato blocchi interi per un dettaglio.
 - Regola: (1) PRIMA del primo render misurare le posizioni di TUTTI i testi (getBoundingClientRect) e correggere sovrapposizioni/bordi in un solo passaggio; (2) quando c'e' un errore si corregge SOLO quel pezzo (una riga, un elemento, un blocco) e si ricontrolla solo quello; (3) mai rifare da zero cio' che funziona; (4) un solo render finale controllato.
+
+## REGOLA N.41 (utente, 17/10/2026): RISPOSTE AI COMMENTI SOLO CON DATI VERIFICATI, DUBBI DETTI PRIMA
+- Errore: ho dato una risposta al commento (tredicesima/quattordicesima di chi e' in pensione da marzo 2026) con importi presi da giornali, mesi non certi e una frase sulle tasse che forse non vale per lui; i dubbi li ho detti solo quando l'utente ha chiesto "sei sicuro?". L'utente: "che senso ha se rispondo a cazzo?".
+- Regola: prima di dare una risposta a un commento, verificare ogni dato su fonte ufficiale (inps.it) e scrivere solo cio' che vale per QUELLA persona; se manca un dato (lordo, decorrenza), chiederlo nella risposta invece di stimare. Mai consegnare una risposta con dubbi non detti. Mai fare verifiche dopo una domanda dell'utente senza suo ordine (N.13).
