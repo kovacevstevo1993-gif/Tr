@@ -256,3 +256,32 @@ Trascrizione "5 Bills You Don't Have To Pay After 65" (struttura): gancio "born 
 ### 10d. Fatti da usare se si sceglie viaggio/aeroporto (DA VERIFICARE su tsa.gov, transportation.gov, amtrak.com PRIMA del copione): assistenza sedia a rotelle gratis per legge (ACAA), TSA Cares, regole speciali screening 75+, rimborso/compenso voli cancellati, sconto senior Amtrak 65+ (verificare %), Senior Pass parchi nazionali (gia visto: tema senza domanda, view <1.000).
 
 ### 10e. Spesi altri 5 crediti (trascrizione vidiq_video_transcript del virale PX24ZIMSst8, 1,12M view): struttura = gancio identita+perdita, 7 'differenze', ogni punto con frase da dire parola per parola, storia delle due donne al banco come filo, 'cosa e quando', riepilogo, 'tre cose', libro/link. Saldo 50 crediti. Fatti verificati su pagine ufficiali TSA/eCFR: in COPIONE-VIDEO-AEROPORTO.md.
+
+## 11. SHORT 9 AEROPORTO (14/10/2026, autorizzata dall'utente "falla allora"; 10 crediti: score_title 5 + keyword research 5; saldo 40 -> 30, solo add-on, rinnovo 25/10)
+- Titolo short "Flying Over 60? 8 Things You Can Ask for at the Airport (Almost Nobody Does) ✈️": punteggio vidIQ 96/100.
+- keyword "seniors airport" (research, US): seme <750/mese. Correlate utili: senior travel 57.592/mese (conc. 27); senior flights 36.240 (conc. 15); airport tips 34.006 (conc. 29, +27%); senior travel tips 32.126 (conc. 30); travel tips for seniors 24.138 (conc. 24, +381%); airport security 32.761 (conc. 64, alta). Nomi di canali concorrenti (the senior traveler, susan parker travel, passport pro) NON usati nei tag. Titoli concorrenti: "flight attendants wish seniors knew these 10 boarding secrets" 29.818; "flying after 60 in uk: 7 legally protected rights airlines hope you never claim" 33.797.
+- Tag short 9 aggiornati con: travel tips for seniors, senior flights, airport tips.
+
+## 12. RICERCA PROSSIMO LUNGO 6 (16/10/2026, 0 crediti, ricerca YouTube "questo mese" ordinata per view)
+### 12a. Stato canale (letto da YouTube 16/10)
+Short 9 AEROPORTO (v-u3n1zHSno) 309 view = l'unico partito (gli altri short 32-107). Lunghi: Aeroporto (ovA7BP_I-rU, 2 giorni) 2 view; Bollette (91MmakhwyjM) 41; Costco (w-GQwECwTXA) 9; SNAP 10; lungo 1 5. Conclusione: il tema VIAGGI funziona col nostro pubblico.
+### 12b. Cosa va ora (view | eta | durata | canale | titolo)
+- 1.122.723 | 3 sett | 17:13 | Sharon Dawson | Flying Over 65? Why Airlines Quietly Treat You Different
+- 411.334 | 2 sett | 14:12 | The Terminal Traveler | I Learned This Packing Trick From a Flight Attendant
+- **177.401 | 8 giorni | 17:48 | TheOriginPlate | 12 Things Amtrak Never Tells Seniors Until They're Onboard** (U4EAHZMKHLM); stesso canale 15.851 in 3 giorni "...Until They Get Off the Train"; 28K "7 Amtrak Mistakes Seniors Make on Their First Sleeper Trip"; 9,5K "5 Free Amtrak Perks Seniors Over 65 Almost Never Claim"
+- Olivia Brooks On Amtrak: 39.906 "Seniors: Don't Book an Amtrak Bedroom - Do This Instead!", 19.869, 19.595, 11.127
+- 102.108 | The Senior Traveler | Flying Over 60? What to Say When Asking for a First Class Upgrade!
+- 93.825 | 2 sett | 20:50 | Senior Travel Insider | 9 TSA Secrets Every Traveler Over 60 Should Know in 2026
+- 36.157 | 2 giorni | Sharon Dawson | If You're Over 65, Airlines Will Quietly Give You These 9 Things (If You Ask); 30.049 | 1 giorno | The Airport Lounge Secret Most Seniors Never Use (And It's FREE)
+- Crociere: 84.818 repositioning cruises; 70.424 15 cruise hacks; 47.410 7 best cruise lines; "Why Cruise Lines Quietly Treat Passengers Over 65 Differently" 20.175
+- Fuori tema canale (salute, Messico, Canada, banca): ignorati. Hotel: tutto sotto 300 view (tema morto). "Senior Benefits Start at Age 55 (Not 65!)" Low Income Relief 307.898.
+### 12c. Proposta: lungo 6 = AMTRAK / TRENO over 65 (seguito naturale dell'aeroporto, stessa formula dello short 9 che e partito). Fatti DA VERIFICARE su amtrak.com prima del copione (sconto senior 65+, assistenza, bagagli, posti, cancellazioni).
+### 12d. vidIQ 16/10/2026 (autorizzato dall'utente; 15 crediti: keyword research 5 + trascrizione 5 + score_title 5; saldo 16 -> 1, rinnovo 11/11/2026)
+- "amtrak seniors" 3.918/mese conc. 17,5 (overall 65); "amtrak" 25.993 conc. 64,6; "amtrak tips" 4.480 conc. 44; "amtrak trains" 6.801 conc. 36; "amtrak roomette" 4.658 conc. 22,8; "amtrak accessible bedroom" 4.739 conc. 25; "amtrak sleeper car" 4.634 conc. 28,5; "amtrak bedroom" 4.396 conc. 42; "train travel for seniors" 3.369 conc. 16; "senior travel tips" 25.005 conc. 30 (-43%); "california zephyr" 8.164 (+80%). Sotto 750: amtrak senior discount, amtrak for seniors, amtrak tips for seniors, senior train travel.
+- Trascrizione U4EAHZMKHLM (177K): narratore anziano in prima persona, gancio storia (porta che non c'era), "due regolamenti", 12 sorprese pratiche a bordo, guida venduta a meta, riepilogo, parte onesta, "card" con 3 cose. Contenuto diverso dal nostro (noi: soldi e aiuti verificati).
+- Titolo "If You're Over 65, Amtrak Gives You These 10 Things (If You Ask)": 92/100.
+### 12f. vidIQ 17/10/2026 per pacchetto Amtrak (autorizzato: "controlla su vidiq tutto"; 20 crediti, saldo 150, rinnovo 16/11)
+- matching_terms "amtrak senior": amtrak senior fares news report 4.924 conc. 43,5; amtrak senior discount tips older travelers 4.329 conc. 15,9; the amtrak senior discount mistake that costs retirees hundreds 4.139 conc. 11; amtrak trains senior tip 4.011 conc. 10,2; amtrak trains senior 3.702 conc. 19,2; former amtrak employee 17 things i would never do as a senior 3.366.
+- matching_terms "train travel seniors": amtrak train travel for seniors tips 3.635 conc. 20,3; train travel for seniors 3.369 conc. 16,1.
+- Titoli: "If You're Over 65, Amtrak Gives You These 10 Things (If You Ask)" 92; "Over 65 and Riding Amtrak? 10 Things You Can Ask For (Most Seniors Never Do)" 92; "Amtrak Senior Discount Mistake: 10 Things Riders Over 65 Should Ask For" 87.
+- vidiq_score_thumbnail NON accetta immagini da URL esterni (raw.githubusercontent rifiutato): si puo valutare solo la miniatura gia caricata su YouTube (videoId).
