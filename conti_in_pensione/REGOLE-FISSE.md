@@ -349,3 +349,6 @@
 - Risposte ai commenti (16/10) date in chat con il conto del video 5 (lordo x 13, aliquota, tredicesima senza detrazioni, importo aggiuntivo 154,94 solo sotto ~7.954 euro l'anno), ai toni offensivi si chiede di moderare i termini.
 - Crediti vidIQ: 30 (rinnovo 11/11). Regole nuove di questa chat: N.36 (mai argomento gia' fatto), N.37 (video non in serie, sfondo in movimento, blocchi 500), N.38 (titolo cambiato = dirlo e misurarlo).
 - Prossimo, solo su ordine: short 9 teaser del video 7 (video correlato = video 7), fidelizzazione video 6-7, video lungo 8.
+
+## STATO 17/10/2026 - SHORT 9 (teaser video lungo 7, rivalutazione tagliata), cartella 21-short-9-teaser-video-lungo-7
+- Copione 6 blocchi (qa_copione rivalutazione short OK, 1084 caratteri) consegnato in chat; ricerca in ricerca-17-10-2026.md (vidIQ 10 crediti, saldo 115, rinnovo 16/11). Video correlato = video lungo 7. Da fare solo su ordine: durate, clip S9-blocco01..06, miniatura, pacchetto (parole chiave gia' nella ricerca).
