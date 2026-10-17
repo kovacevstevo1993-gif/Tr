@@ -27,3 +27,4 @@ MINIATURE
 18. Stile dei video pubblicati (sfondo verde acqua a raggi, numeri giganti con contorno scuro, palline rosso/verde, striscia bianca con bordo giallo), layout DIVERSO dalla precedente, con la parola PENSIONI grande e la frase dell'utente. Controllare ogni immagine (testi tagliati/sovrapposti) prima di mandarla.
 21. Il video piu recente e il PRIMO della lista /videos o /shorts, anche se il titolo e diverso dal pacchetto: mai dire "non pubblicato" senza verificarlo (N.39).
 22. Sistemare solo il pezzo sbagliato, mai rifare tutto; misurare i testi PRIMA del primo render, un solo render finale (N.40).
+23. Video e short MAI uguali ai precedenti: chiusura, struttura/numero blocchi, apertura, frasi fisse e grafica sempre diversi (short e lunghi).
