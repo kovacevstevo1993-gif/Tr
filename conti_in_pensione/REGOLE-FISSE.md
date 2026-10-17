@@ -357,3 +357,7 @@
 - Errore: ho detto che il video 7 "non e' ancora sulla pagina pubblica (forse programmato)". Era PUBBLICATO ed era il PRIMO della lista /videos, ma con il titolo scelto dall'utente ("Pensioni 2027: cosa succedera' davvero ai tuoi assegni?"), diverso da quelli del pacchetto. Io l'ho cercato per titolo e non l'ho riconosciuto.
 - Regola: il video piu' recente e' il PRIMO della lista /videos (o /shorts). L'utente puo' cambiare il titolo: mai dire "non pubblicato" perche' il titolo non coincide. Se il dubbio resta, confrontare la miniatura (i.ytimg.com/vi/<id>/maxresdefault.jpg) con quelle della cartella. Mai dire una cosa non verificata (N.25, N.35).
 - (17/10) Il video lungo 7 e' PUBBLICATO con titolo "Pensioni 2027: cosa succedera' davvero ai tuoi assegni?": e' il video correlato dello short 9.
+
+## ISTRUZIONI UTENTE (17/10/2026, short 9)
+- Durate dagli screenshot: 400, 322, 322, 298, 304, 257 = 1903 fotogrammi (21-short-9-teaser-video-lungo-7/DURATE.txt).
+- "Falli piu' professionali le slide, tutte devono essere diverse cosi' non rischiamo la monetizzazione per contenuti ripetitivi, fallo il meglio che puoi" + "Non stravolgere": ogni blocco con una composizione NUOVA (grafico a barre, scala con soglia, giornale, telefono...), ma stesso stile del canale (titoletto, barra di avanzamento, schede con filetto verde, didascalia nel riquadro in basso, verde acqua, sfondo in movimento lento).
