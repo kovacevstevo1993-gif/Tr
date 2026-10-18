@@ -11,7 +11,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CW, CH = 920, 1180
 AX, AY = 460, 1120
 K = 8
-TARGET_H = {"mouse": 640, "chip": 600, "spike": 560, "ele": 660}   # altezza (px) del personaggio in posa 'tiene' alla scala 1
+TARGET_H = {"mouse": 640, "chip": 600, "spike": 560, "ele": 660, "volpe": 900}   # altezza (px) del personaggio in posa 'tiene' alla scala 1
 CACHE = "/tmp/claude-0/morph_cache8s"
 os.makedirs(CACHE, exist_ok=True)
 _al = {}
@@ -29,9 +29,11 @@ _sc = {}
 def _scale(chi):
     """scala che porta la posa 'tiene' all'altezza TARGET_H"""
     if chi not in _sc:
-        im = Image.open(_src(chi, "tiene")).convert("RGBA")
+        f = _src(chi, "tiene")
+        if not os.path.exists(f): f = _src(chi, "neutro")             # personaggi nuovi (pose_free.py)
+        im = Image.open(f).convert("RGBA")
         a = np.asarray(im.getchannel("A")) > 150; ys = np.nonzero(a.any(axis=1))[0]
-        _sc[chi] = TARGET_H[chi] / float(ys.max() - ys.min())
+        _sc[chi] = TARGET_H.get(chi, 900) / float(ys.max() - ys.min())
     return _sc[chi]
 
 def aligned(chi, pose):

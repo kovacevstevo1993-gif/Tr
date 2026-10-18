@@ -34,6 +34,9 @@ AMB = {
     "cielo": ("high up in the sky in golden morning light: an endless sea of big soft fluffy white clouds below the horizon, a deep blue sky above with a few small clouds, glowing sun, very airy, bright and magical", "bright blue sky and soft white clouds, no ground, no hills, no trees", "collina"),
     "mare": ("a wide turquoise sea seen from low over the water, gentle waves with white foam, a small green tropical island with palm trees on the far horizon, sunny blue sky with a few cloud puffs", "calm turquoise water with small waves and foam, no boats, no land, free of objects", "collina"),
     "cielo_tramonto": ("high in the sky at SUNSET: a sea of fluffy clouds lit pink and orange below the horizon, a big glowing low sun, a purple blue and orange gradient sky, a few tiny stars appearing at the top", "pink and orange fluffy clouds and sky, no ground, no hills, no trees", "collina"),
+    "neve_collina": ("a snowy winter hill meadow in bright morning sun: soft deep white snow, snow-covered pine trees at the sides, a little wooden cottage with a snowy roof far away, light blue sky, gentle falling snowflakes, sparkling cozy and magical", "smooth flat soft white snow, free of objects, no footprints, no rocks"),
+    "neve_discesa": ("the same snowy winter world, a long steep snowy slope going down into a forest of tall snow-covered pine trees on both sides, a frozen blue lake visible far below, bright blue sky", "smooth flat soft white snow, free of objects, no rocks", "neve_collina"),
+    "neve_sera": ("the same snowy winter village at dusk: cozy little wooden houses with warm glowing windows and snowy roofs, string lights, a deep blue and violet evening sky with a big moon and stars, gentle falling snowflakes", "smooth flat soft white snow glowing blue, free of objects", "neve_collina"),
     "camera_sera": "a child's bedroom in the evening with a small bed, a warm night lamp, a window showing a starry night sky and moon",
 }
 
