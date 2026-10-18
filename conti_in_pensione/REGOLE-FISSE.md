@@ -393,3 +393,7 @@
 ## ERRORE DEL 18/10/2026 (ricerca short 10 iscrizione) - N.30 violata
 - Ho fatto la chiamata vidIQ outliers in inglese (5 crediti: solo short "please subscribe" indiani) e le ricerche web in inglese. L'utente: "Peccato che stai cercando video in inglese".
 - Regola (N.30 ribadita): per questo canale OGNI ricerca (vidIQ, Google, YouTube) si fa in ITALIANO e su video/canali ITALIANI. Se uno strumento non accetta l'italiano (outliers short), NON usarlo: usare la ricerca pubblica di YouTube con gl=IT&hl=it (gratis) e Google in italiano.
+
+## STATO 18/10/2026 - SHORT 10 (iscrizione al canale), cartella 22-short-10-iscrizione
+- Ordine utente: short per far iscrivere, con "aiutaci ad arrivare a tot iscritti, non vi costa niente, a noi aiuta tanto ad andare avanti, ci mettiamo tanto a fare le ricerche per aiutare la gente", migliorato al massimo. Ricerca in ricerca-18-10-2026.md (modello @luciapirruccio 19K: problema + promessa + seguimi).
+- Copione 5 blocchi (diverso dagli short 4-9 che ne hanno 6), qa_copione pensione short OK, 1003 caratteri: prova di utilita' (tredicesima 1.000 -> 770, novembre), lavoro sulle fonti ufficiali, risposte col conto nei commenti, richiesta "da 200 a mille iscritti, non costa niente, a noi cambia tutto", chiusura nuova "scrivi: ci sono!". Iscritti al 18/10: 225. Video correlato = video lungo 7. Da fare solo su ordine: durate, clip S10, miniatura, pacchetto.
