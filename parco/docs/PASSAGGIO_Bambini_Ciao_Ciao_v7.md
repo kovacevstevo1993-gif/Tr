@@ -32,3 +32,8 @@ Tutto il progetto è su `main`, cartella `parco/`. Prima leggere questo file, po
 2. Short con gli animali nuovi, voci GIÀ pronte e controllate: `voci_salti.py` (audioN, "Chi salta più in alto?" allo stagno), `voci_trenino.py` (audioO, "Il trenino degli animali", contare; n5 da correggere), `voci_ombre.py` (audioP, "Indovina chi è", ombre). Ambienti da generare (stagno, binari/campagna, sfondo ombre).
 3. Poi "altri 2 short migliori e totalmente diversi".
 4. Pacchetto testi di "Balla con la volpe" quando lo chiede.
+
+## 6. ANALISI CANALE 18/10 (dati pubblici, gratis: feed RSS + pagina Shorts; 57 iscritti)
+- Fino al 29/09 (clip video vere, 25-35 s, topolino): 387-509 view, Versi animali 3.378, Puliamo la spiaggia 85.709.
+- Dal 03/10 (motore Python: immagini ferme deformate, 40-52 s, personaggi nuovi ogni volta): barattolo 17, seme 28, castello 10, mongolfiera 5, neve 5, razzo 1, nascondino 0.
+- Cause probabili: movimento "da foto" (chi scorre se ne va subito, YouTube smette di mostrarli), durata troppo lunga, personaggio ricorrente (topolino) sparito. Per confermare servono le statistiche di Studio dell'utente ("ha continuato a guardare / ha scorso via", fonti di traffico).
