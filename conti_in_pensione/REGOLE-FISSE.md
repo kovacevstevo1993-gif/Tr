@@ -389,3 +389,7 @@
 ## ERRORE DEL 18/10/2026 (commento '1270.pensione' sul video 6) - rafforza N.26
 - Ho risposto con un riassunto del video invece del conto. L'utente: "Non e' una risposta, e' un riassunto di quello che dice il video, tu fai calcoli".
 - Regola: a un commento con un importo si risponde SEMPRE con il CONTO su quell'importo (cifre in euro per quella persona: es. addizionali al mese = reddito annuo x aliquota / 11 rate, acconto, netto di novembre e dicembre). Mai elencare i casi del video. Se manca un dato (lordo/netto, regione, 730), fare il conto con l'ipotesi dichiarata e chiedere il dato per il numero esatto.
+
+## ERRORE DEL 18/10/2026 (ricerca short 10 iscrizione) - N.30 violata
+- Ho fatto la chiamata vidIQ outliers in inglese (5 crediti: solo short "please subscribe" indiani) e le ricerche web in inglese. L'utente: "Peccato che stai cercando video in inglese".
+- Regola (N.30 ribadita): per questo canale OGNI ricerca (vidIQ, Google, YouTube) si fa in ITALIANO e su video/canali ITALIANI. Se uno strumento non accetta l'italiano (outliers short), NON usarlo: usare la ricerca pubblica di YouTube con gl=IT&hl=it (gratis) e Google in italiano.
