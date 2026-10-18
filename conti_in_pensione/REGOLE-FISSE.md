@@ -425,3 +425,8 @@
 - L'utente: "se fai sempre le stesse ricerche escono sempre gli stessi video simili e non ha senso". Errore: per il video 8 ho cercato di nuovo "pensioni" (trending, outliers, keyword) come per i video 3-7: sono usciti gli stessi temi (rivalutazione, tredicesima, cedolino, 64 anni).
 - Regola: ogni ricerca per un nuovo video parte da parole DIVERSE da quelle gia' usate (vedi i file ricerca-*.md): prima i suggerimenti di ricerca di YouTube (gratis: suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=it&gl=IT&q=...) su piu' parole (pensionati, pensione di, vivere, tasse, estero...), poi vidIQ solo sui temi nuovi trovati (keyword + outliers 6 mesi in italiano). Confrontare con tutti i video gia' fatti (N.36).
 - Video 8: seconda ricerca fatta (23-video-lungo-8/ricerca-18-10-2026.md), scelta aggiornata: "Dove la pensione vale di piu': Italia o estero? Il conto vero". vidIQ saldo 10.
+
+## ISTRUZIONI UTENTE (18/10/2026, video lungo 8 - pensione all'estero)
+- Titolo/angolo confermato: "PENSIONE all'ESTERO: quanto ti resta DAVVERO? Il CONTO VERO con 1.000, 1.500 e 2.000 euro". "Controlla tutto per farlo perfetto."
+- NUOVO nel video lungo: subito DOPO il gancio iniziale, un blocco che chiede di iscriversi perche' ci aiutano ad arrivare all'obiettivo (come lo short 10: siamo ancora pochi, mille iscritti, non costa niente, per noi vuol dire andare avanti).
+- Blocchi di voce: massimo 400 caratteri ciascuno (qa_copione.py ... lungo 400). MENO blocchi possibile (meno lavoro di montaggio per l'utente).
