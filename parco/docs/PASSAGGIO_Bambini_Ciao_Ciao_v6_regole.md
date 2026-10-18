@@ -28,3 +28,4 @@
 - I nuovi motori importano short_razzo e sostituiscono EV/JUMPS/VOICES. Correzioni locali: renderpart + concat ffmpeg.
 - Trappola: word() trovava "soffia" dentro "soffiare": ora confronto esatto della parola.
 - 15/10, utente: "Ci sono, puoi crearne finché ne vuoi di immagini gratis, devi farne una alla volta" -> VERIFICATO: flux-2-dev-free (generations) con SEED FISSO (42) + descrizione del personaggio identica + solo la posa che cambia, UNA richiesta ogni ~15 s, dà lo STESSO personaggio in pose diverse. Script: pose_free.py. Sfondo magenta se il personaggio ha vestiti verdi.
+- 18/10, utente (arrabbiato): "Perché me lo mandi se non è perfetto?" -> REGOLA: mai mandare un video/pacchetto con un difetto noto (es. volpe con una sola posa nel nascondino). Prima si corregge, poi si manda; se qualcosa non si può correggere, dirlo PRIMA e chiedere, non mandarlo.
