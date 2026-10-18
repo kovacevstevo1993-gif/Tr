@@ -285,3 +285,5 @@ Short 9 AEROPORTO (v-u3n1zHSno) 309 view = l'unico partito (gli altri short 32-1
 - matching_terms "train travel seniors": amtrak train travel for seniors tips 3.635 conc. 20,3; train travel for seniors 3.369 conc. 16,1.
 - Titoli: "If You're Over 65, Amtrak Gives You These 10 Things (If You Ask)" 92; "Over 65 and Riding Amtrak? 10 Things You Can Ask For (Most Seniors Never Do)" 92; "Amtrak Senior Discount Mistake: 10 Things Riders Over 65 Should Ask For" 87.
 - vidiq_score_thumbnail NON accetta immagini da URL esterni (raw.githubusercontent rifiutato): si puo valutare solo la miniatura gia caricata su YouTube (videoId).
+### 12g. vidIQ 18/10/2026 titolo SHORT 10 AMTRAK (autorizzato: "controlla anche su vidiq"; 15 crediti, saldo 150 -> 135, rinnovo 16/11)
+- "Over 65 and Riding Amtrak? 3 Things You Can Ask For (Almost Nobody Does) 🚆" 88 (scelto); "Riding Amtrak Over 65? 10 Things You Can Ask For (Almost Nobody Does) 🚆" 87; "Amtrak Over 65? The 1 Box Most Seniors Never Click 🚆" 83. Keyword: riusate 12d/12f (nessuna ricerca nuova).
