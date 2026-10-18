@@ -432,3 +432,7 @@
 - Blocchi di voce: massimo 400 caratteri ciascuno (qa_copione.py ... lungo 400). MENO blocchi possibile (meno lavoro di montaggio per l'utente).
 - (18/10) Video 8: copione 14 blocchi (23-video-lungo-8/copione-blocchi.txt, qa_copione pensione lungo 400 OK, 5028 caratteri, circa 5 minuti). Blocco 2 = richiesta iscrizione (obiettivo mille iscritti). Fatti certi solo da fonti ufficiali italiane; leggi estere (Portogallo, Tunisia, Albania) dette "secondo le guide fiscali", senza cifre non verificabili (scelta di Claude su delega dell'utente: "basta che sia tutto vero"). Da fare solo su ordine: durate, slide V8, miniatura, pacchetto.
 - (19/10) Video 8 slide, ordine utente: "un po' piu' diverse dalle altre, piu' professionali, piu' elementi per far capire meglio, piu' curiose e interessanti da guardare". Durate blocchi 1-11 in 23-video-lungo-8/DURATE.txt (screenshot = ordine di fare le slide). Motore copiato dal V7 in 23-video-lungo-8/sorgenti (specs-v8.js + regia8.js nuovi).
+
+## REGOLA N.45 (utente, 19/10/2026): MAI FERMARSI MENTRE UN LAVORO E' IN CORSO
+- Errore: ho lanciato il render del video 8 in sottofondo e ho chiuso il turno ("ti avviso quando finisce"); l'utente ha dovuto chiedere "quanto manca?" e ha trovato 13 clip gia' pronte e ferme. L'utente: "se no te lo chiedevo stavi fermo?".
+- Regola: un lavoro ordinato si porta fino alla consegna nello stesso turno: render in primo piano (o attendere la fine con Monitor) -> controllo -> SendUserFile. Mai chiudere il turno con un render o un controllo in corso.

@@ -760,7 +760,7 @@ Object.assign(BUILD,{
  stack:(g,head,out)=>{const w=380;lab(g,head,0,-300,36,out?RF_:GF_,'#fff');
   el('rect',{x:-w/2,y:-30,width:w,height:250,rx:22,fill:'url(#g_badge)',stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);txt(g,'PENSIONE',0,108,44,'#fff','900');
   if(!out){el('rect',{x:-w/2,y:-220,width:w,height:170,rx:22,fill:AMB,stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);txt(g,'INTEGRAZIONE',0,-126,38,'#5A3300','900');txt(g,'AL MINIMO',0,-80,32,'#5A3300','bold');}
-  else{el('rect',{x:-w/2,y:-220,width:w,height:170,rx:22,fill:'#06303A',stroke:RED_,'stroke-width':6,'stroke-dasharray':'22 14'},g);txt(g,'NON TI SEGUE',0,-122,40,'#FF8A75','900');}},
+  else{el('rect',{x:-w/2,y:-220,width:w,height:170,rx:22,fill:'#06303A',stroke:RED_,'stroke-width':6,'stroke-dasharray':'22 14'},g);txt(g,'NON TI SEGUE',0,-122,36,'#FF8A75','900');}},
  years:(g)=>{const W=1400;el('rect',{x:-W/2,y:-8,width:W,height:16,rx:8,fill:LT},g);
   el('rect',{x:-W/2,y:-8,width:W/2,height:16,rx:8,fill:'#2FD0A8'},g);el('rect',{x:0,y:-8,width:W/2,height:16,rx:8,fill:RED_},g);el('circle',{r:26,fill:AMB,stroke:'#fff','stroke-width':6},g);
   lab(g,'FINO AL 2023',-W/4,-60,36,DF_,'#fff');lab(g,'ESENZIONE',-W/4,62,36,GRN,'#fff');lab(g,'DAL 2024',W/4,-60,36,DF_,'#fff');lab(g,'CHIUSO PER CHI ARRIVA',W/4,62,36,RED_,'#fff');},
