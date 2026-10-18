@@ -27,7 +27,7 @@ def gen(c, n):
     for k in range(6):
         try:
             t0 = time.time()
-            r = c.predict(handle_file(os.path.join(D, f"start{n}.png")), CLIPS[n] + STYLE, 6, NEG, 5.0, 1, 1, 42, False, api_name="/generate_video")
+            r = c.predict(handle_file(os.path.join(D, f"start{n}.png")), CLIPS[n] + STYLE, 6, NEG, float(os.environ.get("DUR", 5.0)), 1, 1, 42, False, api_name="/generate_video")
             v = r[0]["video"] if isinstance(r[0], dict) else r[0]; shutil.copy(v, out)
             print(f"clip{n} ok in {time.time() - t0:.0f}s", flush=True); return
         except Exception as e:
