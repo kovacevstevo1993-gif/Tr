@@ -26,4 +26,4 @@ amtrak seniors, amtrak senior discount, amtrak for seniors, amtrak tips for seni
 Did you know about the doctor's note? Tell me below 👇 Rules can change, so confirm with Amtrak before you book. The full video with all 10 is right below this short.
 
 ## Impostazioni
-IA No. Promozione No. Copertina: da fare (solo su ordine). Video correlato = video lungo AMTRAK (si imposta sullo short; se lo short esce prima del lungo, lasciare vuoto e impostarlo dopo).
+IA No. Promozione No. Copertina = miniature/copertina-short-10.png. Video correlato = video lungo AMTRAK (si imposta sullo short; se lo short esce prima del lungo, lasciare vuoto e impostarlo dopo).
