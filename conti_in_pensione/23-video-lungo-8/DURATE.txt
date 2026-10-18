@@ -1,0 +1,13 @@
+# Durate blocchi video 8 (V8-blocco01.mp4...) - screenshot CapCut 18-19/10/2026, 30 fps. Lettura N.29: ultimo segno prima della riga + 1.
+# blocco | fine cumulativa | fotogrammi a fine | durata
+1 | 00:22+20f | 680 | 680
+2 | 00:40+10f | 1210 | 530
+3 | 01:02+5f | 1865 | 655
+4 | 01:23+12f | 2502 | 637
+5 | 01:44+12f | 3132 | 630
+6 | 02:04+7f | 3727 | 595
+7 | 02:26+25f | 4405 | 678
+8 | 02:47+20f | 5030 | 625
+9 | 03:10+27f | 5727 | 697
+10 | 03:31+16f | 6346 | 619
+11 | 03:55+10f | 7060 | 714
