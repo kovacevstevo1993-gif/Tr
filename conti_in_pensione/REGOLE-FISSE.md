@@ -409,3 +409,4 @@
 
 ## REGOLA N.43 (utente, 18/10/2026): PAROLE CHIAVE AD ALTO VOLUME, NON A CONCORRENZA BASSA
 - L'utente: "Non voglio la concorrenza bassa, voglio quella alta per avere piu' visualizzazioni". Nei tag/titoli/descrizioni si scelgono e si mettono PRIMA le parole chiave con piu' ricerche (anche se la concorrenza e' alta: pensioni, pensioni ultime notizie, cedolino pensione, info pensioni, pensioni inps, novita' pensioni, pensionati...), non quelle scelte per la concorrenza bassa. Mai consigliare una keyword "perche' ha poca concorrenza".
+- (18/10) Short 10: miniatura/miniatura-short10.png (layout nuovo: PENSIONE gigante + IL CEDOLINO giallo, cedolino dritto con 4 voci '− ? €', banconote che volano via con pallina rossa '?', pillola verde IL CONTO VERO GRATIS, striscia DOVE SPARISCONO I TUOI SOLDI?). Testi misurati (getBoundingClientRect) e guardati: nessuno tagliato o sovrapposto. Pacchetto aggiornato con la miniatura.
