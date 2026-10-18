@@ -420,3 +420,8 @@
 
 ## STATO 18/10/2026 - VIDEO LUNGO 8 (ricerca), cartella 23-video-lungo-8
 - Ordine utente: tema cercatissimo con concorrenza ALTA (N.43), ricerca vidIQ. Fatta: ricerca-18-10-2026.md (vidIQ 15 crediti, saldo 20, rinnovo 16/11). Scelta: MANOVRA 2027 PENSIONI (cosa e' finanziato davvero + conto in euro per importo). Fatti da verificare sul testo ufficiale del ddl (in Parlamento entro il 20/10) prima del copione. Da fare solo su ordine: copione.
+
+## REGOLA N.44 (utente, 18/10/2026): RICERCHE SEMPRE DIVERSE, NON SEMPRE "PENSIONI"
+- L'utente: "se fai sempre le stesse ricerche escono sempre gli stessi video simili e non ha senso". Errore: per il video 8 ho cercato di nuovo "pensioni" (trending, outliers, keyword) come per i video 3-7: sono usciti gli stessi temi (rivalutazione, tredicesima, cedolino, 64 anni).
+- Regola: ogni ricerca per un nuovo video parte da parole DIVERSE da quelle gia' usate (vedi i file ricerca-*.md): prima i suggerimenti di ricerca di YouTube (gratis: suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=it&gl=IT&q=...) su piu' parole (pensionati, pensione di, vivere, tasse, estero...), poi vidIQ solo sui temi nuovi trovati (keyword + outliers 6 mesi in italiano). Confrontare con tutti i video gia' fatti (N.36).
+- Video 8: seconda ricerca fatta (23-video-lungo-8/ricerca-18-10-2026.md), scelta aggiornata: "Dove la pensione vale di piu': Italia o estero? Il conto vero". vidIQ saldo 10.
