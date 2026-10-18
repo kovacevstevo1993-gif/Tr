@@ -3,7 +3,7 @@
 LEGGERE ANCHE /PASSAGGIO-GENERALE.md (root del repo): mappa di TUTTI i progetti (Senior Advantage, Money Backstory, Conti in Pensione, Bambini Ciao Ciao), rami e file di stato di ognuno. Quando l'utente dice "tutto" o "dalla A alla Z" intende tutto il progetto, non solo questa chat.
 CHAT INTERA di questa sessione (Costco, 63 slide, miniature, pacchetto, errori e regole): senior_advantage/chat/2026-10-07_sessione-01JMto9-slide-costco-63-blocchi-miniature-pacchetto.md
 
-## >>> 18/10/2026: SHORT 10 AMTRAK - copione fatto e mandato in chat: COPIONE-SHORT-10-AMTRAK.md (6 blocchi, circa 40 s, correlato al lungo Amtrak). Prossimo: voce utente, screenshot durate = slide subito (layout diversi dagli short precedenti). <<<
+## >>> 18/10/2026 (LEGGERE PER PRIMO): SHORT 10 AMTRAK COMPLETO: copione COPIONE-SHORT-10-AMTRAK.md, 6 slide video_short10/ (code/scenes10.py), pacchetto PACCHETTO-SHORT-10-AMTRAK.md (titolo vidIQ 88), copertina miniature/copertina-short-10.png. Tutto mandato. Dettagli nella sezione SHORT 10 in fondo. Ancora aperto: blocchi 25, 29, 42 del lungo Amtrak con il numero in cifre (solo su ordine). Crediti vidIQ 135. <<<
 
 ## >>> STATO ATTUALE 18/10/2026 - VIDEO LUNGO 6 AMTRAK (LEGGERE PER PRIMO) <<<
 - Short 9 Aeroporto = l'unico partito (309 view al 16/10); per questo il lungo 6 e AMTRAK (viaggi). Ricerca: RICERCHE-VIDIQ.md sezione 12 (12a-12f).
