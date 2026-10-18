@@ -37,11 +37,25 @@ B=HEAD+f"""<circle cx="640" cy="390" r="330" fill="#FF5A43" opacity="0.12" filte
 <g filter="url(#sh)"><circle cx="640" cy="400" r="80" fill="#FFD43B" stroke="#fff" stroke-width="8"/></g><g class="t" text-anchor="middle" {S} stroke-width="10"><text x="640" y="430" font-size="84" fill="#fff">VS</text></g>
 {blocco(470,175,340,62,"2.000 € LORDI",40,"#0D5158","#fff")}
 """+STRIP('DOVE TI RESTANO <tspan fill="#0D5158">PIÙ SOLDI?</tspan>')+END
+
+# C: ITALIA (pallina rossa -5.100) contro i 3 PAESI con il loro verdetto, frecce tratteggiate
+def pill(x,y,w,h,txt,fs,fill,col="#fff"):return f'<g filter="url(#sh)"><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{h/2}" fill="{fill}" stroke="#fff" stroke-width="5"/></g><text x="{x+w/2}" y="{y+h*0.68}" class="t" font-size="{fs}" fill="{col}" text-anchor="middle">{txt}</text>'
+FR=lambda y:f'<path d="M440 430 C560 430 560 {y} 660 {y}" fill="none" stroke="#FFD43B" stroke-width="9" stroke-dasharray="20 14" stroke-linecap="round"/><path d="M660 {y-16} L688 {y} L660 {y+16} Z" fill="#FFD43B"/>'
+C=HEAD+f"""<circle cx="300" cy="420" r="300" fill="#FF5A43" opacity="0.12" filter="url(#gl)"/>
+<g class="t" text-anchor="middle" {S} stroke-width="18"><text x="640" y="118" font-size="96" fill="#fff">PENSIONE <tspan fill="#FFD43B">ALL'ESTERO</tspan></text></g>
+{FR(225)}{FR(395)}{FR(565)}
+{flag('IT',290,282,200,-4)}
+{pill(160,152,260,50,"2.000 € LORDI",28,"#0D5158")}
+{pallina(290,470,118,"url(#re)","-5.100€",50,"IRPEF L'ANNO",26)}
+{flag('PT',770,225,130,4)}{pill(860,197,390,58,"TASSE A SCAGLIONI",30,"#E0402A")}
+{flag('TN',770,395,130,-4)}{pill(860,367,390,58,"TASSATO SOLO 1/5",30,"#F2A900","#0D2A2F")}
+{flag('AL',770,565,130,4)}{pill(860,537,390,58,"0 € DI TASSE OGGI?",30,"#1B9F81")}
+"""+STRIP('DOVE TI CONVIENE? <tspan fill="#0D5158">+ 3 TRAPPOLE</tspan>')+END
 async def main():
     async with async_playwright() as p:
         b=await p.chromium.launch(executable_path='/opt/pw-browsers/chromium-1194/chrome-linux/chrome')
         pg=await b.new_page(viewport={'width':1280,'height':720})
-        for n,h in (('A',A),('B',B)):
+        for n,h in (('C',C),):
             open(f'miniatura-{n}.html','w').write(h)
             await pg.goto(f'file://{os.getcwd()}/miniatura-{n}.html'); await pg.screenshot(path=f'miniatura-{n}.png')
             r=await pg.evaluate("()=>[...document.querySelectorAll('text')].map(t=>{const b=t.getBoundingClientRect();return [t.textContent,Math.round(b.left),Math.round(b.right),Math.round(b.top),Math.round(b.bottom)]})")

@@ -51,4 +51,4 @@ pensione all'estero, pensionati all'estero, pensioni, pensione, pensionati, pens
 Se potessi, dove andresti a vivere con la tua pensione? Scrivilo qui sotto con quanto prendi (lordo o netto): ti rispondiamo con il conto 👇
 
 === IMPOSTAZIONI ===
-IA: No. Promozione a pagamento: No. Miniatura: miniatura/miniatura-A.png (test A/B con miniatura-B.png). Schermata finale: 20 s (video lungo 5 "PENSIONI: TREDICESIMA 2026 DETASSATA?" in mezzo in basso, Iscriviti in basso a destra). Playlist: video lunghi.
+IA: No. Promozione a pagamento: No. Miniatura: miniatura/miniatura-A.png (test A/B con miniatura-C.png). Schermata finale: 20 s (video lungo 5 "PENSIONI: TREDICESIMA 2026 DETASSATA?" in mezzo in basso, Iscriviti in basso a destra). Playlist: video lunghi.
