@@ -37,3 +37,4 @@ Tutto il progetto è su `main`, cartella `parco/`. Prima leggere questo file, po
 - Fino al 29/09 (clip video vere, 25-35 s, topolino): 387-509 view, Versi animali 3.378, Puliamo la spiaggia 85.709.
 - Dal 03/10 (motore Python: immagini ferme deformate, 40-52 s, personaggi nuovi ogni volta): barattolo 17, seme 28, castello 10, mongolfiera 5, neve 5, razzo 1, nascondino 0.
 - Cause probabili: movimento "da foto" (chi scorre se ne va subito, YouTube smette di mostrarli), durata troppo lunga, personaggio ricorrente (topolino) sparito. Per confermare servono le statistiche di Studio dell'utente ("ha continuato a guardare / ha scorso via", fonti di traffico).
+- 18/10 screenshot Studio: Stato account = nessuna violazione, guadagni OK. Castello di sabbia: "ha continuato a guardare" 83,3% (buono) ma pochissime impressioni -> non è che scorrono via: YouTube non lo propone proprio. Causa non visibile da fuori.
