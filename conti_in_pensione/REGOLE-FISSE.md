@@ -385,3 +385,7 @@
 - Regole nuove di questa chat: N.39 (video piu' recente = primo di /videos anche con titolo diverso), N.40 (sistemare solo il pezzo sbagliato, mai rifare tutto; misurare i testi prima del render), N.41 (risposte ai commenti solo con dati verificati, dubbi prima), anti-ripetizione short e lunghi.
 - Chat intera di questa sessione: chat/chat-sessione-7-completa.md.
 - Prossimo, solo su ordine: script anti-ripetizione, risposta verificata a Franco, video lungo 8, short 10.
+
+## ERRORE DEL 18/10/2026 (commento '1270.pensione' sul video 6) - rafforza N.26
+- Ho risposto con un riassunto del video invece del conto. L'utente: "Non e' una risposta, e' un riassunto di quello che dice il video, tu fai calcoli".
+- Regola: a un commento con un importo si risponde SEMPRE con il CONTO su quell'importo (cifre in euro per quella persona: es. addizionali al mese = reddito annuo x aliquota / 11 rate, acconto, netto di novembre e dicembre). Mai elencare i casi del video. Se manca un dato (lordo/netto, regione, 730), fare il conto con l'ipotesi dichiarata e chiedere il dato per il numero esatto.
