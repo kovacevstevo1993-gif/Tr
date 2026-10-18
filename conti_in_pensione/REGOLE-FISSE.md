@@ -436,3 +436,8 @@
 ## REGOLA N.45 (utente, 19/10/2026): MAI FERMARSI MENTRE UN LAVORO E' IN CORSO
 - Errore: ho lanciato il render del video 8 in sottofondo e ho chiuso il turno ("ti avviso quando finisce"); l'utente ha dovuto chiedere "quanto manca?" e ha trovato 13 clip gia' pronte e ferme. L'utente: "se no te lo chiedevo stavi fermo?".
 - Regola: un lavoro ordinato si porta fino alla consegna nello stesso turno: render in primo piano (o attendere la fine con Monitor) -> controllo -> SendUserFile. Mai chiudere il turno con un render o un controllo in corso.
+
+## STATO 19/10/2026 - VIDEO LUNGO 8 FINITO (pensione all'estero), cartella 23-video-lungo-8
+- Clip V8-blocco01..14.mp4 in clip/ consegnate (QA su tutti i fotogrammi OK, ffprobe = durate, sequenze a 0,5 s guardate; blocco 10 rifatto con "TRAPPOLA 2" all'inizio perche' i primi 3 s erano vuoti). Motore: sorgenti/specs-v8.js + regia8.js (bandiere, passaporto, sfondo con rotte e mappamondo, titoletto centrato).
+- pacchetto.txt (qa_testi OK: titolo 89, 24 tag = 485/500, 10 hashtag, 13 capitoli). Miniature miniatura/miniatura-A.png (passaporto + bandiere) e miniatura-B.png (Italia -5.100 € contro Albania 0 € oggi?), testi misurati e guardati. Schermata finale consigliata: video lungo 5 (tredicesima, 122K).
+- Regole nuove: N.44 (ricerche sempre diverse), N.45 (mai fermarsi con un lavoro in corso).
