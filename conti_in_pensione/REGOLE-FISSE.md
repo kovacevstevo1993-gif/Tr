@@ -441,3 +441,7 @@
 - Clip V8-blocco01..14.mp4 in clip/ consegnate (QA su tutti i fotogrammi OK, ffprobe = durate, sequenze a 0,5 s guardate; blocco 10 rifatto con "TRAPPOLA 2" all'inizio perche' i primi 3 s erano vuoti). Motore: sorgenti/specs-v8.js + regia8.js (bandiere, passaporto, sfondo con rotte e mappamondo, titoletto centrato).
 - pacchetto.txt (qa_testi OK: titolo 89, 24 tag = 485/500, 10 hashtag, 13 capitoli). Miniature miniatura/miniatura-A.png (passaporto + bandiere) e miniatura-B.png (Italia -5.100 € contro Albania 0 € oggi?), testi misurati e guardati. Schermata finale consigliata: video lungo 5 (tredicesima, 122K).
 - Regole nuove: N.44 (ricerche sempre diverse), N.45 (mai fermarsi con un lavoro in corso).
+
+## REGOLA N.46 (utente, 19/10/2026): CLIP SEMPRE IN ORDINE, TUTTE INSIEME
+- Errore: video 8, ho mandato i blocchi 1-9 e 11-14 e dopo, a parte, il blocco 10: l'utente li riceve fuori ordine e in CapCut si confonde.
+- Regola: le clip si mandano SOLO tutte insieme e in ordine (01, 02, 03...). Se un blocco non e' pronto si aspetta e si finisce quello, poi si manda tutto in un solo invio. Mai invii a pezzi.
