@@ -448,5 +448,5 @@
 
 ## REGOLA N.47 (utente, 19/10/2026): "HAI STRAVOLTO TUTTO" - VIDEO 8 TROPPO DIVERSO
 - L'utente sulle slide del video 8: "comunque hai stravolto tutto". L'ordine era "un po' piu' diverse dalle altre": io ho cambiato troppe cose insieme (sfondo nuovo con rotte e mappamondo al posto delle bolle, titoletto centrato al posto di quello a sinistra, didascalia e composizioni quasi tutte nuove).
-- Regola: "un po' diverse" = stessa impostazione dei video precedenti (sfondo, titoletto a sinistra, didascalia, schede) e cambiare SOLO alcuni elementi grafici dentro le slide. Mai cambiare insieme sfondo, titoletto e impaginazione. Nel dubbio, mostrare 1 slide di prova prima di fare tutto il video.
+- Regola (CORRETTA dall'utente il 19/10: "no, non tieni le impostazioni dei precedenti: ogni video un po' diverso per non perdere la monetizzazione"): OGNI video deve essere UN PO' diverso dai precedenti (N.37, contenuti non ripetitivi), ma NON stravolto: cambiare alcune cose (es. qualche composizione, un elemento grafico nuovo, un dettaglio dello sfondo), non tutto insieme. Nel dubbio, 1 slide di prova prima di fare tutto il video.
 - (19/10) L'utente: "Va bene per questo video. Mi piace, pero' segui quello che ti dico nei prossimi". Il video 8 resta cosi' (approvato); dal prossimo video si applica questa regola alla lettera.
