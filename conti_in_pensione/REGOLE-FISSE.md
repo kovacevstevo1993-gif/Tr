@@ -417,3 +417,6 @@
 - vidIQ: saldo 85 crediti (rinnovo 16/11). Regole nuove di questa chat: N.42 (revisione critica del contenuto prima della consegna), N.43 (keyword ad alto volume, non a concorrenza bassa); errori: commento con importo = conto, non riassunto; ricerche solo in italiano.
 - Chat intera di questa sessione: chat/chat-sessione-8-completa.md.
 - Prossimo, solo su ordine: video lungo 8, short 11, risposte ai commenti, script anti-ripetizione, risposta verificata a Franco (tredicesima/quattordicesima).
+
+## STATO 18/10/2026 - VIDEO LUNGO 8 (ricerca), cartella 23-video-lungo-8
+- Ordine utente: tema cercatissimo con concorrenza ALTA (N.43), ricerca vidIQ. Fatta: ricerca-18-10-2026.md (vidIQ 15 crediti, saldo 20, rinnovo 16/11). Scelta: MANOVRA 2027 PENSIONI (cosa e' finanziato davvero + conto in euro per importo). Fatti da verificare sul testo ufficiale del ddl (in Parlamento entro il 20/10) prima del copione. Da fare solo su ordine: copione.
