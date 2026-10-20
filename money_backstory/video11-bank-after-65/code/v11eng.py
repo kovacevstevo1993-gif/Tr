@@ -50,7 +50,18 @@ def ic(C, name, cx, cy, s=1.0, c=gold):
         d.rounded_rectangle([cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2], radius=12, fill=(236, 240, 245, 255), outline=c + (255,), width=5)
         for k in range(4): d.rectangle([cx - w * 0.36, cy - h * 0.28 + k * h * 0.17, cx + w * 0.36 - (k % 2) * 30 * s, cy - h * 0.22 + k * h * 0.17], fill=(170, 180, 200, 255))
 
-def E(kind, box, cue=None, **k): return dict(kind=kind, box=box, cue=cue, k=k)
+def E(kind, box, cue=None, **k):
+    x0, y0, x1, y1 = box; box = (max(x0, 150), y0, min(x1, 1770), y1)   # margine: l'animazione di comparsa non tocca la cornice
+    return dict(kind=kind, box=box, cue=cue, k=k)
+def el_times(els):
+    lim = LASTP() - 0.3; n = len(els); times = []
+    for i, e in enumerate(els):
+        mx = lim - 0.3 * (n - 1 - i)
+        tc = 0.35 if (i == 0 and e['cue'] is None) else (tm(e['cue'], mx) if e['cue'] else (times[-1] + 0.35 if times else 0.35))
+        if i == 0: tc = min(tc, 0.4)
+        if times: tc = max(tc, times[-1] + 0.3)
+        times.append(min(tc, mx))
+    return times
 
 def draw_el(C, e):
     x0, y0, x1, y1 = e['box']; k = e['k']; cx = (x0 + x1) / 2; cy = (y0 + y1) / 2; kind = e['kind']
@@ -110,13 +121,7 @@ def slide(title, seed, els, pill, pcol=gold, tcol=None, tsize=58, psize=52, tag=
     while ts > 40 and dd.textlength(title, font=SER(ts)) > 2 * half: ts -= 2
     def fn(t):
         fr = stage_live(t, title, seed, ts); fr = badges(fr, t, tag, src)
-        lim = LASTP() - 0.3; n = len(els); times = []
-        for i, e in enumerate(els):
-            mx = lim - 0.3 * (n - 1 - i)
-            tc = 0.35 if (i == 0 and e['cue'] is None) else (tm(e['cue'], mx) if e['cue'] else (times[-1] + 0.35 if times else 0.35))
-            if i == 0: tc = min(tc, 0.4)
-            if times: tc = max(tc, times[-1] + 0.3)
-            times.append(min(tc, mx))
+        times = el_times(els)
         for e, tc in zip(els, times):
             if t > tc:
                 C = new(); x0, y0, x1, y1 = e['box']
@@ -124,9 +129,10 @@ def slide(title, seed, els, pill, pcol=gold, tcol=None, tsize=58, psize=52, tag=
                     fr = stamp(fr, e['k']['t'], (x0 + x1) / 2, (y0 + y1) / 2, e['k'].get('ang', 8), e['k'].get('col', green), min(1.0, ease((t - tc) / 0.35)), e['k'].get('size', 60)); continue
                 draw_el(C, e)
                 pad = 40 if e['kind'] in ('arrow', 'op', 'line', 'big') else 20
-                fr = P2(fr, C, (x0 - pad, y0 - pad, x1 + pad, y1 + pad), t, tc)
+                if x1 - x0 > 600: fr = POP(fr, C, (x0 - pad, y0 - pad, x1 + pad, y1 + pad), ease((t - tc) / 0.35))   # elementi larghi: comparsa senza rimbalzo (non toccano la cornice)
+                else: fr = P2(fr, C, (x0 - pad, y0 - pad, x1 + pad, y1 + pad), t, tc)
         return frame(pill_last(fr, t, pill, PILL_Y, pcol, tcol, psize))
-    return frozen(fn)
+    f = frozen(fn); f.els = els; f.title = title; return f
 
 # ======================= ELEMENTI NUOVI VIDEO 11 =======================
 from v7b46_53 import dashed
@@ -162,6 +168,20 @@ def shield(C, cx, cy, s, col, fill=card):
     pts = [(cx - w, cy - h * 0.75), (cx, cy - h), (cx + w, cy - h * 0.75), (cx + w, cy + h * 0.05), (cx, cy + h), (cx - w, cy + h * 0.05)]
     d.polygon(pts, fill=fill + (255,), outline=col + (255,)); d.line(pts + [pts[0]], fill=col + (255,), width=int(9 * s), joint='curve')
 
+def draw_rows(C, box, k):
+    x0, y0, x1, y1 = box; d = ImageDraw.Draw(C); rows = k['rows']; nc = len(k['head']); cw = [(x1 - x0) * w for w in k.get('w', [1 / nc] * nc)]
+    rh = (y1 - y0) / (k.get('nrows', len(rows)) + 1)
+    for i, r in enumerate(rows):
+        i = k.get('ri', i); yy = y0 + rh * (i + 1); xx = x0
+        if i: d.line([x0 + 20, yy, x1 - 20, yy], fill=(60, 82, 112, 255), width=2)
+        for j, v in enumerate(r):
+            mx = xx + cw[j] / 2
+            if v == 'Y': check(C, mx, yy + rh / 2, min(34, rh * 0.33), green)
+            elif v == 'N': cross(C, mx, yy + rh / 2, min(30, rh * 0.3), red)
+            elif isinstance(v, tuple): T(C, v[0], 40, yy + rh / 2 - 25, v[1], x=mx, maxw=cw[j] - 30)
+            else: T(C, v, 40, yy + rh / 2 - 25, white if j == 0 else goldL, x=(xx + 30) if j == 0 else mx, anchor='l' if j == 0 else 'c', maxw=cw[j] - 40)
+            xx += cw[j]
+
 def draw_new(C, e):
     x0, y0, x1, y1 = e['box']; k = e['k']; cx = (x0 + x1) / 2; cy = (y0 + y1) / 2; kind = e['kind']; c = k.get('col', gold)
     d = ImageDraw.Draw(C)
@@ -175,7 +195,7 @@ def draw_new(C, e):
         d.line([lx, by0 - 30, lx, by1 + 30], fill=goldL + (255,), width=6)
         T(C, k['lim_l'], 36, by0 - 78, goldL, x=lx)
         T(C, k['g1'], 54, by1 + 40, green, x=(x0 + lx) / 2); T(C, k['g2'], 38, by1 + 108, white, x=(x0 + lx) / 2)
-        if lx < x1 - 10: T(C, k['r1'], 54, by1 + 40, red, x=(lx + x1) / 2); T(C, k['r2'], 38, by1 + 108, white, x=(lx + x1) / 2)
+        if lx < x1 - 10 and k.get('r1'): T(C, k['r1'], 54, by1 + 40, red, x=(lx + x1) / 2); T(C, k['r2'], 38, by1 + 108, white, x=(lx + x1) / 2)
     elif kind == 'ledger':   # estratto conto: intestazione + righe
         rr(d, [x0, y0, x1, y1], 26, (236, 240, 245), c, 6); rr(d, [x0, y0, x1, y0 + 96], 26, c); d.rectangle([x0, y0 + 60, x1, y0 + 96], fill=c + (255,))
         minibank(d, x0 + 66, y0 + 48, navy); T(C, k['head'], 44, y0 + 24, navy, x=x0 + 125, anchor='l', maxw=x1 - x0 - 160)
@@ -200,7 +220,7 @@ def draw_new(C, e):
         s = min(x1 - x0, y1 - y0) / 400; shield(C, cx, cy + 10 * s, s * 1.15, c)
         T(C, k['val'], int(k.get('size', 90) * s * 1.1), cy - 100 * s, k.get('vcol', goldL), x=cx, maxw=270 * s)
         if k.get('sub'): T(C, k['sub'], int(40 * s * 1.1), cy + 20 * s, white, x=cx, maxw=230 * s)
-        if k.get('sub2'): T(C, k['sub2'], int(32 * s * 1.1), cy + 78 * s, grey, x=cx, maxw=170 * s)
+        if k.get('sub2'): T(C, k['sub2'], int(32 * s * 1.1), cy + 78 * s, grey, x=cx, maxw=200 * s)
     elif kind == 'tline':    # linea del tempo con punti
         pts = k['pts']; n = len(pts); ay = y0 + (y1 - y0) * 0.45; d.line([x0, ay, x1, ay], fill=(120, 140, 170, 255), width=8)
         xs = [x0 + (x1 - x0) * (i + 0.5) / n for i in range(n)]
@@ -212,20 +232,14 @@ def draw_new(C, e):
             T(C, lab, 46, ay + 62, white, x=xx, maxw=(x1 - x0) / n - 20)
             if sub: T(C, sub, 36, ay + 124, grey, x=xx, maxw=(x1 - x0) / n - 20)
     elif kind == 'grid':     # tabella: intestazione + righe con spunta/croce
+        if k.get('frame_only'): k = dict(k); k['rows'] = []
         hd = k['head']; rows = k['rows']; nc = len(hd); cw = [(x1 - x0) * w for w in k.get('w', [1 / nc] * nc)]
-        rh = (y1 - y0) / (len(rows) + 1); rr(d, [x0, y0, x1, y1], 24, card, c, 5); rr(d, [x0, y0, x1, y0 + rh], 24, c); d.rectangle([x0, y0 + rh - 24, x1, y0 + rh], fill=c + (255,))
+        rh = (y1 - y0) / (k.get('nrows', len(rows)) + 1); rr(d, [x0, y0, x1, y1], 24, card, c, 5); rr(d, [x0, y0, x1, y0 + rh], 24, c); d.rectangle([x0, y0 + rh - 24, x1, y0 + rh], fill=c + (255,))
         xx = x0
         for j, h in enumerate(hd): T(C, h, 38, y0 + rh / 2 - 24, navy, x=xx + cw[j] / 2, maxw=cw[j] - 20); xx += cw[j]
-        for i, r in enumerate(rows):
-            yy = y0 + rh * (i + 1); xx = x0
-            if i: d.line([x0 + 20, yy, x1 - 20, yy], fill=(60, 82, 112, 255), width=2)
-            for j, v in enumerate(r):
-                mx = xx + cw[j] / 2
-                if v == 'Y': check(C, mx, yy + rh / 2, min(34, rh * 0.33), green)
-                elif v == 'N': cross(C, mx, yy + rh / 2, min(30, rh * 0.3), red)
-                elif isinstance(v, tuple): T(C, v[0], 40, yy + rh / 2 - 25, v[1], x=mx, maxw=cw[j] - 30)
-                else: T(C, v, 40, yy + rh / 2 - 25, white if j == 0 else goldL, x=(xx + 30) if j == 0 else mx, anchor='l' if j == 0 else 'c', maxw=cw[j] - 40)
-                xx += cw[j]
+        draw_rows(C, e['box'], k)
+    elif kind == 'gridrow':  # una riga della tabella (stessa geometria della 'grid'), compare da sola sulla sua parola
+        k2 = dict(k); k2['rows'] = [k['row']]; k2['ri'] = k['i']; draw_rows(C, k['gbox'], k2)
     elif kind == 'gauge':    # serbatoio verticale con linea di soglia
         lim, val, top = k['limit'], k['val'], k['top']; gx0, gx1 = cx - 90, cx + 90; gy0, gy1 = y0 + 20, y1 - 70
         rr(d, [gx0, gy0, gx1, gy1], 30, (40, 58, 86), white, 4)
@@ -253,7 +267,8 @@ def draw_new(C, e):
     elif kind == 'numcol':   # colonna numerata con icona (cose da fare)
         rr(d, [x0, y0, x1, y1], 30, card, c, 6); d.ellipse([cx - 46, y0 + 18, cx + 46, y0 + 110], fill=c + (255,))
         T(C, str(k['n']), 60, y0 + 30, navy, x=cx); ic(C, k['icon'], cx, (y0 + 110 + y1 - 160) / 2, k.get('s', 0.5), c)
-        T(C, k['l1'], 44, y1 - 150, white, x=cx, maxw=x1 - x0 - 40); T(C, k['l2'], 40, y1 - 90, goldL, x=cx, maxw=x1 - x0 - 40)
+        T(C, k['l1'], 44, y1 - 150, white, x=cx, maxw=x1 - x0 - 40)
+        if k.get('l2'): T(C, k['l2'], 40, y1 - 90, goldL, x=cx, maxw=x1 - x0 - 40)
 
 import modello_unico as _mu
 def final11(t, seed=211):
@@ -275,3 +290,11 @@ def _final(t, seed):
     if t > 0.8 * Dd - 0.4:
         C = new(); _mu.dashed_circle(C, 260, 860, 85); txt(C, 'SUBSCRIBE', BOLD(44), 835, goldL, 255, x=560); fr = A_(fr, C, (160, 760, 760, 960), t, 0.8 * Dd - 0.4)
     return frame(fr)
+
+def GRID(box, head, w, rows, cues, first=None, col=gold):
+    """tabella che si costruisce riga per riga: intestazione (cue first), poi ogni riga sulla sua parola"""
+    x0, y0, x1, y1 = box; x0, x1 = max(x0, 150), min(x1, 1770); box = (x0, y0, x1, y1); rh = (y1 - y0) / (len(rows) + 1)
+    out = [E('grid', box, first, head=head, w=w, rows=[], nrows=len(rows), col=col)]
+    for i, (r, cu) in enumerate(zip(rows, cues)):
+        out.append(E('gridrow', (x0, y0 + rh * (i + 1), x1, y0 + rh * (i + 2)), cu, gbox=box, head=head, w=w, row=r, i=i, nrows=len(rows)))
+    return out

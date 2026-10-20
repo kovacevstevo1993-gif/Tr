@@ -14,6 +14,7 @@ import v8b1
 W, H = 1920, 1080
 v8b1.base = lambda t: Image.new('RGBA', (W, H), (0, 0, 0, 255))
 v8b1.amb = lambda fr, *a, **k: fr
+import v11eng; v11eng.base = v8b1.base; v11eng.amb = v8b1.amb   # anche la slide finale (final11) su sfondo nero
 res = []
 for i, (fn, n) in enumerate(zip(M.SLIDES[blk], M.SPEC[blk]), 1):
     M.CUE['blk'] = blk; M.CUE['t0'] = sum(M.SPEC[blk][:i - 1]) / 30; M.CUR['D'] = n / 30
