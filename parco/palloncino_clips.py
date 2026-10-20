@@ -14,10 +14,10 @@ CLIPS = {
     1: "The little grey mouse happily holds the string of his red balloon up high, the balloon bobs gently in the breeze, he smiles and sways his body, ears wiggle.",
     2: "The red balloon floats slowly up into the sky with its string dangling, the little mouse looks up at it with a surprised open mouth and reaches up with one hand.",
     3: "The red balloon is stuck in the branches of the round tree on the right, it sways a little; the little mouse looks up at it, points with his finger and looks sad.",
-    4: "The orange squirrel jumps up high and grabs the red balloon string with his paw, then lands on the ground holding the balloon, smiling.",
+    4: "The orange squirrel jumps straight up and catches the red balloon string with his paw, the balloon comes down with him, he lands smiling and holds the string.",
     5: "The orange squirrel smiles and holds the red balloon string out toward the little grey mouse, the mouse reaches out and takes it, both smile.",
     6: "The little grey mouse and the orange squirrel dance happily together in the garden, jumping and waving their arms, the red balloon bobs above them.",
-    7: "The little grey mouse and the orange squirrel wave hello to the viewer with big smiles, the red balloon bobs gently.",
+    7: "The little grey mouse and the orange squirrel wave hello with one hand and smile, they stay still otherwise, the red balloon floats still above them.",
 }
 
 
@@ -27,7 +27,7 @@ def gen(c, n):
     for k in range(6):
         try:
             t0 = time.time()
-            r = c.predict(handle_file(os.path.join(D, f"start{n}.png")), CLIPS[n] + STYLE, 6, NEG, float(os.environ.get("DUR", 5.0)), 1, 1, 42, False, api_name="/generate_video")
+            r = c.predict(handle_file(os.path.join(D, f"start{n}.png")), CLIPS[n] + STYLE, 6, NEG, float(os.environ.get("DUR", 5.0)), 1, 1, int(os.environ.get("SEED", 42)), False, api_name="/generate_video")
             v = r[0]["video"] if isinstance(r[0], dict) else r[0]; shutil.copy(v, out)
             print(f"clip{n} ok in {time.time() - t0:.0f}s", flush=True); return
         except Exception as e:
