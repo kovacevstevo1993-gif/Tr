@@ -165,4 +165,4 @@ Blocchi 13-30 rigenerati con gemini-2.5-flash-preview-tts, Fenrir, senza istruzi
 - 17/10: PACCHETTO video 10 in video10-medicare-2027/PUBBLICAZIONE-VIDEO10.md + 2 miniature in miniature_video10/ (code/thumbs_video10.py). vidIQ 30 crediti (saldo 120).
 
 ## VIDEO 11 - 20/10/2026 (branch claude/eloquent-gates-614m3f)
-- Ricerca gratuita fatta: video11/RICERCA-20-10.md. Proposta titolo "Never Keep More Than This in One Bank Account After 65 — 5 Rules Most Seniors Miss": in attesa di conferma utente. Slide: piu' diverse, piu' elementi, piu' professionali (regola 20/10).
+- Ricerca gratuita + vidIQ (15 crediti, saldo 10) fatte: video11/RICERCA-20-10.md e RICERCHE-VIDIQ-LOG.md. DECISO titolo "Never Keep More Than This in One Bank Account After 65 — 5 Rules Most Seniors Miss" (score 96). Slide: piu' diverse, piu' elementi, piu' professionali (regola 20/10).
