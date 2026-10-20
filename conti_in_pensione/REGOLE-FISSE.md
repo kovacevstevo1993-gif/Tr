@@ -457,3 +457,7 @@
 - Regole nuove di questa chat: N.44 (ricerche sempre diverse), N.45 (mai fermarsi con un lavoro in corso), N.46 (clip tutte insieme e in ordine), N.47 (ogni video UN PO' diverso, mai stravolto; nel dubbio 1 slide di prova), miniatura = tutto il video.
 - Chat intera: chat/chat-sessione-9-completa.md. vidIQ: saldo 10 crediti (rinnovo 16/11).
 - Prossimo, solo su ordine: short 11 (teaser del video 8), video lungo 9, risposte ai commenti.
+
+## ERRORE DEL 20/10/2026 (commento @FrancoSuffre, video 4 invalidita') - rafforza N.26/N.41
+- Commento: prendeva 735 euro dal 2019 (invalidita' civile), revisione da maggio, riconosciuto 100% con 104, ora gli tolgono 100 euro al mese per 7 anni, chiede il motivo. Ho risposto "manda/scrivimi il motivo della lettera". L'utente: "nel commento c'e' scritto tutto, perche' gli rispondi che manda qualcosa?".
+- Regola: usare TUTTI i dati del commento e dare la spiegazione piu' probabile che quei dati permettono (qui: recupero di somme pagate in piu', 84 rate = 8.400 euro), dicendola come la causa tipica. Mai rimandare la domanda alla persona se il commento basta per rispondere; chiedere un dato solo se senza quello la risposta e' impossibile.
