@@ -47,12 +47,12 @@ def balloon(img, x, y, r=78, string_to=None):
 def main():
     def up(hand, r=78, lift=330, x=None): balloon(im, x or hand[0], hand[1] - lift, r, hand)
     # 1-2: il topolino tiene il palloncino con la mano alzata (il filo non passa davanti alla faccia)
-    for k in (1, 2):
-        im = bg(); h = put(im, "topo_saluta", 340, 1210, 860); up(h(0.88, 0.26)); im.save(os.path.join(OUT, f"start{k}.png"))
+    im = bg(); h = put(im, "topo_saluta", 340, 1210, 860); up(h(0.88, 0.26)); im.save(os.path.join(OUT, "start1.png"))
+    im = bg(); h = put(im, "topo_sorpreso", 330, 1210, 860); balloon(im, 520, 200, 70, (470, 520)); im.save(os.path.join(OUT, "start2.png"))
     # 3: palloncino incastrato tra i rami dell'albero a destra, il topolino guarda su e indica
     im = bg(); balloon(im, 600, 380, 62, (640, 520)); put(im, "topo_guarda_su", 330, 1210, 860); im.save(os.path.join(OUT, "start3.png"))
-    # 4: arriva Chip di corsa verso l'albero
-    im = bg(); balloon(im, 600, 380, 62, (640, 520)); put(im, "topo_indica", 190, 1220, 720); put(im, "chip_corre", 530, 1200, 660); im.save(os.path.join(OUT, "start4.png"))
+    # 4: Chip sotto il palloncino che pende basso, guarda su con le braccia alzate (la clip lo fa saltare e afferrare il filo)
+    im = bg(); put(im, "topo_indica", 170, 1220, 700); h = put(im, "chip_guarda_su", 520, 1215, 700); balloon(im, 540, 360, 70, (540, 760)); im.save(os.path.join(OUT, "start4.png"))
     # 5: Chip riporta il palloncino (mano alzata), il topolino lo aspetta
     im = bg(); put(im, "topo_neutro", 190, 1220, 740); h = put(im, "chip_saluta", 520, 1215, 740); up(h(0.1, 0.08), 72, 260); im.save(os.path.join(OUT, "start5.png"))
     # 6: festa insieme, Chip tiene alto il palloncino

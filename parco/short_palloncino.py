@@ -10,17 +10,18 @@ from short_razzo import subscribe_button
 HERE = os.path.dirname(os.path.abspath(__file__))
 D = os.path.join(HERE, "assets", "v", "palloncino")
 W, H, FPS = 1080, 1920, 30
-CLIP = 5.0
+LENS = [5.0, 3.5, 5.0, 3.5, 3.5, 3.5, 3.5]          # durata di ogni clip (s)
 N = 7
-DUR = CLIP * N
+DUR = sum(LENS)
 DV = json.load(open(os.path.join(HERE, "audioQ", "durate.json")))
 # battute: (chiave, inizio)
-VOICES = [("n1", 0.5), ("n2", 5.3), ("t1", 8.6), ("n3", 11.2), ("n4", 15.4), ("c1", 20.5), ("t2", 22.6), ("n5", 25.6), ("end", 30.6)]
-T_SUB = 31.4
+VOICES = [("n1", 0.4), ("n2", 5.2), ("t1", 8.6), ("n3", 10.9), ("n4", 13.6), ("c1", 17.3), ("t2", 19.0), ("n5", 20.7), ("end", 24.3)]
+T_SUB = 25.0
 TMP = os.path.join(D, "tmp")
 
 
 def clip_frames(n):
+    CLIP = LENS[n - 1]
     """Frame della clip n a 1080x1920 e 30 fps esatti (CLIP s): ricampionamento temporale + scala lanczos."""
     src = os.path.join(D, f"clip{n}.mp4")
     cmd = ["ffmpeg", "-loglevel", "error", "-i", src, "-vf",
@@ -50,11 +51,11 @@ def mix(out):
     n = int(DUR * M.SR); voc = np.zeros(n); fol = np.zeros(n); bird = M.birds(DUR) if hasattr(M, "birds") else np.zeros(n)
     mus = M.music(DUR, bpm=104)
     M.shimmer(fol, 0.2, 0.6)
-    M.whoosh(fol, 5.6, 0.9, 1.2); M.whoosh(fol, 6.3, 0.6, 0.9)                  # il vento
-    M.bloop(fol, 7.2, 700, 0.3)
-    for k in range(6): M.tonk(fol, 16.2 + k * 0.45, 0.35)                     # Chip si arrampica
-    M.shimmer(fol, 21.0, 0.8)                                                 # palloncino ritrovato
-    for k in range(4): M.thud(fol, 25.2 + k * 0.6, 0.35)                      # festa
+    M.whoosh(fol, 5.4, 0.9, 1.2)                  # il vento
+    M.bloop(fol, 7.0, 700, 0.3)
+    M.whoosh(fol, 14.6, 0.7, 0.5); M.thud(fol, 15.6, 0.4)                    # Chip salta e atterra
+    M.shimmer(fol, 15.9, 0.8)                                                 # palloncino ritrovato
+    for k in range(4): M.thud(fol, 20.8 + k * 0.6, 0.35)                      # festa
     M.shimmer(fol, T_SUB, 0.9, (1568, 2093, 2637, 3136, 3951))
     dr = []
     for k, t0 in VOICES:

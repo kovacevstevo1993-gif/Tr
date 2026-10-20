@@ -12,10 +12,10 @@ NEG = ("static, frozen, still image, blurry, distorted face, extra fingers, extr
        "text, subtitles, watermark, camera shake, zoom, walking backwards, low quality")
 CLIPS = {
     1: "The little grey mouse happily holds the string of his red balloon up high, the balloon bobs gently in the breeze, he smiles and sways his body, ears wiggle.",
-    2: "A gust of wind blows, the string slips out of the little mouse's hand and the red balloon floats up and away to the right, the mouse looks up surprised with open mouth and reaches up.",
+    2: "The red balloon floats slowly up into the sky with its string dangling, the little mouse looks up at it with a surprised open mouth and reaches up with one hand.",
     3: "The red balloon is stuck in the branches of the round tree on the right, it sways a little; the little mouse looks up at it, points with his finger and looks sad.",
-    4: "The orange squirrel with the green scarf runs to the tree on the right and quickly climbs up the tree trunk toward the red balloon, the little mouse watches and points.",
-    5: "The orange squirrel holds the red balloon string up high and hands the balloon to the little grey mouse, the mouse smiles happily and takes it.",
+    4: "The orange squirrel jumps up high and grabs the red balloon string with his paw, then lands on the ground holding the balloon, smiling.",
+    5: "The orange squirrel smiles and holds the red balloon string out toward the little grey mouse, the mouse reaches out and takes it, both smile.",
     6: "The little grey mouse and the orange squirrel dance happily together in the garden, jumping and waving their arms, the red balloon bobs above them.",
     7: "The little grey mouse and the orange squirrel wave hello to the viewer with big smiles, the red balloon bobs gently.",
 }
