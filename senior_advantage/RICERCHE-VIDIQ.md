@@ -287,3 +287,21 @@ Short 9 AEROPORTO (v-u3n1zHSno) 309 view = l'unico partito (gli altri short 32-1
 - vidiq_score_thumbnail NON accetta immagini da URL esterni (raw.githubusercontent rifiutato): si puo valutare solo la miniatura gia caricata su YouTube (videoId).
 ### 12g. vidIQ 18/10/2026 titolo SHORT 10 AMTRAK (autorizzato: "controlla anche su vidiq"; 15 crediti, saldo 150 -> 135, rinnovo 16/11)
 - "Over 65 and Riding Amtrak? 3 Things You Can Ask For (Almost Nobody Does) 🚆" 88 (scelto); "Riding Amtrak Over 65? 10 Things You Can Ask For (Almost Nobody Does) 🚆" 87; "Amtrak Over 65? The 1 Box Most Seniors Never Click 🚆" 83. Keyword: riusate 12d/12f (nessuna ricerca nuova).
+
+## 13. RICERCA PROSSIMO LUNGO 7 (20/10/2026, autorizzata: "fai anche su vidiq le ricerche"; 10 crediti: outliers 5 + keyword research 5; saldo reale 10 -> 0, rinnovo 16/11/2026. NB: il file diceva 135, il saldo vero era 10)
+### 13a. Stato canale (YouTube 20/10)
+Lunghi: Amtrak (iiUOHdoQbPA, 3 giorni) 1 view; Aeroporto 2; Bollette 41; Costco 9; SNAP 10; lungo 1 8. Short: Aeroporto 327, Amtrak 27, sconti 115/79, SNAP 95, CSFP 92, Meals 53, LIHEAP 41, Bollette 40, Costco 33. Nessun lungo partito.
+### 13b. vidIQ outliers (lunghi, questo mese, canali <100K, per view) - nuovi rispetto alle sezioni 9-12:
+- 446.191 | Living Like It's 1950 (3.280 iscr.) | Why I Went Back To 1970s Winter Heating Habits At 52 (And Saved Hundreds) (vph 287)
+- 360.449 | Earl Whitaker USA (1.300) | Seniors: 3 Pieces of Good News for Your Money in January (Social Security: no)
+- 247.691 | Marilyn Vance (10.400) | 10 Things That Make Living Alone Easier After 65 (I Wish I'd Done #1 Sooner) (vph 1.234)
+- 245.957 | 10 Things I Avoid Now That I Live Alone at 69
+- **148.269 | Donna Fixes (1.840 iscr.) | 12 Cheap Things That Make Living Alone Easier This Winter After 60** (24 min)
+- **90.212 | Donna Fixes (1.840) | 9 Home Services You Don't Actually Have to Pay For After 60** (23 min, breakout 266)
+- **38.356 | Donna Fixes (1.840) | 11 Home Repairs You Can Get Done Free After 60 (Most People Never Ask)**
+- 139.071 Dollar Tree 15 items seniors; 102.531 11 Dollar Tree Heating Items ... Winter Blackout (1.860 iscr.); 103.480 12 Walmart Items Seniors Should Buy Before the First Winter Blackout; 70.462 10 Dollar Tree Items Every Over 50 Needs (vph 2.678)
+- 161.828 Robin MBA Aldi 14 Things; 131.022 Sharon Dawson Airlines 9 Things (If You Ask) (vph 1.572); 89.833 5 Bills You Legally Stop Paying After 65 (copia)
+- 13.706 Frugal Flow "If You're Over 60, Costco Owes You These 12 Free Things" (1 giorno)
+### 13c. YouTube gratis (questo mese): living alone/inverno (25 Winter Survival Tricks 334K; 10 Dump and Bake Dinners 495K: cucina, fuori tema); "They're Mailing THIS Card to Seniors - DON'T Activate It!" 321K (truffe); UK "15 Things You Stop Paying For at 60" 216K; "Senior Benefits Start at Age 55 (Not 65!)" 338K.
+### 13d. vidIQ keyword "free home repairs for seniors" (US): seme <750; "senior home safety" 21.501/mese conc. 27,5 (overall 67,8, la migliore); "home repair grants" 4.364 conc. 25,9; sotto 750: home repair grants for senior citizens (conc. 15,6), usda section 504 home repair (6,6), home services seniors don't have to pay for, weatherization assistance program, free smoke alarms, area agency on aging, eldercare locator.
+### 13e. Proposta lungo 7: SERVIZI E LAVORI DI CASA GRATIS DOPO I 60 + INVERNO (modello Donna Fixes, canale piccolo come il nostro: 148K, 90K, 38K). Titolo da confermare. Attenzione: Weatherization e USDA 504 gia nel lungo Bollette (usarli poco o con angolo diverso). Fatti da verificare su fonti ufficiali solo dopo conferma.
