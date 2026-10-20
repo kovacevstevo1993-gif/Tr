@@ -451,3 +451,9 @@
 - Regola (CORRETTA dall'utente il 19/10: "no, non tieni le impostazioni dei precedenti: ogni video un po' diverso per non perdere la monetizzazione"): OGNI video deve essere UN PO' diverso dai precedenti (N.37, contenuti non ripetitivi), ma NON stravolto: cambiare alcune cose (es. qualche composizione, un elemento grafico nuovo, un dettaglio dello sfondo), non tutto insieme. Nel dubbio, 1 slide di prova prima di fare tutto il video.
 - (19/10) L'utente: "Va bene per questo video. Mi piace, pero' segui quello che ti dico nei prossimi". Il video 8 resta cosi' (approvato); dal prossimo video si applica questa regola alla lettera.
 - (19/10, N.42 violata sulle miniature del video 8) Ho mandato la miniatura B (solo Italia contro Albania) e alla domanda dell'utente ho detto che andava bene "in parte". L'utente: "se va bene in parte perche' la mandi?". Regola: ogni miniatura deve rappresentare TUTTO il video (tutti i temi principali), non solo una parte; la revisione "e' perfetta?" si fa PRIMA di mandarla. Rifatta come miniatura-C (Italia contro i 3 paesi).
+
+## STATO 20/10/2026 - PER LA CHAT NUOVA
+- Video lungo 8 (pensione all'estero) FINITO e approvato: clip V8-blocco01..14, pacchetto.txt, miniature A e C (la B e' scartata: mostrava solo una parte del video). Cartella 23-video-lungo-8.
+- Regole nuove di questa chat: N.44 (ricerche sempre diverse), N.45 (mai fermarsi con un lavoro in corso), N.46 (clip tutte insieme e in ordine), N.47 (ogni video UN PO' diverso, mai stravolto; nel dubbio 1 slide di prova), miniatura = tutto il video.
+- Chat intera: chat/chat-sessione-9-completa.md. vidIQ: saldo 10 crediti (rinnovo 16/11).
+- Prossimo, solo su ordine: short 11 (teaser del video 8), video lungo 9, risposte ai commenti.
