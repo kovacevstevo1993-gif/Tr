@@ -45,3 +45,4 @@
 - SLIDE VIDEO 11 (20/10): "La slide falle un po più diverse dalle altre e modifica qualcosa mettici più elementi e più professionale".  [solo parole dell'utente]
 - "Cazzo confermo io devi dirmi te se va bene cerca su vidiq coglione già non funziona nessun video che hai fatto" (20/10): decidere io il titolo con le ricerche vidIQ, non chiedere conferma.  [solo parole dell utente]
 - TEMPO (21/10): "E da 1 ora che stai facendo ma. Non riesco a metterci meno? Non ha senso metterci 1 ora per un video".  [solo parole dell utente]
+- RIFARE SOLO CIO CHE SI CORREGGE (21/10): "Quindi rifai tutto al. Posto di aggiustare? Ma come cazzo stai?". Errore video 11: dopo ogni correzione ho rifatto il render di tutte le 46 slide invece delle sole slide cambiate. Regola: si rifanno e si ricontrollano SOLO le slide modificate.  [parole dell utente tra virgolette]
