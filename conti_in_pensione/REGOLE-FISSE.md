@@ -479,3 +479,4 @@
 - Risposta a @FrancoSuffre (video 4) data in chat dopo 5 versioni: per i commenti seguire l'ordine obbligatorio (leggere tutto, ragionare, verificare su inps.it, rileggere, UNA risposta).
 - Errori di questa chat da non ripetere: risposte non verificate, spiegazioni dopo l'invio dei file, short 11 troppo simile agli 8-10 ("un po' piu' diverse" alla lettera; prossimo short: 1 slide di prova accanto alla precedente prima di fare tutto), miniature che svelano la risposta.
 - vidIQ: nessun credito speso. Prossimo, solo su ordine.
+- (21/10, chat nuova) Controllo completezza: clip S11-blocco01..05 (fotogrammi = DURATE.txt), pacchetto, miniatura-short11, miniatura-D presenti su main. Mancava la chat intera della sessione 10: salvata in chat/chat-sessione-10-completa.md.
