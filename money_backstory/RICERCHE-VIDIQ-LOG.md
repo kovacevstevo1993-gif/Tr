@@ -52,3 +52,8 @@ Tabella parole chiave e concorrenza: vedi `video7-500k/RICERCA-E-STRATEGIA.md`.
 - keyword research 'how much money to keep in bank after 65' (US): seed <750, fdic insurance limit <750, financial tips for seniors <750, seniors over 65 7.426. Quindi le view di questo tema NON vengono dalla ricerca ma dai suggeriti/home (come i virali).
 - score_title "Never Keep More Than This in One Bank Account After 65 — 5 Rules Most Seniors Miss" = 96 (il piu' alto mai avuto: video 10 = 94).
 - DECISIONE VIDEO 11: questo titolo (tema bank account after 65).
+
+## 21/10/2026 sera VIDEO 12 (senior deduction $6,000): 10 crediti, saldo 107 -> 97 (rinnovo 14/11/2026; il "saldo 0" scritto dalla chat del video 11 era SBAGLIATO: controllare SEMPRE con vidiq_balance, costa 0)
+- keyword research 'senior tax deduction 6000' (US): seed <750 ricerche/mese (concorrenza 20,5); correlate: retirement taxes 8.894 (conc. 36), retirement tax planning 8.416 (conc. 22,5), social security taxes 3.852, one big beautiful bill 4.240. Niente di piu' specifico sul tema: le view vengono da suggeriti/home.
+- score_title 'New $6,000 Senior Tax Deduction: Who Gets It and Who Loses It (2026)' = 88.
+- ERRORE: ricerca fatta a video gia' finito, dopo che l'utente aveva detto che non serviva piu'. Non rifare.
