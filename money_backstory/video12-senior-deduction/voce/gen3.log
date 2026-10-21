@@ -1,0 +1,19 @@
+ERR 502 [] []
+OK voce/g7.wav
+confine 7 -> 8 pausa 0.45 punteggio 5.54 | all / but here is
+confine 8 -> 9 pausa 0.46 punteggio 5.58 | does / lets see it
+OK voce/g10.wav
+confine 10 -> 11 pausa 0.57 punteggio 5.72 | numbers / if social security
+confine 11 -> 12 pausa 0.47 punteggio 5.72 | benefits / here is how
+OK voce/g13.wav
+confine 13 -> 14 pausa 0.43 punteggio 5.62 | 000 / look at hank
+confine 14 -> 15 pausa 0.64 punteggio 5.66 | more / now who gets
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['10h31m0']
+ERR 502 [] []
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['10h30m19']
+OK voce/g16.wav
+confine 16 -> 17 pausa 0.44 punteggio 5.4 | help / there is one
+confine 17 -> 18 pausa 0.35 punteggio 5.44 | april / for free help
+OK voce/g19.wav
+confine 19 -> 20 pausa 0.37 punteggio 5.6 | person / if this helped
+FINITO
