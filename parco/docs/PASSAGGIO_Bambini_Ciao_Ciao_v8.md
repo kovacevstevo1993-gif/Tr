@@ -40,3 +40,7 @@ Storia: in cucina il biscotto sparisce dal piatto; topolino "Io non sono stato!"
 - Controllo salti fotogrammi: ffmpeg scala 270x480, differenza media tra fotogrammi consecutivi (mediana ~2; i tagli >15). Contact sheet: `ffmpeg -vf "select='not(mod(n,8))',scale=160:277,tile=9x1"`.
 - Non usare `pkill -f` con il nome dello script nella stessa riga di comando (chiude la shell).
 - Fine lavoro: aggiornare questo file, commit, push sul branch della sessione e poi unire su main.
+
+## AGGIORNAMENTO 22/10 00:58 CEST (biscotto)
+- Generate e controllate OK: clip1, clip2, clip3, clip4, clip6 (assets/v/biscotto/). MANCANO clip5 (briciole, 3 s) e clip7 (risata finale, 4 s).
+- HuggingFace ha risposto "exceeded your ZeroGPU runs limit" alla clip5 dopo ~10 s di clip generati nella finestra: il limite sembra a finestra mobile, senza orario di ripresa nel messaggio. Riprovare con `python3 biscotto_clips.py 5 7` (non consuma se rifiutato). Poi montare: `python3 short_biscotto.py video && ... mix && ... finale`, controllo fotogrammi, SendUserFile.
