@@ -127,15 +127,15 @@ def B():
     d.text((cx + 232, cy - 100), "?", font=P(170, True), fill=RED, anchor="mm", stroke_width=12, stroke_fill=WHITE)
     d.text((cx, cy + 80), "FDIC INSURED", font=P(38, True), fill=WHITE, anchor="mm", stroke_width=5, stroke_fill=BLK)
     # barra copertura
-    x0, x1, y0, y1 = 110, 1170, 525, 605; lim = x0 + (x1 - x0) * 250 / 380
+    x0, x1, y0, y1 = 110, 1170, 512, 588; lim = x0 + (x1 - x0) * 250 / 380
     d.rounded_rectangle([x0 - 8, y0 - 8, x1 + 8, y1 + 8], radius=26, fill=BLK)
     d.rounded_rectangle([x0, y0, lim, y1], radius=20, fill=GRN); d.rectangle([lim - 20, y0, lim, y1], fill=GRN)
     d.rounded_rectangle([lim, y0, x1, y1], radius=20, fill=RED); d.rectangle([lim, y0, lim + 20, y1], fill=RED)
-    d.line([lim, y0 - 34, lim, y1 + 34], fill=WHITE, width=8)
+    d.line([lim, y0 - 26, lim, y1 + 18], fill=WHITE, width=8)
     d.text(((x0 + lim) / 2, (y0 + y1) / 2), "$250,000 COVERED", font=fit_font(d, "$250,000 COVERED", lim - x0 - 40, 58, True), fill=WHITE, anchor="mm", stroke_width=6, stroke_fill=BLK)
     d.text(((lim + x1) / 2, (y0 + y1) / 2), "$130,000 AT RISK", font=fit_font(d, "$130,000 AT RISK", x1 - lim - 30, 56, True), fill=WHITE, anchor="mm", stroke_width=6, stroke_fill=BLK)
     d.text((x0 + 10, y0 - 40), "FRANK: $380,000 IN ONE BANK", font=P(46, True), fill=YEL, anchor="lm", stroke_width=6, stroke_fill=BLK)
-    banner(im, "5 RULES MOST SENIORS MISS", (330, 628, 950, 690), fill=RED, size=56, tilt=-1)
+    banner(im, "5 RULES MOST SENIORS MISS", (330, 640, 950, 696), fill=RED, size=52, tilt=0)
     return im.convert("RGB")
 
 
