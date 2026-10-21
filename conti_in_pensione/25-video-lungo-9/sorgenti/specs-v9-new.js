@@ -13,7 +13,7 @@ function cap(g,s,size){size=size||44;size=Math.min(size,1540/Math.max(1,tw(s,1))
  el('rect',{x:-w/2,y:-56,width:w,height:112,rx:26,fill:'#06303A',filter:'url(#g_sh2)'},c);
  el('rect',{x:-w/2,y:-56,width:w,height:112,rx:26,fill:'none',stroke:'#7FF0D2','stroke-width':3,opacity:.55},c);
  el('rect',{x:-w/2,y:-56,width:18,height:112,rx:9,fill:AMB},c);
- el('circle',{cx:-w/2+78,cy:0,r:32,fill:AMB,stroke:'#fff','stroke-width':4},c);txt(c,'€',-w/2+78,13,38,'#5A3300','900');
+ el('circle',{cx:-w/2+78,cy:0,r:32,fill:AMB,stroke:'#fff','stroke-width':4},c);euro(c,-w/2+80,0,0.32,'#5A3300',16);
  txt(c,s,(-w/2+125+w/2-30)/2,size*0.36,size,'#FFFFFF','bold');return c;}
 // personaggio disegnato (stilizzato, nessuna persona reale)
 function person(p,kind,col,r){r=r||110;const g=el('g',{filter:'url(#g_sh)'},p);
@@ -86,10 +86,10 @@ Object.assign(BUILD,{
   el('rect',{x:-w/2+18,y:-h/2+60,width:w-36,height:h-120,rx:18,fill:'url(#g_paper)'},b);el('rect',{x:-40,y:-h/2+24,width:80,height:12,rx:6,fill:'#2B6F77'},b);
   el('rect',{x:-w/2+18,y:-h/2+60,width:w-36,height:86,rx:18,fill:GRN},b);el('rect',{x:-w/2+18,y:-h/2+120,width:w-36,height:26,fill:GRN},b);
   txt(g,'MY INPS',0,-h/2+114,34,'#fff','900');txt(g,'CEDOLINO DI DICEMBRE',0,-h/2+190,24,INK,'bold');
-  rows.forEach((r,i)=>{const y=-h/2+250+i*84;el('rect',{x:-w/2+38,y:y-30,width:w-76,height:62,rx:14,fill:'#D6F5EC',stroke:'#1B9F81','stroke-width':3},g);txt(g,r,-w/2+58,y+10,26,INK,'bold','start');});},
+  rows.forEach((r,i)=>{const y=-h/2+250+i*84;el('rect',{x:-w/2+38,y:y-30,width:w-76,height:62,rx:14,fill:'#D6F5EC',stroke:'#1B9F81','stroke-width':3},g);txt(g,r,-w/2+56,y+9,24,INK,'bold','start');});},
  stp:(g,n,s1,s2,w)=>{w=w||330;const h=250;el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:26,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);
-  circN(g,40,n,'url(#g_badge)').setAttribute('transform','translate(0 '+(-h/2)+')');
-  txt(g,s1,0,10,32,INK,'900');if(s2)txt(g,s2,0,56,28,GRN,'bold');},
+  circN(g,34,n,'url(#g_badge)').setAttribute('transform','translate(0 '+(-h/2+52)+')');
+  txt(g,s1,0,38,32,INK,'900');if(s2)txt(g,s2,0,84,26,GRN,'bold');},
  lim:(g,title,two,val,sub)=>{const w=640,h=470;el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:28,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);
   el('rect',{x:-w/2,y:-h/2,width:w,height:84,rx:28,fill:GRN},g);el('rect',{x:-w/2,y:-h/2+54,width:w,height:30,fill:GRN},g);txt(g,title,0,-h/2+56,34,'#fff','bold');
   if(two){const a=el('g',{transform:'translate(-70 -55)'},g);person(a,'A',PCOL.A,70);const m=el('g',{transform:'translate(70 -55)'},g);person(m,'M',PCOL.M,70);}
@@ -101,11 +101,11 @@ Object.assign(BUILD,{
   el('rect',{x:-w/2+20,y:h/2-34,width:w-40,height:10,rx:5,fill:'#2B6F77'},b);el('rect',{x:-w/2+20,y:h/2-34,width:(w-40)*0.62,height:10,rx:5,fill:RED_},b);
   el('circle',{cx:0,cy:-30,r:56,fill:RED_,stroke:'#fff','stroke-width':5},b);el('path',{d:'M-16 -58 L30 -30 L-16 -2 Z',fill:'#fff'},b);
   txt(g,s1,0,72,34,'#fff','900');if(s2)txt(g,s2,0,108,24,LT,'bold');},
- tax2:(g)=>{const base=0;el('rect',{x:-330,y:0,width:660,height:8,rx:4,fill:LT},g);
-  el('rect',{x:-230,y:-150,width:170,height:150,rx:16,fill:'#2B6F77',stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);
-  el('rect',{x:60,y:-290,width:170,height:290,rx:16,fill:'url(#g_red)',stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);
-  txt(g,'TASSE',-145,-170,28,LT,'bold');txt(g,'TASSE',145,-310,28,'#FFB4A6','bold');
-  lab(g,'RATA NORMALE',-145,60,30,DF_,'#fff');lab(g,'TREDICESIMA',145,60,30,DF_,'#fff');},
+ tax2:(g)=>{const base=0;el('rect',{x:-380,y:0,width:760,height:8,rx:4,fill:LT},g);
+  el('rect',{x:-255,y:-150,width:170,height:150,rx:16,fill:'#2B6F77',stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);
+  el('rect',{x:85,y:-290,width:170,height:290,rx:16,fill:'url(#g_red)',stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);
+  txt(g,'TASSE',-170,-170,28,LT,'bold');txt(g,'TASSE',170,-310,28,'#FFB4A6','bold');
+  lab(g,'RATA NORMALE',-170,60,28,DF_,'#fff');lab(g,'TREDICESIMA',170,60,28,DF_,'#fff');},
  posta:(g,label)=>{const w=270,h=270;el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:30,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);
   const ig=el('g',{transform:'translate(0 -32)'},g);el('rect',{x:-90,y:-60,width:180,height:120,rx:12,fill:AMB,stroke:INK,'stroke-width':6},ig);
   el('path',{d:'M-90 -56 L0 10 L90 -56',fill:'none',stroke:INK,'stroke-width':6},ig);lab(g,label,0,h/2-46,32,DF_,'#fff');},

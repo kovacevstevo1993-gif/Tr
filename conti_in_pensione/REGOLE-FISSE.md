@@ -493,3 +493,8 @@
 ## ERRORE DEL 21/10/2026 (copione video 9): "TRE SOLDI", "IL TERZO SOLDO"
 - Parole scelte da Claude, non prese da fonti: in italiano "un soldo / il terzo soldo" per indicare un pagamento non si dice (suona sbagliato). L'utente: "dove hai trovato queste parole, sono giuste?". La voce era gia' registrata.
 - Regola: nei copioni usare i nomi giusti (pagamento, somma, tredicesima, importo aggiuntivo, quattordicesima), mai parole inventate o forzate per fare effetto. Nella revisione N.42 rileggere anche l'italiano parola per parola. Nelle slide del video 9 si scrive "PAGAMENTI".
+
+## STATO 21/10/2026 - VIDEO LUNGO 9 (pensioni di dicembre: tredicesima, bonus 154,94, quattordicesima), cartella 25-video-lungo-9
+- Ricerca: ricerca-21-10-2026.md (cosa va questa settimana, vidIQ, fatti verificati su inps.it). Copione 14 blocchi (copione-blocchi.txt, max 400, struttura nuova: tre vicini Franco/Anna/Lucia; blocco 6 = iscrizione dopo il primo conto). DURATE.txt (9495 fotogrammi = 05:16+15f).
+- Slide (ordine utente: "un po' piu' diverse, con piu' elementi, piu' professionali"): motore sorgenti/specs-v9-base.js + specs-v9-new.js + specs-v9-blocks.js -> specs-v9.js, regia9.js (sfondo di dicembre: raggi, luci che scendono, calendario in trasparenza). Novita': titoletto a sinistra con calendarietto DIC, didascalia con barra gialla e moneta, personaggi disegnati, righello della soglia, barra di coppia, striscia dei mesi, tabella 14a, griglia finale, telefono My Inps. Clip V9-blocco01..14.mp4 in clip/ (QA su tutti i fotogrammi OK, ffprobe = durate, sequenze a 0,5 s guardate), consegnate il 21/10.
+- Da fare solo su ordine: miniatura, pacchetto.
