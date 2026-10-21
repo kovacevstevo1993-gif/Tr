@@ -49,7 +49,7 @@ Which of these 9 surprised you the most? Tell me below 👇 And send this video 
 
 ## Impostazioni
 Non per bambini, nessun limite di eta. Uso IA: No. Promozione a pagamento: No. Miniatura: casa-inverno-miniatura-a.png (B e C per "Test e confronta"). Schermata finale ultimi 20 s: video lungo Bollette + Iscriviti (riquadro WATCH NEXT nella slide finale). Video correlato: nessuno (si imposta solo sullo short). Capitoli dalle durate della timeline dell'utente (fine blocco 10 incerta +-1).
-vidIQ: saldo 0 fino al 16/11, nessun punteggio titolo/miniature (score_title e score_thumbnail costano 5 crediti l'uno). Titolo e parole chiave dalla ricerca gia salvata (RICERCHE-VIDIQ.md sezione 13: "senior home safety" 21.501/mese conc. 27,5; modello Donna Fixes 148K/90K/38K).
+vidIQ 21/10 (15 crediti): titolo scelto = 97/100 (score_title). generate_titles: 97 "9 Things Seniors Over 60 Should Claim Before Winter (Most People Don't Know)", 97 "Don't Struggle This Winter: 9 Types of Help Seniors Over 60 Can Get (If You Ask)", 94 la versione corta del nostro. keyword matching_terms "help for seniors at home": nessun risultato. Punteggio miniature: solo dopo il caricamento su YouTube (5 crediti l'una).
 
 ## Miniature (code/thumb_long7.py, miniature/casa-inverno-miniatura-a/b/c.png)
 A = notte d'inverno, casa con finestra accesa, termometro 9 gradi, "OVER 60? HELP AT HOME THIS WINTER / MOST NEVER ASK". B = griglia 3x3 di tessere 1-9 con pittogrammi, "OVER 60? 9 KINDS OF HELP AT HOME / THIS WINTER / MOST NEVER ASK". C = frigorifero con biglietto 1-800-677-1116 Eldercare Locator, "OVER 60? PUT THIS ON YOUR FRIDGE".
