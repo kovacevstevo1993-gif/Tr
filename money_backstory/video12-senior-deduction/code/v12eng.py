@@ -58,8 +58,8 @@ def el_times(els):
     lim = LASTP() - 0.3; n = len(els); times = []
     for i, e in enumerate(els):
         mx = lim - 0.3 * (n - 1 - i)
-        tc = 0.35 if (i == 0 and e['cue'] is None) else (tm(e['cue'], mx) if e['cue'] else (times[-1] + 0.35 if times else 0.35))
-        if i == 0: tc = min(tc, 0.4)
+        tc = 0.25 if (i == 0 and e['cue'] is None) else (tm(e['cue'], mx) if e['cue'] else (times[-1] + 0.35 if times else 0.35))
+        if i == 0: tc = min(tc, 0.25)
         if times: tc = max(tc, times[-1] + 0.3)
         times.append(min(tc, mx))
     return times

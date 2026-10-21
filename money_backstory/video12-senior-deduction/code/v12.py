@@ -145,7 +145,7 @@ S[10] = [
 S[11] = [
     slide('ONLY SOCIAL SECURITY?', 528, [E('card', (150, 260, 560, 700), 'thirty thousand', head='SINGLE PERSON', val='$30,000', sub='IN BENEFITS', col=gold, vsize=80),
                                          E('gauge', (620, 240, 1560, 720), 'counts half', limit=25000, val=15000, top=30000, lim_l='$25,000 LINE', label='HALF = $15,000', col=green),
-                                         E('stamp', (1330, 520, 1790, 690), 'none of', t='NOT TAXED', col=green, ang=-6, size=90)],
+                                         E('stamp', (1300, 540, 1740, 690), 'none of', t='NOT TAXED', col=green, ang=-6, size=76)],
           'FAR BELOW THE LINE', green, tag=T3, src='IRS PUB. 915'),
     slide('WHAT ADDS THE TAX', 529, [E('icard', R4[0], 'i r a', icon='bank', l1='AN IRA', col=gold, s=0.6),
                                      E('icard', R4[1], 'pension', icon='brief', l1='A PENSION', col=gold),
@@ -238,8 +238,7 @@ S[18] = [
 ]
 # ---- 19: RECAP ----
 S[19] = [
-    slide('RECAP: 1 TO 3', 546, [E('line', (150, 236, 1770, 286), None, t='WHAT TO REMEMBER', size=46, col=goldL),
-                                 E('rule', (180, 310, 1740, 440), 'one six', n=1, text='PER PERSON, AGE 65 OR OLDER', val='$6,000'),
+    slide('RECAP: 1 TO 3', 546, [E('rule', (180, 310, 1740, 440), 'one six', n=1, text='PER PERSON, AGE 65 OR OLDER', val='$6,000'),
                                  E('rule', (180, 460, 1740, 590), 'two it', n=2, text='STACKS ON YOUR STANDARD DEDUCTION', val='ON TOP'),
                                  E('rule', (180, 610, 1740, 740), 'three it', n=3, text='SAVES YOUR BRACKET × $6,000', val='NOT $6,000', vc=red)],
           'THREE NUMBERS TO KEEP', gold, tag=T1, src=IRS),
