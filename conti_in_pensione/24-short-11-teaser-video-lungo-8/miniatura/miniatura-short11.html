@@ -1,0 +1,44 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}svg{display:block}.t{font-family:'DejaVu Sans','Liberation Sans',Arial,sans-serif;font-weight:900}</style></head><body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<defs>
+<radialGradient id="bg" cx="0.5" cy="0.45" r="1"><stop offset="0" stop-color="#25A9AE"/><stop offset="0.5" stop-color="#0D5158"/><stop offset="1" stop-color="#03181B"/></radialGradient>
+<linearGradient id="wb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE7E9"/></linearGradient>
+<linearGradient id="rb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF5A43"/><stop offset="1" stop-color="#C0200F"/></linearGradient>
+<linearGradient id="gr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE3BE"/><stop offset="1" stop-color="#159078"/></linearGradient>
+<linearGradient id="met" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#C9D6D8"/><stop offset="1" stop-color="#7F9398"/></linearGradient>
+<filter id="sh" x="-30%" y="-30%" width="170%" height="170%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#021A1D" flood-opacity="0.75"/></filter>
+<filter id="gl"><feGaussianBlur stdDeviation="30"/></filter>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/>
+<g opacity="0.10" fill="#fff"><path d="M540 900 L-200 200 L0 0Z"/><path d="M540 900 L300 -100 L520 -100Z"/><path d="M540 900 L760 -100 L980 -100Z"/><path d="M540 900 L1300 300 L1300 600Z"/><path d="M540 900 L1300 1300 L1300 1500Z"/><path d="M540 900 L-200 1400 L0 1650Z"/></g>
+<circle cx="540" cy="1000" r="430" fill="#FFD43B" opacity="0.13" filter="url(#gl)"/>
+<!-- titolo -->
+<g class="t" text-anchor="middle" stroke="#06282C" stroke-linejoin="round" paint-order="stroke">
+<text id="t1" x="540" y="215" font-size="176" fill="#fff" stroke-width="22">PENSIONE</text>
+<text id="t2" x="540" y="345" font-size="112" fill="#FFD43B" stroke-width="18">ALL'ESTERO</text></g>
+<!-- carta d'imbarco inclinata: Italia -> paese coperto -->
+<g transform="rotate(-4 540 660)">
+<g filter="url(#sh)"><rect x="70" y="440" width="940" height="430" rx="36" fill="url(#wb)"/></g>
+<path d="M70 476 a36 36 0 0 1 36 -36 H974 a36 36 0 0 1 36 36 V540 H70Z" fill="#0B4A50"/>
+<text class="t" x="540" y="507" font-size="42" fill="#fff" text-anchor="middle">CARTA D'IMBARCO</text>
+<line x1="800" y1="560" x2="800" y2="850" stroke="#9FB4B9" stroke-width="5" stroke-dasharray="14 12"/>
+<g transform="translate(225 680)" filter="url(#sh)"><rect x="-110" y="-73" width="73.4" height="146" fill="#1F9A4B"/><rect x="-37" y="-73" width="74" height="146" fill="#F7F7F2"/><rect x="36.6" y="-73" width="73.4" height="146" fill="#D7322B"/><rect x="-110" y="-73" width="220" height="146" rx="10" fill="none" stroke="#fff" stroke-width="8"/></g>
+<text class="t" x="225" y="815" font-size="44" fill="#0B3A3F" text-anchor="middle">ITALIA</text>
+<path d="M350 690 Q470 600 590 690" fill="none" stroke="#C98500" stroke-width="9" stroke-dasharray="18 14" stroke-linecap="round"/>
+<g transform="translate(470 628) rotate(8) scale(.42)"><path d="M-110 0 Q-110 -16 -90 -16 L90 -16 Q130 -16 140 0 Q130 16 90 16 L-90 16 Q-110 16 -110 0 Z" fill="#0B4A50"/><path d="M-10 -14 L-60 -110 L-30 -110 L40 -14 Z M-10 14 L-60 110 L-30 110 L40 14 Z" fill="#C98500"/><path d="M-95 -12 L-120 -55 L-102 -55 L-75 -12 Z M-95 12 L-120 55 L-102 55 L-75 12 Z" fill="#C98500"/></g>
+<g transform="translate(680 680)" filter="url(#sh)"><rect x="-90" y="-62" width="180" height="124" rx="12" fill="#2C6E73" stroke="#fff" stroke-width="8"/><text class="t" y="36" font-size="100" fill="#FFD43B" text-anchor="middle">?</text></g>
+<text class="t" x="680" y="815" font-size="44" fill="#0B3A3F" text-anchor="middle">???</text>
+<text class="t" x="905" y="640" font-size="30" fill="#5A6E73" text-anchor="middle">IRPEF</text>
+<text class="t" x="905" y="700" font-size="54" fill="#13805F" text-anchor="middle">0 €?</text>
+</g>
+<!-- cifra gigante -->
+<g class="t" text-anchor="middle" stroke="#06282C" stroke-linejoin="round" paint-order="stroke">
+<text id="n1" x="540" y="1105" font-size="186" fill="#3FE0A6" stroke-width="26">+5.100 €</text>
+<text id="n2" x="540" y="1210" font-size="72" fill="#fff" stroke-width="14">IN PIÙ OGNI ANNO?</text></g>
+<!-- pallina rossa 3 trappole -->
+<g transform="translate(250 1365)"><circle r="105" fill="url(#rb)" stroke="#fff" stroke-width="9" filter="url(#sh)"/><text class="t" y="38" font-size="120" fill="#fff" text-anchor="middle">3</text></g>
+<g class="t" stroke="#06282C" stroke-linejoin="round" paint-order="stroke"><text id="p1" x="385" y="1350" font-size="74" fill="#fff" stroke-width="14">TRAPPOLE</text><text id="p2" x="385" y="1420" font-size="46" fill="#FFD43B" stroke-width="10">PRIMA DI PARTIRE</text></g>
+<!-- striscia bianca con bordo giallo -->
+<g filter="url(#sh)"><rect x="60" y="1530" width="960" height="250" rx="34" fill="#fff" stroke="#FFD43B" stroke-width="12"/></g>
+<g class="t" text-anchor="middle"><text id="s1" x="540" y="1635" font-size="72" fill="#0D5158">SE CI VIVESSI,</text><text id="s2" x="540" y="1728" font-size="58" fill="#C0200F">QUANTO TI RESTEREBBE?</text></g>
+</svg></body></html>
