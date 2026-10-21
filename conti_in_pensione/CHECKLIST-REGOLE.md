@@ -1,7 +1,7 @@
 CONTI IN PENSIONE - CHECKLIST REGOLE (promemoria automatico a OGNI messaggio dell'utente. Fonte completa: REGOLE-FISSE.md. Applicarle TUTTE prima di rispondere e prima di consegnare.)
 COME LAVORARE
 1. Eseguire SOLO gli ordini. Una DOMANDA = solo una risposta, mai modifiche (N.13). Se non e' chiaro: UNA domanda sola prima di fare qualsiasi cosa. Mai iniziare lavori non ordinati. Non ripetere all'utente cio' che ha fatto lui.
-2. Risposte corte, una cosa alla volta, niente scuse ne' "hai ragione" lunghi. Mai dire "fatto/pronto/mandato" prima che sia vero (render finito, controllato, consegnato).
+2. Risposte corte, una cosa alla volta, niente scuse ne' "hai ragione" lunghi. Dopo aver mandato file (clip, miniature): NIENTE descrizione di cosa c'e' dentro, l'utente li vede da solo (spreca crediti): una riga sola. Mai dire "fatto/pronto/mandato" prima che sia vero (render finito, controllato, consegnato).
 3. VERIFICARE PRIMA di dire "posso/non posso" (N.25): provare, poi una risposta sola. Mai dire una cosa e poi smentirsi. Mai attribuire all'utente decisioni non documentate (N.24).
 4. Ogni errore/correzione mostrata dall'utente: scriverla SUBITO in REGOLE-FISSE.md con la soluzione (commit+push) senza che lo ordini (N.4, N.23). Prima di consegnare: rileggere questa checklist e usare gli script di controllo.
 5. Mai chiedere l'audio della voce: i tempi si calcolano da testo+durate (N.16). Mai zip: clip MP4 singoli. Mai crediti vidIQ senza chiedere (saldo gratis con vidiq_balance; 5 crediti a chiamata). Dati pubblici canale: curl su /videos e /shorts (le pagine /watch sono bloccate).
