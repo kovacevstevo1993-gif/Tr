@@ -1,6 +1,6 @@
 # VIDEO 11 - Never Keep More Than This in One Bank Account After 65 — 5 Rules Most Seniors Miss - testi da incollare (21/10/2026)
 Struttura identica al video 10. Capitoli dalle fine-voce dei blocchi (fine_blocchi.txt; fine video 11796 fotogrammi = 6:33), arrotondati per difetto.
-vidIQ 20-21/10 (20 crediti, saldo 25 -> 5): outliers 'seniors retirees money...' questa settimana, keyword research 'how much money to keep in bank after 65' (seed <750: le view vengono da suggeriti/home), score_title 96, get_videos_by_ids su Franklin Law PkQpWria5RM (118K->176K view, descrizione con gancio a storia, elenco con importi, "bottom line", fonti, 10 hashtag, 15 tag). Miniature virali (V7lLK0JhzBQ 460K): testo enorme bianco su fasce rosse, estratto conto con timbro, un solo elemento di curiosita'.
+vidIQ 20-21/10 (25 crediti, saldo 25 -> 0): outliers 'seniors retirees money...' questa settimana, keyword research 'how much money to keep in bank after 65' (seed <750: le view vengono da suggeriti/home), score_title 96, keyword research 'fdic insurance' 21/10 (tag scelti da qui: fdic 7.722/mese; bank failure 3.368; a bassa concorrenza: what does fdic cover 17,5, increase fdic insurance 21,9, what is fdic insurance 23,8, fdic insurance coverage 24,7, fdic insurance amount 25,6; il resto <750), get_videos_by_ids su Franklin Law PkQpWria5RM (118K->176K view, descrizione con gancio a storia, elenco con importi, "bottom line", fonti, 10 hashtag, 15 tag). Miniature virali (V7lLK0JhzBQ 460K): testo enorme bianco su fasce rosse, estratto conto con timbro, un solo elemento di curiosita'.
 
 ## Dove va
 Playlist "Retirement After 50". Schermata finale -> video 1.
@@ -9,7 +9,7 @@ Playlist "Retirement After 50". Schermata finale -> video 1.
 Never Keep More Than This in One Bank Account After 65 — 5 Rules Most Seniors Miss
 
 ## Descrizione
-How much money can you safely keep in one bank account after 65? The FDIC insures at least $250,000 per depositor, per insured bank, for each ownership category. But that number is not a limit on how much money you have. It is a limit on how your money is set up, and there are 5 rules behind it that most seniors never check. Every number comes from official sources: the FDIC, the Social Security Administration, the Consumer Financial Protection Bureau and Medicare.
+How much money can you safely keep in one bank account after 65? The FDIC insures at least $250,000 per depositor, per insured bank, for each ownership category. FDIC insurance coverage explained: what the FDIC covers, what it does not, and how to increase your FDIC insurance. But that number is not a limit on how much money you have. It is a limit on how your money is set up, and there are 5 rules behind it that most seniors never check. Every number comes from official sources: the FDIC, the Social Security Administration, the Consumer Financial Protection Bureau and Medicare.
 
 We follow Frank and Mary, two fictional neighbors. Frank is 67 and keeps $380,000 from selling his house at one bank, in one single account. Mary is 70, a widow, and her son is on her checking account so he can help pay the bills. The 5 rules: 1) FDIC insurance is $250,000 per depositor, per insured bank, per ownership category (credit unions have the same coverage through the NCUA), 2) single, joint, retirement and trust accounts are insured separately, a joint account can reach $500,000 and payable on death beneficiaries can raise coverage up to $1,250,000 per owner, but either owner of a joint account can also withdraw or close it, 3) stocks, bonds, mutual funds, annuities, life insurance, crypto and safe deposit boxes are not insured, and nonbank apps are never FDIC insured, 4) directly deposited federal benefits get two months of protection from a debt collector's court order, a paper check you deposit yourself does not, 5) SSI has a $2,000 resource limit ($3,000 for a couple) and the Medicare Savings Programs have a 2026 federal limit of $9,950 ($14,910 for a couple), so bank balances can matter. Plus the free FDIC EDIE tool and three things to do this week.
 
@@ -63,9 +63,9 @@ Subscribe to The Money Backstory for more clear explanations of retirement for A
 #BankAccount #FDIC #SeniorFinance
 
 ## Tag
-never keep more than this in the bank after 65,how much money to keep in checking after 65,fdic insurance limit,fdic insurance limit seniors,fdic $250,000,bank account after 65,seniors bank account,joint account risks,payable on death account,trust account fdic coverage,can creditors take social security,bank account frozen social security,social security bank account,ssi resource limit 2026,medicare savings program,fdic edie,are apps fdic insured,senior finance 2026
+never keep more than this in the bank after 65,how much money to keep in checking after 65,fdic,fdic insurance limit,fdic insurance coverage,what does fdic cover,what is fdic insurance,fdic insurance explained,increase fdic insurance,do beneficiaries count for fdic insurance,bank failure,bank account after 65,seniors bank account,joint account risks,payable on death account,can creditors take social security,bank account frozen social security,social security bank account,ssi resource limit 2026,medicare savings program,personal finance
 
-(Tag: 471 caratteri)
+(Tag: 542 caratteri)
 
 ## Commento da fissare
 Do you keep your money at one bank or more than one? Tell me below, and send this to one person over 65 who keeps everything at one bank.
