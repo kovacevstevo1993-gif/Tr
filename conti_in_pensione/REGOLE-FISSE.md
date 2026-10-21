@@ -489,3 +489,7 @@
 - L'utente aveva appena detto: il video sui dati reali non si fa adesso perche' i dati non ci sono. Io ho proposto il taglio Irpef della MANOVRA, che non e' approvata: stesso problema (niente dati reali, solo stime). L'utente: "non ha ancora dati reali e non ha senso, te l'ho detto prima".
 - Regola: un tema si propone SOLO se i dati sono gia' ufficiali e certi oggi (leggi in vigore, date, importi fissati). Niente manovre, decreti o stime non ancora usciti.
 - Metodo che funziona (gratis): ricerca pubblica YouTube Italia ordinata per data (ultimo mese) sui temi del canale, guardando le visualizzazioni dei canali grandi (Mr LUL, Tele Italia, Pensioni e Aggiornamenti).
+
+## ERRORE DEL 21/10/2026 (copione video 9): "TRE SOLDI", "IL TERZO SOLDO"
+- Parole scelte da Claude, non prese da fonti: in italiano "un soldo / il terzo soldo" per indicare un pagamento non si dice (suona sbagliato). L'utente: "dove hai trovato queste parole, sono giuste?". La voce era gia' registrata.
+- Regola: nei copioni usare i nomi giusti (pagamento, somma, tredicesima, importo aggiuntivo, quattordicesima), mai parole inventate o forzate per fare effetto. Nella revisione N.42 rileggere anche l'italiano parola per parola. Nelle slide del video 9 si scrive "PAGAMENTI".
