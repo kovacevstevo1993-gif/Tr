@@ -499,3 +499,7 @@
 - Ricerca: ricerca-21-10-2026.md (cosa va questa settimana, vidIQ, fatti verificati su inps.it). Copione 14 blocchi (copione-blocchi.txt, max 400, struttura nuova: tre vicini Franco/Anna/Lucia; blocco 6 = iscrizione dopo il primo conto). DURATE.txt (9495 fotogrammi = 05:16+15f).
 - Slide (ordine utente: "un po' piu' diverse, con piu' elementi, piu' professionali"): motore sorgenti/specs-v9-base.js + specs-v9-new.js + specs-v9-blocks.js -> specs-v9.js, regia9.js (sfondo di dicembre: raggi, luci che scendono, calendario in trasparenza). Novita': titoletto a sinistra con calendarietto DIC, didascalia con barra gialla e moneta, personaggi disegnati, righello della soglia, barra di coppia, striscia dei mesi, tabella 14a, griglia finale, telefono My Inps. Clip V9-blocco01..14.mp4 in clip/ (QA su tutti i fotogrammi OK, ffprobe = durate, sequenze a 0,5 s guardate), consegnate il 21/10.
 - Da fare solo su ordine: miniatura, pacchetto.
+
+## ERRORE DEL 21/10/2026 (pacchetto video 9) - N.42 violata ancora
+- Alla domanda "e' tutto perfetto?" ho trovato un difetto gia' consegnato: nella descrizione "Chi non lo prende mai: assegno sociale, pensione sociale, invalidita' civile" manca "SOLO" (l'Inps esclude chi ha SOLO trattamenti assistenziali; chi ha anche una pensione Inps puo' averlo). Il copione e le slide lo dicevano giusto.
+- Regola: nella revisione finale confrontare OGNI riga della descrizione con il copione e con la fonte, parola per parola (condizioni come "solo", "fino a", "almeno" non si tolgono mai per accorciare).
