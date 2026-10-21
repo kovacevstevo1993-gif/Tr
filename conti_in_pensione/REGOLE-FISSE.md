@@ -488,5 +488,4 @@
 ## ERRORE DEL 21/10/2026 (proposta video 9: taglio Irpef della manovra) - SENZA DATI REALI
 - L'utente aveva appena detto: il video sui dati reali non si fa adesso perche' i dati non ci sono. Io ho proposto il taglio Irpef della MANOVRA, che non e' approvata: stesso problema (niente dati reali, solo stime). L'utente: "non ha ancora dati reali e non ha senso, te l'ho detto prima".
 - Regola: un tema si propone SOLO se i dati sono gia' ufficiali e certi oggi (leggi in vigore, date, importi fissati). Niente manovre, decreti o stime non ancora usciti.
-- Ribadita N.43: si sceglie il tema con PIU' domanda (tanta concorrenza = tanta gente che cerca), mai "nuovo perche' nessuno lo fa".
 - Metodo che funziona (gratis): ricerca pubblica YouTube Italia ordinata per data (ultimo mese) sui temi del canale, guardando le visualizzazioni dei canali grandi (Mr LUL, Tele Italia, Pensioni e Aggiornamenti).
