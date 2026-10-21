@@ -480,3 +480,7 @@
 - Errori di questa chat da non ripetere: risposte non verificate, spiegazioni dopo l'invio dei file, short 11 troppo simile agli 8-10 ("un po' piu' diverse" alla lettera; prossimo short: 1 slide di prova accanto alla precedente prima di fare tutto), miniature che svelano la risposta.
 - vidIQ: nessun credito speso. Prossimo, solo su ordine.
 - (21/10, chat nuova) Controllo completezza: clip S11-blocco01..05 (fotogrammi = DURATE.txt), pacchetto, miniatura-short11, miniatura-D presenti su main. Mancava la chat intera della sessione 10: salvata in chat/chat-sessione-10-completa.md.
+
+## ERRORE DEL 21/10/2026 (ricerca vidIQ video 9) - N.30 e N.32 violate
+- Ho lanciato vidiq_outliers con una frase generica ("pensioni novita' questa settimana") e solo il filtro lingua: sono usciti video non pertinenti al canale (gossip, calcio, meteo, rosario). 5 crediti sprecati. Poi keyword_research su "taglio irpef pensionati" (<750 ricerche/mese, dato inutile): altri 5 crediti, 10 in tutto. L'utente: "deve essere inerente al canale".
+- Regola: ogni risultato vidIQ va controllato PRIMA di citarlo; se non e' del tema pensioni/Inps/over 55 si scarta e si dice subito. Per "cosa va questa settimana" usare la ricerca pubblica YouTube ordinata per data (gratis) su query di tema (pensioni, cedolino, pensionati inps), e vidIQ solo con parole del canale gia' viste in ricerca. Mai chiamare outliers/trending senza parole chiave del canale.
