@@ -54,4 +54,4 @@ pensioni, pensioni ultime notizie, notizie pensioni, info pensioni, pensioni ita
 E tu chi sei: Franco, Anna o Lucia? Scrivi qui sotto quanto prendi al mese e se sei solo o sposato: ti diciamo se rientri nei limiti del bonus 👇
 
 === IMPOSTAZIONI ===
-IA: No. Promozione a pagamento: No. Miniatura: da fare. Schermata finale: 20 s (video lungo 5 "PENSIONI: TREDICESIMA 2026 DETASSATA?" in mezzo in basso, Iscriviti in basso a destra). Playlist: video lunghi.
+IA: No. Promozione a pagamento: No. Miniatura: miniatura/miniatura-A.png (test A/B con miniatura-B.png). Schermata finale: 20 s (video lungo 5 "PENSIONI: TREDICESIMA 2026 DETASSATA?" in mezzo in basso, Iscriviti in basso a destra). Playlist: video lunghi.

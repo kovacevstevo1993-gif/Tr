@@ -15,7 +15,7 @@ def qball(cx,cy,r,fill='url(#ye)'):
     return f'<g filter="url(#sh)"><circle cx="{cx}" cy="{cy}" r="{r}" fill="{fill}" stroke="#fff" stroke-width="{r*0.12}"/></g><text x="{cx}" y="{cy+r*0.42}" class="t" font-size="{r*1.25}" fill="#fff" text-anchor="middle" {S} stroke-width="{r*0.12}">?</text>'
 def person(cx,cy,r,kind,col):
     SK='#F1D9C4';u=f'p{kind}{cx}'
-    s=f'<g filter="url(#sh)"><clipPath id="{u}"><circle cx="{cx}" cy="{cy}" r="{r}"/></clipPath><circle cx="{cx}" cy="{cy}" r="{r}" fill="#0E5A60"/><g clip-path="url(#{u})" transform="translate({cx} {cy})">'
+    s=f'<g filter="url(#sh)"><clipPath id="{u}"><circle cx="0" cy="0" r="{r}"/></clipPath><circle cx="{cx}" cy="{cy}" r="{r}" fill="#0E5A60"/><g transform="translate({cx} {cy})"><g clip-path="url(#{u})">'
     s+=f'<path d="M{-r*0.9} {r} Q{-r*0.85} {r*0.3} 0 {r*0.26} Q{r*0.85} {r*0.3} {r*0.9} {r} Z" fill="{col}"/><rect x="{-r*0.12}" y="{r*0.02}" width="{r*0.24}" height="{r*0.28}" fill="{SK}"/>'
     if kind=='A':s+=f'<circle cx="0" cy="{-r*0.6}" r="{r*0.19}" fill="#6B4A3A"/>'
     s+=f'<ellipse cx="0" cy="{-r*0.18}" rx="{r*0.3}" ry="{r*0.35}" fill="{SK}"/>'
@@ -24,11 +24,11 @@ def person(cx,cy,r,kind,col):
     if kind=='F':
         for k in (-1,1):s+=f'<path d="M{k*r*0.31} {-r*0.16} Q{k*r*0.34} {-r*0.46} {k*r*0.16} {-r*0.5}" fill="none" stroke="#C9D3D6" stroke-width="{r*0.1}" stroke-linecap="round"/><circle cx="{k*r*0.13}" cy="{-r*0.2}" r="{r*0.09}" fill="none" stroke="#0B4A50" stroke-width="{r*0.035}"/>'
     for k in (-1,1):s+=f'<circle cx="{k*r*0.12}" cy="{-r*0.2}" r="{r*0.032}" fill="#0B4A50"/>'
-    s+=f'<path d="M{-r*0.1} {-r*0.01} Q0 {r*0.07} {r*0.1} {-r*0.01}" fill="none" stroke="#0B4A50" stroke-width="{r*0.032}" stroke-linecap="round"/></g>'
+    s+=f'<path d="M{-r*0.1} {-r*0.01} Q0 {r*0.07} {r*0.1} {-r*0.01}" fill="none" stroke="#0B4A50" stroke-width="{r*0.032}" stroke-linecap="round"/></g></g>'
     s+=f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="#fff" stroke-width="{r*0.08}"/><circle cx="{cx}" cy="{cy}" r="{r*1.09}" fill="none" stroke="{col}" stroke-width="{r*0.07}"/></g>'
     return s
 def card(x,y,w,h,rot,fill,big,fs,sub,col='#fff'):
-    return f'<g transform="rotate({rot} {x} {y})"><g filter="url(#sh)"><rect x="{x-w/2}" y="{y-h/2}" width="{w}" height="{h}" rx="18" fill="{fill}" stroke="#fff" stroke-width="7"/></g><text x="{x}" y="{y+fs*0.1}" class="t" font-size="{fs}" fill="{col}" text-anchor="middle" {S} stroke-width="8">{big}</text><text x="{x}" y="{y+h/2-22}" class="t" font-size="26" fill="{col}" text-anchor="middle">{sub}</text></g>'
+    return f'<g transform="rotate({rot} {x} {y})"><g filter="url(#sh)"><rect x="{x-w/2}" y="{y-h/2}" width="{w}" height="{h}" rx="18" fill="{fill}" stroke="#fff" stroke-width="7"/></g><text x="{x}" y="{y+fs*0.1}" class="t" font-size="{fs}" fill="{col}" text-anchor="middle" {S if col=='#fff' else ''} stroke-width="{max(3,fs*0.12)}">{big}</text><text x="{x}" y="{y+h/2-22}" class="t" font-size="26" fill="{col}" text-anchor="middle">{sub}</text></g>'
 # A: LA BUSTA DELLA RATA DI DICEMBRE con 3 pagamenti che escono (due coperti da "?")
 ENV=f'''<g filter="url(#sh)"><path d="M770 360 L1240 360 L1240 600 L770 600 Z" fill="url(#pp)"/></g>'''
 ENVF=f'''<path d="M770 360 L1005 500 L1240 360 L1240 600 L770 600 Z" fill="#E9F1F3" stroke="#B9CDD2" stroke-width="4"/><path d="M770 600 L1005 470 L1240 600" fill="none" stroke="#B9CDD2" stroke-width="4"/>
@@ -39,20 +39,20 @@ A=HEAD+f"""<circle cx="1000" cy="330" r="290" fill="#FFD43B" opacity="0.14" filt
 <g class="t" {S} stroke-width="16"><text id="a3" x="38" y="350" font-size="84" fill="#FFD43B">3 PAGAMENTI</text><text id="a4" x="38" y="440" font-size="84" fill="#fff">IN UNA RATA?</text></g>
 {blocco(40,470,560,70,"CHI RESTA A ZERO?",44,"#0D5158","#fff",-2,'a5')}
 {ENV}
-{card(860,250,190,230,-10,"url(#gr)","13ª",78,"TREDICESIMA")}
-{card(1005,215,200,250,0,"url(#ye)","154,94€",44,"BONUS","#0D2A2F")}
-{card(1150,255,190,230,10,"url(#re)","14ª",78,"QUATTORDICESIMA")}
+{card(830,260,120,190,-4,"url(#gr)","13ª",60,"")}
+{card(1000,235,190,230,0,"url(#ye)","154,94€",36,"BONUS","#0D2A2F")}
+{card(1170,260,120,190,4,"url(#re)","14ª",60,"")}
 {ENVF}
-{qball(1078,120,40)}{qball(1222,160,40)}
+{qball(1080,130,36)}{qball(1215,170,36)}
 """+STRIP('A CHI SPETTANO <tspan fill="#0D5158">DAVVERO?</tspan>')+END
 # B: NUMERO GIGANTE + TRE VICINI con "?" (chi lo prende?)
 B=HEAD+f"""<circle cx="640" cy="300" r="330" fill="#25D08C" opacity="0.13" filter="url(#gl)"/>
 <g class="t" text-anchor="middle" {S} stroke-width="18"><text id="b1" x="640" y="112" font-size="98" fill="#fff">PENSIONI <tspan fill="#FFD43B">DICEMBRE</tspan></text></g>
 <g class="t" text-anchor="middle" {S} stroke-width="22"><text id="b2" x="640" y="300" font-size="176" fill="#3BE39A">+154,94€</text></g>
-{blocco(330,330,620,74,"BONUS: TI SPETTA O NO?",46,"#FFD43B","#0D2A2F",-1,'b3')}
-{person(250,520,78,'F','#2B8FA0')}{person(640,520,78,'A','#1B9F81')}{person(1030,520,78,'L','#E39A1C')}
+{blocco(280,332,720,74,"BONUS: TI SPETTA O NO?",46,"#FFD43B","#0D2A2F",-1,'b3')}
+<g filter="url(#sh)"><circle cx="90" cy="380" r="44" fill="url(#gr)" stroke="#fff" stroke-width="6"/></g><text x="90" y="393" class="t" font-size="36" fill="#fff" text-anchor="middle" {S} stroke-width="6">13ª</text><g filter="url(#sh)"><circle cx="1190" cy="380" r="44" fill="url(#re)" stroke="#fff" stroke-width="6"/></g><text x="1190" y="393" class="t" font-size="36" fill="#fff" text-anchor="middle" {S} stroke-width="6">14ª</text>{person(250,520,78,'F','#2B8FA0')}{person(640,520,78,'A','#1B9F81')}{person(1030,520,78,'L','#E39A1C')}
 {qball(322,452,34,'url(#re)')}{qball(712,452,34,'url(#gr)')}{qball(1102,452,34,'url(#ye)')}
-{blocco(30,470,140,52,"13ª",34,"#fff","#0D5158",-6,'b4')}{blocco(1110,470,140,52,"14ª",34,"#E0402A","#fff",6,'b5')}
+
 """+STRIP('PER 10 € IN PIÙ AL MESE <tspan fill="#0D5158">LO PERDI</tspan>')+END
 JS="""()=>{const o=[];for(const t of document.querySelectorAll('text')){const r=t.getBoundingClientRect();if(r.width<2)continue;o.push([t.textContent.slice(0,22),Math.round(r.x),Math.round(r.y),Math.round(r.right),Math.round(r.bottom)]);}return o;}"""
 async def main():
