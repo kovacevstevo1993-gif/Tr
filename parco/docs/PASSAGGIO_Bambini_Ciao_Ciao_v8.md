@@ -40,3 +40,7 @@ Storia: in cucina il biscotto sparisce dal piatto; topolino "Io non sono stato!"
 - Controllo salti fotogrammi: ffmpeg scala 270x480, differenza media tra fotogrammi consecutivi (mediana ~2; i tagli >15). Contact sheet: `ffmpeg -vf "select='not(mod(n,8))',scale=160:277,tile=9x1"`.
 - Non usare `pkill -f` con il nome dello script nella stessa riga di comando (chiude la shell).
 - Fine lavoro: aggiornare questo file, commit, push sul branch della sessione e poi unire su main.
+
+## AGGIORNAMENTO 21/10 sera (UTC 23:00)
+- Generate e controllate (contact sheet) clip 1,2,3,4,5 del biscotto (assets/v/biscotto/clipN.mp4). Clip5: la rana apre un po' la bocca a meta' (difetto lieve, da valutare). Clip6 gia' fatta.
+- MANCA SOLO clip7 (finale, tutti ridono, 4.0 s): quota HF finita di nuovo dopo 5 clip (~130 s di clip generate = ~30 s GPU l'una: la quota reale e' ~150 s/giorno circa, non 400). Riprovare `python3 biscotto_clips.py 7` dopo ~23:00 UTC del 22/10, poi montaggio (video|mix|finale), controllo fotogrammi, SendUserFile.
