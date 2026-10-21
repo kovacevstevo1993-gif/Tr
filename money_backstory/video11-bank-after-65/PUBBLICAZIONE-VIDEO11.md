@@ -58,7 +58,7 @@ Medicare (medicare.gov): Medicare Savings Programs 2026
 DISCLAIMER
 This video is for education only and is not financial, legal, tax or medical advice. Frank and Mary are fictional examples. Rules, amounts and limits change and differ by state and by bank. Always confirm with the official source before you rely on them. This channel is not affiliated with the FDIC, NCUA, CFPB, Social Security Administration, Medicare or any bank or app.
 
-Subscribe to The Money Backstory for more clear explanations of retirement for Americans over 50.
+Subscribe to The Money Backstory for more clear explanations of retirement for Americans over 50: https://www.youtube.com/@TheMoneyBackstoryUSA?sub_confirmation=1
 
 #BankAccount #FDIC #SeniorFinance
 
