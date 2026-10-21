@@ -159,16 +159,16 @@ def draw11(img, t):
         put(img, sprite("mk11", 90, 100, lambda c: c.poly([(45, 90), (10, 20), (80, 20)], fill=IVORY)), 700 + 900 * p, 285)
     tp = ts[3]
     if t >= tp:
-        ap(img, t, tp, sprite("nocs11", 120, 120, lambda c: (ic_coin(c, 60, 60, 36), no_cross(c, 60, 60, 1.0))), 310, 445)
-        ap(img, t, tp, tag("AT OR BELOW THE FEDERAL POVERTY LINE", 700, 60, GREEN_OK, GREEN_D, 22, track=1), 770, 445, shadow=6)
-        ap(img, t, tp + 0.8, txt("NO COST SHARING", 40, GREEN_OK, 3), 1380, 445)
+        ap(img, t, tp, sprite("nocs11", 120, 120, lambda c: (ic_coin(c, 60, 60, 36), no_cross(c, 60, 60, 1.0))), 300, 452, scale=0.62)
+        ap(img, t, tp, tag("AT OR BELOW THE FEDERAL POVERTY LINE", 700, 56, GREEN_OK, GREEN_D, 22, track=1), 760, 452, shadow=6)
+        ap(img, t, tp + 0.8, txt("NO COST SHARING", 40, GREEN_OK, 3), 1380, 452)
     items = [("savings", lambda c, x, y: (ic_coin(c, x - 22, y + 14, 34), ic_coin(c, x + 24, y - 6, 30)), ["YOUR", "SAVINGS"], 500, at(11, 4, "your savings")),
              ("house", lambda c, x, y: ic_house(c, x, y + 4, 1.1, IVORY, CORAL), ["YOUR", "HOUSE"], 1045, at(11, 4, "your house")),
              ("prop", lambda c, x, y: ic_box(c, x, y, 1.0), ["ANY OTHER", "PROPERTY"], 1590, at(11, 4, "any other"))]
-    ap(img, t, tsub(11, 4, 0), txt("THEY CAN'T COUNT", 34, GOLD, 3), 1045, 525)
+    ap(img, t, tsub(11, 4, 0), txt("THEY CAN'T COUNT", 34, GOLD, 3), 1045, 512)
     for key, ic, lines, x, tt in items:
-        ap(img, t, tt, row_card(("n11", key), 520, 200, lambda c, xx, yy, ic=ic: ic(c, xx, yy), lines, SAGE_D, 40, ink=IVORY, ink2=GOLD), x, 645, shadow=10, dur=0.45)
-        ap(img, t, tt + 0.5, stamp("NOT COUNTED", 250, 62, RED, 26), x + 120, 560, rot=-8, shadow=6)
+        ap(img, t, tt, row_card(("n11", key), 520, 200, lambda c, xx, yy, ic=ic: ic(c, xx, yy), lines, SAGE_D, 40, ink=IVORY, ink2=GOLD), x, 672, shadow=10, dur=0.45)
+        ap(img, t, tt + 0.5, stamp("NOT COUNTED", 230, 58, RED, 24), x + 140, 590, rot=-8, shadow=6)
     t5 = ts[5]
     ap(img, t, t5, panel(1630, 215, border=SAGE_D), 1045, 912, pop_=False, dy=40, dur=0.6, shadow=10)
     ap(img, t, t5 + 0.3, jar7(), 360, 915, scale=0.7, shadow=6)
@@ -486,8 +486,8 @@ def draw19(img, t):
         ap(img, t, tt, row_card(("sv19", nm), 820, 100, lambda c, x, yy, ic=ic: ic(c, x, yy), [nm], SAGE_D, 36, ink=IVORY, ink2=IVORY), 1450, y + 20, pop_=False, dx=60, dur=0.45, shadow=8)
     ap(img, t, ts[3], row_card("cost19", 760, 190, lambda c, x, y: ic_coin(c, x, y, 40), ["THE COST DEPENDS ON YOUR", "LOCAL PROGRAM AND", "YOUR INCOME"], SAGE_D, 30, ink=IVORY, ink2=GOLD), 620, 770, pop_=False, dy=40, dur=0.5, shadow=10)
     ap(img, t, ts[4], row_card("mist19", 820, 190, lambda c, x, y: warn_tri(c, x, y, 0.8, CORAL), ["THE MISTAKE: WAITING UNTIL", "YOU'RE AT THE END", "OF YOUR STRENGTH"], CORAL, 30, ink=IVORY, ink2=IVORY), 1450, 770, pop_=False, dy=40, dur=0.5, shadow=10)
-    ap(img, t, ts[5], stamp("YOU DON'T", 300, 72, GREEN_OK, 34), 1730, 690, rot=-6, shadow=8)
-    ap(img, t, ts[6], tag("ASK YOUR AREA AGENCY ON AGING ABOUT CAREGIVER SUPPORT", 1620, 86, GOLD, GREEN_D, 34, border=(168, 118, 40), track=2), 1045, 965, shadow=10)
+    ap(img, t, ts[5], stamp("YOU DON'T", 280, 58, GREEN_OK, 30), 1690, 893, rot=-4, shadow=8)
+    ap(img, t, ts[6], tag("ASK YOUR AREA AGENCY ON AGING ABOUT CAREGIVER SUPPORT", 1620, 86, GOLD, GREEN_D, 34, border=(168, 118, 40), track=2), 1045, 965, shadow=10, pop_=False, dy=24, dur=0.5)
 
 # ============================================================ BLOCCO 20 - protezione dai distacchi
 def draw20(img, t):

@@ -307,8 +307,8 @@ def draw1(img, t):
     ap(img, t, ts[2], digital_clock(), 475, 528, scale=0.74, shadow=8)
     ap(img, t, ts[2] + 0.2, tag("FURNACE", 210, 56, IVORY, GREEN_D, 28, track=3), 430, 700, shadow=6)
     off_t = ts[2] + 1.6
-    if t < off_t:
-        put(img, flame_spr(), 430, 772, scale=0.42 + 0.03 * math.sin(t * 14))
+    if 0.9 <= t < off_t:
+        put(img, flame_spr(), 430, 772, scale=0.42 + 0.03 * math.sin(t * 14), alpha=ease(seg(t, 0.9, 0.3)))
     else:
         k = 1 - ease(seg(t, off_t, 0.5))
         if k > 0:
