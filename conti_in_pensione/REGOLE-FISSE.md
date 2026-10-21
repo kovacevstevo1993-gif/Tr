@@ -503,3 +503,4 @@
 ## ERRORE DEL 21/10/2026 (pacchetto video 9) - N.42 violata ancora
 - Alla domanda "e' tutto perfetto?" ho trovato un difetto gia' consegnato: nella descrizione "Chi non lo prende mai: assegno sociale, pensione sociale, invalidita' civile" manca "SOLO" (l'Inps esclude chi ha SOLO trattamenti assistenziali; chi ha anche una pensione Inps puo' averlo). Il copione e le slide lo dicevano giusto.
 - Regola: nella revisione finale confrontare OGNI riga della descrizione con il copione e con la fonte, parola per parola (condizioni come "solo", "fino a", "almeno" non si tolgono mai per accorciare).
+- (21/10, utente: "mandamelo intero") Quando si corregge un testo gia' consegnato (descrizione, titolo, tag, commento) si rimanda SEMPRE il campo INTERO corretto nel suo riquadro, pronto da copiare: mai solo la riga cambiata.
