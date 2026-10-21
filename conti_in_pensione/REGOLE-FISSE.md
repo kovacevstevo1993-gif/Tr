@@ -39,6 +39,7 @@
 ## REGOLA N.3 (utente, 04/10/2026): NOMI DEI FILE DIVERSI PER OGNI VIDEO
 - I file delle slide/clip hanno sempre lo stesso nome (blocco1.mp4, blocco2.mp4...) e in CapCut si confondono tra un video e l'altro. Rinominarli per OGNI video e short con un prefisso che identifica il video.
 - Formato: `V3-blocco01.mp4`, `V3-blocco02.mp4`... (V3 = video lungo 3; per gli short: `S4-blocco01.mp4`, ...). Numeri a due cifre, così restano in ordine.
+- AGGIORNATA (utente, 21/10/2026): i nomi V7/V8/V9-blocco li usano anche gli altri canali (Senior Advantage, Money Backstory: V4..V7-blocco): sul telefono sembrano video gia' scaricati. DAL PROSSIMO video e short (non si rifanno quelli gia' mandati) i file hanno il prefisso del canale: `CIP-V10-blocco01.mp4` (lungo), `CIP-S12-blocco01.mp4` (short). Cambiare il nome in render.py quando si copia il motore.
 - NON farlo adesso per il video 2 (restano blocco1.mp4...blocco57.mp4). Si applica dal PROSSIMO video lungo e dai prossimi short.
 - (Errore di Claude: all'inizio aveva capito "cambiare il modello grafico delle slide": NON era questo. La grafica non cambia per questa regola.)
 
