@@ -1,0 +1,7 @@
+# Durate blocchi short 11 (S11-blocco01.mp4...) - screenshot CapCut dell'utente 20-21/10/2026, 30 fps. Lettura N.29: ultimo segno disegnato prima della riga + 1.
+# blocco | fine cumulativa | fotogrammi a fine | durata
+1 | 00:14+16f | 436 | 436
+2 | 00:29+2f | 872 | 436
+3 | 00:42+16f | 1276 | 404
+4 | 00:55+2f | 1652 | 376
+5 | 01:10+5f | 2105 | 453

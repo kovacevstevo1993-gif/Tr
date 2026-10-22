@@ -6,7 +6,7 @@
   - The Money Backstory -> `money_backstory/REGOLE-UTENTE-05-10.md` (regole con le parole dell'utente) + `money_backstory/START-QUI-NUOVA-CHAT.md` (stato) + `money_backstory/RICERCHE-VIDIQ-LOG.md`.
   - The Senior Advantage -> `senior_advantage/PASSAGGIO-CHAT.md` + `senior_advantage/RICERCHE-VIDIQ.md`.
   - Conti in Pensione -> `conti_in_pensione/REGOLE-FISSE.md` (per intero).
-  - Bambini Ciao Ciao -> `parco/docs/PASSAGGIO_Bambini_Ciao_Ciao_v7.md` (stato e regole aggiornate al 18/10) + `parco/docs/PASSAGGIO_Bambini_Ciao_Ciao_v6_regole.md`.
+  - Bambini Ciao Ciao -> `parco/docs/PASSAGGIO_Bambini_Ciao_Ciao_v8.md` (stato e regole aggiornate al 21/10) + `parco/docs/PASSAGGIO_Bambini_Ciao_Ciao_v7.md` + `parco/docs/PASSAGGIO_Bambini_Ciao_Ciao_v6_regole.md`.
   - Nuovo canale italiano "Trappole e conti veri" (nome da decidere) -> `nuovo_canale_italia/REGOLE-UTENTE.md` + `nuovo_canale_italia/RICERCHE-VIDIQ.md`.
 - Non aprire ne' usare file, regole o stile di un altro canale. Le regole di questo file valgono per tutti.
 - Fine di ogni lavoro: salvare nel file di stato del canale, commit e push sul branch della sessione, poi unire su main (cosi' la chat dopo trova tutto).
