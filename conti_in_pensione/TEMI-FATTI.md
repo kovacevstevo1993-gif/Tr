@@ -8,4 +8,5 @@ V6 pensioni novembre: pagamento 2 novembre, secondo acconto Irpef, ultima rata a
 V7 rivalutazione tagliata 2023-2026: quanto hai perso (9.400 euro), rischio 2027
 V8 pensione all'estero: Portogallo, Tunisia, Albania, tasse, minimo/maggiorazione/assegno sociale non esportabili
 V9 pensioni dicembre: tredicesima, importo aggiuntivo 154,94, quattordicesima, tre vicini
+V10 pensione alle casalinghe: ASSEGNO SOCIALE (requisiti 2026, limiti 7.101,12 / 14.202,24, conto con la pensione netta del marito, vedove, cosa conta e cosa no, domanda), FONDO CASALINGHE (iscrizione 16-65, pensione da 57 o 65 anni)
 S1 verificare il cedolino in 30 secondi | S2 scadenze/requisiti 2027 | S3-S9 teaser di V1-V7 | S10 iscrizione + cedolino (dove spariscono i soldi) | S11 estero "se ci vivessi" | S12 dicembre: bonus perso per 10 euro
