@@ -13,3 +13,5 @@ if os.path.exists(mf):
     if os.path.exists(f):
         print('=== PROMEMORIA OBBLIGATORIO (hook, a ogni messaggio): applica TUTTE queste regole prima di rispondere e prima di consegnare. Regole complete: conti_in_pensione/REGOLE-FISSE.md ===')
         print(open(f,encoding='utf-8').read())
+        t=os.path.join(root,'conti_in_pensione','TEMI-FATTI.md')  # 22/10/2026: errore video 10 (tema gia' fatto proposto come nuovo): la lista dei temi fatti sempre davanti
+        if os.path.exists(t): print(open(t,encoding='utf-8').read())

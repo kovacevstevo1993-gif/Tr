@@ -30,3 +30,4 @@ MINIATURE
 23. Video e short MAI uguali ai precedenti: chiusura, struttura/numero blocchi, apertura, frasi fisse e grafica sempre diversi (short e lunghi).
 24. Prima di consegnare: revisione critica del CONTENUTO ("e perfetto?": modello della ricerca, ripetizioni, promesse non decise dall utente, tono, dati che invecchiano). Correggere PRIMA; mai mandare cose con difetti noti (N.42).
 25. Parole assolute nei copioni/testi ("solo", "mai", "tutti", "nessuno", "sempre"): cercare su inps.it l'ECCEZIONE prima di consegnare, o toglierle (N.48, errore video 1).
+26. PRIMA di proporre un tema nuovo: python3 qa/check_tema.py "parole del meccanismo" + confronto con TEMI-FATTI (stampato sotto). Se esce GIA PRESENTE il tema si scarta, anche se la notizia e' nuova (N.36, errore video 10). Dopo ogni video/short nuovo: aggiungere una riga a TEMI-FATTI.md.
