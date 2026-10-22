@@ -24,3 +24,4 @@ CONTROLLI AGGIUNTI IN ANTICIPO (22/10, ordine utente: aggiungere subito tutti i 
 22. Pronuncia per CapCut: nomi, siti e sigle scritti come vanno letti (Sheer I D, walmart dot com, E B T); niente parole che la voce legge male.
 23. Niente consigli medici o legali e niente promesse di guadagno: rimandare sempre a farmacista, medico, piano, ente ufficiale.
 24. Stessi controlli (fonti, date, logica, inglese) anche per titolo, descrizione, tag, commento, testi delle slide e miniature.
+25. Dopo QUALSIASI correzione si rimanda SEMPRE il copione INTERO, mai solo i blocchi cambiati (ordine utente 22/10: 'mandami tutto il copione... mandi solo il sette per confondere').
