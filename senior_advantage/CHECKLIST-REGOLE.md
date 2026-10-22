@@ -1,7 +1,7 @@
 CHECKLIST THE SENIOR ADVANTAGE (stampata a ogni messaggio dall'hook .claude/hooks/regole-senior.py). Regole complete: CLAUDE.md + senior_advantage/PASSAGGIO-CHAT.md.
 1. MAI LA STRADA PIU VELOCE (ordine assoluto). Mentre lavori cerchi TUTTO e applichi TUTTE le regole, sempre, non solo all'inizio della chat.
 2. Ogni fatto e numero: letto sulla fonte ORIGINALE e COMPLETA (pagina ufficiale, PDF intero, note comprese), non su riassunti. Cercare eccezioni (Stati esclusi, fasce di prezzo, condizioni). Se non si puo verificare, NON si mette.
-3. Controllo completo PRIMA di mandare, senza che l'utente lo chieda. Copione: script (max 500 caratteri, niente cifre/simboli, sigle a lettere, snap minuscolo, numero annunciato = voci = riepilogo, nessuna frase o sequenza di 5 parole ripetuta). Slide: OGNI fotogramma controllato, fotogrammi = durate dell'utente.
+3. Controllo completo PRIMA di mandare, senza che l'utente lo chieda, TUTTI i controlli insieme (non a pezzi). Copione: lanciare python3 senior_advantage/qa/qa_copione.py <file> (se stampa ERRORI non si manda) + fonti originali e date a mano. Lo script controlla (max 500 caratteri, niente cifre/simboli, sigle a lettere, snap minuscolo, numero annunciato = voci = riepilogo, nessuna frase o sequenza di 5 parole ripetuta). Slide: OGNI fotogramma controllato, fotogrammi = durate dell'utente.
 4. Mai dire fatto/pronto/mandato se non e vero e confermato.
 5. Rispondere SEMPRE in italiano, SOLO a cio che chiede, il minimo. Niente scuse, niente offerte non richieste.
 6. Copioni in chat: **Blocco N** + riquadro ```, tutti in un colpo, mai in file. Pacchetto: formato fisso (MODELLO-DESCRIZIONE-VIDEO-1.md / MODELLO-PACCHETTO-SHORT.md).
@@ -9,3 +9,5 @@ CHECKLIST THE SENIOR ADVANTAGE (stampata a ogni messaggio dall'hook .claude/hook
 8. Non anticipare i passi. vidIQ: controllare il saldo con vidiq_balance (gratis); crediti solo se l'utente lo chiede/autorizza.
 9. Salvare tutto subito (file di stato), commit, push sul branch, merge su main. Ogni nuova regola dell'utente: scriverla SUBITO parola per parola in CLAUDE.md e qui (una riga).
 10. VERIFICA TUTTO IN OGNI MODO POSSIBILE (ordine utente 22/10): se una fonte originale non si apre, cercarne un'altra originale; se nessuna lo conferma, il fatto non si mette.
+11. Per ogni fatto controllare anche la DATA della fonte: se la fonte e vecchia o non si puo confermare che valga oggi, la frase lo dice ('Walmart has said'), mai al presente come se fosse sicuro oggi (errore 22/10, blocchi 10, 14, 18, 20 Walmart).
+12. Niente frasi generiche non verificabili presentate come fatti ('most people never...', 'every day somebody...', 'nobody...'): o c'e la fonte o la frase si riscrive senza affermarlo (errore 22/10 copione Walmart).
