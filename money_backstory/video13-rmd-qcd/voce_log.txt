@@ -1,0 +1,9 @@
+OK voce/g1.wav
+confine 1 -> 2 pausa 0.37 punteggio 5.76 | step / meet two people
+confine 2 -> 3 pausa 0.69 punteggio 5.92 | retirees / every number in
+GRUPPO 1 FATTO
+ERR 502 [] []
+ERR 502 [] []
+ERR 502 [] []
+ERR 502 [] []
+STOP al gruppo 4

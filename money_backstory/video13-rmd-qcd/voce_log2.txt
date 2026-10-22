@@ -1,0 +1,10 @@
+ERR 502 [] []
+ERR 502 [] []
+OK voce/g7.wav
+confine 7 -> 8 pausa 5.88 punteggio 4.0 | it / that is so
+confine 8 -> 9 pausa 0.38 punteggio 5.7 | year / next the penalty
+GRUPPO 7 FATTO
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['14h10m16']
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['14h9m55']
+ERR 502 [] []
+ERR 502 [] []
