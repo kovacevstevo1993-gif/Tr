@@ -1,0 +1,7 @@
+SHORT 12 - durate dagli screenshot CapCut (22/10/2026). Fine blocco cumulativa (30 fps), lettura N.29 (ultimo segno + 1):
+1: 00:14+5f = 425 (fine 425)
+2: 00:28+24f = 864 (durata 439)
+3: 00:42+29f = 1289 (durata 425)
+4: 00:58+8f = 1748 (durata 459)
+5: 01:11+23f = 2153 (durata 405)
+Totale 2153 fotogrammi = 71,8 s
