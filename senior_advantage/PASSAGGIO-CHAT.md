@@ -70,6 +70,7 @@ Idea vidIQ "What Changes for Seniors 60+" scartata (Social Security = Money Back
 
 
 ## ERRORI CHE SI RIPETONO IN OGNI CHAT: LEGGERE PER PRIMI, PRIMA DI RISPONDERE (l'utente e esausto)
+0. MAI LA STRADA PIU VELOCE (22/10/2026, ordine assoluto dell'utente, regola in CLAUDE.md): copione Walmart mandato 3 volte con errori perche ho usato riassunti di ricerca invece delle fonti originali e non ho letto la guida ufficiale fino in fondo. Sempre fonte originale completa, controllo completo PRIMA di mandare.
 1. Fare SOLO quello che l'utente ordina. Mai copione, slide, miniature o pacchetto "gia che ci sono". Dopo una ricerca: risultato in poche righe e FERMARSI.
 2. PRIMA di cercare o spendere crediti vidIQ: grep in RICERCHE-VIDIQ.md e in chat/. Se c'e gia, usarlo e dirlo. Crediti vidIQ: mai senza chiedere.
 3. PRIMA di consegnare qualsiasi cosa, controllare che sia completa: durata (caratteri) confrontata con i video gia fatti, fatti verificati, regole di questo file. Mai consegnare una cosa e poi dire che manca qualcosa.
