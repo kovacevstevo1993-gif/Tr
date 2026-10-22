@@ -6,6 +6,12 @@ COME LAVORARE
 4. Ogni errore/correzione mostrata dall'utente: scriverla SUBITO in REGOLE-FISSE.md con la soluzione (commit+push) senza che lo ordini (N.4, N.23). Prima di consegnare: rileggere questa checklist e usare gli script di controllo.
 5. Mai chiedere l'audio della voce: i tempi si calcolano da testo+durate (N.16). Mai zip: clip MP4 singoli. Mai crediti vidIQ senza chiedere (saldo gratis con vidiq_balance; 5 crediti a chiamata), TRANNE per un video nuovo da far diventare virale: vidIQ si usa nella ricerca senza chiedere, piano in una riga prima (N.49). Dati pubblici canale: curl su /videos e /shorts (le pagine /watch sono bloccate).
 6. "Copiare dai virali" = copiare TUTTO cio' che funziona (parola PENSIONI grande, domanda con ?, promessa, cedolino con importo, freccia/spunta); solo colori e stile restano quelli dell'utente (N.19). Niente volti di persone reali ne' logo Inps.
+RICERCA E SCELTA DEL TEMA (video nuovo) - mancava: per questo gli stessi errori a ogni video (22/10)
+R1. Prima di iniziare: rileggere REGOLE-FISSE.md PER INTERO (N.10), non a memoria.
+R2. Parole DIVERSE dalle ricerche precedenti (ricerca-*.md): MAI di nuovo trending/outliers su "pensioni" (N.44, errori video 8 e 10). Prima la ricerca pubblica YouTube gratis (gl=IT, per data e per visualizzazioni) su tante parole diverse.
+R3. Un tema si propone SOLO se: (a) passa qa/check_tema.py e TEMI-FATTI (mai un meccanismo gia' spiegato, anche con dati nuovi); (b) i dati sono UFFICIALI e certi oggi (mai manovra o decreti non usciti); (c) funziona ADESSO anche sui canali PICCOLI (<30K iscritti, ultimi 30 giorni, view al giorno), non solo su Mr LUL.
+R4. vidIQ solo in italiano (N.30), piano in una riga (N.32), solo su temi che hanno gia' passato R3; titoli, punteggi e trascrizioni solo DOPO la conferma del tema dall'utente. Fine ricerca: dire i crediti spesi e sprecati.
+R5. Keyword ad alto volume (N.43). Scegliere e dire UN tema (mai far scegliere tra due); farlo confermare prima del copione; verificare i fatti su fonti ufficiali prima del copione (N.31).
 COPIONI (blocchi di voce)
 0. Prima di consegnare QUALSIASI copione: python3 conti_in_pensione/qa/qa_copione.py <copione-blocchi.txt> <parola-tema> short|lungo. Controlla: tema nominato nelle prime 8 parole del blocco 1 (N.27), numeri in lettere, Mai Inps a voce, chiusura short (video correlato, iscriviti, mi piace), gancio diverso dagli altri short, max 250 caratteri a blocco. Se non passa, non si consegna.
 TESTI (titolo, descrizione, tag, commento, impostazioni) - ognuno in un RIQUADRO ``` separato, in chat
