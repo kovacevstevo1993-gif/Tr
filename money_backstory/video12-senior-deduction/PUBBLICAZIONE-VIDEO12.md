@@ -7,10 +7,10 @@ Fonti verificate: FONTI-VERIFICATE.md (solo irs.gov).
 Playlist "Retirement After 50". Schermata finale -> video 1 (WATCH NEXT con link video 1: l'unico URL noto nel repo; se vuoi un video piu' legato dimmi quale).
 
 ## Titolo
-New $6,000 Senior Tax Deduction: Who Gets It and Who Loses It (2026)
+Every Senior Over 65 Must Know This $6,000 Tax Deduction (Who Loses It in 2026)
 
 ## Descrizione
-The new $6,000 senior tax deduction (the IRS calls it the enhanced deduction for seniors) can save you hundreds of dollars a year, but only if you qualify and fill in the right line. Some seniors get all of it, some get only part, and some get nothing. In this video you will see exactly which one you are, what the senior deduction is really worth in dollars, and the one line most people forget to fill in. Every number comes from the IRS itself.
+The senior tax deduction for 2026 is worth up to $6,000 if you are over 65 (the IRS calls it the enhanced deduction for seniors) can save you hundreds of dollars a year, but only if you qualify and fill in the right line. Some seniors get all of it, some get only part, and some get nothing. In this video you will see exactly which one you are, what the senior deduction is really worth in dollars, and the one line most people forget to fill in. Every number comes from the IRS itself.
 
 We follow four fictional people. Dolores is 67, single, and lives on Social Security plus an IRA. Tom is 70 and his wife Ruth is 62. Hank is 68 with a big pension and a big IRA. What you will learn: 1) the senior deduction is $6,000 per person age 65 or older ($12,000 for a couple where both qualify), for tax years 2025 through 2028, on top of your standard deduction, and it works whether you itemize or not, 2) for 2026 a single person 65+ stacks $16,100 + $2,050 + $6,000 = $24,150, and a couple where both are 65+ stacks $47,500, 3) it is not a $6,000 check: at the 12% bracket it saves $720, at 22% it saves $1,320, 4) how Social Security benefits are taxed (the $25,000 and $32,000 lines, up to 85%), 5) the income limit: the deduction shrinks by 6% of every dollar over $75,000 ($150,000 joint) and is gone at $175,000 ($250,000 joint), 6) who gets nothing: married filing separately, no valid Social Security number, or under 65 (each person is tested), 7) what to do this year: check your income before December 31, Form W-4P and W-4V, and free IRS help (VITA and TCE).
 
@@ -51,7 +51,7 @@ Subscribe to The Money Backstory for more clear explanations of retirement for A
 #SeniorDeduction #TaxesAfter65 #SocialSecurity
 
 ## Tag
-new 6000 senior tax deduction,senior deduction 2026,senior bonus deduction,enhanced deduction for seniors,senior tax deduction,6000 senior deduction,tax deduction for seniors,taxes on social security,is social security taxable,senior deduction income limit,standard deduction over 65,irs senior deduction,schedule 1-A,taxes after 65,retirement taxes,form w-4p,free tax help seniors
+senior tax deduction 2026,new 6000 senior tax deduction,over 65 tax deduction,senior deduction 2026,senior bonus deduction,enhanced deduction for seniors,6000 senior deduction,tax deduction for seniors,taxes on social security,is social security taxable,senior deduction income limit,standard deduction over 65,irs senior deduction,schedule 1-A,taxes after 65,retirement taxes,form w-4p,free tax help seniors
 
 ## Commento da fissare
 Are you single or married, and do you think you will lose part of this deduction? Tell me below, and send this to one person over 65 who files their own taxes.

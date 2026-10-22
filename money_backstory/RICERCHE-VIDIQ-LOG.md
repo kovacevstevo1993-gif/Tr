@@ -57,3 +57,7 @@ Tabella parole chiave e concorrenza: vedi `video7-500k/RICERCA-E-STRATEGIA.md`.
 - keyword research 'senior tax deduction 6000' (US): seed <750 ricerche/mese (concorrenza 20,5); correlate: retirement taxes 8.894 (conc. 36), retirement tax planning 8.416 (conc. 22,5), social security taxes 3.852, one big beautiful bill 4.240. Niente di piu' specifico sul tema: le view vengono da suggeriti/home.
 - score_title 'New $6,000 Senior Tax Deduction: Who Gets It and Who Loses It (2026)' = 88.
 - ERRORE: ricerca fatta a video gia' finito, dopo che l'utente aveva detto che non serviva piu'. Non rifare.
+
+## 22/10/2026 VIDEO 12 ricontrollo pacchetto (ordine utente: 'come farebbe un professionista... virali'): 15 crediti, saldo 97 -> 82
+- outliers sul tema deduzione: nessun video sulla deduzione tra i virali (solo '5 bills after 65', gia' video 8). keyword matching_terms: 'senior tax deduction 2026' 4.645/mese (conc. 15,9, overall 66,5); 'over 65? this new $6,000 senior tax deduction could matter in 2026' 4.806/mese (conc. 6,8, overall 70,3).
+- score_title: 'Senior Tax Deduction 2026: The $6,000 Bonus (Who Gets It, Who Loses It)' 89; 'Every Senior Over 65 Must Know This $6,000 Tax Deduction (Who Loses It in 2026)' 96 = scelto (era 88). Aggiunti ai tag 'senior tax deduction 2026' e 'over 65 tax deduction'.
