@@ -29,3 +29,4 @@ MINIATURE
 22. Sistemare solo il pezzo sbagliato, mai rifare tutto; misurare i testi PRIMA del primo render, un solo render finale (N.40).
 23. Video e short MAI uguali ai precedenti: chiusura, struttura/numero blocchi, apertura, frasi fisse e grafica sempre diversi (short e lunghi).
 24. Prima di consegnare: revisione critica del CONTENUTO ("e perfetto?": modello della ricerca, ripetizioni, promesse non decise dall utente, tono, dati che invecchiano). Correggere PRIMA; mai mandare cose con difetti noti (N.42).
+25. Parole assolute nei copioni/testi ("solo", "mai", "tutti", "nessuno", "sempre"): cercare su inps.it l'ECCEZIONE prima di consegnare, o toglierle (N.48, errore video 1).
