@@ -10,3 +10,4 @@ CHECKLIST THE SENIOR ADVANTAGE (stampata a ogni messaggio dall'hook .claude/hook
 9. Salvare tutto subito (file di stato), commit, push sul branch, merge su main. Ogni nuova regola dell'utente: scriverla SUBITO parola per parola in CLAUDE.md e qui (una riga).
 10. VERIFICA TUTTO IN OGNI MODO POSSIBILE (ordine utente 22/10): se una fonte originale non si apre, cercarne un'altra originale; se nessuna lo conferma, il fatto non si mette.
 11. Per ogni fatto controllare anche la DATA della fonte: se la fonte e vecchia o non si puo confermare che valga oggi, la frase lo dice ('Walmart has said'), mai al presente come se fosse sicuro oggi (errore 22/10, blocchi 10, 14, 18, 20 Walmart).
+12. Niente frasi generiche non verificabili presentate come fatti ('most people never...', 'every day somebody...', 'nobody...'): o c'e la fonte o la frase si riscrive senza affermarlo (errore 22/10 copione Walmart).
