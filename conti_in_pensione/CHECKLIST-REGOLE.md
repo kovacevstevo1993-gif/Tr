@@ -14,6 +14,7 @@ R4. vidIQ solo in italiano (N.30), piano in una riga (N.32), solo su temi che ha
 R5. Keyword ad alto volume (N.43). Scegliere e dire UN tema (mai far scegliere tra due); farlo confermare prima del copione; verificare i fatti su fonti ufficiali prima del copione (N.31).
 COPIONI (blocchi di voce)
 0. Prima di consegnare QUALSIASI copione: python3 conti_in_pensione/qa/qa_copione.py <copione-blocchi.txt> <parola-tema> short|lungo. Controlla: tema nominato nelle prime 8 parole del blocco 1 (N.27), numeri in lettere, Mai Inps a voce, chiusura short (video correlato, iscriviti, mi piace), gancio diverso dagli altri short, max 250 caratteri a blocco. Se non passa, non si consegna.
+0b. Dopo qa_copione: revisione SCRITTA di ogni blocco (italiano, logica, persona, numeri): python3 qa/revisione.py modello <copione> -> revisione-copione.txt -> controlla. L'hook di fine risposta BLOCCA la consegna se manca o se un blocco cambia dopo la revisione (22/10, utente: 'continui a ripetere che non lo rifarai e lo rifai').
 TESTI (titolo, descrizione, tag, commento, impostazioni) - ognuno in un RIQUADRO ``` separato, in chat
 7. Lanciare SEMPRE: python3 conti_in_pensione/qa/qa_testi.py <file pacchetto>. Se un controllo non passa, non consegnare.
 8. Titolo: contiene PENSIONI/PENSIONE, parola calda in maiuscolo, domanda con ?, promessa; senza hashtag; max 100 caratteri.
