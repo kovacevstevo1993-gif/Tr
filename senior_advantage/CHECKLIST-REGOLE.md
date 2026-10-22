@@ -8,3 +8,4 @@ CHECKLIST THE SENIOR ADVANTAGE (stampata a ogni messaggio dall'hook .claude/hook
 7. Slide: solo cio che dice la voce; layout diverso dai video precedenti in ogni blocco; ultimo elemento all'80%; tutto finito dentro il blocco; screenshot delle durate = fare SUBITO le slide.
 8. Non anticipare i passi. vidIQ: controllare il saldo con vidiq_balance (gratis); crediti solo se l'utente lo chiede/autorizza.
 9. Salvare tutto subito (file di stato), commit, push sul branch, merge su main. Ogni nuova regola dell'utente: scriverla SUBITO parola per parola in CLAUDE.md e qui (una riga).
+10. VERIFICA TUTTO IN OGNI MODO POSSIBILE (ordine utente 22/10): se una fonte originale non si apre, cercarne un'altra originale; se nessuna lo conferma, il fatto non si mette.
