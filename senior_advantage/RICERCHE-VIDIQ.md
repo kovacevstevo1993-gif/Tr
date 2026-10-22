@@ -311,3 +311,7 @@ SALDO REALE (vidiq_balance 21/10): 172 = 150 rinnovabili (reset 14/11/2026) + 22
 - score_title "Over 60? 9 Kinds of Help You Can Get at Home This Winter (Most Never Ask)" = 97/100 (long, canale Senior).
 - generate_titles (8): 97 "9 Things Seniors Over 60 Should Claim Before Winter (Most People Don't Know)"; 97 "Don't Struggle This Winter: 9 Types of Help Seniors Over 60 Can Get (If You Ask)"; 96 "Home Repairs and Help for Seniors Over 60: 9 Things You Can Get This Winter (If You Ask)"; 96 "9 Ways to Make Your Home Safer This Winter: Free Help..." (free non verificato: non usare); 94 "Over 60? 9 Types of Help You Can Get This Winter (Most Never Ask)"; 93 x3.
 - keyword_research matching_terms "help for seniors at home": 0 risultati.
+
+## 15. SHORT 11 CASA-INVERNO: TITOLO (22/10/2026, ordine utente "pacchetto da professionista"; 15 crediti: 2 score_title short + 1 generate_titles short; saldo 157 -> 142)
+- score_title short: "Over 60? 9 Kinds of Help That Come to Your Home This Winter ❄️" = 88; "Over 60? Help Can Come to Your Home This Winter (Almost Nobody Asks) ❄️" = 94 (SCELTO).
+- generate_titles (6): 94 "Over 60? 9 Types of Winter Help You're Missing Out On #seniors #freehelp #winter"; 91 "9 Essential Winter Services Seniors Over 60 Are Ignoring"; 90 x4 (tutti con "free"/hashtag nel titolo: "free" non verificato, non usato).
