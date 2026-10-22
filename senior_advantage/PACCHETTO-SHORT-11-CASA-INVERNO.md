@@ -26,5 +26,5 @@ senior help at home, help for seniors at home, help for seniors over 60, senior 
 Which one surprised you most: the smoke alarms, the hot meal, the legal help or the furnace? Tell me below 👇 Rules vary by area, so confirm locally. The full video with all 9 is right below this short.
 
 ## Impostazioni
-IA No. Promozione No. Copertina: non ancora fatta (su ordine). Video correlato = video lungo CASA-INVERNO (si imposta sullo short; se lo short esce prima del lungo, lasciare vuoto e impostarlo dopo).
+IA No. Promozione No. Copertina = miniature/copertina-short-11.png (code/cover11.py). Video correlato = video lungo CASA-INVERNO (si imposta sullo short; se lo short esce prima del lungo, lasciare vuoto e impostarlo dopo).
 vidIQ 22/10 (15 crediti, saldo 142): score_title 88 e 94; generate_titles short: 94, 91, 90 x4 (RICERCHE-VIDIQ.md sezione 15).
