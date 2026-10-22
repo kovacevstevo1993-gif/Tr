@@ -8,3 +8,24 @@ ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['14h10m16']
 ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['14h9m55']
 ERR 502 [] []
 ERR 502 [] []
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['14h5m54']
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['14h4m13']
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['14h2m12']
+OK voce/g10.wav
+confine 10 -> 11 pausa 0.0 punteggio 5.0 | taxed / using the irs
+confine 11 -> 12 pausa 0.41 punteggio 4.0 | 675 / now the move
+GRUPPO 10 FATTO
+ERR 502 [] []
+OK voce/g13.wav
+confine 13 -> 14 pausa 0.39 punteggio 3.44 | 862 / his federal income
+confine 14 -> 15 pausa 0.4 punteggio 5.52 | way / now the rules
+GRUPPO 13 FATTO
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['13h57m29']
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['13h57m8']
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['13h56m27']
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['13h55m26']
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['13h54m6']
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['13h52m25']
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['13h50m24']
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['13h48m3']
+STOP al gruppo 16
