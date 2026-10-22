@@ -553,3 +553,8 @@
 
 ## STATO 22/10/2026 (notte) - VIDEO LUNGO 10, cartella 27-video-lungo-10
 - Ricerca in 27-video-lungo-10/ricerca-22-10-2026.md. Tema coefficienti scartato (gia' nei video 1 e 2). Tema proposto all'utente, in attesa di conferma: aiuti dopo i 60 anni a scalini di eta' (assegno di inclusione, ticket E01, Carta acquisti, canone Rai over 75, prestazione universale over 80, bonus bollette). Titolo proposto vidIQ 62. Nessun copione prima della conferma.
+
+## ERRORE DEL 22/10/2026 (notte): CREDITI vidIQ SPRECATI E TEMA PROPOSTO SENZA PROVA SUI CANALI PICCOLI
+- L'utente: "hai ancora sprecato a cazzo i crediti" e "e' perfetto il tema? tutto perfetto?". 25 crediti su 35 buttati: 20 sui titoli e sulla trascrizione del tema coefficienti (poi scartato), 5 sul punteggio del titolo "aiuti over 60" (62) prima di aver controllato che il tema reggesse.
+- Il tema "aiuti dopo i 60 anni" NON era perfetto: Pensioni Oggi ha fatto quasi lo stesso video il 15/10 (canone Rai, ticket, bollette, conto) = 684 view in 7 giorni; TuttoPensioni "bonus over 50-60-70" 850; Canale Notizie 124. Solo Mr LUL (452K iscritti) fa grandi numeri su quel tema. Io avevo guardato solo Mr LUL.
+- Regola: (1) un tema si propone solo se funziona anche sui canali PICCOLI e medi in questo momento (cercare lo stesso tema fatto da canali sotto i 30K iscritti negli ultimi 30 giorni e guardare le view al giorno), non solo su Mr LUL; (2) vidIQ per titoli/punteggi/trascrizioni SOLO dopo che il tema ha passato check_tema.py, il controllo sui canali piccoli e la conferma dell'utente; prima solo ricerca (trending/outliers).
