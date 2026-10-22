@@ -315,3 +315,21 @@ SALDO REALE (vidiq_balance 21/10): 172 = 150 rinnovabili (reset 14/11/2026) + 22
 ## 15. SHORT 11 CASA-INVERNO: TITOLO (22/10/2026, ordine utente "pacchetto da professionista"; 15 crediti: 2 score_title short + 1 generate_titles short; saldo 157 -> 142)
 - score_title short: "Over 60? 9 Kinds of Help That Come to Your Home This Winter ❄️" = 88; "Over 60? Help Can Come to Your Home This Winter (Almost Nobody Asks) ❄️" = 94 (SCELTO).
 - generate_titles (6): 94 "Over 60? 9 Types of Winter Help You're Missing Out On #seniors #freehelp #winter"; 91 "9 Essential Winter Services Seniors Over 60 Are Ignoring"; 90 x4 (tutti con "free"/hashtag nel titolo: "free" non verificato, non usato).
+
+## 16. RICERCA PROSSIMO LUNGO 8 (22/10/2026, 0 crediti, ricerca YouTube gratuita "questo mese" ordinata per view + tutti i tempi; ordine utente "crea il nuovo video come un professionista, cerca cosa funziona")
+### 16a. Canale (YouTube 22/10): short Aeroporto 336, sconti 132/80, CSFP 99, SNAP 95, Meals 58, LIHEAP 41, Bollette 40, Costco 33, Amtrak 27, Casa-inverno 5. Lunghi: nessuno partito (vedi 13a).
+### 16b. Cosa va ora (view | eta | durata | canale | titolo)
+- 239.425 | 2 sett | 23:31 | The Smart Steward | If You're Over 65, Aldi Will Give You These 9 Things (If You Ask) (stesso canale poi: Thanksgiving 11K, Winter 5K, 11 Free Perks 3,6K = Aldi in saturazione)
+- 188.256 | 2 sett | 13:50 | Robin MBA | If You're Over 60, Aldi Will Give You These 14 Things (If You Ask)
+- 153.092 | 8 giorni | 15:45 | Sharon Dawson | If You're Over 65, Airlines Will Quietly Give You These 9 Things (If You Ask)
+- 143.759 | 2 sett | 14:30 | Robin MBA | Free Food Benefits Start at Age 60 (Not 65) - Many Seniors Never Claim Them
+- 353.957 | 4 sett | 15:49 | Low Income Relief | These Senior Benefits Start at Age 55 (Not 65!)
+- 49.175 | 2 giorni | 18:51 | Elaine Hargreaves | If You're Over 65, Your UK Supermarket Will Give You These 12 Things (If You Ask)
+- Costco "Owes You" copie questo mese: 59K (Canada), 26K, 15,6K, 6K, 5K, 4K = saturo.
+- Crociere "Will Quietly Give You 9 Things" 17K; hotel tutto sotto 400 (morto); Walgreens/CVS/Kroger/Home Depot/Target/telefonia sotto 3.600 (poca domanda).
+- Bollette "5 Bills After 65": decine di copie (100K, 83K, 50K, poi centinaia di view) = saturo e tema tasse/Medicare (non nostro).
+### 16c. WALMART (domanda alta e continua, nessun video forte nelle ultime 2 settimane)
+- Tutti i tempi: 499.377 | 3 mesi | 12:04 | Vital Over 60 | Walmart Is Hiding 14 Discounts From Seniors Over 60 (Here's Every One) (1TyPvFJlCrc); 369.514 | 4 mesi | 27:05 | The Retiree Wallet | 18 Walmart Senior Discounts Cashiers Won't Mention (-tvHAmhsWHc); 103.547 | 3 mesi | 9:18 | Smart Steward | 11 MORE Things Seniors DON'T Know Walmart Gives For FREE (BMcbTp4kqzc).
+- Questo mese: 24.313 | 9 giorni | Silas Invests | If You're Over 55, Walmart Will Give You These 7 Things For FREE (If You Ask); 14.347 | Frugal Frannie | If You're Over 60, Walmart Owes You These 11 Free Things; 913 Smart Steward stesso titolo; 37 "Does Walmart Owe You After 60? (Fact-Checked)".
+- Capitoli del 499K: $4 generic prescriptions, $10 per 90 giorni, Walmart+ Assist a meta prezzo, "AARP discount", carta spesa Medicare Advantage, "codice segreto nel cartellino", scanner prezzi app, programma valore cliente, chiedere al capo reparto, ribassi di fine giornata su carne/pane/frutta, Walmart si allinea ai propri prezzi, 10 centesimi sulla benzina, Walmart Cash, ritiro gratis senza minimo. ATTENZIONE: diverse voci non verificate o dubbie (AARP, codice cartellino, benzina, ritiro senza minimo): NON copiarle; ogni voce va verificata su walmart.com / corporate.walmart.com prima del copione. Medicare Advantage = tema Money Backstory: escluso.
+### 16d. Proposta lungo 8 (da confermare dall'utente): WALMART over 60, formula vincente "If You're Over 60, Walmart Will Give You These N Things (If You Ask)", N = solo le voci verificate su fonti ufficiali Walmart; durata 15-20 min.
