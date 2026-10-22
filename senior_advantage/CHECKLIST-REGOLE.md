@@ -1,0 +1,10 @@
+CHECKLIST THE SENIOR ADVANTAGE (stampata a ogni messaggio dall'hook .claude/hooks/regole-senior.py). Regole complete: CLAUDE.md + senior_advantage/PASSAGGIO-CHAT.md.
+1. MAI LA STRADA PIU VELOCE (ordine assoluto). Mentre lavori cerchi TUTTO e applichi TUTTE le regole, sempre, non solo all'inizio della chat.
+2. Ogni fatto e numero: letto sulla fonte ORIGINALE e COMPLETA (pagina ufficiale, PDF intero, note comprese), non su riassunti. Cercare eccezioni (Stati esclusi, fasce di prezzo, condizioni). Se non si puo verificare, NON si mette.
+3. Controllo completo PRIMA di mandare, senza che l'utente lo chieda. Copione: script (max 500 caratteri, niente cifre/simboli, sigle a lettere, snap minuscolo, numero annunciato = voci = riepilogo, nessuna frase o sequenza di 5 parole ripetuta). Slide: OGNI fotogramma controllato, fotogrammi = durate dell'utente.
+4. Mai dire fatto/pronto/mandato se non e vero e confermato.
+5. Rispondere SEMPRE in italiano, SOLO a cio che chiede, il minimo. Niente scuse, niente offerte non richieste.
+6. Copioni in chat: **Blocco N** + riquadro ```, tutti in un colpo, mai in file. Pacchetto: formato fisso (MODELLO-DESCRIZIONE-VIDEO-1.md / MODELLO-PACCHETTO-SHORT.md).
+7. Slide: solo cio che dice la voce; layout diverso dai video precedenti in ogni blocco; ultimo elemento all'80%; tutto finito dentro il blocco; screenshot delle durate = fare SUBITO le slide.
+8. Non anticipare i passi. vidIQ: controllare il saldo con vidiq_balance (gratis); crediti solo se l'utente lo chiede/autorizza.
+9. Salvare tutto subito (file di stato), commit, push sul branch, merge su main. Ogni nuova regola dell'utente: scriverla SUBITO parola per parola in CLAUDE.md e qui (una riga).
