@@ -4,7 +4,7 @@ import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from v13eng import *
 
-R2 = row(2); R3 = row(3); R4 = row(4, gap=36); R3b = row(3, y1=620)
+R2 = row(2); R3 = row(3); R4 = row(4, gap=36); R3b = row(3, y1=620); R3c = row(3, y1=590)
 IRS = 'IRS.GOV'
 T1, T2, T3, T4, T5, T6, T7 = 'THE BASICS', 'THE FORMULA', 'THE PENALTY', 'SOCIAL SECURITY TAX', 'THE Q C D MOVE', 'MORE RULES', 'YOUR CHECKLIST'
 S = {}
@@ -76,8 +76,8 @@ S[5] = [
                                      E('card', (1140, 280, 1770, 690), 'lifetime table', head='YOUR MINIMUM', val='RMD', sub='FOR THIS YEAR', col=green, vcol=green, vsize=100)],
           'BALANCE ÷ FACTOR = YOUR RMD', gold, tag=T2, src='IRS PUB. 590-B'),
     slide('THE FACTOR KEEPS SHRINKING', 615, [E('curve', (150, 240, 1230, 720), 'at seventy-three', top=' '),
-                                              E('cmark', (150, 240, 1230, 720), 'twenty-six point five', gbox=(150, 240, 1230, 720), age=73, label='AGE 73', sub='26.5', mc=goldL, dx=40),
-                                              E('cmark', (150, 240, 1230, 720), 'twenty-four point six', gbox=(150, 240, 1230, 720), age=75, label='AGE 75', sub='24.6', mc=goldL, dx=60),
+                                              E('cmark', (150, 240, 1230, 720), 'twenty-six point five', gbox=(150, 240, 1230, 720), age=73, label='AGE 73', sub='26.5', mc=goldL, dx=-10),
+                                              E('cmark', (150, 240, 1230, 720), 'twenty-four point six', gbox=(150, 240, 1230, 720), age=75, label='AGE 75', sub='24.6', mc=goldL, dx=70),
                                               E('cmark', (150, 240, 1230, 720), 'twenty point two', gbox=(150, 240, 1230, 720), age=80, label='AGE 80', sub='20.2', mc=goldL),
                                               E('cmark', (150, 240, 1230, 720), 'sixteen', gbox=(150, 240, 1230, 720), age=85, label='AGE 85', sub='16.0', mc=goldL),
                                               E('cmark', (150, 240, 1230, 720), 'twelve point two', gbox=(150, 240, 1230, 720), age=90, label='AGE 90', sub='12.2', mc=red, up=True, dx=-10),
@@ -129,8 +129,8 @@ S[8] = [
                                   E('op', (1110, 420, 1190, 540), 'second one', t='=', size=120),
                                   E('card', (1190, 330, 1770, 640), 'twenty thousand', head='2ND RMD', val='$20,000', col=gold, vcol=goldL, vsize=88)],
           'SAME YEAR, SECOND DISTRIBUTION', gold, tag=T2, src='IRS PUB. 590-B'),
-    slide('TWO RMDs IN ONE YEAR', 624, [E('seg', (150, 400, 900, 520), 'together', label='1ST RMD', val='$18,868', fill=gold),
-                                       E('seg', (150, 540, 900, 660), 'thirty-eight thousand', label='2ND RMD', val='$20,000', fill=blue, tc=white),
+    slide('TWO RMDs IN ONE YEAR', 624, [E('seg', (150, 430, 900, 550), 'together', label='1ST RMD', val='$18,868', fill=gold),
+                                       E('seg', (150, 570, 900, 690), 'thirty-eight thousand', label='2ND RMD', val='$20,000', fill=blue, tc=white),
                                        E('big', (980, 280, 1770, 600), 'sixty-eight dollars', val='$38,868', sub='TAXABLE INCOME IN ONE YEAR', size=170, vcol=red),
                                        E('stamp', (160, 260, 900, 380), 'single year', t='ONE TAX YEAR', col=red, ang=-4, size=76)],
           'ONE BIG TAX BILL', red, (255, 255, 255), tag=T2, src='IRS PUB. 590-B'),
@@ -188,7 +188,7 @@ S[12] = [
                                                      E('flow', (830, 250, 1770, 590), 'directly from', nodes=[('bank', 'YOUR I R A', 'PAYS DIRECTLY', gold), ('house', 'A CHARITY', 'RECEIVES IT', green)], s=0.55),
                                                      E('stamp', (900, 625, 1740, 715), 'not counted', t='NOT COUNTED AS INCOME', col=green, ang=-3, size=50)],
           'FROM YOUR I R A STRAIGHT TO CHARITY', green, tag=T5, src='IRS PUB. 590-B'),
-    slide('THE AGE RULE', 635, [E('ring', (150, 260, 650, 700), 'seventy and a half', val='70.5', sub='MINIMUM AGE', frac=1.0, col=green, size=130),
+    slide('THE AGE RULE', 635, [E('ring', (150, 260, 650, 700), 'seventy and a half', val='70.5', sub='MINIMUM AGE', frac=1.0, col=green, size=108),
                                 E('arrow', (690, 400, 860, 540), 'earlier than', col=goldL),
                                 E('ring', (900, 260, 1400, 700), 'seventy-three', val='73', sub='RMDs START', frac=1.0, col=gold, size=130),
                                 E('stamp', (1440, 360, 1790, 560), 'earlier than', t='EARLIER', col=green, ang=-8, size=70)],
@@ -240,15 +240,15 @@ S[15] = [
 ]
 # ---- 16: MORE RULES ----
 S[16] = [
-    slide('SEVERAL I R As', 647, [E('icard', R3b[0], 'several i r as', icon='bank', l1='I R A #1', l2='SEPARATE CALCULATION', col=gold),
-                                  E('icard', R3b[1], 'each one separately', icon='bank', l1='I R A #2', l2='SEPARATE CALCULATION', col=gold),
-                                  E('icard', R3b[2], 'but you can', icon='bank', l1='I R A #3', l2='SEPARATE CALCULATION', col=gold),
+    slide('SEVERAL I R As', 647, [E('icard', R3c[0], 'several i r as', icon='bank', l1='I R A #1', l2='SEPARATE CALCULATION', col=gold),
+                                  E('icard', R3c[1], 'each one separately', icon='bank', l1='I R A #2', l2='SEPARATE CALCULATION', col=gold),
+                                  E('icard', R3c[2], 'but you can', icon='bank', l1='I R A #3', l2='SEPARATE CALCULATION', col=gold),
                                   E('line', (150, 650, 1770, 710), 'withdraw the total', t='WITHDRAW THE TOTAL FROM ANY ONE OF THEM', size=44, col=goldL)],
           'CALCULATE EACH, TAKE IT FROM ANY', gold, tag=T6, src='IRS.GOV'),
     slide('401(K) AND 457(B)', 648, [E('icard', R2[0], 'four oh one', icon='brief', l1='401(K)', l2='EACH PLAN PAYS ITS OWN', col=red, c2=red),
                                      E('icard', R2[1], 'four fifty-seven', icon='brief', l1='457(B)', l2='EACH PLAN PAYS ITS OWN', col=red, c2=red)],
           'PLANS ARE DIFFERENT', red, (255, 255, 255), tag=T6, src='IRS.GOV'),
-    slide('STILL WORKING?', 649, [E('card', R3[0], 'delay', head='CURRENT EMPLOYER PLAN', val='CAN DELAY', sub='UNTIL YOU RETIRE', col=green, vcol=green, vsize=56, icon='check', s=1.0),
+    slide('STILL WORKING?', 649, [E('card', R3[0], 'delay', head='EMPLOYER PLAN', val='CAN DELAY', sub='UNTIL YOU RETIRE', col=green, vcol=green, vsize=56, icon='check', s=1.0),
                                   E('card', R3[1], 'five percent', head='5% OWNER', val='NO DELAY', sub='OF THE COMPANY', col=red, vcol=red, vsize=56, icon='cross', s=1.0),
                                   E('card', R3[2], 'cover i r as', head='I R As', val='NOT COVERED', sub='EXCEPTION DOES NOT APPLY', col=red, vcol=red, vsize=46, icon='cross', s=1.0)],
           'THE WORK EXCEPTION HAS LIMITS', gold, tag=T6, src='IRS.GOV'),

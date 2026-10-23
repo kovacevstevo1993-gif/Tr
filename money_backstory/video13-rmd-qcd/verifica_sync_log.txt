@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/user/Tr/money_backstory/video13-rmd-qcd/code/verifica_sync.py", line 5, in <module>
+    from ascolta_gemini import num2words
+  File "/home/user/Tr/money_backstory/video13-rmd-qcd/code/ascolta_gemini.py", line 37, in <module>
+    for b in [int(x) for x in sys.argv[1].split(',')]:
+                              ~~~~~~~~^^^
+IndexError: list index out of range
