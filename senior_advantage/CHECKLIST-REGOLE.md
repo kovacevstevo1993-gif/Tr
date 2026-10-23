@@ -25,3 +25,4 @@ CONTROLLI AGGIUNTI IN ANTICIPO (22/10, ordine utente: aggiungere subito tutti i 
 23. Niente consigli medici o legali e niente promesse di guadagno: rimandare sempre a farmacista, medico, piano, ente ufficiale.
 24. Stessi controlli (fonti, date, logica, inglese) anche per titolo, descrizione, tag, commento, testi delle slide e miniature.
 25. Dopo QUALSIASI correzione si rimanda SEMPRE il copione INTERO, mai solo i blocchi cambiati (ordine utente 22/10: 'mandami tutto il copione... mandi solo il sette per confondere').
+26. Slide di ogni video nuovo: stile grafico proprio (sfondo, testata, schede) diverso dai video precedenti, piu professionali e con piu elementi (ordine utente 23/10).
