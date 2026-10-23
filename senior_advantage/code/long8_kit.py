@@ -120,9 +120,9 @@ def tracker_spr(active):
     return cache(("trk8", active), mk)
 
 def head(img, t, num, title):
-    ap(img, t, 0.05, header_spr(num, title), 30 + 590, 78, pop_=False, dx=-80, dur=0.55, shadow=10)
+    ap(img, t, 0.05, header_spr(num, title), 30 + 590, 78, pop_=False, dx=-20, dur=0.55, shadow=10)
     if num:
-        ap(img, t, 0.25, tracker_spr(num), 1880 - 310, 78, pop_=False, dx=80, dur=0.55, shadow=8)
+        ap(img, t, 0.25, tracker_spr(num), 1880 - 310, 78, pop_=False, dx=20, dur=0.55, shadow=8)
 
 # ------------------------------------------------------------------ mattoni grafici
 def receipt(key, w, h, title, lines, accent=GOLD, size=40, title_size=46):

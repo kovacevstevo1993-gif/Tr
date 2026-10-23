@@ -144,6 +144,7 @@ def draw3(img, t):
 def draw4(img, t):
     b = 4
     head(img, t, 0, "WHERE EVERYTHING COMES FROM")
+    A(img, t, b, "official sources", chip("OFFICIAL SOURCES ONLY", 560, 76, fill=GOLD), 960, 525, shadow=8, t_out=T(b, "exceptions"))
     docs = [("policy page", "POLICY PAGE", lambda c, x, y: ic_doc(c, x, y, 0.8)),
             ("news releases", "NEWS RELEASES", lambda c, x, y: ic_doc(c, x, y, 0.8, col=(236, 242, 236))),
             ("price guide", "PRICE GUIDE", lambda c, x, y: ic_bottle(c, x, y, 0.8)),
@@ -174,7 +175,7 @@ def draw5(img, t):
     head(img, t, 1, "WALMART WILL MATCH ITS OWN WEBSITE")
     A(img, t, b, "If you're in a Walmart store", sprite("store5", 300, 240, lambda c: ic_storefront(c, 150, 130, 1.8)), 230, 330, shadow=10)
     A(img, t, b, "exact same item", compare_bars(), 760, 380, pop_=False, dx=-60, shadow=12)
-    A(img, t, b, "will match that price", stamp("STORE MATCHES IT", 470, 110, GOLD, 40), 1500, 300, rot=-4, shadow=8)
+    A(img, t, b, "match its own website", stamp("STORE MATCHES IT", 470, 110, GOLD, 40), 1500, 300, rot=-4, shadow=8)
     for k, w_ in enumerate(("SIZE", "BRAND", "MODEL", "COLOR")):
         A(img, t, b, ["Same size", "same brand", "same model", "same color"][k], shelf_tag(("same", w_), 230, 150, w_, "SAME", big_size=40), 1270 + (k % 2) * 260, 500 + (k // 2) * 190, shadow=8)
     A(img, t, b, "in stock", chip("IT HAS TO BE IN STOCK", 460, 70, fill=OKG), 1400, 860, shadow=6)
@@ -186,6 +187,9 @@ def draw5(img, t):
 def draw6(img, t):
     b = 6
     head(img, t, 1, "THE FINE PRINT: WHEN IT CAN BE REFUSED")
+    tb0 = T(b, "only items sold by Walmart")
+    A(img, t, b, "fine print", sprite("mag6", 300, 300, lambda c: magnifier(c, 130, 130, 90, GOLD, 18)), 1530, 420, shadow=10, t_out=tb0)
+    A(img, t, b, "fine print", chip("THE FINE PRINT", 420, 70, fill=IVORY), 1530, 640, shadow=6, t_out=tb0)
     rows = [("other stores", "OTHER STORES", "TARGET, ALDI..."), ("clearance", "CLEARANCE OR ROLLBACK", "WEBSITE PRICES"),
             ("other sellers", "OTHER SELLERS", "ON WALMART.COM"), ("different Walmart", "ANOTHER WALMART", "ACROSS TOWN")]
     for k, (key, a, s_) in enumerate(rows):
@@ -357,13 +361,14 @@ def checkout_spr(sel):
 def draw14(img, t):
     b = 14
     head(img, t, 5, "SNAP, WITHOUT GOING INSIDE")
+    A(img, t, b, "If you get snap", chip("USE SNAP WITHOUT GOING INSIDE", 720, 76, fill=GOLD), 400, 680, shadow=8, t_out=T(b, "pin number"))
     A(img, t, b, "U S D A says", sprite("usda14", 200, 200, lambda c: ic_seal(c, 100, 100, 1.4)), 200, 330, shadow=10)
     A(img, t, b, "all fifty states", shelf_tag("50", 360, 220, "50 STATES", "SNAP ONLINE"), 520, 330, shadow=10)
     A(img, t, b, "one of the first stores", label_card("first14", 640, 130, lambda c, x, y: ic_storefront(c, x, y, 0.5), "WALMART: ONE OF THE FIRST", None, col=GOLD, tsize=34), 400, 520, pop_=False, dx=-50, shadow=8)
     tp = T(b, "When you order")
     ap(img, t, tp, checkout_spr(False), 1060, 600, pop_=False, dy=60, dur=0.6, shadow=14)
-    if t >= T(b, "E B T card option"):
-        ap(img, t, T(b, "E B T card option"), checkout_spr(True), 1060, 600, pop_=False, dur=0.3)
+    if t >= T(b, "E B T card"):
+        ap(img, t, T(b, "E B T card"), checkout_spr(True), 1060, 600, pop_=False, dur=0.3)
     A(img, t, b, "for pickup", label_card("pu14", 460, 120, lambda c, x, y: ic_car(c, x, y + 6, 0.8), "PICKUP", None, col=OKG), 1590, 330, pop_=False, dx=50, shadow=8)
     A(img, t, b, "for delivery", label_card("de14", 460, 120, lambda c, x, y: ic_van(c, x, y, 0.6), "DELIVERY", "WHERE AVAILABLE", col=OKG), 1590, 470, pop_=False, dx=50, shadow=8)
     A(img, t, b, "pin number", sprite("kp14", 200, 220, lambda c: ic_keypad(c, 100, 110, 1.5)), 260, 820, shadow=10)
