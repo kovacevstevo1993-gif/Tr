@@ -13,4 +13,15 @@ CHECKLIST THE SENIOR ADVANTAGE (stampata a ogni messaggio dall'hook .claude/hook
 12. Niente frasi generiche non verificabili presentate come fatti ('most people never...', 'every day somebody...', 'nobody...'): o c'e la fonte o la frase si riscrive senza affermarlo (errore 22/10 copione Walmart).
 13. Controllo di LOGICA prima di mandare: ogni esempio deve essere vero anche facendo i conti (es. regalo comprato a novembre: i 90 giorni vanno gia oltre il 31 gennaio, quindi l'esempio giusto era ottobre; errore 22/10 Walmart blocco 7). Ogni rimando ('number five', 'the sentence from number ten') deve puntare al blocco giusto.
 14. Controllo dell'INGLESE prima di mandare: rilettura frase per frase (grammatica, articoli, tempi, frasi naturali per un americano), insieme a tutti gli altri controlli (errore 22/10: fatto solo dopo la domanda dell'utente).
-15. Alla consegna di un copione, una riga sopra i blocchi: 'Controlli 1-14 fatti: fonti originali, date, logica, inglese, script OK'. Si scrive SOLO se e vero. L'utente non deve mai chiedere 'e perfetto?' (ordine utente 22/10).
+15. Alla consegna di un copione, una riga sopra i blocchi: 'Controlli 1-24 fatti (tutta la lista): fonti originali, date, logica, inglese, script OK'. Si scrive SOLO se e vero. L'utente non deve mai chiedere 'e perfetto?' (ordine utente 22/10).
+CONTROLLI AGGIUNTI IN ANTICIPO (22/10, ordine utente: aggiungere subito tutti i tipi di errore possibili, non aspettare di farli):
+16. Data di PUBBLICAZIONE: ogni mese, stagione, 'right now', 'this week' deve essere vero quando il video esce, non quando si scrive (es. 'buy a gift in October' tolto: il video esce dopo).
+17. Ortografia inglese: lo script la controlla (pyspellchecker; se manca: pip install pyspellchecker).
+18. Gancio mai uguale ai copioni precedenti (lo script confronta) e con formula diversa.
+19. Promesse = contenuto: ogni anticipazione dei blocchi iniziali va mantenuta; numero nel titolo = voci; il titolo non deve far credere cose che il video non dice (es. 'Over 60' quando nessuna voce dipende dall'eta).
+20. Tema del canale: niente Medicare, Social Security, tasse, pensione come argomento (sono di Money Backstory).
+21. Coerenza dei numeri: la stessa cifra detta in piu blocchi deve essere identica ovunque (script: elenco NUMERO da guardare uno per uno).
+22. Pronuncia per CapCut: nomi, siti e sigle scritti come vanno letti (Sheer I D, walmart dot com, E B T); niente parole che la voce legge male.
+23. Niente consigli medici o legali e niente promesse di guadagno: rimandare sempre a farmacista, medico, piano, ente ufficiale.
+24. Stessi controlli (fonti, date, logica, inglese) anche per titolo, descrizione, tag, commento, testi delle slide e miniature.
+25. Dopo QUALSIASI correzione si rimanda SEMPRE il copione INTERO, mai solo i blocchi cambiati (ordine utente 22/10: 'mandami tutto il copione... mandi solo il sette per confondere').
