@@ -184,10 +184,12 @@ def label_card(key, w, h, icon, title, sub=None, col=SAGE_D, fill=PANEL_FILL, ts
         c = Cv(w, h)
         c.rrect((4, 4, w - 4, h - 4), 26, fill=fill, outline=col, width=5)
         r = min(64, h / 2 - 16)
-        c.ell((22, h / 2 - r, 22 + 2 * r, h / 2 + r), fill=GREEN_L, outline=col, width=4)
         if icon:
+            c.ell((22, h / 2 - r, 22 + 2 * r, h / 2 + r), fill=GREEN_L, outline=col, width=4)
             icon(c, 22 + r, h / 2)
-        x0 = 22 + 2 * r + 24
+            x0 = 22 + 2 * r + 24
+        else:
+            x0 = 44
         for txt_, s0, colr, dy in ((title, tsize, ink, -0.20 if sub else 0), (sub, ssize, sink, 0.24)):
             if not txt_:
                 continue
