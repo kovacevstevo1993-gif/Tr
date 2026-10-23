@@ -55,8 +55,8 @@ C=HEAD+f"""<rect x="0" y="0" width="640" height="720" fill="#7A1A10" opacity="0.
 <path d="M250 122 L130 300 M250 122 L370 300 M1030 122 L950 300 M1030 122 L1110 300" stroke="#fff" stroke-width="5"/></g>
 <g filter="url(#sh)"><path d="M90 420 Q270 500 450 420 Z" fill="#FFD43B" stroke="#fff" stroke-width="6"/><path d="M900 210 Q1020 284 1140 210 Z" fill="#FFD43B" stroke="#fff" stroke-width="6"/></g>
 <g filter="url(#sh)"><rect x="80" y="222" width="380" height="196" rx="22" fill="url(#pp)" stroke="#fff" stroke-width="6"/></g>
-<text x="270" y="270" class="t" font-size="36" fill="#0D5158" text-anchor="middle">LUI: MILLE E...</text>
-<text id="c3" x="100" y="390" class="t" font-size="94" fill="#0D2A2F">1.0</text>{slots(280,300,2,58,96)}<text x="452" y="390" class="t" font-size="60" fill="#0D2A2F" text-anchor="end">€</text>
+<text x="270" y="270" class="t" font-size="36" fill="#0D5158" text-anchor="middle">LUI PRENDE NETTI</text>
+<text id="c3" x="270" y="385" class="t" font-size="84" fill="#0D2A2F" text-anchor="middle">1.100 €</text>
 {person(1020,140,62,'L','#1B9F81')}
 <g filter="url(#sh)"><circle cx="1150" cy="70" r="56" fill="url(#re)" stroke="#fff" stroke-width="7"/></g><text x="1150" y="88" class="t" font-size="44" fill="#fff" text-anchor="middle" {S} stroke-width="6">0 €</text>
 {blocco(830,250,380,70,"E A LEI ZERO?",44,"#E0402A","#fff",-3,'c4')}
