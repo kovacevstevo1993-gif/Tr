@@ -64,7 +64,7 @@ def ten_receipt():
 def draw1(img, t):
     b = 1
     head(img, t, 0, "THE QUESTION AT THE REGISTER")
-    ap(img, t, 0.2, register_scene(), 380, 700, pop_=False, dx=-80, dur=0.7, shadow=14)
+    ap(img, t, 0.2, register_scene(), 380, 700, pop_=False, dx=-40, dur=0.7, shadow=14)
     A(img, t, b, "Do you", bubble("q1", 620, 170, ["DO YOU HAVE A", "SENIOR DISCOUNT?"], 46), 400, 290, shadow=10)
     A(img, t, b, "Maybe", chip("AT THE REGISTER", 420, 62, fill=IVORY), 380, 960, shadow=6)
     tw_ = T(b, "But that's")
@@ -91,7 +91,7 @@ STOP_X = [150 + i * 180 for i in range(10)]
 def draw2(img, t):
     b = 2
     head(img, t, 0, "WHAT'S COMING: ALL TEN")
-    ap(img, t, 0.2, road_spr(), 960, 610, pop_=False, dx=-100, dur=0.7)
+    ap(img, t, 0.2, road_spr(), 960, 610, pop_=False, dx=-40, dur=0.7)
     t_all = T(b, "All ten")
     for i in range(10):
         ap(img, t, t_all + i * 0.08, numdisc(i + 1, 100, fill=PANEL_FILL, ink=IVORY), STOP_X[i], 610, shadow=6)
@@ -300,7 +300,7 @@ def draw11(img, t):
     A(img, t, b, "someone in your family", label_card("fam11", 820, 150, lambda c, x, y: ic_couple(c, x, y + 6, 0.8), "A BREAK FOR BOTH OF YOU", "IF FAMILY DRIVES YOU", col=GOLD, tsize=38, ssize=28), 500, 900, pop_=False, dx=-60, shadow=10)
     tl = LAST(b)
     ap(img, t, tl, numdisc(5, 170), 1300, 810, shadow=10)
-    ap(img, t, tl + 0.15, bubble("snap11", 520, 150, ["GET SNAP?", "NUMBER FIVE IS NEXT"], 40, tail="bl"), 1640, 790, shadow=10)
+    ap(img, t, tl + 0.15, bubble("snap11", 520, 150, ["GET SNAP?", "NUMBER FIVE IS NEXT"], 40, tail="bl"), 1610, 790, shadow=10)
 
 # ============================================================ BLOCCO 12 - #4 il vaccino antinfluenzale
 def map_dots():
@@ -373,7 +373,7 @@ def draw14(img, t):
     A(img, t, b, "for delivery", label_card("de14", 460, 120, lambda c, x, y: ic_van(c, x, y, 0.6), "DELIVERY", "WHERE AVAILABLE", col=OKG), 1590, 470, pop_=False, dx=50, shadow=8)
     A(img, t, b, "pin number", sprite("kp14", 200, 220, lambda c: ic_keypad(c, 100, 110, 1.5)), 260, 820, shadow=10)
     A(img, t, b, "pin number", chip("ENTER YOUR PIN", 400, 66, fill=IVORY), 560, 820, shadow=6)
-    ap(img, t, LAST(b), label_card("chk14", 460, 130, lambda c, x, y: ic_web(c, x, y, 0.5), "DELIVERY TO YOU?", "CHECK WALMART'S WEBSITE", col=GOLD, tsize=34, ssize=26), 1590, 760, pop_=False, dx=50, shadow=8)
+    ap(img, t, LAST(b), label_card("chk14", 560, 140, lambda c, x, y: ic_web(c, x, y, 0.5), "DELIVERY TO YOU?", "CHECK WALMART'S WEBSITE", col=GOLD, tsize=34, ssize=26), 1620, 760, pop_=False, dy=40, shadow=8)
 
 # ============================================================ BLOCCO 15 - tre regole USDA
 def draw15(img, t):
@@ -479,7 +479,7 @@ def draw19(img, t):
     A(img, t, b, "without the membership", label_card("n19", 760, 150, lambda c, x, y: c.text((x, y + 2), "$", FONT_SANS, 70, CORAL), "WITHOUT MEMBERSHIP: A FEE", "DEPENDS ON THE DELIVERY OPTION", col=CORAL, tsize=36, ssize=26), 1440, 480, pop_=False, dx=50, shadow=8)
     A(img, t, b, "forty nine states", shelf_tag("49s", 420, 240, "49 STATES", "SAME-DAY PHARMACY DELIVERY"), 400, 850, rot=-3, shadow=10)
     A(img, t, b, "with your groceries", label_card("g19", 620, 140, lambda c, x, y: ic_cart2(c, x, y, 0.55), "WITH YOUR GROCERIES", None, col=GOLD, tsize=36), 1000, 850, pop_=False, dy=40, shadow=8)
-    ap(img, t, LAST(b), label_card("d19", 560, 140, lambda c, x, y: ic_car(c, x, y + 6, 0.8), "DON'T DRIVE?", "THIS IS A BIG ONE", col=GOLD, tsize=36, ssize=28), 1600, 850, pop_=False, dx=50, shadow=8)
+    ap(img, t, LAST(b), label_card("d19", 560, 140, lambda c, x, y: ic_car(c, x, y + 6, 0.8), "DON'T DRIVE?", "THIS IS A BIG ONE", col=GOLD, tsize=36, ssize=28), 1600, 850, pop_=False, dx=-50, shadow=8)
 
 # ============================================================ BLOCCO 20 - due cose da sapere
 def bottles_spr():
