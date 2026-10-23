@@ -54,7 +54,6 @@ Non per bambini, nessun limite di eta. Uso IA: No. Promozione a pagamento: No. M
 Capitoli dalla timeline dell'utente (fine blocchi corrette con la regola 29: orologio CapCut arrotondato).
 vidIQ 23/10 (account con 67 crediti, 20 spesi): "Walmart Has No Senior Discount, But It Will Give You These 10 Things (If You Ask)" 96; "...These 10 Things" senza (If You Ask) 92; "Over 60? Walmart Will Give You These 10 Things (If You Ask)" 90; "No Senior Discount at Walmart? Ask for These 10 Things Instead" 87. Titolo senza "Over 60" (regola 19: nessuna voce dipende dall'eta).
 
-## Miniature (code/thumb_long8.py, miniature/walmart-miniatura-a/b.png, 23/10)
-A = corsia di negozio sfocata, mano che regge lo scontrino: SENIOR DISCOUNT / NOT FOUND, poi PRICE MATCH, $4 RX LIST, 50% OFF W+, 10c OFF GAS con spunta e "+ 6 MORE"; testo "ASK FOR THESE 10" + fascia "AT WALMART".
-B = raggi verdi, nonna sorpresa (personaggio nuovo) con flacone e stella "$4"; testo "WALMART'S $4 LIST" + fascia "+ 9 MORE TO ASK FOR".
-Diverse dalle precedenti (niente nonno scioccato, niente X sul tesserino, niente raggi gialli). Punteggio vidIQ solo dopo il caricamento.
+## Miniature (code/thumb_long8.py, miniature/walmart-miniatura-a/b.png, rifatte 23/10 su ordine utente: "piu professionali, curiosita, altri colori, logo Walmart")
+A = blu Walmart con raggi, logo Walmart vero (parola + spark da corporate.walmart.com, riferimenti/walmart/), "NO SENIOR DISCOUNT?", scontrino con SENIOR DISCOUNT $0.00 barrato e 10 righe coperte da barre nere tranne "$4 RX LIST" e "50% OFF W+", cerchio e freccia rossi, fascia rossa "ASK FOR THESE 10".
+B = giallo acceso con raggi, logo Walmart, "WALMART'S $4 LIST", flacone arancione con cartellino rosso "$4 UP TO 30 DAYS" e blu "$10 90 DAYS", fascia blu "+ 9 MORE TO ASK FOR".
