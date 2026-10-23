@@ -42,12 +42,27 @@ B=HEAD+f"""<circle cx="640" cy="330" r="330" fill="#25D08C" opacity="0.13" filte
 <g filter="url(#sh)"><circle cx="1190" cy="250" r="66" fill="url(#re)" stroke="#fff" stroke-width="8"/></g><text x="1190" y="270" class="t" font-size="54" fill="#fff" text-anchor="middle" {S} stroke-width="7">0 €?</text>
 {blocco(440,500,400,64,"IL CONTO VERO",40,"#FFD43B","#0D2A2F",0,'b7')}
 """+STRIP('A LEI <tspan fill="#0D5158">NON ARRIVA NIENTE?</tspan>')+END
+# C: numero gigante del marito con le ultime cifre coperte da nastro rosso "??" + lei con 0 € + cedolino inclinato dietro
+C=HEAD+f"""<circle cx="700" cy="380" r="340" fill="#E0402A" opacity="0.10" filter="url(#gl)"/>
+<g class="t" {S} stroke-width="18"><text id="c1" x="34" y="110" font-size="96" fill="#fff">PENSIONE</text></g>
+{blocco(605,34,470,90,"CASALINGHE",64,"#FFD43B","#0D2A2F",3,'c2')}
+<g transform="rotate(-6 760 390)"><g filter="url(#sh)"><rect x="380" y="190" width="760" height="380" rx="26" fill="url(#pp)" stroke="#fff" stroke-width="8"/></g>
+<rect x="380" y="190" width="760" height="70" rx="26" fill="#0D5158"/><rect x="380" y="230" width="760" height="30" fill="#0D5158"/>
+<text x="760" y="240" class="t" font-size="38" fill="#fff" text-anchor="middle">PENSIONE DI TUO MARITO</text>
+<text id="c3" x="760" y="455" class="t" font-size="160" fill="#0D2A2F" text-anchor="middle">1.0<tspan fill-opacity="0">88</tspan> €</text>
+<g filter="url(#sh)"><rect x="705" y="315" width="230" height="170" rx="14" fill="url(#re)" stroke="#fff" stroke-width="7" transform="rotate(8 820 400)"/></g>
+<text x="820" y="450" class="t" font-size="130" fill="#fff" text-anchor="middle" transform="rotate(8 820 400)" {S} stroke-width="10">??</text>
+<text x="760" y="540" class="t" font-size="40" fill="#0D5158" text-anchor="middle">NETTI AL MESE</text></g>
+{person(175,400,118,'L','#1B9F81')}
+<g filter="url(#sh)"><circle cx="270" cy="560" r="70" fill="url(#re)" stroke="#fff" stroke-width="8"/></g><text x="270" y="578" class="t" font-size="50" fill="#fff" text-anchor="middle" {S} stroke-width="7">0 €</text>
+{blocco(1000,520,250,70,"A TE?",50,"#FFD43B","#0D2A2F",-4,'c4')}
+"""+STRIP('SOPRA QUESTA CIFRA <tspan fill="#0D5158">A TE NON ARRIVA NIENTE</tspan>')+END
 JS="""()=>{const o=[];for(const t of document.querySelectorAll('text')){const r=t.getBoundingClientRect();if(r.width<2)continue;o.push([t.textContent.slice(0,22),Math.round(r.x),Math.round(r.y),Math.round(r.right),Math.round(r.bottom)]);}return o;}"""
 async def main():
     async with async_playwright() as p:
         b=await p.chromium.launch(executable_path='/opt/pw-browsers/chromium-1194/chrome-linux/chrome')
         pg=await b.new_page(viewport={'width':1280,'height':720})
-        for n,h in (('A',A),('B',B)):
+        for n,h in (('A',A),('B',B),('C',C)):
             open(f'miniatura-{n}.html','w').write(h)
             await pg.goto(f'file://{os.getcwd()}/miniatura-{n}.html')
             for r in await pg.evaluate(JS):
