@@ -57,3 +57,8 @@ modello medium.en
     ('replace', "first's", "one st's")
     ('replace', 'q c d', 'qcd')
     ('replace', 'first', 'one st')
+19 copione 86 ascoltate 85 differenze 2
+    ('replace', 'first', 'one st')
+    ('replace', 'q c d', 'qcd')
+20 copione 70 ascoltate 68 differenze 1
+    ('replace', 'q c d', 'qcd')
