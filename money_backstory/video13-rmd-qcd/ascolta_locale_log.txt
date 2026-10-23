@@ -1,1 +1,14 @@
 modello medium.en
+1 copione 85 ascoltate 85 differenze 0
+2 copione 75 ascoltate 75 differenze 1
+    ('replace', 'turns', 'turned')
+3 copione 72 ascoltate 76 differenze 4
+    ('insert', '', 'hundred')
+    ('replace', 'fifty', 'five thousand')
+    ('insert', '', 'hundred')
+    ('insert', '', 'hundred')
+4 copione 77 ascoltate 77 differenze 2
+    ('replace', 'as', 'a')
+    ('replace', 'oh', 'hundred')
+5 copione 85 ascoltate 86 differenze 1
+    ('replace', 'first', 'one st')

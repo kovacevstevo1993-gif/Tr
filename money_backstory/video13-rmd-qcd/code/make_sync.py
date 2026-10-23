@@ -13,10 +13,10 @@ for b in range(1, 21):
     if os.path.exists(f):
         raw = subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', f, '-f', 'f32le', '-ac', '1', '-ar', '16000', '-'], capture_output=True).stdout
         dur = len(raw) / 4 / 16000; fr = math.ceil(dur * 30)
-        key = f'{b}:{os.path.getmtime(f)}'
+        key = f'p2:{b}:{os.path.getmtime(f)}'
         if old.get(str(b), {}).get('key') == key: rel = old[str(b)]['rel']
         else:
-            segs, _ = M.transcribe(np.frombuffer(raw, np.float32), word_timestamps=True, language='en')
+            segs, _ = M.transcribe(np.frombuffer(raw, np.float32), word_timestamps=True, language='en', beam_size=5, initial_prompt=J[str(b)], condition_on_previous_text=False)
             asr = [(norm(w.word), w.start, w.end) for s in segs for w in s.words if norm(w.word)]
             words, cov = align({b: J[str(b)]}, asr); rel = words[b]; print('b', b, 'copertura', round(cov, 2), flush=True)
     else: fr = 450; rel = [[w, 0.5 * i, 0.5 * i + 0.4] for i, w in enumerate(J[str(b)].split())]; key = None
