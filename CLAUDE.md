@@ -81,6 +81,7 @@ Tre canali YouTube dell'utente, **separati**. Non mescolare mai temi, stile o da
 - Durate dei blocchi: partire SEMPRE dalla fine del blocco precedente letta nello screenshot dell'utente, mai dalla somma dei miei clip.
 
 ## Miniature: i due canali devono sembrare diversi (feedback 02/10/2026)
+- MINIATURE SENIOR ADVANTAGE (23/10/2026, parole dell'utente: "Fanno cagare felle più professionali che attirano curiosità e Usa altri colori che attirano la gente a cliccare. Walmart potresti trovare anche il loro logo se si può e metterlo"): miniature piu professionali (oggetti lucidi, ombre, profondita, niente personaggi infantili), curiosita (es. righe coperte da barre nere, cerchio e freccia rossi), colori accesi che fanno cliccare (blu acceso, giallo, rosso, bianco), e quando il video parla di un'azienda il suo logo vero preso dal sito ufficiale.
 - Senior Advantage = giallo a raggi, verde bosco/avorio, ricevute, tag, personaggi disegnati. NON usare questi elementi per Money Backstory.
 - Money Backstory = blu notte + oro, rosso/verde, grafici (barre, griglie), numeri grandi. Layout diversi tra le due miniature di un test A/B.
 
