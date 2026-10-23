@@ -11,7 +11,7 @@ from v4b2_10 import cal_card
 from v5lib import paycheck
 from sync_voce import Voice
 VID = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-V = Voice(os.path.join(VID, 'sync.json')); v8b1.V = V
+V = Voice(os.environ.get('SYNCJSON') or os.path.join(VID, 'sync.json')); v8b1.V = V
 
 # ---------- layout: box (x0, y0, x1, y1) dentro l'area utile 120..1800 x 230..720 ----------
 def row(n, y0=250, y1=700, x0=130, x1=1790, gap=50):

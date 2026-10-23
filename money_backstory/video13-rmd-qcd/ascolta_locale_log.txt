@@ -12,3 +12,48 @@ modello medium.en
     ('replace', 'oh', 'hundred')
 5 copione 85 ascoltate 86 differenze 1
     ('replace', 'first', 'one st')
+6 copione 68 ascoltate 70 differenze 2
+    ('replace', 'first', 'one st')
+    ('insert', '', 'dollars')
+7 copione 74 ascoltate 75 differenze 1
+    ('replace', 'first', 'one st')
+8 copione 74 ascoltate 75 differenze 1
+    ('replace', 'first', 'one st')
+9 copione 93 ascoltate 95 differenze 2
+    ('replace', 'fifty', 'five thousand')
+    ('insert', '', 'hundred')
+10 copione 79 ascoltate 79 differenze 3
+    ('replace', "walter's", "alter's")
+    ('replace', 'dollar', 'dollars')
+    ('replace', 'dollar', 'dollars')
+11 copione 76 ascoltate 79 differenze 4
+    ('replace', 'in', 'and')
+    ('insert', '', 'hundred')
+    ('insert', '', 'dollars')
+    ('insert', '', 'dollars')
+12 copione 83 ascoltate 82 differenze 6
+    ('replace', 'q c d', 'qcd')
+    ('replace', 'and', 'of')
+    ('replace', 'twenty', 'two thousand')
+    ('insert', '', 'dollars')
+    ('replace', 'twenty', 'two thousand')
+    ('replace', 'q c d', 'qcd')
+13 copione 84 ascoltate 87 differenze 3
+    ('insert', '', 'dollars')
+    ('insert', '', 'dollars')
+    ('insert', '', 'dollars')
+14 copione 83 ascoltate 83 differenze 0
+15 copione 90 ascoltate 90 differenze 3
+    ('replace', 'ongoing', 'on loaning')
+    ('replace', 'ten', 'one thousand')
+    ('replace', 'q c d', 'qcd')
+16 copione 92 ascoltate 93 differenze 4
+    ('replace', 'as', 'a')
+    ('replace', 'oh', 'hundred')
+    ('insert', '', 'hundred')
+    ('replace', 'as', 'a')
+17 copione 82 ascoltate 82 differenze 0
+18 copione 83 ascoltate 83 differenze 3
+    ('replace', "first's", "one st's")
+    ('replace', 'q c d', 'qcd')
+    ('replace', 'first', 'one st')
