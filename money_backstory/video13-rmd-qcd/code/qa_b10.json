@@ -2,8 +2,8 @@
  {
   "blocco": 10,
   "slide": 1,
-  "fotogrammi": 256,
-  "controllati": 256,
+  "fotogrammi": 257,
+  "controllati": 257,
   "fuori_area": 0,
   "fuori_area_fotogrammi": [],
   "ultimo_fuori_area": null,
@@ -16,8 +16,8 @@
  {
   "blocco": 10,
   "slide": 2,
-  "fotogrammi": 232,
-  "controllati": 232,
+  "fotogrammi": 231,
+  "controllati": 231,
   "fuori_area": 0,
   "fuori_area_fotogrammi": [],
   "ultimo_fuori_area": null,

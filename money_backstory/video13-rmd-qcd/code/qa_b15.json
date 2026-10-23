@@ -16,15 +16,15 @@
  {
   "blocco": 15,
   "slide": 2,
-  "fotogrammi": 137,
-  "controllati": 137,
+  "fotogrammi": 135,
+  "controllati": 135,
   "fuori_area": 0,
   "fuori_area_fotogrammi": [],
   "ultimo_fuori_area": null,
   "completo_a_80%": 1.0,
   "pixel_che_cambiano_dopo_81%": 0,
   "primo_elemento_s": 0.23,
-  "buco_max_s": 1.37,
+  "buco_max_s": 1.3,
   "OK": true
  },
  {
@@ -44,14 +44,14 @@
  {
   "blocco": 15,
   "slide": 4,
-  "fotogrammi": 221,
-  "controllati": 221,
+  "fotogrammi": 223,
+  "controllati": 223,
   "fuori_area": 0,
   "fuori_area_fotogrammi": [],
   "ultimo_fuori_area": null,
   "completo_a_80%": 1.0,
   "pixel_che_cambiano_dopo_81%": 0,
-  "primo_elemento_s": 0.23,
+  "primo_elemento_s": 0.27,
   "buco_max_s": 2.03,
   "OK": true
  }
