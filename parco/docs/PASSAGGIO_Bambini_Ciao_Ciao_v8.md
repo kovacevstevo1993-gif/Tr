@@ -48,3 +48,9 @@ Storia: in cucina il biscotto sparisce dal piatto; topolino "Io non sono stato!"
 ## AGGIORNAMENTO 23/10 mattina
 - Clip7 generata; aveva fotogrammi 35-42 con personaggi sdoppiati (fantasma): originale in clip7_v1.mp4, clip7.mp4 = primi 34 fotogrammi avanti+indietro (ping-pong), nessuna quota usata.
 - Montato `short_chi_ha_mangiato_il_biscotto.mp4` (20,2 s, 606 fotogrammi = 20.2x30, nessun nero, salti solo ai tagli 3,5.5,8,10,13,16 s). NON ANCORA INVIATO: nel finale (clip7) la rana e' tagliata dal bordo destro dell'inquadratura (start7.png). Chiesto all'utente se mandare cosi' o rifare start7/clip7 (serve quota HF).
+
+## AGGIORNAMENTO 23/10 (2) — NUOVO FORMATO DA VIRALI
+- Ricerca gratis su YouTube (23/10): i short virali per bambini 3D durano 6-11 s, UNA gag, niente narratore, effetti sonori (es. "feeds funny cow" 16M view, "feeds funny horse" 9M, "Monkey's pizza gone wrong" 457K). I nostri (20-45 s, narratore, storie) sono diversi. L'utente ha chiesto "fai video simili ai virali con i nostri personaggi".
+- Biscotto: l'utente l'ha giudicato uguale al video "Barattolo misterioso" (03/10, c'e' un biscotto): CONTROLLARE SEMPRE I TITOLI DEL CANALE (feed RSS UCxwr3sSMwnnAhZPm7Bez7mQ) PRIMA di scegliere una storia. Biscotto inviato su richiesta con difetto noto (rana tagliata nel finale).
+- `short_elefantino_ha_fame.mp4` (11,7 s, 351 fotogrammi): topolino offre mela a elefantino -> crunch -> getto d'acqua -> risata -> ISCRIVITI. Codice: mela_frames.py, mela_clips.py (4 clip Wan, quota usata ~110 s), voci_mela.py (audioS, solo finale), short_mela.py. clip4 ping-pong (clip4_v1 originale). Quota HF: ~5 clip al giorno, finita il 23/10 mattina+pomeriggio.
+- L'utente (arrabbiato): "sono sempre le stesse scene" = stessi personaggi/giardino/inquadrature. Prossimo: sfondi e azioni davvero diversi, gag piu' forti.
