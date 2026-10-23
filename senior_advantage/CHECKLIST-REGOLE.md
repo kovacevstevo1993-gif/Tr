@@ -27,3 +27,4 @@ CONTROLLI AGGIUNTI IN ANTICIPO (22/10, ordine utente: aggiungere subito tutti i 
 25. Dopo QUALSIASI correzione si rimanda SEMPRE il copione INTERO, mai solo i blocchi cambiati (ordine utente 22/10: 'mandami tutto il copione... mandi solo il sette per confondere').
 26. Slide di ogni video nuovo: stile grafico proprio (sfondo, testata, schede) diverso dai video precedenti, piu professionali e con piu elementi (ordine utente 23/10).
 27. Nomi file delle slide UNICI, mai uguali a quelli di altri progetti (ordine utente 23/10: V8-blocco era gia usato da Conti in Pensione). Formato SA-<tema>-bloccoNN.mp4; controllare con find su tutto il repo prima di mandare. Vale dal PROSSIMO video (Walmart resta V8-blocco).
+28. Slide finale: riquadro WATCH NEXT sempre nella STESSA posizione dei video precedenti (a destra, x 1150-1830, y 250-710), mai spostarlo: l'utente dovrebbe rifare la schermata finale (ordine utente 23/10; Walmart resta col riquadro a sinistra).
