@@ -405,3 +405,4 @@ SLIDE FATTE E MANDATE: video_short10/short10-blocco01..06.mp4 (fotogrammi = dura
 - 23/10: PACCHETTO WALMART FATTO e mandato in chat: PACCHETTO-VIDEO-WALMART.md (titolo vidIQ 96 senza "Over 60", capitoli dalle fine blocchi corrette, 18 tag 407/500, commento, impostazioni). vidIQ: nuovo account con 67 crediti (20 spesi, saldo 47, reset 29/10); vecchio account 3 crediti (reset 11/11). Da fare solo su ordine: miniature, short.
 - 23/10: 2 miniature Walmart fatte e mandate (miniature/walmart-miniatura-a/b.png, code/thumb_long8.py).
 - 23/10: miniature Walmart RIFATTE (blu e giallo, logo Walmart vero, scontrino con righe coperte / cartellino $4) e mandate.
+- 23/10: slide 32 (finale): codice pronto con riquadro WATCH NEXT che compare solo negli ultimi 20 s (prima scritta BEFORE YOU GO a sinistra); render NON fatto (fermato dall'utente), il file V8-blocco32.mp4 consegnato e quello vecchio. In attesa dell'ok dell'utente.
