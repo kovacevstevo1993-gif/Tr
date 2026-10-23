@@ -130,8 +130,8 @@ S[8] = [
                                   E('card', (1190, 330, 1770, 640), 'twenty thousand', head='2ND RMD', val='$20,000', col=gold, vcol=goldL, vsize=88)],
           'SAME YEAR, SECOND DISTRIBUTION', gold, tag=T2, src='IRS PUB. 590-B'),
     slide('TWO RMDs IN ONE YEAR', 624, [E('seg', (150, 400, 900, 520), 'together', label='1ST RMD', val='$18,868', fill=gold),
-                                       E('seg', (150, 540, 900, 660), 'twenty thousand dollars', label='2ND RMD', val='$20,000', fill=blue, tc=white),
-                                       E('big', (980, 280, 1770, 600), 'thirty-eight thousand', val='$38,868', sub='TAXABLE INCOME IN ONE YEAR', size=170, vcol=red),
+                                       E('seg', (150, 540, 900, 660), 'thirty-eight thousand', label='2ND RMD', val='$20,000', fill=blue, tc=white),
+                                       E('big', (980, 280, 1770, 600), 'sixty-eight dollars', val='$38,868', sub='TAXABLE INCOME IN ONE YEAR', size=170, vcol=red),
                                        E('stamp', (160, 260, 900, 380), 'single year', t='ONE TAX YEAR', col=red, ang=-4, size=76)],
           'ONE BIG TAX BILL', red, (255, 255, 255), tag=T2, src='IRS PUB. 590-B'),
 ]
@@ -164,7 +164,7 @@ S[10] = [
           'AN RMD CAN TAX YOUR BENEFITS', red, (255, 255, 255), tag=T4, src='IRS PUB. 915'),
     slide('HOW THE I R S ADDS IT UP', 630, [E('line', (150, 250, 1770, 300), 'adds half', t="THE I R S ADDS HALF OF WALTER'S BENEFITS", size=44, col=goldL),
                                             E('card', (150, 340, 700, 690), 'fifteen thousand', head='HALF OF SS', val='$15,000', col=blue, vsize=88, icon='coins', s=0.6),
-                                            E('op', (700, 460, 800, 580), 'distribution', t='+', size=130),
+                                            E('op', (700, 460, 800, 580), 'to his', t='+', size=130),
                                             E('card', (800, 340, 1350, 690), 'thirty-two thousand', head='HIS RMD', val='$32,520', col=gold, vsize=88, icon='bank', s=0.5)],
           'HALF THE BENEFITS + THE RMD', gold, tag=T4, src='IRS PUB. 915'),
     slide('FAR ABOVE THE LINE', 631, [E('gauge', (150, 240, 1100, 720), 'forty-seven thousand', limit=34000, val=47520, top=60000, lim_l='$34,000 LINE', label='$47,520', col=red),
@@ -279,7 +279,7 @@ S[19] = [
                                  E('rule', (180, 590, 1740, 720), 'three', n=3, text='MISSING IT COSTS 25%', val='10% IF FIXED', vc=red)],
           'THREE NUMBERS TO KEEP', gold, tag='RECAP', src=IRS),
     slide('RECAP: 4 AND 5', 655, [E('rule', (180, 290, 1740, 460), 'four a', n=4, text='AN RMD CAN TAX UP TO 85% OF YOUR BENEFITS', val='UP TO 85%', vc=red),
-                                  E('rule', (180, 500, 1740, 670), 'five', n=5, text='A Q C D CAN CUT THAT', val='WALTER SAVED $2,089', vc=green)],
+                                  E('rule', (180, 500, 1740, 670), 'five a', n=5, text='A Q C D CAN CUT THAT', val='WALTER SAVED $2,089', vc=green)],
           'TWO MORE TO KEEP', green, tag='RECAP', src=IRS),
 ]
 # ---- 20: CTA + DISCLAIMER ----
