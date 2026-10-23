@@ -50,6 +50,11 @@ walmart senior discount,seniors walmart,walmart for seniors,walmart over 60,walm
 Which of these 10 did you NOT know about? Tell me below 👇 And send this video to someone over 60 who shops at Walmart every week.
 
 ## Impostazioni
-Non per bambini, nessun limite di eta. Uso IA: No. Promozione a pagamento: No. Miniatura: da fare (non ancora fatta). Schermata finale ultimi 20 s: video lungo Amtrak (stessa playlist) + Iscriviti, nel riquadro WATCH NEXT a sinistra della slide finale. Video correlato: nessuno (si imposta solo sullo short).
+Non per bambini, nessun limite di eta. Uso IA: No. Promozione a pagamento: No. Miniatura: walmart-miniatura-a.png (B per "Test e confronta"). Schermata finale ultimi 20 s: video lungo Amtrak (stessa playlist) + Iscriviti, nel riquadro WATCH NEXT a sinistra della slide finale. Video correlato: nessuno (si imposta solo sullo short).
 Capitoli dalla timeline dell'utente (fine blocchi corrette con la regola 29: orologio CapCut arrotondato).
 vidIQ 23/10 (account con 67 crediti, 20 spesi): "Walmart Has No Senior Discount, But It Will Give You These 10 Things (If You Ask)" 96; "...These 10 Things" senza (If You Ask) 92; "Over 60? Walmart Will Give You These 10 Things (If You Ask)" 90; "No Senior Discount at Walmart? Ask for These 10 Things Instead" 87. Titolo senza "Over 60" (regola 19: nessuna voce dipende dall'eta).
+
+## Miniature (code/thumb_long8.py, miniature/walmart-miniatura-a/b.png, 23/10)
+A = corsia di negozio sfocata, mano che regge lo scontrino: SENIOR DISCOUNT / NOT FOUND, poi PRICE MATCH, $4 RX LIST, 50% OFF W+, 10c OFF GAS con spunta e "+ 6 MORE"; testo "ASK FOR THESE 10" + fascia "AT WALMART".
+B = raggi verdi, nonna sorpresa (personaggio nuovo) con flacone e stella "$4"; testo "WALMART'S $4 LIST" + fascia "+ 9 MORE TO ASK FOR".
+Diverse dalle precedenti (niente nonno scioccato, niente X sul tesserino, niente raggi gialli). Punteggio vidIQ solo dopo il caricamento.
