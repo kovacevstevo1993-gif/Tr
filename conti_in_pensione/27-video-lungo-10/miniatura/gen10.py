@@ -42,21 +42,26 @@ B=HEAD+f"""<circle cx="640" cy="330" r="330" fill="#25D08C" opacity="0.13" filte
 <g filter="url(#sh)"><circle cx="1190" cy="250" r="66" fill="url(#re)" stroke="#fff" stroke-width="8"/></g><text x="1190" y="270" class="t" font-size="54" fill="#fff" text-anchor="middle" {S} stroke-width="7">0 €?</text>
 {blocco(440,500,400,64,"IL CONTO VERO",40,"#FFD43B","#0D2A2F",0,'b7')}
 """+STRIP('A LEI <tspan fill="#0D5158">NON ARRIVA NIENTE?</tspan>')+END
-# C: numero gigante del marito con le ultime cifre coperte da nastro rosso "??" + lei con 0 € + cedolino inclinato dietro
-C=HEAD+f"""<circle cx="700" cy="380" r="340" fill="#E0402A" opacity="0.10" filter="url(#gl)"/>
-<g class="t" {S} stroke-width="18"><text id="c1" x="34" y="110" font-size="96" fill="#fff">PENSIONE</text></g>
-{blocco(605,34,470,90,"CASALINGHE",64,"#FFD43B","#0D2A2F",3,'c2')}
-<g transform="rotate(-6 760 390)"><g filter="url(#sh)"><rect x="380" y="190" width="760" height="380" rx="26" fill="url(#pp)" stroke="#fff" stroke-width="8"/></g>
-<rect x="380" y="190" width="760" height="70" rx="26" fill="#0D5158"/><rect x="380" y="230" width="760" height="30" fill="#0D5158"/>
-<text x="760" y="240" class="t" font-size="38" fill="#fff" text-anchor="middle">PENSIONE DI TUO MARITO</text>
-<text id="c3" x="760" y="455" class="t" font-size="160" fill="#0D2A2F" text-anchor="middle">1.0<tspan fill-opacity="0">88</tspan> €</text>
-<g filter="url(#sh)"><rect x="705" y="315" width="230" height="170" rx="14" fill="url(#re)" stroke="#fff" stroke-width="7" transform="rotate(8 820 400)"/></g>
-<text x="820" y="450" class="t" font-size="130" fill="#fff" text-anchor="middle" transform="rotate(8 820 400)" {S} stroke-width="10">??</text>
-<text x="760" y="540" class="t" font-size="40" fill="#0D5158" text-anchor="middle">NETTI AL MESE</text></g>
-{person(175,400,118,'L','#1B9F81')}
-<g filter="url(#sh)"><circle cx="270" cy="560" r="70" fill="url(#re)" stroke="#fff" stroke-width="8"/></g><text x="270" y="578" class="t" font-size="50" fill="#fff" text-anchor="middle" {S} stroke-width="7">0 €</text>
-{blocco(1000,520,250,70,"A TE?",50,"#FFD43B","#0D2A2F",-4,'c4')}
-"""+STRIP('SOPRA QUESTA CIFRA <tspan fill="#0D5158">A TE NON ARRIVA NIENTE</tspan>')+END
+# C (rifatta 23/10): impaginazione DIVERSA da A e B: bilancia gigante in alto, scritta PENSIONE CASALINGHE in BASSO, niente striscia bianca.
+def slots(x,y,n,w,h):
+    o=''
+    for i in range(n):o+=f'<g filter="url(#sh)"><rect x="{x+i*(w+10)}" y="{y}" width="{w}" height="{h}" rx="10" fill="url(#re)" stroke="#fff" stroke-width="5"/></g><text x="{x+i*(w+10)+w/2}" y="{y+h*0.78}" class="t" font-size="{h*0.78}" fill="#fff" text-anchor="middle" {S} stroke-width="6">?</text>'
+    return o
+C=HEAD+f"""<rect x="0" y="0" width="640" height="720" fill="#7A1A10" opacity="0.28"/>
+<circle cx="640" cy="80" r="40" fill="#FFD43B" stroke="#fff" stroke-width="7"/>
+<rect x="628" y="80" width="24" height="330" rx="8" fill="#FFD43B" stroke="#fff" stroke-width="5"/>
+<path d="M560 420 H720 L690 380 H590 Z" fill="#FFD43B" stroke="#fff" stroke-width="5"/>
+<g transform="rotate(-12 640 110)"><rect x="200" y="100" width="880" height="22" rx="11" fill="#FFD43B" stroke="#fff" stroke-width="5"/>
+<path d="M250 122 L130 300 M250 122 L370 300 M1030 122 L950 300 M1030 122 L1110 300" stroke="#fff" stroke-width="5"/></g>
+<g filter="url(#sh)"><path d="M90 420 Q270 500 450 420 Z" fill="#FFD43B" stroke="#fff" stroke-width="6"/><path d="M900 210 Q1020 284 1140 210 Z" fill="#FFD43B" stroke="#fff" stroke-width="6"/></g>
+<g filter="url(#sh)"><rect x="80" y="222" width="380" height="196" rx="22" fill="url(#pp)" stroke="#fff" stroke-width="6"/></g>
+<text x="270" y="270" class="t" font-size="36" fill="#0D5158" text-anchor="middle">LUI: MILLE E...</text>
+<text id="c3" x="100" y="390" class="t" font-size="94" fill="#0D2A2F">1.0</text>{slots(280,300,2,58,96)}<text x="452" y="390" class="t" font-size="60" fill="#0D2A2F" text-anchor="end">€</text>
+{person(1020,140,62,'L','#1B9F81')}
+<g filter="url(#sh)"><circle cx="1150" cy="70" r="56" fill="url(#re)" stroke="#fff" stroke-width="7"/></g><text x="1150" y="88" class="t" font-size="44" fill="#fff" text-anchor="middle" {S} stroke-width="6">0 €</text>
+{blocco(830,250,380,70,"E A LEI ZERO?",44,"#E0402A","#fff",-3,'c4')}
+<g class="t" text-anchor="middle" {S} stroke-width="22"><text id="c1" x="640" y="556" font-size="122" fill="#fff">PENSIONE</text><text id="c2" x="640" y="676" font-size="112" fill="#FFD43B">CASALINGHE</text></g>
+"""+END
 JS="""()=>{const o=[];for(const t of document.querySelectorAll('text')){const r=t.getBoundingClientRect();if(r.width<2)continue;o.push([t.textContent.slice(0,22),Math.round(r.x),Math.round(r.y),Math.round(r.right),Math.round(r.bottom)]);}return o;}"""
 async def main():
     async with async_playwright() as p:
