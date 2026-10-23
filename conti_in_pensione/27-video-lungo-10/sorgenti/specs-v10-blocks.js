@@ -16,7 +16,7 @@ Object.assign(BUILD,{
   if(o.stroke)el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:26,fill:'none',stroke:o.stroke,'stroke-width':6},g);
   const ir=o.ir||Math.min(70,h*0.36);const ix=-w/2+ir+34;const ig=el('g',{transform:'translate('+ix+' 0)'},g);el('circle',{r:ir,fill:o.ibg||LIGHT},ig);ico(ig,icon,ir/54,o.icol||INK);
   if(o.xbadge){const xb=el('g',{transform:'translate('+(ix+ir*0.72)+' '+(-ir*0.72)+')'},g);el('circle',{r:ir*0.34,fill:o.xbadge=='x'?RED_:GRN,stroke:'#fff','stroke-width':4},xb);ico(xb,o.xbadge,ir*0.34/42,'#fff');}
-  const x0=ix+ir+26,x1=w/2-34,cx=(x0+x1)/2;const n=lines.length;const lh=o.lh||(lines[0][1]*1.32);
+  const x0=ix+ir+26,x1=w/2-52,cx=(x0+x1)/2;const n=lines.length;const lh=o.lh||(lines[0][1]*1.32);
   lines.forEach((L,i)=>fitT(g,L[0],cx,(i-(n-1)/2)*lh+(o.dy||0),L[1],L[2]||INK,L[3]||'900',x1-x0));},
  // ----- blocco 1 -----
  b1house:(g)=>{houseB(g,440,330,150);win10(g,-150,-262,0.9);win10(g,150,-262,0.9);},
@@ -68,7 +68,7 @@ Object.assign(BUILD,{
   lines.forEach((L,i)=>fitT(g,L,0,(i-1)*33,i==0?26:24,i==0?GRN:INK,'bold',w-40));},
  hl4:(g)=>{el('rect',{x:-216,y:-246,width:432,height:492,rx:34,fill:'none',stroke:AMB,'stroke-width':9},g);
   const m=el('g',{transform:'translate(176 -206)'},g);el('circle',{r:48,fill:AMB,stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},m);ico(m,'lens',0.95,'#5A3300');
-  const lg=el('g',{transform:'translate(-50 270)'},g);pillB(lg,'LA PARTE DA CAPIRE BENE',28,AMB,'#5A3300','lens');},
+  },
  // ----- blocco 4 -----
  b4axis:(g)=>{el('line',{x1:0,y1:0,x2:0,y2:-512,stroke:'#BFFBEA','stroke-width':6,'stroke-linecap':'round'},g);el('path',{d:'M-16 -506 L0 -536 L16 -506 Z',fill:'#BFFBEA'},g);
   [-250,-500].forEach(y=>el('line',{x1:-14,y1:y,x2:14,y2:y,stroke:'#BFFBEA','stroke-width':5},g));el('line',{x1:-30,y1:0,x2:1060,y2:0,stroke:'#BFFBEA','stroke-width':5,opacity:.6},g);
@@ -90,13 +90,13 @@ Object.assign(BUILD,{
  b4cut:(g,s,col,w,tc)=>{el('rect',{x:-w/2,y:-48,width:w,height:96,rx:24,fill:col,stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);fitT(g,s,0,0,32,tc||'#fff','900',w-44);
   el('line',{x1:w/2+4,y1:-60,x2:w/2+4,y2:-142,stroke:'#fff','stroke-width':4,'stroke-dasharray':'10 8',opacity:.8},g);},
  // ----- blocco 5 -----
- b5red:(g)=>{el('rect',{x:-262,y:-96,width:524,height:190,rx:20,fill:'url(#g_red)',opacity:.55},g);el('rect',{x:-262,y:-96,width:524,height:190,rx:20,fill:'none',stroke:'#FF8A75','stroke-width':4,'stroke-dasharray':'14 10'},g);},
+ b5red:(g)=>{el('rect',{x:-262,y:-96,width:524,height:190,rx:20,fill:'#F07A66',opacity:.8},g);el('rect',{x:-262,y:-96,width:524,height:190,rx:20,fill:'none',stroke:'#FF8A75','stroke-width':4,'stroke-dasharray':'14 10'},g);},
  b5house:(g)=>{houseB(g,440,460,95,{over:26});el('line',{x1:-214,y1:-230,x2:214,y2:-230,stroke:'#9FB4B9','stroke-width':4,'stroke-dasharray':'12 9'},g);
   [[-120,-115],[120,-115],[-120,-345],[120,-345]].forEach(([x,y])=>win10(g,x,y,0.8));},
  b5fl:(g,i,lines,fill,tc)=>{el('rect',{x:-216,y:-112,width:432,height:224,rx:i?6:10,fill:fill,opacity:.94},g);const n=lines.length;
   lines.forEach((L,k)=>fitT(g,L,0,(i?-52:0)+(k-(n-1)/2)*44,36,tc||'#fff','900',390));},
  b5gap:(g)=>{el('line',{x1:-214,y1:62,x2:214,y2:62,stroke:'#0B4A50','stroke-width':5,'stroke-dasharray':'12 8'},g);
-  const lg=el('g',{transform:'translate(-120 62)'},g);pillB(lg,'LA COPPIA',22,DF_,'#fff');arrB(g,165,58,165,-106,'#0B4A50',9);},
+  const lg=el('g',{transform:'translate(-90 62)'},g);pillB(lg,'LA COPPIA',22,DF_,'#fff');arrB(g,165,58,165,-106,'#0B4A50',9);},
  b5card:(g,l1,l2,fill,tc,w)=>{w=w||600;const h=128;el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:24,fill:fill,stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);
   fitT(g,l1,0,-24,34,tc,'900',w-70);fitT(g,l2,0,26,28,tc,'bold',w-70);},
  // ----- blocco 6 -----
@@ -106,7 +106,7 @@ Object.assign(BUILD,{
   [[-250,'7.101 €'],[-500,'14.202 €']].forEach(([y,s])=>{el('line',{x1:-214,y1:y,x2:-192,y2:y,stroke:'#BFFBEA','stroke-width':5},g);const lg=el('g',{transform:'translate(-318 '+y+')'},g);pillB(lg,s,26,DF_,'#fff');});},
  b6fill:(g)=>{const hh=320;el('rect',{x:-184,y:-hh,width:368,height:hh-6,rx:8,fill:'url(#g_badge)',opacity:.95},g);el('line',{x1:-184,y1:-hh,x2:184,y2:-hh,stroke:'#fff','stroke-width':5},g);
   fitT(g,'LA COPPIA',0,-200,30,'#fff','bold',330);fitT(g,'9.100 €',0,-140,58,'#fff','900',330);},
- b6gap:(g)=>{el('rect',{x:-184,y:-494,width:368,height:170,rx:6,fill:AMB,opacity:.9},g);
+ b6gap:(g)=>{g=el('g',{transform:'translate(0 409)'},g);el('rect',{x:-184,y:-494,width:368,height:170,rx:6,fill:AMB,opacity:.9},g);
   el('path',{d:'M200 -496 H220 V-324 H200',fill:'none',stroke:AMB,'stroke-width':7},g);
   const c=el('g',{transform:'translate(440 -410)'},g);const w=320,h=110;el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:20,fill:'url(#g_paper)',filter:'url(#g_sh2)'},c);
   el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:20,fill:'none',stroke:AMB,'stroke-width':5},c);fitT(c,'MANCANO',0,-26,26,GRN,'bold',w-40);fitT(c,'5.102,24 €',0,18,46,INK,'900',w-40);
@@ -144,7 +144,7 @@ Object.assign(BUILD,{
   txt(g,'IL TUO LIMITE',-400,-110,38,INK,'bold','start');txt(g,'7.101,12 €',400,-110,44,INK,'900','end');},
  srow:(g,l,v,col)=>{txt(g,l,-400,-6,38,col||INK,'bold','start');txt(g,v,400,-6,44,col||INK,'900','end');
   el('line',{x1:-410,y1:40,x2:410,y2:40,stroke:'#0B4A50','stroke-width':4},g);el('line',{x1:-410,y1:50,x2:410,y2:50,stroke:'#0B4A50','stroke-width':4},g);},
- stot:(g,l,v)=>{el('rect',{x:-420,y:-48,width:840,height:96,rx:18,fill:LIGHT,stroke:GRN,'stroke-width':4},g);txt(g,l,-396,15,40,GRN,'900','start');txt(g,v,396,17,50,GRN,'900','end');},
+ stot:(g,l,v)=>{el('rect',{x:-400,y:-48,width:800,height:96,rx:18,fill:LIGHT,stroke:GRN,'stroke-width':4},g);txt(g,l,-366,15,40,GRN,'900','start');txt(g,v,366,17,50,GRN,'900','end');},
  // ----- blocco 11 -----
  ncard:(g,icon,lines,ok)=>{const w=480,h=380;el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:28,fill:'url(#g_paper)',filter:'url(#g_sh)'},g);
   el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:28,fill:'none',stroke:ok?GRN:RED_,'stroke-width':5,opacity:.8},g);
@@ -162,13 +162,13 @@ Object.assign(BUILD,{
   for(let a=16;a<=67;a+=1){const x=-600+(a-16)*1200/49;if(a%5==0)el('line',{x1:x,y1:-10,x2:x,y2:10,stroke:'#BFFBEA','stroke-width':3,opacity:.6},g);}
   const m=el('g',{transform:'translate(600 0)'},g);el('circle',{r:40,fill:AMB,stroke:'#fff','stroke-width':5,filter:'url(#g_sh3)'},m);txt(m,'65',0,12,32,'#5A3300','900');
   const lg=el('g',{transform:'translate(600 76)'},g);pillB(lg,'FINO AI 65 ANNI',28,DF_,'#fff');},
- b12range:(g)=>{el('rect',{x:-600,y:-14,width:1200,height:28,rx:14,fill:'url(#g_badge)',stroke:'#fff','stroke-width':4},g);
+ b12range:(g)=>{el('rect',{x:-560,y:-14,width:1120,height:28,rx:14,fill:'url(#g_badge)',stroke:'#fff','stroke-width':4},g);
   const m=el('g',{transform:'translate(-600 0)'},g);el('circle',{r:40,fill:AMB,stroke:'#fff','stroke-width':5,filter:'url(#g_sh3)'},m);txt(m,'16',0,12,32,'#5A3300','900');
   const lg=el('g',{transform:'translate(-600 76)'},g);pillB(lg,'DAI 16 ANNI',28,DF_,'#fff');const l2=el('g',{transform:'translate(0 76)'},g);pillB(l2,'PUOI ISCRIVERTI',28,GRN,'#fff','ok');},
  b12card:(g)=>{cardB(g,'FONDO CASALINGHE INPS',640,310,{hfs:30});const a=el('g',{transform:'translate(-80 10)'},g);ava(a,'C',62);},
  b12men:(g)=>{const a=el('g',{transform:'translate(80 10)'},g);ava(a,'H',62);const lg=el('g',{transform:'translate(0 108)'},g);pillB(lg,'APERTO ANCHE AGLI UOMINI',26,GRN,'#fff');},
  // ----- blocco 13 -----
- b13five:(g)=>{const L=['1','2','3','4','5'];const c=el('g',{transform:'translate(-300 0)'},g);coinsRow(c,5,34,84,L);const lg=el('g',{transform:'translate(200 0)'},g);pillB(lg,'ALMENO 5 ANNI DI CONTRIBUTI',30,DF_,'#fff');},
+ b13five:(g)=>{const L=['1','2','3','4','5'];const c=el('g',{transform:'translate(-300 0)'},g);coinsRow(c,5,34,84,L);const lg=el('g',{transform:'translate(240 0)'},g);pillB(lg,'ALMENO 5 ANNI DI CONTRIBUTI',30,DF_,'#fff');},
  b13p:(g,head,fill)=>{cardB(g,head,680,390,{hfs:40,hh:76,hc:fill});},
  b13cond:(g)=>{fitT(g,'SE È ALMENO IL 20% PIÙ ALTA',0,-20,32,INK,'900',600);fitT(g,"DELL'ASSEGNO SOCIALE",0,24,32,INK,'900',600);},
  b13any:(g)=>{const ig=el('g',{transform:'translate(-200 0)'},g);el('circle',{r:58,fill:LIGHT},ig);ico(ig,'ok',1.1,GRN);fitT(g,'QUALUNQUE SIA',60,-28,40,INK,'900',380);fitT(g,"L'IMPORTO",60,28,40,INK,'900',380);},
@@ -188,7 +188,7 @@ Object.assign(BUILD,{
   el('rect',{x:-w/2,y:-h/2,width:16,height:h,rx:8,fill:AMB},g);
   const nb=el('g',{transform:'translate(-752 0)'},g);el('circle',{r:38,fill:AMB,stroke:'#fff','stroke-width':4},nb);txt(nb,String(n),0,16,44,'#5A3300','900');
   const ig=el('g',{transform:'translate(-640 0)'},g);el('circle',{r:52,fill:LIGHT},ig);ico(ig,icon,0.92,INK);
-  txt(g,s,-560,sub?-14:14,36,INK,'900','start');if(sub)txt(g,sub,-560,40,28,GRN,'bold','start');},
+  txt(g,s,-560,sub===null?-6:-14,36,INK,'900','start');if(sub)txt(g,sub,-560,40,28,GRN,'bold','start');},
  wsub:(g,s,fill,tc)=>{pillB(g,s,28,fill,tc||'#fff');},
  // ----- blocco 16 -----
  dbox:(g)=>{const w=1640,h=150;el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:26,fill:'#06303A',stroke:'#7FF0D2','stroke-width':3,filter:'url(#g_sh)'},g);
@@ -238,7 +238,8 @@ SPECS[3]=()=>mkBlk(TXT,TOT,[
   I('req',[3,'id',['CITTADINANZA','ITALIANA O','EQUIPARATA']],1170,532,'La cittadinanza'),
   OV(I('rsub',[['ES. PERMESSO DI','SOGGIORNO DI','LUNGO PERIODO']],1170,690,'come il permesso')),
   I('req',[4,'ruler',['REDDITI SOTTO','UN LIMITE','PRECISO']],1590,532,'E redditi sotto'),
-  OV(I('hl4',[],1590,532,'È proprio il limite'))]},
+  OV(I('hl4',[],1590,532,'È proprio il limite')),
+  P('LA PARTE DA CAPIRE BENE',1540,806,['la parte da capire',0],AMB,28,'lens')]},
 ]);
 SPECS[4]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'I LIMITI SONO DUE',cap:'IL TETTO RADDOPPIA: DA 7.101,12 € A 14.202,24 € ALL\'ANNO',items:[
@@ -280,7 +281,7 @@ SPECS[6]=()=>mkBlk(TXT,TOT,[
  {at:'La coppia sta',top:'QUANTO SPETTA A LEI',cap:'MANCANO 5.102,24 € PER ARRIVARE AL TETTO: È L\'ASSEGNO DI LEI',items:[
   I('b6house',[],520,830,'La coppia sta'),
   OV(I('b6fill',[],520,830,'tra le due soglie')),
-  OV(I('b6gap',[],520,830,'mancano cinquemila')),
+  OV(I('b6gap',[],520,421,'mancano cinquemila')),
   P("= L'ASSEGNO DI LEI",980,530,"è l'assegno di lei",AMB,32),
   I('b6res',[],1525,560,'Diviso in tredici rate'),
   OV(I('b6val',[],1525,620,'trecentonovantadue'))]},
@@ -353,7 +354,7 @@ SPECS[11]=()=>mkBlk(TXT,TOT,[
   P('BUONI POSTALI',1600,592,'buoni postali',DF_,28,'mail'),
   P('LIBRETTI',1600,666,'dei libretti',DF_,28,'book'),
   P('CONTI IN BANCA',1600,740,'conti in banca',DF_,28,'stato'),
-  I('icard',[1180,210,'piggy',[['ATTENZIONE:',30,RED_],['CONTANO GLI INTERESSI,',34],['NON I RISPARMI CHE LI PRODUCONO',34]],{lh:46,ir:62,stroke:AMB}],790,680,'Attenzione')]},
+  I('icard',[1100,210,'piggy',[['ATTENZIONE:',30,RED_],['CONTANO GLI INTERESSI,',34],['NON I RISPARMI CHE LI PRODUCONO',34]],{lh:46,ir:62,stroke:AMB}],760,680,'Attenzione')]},
 ]);
 SPECS[12]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'UN\'ALTRA STRADA: IL FONDO CASALINGHE',cap:'ISCRIZIONE DAI 16 ANNI, APERTA ANCHE AGLI UOMINI',items:[
@@ -365,7 +366,7 @@ SPECS[12]=()=>mkBlk(TXT,TOT,[
   P('SE NON LAVORI',1400,470,'se non lavori',GF_,30,'ok',{icol:GRN}),
   P('E NON HAI GIÀ UNA PENSIONE TUA',1400,560,'e non hai già',GF_,30,'ok',{icol:GRN}),
   P('CON LA REVERSIBILITÀ PUOI',1400,650,'con la reversibilità',AMB,30,'ok',{icol:'#5A3300'}),
-  I('stamp',[["L'ISCRIZIONE RESTA VALIDA",'ANCHE SE NON VERSI NIENTE'],GRN,34,-4],1400,790,"L'iscrizione resta")]},
+  I('b5card',["L'ISCRIZIONE RESTA VALIDA",'ANCHE SE NON VERSI NIENTE',GF_,'#fff',640],1400,790,"L'iscrizione resta")]},
 ]);
 SPECS[13]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'QUANDO PAGA LA PENSIONE',cap:'CON ALMENO 5 ANNI DI CONTRIBUTI: DAI 57 ANNI OPPURE A 65 ANNI',items:[
@@ -397,9 +398,9 @@ SPECS[14]=()=>mkBlk(TXT,TOT,[
 SPECS[15]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'TRE AVVERTENZE',cap:'CONTROLLI OGNI ANNO, ESTERO OLTRE 29 GIORNI, NUOVI IMPORTI A GENNAIO',items:[
   I('wrow',[1,'lens',"OGNI ANNO L'INPS RICONTROLLA REDDITI E RESIDENZA",null],960,300,'Prima'),
-  OV(I('wsub',["SE QUALCOSA CAMBIA, L'IMPORTO SI AGGIORNA",AMB,'#5A3300'],830,330,'e se qualcosa cambia')),
+  OV(I('wsub',["SE QUALCOSA CAMBIA, L'IMPORTO SI AGGIORNA",AMB,'#5A3300'],830,342,'e se qualcosa cambia')),
   I('wrow',[2,'plane',"ALL'ESTERO PIÙ DI 29 GIORNI DI FILA: ASSEGNO SOSPESO",null],960,500,'Seconda'),
-  OV(I('wsub',['DOPO UN ANNO DI SOSPENSIONE SI PERDE',RF_],790,530,'e dopo un anno')),
+  OV(I('wsub',['DOPO UN ANNO DI SOSPENSIONE SI PERDE',RF_],790,542,'e dopo un anno')),
   I('wrow',[3,'cal','ASSEGNO E LIMITI CAMBIANO OGNI GENNAIO','CON LA RIVALUTAZIONE DELLE PENSIONI'],960,700,'Terza')]},
 ]);
 SPECS[16]=()=>mkBlk(TXT,TOT,[

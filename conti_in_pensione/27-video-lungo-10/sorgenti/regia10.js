@@ -19,6 +19,8 @@ function drawBlock(t){
  if(curS!==i){sceneG.innerHTML='';S0.build(sceneG);curS=i;}
  const lt=t-S0.s;
  S0.update(lt);
+ // comparsa: l'elemento diventa visibile mentre cresce (niente testi minuscoli nei primi fotogrammi)
+ if(S0.o){S0.o.items.forEach(({n,it})=>n.setAttribute('opacity',clamp(pop(lt,it._a,it._a+0.9)/0.35).toFixed(3)));S0.o.cap.setAttribute('opacity',clamp((lt-0.15)/0.3).toFixed(3));}
  const fin=eo3(seg(lt,0,0.3)),fout=(i<SB.length-1)?1-eio(seg(t,S0.e-0.3,S0.e)):1;
  sceneG.setAttribute('opacity',Math.min(fin,fout));
  const G=OFF+t;

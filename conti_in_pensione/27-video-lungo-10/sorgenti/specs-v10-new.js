@@ -86,7 +86,7 @@ function cap(g,s,size){size=size||44;const c=el('g',{},g);if(!s)return c;
  return c;}
 // ---------- pillola con testo misurato e icona facoltativa ----------
 function pillB(g,s,fs,fill,col,icon,o){o=o||{};fs=fs||34;const t=txt(g,s,0,fs*0.36,fs,col||'#fff','bold');const tl=mw(t,s,fs);
- const h=o.h||fs*1.8;const ir=icon?h*0.37:0;const padL=icon?(h*0.14+2*ir+fs*0.45):fs*0.95;const padR=fs*0.95;
+ const h=o.h||fs*1.8;const ir=icon?h*0.37:0;const padL=icon?(h*0.14+2*ir+fs*0.45):fs*1.15;const padR=fs*1.15;
  const w=Math.max(o.minw||0,tl+padL+padR);const tx=-w/2+padL+(w-padL-padR)/2;t.setAttribute('x',tx.toFixed(1));
  const r=el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:o.rx!==undefined?o.rx:h/2,fill:fill,stroke:o.stroke||'#fff','stroke-width':o.sw||4,filter:'url(#g_sh3)'});g.insertBefore(r,t);
  if(icon){const ig=el('g',{transform:'translate('+(-w/2+h*0.14+ir)+' 0)'},g);el('circle',{r:ir,fill:o.ibg||'#fff'},ig);ico(ig,icon,ir/48,o.icol||INK);}
@@ -143,7 +143,7 @@ function cardB(g,title,w,h,o){o=o||{};const hh=title?(o.hh||66):0;const R=o.rx||
 // ---------- timbro inclinato, doppio bordo ----------
 function stampB(g,lines,col,fs,rot){fs=fs||40;const sg=el('g',{transform:'rotate('+(rot||-6)+')'},g);
  const T=lines.map((s,i)=>txt(sg,s,0,0,i==0?fs:fs*0.8,col,'900'));const ws=T.map(t=>mw(t,t.textContent,+t.getAttribute('font-size')));
- const w=Math.max(...ws)+fs*1.6;const lh=fs*1.12;const h=lines.length*lh+fs*0.9;
+ const w=Math.max(...ws)+fs*1.6;const lh=fs*1.3;const h=lines.length*lh+fs*0.9;
  T.forEach((t,i)=>t.setAttribute('y',(-h/2+fs*0.45+lh*i+lh*0.78).toFixed(1)));
  const r1=el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:14,fill:'#fff',stroke:col,'stroke-width':8,filter:'url(#g_sh2)'});sg.insertBefore(r1,T[0]);
  const r2=el('rect',{x:-w/2+10,y:-h/2+10,width:w-20,height:h-20,rx:9,fill:'none',stroke:col,'stroke-width':3,opacity:.7});sg.insertBefore(r2,T[0]);
