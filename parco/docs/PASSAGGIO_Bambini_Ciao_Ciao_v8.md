@@ -44,3 +44,7 @@ Storia: in cucina il biscotto sparisce dal piatto; topolino "Io non sono stato!"
 ## AGGIORNAMENTO 21/10 sera (UTC 23:00)
 - Generate e controllate (contact sheet) clip 1,2,3,4,5 del biscotto (assets/v/biscotto/clipN.mp4). Clip5: la rana apre un po' la bocca a meta' (difetto lieve, da valutare). Clip6 gia' fatta.
 - MANCA SOLO clip7 (finale, tutti ridono, 4.0 s): quota HF finita di nuovo dopo 5 clip (~130 s di clip generate = ~30 s GPU l'una: la quota reale e' ~150 s/giorno circa, non 400). Riprovare `python3 biscotto_clips.py 7` dopo ~23:00 UTC del 22/10, poi montaggio (video|mix|finale), controllo fotogrammi, SendUserFile.
+
+## AGGIORNAMENTO 23/10 mattina
+- Clip7 generata; aveva fotogrammi 35-42 con personaggi sdoppiati (fantasma): originale in clip7_v1.mp4, clip7.mp4 = primi 34 fotogrammi avanti+indietro (ping-pong), nessuna quota usata.
+- Montato `short_chi_ha_mangiato_il_biscotto.mp4` (20,2 s, 606 fotogrammi = 20.2x30, nessun nero, salti solo ai tagli 3,5.5,8,10,13,16 s). NON ANCORA INVIATO: nel finale (clip7) la rana e' tagliata dal bordo destro dell'inquadratura (start7.png). Chiesto all'utente se mandare cosi' o rifare start7/clip7 (serve quota HF).
