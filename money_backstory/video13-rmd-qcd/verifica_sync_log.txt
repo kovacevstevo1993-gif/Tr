@@ -1,7 +1,1 @@
-Traceback (most recent call last):
-  File "/home/user/Tr/money_backstory/video13-rmd-qcd/code/verifica_sync.py", line 5, in <module>
-    from ascolta_gemini import num2words
-  File "/home/user/Tr/money_backstory/video13-rmd-qcd/code/ascolta_gemini.py", line 37, in <module>
-    for b in [int(x) for x in sys.argv[1].split(',')]:
-                              ~~~~~~~~^^^
-IndexError: list index out of range
+1 copertura nuova 0.84 parole con differenza >0.25 s: 6 [('seventy-five,', np.float64(0.47)), ('thirty-two', np.float64(0.34)), ('five', np.float64(0.55)), ('hundred', np.float64(0.54)), ('twenty', np.float64(0.52)), ('two', np.float64(0.37))]

@@ -2,7 +2,7 @@
 Segnala le parole degli indicatori (cue) con differenza > 0,25 s. Uso: python3 code/verifica_sync.py"""
 import sys, os, json, re, subprocess, difflib, numpy as np
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)))); sys.path.insert(0, '../modello-unico')
-from ascolta_gemini import num2words
+from numw import num2words
 from sync_voce import norm
 from faster_whisper import WhisperModel
 M = WhisperModel('small.en', device='cpu', compute_type='int8'); S = json.load(open('sync.json'))['blocks']; J = json.load(open('code/blk.json'))['B']
