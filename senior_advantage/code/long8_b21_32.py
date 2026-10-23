@@ -306,8 +306,11 @@ DLINES = [("Rules, prices", "Rules, prices and programs change", INK), ("they di
 
 def draw32(img, t):
     b = 32
-    ap(img, t, 0.3, endbox(), 470, 470, pop_=False, dur=0.6)
-    ap(img, t, 0.6, txt("WATCH NEXT", 54, GOLD, 3), 470, 780)
+    te = DUR[b] / FPS - 20.0          # schermata finale di YouTube = ultimi 20 secondi: il riquadro compare li, non prima
+    ap(img, t, 0.3, txt("BEFORE", 120, IVORY, 6), 470, 400, pop_=False, dy=30, dur=0.6, t_out=te - 0.4)
+    ap(img, t, 0.5, txt("YOU GO", 120, GOLD, 6), 470, 540, pop_=False, dy=30, dur=0.6, t_out=te - 0.4)
+    ap(img, t, te, endbox(), 470, 470, pop_=False, dur=0.4)
+    ap(img, t, te + 0.1, txt("WATCH NEXT", 54, GOLD, 3), 470, 780, pop_=False, dur=0.4)
     ap(img, t, 0.2, disc_panel(), 1380, 500, pop_=False, dy=40, dur=0.6, shadow=14)
     for i, (key, s_, col) in enumerate(DLINES):
         ap(img, t, T(b, key) if i else 0.6, tspr(s_, FONT_SANS_M, 34, col), 1380, 360 + i * 62, pop_=False, dy=14, dur=0.5)
