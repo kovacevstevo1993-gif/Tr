@@ -578,3 +578,7 @@
 - APERTO: miniatura C (bilancia: LUI PRENDE NETTI "? €" contro LEI 0 €). L'utente ha contestato la cifra coperta ("che cazzo copri che si capisce lo stesso?"); gli ho chiesto se vuole la cifra tutta nascosta o scritta intera: risposta non ancora data. Chiedere quella sola cosa e poi sistemare SOLO la cifra della C.
 - vidIQ: saldo 22 crediti (rinnovo 29/10). Chat intera: chat/chat-sessione-12-completa.md.
 - Prossimo, solo su ordine: miniatura C, short 13 teaser del video 10 (prefisso CIP-S13-blocco), risposte ai commenti, TEMI-FATTI gia' aggiornato col V10.
+
+## ERRORE DEL 23/10/2026 (categoria pagina Facebook) - N.25
+- Domanda: quale categoria scegliere per la pagina Facebook. Ho risposto "non posso controllare qui l'elenco" senza cercare. Utente: "Basta controllare e fare una ricerca se non puoi da qua".
+- Regola: se non posso verificare un dato da qui, faccio SUBITO una ricerca web (WebSearch) e rispondo con quello che trovo, dicendo cosa e' confermato e cosa no. Mai rimandare l'utente a controllare da solo senza aver cercato prima.
