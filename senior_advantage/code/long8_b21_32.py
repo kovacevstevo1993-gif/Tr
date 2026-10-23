@@ -38,7 +38,7 @@ def draw21(img, t):
     A(img, t, b, "seventeen thousand", shelf_tag("17k", 520, 230, "17,000+", "STATIONS ACROSS THE COUNTRY"), 1460, 500, rot=-2, shadow=10)
     brands = [("Walmart, Murphy", "WALMART"), ("Murphy, Exxon", "MURPHY"), ("Exxon, Mobil", "EXXON"), ("Mobil and Citgo", "MOBIL"), ("Citgo stations", "CITGO")]
     for k, (key, lab) in enumerate(brands):
-        A(img, t, b, key, chip(lab, 176, 64, fill=GOLD, size=26), 1092 + k * 184, 700, shadow=6)
+        A(img, t, b, key, chip(lab, 176, 64, fill=GOLD, size=26), 1050 + k * 182, 700, shadow=6)
     A(img, t, b, "ask the cashier", bubble("cash21", 760, 150, ["NOT SURE HOW TO USE IT?", "ASK THE CASHIER THERE"], 40, tail="bl"), 520, 900, shadow=10)
     ap(img, t, LAST(b), stamp("KEEPS PAYING YOU BACK", 640, 110, GOLD, 40), 1460, 900, rot=-3, shadow=8)
 
@@ -115,7 +115,7 @@ def draw25(img, t):
     head(img, t, 9, "YOUR PLAN OR THE PROGRAM?")
     A(img, t, b, "don't assume", chip("YOUR PLAN IS NOT ALWAYS THE CHEAPER WAY", 900, 70, fill=IVORY, size=30), 960, 215, shadow=6)
     A(img, t, b, "program rules say", card("pp25", 620, 300, lambda c, x, y: ic_pills(c, x, y, 0.9), ["PROGRAM PRICE"], GOLD, 40, ih=0.45, ink=IVORY), 520, 470, pop_=False, dx=-60, shadow=12)
-    A(img, t, b, "depending on your plan", card("pl25", 620, 300, lambda c, x, y: ic_card(c, x, y, 0.9, (90, 140, 120)), ["PRICE WITH YOUR PLAN"], GOLD, 40, ih=0.45, ink=IVORY), 1400, 470, pop_=False, dx=60, shadow=12)
+    A(img, t, b, "you may pay", card("pl25", 620, 300, lambda c, x, y: ic_card(c, x, y, 0.9, (90, 140, 120)), ["PRICE WITH YOUR PLAN"], GOLD, 40, ih=0.45, ink=IVORY), 1400, 470, pop_=False, dx=60, shadow=12)
     A(img, t, b, "less or more", chip("YOU MAY PAY LESS OR MORE", 560, 64, fill=GOLD), 1400, 670, shadow=6)
     A(img, t, b, "worth comparing", sprite("sc25", 200, 200, lambda c: (c.ell((4, 4, 196, 196), fill=PANEL_FILL, outline=GOLD, width=5), ic_scale(c, 100, 100, 1.1))), 960, 470, shadow=10)
     A(img, t, b, "The pharmacist can look", label_card("ph25", 760, 140, lambda c, x, y: ic_doctor(c, x, y + 4, 0.75), "THE PHARMACIST CHECKS BOTH", None, col=GOLD, tsize=34), 520, 800, pop_=False, dy=40, shadow=8)
