@@ -582,3 +582,8 @@
 ## ERRORE DEL 23/10/2026 (categoria pagina Facebook) - N.25
 - Domanda: quale categoria scegliere per la pagina Facebook. Ho risposto "non posso controllare qui l'elenco" senza cercare. Utente: "Basta controllare e fare una ricerca se non puoi da qua".
 - Regola: se non posso verificare un dato da qui, faccio SUBITO una ricerca web (WebSearch) e rispondo con quello che trovo, dicendo cosa e' confermato e cosa no. Mai rimandare l'utente a controllare da solo senza aver cercato prima.
+
+## STATO 24/10/2026 - SHORT 13 (teaser video lungo 10, casalinghe), cartella 28-short-13-teaser-video-lungo-10
+- Ordine utente: "short correlato all'ultimo video, perfetto, professionale, senza errori". Ultimo video = video lungo 10 (primo di /videos il 24/10, titolo del pacchetto). Video correlato = video 10.
+- Copione v2 (6 blocchi, 1209 caratteri, qa_copione OK, revisione-copione.txt OK): gancio con il tema nominato, la cifra del marito NON detta, vedove, "aspettare costa", chiusura nuova (manda lo short a una donna). Fatti verificati sulla scheda Inps assegno sociale: limiti 7.101,12 / 14.202,24, decorrenza dal mese dopo la domanda, non tassato. La reversibilita' come reddito NON e' nel copione dello short (non riletta sulla scheda).
+- Da fare solo su ordine: durate (screenshot), clip CIP-S13-blocco01..06, miniatura, pacchetto.

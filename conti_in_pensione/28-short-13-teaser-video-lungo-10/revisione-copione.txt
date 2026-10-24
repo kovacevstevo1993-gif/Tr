@@ -1,0 +1,6 @@
+1 | e99715bf50 | italiano OK | logica OK | persona OK | numeri OK | riletto 24/10: frasi, riferimenti, tu coerente, fatti da scheda Inps assegno sociale (limiti, decorrenza, non tassato)
+2 | 4d1b76e336 | italiano OK | logica OK | persona OK | numeri OK | riletto 24/10: frasi, riferimenti, tu coerente, fatti da scheda Inps assegno sociale (limiti, decorrenza, non tassato)
+3 | 5b617482e9 | italiano OK | logica OK | persona OK | numeri OK | riletto 24/10: frasi, riferimenti, tu coerente, fatti da scheda Inps assegno sociale (limiti, decorrenza, non tassato)
+4 | 194b7f96c7 | italiano OK | logica OK | persona OK | numeri OK | riletto 24/10: frasi, riferimenti, tu coerente, fatti da scheda Inps assegno sociale (limiti, decorrenza, non tassato)
+5 | 03387ad06a | italiano OK | logica OK | persona OK | numeri OK | riletto 24/10: frasi, riferimenti, tu coerente, fatti da scheda Inps assegno sociale (limiti, decorrenza, non tassato)
+6 | 720d6bff20 | italiano OK | logica OK | persona OK | numeri OK | riletto 24/10: frasi, riferimenti, tu coerente, fatti da scheda Inps assegno sociale (limiti, decorrenza, non tassato)
