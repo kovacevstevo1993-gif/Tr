@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFilter
 # dagli altri e piu professionali"): sfondo a scaffali di negozio che scorrono lenti + luce che passa, contatore a
 # cartellini da scaffale 1-10 in alto (stessi numeri del lungo), schede a scontrino, registratore di cassa, banco farmacia,
 # flacone, cartellini prezzo, planimetria con corsie. Colori del canale (verde bosco, avorio, oro).
-# Durate (fotogrammi, dagli screenshot CapCut del 24/10): 286 316 134 287 165 243 207 (totale 1638).
+# Durate (fotogrammi, dagli screenshot CapCut del 24/10, riletti senza sottrarre 1 s): 316 286 164 257 195 243 207 (totale 1668).
 # Nelle slide compare SOLO cio' che la voce dice. Niente nomi (price match, resi, programma a 4 dollari), cifre di prezzo,
 # frasi, passi: restano nel lungo. Ultimo elemento entro l'80%; elementi fermi negli ultimi 15 fotogrammi.
 # uso: S12_OUT=cartella SA_TMP=/tmp/x python3 scenes12.py <blocco>
@@ -18,7 +18,7 @@ from PIL import Image, ImageDraw, ImageFilter
 HERE = os.path.dirname(os.path.abspath(__file__))
 TEXT = {int(m.group(1)): m.group(2) for m in re.finditer(r"(?m)^(\d+) (.*)$",
         open(os.path.join(HERE, "..", "COPIONE-SHORT-12-WALMART.md"), encoding="utf-8").read())}
-DUR = {1: 286, 2: 316, 3: 134, 4: 287, 5: 165, 6: 243, 7: 207}
+DUR = {1: 316, 2: 286, 3: 164, 4: 257, 5: 195, 6: 243, 7: 207}
 PAPER = (250, 247, 238)
 INK = (24, 40, 34)
 AMB = (232, 150, 60)
