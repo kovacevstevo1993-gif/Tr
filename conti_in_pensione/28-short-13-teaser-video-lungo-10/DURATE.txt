@@ -1,0 +1,8 @@
+SHORT 13 - durate dagli screenshot CapCut del 24/10/2026 (lettura N.29: ultimo segno + 1), 30 fps
+fine blocco 1: 00:14 + 16f = 436 -> blocco 1 = 436
+fine blocco 2: 00:26 + 8f = 788 -> blocco 2 = 352
+fine blocco 3: 00:37 + 24f = 1134 -> blocco 3 = 346
+fine blocco 4: 00:48 + 4f = 1444 -> blocco 4 = 310
+fine blocco 5: 00:58 + 9f = 1749 -> blocco 5 = 305
+fine blocco 6: 01:10 + 18f = 2118 -> blocco 6 = 369
+TOTALE 2118 fotogrammi = 70,6 s (436+352+346+310+305+369)
