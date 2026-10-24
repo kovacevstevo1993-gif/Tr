@@ -69,3 +69,7 @@ Storia: in cucina il biscotto sparisce dal piatto; topolino "Io non sono stato!"
 - `short_la_mela_di_spike.mp4` (11,6 s, 348 fotogrammi): bosco; Chip "Che bella mela!" -> Spike "E' mia, solo mia!" -> Spike "Dai, facciamo a pezzi!" -> i tre mangiano la mela -> pulsante. Codice: mela2_frames.py, mela2_clips.py, voci_mela2.py (audioV), short_mela2.py.
 - Difetti dichiarati: clip3 Spike non porge la mela (clip3_v1.mp4 = quella usata; start3.png nuovo con spike_riceve+mela pronto in mela2_frames.py: rifare `SEED=7 python3 mela2_clips.py 3` dopo la ricarica quota e rimontare con short_mela2.py video|mix + mux); ultima scena personaggi piccoli in basso.
 - Quota HF 24/10: 8 clip esaurite (slitta 4 + mela2 4). Si rinnova ~24 h dopo.
+
+## AGGIORNAMENTO 24/10 (3) — NUOVO SHORT IN PREPARAZIONE: "Il regalo per la volpe" (storiella 8 scene, ~22 s, tramonto)
+- Ordine utente: "un altro meglio, non banale, una storiella, anche un po' piu' lungo". Quota HF esaurita il 24/10 (usate 8): generare domani dopo ~10:30 UTC.
+- PRONTI: regalo_frames.py (assets/v/regalo/start1-8), voci_regalo.py (audioW: t1,c1,s1,t2,v1,t3,c2,s2,v2; t3/c2/s2 = coro "Auguri, volpe!"), regalo_clips.py (8 clip, prompts, durate 3,2.5,3,2,3,2.5,3,3.5). DA FARE: `python3 regalo_clips.py` (8 clip = tutta la quota), controllare ogni clip, montare (copiare short_mela2.py -> short_regalo.py con LENS=[3,2.5,3,2,3,2.5,3,3.5], VOICES con tempi: t1 0.3, c1 3.2, s1 5.9, t2 8.6, v1 10.6, t3/c2/s2 13.6 insieme, v2 16.6; T_SUB ~19.5; nessuna voce finale), controllo TUTTI i fotogrammi, SendUserFile.
