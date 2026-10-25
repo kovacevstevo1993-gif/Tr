@@ -489,6 +489,7 @@
 ## ERRORE DEL 21/10/2026 (proposta video 9: taglio Irpef della manovra) - SENZA DATI REALI
 - L'utente aveva appena detto: il video sui dati reali non si fa adesso perche' i dati non ci sono. Io ho proposto il taglio Irpef della MANOVRA, che non e' approvata: stesso problema (niente dati reali, solo stime). L'utente: "non ha ancora dati reali e non ha senso, te l'ho detto prima".
 - Regola: un tema si propone SOLO se i dati sono gia' ufficiali e certi oggi (leggi in vigore, date, importi fissati). Niente manovre, decreti o stime non ancora usciti.
+- [CORRETTA 25/10, utente: "vanno bene anche le stime, perche' ti inventi le robe"]: le STIME vanno bene se dette come stime e prese da fonti ufficiali (es. Istat, previsioni del Mef) con la forbice; cio' che si scarta e' una MANOVRA o un decreto non approvato presentato come se fosse legge (caso taglio Irpef, 21/10: nessun dato reale). L'aggiunta "niente stime" era mia, non dell'utente.
 - Metodo che funziona (gratis): ricerca pubblica YouTube Italia ordinata per data (ultimo mese) sui temi del canale, guardando le visualizzazioni dei canali grandi (Mr LUL, Tele Italia, Pensioni e Aggiornamenti).
 
 ## ERRORE DEL 21/10/2026 (copione video 9): "TRE SOLDI", "IL TERZO SOLDO"
