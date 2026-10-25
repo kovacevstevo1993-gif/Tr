@@ -30,7 +30,7 @@ JS="""()=>{
 issues={};
 def add(f,m):issues.setdefault(m,[]).append(f)
 with sync_playwright() as p:
-    b=p.chromium.launch(executable_path='/opt/pw-browsers/chromium-1194/chrome-linux/chrome',args=['--no-sandbox'])
+    b=p.chromium.launch(executable_path=next((c for c in ('/opt/pw-browsers/chromium-1194/chrome-linux/chrome','/opt/pw-browsers/chromium-1243/chrome-linux64/chrome') if os.path.exists(c)),None),args=['--no-sandbox'])
     pg=b.new_page(viewport={'width':W,'height':Hh});pg.on('pageerror',lambda e:print('ERR',e))
     pg.goto('file://'+html)
     pg.evaluate('draw(%d,0)'%blk)   # le scene del blocco (S[blk].sb) si leggono dopo aver caricato il blocco
