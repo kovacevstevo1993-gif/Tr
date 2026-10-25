@@ -68,11 +68,11 @@ def draw12(img, t):
         c.text((260, 196), "STOCK VARIES BY STORE", FONT_SANS, 24, IVORY, track=3)
     show(img, t, ts, mk("stk12", 520, 230, stores), 1040, 620, amp=5)
     show(img, t, T(b, "place holds"), stamp9("NO HOLDS", 280, 90, CORAL), 1480, 680, rot=-3, amp=3)
-    show(img, t, T(b, "rain checks"), stamp9("NO RAIN CHECKS", 340, 90, CORAL), 1750, 780, rot=3, amp=3)
+    show(img, t, T(b, "rain checks"), stamp9("NO RAIN CHECKS", 340, 90, CORAL), 1690, 780, rot=3, amp=3)
     tw_ = T(b, "Wednesdays")
     show(img, t, tw_, mk("wd12", 640, 190, lambda c: (vgrad(c, (3, 3, 637, 187), 24, (16, 68, 60), (8, 42, 36), outline=GOLD, width=4), ic_weekstrip(c, 320, 76, 1.9, 2), c.text((320, 160), "MOST STORES START NEW FINDS ON WEDNESDAYS", FONT_SANS, 20, IVORY, track=2))), 400, 860, mode="up", amp=4)
-    show(img, t, T(b, "a week early"), glass9("we12", 640, 130, I(ic_web, 0.55), "POSTED ON ALDI'S WEBSITE", "A WEEK EARLY", col=SKY, tsize=30, ssize=30), 1100, 860, mode="up", amp=3)
-    show(img, t, T(b, "as soon as possible"), glass9("go12", 560, 130, I(ic_clock2, 0.45), "WANT ONE? GO", "AS SOON AS POSSIBLE", col=OKG, tsize=30, ssize=30), 1640, 930, mode="up", amp=3)
+    show(img, t, T(b, "a week early"), glass9("we12", 600, 130, I(ic_web, 0.55), "POSTED ON ALDI'S WEBSITE", "A WEEK EARLY", col=SKY, tsize=30, ssize=30), 1060, 860, mode="up", amp=3)
+    show(img, t, T(b, "as soon as possible"), glass9("go12", 500, 130, I(ic_clock2, 0.45), "WANT ONE? GO", "AS SOON AS POSSIBLE", col=OKG, tsize=28, ssize=28), 1640, 960, mode="up", amp=3)
 
 def draw13(img, t):
     b = 13

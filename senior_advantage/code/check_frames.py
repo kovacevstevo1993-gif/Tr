@@ -34,5 +34,10 @@ for k in range(n - 21, n - 1):
     if not np.array_equal(hist[k], last):
         unsettled = k
 print(f"blocco {b}: {n} fotogrammi controllati; fotogrammi con contenuto tagliato dal bordo: {len(bad)}; margine minimo {minm}px; ultimo movimento al fotogramma: {unsettled}")
-for x in bad[:8]:
+rng = []
+for x in bad:
+    if rng and x[0] == rng[-1][1] + 1: rng[-1][1] = x[0]
+    else: rng.append([x[0], x[0]])
+print("  intervalli tagliati (fotogramma inizio-fine):", rng)
+for x in bad[:4]:
     print("  ", x)

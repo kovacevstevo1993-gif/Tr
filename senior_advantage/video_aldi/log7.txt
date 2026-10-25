@@ -1,0 +1,9 @@
+ok blocco 7 925 fotogrammi
+blocco 7: 925 fotogrammi controllati; fotogrammi con contenuto tagliato dal bordo: 5; margine minimo 0px; ultimo movimento al fotogramma: None
+   (2, 'TAGLIATO', 70, 70, 0, 1011)
+   (3, 'TAGLIATO', 70, 70, 0, 1002)
+   (4, 'TAGLIATO', 70, 70, 0, 994)
+   (5, 'TAGLIATO', 70, 70, 1, 987)
+   (722, 'TAGLIATO', 53, 50, 32, 1)
+ffprobe fotogrammi: 925
+FINITO 7
