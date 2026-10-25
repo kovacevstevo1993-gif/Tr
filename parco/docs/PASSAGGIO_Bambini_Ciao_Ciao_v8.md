@@ -73,3 +73,8 @@ Storia: in cucina il biscotto sparisce dal piatto; topolino "Io non sono stato!"
 ## AGGIORNAMENTO 24/10 (3) — NUOVO SHORT IN PREPARAZIONE: "Il regalo per la volpe" (storiella 8 scene, ~22 s, tramonto)
 - Ordine utente: "un altro meglio, non banale, una storiella, anche un po' piu' lungo". Quota HF esaurita il 24/10 (usate 8): generare domani dopo ~10:30 UTC.
 - PRONTI: regalo_frames.py (assets/v/regalo/start1-8), voci_regalo.py (audioW: t1,c1,s1,t2,v1,t3,c2,s2,v2; t3/c2/s2 = coro "Auguri, volpe!"), regalo_clips.py (8 clip, prompts, durate 3,2.5,3,2,3,2.5,3,3.5). DA FARE: `python3 regalo_clips.py` (8 clip = tutta la quota), controllare ogni clip, montare (copiare short_mela2.py -> short_regalo.py con LENS=[3,2.5,3,2,3,2.5,3,3.5], VOICES con tempi: t1 0.3, c1 3.2, s1 5.9, t2 8.6, v1 10.6, t3/c2/s2 13.6 insieme, v2 16.6; T_SUB ~19.5; nessuna voce finale), controllo TUTTI i fotogrammi, SendUserFile.
+
+## AGGIORNAMENTO 25/10 — CONSEGNATO "Il regalo per la volpe"
+- `short_il_regalo_per_la_volpe.mp4` (22,5 s, 675 fotogrammi, 8 scene, dialoghi, nessuna voce finale, pulsante ISCRIVITI). Codice: regalo_frames.py, regalo_clips.py, voci_regalo.py (audioW), short_regalo.py. 8 clip Wan generate in una sola passata (tutta la quota di un giorno, ~10:30 UTC).
+- clip8: l'abbraccio finale degenerava dopo il fotogramma 26 -> usata solo la parte buona in ping-pong (originale clip8_v1.mp4).
+- Difetti dichiarati: personaggi piccoli in basso nelle scene larghe; nessun abbraccio nel finale. Pacchetto testi/miniatura NON fatti (solo se li chiede).
