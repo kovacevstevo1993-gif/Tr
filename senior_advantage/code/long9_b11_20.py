@@ -35,7 +35,7 @@ def draw11(img, t):
     show(img, t, tb, mini_icon_card("bk11", 480, 270, lambda c, x, y: (ic_bank(c, x, y, 1.0), ic_x(c, x + 50, y + 34, 0.6, CORAL, 14)), "NO BANKS", "CORPORATE PAGE", accent=CORAL), 330, 410, mode="up", amp=5)
     show(img, t, tb + 0.3, mini_icon_card("ph11", 480, 270, lambda c, x, y: (ic_pharmacy(c, x, y, 0.95), ic_x(c, x + 50, y + 34, 0.6, CORAL, 14)), "NO PHARMACIES", "CORPORATE PAGE", accent=CORAL), 840, 410, mode="up", amp=5, ph=1)
     show(img, t, T(b, "no delis"), mini_icon_card("dl11", 480, 270, lambda c, x, y: (ic_cheese(c, x, y, 0.9), ic_x(c, x + 50, y + 34, 0.6, CORAL, 14)), "NO DELIS", "HELP CENTER", accent=CORAL), 1350, 410, mode="up", amp=5, ph=2)
-    show(img, t, T(b, "fresh meats and cheeses"), glass9("mc11", 700, 130, I(ic_cheese, 0.55), "BUT FRESH MEATS AND CHEESES", "IN THE DELI PRODUCTS SECTION", col=OKG, tsize=26, ssize=26), 1560, 640, mode="right", amp=3)
+    show(img, t, T(b, "fresh meats and cheeses"), glass9("mc11", 700, 130, I(ic_cheese, 0.55), "BUT FRESH MEATS AND CHEESES", "IN THE DELI PRODUCTS SECTION", col=OKG, tsize=26, ssize=26), 1520, 640, mode="right", amp=3)
     show(img, t, T(b, "prescription medicine"), glass9("rx11", 760, 140, I(ic_bottle, 0.6), "PRESCRIPTION MEDICINE?", "YOU'LL STILL NEED YOUR OWN PHARMACY", col=GOLD, tsize=34, ssize=26), 450, 640, mode="left", amp=3)
     t1 = T(b, "one stop")
     def route(c):
@@ -88,7 +88,7 @@ def draw13(img, t):
     tg = T(b, "gadget or a gardening tool")
     show(img, t, tg, mini_icon_card("gd13", 280, 250, lambda c, x, y: (ic_bolt(c, x, y, 1.6), ic_x(c, x + 50, y + 6, 0.55, CORAL, 14)), "A GADGET", None, accent=CORAL), 1330, 640, mode="up", amp=5)
     show(img, t, tg + 0.3, mini_icon_card("tl13", 280, 250, lambda c, x, y: (ic_trowel(c, x, y, 1.1), ic_x(c, x + 50, y + 6, 0.55, CORAL, 14)), "A GARDEN TOOL", None, accent=CORAL), 1650, 640, mode="up", amp=5, ph=1)
-    show(img, t, T(b, "stuck with it"), pill9("YOU MAY BE STUCK WITH IT", 520, 62, fill=CORAL, ink=IVORY), 1490, 810, mode="up", amp=2)
+    show(img, t, T(b, "stuck with it"), pill9("YOU MAY BE STUCK WITH IT", 520, 62, fill=CORAL, ink=IVORY), 1490, 840, mode="up", amp=2)
     show(img, t, T(b, "impulse"), stamp9("THINK TWICE", 360, 100, GOLD), 330, 900, rot=-3, amp=3)
     show(img, t, T(b, "at the register"), say9("rg13", 900, 120, ["\"WOULD I STILL WANT IT AT THE REGISTER?\""], 30, tail="bl"), 1150, 920, mode="up", amp=3)
 

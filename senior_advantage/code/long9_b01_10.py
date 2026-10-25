@@ -243,7 +243,7 @@ def draw7(img, t):
     to = T(b, "online or on social media")
     show(img, t, to, mk("soc7", 220, 240, lambda c: (ic_phone_app(c, 110, 120, 1.5), c.text((110, 98), "%", FONT_SANS, 70, GOLD))), 330, 850, amp=5)
     show(img, t, to + 0.3, glass9("o7", 560, 130, None, "COUPON FOUND ONLINE OR", "ON SOCIAL MEDIA", col=CORAL, tsize=26, ssize=28, scol=IVORY), 800, 850, mode="up", amp=3)
-    show(img, t, T(b, "not a real Aldi coupon"), stamp9("NOT A REAL ALDI COUPON", 560, 100, CORAL, 30), 1330, 850, rot=-3, amp=3)
+    show(img, t, T(b, "not a real Aldi coupon"), stamp9("NOT A REAL ALDI COUPON", 560, 100, CORAL, 30), 1420, 850, rot=-3, amp=3)
     td = T(b, "don't print anything")
     show(img, t, td, pill9("DON'T PRINT ANYTHING", 430, 60, fill=GOLD), 1000, 975, mode="up", amp=2)
     show(img, t, T(b, "shelf price"), glass9("sh7", 560, 100, I(ic_pin8, 0.7), "LOOK AT THE SHELF PRICE", None, col=GOLD, tsize=30), 1590, 975, mode="up", amp=3)
@@ -271,8 +271,8 @@ def draw8(img, t):
     tr = T(b, "reusable Aldi bag")
     show(img, t, tr, mini_icon_card("pbag8", 340, 330, I(ic_paperbag, 1.2), "OR BUY A", "REUSABLE ALDI BAG"), 1570, 640, mode="up", amp=6, ph=1)
     tk = T(b, "a few quarters")
-    show(img, t, tk, glass9("kq8", 500, 110, None, "KEEP A FEW QUARTERS...", None, col=GOLD, tsize=26), 1190, 960, mode="up", amp=3)
-    show(img, t, T(b, "by the door"), glass9("bd8", 460, 110, None, "...BAGS BY THE DOOR", None, col=GOLD, tsize=26), 1650, 960, mode="up", amp=3)
+    show(img, t, tk, glass9("kq8", 460, 110, None, "KEEP A FEW QUARTERS...", None, col=GOLD, tsize=26), 1130, 960, mode="up", amp=3)
+    show(img, t, T(b, "by the door"), glass9("bd8", 460, 110, None, "...BAGS BY THE DOOR", None, col=GOLD, tsize=26), 1620, 960, mode="up", amp=3)
 
 # ============================================================ 9
 def conveyor9():
