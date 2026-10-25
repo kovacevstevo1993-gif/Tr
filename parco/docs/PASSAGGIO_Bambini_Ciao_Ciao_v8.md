@@ -78,3 +78,4 @@ Storia: in cucina il biscotto sparisce dal piatto; topolino "Io non sono stato!"
 - `short_il_regalo_per_la_volpe.mp4` (22,5 s, 675 fotogrammi, 8 scene, dialoghi, nessuna voce finale, pulsante ISCRIVITI). Codice: regalo_frames.py, regalo_clips.py, voci_regalo.py (audioW), short_regalo.py. 8 clip Wan generate in una sola passata (tutta la quota di un giorno, ~10:30 UTC).
 - clip8: l'abbraccio finale degenerava dopo il fotogramma 26 -> usata solo la parte buona in ping-pong (originale clip8_v1.mp4).
 - Difetti dichiarati: personaggi piccoli in basso nelle scene larghe; nessun abbraccio nel finale. Pacchetto testi/miniatura NON fatti (solo se li chiede).
+- 25/10 "Il regalo per la volpe": la voce di Chip legge "Shh!" come lettere ("s h h"). L'utente: "ormai l'hai fatto, rimane cosi'" (non rifare). TRAPPOLA voci: mai "Shh!" nei testi, usare "Silenzio!" o "Zitto, zitto!"; ascoltare le battute con effetti/onomatopee, il controllo Whisper non basta.
