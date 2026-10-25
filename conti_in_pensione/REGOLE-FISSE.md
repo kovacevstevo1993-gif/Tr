@@ -664,3 +664,8 @@
 ## STATO 25/10/2026 (notte) - VIDEO 11: MINIATURE A e B CONSEGNATE (29-video-lungo-11/miniatura, gen11.py)
 - Ricerca gratis: miniature dei virali "pensioni 2027" (Radio UCI 263K, Mr LUL 236K: PENSIONI 2027 + "DI QUANTO AUMENTANO?" + etichetta stime; un concorrente ha gia' "+29 € ogni 1.000 lordi") e le mie (V5 123K tabella). vidIQ: 0 crediti (score_thumbnail non misura immagini non su YouTube). NON usare testo stretto/condensato dei concorrenti (regola 09/10).
 - A: duello "+29 € LORDI" -> "? € NETTI", niente tabella a destra ne' striscia bianca; B: scala di 5 schede 600-3.000 € con "? €", freccia che sale, tab LE MINIME, sticker STIME. Il netto resta sempre "? €". Testi misurati e guardati.
+
+## STATO 25/10/2026 (notte) - PER LA CHAT NUOVA
+- Video 11 (aumento pensioni gennaio 2027, tabella netta, cartella 29-video-lungo-11): copione, clip CIP-V11-blocco01..14, pacchetto.txt (titolo vidIQ 85), miniature A e B consegnati. Da pubblicare PRIMA del decreto Mef (atteso 19-28/11). Gli errori di questa chat (fidelizzazione, crediti vidIQ oltre il piano, guardare TUTTE le sequenze) sono scritti sopra.
+- Aperto, solo su ordine: short teaser del video 11 (video correlato = video 11), rifare blocchi 1-3-4 per la fidelizzazione (decisione utente), video/short con la percentuale ufficiale quando esce il decreto, miniatura C del video 10, blocco automatico crediti vidIQ (proposto, l'utente non ha risposto: NON attivo).
+- vidIQ: saldo 130 crediti; channelId del canale UC5Ua8A9mgOEN_5de2ACJS9A.
