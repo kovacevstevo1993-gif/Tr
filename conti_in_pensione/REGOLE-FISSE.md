@@ -669,3 +669,8 @@
 - Video 11 (aumento pensioni gennaio 2027, tabella netta, cartella 29-video-lungo-11): copione, clip CIP-V11-blocco01..14, pacchetto.txt (titolo vidIQ 85), miniature A e B consegnati. Da pubblicare PRIMA del decreto Mef (atteso 19-28/11). Gli errori di questa chat (fidelizzazione, crediti vidIQ oltre il piano, guardare TUTTE le sequenze) sono scritti sopra.
 - Aperto, solo su ordine: short teaser del video 11 (video correlato = video 11), rifare blocchi 1-3-4 per la fidelizzazione (decisione utente), video/short con la percentuale ufficiale quando esce il decreto, miniatura C del video 10, blocco automatico crediti vidIQ (proposto, l'utente non ha risposto: NON attivo).
 - vidIQ: saldo 130 crediti; channelId del canale UC5Ua8A9mgOEN_5de2ACJS9A.
+
+## ERRORE DEL 25/10/2026 (testo Facebook del "video lungo che abbiamo") - VIDEO SBAGLIATO
+- L'utente: "Mettiamo il promo video lungo che abbiamo... su fb". Ho scritto il testo per il video 11 (l'ultimo) senza chiedere. Voleva il PRIMO video lungo (video 1, "Pensione a 64 anni"). Utente: "Il primo video, non l'ultimo".
+- REGOLA: se l'utente dice "il video lungo che abbiamo" senza numero/titolo, non si assume l'ultimo: UNA domanda ("quale video?") prima di scrivere. Il video 1 ha la correzione del 22/10 (non e' solo per i contributivi puri): nei testi nuovi su video 1 non ripetere "solo contributivi puri".
+- Facebook: video 11 e video 1 durano piu' di 90 s (video 1 circa 10 minuti): vanno come video orizzontale 16:9 nel feed, non come Reel; miniatura 1920x1080 come YouTube. Nella descrizione Facebook il link https:// e' cliccabile; sui Reel no.
