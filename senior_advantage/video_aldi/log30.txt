@@ -1,0 +1,2 @@
+ok blocco 30 738 fotogrammi
+blocco 30: 738 fotogrammi controllati; fotogrammi con contenuto tagliato dal bordo: 0; margine minimo 90px; ultimo movimento al fotogramma: None
