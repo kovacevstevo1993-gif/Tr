@@ -2,8 +2,8 @@
  {
   "blocco": 10,
   "slide": 1,
-  "fotogrammi": 257,
-  "controllati": 257,
+  "fotogrammi": 233,
+  "controllati": 233,
   "fuori_area": 0,
   "fuori_area_fotogrammi": [],
   "ultimo_fuori_area": null,
@@ -16,8 +16,8 @@
  {
   "blocco": 10,
   "slide": 2,
-  "fotogrammi": 231,
-  "controllati": 231,
+  "fotogrammi": 222,
+  "controllati": 222,
   "fuori_area": 0,
   "fuori_area_fotogrammi": [],
   "ultimo_fuori_area": null,
@@ -30,8 +30,8 @@
  {
   "blocco": 10,
   "slide": 3,
-  "fotogrammi": 315,
-  "controllati": 315,
+  "fotogrammi": 305,
+  "controllati": 305,
   "fuori_area": 0,
   "fuori_area_fotogrammi": [],
   "ultimo_fuori_area": null,
