@@ -1,0 +1,3 @@
+clip 6: 243 fotogrammi controllati; tagliati: 0 []; margine minimo 18px; ultimo movimento al fotogramma: 227 (fine 242)
+ffprobe fotogrammi: 243
+FINITO 6
