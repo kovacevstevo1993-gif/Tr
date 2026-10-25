@@ -1,0 +1,9 @@
+ok blocco 29 789 fotogrammi
+blocco 29: 789 fotogrammi controllati; fotogrammi con contenuto tagliato dal bordo: 5; margine minimo 0px; ultimo movimento al fotogramma: None
+  intervalli tagliati (fotogramma inizio-fine): [[2, 5], [418, 418]]
+   (2, 'TAGLIATO', 70, 70, 0, 1011)
+   (3, 'TAGLIATO', 70, 70, 0, 1002)
+   (4, 'TAGLIATO', 70, 70, 0, 994)
+   (5, 'TAGLIATO', 70, 70, 1, 987)
+ffprobe fotogrammi: 789
+FINITO 29
