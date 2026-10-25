@@ -1,9 +1,0 @@
-ok blocco 4 797 fotogrammi
-blocco 4: 797 fotogrammi controllati; fotogrammi con contenuto tagliato dal bordo: 5; margine minimo 0px; ultimo movimento al fotogramma: None
-   (2, 'TAGLIATO', 70, 70, 0, 1011)
-   (3, 'TAGLIATO', 70, 70, 0, 1002)
-   (4, 'TAGLIATO', 70, 70, 0, 994)
-   (5, 'TAGLIATO', 70, 70, 1, 987)
-   (557, 'TAGLIATO', 70, 0, 32, 111)
-ffprobe fotogrammi: 797
-FINITO 4

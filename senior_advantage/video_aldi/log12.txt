@@ -1,9 +1,0 @@
-ok blocco 12 951 fotogrammi
-blocco 12: 951 fotogrammi controllati; fotogrammi con contenuto tagliato dal bordo: 7; margine minimo 0px; ultimo movimento al fotogramma: None
-  intervalli tagliati (fotogramma inizio-fine): [[2, 5], [65, 66], [742, 742]]
-   (2, 'TAGLIATO', 70, 70, 0, 1011)
-   (3, 'TAGLIATO', 70, 70, 0, 1002)
-   (4, 'TAGLIATO', 70, 70, 0, 994)
-   (5, 'TAGLIATO', 70, 70, 1, 987)
-ffprobe fotogrammi: 951
-FINITO 12

@@ -41,7 +41,7 @@ def draw11(img, t):
     def route(c):
         c.line([(110, 100), (360, 100), (610, 100), (860, 100)], (150, 215, 185), 6)
         for x, lab, ic in ((110, "HOME", lambda cc, x_, y_: ic_house(cc, x_, y_, 0.7)), (360, "ALDI", lambda cc, x_, y_: ic_storefront(cc, x_, y_, 0.9)), (610, "PHARMACY", lambda cc, x_, y_: ic_pharmacy(cc, x_, y_, 0.6)), (860, "HOME", lambda cc, x_, y_: ic_house(cc, x_, y_, 0.7))):
-            c.ell((x - 52, 48, x + 52, 152), fill=(14, 62, 54), outline=GOLD, width=4)
+            c.ell((x - 52, 48, x + 52, 152), fill=(14, 62, 50), outline=GOLD, width=4)
             ic(c, x, 100)
             c.text((x, 182), lab, FONT_SANS, 24, IVORY, track=3)
     show(img, t, t1, mk("route11", 970, 220, route), 560, 860, mode="up", amp=4)
@@ -64,13 +64,13 @@ def draw12(img, t):
         for k, f_ in enumerate((0.9, 0.3, 0.6)):
             x = 90 + k * 170
             ic_storefront(c, x, 70, 0.95)
-            c.rrect((x - 56, 140, x + 56, 160), 8, fill=(30, 76, 66)); c.rrect((x - 56, 140, x - 56 + 112 * f_, 160), 8, fill=OKG)
+            c.rrect((x - 56, 140, x + 56, 160), 8, fill=(30, 76, 61)); c.rrect((x - 56, 140, x - 56 + 112 * f_, 160), 8, fill=OKG)
         c.text((260, 196), "STOCK VARIES BY STORE", FONT_SANS, 24, IVORY, track=3)
     show(img, t, ts, mk("stk12", 520, 230, stores), 1040, 620, amp=5)
     show(img, t, T(b, "place holds"), stamp9("NO HOLDS", 280, 90, CORAL), 1480, 680, rot=-3, amp=3)
     show(img, t, T(b, "rain checks"), stamp9("NO RAIN CHECKS", 340, 90, CORAL), 1690, 780, rot=3, amp=3)
     tw_ = T(b, "Wednesdays")
-    show(img, t, tw_, mk("wd12", 640, 190, lambda c: (vgrad(c, (3, 3, 637, 187), 24, (16, 68, 60), (8, 42, 36), outline=GOLD, width=4), ic_weekstrip(c, 320, 76, 1.9, 2), c.text((320, 160), "MOST STORES START NEW FINDS ON WEDNESDAYS", FONT_SANS, 20, IVORY, track=2))), 400, 860, mode="up", amp=4)
+    show(img, t, tw_, mk("wd12", 640, 190, lambda c: (vgrad(c, (3, 3, 637, 187), 24, (16, 68, 54), (8, 42, 34), outline=GOLD, width=4), ic_weekstrip(c, 320, 76, 1.9, 2), c.text((320, 160), "MOST STORES START NEW FINDS ON WEDNESDAYS", FONT_SANS, 20, IVORY, track=2))), 400, 860, mode="up", amp=4)
     show(img, t, T(b, "a week early"), glass9("we12", 600, 130, I(ic_web, 0.55), "POSTED ON ALDI'S WEBSITE", "A WEEK EARLY", col=SKY, tsize=30, ssize=30), 1060, 860, mode="up", amp=3)
     show(img, t, T(b, "as soon as possible"), glass9("go12", 500, 130, I(ic_clock2, 0.45), "WANT ONE? GO", "AS SOON AS POSSIBLE", col=OKG, tsize=28, ssize=28), 1640, 960, mode="up", amp=3)
 
@@ -115,7 +115,7 @@ def draw14(img, t):
     show(img, t, T(b, "Aldi has no coupons"), glass9("nc14", 760, 130, lambda c, x, y: ic_x(c, x, y, 0.7, CORAL, 14), "NO COUPONS, NO REWARDS CARD", None, col=CORAL, tsize=30), 1400, 300, mode="right", amp=3)
     show(img, t, T(b, "Weekly Specials"), arrow9(110, 100, GOLD, down=True), 1400, 405, mode="fade", amp=2)
     show(img, t, T(b, "Weekly Specials") + 0.2, glass9("ws14", 760, 130, I(ic_megaphone, 0.55), "...SO SEE THE WEEKLY SPECIALS", "TO SAVE MORE", col=OKG, tsize=30, ssize=28), 1400, 520, mode="right", amp=3)
-    show(img, t, T(b, "goes out on a Wednesday"), mk("cal14", 520, 150, lambda c: (vgrad(c, (3, 3, 517, 147), 22, (16, 68, 60), (8, 42, 36), outline=GOLD, width=4), ic_weekstrip(c, 260, 60, 1.35, 2), c.text((260, 124), "EVERY WEEK: WEDNESDAY", FONT_SANS, 22, IVORY, track=2))), 850, 700, mode="up", amp=4)
+    show(img, t, T(b, "goes out on a Wednesday"), mk("cal14", 520, 150, lambda c: (vgrad(c, (3, 3, 517, 147), 22, (16, 68, 54), (8, 42, 34), outline=GOLD, width=4), ic_weekstrip(c, 260, 60, 1.35, 2), c.text((260, 124), "EVERY WEEK: WEDNESDAY", FONT_SANS, 22, IVORY, track=2))), 850, 700, mode="up", amp=4)
     tw_ = T(b, "Aldi's website")
     show(img, t, tw_, glass9("wb14", 560, 120, I(ic_web, 0.5), "ALDI'S WEBSITE", None, col=SKY, tsize=32), 1480, 690, mode="up", amp=3)
     show(img, t, T(b, "store locator"), glass9("sl14", 560, 120, I(ic_pin8, 1.0), "YOUR STORE'S PAGE", "IN THE STORE LOCATOR", col=SKY, tsize=30, ssize=26), 1480, 830, mode="up", amp=3)
@@ -168,8 +168,8 @@ def paytile(label, col, ink=IVORY, sub=None):
 def draw16(img, t):
     b = 16
     head9(img, t, 6, "HOW YOU PAY")
-    tiles = [("cash", "CASH", (40, 130, 84)), ("debit cards", "DEBIT", (60, 90, 150)), ("Visa", "VISA", (30, 60, 140)), ("Mastercard", "MASTERCARD", (190, 70, 50)), ("Discover", "DISCOVER", (220, 120, 40)),
-             ("American Express", "AMEX", (40, 120, 170)), ("E B T", "E B T", (80, 100, 120)), ("snap", "SNAP", (60, 140, 90)), ("Link cards", "LINK", (100, 80, 150)), ("tap payments", "TAP TO PAY", (50, 56, 62))]
+    tiles = [("cash", "CASH", (40, 130, 84)), ("debit cards", "DEBIT", (60, 112, 88)), ("Visa", "VISA", (30, 90, 66)), ("Mastercard", "MASTERCARD", (190, 70, 50)), ("Discover", "DISCOVER", (200, 150, 60)),
+             ("American Express", "AMEX", (70, 140, 104)), ("E B T", "E B T", (80, 110, 92)), ("snap", "SNAP", (60, 140, 90)), ("Link cards", "LINK", (150, 124, 60)), ("tap payments", "TAP TO PAY", (40, 62, 50))]
     for i, (k, lab, col) in enumerate(tiles):
         x = 230 + (i % 5) * 365; y = 330 + (i // 5) * 190
         sub = "APPLE PAY, GOOGLE PAY" if lab == "TAP TO PAY" else None
@@ -181,7 +181,7 @@ def draw16(img, t):
     tc = T(b, "checks")
     show(img, t, tc, glass9("ck16", 560, 120, lambda c, x, y: ic_x(c, x, y, 0.7, CORAL, 14), "NO CHECKS", "AT THIS TIME", col=CORAL, tsize=34, ssize=26), 520, 820, mode="up", amp=3)
     show(img, t, T(b, "W I C"), glass9("wi16", 560, 120, lambda c, x, y: ic_x(c, x, y, 0.7, CORAL, 14), "NO W I C", "AT THIS TIME", col=CORAL, tsize=34, ssize=26), 1130, 820, mode="up", amp=3)
-    show(img, t, T(b, "bring a card or some cash"), glass9("bc16", 760, 120, I(ic_paycard, 0.5, col=(60, 90, 150)), "BRING A CARD OR SOME CASH", None, col=GOLD, tsize=30), 1300, 975, mode="up", amp=3)
+    show(img, t, T(b, "bring a card or some cash"), glass9("bc16", 760, 120, I(ic_paycard, 0.5, col=(60, 112, 88)), "BRING A CARD OR SOME CASH", None, col=GOLD, tsize=30), 1300, 975, mode="up", amp=3)
 
 def draw17(img, t):
     b = 17
@@ -193,9 +193,9 @@ def draw17(img, t):
     show(img, t, T(b, "eligible food"), glass9("ef17", 640, 120, I(ic_apple, 0.6), "SNAP PAYS FOR ELIGIBLE FOOD", None, col=GOLD, tsize=28), 350, 640, mode="left", amp=3)
     tt = T(b, "tips or fees")
     show(img, t, tt, glass9("tf17", 640, 130, lambda c, x, y: ic_x(c, x, y, 0.7, CORAL, 14), "ONLINE: NOT FOR TIPS OR FEES", None, col=CORAL, tsize=28), 1130, 650, mode="right", amp=3)
-    show(img, t, T(b, "debit or credit card"), glass9("dc17", 640, 130, I(ic_paycard, 0.5, col=(60, 90, 150)), "USE A DEBIT OR CREDIT CARD", "FOR THOSE", col=SKY, tsize=28, ssize=26), 1130, 800, mode="right", amp=3)
+    show(img, t, T(b, "debit or credit card"), glass9("dc17", 640, 130, I(ic_paycard, 0.5, col=(60, 112, 88)), "USE A DEBIT OR CREDIT CARD", "FOR THOSE", col=SKY, tsize=28, ssize=26), 1130, 800, mode="right", amp=3)
     tb = T(b, "blue badge")
-    show(img, t, tb, mk("bb17", 330, 280, lambda c: (vgrad(c, (3, 3, 327, 277), 22, (240, 238, 228), (222, 218, 204), outline=(190, 186, 174), width=3), c.ell((100, 30, 230, 160), fill=(214, 108, 96)), c.rrect((100, 176, 230, 188), 6, fill=(190, 186, 174)), c.rrect((10, 10, 150, 46), 12, fill=(30, 110, 200)), c.text((80, 28), "SNAP", FONT_SANS, 22, IVORY, track=2), c.rrect((90, 214, 240, 232), 8, fill=(206, 202, 190)))), 350, 880, mode="up", amp=5, rot=-2)
+    show(img, t, tb, mk("bb17", 330, 280, lambda c: (vgrad(c, (3, 3, 327, 277), 22, (240, 238, 228), (222, 218, 204), outline=(190, 186, 174), width=3), c.ell((100, 30, 230, 160), fill=(214, 108, 96)), c.rrect((100, 176, 230, 188), 6, fill=(190, 186, 174)), c.rrect((10, 10, 150, 46), 12, fill=(60, 130, 100)), c.text((80, 28), "SNAP", FONT_SANS, 22, IVORY, track=2), c.rrect((90, 214, 240, 232), 8, fill=(206, 202, 190)))), 350, 880, mode="up", amp=5, rot=-2)
     show(img, t, tb + 0.3, glass9("bd17", 520, 110, None, "ELIGIBLE PRODUCTS ON THE", "WEBSITE: A BLUE BADGE", col=SKY, tsize=24, ssize=24), 780, 925, mode="left", amp=3)
     tu = T(b, "U S D A")
     show(img, t, tu, glass9("us17", 800, 120, I(ic_seal, 0.8), "OFFICIAL LIST OF SNAP ELIGIBLE FOODS", "fns.usda.gov", col=GOLD, tsize=26, ssize=30), 1460, 985, mode="right", amp=3)
@@ -204,7 +204,7 @@ def draw18(img, t):
     b = 18
     head9(img, t, 7, "ALDI GIFT CARDS")
     ts = T(b, "five dollar steps")
-    for i, (v, col) in enumerate((("$5", (70, 140, 200)), ("$10", (60, 160, 120)), ("$25", (210, 120, 60)), ("$50", (150, 90, 190)), ("$100", (200, 70, 80)))):
+    for i, (v, col) in enumerate((("$5", (96, 140, 100)), ("$10", (50, 150, 110)), ("$25", (200, 150, 60)), ("$50", (150, 190, 150)), ("$100", (200, 70, 80)))):
         show(img, t, ts + i * 0.2, mk(("gc18", v), 240, 160, lambda c, v=v, col=col: (ic_paycard(c, 120, 80, 1.8, col), c.text((120, 100), v, FONT_SANS, 44, IVORY))), 280 + i * 250, 360, amp=6, ph=i, rot=-6 + i * 3)
     show(img, t, T(b, "only in its stores"), glass9("os18", 440, 120, I(ic_storefront, 0.55), "ONLY IN ITS STORES", None, col=GOLD, tsize=30), 1650, 330, mode="right", amp=3)
     show(img, t, T(b, "no fees"), glass9("nf18", 440, 120, lambda c, x, y: ic_x(c, x, y, 0.7, CORAL, 14), "NO FEES", None, col=OKG, tsize=34), 1650, 470, mode="right", amp=3)

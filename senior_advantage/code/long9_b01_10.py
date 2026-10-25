@@ -78,7 +78,7 @@ def card5(key, w, h, icon, l1, l2, accent=GOLD):
 
 def mini_icon_card(key, w, h, icon, top, bottom, accent=SAGE_D, glow=False):
     def fn(c):
-        vgrad(c, (3, 3, w - 3, h - 3), 28, (16, 68, 60), (8, 42, 36), outline=GOLD if glow else accent, width=6 if glow else 4)
+        vgrad(c, (3, 3, w - 3, h - 3), 28, (16, 68, 54), (8, 42, 34), outline=GOLD if glow else accent, width=6 if glow else 4)
         icon(c, w / 2, h * 0.34)
         s = 30
         while tw(top, s, 3) > w - 30 and s > 14:
@@ -198,7 +198,7 @@ def draw6(img, t):
     tg = T(b, "as good as or better")
     show(img, t, tg, productbox("nb", "NAME BRAND", (110, 120, 128)), 900, 340, amp=5)
     show(img, t, tg + 0.2, mk("ge6", 120, 120, lambda c: c.text((60, 58), "≥", FONT_SANS, 100, GOLD), shadow=False), 1130, 340, amp=2)
-    show(img, t, tg + 0.4, productbox("ab", "ALDI BRAND", (70, 120, 180)), 1380, 340, amp=5, ph=1)
+    show(img, t, tg + 0.4, productbox("ab", "ALDI BRAND", (70, 140, 100)), 1380, 340, amp=5, ph=1)
     show(img, t, tg + 0.7, pill9("AS GOOD AS OR BETTER THAN NAME BRANDS", 760, 58, fill=IVORY), 1140, 510, mode="up", amp=2)
     tf = T(b, "up to fifty percent")
     grow_x(img, t, tf - 0.2, bar6("NATIONAL BRAND", 1.0, (150, 160, 156)), 760, 600, dur=0.8)
@@ -233,7 +233,7 @@ def draw7(img, t):
     show(img, t, tm + 0.5, xb(96), 470, 390, amp=3)
     show(img, t, T(b, "negotiates the best price"), glass9("n7", 560, 140, I(ic_building, 0.55), "BEST PRICE ALREADY", "NEGOTIATED WITH SUPPLIERS", col=SAGE_D, tsize=28, ssize=26), 330, 640, mode="up", amp=3)
     tr = T(b, "rewards cards")
-    show(img, t, tr, mk("rw7", 300, 180, lambda c: ic_paycard(c, 150, 90, 1.5, (86, 96, 150), "REWARDS")), 960, 450, amp=5, ph=1)
+    show(img, t, tr, mk("rw7", 300, 180, lambda c: ic_paycard(c, 150, 90, 1.5, (120, 150, 90), "REWARDS")), 960, 450, amp=5, ph=1)
     show(img, t, tr + 0.5, xb(96), 1100, 380, amp=3)
     show(img, t, tr + 0.7, pill9("NO REWARDS CARDS", 340, 56, fill=CORAL, ink=IVORY), 960, 600, mode="up", amp=2)
     ta = T(b, "Aldi coupons are printed")
@@ -280,8 +280,8 @@ def conveyor9():
         w, h = 1100, 120
         c.rrect((0, 30, w, 100), 30, fill=(48, 58, 62))
         for k in range(0, w, 60):
-            c.line([(k + 10, 40), (k + 40, 90)], (74, 86, 90), 6)
-        c.rrect((0, 24, w, 40), 10, fill=(96, 108, 112))
+            c.line([(k + 10, 40), (k + 40, 90)], (74, 86, 69), 6)
+        c.rrect((0, 24, w, 40), 10, fill=(96, 108, 86))
     return mk("conv9", 1100, 120, fn, blur=10, dy=8)
 
 def groceryitem(k):
@@ -335,7 +335,7 @@ def closed_card(key, name, w=380, h=230, col=CORAL):
 
 def limited_card(key, name, w=330, h=190):
     def fn(c):
-        vgrad(c, (3, 3, w - 3, h - 3), 22, (16, 68, 60), (8, 42, 36), outline=AMBER, width=4)
+        vgrad(c, (3, 3, w - 3, h - 3), 22, (16, 68, 54), (8, 42, 34), outline=AMBER, width=4)
         c.ell((w - 84, 20, w - 24, 80), fill=IVORY)
         c.d.pieslice(c._b((w - 84, 20, w - 24, 80)), -90, 90, fill=AMBER)
         c.text((w / 2 - 28, 56), "LIMITED", FONT_SANS_M, 22, AMBER, track=2)
