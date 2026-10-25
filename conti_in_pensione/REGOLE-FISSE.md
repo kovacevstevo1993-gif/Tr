@@ -619,3 +619,7 @@
 - L'utente vuole: risposte corte, UNA sola consegna gia' controllata, nessuna ricerca inutile, mai "perfetta". vidIQ: saldo 17 crediti (rinnovo 29/10), 0 spesi dopo lo short 13.
 - Chat intera: chat/chat-sessione-14-completa.md.
 
+
+## ERRORE DEL 25/10/2026 (domanda "come mai il canale va poco, cosa si puo' migliorare, e' al massimo?") - N.13/N.25
+- Utente: "Ma cosa pensi che non li vedo io i dati che mi mandi? ... ti ho fatto una cazzo di domanda". Ho risposto con una tabella dei numeri che l'utente vede gia' da solo in Studio e poi gli ho chiesto gli screenshot di Studio (CTR, impressioni) invece di rispondere; senza aver provato a leggerli io.
+- REGOLA: a una domanda di analisi ("come mai", "cosa si puo' migliorare") si risponde con CAUSE e AZIONI, non con i numeri che l'utente gia' ha. Mai ricopiare all'utente i suoi dati. Mai chiedere screenshot/dati all'utente prima di aver provato a prenderli (curl pubblico, vidIQ solo se gia' autorizzato); se manca un dato, dirlo in mezza riga e rispondere comunque con il meglio che c'e'.
