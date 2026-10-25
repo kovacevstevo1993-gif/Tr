@@ -255,11 +255,11 @@ S[16] = [
 ]
 # ---- 17: WITHHOLDING ----
 S[17] = [
-    slide('NOBODY WITHHOLDS FOR YOU', 650, [E('icard', R3[0], None, icon='cross', l1='NOBODY WITHHOLDS', l2='UNLESS YOU ASK', col=red, c2=red),
-                                           E('icard', R3[1], 'form w four r', icon='form', l1='FORM W-4R', l2='ASK FOR TAX WITHHELD', col=gold),
+    slide('TEN PERCENT BY DEFAULT', 650, [E('icard', R3[0], 'ten percent', icon='check', l1='10% WITHHELD', l2='THE I R S DEFAULT', col=gold),
+                                           E('icard', R3[1], 'form w four r', icon='form', l1='FORM W-4R', l2='PICK A DIFFERENT RATE', col=gold),
                                            E('icard', R3[2], 'as you go', icon='check', l1='PAID AS YOU GO', l2='NO APRIL SURPRISE', col=green, c2=green)],
-          'ASK FOR WITHHOLDING', gold, tag=T6, src='IRS PUB. 590-B'),
-    slide('NO CARRYOVER', 651, [E('icard', R2[0], 'estimated tax', icon='clock', l1='ESTIMATED TAX', l2='PAID DURING THE YEAR', col=gold),
+          'YOU CAN CHOOSE THE RATE', gold, tag=T6, src='IRS PUB. 590-B'),
+    slide('NO CARRYOVER', 651, [E('icard', R2[0], 'estimated tax', icon='clock', l1='ESTIMATED TAX', l2='IF TOO LITTLE IS WITHHELD', col=gold),
                                 E('card', R2[1], 'cannot be counted', head='TAKE MORE THAN THE MINIMUM', val='EXTRA DOES NOT CARRY OVER', col=red, vcol=red, vsize=36, icon='cross', s=1.2)],
           'THE EXTRA DOES NOT COUNT NEXT YEAR', red, (255, 255, 255), tag=T6, src='IRS PUB. 590-B'),
 ]
@@ -315,7 +315,7 @@ CUTS = {1: ['it is called', 'walter is seventy-five', 'but one move'], 2: ['lind
         4: ['the rule applies', 'but a roth', 'so this rule'], 5: ['at seventy-three'], 6: ['eight hundred thousand divided', 'that is about four'],
         7: ['five hundred thousand divided', 'and here is the surprise'], 8: ['suppose her balance', 'together'], 9: ['for walter', 'if you fix it', 'you report it'],
         10: ['the i r s adds', 'that makes'], 11: ['his deductions'], 12: ['you must be', 'the limit'], 13: ['now the worksheet', 'his income on the return'],
-        14: ['and the share', 'be honest'], 15: ['it works from', 'you need a written', 'and on form'], 16: ['a four oh one', 'and if you are still'], 17: ['without it'],
+        14: ['and the share', 'be honest'], 15: ['it works from', 'you need a written', 'and on form'], 16: ['a four oh one', 'and if you are still'], 17: ['if too little'],
         18: ['three if you give'], 19: ['four a distribution'], 20: ['and tell me', 'one last thing']}
 for _b, _ph in CUTS.items():
     _tot = sum(SPEC[_b]); _c = [0] + [round((V.at(_b, p) - 0.2) * 30) for p in _ph] + [_tot]

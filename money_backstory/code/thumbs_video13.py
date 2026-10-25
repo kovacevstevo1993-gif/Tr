@@ -34,7 +34,7 @@ def B13():
     d.text((865, base + 40), "WITH A Q C D", font=P(48, True), fill=WHITE, anchor="mm", stroke_width=6, stroke_fill=BLK)
     d.polygon([(515, 400), (615, 400), (615, 365), (690, 430), (615, 495), (615, 460), (515, 460)], fill=YEL, outline=BLK)
     banner(im, "SAVE $2,089", (850, 170, 1240, 290), fill=RED, size=70)
-    banner(im, "AGE 73+", (930, 320, 1230, 405), fill=YEL, fg=BLK, size=70)
+    banner(im, "AGE 73+", (1000, 322, 1225, 395), fill=YEL, fg=BLK, size=58)
     return im.convert("RGB")
 
 if __name__ == "__main__":
