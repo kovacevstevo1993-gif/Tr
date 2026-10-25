@@ -18,10 +18,10 @@ ENDS9 = [1017, 1980, 2939, 3736, 4581, 5585, 6510, 7348, 8216, 9148, 10036, 1098
 DUR = {i + 1: e - (ENDS9[i - 1] if i else 0) for i, e in enumerate(ENDS9)}
 END = [0.0]
 
-TEAL = (20, 112, 84)
-SKY = (142, 202, 160)
-AMBER = (228, 179, 99)
-SLATE = (46, 66, 53)
+TEAL = (20, 120, 112)
+SKY = (110, 176, 214)
+AMBER = (240, 168, 64)
+SLATE = (46, 66, 62)
 
 def T(b, key, n=1):
     """secondo in cui la voce arriva alla parola 'key' (n-esima occorrenza) nel blocco b (voce ~94% del blocco, mai oltre il 78%)"""
@@ -45,34 +45,34 @@ def _mk_bg():
     d = ImageDraw.Draw(base)
     for y in range(H):
         k = y / H
-        d.line([(0, y), (W, y)], fill=(int(8 + 9 * (1 - k)), int(38 + 18 * (1 - k)), int(30 + 13 * (1 - k))))
+        d.line([(0, y), (W, y)], fill=(int(6 + 8 * (1 - k)), int(36 + 24 * (1 - k)), int(36 + 18 * (1 - k))))
     glow = Image.new("L", (W, H), 0); gd = ImageDraw.Draw(glow)
     gd.ellipse([W * 0.05, -H * 0.5, W * 0.95, H * 0.6], fill=80)
     glow = glow.filter(ImageFilter.GaussianBlur(170))
-    base = Image.composite(Image.new("RGB", (W, H), (44, 118, 84)), base, glow)
+    base = Image.composite(Image.new("RGB", (W, H), (48, 128, 112)), base, glow)
     vig = Image.new("L", (W, H), 0); vd = ImageDraw.Draw(vig)
     vd.rectangle([0, 0, W, H], fill=140); vd.ellipse([-W * 0.25, -H * 0.35, W * 1.25, H * 1.35], fill=0)
     vig = vig.filter(ImageFilter.GaussianBlur(150))
-    base = Image.composite(Image.new("RGB", (W, H), (3, 18, 12)), base, vig)
+    base = Image.composite(Image.new("RGB", (W, H), (2, 14, 14)), base, vig)
     _B9["base"] = base
     g1 = Image.new("RGBA", (W + 60, H + 60), (0, 0, 0, 0)); d1 = ImageDraw.Draw(g1)
     for x in range(0, W + 60, 60):
-        d1.line([(x, 0), (x, H + 60)], fill=(150, 205, 160, 15), width=1)
+        d1.line([(x, 0), (x, H + 60)], fill=(150, 215, 185, 15), width=1)
     for y in range(0, H + 60, 60):
-        d1.line([(0, y), (W + 60, y)], fill=(150, 205, 160, 15), width=1)
+        d1.line([(0, y), (W + 60, y)], fill=(150, 215, 185, 15), width=1)
     _B9["g1"] = g1
     g2 = Image.new("RGBA", (W + 240, H + 240), (0, 0, 0, 0)); d2 = ImageDraw.Draw(g2)
     for x in range(0, W + 240, 240):
-        d2.line([(x, 0), (x, H + 240)], fill=(165, 215, 175, 30), width=2)
+        d2.line([(x, 0), (x, H + 240)], fill=(170, 225, 200, 30), width=2)
     for y in range(0, H + 240, 240):
-        d2.line([(0, y), (W + 240, y)], fill=(165, 215, 175, 30), width=2)
+        d2.line([(0, y), (W + 240, y)], fill=(170, 225, 200, 30), width=2)
     for x in range(0, W + 240, 240):
         for y in range(0, H + 240, 240):
             d2.line([(x - 9, y), (x + 9, y)], fill=(228, 179, 99, 90), width=3)
             d2.line([(x, y - 9), (x, y + 9)], fill=(228, 179, 99, 90), width=3)
     _B9["g2"] = g2
     bl = Image.new("RGBA", (900, 900), (0, 0, 0, 0)); bd = ImageDraw.Draw(bl)
-    bd.ellipse([150, 150, 750, 750], fill=(70, 160, 100, 70))
+    bd.ellipse([150, 150, 750, 750], fill=(70, 170, 140, 70))
     _B9["blob"] = bl.filter(ImageFilter.GaussianBlur(120))
     sw = Image.new("RGBA", (W * 2, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(sw)
     sd.polygon([(W - 120, 0), (W + 160, 0), (W - 120 + 260, H), (W - 400 + 260, H)], fill=(255, 245, 210, 20))
@@ -179,7 +179,7 @@ def head9(img, t, num, title, mid=None):
     def build():
         w, h = 1780, 92
         c = Cv(w, h)
-        vgrad(c, (0, 0, w, h), 22, (10, 52, 42), (6, 36, 29), outline=(70, 150, 124), width=3)
+        vgrad(c, (0, 0, w, h), 22, (10, 52, 46), (6, 36, 32), outline=(70, 150, 124), width=3)
         c.rrect((12, 12, 112, h - 12), 14, fill=GOLD)
         c.text((62, h / 2 + 2), ("%02d" % num) if num > 0 else "ALDI", FONT_SANS, 44 if num > 0 else 30, GREEN_D, track=1)
         s = 42
@@ -191,11 +191,11 @@ def head9(img, t, num, title, mid=None):
             for i in range(10):
                 x = w - 530 + i * 50
                 on = i < num; cur = i == num - 1
-                c.rrect((x, h / 2 - 12, x + 40, h / 2 + 12), 8, fill=GOLD if cur else (GREEN_L if on else (24, 70, 56)),
+                c.rrect((x, h / 2 - 12, x + 40, h / 2 + 12), 8, fill=GOLD if cur else (GREEN_L if on else (24, 70, 60)),
                         outline=IVORY if cur else None, width=2)
         else:
             lab = mid or ("INTRO" if num == 0 else "WRAP-UP")
-            c.rrect((w - 330, 18, w - 16, h - 18), 18, fill=(24, 70, 56), outline=GOLD, width=3)
+            c.rrect((w - 330, 18, w - 16, h - 18), 18, fill=(24, 70, 60), outline=GOLD, width=3)
             c.text((w - 173, h / 2 + 2), lab, FONT_SANS, 30, GOLD, track=4)
         return bake(c.done(), 10, 6, 0.5)
     spr = cache(("h9", num, title, mid), build)
@@ -207,7 +207,7 @@ def head9(img, t, num, title, mid=None):
 
 def source9(img, t, t0, label, x=1620, y=1032):
     spr = mk(("src9", label), 560, 62, lambda c: (
-        c.rrect((2, 2, 558, 60), 30, fill=(8, 44, 35), outline=SAGE_D, width=3),
+        c.rrect((2, 2, 558, 60), 30, fill=(8, 44, 40), outline=SAGE_D, width=3),
         c.rrect((16, 14, 40, 48), 4, fill=PAPER), c.line([(21, 24), (35, 24)], SAGE_D, 3), c.line([(21, 31), (35, 31)], SAGE_D, 3),
         c.text((56, 31), "SOURCE", FONT_SANS_M, 20, SAGE, anchor="lm", track=3),
         c.text((190, 31), label, FONT_SANS, 24, IVORY, anchor="lm", track=2)), blur=8, dy=5)
@@ -223,7 +223,7 @@ def pill9(text, w, h=62, fill=GOLD, ink=GREEN_D, size=None, border=None):
         c.text((w / 2, h / 2 + 2), text, FONT_SANS, s, ink, track=3)
     return mk(("pill9", text, w, h, fill, ink), w, h, fn, blur=8, dy=5)
 
-def paper9(key, w, h, title, lines, accent=GOLD, size=32, tsize=34, align="left", icon=None, ink=INK, sub_ink=(70, 100, 80)):
+def paper9(key, w, h, title, lines, accent=GOLD, size=32, tsize=34, align="left", icon=None, ink=INK, sub_ink=(70, 100, 84)):
     """scheda di carta avorio con striscia colorata in alto; lines: lista di str o (str, colore)"""
     def fn(c):
         c.rrect((3, 3, w - 3, h - 3), 22, fill=PAPER)
@@ -254,7 +254,7 @@ def paper9(key, w, h, title, lines, accent=GOLD, size=32, tsize=34, align="left"
 def glass9(key, w, h, icon, title, sub=None, col=SAGE_D, tsize=38, ssize=28, tcol=IVORY, scol=GOLD, iconcol=GREEN_L):
     """pannello di vetro scuro orizzontale con tondo-icona"""
     def fn(c):
-        vgrad(c, (3, 3, w - 3, h - 3), 26, (14, 62, 50), (7, 40, 32), outline=col, width=4)
+        vgrad(c, (3, 3, w - 3, h - 3), 26, (14, 62, 54), (7, 40, 34), outline=col, width=4)
         r = min(60, h / 2 - 14)
         x0 = 30
         if icon:
@@ -270,9 +270,9 @@ def glass9(key, w, h, icon, title, sub=None, col=SAGE_D, tsize=38, ssize=28, tco
             c.text((x0, h / 2 + dy * h * (0.95 if sub else 1)), text_, FONT_SANS, s_, cc, anchor="lm", track=2)
     return mk(("glass9", key, w, h), w, h, fn)
 
-def bignum(key, w, h, value, label, col=GOLD, vsize=None, lsize=26, fill=(9, 46, 37)):
+def bignum(key, w, h, value, label, col=GOLD, vsize=None, lsize=26, fill=(9, 46, 40)):
     def fn(c):
-        vgrad(c, (3, 3, w - 3, h - 3), 28, (16, 66, 53), (7, 40, 32), outline=col, width=4)
+        vgrad(c, (3, 3, w - 3, h - 3), 28, (16, 66, 58), (7, 40, 34), outline=col, width=4)
         vs = vsize or int(h * 0.5)
         while tw(value, vs, 2) > w - 36 and vs > 18:
             vs -= 2
@@ -283,7 +283,7 @@ def bignum(key, w, h, value, label, col=GOLD, vsize=None, lsize=26, fill=(9, 46,
         c.text((w / 2, h * 0.84), label, FONT_SANS, s, IVORY, track=3)
     return mk(("bignum", key, w, h), w, h, fn)
 
-def badge_ic(key, S, icon, ring=GOLD, fill=(14, 62, 50), scale=1.0):
+def badge_ic(key, S, icon, ring=GOLD, fill=(14, 62, 54), scale=1.0):
     def fn(c):
         c.ell((4, 4, S - 4, S - 4), fill=fill, outline=ring, width=5)
         icon(c, S / 2, S / 2, scale)
@@ -297,7 +297,7 @@ def okb(S=96, col=OKG):
 
 def stamp9(text, w, h, col=CORAL, size=None):
     def fn(c):
-        c.rrect((4, 4, w - 4, h - 4), 16, fill=(10, 40, 32), outline=col, width=6)
+        c.rrect((4, 4, w - 4, h - 4), 16, fill=(10, 40, 36), outline=col, width=6)
         c.rrect((14, 14, w - 14, h - 14), 10, outline=col, width=2)
         s = size or int(h * 0.38)
         while tw(text, s, 3) > w - 44 and s > 14:
@@ -356,9 +356,9 @@ def ic_paperbag(c, cx, cy, s):
     c.poly([(cx - 44 * s, cy - 36 * s), (cx + 44 * s, cy - 36 * s), (cx + 50 * s, cy + 56 * s), (cx - 50 * s, cy + 56 * s)], fill=(204, 160, 104))
     c.poly([(cx - 44 * s, cy - 36 * s), (cx - 10 * s, cy - 36 * s), (cx - 20 * s, cy + 56 * s), (cx - 50 * s, cy + 56 * s)], fill=(184, 140, 88))
     c.rrect((cx - 24 * s, cy - 6 * s, cx + 24 * s, cy + 26 * s), 4 * s, fill=PAPER)
-    c.text((cx, cy + 10 * s), "ALDI", FONT_SANS, 14 * s, (60, 112, 88))
+    c.text((cx, cy + 10 * s), "ALDI", FONT_SANS, 14 * s, (60, 90, 120))
 
-def ic_donut(c, cx, cy, s, frac, col=GOLD, track=(24, 70, 56), width=26):
+def ic_donut(c, cx, cy, s, frac, col=GOLD, track=(24, 70, 60), width=26):
     r = 70 * s
     c.arc((cx - r, cy - r, cx + r, cy + r), 0, 360, track, width * s)
     c.arc((cx - r, cy - r, cx + r, cy + r), -90, -90 + 360 * frac, col, width * s)
@@ -367,7 +367,7 @@ def ic_shield(c, cx, cy, s, col=GOLD, mark=None):
     pts = [(cx - 56 * s, cy - 56 * s), (cx + 56 * s, cy - 56 * s), (cx + 56 * s, cy + 6 * s), (cx, cy + 66 * s), (cx - 56 * s, cy + 6 * s)]
     c.poly(pts, fill=col)
     pts2 = [(cx - 44 * s, cy - 44 * s), (cx + 44 * s, cy - 44 * s), (cx + 44 * s, cy + 2 * s), (cx, cy + 52 * s), (cx - 44 * s, cy + 2 * s)]
-    c.poly(pts2, fill=(14, 62, 50))
+    c.poly(pts2, fill=(14, 62, 54))
     if mark:
         mark(c, cx, cy - 4 * s, 0.8 * s)
 
@@ -475,7 +475,7 @@ def ic_bell(c, cx, cy, s, col=GOLD):
 def phone9(key, w=300, h=560, screen=None):
     """telefono con schermo; screen(c,x0,y0,x1,y1)"""
     def fn(c):
-        c.rrect((4, 4, w - 4, h - 4), 40, fill=(26, 32, 34), outline=(120, 132, 106), width=4)
+        c.rrect((4, 4, w - 4, h - 4), 40, fill=(26, 32, 34), outline=(120, 132, 130), width=4)
         c.rrect((16, 16, w - 16, h - 16), 30, fill=PAPER)
         c.rrect((w / 2 - 40, 22, w / 2 + 40, 34), 6, fill=(26, 32, 34))
         if screen:
@@ -484,7 +484,7 @@ def phone9(key, w=300, h=560, screen=None):
 
 def laptop9(key, w=720, h=470, screen=None, bar="aldi.us"):
     def fn(c):
-        c.rrect((60, 4, w - 60, h - 56), 22, fill=(30, 36, 38), outline=(120, 132, 106), width=4)
+        c.rrect((60, 4, w - 60, h - 56), 22, fill=(30, 36, 38), outline=(120, 132, 130), width=4)
         c.rrect((78, 20, w - 78, h - 74), 10, fill=PAPER)
         c.rrect((78, 20, w - 78, 66), 10, fill=(214, 224, 218))
         c.d.rectangle(c._b((78, 48, w - 78, 66)), fill=(214, 224, 218))

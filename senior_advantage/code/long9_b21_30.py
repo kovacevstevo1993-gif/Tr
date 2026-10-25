@@ -35,7 +35,7 @@ def draw22(img, t):
     show(img, t, T(b, "scanned wrong"), stamp9("SCANNED WRONG?", 340, 90, CORAL, 30), 330, 985, rot=-6, amp=3)
     G(img, t, b, "bring the receipt back", 1100, 130, I(ic_receipt, 0.55), "BRING THE RECEIPT BACK TO THE STORE", None, 1250, 290, col=GOLD, tsize=32)
     G(img, t, b, "manager on duty", 1100, 130, I(ic_person, 0.7), "ASK FOR THE MANAGER ON DUTY", None, 1250, 440, col=OKG, tsize=32)
-    G(img, t, b, "second charge", 1100, 150, I(ic_paycard, 0.5, col=(60, 112, 88)), "A SECOND CHARGE AFTER A CARD PAYMENT?", "A TEMPORARY PENDING CHARGE CAN APPEAR", 1250, 600, col=SKY, tsize=30, ssize=28)
+    G(img, t, b, "second charge", 1100, 150, I(ic_paycard, 0.5, col=(60, 90, 150)), "A SECOND CHARGE AFTER A CARD PAYMENT?", "A TEMPORARY PENDING CHARGE CAN APPEAR", 1250, 600, col=SKY, tsize=30, ssize=28)
     show(img, t, T(b, "ten business days"), bignum("bd22", 420, 170, "10", "BUSINESS DAYS TO DROP OFF", GOLD, vsize=84, lsize=22), 920, 790, amp=4)
     show(img, t, T(b, "depending on your bank"), pill9("DEPENDS ON YOUR BANK", 520, 62, fill=IVORY), 1500, 790, mode="right", amp=2)
     show(img, t, T(b, "parking lot"), pill9("LOOK AT IT BEFORE YOU LEAVE THE PARKING LOT", 960, 64, fill=GOLD), 1150, 960, mode="up", amp=2)
@@ -87,7 +87,7 @@ def numbadge(n):
 def draw26(img, t):
     b = 26
     head9(img, t, -1, "RECAP: THE TEN THINGS", mid="RECAP")
-    cpay = lambda c, x, y: ic_paycard(c, x, y, 1.0, (60, 112, 88))
+    cpay = lambda c, x, y: ic_paycard(c, x, y, 1.0, (60, 90, 150))
     tiles = [("One, exclusive brands", "EXCLUSIVE BRANDS", "NO COUPONS", I(ic_storefront, 1.2)),
              ("Two, a quarter", "A QUARTER", "AND YOUR BAGS", I(ic_coin25, 1.1)),
              ("Three, the holiday", "HOLIDAY CLOSINGS", "WHAT'S MISSING", I(ic_calendar, 1.3)),
@@ -109,7 +109,7 @@ def draw27(img, t):
     head9(img, t, -1, "YOUR PLAN FOR THE NEXT TRIP", mid="PLAN")
     rows = [("Put a few quarters", I(ic_coin25, 0.8), "A FEW QUARTERS AND YOUR BAGS, READY", None),
             ("Look up your own store", I(ic_pin8, 0.9), "YOUR OWN STORE'S SPECIALS", "WRITE A SHORT LIST"),
-            ("Pay with a card", lambda c, x, y: ic_paycard(c, x, y, 0.8, (60, 112, 88)), "PAY WITH A CARD OR CASH", "NOT A CHECK"),
+            ("Pay with a card", lambda c, x, y: ic_paycard(c, x, y, 0.8, (60, 90, 150)), "PAY WITH A CARD OR CASH", "NOT A CHECK"),
             ("Keep your receipt", I(ic_receipt, 0.6), "KEEP YOUR RECEIPT", "LOOK AT IT BEFORE YOU LEAVE"),
             ("if a product disappoints", I(ic_shield, 0.55), "PRODUCT DISAPPOINTS?", "TAKE THE PACKAGE BACK TO THE MANAGER")]
     for i, (k, ic, a, s_) in enumerate(rows):
@@ -141,7 +141,7 @@ def draw29(img, t):
 
 DLINES = [("Rules, fees", "Rules, fees and policies change", INK), ("they differ", "and differ by store and by state.", INK),
           ("Always confirm", "Always confirm with the official source", (150, 100, 20)), ("before you rely", "before you rely on them.", (150, 100, 20)),
-          ("general information", "General information,", (70, 100, 80)), ("not financial", "not financial advice.", (70, 100, 80)),
+          ("general information", "General information,", (70, 100, 84)), ("not financial", "not financial advice.", (70, 100, 84)),
           ("not affiliated", "This channel is not affiliated with Aldi", INK), ("or any government", "or any government agency.", INK)]
 
 def draw30(img, t):
