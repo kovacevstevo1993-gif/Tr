@@ -1,3 +1,8 @@
+# 25/10/2026 NOTTE 2 - SLIDE ALDI (video lungo 9): in corso
+- Codice: senior_advantage/code/long9_kit.py, long9_b01_10.py, long9_b11_20.py, long9_b21_30.py, long9_all.py, runblocks9.sh (render + check_frames + ffprobe). Uscita: senior_advantage/video_aldi/SA-aldi-bloccoNN.mp4 (30 blocchi, durate in ENDS9 del kit).
+- Anteprima: `python3 long9_all.py frame <blocco> <sec> out.png`. Render: `./runblocks9.sh <cartella> <blocco>`.
+- Da fare: verificare i log (0 fotogrammi tagliati, ultimo movimento prima degli ultimi 20 fotogrammi, ffprobe = durata) e mandare gli MP4 con SendUserFile SOLO dopo. Non ancora mandate.
+
 # PASSAGGIO CHAT - The Senior Advantage (aggiornato 06/10/2026)
 
 LEGGERE ANCHE /PASSAGGIO-GENERALE.md (root del repo): mappa di TUTTI i progetti (Senior Advantage, Money Backstory, Conti in Pensione, Bambini Ciao Ciao), rami e file di stato di ognuno. Quando l'utente dice "tutto" o "dalla A alla Z" intende tutto il progetto, non solo questa chat.

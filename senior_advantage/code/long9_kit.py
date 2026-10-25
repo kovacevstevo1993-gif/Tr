@@ -183,7 +183,7 @@ def head9(img, t, num, title, mid=None):
         c.rrect((12, 12, 112, h - 12), 14, fill=GOLD)
         c.text((62, h / 2 + 2), ("%02d" % num) if num > 0 else "ALDI", FONT_SANS, 44 if num > 0 else 30, GREEN_D, track=1)
         s = 42
-        while tw(title, s, 3) > 1020 and s > 20:
+        while tw(title, s, 3) > 830 and s > 20:
             s -= 2
         c.text((140, h / 2 + 2), title, FONT_SANS, s, IVORY, anchor="lm", track=3)
         if num > 0:
@@ -210,7 +210,7 @@ def source9(img, t, t0, label, x=1620, y=1032):
         c.rrect((2, 2, 558, 60), 30, fill=(8, 44, 40), outline=SAGE_D, width=3),
         c.rrect((16, 14, 40, 48), 4, fill=PAPER), c.line([(21, 24), (35, 24)], SAGE_D, 3), c.line([(21, 31), (35, 31)], SAGE_D, 3),
         c.text((56, 31), "SOURCE", FONT_SANS_M, 20, SAGE, anchor="lm", track=3),
-        c.text((150, 31), label, FONT_SANS, 24, IVORY, anchor="lm", track=2)), blur=8, dy=5)
+        c.text((190, 31), label, FONT_SANS, 24, IVORY, anchor="lm", track=2)), blur=8, dy=5)
     show(img, t, t0, spr, x, y, mode="up", dur=0.45, fl=False)
 
 # ------------------------------------------------------------------ mattoni
