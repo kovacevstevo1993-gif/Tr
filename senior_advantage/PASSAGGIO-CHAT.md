@@ -1,3 +1,8 @@
+# 26/10/2026 - RIMISURATI TUTTI I 30 SCREENSHOT DELLE DURATE ALDI (salvati in senior_advantage/screenshot_durate_aldi/01..30.jpg, ordine = blocco)
+- Risultato: 29 su 30 fini blocco coincidono con quelle usate (ENDS9 in code/long9_kit.py). SBAGLIATO SOLO il blocco 12: fine = 06:06 + 27 f = 11007 (usato 10987, cifra 7 al posto di 27). Di conseguenza B12 deve durare 971 (non 951) e B13 883 (non 903); gli altri blocchi invariati.
+- Blocchi 18/19: lo screenshot originale (22:29 del 25/10) da fine B18 = 09:07 + 29/30 f (=16439/16440), come usato; gli screenshot del 26/10 (12:21-12:49) mostrano il confine voce B18/B19 a 09:07 + 0 f (16410), cioe 1 s prima: la timeline dell'utente e cambiata dopo gli screenshot originali (fine B19 uguale: 09:42 + 9 f = 17469). Nella timeline del 26/10 al posto della slide B19 c'e la slide B20.
+- Slide NON rifatte (nessun ordine).
+
 # 26/10/2026 - ERRORE DI LETTURA DURATE ALDI (screenshot dell'utente con cursore sulla fine del blocco 12)
 - Fine blocco 12 = 06:06 + 27 f = 11007 fotogrammi (cursore a meta tra le etichette 26f e 28f, esattamente dove parte il blocco 13). Nel passaggio del 25/10 avevo 10987 (= 06:06 + 7 f): ho letto 7 invece di 27, errore di 20 fotogrammi (0,67 s). Le slide Aldi consegnate hanno i blocchi 12 e 13 sfasati di 20 f. Altri blocchi potrebbero avere lo stesso tipo di errore (cifra delle decine): controllare con screenshot del cursore sul confine di ogni blocco. Slide NON rifatte (nessun ordine).
 - Lettura corretta dell'orologio: mostra solo i secondi interi (06:06), i fotogrammi si leggono sulle etichette del righello (ogni 2 f; a 06:06+27 f l'orologio mostra ancora 06:06).
