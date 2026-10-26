@@ -5,3 +5,5 @@
 - Copione 17 blocchi: code/mkblk.py -> code/blk.json (1136 parole).
 - VOCE LENTA (regola utente 26/10): Gemini TTS Fenrir va a ~190 wpm; code/gen.sh genera il gruppo da 3 blocchi, lo rallenta con atempo=0.82 (altezza invariata) e taglia con ritaglia3: ~137-158 wpm misurati sui blocchi. Fatti gruppi 1,4,7,10 (blocchi 1-12). QUOTA gemini-2.5-flash-preview-tts FINITA (429, riprova ~07:00 UTC del 27/10): restano gruppi 13 e 16 (blocchi 13-17): ./code/gen.sh 13 ; ./code/gen.sh 16.
 - Da fare: controllo voce con medium.en + large-v3 (testo intero), slide (code/v14.py da scrivere sul motore v13eng con elementi nuovi: calendario mesi, linea dell'anno, barre mensili), render, qa, pacchetto, 2 miniature. Consegna TUTTO in un colpo.
+
+## ANNULLATO 26/10 (parole dell'utente: "Ma e lo stesso tema allora? ... leggiti le cazzo di regole"): il tema earnings test e' gia' nel video 9 (blocchi 42-60). NON si fa. Voce dei blocchi 1-12 sprecata (4 richieste Gemini). Il video 14 e' ora MEDIGAP / PLAN G: cartella video14-medigap/. Il codice slide v14eng.py/v14.py di questa cartella (mesi, linea dell'anno, barre mensili, chip, vs, calc) si puo' riusare.
