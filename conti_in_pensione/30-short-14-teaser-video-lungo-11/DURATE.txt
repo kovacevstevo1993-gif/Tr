@@ -1,0 +1,7 @@
+SHORT 14 - durate dagli screenshot CapCut (26/10/2026, lettura N.29: ultimo segno + 1; tempi cumulativi 00:11+10f, 00:23+19f(punto), 00:36+10f, 00:49+2f, 01:03+18f)
+fine blocco 1 = 11s+11f = 341
+fine blocco 2 = 23s+20f = 710
+fine blocco 3 = 36s+11f = 1091
+fine blocco 4 = 49s+3f = 1473
+fine blocco 5 = 63s+19f = 1909
+durata blocchi: 341, 369, 381, 382, 436 = 1909 fotogrammi (63,6 s)
