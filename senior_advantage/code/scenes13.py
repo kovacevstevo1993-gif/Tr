@@ -456,7 +456,7 @@ def c1(img, t):
         put(img, stamp_spr("BOTH", 520, 190, 120, fill=GOLD, ink=INK), 540, 1690, scale=min(1.0, sb), alpha=alb, shadow=12)
         put(img, check_spr(44), 190, 1690, scale=min(1.0, sb), alpha=alb, shadow=6)
         put(img, check_spr(44), 890, 1690, scale=min(1.0, sb), alpha=alb, shadow=6)
-        bst(img, t, tb, 540, 1690, n=12, rad=260, seed=16, dur=0.55)
+        bst(img, t, tb, 540, 1690, n=12, rad=140, seed=16, dur=0.55)
 
 # ------------------------------------------------------------------ B2 (227 f = 7,6 s)
 def c2(img, t):
@@ -586,7 +586,7 @@ def c6(img, t):
     if a > 0:
         pulse = 1.0 + 0.03 * math.sin(t * 6.0) * env(t)
         put(img, cta_spr(), 540, 1670, scale=min(1.0, s) * pulse, alpha=al, shadow=12)
-        bst(img, t, ttn, 540, 1670, n=10, rad=240, seed=61, dur=0.5)
+        bst(img, t, ttn, 540, 1670, n=10, rad=120, seed=61, dur=0.5)
     ah = seg(t, ttn + 0.1, 0.5)
     if ah > 0 and t < D() - 0.5:
         put(img, hand_spr(), 780 + 50 * (1 - ease(ah)), 1730 + 50 * (1 - ease(ah)) - (10 * math.sin(t * 6) * env(t) if ah >= 1 else 0), scale=0.6, alpha=min(1.0, ah * 3))
