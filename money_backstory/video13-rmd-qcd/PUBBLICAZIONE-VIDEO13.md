@@ -1,5 +1,5 @@
 # VIDEO 13 - RMD a 73 anni + Q C D - testi da incollare (23/10/2026)
-Struttura identica ai video 10-12. Capitoli dalle fine-voce dei blocchi (fine_blocchi.txt + tagli delle slide; fine video 14417 fotogrammi = 8:00), arrotondati per difetto.
+Struttura identica ai video 10-12. Capitoli dalle fine-voce dei blocchi (fine_blocchi.txt + tagli delle slide; fine video 14445 fotogrammi = 8:01), arrotondati per difetto.
 Ricerca: vidIQ outliers (RMD, questo mese): "7 Things the IRS Lets You Do After 70½ (Most Retirees Never Use Them)" 158K con 1,6K iscritti; schema "Every Senior/Retiree Must Know...", numero, parentesi. Keyword research US: "required minimum distribution" 3.941/mese (conc. 18,8); "rmd" 17.948/mese (conc. 35,9); "roth conversion" 44.699 (+221%); "retirement taxes" 8.878. Titolo scelto con score_title: 92 (altro titolo provato: 89).
 Fonti verificate: FONTI-VERIFICATE.md (solo irs.gov).
 
@@ -17,23 +17,23 @@ We follow two fictional people. Walter is 75, single, with an $800,000 tradition
 CHAPTERS
 0:00 The RMD nobody explains: Walter's $32,520
 0:25 Meet Walter and Linda
-0:47 Every number comes from the IRS
-1:09 Part 1: who must take an RMD
-1:34 The formula: balance divided by factor
-2:01 Walter's RMD: $32,520
-2:20 Linda's first RMD: $18,868
-2:44 The April 1 trap: two RMDs in one year
-3:08 The 25% penalty (and the 10% fix)
+0:49 Every number comes from the IRS
+1:13 Part 1: who must take an RMD
+1:38 The formula: balance divided by factor
+2:03 Walter's RMD: $32,520
+2:21 Linda's first RMD: $18,868
+2:45 The April 1 trap: two RMDs in one year
+3:09 The 25% penalty (and the 10% fix)
 3:33 How an RMD taxes your Social Security
-3:58 Walter's tax return: $2,675
-4:21 The QCD trick: give straight from your IRA
-4:44 Walter's tax after a $10,000 QCD
-5:11 Walter saves $2,089 (the honest trade)
-5:36 The QCD rules that trip people up
-6:00 Several IRAs, 401(k)s and still working
-6:26 Withholding with Form W-4R
-6:49 Your checklist before December 31
-7:14 The 5-point recap
+3:59 Walter's tax return: $2,675
+4:22 The QCD trick: give straight from your IRA
+4:45 Walter's tax after a $10,000 QCD
+5:12 Walter saves $2,089 (the honest trade)
+5:37 The QCD rules that trip people up
+6:01 Several IRAs, 401(k)s and still working
+6:27 Withholding with Form W-4R
+6:50 Your checklist before December 31
+7:15 The 5-point recap
 7:42 Share, comment and disclaimer
 
 WATCH NEXT

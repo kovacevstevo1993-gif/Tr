@@ -2,22 +2,22 @@
  {
   "blocco": 2,
   "slide": 1,
-  "fotogrammi": 272,
-  "controllati": 272,
+  "fotogrammi": 289,
+  "controllati": 289,
   "fuori_area": 0,
   "fuori_area_fotogrammi": [],
   "ultimo_fuori_area": null,
   "completo_a_80%": 1.0,
   "pixel_che_cambiano_dopo_81%": 0,
   "primo_elemento_s": 0.3,
-  "buco_max_s": 2.37,
+  "buco_max_s": 2.53,
   "OK": true
  },
  {
   "blocco": 2,
   "slide": 2,
-  "fotogrammi": 224,
-  "controllati": 224,
+  "fotogrammi": 238,
+  "controllati": 238,
   "fuori_area": 0,
   "fuori_area_fotogrammi": [],
   "ultimo_fuori_area": null,
@@ -30,15 +30,15 @@
  {
   "blocco": 2,
   "slide": 3,
-  "fotogrammi": 172,
-  "controllati": 172,
+  "fotogrammi": 175,
+  "controllati": 175,
   "fuori_area": 0,
   "fuori_area_fotogrammi": [],
   "ultimo_fuori_area": null,
   "completo_a_80%": 1.0,
   "pixel_che_cambiano_dopo_81%": 0,
   "primo_elemento_s": 0.3,
-  "buco_max_s": 2.6,
+  "buco_max_s": 2.67,
   "OK": true
  }
 ]

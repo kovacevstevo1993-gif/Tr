@@ -31,7 +31,7 @@ S[2] = [
                                E('card', R3[1], 'eight hundred thousand', head='TRADITIONAL I R A', val='$800,000', col=gold, vsize=80, icon='bank', s=0.5),
                                E('card', R3[2], 'thirty thousand', head='SOCIAL SECURITY', val='$30,000', sub='A YEAR', col=blue, vsize=80, icon='coins', s=0.6)],
           'ONE I R A, ONE SOCIAL SECURITY CHECK', gold),
-    slide('MEET LINDA', 606, [E('person', R3[0], None, letter='L', name='LINDA, 73', line='TURNS 73 THIS YEAR', col=green),
+    slide('MEET LINDA', 606, [E('person', R3[0], None, letter='L', name='LINDA, 73', line='REACHES 73 THIS YEAR', col=green),
                               E('card', R3[1], 'five hundred thousand', head='HER I R A', val='$500,000', col=green, vcol=green, vsize=80, icon='bank', s=0.5),
                               E('card', R3[2], 'very first', head='FIRST EVER', val='REQUIRED DISTRIBUTION', col=red, vsize=40, icon='form', s=0.8)],
           'ABOUT TO FACE HER FIRST ONE', green),
@@ -311,7 +311,7 @@ S[20] = [
 
 SLIDES = S
 SPEC = {b: V.plan(b, len(SLIDES[b])) for b in SLIDES}
-CUTS = {1: ['it is called', 'walter is seventy-five', 'but one move'], 2: ['linda turns', 'walter will show'], 3: ['no news'],
+CUTS = {1: ['it is called', 'walter is seventy-five', 'but one move'], 2: ['linda reaches', 'walter will show'], 3: ['no news'],
         4: ['the rule applies', 'but a roth', 'so this rule'], 5: ['at seventy-three'], 6: ['eight hundred thousand divided', 'that is about four'],
         7: ['five hundred thousand divided', 'and here is the surprise'], 8: ['suppose her balance', 'together'], 9: ['for walter', 'if you fix it', 'you report it'],
         10: ['the i r s adds', 'that makes'], 11: ['his deductions'], 12: ['you must be', 'the limit'], 13: ['now the worksheet', 'his income on the return'],
