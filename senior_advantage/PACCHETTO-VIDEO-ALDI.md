@@ -57,7 +57,7 @@ Which of these 10 did you NOT know about? Tell me below 👇 And send this video
 ## Impostazioni
 Non per bambini, nessun limite di eta. Uso IA: No. Promozione a pagamento: No. Miniatura: aldi-miniatura-a.png (la B in "Test e confronta"). In "Mostra altro" -> "Licenza": togliere la spunta "Pubblica nel feed iscrizioni e notifica gli iscritti" (fonte: pagina ufficiale YouTube support.google.com/youtube/answer/7457584; si decide al caricamento). Schermata finale ultimi 20 s: video lungo Walmart (stessa playlist) + Iscriviti, nel riquadro WATCH NEXT a sinistra della slide finale. Video correlato: nessuno (si imposta solo sullo short).
 Capitoli dalla timeline dell'utente (fini blocco dai 30 screenshot CapCut, fine B12 corretta a 06:06+27 f; tutti arrotondati per difetto ai secondi).
-Titolo: NON valutato su vidIQ (nessun credito speso; saldo 8, una valutazione costa 5). Regola 19: nessuna voce dipende dall'eta, quindi niente "Over 60" nel titolo. Parole scelte dalla ricerca gratuita del 26/10 (RICERCHE-VIDIQ.md sezione 19).
+Titolo vidIQ 94 (26/10, ordine utente; alternativa "Don't Shop at Aldi Until You Know These 10 Things (No Senior Discount, Aldi Says So)" 96, non usata). Regola 19: nessuna voce dipende dall'eta, quindi niente "Over 60" nel titolo. Parole scelte dalla ricerca gratuita del 26/10 (RICERCHE-VIDIQ.md sezione 19).
 
 ## Miniature (code/thumb_long9.py, miniature/aldi-miniatura-a/b.png, fatte 26/10 su ordine utente: "attira click e curiosita, professionali, un po diverse dalle altre, vedi come fanno i video virali e copia")
 Logo Aldi VERO: SVG ufficiale di corporate.aldi.us (riferimenti/aldi/aldi-us-logo.svg e .png).
