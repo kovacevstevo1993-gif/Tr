@@ -1,0 +1,21 @@
+--- b1 medium.en: What if one more year of work cost you four full Social Security checks? In 2027, for some people, it really does. For others, the very same paycheck costs nothing at all. The difference is two limits, one birthday and one rule that almost nobody mentions. Here are the exact numbers that Social Security published for 2027.
+   DIFF replace copione: twenty twenty seven | sentito: 2027
+   DIFF replace copione: twenty twenty seven | sentito: 2027
+--- b1 large-v3: What if one more year of work cost you four full Social Security checks? In 2027, for some people, it really does. For others, the very same paycheck costs nothing at all. The difference is two limits, one birthday, and one rule that almost nobody mentions. Here are the exact numbers that Social Security published for 2027.
+   DIFF replace copione: twenty twenty seven | sentito: 2027
+   DIFF replace copione: twenty twenty seven | sentito: 2027
+--- b2 medium.en: Meet Dan and Ruth, two people who both work while they collect social security. Dan is 63, and he started his benefit at 62. Ruth was born in 1960, so she turned 67 in August of 2027. Both still have a paycheck. Same kind of job, same kind of money coming in, and a very different result. Let us see why.
+   DIFF replace copione: sixty three | sentito: 63
+   DIFF replace copione: sixty two | sentito: 62
+   DIFF replace copione: nineteen sixty | sentito: 1960
+   DIFF replace copione: turns sixty seven | sentito: turned 67
+   DIFF replace copione: twenty twenty seven | sentito: 2027
+--- b2 large-v3: Meet Dan and Ruth, two people who both work while they collect Social Security. Dan is 63, and he started his benefit at 62. Ruth was born in 1960, so she turned 67 in August of 2027. Both still have a paycheck. Same kind of job, same kind of money coming in, and a very different result. Let us see why.
+   DIFF replace copione: sixty three | sentito: 63
+   DIFF replace copione: sixty two | sentito: 62
+   DIFF replace copione: nineteen sixty | sentito: 1960
+   DIFF replace copione: turns sixty seven | sentito: turned 67
+   DIFF replace copione: twenty twenty seven | sentito: 2027
+--- b3 medium.en: Every number in this video comes from the Social Security Administration, its earnings test page, its cost of living fact sheet, and its guide called How Work Affects Your Benefits. No news articles, no guesses. First, the basic idea, because it surprises almost everyone who hears it for the first time.
+--- b3 large-v3: Every number in this video comes from the Social Security Administration, its earnings test page, its cost-of-living fact sheet, and its guide called How Work Affects Your Benefits. No news articles, no guesses. First, the basic idea, because it surprises almost everyone who hears it for the first time.
+--- b4 medium.en: Here is the basic idea, and it is simpler than it sounds. If you claim your retirement benefit before your full retirement age and you keep working, Social Security compares your earnings with a yearly limit. Stay under the limit and nothing happens. Go over it and Social Security holds back part of your benefit. This rule is called the earnings test.
