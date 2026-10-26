@@ -704,3 +704,7 @@
 - SOLUZIONE: DAL dell'hook spostata a 2026-10-26T20:50:00Z (provato: passa con lo stato attuale). Regola: se un hook blocca per una causa che non dipende dal mio lavoro, la causa si dice UNA volta e si corregge; mai ripetere la stessa risposta.
 - Mai fare la revisione di copioni vecchi gia' consegnati (N.13).
 - (26/10, utente: "che senso ha se non lo fa sui copioni nuovi") PROVA e DIFETTO: una cartella di copione NUOVA e non ancora aggiunta a git non veniva vista dall'hook (git status la mostra come cartella unica): l'hook non bloccava sui video nuovi. Corretto con `git status --porcelain -uall`. Provato: stato attuale rc=0, cartella nuova senza revisione rc=2.
+
+## ERRORE DEL 26/10/2026 (sera, ricerca video 12) - TEMA PROPOSTO SENZA VERIFICARE CHE SIA DELLA NICCHIA
+- Ho fatto fare all'utente la ricerca su Google Trends (6 screenshot) e poi proposto la "Carta Dedicata a te" senza sapere se riguarda i pensionati. Verificato dopo sulla pagina Inps (notizia "modalita' operative 2026-2027"): ISEE ordinario <= 15.000, residenza, nessuna domanda; esclusi ADI, Carta acquisti, NASpI/CIG; le pensioni NON sono citate ne' come requisito ne' come esclusione. Non e' un tema pensioni: fuori nicchia.
+- REGOLA: PRIMA di chiedere all'utente screenshot o ricerche (Trends ecc.) e prima di proporre un tema, verificare che sia della nicchia (pensioni/Inps/over 55) con una ricerca sulla fonte ufficiale. Un picco di ricerca fuori nicchia non e' un tema valido. Mai fare spendere tempo all'utente su temi non controllati.
