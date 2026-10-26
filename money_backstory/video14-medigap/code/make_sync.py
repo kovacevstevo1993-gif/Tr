@@ -8,7 +8,7 @@ from faster_whisper import WhisperModel
 J = json.load(open('code/blk.json'))['B']; M = WhisperModel('small.en', device='cpu', compute_type='int8')
 old = json.load(open('sync.json'))['blocks'] if os.path.exists('sync.json') else {}
 res = {'blocks': {}}; t0 = 0.0; fins = []; tot = 0
-for b in range(1, 21):
+for b in range(1, 19):
     f = f'voce/b{b}.wav'
     if os.path.exists(f):
         raw = subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', f, '-f', 'f32le', '-ac', '1', '-ar', '16000', '-'], capture_output=True).stdout
