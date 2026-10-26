@@ -1,3 +1,7 @@
+# 26/10/2026 - ERRORE DI LETTURA DURATE ALDI (screenshot dell'utente con cursore sulla fine del blocco 12)
+- Fine blocco 12 = 06:06 + 27 f = 11007 fotogrammi (cursore a meta tra le etichette 26f e 28f, esattamente dove parte il blocco 13). Nel passaggio del 25/10 avevo 10987 (= 06:06 + 7 f): ho letto 7 invece di 27, errore di 20 fotogrammi (0,67 s). Le slide Aldi consegnate hanno i blocchi 12 e 13 sfasati di 20 f. Altri blocchi potrebbero avere lo stesso tipo di errore (cifra delle decine): controllare con screenshot del cursore sul confine di ogni blocco. Slide NON rifatte (nessun ordine).
+- Lettura corretta dell'orologio: mostra solo i secondi interi (06:06), i fotogrammi si leggono sulle etichette del righello (ogni 2 f; a 06:06+27 f l'orologio mostra ancora 06:06).
+
 # 25/10/2026 NOTTE 2 - SLIDE ALDI (video lungo 9): in corso
 - Codice: senior_advantage/code/long9_kit.py, long9_b01_10.py, long9_b11_20.py, long9_b21_30.py, long9_all.py, runblocks9.sh (render + check_frames + ffprobe). Uscita: senior_advantage/video_aldi/SA-aldi-bloccoNN.mp4 (30 blocchi, durate in ENDS9 del kit).
 - Anteprima: `python3 long9_all.py frame <blocco> <sec> out.png`. Render: `./runblocks9.sh <cartella> <blocco>`.
