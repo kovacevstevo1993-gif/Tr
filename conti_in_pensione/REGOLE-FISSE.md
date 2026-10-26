@@ -680,3 +680,6 @@
 ## DATI DEL 26/10/2026 (sera) - VIDEO 11: CONFERMA FIDELIZZAZIONE
 - Studio, video 11 (aumento pensioni 2027), primi dati (grafico "12 ore"): durata di visualizzazione media 1:41 su 5:19 (circa 32%), picco 2:42 all'inizio che poi scende. L'utente: "se dici tutto all'inizio non arriva quasi nessuno alla fine, infatti e' come ho detto io" (la risposta stava nei primi blocchi: errore gia' registrato il 25/10, riga 0c della checklist). Buono: tema e ricerche giuste, il video e' "esploso" (parole dell'utente) nonostante la fidelizzazione bassa.
 - REGOLA per il prossimo video: applicare la riga 0c (risposta e regola del conto NON nei primi 4 blocchi, >= 2 cerchi aperti dopo meta') e confrontare la durata media con questo 1:41/5:19.
+
+## ERRORE DEL 26/10/2026 (copione short 14) - GANCIO CHE DICE GIA' LA RISPOSTA
+- Utente: "hai gia' detto tutto nel primo blocco". Il blocco 1 diceva "ventinove euro in piu' ... non arrivano ventinove": il colpo di scena del video. In uno short il blocco 1 pone la domanda e NON da' il risultato (stesso errore della fidelizzazione del video 11). Corretto: domanda su mille euro lordi, nessuna cifra. REGOLA: nel blocco 1 di uno short niente cifre-risposta ne' colpo di scena del lungo; solo la domanda.

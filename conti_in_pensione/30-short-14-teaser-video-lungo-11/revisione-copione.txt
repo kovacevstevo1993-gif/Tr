@@ -1,4 +1,4 @@
-1 | 1aaf3e31a1 | italiano OK | logica OK | persona OK | numeri OK | 29 su 1.000 lordi con stima 2,9% (copione V11 b4); stima piu citata come nel video
+1 | 4b9957c505 | italiano OK | logica OK | persona OK | numeri OK | domanda aperta su mille euro lordi, senza dare cifre; "non e la cifra dei titoli" vero (netto circa 20 contro 29 lordi, V11 b1,b4)
 2 | 60c738bb51 | italiano OK | logica OK | persona OK | numeri OK | 71 contro 64 su 100 sopra il gradino (V11 b3,b7); cifra non detta = cerchio aperto
 3 | e9db259c3b | italiano OK | logica OK | persona OK | numeri OK | minime senza Irpef sotto 8.500 euro/anno (V11 b10); extra 1,3% fino al 2026, senza proroga aumento 8-11 euro (V11 b11)
 4 | b163c918cf | italiano OK | logica OK | persona OK | numeri OK | decreto 19/11/2025 firmato dai ministeri Economia e Lavoro, GU 28/11/2025 (verificato 26/10 su dottrinalavoro, fiscoetasse, ecnews)
