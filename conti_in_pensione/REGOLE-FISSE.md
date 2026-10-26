@@ -698,3 +698,8 @@
 - ERRORI DI QUESTA CHAT (tutti scritti sopra con la regola): video sbagliato per il testo Facebook (chiedere "quale video?" se non e' chiaro); verifiche dei dati tecnici PRIMA di fare il file; rispondere SOLO alla domanda (niente spiegazioni non chieste); un commento sul copione dopo la consegna NON e' un ordine di rifare; copione consegnato mai modificato senza ordine; dire "controllato" solo dopo aver guardato tutto.
 - Chat intera di questa sessione: NON salvata in chat/ (da fare solo su ordine).
 - COME RIPARTIRE: leggere CLAUDE.md, conti_in_pensione/REGOLE-FISSE.md (per intero) e CHECKLIST-REGOLE.md; poi aspettare l'ordine dell'utente.
+
+## ERRORE DEL 26/10/2026 (sera) - HOOK blocco-revisione: FALSO ALLARME SUI COPIONI VECCHI + RISPOSTE RIPETUTE
+- Dopo l'unione su main, tutti i 22 copioni vecchi risultavano "committati dopo il 22/10" e l'hook bloccava ogni risposta. Ho ripetuto la stessa risposta molte volte invece di risolvere. Utente: "Sposta la data. Bastaaaaa".
+- SOLUZIONE: DAL dell'hook spostata a 2026-10-26T20:50:00Z (provato: passa con lo stato attuale). Regola: se un hook blocca per una causa che non dipende dal mio lavoro, la causa si dice UNA volta e si corregge; mai ripetere la stessa risposta.
+- Mai fare la revisione di copioni vecchi gia' consegnati (N.13).
