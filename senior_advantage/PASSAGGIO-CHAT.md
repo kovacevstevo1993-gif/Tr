@@ -1,6 +1,6 @@
 # 26/10/2026 - RIMISURATI TUTTI I 30 SCREENSHOT DELLE DURATE ALDI (salvati in senior_advantage/screenshot_durate_aldi/01..30.jpg, ordine = blocco)
 - Risultato: 29 su 30 fini blocco coincidono con quelle usate (ENDS9 in code/long9_kit.py). SBAGLIATO SOLO il blocco 12: fine = 06:06 + 27 f = 11007 (usato 10987, cifra 7 al posto di 27). Di conseguenza B12 deve durare 971 (non 951) e B13 883 (non 903); gli altri blocchi invariati.
-- Blocchi 18/19: lo screenshot originale (22:29 del 25/10) da fine B18 = 09:07 + 29/30 f (=16439/16440), come usato; gli screenshot del 26/10 (12:21-12:49) mostrano il confine voce B18/B19 a 09:07 + 0 f (16410), cioe 1 s prima: la timeline dell'utente e cambiata dopo gli screenshot originali (fine B19 uguale: 09:42 + 9 f = 17469). Nella timeline del 26/10 al posto della slide B19 c'e la slide B20.
+- Blocchi 18/19: lo screenshot originale (22:29 del 25/10) da fine B18 = 09:07 + 29/30 f (=16439/16440), come usato; gli screenshot del 26/10 (12:21-12:49) mostrano il confine voce B18/B19 a 09:07 + 0 f (16410), cioe 1 s prima. NON SO spiegare la differenza (l'utente dice che la timeline non e stata cambiata: non affermare il contrario). Fine B19 uguale nei due casi: 09:42 + 9 f = 17469. Nella timeline del 26/10 al posto della slide B19 c'e la slide B20.
 - Slide NON rifatte (nessun ordine).
 
 # 26/10/2026 - ERRORE DI LETTURA DURATE ALDI (screenshot dell'utente con cursore sulla fine del blocco 12)
