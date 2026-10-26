@@ -703,3 +703,4 @@
 - Dopo l'unione su main, tutti i 22 copioni vecchi risultavano "committati dopo il 22/10" e l'hook bloccava ogni risposta. Ho ripetuto la stessa risposta molte volte invece di risolvere. Utente: "Sposta la data. Bastaaaaa".
 - SOLUZIONE: DAL dell'hook spostata a 2026-10-26T20:50:00Z (provato: passa con lo stato attuale). Regola: se un hook blocca per una causa che non dipende dal mio lavoro, la causa si dice UNA volta e si corregge; mai ripetere la stessa risposta.
 - Mai fare la revisione di copioni vecchi gia' consegnati (N.13).
+- (26/10, utente: "che senso ha se non lo fa sui copioni nuovi") PROVA e DIFETTO: una cartella di copione NUOVA e non ancora aggiunta a git non veniva vista dall'hook (git status la mostra come cartella unica): l'hook non bloccava sui video nuovi. Corretto con `git status --porcelain -uall`. Provato: stato attuale rc=0, cartella nuova senza revisione rc=2.

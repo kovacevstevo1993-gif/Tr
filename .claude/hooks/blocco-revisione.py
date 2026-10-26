@@ -10,7 +10,7 @@ except Exception: d={}
 if not os.path.exists(os.path.join('/tmp/conti_sessions',str(d.get('session_id','x')))): sys.exit(0)
 root=os.environ.get('CLAUDE_PROJECT_DIR','.')
 def git(*a): return subprocess.run(['git',*a],cwd=root,capture_output=True,text=True).stdout
-cambiati=set(l[3:].strip() for l in git('status','--porcelain').splitlines())
+cambiati=set(l[3:].strip() for l in git('status','--porcelain','-uall').splitlines())
 cambiati|=set(l.strip() for l in git('log','--since='+DAL,'--name-only','--format=').splitlines())
 err=[]
 for f in sorted(x for x in cambiati if x.startswith('conti_in_pensione/') and x.endswith('/copione-blocchi.txt')):
