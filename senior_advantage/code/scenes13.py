@@ -121,8 +121,8 @@ def header13(img, t, title, pills=None, t_pills=0.0, lit=None):
     """pills: None = nessuna barra; altrimenti n. pillole (10). lit: {indice: secondo}"""
     a = seg(t, 0.05, 0.5)
     if a > 0:
-        put(img, hdr_spr(), 540, 175 - 40 * (1 - ease(a)), alpha=ease(a), shadow=8)
-    ty = 112 if pills else 150
+        put(img, hdr_spr(), 540, 215 - 40 * (1 - ease(a)), alpha=ease(a), shadow=8)
+    ty = 152 if pills else 190
     xtext(img, t, 0.2, title, 540, ty, 56, IVORY, shadow=4, track=3, maxw=880)
     if pills:
         for k in range(pills):
@@ -134,7 +134,7 @@ def header13(img, t, title, pills=None, t_pills=0.0, lit=None):
             if on:
                 u = seg(t, lit[k], 0.35)
                 sc = 1.0 + 0.45 * math.sin(math.pi * min(1.0, u))
-            put(img, pill_spr("gold" if on else "teal"), 540 + (k - 4.5) * 80, 228, scale=sc, alpha=ease(ak))
+            put(img, pill_spr("gold" if on else "teal"), 540 + (k - 4.5) * 80, 268, scale=sc, alpha=ease(ak))
 
 # ------------------------------------------------------------------ sprite
 def wordmark_spr():
@@ -432,7 +432,7 @@ def c1(img, t):
     S._cur["b"] = 1
     header13(img, t, "THE PROMISE")
     ta = T("Aldi makes"); tg = T("too good"); tn = T("not satisfied"); tr = T("replace"); tf = T("refund"); tb = T("Both")
-    pp(img, t, ta, wordmark_spr(), 540, 420, shadow=12, amp=5, ph=0.2)
+    pp(img, t, ta, wordmark_spr(), 540, 450, shadow=12, amp=5, ph=0.2)
     s, al, a = pop(t, tg, 0.5)
     if a > 0:
         put(img, stamp_spr("TOO GOOD TO BE TRUE?", 880, 130, 50), 540 + bob(t, 3, 0.4, 1), 612 + bob(t, 4, 0.55, 2), scale=min(1.0, s), rot=-4, alpha=al, shadow=10)
@@ -560,9 +560,9 @@ def c5(img, t):
         put(img, fl, 540, 1680, alpha=ease(ad))
     u = seg(t, twk - 0.6, 2.3)
     if u > 0:
-        x = -100 + (790 - (-100)) * ease(u)
+        x = 150 + (800 - 150) * ease(u)
         step = int((t * 3.4) % 2) if u < 1 else 0
-        put(img, shopper_spr(step), x, 1470, alpha=min(1.0, u * 6), shadow=10)
+        put(img, shopper_spr(step), x, 1470, alpha=min(1.0, u * 5), shadow=10)
     xtext(img, t, te, "EASY TO WALK RIGHT PAST", 540, 1790, 50, GOLD, shadow=4, track=2, maxw=940)
 
 def _floor():
@@ -585,11 +585,11 @@ def c6(img, t):
     s, al, a = pop(t, ttn, 0.45)
     if a > 0:
         pulse = 1.0 + 0.03 * math.sin(t * 6.0) * env(t)
-        put(img, cta_spr(), 540, 1700, scale=min(1.0, s) * pulse, alpha=al, shadow=12)
-        bst(img, t, ttn, 540, 1700, n=10, rad=240, seed=61, dur=0.5)
+        put(img, cta_spr(), 540, 1670, scale=min(1.0, s) * pulse, alpha=al, shadow=12)
+        bst(img, t, ttn, 540, 1670, n=10, rad=240, seed=61, dur=0.5)
     ah = seg(t, ttn + 0.1, 0.5)
     if ah > 0 and t < D() - 0.5:
-        put(img, hand_spr(), 760 + 60 * (1 - ease(ah)), 1790 + 60 * (1 - ease(ah)) - (10 * math.sin(t * 6) if ah >= 1 else 0), scale=0.6, alpha=min(1.0, ah * 3))
+        put(img, hand_spr(), 780 + 50 * (1 - ease(ah)), 1730 + 50 * (1 - ease(ah)) - (10 * math.sin(t * 6) * env(t) if ah >= 1 else 0), scale=0.6, alpha=min(1.0, ah * 3))
 
 # ------------------------------------------------------------------ B7 (204 f = 6,8 s)
 def c7(img, t):
