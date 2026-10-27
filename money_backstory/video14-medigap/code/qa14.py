@@ -41,7 +41,7 @@ for i, (fn, n) in enumerate(zip(M.SLIDES[blk], M.SPEC[blk]), 1):
     unstable = 0
     for f in range(n81, n):
         unstable = max(unstable, int((masks[f] ^ fin).sum()))
-    first = next((f for f, a_ in enumerate(areas) if a_ >= 0.03 * area_f), None)
+    first = next((f for f, a_ in enumerate(areas) if a_ >= 0.005 * area_f), None)
     # buco: fotogrammi consecutivi prima dell'80% senza nessun cambiamento
     run = best = 0
     for f in range(1, n80):
