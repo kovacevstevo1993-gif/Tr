@@ -79,3 +79,11 @@ Storia: in cucina il biscotto sparisce dal piatto; topolino "Io non sono stato!"
 - clip8: l'abbraccio finale degenerava dopo il fotogramma 26 -> usata solo la parte buona in ping-pong (originale clip8_v1.mp4).
 - Difetti dichiarati: personaggi piccoli in basso nelle scene larghe; nessun abbraccio nel finale. Pacchetto testi/miniatura NON fatti (solo se li chiede).
 - 25/10 "Il regalo per la volpe": la voce di Chip legge "Shh!" come lettere ("s h h"). L'utente: "ormai l'hai fatto, rimane cosi'" (non rifare). TRAPPOLA voci: mai "Shh!" nei testi, usare "Silenzio!" o "Zitto, zitto!"; ascoltare le battute con effetti/onomatopee, il controllo Whisper non basta.
+
+## STATO FINALE 26/10/2026 (leggere questo per ultimo, vale piu' di tutto sopra)
+- PUBBLICATO dall'utente: regalo per la volpe (25/10). Consegnato con pacchetto + miniatura per la pubblicazione: slittino pazzo (docs/SEO_slittino_pazzo.md, miniatura_slitta_1080x1920.jpg).
+- NON pubblicati (video in parco/): short_palloncino_rosso, short_chi_ha_mangiato_il_biscotto (difetto: rana tagliata nel finale; storia simile a "Barattolo misterioso"), short_elefantino_ha_fame, short_chi_ha_rubato_la_torta (difetto: bocche aperte nel finale), short_la_mela_di_spike (difetto: Spike non porge la mela). Per ognuno pacchetto/miniatura NON fatti: farli solo se li chiede.
+- REGOLE EMERSE: decide SOLO l'utente (non tagliare/cambiare cose da solo senza chiedere: 25/10 ha tagliato l'abbraccio finale e l'utente si e' arrabbiato); prima di scegliere una storia controllare i titoli del canale (feed RSS); modello di lavoro che l'utente apprezza di piu': storiella con dialoghi, scene larghe + primi piani, 8-12 s o fino a ~22 s, senza voce finale "iscrivetevi" (solo pulsante). Evitare "Shh!" nella voce. Miniatura: SOLO da fotogrammi puliti di partenza (startN.png) o pose, mai da fotogrammi del video (ghosting).
+- Quota HF ~8 clip/giorno (si rinnova ~24 h dopo). Pollinations/Gemini a zero: niente nuovi personaggi. Personaggi: topolino, Chip, Spike, elefantino, volpe, rana. L'utente vuole "tutto nuovo" ma non e' possibile senza immagini nuove: dirlo, non inventare.
+- vidIQ: saldo 110 crediti dopo il 26/10 (spendere solo se autorizzato; ricerche in docs/RICERCHE-VIDIQ.md).
+- Reti: token HF nei segreti di rete; pip install gradio_client opencv-python-headless scipy edge-tts praat-parselmouth faster-whisper.
