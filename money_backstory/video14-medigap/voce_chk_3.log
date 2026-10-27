@@ -4,3 +4,11 @@
    DIFF replace copione: three | sentito: 3
    DIFF replace copione: from | sentito: for
    DIFF replace copione: four | sentito: 4
+--- b16 large-v3: So what should you do this fall? One, before you drop any Medigap policy, remember that Medicare says you may not get it back. Two, before you call a company, find out whether you are in your open enrollment period or have a guaranteed issue right. Three, compare the same plan letter from more than one company and ask how the price is set. 4. Call your state health insurance assistance program, which gives free help and is not connected to any insurance company.
+   DIFF replace copione: four | sentito: 4
+--- b17 medium.en: To sum up, five facts. One, Medigap pays your share of original Medicare costs, and it is sold by private companies. Two, Plan G covers a lot, but not the Part B deductible. Three, your Medigap open enrollment lasts six months, and it happens only once. Four, after it, a company may deny you or charge you more unless you have a guaranteed issue right. Five, if you drop Metagap for advantage, you may not get it back.
+   DIFF replace copione: medigap | sentito: metagap
+--- b17 large-v3: To sum up, five facts. One, Medigap pays your share of original Medicare costs, and it is sold by private companies. Two, Plan G covers a lot, but not the Part B deductible. Three, your Medigap open enrollment lasts six months, and it happens only once. Four, after it, a company may deny you or charge you more, unless you have a guaranteed issue right. Five, if you drop Medigap for advantage, you may not get it back.
+--- b18 medium.en: If this helped, send it to someone who is about to turn 65 and tell me in the comments which plan you were thinking about. One last thing, this video is general information, not insurance advice. Rules, prices, and plans differ by state, so confirm with Medicare or your state insurance department before you act. This channel is not affiliated with Medicare.
+   DIFF replace copione: sixty five | sentito: 65
+   DIFF replace copione: are | sentito: were
