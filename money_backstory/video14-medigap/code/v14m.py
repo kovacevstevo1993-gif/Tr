@@ -220,7 +220,7 @@ def final14m(t, seed=215):
     return frame(fr)
 S[18] = [
     slide('SEND IT TO SOMEONE', 2447, [E('icard', (500, 260, 1420, 690), None, icon='mail', l1='SOMEONE ABOUT', l2='TO TURN 65', col=gold)], 'SHARE IT WITH ONE PERSON'),
-    slide('TELL ME IN THE COMMENTS', 2448, [E('line', (200, 330, 1720, 430), None, t='WHICH PLAN ARE YOU', size=88, col=white), E('line', (200, 470, 1720, 570), 'which plan', t='THINKING ABOUT?', size=88, col=goldL)],
+    slide('TELL ME IN THE COMMENTS', 2448, [E('line', (200, 330, 1720, 430), None, t='WHICH PLAN WERE YOU', size=88, col=white), E('line', (200, 470, 1720, 570), 'which plan', t='THINKING ABOUT?', size=88, col=goldL)],
           'ANSWER IN THE COMMENTS'),
     frozen(final14m),
 ]
