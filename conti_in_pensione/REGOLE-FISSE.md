@@ -722,3 +722,5 @@
 ## ERRORE DEL 27/10/2026 (schermate di Facebook) - RICOPIATO ALL'UTENTE QUELLO CHE VEDE (regola gia' scritta il 25/10)
 - Utente (screenshot "Stato della Pagina", pagina Film A Pillole): "Ma la smetti di dirmi quello che vedo io ma. Io boh lo vedo anche io quello che c'e' scritto". Ho riletto le voci della schermata (A rischio, Monetizzazione attiva) invece di rispondere alla domanda.
 - REGOLA (ribadita): davanti a uno screenshot si risponde SOLO alla domanda fatta; mai riscrivere cio' che e' scritto sullo schermo. Se non c'e' una risposta (es. tempi non pubblicati da Meta), dirlo in una riga e basta.
+
+STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-blocco01..15.mp4 in conti_in_pensione/31-video-lungo-12/clip, consegnati all'utente (controllo su tutti i fotogrammi OK, fotogrammi = DURATE.txt, sequenze a 0,5 s guardate). Sorgenti in 31-video-lungo-12/sorgenti (specs-v12.js, regia12.js). Prossimi passi SOLO su ordine: titolo (piano vidIQ prima), miniature, pacchetto.
