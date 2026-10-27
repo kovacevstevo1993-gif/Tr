@@ -69,3 +69,5 @@
    DIFF replace copione: two | sentito: 2
    DIFF replace copione: three | sentito: 3
    DIFF replace copione: four | sentito: 4
+--- b17 medium.en: To sum up, five facts. One, Medigap pays your share of original Medicare costs, and it is sold by private companies. Two, Plan G covers a lot, but not the Part B deductible. Three, your Medigap open enrollment lasts six months, and it happens only once. Four, after it, a company may deny you or charge you more, unless you have a guaranteed issue right. Five, if you drop Metagap for advantage, you may not get it back.
+   DIFF replace copione: medigap | sentito: metagap
