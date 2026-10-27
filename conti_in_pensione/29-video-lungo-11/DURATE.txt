@@ -1,0 +1,18 @@
+# Video lungo 11 (aumento pensioni gennaio 2027) - durate dagli screenshot CapCut (30 fps), lettura N.29
+# (fine blocco = ultimo segno disegnato prima della riga bianca + 1; misurato al pixel su 5 screenshot, riga a x=358, 67 px per fotogramma)
+# blocco | fine (timeline) | fotogrammi fine | durata fotogrammi
+1 | 00:20 + 20f | 620  | 620
+2 | 00:44 + 2f  | 1322 | 702
+3 | 01:09 + 1f  | 2071 | 749
+4 | 01:35 + 5f  | 2855 | 784
+5 | 01:51 + 26f | 3356 | 501
+6 | 02:13 + 15f | 4005 | 649
+7 | 02:36 + 21f | 4701 | 696
+8 | 03:00 + 3f  | 5403 | 702
+9 | 03:22 + 16f | 6076 | 673
+10 | 03:46 + 10f | 6790 | 714
+11 | 04:09 + 29f | 7499 | 709
+12 | 04:31 + 24f | 8154 | 655
+13 | 04:53 + 14f | 8804 | 650
+14 | 05:19 + 19f | 9589 | 785
+# totale 9589 fotogrammi = 05:19 + 19f

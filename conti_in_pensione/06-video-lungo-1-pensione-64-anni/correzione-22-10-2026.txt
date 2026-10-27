@@ -1,0 +1,10 @@
+CORREZIONE VIDEO 1 (22/10/2026) - verificata su inps.it (scheda "Pensione anticipata", scheda "Computo di periodi assicurativi in Gestione Separata", agg. 23/04/2025)
+
+=== DOVE VA ===
+Commento FISSATO sul video 1 ("Pensione anticipata 2027: requisiti, regole e proposte"). In più, come prima riga della descrizione del video 1, la riga CORREZIONE.
+
+=== COMMENTO DA FISSARE ===
+CORREZIONE: nel video diciamo che la pensione a 64 anni è solo per i contributivi puri e che con un contributo prima del 1996 non si può. Non è corretto. Con il computo in Gestione Separata si applicano i requisiti dei contributivi puri anche a chi ha periodi prima del 1996. Condizioni dell'Inps: almeno 1 mese di contributi in Gestione Separata, meno di 18 anni di contributi al 31/12/1995 e almeno 15 anni totali, di cui 5 dopo il 1996. Per uscire a 64 anni servono poi 20 anni di contributi effettivi (64 anni e 1 mese e 20 anni e 1 mese nel 2027) e una prima rata di almeno 3 volte l'assegno sociale (meno per le donne con figli). Il computo vale per tutti i periodi insieme e la pensione è calcolata col metodo contributivo, quindi di solito più bassa. Grazie a @Danielronane per la segnalazione. Verificate sempre il vostro caso sul sito dell'Inps o con un patronato.
+
+=== RIGA PER LA DESCRIZIONE (prima riga) ===
+CORREZIONE: la pensione a 64 anni non è solo per i contributivi puri. Con il computo in Gestione Separata può arrivarci anche chi ha contributi prima del 1996: leggi il commento fissato.

@@ -1,0 +1,16 @@
+1 | 0db6cb7aef | italiano OK | logica OK | persona OK | numeri OK | gancio: tema nelle prime parole; 'la' = la cifra; 3 esempi annunciati = blocchi 6-7; al centesimo mantenuto
+2 | 2e78d04abf | italiano OK | logica OK | persona OK | numeri OK | 546,24 x 13 scheda Inps 20/10/2026; non tassato; a domanda; decorrenza
+3 | 74607a65a2 | italiano OK | logica OK | persona OK | numeri OK | quattro requisiti annunciati = quattro elencati (eta', residenza+10 anni, cittadinanza, redditi)
+4 | 58df4adc8d | italiano OK | logica OK | persona OK | numeri OK | 7.101,12 e 14.202,24; 'quello' = il reddito; netto di Irpef e addizionali (imposizione fiscale)
+5 | c6c681203b | italiano OK | logica OK | persona OK | numeri OK | voi = la coppia in tutto il blocco; intero sotto 7.101,12, differenza nel mezzo, zero sopra
+6 | b5b9d05a3f | italiano OK | logica OK | persona OK | numeri OK | 14.202,24-9.100=5.102,24; /13=392,48; 9.100/13=700
+7 | ea1275acab | italiano OK | logica OK | persona OK | numeri OK | 11.700->2.502,24/13=192,48; 13.000->1.202,24/13=92,48; parallelo nei due esempi
+8 | b48b05ee17 | italiano OK | logica OK | persona OK | numeri OK | 14.202,24/13=1.092,48 (circa, per la tredicesima); tu in tutto il blocco; regola euro per euro solo nella fascia di mezzo
+9 | eaf57d1a2f | italiano OK | logica OK | persona OK | numeri OK | iscrizione nuova (non come video 8 e 9); noi = canale
+10 | 91b5ef1729 | italiano OK | logica OK | persona OK | numeri OK | vedova = non coniugata; 7.101,12-5.200=1.901,12; /13=146,24
+11 | de703bf37f | italiano OK | logica OK | persona OK | numeri OK | non contano TFR, casa, arretrati a tassazione separata; contano pensioni anche estere, fabbricati, terreni, interessi (scheda Inps)
+12 | 012e36f2c8 | italiano OK | logica OK | persona OK | numeri OK | iscrizione 16-65, no pensione diretta, si' con reversibilita', valida anche senza versamenti (scheda Inps 12/08/2025)
+13 | 9b2fdedf0a | italiano OK | logica OK | persona OK | numeri OK | 57 anni con 5 anni se >= 1,2 x 546,24 = 655,49; 65 anni senza limite; contributivo, non integrabile, niente superstiti
+14 | 31cf55d96d | italiano OK | logica OK | persona OK | numeri OK | online, 803 164 da fisso, 06 164 164 da cellulare, patronato; dal mese dopo la domanda
+15 | 710b64b34a | italiano OK | logica OK | persona OK | numeri OK | tre avvertenze annunciate = tre (Prima, Seconda, Terza); estero oltre 29 giorni, revoca dopo un anno; rivalutazione a gennaio
+16 | 1989f72d96 | italiano OK | logica OK | persona OK | numeri OK | chiusura nuova (condividi + opinione); disclaimer; nessuna promessa non decisa

@@ -1,0 +1,20 @@
+# Video lungo 10 (pensione alle casalinghe) - durate dagli screenshot CapCut (30 fps), lettura N.29
+# (fine blocco = segno sotto la riga bianca; se la riga e' tra due segni si arrotonda per eccesso)
+# blocco | fine (timeline) | fotogrammi fine | durata fotogrammi
+1 | 00:20 + 2f  | 602  | 602
+2 | 00:43 + 26f | 1316 | 714
+3 | 01:04 + 16f | 1936 | 620
+4 | 01:26 + 4f  | 2584 | 648
+5 | 01:44 + 12f | 3132 | 548
+6 | 02:07 + 14f | 3824 | 692
+7 | 02:31 + 3f  | 4533 | 709
+8 | 02:53 + 10f | 5200 | 667
+9 | 03:10 + 1f  | 5701 | 501
+10 | 03:35 + 19f | 6469 | 768
+11 | 03:59 + 7f  | 7177 | 708
+12 | 04:17 + 3f  | 7713 | 536
+13 | 04:39 + 17f | 8387 | 674
+14 | 05:01 + 24f | 9054 | 667
+15 | 05:21 + 20f | 9650 | 596
+16 | 05:44 + 19f | 10339 | 689
+# totale 10339 fotogrammi = 05:44 + 19f (misura al pixel: cursore a x 359,5; un fotogramma circa 66 px)

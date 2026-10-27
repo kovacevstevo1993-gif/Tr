@@ -34,6 +34,29 @@ if blocchi:
                 m = re.match(r'^1[ |]\s*(.+)$', l)
                 if m and ' '.join(m.group(1).lower().split()[:3]) == ' '.join(blocchi[0][1].lower().split()[:3]):
                     err.append(f'gancio uguale a {g}')
+# --- controlli aggiunti il 22/10/2026 (N.42/N.48, short 12: difetti trovati solo dopo l'invio) ---
+def _w(t): return re.findall(r"[a-zàèéìòù']+", t.lower())
+_stop = set("il lo la i gli le un una di a da in con su per tra fra e o ma che chi non è ti ci ne si al del della dei delle nel nella sul sulla questo questa quello l' un'".split())
+def _sh(t, n=3):
+    w = _w(t); return {tuple(w[i:i+n]) for i in range(len(w)-n+1) if any(x not in _stop for x in w[i:i+n])}
+# 1) stessa espressione (3 parole) in due blocchi diversi dello stesso copione
+visti = {}
+for n, t in blocchi:
+    for g in _sh(t):
+        if g in visti and visti[g] != n: err.append(f'ripetizione: "{" ".join(g)}" nei blocchi {visti[g]} e {n}')
+        visti.setdefault(g, n)
+# 2) espressioni di 4 parole gia' usate nei copioni degli altri video/short (formule ripetute, regola N.41/N.23)
+mio = os.path.abspath(f); gia = {}
+for g in glob.glob('*/copione-blocchi.txt'):
+    if os.path.abspath(g) == mio: continue
+    for l in open(g, encoding='utf-8'):
+        for sh in _sh(re.sub(r'^\d+[ |]\s*', '', l), 4): gia.setdefault(sh, g.split('/')[0])
+ripetute = sorted({(" ".join(sh), gia[sh]) for _, t in blocchi for sh in _sh(t, 4) if sh in gia})
+for fr, d in ripetute[:12]: print(f'VERIFICARE formula gia usata ({d}): "{fr}"')
+# 3) parole assolute: cercare l'eccezione su inps.it o togliere (N.48)
+for n, t in blocchi:
+    for m in re.finditer(r"\b(solo|soltanto|mai|tutti|tutte|nessuno|nessuna|sempre|nulla|niente|ogni volta)\b", t, re.I):
+        print(f'VERIFICARE parola assoluta "{m.group(1)}" nel blocco {n}: eccezione su inps.it?')
 import os as _o,sys as _s;_s.path.insert(0,_o.path.dirname(_o.path.abspath(__file__)));from check_data import errori_data
 for _e in errori_data(' '.join(t for _,t in blocchi)):err.append(_e)
 print(f'{len(blocchi)} blocchi, {sum(len(t) for _, t in blocchi)} caratteri')

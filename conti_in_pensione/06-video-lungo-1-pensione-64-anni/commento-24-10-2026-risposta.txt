@@ -1,0 +1,9 @@
+COMMENTO di @vincenzobelgiovine8400 sul video 1 (24/10/2026):
+Ho iniziato a lavorare da 14 anni oggi ne ho 50 ,ho maturato 36 anni di lavoro senza avere buchi, quando andrò in pensione... reddito attuale 38000
+
+RISPOSTA FINALE (controllata con qa/qa_commento.py: COMMENTO OK):
+Ciao e grazie del commento! Ecco le tue tre date. Uso i requisiti più alti già fissati dalla legge, quelli del 2028 (oggi sono più bassi):
+1) Contributi per la pensione anticipata: 43 anni e 1 mese per gli uomini (42 anni e 1 mese per le donne). Ti mancano circa 7 anni e 1 mese: li maturi verso la fine del 2033, a circa 57 anni.
+2) Età per la pensione di vecchiaia: 67 anni e 3 mesi con 20 anni di contributi, quindi tra il 2043 e il 2044 (dipende dal tuo compleanno).
+3) Finestra di tre mesi: dopo i contributi la pensione anticipata parte 3 mesi dopo (per alcuni dipendenti pubblici sono di più), quindi all'inizio del 2034. Se sei dipendente devi aver lasciato il lavoro.
+La più vicina è l'anticipata, intorno al 2034. I 38.000 euro non cambiano le date: contano per l'importo, che puoi simulare con "Pensami" sul sito dell'Inps. Sono stime: dopo il 2028 i requisiti possono salire con la speranza di vita. Hai iniziato a 14 anni: chiedi a un patronato se i contributi versati prima dei 18 anni per te valgono di più, perché potrebbe anticipare la data. Controlla i 36 anni nell'estratto conto contributivo su My Inps. Il canale è solo informativo: per il tuo caso rivolgiti all'Inps o a un patronato.

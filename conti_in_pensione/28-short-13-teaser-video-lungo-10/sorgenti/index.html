@@ -1,0 +1,361 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}svg{display:block}</style></head><body>
+<svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920"><defs>
+<radialGradient id="g_bg" cx="0.5" cy="0.35" r="0.95"><stop offset="0" stop-color="#1E9096"/><stop offset="0.5" stop-color="#0D5158"/><stop offset="1" stop-color="#041F23"/></radialGradient>
+<linearGradient id="g_paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE7EA"/></linearGradient>
+<linearGradient id="g_head" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FDDB7"/><stop offset="1" stop-color="#1B9F81"/></linearGradient>
+<linearGradient id="g_metal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8FA3A8"/><stop offset="0.45" stop-color="#F4F8F9"/><stop offset="1" stop-color="#7F9398"/></linearGradient>
+<linearGradient id="g_rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9BF0DB"/><stop offset="1" stop-color="#127F70"/></linearGradient>
+<linearGradient id="g_disc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3ECBAB"/><stop offset="1" stop-color="#0C5F5C"/></linearGradient>
+<linearGradient id="g_badge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE3BE"/><stop offset="1" stop-color="#159078"/></linearGradient>
+<linearGradient id="g_silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3F8F9"/><stop offset="1" stop-color="#9FB4B9"/></linearGradient>
+<linearGradient id="g_red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A63"/><stop offset="1" stop-color="#D23A25"/></linearGradient>
+<linearGradient id="g_spot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.0"/><stop offset="1" stop-color="#9BF0DB" stop-opacity="0.35"/></linearGradient>
+<clipPath id="cal"><rect x="190" y="200" width="420" height="420" rx="56"/></clipPath>
+<filter id="g_sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="26" stdDeviation="22" flood-color="#021A1D" flood-opacity="0.6"/></filter>
+<filter id="g_sh2" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#032226" flood-opacity="0.55"/></filter>
+<filter id="g_sh3" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#032226" flood-opacity="0.5"/></filter>
+<filter id="g_glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1080" height="1920" fill="url(#g_bg)"/>
+<g id="bok"></g><g id="cam"><g id="scene"></g></g>
+<rect id="vig" width="1080" height="1920" fill="none"/>
+</svg>
+<script>
+const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in (attrs||{}))e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const eo3=x=>1-Math.pow(1-x,3);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eob=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2);};
+function T(n,x,y,r,s){r=r||0;s=(s===undefined?1:s);n.setAttribute('transform','translate('+x+' '+y+') rotate('+r+') scale('+s+')');}
+function op(n,o){n.setAttribute('opacity',o);}
+const FONT='DejaVu Sans, Liberation Sans, Arial, sans-serif';
+function txt(p,s,x,y,size,fill,weight,anchor){const t=el('text',{x:x,y:y,'font-size':size,fill:fill,'font-family':FONT,'font-weight':weight||'bold','text-anchor':anchor||'middle'},p);t.textContent=s;return t;}
+function euro(p,cx,cy,s,color,sw){const g=el('g',{fill:'none',stroke:color,'stroke-width':(sw||17)*s,'stroke-linecap':'round'},p);
+ el('path',{d:`M${cx+37*s} ${cy-37*s} A${54*s} ${54*s} 0 1 0 ${cx+37*s} ${cy+37*s}`},g);
+ el('line',{x1:cx-48*s,y1:cy-12*s,x2:cx+18*s,y2:cy-12*s},g);
+ el('line',{x1:cx-48*s,y1:cy+14*s,x2:cx+18*s,y2:cy+14*s},g);return g;}
+function coin(p,cx,cy,r){const g=el('g',{},p);
+ el('circle',{cx:cx,cy:cy,r:r,fill:'url(#g_rim)'},g);
+ el('circle',{cx:cx,cy:cy,r:r,fill:'none',stroke:'#fff','stroke-opacity':.55,'stroke-width':r*0.027},g);
+ el('circle',{cx:cx,cy:cy,r:r*0.84,fill:'url(#g_disc)'},g);
+ el('circle',{cx:cx,cy:cy,r:r*0.71,fill:'none',stroke:'#B5F5E4','stroke-opacity':.55,'stroke-width':r*0.022,'stroke-dasharray':(r*.03)+' '+(r*.06)},g);
+ el('path',{d:`M${cx-r*.6} ${cy-r*.28} A${r*.7} ${r*.7} 0 0 1 ${cx+r*.16} ${cy-r*.6}`,fill:'none',stroke:'#fff','stroke-opacity':.4,'stroke-width':r*.06,'stroke-linecap':'round'},g);
+ euro(g,cx,cy,r/112,'#fff',17);return g;}
+function silverCoin(p,cx,cy,rx,ry,h){ // flat stacked coin (ellipse) with thickness
+ const g=el('g',{},p);
+ el('ellipse',{cx:cx,cy:cy+h,rx:rx,ry:ry,fill:'#6F878C'},g);
+ el('rect',{x:cx-rx,y:cy,width:rx*2,height:h,fill:'#8AA1A6'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,fill:'url(#g_silver)'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx*.68,ry:ry*.68,fill:'none',stroke:'#5B7378','stroke-width':2,opacity:.6},g);
+ return g;}
+function goldCoin(p,cx,cy,rx,ry,h){const g=el('g',{},p);
+ el('ellipse',{cx:cx,cy:cy+h,rx:rx,ry:ry,fill:'#127F70'},g);
+ el('rect',{x:cx-rx,y:cy,width:rx*2,height:h,fill:'#1A9C86'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,fill:'url(#g_rim)'},g);
+ el('ellipse',{cx:cx,cy:cy,rx:rx*.68,ry:ry*.68,fill:'none',stroke:'#0B5A55','stroke-width':2,opacity:.5},g);
+ return g;}
+function paper(p,w,h,shadow){const g=el('g',{},p);
+ el('rect',{x:-w/2,y:0,width:w,height:h,rx:26,fill:'url(#g_paper)',filter:shadow===false?'':'url(#g_sh)'},g);
+ el('rect',{x:-w/2,y:0,width:w,height:h,rx:26,fill:'none',stroke:'#fff','stroke-opacity':.7,'stroke-width':3},g);
+ return g;}
+function metalRing(p,x,y,w,h){const g=el('g',{filter:'url(#g_sh3)'},p);
+ el('rect',{x:x-w/2,y:y,width:w,height:h,rx:w/2,fill:'url(#g_metal)'},g);
+ el('rect',{x:x-w*.2,y:y+h*.15,width:w*.4,height:h*.7,rx:w*.2,fill:'#0A3F45',opacity:.85},g);return g;}
+// cedolino rows
+function rows(p,labels,w,y0,gap,ink){const out=[];labels.forEach((l,i)=>{const y=y0+i*gap;
+ el('rect',{x:-w/2+40,y:y+gap-22,width:w-80,height:3,fill:'#C9D6D8'},p);
+ txt(p,l,-w/2+50,y+gap-38,32,ink||'#0B4A50','bold','start');
+ el('rect',{x:w/2-250,y:y+gap-66,width:200,height:30,rx:15,fill:'#BFD0D3'},p);out.push(y);});return out;}
+
+const LT='#9BF0DB',INK='#0D5158',YEL='#FFD43B',RED='#E8503A';
+function plateRect(p,x,y,w,h,r,fill){const g=el('g',{},p);el('rect',{x:x,y:y,width:w,height:h,rx:r,fill:fill||'url(#g_paper)',filter:'url(#g_sh)'},g);el('rect',{x:x,y:y,width:w,height:h,rx:r,fill:'none',stroke:'#fff','stroke-opacity':.6,'stroke-width':3},g);return g;}
+function pillS(p,label,w,fs,fill,col){const g=el('g',{},p);el('rect',{x:-w/2,y:-fs*0.95,width:w,height:fs*1.9,rx:fs*0.95,fill:fill,stroke:'#fff','stroke-width':6,filter:'url(#g_sh2)'},g);txt(g,label,0,fs*0.36,fs,col||'#fff','bold');return g;}
+function circleN(p,r,n,fill){const g=el('g',{},p);el('circle',{r:r,fill:fill,stroke:'#fff','stroke-width':9,filter:'url(#g_sh2)'},g);el('path',{d:`M${-r*.62} ${-r*.2} A${r*.7} ${r*.7} 0 0 1 ${r*.1} ${-r*.66}`,fill:'none',stroke:'#fff','stroke-opacity':.45,'stroke-width':r*.07,'stroke-linecap':'round'},g);txt(g,n,0,r*0.36,r*1.1,'#fff','bold');return g;}
+function tri(p,s){const g=el('g',{filter:'url(#g_sh2)'},p);el('path',{d:`M0 ${-s} L${s*1.05} ${s*.8} L${-s*1.05} ${s*.8}Z`,fill:YEL,stroke:'#fff','stroke-width':8,'stroke-linejoin':'round'},g);txt(g,'!',0,s*0.55,s*1.2,'#7A2A00','bold');return g;}
+function stamp(p,label,w,fs,col){const g=el('g',{},p);el('rect',{x:-w/2,y:-fs*.9,width:w,height:fs*1.8,rx:18,fill:'rgba(255,255,255,0.92)',stroke:col,'stroke-width':10},g);txt(g,label,0,fs*0.34,fs,col,'bold');return g;}
+function light(p,cx,cy,r,grad){const g=el('g',{},p);const dim=el('circle',{cx:cx,cy:cy,r:r,fill:'#17282B'},g);const on=el('circle',{cx:cx,cy:cy,r:r,fill:'url(#'+grad+')',stroke:'#fff','stroke-width':6,opacity:0},g);const gl=el('circle',{cx:cx,cy:cy,r:r*1.5,fill:grad==='tg'?'#35E39A':grad==='ty'?'#FFD43B':'#FF5A43',opacity:0,filter:'url(#g_glow)'},g);return {on,gl,g};}
+function playBtn(p){const g=el('g',{filter:'url(#g_sh)'},p);el('rect',{x:-330,y:-205,width:660,height:410,rx:90,fill:'url(#g_red)',stroke:'#fff','stroke-width':10},g);el('path',{d:'M-70 -110 L130 0 L-70 110Z',fill:'#fff','stroke-linejoin':'round',stroke:'#fff','stroke-width':26},g);return g;}
+
+// ===== SHORT 13 - teaser video lungo 10 (casalinghe) (1080x1920, 30 fps) =====
+// Regola n.5: movimenti LENTI (>=0.7 s), tutto completo almeno 0.5 s prima della fine, poi FERMO. Fascia y 330-680 libera per le didascalie di CapCut.
+const eob2=x=>{const c1=1.0,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2);};
+const pop=(t,a,d)=>Math.max(0,eob2(seg(t,a,a+(d||.9))));
+const sl=(t,a,d)=>eo3(seg(t,a,a+(d||.9)));
+function ttl(p,s,size,fill){const t=txt(p,s,0,0,size,fill||'#fff','bold');t.setAttribute('stroke','#06282C');t.setAttribute('stroke-width',size*0.16);t.setAttribute('stroke-linejoin','round');t.setAttribute('paint-order','stroke');return t;}
+function person(p,shirt,hair){const g=el('g',{},p);
+ el('path',{d:'M-135 232 Q-135 92 0 92 Q135 92 135 232 Z',fill:shirt,stroke:'#fff','stroke-width':7,'stroke-linejoin':'round',filter:'url(#g_sh2)'},g);
+ el('path',{d:'M-38 98 L0 158 L38 98 Z',fill:'#fff'},g);el('path',{d:'M-11 158 L0 226 L11 158 Z',fill:'#0B3A3F'},g);
+ el('rect',{x:-26,y:48,width:52,height:56,rx:16,fill:'#EDBE92'},g);
+ el('circle',{cx:0,cy:0,r:80,fill:'#F7D3B0',stroke:'#fff','stroke-width':6},g);
+ el('path',{d:'M-82 -8 Q-84 -96 0 -96 Q84 -96 82 -8 Q44 -52 -8 -50 Q-52 -48 -82 -8Z',fill:hair},g);
+ el('circle',{cx:-27,cy:10,r:9,fill:'#0B3A3F'},g);el('circle',{cx:27,cy:10,r:9,fill:'#0B3A3F'},g);
+ el('path',{d:'M-28 40 Q0 66 28 40',fill:'none',stroke:'#B5523B','stroke-width':8,'stroke-linecap':'round'},g);return g;}
+function eye(p){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:'M-120 0 Q0 -105 120 0 Q0 105 -120 0Z',fill:'#fff',stroke:'#0B4A50','stroke-width':8,'stroke-linejoin':'round'},g);
+ el('circle',{cx:0,cy:0,r:44,fill:'#1B9F81'},g);el('circle',{cx:0,cy:0,r:20,fill:'#0A1C1F'},g);
+ el('line',{x1:-100,y1:-80,x2:100,y2:80,stroke:RED,'stroke-width':20,'stroke-linecap':'round'},g);return g;}
+function check(p,r,col){const g=el('g',{},p);el('circle',{r:r,fill:col||'#1B9F81',stroke:'#fff','stroke-width':r*.16},g);
+ el('path',{d:`M${-r*.45} ${r*.02} l${r*.3} ${r*.32} l${r*.6} ${-r*.66}`,fill:'none',stroke:'#fff','stroke-width':r*.26,'stroke-linecap':'round','stroke-linejoin':'round'},g);return g;}
+function crossC(p,r){const g=el('g',{},p);el('circle',{r:r,fill:RED,stroke:'#fff','stroke-width':r*.16},g);
+ el('path',{d:`M${-r*.4} ${-r*.4} L${r*.4} ${r*.4} M${r*.4} ${-r*.4} L${-r*.4} ${r*.4}`,stroke:'#fff','stroke-width':r*.26,'stroke-linecap':'round'},g);return g;}
+function lockG(p,s){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:`M${-38*s} ${-10*s} V${-50*s} a${38*s} ${38*s} 0 0 1 ${76*s} 0 V${-10*s}`,fill:'none',stroke:'#fff','stroke-width':16*s,'stroke-linecap':'round'},g);
+ el('rect',{x:-58*s,y:-12*s,width:116*s,height:90*s,rx:20*s,fill:YEL,stroke:'#fff','stroke-width':7*s},g);el('circle',{cx:0,cy:30*s,r:12*s,fill:'#7A2A00'},g);return g;}
+function bigArrow(p){return el('path',{d:'M-60 -90 H60 V0 H110 L0 110 L-110 0 H-60Z',fill:YEL,stroke:'#fff','stroke-width':8,'stroke-linejoin':'round',filter:'url(#g_sh2)'},p);}
+
+function topLabelV(p,s){const fs=58,sp=8;const w=s.length*(fs*0.72+sp)+80;const t=el('g',{},p);
+ el('polygon',{points:'-16,-16 0,-32 16,-16 0,0',fill:'#7FF0D2',transform:'translate('+(-w/2+18)+' 0)'},t);
+ const x=txt(t,s,-w/2+64,fs*0.36,fs,'#7FF0D2','bold','start');x.setAttribute('letter-spacing',sp);return t;}
+function capV(p,lines,fs){fs=fs||58;const mx=Math.max(...lines.map(l=>l.length));fs=Math.min(fs,(1000-130)/(mx*0.76));const w=Math.min(1000,mx*fs*0.76+130);const h=lines.length*(fs*1.42)+54;const c=el('g',{},p);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:Math.min(60,h/2),fill:'#06303A',filter:'url(#g_sh2)'},c);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:Math.min(60,h/2),fill:'none',stroke:'#FFB020','stroke-width':6},c);
+ lines.forEach((l,i)=>txt(c,l,0,-h/2+27+fs*1.08+i*fs*1.42,fs,'#FFFFFF','bold'));return c;}
+const CAPY=1560;
+// entrata dal basso con dissolvenza (lenta): nessun elemento entra da fuori quadro
+function rise(t,a,d,n,y,dy,sc){const k=sl(t,a,d||.9);T(n,n._x,y+(1-k)*(dy||140),0,(sc||1));op(n,seg(t,a,a+(d||.9)*.6));}
+
+function thumb(p,s){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('rect',{x:-96*s,y:-8*s,width:44*s,height:96*s,rx:10*s,fill:'#0B4A50',stroke:'#fff','stroke-width':6*s},g);
+ el('path',{d:`M${-40*s} ${-4*s} L${-6*s} ${-78*s} Q${20*s} ${-96*s} ${32*s} ${-64*s} L${24*s} ${-26*s} H${86*s} Q${112*s} ${-24*s} ${104*s} ${8*s} L${92*s} ${62*s} Q${86*s} ${88*s} ${60*s} ${88*s} H${-40*s}Z`,fill:YEL,stroke:'#fff','stroke-width':7*s,'stroke-linejoin':'round'},g);return g;}
+function bell(p,s){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:`M${-70*s} ${50*s} Q${-60*s} ${30*s} ${-60*s} ${-10*s} Q${-60*s} ${-70*s} 0 ${-76*s} Q${60*s} ${-70*s} ${60*s} ${-10*s} Q${60*s} ${30*s} ${70*s} ${50*s}Z`,fill:YEL,stroke:'#fff','stroke-width':7*s,'stroke-linejoin':'round'},g);
+ el('circle',{cx:0,cy:68*s,r:16*s,fill:YEL,stroke:'#fff','stroke-width':5*s},g);return g;}
+function card(p,x,y,w,h,r){const g=el('g',{},p);plateRect(g,-w/2,-h/2,w,h,r||50);return g;}
+
+// tempi sulla voce (stima a caratteri dal testo del blocco e dalla durata dello screenshot, regola N.16).
+// Regole N.15/N.18: comparsa 0,9 s, ogni elemento resta fino a fine scena, distanza >= 1,0 s tra elementi, ultimo completo entro l'80 % del blocco.
+const DUR=[436, 352, 346, 310, 305, 369].map(x=>x/30);
+const TX=["Pensione alle casalinghe: dopo una certa età, anche chi non ha mai lavorato può ricevere ogni mese un aiuto dall'Inps, senza pagare tasse. Ma se sei sposata conta anche la pensione di tuo marito, e c'è una cifra che decide quanto ricevi.", "Funziona così: per le coppie l'Inps guarda i redditi di tutti e due, e quello di lui conta al netto delle tasse. Superata una prima soglia, ogni euro in più che prende lui è un euro in meno per te.", "E così l'importo scende fino ad arrivare a zero. Se tu non hai altri redditi, quanto deve prendere tuo marito perché succeda? Non lo diciamo qui: esiste una cifra precisa, e oltre quella l'aiuto non spetta più.", "Se invece sei vedova, il conto è un altro: per l'Inps non sei più sposata, quindi vale il limite di una persona sola. E cosa conta come reddito e cosa no può cambiare il risultato.", "C'è anche un errore che costa soldi: aspettare. L'aiuto parte dal mese dopo la domanda, quindi ogni mese che passa prima che tu la faccia è un mese che non ti viene pagato.", "La cifra e il conto completo li trovi nel video correlato qui sotto: toccalo adesso. Metti mi piace e iscriviti a Conti in Pensione. E manda questo short a una donna che conosci: sapere come funziona può servirle."];
+function vt(i,frag){const s=TX[i];const k=s.indexOf(frag);if(k<0)throw new Error('frag '+frag);return 0.15+(DUR[i]-0.6)*k/s.length-0.15;}
+const GAP=1.0;
+// tempo di avvio di ogni elemento: sulla parola, poi distanza minima e ultimo entro l'80 %
+function plan(i,frags){const n=frags.length+1,lim=0.8*DUR[i]-0.9;let t=frags.map(f=>vt(i,f)).concat([99]);
+ t[0]=Math.max(t[0],GAP);for(let k=1;k<n;k++)t[k]=Math.max(t[k],t[k-1]+GAP);
+ for(let k=n-1;k>=0;k--){const m=lim-(n-1-k)*GAP;if(t[k]>m)t[k]=m;}
+ return t;}
+const PL=[];
+function stampIn(t,o,a,x,y,r){const s=seg(t,a,a+.9);T(o,x,y,r||-4,s>0?lerp(1.4,1,eo3(s)):0);op(o,clamp(s*2.5));}
+function rowCard(p,n,title,sub,col){const g=card(p,0,0,940,190,46);
+ const c=el('g',{transform:'translate(-370 0)'},g);circleN(c,62,n,col||'url(#g_badge)');
+ txt(g,title,-270,sub?-4:22,50,INK,'bold','start');if(sub)txt(g,sub,-270,58,38,'#1B9F81','bold','start');g._x=540;return g;}
+function bigCard(p,top,main,sub,mainFill,w,h){h=h||260;const g=card(p,0,0,w||900,h,48);txt(g,top,0,-h*0.2,42,'#1B9F81','bold');txt(g,main,0,h*0.22,100,mainFill||INK,'bold');if(sub)txt(g,sub,0,h*0.4,36,'#5A6E73','bold');g._x=540;return g;}
+
+// ---- migliorie short 8 (poche, regola N.12): filetto verde sulle schede, barra di avanzamento 6 blocchi, titoletto con riga ----
+function card(p,x,y,w,h,r){const g=el('g',{},p);plateRect(g,-w/2,-h/2,w,h,r||50);el('rect',{x:-w/2+16,y:-h/2+30,width:10,height:h-60,rx:5,fill:'#1B9F81'},g);return g;}
+function prog(p,i){const g=el('g',{},p);for(let k=0;k<6;k++)el('rect',{x:-255+k*88,y:-6,width:74,height:12,rx:6,fill:k<=i?'#FFB020':'#FFFFFF','fill-opacity':k<=i?1:.28},g);return g;}
+function head(p,o,s,i){o.lab=topLabelV(p,s);o.pr=prog(p,i);}
+function headU(t,o){T(o.lab,540,130,0,pop(t,0));T(o.pr,540,215,0,1);op(o.pr,seg(t,0,.9));}
+function calCard(p,day,num,sub,col){const g=card(p,0,0,940,240,46);
+ const c=el('g',{transform:'translate(-330 0)'},g);
+ el('rect',{x:-80,y:-90,width:160,height:180,rx:24,fill:'#fff',stroke:col,'stroke-width':8},c);
+ el('rect',{x:-80,y:-90,width:160,height:52,rx:20,fill:col},c);el('rect',{x:-80,y:-60,width:160,height:22,fill:col},c);
+ txt(c,'NOV',0,-52,32,'#fff','bold');txt(c,num,0,58,86,INK,'bold');
+ txt(g,day,-200,-14,54,INK,'bold','start');txt(g,sub,-200,52,38,col,'bold','start');g._x=540;return g;}
+function voceRow(p,up,title,sub){const g=card(p,0,0,940,230,46);const col=up?'#13805F':RED;
+ const c=el('g',{transform:'translate(-360 0)'},g);el('circle',{r:64,fill:col,stroke:'#fff','stroke-width':9,filter:'url(#g_sh2)'},c);
+ el('path',{d:up?'M0 -36 L32 4 H12 V36 H-12 V4 H-32Z':'M0 36 L32 -4 H12 V-36 H-12 V-4 H-32Z',fill:'#fff'},c);
+ txt(g,title,-262,-14,54,INK,'bold','start');txt(g,sub,-262,52,40,col,'bold','start');g._x=540;return g;}
+// ===== SHORT 9: una composizione NUOVA per ogni blocco (ordine utente 17/10: tutte diverse, piu' professionali, non stravolgere) =====
+const fmt=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
+function inC(k,n,x,y,a){ // elemento dentro una scheda: entra dal basso con dissolvenza (0,9 s)
+ const s=sl(k,a,.9);T(n,x,y+(1-s)*60,0,1);op(n,seg(k,a,a+.55));}
+function pillL(p,label,w,fs,fill){const g=el('g',{},p);el('rect',{x:-w/2,y:-fs*0.95,width:w,height:fs*1.9,rx:fs*0.95,fill:fill,stroke:'#fff','stroke-width':5},g);txt(g,label,0,fs*0.36,fs,'#fff','bold');return g;}
+
+// ===== SHORT 13: teaser video lungo 10 (casalinghe). Composizioni NUOVE in ogni blocco (ordine utente 24/10: "un po' piu diverse, piu professionali") =====
+// Varianti rispetto agli short 8-12 (N.47, alla lettera "un po' diverse"): tema CASA (tetto, finestra), schede con TESTATA SCURA (non filetto, non linguetta),
+// titoletto a SINISTRA con casetta, avanzamento a 6 casette, didascalia CHIARA con moneta (non scura), bilancia, scale che scendono, tessere dei mesi, telefono.
+const AMB='#C98500',GRN='#13805F',DK='#0B4A50';
+// ---- casetta (tetto + corpo) ----
+function houseI(p,s,fill,stroke){const g=el('g',{transform:'scale('+s+')'},p);
+ el('path',{d:'M-30 -4 L0 -34 L30 -4 H22 V28 H-22 V-4Z',fill:fill,stroke:stroke||'none','stroke-width':4,'stroke-linejoin':'round'},g);
+ el('rect',{x:-7,y:6,width:14,height:22,rx:3,fill:stroke&&stroke!=='none'?'#fff':'#0B3A3F','fill-opacity':.55},g);return g;}
+function head(p,o,s,i){o.lab=el('g',{},p);
+ const c=el('g',{transform:'translate(34 0)'},o.lab);el('circle',{r:44,fill:'url(#g_badge)',stroke:'#fff','stroke-width':6,filter:'url(#g_sh2)'},c);houseI(c,1.05,'#fff','none');
+ const x=txt(o.lab,s,96,17,48,'#7FF0D2','bold','start');x.setAttribute('letter-spacing',5);
+ o.pr=el('g',{},p);for(let k=0;k<6;k++){const h=el('g',{transform:'translate('+(k*58)+' 0)'},o.pr);houseI(h,.78,k<=i?'#FFB020':'#FFFFFF');if(k>i)h.setAttribute('opacity',.32);}}
+function headU(t,o){T(o.lab,80,130,0,1);op(o.lab,seg(t,0,.9));T(o.pr,110,222,0,1);op(o.pr,seg(t,0,.9));}
+// ---- didascalia chiara con moneta a sinistra ----
+function capV(p,lines,fs){fs=fs||56;const mx=Math.max(...lines.map(l=>l.length));fs=Math.min(fs,(1000-230)/(mx*0.76));const w=Math.min(1010,mx*fs*0.76+230);const h=lines.length*(fs*1.42)+60;const c=el('g',{},p);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:36,fill:'#F5FBFA',filter:'url(#g_sh2)'},c);
+ el('rect',{x:-w/2,y:h/2-16,width:w,height:16,rx:8,fill:'#FFB020'},c);
+ el('rect',{x:-w/2,y:h/2-30,width:w,height:18,fill:'#FFB020'},c);
+ const cn=el('g',{},c);coin(cn,-w/2+82,-8,50);
+ lines.forEach((l,i)=>txt(c,l,60,-h/2+32+fs*1.0+i*fs*1.42,fs,INK,'bold'));return c;}
+// ---- scheda con testata scura ----
+function hCard(p,w,h,label,col){const g=el('g',{},p);plateRect(g,-w/2,-h/2,w,h,40);
+ el('path',{d:`M${-w/2} ${-h/2+66} V${-h/2+40} a40 40 0 0 1 40 -40 H${w/2-40} a40 40 0 0 1 40 40 V${-h/2+66}Z`,fill:col||DK},g);
+ txt(g,label,-w/2+36,-h/2+44,30,'#fff','bold','start').setAttribute('letter-spacing',3);return g;}
+function fade(t,n,x,y,a){T(n,x,y+(1-sl(t,a,.9))*60,0,1);op(n,seg(t,a,a+.55));}
+function bust(p,x,y,s,shirt,hair){const g=el('g',{transform:'translate('+x+' '+y+') scale('+s+')'},p);person(g,shirt,hair);return g;}
+function avatar(p,col){const g=el('g',{},p);el('circle',{r:46,fill:col,stroke:'#fff','stroke-width':6},g);el('circle',{cy:-10,r:16,fill:'#fff'},g);el('path',{d:'M-26 30 Q0 -4 26 30Z',fill:'#fff'},g);return g;}
+function bell(p,s){const g=el('g',{filter:'url(#g_sh2)'},p);
+ el('path',{d:`M${-70*s} ${50*s} Q${-60*s} ${30*s} ${-60*s} ${-10*s} Q${-60*s} ${-70*s} 0 ${-76*s} Q${60*s} ${-70*s} ${60*s} ${-10*s} Q${60*s} ${30*s} ${70*s} ${50*s}Z`,fill:YEL,stroke:'#fff','stroke-width':7*s,'stroke-linejoin':'round'},g);
+ el('circle',{cx:0,cy:68*s,r:16*s,fill:YEL,stroke:'#fff','stroke-width':5*s},g);return g;}
+function lockBig(p,s){const g=el('g',{transform:'scale('+s+')'},p);
+ el('path',{d:'M-46 -20 V-70 a46 46 0 0 1 92 0 V-20',fill:'none',stroke:'#fff','stroke-width':20,'stroke-linecap':'round'},g);
+ el('rect',{x:-70,y:-22,width:140,height:112,rx:24,fill:YEL,stroke:'#fff','stroke-width':8},g);el('circle',{cx:0,cy:30,r:15,fill:'#7A2A00'},g);return g;}
+function note(p,w,h,s1,s2){const g=el('g',{},p);
+ el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:16,fill:'#EAF7EC',stroke:GRN,'stroke-width':6},g);
+ el('rect',{x:-w/2+14,y:-h/2+14,width:w-28,height:h-28,rx:10,fill:'none',stroke:GRN,'stroke-width':3,'stroke-dasharray':'10 8'},g);
+ return g;}
+const S=[
+// ---- 1: LA CASA con lei, "mai lavorato", ogni mese, senza tasse; poi lui + cifra nascosta ----
+{D:DUR[0],build(p){const o={};head(p,o,'CASALINGHE',0);
+ o.h=el('g',{},p);
+ el('path',{d:'M-310 -40 L0 -310 L310 -40Z',fill:'url(#g_head)',stroke:'#fff','stroke-width':8,'stroke-linejoin':'round',filter:'url(#g_sh)'},o.h);
+ el('rect',{x:-262,y:-40,width:524,height:392,rx:14,fill:'url(#g_paper)',stroke:'#fff','stroke-width':6},o.h);
+ txt(o.h,'CASALINGHE',0,-92,52,'#fff','bold').setAttribute('letter-spacing',4);
+ el('circle',{cx:0,cy:-190,r:34,fill:'#fff','fill-opacity':.28,stroke:'#fff','stroke-width':5},o.h);
+ el('rect',{x:-180,y:60,width:150,height:150,rx:20,fill:'#D6F5EC',stroke:'#1B9F81','stroke-width':6},o.h);
+ el('rect',{x:-198,y:60,width:186,height:14,rx:7,fill:'#1B9F81'},o.h);
+ bust(o.h,-105,146,.42,'#1B9F81','#5A6E73');
+ el('rect',{x:60,y:96,width:150,height:256,rx:18,fill:'#0B4A50'},o.h);el('circle',{cx:186,cy:226,r:9,fill:YEL},o.h);
+ el('rect',{x:-262,y:316,width:524,height:36,rx:10,fill:'#C9D6D8'},o.h);o.h._x=540;
+ o.mai=pillS(p,'MAI LAVORATO',440,40,'#0B4A50');
+ o.mese=el('g',{},p);pillS(o.mese,'OGNI MESE',440,44,'url(#g_badge)');const cn=el('g',{transform:'translate(-190 0)'},o.mese);coin(cn,0,0,46);
+ o.tasse=stamp(p,'SENZA TASSE',560,52,GRN);
+ o.lui=hCard(p,470,250,'TUO MARITO');bust(o.lui,-150,10,.46,'#0B4A50','#9AA5A8');txt(o.lui,'PENSIONE',-50,2,38,INK,'bold','start');txt(o.lui,'NETTA',-50,52,34,'#5A6E73','bold','start');
+ o.lk=hCard(p,470,250,'UNA CIFRA',RED);const lg=el('g',{transform:'translate(-132 38)'},o.lk);lockBig(lg,.72);txt(o.lk,'? €',92,64,92,RED,'bold');
+ o.cap=capV(p,['UNA CIFRA DECIDE','QUANTO RICEVI']);return o;},
+ update(t,o){const i=0;const a=plan(i,['Pensione alle casalinghe','non ha mai lavorato','ogni mese','senza pagare tasse','di tuo marito','una cifra','quanto ricevi']);PL[i]=a;headU(t,o);
+  rise(t,a[0],.9,o.h,555,120);
+  T(o.mai,285,965,0,pop(t,a[1]));T(o.mese,795,965,0,pop(t,a[2]));
+  stampIn(t,o.tasse,a[3],540,1085,-3);
+  T(o.lui,300,1290,0,pop(t,a[4]));T(o.lk,780,1290,0,pop(t,a[5]));
+  T(o.cap,540,CAPY,0,pop(t,a[6]));}},
+// ---- 2: coppia -> redditi di tutti e due -> netto -> BILANCIA ----
+{D:DUR[1],build(p){const o={};head(p,o,'IN COPPIA',1);
+ o.cp=hCard(p,940,300,'LE COPPIE');bust(o.cp,-360,-22,.46,'#C98500','#7A5230');txt(o.cp,'LEI',-360,134,30,INK,'bold');bust(o.cp,360,-22,.46,'#0B4A50','#9AA5A8');txt(o.cp,'LUI',360,134,30,INK,'bold');
+ el('circle',{cx:0,cy:62,r:56,fill:'url(#g_badge)',stroke:'#fff','stroke-width':8},o.cp);txt(o.cp,'+',0,94,100,'#fff','bold');
+ txt(o.cp,'I REDDITI DI TUTTI E DUE',0,-24,28,'#1B9F81','bold');o.cp._x=540;
+ o.net=hCard(p,940,220,'QUELLO DI LUI');const nt=el('g',{transform:'translate(-300 34)'},o.net);note(nt,200,110);txt(nt,'PENSIONE',0,10,26,GRN,'bold');
+ txt(o.net,'− TASSE',-60,44,64,RED,'bold','start');txt(o.net,'= AL NETTO',-60,92,38,INK,'bold','start');o.net._x=540;
+ // bilancia
+ o.sc=el('g',{},p);o.pole=el('g',{},o.sc);el('rect',{x:-14,y:-10,width:28,height:260,rx:10,fill:'url(#g_metal)'},o.pole);el('rect',{x:-130,y:238,width:260,height:26,rx:13,fill:'url(#g_metal)'},o.pole);
+ o.beam=el('rect',{x:-330,y:-12,width:660,height:24,rx:12,fill:'url(#g_metal)',filter:'url(#g_sh2)'},o.sc);
+ o.piv=el('circle',{r:26,fill:YEL,stroke:'#fff','stroke-width':6},o.sc);
+ o.pl=[el('g',{},p),el('g',{},p)];
+ o.pl.forEach((g,k)=>{el('line',{x1:-90,y1:0,x2:0,y2:-80,stroke:'#fff','stroke-width':4,'stroke-opacity':.8},g);el('line',{x1:90,y1:0,x2:0,y2:-80,stroke:'#fff','stroke-width':4,'stroke-opacity':.8},g);
+  el('path',{d:'M-110 0 H110 Q100 44 0 44 Q-100 44 -110 0Z',fill:'url(#g_silver)',stroke:'#fff','stroke-width':5,filter:'url(#g_sh2)'},g);
+  txt(g,k==0?'LUI':'LEI',0,98,38,'#fff','bold');});
+ o.c1=el('g',{},o.pl[0]);goldCoin(o.c1,0,-28,52,16,12);goldCoin(o.c1,-26,-14,52,16,12);
+ o.cx=el('g',{},o.pl[0]);goldCoin(o.cx,26,-44,52,16,12);o.p1=pillS(o.pl[0],'+1 €',150,40,'url(#g_badge)');
+ o.c2=el('g',{},o.pl[1]);goldCoin(o.c2,0,-28,52,16,12);goldCoin(o.c2,26,-14,52,16,12);
+ o.m1=pillS(o.pl[1],'− 1 €',150,40,'url(#g_red)');
+ o.cap=capV(p,['+1 € A LUI','= −1 € A TE']);return o;},
+ update(t,o){const i=1;const a=plan(i,['per le coppie','di tutti e due','al netto delle tasse','ogni euro in più','un euro in meno']);PL[i]=a;headU(t,o);
+  rise(t,a[0],.9,o.cp,470,110);rise(t,a[1]+.0,.9,o.net,790,100);
+  const k=pop(t,a[2]);T(o.sc,540,1120,0,1);op(o.sc,seg(t,a[2],a[2]+.7));
+  const tilt=8*eio(seg(t,a[3]+.3,a[3]+1.2))+6*eio(seg(t,a[4]+.3,a[4]+1.2));
+  o.beam.setAttribute('transform','rotate('+(-tilt)+')');o.piv.setAttribute('transform','');
+  const r=tilt*Math.PI/180,L=330;const lx=-L*Math.cos(r),ly=-L*Math.sin(r)*-1,rx=L*Math.cos(r),ry=L*Math.sin(r)*-1;
+  o.pole.setAttribute('transform','');
+  T(o.pl[0],540+lx,1120+ly+120,0,1);T(o.pl[1],540+rx,1120+ry+120,0,1);op(o.pl[0],seg(t,a[2]+.2,a[2]+.8));op(o.pl[1],seg(t,a[2]+.2,a[2]+.8));
+  op(o.cx,seg(t,a[3],a[3]+.5));T(o.p1,0,-110,0,lerp(.4,1,sl(t,a[3]+.2)));op(o.p1,seg(t,a[3]+.2,a[3]+.6));T(o.m1,0,-110,0,lerp(.4,1,sl(t,a[4]+.2)));op(o.m1,seg(t,a[4]+.2,a[4]+.6));
+  T(o.c2.children[1],0,0,0,1);op(o.c2.children[1],1-seg(t,a[4]+.2,a[4]+.8));
+  T(o.cap,540,CAPY,0,pop(t,a[5]));}},
+// ---- 3: SCALE che scendono fino a zero, cifra nascosta ----
+{D:DUR[2],build(p){const o={};head(p,o,'LA CIFRA',2);
+ o.st=hCard(p,940,500,'L\'IMPORTO SCENDE');o.st._x=540;o.bars=[];
+ [330,270,205,140,70].forEach((h,k)=>{const b=el('g',{},o.st);el('rect',{x:-370+k*150,y:210-h,width:130,height:h,rx:14,fill:k<3?'url(#g_head)':k<4?'url(#ty)':'url(#g_red)',stroke:'#fff','stroke-width':4,filter:'url(#g_sh3)'},b);o.bars.push(b);});
+ el('rect',{x:-390,y:206,width:780,height:8,rx:4,fill:'#C9D6D8'},o.st);
+ o.zero=pillS(p,'0 €',190,60,'url(#g_red)');
+ o.tu=el('g',{},p);pillS(o.tu,'TU: NESSUN ALTRO REDDITO',860,36,'#0B4A50');const avt=el('g',{transform:'translate(-392 0) scale(.5)'},o.tu);avatar(avt,'#C98500');
+ o.lui=hCard(p,940,250,'QUANTO DEVE PRENDERE TUO MARITO');const lg=el('g',{transform:'translate(-300 40)'},o.lui);lockBig(lg,.8);txt(o.lui,'? €',60,76,130,RED,'bold');txt(o.lui,'NETTI',180,104,32,'#5A6E73','bold','start');o.lui._x=540;
+ o.no=stamp(p,'NON LO DICIAMO QUI',760,44,RED);
+ o.lin=el('g',{},p);el('line',{x1:0,y1:-215,x2:0,y2:215,stroke:RED,'stroke-width':8,'stroke-dasharray':'18 12','stroke-linecap':'round'},o.lin);
+ o.cl=pillS(p,'LA CIFRA PRECISA',440,36,RED);
+ o.cap=capV(p,['OLTRE QUELLA CIFRA','L\'AIUTO NON SPETTA PIÙ']);return o;},
+ update(t,o){const i=2;const a=plan(i,['importo scende','a zero','altri redditi','quanto deve prendere','Non lo diciamo','una cifra precisa','oltre quella']);PL[i]=a;headU(t,o);
+  rise(t,a[0],.9,o.st,520,100);o.bars.forEach((b,k)=>{const s=seg(t,a[0]+k*.18,a[0]+k*.18+.7);b.setAttribute('transform','translate(0 '+(210*(1-eo3(s)))+')');op(b,clamp(s*3));});
+  T(o.zero,835,600,0,pop(t,a[1]));
+  T(o.tu,540,950,0,pop(t,a[2]));rise(t,a[3],.9,o.lui,1140,90);
+  stampIn(t,o.no,a[4],540,1345,-3);
+  T(o.lin,760,560,0,1);op(o.lin,seg(t,a[5],a[5]+.9));T(o.cl,720,845,0,pop(t,a[5]));
+  T(o.cap,540,CAPY,0,pop(t,a[6]));}},
+// ---- 4: SPOSATA / VEDOVA affiancate ----
+{D:DUR[3],build(p){const o={};head(p,o,'UN ALTRO CONTO',3);
+ o.sp=hCard(p,450,470,'SPOSATA','#5A6E73');o.sp._x=290;bust(o.sp,-75,6,.5,'#C98500','#7A5230');bust(o.sp,75,6,.5,'#0B4A50','#9AA5A8');txt(o.sp,'IN DUE',0,205,34,'#5A6E73','bold');
+ o.ve=hCard(p,450,470,'VEDOVA',GRN);o.ve._x=790;bust(o.ve,0,0,.62,'#3A4A4F','#9AA5A8');txt(o.ve,'DA SOLA',0,205,34,GRN,'bold');
+ o.x=el('g',{},p);el('path',{d:'M-150 -150 L150 150 M150 -150 L-150 150',stroke:RED,'stroke-width':24,'stroke-linecap':'round',filter:'url(#g_sh2)'},o.x);
+ o.ns=stamp(p,'NON PIÙ SPOSATA',560,44,RED);
+ o.lim=hCard(p,940,230,'IL LIMITE');o.lim._x=540;const av=el('g',{transform:'translate(-370 32) scale(1.1)'},o.lim);avatar(av,GRN);
+ txt(o.lim,'DI UNA PERSONA',-290,34,44,INK,'bold','start');txt(o.lim,'SOLA',-290,92,56,GRN,'bold','start');
+ o.conta=el('g',{},p);pillS(o.conta,'CONTA COME REDDITO',640,38,'#0B4A50');const ck=el('g',{transform:'translate(-290 0)'},o.conta);check(ck,34,'#25D08C');
+ o.noc=el('g',{},p);pillS(o.noc,'E COSA NO',460,38,RED);const cr=el('g',{transform:'translate(-190 0)'},o.noc);crossC(cr,34);
+ o.cap=capV(p,['CAMBIA IL','RISULTATO?']);return o;},
+ update(t,o){const i=3;const a=plan(i,['sei vedova','non sei più sposata','una persona sola','cosa conta','e cosa no','può cambiare']);PL[i]=a;headU(t,o);
+  rise(t,a[0],.9,o.sp,540,100);rise(t,a[0]+.0,.9,o.ve,540,100);
+  T(o.x,290,540,0,pop(t,a[1])*.9);stampIn(t,o.ns,a[1]+.1,540,880,-3);
+  rise(t,a[2],.9,o.lim,1055,100);
+  T(o.conta,540,1245,0,pop(t,a[3]));T(o.noc,540,1360,0,pop(t,a[4]));
+  T(o.cap,540,CAPY,0,pop(t,a[5]));}},
+// ---- 5: ASPETTARE costa: mesi, domanda, mesi non pagati ----
+{D:DUR[4],build(p){const o={};head(p,o,'IL TEMPO',4);
+ o.er=el('g',{},p);el('rect',{x:-470,y:-80,width:940,height:160,rx:40,fill:'#fff',stroke:RED,'stroke-width':8,filter:'url(#g_sh)'},o.er);
+ const tr=el('g',{transform:'translate(-370 4)'},o.er);tri(tr,50);
+ txt(o.er,'UN ERRORE CHE',-290,-8,42,INK,'bold','start');txt(o.er,'COSTA SOLDI: ASPETTARE',-290,48,46,RED,'bold','start');o.er._x=540;
+ o.row=el('g',{},p);o.tiles=[];
+ for(let k=0;k<6;k++){const g=el('g',{},o.row);const x=-450+k*150,w=138;
+  const bg=el('rect',{x:x,y:-120,width:w,height:250,rx:26,fill:'#fff',stroke:'#9FB4B9','stroke-width':6,filter:'url(#g_sh2)'},g);
+  el('rect',{x:x,y:-120,width:w,height:54,rx:22,fill:'#9FB4B9'},g);el('rect',{x:x,y:-90,width:w,height:24,fill:'#9FB4B9'},g);
+  txt(g,'MESE',x+w/2,-82,30,'#fff','bold');const num=txt(g,String(k+1),x+w/2,34,88,'#9FB4B9','bold');
+  const coinG=el('g',{opacity:0},g);const cc=el('g',{},coinG);coin(cc,x+w/2,86,30);
+  const xx=el('g',{opacity:0},g);el('path',{d:`M${x+28} ${-20} L${x+w-28} ${90} M${x+w-28} ${-20} L${x+28} ${90}`,stroke:RED,'stroke-width':16,'stroke-linecap':'round'},xx);
+  o.tiles.push({g,num,coinG,xx,bg});}
+ o.row._x=540;
+ o.br1=el('g',{},p);el('path',{d:'M-210 0 V26 H210 V0',fill:'none',stroke:'#FF8A75','stroke-width':8,'stroke-linecap':'round','stroke-linejoin':'round'},o.br1);const l1=el('g',{transform:'translate(0 80)'},o.br1);pillL(l1,'PRIMA DELLA DOMANDA',440,26,RED);
+ o.br2=el('g',{},p);el('path',{d:'M-210 0 V26 H210 V0',fill:'none',stroke:'#7FF0D2','stroke-width':8,'stroke-linecap':'round','stroke-linejoin':'round'},o.br2);const l2=el('g',{transform:'translate(0 80)'},o.br2);pillL(l2,'DOPO LA DOMANDA',440,26,GRN);
+ o.fl=el('g',{},p);el('rect',{x:-6,y:-170,width:12,height:330,rx:6,fill:'#0B3A3F'},o.fl);el('path',{d:'M6 -170 H266 L236 -126 L266 -82 H6Z',fill:'url(#g_red)',stroke:'#fff','stroke-width':5,'stroke-linejoin':'round'},o.fl);txt(o.fl,'DOMANDA',130,-111,34,'#fff','bold');
+ o.pg=pillS(p,'DA QUI: PAGATO',400,38,'url(#g_badge)');
+ o.np=stamp(p,'MESE NON PAGATO',460,40,RED);
+ o.cap=capV(p,['OGNI MESE DI ATTESA','È UN MESE PERSO']);return o;},
+ update(t,o){const i=4;const a=plan(i,['un errore che costa','dal mese dopo la domanda','ogni mese che passa','non ti viene pagato']);PL[i]=a;headU(t,o);
+  rise(t,a[0],.9,o.er,470,100);
+  rise(t,a[1]-.0,.9,o.row,830,100);
+  o.tiles.forEach((tl,k)=>{const post=k>=3;const s=seg(t,a[1]+.3,a[1]+1.2);
+   if(post){tl.bg.setAttribute('stroke',s>0.5?'#25D08C':'#9FB4B9');tl.num.setAttribute('fill',s>0.5?'#13805F':'#9FB4B9');op(tl.coinG,eo3(s));}
+   else{const s2=seg(t,a[2],a[2]+.9);op(tl.xx,eo3(s2));tl.bg.setAttribute('stroke',s2>0.4?RED:'#9FB4B9');tl.num.setAttribute('fill',s2>0.4?RED:'#9FB4B9');}});
+  T(o.fl,540-450+3*150-6,830-70,0,pop(t,a[1]+.2));
+  T(o.br2,540+225,1010,0,pop(t,a[1]+.3));T(o.pg,540+240,1250,0,pop(t,a[1]+.3));
+  T(o.br1,540-225,1010,0,pop(t,a[2]));stampIn(t,o.np,a[3],540-260,1250,-4);
+  T(o.cap,540,CAPY,0,pop(t,a[4]));}},
+// ---- 6: video correlato nel telefono, mi piace, iscriviti, manda a una donna ----
+{D:DUR[5],build(p){const o={};head(p,o,'IL VIDEO',5);
+ o.ph=el('g',{filter:'url(#g_sh)'},p);o.ph._x=540;
+ el('rect',{x:-215,y:-370,width:430,height:740,rx:60,fill:'#0A1C1F',stroke:'#fff','stroke-width':8},o.ph);
+ el('rect',{x:-190,y:-340,width:380,height:680,rx:40,fill:'url(#g_bg)'},o.ph);
+ const hb=el('g',{},o.ph);el('rect',{x:-190,y:-340,width:380,height:210,rx:40,fill:'#0B4A50'},hb);el('rect',{x:-190,y:-230,width:380,height:100,fill:'#0B4A50'},hb);
+ const lg=el('g',{transform:'translate(-110 -205)'},o.ph);lockBig(lg,.55);txt(o.ph,'? €',55,-172,84,YEL,'bold');
+ const pl=el('g',{transform:'translate(0 -10)'},o.ph);el('rect',{x:-90,y:-60,width:180,height:120,rx:34,fill:'url(#g_red)',stroke:'#fff','stroke-width':7},pl);el('path',{d:'M-20 -30 L36 0 L-20 30Z',fill:'#fff'},pl);
+ txt(o.ph,'VIDEO CORRELATO',0,150,32,'#fff','bold');el('rect',{x:-150,y:196,width:300,height:16,rx:8,fill:'#fff','fill-opacity':.5},o.ph);el('rect',{x:-150,y:240,width:210,height:16,rx:8,fill:'#fff','fill-opacity':.3},o.ph);
+ o.ar=bigArrow(p);
+ o.lk=el('g',{},p);el('rect',{x:-215,y:-46,width:430,height:92,rx:46,fill:'#0B4A50',stroke:'#fff','stroke-width':6,filter:'url(#g_sh2)'},o.lk);const th=el('g',{transform:'translate(-138 -4)'},o.lk);thumb(th,.34);txt(o.lk,'MI PIACE',40,15,42,'#fff','bold');
+ o.sub=el('g',{},p);el('rect',{x:-215,y:-46,width:430,height:92,rx:46,fill:'url(#g_red)',stroke:'#fff','stroke-width':6,filter:'url(#g_sh2)'},o.sub);txt(o.sub,'ISCRIVITI',-20,15,42,'#fff','bold');const bb=el('g',{transform:'translate(150 -2)'},o.sub);bell(bb,.42);
+ o.sh=hCard(p,940,190,'MANDALO A UNA DONNA');bust(o.sh,-340,-4,.4,'#C98500','#7A5230');
+ el('path',{d:'M-210 40 H140 V6 L250 56 L140 106 V72 H-210Z',fill:YEL,stroke:'#fff','stroke-width':6,'stroke-linejoin':'round',transform:'translate(0 -6) scale(.9)'},o.sh);
+ bust(o.sh,340,-4,.4,'#1B9F81','#5A6E73');o.sh._x=540;
+ o.cap=capV(p,['MANDALO A UNA','DONNA CHE CONOSCI']);return o;},
+ update(t,o){const i=5;const a=plan(i,['La cifra e il conto','qui sotto','Metti mi piace','iscriviti a','manda questo short']);PL[i]=a;headU(t,o);
+  rise(t,a[0],.9,o.ph,628,110);
+  T(o.ar,540,1055+14*Math.sin(t*5),0,pop(t,a[1])*.52);
+  T(o.lk,290,1165,0,pop(t,a[2]));T(o.sub,790,1165,0,pop(t,a[3]));
+  rise(t,a[4],.9,o.sh,1335,90);T(o.cap,540,CAPY,0,pop(t,a[5]));}},
+];
+S.forEach(s=>{s.sb=[{s:0,e:s.D}];});
+
+// defs aggiuntivi
+const defs=document.querySelector('defs');
+defs.insertAdjacentHTML('beforeend','<radialGradient id="tg" cx=".4" cy=".3" r=".8"><stop offset="0" stop-color="#9CFFD9"/><stop offset=".5" stop-color="#25D08C"/><stop offset="1" stop-color="#0B7C54"/></radialGradient><radialGradient id="ty" cx=".4" cy=".3" r=".8"><stop offset="0" stop-color="#FFF3A8"/><stop offset=".5" stop-color="#FFD43B"/><stop offset="1" stop-color="#C08A00"/></radialGradient><radialGradient id="tr" cx=".4" cy=".3" r=".8"><stop offset="0" stop-color="#FFB3A3"/><stop offset=".5" stop-color="#F0503A"/><stop offset="1" stop-color="#9E2112"/></radialGradient>');
+const bok=document.getElementById('bok');const BK=[];
+for(let i=0;i<14;i++){const c=el('circle',{r:30+((i*37)%70),fill:'#8FF5DC',opacity:.06+((i*13)%7)*0.01},bok);BK.push([c,(i*173)%1080,(i*311)%1920,20+(i*7)%30,i]);}
+let cur=-1,OBJ=null;const scene=document.getElementById('scene');const cam=document.getElementById('cam');
+function draw(i,t){if(cur!==i){scene.innerHTML='';OBJ=S[i].build(scene);cur=i;}
+ BK.forEach(([c,x,y,sp,k])=>{c.setAttribute('cx',(x+t*sp*0.15)%1200-60);c.setAttribute('cy',(y-t*sp*0.3)%2000+(y-t*sp*0.3<0?2000:0));});
+ 
+ S[i].update(t,OBJ);}
+
+</script></body></html>

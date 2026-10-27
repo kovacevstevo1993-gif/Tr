@@ -41,6 +41,10 @@ Storia: in cucina il biscotto sparisce dal piatto; topolino "Io non sono stato!"
 - Non usare `pkill -f` con il nome dello script nella stessa riga di comando (chiude la shell).
 - Fine lavoro: aggiornare questo file, commit, push sul branch della sessione e poi unire su main.
 
+## AGGIORNAMENTO 22/10 00:58 CEST (biscotto)
+- Generate e controllate OK: clip1, clip2, clip3, clip4, clip6 (assets/v/biscotto/). MANCANO clip5 (briciole, 3 s) e clip7 (risata finale, 4 s).
+- HuggingFace ha risposto "exceeded your ZeroGPU runs limit" alla clip5 dopo ~10 s di clip generati nella finestra: il limite sembra a finestra mobile, senza orario di ripresa nel messaggio. Riprovare con `python3 biscotto_clips.py 5 7` (non consuma se rifiutato). Poi montare: `python3 short_biscotto.py video && ... mix && ... finale`, controllo fotogrammi, SendUserFile.
+
 ## AGGIORNAMENTO 21/10 sera (UTC 23:00)
 - Generate e controllate (contact sheet) clip 1,2,3,4,5 del biscotto (assets/v/biscotto/clipN.mp4). Clip5: la rana apre un po' la bocca a meta' (difetto lieve, da valutare). Clip6 gia' fatta.
 - MANCA SOLO clip7 (finale, tutti ridono, 4.0 s): quota HF finita di nuovo dopo 5 clip (~130 s di clip generate = ~30 s GPU l'una: la quota reale e' ~150 s/giorno circa, non 400). Riprovare `python3 biscotto_clips.py 7` dopo ~23:00 UTC del 22/10, poi montaggio (video|mix|finale), controllo fotogrammi, SendUserFile.

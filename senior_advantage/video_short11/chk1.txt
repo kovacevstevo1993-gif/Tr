@@ -1,0 +1,1 @@
+clip 1: 265 fotogrammi controllati; tagliati: 99 [166, 167, 168, 169, 170]; margine minimo 0px; ultimo movimento al fotogramma: None
