@@ -9,7 +9,7 @@
   "ultimo_fuori_area": null,
   "completo_a_80%": 1.0,
   "pixel_che_cambiano_dopo_81%": 0,
-  "primo_elemento_s": 0.23,
+  "primo_elemento_s": 0.2,
   "buco_max_s": 2.07,
   "OK": true
  },
@@ -23,9 +23,9 @@
   "ultimo_fuori_area": null,
   "completo_a_80%": 1.0,
   "pixel_che_cambiano_dopo_81%": 0,
-  "primo_elemento_s": 2.63,
+  "primo_elemento_s": 0.27,
   "buco_max_s": 2.03,
-  "OK": false
+  "OK": true
  },
  {
   "blocco": 4,

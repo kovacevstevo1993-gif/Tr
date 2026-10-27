@@ -157,7 +157,7 @@ S[12] = [
           'THE RULES CHANGE', red, (255, 255, 255), tag=G4, src=SRC),
     slide("CAROL'S SIX MONTHS", 2434, [E('person', (150, 250, 560, 700), 'this matters for carol', letter='C', name='CAROL', line='PART B + AGE 65', col=green),
                                       E('sixm', (620, 250, 1770, 500), 'her six months', label='START THE MONTH PART B STARTS'),
-                                      E('stamp', (700, 580, 1700, 700), 'cannot be changed', t='CANNOT BE CHANGED OR REPEATED', col=red, ang=-3, size=64)],
+                                      E('stamp', (700, 585, 1620, 700), 'cannot be changed', t='CANNOT BE CHANGED OR REPEATED', col=red, ang=-3, size=50)],
           'MEDICARE SAYS SO', red, (255, 255, 255), tag=G4, src=SRC),
 ]
 # ---- 13: BEN ----
@@ -222,12 +222,11 @@ def final14m(t, seed=215):
     fr = base(t); fr = amb(fr, t, seed, 7, 55); fr = title_layer(fr, 'IMPORTANT', t, size=64)
     lines = [('General information,', white, 250), ('not insurance advice.', white, 315), ('Rules, prices and plans differ', goldL, 410),
              ('by state. Confirm with Medicare', goldL, 475), ('or your State Insurance Department.', white, 570), ('Not affiliated with Medicare.', white, 635)]
-    groups = [lines[0:2], lines[2:4], lines[4:6]]; tg = [0.3, 0.3 + (0.6 * Dd - 0.3) / 2, 0.6 * Dd]
-    for g, ts in zip(groups, tg):
+    tg = [0.3 + k * (0.58 * Dd - 0.3) / 5 for k in range(6)]          # una riga alla volta: nessun buco lungo
+    for (tx, cl, yy), ts in zip(lines, tg):
         if t > ts:
-            C = new()
-            for tx, cl, yy in g: txt(C, tx, BOLD(48), yy, cl, 255, x=650)
-            fr = A_(fr, C, (140, 240, 1160, 770), t, ts)
+            C = new(); txt(C, tx, BOLD(48), yy, cl, 255, x=650)
+            fr = A_(fr, C, (140, yy - 20, 1160, yy + 60), t, ts)
     if t > 0.68 * Dd:
         C = new(); dashed(C, 1220, 280, 1780, 640); txt(C, 'WATCH NEXT', BOLD(56), 430, goldL, 255, x=1500); fr = A_(fr, C, (1200, 260, 1800, 660), t, 0.68 * Dd)
     if t > 0.8 * Dd - 0.4:
