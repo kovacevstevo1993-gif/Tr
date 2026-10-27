@@ -58,3 +58,5 @@
    DIFF replace copione: sixty three | sentito: 63
 --- b15 medium.en: There is also a trial right. If you joined an Advantage plan when you were first eligible for Part A at 65 and within the first year you choose to go back to Original Medicare, you can buy any Medigap policy sold in your state. If you dropped a Medigap policy to try Advantage for the first time and you have been in the plan less than a year, you can ask for your old policy back, if the same company still sells it.
    DIFF replace copione: sixty five | sentito: 65
+--- b15 large-v3: There is also a trial right. If you joined an Advantage plan when you were first eligible for Part A at 65, and within the first year you choose to go back to original Medicare, you can buy any Medigap policy sold in your state. If you dropped a Medigap policy to try Advantage for the first time, and you have been in the plan less than a year, you can ask for your old policy back, if the same company still sells it.
+   DIFF replace copione: sixty five | sentito: 65
