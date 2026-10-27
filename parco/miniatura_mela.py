@@ -10,7 +10,7 @@ def tall():
     img = Image.open(os.path.join(HERE, "assets", "v", "mela", "start1.png")).convert("RGB").resize((1080, 1920), Image.LANCZOS)
     img = ImageEnhance.Color(ImageEnhance.Contrast(img).enhance(1.08)).enhance(1.12)
     for (x, y, r) in ((130, 640, 38), (960, 520, 42), (930, 1100, 30), (150, 1250, 28)): sparkle(img, x, y, r)
-    outline_text(img, "ELEFANTINO", 540, 150, 150, (255, 235, 90), (200, 40, 40), 14, rot=-2)
+    outline_text(img, "L'ELEFANTINO", 540, 150, 112, (255, 235, 90), (200, 40, 40), 14, rot=-2)
     outline_text(img, "HA FAME!", 540, 330, 150, (255, 235, 90), (200, 40, 40), 14, rot=-2)
     return img
 
