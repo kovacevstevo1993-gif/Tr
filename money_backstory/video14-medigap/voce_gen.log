@@ -16,3 +16,7 @@ fattore atempo gruppo 13: 0.7
 confine 13 -> 14 pausa 0.63 punteggio 5.78 | health / but there are
 confine 14 -> 15 pausa 0.83 punteggio 5.98 | rights / there is also
 == g16
+OK voce/g16.wav
+fattore atempo gruppo 16: 0.833
+confine 16 -> 17 pausa 0.78 punteggio 5.8 | company / to sum up
+confine 17 -> 18 pausa 0.69 punteggio 5.7 | back / if this helped
