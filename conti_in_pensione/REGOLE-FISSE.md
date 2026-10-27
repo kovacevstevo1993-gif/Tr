@@ -702,3 +702,6 @@
 ## ERRORE DEL 27/10/2026 (hook Stop blocco-revisione tolto senza ordine)
 - L'utente aveva detto "toglili" riferito agli avvisi, e di SISTEMARE senza toccare gli altri canali. Ho cancellato da .claude/settings.json l'hook Stop blocco-revisione (controllo revisione copioni di Conti in Pensione). Utente: "Rimettilo, chi cazzo te l'ha detto di toglierlo, ti ho detto di sistemare, non toccare gli altri canali".
 - REGOLA: mai togliere hook o controlli di sicurezza dal repo; se un avviso e' sbagliato si SISTEMA la causa (qui: l'hook segnala i vecchi copioni gia' consegnati) e non si tocca altro. Se non e' chiaro cosa togliere: UNA domanda.
+
+## ERRORE DEL 27/10/2026 (miniatura Facebook video 1, v1 uguale a quella pubblicata)
+- Utente: "Fa schifo, non hai cambiato un cazzo". La prima miniatura orizzontale teneva lo stesso impianto della miniatura YouTube (64 gigante, striscia bianca, ATTENZIONE) con solo dettagli nuovi. REGOLA: se l'utente chiede una miniatura "diversa/piu professionale", cambiare IMPIANTO (composizione), non i dettagli. Rifatta: miniatura-fb-orizzontale-v2.png (titolo a 3 righe, documento MANOVRA 2027 con righe coperte da barre nere, "USCITA A 64 ANNI" cerchiata, "?" rosso, calendario 2027, LEGGE O PROPOSTA?). Generatore: facebook/gen_fb_orizz2.py + shot_orizz2.js.
