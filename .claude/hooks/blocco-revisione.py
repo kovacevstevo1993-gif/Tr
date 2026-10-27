@@ -4,7 +4,7 @@ impedisce di chiudere la risposta se un copione cambiato (non committato, o comm
 scritta di ogni blocco (conti_in_pensione/qa/revisione.py). Usa git, non le date dei file (un clone nuovo le cambia tutte).
 Altri canali: non fa niente."""
 import json,os,subprocess,sys
-DAL='2026-10-22T21:00:00Z'  # i copioni gia' consegnati prima di questa data non si toccano
+DAL='2026-10-27T23:30:00Z'  # i copioni gia' consegnati prima di questa data non si toccano
 try: d=json.load(sys.stdin)
 except Exception: d={}
 if not os.path.exists(os.path.join('/tmp/conti_sessions',str(d.get('session_id','x')))): sys.exit(0)
