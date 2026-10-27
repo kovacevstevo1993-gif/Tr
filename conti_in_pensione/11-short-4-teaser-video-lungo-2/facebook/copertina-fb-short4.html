@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}svg{display:block}.t{font-family:'DejaVu Sans','Liberation Sans',Arial,sans-serif;font-weight:900}</style></head><body>
+<svg id="s" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<defs>
+<radialGradient id="bg" cx="0.5" cy="0.5" r="1"><stop offset="0" stop-color="#25A9AE"/><stop offset="0.5" stop-color="#0D5158"/><stop offset="1" stop-color="#03181B"/></radialGradient>
+<radialGradient id="gr" cx="0.4" cy="0.3" r="0.8"><stop offset="0" stop-color="#9CFFD9"/><stop offset="0.5" stop-color="#25D08C"/><stop offset="1" stop-color="#0B7C54"/></radialGradient>
+<radialGradient id="ye" cx="0.4" cy="0.3" r="0.8"><stop offset="0" stop-color="#FFF3A8"/><stop offset="0.5" stop-color="#FFD43B"/><stop offset="1" stop-color="#C08A00"/></radialGradient>
+<radialGradient id="re" cx="0.4" cy="0.3" r="0.8"><stop offset="0" stop-color="#FFB3A3"/><stop offset="0.5" stop-color="#F0503A"/><stop offset="1" stop-color="#9E2112"/></radialGradient>
+<filter id="sh" x="-30%" y="-30%" width="170%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#021A1D" flood-opacity="0.75"/></filter>
+<filter id="gl"><feGaussianBlur stdDeviation="30"/></filter>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/>
+<g opacity="0.10" fill="#fff"><path d="M540 960 L-200 300 L0 60Z"/><path d="M540 960 L300 -100 L520 -100Z"/><path d="M540 960 L760 -100 L980 -100Z"/><path d="M540 960 L1300 360 L1300 660Z"/><path d="M540 960 L1300 1380 L1300 1580Z"/><path d="M540 960 L-200 1500 L-200 1900Z"/><path d="M540 960 L400 2100 L700 2100Z"/></g>
+<circle cx="540" cy="960" r="430" fill="#FFD43B" opacity="0.16" filter="url(#gl)"/>
+<!-- fuori dalla fascia centrale: marchio e invito -->
+<text id="brand" x="540" y="560" class="t" font-size="58" fill="#FFD43B" text-anchor="middle" stroke="#06282C" stroke-width="12" stroke-linejoin="round" paint-order="stroke">CONTI IN PENSIONE</text>
+<text id="cta" x="540" y="1390" class="t" font-size="50" fill="#fff" text-anchor="middle" stroke="#06282C" stroke-width="12" stroke-linejoin="round" paint-order="stroke">▶ GUARDA IL VIDEO COMPLETO</text>
+<!-- FASCIA CENTRALE 16:9: y 656-1264 -->
+<text id="h" x="540" y="758" class="t" font-size="98" fill="#FFD43B" text-anchor="middle" stroke="#06282C" stroke-width="16" stroke-linejoin="round" paint-order="stroke">PENSIONE</text>
+<g filter="url(#sh)"><circle cx="255" cy="874" r="96" fill="url(#re)" stroke="#fff" stroke-width="9"/><circle cx="825" cy="874" r="96" fill="url(#gr)" stroke="#fff" stroke-width="9"/><circle cx="540" cy="874" r="48" fill="url(#ye)" stroke="#fff" stroke-width="7"/></g>
+<g class="t" text-anchor="middle" stroke="#06282C" stroke-width="12" stroke-linejoin="round" paint-order="stroke" fill="#fff"><text id="n1" x="255" y="902" font-size="108">64</text><text id="n2" x="825" y="902" font-size="108">67</text><text id="a1" x="255" y="948" font-size="32">ANNI</text><text id="a2" x="825" y="948" font-size="32">ANNI</text></g>
+<text id="vs" x="540" y="890" class="t" font-size="46" fill="#7A3B00" text-anchor="middle">VS</text>
+<text id="cap" x="540" y="1016" class="t" font-size="31" fill="#fff" text-anchor="middle" stroke="#06282C" stroke-width="9" stroke-linejoin="round" paint-order="stroke">STESSO STIPENDIO, STESSI CONTRIBUTI</text>
+<g class="t" stroke="#06282C" stroke-linejoin="round" paint-order="stroke">
+<text id="m1" x="146" y="1128" font-size="108" fill="#FF5A43" stroke-width="18">-???€</text>
+<text id="m2" x="484" y="1128" font-size="66" fill="#FFD43B" stroke-width="12">AL MESE</text></g>
+<g transform="translate(892 1092) rotate(12) scale(0.8)" filter="url(#sh)"><path d="M-30 -8 V-40 a30 30 0 0 1 60 0 V-8" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round"/><rect x="-46" y="-10" width="92" height="72" rx="16" fill="#FFD43B" stroke="#fff" stroke-width="6"/><circle cx="0" cy="26" r="9" fill="#7A3B00"/></g>
+<g filter="url(#sh)"><rect x="70" y="1158" width="940" height="92" rx="28" fill="#fff"/><rect x="70" y="1158" width="940" height="92" rx="28" fill="none" stroke="#FFD43B" stroke-width="9"/></g>
+<text id="st" x="540" y="1228" class="t" font-size="62" fill="#C0200F" text-anchor="middle">SE ESCI PRIMA?</text>
+</svg>
+<pre id="o" style="display:none"></pre>
+<script>
+window.addEventListener('load',()=>{const r=[...document.querySelectorAll('text')].map(t=>{const b=t.getBBox();return [t.id,Math.round(b.x),Math.round(b.y),Math.round(b.x+b.width),Math.round(b.y+b.height)]});document.getElementById('o').textContent=JSON.stringify(r);});
+</script></body></html>
