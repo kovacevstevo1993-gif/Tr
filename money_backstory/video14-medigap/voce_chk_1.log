@@ -2,3 +2,6 @@
    DIFF replace copione: seventh | sentito: 7
 --- b1 large-v3: Open enrollment ends on December 7th, and one choice you make this fall can be very hard to undo. It is the choice between Medicare Advantage and a Medigap plan. Medicare itself warns that in most cases, if you drop a Medigap policy to join an Advantage plan, you may not be able to get it back. And in some cases, you may not be able to get any Medigap policy at all. Here is what the official rules say.
    DIFF replace copione: seventh | sentito: 7th
+--- b2 medium.en: Meet Carol and Ben. Carol turns 65 this spring, and she is about to choose her very first Medicare coverage. Ben is 68, he has a Medicare Advantage plan, and he is wondering whether to return to original Medicare and add a Medigap plan. Both of them are about to meet rules that most people only learn after it is too late.
+   DIFF replace copione: sixty five | sentito: 65
+   DIFF replace copione: sixty eight | sentito: 68
