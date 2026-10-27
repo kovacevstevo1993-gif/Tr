@@ -71,3 +71,13 @@
    DIFF replace copione: four | sentito: 4
 --- b17 medium.en: To sum up, five facts. One, Medigap pays your share of original Medicare costs, and it is sold by private companies. Two, Plan G covers a lot, but not the Part B deductible. Three, your Medigap open enrollment lasts six months, and it happens only once. Four, after it, a company may deny you or charge you more, unless you have a guaranteed issue right. Five, if you drop Metagap for advantage, you may not get it back.
    DIFF replace copione: medigap | sentito: metagap
+--- b17 large-v3: To sum up, five facts. 1. Medigap pays your share of original Medicare costs, and it is sold by private companies. 2. Plan G covers a lot, but not the Part B deductible. 3. Your Medigap open enrollment lasts six months, and it happens only once. 4. After it, a company may deny you or charge you more, unless you have a guaranteed issue right. 5. If you drop Medigap for advantage, you may not get it back.
+   DIFF replace copione: one | sentito: 1
+   DIFF replace copione: two | sentito: 2
+   DIFF replace copione: three | sentito: 3
+   DIFF replace copione: four | sentito: 4
+   DIFF replace copione: five | sentito: 5
+--- b18 medium.en: If this helped, send it to someone who is about to turn 65 and tell me in the comments which plan you are thinking about. One last thing. This video is general information, not insurance advice. Rules, prices, and plans differ by state, so confirm with Medicare or your state insurance department before you act. This channel is not affiliated with Medicare.
+   DIFF replace copione: sixty five | sentito: 65
+--- b18 large-v3: If this helped, send it to someone who is about to turn 65, and tell me in the comments which plan you are thinking about. One last thing. This video is general information, not insurance advice. Rules, prices, and plans differ by state, so confirm with Medicare or your state insurance department before you act. This channel is not affiliated with Medicare.
+   DIFF replace copione: sixty five | sentito: 65
