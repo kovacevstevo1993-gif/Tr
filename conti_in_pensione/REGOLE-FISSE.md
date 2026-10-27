@@ -724,3 +724,7 @@
 - REGOLA (ribadita): davanti a uno screenshot si risponde SOLO alla domanda fatta; mai riscrivere cio' che e' scritto sullo schermo. Se non c'e' una risposta (es. tempi non pubblicati da Meta), dirlo in una riga e basta.
 
 STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-blocco01..15.mp4 in conti_in_pensione/31-video-lungo-12/clip, consegnati all'utente (controllo su tutti i fotogrammi OK, fotogrammi = DURATE.txt, sequenze a 0,5 s guardate). Sorgenti in 31-video-lungo-12/sorgenti (specs-v12.js, regia12.js). Prossimi passi SOLO su ordine: titolo (piano vidIQ prima), miniature, pacchetto.
+
+## ERRORE DEL 27/10/2026 (pacchetto video 12) - vidIQ: RICERCHE SIMILI A QUELLE GIA' FATTE
+- Utente: "stai sempre cercando su vidiq le stesse robe che cerchi prima... non capisco il senso se hai gia' fatto le stesse". Per il pacchetto del video 12 ho speso 25 crediti (outliers 5 su "pensioni piu basse 2027 coefficienti", generate_titles 5, 3 punteggi 15) senza prima rileggere ricerca-26-10-2026.md e ricerca-25-10-2026.md: le parole erano diverse da "cedolino pensione" (26/10) ma i risultati sono in gran parte gli stessi titoli (aumento pensioni 2027, canali piccoli gia' visti).
+- REGOLA: prima di OGNI chiamata vidIQ fare grep della parola e dei canali in tutte le ricerca-*.md e RICERCHE-*; se i risultati utili ci sono gia', usarli e NON spendere. Per il pacchetto di un video la ricerca sul tema e' gia' fatta: servono solo titoli (generate_titles) e al massimo 2-3 punteggi; niente outliers/keyword nuovi.
