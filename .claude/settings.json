@@ -24,16 +24,6 @@
         ]
       }
     ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/blocco-revisione.py\""
-          }
-        ]
-      }
-    ],
     "PreToolUse": [
       {
         "matcher": "SendUserFile|Bash",
