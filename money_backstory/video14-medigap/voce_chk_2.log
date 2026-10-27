@@ -64,3 +64,8 @@
    DIFF replace copione: one | sentito: 1
    DIFF replace copione: two | sentito: 2
    DIFF replace copione: three | sentito: 3
+--- b16 large-v3: So, what should you do this fall? 1. Before you drop any Medigap policy, remember that Medicare says you may not get it back. 2. Before you call a company, find out whether you are in your open enrollment period or have a guaranteed issue right. 3. Compare the same plan letter from more than one company and ask how the price is set. 4. Call your state health insurance assistance program, which gives free help and is not connected to any insurance company.
+   DIFF replace copione: one | sentito: 1
+   DIFF replace copione: two | sentito: 2
+   DIFF replace copione: three | sentito: 3
+   DIFF replace copione: four | sentito: 4
