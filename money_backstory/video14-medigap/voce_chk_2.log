@@ -56,3 +56,5 @@
    DIFF replace copione: sixty three | sentito: 63
 --- b14 large-v3: But there are situations where Ben is protected. Medicare calls them guaranteed issue rights. One example is when his Advantage plan leaves Medicare or stops giving care in his area, or when he moves out of its service area. Then the company must sell him a policy, must cover his pre-existing conditions, and cannot charge him more for his health. He must apply no more than 63 days after his Advantage coverage ends. His state may give him even more rights.
    DIFF replace copione: sixty three | sentito: 63
+--- b15 medium.en: There is also a trial right. If you joined an Advantage plan when you were first eligible for Part A at 65 and within the first year you choose to go back to Original Medicare, you can buy any Medigap policy sold in your state. If you dropped a Medigap policy to try Advantage for the first time and you have been in the plan less than a year, you can ask for your old policy back, if the same company still sells it.
+   DIFF replace copione: sixty five | sentito: 65
