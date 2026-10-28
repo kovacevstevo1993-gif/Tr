@@ -1,0 +1,30 @@
+S='stroke="#06242B" paint-order="stroke" stroke-linejoin="round"'
+svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" style="font-family:'DejaVu Sans','Liberation Sans',Arial,sans-serif;font-weight:900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E7C86"/><stop offset=".55" stop-color="#0A5360"/><stop offset="1" stop-color="#041E27"/></linearGradient>
+<radialGradient id="spot" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#7DE8C4" stop-opacity=".5"/><stop offset="1" stop-color="#7DE8C4" stop-opacity="0"/></radialGradient>
+<linearGradient id="y" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE777"/><stop offset="1" stop-color="#FFB400"/></linearGradient>
+<linearGradient id="r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6A55"/><stop offset="1" stop-color="#C21808"/></linearGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#010d11" flood-opacity=".7"/></filter>
+<pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#fff" stroke-opacity=".06" stroke-width="2"/></pattern>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/><rect width="1080" height="1920" fill="url(#grid)"/>
+<ellipse cx="540" cy="1000" rx="620" ry="620" fill="url(#spot)"/>
+<g transform="translate(300 300) rotate(-3)" filter="url(#sh)"><rect width="480" height="84" rx="14" fill="url(#r)" stroke="#fff" stroke-width="5"/><text x="240" y="60" font-size="50" fill="#fff" text-anchor="middle">⚠ ATTENZIONE</text></g>
+<text x="540" y="560" font-size="104" fill="url(#y)" text-anchor="middle" {S} stroke-width="16" id="a1">NON GUARDARE</text>
+<text x="540" y="720" font-size="150" fill="#fff" text-anchor="middle" {S} stroke-width="18" id="a2">LA CIFRA!</text>
+<g transform="translate(90 800) rotate(-3)" filter="url(#sh)">
+<rect width="900" height="560" rx="30" fill="#FBFDFD"/>
+<rect width="900" height="100" rx="30" fill="#0D5158"/><rect y="70" width="900" height="30" fill="#0D5158"/>
+<text x="450" y="68" font-size="44" fill="#FFD43B" text-anchor="middle" id="b1">CEDOLINO · OTTOBRE 2026</text>
+<text x="70" y="250" font-size="150" fill="#0D5158" id="b2">€</text>
+<g fill="#0B1A1F"><circle cx="330" cy="215" r="34"/><circle cx="440" cy="215" r="34"/><circle cx="550" cy="215" r="34"/><circle cx="660" cy="215" r="34"/><circle cx="770" cy="215" r="34"/></g>
+<rect x="50" y="300" width="800" height="62" rx="12" fill="#D6F5E9"/><text x="80" y="345" font-size="40" fill="#0D5158" id="b3">ARRETRATI</text><text x="820" y="345" font-size="40" fill="#1E9E5A" text-anchor="end" id="b4">+ € ???</text>
+<rect x="50" y="385" width="800" height="62" rx="12" fill="#FFE0DB"/><text x="80" y="430" font-size="40" fill="#0D5158" id="b5">RIMBORSO 730</text><text x="820" y="430" font-size="40" fill="#C0200F" text-anchor="end" id="b6">± € ???</text>
+<rect x="50" y="470" width="800" height="62" rx="12" fill="#FFE0DB"/><text x="80" y="515" font-size="40" fill="#0D5158" id="b7">TRATTENUTE</text><text x="820" y="515" font-size="40" fill="#C0200F" text-anchor="end" id="b8">− € ???</text>
+<rect x="38" y="290" width="824" height="252" rx="20" fill="none" stroke="#E0200F" stroke-width="9"/>
+</g>
+<g filter="url(#sh)"><rect x="90" y="1440" width="900" height="130" rx="30" fill="#fff" stroke="#FFD43B" stroke-width="10"/>
+<text x="540" y="1522" font-size="56" fill="#C0200F" text-anchor="middle" id="c1">CONTROLLA <tspan fill="#0D5158">IL CEDOLINO</tspan></text></g>
+</svg>'''
+open('reel.html','w').write('<body style="margin:0">'+svg+'</body>')
