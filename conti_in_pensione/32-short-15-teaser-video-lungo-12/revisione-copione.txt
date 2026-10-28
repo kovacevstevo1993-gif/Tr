@@ -1,5 +1,5 @@
-1 | bd8f2008f2 | italiano OK | logica OK | persona OK | numeri OK | v2 28/10: riletto frase per frase; gancio a domanda, requisiti nascosti, chiusura diversa da S13/S14; decreto 16/10, 15 righe 57-71, 5:56 min
-2 | 511c7a1187 | italiano OK | logica OK | persona OK | numeri OK | v2 28/10: riletto frase per frase; gancio a domanda, requisiti nascosti, chiusura diversa da S13/S14; decreto 16/10, 15 righe 57-71, 5:56 min
-3 | 201d1bf94e | italiano OK | logica OK | persona OK | numeri OK | v2 28/10: riletto frase per frase; gancio a domanda, requisiti nascosti, chiusura diversa da S13/S14; decreto 16/10, 15 righe 57-71, 5:56 min
-4 | 06cbcc0208 | italiano OK | logica OK | persona OK | numeri OK | v2 28/10: riletto frase per frase; gancio a domanda, requisiti nascosti, chiusura diversa da S13/S14; decreto 16/10, 15 righe 57-71, 5:56 min
-5 | 5ac88c6361 | italiano OK | logica OK | persona OK | numeri OK | v2 28/10: riletto frase per frase; gancio a domanda, requisiti nascosti, chiusura diversa da S13/S14; decreto 16/10, 15 righe 57-71, 5:56 min
+1 | 43d29a964d | italiano OK | logica OK | persona OK | numeri OK | v3 28/10: riletto da capo a voce; apertura con verbo, riferimenti chiari; decreto 16/10, 15 righe 57-71, 5:56 min
+2 | 03989e37db | italiano OK | logica OK | persona OK | numeri OK | v3 28/10: riletto da capo a voce; apertura con verbo, riferimenti chiari; decreto 16/10, 15 righe 57-71, 5:56 min
+3 | 201d1bf94e | italiano OK | logica OK | persona OK | numeri OK | v3 28/10: riletto da capo a voce; apertura con verbo, riferimenti chiari; decreto 16/10, 15 righe 57-71, 5:56 min
+4 | 9ff2331556 | italiano OK | logica OK | persona OK | numeri OK | v3 28/10: riletto da capo a voce; apertura con verbo, riferimenti chiari; decreto 16/10, 15 righe 57-71, 5:56 min
+5 | 5ac88c6361 | italiano OK | logica OK | persona OK | numeri OK | v3 28/10: riletto da capo a voce; apertura con verbo, riferimenti chiari; decreto 16/10, 15 righe 57-71, 5:56 min
