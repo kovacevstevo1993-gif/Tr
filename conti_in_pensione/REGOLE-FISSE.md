@@ -742,3 +742,7 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 ## ERRORE DEL 28/10/2026 (frase sugli screenshot, short 15)
 - Ho scritto "Se vuoi, mando gli screenshot delle durate e faccio le slide": sbagliato, gli screenshot li manda l'UTENTE (non li ho io) e l'offerta non era richiesta. L'utente: "hai detto proprio mando gli screenshot".
 - REGOLA: dopo il copione, il passo successivo si dice cosi': "mandami gli screenshot delle durate, poi faccio le slide" (soggetto: l'utente). Rileggere ogni frase finale per chiarire CHI fa cosa. Nessuna offerta non richiesta (checklist 1-2).
+
+## ERRORE DEL 28/10/2026 (short 15, QUATTRO versioni del copione) - parole dell'utente: "devi mandarlo gia' perfetto alla prima volta, al posto di sprecare a cazzo i crediti"
+- Ogni versione la mandavo dopo aver corretto solo cio' che avevo appena trovato, senza una rilettura completa PRIMA dell'invio: v1 (chiusura/gancio/requisiti), v2 (frasi non naturali), v3 (due difetti di italiano/persona). Ogni invio costa crediti.
+- REGOLA: la rilettura critica (italiano a voce, persona tu/noi, riferimenti chiari, confronto con gli ultimi 3 short, requisiti nascosti, fatti sul video) si fa PIU' VOLTE sul file, SENZA mandare nulla, finche' un giro intero non trova NIENTE. Solo allora il primo invio. Gli invii intermedi sono vietati; se ho dubbi sul testo, rileggo ancora invece di mandare.
