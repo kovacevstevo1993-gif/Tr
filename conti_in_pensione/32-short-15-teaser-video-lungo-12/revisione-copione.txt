@@ -1,5 +1,5 @@
-1 | f6e1257b16 | italiano OK | logica OK | persona OK | numeri OK | v6 28/10: altra rilettura completa; B3 un dato (non una data: e il numero di anni di contributi a fine 1995); decreto 16/10, 15 righe 57-71, 5:56 min
-2 | ae150cab85 | italiano OK | logica OK | persona OK | numeri OK | v6 28/10: altra rilettura completa; B3 un dato (non una data: e il numero di anni di contributi a fine 1995); decreto 16/10, 15 righe 57-71, 5:56 min
-3 | b16bd87166 | italiano OK | logica OK | persona OK | numeri OK | v6 28/10: altra rilettura completa; B3 un dato (non una data: e il numero di anni di contributi a fine 1995); decreto 16/10, 15 righe 57-71, 5:56 min
-4 | e495417b56 | italiano OK | logica OK | persona OK | numeri OK | v6 28/10: altra rilettura completa; B3 un dato (non una data: e il numero di anni di contributi a fine 1995); decreto 16/10, 15 righe 57-71, 5:56 min
-5 | 5ac88c6361 | italiano OK | logica OK | persona OK | numeri OK | v6 28/10: altra rilettura completa; B3 un dato (non una data: e il numero di anni di contributi a fine 1995); decreto 16/10, 15 righe 57-71, 5:56 min
+1 | f6e1257b16 | italiano OK | logica OK | persona OK | numeri OK | v7 28/10: rilettura completa; B4 calcolato (non rifatto: il conto non esisteva prima); B2 due tuoi numeri; decreto 16/10, 15 righe 57-71, 5:56 min
+2 | e4c3be25ca | italiano OK | logica OK | persona OK | numeri OK | v7 28/10: rilettura completa; B4 calcolato (non rifatto: il conto non esisteva prima); B2 due tuoi numeri; decreto 16/10, 15 righe 57-71, 5:56 min
+3 | b16bd87166 | italiano OK | logica OK | persona OK | numeri OK | v7 28/10: rilettura completa; B4 calcolato (non rifatto: il conto non esisteva prima); B2 due tuoi numeri; decreto 16/10, 15 righe 57-71, 5:56 min
+4 | bf8a33a214 | italiano OK | logica OK | persona OK | numeri OK | v7 28/10: rilettura completa; B4 calcolato (non rifatto: il conto non esisteva prima); B2 due tuoi numeri; decreto 16/10, 15 righe 57-71, 5:56 min
+5 | 5ac88c6361 | italiano OK | logica OK | persona OK | numeri OK | v7 28/10: rilettura completa; B4 calcolato (non rifatto: il conto non esisteva prima); B2 due tuoi numeri; decreto 16/10, 15 righe 57-71, 5:56 min
