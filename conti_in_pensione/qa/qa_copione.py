@@ -58,6 +58,10 @@ for n, t in blocchi:
     for m in re.finditer(r"\b(solo|soltanto|mai|tutti|tutte|nessuno|nessuna|sempre|nulla|niente|ogni volta)\b", t, re.I):
         print(f'VERIFICARE parola assoluta "{m.group(1)}" nel blocco {n}: eccezione su inps.it?')
 import os as _o,sys as _s;_s.path.insert(0,_o.path.dirname(_o.path.abspath(__file__)));from check_data import errori_data
+from qa_italiano import controlla as _ci
+_e1,_a1=_ci(blocchi)
+for _x in _a1:print('VERIFICARE italiano:',_x)
+err.extend(_e1)
 for _e in errori_data(' '.join(t for _,t in blocchi)):err.append(_e)
 print(f'{len(blocchi)} blocchi, {sum(len(t) for _, t in blocchi)} caratteri')
 for e in err: print('ERRORE:', e)
