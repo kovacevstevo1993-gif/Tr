@@ -1,5 +1,5 @@
-1 | 43d29a964d | italiano OK | logica OK | persona OK | numeri OK | v3 28/10: riletto da capo a voce; apertura con verbo, riferimenti chiari; decreto 16/10, 15 righe 57-71, 5:56 min
-2 | 03989e37db | italiano OK | logica OK | persona OK | numeri OK | v3 28/10: riletto da capo a voce; apertura con verbo, riferimenti chiari; decreto 16/10, 15 righe 57-71, 5:56 min
-3 | 201d1bf94e | italiano OK | logica OK | persona OK | numeri OK | v3 28/10: riletto da capo a voce; apertura con verbo, riferimenti chiari; decreto 16/10, 15 righe 57-71, 5:56 min
-4 | 9ff2331556 | italiano OK | logica OK | persona OK | numeri OK | v3 28/10: riletto da capo a voce; apertura con verbo, riferimenti chiari; decreto 16/10, 15 righe 57-71, 5:56 min
-5 | 5ac88c6361 | italiano OK | logica OK | persona OK | numeri OK | v3 28/10: riletto da capo a voce; apertura con verbo, riferimenti chiari; decreto 16/10, 15 righe 57-71, 5:56 min
+1 | 43d29a964d | italiano OK | logica OK | persona OK | numeri OK | v4 28/10: riletto da capo; stessa persona (tu) in tutti i blocchi; decreto 16/10, 15 righe 57-71, 5:56 min
+2 | 03989e37db | italiano OK | logica OK | persona OK | numeri OK | v4 28/10: riletto da capo; stessa persona (tu) in tutti i blocchi; decreto 16/10, 15 righe 57-71, 5:56 min
+3 | 454b318582 | italiano OK | logica OK | persona OK | numeri OK | v4 28/10: riletto da capo; stessa persona (tu) in tutti i blocchi; decreto 16/10, 15 righe 57-71, 5:56 min
+4 | 934634b996 | italiano OK | logica OK | persona OK | numeri OK | v4 28/10: riletto da capo; stessa persona (tu) in tutti i blocchi; decreto 16/10, 15 righe 57-71, 5:56 min
+5 | 5ac88c6361 | italiano OK | logica OK | persona OK | numeri OK | v4 28/10: riletto da capo; stessa persona (tu) in tutti i blocchi; decreto 16/10, 15 righe 57-71, 5:56 min
