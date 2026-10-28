@@ -1,0 +1,8 @@
+# Controllo di fidelizzazione - video lungo 13 (reversibilita', regola riga 0c della checklist)
+PRIMO_MINUTO_RIVELA: nei blocchi 1-4 si scopre solo che la reversibilita' (60 per cento della pensione del coniuge: 1.200 euro su 2.000 lordi) puo' essere tagliata fino a meta' (7.800 euro l'anno), la differenza tra reversibilita' e pensione indiretta e chi sono i primi beneficiari (coniuge, unito civilmente, separato, divorziato); NON si dice a quale reddito scatta il taglio, quanto vale ogni fascia ne' il gradino.
+RISPOSTA_TENUTA: blocco 12 (le tre soglie 2026 in euro: 23.862,15 / 31.816,20 / 39.770,25 e le percentuali 25 / 40 / 50)
+CERCHIO_1: aperto in blocco 1 (quando scatta il taglio e quanto si perde davvero), chiuso in blocco 12
+CERCHIO_2: aperto in blocco 1 (il meccanismo che cambia i conti = il gradino che non c'e': salvaguardia), chiuso in blocco 14
+CERCHIO_3: aperto in blocco 2 (le soglie 2027 cambiano a gennaio), chiuso in blocco 20
+CIFRA_GANCIO: 7.800 euro l'anno (reversibilita' di 1.200 euro al mese su 13 mensilita' = 15.600 euro l'anno, riduzione del 50 per cento): la cifra piu' grande vera, per anno
+IMPRONTA_PRIMI4: a43a14a429
