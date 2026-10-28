@@ -1,7 +1,8 @@
 # anteprima: fotogrammi ogni 0,5 s di un blocco in un unico foglio
 import sys,os
 from playwright.sync_api import sync_playwright
-D=[341,369,381,382,436]
+import re
+D=[int(l) for l in open(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/DURATE.txt') if re.match(r'^\d+$',l.strip())]
 here=os.path.dirname(os.path.abspath(__file__));blk=int(sys.argv[1])-1;out=sys.argv[2]
 os.makedirs(out,exist_ok=True)
 with sync_playwright() as p:
