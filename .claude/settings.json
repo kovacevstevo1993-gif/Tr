@@ -15,7 +15,11 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/regole-conti.py\""
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/regole-conti.py\" 1"
+          },
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/regole-conti.py\" 2"
           },
           {
             "type": "command",
