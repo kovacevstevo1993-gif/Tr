@@ -34,6 +34,12 @@ if blocchi:
                 m = re.match(r'^1[ |]\s*(.+)$', l)
                 if m and ' '.join(m.group(1).lower().split()[:3]) == ' '.join(blocchi[0][1].lower().split()[:3]):
                     err.append(f'gancio uguale a {g}')
+
+# --- controllo fidelizzazione sul testo (28/10/2026, video 13: risposta data nel blocco 1) ---
+if modo == 'lungo':
+    for n, t in blocchi[:4]:
+        for m in re.finditer(r"per cento|metà|spettano|ti restano|ti arrivano|incassi", t, re.I):
+            err.append(f'blocco {n}: "{m.group(0)}" = risultato dato nei primi 4 blocchi (riga 0c: nel blocco 1 la domanda, non la risposta)')
 # --- controlli aggiunti il 22/10/2026 (N.42/N.48, short 12: difetti trovati solo dopo l'invio) ---
 def _w(t): return re.findall(r"[a-zàèéìòù']+", t.lower())
 _stop = set("il lo la i gli le un una di a da in con su per tra fra e o ma che chi non è ti ci ne si al del della dei delle nel nella sul sulla questo questa quello l' un'".split())

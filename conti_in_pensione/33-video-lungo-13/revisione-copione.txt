@@ -1,5 +1,5 @@
-1 | 5582e77098 | italiano OK | logica OK | persona OK | numeri OK | cifra 7.800 = meta di 15.600 (1.200x13); tagliare la tua reversibilita chiaro
-2 | 1778144b05 | italiano OK | logica OK | persona OK | numeri OK | 4 passaggi = blocchi 4-6 (chi), 7-8 (quanto), 10-17 (riduzione), 18-19 (domanda)
+1 | 35bd2c0118 | italiano OK | logica OK | persona OK | numeri OK | domanda aperta, nessun risultato; 7.800 = massimo annuo (meta di 15.600)
+2 | d6e71c1b17 | italiano OK | logica OK | persona OK | numeri OK | 4 passaggi = blocchi 4-6 (chi), 7-8 (quanto), 10-17 (riduzione), 18-19 (domanda)
 3 | bab46eab3d | italiano OK | logica OK | persona OK | numeri OK | scheda Inps: 15 anni o 5 anni di cui 3 negli ultimi 5
 4 | 56558ac7dc | italiano OK | logica OK | persona OK | numeri OK | 3 condizioni divorziato dalla scheda
 5 | ab3d1be9d3 | italiano OK | logica OK | persona OK | numeri OK | minorenni; inabili a carico; studenti 21/26 dalla scheda
@@ -11,12 +11,12 @@
 11 | 64b38423e1 | italiano OK | logica OK | persona OK | numeri OK | circ. 185/2015 par. 9
 12 | 7fa154fbc4 | italiano OK | logica OK | persona OK | numeri OK | circ. 153/2025 all. 2: 23.862,15 / 31.816,20 / 39.770,25
 13 | 6c971563f3 | italiano OK | logica OK | persona OK | numeri OK | 25% di 15.600=3.900; 300 al mese; restano 900
-14 | afa59e4823 | italiano OK | logica OK | persona OK | numeri OK | 137,85 = 24.000-23.862,15; salvaguardia dalla legge; detto circa e conto esatto Inps
-15 | 0421169153 | italiano OK | logica OK | persona OK | numeri OK | 50% di 15.600=7.800; restano 600 per 13 mensilita
-16 | 6fe415e48c | italiano OK | logica OK | persona OK | numeri OK | circ. 185/2015: limiti non si applicano con figli minori/studenti/inabili
-17 | 5fa1e336a4 | italiano OK | logica OK | persona OK | numeri OK | Corte cost. 162/2022 e circ. 108/2023, prescrizione 5 anni
-18 | b2840aa83a | italiano OK | logica OK | persona OK | numeri OK | scheda: online, contact center, patronati; decorrenza; 30 giorni; ratei 5 anni (msg 220/2013)
-19 | 1ab030528b | italiano OK | logica OK | persona OK | numeri OK | nuove nozze 2 annualita; Tribunale; convivente non nell elenco
-20 | 8f15e86633 | italiano OK | logica OK | persona OK | numeri OK | 611,85 x 1,026-1,031 x 39 = 24.482-24.601; stima dichiarata
+14 | 0421169153 | italiano OK | logica OK | persona OK | numeri OK | 50% di 15.600=7.800; restano 600 per 13 mensilita
+15 | 6fe415e48c | italiano OK | logica OK | persona OK | numeri OK | circ. 185/2015: limiti non si applicano con figli minori/studenti/inabili
+16 | 5fa1e336a4 | italiano OK | logica OK | persona OK | numeri OK | Corte cost. 162/2022 e circ. 108/2023, prescrizione 5 anni
+17 | b2840aa83a | italiano OK | logica OK | persona OK | numeri OK | scheda: online, contact center, patronati; decorrenza; 30 giorni; ratei 5 anni (msg 220/2013)
+18 | 1ab030528b | italiano OK | logica OK | persona OK | numeri OK | nuove nozze 2 annualita; Tribunale; convivente non nell elenco
+19 | 74e09549b8 | italiano OK | logica OK | persona OK | numeri OK | 137,85 = 24.000-23.862,15; salvaguardia dalla legge; detto circa e conto esatto Inps
+20 | 81a2497068 | italiano OK | logica OK | persona OK | numeri OK | 611,85 x 1,026-1,031 x 39 = 24.482-24.601; stima dichiarata
 21 | c939b83fda | italiano OK | logica OK | persona OK | numeri OK | cinque controlli coerenti con i blocchi 4-19
 22 | fd57290eb5 | italiano OK | logica OK | persona OK | numeri OK | disclaimer + domanda commenti
