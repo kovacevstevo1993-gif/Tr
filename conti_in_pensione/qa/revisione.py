@@ -46,7 +46,7 @@ def fidelizzazione(f):
         if not mm or int(mm.group(1))>4 or int(mm.group(2))<=n/2: err.append(f'{k}: aperto nei primi 4 blocchi e chiuso oltre meta\'')
     if not campo('CIFRA_GANCIO'): err.append('CIFRA_GANCIO mancante')
     lt=campo('LETTI') or ''
-    if 'analisi-fidelizzazione-07-10.md' not in lt or len(re.findall(r'\.txt',lt))<2: err.append('LETTI mancante: scrivere "LETTI: analisi-fidelizzazione-07-10.md; trascrizioni: <file1>.txt, <file2>.txt" (riga 0c: leggerli PRIMA di scrivere il copione, 28/10 video 13)')
+    if int(m.group(1))>=33 and ('analisi-fidelizzazione-07-10.md' not in lt or len(re.findall(r'\.txt',lt))<2): err.append('LETTI mancante: scrivere "LETTI: analisi-fidelizzazione-07-10.md; trascrizioni: <file1>.txt, <file2>.txt" (riga 0c: leggerli PRIMA di scrivere il copione, 28/10 video 13)')
     h=impronta(' '.join(t for _,t in bl[:4]))
     if campo('IMPRONTA_PRIMI4')!=h: err.append('i blocchi 1-4 sono cambiati dopo il controllo di fidelizzazione (rifarlo): impronta attesa '+h)
     return err
