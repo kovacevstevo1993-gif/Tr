@@ -705,3 +705,6 @@
 
 ## ERRORE DEL 27/10/2026 (miniatura Facebook video 1, v1 uguale a quella pubblicata)
 - Utente: "Fa schifo, non hai cambiato un cazzo". La prima miniatura orizzontale teneva lo stesso impianto della miniatura YouTube (64 gigante, striscia bianca, ATTENZIONE) con solo dettagli nuovi. REGOLA: se l'utente chiede una miniatura "diversa/piu professionale", cambiare IMPIANTO (composizione), non i dettagli. Rifatta: miniatura-fb-orizzontale-v2.png (titolo a 3 righe, documento MANOVRA 2027 con righe coperte da barre nere, "USCITA A 64 ANNI" cerchiata, "?" rosso, calendario 2027, LEGGE O PROPOSTA?). Generatore: facebook/gen_fb_orizz2.py + shot_orizz2.js.
+
+## REGOLA FACEBOOK DEL 28/10/2026 (commento sempre col link del canale)
+- Utente: "Nel commento ci deve essere sempre il sito del canale YouTube, ci devono andare nel canale". REGOLA: ogni pacchetto Facebook (video e Reel) ha SEMPRE un primo commento con il link del canale https://www.youtube.com/@ContiInPensione (e il link del video/short collegato). Link anche nella descrizione, in alto (ordine utente 27/10: nessuno arriva in fondo). I link su Facebook sono cliccabili (utente).
