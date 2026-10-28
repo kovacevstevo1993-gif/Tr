@@ -1,0 +1,5 @@
+1 | 0563ff5c12 | italiano OK | logica OK | persona OK | numeri OK | riletto frase per frase; numeri verificati sul video 12 (decreto 16/10, 15 righe 57-71, 18 anni al 31/12/1995, 5:56 minuti)
+2 | 511c7a1187 | italiano OK | logica OK | persona OK | numeri OK | riletto frase per frase; numeri verificati sul video 12 (decreto 16/10, 15 righe 57-71, 18 anni al 31/12/1995, 5:56 minuti)
+3 | f97dce1bb2 | italiano OK | logica OK | persona OK | numeri OK | riletto frase per frase; numeri verificati sul video 12 (decreto 16/10, 15 righe 57-71, 18 anni al 31/12/1995, 5:56 minuti)
+4 | 06cbcc0208 | italiano OK | logica OK | persona OK | numeri OK | riletto frase per frase; numeri verificati sul video 12 (decreto 16/10, 15 righe 57-71, 18 anni al 31/12/1995, 5:56 minuti)
+5 | 584bc6bfad | italiano OK | logica OK | persona OK | numeri OK | riletto frase per frase; numeri verificati sul video 12 (decreto 16/10, 15 righe 57-71, 18 anni al 31/12/1995, 5:56 minuti)

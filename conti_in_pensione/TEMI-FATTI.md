@@ -14,3 +14,4 @@ S1 verificare il cedolino in 30 secondi | S2 scadenze/requisiti 2027 | S3-S9 tea
 S13 teaser V10: assegno sociale per casalinghe (cifra del marito nascosta, vedove, aspettare costa)
 S14 teaser V11: aumento gennaio 2027, 29 euro lordi su 1.000 che non arrivano, gradino nascosto, minime con extra in scadenza, decreto di novembre
 V12 coefficienti di trasformazione 2027 (decreto 16/10/2026): tre tabelle (2023-24, 2025-26, 2027), taglio per eta' in percentuale e in euro per 100.000 di montante, chi rientra/non rientra (quota contributiva, opzione donna, cumulo, gia' pensionati), recupero in mesi con la regola dei dodicesimi (circa 6 mesi / poco piu' di un anno), vecchiaia a 67 anni e 1 mese, perche' (Istat, tasso di sconto 1,5%)
+S15 teaser V12: coefficienti 2027 (tabella di 15 righe, euro dipende da due numeri tuoi, chi rientra/non rientra, conto dei mesi per tornare al coefficiente di prima, nessuna cifra svelata)
