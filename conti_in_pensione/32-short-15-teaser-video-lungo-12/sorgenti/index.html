@@ -89,7 +89,7 @@ const sl=(t,a,d)=>eo3(seg(t,a,a+(d||.9)));
 const GRN='#13805F',DK='#0B4A50',ORG='#E8832A',AMB='#FFB020',NAVY='#06303A';
 function fade(t,n,x,y,a){T(n,x,y+(1-sl(t,a,.9))*60,0,1);op(n,seg(t,a,a+.55));}
 function rise(t,a,d,n,y,dy){const k=sl(t,a,d||.9);T(n,n._x,y+(1-k)*(dy||140),0,1);op(n,seg(t,a,a+(d||.9)*.6));}
-function stampIn(t,o,a,x,y,r){const s=seg(t,a,a+.9);T(o,x,y,r||-4,s>0?lerp(1.4,1,eo3(s)):0);op(o,clamp(s*2.5));}
+function stampIn(t,o,a,x,y,r,s0){const s=seg(t,a,a+.9);T(o,x,y,r||-4,s>0?lerp(s0||1.4,1,eo3(s)):0);op(o,clamp(s*2.5));}
 // scheda a blocco note con spirale (centrata in 0,0)
 function scard(p,w,h,fill,r){r=r||36;const g=el('g',{},p);
  el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:r,fill:fill||'url(#g_paper)',stroke:'#fff','stroke-width':4,filter:'url(#g_sh)'},g);
@@ -150,36 +150,36 @@ const S=[
  o.ri=pillS(p,'RIENTRI ANCHE TU?',760,46,'#0B4A50');
  o.cap=capN(p,['QUANTO POTRESTI PERDERE?','RIENTRI ANCHE TU?']);return o;},
  update(t,o){const i=0;const a=plan(i,['versato contributi','coefficienti di trasformazione','decreto di ottobre',"l'assegno",'Quanto potresti perdere','rientri anche tu']);PL[i]=a;headU(t,o);bgx(t);
-  fade(t,o.lib,540,440,a[0]);fade(t,o.tb,540,745,a[1]);fade(t,o.dc,540,1055,a[2]);fade(t,o.as,330,1240,a[3]);fade(t,o.pe,800,1240,a[4]);T(o.ri,540,1385,0,pop(t,a[5]));rise(t,a[6],.9,o.cap,1590,100);}},
+  fade(t,o.lib,540,440,a[0]);fade(t,o.tb,540,745,a[1]);fade(t,o.dc,540,1055,a[2]);fade(t,o.as,330,1262,a[3]);fade(t,o.pe,800,1262,a[4]);T(o.ri,540,1400,0,pop(t,a[5]));rise(t,a[6],.9,o.cap,1590,100);}},
 // ---- 2: decreto 16 ottobre + tabella di 15 righe (eta' 57-71) + barre prima/2027 + differenza in euro + due tuoi numeri ----
 {D:DUR[1],build(p){const o={};head(p,o,'COEFFICIENTI 2027',1);
  o.dt=scard(p,780,110,'url(#g_paper)',30);txt(o.dt,'DECRETO · 16 OTTOBRE',0,22,50,INK,'bold');
- o.tb=scard(p,920,790,'url(#g_paper)',30);el('rect',{x:-440,y:-345,width:880,height:56,rx:12,fill:NAVY},o.tb);txt(o.tb,'ETÀ',-370,-306,32,'#fff','bold','start');el('rect',{x:-60,y:-333,width:28,height:28,rx:6,fill:'#25C48A'},o.tb);txt(o.tb,'PRIMA',-20,-306,30,'#fff','bold','start');
+ o.tb=scard(p,920,830,'url(#g_paper)',30);el('rect',{x:-440,y:-345,width:880,height:56,rx:12,fill:NAVY},o.tb);txt(o.tb,'ETÀ',-370,-306,32,'#fff','bold','start');el('rect',{x:-60,y:-333,width:28,height:28,rx:6,fill:'#25C48A'},o.tb);txt(o.tb,'PRIMA',-20,-306,30,'#fff','bold','start');
  o.rw=[];for(let k=0;k<15;k++){const y=-281+k*46;el('rect',{x:-440,y:y,width:880,height:44,rx:6,fill:k%2?'#E6F0F2':'#F8FBFB'},o.tb);txt(o.tb,String(57+k),-370,y+33,32,INK,'bold','start');el('rect',{x:-210,y:y+10,width:420+k*3,height:24,rx:12,fill:'#25C48A'},o.tb);}
- el('path',{d:'M452 -281 Q474 -281 474 -259 V 387 Q474 409 452 409',fill:'none',stroke:AMB,'stroke-width':8,'stroke-linecap':'round'},o.tb);txt(o.tb,'15',474,60,44,AMB,'bold');o.tb.setAttribute('data-x','1');
+ el('path',{d:'M452 -281 Q474 -281 474 -259 V 387 Q474 409 452 409',fill:'none',stroke:AMB,'stroke-width':8,'stroke-linecap':'round'},o.tb);txt(o.tb,'15',506,60,40,AMB,'bold');o.tb.setAttribute('data-x','1');
  o.hi=el('g',{},p);[0,14].forEach(k=>el('rect',{x:-450,y:-283+k*46,width:900,height:48,rx:12,fill:'none',stroke:AMB,'stroke-width':7},o.hi));
  o.l2=el('g',{},p);el('rect',{x:160,y:-333,width:28,height:28,rx:6,fill:ORG},o.l2);txt(o.l2,'2027',200,-306,30,'#fff','bold','start');for(let k=0;k<15;k++){const y=-281+k*46;el('rect',{x:-210,y:y+10,width:420+k*3-36-(k%4)*2,height:24,rx:12,fill:ORG,stroke:'#fff','stroke-width':2},o.l2);}
  o.eu=pillS(p,'QUANTO VALE IN EURO LA DIFFERENZA?',960,36,'#0B4A50');
  o.ch=el('g',{},p);[-250,250].forEach((x,k)=>{const c=pillS(o.ch,'TUO NUMERO '+(k+1)+'  ?',440,38,k?ORG:GRN);T(c,x,0,0,1);});
  o.cap=capN(p,['NUMERO PIÙ BASSO IN OGNI RIGA','QUANTO VALE? DIPENDE DA TE']);return o;},
  update(t,o){const i=1;const a=plan(i,['sedici ottobre','tabella di quindici righe','dai cinquantasette','più basso di prima','Quanto vale in euro','due tuoi numeri']);PL[i]=a;headU(t,o);bgx(t);
-  fade(t,o.dt,540,395,a[0]);fade(t,o.tb,540,872,a[1]);
-  T(o.hi,540,872,0,1);op(o.hi,seg(t,a[2],a[2]+.6));T(o.l2,540,872,0,1);op(o.l2,seg(t,a[3],a[3]+.9));
-  T(o.eu,540,1335,0,pop(t,a[4]));T(o.ch,540,1425,0,pop(t,a[5]));rise(t,a[6],.9,o.cap,1610,100);}},
+  fade(t,o.dt,540,385,a[0]);fade(t,o.tb,540,892,a[1]);
+  T(o.hi,540,892,0,1);op(o.hi,seg(t,a[2],a[2]+.6));T(o.l2,540,892,0,1);op(o.l2,seg(t,a[3],a[3]+.9));
+  T(o.eu,540,1352,0,pop(t,a[4]));T(o.ch,540,1437,0,pop(t,a[5]));rise(t,a[6],.9,o.cap,1625,100);}},
 // ---- 3: non riguarda chiunque + gia' in pensione FUORI + linea 1996 con parte dei contributi + quale parte? + un dato da controllare ----
 {D:DUR[2],build(p){const o={};head(p,o,'COEFFICIENTI 2027',2);
  o.ch=pillS(p,'NON RIGUARDA CHIUNQUE',860,48,'#0B4A50');
- o.pe=scard(p,880,230,'url(#g_paper)',34);const pi=personI(o.pe,1.5);T(pi,-350,6,0,1);txt(o.pe,'GIÀ IN',-250,-10,56,INK,'bold','start');txt(o.pe,'PENSIONE',-250,58,56,INK,'bold','start');
+ o.pe=scard(p,880,230,'url(#g_paper)',34);const pi=personI(o.pe,1.5);T(pi,-350,6,0,1);txt(o.pe,'GIÀ IN',-250,-10,52,INK,'bold','start');txt(o.pe,'PENSIONE',-250,56,52,INK,'bold','start');
  o.fu=stamp(p,'FUORI',300,64,RED);
- o.tl=scard(p,940,350,'url(#g_paper)',34);txt(o.tl,'HAI INIZIATO A LAVORARE',0,-122,40,INK,'bold');
- el('rect',{x:-400,y:-20,width:400,height:70,rx:16,fill:'#9FB4B9'},o.tl);el('rect',{x:0,y:-20,width:400,height:70,rx:16,fill:'#25C48A'},o.tl);
- el('line',{x1:0,y1:-46,x2:0,y2:62,stroke:RED,'stroke-width':8},o.tl);const yy=pillS(o.tl,'1996',170,38,RED);T(yy,0,-72,0,1);txt(o.tl,'PRIMA',-200,28,40,'#fff','bold');txt(o.tl,'DOPO',200,28,40,'#fff','bold');
- o.un=el('g',{},p);el('rect',{x:-4,y:-38,width:410,height:98,rx:18,fill:'none',stroke:AMB,'stroke-width':8,'stroke-dasharray':'16 10'},o.un);const up=pillS(o.un,'UNA PARTE DEI CONTRIBUTI',640,32,GRN);T(up,140,118,0,1);
+ o.tl=scard(p,940,360,'url(#g_paper)',34);txt(o.tl,'HAI INIZIATO A LAVORARE',0,-108,40,INK,'bold');
+ el('rect',{x:-400,y:-4,width:400,height:70,rx:16,fill:'#9FB4B9'},o.tl);el('rect',{x:0,y:-4,width:400,height:70,rx:16,fill:'#25C48A'},o.tl);
+ el('line',{x1:0,y1:-26,x2:0,y2:76,stroke:RED,'stroke-width':8},o.tl);const yy=pillS(o.tl,'1996',170,38,RED);T(yy,0,-58,0,1);txt(o.tl,'PRIMA',-200,44,40,'#fff','bold');txt(o.tl,'DOPO',200,44,40,'#fff','bold');
+ o.un=el('g',{},p);el('rect',{x:-4,y:-16,width:410,height:98,rx:18,fill:'none',stroke:AMB,'stroke-width':8,'stroke-dasharray':'16 10'},o.un);const up=pillS(o.un,'UNA PARTE DEI CONTRIBUTI',640,32,GRN);T(up,140,128,0,1);
  o.qu=pillS(p,'QUALE PARTE?',520,50,ORG);
  o.da=el('g',{},p);const dp=pillS(o.da,'UN DATO DA CONTROLLARE',740,40,'#0B4A50');T(dp,30,0,0,1);const le=lenteI(o.da,.9);T(le,-400,-6,0,1);
  o.cap=capN(p,['COSA CONTA DEL TUO LAVORO?','UN DATO DA CONTROLLARE']);return o;},
  update(t,o){const i=2;const a=plan(i,['Non riguarda chiunque','già in pensione','resta fuori','prima del novantasei','una parte dei contributi','Quale parte','un dato che devi controllare']);PL[i]=a;headU(t,o);bgx(t);
-  T(o.ch,540,420,0,pop(t,a[0]));fade(t,o.pe,540,640,a[1]);stampIn(t,o.fu,a[2],790,655,-6);
+  T(o.ch,540,420,0,pop(t,a[0]));fade(t,o.pe,540,640,a[1]);stampIn(t,o.fu,a[2],805,655,-6,1.12);
   fade(t,o.tl,540,985,a[3]);T(o.un,540,985,0,1);op(o.un,seg(t,a[4],a[4]+.7));T(o.qu,540,1275,0,pop(t,a[5]));T(o.da,540,1395,0,pop(t,a[6]));rise(t,a[7],.9,o.cap,1610,100);}},
 // ---- 4: un conto + striscia dei mesi "?" + andare in pensione + gradino coefficiente (2027 -> di prima) + barre eta' per eta' + quasi lo stesso + nel video ----
 {D:DUR[3],build(p){const o={};head(p,o,'COEFFICIENTI 2027',3);
@@ -189,13 +189,13 @@ const S=[
  txt(o.ms,'MESI IN PIÙ',0,-80,38,AMB,'bold');
  o.pn=el('g',{},p);const pp=pillS(o.pn,'ANDARE IN PENSIONE',640,40,GRN);T(pp,0,0,0,1);el('path',{d:'M-26 -64 H26 L0 -96Z',fill:GRN,stroke:'#fff','stroke-width':4,'stroke-linejoin':'round'},o.pn);
  o.gr=scard(p,900,250,'url(#g_paper)',30);el('rect',{x:-380,y:30,width:300,height:70,rx:8,fill:ORG},o.gr);txt(o.gr,'2027',-230,80,40,'#fff','bold');el('rect',{x:80,y:-40,width:300,height:140,rx:8,fill:'#25C48A'},o.gr);txt(o.gr,'DI PRIMA',230,60,40,'#fff','bold');
- el('path',{d:'M-60 50 Q0 50 0 0 Q0 -54 52 -54',fill:'none',stroke:AMB,'stroke-width':10,'stroke-linecap':'round'},o.gr);el('path',{d:'M40 -78 L80 -54 L40 -30Z',fill:AMB},o.gr);txt(o.gr,'IL COEFFICIENTE',0,-70,34,INK,'bold');
- o.br=scard(p,900,230,'url(#g_paper)',30);for(let k=0;k<14;k++){const h=96+((k*7)%3)*5;el('rect',{x:-410+k*60,y:92-h,width:46,height:h,rx:8,fill:k%2?GRN:'#25C48A'},o.br);}txt(o.br,'ETÀ PER ETÀ',0,-52,36,INK,'bold');
+ el('path',{d:'M-60 50 Q0 50 0 12 Q0 -26 50 -26',fill:'none',stroke:AMB,'stroke-width':10,'stroke-linecap':'round'},o.gr);el('path',{d:'M38 -50 L78 -26 L38 -2Z',fill:AMB},o.gr);txt(o.gr,'IL COEFFICIENTE',0,-48,34,INK,'bold');
+ o.br=scard(p,900,200,'url(#g_paper)',30);for(let k=0;k<14;k++){const h=76+((k*7)%3)*4;el('rect',{x:-410+k*60,y:78-h,width:46,height:h,rx:8,fill:k%2?GRN:'#25C48A'},o.br);}txt(o.br,'ETÀ PER ETÀ',0,-36,36,INK,'bold');
  o.qs=pillS(p,'QUASI LO STESSO',560,46,ORG);
  o.vd=el('g',{},p);const vp=pillS(o.vd,'QUANTI MESI? NEL VIDEO',780,42,'#0B4A50');T(vp,30,0,0,1);el('circle',{cx:-400,cy:0,r:40,fill:RED,stroke:'#fff','stroke-width':5},o.vd);el('path',{d:'M-412 -18 L-382 0 L-412 18Z',fill:'#fff'},o.vd);
  o.cap=capN(p,['QUANTI MESI PER TORNARE','AL COEFFICIENTE DI PRIMA?']);return o;},
  update(t,o){const i=3;const a=plan(i,['un conto','quanti mesi in più','andare in pensione','tornare al coefficiente','età per età','quasi lo stesso','Lo scopri nel video']);PL[i]=a;headU(t,o);bgx(t);
-  fade(t,o.cn,540,425,a[0]);fade(t,o.ms,540,595,a[1]);T(o.pn,540,745,0,pop(t,a[2]));fade(t,o.gr,540,940,a[3]);fade(t,o.br,540,1220,a[4]);T(o.qs,540,1340,0,pop(t,a[5]));T(o.vd,540,1430,0,pop(t,a[6]));rise(t,a[7],.9,o.cap,1620,100);}},
+  fade(t,o.cn,540,420,a[0]);fade(t,o.ms,540,620,a[1]);T(o.pn,540,745,0,pop(t,a[2]));fade(t,o.gr,540,950,a[3]);fade(t,o.br,540,1205,a[4]);T(o.qs,540,1365,0,pop(t,a[5]));T(o.vd,540,1465,0,pop(t,a[6]));rise(t,a[7],.9,o.cap,1635,100);}},
 // ---- 5: telefono con il video correlato + 3 esempi + conto dei mesi + tocca + meno di 6 minuti + dal 2027 controlla + mi piace + iscriviti ----
 {D:DUR[4],build(p){const o={};head(p,o,'COEFFICIENTI 2027',4);
  o.ph=el('g',{},p);el('rect',{x:-200,y:-350,width:400,height:700,rx:50,fill:'#0A1E22',stroke:'#fff','stroke-width':8,filter:'url(#g_sh)'},o.ph);el('rect',{x:-176,y:-310,width:352,height:620,rx:26,fill:'#12363C'},o.ph);

@@ -8,7 +8,7 @@ const sl=(t,a,d)=>eo3(seg(t,a,a+(d||.9)));
 const GRN='#13805F',DK='#0B4A50',ORG='#E8832A',AMB='#FFB020',NAVY='#06303A';
 function fade(t,n,x,y,a){T(n,x,y+(1-sl(t,a,.9))*60,0,1);op(n,seg(t,a,a+.55));}
 function rise(t,a,d,n,y,dy){const k=sl(t,a,d||.9);T(n,n._x,y+(1-k)*(dy||140),0,1);op(n,seg(t,a,a+(d||.9)*.6));}
-function stampIn(t,o,a,x,y,r){const s=seg(t,a,a+.9);T(o,x,y,r||-4,s>0?lerp(1.4,1,eo3(s)):0);op(o,clamp(s*2.5));}
+function stampIn(t,o,a,x,y,r,s0){const s=seg(t,a,a+.9);T(o,x,y,r||-4,s>0?lerp(s0||1.4,1,eo3(s)):0);op(o,clamp(s*2.5));}
 // scheda a blocco note con spirale (centrata in 0,0)
 function scard(p,w,h,fill,r){r=r||36;const g=el('g',{},p);
  el('rect',{x:-w/2,y:-h/2,width:w,height:h,rx:r,fill:fill||'url(#g_paper)',stroke:'#fff','stroke-width':4,filter:'url(#g_sh)'},g);
