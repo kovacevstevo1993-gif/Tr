@@ -1,0 +1,29 @@
+# Video lungo 13 (reversibilita') - durate dagli screenshot CapCut (22 screenshot, blocchi 1-22), 30 fps, lettura N.29
+# fine blocco = ULTIMO SEGNO disegnato prima della riga bianca + 1 (arrotondamento per eccesso).
+# DOPPIA LETTURA: (1) cifra dell'etichetta del righello piu vicina alla riga; (2) posizione in pixel (riga a x=359,5; ~67 px a fotogramma).
+# Blocchi 1-5: segni misurati al pixel sui file (stesso risultato della lettura a occhio). Blocchi 6-22: etichette lette sugli screenshot ricevuti in chat (i file non sono salvati nella sessione), offset della riga 0,3-1,0 fotogrammi come nei blocchi 1-5.
+# Controllo caratteri/secondo: 14,5-18,5 (media 16,4): nessuna differenza di decine di fotogrammi. Blocco 9 = 18,5 c/s (iscrizione letta piu veloce): i tempi dello screenshot 8 e 10 sono coerenti (02:56 -> 03:16 -> 03:40).
+# blocco | fine (timeline) | fotogrammi fine | durata fotogrammi | ultimo segno | caratteri | c/s
+1 | 00:17 + 25f | 535 | 535 | 24f | 312 | 17.5
+2 | 00:41 + 9f | 1239 | 704 | 8f | 383 | 16.3
+3 | 01:03 + 22f | 1912 | 673 | punto dopo 20f | 393 | 17.5
+4 | 01:26 + 22f | 2602 | 690 | punto dopo 20f | 367 | 16.0
+5 | 01:49 + 28f | 3298 | 696 | punto dopo 26f | 394 | 17.0
+6 | 02:12 + 29f | 3989 | 691 | 28f | 390 | 16.9
+7 | 02:33 + 13f | 4603 | 614 | 12f | 329 | 16.1
+8 | 02:56 + 7f | 5287 | 684 | 6f | 377 | 16.5
+9 | 03:16 + 26f | 5906 | 619 | punto dopo 24f | 382 | 18.5
+10 | 03:40 + 9f | 6609 | 703 | 8f | 387 | 16.5
+11 | 04:04 + 11f | 7331 | 722 | 10f | 399 | 16.6
+12 | 04:29 + 25f | 8095 | 764 | 24f | 395 | 15.5
+13 | 04:52 + 2f | 8762 | 667 | punto dopo 04:52 | 335 | 15.1
+14 | 05:13 + 22f | 9412 | 650 | punto dopo 20f | 354 | 16.3
+15 | 05:37 + 28f | 10138 | 726 | punto dopo 26f | 383 | 15.8
+16 | 06:00 + 17f | 10817 | 679 | 16f | 389 | 17.2
+17 | 06:23 + 29f | 11519 | 702 | 28f | 377 | 16.1
+18 | 06:47 + 4f | 12214 | 695 | punto dopo 2f | 375 | 16.2
+19 | 07:12 + 10f | 12970 | 756 | punto dopo 8f | 396 | 15.7
+20 | 07:36 + 24f | 13704 | 734 | punto dopo 22f | 387 | 15.8
+21 | 08:00 + 14f | 14414 | 710 | punto dopo 12f | 368 | 15.5
+22 | 08:23 + 21f | 15111 | 697 | 20f | 337 | 14.5
+# totale 15111 fotogrammi = 08:23 + 21f
