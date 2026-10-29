@@ -25,6 +25,7 @@ TESTI (titolo, descrizione, tag, commento, impostazioni) - ognuno in un RIQUADRO
 12. Mai "INVALIDI" da solo come etichetta; mai "45 centesimi" in titoli/miniature; mai semafori nelle slide (dal video 4).
 SLIDE / CLIP (1920x1080 lunghi, 1080x1920 short, 30 fps; nomi CON PREFISSO DEL CANALE dal 21/10: CIP-V10-blocco01.mp4 / CIP-S12-blocco01.mp4, mai V7-blocco come gli altri canali)
 13. Una scena per blocco (due solo se ognuna >= 5 s), comparsa elementi 0,9 s, nessun elemento sparisce nella scena, ultimo elemento completo all'80 % e poi tutto fermo, >= 0,45 s tra elementi (N.15, N.18).
+13b. NIENTE NUMERO del blocco/della slide nel titoletto (utente 29/10, dal video 14 in poi; N.50).
 14. Stile dei blocchi FINALI del video 4, coerente con i video vecchi (verde acqua), tono serio da adulti (N.12, N.17).
 15. Prima di ogni invio: render.py + b-sync-80.js (blocco automatico), qa_tempi.py, qa_slide.py su TUTTI i fotogrammi, ffprobe durate = fotogrammi dell'utente. Il QA non misura il tempo di lettura: misurare con window.__SC / __IT e GUARDARE la sequenza.
 16. Ultimo blocco: disclaimer nella parte ALTA e ultimi 20 s con zona libera in basso per riquadro video correlato + Iscriviti (N.22).

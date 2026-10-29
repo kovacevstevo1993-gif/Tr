@@ -800,3 +800,7 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 - Look nuovo: titoletto con i 4 passaggi (chi / quanto / riduzione / domanda), didascalia a pannello con "i", sfondo con linee di soglia e scalinata che sale; pittogrammi di famiglia, anelli di percentuale, scala del reddito, grafico del gradino. Motore: sorgenti/specs-v13.js + regia13.js (copia del motore V12 + helper nuovi).
 - Da fare solo su ordine: titolo (piano vidIQ prima, saldo 12), miniature, pacchetto (video correlato: schermata finale), short teaser del video 13.
 - ISTRUZIONE UTENTE (29/10): i blocchi 400-500 vanno bene per gli altri video, per questo "si fa cosi'" (22 blocchi gia' registrati dall'utente): il copione registrato NON si cambia.
+
+## REGOLA N.50 (utente, 29/10/2026): NIENTE NUMERO DEL BLOCCO NELLE SLIDE
+- Parole dell'utente: "Per il prossimo video evita di numerare le slide". Nel video 13 il titoletto di ogni slide aveva il riquadro col numero del blocco (01..22).
+- Dal PROSSIMO video (e short): nel titoletto delle slide NON mettere il numero del blocco/della slide. Restano solo il testo del titoletto e, se serve, altri elementi grafici che non siano un numero progressivo. (Il video 13 resta com'e': non si rifa' senza ordine.)
