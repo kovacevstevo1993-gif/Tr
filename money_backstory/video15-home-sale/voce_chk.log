@@ -1,0 +1,176 @@
+--- b1 medium.en: A couple sells the house they bought for $140,000. The buyer pays $900,000. It is easy to assume that after 65, that profit is simply tax-free. It is not. The IRS allows a big exclusion, but part of this couple's profit is still taxed, and it can also raise their Medicare bill two years later. Here are the exact numbers from the official rules.
+   DIFF replace copione: one hundred forty thousand dollars | sentito: 140 000
+   DIFF replace copione: nine hundred thousand | sentito: 900 000
+   DIFF replace copione: sixty five | sentito: 65
+--- b1 large-v3: A couple sells the house they bought for $140,000. The buyer pays $900,000. It is easy to assume that after 65, that profit is simply tax-free. It is not. The IRS allows a big exclusion, but part of this couple's profit is still taxed, and it can also raise their Medicare bill two years later. Here are the exact numbers from the official rules. Thank you.
+   DIFF replace copione: one hundred forty thousand dollars | sentito: 140 000
+   DIFF replace copione: nine hundred thousand | sentito: 900 000
+   DIFF replace copione: sixty five | sentito: 65
+   DIFF insert copione:  | sentito: thank you
+--- b2 medium.en: Meet Ray and Donna, both 72, married, filing jointly. Long ago they paid $140,000 for their home, and they spent another $60,000 on a new roof and a kitchen. Now they plan to sell for $900,000 and move closer to their daughter. Their other income from pensions and retirement withdrawals is about $90,000 a year.
+   DIFF replace copione: seventy two | sentito: 72
+   DIFF replace copione: one hundred forty thousand | sentito: 140 000
+   DIFF replace copione: sixty thousand | sentito: 60 000
+   DIFF replace copione: nine hundred thousand | sentito: 900 000
+   DIFF replace copione: ninety thousand dollars | sentito: 90 000
+--- b2 large-v3: Meet Ray and Donna, both 72, married, filing jointly. Long ago, they paid $140,000 for their home, and they spent another $60,000 on a new roof and a kitchen. Now they plan to sell for $900,000 and move closer to their daughter. Their other income from pensions and retirement withdrawals is about $90,000 a year.
+   DIFF replace copione: seventy two | sentito: 72
+   DIFF replace copione: one hundred forty thousand | sentito: 140 000
+   DIFF replace copione: sixty thousand | sentito: 60 000
+   DIFF replace copione: nine hundred thousand | sentito: 900 000
+   DIFF replace copione: ninety thousand dollars | sentito: 90 000
+--- b3 medium.en: Every rule here comes from official sources, IRS Publication 523, the IRS Tax Topic Pages, the Social Security Administration's rules on Medicare premiums, and the Medicare Fact Sheets. We will cover five things. Who qualifies, how the gain is counted and taxed, what it does to Medicare and Social Security, the cases that change the amount, and what happens to your family.
+   DIFF replace copione: five twenty three | sentito: 523
+--- b3 large-v3: Every rule here comes from official sources, IRS Publication 523, the IRS Tax Topic Pages, the Social Security Administration's Rules on Medicare Premiums, and the Medicare Fact Sheets. We will cover five things, who qualifies, how the gain is counted and taxed, what it does to Medicare and Social Security, the cases that change the amount, and what happens to your family.
+   DIFF replace copione: five twenty three | sentito: 523
+--- b4 medium.en: Number one is who qualifies, and the IRS lets you exclude up to $250,000 of profit when you sell your main home, or up to $500,000 if you are married and file a joint return. To get it, you must pass two tests. You owned the home for at least 24 months, and you lived in it as your main home for at least 24 months, all within the five years before the sale.
+   DIFF replace copione: two hundred fifty thousand dollars | sentito: 250 000
+   DIFF replace copione: five hundred thousand dollars | sentito: 500 000
+   DIFF replace copione: twenty four | sentito: 24
+   DIFF replace copione: twenty four | sentito: 24
+--- b4 large-v3: Number one is who qualifies, and the IRS lets you exclude up to $250,000 of profit when you sell your main home, or up to $500,000 if you are married and file a joint return. To get it, you must pass two tests. You owned the home for at least 24 months, and you lived in it as your home for at least 24 months, all within the five years before the sale.
+   DIFF replace copione: two hundred fifty thousand dollars | sentito: 250 000
+   DIFF replace copione: five hundred thousand dollars | sentito: 500 000
+   DIFF replace copione: twenty four | sentito: 24
+   DIFF delete copione: main | sentito: 
+   DIFF replace copione: twenty four | sentito: 24
+--- b5 medium.en: Some details matter. The 24 months do not have to be in a row. They only have to add up to 730 days. Only one spouse has to pass the ownership test, but both must pass the living in it test. You can use the exclusion once every two years and only on your main home. And if you cannot care for yourself, time in a licensed nursing home can count as time living there if the home was your main home for at least 12 months in the last five years.
+   DIFF replace copione: twenty four | sentito: 24
+   DIFF replace copione: seven hundred thirty | sentito: 730
+   DIFF replace copione: twelve | sentito: 12
+--- b5 large-v3: Some details matter. The 24 months do not have to be in a row. They only have to add up to 730 days. Only one spouse has to pass the ownership test, but both must pass the living in it test. You can use the exclusion once every two years and only on your main home. And if you cannot care for yourself. Time in a licensed nursing home can count as time living there if the home was your main home for at least 12 months in the last five years.
+   DIFF replace copione: twenty four | sentito: 24
+   DIFF replace copione: seven hundred thirty | sentito: 730
+   DIFF replace copione: twelve | sentito: 12
+--- b6 medium.en: Next, is the math of the gain, and the IRS formula is simple. Take the selling price and subtract your selling costs, like the agent's commission, advertising, and legal fees. That gives you the amount realized. Then subtract your adjusted basis, which is what you invested in the home. What is left is your gain. If it is negative, you have a loss, and the IRS says you cannot deduct a loss on your home.
+--- b6 large-v3: Next is the math of the gain, and the IRS formula is simple. Take the selling price and subtract your selling costs, like the agent's commission, advertising, and legal fees. That gives you the amount realized. then subtract your adjusted basis which is what you invested in the home what is left is your gain if it is negative you have a loss and the IRS says you cannot deduct a loss on your home
+--- b7 medium.en: Your basis is more than the price you paid because it includes closing costs like legal fees, recording fees, transfer taxes and owner's title insurance, plus improvements, a new roof, a kitchen remodel, an addition, a new heating system. It does not include repairs like painting or fixing a leak or loan fees and points. Keep your receipts. The IRS says to keep records until three years after the due date of the return for the year you sell.
+--- b7 large-v3: Your basis is more than the price you paid because it includes closing costs like legal fees, recording fees, transfer taxes, and owner's title insurance, plus improvements, a new roof, a kitchen remodel, an addition, a new heating system. It does not include repairs like painting or fixing a leak, or loan fees and points. Keep your receipts. the IRS says to keep records until three years after the due date of the return for the year you sell.
+--- b8 medium.en: Now the math for Ray and Donna. Their basis is the $140,000 they paid plus $60,000 in improvements, so $200,000. They sell at $900,000 and pay $54,000 in selling costs, so the amount realized is $846,000. Subtract the basis, and their gain is $646,000. Their exclusion is $500,000, so $146,000 is taxable.
+   DIFF replace copione: one hundred forty thousand | sentito: 140 000
+   DIFF replace copione: sixty thousand | sentito: 60 000
+   DIFF replace copione: two hundred thousand dollars | sentito: 200 000
+   DIFF replace copione: nine hundred thousand | sentito: 900 000
+   DIFF replace copione: fifty four thousand | sentito: 54 000
+   DIFF replace copione: eight hundred forty six thousand | sentito: 846 000
+   DIFF replace copione: six hundred forty six thousand dollars | sentito: 646 000
+   DIFF replace copione: five hundred thousand | sentito: 500 000
+   DIFF replace copione: one hundred forty six thousand dollars | sentito: 146 000
+--- b8 large-v3: Now the math for Ray and Donna. Their basis is the $140,000 they paid plus $60,000 in improvements, so $200,000. They sell at $900,000 and pay $54,000 in selling costs, so the amount realized is $846,000. Subtract the basis, and their gain is $646,000. Their exclusion is $500,000, so $146,000 is taxable.
+   DIFF replace copione: one hundred forty thousand | sentito: 140 000
+   DIFF replace copione: sixty thousand | sentito: 60 000
+   DIFF replace copione: two hundred thousand dollars | sentito: 200 000
+   DIFF replace copione: nine hundred thousand | sentito: 900 000
+   DIFF replace copione: fifty four thousand | sentito: 54 000
+   DIFF replace copione: eight hundred forty six thousand | sentito: 846 000
+   DIFF replace copione: six hundred forty six thousand dollars | sentito: 646 000
+   DIFF replace copione: five hundred thousand | sentito: 500 000
+   DIFF replace copione: one hundred forty six thousand dollars | sentito: 146 000
+--- b9 medium.en: Notice what the receipts did for Ray and Donna. Without them, the basis would be only $140,000 and the taxable gain would be $206,000. That is $60,000 of extra profit on paper just because the receipts for the roof and the kitchen were lost.
+   DIFF replace copione: one hundred forty thousand | sentito: 140 000
+   DIFF replace copione: two hundred six thousand | sentito: 206 000
+   DIFF replace copione: sixty thousand dollars | sentito: 60 000
+--- b9 large-v3: Notice what the receipts did for Ray and Donna. Without them, the basis would be only $140,000, and the taxable gain would be $206,000. That is $60,000 of extra profit on paper, just because the receipts for the roof and the kitchen were lost.
+   DIFF replace copione: one hundred forty thousand | sentito: 140 000
+   DIFF replace copione: two hundred six thousand | sentito: 206 000
+   DIFF replace copione: sixty thousand dollars | sentito: 60 000
+--- b10 medium.en: The federal tax on that gain depends on how long they owned the home. It was more than a year, so it is a long-term capital gain, taxed at 0, 15, or 20 percent. For 2026, a joint return pays 0 percent up to $98,900 of taxable income and 15 percent up to $613,700. So Ray and Donna owe it most about 21,900 dollars, and less if part falls in the zero bracket.
+   DIFF replace copione: zero fifteen | sentito: 0 15
+   DIFF replace copione: twenty | sentito: 20
+   DIFF replace copione: twenty twenty six | sentito: 2026
+   DIFF replace copione: zero | sentito: 0
+   DIFF replace copione: ninety eight thousand nine hundred dollars | sentito: 98 900
+   DIFF replace copione: fifteen | sentito: 15
+   DIFF replace copione: six hundred thirteen thousand seven hundred | sentito: 613 700
+   DIFF replace copione: at | sentito: it
+   DIFF replace copione: twenty one thousand nine hundred | sentito: 21 900
+--- b10 large-v3: The federal tax on that gain depends on how long they owned the home. It was more than a year, so it is a long-term capital gain, taxed at 0, 15, or 20%. For 2026, a joint return pays 0% up to $98,900 of taxable income, and 15% up to $613,700. So Ray and Donna owe at most about $21,900, and less if part falls in the zero bracket.
+   DIFF replace copione: zero fifteen | sentito: 0 15
+   DIFF replace copione: twenty percent | sentito: 20
+   DIFF replace copione: twenty twenty six | sentito: 2026
+   DIFF replace copione: zero percent | sentito: 0
+   DIFF replace copione: ninety eight thousand nine hundred dollars | sentito: 98 900
+   DIFF replace copione: fifteen percent | sentito: 15
+   DIFF replace copione: six hundred thirteen thousand seven hundred | sentito: 613 700
+   DIFF replace copione: twenty one thousand nine hundred dollars | sentito: 21 900
+--- b11 medium.en: Two more notes. A 3.8% net investment income tax applies only above $250,000 of income on a joint return, or $200,000 of single, and the excluded profit does not count. Ray and Donna stay under it. State taxes are separate from these rules. And if you claim depreciation on a rental or business part of the home after May of 1997, that That game cannot be excluded.
+   DIFF replace copione: three point eight percent | sentito: 3 8
+   DIFF replace copione: two hundred fifty thousand dollars | sentito: 250 000
+   DIFF replace copione: two hundred thousand if | sentito: 200 000 of
+   DIFF replace copione: claimed | sentito: claim
+   DIFF replace copione: nineteen ninety seven | sentito: 1997
+   DIFF replace copione: gain | sentito: that game
+--- b11 large-v3: Two more notes. A 3.8% net investment income tax applies only above $250,000 of income on a joint return, or $200,000 if single, and the excluded profit does not count. Ray and Donna stay under it. State taxes are separate from these rules, and if you claim depreciation on a rental or business part of the home after May of 1997, that gain cannot be excluded.
+   DIFF replace copione: three point eight percent | sentito: 3 8
+   DIFF replace copione: two hundred fifty thousand dollars | sentito: 250 000
+   DIFF replace copione: two hundred thousand | sentito: 200 000
+   DIFF replace copione: claimed | sentito: claim
+   DIFF replace copione: nineteen ninety seven | sentito: 1997
+--- b12 medium.en: Then, the paperwork. If you receive Form 1099-S, you must report the sale on Form 8949, even if all of the gain is excluded. And if you owe tax, you may also need to raise your withholding or make estimated payments, so the bill does not surprise you next spring.
+   DIFF replace copione: ten ninety nine | sentito: 1099
+   DIFF replace copione: eighty nine forty nine | sentito: 8949
+--- b12 large-v3: Then the paperwork. If you receive Form 1099-S, you must report the sale on Form 8949, even if all of the gain is excluded. And if you owe tax, you may also need to raise your withholding or make estimated payments, so the bill does not surprise you next spring.
+   DIFF replace copione: ten ninety nine | sentito: 1099
+   DIFF replace copione: eighty nine forty nine | sentito: 8949
+--- b13 medium.en: Number three is the ripples and this is where many people get surprised. The taxable gain lands on the tax return and Ray and Donna's income for that year jumps from $90,000 to $236,000. Medicare generally sets your Part B premium using the income on your tax return from two years earlier. The Social Security Administration's manual gives this example. 2026 premiums are generally based on 2024 returns.
+   DIFF replace copione: ninety thousand | sentito: 90 000
+   DIFF replace copione: two hundred thirty six thousand dollars | sentito: 236 000
+   DIFF replace copione: twenty twenty six | sentito: 2026
+   DIFF replace copione: twenty twenty four | sentito: 2024
+--- b13 large-v3: Number three is the ripples, and this is where many people get surprised. The taxable gain lands on the tax return, and Ray and Donna's income for that year jumps from $90,000 to $236,000. Medicare generally sets your Part B premium using the income on your tax return from two years earlier. The Social Security Administration's manual gives this example. 2026 premiums are generally based on 2024 returns.
+   DIFF replace copione: ninety thousand | sentito: 90 000
+   DIFF replace copione: two hundred thirty six thousand dollars | sentito: 236 000
+   DIFF replace copione: twenty twenty six | sentito: 2026
+   DIFF replace copione: twenty twenty four | sentito: 2024
+--- b14 medium.en: Using the 2026 brackets, a joint return above $218,000 pays more. Between $218 and $274,000, each person pays $81.20 more per month for a total of $284.10. For Ray and Donna, that is $1,948.80 extra for the year. Future brackets will differ, so this is only an illustration.
+   DIFF replace copione: twenty twenty six | sentito: 2026
+   DIFF replace copione: two hundred eighteen thousand dollars | sentito: 218 000
+   DIFF replace copione: two hundred eighteen | sentito: 218
+   DIFF replace copione: two hundred seventy four thousand | sentito: 274 000
+   DIFF replace copione: eighty one dollars and twenty cents | sentito: 81 20
+   DIFF replace copione: two hundred eighty four dollars and ten cents | sentito: 284 10
+   DIFF replace copione: one thousand nine hundred forty eight dollars and eighty cents | sentito: 1 948 80
+--- b14 large-v3: Using the 2026 brackets, a joint return above $218,000 pays more. Between $218,000 and $274,000, each person pays $81.20 more per month for a total of $284.10. For Ray and Donna, that is $1,948.80 extra for the year. Future brackets will differ, so this is only an illustration.
+   DIFF replace copione: twenty twenty six | sentito: 2026
+   DIFF replace copione: two hundred eighteen thousand dollars | sentito: 218 000
+   DIFF replace copione: two hundred eighteen | sentito: 218 000
+   DIFF replace copione: two hundred seventy four thousand | sentito: 274 000
+   DIFF replace copione: eighty one dollars and twenty cents | sentito: 81 20
+   DIFF replace copione: two hundred eighty four dollars and ten cents | sentito: 284 10
+   DIFF replace copione: one thousand nine hundred forty eight dollars and eighty cents | sentito: 1 948 80
+--- b15 medium.en: The same gain can also touch your Social Security. The IRS says your benefits become taxable when half of your benefits plus your other income is above a base amount, 25,000 for a single filer or 32,000 on a joint return. Above 34,000 or 44,000 on a joint return, up to 85% of your benefits can be taxable. A big gain can push you higher in the year of the sale.
+   DIFF replace copione: twenty five thousand | sentito: 25 000
+   DIFF replace copione: thirty two thousand | sentito: 32 000
+   DIFF replace copione: thirty four thousand | sentito: 34 000
+   DIFF replace copione: forty four thousand | sentito: 44 000
+   DIFF replace copione: eighty five percent | sentito: 85
+--- b15 large-v3: The same gain can also touch your Social Security. The IRS says your benefits become taxable when half of your benefits plus your other income is above a base amount, $25,000 for a single filer or $32,000 on a joint return. Above $34,000 or $44,000 on a joint return, up to 85% of your benefits can be taxable. A big gain can push you higher in the year of the sale.
+   DIFF replace copione: twenty five thousand | sentito: 25 000
+   DIFF replace copione: thirty two thousand | sentito: 32 000
+   DIFF replace copione: thirty four thousand | sentito: 34 000
+   DIFF replace copione: forty four thousand | sentito: 44 000
+   DIFF replace copione: eighty five percent | sentito: 85
+--- b16 medium.en: Number four is the exceptions that change your limit, and the first is a partial exclusion. If you miss the two-year tests, you can still get part of it when the main reason you sold was a work move, a health reason, or an unforeseeable event. Health includes moving for treatment, caring for a sick family member, or a doctor's advice. The formula, months lived there, divided by 24 times $250,000. 12 months gives a single owner $125,000.
+   DIFF replace copione: twenty four | sentito: 24
+   DIFF replace copione: two hundred fifty thousand twelve | sentito: 250 000 12
+   DIFF replace copione: one hundred twenty five thousand | sentito: 125 000
+--- b16 large-v3: Number four is the exceptions that change your limit, and the first is a partial exclusion. If you miss the two-year tests, you can still get part of it when the main reason you sold was a work move, a health reason, or an unforeseeable event. Health includes moving for treatment, caring for a sick family member, or a doctor's advice. The formula, months lived there, divided by 24, times $250,000. Twelve months gives a single owner $125,000.
+   DIFF replace copione: twenty four | sentito: 24
+   DIFF replace copione: two hundred fifty thousand | sentito: 250 000
+   DIFF replace copione: one hundred twenty five thousand | sentito: 125 000
+--- b17 medium.en: Second, the surviving spouse. Suppose Ray passes away and Donna decides to sell. If she sells within two years of his death and is not remarried, she can still use the $500,000 exclusion as long as the other tests are met and she can count the time Ray owned and lived in the home. After the two years, the limit falls back to the single amount, $250,000. so for a widow or widower the date on the calendar matters.
+   DIFF replace copione: has | sentito: is
+   DIFF replace copione: five hundred thousand dollar | sentito: 500 000
+   DIFF replace copione: two hundred fifty thousand | sentito: 250 000
+--- b17 large-v3: Second, the surviving spouse. Suppose Ray passes away and Donna decides to sell. If she sells within two years of his death and is not remarried, she can still use the $500,000 exclusion as long as the other tests are met and she can count the time Ray owned and lived in the home. After the two years, the limit falls back to the single amount, $250,000. So for a widow or widower, the date on the calendar matters.
+   DIFF replace copione: has | sentito: is
+   DIFF replace copione: five hundred thousand dollar | sentito: 500 000
+   DIFF replace copione: two hundred fifty thousand | sentito: 250 000
+--- b18 medium.en: There is another benefit for a survivor. For a jointly owned home, the half that belonged to the spouse who died gets a new basis equal to its value on that date. In the IRS example, a home with a basis of $50,000 is worth $100,000, and the survivor's new basis becomes $75,000. In the nine community property states, the whole home usually gets the new basis.
+   DIFF replace copione: fifty thousand dollars | sentito: 50 000
+   DIFF replace copione: one hundred thousand | sentito: 100 000
+   DIFF replace copione: seventy five thousand | sentito: 75 000
+--- b18 large-v3: There is another benefit for a survivor. For a jointly owned home, the half that belonged to the spouse who died gets a new basis equal to its value on that date. In the IRS example, a home with a basis of $50,000 is worth $100,000, and the survivor's new basis becomes $75,000. In the nine community property states, the whole home usually gets the new basis.
+   DIFF replace copione: fifty thousand dollars | sentito: 50 000
+   DIFF replace copione: one hundred thousand | sentito: 100 000
+   DIFF replace copione: seventy five thousand | sentito: 75 000

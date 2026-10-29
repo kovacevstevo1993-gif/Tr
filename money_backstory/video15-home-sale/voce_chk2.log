@@ -1,0 +1,37 @@
+--- b19 medium.en: Number five is your family, and the rules are very different depending on how the home passes on. If your children inherit it, their basis is its value when you die, so the profit built up before then is not taxed when they sell. But if you give them the home while you are alive, the IRS says that as a general rule, they take your basis. In Rayandana's case, the gift basis would be $200,000, not $900,000, and a child who never lived there may not get the exclusion.
+   DIFF replace copione: ray and donna's | sentito: rayandana's
+   DIFF replace copione: two hundred thousand | sentito: 200 000
+   DIFF replace copione: nine hundred thousand | sentito: 900 000
+--- b19 large-v3: Number five is your family. And the rules are very different depending on how the home passes on. If your children inherit it, their basis is its value when you die. So the profit built up before then is not taxed when they sell. But if you give them the home while you are alive, the IRS says that as a general rule, they take your basis. In Ray and Donna's case, the gift basis would be $200,000, not $900,000. And a child who never lived there may not get the exclusion.
+   DIFF replace copione: two hundred thousand | sentito: 200 000
+   DIFF replace copione: nine hundred thousand | sentito: 900 000
+--- b20 medium.en: What should you do before you sign? One, count your dates, including the two-year window if you are a widow or widower. Two, gather your closing papers and improvement receipts. Three, estimate your gain with the free worksheets in Publication 523. Four, check what a gain would do to your Medicare premiums and Social Security tax. Five, the sale date is usually the closing date, so it decides which tax year the gain lands in.
+   DIFF replace copione: five twenty three | sentito: 523
+--- b20 large-v3: What should you do before you sign? 1. Count your dates, including the two-year window if you are a widow or widower. 2. Gather your closing papers and improvement receipts. 3. Estimate your gain with the free worksheets in Publication 523. 4. Check what a gain would do to your Medicare premiums and Social Security tax. 5. The sale date is usually the closing date, so it decides which tax year the gain lands in.
+   DIFF replace copione: one | sentito: 1
+   DIFF replace copione: two | sentito: 2
+   DIFF replace copione: three | sentito: 3
+   DIFF replace copione: five twenty three four | sentito: 523 4
+   DIFF replace copione: five | sentito: 5
+--- b21 medium.en: To sum up, 1. Owning and living in your home for 24 months within 5 years lets you exclude 250,000 or 500,000 jointly. 2. Gain is price minus costs minus basis, and improvements raise basis. 3. A taxable gain can lift your Medicare costs and the tax on your Social Security. 4. Partial and survivor rules change the limit. 5. An inherited home gets a new basis, while a gift usually keeps yours.
+   DIFF replace copione: one | sentito: 1
+   DIFF replace copione: twenty four | sentito: 24
+   DIFF replace copione: five | sentito: 5
+   DIFF replace copione: two hundred fifty thousand | sentito: 250 000
+   DIFF replace copione: five hundred thousand | sentito: 500 000
+   DIFF replace copione: two | sentito: 2
+   DIFF replace copione: three | sentito: 3
+   DIFF replace copione: four | sentito: 4
+   DIFF replace copione: five | sentito: 5
+--- b21 large-v3: To sum up, 1. Owning and living in your home for 24 months within 5 years lets you exclude $250,000 or $500,000 jointly. 2. Gain is price minus costs minus basis, and improvements raise basis. 3. A taxable gain can lift your Medicare costs and the tax on your Social Security. 4. Partial and survivor rules change the limit. 5. An inherited home gets a new basis, while a gift usually keeps yours.
+   DIFF replace copione: one | sentito: 1
+   DIFF replace copione: twenty four | sentito: 24
+   DIFF replace copione: five | sentito: 5
+   DIFF replace copione: two hundred fifty thousand | sentito: 250 000
+   DIFF replace copione: five hundred thousand | sentito: 500 000
+   DIFF replace copione: two | sentito: 2
+   DIFF replace copione: three | sentito: 3
+   DIFF replace copione: four | sentito: 4
+   DIFF replace copione: five | sentito: 5
+--- b22 medium.en: If this helped, send it to someone who is thinking about selling their home and tell me in the comments, would you sell or stay? One last thing, this video is general information, not tax advice. Rules, amounts and ages change and differ by location. So confirm with the IRS or a qualified tax professional before you act. This channel is not affiliated with the IRS, Medicare, or Social Security.
+--- b22 large-v3: If this helped, send it to someone who is thinking about selling their home and tell me in the comments, would you sell or stay? One last thing. This video is general information, not tax advice. Rules, amounts, and ages change and differ by location, so confirm with the IRS or a qualified tax professional before you act. This channel is not affiliated with the IRS, Medicare, or Social Security.

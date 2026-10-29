@@ -71,3 +71,9 @@ Tabella parole chiave e concorrenza: vedi `video7-500k/RICERCA-E-STRATEGIA.md`.
 - keyword research 'medigap plan g' (US): 4.851/mese (conc. 35, overall 59); correlate: plan g 5.975 (+75,9%, conc. 45), plan g vs plan n 3.382, plan n vs plan g 3.744, medicare supplement plans 3.431, turning 65 medicare 3.203 (conc. 17, overall 65), medicare advantage 29.887 (+36,9%), medicare part b 14.266 (+237,8%), compare medicare plans 4.237 (conc. 26), medicare costs 9.274, medicare explained 39.004.
 - score_title: "Every Senior Must Know This Medigap Rule Before December 7 (Don't Drop It)" = 96 (SCELTO); "Medigap vs Medicare Advantage: The One-Way Door Before Dec 7 (Plan G Explained)" = 91.
 - Gratis (curl): virali Medigap/Plan G: "Never Buy Medicare Plan G Until You Know This (2027 Plain-English Guide)" 41.710 view in 3 giorni (Medicare on Video, 6:23).
+
+## 28/10/2026 VIDEO 15 (vendere casa dopo i 65 anni; l'utente: "informati cosa cercano adesso la gente"): 20 crediti spesi, saldo 22 -> 2 (altre chat) -> ricaricato dall'utente a 22 -> 17
+- keyword research 'social security payment schedule' (US): seed <750/mese (conc. 36); 'social security payments' 4.748; 'social security checks' 4.421; tema scartato (domanda solo di notizia mensile). matching_terms 'social security payment dates': 1 risultato inutile (5 crediti sprecati).
+- score_title: "Every Senior Must Know This Before Selling Their Home After 65 (Tax and Medicare Trap)" = 96 (SCELTO); "Selling Your Home After 65: The $250,000 Tax Rule Most Seniors Get Wrong (Medicare Trap)" = 93.
+- keyword research 'selling home after 65 taxes' (US): seed <750 (conc. 6, overall 38); correlate: capital gains 17.320/mese (+25,7%), taxes 93.540, retirement planning 290.961, real estate investing 288.820. Le view del tema vengono da suggeriti/home (virale: "Beware of the HUGE Medicare Penalty for Selling Your Home After 63" 1,49M).
+- Gratis: curl YouTube + suggerimenti di ricerca (suggestqueries.google.com).

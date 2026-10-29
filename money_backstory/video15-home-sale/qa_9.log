@@ -1,0 +1,2 @@
+{'blocco': 9, 'slide': 1, 'fotogrammi': 337, 'controllati': 337, 'fuori_area': 0, 'fuori_area_fotogrammi': [], 'ultimo_fuori_area': None, 'completo_a_80%': 1.0, 'pixel_che_cambiano_dopo_81%': 0, 'primo_elemento_s': 0.17, 'buco_max_s': 2.07, 'OK': True}
+{'blocco': 9, 'slide': 2, 'fotogrammi': 227, 'controllati': 227, 'fuori_area': 0, 'fuori_area_fotogrammi': [], 'ultimo_fuori_area': None, 'completo_a_80%': 1.0, 'pixel_che_cambiano_dopo_81%': 0, 'primo_elemento_s': 0.23, 'buco_max_s': 2.03, 'OK': True}
