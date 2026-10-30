@@ -4,12 +4,12 @@
 4 | 99134aaf9e | italiano OK | logica OK | persona OK | numeri OK | 5.500.000 x 300 = 1.650.000.000 vs 1,6 miliardi detto dalla presidente; conclusione prudente
 5 | 5089381bb0 | italiano OK | logica OK | persona OK | numeri OK | citazioni comunicato e Meloni; non si afferma altro
 6 | 768a0f6d4f | italiano OK | logica OK | persona OK | numeri OK | citazione Meloni e comunicato; 'massimo' tenuto per il blocco 12
-7 | 6f50133137 | italiano OK | logica OK | persona OK | numeri OK | richiesta iscrizione diversa da V11; 'cinque cose' = blocco 8
+7 | 61d2062beb | italiano OK | logica OK | persona OK | numeri OK | promessa 'ogni video' tolta (riletto 30/10); 'cinque cose' = blocco 8
 8 | e8dc4d9521 | italiano OK | logica OK | persona OK | numeri OK | cinque voci contate: ottiene, quando, una volta/ogni anno, lordo-netto, supera il limite
 9 | e0332f35ac | italiano OK | logica OK | persona OK | numeri OK | non scritti: eta', contributi, assegno; rimanda al blocco 10
 10 | b91f36cdc5 | italiano OK | logica OK | persona OK | numeri OK | circolare Inps 28/2026 all.2 (V1); 3 x 546,24 = 1.638,72; madri 2,8/2,6
 11 | 6747878740 | italiano OK | logica OK | persona OK | numeri OK | scaglioni 2026 23/33/43 (V11); 5.000 x 10% = 500; 'oltre' = oltre cinquantamila
-12 | c464db4f1a | italiano OK | logica OK | persona OK | numeri OK | 50.000/13 = 3.846; 2.000x10%=200; 4.000x10%=400; 5.000x10%=500; dice importi lordi, solo Irpef
+12 | fb9c202e8c | italiano OK | logica OK | persona OK | numeri OK | 50.000/13 = 3.846; 2.000x10%=200; 4.000x10%=400; 5.000x10%=500; 'lordi' tolto dagli importi Irpef (riletto 30/10)
 13 | 353fb13360 | italiano OK | logica OK | persona OK | numeri OK | verificato con ricerca parole sul testo grezzo di comunicato e intervento: non compaiono; decreto 19/11 (V11)
-14 | 7977c0ca65 | italiano OK | logica OK | persona OK | numeri OK | bozze = stampa; non nei due documenti letti
-15 | ac3ef9e2f6 | italiano OK | logica OK | persona OK | numeri OK | tre punti = tre elencati; coerente con blocchi 8-12
+14 | 76ba3d902e | italiano OK | logica OK | persona OK | numeri OK | ipotesi e bozze = stampa; non nei due documenti letti; ripetizione 'ipotesi' tolta
+15 | ed6c916945 | italiano OK | logica OK | persona OK | numeri OK | tre punti = tre elencati; 'fa risparmiare' al posto di 'porta'; coerente con blocchi 8-12
