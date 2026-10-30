@@ -1,0 +1,9 @@
+# Controllo di fidelizzazione - video lungo 14 (manovra e pensionati, regola riga 0c della checklist)
+PRIMO_MINUTO_RIVELA: nei blocchi 1-4 si scopre che le misure annunciate sono tre (buono da trecento euro per gli over settantacinque con pensione sotto una soglia, fondo per l'uscita, taglio Irpef fino a cinquecento euro l'anno), che e' un disegno di legge, e che il buono costa un miliardo e seicento milioni per cinque milioni e mezzo di persone; NON si dice per chi vale davvero l'Irpef, ne' da che eta' si esce, ne' cosa il comunicato non dice del buono.
+RISPOSTA_TENUTA: blocco 12 (chi guadagna davvero con l'Irpef: zero a cinquantamila euro, duecento a cinquantaduemila, cinquecento da cinquantacinquemila)
+CERCHIO_1: aperto in blocco 1 (quanti pensionati ci guadagnano / cosa non dice il comunicato), chiuso in blocco 8 (le cinque cose che non sappiamo del buono)
+CERCHIO_2: aperto in blocco 1 (quanti ci guadagnano dall'Irpef, tieni a mente la parola massimo nel blocco 6), chiuso in blocco 12
+CERCHIO_3: aperto in blocco 1 (da che eta' si potra' uscire), chiuso in blocco 9-10 (non e' scritto; vale la regola gia' fissata per il duemilaventisette)
+CIFRA_GANCIO: cinquecento euro all'anno (beneficio massimo dell'Irpef, detto dalla presidente del Consiglio): la cifra piu' grande vera per persona e per anno; il costo del buono e' un miliardo e seicento milioni in totale, non per persona
+LETTI: analisi-fidelizzazione-07-10.md; trascrizioni: GkAwl5_0ZwY.txt (Mr LUL), Hl97fO6LaLU.txt (Radio UCI) - letti il 30/10 PRIMA di scrivere il copione (cartella 12-video-lungo-3-rivalutazione-2027/trascrizioni-concorrenti)
+IMPRONTA_PRIMI4: 9a5ba4c1ff
