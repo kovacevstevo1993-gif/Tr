@@ -13,7 +13,11 @@ def git(*a): return subprocess.run(['git',*a],cwd=root,capture_output=True,text=
 cambiati=set(l[3:].strip() for l in git('status','--porcelain','-uall').splitlines())
 cambiati|=set(l.strip() for l in git('log','--since='+DAL,'--name-only','--format=').splitlines())
 err=[]
-for f in sorted(x for x in cambiati if x.startswith('conti_in_pensione/') and x.endswith('/copione-blocchi.txt')):
+import re
+def nuovo(x):  # solo cartelle dalla 33 in poi: i copioni vecchi sono gia' pubblicati (utente 30/10)
+    m=re.match(r'conti_in_pensione/(\d+)-',x)
+    return bool(m) and int(m.group(1))>=33
+for f in sorted(x for x in cambiati if x.startswith('conti_in_pensione/') and x.endswith('/copione-blocchi.txt') and nuovo(x)):
     p=os.path.join(root,f)
     if not os.path.exists(p): continue
     r=subprocess.run([sys.executable,os.path.join(root,'conti_in_pensione','qa','revisione.py'),'controlla',p],capture_output=True,text=True)
