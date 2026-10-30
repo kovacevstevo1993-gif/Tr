@@ -77,6 +77,9 @@ def draw_new16(C, e):
         d.ellipse([x0 + 24, y0 + 14, x0 + 82, y0 + 72], outline=goldL + (255,), width=4); T(C, 'SSA', 24, y0 + 30, goldL, x=x0 + 53)
         T(C, k.get('agency', 'SOCIAL SECURITY ADMINISTRATION'), 26, y0 + 12, (190, 205, 230), x=x0 + 104, anchor='l', maxw=x1 - x0 - 130)
         T(C, k.get('head', 'NOTICE OF OVERPAYMENT'), 40, y0 + 42, goldL, x=x0 + 104, anchor='l', maxw=x1 - x0 - 130)
+        if k.get('bars'):
+            for j, ww in enumerate((0.78, 0.62, 0.7, 0.5, 0.66)):
+                rb = nrow_box((x0, y0, x1, y1), j, 5); d.rounded_rectangle([rb[0] + 14, (rb[1] + rb[3]) / 2 - 8, rb[0] + 14 + (rb[2] - rb[0] - 28) * ww, (rb[1] + rb[3]) / 2 + 8], radius=8, fill=(200, 206, 218, 255))
         if k.get('fold'): d.line([x0 + 10, y0 + (y1 - y0) * 0.5, x1 - 10, y0 + (y1 - y0) * 0.5], fill=(205, 212, 226, 255), width=3)
     elif kind == 'nrow':         # una riga della lettera (stessa geometria: pbox, i, n)
         pb = k['pbox']; r = nrow_box(pb, k['i'], k['n']); hl = k.get('hl')
@@ -117,9 +120,9 @@ def draw_new16(C, e):
         d.rounded_rectangle([x0 + 10, y0 + 12, x1 + 10, y1 + 12], radius=14, fill=(0, 0, 0, 110))
         rr(d, [x0, y0, x1, y1], 14, (238, 241, 246), c, 6); rr(d, [x0, y0, x1, y0 + 88], 14, (24, 48, 86)); d.rectangle([x0, y0 + 52, x1, y0 + 88], fill=(24, 48, 86, 255))
         T(C, k['code'], 44, y0 + 20, goldL, x=cx, maxw=x1 - x0 - 30)
-        T(C, k['name'], 30, y0 + 104, (70, 82, 104), x=cx, maxw=x1 - x0 - 30)
+        for jj, ln in enumerate(k['name'].split('\n')): T(C, ln, 26, y0 + 100 + jj * 30, (70, 82, 104), x=cx, maxw=x1 - x0 - 30)
         for j in range(k.get('lines', 4)):
-            yy = y0 + 170 + j * 52
+            yy = y0 + 180 + j * 52
             d.rounded_rectangle([x0 + 36, yy, x0 + 66, yy + 30], radius=5, outline=(24, 48, 86, 255), width=3)
             if j in k.get('ticks', ()): check(C, x0 + 51, yy + 15, 11, (30, 130, 80))
             d.line([x0 + 84, yy + 24, x1 - 40 - (j % 2) * 70, yy + 24], fill=(170, 180, 200, 255), width=5)
@@ -156,4 +159,18 @@ def draw_new16(C, e):
     else: _orig16(C, e)
 _orig16 = _E.draw_new
 _E.draw_new = draw_new16
-PULSE_KINDS.update({'paper', 'nrow', 'paycut', 'dtl', 'door', 'ssaform', 'folder', 'bigvs', 'ovsel', 'subbtn'})
+PULSE_KINDS.update({'paper', 'nrow', 'paycut', 'dtl', 'door', 'ssaform', 'folder', 'bigvs', 'ovsel', 'subbtn', 'stamp', 'arrow'})
+
+
+# ---------------- TEMPI DEGLI ELEMENTI (v16): il primo elemento compare alla sua parola (entro 1,2 s dall'inizio della slide), non sempre a 0,25 s ----------------
+def el_times16(els):
+    lim = LASTP() - 0.3; n = len(els); times = []
+    for i, e in enumerate(els):
+        mx = lim - 0.3 * (n - 1 - i)
+        tc = 0.25 if (i == 0 and e['cue'] is None) else (tm(e['cue'], mx) if e['cue'] else (times[-1] + 0.35 if times else 0.35))
+        if i == 0: tc = min(max(tc - 0.2, 0.25), 1.5) if e['cue'] else min(tc, 0.25)
+        if times: tc = max(tc, times[-1] + 0.3)
+        times.append(min(tc, mx))
+    return times
+_E.el_times = el_times16
+el_times = el_times16

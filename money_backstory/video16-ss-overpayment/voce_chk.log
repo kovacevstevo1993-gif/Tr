@@ -16,3 +16,86 @@
 --- b3 medium.en: First, what is inside that envelope? The Social Security Administration's own manual says the notice must list the total – what you were paid, what you should have been paid, why the amount was different, and the months involved. It must also tell you three rights – to ask for a reconsideration, to ask for a waiver, and to ask for a different repayment rate. every line. One of them matters more than all the others, and it is about a number of days.
    DIFF delete copione: read | sentito: 
 --- b3 large-v3: First, what is inside that envelope? The Social Security Administration's own manual says the notice must list the total – what you were paid, what you should have been paid, why the amount was different, and the months involved. It must also tell you three rights – to ask for a reconsideration, to ask for a waiver, and to ask for a different repayment rate. Read every line. One of them matters more than all the others, and it is about a number of days.
+--- b4 medium.en: Here is the danger. The letter asks for a full and immediate refund. If the money does not come, the agency plans to withhold part of your monthly benefit. For notices sent on or after April 25, 2025, the default is up to 50%. For Carol, that is about $1,050 held back from each check, and the $9,000 is gone in about nine months. No phone call from Carol is needed to start it. Hold on to that April date. It matters later.
+   DIFF replace copione: twenty fifth twenty twenty five | sentito: 25 2025
+   DIFF replace copione: fifty percent | sentito: 50
+   DIFF replace copione: one thousand fifty dollars | sentito: 1 050
+   DIFF replace copione: nine thousand | sentito: 9 000
+--- b4 large-v3: Here is the danger. The letter asks for a full and immediate refund. If the money does not come, the agency plans to withhold part of your monthly benefit. For notices sent on or after April 25, 2025, the default is up to 50%. For Carol, that is about $1,050 held back from each check, and the 9,000 is gone in about nine months. No phone call from Carol is needed to start it. Hold on to that April date. It matters later.
+   DIFF replace copione: twenty fifth twenty twenty five | sentito: 25 2025
+   DIFF replace copione: fifty percent | sentito: 50
+   DIFF replace copione: one thousand fifty dollars | sentito: 1 050
+   DIFF replace copione: nine thousand | sentito: 9 000
+--- b5 medium.en: Now, the number of days. The manual says that if you respond within 30 days of the date on the notice, the agency must stop collection activity while it looks at your request. The notice itself sets a refund date at least 30 days away, and the agency says it does not begin withholding right away, so people have time to fight it. Time only helps the people who use it. So here are the four moves, in the order they matter.
+   DIFF replace copione: thirty | sentito: 30
+   DIFF replace copione: thirty | sentito: 30
+--- b5 large-v3: Now, the number of days. The manual says that if you respond within 30 days of the date on the notice, the agency must stop collection activity while it looks at your request. The notice itself sets a refund date at least 30 days away, and the agency says it does not begin withholding right away, so people have time to fight it. Time only helps the people who use it. So here are the four moves, in the order they matter.
+   DIFF replace copione: thirty | sentito: 30
+   DIFF replace copione: thirty | sentito: 30
+--- b6 medium.en: Move number one is to check whether the debt is even correct. If you disagree with the fact or the amount of the overpayment, you can ask for a reconsideration, and the deadline is 60 days from the date of the notice. You can start by calling the national number 1-800-772-1213, visiting a field office or writing. The manual tells staff to record a specific reason, like I did not work, or I did not receive a pension, not just I do not agree.
+   DIFF replace copione: sixty | sentito: 60
+   DIFF replace copione: one eight hundred seven seven two one two one three | sentito: 1 800 772 1213
+--- b6 large-v3: Move number one is to check whether the debt is even correct. If you disagree with the fact or the amount of the overpayment, you can ask for a reconsideration, and the deadline is 60 days from the date of the notice. You can start by calling the national number, 1-800-772-1213, visiting a field office, or writing. The manual tells staff to record a specific reason, like I did not work or I did not receive a pension, not just I do not agree.
+   DIFF replace copione: sixty | sentito: 60
+   DIFF replace copione: one eight hundred seven seven two one two one three | sentito: 1 800 772 1213
+--- b7 medium.en: While the agency decides your reconsideration, it stops collecting. But watch what happens if it does not fully reverse the debt. The notice that follows says recovery will begin or resume in 60 days, even if you then ask for a hearing. A hearing request does not pause the deductions. A waiver request does. The same notice says recovery will not begin or will stop until the agency makes a final decision on the waiver, which brings us to move number 2.
+   DIFF replace copione: sixty | sentito: 60
+   DIFF replace copione: two | sentito: 2
+--- b7 large-v3: While the agency decides your reconsideration, it stops collecting. But watch what happens if it does not fully reverse the debt. The notice that follows says recovery will begin or resume in 60 days, even if you then ask for a hearing. A hearing request does not pause the deductions. A waiver request does. The same notice says recovery will not begin or will stop until the agency makes a final decision on the waiver, which brings us to move number two.
+   DIFF replace copione: sixty | sentito: 60
+--- b8 medium.en: Move number two is the waiver, and it has no deadline. The manual says you may ask at any time, when the notice arrives, at the same time as your appeal, after the deductions have started, even after the whole debt is collected, and even after an earlier request was denied. If the waiver is approved, the agency may refund what it already withheld. You ask on form SSA-632-BK by mail, by fax, at the office, or by uploading it in your My Social Security account.
+   DIFF replace copione: six thirty two | sentito: 632
+--- b8 large-v3: Move number two is the waiver, and it has no deadline. The manual says you may ask at any time, when the notice arrives, at the same time as your appeal, after the deductions have started, even after the whole debt is collected, and even after an earlier request was denied. If the waiver is approved, the agency may refund what it already withheld. You ask on form SSA-632-BK, by mail, by fax, at the office, or by uploading it in your My Social Security account.
+   DIFF replace copione: six thirty two | sentito: 632
+--- b9 medium.en: But a waiver has two gates, and the first one is fault. The agency can find you at fault only with evidence that you gave information you knew was wrong, failed to give information you knew mattered, or accepted a payment you knew was incorrect. Without that evidence, you are not at fault. The manual also presumes you are not at fault if you reported a change on time, if payments kept coming after you reported it, or if the agency itself made an error in computing your benefit.
+--- b9 large-v3: But a waiver has two gates, and the first one is fault. The agency can find you at fault only with evidence that you gave information you knew was wrong, failed to give information you knew mattered, or accepted a payment you knew was incorrect. Without that evidence, you are not at fault. The manual also presumes you are not at fault if you reported a change on time, if payments kept coming after you reported it, or if the agency itself made an error in computing your benefit.
+--- b10 medium.en: The second gate has three doors, and you need only one. Door one is small debts. If the original overpayment is $2,000 or less and fault is not an issue, the agency waives it, and you can ask by phone. Door two is hardship. Your income cannot exceed your ordinary living costs by more than $250 a month, and your resources must be $6,000 or less, or 10,000 with a spouse or dependent. Door 3 is about fairness.
+   DIFF replace copione: two thousand dollars | sentito: 2 000
+   DIFF replace copione: two hundred fifty dollars | sentito: 250
+   DIFF replace copione: six thousand dollars | sentito: 6 000
+   DIFF replace copione: ten thousand | sentito: 10 000
+   DIFF replace copione: three | sentito: 3
+--- b10 large-v3: The second gate has three doors, and you need only one. Door one is small debts. If the original overpayment is $2,000 or less and fault is not an issue, the agency waives it, and you can ask by phone. Door two is hardship. Your income cannot exceed your ordinary living costs by more than $250 a month, and your resources must be $6,000 or less, or $10,000 with a spouse or dependent. Door 3 is about fairness.
+   DIFF replace copione: two thousand dollars | sentito: 2 000
+   DIFF replace copione: two hundred fifty dollars | sentito: 250
+   DIFF replace copione: six thousand dollars | sentito: 6 000
+   DIFF replace copione: ten thousand | sentito: 10 000
+   DIFF replace copione: three | sentito: 3
+--- b11 medium.en: The manual calls the third door against equity and good conscience. It applies when you relied on a payment that was not due and your finances changed for the worse. Back to Carol. If the agency made the error in computing her benefit, the manual presumes she is not at fault, so the first gate is open. Her $9,000 is above the small debt line, so the agency must weigh hardship or fairness. And if the answer might be no, there is a move four. First, move three.
+   DIFF replace copione: nine thousand dollars | sentito: 9 000
+--- b11 large-v3: The manual calls the third door, Against Equity and Good Conscience. It applies when you relied on a payment that was not due, and your finances changed for the worse. Back to Carol. If the agency made the error in computing her benefit, the manual presumes she is not at fault, so the first gate is open. Her $9,000 is above the small debt line, so the agency must weigh hardship or fairness. And if the answer might be no, there is a move four. First, move three.
+   DIFF replace copione: nine thousand dollars | sentito: 9 000
+--- b12 medium.en: Move number three is shrinking the payment. The notice itself says a different rate of withholding is available when the agency proposes 50%, so you can ask for less. Staff first try for a rate that finishes within 12 months, never below $10 a month. For up to 60 months, the agency asks about your income, expenses, and resources. Carol asks for $300 a month, which finishes in 30 months. Longer than that needs the longer form, number 634.
+   DIFF replace copione: fifty percent | sentito: 50
+   DIFF replace copione: twelve | sentito: 12
+   DIFF replace copione: ten dollars | sentito: 10
+   DIFF replace copione: sixty | sentito: 60
+   DIFF replace copione: three hundred dollars | sentito: 300
+   DIFF replace copione: thirty | sentito: 30
+   DIFF replace copione: six thirty four | sentito: 634
+--- b12 large-v3: Move number three is shrinking the payment. The notice itself says a different rate of withholding is available when the agency proposes 50%, so you can ask for less. Staff first try for a rate that finishes within 12 months, never below $10 a month. For up to 60 months, the agency asks about your income, expenses, and resources. Carol asks for $300 a month, which finishes in 30 months. Longer than that needs the longer form, number 634.
+   DIFF replace copione: fifty percent | sentito: 50
+   DIFF replace copione: twelve | sentito: 12
+   DIFF replace copione: ten dollars | sentito: 10
+   DIFF replace copione: sixty | sentito: 60
+   DIFF replace copione: three hundred dollars | sentito: 300
+   DIFF replace copione: thirty | sentito: 30
+   DIFF replace copione: six thirty four | sentito: 634
+--- b13 medium.en: Move number four is the second chance. If the agency cannot approve your waiver after its first review, it must offer you a file review and a personal conference before any denial. At the file review, you can read the evidence in your own claims file. At the conference, by phone, by video, or in the office, you can testify, bring documents and witnesses, and have a representative speak for you. waiver decision can still be appealed with a new look at the facts.
+   DIFF delete copione: and a | sentito: 
+--- b13 large-v3: Move number four is the second chance. If the agency cannot approve your waiver after its first review, it must offer you a file review and a personal conference before any denial. At the file review, you can read the evidence in your own claims file. At the conference, by phone, by video, or in the office, you can testify, bring documents and witnesses, and have a representative speak for you. And a waiver decision can still be appealed with a new look at the facts.
+--- b14 medium.en: What happens if you do nothing? The deductions begin on their own, up to 50% of the check. If you are no longer receiving benefits, the agency can keep your federal tax refund, and it can report an unpaid debt to the credit bureaus, which can lead to a denied loan. One exception covers every move. When the agency finds fraud or similar fault, it will not approve a lower rate or a waiver. For everyone else, even the smallest move beats silence. And now, the twist about that April date.
+   DIFF replace copione: fifty percent | sentito: 50
+--- b14 large-v3: What happens if you do nothing? The deductions begin on their own, up to 50% of the check. If you are no longer receiving benefits, the agency can keep your federal tax refund, and it can report an unpaid debt to the credit bureaus, which can lead to a denied loan. One exception covers every move. When the agency finds fraud or similar fault, it will not approve a lower rate or a waiver. For everyone else, even the smallest move beat silence. And now, the twist about that April date.
+   DIFF replace copione: fifty percent | sentito: 50
+   DIFF replace copione: beats | sentito: beat
+--- b15 medium.en: Letters dated before that day in April keep the old 10% rate, according to the agency's emergency message, unless you get a new overpayment. If you do, every balance you owe moves to 50% once the new withholding begins. One more split. For SSI, the supplemental program for people with low income, the rate stays at 10%. Everything in this video is about Title II benefits, which are retirement, survivors, and disability.
+   DIFF replace copione: ten percent | sentito: 10
+   DIFF replace copione: fifty percent | sentito: 50
+   DIFF replace copione: ten percent | sentito: 10
+   DIFF replace copione: two | sentito: ii
+--- b15 large-v3: Letters dated before that day in April keep the old 10% rate, according to the agency's emergency message, unless you get a new overpayment. If you do, every balance you owe moves to 50% once the new withholding begins. One more split. For SSI, the supplemental program for people with low income, the rate stays at 10%. Everything in this video is about Title II benefits, which are retirement, survivors, and disability.
+   DIFF replace copione: ten percent | sentito: 10
+   DIFF replace copione: fifty percent | sentito: 50
+   DIFF replace copione: ten percent | sentito: 10
+   DIFF replace copione: two | sentito: ii
