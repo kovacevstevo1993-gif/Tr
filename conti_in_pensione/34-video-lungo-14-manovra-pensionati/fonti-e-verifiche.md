@@ -13,7 +13,7 @@
   - Nel testo dell'intervento: nessuna occorrenza di rivalutazione, pensioni minime, requisiti, 64 anni, fasce.
 - Requisiti 2027 per i contributivi puri: Inps, circolare 28 del 16/03/2026, allegato 2 (gia' letto nel video 1, 06-.../fonti-e-verifiche.md): 64 anni e 1 mese + 20 anni e 1 mese di contributi effettivi, assegno >= 3 volte l'assegno sociale (2,8 donne con 1 figlio, 2,6 con 2 o piu'); assegno sociale 2026 546,24 -> 3 x 546,24 = 1.638,72.
 - Irpef 2026: 23% fino a 28.000, 33% fino a 50.000, 43% oltre (29-video-lungo-11/calcolo_netto.py, verificato nel video 11); detrazione pensionati nulla sopra 50.000.
-- Decreto di rivalutazione: lo scorso anno 19/11/2025 (video 11, ricerca-25-10-2026.md).
+- Decreto di rivalutazione dello scorso anno: firmato 19/11/2025, Gazzetta Ufficiale n. 277 del 28/11/2025, +1,4% provvisorio (verificato 30/10 su piu fonti; il video dice "porta la data del diciannove novembre").
 
 ## Conti (rifatti)
 - 5.500.000 x 300 = 1.650.000.000 (comunicato: 1,6 miliardi) -> coerente con 300 euro a persona in totale.

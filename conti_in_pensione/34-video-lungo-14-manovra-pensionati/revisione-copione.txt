@@ -10,6 +10,6 @@
 10 | b91f36cdc5 | italiano OK | logica OK | persona OK | numeri OK | circolare Inps 28/2026 all.2 (V1); 3 x 546,24 = 1.638,72; madri 2,8/2,6
 11 | 6747878740 | italiano OK | logica OK | persona OK | numeri OK | scaglioni 2026 23/33/43 (V11); 5.000 x 10% = 500; 'oltre' = oltre cinquantamila
 12 | fb9c202e8c | italiano OK | logica OK | persona OK | numeri OK | 50.000/13 = 3.846; 2.000x10%=200; 4.000x10%=400; 5.000x10%=500; 'lordi' tolto dagli importi Irpef (riletto 30/10)
-13 | 353fb13360 | italiano OK | logica OK | persona OK | numeri OK | verificato con ricerca parole sul testo grezzo di comunicato e intervento: non compaiono; decreto 19/11 (V11)
+13 | d44bf1160f | italiano OK | logica OK | persona OK | numeri OK | decreto 2025: firmato 19/11/2025, GU 28/11/2025 (MEF, verificato 30/10): scritto 'porta la data del 19 novembre'; parole non presenti verificate sul testo grezzo
 14 | 76ba3d902e | italiano OK | logica OK | persona OK | numeri OK | ipotesi e bozze = stampa; non nei due documenti letti; ripetizione 'ipotesi' tolta
 15 | ed6c916945 | italiano OK | logica OK | persona OK | numeri OK | tre punti = tre elencati; 'fa risparmiare' al posto di 'porta'; coerente con blocchi 8-12
