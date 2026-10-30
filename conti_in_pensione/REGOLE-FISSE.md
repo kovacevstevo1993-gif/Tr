@@ -811,3 +811,8 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 - Utente: "Che bel tema del cazzo... scegli sempre dei temi che non funzionano". Studio YouTube: 37 visualizzazioni dopo 10 ore (33 in meno del solito).
 - Causa: ho scelto il tema guardando le view totali di video vecchi (243K, 194K, 168K di 3-4 anni fa) mentre nell'ultimo mese il massimo era 6.585 (R3c non rispettata: "funziona ADESSO"). Il tema era evergreen, non una cosa che la gente cerca ora.
 - REGOLA: un tema si propone SOLO se nei video degli ULTIMI 7-14 GIORNI (ricerca pubblica gratis, ordinata per data, gl=IT) almeno 3 video di canali piccoli (<30K iscritti) superano 10.000 view, o c'e' una notizia/scadenza di questa settimana. Le view totali dei video vecchi NON contano. Dire all'utente le view recenti PRIMA di proporre il tema.
+
+## STATO 30/10/2026 - PER LA CHAT NUOVA (Conti in Pensione)
+- Video 13 (reversibilita') COMPLETO e pubblicato dall'utente: copione, clip CIP-V13-blocco01..22, pacchetto.txt, miniature A e B in 33-video-lungo-13/. Risultato: 37 view in 10 ore (tema sbagliato, vedi ERRORE 30/10).
+- Prossimo lavoro: NUOVO TEMA scelto con la regola dell'errore 30/10 (view degli ultimi 7-14 giorni su canali piccoli, ricerca gratis; dire le view PRIMA). Aperti solo su ordine: short teaser video 13, miniatura C video 10, video/short con la percentuale ufficiale dell'aumento (decreto Mef 19-28/11), risposte ai commenti.
+- vidIQ: saldo 7 crediti; il 30/10 i tool vidIQ non erano collegati a questa sessione (l'utente dice che l'account e' collegato): nella chat nuova provare vidiq_balance.
