@@ -1,5 +1,5 @@
 """CONTROLLO VOCE (30/10/2026) - da lanciare PRIMA delle slide, dopo ritaglia3. Uso (dalla cartella del video): python3 ../qa/qa_voce.py <N blocchi>
-Per ogni voce/bN.wav: parole/minuto e altezza media (Hz). ERRORE se un blocco e' oltre +-8% di velocita' o +-12% di altezza dalla mediana del video: va rigenerato (una richiesta TTS per blocco/gruppo), mai lasciato."""
+Per ogni voce/bN.wav: parole/minuto e altezza media (Hz). ERRORE se un blocco e' oltre +-8% di velocita' o +-12% di altezza dalla mediana del video: prima si corregge in locale e gratis con ffmpeg rubberband (tempo=145/wpm, pitch=mediana/Hz per blocco), poi si rilancia; si rigenera con Gemini solo cio' che resta fuori."""
 import sys, json, subprocess, numpy as np
 J = json.load(open('code/blk.json'))['B']; N = int(sys.argv[1]); R = []
 def f0(a, sr=16000):
