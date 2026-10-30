@@ -1,0 +1,18 @@
+--- b1 medium.en: A letter arrives from social security. It says you were overpaid and it wants the money back. If you do not answer, the agency can start keeping half of every monthly check automatically until the debt is gone. Half. But inside the official rules are four moves that can stop it, shrink it, or erase it. Two of them freeze the deductions the day you use them. has no deadline at all, and by the end, you will know which move fits your letter.
+   DIFF delete copione: one | sentito: 
+--- b1 large-v3: A letter arrives from Social Security. It says you were overpaid, and it wants the money back. If you do not answer, the agency can start keeping half of every monthly check, automatically, until the debt is gone. Half. But inside the official rules are four moves that can stop it, shrink it, or erase it. Two of them freeze the deductions the day you use them. One has no deadline at all, and by the end, you will know which move fits your letter.
+--- b2 medium.en: This is the money backstory, where we turn official rules into real numbers. If that helps, subscribe now and tap the bell so the next breakdown finds you. Now meet Carol, 66. Her social security check is $2,100 a month. Then comes the envelope. It says she was paid $600 too much every month for 15 months. The total she owes, $9,000.
+   DIFF replace copione: sixty six | sentito: 66
+   DIFF replace copione: two thousand one hundred dollars | sentito: 2 100
+   DIFF replace copione: six hundred dollars | sentito: 600
+   DIFF replace copione: fifteen | sentito: 15
+   DIFF replace copione: nine thousand dollars | sentito: 9 000
+--- b2 large-v3: This is the Money Backstory, where we turn official rules into real numbers. If that helps, subscribe now and tap the bell so the next breakdown finds you. Now meet Carol, 66. Her Social Security check is $2,100 a month. Then comes the envelope. It says she was paid $600 too much every month for 15 months. The total she owes? $9,000.
+   DIFF replace copione: sixty six | sentito: 66
+   DIFF replace copione: two thousand one hundred dollars | sentito: 2 100
+   DIFF replace copione: six hundred dollars | sentito: 600
+   DIFF replace copione: fifteen | sentito: 15
+   DIFF replace copione: nine thousand dollars | sentito: 9 000
+--- b3 medium.en: First, what is inside that envelope? The Social Security Administration's own manual says the notice must list the total – what you were paid, what you should have been paid, why the amount was different, and the months involved. It must also tell you three rights – to ask for a reconsideration, to ask for a waiver, and to ask for a different repayment rate. every line. One of them matters more than all the others, and it is about a number of days.
+   DIFF delete copione: read | sentito: 
+--- b3 large-v3: First, what is inside that envelope? The Social Security Administration's own manual says the notice must list the total – what you were paid, what you should have been paid, why the amount was different, and the months involved. It must also tell you three rights – to ask for a reconsideration, to ask for a waiver, and to ask for a different repayment rate. Read every line. One of them matters more than all the others, and it is about a number of days.
