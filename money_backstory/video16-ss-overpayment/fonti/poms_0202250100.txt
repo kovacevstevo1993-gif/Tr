@@ -1,0 +1,666 @@
+
+SSA - POMS: GN 02250.100 - Defeat the Purpose (Ability to Repay) of Title II and Title XVI - Waiver Determination<EndLine/> - 04/02/2024
+ " />
+ '>
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 04/02/2024 - Present
+Previous
+ | 
+Next
+TN 80 (08-25)
+GN 02250.100 
+Defeat the Purpose (Ability to Repay) of Title II and Title XVI - Waiver Determination
+CITATIONS:
+Social Security Act 
+§§204(b),
+1631(b)(1)(B)
+ 20 C.F.R. 
+§§404.506
+, 
+404.508
+, 
+404.512
+, 
+416.550
+, and 
+416.553
+A. 
+Introduction
+We will waive overpayment recovery when an individual requests a waiver if we find
+ the overpaid individual is not at fault, and recovery would defeat the purpose of
+ Title II or Title XVI of the Social Security Act. Before you determine if a waiver
+ request meets the defeats the purpose provision (ability to repay), you should have
+ already considered whether you can approve the waiver under one of these provisions:
+•
+Administrative tolerance, per 
+GN 02250.350
+,
+•
+Countable resources exceed the limit, per 
+GN 02250.090
+•
+Deemed to defeat the purpose, per 
+GN 02250.110
+, or
+•
+Against equity and good conscience, per 
+GN 02250.150
+.
+B. 
+Policy
+Before making a defeat the purpose waiver determination, we must first determine the
+ overpaid individual is not at fault in causing the overpayment, per 
+GN 02250.005
+-
+GN 02250.025
+. Recovery of an overpayment defeats the purpose if recovering the overpayment would
+ deprive the overpaid individual of the income and resources required for ordinary
+ and necessary living expenses. To determine recovery of an overpayment defeats the
+ purpose (meaning the individual doesn't have the ability to repay), we must find that:
+•
+The overpaid individual needs substantially all of their current income to meet their
+ current ordinary and necessary living expenses (i.e., the monthly household income
+ does not exceed monthly current ordinary and necessary living expenses by more than
+ $250), per 
+GN 02250.100C
+ and 
+GN 02250.100D
+; and
+•
+The overpaid individual has no more than $6,000 in resources or $10,000 if the individual
+ has one other household family member. If the individual has more than one other household
+ family member, add $1,200 for each additional household family member to their resource
+ limit, per 
+GN 02250.100E.
+To make the defeat the purpose waiver determination, we will review the monthly income,
+ monthly expenses, and resources of the overpaid individual, the individual’s spouse,
+ and all other household family members.
+NOTE:
+ The $6,000 and $10,000 resource limits only apply to the waiver determination. These
+ resource limits do not apply to Title XVI eligibility. Some of the income and resource
+ exclusions for Title XVI eligibility purposes do not apply when we make a defeat the
+ purpose determination.
+1. 
+Definition of household family members
+For purposes of determining whether recovery of an overpayment defeats the purpose,
+ household family members are defined as the overpaid individual’s spouse and any dependents.
+ A dependent is an individual who depends on the overpaid individual for financial
+ support and whom the overpaid individual or their spouse can claim on their income
+ tax returns. Even if a dependent family member resides outside the household (e.g.,
+ child away at school), still consider the individual as a dependent. For purposes
+ of determining whether recovery of an overpayment defeats the purpose, we consider
+ all household family members and the overpaid individual to be a single financial
+ unit, with all income and resources available to each individual.
+Where a child is overpaid, a household family member is defined as the child’s parents
+ and their dependent family members. A dependent is an individual (e.g., the child’s
+ sibling) who depends on the overpaid child’s parents for financial support and who
+ the parents can claim as a dependent on their income tax returns.
+2. 
+Applying defeats the purpose for a child's overpayment
+We consider income and resources as belonging to the child if the income and resources
+ are:
+•
+In the child’s name or in an instrument (e.g., a trust) in which the child is a named
+ beneficiary; and
+•
+Available for the child’s use. For information about how to determine whether resources
+ are available to the child, refer to 
+GN 02250.100E.
+If any of the child’s income or resources help with household expenses, count the
+ income, resources, and household expenses of the parents and any other household family
+ members as belonging to the child in the defeat the purpose determination. If someone
+ other than a household family member lives in the household, include any contributions
+ that they make to the household as income to the child.
+If any of the child’s income or resources do not help with monthly household expenses,
+ make the defeat the purpose determination using only the child’s monthly income, share
+ of monthly household expenses, and resources. To determine the share of monthly household
+ expenses, apply a pro-rata share of the ordinary and necessary living expenses to
+ the overpaid individual and each household family member. Use this formula to apply
+ the pro-rata share: [Total monthly household expenses] / [Overpaid individual + Number
+ of household family members]. 
+For examples on how to apply the defeats the purpose provision for a child’s overpayment,
+ refer to 
+GN 02250.100H.1
+ and 
+GN 02250.100H.3.
+C. 
+Monthly household income
+To determine whether the overpaid individual needs substantially all their current
+ income to meet ordinary and necessary living expenses, we compare the monthly household
+ income to monthly household expenses. We subtract the monthly household expenses from
+ the monthly household income. We will find the overpaid individual needs substantially
+ all of their current income to meet current ordinary and necessary living expenses
+ if monthly household income does not exceed monthly household expenses by more than
+ $250, per 
+GN 02250.100D4.
+  If the overpaid individual has more than $250 of remaining income after paying the
+ monthly household expenses, the overpaid individual does not meet the defeats the
+ purpose provision, per 
+GN 02250.100D4.
+Monthly
+ household income
+ includes the overpaid individual's monthly income and all of the household family
+ members' monthly income. We consider any income that a household family member receives
+ as income available to the overpaid individual. If someone other than a household
+ family member lives in the household, include any contributions they make to the household
+ as income to the overpaid individual. For the definition of household family member,
+ refer to 
+GN 02250.100B1.
+1. 
+Types of income
+Income includes:
+•
+Government benefits (e.g., Social Security, railroad, workers' compensation, unemployment
+ compensation);
+•
+Net wages;
+•
+Net income from self-employment;
+•
+Child support;
+•
+Alimony;
+•
+Pensions;
+•
+Investment income (e.g., interest, royalties, dividends, and rent); or
+•
+Income from an Individual Retirement Account (IRA), Keogh plan, or any other type
+ of retirement plans.
+2. 
+Supporting documentation
+The overpaid individual or representative payee (payee) is responsible for providing
+ the documents that support the total household income. After reviewing the information
+ on the SSA-632-BK, only request supporting documentation when the individual’s alleged
+ income is less than $250 after paying monthly household expenses. The supporting documents
+ must be no older than 3 months from the date we receive the waiver request.
+If the overpaid individual does not provide supporting documents with the waiver request,
+ send them a notice requesting this information and inform them that they have 30 days
+ to provide it. For Title XVI, use the SSA-L8009 in the Document Processing System
+ (DPS). For Title II, use the equivalent notice in DPS. If the individual notifies
+ you that they are actively trying to obtain the supporting documents and needs additional
+ time, allow them the additional time. If the individual has not provided the documents
+ within 30 days or they have not notified you that they need additional time, you cannot
+ approve the waiver under the defeats the purpose waiver provision. Refer the waiver
+ request to an independent decision-maker to schedule a file review and personal conference.
+D. 
+Monthly household expenses
+When making a defeats the purpose determination, we consider the household's ordinary
+ and necessary living expenses. Whether expenses are considered ordinary and necessary
+ will depend on the individual's lifestyle and personal circumstances. 
+Round the total amount to the nearest dollar when you calculate the household expenses. 
+ Include expenses of only the overpaid individual and any household family member,
+ as defined in 
+GN 02250.100B1.
+ Do 
+not
+include expenses of any individual who lives in the household and is not the overpaid
+ individual or is not determined to be a household family member.
+NOTE:
+ We do not require proof of expenses.
+1. 
+Types of monthly expenses
+Ordinary and necessary expenses include:
+•
+Fixed living expenses such as rent or mortgage payments;
+•
+Utilities, taxes, food, household supplies, personal care products and services (like
+ a haircut), clothing, transportation, and insurance (life, homeowners, car, medical,
+ etc.);
+•
+Out of pocket medical expenses;
+•
+Court ordered payments paid directly to the court;
+•
+Tuition and school expenses;
+•
+Expenses for the support of others for whom the overpaid individual is legally responsible;
+ and
+•
+Miscellaneous ordinary and necessary living expenses which may be reasonably considered
+ as part of the individual's standard of living, such as pet-related expenses and entertainment
+ (e.g., cell phone, cable, internet, vacationing, or reading material).
+2. 
+Determining acceptable monthly household expenses
+Expenses that are consistent with the overpaid individual's alleged standard of living
+ are acceptable household expenses. An individual's standard of living is set by the
+ individual. 
+Do not
+ question an individual's standard of living. For example, if the overpaid individual
+ eats at a restaurant every night, accept that as their standard of living. Or, if
+ the overpaid individual has cable television or multiple television streaming services,
+ accept that as their standard of living.
+3. 
+One-time large expenses
+If the overpaid individual has a large one-time expense (e.g., a large medical expense),
+ prorate the expense by dividing the total amount of the expense over a 12-month period
+ to determine the monthly amount.
+4. 
+Comparing income and expenses
+We will find an overpaid individual needs substantially all income to meet current
+ ordinary and necessary living expenses if monthly income does not exceed monthly expenses
+ by more than $250. Every household has some unbudgeted or unaccountable expenses. This
+ $250 margin allows for unbudgeted expenses or unaccountable expenses. We subtract
+ the monthly household expenses from the monthly household income. If the balance is
+ $250 or less and if the resources are at or below the amounts in 
+GN 02250.100E
+, we will find that the individual needs substantially all income for ordinary and
+ necessary living expenses and find that recovery defeats the purpose.
+If the overpaid individual has more than $250 left over after paying the monthly household
+ expenses, we will find that the individual does not meet the defeats the purpose provision
+ because recovery of the overpayment would not deprive the individual of income needed
+ for current ordinary and necessary living expenses. If we cannot approve the waiver,
+ refer the waiver to an independent decision-maker to schedule a file review and personal
+ conference.
+NOTE:
+ Even if the individual cannot repay the overpayment in one lump sum, we will find
+ the individual can afford repayment because they can make repayment by benefit withholding
+ or monthly installments if they have more than $250 in income remaining after paying
+ expenses. Refer to 
+GN 02210.030
+ and GN 02220.180 for Title II or 
+SI 02220.025
+ and 
+SI 02220.026
+ for Title XVI. Additionally, if the individual's financial circumstances change in
+ the future and they are no longer able to afford monthly benefit withholding or repayment,
+ they may make a subsequent waiver request. For more information, refer to 
+GN 02250.303
+.
+For examples on how to evaluate and compare income to expenses, refer to 
+GN 02250.100
+.H.3, 
+GN 02250.100
+.H.4, and 
+GN 02250.100
+.H.5.
+NOTE:
+ An individual's monthly household expenses may be more than the monthly household
+ income because the individual is not paying their bills, the individual is going into
+ debt to pay bills, or someone else is paying their bills. The individual may have
+ also made a mistake in reporting their expenses. We may ask the individual to explain
+ the reason that expenses exceed income (e.g., they cannot afford to pay their bills
+ so they are not paying all their bills).
+E. 
+Resources
+To meet the defeats the purpose criteria, the overpaid individual must have income
+ that meets the criteria in 
+GN 02250.100D.4.
+, and their resources must meet the criteria in 
+GN 02250.100B.
+ We must include an overpaid individual's and any household family member's resources
+ in the defeats the purpose determination. For the definition of household family member,
+ refer to 
+GN 02250.100B1.
+For the purpose of a defeats the purpose determination, resources include cash or
+ other liquid assets or any real or personal property that could be converted to cash
+ to repay an overpayment. If the resources are 
+not
+ available to the overpaid individual or a household family member, we will not consider
+ those resources when we make a defeats the purpose determination.
+For examples of resources that we consider when making a defeats the purpose determination,
+ refer to 
+GN 02250.255
+. For examples on how to evaluate and apply resources in a defeats the purpose determination,
+ refer to 
+GN 02250.100H.3
+, 
+GN 02250.100H.4
+, and 
+GN 02250.100H.5.
+1. 
+Items that we exclude as resources for the purpose of a defeats the purpose determination
+•
+Household furnishings,
+•
+Clothes,
+•
+Items of sentimental value,
+•
+One home (the overpaid individual's principal place of residence),
+•
+Any other real estate the overpaid individual co-owns and cannot sell (i.e. if the
+ other individuals with shares will not agree to liquidate),
+•
+Two vehicles,
+•
+Any additional automobile(s) used for the support of the overpaid individual or a
+ household family member who uses a wheelchair or mobility device,
+•
+Burial plot or prepaid burial contract,
+•
+Insurance policies,
+•
+Achieving a Better Life Experience (ABLE) accounts,
+•
+Certificate of Deposit if it has not reached its maturity date,
+•
+Trust fund that the individual cannot liquidate,
+•
+Any resource or fund that generates income the overpaid individual needs to meet ordinary
+ and necessary living expenses,
+•
+Individual Retirement Account (IRA), Keogh plan, or other type of retirement plan
+ (exclude as a resource, regardless of whether individual is receiving income from
+ the retirement plan), and
+•
+Any other resource that cannot be converted to cash without incurring a penalty.
+NOTE:
+ Whether the trust fund is a resource depends on whether the assets in the trust are
+ available to the overpaid individual (e.g., if the overpaid individual cannot use
+ the principal until they attain age 25 or the trust fund is comprised solely of the
+ proceeds of Veterans Affairs (VA) funds). Request guidance from the Office of General
+ Counsel (OGC) on whether the trust fund is a liquid resource. Provide OGC with a full
+ explanation of the facts as well as documentation of the trust. Send your request
+ with a full explanation of facts and documentation of the trust to 
+OGC.OPL.Controls@ssa.gov.
+2. 
+Authorization to obtain financial account information
+An overpaid individual must provide their authorization for us to obtain financial
+ account information whenever we need the information to make a defeats the purpose
+ determination or a deemed to defeat the purpose determination for the 150 percent
+ of the Federal Poverty Level (FPL) criteria. The authorization is located at the bottom
+ of the SSA-632-BK, "Request for Waiver of Overpayment Recovery" form. If an overpaid
+ individual is legally competent, the overpaid individual must sign the authorization,
+ even if they have a payee. If the overpaid individual is a legally incompetent adult
+ or a minor child, the legal guardian or parent must sign the authorization.
+If you need financial information from a spouse, parent, or other household family
+ member, the overpaid individual or payee must provide the financial information. If
+ you need additional financial information for the overpaid individual that you cannot
+ receive through the Access to Financial Institutions (AFI) process, the overpaid individual
+ or payee must provide the information. For a list of acceptable proofs, refer to 
+GN 02250.255B3.
+ AFI instructions are located on the 
+Access to Financial Institutions - Home
+ website.
+NOTE
+: The documents to support the financial information about resources should be no
+ older than 3 months from the date we receive the waiver request. If you already have
+ financial records that you received for a Title XVI recipient, you may use those financial
+ records, if the records are no older than 3 months from the date we receive the waiver
+ request. If the information is more than 3 months from the date we receive the waiver
+ request, contact the individual or payee to request updated information, refer to
+GN 02250.230B3.
+If the overpaid individual does not provide supporting documents with the waiver request,
+ send them a notice requesting this information and inform them that they have 30 days
+ to provide it. For Title XVI, use the SSA-L8009 in the Document Processing System
+ (DPS). For Title II, use the equivalent notice in DPS. If the individual notifies
+ you that they are actively trying to obtain the supporting documents and needs additional
+ time, allow them the additional time. If the individual has not provided the documents
+ within 30 days or they have not notified you that they need additional time, you cannot
+ approve the waiver under the defeats the purpose waiver provision. Refer the waiver
+ request to an independent decision-maker to schedule a file review and personal conference.
+3. 
+Sending requests to financial institutions using the e4641 system
+Technicians must use the e4641 system to request financial account information if
+ it is needed for a defeats the purpose determination. The e4641 system gives us the
+ ability to access financial account balances and allows the generation of up to twelve
+ GeoRequest searches to financial institutions located in the geographic area where
+ the overpaid individual resides.
+If a financial institution does not participate in the electronic AFI process and
+ you need the financial account information for a defeats the purpose determination,
+ you must send the completed and signed SSA-4641, "Authorization for the Social Security
+ Administration to Obtain Account Records from a Financial Institution and Request
+ for Records," form to the nonparticipating financial institution.
+Foreign financial institutions do not participate in the electronic AFI process. If
+ you need financial account information from a foreign financial institution to make
+ a defeats the purpose determination, you must send the completed and signed SSA-4641
+ directly to the financial institution.
+NOTE:
+ Do not request the overpaid individual's financial account information if you can
+ approve the waiver under another waiver provision.
+4. 
+No financial information received from the financial institution
+If the financial institution does not respond to the AFI request within 15 days, review
+ the SSA-632-BK to determine if the overpaid individual's resources were completed
+ and use the information from the form. If the financial information was not completed
+ on the SSA-632-BK, contact the overpaid individual or payee to ask them to provide
+ the information. Document their response on an SSA-795, "Statement of Claimant or
+ Other Person." If the overpaid individual or payee does not provide the financial
+ account information, you cannot approve the waiver under the defeats the purpose provision.
+ Refer the waiver request to an independent decision-maker to schedule a file review
+ and personal conference, per 
+GN 02270.007
+.
+5. 
+No financial authorization provided
+If the overpaid individual, parent, or legal guardian failed to complete and sign
+ the financial authorization, contact the overpaid individual, parent, or legal guardian
+ to ask if they will provide authorization for us to obtain the overpaid individual's
+ financial records. If they indicate that they want to provide their authorization,
+ send an SSA-4641 to the overpaid individual, parent, or legal guardian and give them
+ 15 days to return the signed form. If they do not provide their authorization, you
+ cannot approve the waiver under the defeats the purpose provision. Refer the waiver
+ request to an independent decision-maker to schedule a file review and personal conference.
+6. 
+Refuses to authorize SSA to obtain financial account information
+If the overpaid individual, parent, or legal guardian refuses to provide, or revokes
+ the authorization to obtain financial information, you cannot approve the waiver under
+ the defeats the purpose provision. Refer the waiver request to an independent decision-maker
+ to schedule a file review and personal conference. For an example on when an individual
+ refuses to provide authorization to access financial account information, refer to
+GN 02250.100H.6.
+F. 
+Estate requests a waiver
+Although waiver of recovery of an overpayment from an estate is possible under other
+ provisions, recovery from an estate can never defeat the purpose because an estate
+ does not have ordinary and necessary living expenses. If the estate has been closed
+ and the distributee(s) request a waiver, the waiver may be approved under the defeats
+ the purpose provision. For more information on closed estates, refer to 
+GN 02215.070
+.
+G. 
+Processing a defeat the purpose determination
+Before completing the following steps, you must first determine that the overpaid
+ individual is not at fault in causing the overpayment:
+•
+Ensure there is an AFI authorization per 
+GN 02250.100E.3.
+•
+Request the overpaid individual’s financial account information according to the requirements
+ outlined in 
+GN 02250.100E.
+•
+Review the SSA-632-BK to make sure the information in the form and supporting documentation
+ is no more than 3 months old from the date that we receive the waiver request. If
+ the information is more than 3 months old from the date we receive the waiver request,
+ contact the individual to request updated information, refer to 
+GN 02250.230B.3.
+•
+After reviewing the monthly household expenses, monthly household income, and resource
+ information, determine if the overpaid individual meets the defeats the purpose requirements
+ outlined in 
+GN 02250.100B.
+NOTE: 
+Make sure you calculate the overpaid individual’s resources correctly. The overpaid
+ individual may include their resources on SSA-632-BK. Compare the information on the
+ SSA-632-BK and the financial account information that you receive via an AFI request
+ to ensure you are not counting the overpaid individual's resources more than one time.
+If you can approve the waiver under the defeats the purpose provision, follow the
+ instructions in 
+GN 02250.301
+ and 
+GN 02250.370
+.
+1. 
+Title II documentation
+If you cannot approve the waiver under the defeats the purpose provision, document
+ why you cannot approve the waiver on the Remarks (RMKS) screen in the Debt Management
+ System (DMS) and input the denial using the DRWD screen in DMS, per MS DMS 006.004.
+ Refer the waiver request to an independent decision-maker to schedule a file review
+ and personal conference.
+2. 
+Title XVI documentation
+If you cannot approve the waiver under the defeats the purpose provision, document
+ why you cannot approve the waiver on the Report of Contact screen in the SSI Claims
+ System after an independent decision maker conducts a file review and personal conference.
+ Refer the waiver request to an independent decision-maker to schedule a file review
+ and personal conference.
+H. 
+Examples
+1. 
+Recovery defeats the purpose—Income needed for current ordinary and necessary living
+ expenses and resources below the limit
+Jacob, age 10, is overpaid $2,400. Jacob's parent and payee, Sarah, received an overpayment
+ notice on behalf of Jacob. Sarah completed the SSA-632-BK, signed the financial authorization,
+ and sent the form to the local field office.
+We determined that Jacob is not at fault in causing the overpayment and does not meet
+ any of the other waiver provisions. Jacob lives with Sarah and two siblings. Sarah
+ does not use any of Jacob's income or resources to help with the food or household
+ expenses. Therefore, we will consider only Jacob’s monthly income, share of household
+ expenses, and resources.
+Jacob receives $450 in Title II benefits.
+We received Jacob's financial account information through an AFI request. Jacob has
+ $1,000 in a savings account. Jacob is under the resource limit of $6,000.
+The family's monthly household expenses total $3,000. Jacob's pro-rata share of expenses
+ is $750 ($3,000 / 4 = $750 for Jacob and 3 household family members).
+Jacob's pro-rata share of expenses ($750) exceeds Jacob's income ($450). In addition,
+ Jacob is under the resource limit. Because Jacob's expenses exceed their income and
+ income does not exceed expenses plus the $250 margin, recovery from Jacob defeats
+ the purpose. We will approve their waiver request.
+2. 
+Title XVI: Recovery does not defeat the purpose – Title XVI income and resources exclusions
+ do not apply
+John was overpaid $4,000 because of excess wages and they are no longer eligible for
+ Title XVI. John is not married and does not have any household family members. After
+ receipt of the overpayment notice, John submits a waiver request to a local field
+ office.
+After receipt of the SSA-632-BK, the technician determines John is not at fault in
+ causing the overpayment and that the overpayment does not meet any other waiver provisions.
+ The technician makes an AFI request and discovers John has $7,000 in a bank account.
+ John alleges to have saved the Title XVI underpayment installment received in August.
+The technician determines John does not meet the defeats the purpose provision because
+ John's resources are over $6,000. The underpayment in John's account must be considered
+ for the defeat the purpose provision even though the retroactive funds are excluded
+ for nine calendar months for Title XVI eligibility purposes. We are unable to approve
+ John’s waiver request because John does not meet the defeats the purpose waiver provision.
+ An independent decision-maker will schedule a file review and personal conference.
+3. 
+Income exceeds the $250 margin
+Kayla, age 12, is overpaid $4,600. Kayla's parent and payee, Karen, received an overpayment
+ notice on behalf of Kayla. Karen completed the SSA-632-BK, signed the financial authorization,
+ and sent the form to the local field office.
+We determined Kayla is not at fault in causing the overpayment and does not meet any
+ of the other waiver provisions. Karen told us that Kayla's income helps with food
+ and household expenses. Kayla lives with Karen and three siblings. We need the monthly
+ income, monthly household expenses, and resources for all household family members
+ since Kayla's income helps with the household expenses.
+Kayla receives Title II benefits in the amount of $500. Karen's net monthly income
+ from their employer is $3,000 and they also receive $1,500 in child support every
+ month for Kayla's three siblings. The family's total monthly household income is $5,000
+ ($500 + $3,000 + $1,500 = $5,000).
+The total monthly household expenses are $4,000. When you subtract the monthly household
+ expenses from the monthly household income, the balance is $1,000 ($5,000 - $4,000
+ = $1,000), which is 
+more
+ than the $250 margin.
+We received Kayla's financial account information via an AFI request. Kayla has $2,000
+ in a savings account. Karen has $2,600 in a checking account and owns a 2020 Ford
+ Edge, which is the only automobile in the household. Therefore, we are excluding the
+ automobile as a resource. Each sibling has $200 in a savings account. The family does
+ not have any more resources.
+After adding Kayla’s savings account, Karen’s checking account, and the three siblings’
+ savings account, the total family resource amount is $5,200 ($2,000 + $2,600 + $600
+ = $5,200). The family's resource limit is $13,600 which is $10,000 for Kayla and Karen
+ (individual and one family member), and $1,200 for each of the three siblings ($10,000
+ + ($1,200 x 3) = $13,600).
+After evaluating Kayla’s and the household family members’ resources, we determined
+ that the resources are under the resource limit. However, the total monthly household
+ income exceeds the $250 margin (after subtracting expenses from income). We are unable
+ to approve Kayla's waiver because they do not meet the defeats the purpose waiver
+ provision. An independent decision-maker will schedule a file review and personal
+ conference.
+4. 
+Resources exceed the limit
+Tom received an overpayment notice and was overpaid $3,500. Tom lives with their spouse,
+ Alice. Tom completed the SSA-632-BK, signed the financial authorization, and sent
+ the form to the local field office. We determined Tom is not at fault in causing the
+ overpayment and does not meet any of the other waiver provisions.
+Tom provided the couple’s monthly income, monthly household expenses, and household
+ resource information. Tom receives $2,500 in Title II benefits and a monthly pension
+ of $1,000. Alice receives $1,000 in net income. Together they receive $4,500 per month
+ in income. Tom and Alice's monthly household expenses are $4,450. When subtracting
+ the monthly household expenses from the monthly household income, the balance is $50
+ ($4,500 - $4,450 = $50), which is 
+less
+ than the $250 margin.
+We received Tom's financial account information via an AFI request. Tom has $15,000
+ in a savings account and $1,000 in a checking account. Tom owns a 2018 Chevy Equinox,
+ and Alice owns a 2020 Ford Edge, which are the only two automobiles in the household.
+ Therefore, the automobiles are excluded as a resource. Alice has a $10,000 Certificate
+ of Deposit. They do not have any more resources. After adding Tom’s savings account,
+ checking account, and Alice’s CD, the total resource amount is $26,000 ($15,000 +
+ $1,000 + $10,000 = $26,000). Tom's resources exceeds the resource limit which is $10,000
+ (individual and one family member).
+Although Tom's and Alice's income do not exceed the $250 margin, they exceed the resource
+ limit. We are unable to approve Tom's waiver because they do not meet the defeats
+ the purpose waiver provision. An independent decision-maker will schedule a file review
+ and personal conference.
+5. 
+Resources exceed the limit
+Jerry received an overpayment notice and was overpaid $5,250. Jerry completed the
+ SSA-632-BK, signed the financial authorization, and sent the form to the local field
+ office. Jerry lives alone in a home that they own. We determined Jerry is not at fault
+ in causing the overpayment and does not meet any of the other waiver provisions.
+Jerry receives $2,000 in Title II benefits and $1,500 from a pension. Jerry’s total
+ monthly income is $3,500 and their monthly household expenses are $3,450. After subtracting
+ the monthly household expenses from the monthly household income, the balance is $50
+ ($3,500 - $3,450 = $50), which is
+ less
+ than the $250 margin.
+We received Jerry's financial account information via an AFI request. Jerry has $16,000
+ in a savings account. Jerry owns a home (their principal residence), a car, and a
+ camper. We excluded Jerry's home and two vehicles (car and camper) as resources. Jerry's
+ resources total $16,000 (savings account). Jerry’s resources exceeds the limit which
+ is $6,000 (individual).
+Although Jerry’s income does not exceed the $250 margin, Jerry exceeds the resource
+ limit. We are unable to approve Jerry's waiver because they do not meet the defeats
+ the purpose waiver provision. An independent decision-maker will schedule a file review
+ and personal conference.
+6. 
+Refused to provide authorization to access financial account information
+Rachel received an overpayment notice and was overpaid $2,500. Rachel completed the
+ SSA-632-BK and sent the form to the local field office. Rachel refused to provide
+ authorization for us to obtain financial account information.
+We determined that Rachel is not at fault in causing the overpayment and does not
+ meet any of the other waiver provisions.
+We cannot approve Rachel's waiver under the defeats the purpose waiver provision because
+ they refused to give us permission to access financial account information. An independent
+ decision-maker will schedule a file review and personal conference.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202250100
+GN 02250.100 - Defeat the Purpose (Ability to Repay) of Title II and Title XVI - Waiver Determination<EndLine/> - 04/02/2024
+Batch run: 
+10/02/2026
+Rev:
+04/02/2024
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

@@ -1,0 +1,35 @@
+ERR 502 [] []
+tentativo 1 fallito gruppo 1,2,3
+OK voce/g1.wav
+fattore atempo gruppo 1: 0.782
+confine 1 -> 2 pausa 0.89 punteggio 5.92 | letter / this is the
+confine 2 -> 3 pausa 0.77 punteggio 4.0 | 000 / first what is
+GRUPPO 1,2,3 FATTO
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json;J=json.load(open('code/blk.json'))['B'];print('\n\n'.join(J[b] for b in ',8,9'.split(',')))
+                                                              ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <genexpr>
+    import json;J=json.load(open('code/blk.json'))['B'];print('\n\n'.join(J[b] for b in ',8,9'.split(',')))
+                                                                          ~^^^
+KeyError: ''
+Traceback (most recent call last):
+  File "/home/user/Tr/money_backstory/video16-ss-overpayment/code/tts1.py", line 9, in <module>
+    raw=base64.b64decode(d['candidates'][0]['content']['parts'][0]['inlineData']['data'])
+                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'content'
+tentativo 1 fallito gruppo ,8,9
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json;J=json.load(open('code/blk.json'))['B'];print('\n\n'.join(J[b] for b in ',8,9'.split(',')))
+                                                              ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <genexpr>
+    import json;J=json.load(open('code/blk.json'))['B'];print('\n\n'.join(J[b] for b in ',8,9'.split(',')))
+                                                                          ~^^^
+KeyError: ''
+Traceback (most recent call last):
+  File "/home/user/Tr/money_backstory/video16-ss-overpayment/code/tts1.py", line 9, in <module>
+    raw=base64.b64decode(d['candidates'][0]['content']['parts'][0]['inlineData']['data'])
+                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'content'
+tentativo 2 fallito gruppo ,8,9

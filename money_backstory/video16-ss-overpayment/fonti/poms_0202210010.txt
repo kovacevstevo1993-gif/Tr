@@ -1,0 +1,80 @@
+
+SSA - POMS: GN 02210.010 - Proposed Rate of Overpayment Adjustment - 06/25/2024
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 06/25/2024 - Present
+Previous
+ | 
+Next
+TN 84 (06-24)
+GN 02210.010 
+Proposed Rate of Overpayment Adjustment
+A. 
+Policy
+An initial notice of overpayment should generally propose withholding 10% of the monthly
+ benefit amount (excluding SMI premiums) as an alternative to full refund.
+Proposing 10% monthly benefit withholding in the initial notice applies even if partial
+ withholding (or repayment by installments) is in effect for a prior overpayment. In
+ such case, propose withholding 10% of the monthly benefit amount for the total outstanding
+ amount (new overpayment plus prior one). If eligibility to benefits is reestablished
+ and there is a prior overpayment for which waiver (including personal conference)
+ rights were offered, 10% benefit withholding is appropriate regardless of any existing
+ repayment schedule.
+When we use benefit withholding against a dually entitled beneficiary who is contingently
+ liable for an overpayment, we will apply the 10% monthly benefit withholding based
+ on the amount of the payment they receive on the record where the overpayment occurred.
+B. 
+Examples
+Example 1:
+Nina Pauling is dually-entitled to a retirement benefit of $260.30 and a surviving
+ spouse's benefit of $120.50. They currently receives $348.00 (MPA) after deduction
+ for the $31.90 SMI premium. Their spouse had been overpaid $2,000 before they died,
+ and an overpayment of $1,745 is still outstanding on this record. Since Nina's liability
+ is limited to the benefit they receive on the overpayment record (
+GN 02205.001
+), a withholding of 10% of their monthly surviving spouse's benefit is proposed in
+ the initial overpayment notice. Their reduced monthly benefit payment would be $368.
+Example 2:
+Susan Venture, a current D beneficiary ineligible for payment because of their earnings,
+ has an outstanding debt of $1,500. Susan requested waiver of recovery and following
+ a personal conference decision to deny the waiver, they agreed to repay the debt in
+ $50 monthly installments. Billing was initiated in 8/87. Susan reports that they are
+ no longer working and D benefits are payable effective 1/89. Withhold 10% of the monthly
+ benefit due beginning 1/89 to recover the debt balance of $650.00 ($1,500 minus the
+ $850 8/87- 12/88 installment payments).
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202210010
+GN 02210.010 - Proposed Rate of Overpayment Adjustment - 06/25/2024
+Batch run: 
+06/25/2024
+Rev:
+06/25/2024
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

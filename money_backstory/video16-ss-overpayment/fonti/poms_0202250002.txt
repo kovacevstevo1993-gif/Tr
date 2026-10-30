@@ -1,0 +1,363 @@
+
+SSA - POMS: GN 02250.002 - Processing a Waiver Request - Title II and Title XVI - 02/18/2025
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 02/18/2025 - Present
+Previous
+ | 
+Next
+TN 76 (02-25)
+GN 02250.002 
+Processing a Waiver Request - Title II and Title XVI
+CITATIONS:
+Social Security Act §§ 
+204(b)
+, 
+1631(b)(1)(B)
+A. 
+Introduction
+This section provides guidance on:
+•
+How we process a waiver and reconsideration when they are requested at the same time;
+•
+The amount to consider for a waiver request; and
+•
+How we process an approval or propose denial of the waiver request.
+B. 
+Policy
+We may initiate waiver processing only after an individual requests a waiver. We must
+ stop overpayment recovery when we receive the waiver request.  We must refund any
+ amount that we recovered in the month the overpaid individual requested a waiver and
+ any subsequent months if we do not timely input the waiver request.
+1. 
+Waiver and reconsideration requested at the same time
+An individual may request a reconsideration of the overpayment and a waiver at the
+ same time. A formal determination or dismissal of the reconsideration is necessary
+ prior to making a determination on the waiver request.  If you make a reconsideration
+ determination that does not fully eliminate the overpayment, process the waiver immediately
+ after making your reconsideration determination.
+For more information about processing an overpayment reconsideration, refer to 
+GN 02201.025
+ for Title II and 
+SI 02220.017
+ for Title XVI.    
+2. 
+Amount to consider for a waiver request
+An overpaid individual may request a waiver of overpayment recovery at any time. An
+ overpaid individual may also request a waiver after we have partially or completely
+ recovered the overpayment or denied a prior waiver request. We must determine whether
+ to waive the original overpayment amount or the remaining balance. For guidance on
+ the amount to waive, refer to 
+GN 02250.310
+.
+NOTE:
+ For cases where we have recovered all or part of the overpayment via tax refund offset
+ (TRO), refer to 
+GN 02201.030E.2
+ and 
+SI 02220.012F.4.
+  For cases where we have notified the individual of TRO but an offset has not taken
+ place yet, refer to 
+GN 02201.030D.2.
+ and 
+SI 02220.012E.3.
+ and 
+SI 02220.012
+.
+3. 
+Approving a waiver or proposing to deny the waiver
+When we develop a waiver request, the initial decision maker must determine if they
+ can fully approve the waiver or if they need to propose a denial. If the initial decision
+ maker recommends a partial waiver approval or proposes to deny the waiver, they must
+ refer the waiver to an independent decision maker for a file review and personal conference. 
+ For more information about processing a waiver approval or proposed denial, refer
+ to 
+GN 02250.002C.
+NOTE:
+ If you cannot approve a waiver under the administrative tolerance provision, and
+ the overpaid individual’s address is outside the United States, refer to 
+GN 02215.010
+ for Title II and 
+SI 02220.005B.1.d.
+ for Title XVI.
+C. 
+Procedure
+If an individual contacts us to request a waiver: 
+•
+Determine who may request a waiver, refer to 
+GN 02250.001E.
+•
+If the original overpayment amount is $2,000 or less, process the waiver request under
+ the administrative tolerance provision according to 
+GN 02250.350
+.
+•
+If the original overpayment amount is more than $2,000, the waiver request must be
+ in writing on form SSA-632-BK (Request for Waiver of Overpayment Recovery), or be
+ completed on form SSA-632-BK with a technician over the telephone. For more information
+ on taking waiver request over the phone, refer to 
+GN 02250.002C.1.
+•
+Process a waiver request for an overpayment of more than $2,000 according to 
+GN 02250.002C.3
+ for Title II and 
+GN 02250.002C.4
+ for Title XVI.
+•
+For guidance on which waiver provisions to apply and the steps necessary to process
+ Title II and Title XVI waivers accurately, refer to the:
+–
+Waiver Decision Tree - Title II & Title XVI - PDF
+ version
+; or
+–
+Waiver Decision Tree - Title II & Title XVI - Interactive Application
+.
+1. 
+Taking a waiver request over the phone
+If an individual requests a waiver and you are unable to approve the waiver under
+ the administrative tolerance provision and the individual would like to complete the
+ SSA-632-BK over the phone, complete these steps:
+•
+Open Inform and select the SSA-632-BK form.
+•
+Complete the attestation script before and after the interview as shown in 
+GN 00201.015F.3.
+•
+Go over the questions with the waiver requestor and input their responses into the
+ fillable form.
+•
+In the Remarks field, input the following language after reading the Penalty Clause
+ to the individual: 
+Signature attested after reading the Penalty Clause
+.
+•
+Check the appropriate box for the authorization to obtain financial account information.
+•
+Save the completed form as a pdf file to the FO’s Shared drive. Delete the file from
+ the Shared drive as soon as business has been completed.
+•
+Upload the completed form into WorkTrack 2.0 using the “Upload a Batch” process. 
+ See the WorkTrack 2.0 User Guide for more information.
+•
+Mail a printed copy of the completed SSA-632 to the waiver requestor.
+•
+Complete the waiver procedures. For Title II waiver procedures, refer to 
+GN 02250.002C.3.
+ For Title XVI waiver procedures, refer to 
+GN 02250.002C.4.
+•
+Continue normal business processes to profile and assign the waiver to a technician
+ for completion.  The technician will evaluate the waiver request to determine whether
+ the waiver request can be approved.
+2. 
+Propose to deny procedure
+When we cannot fully approve a waiver request, we must provide the overpaid individual
+ an opportunity for a file review and personal conference before we can make a partial
+ waiver approval determination or deny the waiver request. We must:
+a. 
+Title II
+•
+Input the denial using the DRWD screen in DMS (refer to MS DMS 006.004).
+•
+Document the relevant facts of the overpayment(s) and provide the rationale for denying
+ the waiver in DMS Remarks. The proposed waiver denial determination must be clear
+ and reflect the following facts:
+–
+How the overpayment(s) occurred;
+–
+The dates of the overpayment(s);
+–
+The total amount of the overpayment(s); and
+–
+The reason we cannot approve the waiver (including a fault determination, and if not
+ at fault, why recovery is not against equity and good conscience, not deemed to defeat
+ the purpose of the Act or does not defeat the purpose of the Act).
+•
+Refer the waiver for a personal conference. For additional information on scheduling
+ and conducting a personal conference, refer to 
+GN 02270.003
+ through 
+GN 02270.015
+.
+b. 
+Title XVI
+•
+Document the relevant facts of the overpayment(s) and provide the rationale for denying
+ the waiver on a DROC in the Consolidated Claims Experience (CCE). For more information
+ on the Report of Contact page in CCE, see MS 08122.010. For non-MSSICS/CCE cases,
+ document on the SSA-5002 (Report of Contact) and fax it into the Evidence Portal (EP).
+ The proposed waiver denial determination must be clear and reflect the following facts:
+–
+How the overpayment(s) occurred;
+–
+The dates of the overpayment(s);
+–
+The total amount of the overpayment(s); and
+–
+The reason we cannot approve the waiver (including a fault determination, and if not
+ at fault, why recovery is not against equity and good conscience, not deemed to defeat
+ the purpose of the Act or does not defeat the purpose of the Act).
+•
+Refer the waiver for a personal conference. For additional information on scheduling
+ and conducting a personal conference, refer to 
+GN 02270.003
+ through 
+GN 02270.015
+.
+3. 
+Title II procedure
+•
+Stop recovery as of the month we receive the waiver request and refund the amount
+ recovered in the month the overpaid individual requested a waiver and any subsequent
+ months. Request the Processing Center (PC) refund the amount.
+•
+Input the initial waiver protest reason using the Protest/Stop Recovery Request (FO)
+ (DRPF) screen in the Debt Management System (DMS). For more information about the
+ DRPF screen, refer to MS 01106.019.
+NOTE: 
+Do not process or post a Title II waiver request for a Title XVI cross-program recovery
+ overpayment.  For more information about processing a Title XVI waiver, refer to 
+GN 02250.002C.4.
+•
+Annotate DMS Remarks to document your actions.
+•
+For more information on proposed to deny waiver procedures, refer to 
+GN 02250.002C.2.
+  For more information on Title II waiver approval procedures, refer to 
+GN 02250.002C.3.a.
+a. Title II waiver approval procedure
+When approving a waiver request for more than $2,000, take the following actions:
+•
+Document your determination on form SSA-635 (Waiver Determination). For instructions
+ on how to document a determination on SSA-635, refer to 
+GN 02250.315
+.
+•
+If you determine a second pin review is necessary, refer to 
+GN 02250.301
+.
+•
+Input the waiver approval decision to Recovery of Overpayment Accounting Reporting
+ (ROAR) using the Waiver Disposition (DRWD) screen in DMS. For more information on
+ the DRWD screen, refer to MS 01106.004.
+•
+You must annotate the waiver approval on the DMS Remarks (RMKS) screen by stating
+ “Refer to the SSA-635 dated mm/dd/yyyy documenting the waiver determination in the
+ Evidence Portal (EP), name and title of deciding or reviewing official, office code
+ and date of the decision.” For more information on EP, refer to MS 09701.001.
+•
+Prepare a waiver approval notice using DPS. For instructions on how to prepare the
+ waiver approval notice, refer to 
+GN 02250.370B
+ and 
+GN 02250.370C.
+•
+If you are approving a waiver for an overpayment that we completely recovered, request
+ the Processing Center (PC) refund the amount approved and ask PC to repost the overpayment
+ to the ROAR.
+–
+Document this on DMS Remarks:
+•
+You are approving a waiver request for an overpayment that has been completely recovered.
+•
+You are sending an SSA-5002 to the PC for them to refund the amount we recovered for
+ the approved waiver.
+•
+You are asking the PC to create a new ROAR event to repost the overpayment.
+–
+Once reposted, immediately enter the waiver request and approval.
+–
+Complete an SSA-5002 requesting PC refund the overpayment and repost the overpayment
+ to the ROAR.
+–
+Send the SSA-5002 to PC via Evidence Portal using the document type OTHER-Other Document.
+ Check “Yes” does this document require involvement by the Processing Center.
+–
+Check the Master Beneficiary Record (MBR) and ROAR after 15 days. If the overpayment
+ is not reposted, send a manager-to-manager request. For more information on modes
+ of requesting assist with the PC, refer to 
+GN 01070.228
+.
+4. 
+Title XVI procedure
+•
+Stop recovery and post the waiver request date to the SSR using the Modernized Supplemental
+ Security Income Claims System (MSSICS) Direct SSR Update and the Waiver (UOWV) screen.
+ For more information on stopping recovery and changing overpayment decisions, refer
+ to MS 00304.008. For more information on the UOWV screen, refer to MS 00304.009.
+•
+If the system does not refund the amount recovered, refund the amount recovered in
+ the month the overpaid individual requested a waiver and any subsequent months by
+ the Automated One Time Payment (A-OTP) process.  For instructions on the A-OTP process,
+ refer to SM 01901.005 and MS 00304.007 through MS 00304.009 and MS 00303.022.
+•
+For more information on proposed to deny waiver procedures, refer to 
+GN 02250.002C.2.
+ For more information on Title XVI waiver approval procedures, refer to 
+GN 02250.002C.4.a.
+a. 
+Title XVI waiver approval procedure
+When approving a waiver request for more than $2,000, take the following actions:
+•
+Document your determination on SSA-635 using the instructions in 
+GN 02250.315
+.
+•
+If you determine a second pin review is necessary, refer to 
+GN 02250.301
+.
+•
+Post the approved waiver decision to the SSR using MSSICS Direct SSR Update and the
+ UOWV screen.
+•
+Annotate the waiver approval on the Report of Contact (DROC) screen in CCE as follows
+ “Refer to the SSA-635 dated [mm/dd/yyyy] documenting the waiver determination in the
+ Evidence Portal, name and title of deciding or reviewing official, office code and
+ date of the decision."
+•
+Determine if you must prepare a manual notice.  For instructions on when to send a
+ manual notice and how to prepare the Title XVI waiver approval notice, refer to 
+GN 02250.370D.
+•
+Refund any funds recovered for the period covered by the approved waiver request.
+ If the system does not automatically issue the refund after the technician inputs
+ the waiver approval, use the A-OTP process to refund the recovered amount. For instructions
+ on the A-OTP process, refer to SM 01901.005 and MS 00304.003 through MS 00304.009
+ and MS 00303.022.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202250002
+GN 02250.002 - Processing a Waiver Request - Title II and Title XVI - 02/18/2025
+Batch run: 
+10/05/2026
+Rev:
+02/18/2025
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

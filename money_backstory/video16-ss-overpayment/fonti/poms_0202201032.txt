@@ -1,0 +1,357 @@
+
+SSA - POMS: GN 02201.032 - Reporting Title II Overpayment Debts to Credit Bureaus - 05/08/2025
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 05/08/2025 - Present
+Previous
+ | 
+Next
+TN 78 (05-25)
+GN 02201.032 
+Reporting Title II Overpayment Debts to Credit Bureaus
+A. 
+What is the policy for reporting Title II overpayment debts to credit bureaus?
+1. 
+What authority authorizes reporting Title II overpayment debts to credit bureaus?
+The Domestic Employment Reform Act of 1994 (DERA) authorizes the Social Security Administration
+ (SSA) to report certain delinquent Title II overpayment debts to credit bureaus. The
+ Debt Collection Improvement Act of 1996 (DCIA) gave SSA permanent authority to continue
+ credit bureau reporting.
+In addition, the Fair Credit Reporting Act (FCRA) contains provisions on credit bureau
+ reporting, including provisions on handling consumer disputes about information reported
+ to credit bureaus by SSA and other credit reporting entities, see 
+GN
+ 02201.032D.2
+.
+2. 
+General description of credit bureau reporting
+Credit bureau reporting is the posting of a debt to an individual's credit record.
+ SSA uses credit bureau reporting as a way of influencing a debtor to repay a Title
+ II or Title XVI debt.
+SSA sends information about the debt/debtor to the national credit repositories, which
+ are the largest holders of credit data. The credit repositories then provide the information
+ to the smaller credit bureaus across the country. An SSA debtor could be denied a
+ loan or credit based on the posting of an unrecoverable SSA debt on the credit report.
+NOTE
+:For information regarding reporting Title XVI debts to the credit bureau, see 
+SI
+ 02220.014
+.
+3. 
+Criteria for selecting Title II debts for credit bureau reporting
+SSA's automated systems select certain delinquent Title II debts for credit bureau
+ reporting. The following criteria apply:
+a. 
+The debtor was 18 years old when the debt was incurred;
+b. 
+The debt must be considered to be “unrecoverable” under regulations issued by the
+ Commissioner of Social Security (for definition of the term “unrecoverable debt”see
+GN
+ 02201.031B
+);
+c. 
+The debt must be owed by a person who is no longer enTitled to receive Social Security
+ benefits;
+d. 
+The debtor must be alive;
+e. 
+The debtor's beneficiary own account number (BOAN) must be on the Master Beneficiary
+ Record (MBR),
+f. 
+The debt must be $25.00 or more, and
+g. 
+The debt must be delinquent for no more than 6 years and 6 months (for the definition
+ of the term “delinquent”see 
+GN
+ 02201.030B.2
+.).
+NOTE:
+ Based on these criteria, SSA does not report beneficiary identification code (BIC)
+ "C" debtors to credit bureaus.
+B. 
+What is the process?
+1. 
+Debtor selection
+Each month, SSA's systems select Title II debtors who reach unrecoverable status for
+ credit bureau reporting.
+2. 
+Debtor notification
+SSA sends due process notices to the selected debtors, telling them that SSA intends
+ to report their debts to credit bureaus. The notices tell the debtors that the following
+ specific information will be reported:
+a. 
+Debtor's name, address, and Social Security Number;
+b. 
+Date of birth;
+c. 
+Date the overpayment became delinquent (for definition of the term “delinquent”see
+GN
+ 02201.030B.2
+.);
+d. 
+Date of last payment, if any; and
+e. 
+Past due balance of the overpayment.
+NOTE: 
+SSA sends one notice to inform the debtor about TOP, TRO, Administrative Offset, and
+ credit bureau reporting. The same repayment options and due process rights are offered
+ for credit bureau reporting and for administrative offset as described in 
+GN
+ 02201.031C
+ .
+NOTE:
+ All External Collection Operation (ECO) notices sent November 2015 or later will
+ be stored in the Online Retrieval System (ORS). For all ECO notices sent prior to
+ November 2015 you can view the ECO master query. For additional information on the
+ ECO master query, see MS
+ 01114.007.
+3. 
+Credit bureau reporting
+If all criteria for credit bureau reporting continue to be met, SSA's systems report
+ the debtor and debt information after the later of:
+a. 
+The expiration of 60 days from the date of the notice, or
+b. 
+The date on which SSA sends the debtor a decision on any request for review of the
+ debt or waiver received during that 60-day period.
+4. 
+Updates to credit bureau reports
+SSA is required to keep its debtor and debt information updated with the credit bureaus.
+ SSA's systems perform the updates each month. SSA reports new information such as
+ repayments, changes of address, and protests received after the debt is reported to
+ the credit bureaus.
+NOTE: 
+If a debtor becomes reentitled and benefit withholding resumes, SSA's systems will
+ automatically update the credit bureau with the collections and the most current debt
+ balance.
+C. 
+How must debtor inquiries and protests, pre-offset, be handled?
+1. 
+Request for explanation of overpayment
+Follow procedure in 
+GN
+ 02201.030D.1
+.
+2. 
+Request for waiver
+Follow procedure in 
+GN
+ 02201.030D.2
+.
+NOTE: If a waiver request is pending at the end of the 60-day due process period,
+ the debt will not be reported to the credit bureaus.
+3. 
+Request to review record
+Follow procedure in 
+GN
+ 02201.030D.3
+.
+4. 
+Request for installment payments
+Follow procedures in 
+GN
+ 02201.030D.4
+.
+5. 
+Debtor objects to collection of debt
+a. 
+Debtor objects to SSA's determination that the debt is past-due and legally enforceable
+ and an External Collections review is requested
+Follow instructions in 
+GN 02201.030D.5.a
+.
+b. 
+Debtor protests the fact or amount of debt
+Follow instructions in 
+GN 02201.030D.5.b.
+6. 
+Debtor alleges non-receipt of overpayment
+Follow instructions in 
+GN 02201.030D.6
+.
+7. 
+Debtor makes a compromise offer
+If the debtor makes a compromise offer, process in accordance with existing instructions
+ in 
+GN 02215.100 
+through 
+GN 02215.125
+. If SSA agrees to the offer, stress that payment must be received by us before the
+ 60 day due process period expires or we will report the debt to the credit bureaus.
+8. 
+Debtor alleges non-receipt of initial overpayment notice
+Follow the procedure in 
+GN
+ 02201.030D.8
+.
+9. 
+Report of death
+Follow procedures in 
+GN
+ 02201.030D.9
+.
+10. 
+Report of bankruptcy action
+Follow instructions in 
+GN 02201.030D10
+.
+D. 
+How must debtor inquiries and protests after credit bureau reporting be completed?
+SSA will receive some inquiries and protests after the debt has been reported to the
+ credit bureaus and they will be handled according to normal processing. SSA's systems
+ will automatically pass information about the inquiries or protests to the credit
+ bureaus. Once a debt has been reported, it will remain on the debtor's credit record
+ (with a few exceptions as explained below). The debt and debtor information, such
+ as the most current debt balance and last payment, will be updated as necessary by
+ SSA's systems.
+1. 
+Consumer disputes the report with the credit bureau
+Consumers have the right to dispute the accuracy of information about them reported
+ to credit bureaus, including information reported by SSA. This will most likely occur
+ after the debtor has received a copy of their credit report and sees that information
+ reported by SSA has been posted to the report. The consumer can dispute either the
+ amount or the fact of the debt. In some cases, consumers will dispute the accuracy
+ by contacting the credit bureaus directly.
+When the credit bureau is notified by the consumer of the dispute, it will contact
+ SSA and request that we verify our records of the debt. The contact will occur via
+ an online system called the Automated Consumer Dispute Verification (ACDV) system,
+ which links the credit bureaus with SSA. (Currently, the ACDV process is handled by
+ the Northeastern Program Service Center (NEPSC)).
+Under the provisions of the Fair Credit Reporting Act, we have 30 days to respond
+ to the dispute or the debt is deleted from the credit report. In most cases, SSA need
+ only verify the fact or amount of the debt on the MBR or ROAR or both and notify the
+ credit bureau via the online program that the debt is correct as reported.
+Important: 
+Do not process the consumer dispute as a request for reconsideration of the fact or
+ amount of the debt. Requests for reconsideration of the fact or amount of the debt
+ must be made directly to SSA and should be handled as described in 
+GN
+ 02201.030D.5
+.
+2. 
+Allegation of pending protest or waiver request
+If a debtor alleges they filed a protest or requested waiver before or during the
+ 60 day due process period but never received a decision, obtain a ROAR query and proceed
+ as follows:
+•
+If there is an Initial Waiver (23W) or Recon Fact/Amount (23R) posted before or during
+ the 60 day due process period, but no decision has been made and released:
+–
+Notify the Debt Management Program Analyst that the debt should be deleted from the
+ credit report.
+–
+Tell the debtor that the debt will be removed from the credit report.
+–
+Follow instructions in 
+GN
+ 02201.030E.1
+.
+•
+If ROAR reflects an unfavorable reconsideration or waiver decision before or during
+ the 0-day due process period:
+–
+Advise the debtor that since the issue has been resolved, credit bureau reporting
+ was appropriate
+–
+Do not delete the debt from the credit record.
+•
+If there is no ROAR posting but the debtor still indicates a prior protest/waiver
+ was filed:
+–
+Look for an unprocessed SSA-632-BK, letter or SSA- 795 in FO records or in the claims
+ folder.
+–
+Also look in DMS REMARKS or the Special Message field for indications that a waiver
+ was requested but not posted to the system. If you find evidence of a prior protest,
+ proceed as follows:
+•
+Notify the Debt Management Program Analyst that the debt should be deleted from the
+ credit report.
+•
+Tell the debtor that the debt will be removed from the credit report.
+•
+Post the pending request to ROAR via the DRPR or DRPF screen.
+If the records review fails to produce any evidence of a protest or waiver filed before
+ or during the 60-day due process period:
+•
+Notify the debtor that the reporting was correct.
+•
+Ask if the debtor wishes to file a new waiver request. If so, follow 
+GN
+ 02201.030D.3.
+3. 
+Request for waiver
+If a request for waiver is received after the 60 day due process period and the debt
+ has been reported to the credit bureau, proceed as follows:
+•
+Obtain an SSA-632-BK in accordance with current instructions in 
+GN
+ 02250.002
+.
+•
+Advise the debtor that the waiver will be processed as soon as possible, but that
+ the debt will remain reported to the credit bureau.
+•
+If the debt is eventually waived, SSA will update the credit report to show a balance
+ of zero.
+4. 
+Request for installment payments
+•
+Establish the agreement per 
+GN
+ 02210.180
+.
+•
+Advise the debtor the debt will remain reported to the credit bureau but that SSA
+ will update the balance to reflect the most recent repayment.
+5. 
+Report of bankruptcy
+•
+If debtor alleges a bankruptcy petition was filed and the debt was discharged, request
+ evidence of proof of the discharge.
+–
+If proof is received, inform the debtor the debt will be removed from the credit report.
+ (See 
+GN 02215.190
+ thru 
+GN 02215.235)
+.
+–
+If the debt is discharged without exception, call to notify or email the Debt Management
+ Program Analyst that the debt should be deleted from the credit report.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202201032
+GN 02201.032 - Reporting Title II Overpayment Debts to Credit Bureaus - 05/08/2025
+Batch run: 
+09/25/2026
+Rev:
+05/08/2025
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

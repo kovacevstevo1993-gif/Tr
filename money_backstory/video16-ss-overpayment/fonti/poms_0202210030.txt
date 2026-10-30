@@ -1,0 +1,260 @@
+
+SSA - POMS: GN 02210.030 - Request for Change in Overpayment Recovery Rate, Form SSA-634 - 10/08/2024
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 10/08/2024 - Present
+Previous
+ | 
+Next
+TN 85 (10-24)
+GN 02210.030 
+Request for Change in Overpayment Recovery Rate, Form SSA-634
+CITATIONS:
+Social Security Act 
+204(a)
+20 CFR 404.502
+A. 
+A change in overpayment recovery rate
+When we establish a Title II overpayment on an individual’s record the automated system
+ will begin benefit withholding after the 60-day due process period expires. We recover
+ the overpayment by withholding 10% of the individual’s monthly benefit amount until
+ we fully recover the overpayment, see 
+GN 02210.001
+. If an individual is unable to meet their ordinary and necessary living expenses
+ because we are withholding 10% of their monthly payment, the individual may request
+ a lower rate of recovery.
+B. 
+Requesting a different overpayment recovery rate within 12 or 60 months
+When an individual requests a lower repayment rate, we must always attempt to negotiate
+ a rate of withholding with the individual, which results in full recovery of the total
+ outstanding debt within 12 months. We allow the individual to pay a minimum of $10.00
+ per month, if we can collect the debt within 12 months. We do not need the individual
+ to provide information about their income, resources, or living expenses if we collect
+ the debt within 12 months.
+If we cannot collect the debt within 12 months, negotiate a rate that permits full
+ recovery within 60 months. The individual must pay a minimum of $10.00 per month.
+ If the individual requests to extend the recovery of the debt to 60 months, verbally
+ collect the individual's allegations of their resources, income, and living expenses
+ and document the information on the Remarks screen in the Debt Management System (DMS).
+ Input the new rate of recovery in the Reconciling Recovery of Overpayments Accounting
+ and Reporting System (ROAR).
+NOTE: 
+Do not request an SSA-634, Request for Change in Overpayment Recovery Rate, if we
+ can recover the total debt within 60 months.
+Example
+: Documenting a request for a change in overpayment recovery rate on the Remarks screen
+ in DMS:
+Sally Snow's overpayment amount is $2,400.00. They requested that we withhold $120.00
+ per month beginning February 2018. Sally alleges resources of $0.00, Social Security
+ benefits of $1,200.00, and living expenses of $1,000.00 per month. Sally will pay
+ their debt within 20 months; therefore, I approved their request for partial withholding.
+ I made the input in ROAR and sent a notice to them on January 6, 2018. – John Jones
+ FO A12
+NOTE: 
+If the individual receives Title II benefits and Title XVI payments, see 
+GN 02210.045
+.
+If the individual is receiving another type of cash public assistance (e.g. VA service
+ and non-service related disability pensions, Temporary Assistance for Needed Families
+ (TANF) (see 
+GN 02250.110
+)), verify the assistance and withhold at the requested rate but no less than $10.
+ Document the cash public assistance and withholding request on the Remarks screen
+ in DMS. Do not ask the individual to complete form SSA-634.
+C. 
+Requesting a different overpayment recovery rate extending beyond 60 months
+If the negotiated rate (lower than 10%) would not permit recovery within 60 months,
+ the individual must complete the SSA-634 form. For instructions about completing the SSA-634, see section G below. Evaluate
+ the individual’s income, expenses and resources as follows:
+1. 
+Compare the monthly household expenses and the total monthly income to determine if
+ the individual’s income exceeds their expenses.
+2. 
+Review the individual’s financial information to determine if resources are below
+ $3,000.00.
+If the individual’s resources are below $3,000.00 and their income does not exceed
+ adjusted expenses, consider approving a lower rate of recovery. However, do not allow
+ them to pay less than 10.00 per month. If the individual's resources are below $3,000.00
+ and their income exceeds the adjusted expenses, consider approving a lower rate of
+ recovery with the difference in the individual's income and expenses.
+Example: 
+Tom Greene requested a change in repayment rate that would extend their debt beyond
+ 60 months. We sent an SSA-634 to them for completion. Tom's debt is $7,500.00. Tom
+ has $1,500.00 in resources, expenses are $2,275.00, and income is $2,400.00. We determined
+ that Tom can afford to repay $120.00 per month without financial hardship.
+Exception:
+ If the individual has a 100% Medicare Part D subsidy
+,
+ take the following actions:
+1. 
+Grant any request that is at a minimum $10.00.
+2. 
+Do not request a completed Form SSA-634.
+3. 
+Document the decision on the Remarks screen in DMS.
+D. 
+Denying a request for different rate of recovery
+If you deny the request for a different rate of recovery, send a notice providing
+ the basis for the denial and the manner in which we will recover the overpayment.
+ Do not include a reconsideration paragraph. The decision as to the amount of withholding
+ is an administrative action and not an initial determination. Document the Remarks
+ screen in DMS.
+E. 
+Fraud conviction
+If an individual has a fraud conviction or if we establish that similar fault exists
+ for the debt, do not approve a request to lower the rate of withholding. The individual
+ must pay the overpayment through full withholding. Notify the individual that we will
+ not change the repayment rate because fraud or similar fault exists. Annotate the
+ Remarks screen in DMS.
+Example: 
+Documenting a request for a lower rate of withholding when an individual has a fraud
+ conviction on the Remarks screen in DMS:
+Luke Brown requested partial withholding on April 4, 2018. On January 5, 2018, we
+ determined that Luke’s overpayment resulted from fraud; therefore, I cannot approve
+ their request. I sent a them a notice on April 27, 2018. – John Jones FO A12.
+F. 
+Effective date of lower recovery rate
+1. 
+Request made prior to any adjustment
+Initiate withholding effective with the Current Operating Month (COM).
+2. 
+Request made after full adjustment initiated
+Process the request in the month the individual requests the rate change. If you process
+ the action later than the month the individual requested the rate change, pay the
+ difference between what we withheld and what we should have withheld based on the
+ request.
+3. 
+Lesser request made after partial adjustment initiated
+Process the lesser amount effective with the COM.
+G. 
+Completing the SSA-634
+1. 
+Purpose of the SSA-634
+The purpose of the SSA-634 is to gather information to assist technicians with determining
+ if they can approve a change in an individual’s repayment rate if the individual cannot
+ pay their entire debt within 60 months. The overpaid individual or an individual representing
+ the overpaid individual can complete the form. A technician can assist with completing
+ the SSA-634 if the individual requests our assistance. Sections H through N below
+ provides guidance on completing each section of the form.
+2. 
+Request for a change in overpayment recovery rate from an overpaid individual who
+ lives outside the United States
+If the individual requesting a change in overpayment recovery rate does not live in
+ the United States, obtain an SSA-634, if the individual says they cannot repay the
+ debt within 60 months. Ask the individual to show the value of the resources, income,
+ expenses, in local currency. After receiving the completed form, use the Treasury
+ Reporting Rates of Exchange tables to convert the foreign currency to U.S. dollar
+ amounts and specify the type of currency involved.
+3. 
+Proof of resources, income, and expenses
+Inform the individual that they are responsible for providing proof of all resources,
+ income and certain expenses. We do not require proof for food and miscellaneous household
+ expenses, unless the expenses seem unusually high.
+4. 
+Storing the SSA-634
+Fax the SSA-634 and the supporting documents into Evidence Portal.
+H. 
+Questions on the SSA-634
+1. 
+Section 1 - Identifying information
+Questions 1 through 4
+Question 1 - The individual must provide their name, SSN, and claim number, if any.
+ If someone else is completing the SSA-634 on behalf of the overpaid individual, we
+ ask for the identity of the organization or individual who is assisting the individual.
+Question 2 - Enter the type of income the individual is currently receiving.
+Question 3 - Enter the total amount that the individual owes to SSA.
+Question 4 - Enter the monthly amount that the overpaid individual can afford to pay.
+2. 
+Section 2 - resources - things you have and own
+Questions 5 through 6
+Question 5.A - Enter the cash in the overpaid individual’s possession.
+Question 5.B - Enter a detailed description of the financial accounts owned by the
+ overpaid individual.
+Question 6.A – If the overpaid individual owns more than one vehicle, enter a description,
+ present value, loan balance, and the main purpose of the additional vehicles.
+Question 6.B - Enter a detailed description of any real estate owned by the overpaid
+ individual, if it is not where the overpaid individual lives.
+Question 6.C - Enter a detailed description of any interest in any business, property,
+ or valuables that the overpaid individual owns.
+3. 
+Section 3 - Monthly household income
+Questions 7 through 9
+Question 7 - Enter monthly employment information for the overpaid individual.
+Question 8.A - Enter any support or contributions from any individual, agency, or
+ organization that the overpaid individual receives.
+Question 8.B – Enter whether the overpaid individual receives the support or contributions
+ under a loan agreement.
+Question 8.C – Enter the amount of the support or contributions that the overpaid
+ individual receives.
+Question 9 - Enter unearned monthly income for the overpaid individual.
+4. 
+Section 4 - Monthly household expenses
+Question 10
+Enter the monthly household expenses. Write the amounts in whole dollars and round
+ any cents to the nearest dollar. Do not list an expense withheld from the individual’s
+ paycheck, such as medical, child support, alimony, wage garnishments, etc. When reviewing
+ the household bills do not double count the expenses if the overpaid individual uses
+ a credit card for paying bills and making purchases. If the overpaid individual pays
+ expenses by credit card, only list it as a credit card expense instead of a another
+ expense for clothing, phone, gas for a vehicle, or etc.
+5. 
+Section 5 - Income and expenses comparison
+Questions 11 through 12
+Section 5 compares the monthly income with the monthly household expenses. We subtract
+ the total monthly household expenses from the total monthly household income to determine
+ if the individual has money to repay the overpayment. If the monthly expenses exceed
+ monthly income, the overpaid individual must explain how they pay their monthly bills.
+6. 
+Section 6 - Financial expectations and funds availability
+Question 13
+Question 13.A - Requires the overpaid individual to let us know if they expect to
+ receive an inheritance within 6 months of requesting the repayment change to determine
+ if the individual’s resources may increase.
+Question 13.B - This question totals the overpaid individual’s resources to determine
+ if the individual has money to repay their overpayment.
+Question 13.C - This question determines if the overpaid individual has any resources
+ that they cannot convert to cash.
+I. 
+References
+•
+GN 02210.001
+ - Overpayment Recovery by Benefit Adjustment
+•
+GN 02210.045
+ - Rate of Overpayment Adjustment - Title II/Title XVI Beneficiary
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202210030
+GN 02210.030 - Request for Change in Overpayment Recovery Rate, Form SSA-634 - 10/08/2024
+Batch run: 
+11/22/2024
+Rev:
+10/08/2024
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

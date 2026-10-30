@@ -1,0 +1,361 @@
+
+SSA - POMS: GN 02250.001 - Waiver Basics - Title II and Title XVI - 06/11/2026
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 06/11/2026 - Present
+Previous
+ | 
+Next
+TN 82 (06-26)
+GN 02250.001 
+Waiver Basics - Title II and Title XVI
+CITATIONS:
+Social Security Act 
+204(b)
+,
+ 1631(b)(1)(B) 
+20 C.F.R. 
+404.502a
+, 
+404.506
+, 
+416.550
+A. 
+Introduction
+This section provides guidance on:
+•
+When we will waive recovery of an overpayment;
+•
+What we consider a waiver request:
+•
+When an individual may request a waiver;
+•
+Who may request a waiver;
+•
+The effect of a waiver;
+•
+When we will not make a waiver determination; and
+•
+Waiver dismissal procedures.
+B. 
+Policy
+An individual must request a waiver before we will make a waiver determination. We
+ will waive recovery of an overpayment if both of these conditions are met:
+•
+The individual is not at fault in causing the overpayment, 
+AND
+•
+Recovery or adjustment:
+–
+impedes the efficient or effective administration of the Social Security Act (Act)
+ due to the small amount of the overpayment (administrative tolerance waiver), refer
+ to 
+GN 02250.350
+; or
+–
+is deemed to defeat the purpose of the Act, refer to 
+GN 02250.110
+; or
+–
+is against equity and good conscience, refer to 
+GN 02250.150
+; or
+–
+defeats the purpose of the Act, refer to 
+GN 02250.100
+.
+NOTE: 
+For more information about the Title XVI waiver provision for an overpayment caused
+ by countable resources exceeding the resource limit by $50 or less, refer to 
+GN 02250.090
+.
+C. 
+What we consider as a waiver request
+An individual may request a waiver in writing or verbally.
+1. 
+Written waiver request
+An individual may make a waiver request in writing by submitting form SSA-632-BK (Request
+ for Waiver of Overpayment Recovery). If the overpayment is $2,000 or less, the individual
+ does not need to complete form SSA-632-BK. For more information on the administrative
+ tolerance provision, refer to 
+GN 02250.350
+.
+A written waiver request should have the signature of the overpaid individual or other
+ individual who may request a waiver, refer to 
+GN 02250.001E.
+ An individual can submit form SSA-632-BK by mail, by fax, in the office, or by completing
+ and submitting the SSA-632 through “Upload Documents” from their 
+my
+Social Security account.
+If the individual provides an incomplete form SSA-632-BK, we will contact them to
+ get the information we need. For more information on processing a waiver request,
+ refer to 
+GN 02250.002C.
+2. 
+Verbal waiver request
+We allow a verbal waiver request (i.e., a verbal statement from the individual stating
+ they would like to request waiver) if we can approve the waiver under the administrative
+ tolerance provision, refer to 
+GN 02250.350
+.
+3. 
+Completing the waiver request form by phone
+We will complete the SSA-632 over the phone with the individual if:
+•
+The individual contacts us to request a waiver and we are unable to approve the waiver
+ under the administrative tolerance provision; 
+and
+•
+The individual would like us to complete the SSA-632-BK with them over the phone.
+For the procedure on taking a waiver request by phone, refer to 
+GN 02250.002C.1.
+4. 
+Request for reconsideration
+We will presume an individual requested a waiver if the individual requests reconsideration
+ of an overpayment determination and the overpayment is $2,000 or less. For more information,
+ refer to 
+GN 02250.350B.
+D. 
+When an individual may request a waiver
+An individual may request a waiver at any time, including when:
+•
+An individual receives notification they are liable for an overpayment. For more information
+ on who may request a waiver, refer to 
+GN 02250.001E.
+•
+At the same time, they appeal the overpayment. For more information about a waiver
+ and reconsideration filed at the same time, refer to 
+GN 02250.002B.1.
+•
+After we have started recovery, or even after we have completely recovered the overpayment.
+ The fact that an individual may not be receiving benefits or payments is immaterial.
+ For more information on how to determine the amount to consider for a waiver request,
+ refer to 
+GN 02250.310
+.
+•
+After external collections have begun. For more information on requesting a waiver
+ when an overpayment has been:
+–
+collected by a tax refund offset, refer to 
+GN 02201.030D.2.
+ for Title II and 
+SI 02220.012E.3
+ for Title XVI;
+–
+reported to credit bureaus, refer to 
+GN 02201.032
+ for Title II and 
+SI 02220.014
+ for Title XVI; or
+–
+collected by federal salary offset, refer to 
+GN 02201.043
+.
+•
+After a denial of a previous waiver request. An individual may make a second or subsequent
+ waiver request even if we denied the prior request and the time to appeal the decision
+ has expired.
+NOTE:
+If an individual submits more than one waiver request for the same overpayment, determine
+ if res judicata applies. For more information on res judicata for waivers, refer to
+GN 02250.303
+.
+E. 
+Who may request a waiver
+A waiver request may be made by:
+•
+The overpaid individual;
+•
+A representative payee, appointed representative, or legal guardian on behalf of an
+ overpaid individual;
+•
+A representative payee who was notified that they are liable for an overpayment; or
+•
+A legal representative of the estate of a deceased overpaid individual or distrubtee
+ of a deceased overpaid individual, refer to 
+GN 02250.001E.2.
+1. 
+When a request for waiver will apply to other individuals receiving benefits on the
+ same record - Title II only
+An individual's request for a Title II waiver is generally a request for any other
+ overpaid individual currently living in the same household who is overpaid for the
+ same reason. A single request can result in a waiver determination for all members
+ of the household if:
+•
+The overpaid individuals were living in the same household at the time of the overpayment;
+ and
+•
+The overpaid individuals are living in the same household at the time waiver is requested;
+ and
+•
+The overpayment was caused by the same event.
+For an example of when a request for waiver will apply to other individuals receiving
+ benefits on the same record, refer to 
+GN 02250.001I.
+2. 
+Waiver request from an estate or distributee
+An estate or distributee of a deceased overpaid individual may request waiver.
+When an estate requests a waiver, we will waive the overpayment if the deceased overpaid
+ individual:
+•
+was not at fault in causing the overpayment; and
+•
+would meet another waiver provision, other than defeats the purpose (or deemed to
+ defeat the purpose).
+When a distributee requests a waiver, we will waive the overpayment if the distributee
+ meets the waiver criteria.
+For more information on how to process a waiver request from an estate or distributee,
+ refer to 
+GN 02250.005B.3
+, 
+GN 02250.100F
+, and 
+GN 02250.150G.
+F. 
+Effect of waiver
+When we approve a request for a waiver, we will no longer try to recover the waived
+ amount from that individual. We may also refund the overpaid amounts that we have
+ recovered or withheld. For more information on the refund procedures when we approve
+ a waiver, refer to 
+GN 02250.310
+.
+G. 
+When we will not make a waiver determination
+Once we receive a waiver request, we must process the request to completion and make
+ an initial waiver determination on the request, unless one of these exceptions apply:
+•
+If a bankruptcy is pending, contact the Office of the General Counsel (OGC) at ^SSA
+ Bankruptcy.
+•
+If res judicata applies, follow the instructions for denying the waiver request in
+GN 02250.303
+.
+•
+If the individual dies before a decision is made, develop for collection from their
+ estate, refer to 
+GN 02215.050
+.
+•
+If the overpayment resulted from misuse of benefits by a representative payee and
+ the representative payee was convicted of fraud, refer to GN 00604.001.
+•
+If an individual requests waiver of Civil Monetary Penalty (CMP) collection, refer
+ to GN 02230.065.
+•
+If the overpayment resulted from fraud or similar fault on the part of the overpaid
+ individual, refer to SI 04070.020, 
+SI 02220.036
+, and 
+GN 02201.055
+. For instructions on waiver dismissal procedures where the overpayment resulted from
+ fraud or similar fault, refer to 
+GN 02250.001H.
+H. 
+Waiver dismissal procedures
+If you receive a waiver request for an overpayment that resulted from fraud or similar
+ fault on the part of the overpaid individual, dismiss the waiver. Fax the SSA-632
+ into the Evidence Portal and continue with the dismissal procedures for Title II in
+GN 02250.001H.1
+ or for Title XVI in 
+GN 02250.001H.2.
+1. 
+Title II procedures
+a. 
+FO instructions
+•
+Fax the waiver request and documentation into NDRed using the Evidence Portal (EP)
+ or into the Certified Electronic Folder (CEF) as applicable;
+•
+Send the waiver request and waiver dismissal request to the PC of jurisdiction via
+ Paperless using the EP for their action;
+•
+Transfer the jurisdiction to the PC via DMS using the Workload Management System (WMS)
+ Debt Management Function Selection (DMFS) screen; and
+•
+Annotate DMS Remarks to document your actions.
+b. 
+PC instructions
+•
+Input the waiver dismissal using the Fact/Amount Appeal Disposition (DRAD) screen
+ in DMS. For more information on the DRAD screen, refer to MS 01106.011.
+NOTE:
+ Input the dismissal via the reconsideration (appeal) screen because this is not a
+ true waiver denial and is not subject to a personal conference.
+•
+Send the individual a notice stating, We are unable to process your waiver request
+ submitted on [MM/DD/YY] because the overpayment resulted from fraud or similar fault.
+ Make sure the notice is stored in ORS; and
+•
+Annotate DMS Remarks (RMKS) screen with the dismissal reason and the date you sent
+ the dismissal notice. For more information on RMKS screen in DMS, refer to MS 01109.003.
+2. 
+Title XVI procedures
+•
+Input the waiver dismissal using the Waiver Decision (UOWV) screen in Direct Supplemental
+ Security Record (SSR) Update. For more information on the UOWV screen, refer to MS
+ 00304.009;
+•
+Select 3 = DENIED PRIOR DENIAL (NO CHANGE) decision for the overpayment sequence in
+ UOWV;
+•
+Send the individual a notice stating, We are unable to process your waiver request
+ submitted on [MM/DD/YY] because the overpayment resulted from fraud or similar fault.
+ Make sure the notice is stored in ORS; and
+•
+Annotate the dismissal reason and the date you sent the dismissal notice on the Report
+ of Contact page in the Consolidated Claims Experience (CCE) or a SSA-5002 for non-MSSICS/CCE
+ cases. You must fax the SSA-5002 in the Evidence Portal. For more information on the
+ Report of Contact Page in CCE, refer to MS 08122.010.
+I. 
+Example
+When a request for waiver will apply to other individuals receiving benefits on the
+ same record Title II only:
+Marvin, the primary beneficiary (BIC A), was overpaid $24,500 for the period February
+ 2022 through December 2023 due to a work cessation. Marvin requests waiver.
+Charlotte, Marvins spouse (BIC B2), has children with Marvin and the children are
+ overpaid for the same period and same reason or event as Marvin and Charlotte. Their
+ children are Trevor (BIC C1), Lance (BIC C2), Dana (BIC C3), and Susie (BIC C4).
+Charlotte, Dana, and Susie currently live in the same household as Marvin, and they
+ lived in the same household at the time of the overpayment.
+Trevor and Lance do not live in the same household as Marvin.
+Marvins waiver request includes a request for waiver for Marvin, Charlotte, Dana,
+ and Susie.
+Trevor and Lance are not included in Marvins waiver request because they live in a
+ separate household and must file their own waiver request.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202250001
+GN 02250.001 - Waiver Basics - Title II and Title XVI - 06/11/2026
+Batch run: 
+06/11/2026
+Rev:
+06/11/2026
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

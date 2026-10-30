@@ -1,0 +1,325 @@
+
+SSA - POMS: GN 02250.350 - Administrative Waiver Tolerance for Overpayments $2,000 or Less- Title II and Title XVI - 11/22/2024
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 11/22/2024 - Present
+Previous
+ | 
+Next
+TN 77 (05-25)
+GN 02250.350 
+Administrative Waiver Tolerance for Overpayments $2,000 or Less- Title II and Title
+ XVI
+CITATIONS:
+Social Security Act § 
+1631(b)(1)(B)
+; 
+31 U.S.C. § 3711(a)(3)
+ 20 C.F.R. §§ 
+404.515
+, 
+416.555
+A. 
+Introduction
+This section provides guidance on when to apply an administrative tolerance waiver
+ determination of a Title II or Title XVI overpayment when the original overpayment
+ amount is $2,000 or less.
+Under this provision, we can waive the overpayment because recovery would impede the
+ efficient administration of the Social Security Act. This tolerance supports the efficiency
+ of our overpayment recovery program. Using this tolerance promotes cost-effective
+ recovery efforts, so we spend less on recovery activities than the amount we would
+ expect to recover from individuals who are not at fault. We calculated the tolerance
+ by considering the current average administrative cost of handling overpayment cases
+ through our adjustment or recovery processes.
+NOTE
+: If the Title XVI overpayment is due to countable resources exceeding the limit by
+ $50 or less, we must deem the individual not at fault and waive the overpayment, unless
+ we find clear evidence that the individual knowingly and willfully failed to report
+ the excess resources correctly and timely. Refer to 
+GN 02250.090
+.
+B. 
+Policy
+When an individual requests waiver, we will waive recovery or adjustment of an overpayment
+ if:
+•
+the overpaid individual is not at fault; and
+•
+the original overpayment amount (not the balance) is $2,000 or less.
+We will not require the individual to complete Form SSA-632-BK for an overpayment
+ that is $2,000 or less and we can presume the individual is not at fault. We will
+ need to fully develop the waiver request if we find that we cannot presume the individual
+ is not at fault. For information on presuming the individual not at fault, refer to
+GN 02250.350B.1.
+NOTE
+: Consideration of waiver under the tolerance is also dependent on overpayments to
+ other members of the household, refer to 
+GN 02250.350B.4.
+1. 
+Presumption of not at fault
+For purposes of the administrative tolerance provision, presume the individual is
+ not at fault and do not further develop fault unless the overpayment resulted from
+ these situations:
+•
+fraud or similar fault (refer to GN 04107.000); or
+•
+duplicate check negotiation (refer to 
+GN 02406.300
+).
+If fraud or similar fault by the overpaid individual is involved in the overpayment,
+ we cannot waive the overpayment. Refer to 
+GN 02250.001
+.
+If there is any indication that an individual may be at fault because of duplicate
+ check negotiation, you must complete full waiver development to determine whether
+ the individual is not at fault, refer to 
+GN 02250.021B.6.
+ If we find the individual is not at fault after full waiver development and the overpayment
+ is $2,000 or less, we will waive the overpayment under the administrative tolerance
+ provision.
+2. 
+Original overpayment amount is $2,000 or less
+We use the original overpayment amount when considering the administrative tolerance
+ provision. If an overpayment has been reduced to $2,000 or less by repayment or collection,
+ the tolerance does not apply.
+3. 
+An individual requests reconsideration of an overpayment determination and the original
+ overpayment amount is $2,000 or less
+a. 
+Request for reconsideration of the overpayment determination – Title II
+If the individual requests a reconsideration of an overpayment determination and the
+ overpayment is $2,000 or less, we presume the reconsideration request is also a request
+ for waiver. The processing center (PC) will process the waiver request after making
+ a formal reconsideration determination that is not fully favorable to the individual
+ or dismisses the individual’s overpayment reconsideration request.
+b. 
+Request for reconsideration of the overpayment determination – Title XVI
+If the individual requests a reconsideration of an overpayment determination and the
+ overpayment is $2,000 or less, we presume the request for reconsideration is also
+ a request for waiver. The FO will process the waiver request after the processing
+ the reconsideration.
+4. 
+Waiver considerations for other members of the household
+Consideration of waiver under the tolerance also depends on overpayments to other
+ members of the household.
+•
+For Title II, to waive an overpayment under the administrative tolerance provision
+ in a single-family situation, each person’s original overpayment amount must be $2,000
+ or less. If any household member has an overpayment over $2,000, no member of the
+ household may receive waiver under the administrative tolerance provision.
+•
+For Title XVI, to waive an overpayment under the administrative tolerance for an eligible
+ couple, each member’s original overpayment amount must be $2,000 or less. If either
+ spouse has an overpayment over $2,000, neither spouse may have their waiver approved
+ under the administrative tolerance provision.
+C. 
+Procedure
+Evaluate the waiver request or overpayment reconsideration request to determine if
+ you are going to process an overpayment reconsideration or waiver or both. You may
+ use the Administrative Tolerance Decision Tree to assist you in this determination. When you have a reconsideration request, initiate
+ corrective actions when applicable to update the record.
+When you determine you will process a waiver request and after you have confirmed
+ all case information is current, continue with following procedures to apply the tolerance.
+If the original overpayment is $2,000 or less and you can presume the individual is
+ not at fault, follow the approval procedures. For a Title II approval procedures,
+ refer to 
+GN 02250.350C.2.
+ For a Title XVI approval procedures, refer to 
+GN 02250.350C.4.
+1. 
+Full waiver development
+Full waiver development is required if you are unable to approve the waiver request
+ under administrative tolerance because:
+•
+You need to fully develop for fault where there is duplicate check negotiation; or
+•
+The amount of the overpayment is over $2,000.
+If the amount of the overpayment is over $2,000, complete full waiver development,
+ refer to 
+GN 02250.002
+.
+If there is duplicate check negotiation, obtain a form SSA-632-BK, refer to 
+GN 02250.001
+. After reviewing the information in the SSA-632-BK and the case file, determine whether
+ the individual is not at fault, refer to 
+GN 02250.021B.6.
+ If the original overpayment amount is $2,000 or less, and you find the individual
+ not at fault, you must waive the overpayment under the administrative tolerance provision.
+ If you cannot approve waiver after this initial review, propose a waiver denial and
+ schedule a file review and personal conference. Refer to 
+GN 02270.003
+.
+NOTE
+: The FO (customer service representatives (CSR) and higher), Processing Center (PC),
+ or the Teleservice Centers (TSC) (TSRs and SPIKES) can process any waiver request
+ involving the tolerance. For Title II, only the PC can process reconsideration requests
+ involving the tolerance. For Title XVI, the FO (claims specialist (CS) and higher)
+ can process reconsideration requests involving the tolerance.
+2. 
+Title II approval procedures
+•
+Verify the amount of the original overpayment before making a determination on a waiver
+ request based on the administrative tolerance. If the individual has requested waiver
+ of more than one overpayment, evaluate a waiver or reconsideration request against
+ each separate overpayment.
+•
+Input the waiver request to the system per MS 01106.002 Debt Resolution Menu (DRMU).
+•
+Use Waiver Approval Under $2,000 (Primary) (DRWP) screen and Waiver Approval Under
+ $2,000 (Contingent) (DRWC) screen for waivers $2,000 or less(refer to MS 01106.006
+ and MS 01106.007).
+•
+Complete and send a manual waiver approval notice. For more information on the waiver
+ approval notice, refer to 
+GN 02250.370
+.
+•
+Annotate on the Remarks (RMKS) screen in DMS that you sent a waiver approval notice.
+ For more information on the RMKS screen in DMS, refer to MS 01109.003.
+NOTE
+: Do not split an overpayment of more than $2,000 into two or more amounts for the
+ purpose of administratively discontinuing waiver development of the total overpayment.
+3. 
+How to document the waiver determination – Title II
+Document the waiver request and determination in a remark on the DMS Remarks (RMKS)
+ screen containing the:
+•
+Requester’s full name;
+•
+Requester’s relationship to the overpaid individual;
+•
+Overpayment amount;
+•
+Overpayment period;
+•
+Overpayment sequence number;
+•
+Documents and records we used to make the waiver determination; and
+•
+Method by which we received individual or representative payee’s request for waiver
+ (mail request, in-office request, or phone request on MM/DD/YYYY, etc.).
+Annotate the waiver approval on the DMS RMKS screen as follows “Waiver approval; overpayment
+ is $2,000 or less.”
+4. 
+Title XVI approval procedures
+Verify the original amount of the overpayment before deciding a waiver request based
+ on administrative tolerance. If the individual has requested waiver of more than one
+ overpayment, evaluate a waiver or overpayment reconsideration request against each
+ separate overpayment. A separate Overpayment Sequence (OPSQ) number in the OPSQ segment
+ of the Supplemental Security Income Record (SSR) does not, by itself, indicate a new
+ overpayment period. For a discussion of the OPSQ segment of the SSR, refer to SM 01310.220.
+•
+Input the request using the Waiver (UOWV) screen using Direct SSR Update in MSSICS,
+ which provides reason codes to document the reason for the waiver decision. For information
+ on the UOWV screen, refer to MS 00304.009.
+NOTE
+: Do not split an overpayment of more than $2,000 into two or more amounts for the
+ purpose of administratively discontinuing waiver development of the total overpayment.
+•
+Complete and send a manual notice of an approved waiver (DPS notice, Waiver Approved
+ Letter) to the overpaid individual and a copy to the representative payee (if applicable)
+ if the system does not generate an automated notice. For more information on the waiver
+ approval notice, refer to 
+GN 02250.370
+.
+•
+Annotate on the Report of Contact page in the Consolidated Claims Experience (CCE)
+ that you sent a waiver approval notice. For more information on the Report of Contact
+ page in CCE refer to MS 08122.010. For non-MSSICS/CCE cases, record the statement
+ on Form SSA-5002 Report of Contact and fax into the Non-Disability Repository for
+ Evidentiary Documents (NDRed) using the Evidence Portal (EP). For more information
+ on EP refer to MS 09701.001.
+5. 
+How to document the waiver determination – Title XVI
+Document the waiver request and determination on Report of Contact page in Consolidated
+ Claims Experience (CCE) or on form SSA-5002, Report of Contact containing the:
+•
+Requester’s full name;
+•
+Requester’s relationship to the overpaid individual;
+•
+Overpayment amount;
+•
+Overpayment period;
+•
+Overpayment sequence number;
+•
+Documents and records we used to make the waiver determination; and
+•
+Method by which we received individual or representative payee’s request for waiver
+ (mail, in-office, or phone request on MM/DD/YYYY, etc.).
+D. 
+Examples
+Here are examples of situations where we determine if we can approve the waiver under
+ the administrative tolerance provision.
+EXAMPLE 1
+:
+Double check negotiation requires further development
+Danika did not receive the February 2024 SSI payment on the first of the month. They
+ requested a replacement check. We sent a replacement check to Danika. We advised them
+ to return the original check if they received the check or found it. On February 9,
+ 2024, they received the replacement check. Danika cashed both checks.
+Danika received an overpayment notice informing them that the regular February 2024
+ monthly payment of $943 and the $943 replacement check were both cashed. Danika went
+ to the local office to request a waiver. There is an indication that Danika may be
+ at fault because of double-check negotiation. Therefore, we cannot presume Danika
+ is not at fault and must evaluate the waiver request using full waiver development,
+ according to 
+GN 02250.001
+. If after Danika submits a form SSA-632-BK, we determine that they are not at fault,
+ we will waive the overpayment under the administrative tolerance provision. If we
+ find Danika is at fault and cannot approve waiver after the initial review, we must
+ propose a denial and schedule a folder review and personal conference.
+EXAMPLE 2
+:
+Administrative tolerance does not apply
+Bryce was overpaid $4,500 due to a late report of their marriage. They repaid $2,600
+ of the overpayment, then subsequently requested a waiver because they could no longer
+ afford to repay the remaining balance. Even though Bryce now owes only $1,900, the
+ administrative tolerance does not apply to waive the overpayment because the original
+ overpayment was $4,500. We must evaluate the waiver request using full waiver development.
+EXAMPLE 3:
+Administrative tolerance applies
+We conducted a redetermination in November 2023. We verified Ruhn’s wages for the
+ period December 2021 through October 2023. The verified wages caused an overpayment
+ of $800 between March 2022 and September 2023. We sent a notice of overpayment to
+ Ruhn and they requested a waiver. The technician presumed Ruhn was not at fault because
+ there was no indication of fraud, similar fault, or duplicate check negotiation. Since
+ the total amount of the overpayment was $2,000 or less, we approved the waiver under
+ the administrative tolerance provision.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202250350
+GN 02250.350 - Administrative Waiver Tolerance for Overpayments $2,000 or Less- Title II and Title XVI - 11/22/2024
+Batch run: 
+06/11/2026
+Rev:
+11/22/2024
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

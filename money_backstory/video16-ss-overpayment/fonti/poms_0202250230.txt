@@ -1,0 +1,206 @@
+
+SSA - POMS: GN 02250.230 - Form SSA-632-BK (Request for Waiver of Overpayment Recovery) - 04/28/2023
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 04/28/2023 - Present
+Previous
+ | 
+Next
+TN 78 (06-25)
+GN 02250.230 
+Form SSA-632-BK (Request for Waiver of Overpayment Recovery)
+CITATIONS:
+Social Security Act §§
+ 204(b) and
+1631(b)(1)(B)
+20 CFR §§ 
+404.502a, 
+404.506, 
+416.550, 
+416.558
+A. 
+Policy
+An individual must request a waiver before we will make a waiver determination. Form
+ SSA-632-BK (SSA-632) allows overpaid individuals to supply information relevant to
+ their waiver request. This may include information about the overpaid individual,
+ their spouse, and dependent household family members. For more information about who
+ is considered a dependent for the purpose of making a waiver determination, refer
+ to 
+GN 02250.100B1.
+The overpaid individual or an individual representing them can complete the SSA-632
+ or we can complete the form over the phone with the individual. For more information
+ about waiver requests and processing waiver requests, refer to 
+GN 02250.001
+ and 
+GN 02250.002
+.
+NOTE: 
+After receiving the SSA-632, fax or import the form into the Evidence Portal (EP).
+ For more information about the EP, refer to MS 09701.001.
+B. 
+Information on the SSA-632-BK
+At the top of the SSA-632, we inform respondents when they should complete the form.
+ They can complete the form if they think they are not at fault in causing the overpayment
+ and:
+•
+they cannot afford to pay the money back; and
+•
+they think the overpayment is unfair for some other reason.
+We also inform them when they should not complete the form. An individual should not
+ complete the SSA-632 if they:
+•
+are requesting a waiver for an overpayment that is $2,000 or less.
+•
+think we made a mistake when we decided they were overpaid, or they disagree with
+ the amount of the overpayment.
+•
+want to request a hearing before an Administrative Law Judge.
+•
+only want to change the amount of money they pay back each month.
+•
+have been convicted of fraud relating to the overpayment they want us to waive.
+NOTE: 
+If the overpayment was the result of fraud or similar fault on the part of the overpaid
+ individual, we will not make a waiver determination, refer to 
+GN 02250.001G.
+C. 
+How to complete the questions on the SSA-632-BK
+When reviewing the information on the SSA-632, be mindful of any information that
+ may require additional development to determine if the overpaid individual is still
+ eligible for benefits or payments.
+1. 
+SECTION 1 - IDENTIFYING QUESTIONS
+Question 1.A - Enter the overpaid individual’s name, SSN, and claim number.
+Question 1.B - Enter the individual's name and relationship to the overpaid individual,
+ if someone else is completing the SSA-632 on their behalf.
+2. 
+SECTION 2 - WAIVER REQUEST
+Questions 2 through 5
+Question 2 - Select yes, and follow the instructions that apply, if the overpayment
+ amount the individual is asking us to waive is $2,000 or less. Select no if the overpayment
+ is more than $2,000. Do not continue if the individual selects yes.
+Enter the reason(s) the individual is requesting a waiver from the available list.
+ Enter an explanation for the selected choice(s).
+Question 3 - Enter the date of the overpayment notice for the overpayment the individual
+ is requesting us to waive.
+Question 4 - Select yes, if the individual is requesting us to waive the entire overpayment
+ amount or select no if they do not want their entire overpayment waived.
+If the individual is not requesting that we waive the entire overpayment, is the individual
+ requesting we waive the remaining amount of money they owe us? Select yes or no.
+Question 5 - Enter the reason(s) why the individual thinks the overpayment may have
+ happened.
+3. 
+SECTION 3 - NEEDS BASED ASSISTANCE
+Question 6 - Select yes if the overpaid individual or any dependent household family
+ member currently receives any of the needs based assistance listed in this section.
+ If yes, select the items that apply. Do not complete any more questions on the form
+ and have them sign, date, and provide the information requested on page 9.
+Select no if the overpaid individual or dependent household family member does not
+ receive needs based assistance and continue with the rest of the questions on the
+ form.
+4. 
+SECTION 4 - HOUSEHOLD FAMILY MEMBER
+Question 7
+Question 7.A - If the overpaid individual is an adult, enter the names, ages, and
+ relationship of their spouse and dependent household family members.
+If the overpaid individual is a minor child, select yes or no to indicate if the minor
+ child’s income and assets help with food and household items. If the individual selects
+ yes, enter the child's parents' and the parents' dependents' names, ages, and relationship
+ to the child in the box provided. If the individual selects no, do not enter any information
+ in the box; instead complete Sections 5, 6, and 7 with the child’s information only.
+Question 7.B - If someone lives with the overpaid individual who is not a dependent,
+ enter any money or payments they provide for rent or household bills or expenses.
+5. 
+SECTION 5 - RESOURCES - THINGS YOU HAVE AND OWN
+Questions 8 and 9
+Question 8.A - If the overpaid individual, their spouse, or dependents have any cash
+ in their possession, enter the total amount.
+Question 8.B - If the overpaid individual, their spouse, or dependents own financial
+ accounts, enter the type of account, name and address of the institution, name on
+ account, balance or value, monthly interest or dividend, and account numbers.
+Question 9.A - If the overpaid individual, their spouse, or dependents own more than
+ two vehicles, select yes and enter the owner, a description, present value, loan balance,
+ and the main purpose or use for each vehicle. To determine which vehicles are excluded
+ as a resource for a waiver determination, refer to 
+GN 02250.100E.
+Question 9.B - If the overpaid individual co-owns any real estate with anyone other
+ than their spouse or dependent family member, select yes and enter the owner, description,
+ market value, loan balance, and income amount.
+Question 9.C - If the overpaid individual, their spouse, or dependents own or have
+ an interest in any business, property, or valuables, select yes and enter the owner,
+ description, market value, loan balance, and income amount.
+Question 9.D - Select the appropriate box to indicate whether the overpaid individual
+ can sell or liquidate any of the resources identified in this section and enter the
+ overpaid individual's explanation in the space provided.
+6. 
+SECTION 6 - MONTHLY HOUSEHOLD INCOME
+Questions 10 and 11
+Question 10.A - If the overpaid individual is employed, select yes and enter the employer's
+ information and monthly take home pay or earnings from self-employment.
+Question 10.B - If the overpaid individual's spouse is employed, select yes and enter
+ the employer's information and monthly take home pay or earnings from self-employment.
+Question 10.C - If the overpaid individual's dependents are employed or self-employed,
+ select yes and enter the dependents' names and monthly take home pay.
+Question 11 - If the overpaid individual, their spouse, or any dependents receive
+ income, enter the income in the specific columns.
+NOTE: 
+The overpaid individual or representative payee must provide documents to support
+ the overpaid individual's, their spouse's, and dependent household family members'
+ monthly household income and resources. To determine how to apply income and resources
+ for a waiver determination, refer to 
+GN 02250.100
+ and 
+GN 02250.255
+. After receiving the supporting documents, fax or import them into the Evidence Portal.
+7. 
+SECTION 7 - MONTHLY HOUSEHOLD EXPENSES
+Question 12 - Enter the monthly household expenses. Write the amounts in whole dollars
+ and round any cents to the nearest dollar. Do not list an expense withheld from the
+ individual’s paycheck, such as medical insurance, child support, alimony, wage garnishments,
+ etc.
+D. 
+Authorization to obtain financial account information
+On page 8, we included the Authorization for the Social Security Administration to
+ obtain Account Records from a Financial Institution and Request for Records. In most
+ situations, the overpaid individual must provide their authorization for us to obtain
+ financial account information whenever we need the information to make a defeats the
+ purpose determination, or in some circumstances, to make a deemed to defeat the purpose
+ determination. To determine when someone other than the overpaid individual must provide
+ their authorization, refer to 
+GN 02250.100E.2.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202250230
+GN 02250.230 - Form SSA-632-BK (Request for Waiver of Overpayment Recovery) - 04/28/2023
+Batch run: 
+06/11/2026
+Rev:
+04/28/2023
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

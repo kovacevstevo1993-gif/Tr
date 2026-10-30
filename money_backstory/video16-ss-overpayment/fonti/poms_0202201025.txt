@@ -1,0 +1,300 @@
+
+SSA - POMS: GN 02201.025 - Title II Overpayment Reconsideration Request - 05/28/2024
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 05/28/2024 - Present
+Previous
+ | 
+Next
+TN 82 (01-26)
+GN 02201.025 
+Title II Overpayment Reconsideration Request
+CITATIONS:
+20 C.F.R.§§ 404.909,
+ 404.913(a)
+A. 
+Reconsideration policy
+An overpaid individual or their representative may request a reconsideration when
+ they dispute the fact or amount of an overpayment. The overpaid individual may request
+ this appeal by calling the National 800 Number or by calling, visiting, or writing
+ the field office (FO); or by writing the processing center (PC) within 60 days of
+ the date of the initial overpayment notice. For additional instructions about the
+ reconsideration request, refer to 
+GN 03102.200
+ and 
+GN 03102.225
+.
+The reconsideration request must be in writing, refer to 
+GN 03102.100
+. The written request (e.g. a letter, facsimile, or submission of additional evidence)
+ must clearly imply the individual’s disagreement with the initial determination.
+If the overpaid individual requests reconsideration more than 60 days after notification
+ of the overpayment, the PC technician will need to make a good cause determination
+ before processing the request. For good cause instructions, refer to 
+GN 03101.020
+.
+B. 
+FO instructions for handling reconsideration requests
+1. 
+Reviewing the request
+The request for reconsideration provides the reason the overpaid individual disagrees
+ with the decision. If the reason is not clear, ask the individual if they disagree
+ with the fact they were overpaid or the overpayment amount. Clearly document the reason
+ on the SSA-561-U2 Request for Reconsideration, per 
+GN 03102.225
+. For example, the reason should state, “I did not work” or “I did not receive a pension,”
+ rather than just the generic statement, “I do not agree with the determination.”
+Do not
+ use the SSA-561-U2 form if the overpaid individual is requesting an explanation of
+ the overpayment, refer to 
+GN 02201.017
+.
+Do not
+ use the SSA-561-U2 form if the overpaid individual is requesting a waiver for an
+ overpayment that is over $2,000, refer to 
+GN 02250.001
+.
+2. 
+Stopping recovery
+•
+Stop recovery using the Protest/Stop Recovery Request (FO) (DRPF) screen in the Debt
+ Management System (DMS) (MSOM DMS 006.019).
+•
+If the overpaid individual submits a signed SSA-632-BK form with the reconsideration
+ request, use #4, Recon Fact/Amount, as the protest reason or #5, Waiver and Recon
+ Fact/Amount.
+•
+On the remarks screen annotate “Reconsideration Request for (beneficiary identification
+ code (BIC) e.g. HA) sent to PC (number) on MM/DD/YY.” Include a remark about the good
+ cause determination if applicable.
+•
+Fax the SSA-561-U2 to the servicing PC, via Paperless fax, with the SSA-409 Post Adjudicative
+ Routing cover sheet or equivalent.
+NOTE: 
+Upload a copy of the SSA-561-U2 and any evidence into Evidence Portal or eView, refer
+ to MS 09701.003. If this is a misuse case, a FO technician will process the reconsideration
+ request per GN 00604.064. Do not send the request to the PC for misuse cases.
+3. 
+Non-receipt (DCN) allegation
+Do not use the SSA-561-U2 for non-receipt double check negotiation (DCN) allegations.
+ Instead, use the SSA-795, Statement of Claimant or Other Person, and follow instructions
+ in 
+GN 02406.310
+ to process this allegation.
+4. 
+When to treat a request for reconsideration as a request for waiver
+We will 
+only
+ presume the overpaid individual requested a waiver in addition to requesting reconsideration
+ of the overpayment, if the overpayment amount is $2,000 or less regardless of the
+ wording on the reconsideration request, per 
+GN 02250.002
+. A technician in the PC will process the waiver after making a formal reconsideration
+ determination that is not fully favorable to the individual or dismisses the reconsideration.
+Do
+ not
+ make a waiver request input in DMS since we have stopped overpayment recovery.
+C. 
+PC instructions for processing reconsideration requests
+When the PC receives an SSA-561-U2, or other written request for a reconsideration
+ from either the FO or directly from the overpaid individual, take these actions:
+1. 
+Reviewing the request
+Ensure the reasons for appealing the overpayment are clearly documented. For example
+ the request may say, "I did not work” or “I did not receive a pension,” per 
+GN 03102.225
+.
+2. 
+Stopping recovery
+•
+Stop recovery using the Protest/Stop Recovery Request (PC) (DRPR) screen in DMS, per
+ MSOM DMS 006.003, if applicable.
+•
+Use #4, Recon Fact/Amount, as the protest reason; or #5, Waiver and Recon Fact/Amount
+only
+ if the individual submits a signed SSA-632-BK, with the reconsideration request.
+•
+On the remarks screen annotate “Received SSA-561-U2 for (BIC) on MM/DD/YY.”
+•
+If the issue is a DCN non-receipt allegation, follow the instructions in 
+GN 02406.310
+.
+3. 
+Processing the request
+Process the request following the instructions in the chart. Verify the overpaid individual
+ is correctly paid before processing an affirmation of the reconsideration request.
+ For example, check to see there was no prior bankruptcy discharge as we do not want
+ to release an incorrect underpayment.
+NOTE: 
+If the overpayment is $2,000 or less process the waiver by following the instructions
+ in 
+GN 02250.350
+.
+If
+Then
+A.
+ Reconsideration supports a reversal of the initial finding of overpayment (i.e.,
+ there is no overpayment) and the individual did not request a waiver,
+1. 
+Document the determination using an SSA-662 Reconsideration Determination (or the
+ equivalent), per 
+GN 03102.450
+,
+2. 
+Input the approval using the Fact/Amount Appeal Disposition (DRAD) screen in DMS,
+ per MSOM DMS 006.011,
+3. 
+Document DMS remarks with the determination,
+4. 
+Send the overpaid individual a notice explaining the reversal including the right
+ to request a hearing, per 
+GN 03102.425
+, and
+5. 
+Upload a copy of the SSA-561-U2 or equivalent written request, and SSA-662 to Evidence
+ Portal, per MS 09701.003.
+B.
+ Reconsideration does not completely reverse the overpayment determination and the
+ individual did not request a waiver,
+1. 
+Document the determination using an SSA-662 Reconsideration Determination (or the
+ equivalent),
+2. 
+Input the denial using the DRAD screen in DMS,
+3. 
+Document DMS remarks with the determination,
+4. 
+Send the overpaid individual a reconsideration determination notice, using either
+NL 00703.118
+ or 
+NL 00703.119
+ (whichever is applicable). The notice includes this information:
+•
+Right to request a hearing,
+•
+Recovery will begin (or resume) in 60 days even if a hearing is requested,
+•
+Right to request a waiver,
+•
+Recovery will not begin, resume, or will stop if the individual requests a waiver
+ until we make a final determination on the waiver, and
+5. 
+Upload a copy of the SSA-561-U2 or equivalent written request, and SSA-662 to Evidence
+ Portal.
+C.
+ Reconsideration supports a reversal of the initial finding of overpayment (i.e.,
+ there is no overpayment) and the individual requested a waiver via form SSA-632-BK,
+1. 
+Document the determination using an SSA-662 Reconsideration Determination (or the
+ equivalent),
+2. 
+Input the approval using the DRAD screen in DMS.
+3. 
+Document DMS remarks with the determination and that the overpaid individual requested
+ a waiver,
+4. 
+Send the overpaid individual a notice explaining the reversal including the right
+ to a hearing,
+5. 
+Dismiss the waiver request. For waiver dismissal procedures follow the procedures
+ in 
+GN 02250.001
+, and
+6. 
+Upload a copy of the SSA-561-U2 or equivalent written request, SSA-632, and SSA-662
+ to Evidence Portal.
+D. 
+Reconsideration does not completely reverse the initial overpayment determination,
+ the overpayment amount is $2,000 or less. Presume the individual wants to waive the
+ overpayment. Determine if you can approve the waiver under the administrative tolerance
+ provision since the original overpayment amount is $2,000 or less.
+1. 
+Document the determination using an SSA-662 Reconsideration Determination (or the
+ equivalent),
+2. 
+Input the reconsideration denial or partial approval using the DRAD screen in DMS,
+3. 
+Process the waiver portion following instructions in 
+GN 02250.350
+ and do not input the waiver request in DMS,
+4. 
+Document DMS remarks with the waiver determination by following the instructions in
+GN 02250.350
+,
+5. 
+Send the overpaid individual a notice with both the reconsideration and waiver determination,
+ if you can approve the waiver under the administrative tolerance provision. Include
+ the overpaid individual’s right to request a hearing.
+If you cannot approve the waiver, inform the individual to send a completed SSA-632
+ form to their local field office, and
+6. 
+Upload a copy of the SSA-561-U2 or equivalent written request, and SSA-662 to Evidence
+ Portal.
+E.
+ Reconsideration does not completely reverse the overpayment determination; the individual
+ requested a waiver via SSA-632 and the overpayment amount is more than $2,000,
+1. 
+Document the determination using an SSA-662 Reconsideration Determination (or the
+ equivalent),
+2. 
+Input the denial or partial approval using the DRAD screen in DMS,
+3. 
+Input the waiver request using the DRPR screen in DMS (this may require a two day
+ action),
+4. 
+Document DMS remarks with the reconsideration denial and that a waiver request is
+ still pending,
+5. 
+Send the individual a notice that explains the reconsideration denial, include the
+ hearing paragraph, and that their waiver request is pending,
+6. 
+Fax a copy of the SSA-561-U2 or equivalent written request, SSA-662, SSA-632-BK, and
+ any material relevant to the overpayment to the Evidence Portal, and
+7. 
+Send an MDW to the FO with this information:
+•
+Reconsideration was denied,
+•
+Received a waiver request for your action and development,
+•
+Relevant paperless material was scanned into the Evidence Portal.
+D. 
+800 Number instructions
+National 800 Number agents should follow the instructions in Request for Reconsideration,
+ TC 26001.030.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202201025
+GN 02201.025 - Title II Overpayment Reconsideration Request - 05/28/2024
+Batch run: 
+02/11/2026
+Rev:
+05/28/2024
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.
