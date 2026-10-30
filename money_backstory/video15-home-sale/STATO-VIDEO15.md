@@ -15,4 +15,4 @@
 ## 29/10 mattina: VIDEO 15 COMPLETO E CONSEGNATO
 - Voce 19-22 generata alle 07:20 UTC (gruppo 19-22 dava 502 due volte: fatto 19-21 e 22 a parte; atempo 0,763 e 0,779). Controllata con small/base/tiny/medium/large-v3. make_sync (blocchi 1-18 in cache), slide 19-22 rifatte con tagli sulla voce (19: intro + 3 slide a icone), render, qa15 su ogni fotogramma: 11 slide / 4.048 fotogrammi OK (totale video: 67 slide OK). unisci: consegna/V15-blocco01..22.mp4, fotogrammi = durata voce per tutti, totale 20.520 fotogrammi = 11:24.
 - Pacchetto aggiornato (capitoli reali, tag + 'capital gains' 437 caratteri) in PUBBLICAZIONE-VIDEO15.md; miniature in ../miniature_video15/.
-- APERTO: schermata finale/WATCH NEXT del video 15 = video 1 (da regola 30/10 i prossimi puntano al video piu legato); playlist "Retirement After 50" da creare; prossimo video: check_tema.py prima di tutto.
+- APERTO: schermata finale/WATCH NEXT del video 15 = video 1 CORRETTO 30/10: video 4 IRMAA (3BdbOvrO4Sc); i prossimi puntano al video piu legato; playlist "Retirement After 50" da creare; prossimo video: check_tema.py prima di tutto.

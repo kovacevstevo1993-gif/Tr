@@ -17,7 +17,7 @@ Ricerca: curl YouTube 28/10 (video virali sul tema: "Beware of the HUGE Medicare
 Fonti verificate: FONTI-VERIFICATE.md (IRS Pub 523, Topic 701/409/559, Pub 915, Rev. Proc. 2025-32, CMS 2026, SSA POMS).
 
 ## Dove va
-Playlist "Retirement After 50" (non esiste ancora sul canale: crearla). Schermata finale -> video 1 (WATCH NEXT con link video 1: l'unico URL noto nel repo).
+Playlist "Retirement After 50" (non esiste ancora sul canale: crearla). Schermata finale -> video 4 "Medicare IRMAA Explained: The $974 Trap at Age 61" (https://youtu.be/3BdbOvrO4Sc), il piu' legato (spiega il surcharge Medicare a 2 anni).
 
 ## Titolo
 Every Senior Must Know This Before Selling Their Home After 65 (Tax and Medicare Trap)
@@ -31,8 +31,8 @@ CHAPTERS
 {ch}
 
 WATCH NEXT
-Social Security at 62 vs 70: The $124,800 Mistake (Exact Math)
-https://youtu.be/rPaLdR1E31s
+Medicare IRMAA Explained: The $974 Trap at Age 61
+https://youtu.be/3BdbOvrO4Sc
 
 SOURCES
 Internal Revenue Service (irs.gov): Publication 523 Selling Your Home, Topic 701 Sale of your home, Topic 409 Capital gains and losses, Topic 559 Net investment income tax, Publication 915 Social Security and equivalent railroad retirement benefits, Revenue Procedure 2025-32; Centers for Medicare and Medicaid Services (cms.gov): 2026 Medicare Parts A and B premiums and income-related amounts; Social Security Administration (ssa.gov): Program Operations Manual, income-related monthly adjustment amount
@@ -50,7 +50,7 @@ selling home after 65,selling your home after 65,capital gains,selling your home
 Would you sell your home, or stay? Tell me below, and send this to someone who is thinking about selling.
 
 ## Impostazioni
-IA No. Promozione No. Schermata finale 20 s -> video 1. Miniatura: test A/B con le 2 miniature in miniature_video15/ (codice code/thumbs_video15.py).
+IA No. Promozione No. Schermata finale 20 s -> video 4 (IRMAA, 3BdbOvrO4Sc). Miniatura: test A/B con le 2 miniature in miniature_video15/ (codice code/thumbs_video15.py).
 '''
 open('PUBBLICAZIONE-VIDEO15.md', 'w').write(txt)
 tags = re.search(r'## Tag\n(.*)\n', txt).group(1); print('tag caratteri', len(tags)); print(ch)
