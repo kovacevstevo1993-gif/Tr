@@ -195,10 +195,10 @@ S[11] = [
                                  CH((800, 470, 1770, 590), 'not at fault', 'SO SHE IS PRESUMED NOT AT FAULT', True, 50),
                                  E('stamp', (1000, 610, 1700, 710), 'the first gate is open', t='GATE ONE: OPEN', col=green, ang=-4, size=60)],
           'THE FIRST GATE IS OPEN', green, navy, tag=G3, src='SSA POMS'),
-    slide('CAROL IS ABOVE THE LINE', 4137, [E('card', (170, 280, 760, 620), 'nine thousand dollars', head='CAROL OWES', val='$9,000', vsize=110, vcol=red, col=red),
-                                           E('op', (790, 400, 920, 500), None, t='>', size=120),
-                                           E('card', (950, 280, 1350, 620), 'the small-debt line', head='SMALL-DEBT LINE', val='$2,000', vsize=80, vcol=green, col=green),
-                                           E('card', (1400, 280, 1770, 620), 'weigh hardship or fairness', head='THE AGENCY WEIGHS', val='HARDSHIP', sub='OR FAIRNESS', vsize=56, vcol=goldL, col=gold)],
+    slide('CAROL IS ABOVE THE LINE', 4137, [E('card', (160, 280, 640, 620), 'nine thousand dollars', head='CAROL OWES', val='$9,000', vsize=100, vcol=red, col=red),
+                                           E('op', (650, 400, 760, 500), None, t='>', size=110),
+                                           E('card', (770, 280, 1150, 620), 'the small-debt line', head='SMALL-DEBT LINE', val='$2,000', vsize=84, vcol=green, col=green),
+                                           E('card', (1190, 280, 1770, 620), 'weigh hardship or fairness', head='THE AGENCY WEIGHS', val='HARDSHIP', sub='OR FAIRNESS', vsize=56, vcol=goldL, col=gold)],
           'IF NO, THERE IS A MOVE FOUR', gold, tag=G3, src='SSA POMS'),
 ]
 # ---- 12: MOSSA 3 ----
@@ -221,8 +221,8 @@ S[12] = [
 # ---- 13: MOSSA 4 ----
 S[13] = [
     slide('MOVE 4: THE SECOND CHANCE', 4142, [E('line', (200, 240, 1720, 320), 'move number four', t='THE SECOND CHANCE', size=76, col=goldL),
-                                             E('stamp', (170, 345, 860, 445), 'cannot approve your waiver', t='WAIVER NOT APPROVED', col=red, ang=-3, size=52),
-                                             E('card', (160, 470, 880, 715), 'a file review', head='STEP ONE', val='FILE REVIEW', sub='BEFORE ANY DENIAL', vsize=70, vcol=goldL, col=gold),
+                                             E('stamp', (170, 335, 860, 425), 'cannot approve your waiver', t='WAIVER NOT APPROVED', col=red, ang=-3, size=50),
+                                             E('card', (160, 495, 880, 715), 'a file review', head='STEP ONE', val='FILE REVIEW', sub='BEFORE ANY DENIAL', vsize=70, vcol=goldL, col=gold),
                                              E('icard', (1000, 340, 1770, 715), 'and a personal conference', icon='phone', l1='PERSONAL CONFERENCE', l2='YOUR VOICE IS HEARD', col=green, c2=green, size=46)],
           'THE AGENCY MUST OFFER BOTH', gold, tag=G5, src='SSA POMS'),
     slide('AT THE FILE REVIEW', 4143, [E('folder', (250, 260, 850, 690), 'at the file review', l1='YOUR CLAIMS FILE', l2='ALL THE EVIDENCE'),
