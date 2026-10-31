@@ -262,9 +262,10 @@ S[15] = [
 ]
 # ---- 16: PREVENZIONE + PIANO ----
 S[16] = [
-    slide('AVOID THE LETTER', 4152, [CH((200, 270, 1720, 380), 'report changes on time', 'REPORT CHANGES ON TIME', True, 58),
-                                    E('folder', (230, 430, 800, 720), 'keep proof', l1='KEEP PROOF', l2='DATE, NAME, COPY'),
-                                    CH((900, 450, 1720, 540), 'the date', 'THE DATE', True, 46), CH((900, 565, 1720, 655), 'the name of the person', 'THE NAME OF THE PERSON', True, 46), CH((900, 680, 1720, 770), 'a copy of what you sent', 'A COPY OF WHAT YOU SENT', True, 46)],
+    slide('AVOID THE LETTER', 4152, [E('line', (200, 240, 1720, 315), 'how do you avoid', t='HOW DO YOU AVOID THE LETTER?', size=62, col=goldL),
+                                    CH((200, 335, 1720, 425), 'report changes on time', 'REPORT CHANGES ON TIME', True, 56),
+                                    E('folder', (230, 450, 800, 725), 'keep proof', l1='KEEP PROOF', l2='DATE, NAME, COPY'),
+                                    CH((900, 490, 1720, 580), 'the date', 'THE DATE', True, 46), CH((900, 610, 1720, 700), 'the name of the person', 'THE NAME OF THE PERSON', True, 46)],
           'REPORT, THEN KEEP THE PROOF', gold, tag=T16, src='SSA POMS'),
     slide('A REPORT COUNTS', 4153, [E('icard', R2[0], 'a report you made', icon='mail', l1='YOU REPORTED', l2='OR TRIED TO REPORT', col=gold),
                                    E('icard', R2[1], 'in your favor', icon='check', l1='COUNTS IN YOUR FAVOR', l2='ON THE FAULT QUESTION', col=green, c2=green, size=46)],
