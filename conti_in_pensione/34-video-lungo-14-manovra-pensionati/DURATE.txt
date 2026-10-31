@@ -1,0 +1,18 @@
+# Video lungo 14 (manovra e pensionati) - durate dagli screenshot CapCut (15 screenshot), 30 fps, N.29 (fine = ultimo segno + 1, doppia lettura etichetta/pixel).
+# ATTENZIONE blocco 2: 346 fotogrammi (11,5 s) per 366 caratteri = 31,7 c/s, circa meta' del normale (15-17 c/s): da confermare con l'utente che il blocco sia registrato completo.
+# blocco | fotogrammi | caratteri | c/s
+1 | 710 | 398 | 16.8
+2 | 346 | 366 | 31.7
+3 | 619 | 335 | 16.2
+4 | 674 | 371 | 16.5
+5 | 459 | 255 | 16.7
+6 | 602 | 355 | 17.7
+7 | 643 | 348 | 16.2
+8 | 696 | 347 | 15.0
+9 | 464 | 261 | 16.9
+10 | 549 | 295 | 16.1
+11 | 715 | 391 | 16.4
+12 | 792 | 394 | 14.9
+13 | 602 | 336 | 16.7
+14 | 523 | 298 | 17.1
+15 | 768 | 396 | 15.5
