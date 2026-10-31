@@ -91,3 +91,9 @@ Storia: in cucina il biscotto sparisce dal piatto; topolino "Io non sono stato!"
 - Quota HF ~8 clip/giorno (si rinnova ~24 h dopo). Pollinations/Gemini a zero: niente nuovi personaggi. Personaggi: topolino, Chip, Spike, elefantino, volpe, rana. L'utente vuole "tutto nuovo" ma non e' possibile senza immagini nuove: dirlo, non inventare.
 - vidIQ: saldo 110 crediti dopo il 26/10 (spendere solo se autorizzato; ricerche in docs/RICERCHE-VIDIQ.md).
 - Reti: token HF nei segreti di rete; pip install gradio_client opencv-python-headless scipy edge-tts praat-parselmouth faster-whisper.
+
+## AGGIORNAMENTO 31/10/2026
+- PUBBLICATI dall'utente: elefantino ha fame (27/10, titolo cambiato con vidIQ), la mela di Spike (30/10). Pacchetti e miniature: docs/SEO_elefantino_ha_fame.md, docs/SEO_la_mela_di_spike.md, miniatura_mela_1080x1920.jpg, miniatura_mela2_1080x1920.jpg.
+- SCARTATI dall'utente, NON si usano e NON si riproporranno: chi ha rubato la torta ("non mi piace", 31/10), chi ha mangiato il biscotto e palloncino rosso ("non hanno senso", 31/10). Pacchetto/miniatura della torta esistono (docs/SEO_chi_ha_rubato_la_torta.md) ma il video e' scartato.
+- Non ci sono piu' short pronti da pubblicare: per un nuovo short serve una nuova storia (controllare i titoli del canale nel feed) e quota HF.
+- Dati 30/10 (feed pubblico): quasi tutti gli short dal 03/10 hanno 3-31 view; solo "Puliamo la spiaggia" (85.782) e il compleanno del 19/10 (4.686) sono andati. L'utente usa i titoli generati da vidIQ (migliori dei miei): dai prossimi pacchetti generare il titolo con vidIQ (chiedere prima i crediti, saldo 110).
