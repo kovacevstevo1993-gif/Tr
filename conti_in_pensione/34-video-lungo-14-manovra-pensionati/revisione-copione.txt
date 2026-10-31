@@ -1,4 +1,4 @@
-1 | deb7e7373d | italiano OK | logica OK | persona OK | numeri OK | tema nel primo suono; tre misure = tre elencate; ddl dichiarato; nessuna risposta
+1 | f5136ced7e | italiano OK | logica OK | persona OK | numeri OK | gancio senza cifre del buono ne' dettagli (31/10): solo 'fino a cinquecento' (cifra del gancio); tre domande aperte = tre misure; ddl dichiarato
 2 | e47a734349 | italiano OK | logica OK | persona OK | numeri OK | ordine annunciato = ordine reale (fondo, Irpef, buono)
 3 | e49ac91d7a | italiano OK | logica OK | persona OK | numeri OK | citazione comunicato + Meloni; nessuna conclusione anticipata
 4 | 768a0f6d4f | italiano OK | logica OK | persona OK | numeri OK | citazione Meloni e comunicato; 'massimo' tenuto per il blocco 12
