@@ -859,3 +859,8 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 - Controlli: tempi/impaginazione/qa_slide su tutti i fotogrammi, ffprobe fotogrammi = durate, sequenze ogni 0,5 s di tutti i blocchi guardate.
 - DA CHIEDERE: blocco 2 = 346 fotogrammi (11,5 s) per 366 caratteri = 31,7 c/s, meta' del normale: va registrato completo? Se no, solo il blocco 2 va rifatto con la durata giusta.
 - Ancora da fare solo su ordine: titolo/pacchetto, miniature, short.
+
+## ERRORE 31/10/2026 (utente: "sapevi che c'era qualcosa che non andava, l'hai fatto lo stesso e poi me lo dici")
+- Video 14, blocco 2: durata letta 346 fotogrammi per 366 caratteri (31,7 c/s, meta' del normale). Il controllo c/s dava gia' l'anomalia PRIMA di fare le slide: ho fatto comunque tutte le slide e ho chiesto solo a consegna avvenuta. Il blocco 2 non era registrato completo.
+- REGOLA: se il controllo caratteri/secondo di un blocco esce fuori da 14-19 c/s (o qualsiasi altro dubbio sulle durate), si ferma TUTTO e si fa UNA domanda all'utente PRIMA di fare slide. Mai fare il lavoro e chiedere dopo. Se il lavoro e' ordinato ma un dato e' dubbio, si puo' fare subito solo i blocchi non dubbi e dirlo subito, mai consegnare tutto con il dubbio in fondo.
+- Il blocco 2 si rifa' solo quando l'utente manda la durata del blocco 2 registrato completo.
