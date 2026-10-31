@@ -853,3 +853,9 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 ## ERRORE 31/10/2026 (copione video 14, blocco 1) - FIDELIZZAZIONE CORRETTA A META': IL GANCIO ERA RIMASTO UGUALE
 - Utente: "il primo blocco e' ancora uguale, dici subito ancora tutto... hai letto le regole, le applichi e hai cambiato?". Avevo spostato i dettagli del buono dai blocchi 3-4 ma lasciato il blocco 1 con 300 euro, 75 anni e 500 euro: stesso difetto nel posto piu' importante, e ho detto "fatto" senza ricontrollare il blocco 1.
 - REGOLA: dopo una correzione di fidelizzazione si ricontrollano TUTTI e 4 i primi blocchi, gancio compreso: nel gancio solo la cifra del gancio (la piu' grande vera) e domande aperte; niente importi, soglie, eta' o requisiti delle misure. Prima di dire "corretto" rileggere i blocchi 1-4 uno per uno.
+
+## STATO 31/10/2026 - video 14: slide consegnate
+- 15 clip CIP-V14-blocco01..15.mp4 (1920x1080, 30 fps) consegnate. Motore: 34-video-lungo-14-manovra-pensionati/sorgenti (specs-v14.js, regia14.js). Titoletto senza numero (chip FONDO/IRPEF/BUONO), sfondo nuovo (bande, simboli, quadrante).
+- Controlli: tempi/impaginazione/qa_slide su tutti i fotogrammi, ffprobe fotogrammi = durate, sequenze ogni 0,5 s di tutti i blocchi guardate.
+- DA CHIEDERE: blocco 2 = 346 fotogrammi (11,5 s) per 366 caratteri = 31,7 c/s, meta' del normale: va registrato completo? Se no, solo il blocco 2 va rifatto con la durata giusta.
+- Ancora da fare solo su ordine: titolo/pacchetto, miniature, short.
