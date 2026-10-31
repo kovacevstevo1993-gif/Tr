@@ -878,3 +878,8 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 ## 31/10/2026 - video 14, pacchetto: 30 crediti vidIQ in piu' senza cambiare niente (utente: "hai speso altri 30 crediti e che senso ha")
 - Dopo "spendi, deve andare virale" ho speso altri 30 crediti (trascrizione 5, outliers 5, titoli 5, 3 punteggi 15; totale sessione 50, saldo 78) e il pacchetto e' rimasto identico: il titolo scelto ha fatto 81, pari al migliore generato.
 - REGOLA: prima di una chiamata vidIQ chiedersi "puo' cambiare qualcosa nel pacchetto?". Se il risultato non cambia il pacchetto, non si fa. A fine ricerca dire in UNA riga cosa e' cambiato e cosa no. Il punteggio del titolo scelto si misura PRIMA di cercare alternative, non dopo.
+
+## STATO 31/10/2026 (sera) - VIDEO 14: pacchetto e miniature consegnati
+- Pacchetto: 34-video-lungo-14-manovra-pensionati/pacchetto.txt (qa_testi OK, titolo vidIQ 81, 22 tag = 497/500, 8 hashtag). vidIQ: 50 crediti spesi in tutto, saldo 78.
+- Miniature A/B/C in 34-.../miniatura (gen14.py): A copia dei virali (PENSIONI 2027 + blocchi gialli 300 € OVER 75 / FONDO 850 MILIONI / TAGLIO IRPEF 33% + TABELLA IMPORTI con "? €" e cerchio rosso, CHI PRENDE DAVVERO QUALCOSA?); B tre schede BUONO/FONDO/IRPEF con domande rosse e striscia "UNA DELLE TRE VALE FINO A 500 €: QUALE?"; C moneta "FINO A 500 € ALL'ANNO", PER CHI?, NON PER TUTTI, chip buono e fondo, PENSIONI 2027 in basso. Risposte nascoste, nessun volto, testi misurati dentro i riquadri e guardati; "DISEGNO DI LEGGE" in B e C.
+- Da fare solo su ordine: short teaser (video correlato = video 14), risposte ai commenti, durata blocco 2 se cambia.
