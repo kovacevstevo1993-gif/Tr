@@ -884,3 +884,7 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 - Miniature A/B/C in 34-.../miniatura (gen14.py): A copia dei virali (PENSIONI 2027 + blocchi gialli 300 € OVER 75 / FONDO 850 MILIONI / TAGLIO IRPEF 33% + TABELLA IMPORTI con "? €" e cerchio rosso, CHI PRENDE DAVVERO QUALCOSA?); B tre schede BUONO/FONDO/IRPEF con domande rosse e striscia "UNA DELLE TRE VALE FINO A 500 €: QUALE?"; C moneta "FINO A 500 € ALL'ANNO", PER CHI?, NON PER TUTTI, chip buono e fondo, PENSIONI 2027 in basso. Risposte nascoste, nessun volto, testi misurati dentro i riquadri e guardati; "DISEGNO DI LEGGE" in B e C.
 - Da fare solo su ordine: short teaser (video correlato = video 14), risposte ai commenti, durata blocco 2 se cambia.
 - (31/10 sera, ordine utente) Tutto il lavoro del video 14 (copione, clip, pacchetto, miniature, regole) e' stato UNITO SU MAIN (merge pulito, main aveva solo lea_e_leo). La chat nuova parte da main, non serve piu' il branch claude/great-cori-qu7hsx.
+
+## STATO 31/10/2026 (utente, dopo la chat nuova) - VIDEO 14 FINITO E PROGRAMMATO
+- Utente: il blocco 2 e' gia' fatto, il video 14 e' finito ed e' gia' programmato. La questione aperta sulla durata del blocco 2 e' CHIUSA: non rifare niente sul video 14.
+- Aperto solo su ordine: short teaser del video 14 (video correlato = video 14), risposte ai commenti.
