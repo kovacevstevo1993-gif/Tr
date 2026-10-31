@@ -1,0 +1,33 @@
+S='stroke="#06242B" paint-order="stroke" stroke-linejoin="round"'
+svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" style="font-family:'DejaVu Sans','Liberation Sans',Arial,sans-serif;font-weight:900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E7C86"/><stop offset=".55" stop-color="#0A5360"/><stop offset="1" stop-color="#041E27"/></linearGradient>
+<radialGradient id="spot" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#7DE8C4" stop-opacity=".5"/><stop offset="1" stop-color="#7DE8C4" stop-opacity="0"/></radialGradient>
+<linearGradient id="y" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE777"/><stop offset="1" stop-color="#FFB400"/></linearGradient>
+<linearGradient id="r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6A55"/><stop offset="1" stop-color="#C21808"/></linearGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#010d11" flood-opacity=".7"/></filter>
+<pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#fff" stroke-opacity=".06" stroke-width="2"/></pattern>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/><rect width="1080" height="1920" fill="url(#grid)"/>
+<ellipse cx="540" cy="1000" rx="620" ry="620" fill="url(#spot)"/>
+<g transform="translate(300 280) rotate(-3)" filter="url(#sh)"><rect width="480" height="84" rx="14" fill="url(#r)" stroke="#fff" stroke-width="5"/><text x="240" y="60" font-size="50" fill="#fff" text-anchor="middle">⚠ ATTENZIONE</text></g>
+<text x="540" y="500" font-size="104" fill="url(#y)" text-anchor="middle" {S} stroke-width="16" id="a1">PENSIONI 2027</text>
+<text x="540" y="640" font-size="120" fill="#fff" text-anchor="middle" {S} stroke-width="16" id="a2">NON È IL 3%!</text>
+<g transform="translate(90 700) rotate(-1.5)" filter="url(#sh)"><rect width="900" height="420" rx="30" fill="#FBFDFD"/>
+<rect width="900" height="96" rx="30" fill="#0D5158"/><rect y="66" width="900" height="30" fill="#0D5158"/>
+<text x="450" y="66" font-size="44" fill="#FFD43B" text-anchor="middle" id="b1">PENSIONE 4.000 € LORDI</text>
+<text x="50" y="190" font-size="42" fill="#5B7479" id="b2">SUL TITOLO</text>
+<text x="850" y="195" font-size="84" fill="#5B7479" text-anchor="end" id="b3">+120 €</text>
+<rect x="400" y="148" width="460" height="12" rx="6" fill="#E0200F" transform="rotate(-4 630 154)"/>
+<text x="50" y="330" font-size="42" fill="#0D5158" id="b4">NEL CONTO VERO</text>
+<g fill="#0B1A1F"><rect x="520" y="262" width="100" height="100" rx="18"/><rect x="640" y="262" width="100" height="100" rx="18"/><rect x="760" y="262" width="100" height="100" rx="18"/></g>
+<g fill="#fff" font-size="90" text-anchor="middle"><text x="570" y="338">?</text><text x="690" y="338">?</text><text x="810" y="338">?</text></g>
+</g>
+<g filter="url(#sh)" transform="translate(0 -35)">
+<rect x="150" y="1230" width="240" height="210" rx="18" fill="#1E9E5A" stroke="#fff" stroke-width="6"/><text x="270" y="1350" font-size="58" fill="#fff" text-anchor="middle" id="s1">100%</text>
+<rect x="420" y="1280" width="240" height="160" rx="18" fill="#E0A100" stroke="#fff" stroke-width="6"/><text x="540" y="1385" font-size="68" fill="#fff" text-anchor="middle" id="s2">90%</text>
+<rect x="690" y="1330" width="240" height="110" rx="18" fill="#C0200F" stroke="#fff" stroke-width="6"/><text x="810" y="1410" font-size="64" fill="#fff" text-anchor="middle" id="s3">75%</text></g>
+<g filter="url(#sh)"><rect x="90" y="1480" width="900" height="120" rx="60" fill="#fff" stroke="#FFD43B" stroke-width="10"/>
+<text x="540" y="1562" font-size="56" fill="#C0200F" text-anchor="middle" id="d1">QUANTO AUMENTA <tspan fill="#0D5158">LA TUA?</tspan></text></g>
+</svg>'''
+open('reel.html','w').write('<body style="margin:0">'+svg+'</body>')
