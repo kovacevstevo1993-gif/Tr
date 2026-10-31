@@ -1,4 +1,4 @@
-# SEO — Short "Tanti auguri!" (31/10/2026, ispirato a "Tanti Auguri #shorts" di HeyKids visto con vidIQ; titolo scritto da Claude)
+# SEO — Short "Tanti auguri!" (31/10/2026, ispirato a "Tanti Auguri #shorts" di HeyKids visto con vidIQ; titolo scritto da Claude) — versione v2 con canto vidIQ
 ## TITOLO
 🎂 TANTI AUGURI A TE! Canzone di Compleanno per Bambini 🎉🐭 | Bambini Ciao Ciao
 ## DESCRIZIONE
