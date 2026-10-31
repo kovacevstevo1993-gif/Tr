@@ -31,3 +31,9 @@ Per guardare il video: ffmpeg estrae 12 fotogrammi in una griglia (fps=12/durata
 
 ## PROBLEMA PRINCIPALE: il canale non va (31/10)
 Dati pubblici: 27/08-04/09 quattro video da 32K-47K view (Deciding What to Eat 35.646, Same kitchen new chef 32.206, She's Freezing 47.310; poi 1.344 e 450). DAL 07/09 tutti gli 11 video successivi fanno 2-15 view, anche con titoli/stile uguali ai precedenti: crollo improvviso della distribuzione di tutto il canale (come Bambini Ciao Ciao dall'08/10), non un problema dei singoli video. Causa non visibile da fuori. Da controllare in Studio: Analytics > Copertura > fonti di traffico (Feed Shorts, impressioni); Impostazioni > Canale > Stato e funzionalita'; Contenuti (restrizioni/copyright); Guadagna (avvisi "contenuti riutilizzati/inautentici"). Chiedere all'utente gli screenshot della pagina Copertura. Con vidIQ collegato: analytics del canale per fonte di traffico e outlier di short di coppia (ricerca fatta 28/10: titoli corti "Can you relate?", "Tag your partner", "When Your Wife's Cuddling Style Is Pure Chaos!"; parola chiave "couple animation" ~4.000 ricerche/mese, concorrenza 39).
+
+## ANALISI vidIQ 31/10/2026 (10 crediti, restano 32)
+- Views giornaliere: 26/08-05/09 ~118.000 view (picco 27/08: 36.123); 06/09 175; 07/09 57; da meta' settembre 0-6 al giorno; ottobre 0-6.
+- Fonti dal 07/09 al 31/10 (230 view): ricerca 112, feed Shorts 62, pagina canale 21, playlist 13, notifiche 13, link esterni 7, iscritti 2. Il feed Shorts (fonte dei 118K) e' quasi a zero. Durata media nel feed Shorts ~95%.
+- Date di pubblicazione dal feed: 27/08, 29/08, 30/08, 02/09, 04/09, 07/09, 08/09, 10/09, 14/09, 19/09, 22/09, 25/09, 29/09, POI NIENTE fino al 26/10 e 28/10. Non e' mai stato "ogni giorno" dopo il 04/09 e c'e' un buco di quasi un mese.
+- Causa non nota. L'utente ha detto che il problema NON e' Copertura/Stato canale (non indovinare, chiedere cosa intende).
