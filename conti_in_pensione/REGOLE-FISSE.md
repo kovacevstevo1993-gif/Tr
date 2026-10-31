@@ -869,3 +869,7 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 - La frase dice che non abbiamo letto le fonti, ma comunicato e intervento sono stati letti per intero. Quello che manca e' il testo del DISEGNO DI LEGGE (non disponibile). In fonti-e-verifiche.md era scritto giusto; nel copione e nella slide no. Passata in ~20 riletture del copione senza essere vista.
 - REGOLA: ogni frase che dichiara un LIMITE delle fonti ("non letto", "non disponibile", "non confermato") deve nominare ESATTAMENTE quale documento manca e confrontarsi con fonti-e-verifiche.md. Controllo dedicato nella rilettura del copione: per ogni frase "non letto/non abbiamo..." chiedersi "lo spettatore capisce quale documento? e' vero?".
 - Frase corretta: "Il testo del disegno di legge non e' ancora disponibile, quindi non facciamo conti su bozze o su cifre dei giornali." Slide: "DISEGNO DI LEGGE: TESTO NON DISPONIBILE". Da fare solo su ordine dell'utente (voce gia' registrata).
+
+## ERRORE 31/10/2026 - video 14, blocco 2 rifatto con la durata sbagliata
+- Utente: "La durata la fai uguale all'altra slide". Ho capito "674 fotogrammi come prima" e ho reso la slide con 674. Il blocco nuovo e' piu' lungo nella voce: la slide e' risultata piu' corta della voce.
+- REGOLA: se un ordine sulla durata e' ambiguo ("uguale all'altra") e il testo/la registrazione e' cambiato, UNA domanda ("uguale a quale, e fino a dove arriva la voce nuova?") PRIMA del render. La durata di un blocco ri-registrato si prende SOLO dal nuovo screenshot CapCut.
