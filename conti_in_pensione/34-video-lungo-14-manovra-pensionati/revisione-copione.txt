@@ -1,5 +1,5 @@
 1 | f5136ced7e | italiano OK | logica OK | persona OK | numeri OK | gancio senza cifre del buono ne' dettagli (31/10): solo 'fino a cinquecento' (cifra del gancio); tre domande aperte = tre misure; ddl dichiarato
-2 | e47a734349 | italiano OK | logica OK | persona OK | numeri OK | ordine annunciato = ordine reale (fondo, Irpef, buono)
+2 | 444e79fd49 | italiano OK | logica OK | persona OK | numeri OK | 31/10: frase sulle fonti riscritta dall'utente ('Ci basiamo solo su questi due documenti ufficiali'): vera, nessun limite falso. Letta a voce, soggetto noi, numeri 195 e 28 ottobre gia' verificati.
 3 | e49ac91d7a | italiano OK | logica OK | persona OK | numeri OK | citazione comunicato + Meloni; nessuna conclusione anticipata
 4 | 768a0f6d4f | italiano OK | logica OK | persona OK | numeri OK | citazione Meloni e comunicato; 'massimo' tenuto per il blocco 12
 5 | a70fb931b6 | italiano OK | logica OK | persona OK | numeri OK | promessa 'ogni video' tolta; 'cinque punti' = blocco 8

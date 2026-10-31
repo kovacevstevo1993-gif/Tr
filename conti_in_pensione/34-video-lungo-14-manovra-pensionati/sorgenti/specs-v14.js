@@ -42,8 +42,8 @@ SPECS[2]=()=>mkBlk(TXT,TOT,[
   P('SITO DEL GOVERNO',960,225,'sul sito del governo',AMB,38,'web'),
   IC(640,210,'doc',[['COMUNICATO DEL CONSIGLIO',30],['DEI MINISTRI N. 195',34],['DEL 28 OTTOBRE',30,GRN]],480,410,'il comunicato del Consiglio dei ministri numero'),
   IC(640,210,'chat',[['INTERVENTO DELLA PRESIDENTE',30],['DEL CONSIGLIO MELONI',34],['ALLA CONFERENZA STAMPA',28,GRN]],1440,410,'l\'intervento della presidente'),
-  P('TESTO COMPLETO: NON LETTO',960,600,'Il testo completo non l\'abbiamo letto',RF_,34,'x'),
-  P('NIENTE BOZZE, NIENTE CIFRE DEI GIORNALI',960,695,'non facciamo conti su bozze',DF_,30,'ok'),
+  P('SOLO QUESTI DUE DOCUMENTI UFFICIALI',960,600,'Ci basiamo solo su questi due',GF_,34,'ok'),
+  P('NON BOZZE, NON CIFRE DEI GIORNALI',960,695,'non su bozze',RF_,34,'x'),
   P('ORDINE: FONDO → IRPEF → BUONO',960,790,'Li vediamo in quest\'ordine',AMB,40,'next')]},
 ]);
 SPECS[3]=()=>mkBlk(TXT,TOT,[
