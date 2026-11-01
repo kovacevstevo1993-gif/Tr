@@ -9,12 +9,15 @@ voce = f"{ROOT}/short001_inflazione/voce/b{N:02d}.mp3"
 dur = float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",voce],capture_output=True,text=True).stdout)
 nf = int(np.ceil(dur * 30 - 1e-6)); SR = 48000
 # ---- 1) fotogrammi ----
-if os.path.isdir(FR): shutil.rmtree(FR)
-os.makedirs(FR)
+SKIP = os.environ.get("SKIP_RENDER") and os.path.isdir(FR) and len([f for f in os.listdir(FR) if f.endswith(".png")]) == nf
+if not SKIP:
+    if os.path.isdir(FR): shutil.rmtree(FR)
+    os.makedirs(FR)
 ps = []; step = (nf + 3) // 4
 for k in range(4):
     a, b = k * step, min(nf - 1, (k + 1) * step - 1)
-    if a <= b: ps.append(subprocess.Popen(["node", f"{HERE}/render_short.js", f"{HERE}/short001_blocco{N}.html", FR, str(a), str(b)], stdout=subprocess.PIPE, text=True))
+    h3 = f"{HERE}/s001_b{N}_3d.html"
+    if a <= b and not SKIP: ps.append(subprocess.Popen(["node", f"{HERE}/render_3d.js", h3, FR, str(a), str(b)], stdout=subprocess.PIPE, text=True) if os.path.exists(h3) else subprocess.Popen(["node", f"{HERE}/render_short.js", f"{HERE}/short001_blocco{N}.html", FR, str(a), str(b)], stdout=subprocess.PIPE, text=True))
 for p in ps: print(p.communicate()[0].strip())
 nfile = len([f for f in os.listdir(FR) if f.endswith(".png")]); print("fotogrammi resi:", nfile, "attesi", nf)
 # ---- 2) audio ----
@@ -35,6 +38,8 @@ L = int(nf / 30 * SR); sfx = np.zeros(L)
 for t, kind, g in EV:
     if kind == "pop": put(sfx, t, tone(700, .12, .002, .035, 260), g)
     elif kind == "tick": put(sfx, t, tone(2200, .03, .001, .006), g)
+    elif kind == "coin":
+        a_ = tone(2900, .1, .001, .03); b_ = tone(4300, .08, .001, .02); a_[:len(b_)] += .5 * b_; put(sfx, t, a_, g)
     elif kind == "ding": put(sfx, t, tone(1318, .6, .003, .16), g)
     elif kind == "thud": put(sfx, t, tone(70, .5, .003, .11, 38), g)
     elif kind == "whoosh": put(sfx, t, whoosh(.4), g)
