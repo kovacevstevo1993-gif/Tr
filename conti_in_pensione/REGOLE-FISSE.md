@@ -708,3 +708,6 @@
 
 ## REGOLA FACEBOOK DEL 28/10/2026 (commento sempre col link del canale)
 - Utente: "Nel commento ci deve essere sempre il sito del canale YouTube, ci devono andare nel canale". REGOLA: ogni pacchetto Facebook (video e Reel) ha SEMPRE un primo commento con il link del canale https://www.youtube.com/@ContiInPensione (e il link del video/short collegato). Link anche nella descrizione, in alto (ordine utente 27/10: nessuno arriva in fondo). I link su Facebook sono cliccabili (utente).
+
+## REGOLA DEL 01/11/2026 (pacchetti Facebook: niente ricontrolli dei dati gia' verificati)
+- Utente: "Ma perche' ricontrollo, porco dio, che il video l'hai fatto te e sai gia' tutto". Nei pacchetti Facebook dei video/short gia' pubblicati i dati si prendono dai file del video (fonti-e-verifiche.md, ricerca-e-fonti.md, pacchetto.txt, copione): sono GIA' verificati. Non ricontrollare su internet, non scrivere "ho ricontrollato", non togliere dati verificati (errore 31/10: tolto il 4,2% Istat, gia' verificato nelle note). Verificare solo cio' che NON e' nei file. Errore anche da non ripetere: scrivere "ricontrollato 111,11" con soglie sbagliate (le soglie ufficiali 2026 sono 2.413,60 e 3.017,00 euro: l'esempio da 4.000 euro al 3% fa circa 111, 110,83).
