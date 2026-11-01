@@ -714,3 +714,6 @@
 
 ## REGOLA FACEBOOK DEL 01/11/2026 (video lungo: "Guardalo anche su YouTube", mai "video completo")
 - Utente: "nella descrizione perche' continui a scrivere video completo con la durata ed e' lo stesso video caricato li, la logica dove l'hai lasciata sotto terra?". Se su Facebook si carica lo STESSO video lungo, nella descrizione e nel commento NON si scrive "il video completo (N minuti)": si scrive "Guardalo anche su YouTube: <link>", senza durata. "Il video completo" va bene SOLO negli SHORT/Reel, dove rimanda a un video lungo diverso.
+
+## REGOLA FACEBOOK DEL 01/11/2026 (descrizione: curiosita', mai la risposta)
+- Utente: "se gli spoileri gia' tutto nella descrizione chi cazzo lo guarda il video allora?". Nella descrizione Facebook (video lunghi e short) NON si scrivono le cifre-risposta ne' la tabella ne' il meccanismo: solo domanda, promessa e curiosita' (stessa regola della miniatura e della riga 0c: la risposta sta nel video). Errori: video 3 (tabella 30/45/60/88/111 e "111 non 120"), video 2 ("185 euro al mese" nella prima riga), short 5 ("+111, non +120"). Fonti, disclaimer, link e hashtag restano.
