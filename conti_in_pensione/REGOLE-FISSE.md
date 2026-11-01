@@ -888,3 +888,9 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 ## STATO 31/10/2026 (utente, dopo la chat nuova) - VIDEO 14 FINITO E PROGRAMMATO
 - Utente: il blocco 2 e' gia' fatto, il video 14 e' finito ed e' gia' programmato. La questione aperta sulla durata del blocco 2 e' CHIUSA: non rifare niente sul video 14.
 - Aperto solo su ordine: short teaser del video 14 (video correlato = video 14), risposte ai commenti.
+
+## STATO 01/11/2026 - SHORT 16 (teaser video lungo 14, manovra 2027), cartella 35-short-16-teaser-video-lungo-14
+- Copione v8 (4 blocchi, quello registrato dall'utente: blocchi 2-4 riregistrati su sua richiesta; v5 e v7 NON usare). Video correlato = video lungo 14 (id hIjjqxNQ2wQ). Il video 14 e' online con il titolo del pacchetto (verificato con curl).
+- Durate dagli screenshot (DOPPIA LETTURA, DURATE.txt): 425, 345, 405, 375 = 1550 fotogrammi (51 s e 20 f; 16,2-17,3 caratteri/secondo). Clip CIP-S16-blocco01..04.mp4 in clip/ consegnate tutte insieme e in ordine (checktempi OK, qa_slide OK su TUTTI i fotogrammi, ffprobe = durate, 1080x1920 30 fps, sequenze a 0,5 s dei 4 file guardate). Motore: sorgenti/head16.js + s16.js (build.py, render.py, checktempi.py, sheet.py, qa7.sh); per il prossimo short copiare da li' e cambiare composizioni.
+- Look nuovo (ordine utente 01/11: "un po' piu diverse, elementi un po' diversi"): titoletto a striscia notizie con tre pallini (niente numeri), schede con nastro adesivo, didascalia a fumetto con altoparlante, sfondo con fogli di documento. Composizioni: palazzo + tre schede coperte + 4 pensionati, buono + comunicato + foglio vuoto, cassaforte/uscita + righello eta' + bandiera + calcolatrice, tre schede + commento + video correlato.
+- Da fare solo su ordine: miniatura, pacchetto (titolo, descrizione, tag, commento, impostazioni).
