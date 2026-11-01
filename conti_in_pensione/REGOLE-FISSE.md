@@ -711,3 +711,6 @@
 
 ## REGOLA DEL 01/11/2026 (pacchetti Facebook: niente ricontrolli dei dati gia' verificati)
 - Utente: "Ma perche' ricontrollo, porco dio, che il video l'hai fatto te e sai gia' tutto". Nei pacchetti Facebook dei video/short gia' pubblicati i dati si prendono dai file del video (fonti-e-verifiche.md, ricerca-e-fonti.md, pacchetto.txt, copione): sono GIA' verificati. Non ricontrollare su internet, non scrivere "ho ricontrollato", non togliere dati verificati (errore 31/10: tolto il 4,2% Istat, gia' verificato nelle note). Verificare solo cio' che NON e' nei file. Errore anche da non ripetere: scrivere "ricontrollato 111,11" con soglie sbagliate (le soglie ufficiali 2026 sono 2.413,60 e 3.017,00 euro: l'esempio da 4.000 euro al 3% fa circa 111, 110,83).
+
+## REGOLA FACEBOOK DEL 01/11/2026 (video lungo: "Guardalo anche su YouTube", mai "video completo")
+- Utente: "nella descrizione perche' continui a scrivere video completo con la durata ed e' lo stesso video caricato li, la logica dove l'hai lasciata sotto terra?". Se su Facebook si carica lo STESSO video lungo, nella descrizione e nel commento NON si scrive "il video completo (N minuti)": si scrive "Guardalo anche su YouTube: <link>", senza durata. "Il video completo" va bene SOLO negli SHORT/Reel, dove rimanda a un video lungo diverso.
