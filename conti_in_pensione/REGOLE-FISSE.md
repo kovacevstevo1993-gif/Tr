@@ -717,3 +717,6 @@
 
 ## REGOLA FACEBOOK DEL 01/11/2026 (descrizione: curiosita', mai la risposta)
 - Utente: "se gli spoileri gia' tutto nella descrizione chi cazzo lo guarda il video allora?". Nella descrizione Facebook (video lunghi e short) NON si scrivono le cifre-risposta ne' la tabella ne' il meccanismo: solo domanda, promessa e curiosita' (stessa regola della miniatura e della riga 0c: la risposta sta nel video). Errori: video 3 (tabella 30/45/60/88/111 e "111 non 120"), video 2 ("185 euro al mese" nella prima riga), short 5 ("+111, non +120"). Fonti, disclaimer, link e hashtag restano.
+
+## ERRORE DEL 01/11/2026 (tre descrizioni rifatte senza ordine)
+- Alla domanda "se gli spoileri tutto nella descrizione chi lo guarda il video?" ho risposto rifacendo e mandando 3 descrizioni (video 3, video 2, short 5) e proponendo altro. Utente: "chi cazzo ti ha detto di mandarmeli tutti". Una domanda/critica = solo risposta breve (N.13). Si rifa' SOLO cio' che l'utente ordina, e solo il pezzo di cui si parla (qui il video 3).
