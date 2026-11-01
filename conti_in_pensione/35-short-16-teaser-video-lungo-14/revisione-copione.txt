@@ -1,0 +1,4 @@
+1 | dc80fbd992 | italiano OK | logica OK | persona OK | numeri OK | v5 01/11: 2 giri + qa_italiano; fatti da comunicato CdM 195 e intervento Meloni (fonti-e-verifiche V14); ddl dichiarato; nessun requisito svelato
+2 | 0b406b904c | italiano OK | logica OK | persona OK | numeri OK | v5 01/11: 2 giri + qa_italiano; fatti da comunicato CdM 195 e intervento Meloni (fonti-e-verifiche V14); ddl dichiarato; nessun requisito svelato
+3 | d90cc32bee | italiano OK | logica OK | persona OK | numeri OK | v5 01/11: 2 giri + qa_italiano; fatti da comunicato CdM 195 e intervento Meloni (fonti-e-verifiche V14); ddl dichiarato; nessun requisito svelato
+4 | 09211415ef | italiano OK | logica OK | persona OK | numeri OK | v5 01/11: 2 giri + qa_italiano; fatti da comunicato CdM 195 e intervento Meloni (fonti-e-verifiche V14); ddl dichiarato; nessun requisito svelato
