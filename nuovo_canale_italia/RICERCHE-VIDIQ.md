@@ -52,3 +52,14 @@ Richiesta utente: "i piu pagati in assoluto e scalabile in italiano", 5 idee. Au
 - Slide/grafica: codice Python (PIL + ffmpeg), come gli altri canali, 1920x1080, voce gia montata.
 - Immagini: Pollinations / Gemini image (gia collegati).
 - In attesa: l'utente sceglie la voce A, B o C.
+
+## Quarta ricerca (01/11/2026): "altro canale YouTube + Facebook, nicchia che paga di piu in Italia" - ZERO crediti vidIQ (restano 63, rinnovo 11/11/2026)
+- Conferma vidIQ gia salvata sopra: categoria Business = la piu pagata in Italia (192/320/512 $ per 100.000 views/mese video lunghi). Fonti di terzi (FluxNote, upgrowth, vidIQ blog 2026): finanza, assicurazioni, legale = CPM piu alti; Italia finanza faceless circa 10-20 EUR di CPM (fonte debole); Short pagano circa 95% in meno dei lunghi.
+- Facebook: nessun dato italiano affidabile (gia scritto in conti_in_pensione/REGOLE-FISSE.md: Reel circa 1-3 $ ogni 1.000 views, lunghi con pubblicita circa 2-5 $; finanza paga piu dell'intrattenimento; il dato vero e il tasso di guadagno nel pannello Meta).
+- Ricerca gratis YouTube Italia (curl, top 20 video per query, mediana views / miglior video):
+  - "investire 10000 euro ETF": mediana 34.282; 224k Riccardo Zanetti, 146k Paolo Coletti, 104k Marco Casario.
+  - "partita iva forfettario conviene": mediana 23.870; 113k Starting Finance, 109k Angelo Greco, 77k Pietro Michelangeli.
+  - "BTP conviene": mediana 11.561; 78k Paolo Coletti.
+  - "mutuo conviene davvero": mediana 6.020; 371k Geopop, 104k Angelo Greco, 90k Jacopo Tartaglia.
+  - "assicurazione sulla vita conviene": mediana 3.767. "730 detrazioni quali ti spettano": mediana 3.720 (349k Angelo Greco, 4 anni fa).
+- Tutti i primi risultati sono canali CON VOLTO (Coletti, Zanetti, Casario, Michelangeli, Greco, Tartaglia): nessun canale senza volto nei primi posti di investimenti/fisco.
