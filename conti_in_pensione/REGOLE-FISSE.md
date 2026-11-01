@@ -888,3 +888,7 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 ## STATO 31/10/2026 (utente, dopo la chat nuova) - VIDEO 14 FINITO E PROGRAMMATO
 - Utente: il blocco 2 e' gia' fatto, il video 14 e' finito ed e' gia' programmato. La questione aperta sulla durata del blocco 2 e' CHIUSA: non rifare niente sul video 14.
 - Aperto solo su ordine: short teaser del video 14 (video correlato = video 14), risposte ai commenti.
+
+## ERRORE 01/11/2026 - "ULTIME NOTIZIE SULLA TREDICESIMA": RISPOSTO SU UN ALTRO TEMA (revoca importo aggiuntivo)
+- Utente: "Ma stiamo parlando della tredicesima dio cane. Ultime notizie". Dopo aver trovato la revoca dell'importo aggiuntivo (msg Inps 2514 del 29/07/2026) ho verificato e scartato QUELLA invece di cercare le ultime notizie sulla tredicesima, che era l'ordine.
+- REGOLA: quando l'utente dice "cerca" su un tema (qui: tredicesima), la ricerca resta SUL TEMA; una notizia laterale si cita in una riga ma non diventa l'oggetto del lavoro. Prima di ogni verifica rileggere l'ordine originale.
