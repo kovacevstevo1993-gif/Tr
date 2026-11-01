@@ -41,3 +41,5 @@ Titolo scelto da Claude (ordine utente "deve scegliere quello migliore per YouTu
 
 ## 01/11/2026
 - Parole dell'utente: "Oggi creiamo un'altro canale su YouTube e su fb per la nicchia che paga di più in assoluto in Italia fai le ricerche e rispondi solo a quello che ti chiedo non elenchi tutto" -> nuovo canale (YouTube + Facebook) sulla nicchia piu pagata in Italia; ricerche fatte (RICERCHE-VIDIQ.md, quarta ricerca, zero crediti); risposte corte, solo cio che chiede, niente elenchi.
+- 01/11/2026, parole dell'utente: "Perché le sotto nicchie chi te la detto?" -> NON cercare sotto-nicchie se non le ordina: si risponde sulla nicchia intera (Finanza/Business).
+- 01/11/2026, parole dell'utente: "E qualla la nicchia che paga di più? Ci devono essere anche sempre tanti argomenti diversi ogni giorno da mettere con come le pensioni che mettiamo sempre quasi gli stessi" -> il canale nuovo deve avere argomenti sempre diversi ogni giorno (non un tema stretto come le pensioni).

@@ -63,3 +63,9 @@ Richiesta utente: "i piu pagati in assoluto e scalabile in italiano", 5 idee. Au
   - "mutuo conviene davvero": mediana 6.020; 371k Geopop, 104k Angelo Greco, 90k Jacopo Tartaglia.
   - "assicurazione sulla vita conviene": mediana 3.767. "730 detrazioni quali ti spettano": mediana 3.720 (349k Angelo Greco, 4 anni fa).
 - Tutti i primi risultati sono canali CON VOLTO (Coletti, Zanetti, Casario, Michelangeli, Greco, Tartaglia): nessun canale senza volto nei primi posti di investimenti/fisco.
+
+## Quinta ricerca (01/11/2026): argomenti diversi ogni giorno (RSS YouTube gratis, zero crediti)
+- Domanda utente: "Ci devono essere anche sempre tanti argomenti diversi ogni giorno da mettere come le pensioni che mettiamo sempre quasi gli stessi".
+- il Punto Economico (@ilpuntoeconomico, economia + storie + attualita): 15 video in 39 giorni = 2,7 a settimana, ogni video un tema diverso (BlackBerry 54k, proteste Sud Italia 1,01M, Sindona 283k, Polymarket 74k, crisi petrolifere 95k, Del Vecchio 3k...). Views molto variabili: 3k-283k, un solo caso a 1M.
+- Macchinando (moto/auto, senza volto): 15 video in 48 giorni = 2,2 a settimana, tutti temi diversi (4k-90k).
+- Conclusione: la nicchia "economia e soldi" generale (notizie + storie + conti) rinnova gli argomenti da sola; un tema stretto (come le pensioni) si esaurisce.
