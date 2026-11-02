@@ -915,3 +915,9 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 ## STATO 02/11/2026 (sera) - SHORT 17 (teaser video lungo 13, reversibilita'), cartella 37-short-17-teaser-video-lungo-13
 - Ordine utente: "copione per lo short correlato al video pensione di reversibilita'"; poi: "e il penultimo video lungo caricato su YouTube" (verificato con curl: /videos = V14 hIjjqxNQ2wQ, poi V13 DLWD4ZdGbDQ "PENSIONE DI REVERSIBILITA': 60%, 80% o 100%? Quanto spetta a vedove e vedovi", poi V12). Video correlato = video lungo 13.
 - Copione v2 (6 blocchi, 1189 caratteri, qa_copione OK, 2 giri di lettura, revisione-copione.txt OK): gancio senza "Tema:" e senza risposte (solo la domanda quando/di quanto), percentuali/soglie/gradino/regole delle situazioni delicate nascosti, chiusura nuova (domanda 60/80/100 nei commenti). Da fare solo su ordine: durate (screenshot dell'utente), clip CIP-S17-blocco01..06, miniatura, pacchetto.
+
+## ERRORE 02/11/2026 (copione short 17) - FRASE FALSA CONSEGNATA, TROVATA SOLO ALLA DOMANDA "E' PERFETTO?" (N.42)
+- Utente: "E' perfetto? E senza errori? Hai seguito tutte le regole?" e poi "E allora che cazzo lo mando?". Blocco 2: "Ogni categoria ha una percentuale diversa" FALSO (genitori e fratelli partono entrambi dal 15%, scheda Inps). Blocco 4: "In un caso il taglio non scatta" suggeriva un caso solo, ma il taglio non riguarda nemmeno i figli (V13 blocco 10).
+- Causa: qa_copione e le revisioni controllano forma e parole, non la verita' di ogni frase generale ("ogni", "diversa", "un caso"). Le frasi che generalizzano (ogni/tutti/un solo/diversa) vanno confrontate con la scheda Inps PRIMA dell'invio.
+- REGOLA: nel teaser ogni frase che generalizza si controlla sulla fonte (fonti-e-verifiche.md) categoria per categoria; se non regge, si riscrive in modo neutro ("cambia a seconda di chi sei", "esiste un caso").
+
