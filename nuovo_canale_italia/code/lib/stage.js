@@ -13,21 +13,22 @@ export const eb=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math
 export const rnd=i=>{const x=Math.sin(i*127.1+311.7)*43758.5453;return x-Math.floor(x);};
 export const RED=0xE32119,YEL=0xFFE14A,PAPER=0xF3F0E8;
 
-export async function createStage({dur,centers=[0],kf}){
+export async function createStage({dur,centers=[0],kf,theme={}}){
+  const th=Object.assign({bg:0x0b0c0f,fogN:16,fogF:46,keyC:0xffe2b0,keyI:270,rimC:0xff3a2a,rimI:45,hemiS:0x8e97b0,hemiG:0x1a1210,hemiI:.28,floor:0x0a0b0e,fR:.45,fM:.3,ring:0xF3F0E8,env:.55,expo:1.0,bloom:.14,dustC:0xfff2d0,dustO:.35,ringK:1,flashK:.6},theme);
   const W=window.innerWidth,H=window.innerHeight;
   await Promise.all([new FontFace('AB','url(/brand/fonts/ArchivoBlack-Regular.ttf)'),new FontFace('PM','url(/brand/fonts/IBMPlexMono-Bold.ttf)')].map(f=>f.load().then(x=>document.fonts.add(x))));
   const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});
   renderer.setSize(W,H);renderer.setPixelRatio(1);renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
-  renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.0;document.body.appendChild(renderer.domElement);
-  const scene=new THREE.Scene();scene.background=new THREE.Color(0x0b0c0f);scene.fog=new THREE.Fog(0x0b0c0f,16,46);
-  const pm=new THREE.PMREMGenerator(renderer);scene.environment=pm.fromScene(new RoomEnvironment(),0.04).texture;scene.environmentIntensity=0.55;
+  renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=th.expo;document.body.appendChild(renderer.domElement);
+  const scene=new THREE.Scene();scene.background=new THREE.Color(th.bg);scene.fog=new THREE.Fog(th.bg,th.fogN,th.fogF);
+  const pm=new THREE.PMREMGenerator(renderer);scene.environment=pm.fromScene(new RoomEnvironment(),0.04).texture;scene.environmentIntensity=th.env;
   const cam=new THREE.PerspectiveCamera(38,W/H,0.1,120);
-  const key=new THREE.SpotLight(0xffe2b0,270,60,0.5,0.7,1.6);key.castShadow=true;key.shadow.mapSize.set(2048,2048);key.shadow.bias=-0.0004;key.shadow.radius=5;scene.add(key,key.target);
-  const rim=new THREE.PointLight(0xff3a2a,45,40,1.6);scene.add(rim);
-  scene.add(new THREE.HemisphereLight(0x8e97b0,0x1a1210,0.28));
-  const floor=new THREE.Mesh(new THREE.CircleGeometry(60,96),new THREE.MeshStandardMaterial({color:0x0a0b0e,roughness:.45,metalness:.3}));
+  const key=new THREE.SpotLight(th.keyC,th.keyI,60,0.5,0.7,1.6);key.castShadow=true;key.shadow.mapSize.set(2048,2048);key.shadow.bias=-0.0004;key.shadow.radius=5;scene.add(key,key.target);
+  const rim=new THREE.PointLight(th.rimC,th.rimI,40,1.6);scene.add(rim);
+  scene.add(new THREE.HemisphereLight(th.hemiS,th.hemiG,th.hemiI));
+  const floor=new THREE.Mesh(new THREE.CircleGeometry(60,96),new THREE.MeshStandardMaterial({color:th.floor,roughness:th.fR,metalness:th.fM}));
   floor.rotation.x=-Math.PI/2;floor.receiveShadow=true;scene.add(floor);
-  centers.forEach(cx=>[[3.4,.03,.20],[5.6,.025,.11],[7.8,.02,.06]].forEach(([r,w,o])=>{const m=new THREE.Mesh(new THREE.RingGeometry(r,r+w,128),new THREE.MeshBasicMaterial({color:PAPER,transparent:true,opacity:o,side:THREE.DoubleSide}));m.rotation.x=-Math.PI/2;m.position.set(cx,.004,0);scene.add(m);}));
+  centers.forEach(cx=>[[3.4,.03,.20],[5.6,.025,.11],[7.8,.02,.06]].forEach(([r,w,o])=>{const m=new THREE.Mesh(new THREE.RingGeometry(r,r+w,128),new THREE.MeshBasicMaterial({color:th.ring,transparent:true,opacity:o*th.ringK,side:THREE.DoubleSide}));m.rotation.x=-Math.PI/2;m.position.set(cx,.004,0);scene.add(m);}));
   const mats={
     gold:new THREE.MeshStandardMaterial({color:0xFFD23A,metalness:1,roughness:.5}),
     red:new THREE.MeshStandardMaterial({color:0xE32119,metalness:.75,roughness:.28,emissive:0x5a0605,emissiveIntensity:.8}),
@@ -40,7 +41,7 @@ export async function createStage({dur,centers=[0],kf}){
   };
   // polvere
   const dustN=220,dp=new Float32Array(dustN*3);for(let i=0;i<dustN;i++){dp[i*3]=(rnd(i)-.5)*30;dp[i*3+1]=rnd(i+1)*10;dp[i*3+2]=(rnd(i+2)-.5)*24-4;}
-  const dust=new THREE.Points(new THREE.BufferGeometry().setAttribute('position',new THREE.BufferAttribute(dp.slice(),3)),new THREE.PointsMaterial({color:0xfff2d0,size:.045,transparent:true,opacity:.35,depthWrite:false}));scene.add(dust);
+  const dust=new THREE.Points(new THREE.BufferGeometry().setAttribute('position',new THREE.BufferAttribute(dp.slice(),3)),new THREE.PointsMaterial({color:th.dustC,size:.045,transparent:true,opacity:th.dustO,depthWrite:false}));scene.add(dust);
   const comp=new EffectComposer(renderer);comp.setPixelRatio(1);comp.setSize(W,H);comp.addPass(new RenderPass(scene,cam));
   const bloom=new UnrealBloomPass(new THREE.Vector2(W/2,H/2),.14,.45,.97);comp.addPass(bloom);comp.addPass(new OutputPass());
   // scritte (sprite)
@@ -74,8 +75,8 @@ export async function createStage({dur,centers=[0],kf}){
     const dpos=dust.geometry.attributes.position;for(let i=0;i<dustN;i++){dpos.array[i*3+1]=(dp[i*3+1]+t*(.15+rnd(i+9)*.25)*damp)%10;dpos.array[i*3]=dp[i*3]+Math.sin(t*.5+i)*.2*damp;}dpos.needsUpdate=true;
     camAt(t);let sh=0,fl=0;shakes.forEach(s=>{if(t>s)sh+=Math.exp(-(t-s)*9)*.22;});flashes.forEach(s=>{if(t>s)fl+=Math.exp(-(t-s)*12);});
     cam.position.set(cp.x+Math.sin(t*1.3)*.12*damp+Math.sin(t*80)*sh*.6,cp.y+Math.cos(t*1.1)*.08*damp+Math.cos(t*70)*sh*.5,cp.z);cam.lookAt(lv.x,lv.y,lv.z);
-    key.position.set(lv.x-7,13,9);key.target.position.set(lv.x,1.5,0);rim.position.set(lv.x+7,5,-6);rim.intensity=45+15*Math.sin(t*5)*damp;
-    renderer.toneMappingExposure=1.0+.6*fl;bloom.strength=.14+.3*fl;comp.render();return damp;}
+    key.position.set(lv.x-7,13,9);key.target.position.set(lv.x,1.5,0);rim.position.set(lv.x+7,5,-6);rim.intensity=th.rimI+15*Math.sin(t*5)*damp;
+    renderer.toneMappingExposure=th.expo+th.flashK*fl;bloom.strength=th.bloom+.3*fl*(th.flashK/.6);comp.render();return damp;}
   function bounds(){const bad=[];cam.updateMatrixWorld();const right=new THREE.Vector3().setFromMatrixColumn(cam.matrixWorld,0),up=new THREE.Vector3().setFromMatrixColumn(cam.matrixWorld,1);
     sprites.forEach(s=>{if(!s.visible||s.material.opacity<.05||Math.abs(s.position.x-cam.position.x)>5)return;const hw=s.scale.x/2,hh=s.scale.y/2;
       [[-1,-1],[1,-1],[1,1],[-1,1]].forEach(([a,b])=>{const q=s.position.clone().addScaledVector(right,a*hw).addScaledVector(up,b*hh).project(cam);const x=(q.x+1)/2*W,y=(1-q.y)/2*H;
