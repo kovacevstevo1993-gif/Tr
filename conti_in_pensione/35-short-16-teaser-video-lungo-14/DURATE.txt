@@ -1,0 +1,14 @@
+# Short 16 (manovra 2027) - durate dagli screenshot CapCut (01/11/2026, 30 fps), lettura N.29 con DOPPIA LETTURA
+# Riga bianca a x=359,5; marchi 1 fotogramma ciascuno (66,5 px), etichette ogni 2 f; centri misurati sull'immagine.
+# Lettura A = ultimo marchio prima della riga + 1; lettura B = distanza in pixel della riga dal marchio (frazione di fotogramma, per eccesso). Devono coincidere.
+# blocco | fine (s+f) | ultimo marchio (x) | riga-marchio (px) | A | B | fotogrammi totali a fine blocco | durata blocco | caratteri | caratteri/secondo
+1 | 14s+5f | etichetta 4f (x356)   | 3,5 px  | 5  | 4,05->5  | 425  | 425 | 245 | 17,3
+2 | 25s+20f | punto dopo 18f (x315) | 44,5 px | 20 | 19,67->20 | 770  | 345 | 195 | 17,0
+3 | 39s+5f | etichetta 4f (x341)   | 18,5 px | 5  | 4,28->5  | 1175 | 405 | 233 | 17,3
+4 | 51s+20f | punto dopo 18f (x332) | 27,5 px | 20 | 19,41->20 | 1550 | 375 | 202 | 16,2
+# TOTALE 1550 fotogrammi = 51,67 s. Coerenza voce 16,2-17,3 caratteri/secondo (14-19 = normale): lettura confermata.
+# Testo registrato = v8 (nelle anteprime CapCut si leggono "...ideo leggia[mo]", "...icato non l[o scrive]... c'e'", "...osa, e quan[to]").
+425
+345
+405
+375

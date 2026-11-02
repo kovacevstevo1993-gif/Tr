@@ -884,3 +884,22 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 - Miniature A/B/C in 34-.../miniatura (gen14.py): A copia dei virali (PENSIONI 2027 + blocchi gialli 300 € OVER 75 / FONDO 850 MILIONI / TAGLIO IRPEF 33% + TABELLA IMPORTI con "? €" e cerchio rosso, CHI PRENDE DAVVERO QUALCOSA?); B tre schede BUONO/FONDO/IRPEF con domande rosse e striscia "UNA DELLE TRE VALE FINO A 500 €: QUALE?"; C moneta "FINO A 500 € ALL'ANNO", PER CHI?, NON PER TUTTI, chip buono e fondo, PENSIONI 2027 in basso. Risposte nascoste, nessun volto, testi misurati dentro i riquadri e guardati; "DISEGNO DI LEGGE" in B e C.
 - Da fare solo su ordine: short teaser (video correlato = video 14), risposte ai commenti, durata blocco 2 se cambia.
 - (31/10 sera, ordine utente) Tutto il lavoro del video 14 (copione, clip, pacchetto, miniature, regole) e' stato UNITO SU MAIN (merge pulito, main aveva solo lea_e_leo). La chat nuova parte da main, non serve piu' il branch claude/great-cori-qu7hsx.
+
+## STATO 31/10/2026 (utente, dopo la chat nuova) - VIDEO 14 FINITO E PROGRAMMATO
+- Utente: il blocco 2 e' gia' fatto, il video 14 e' finito ed e' gia' programmato. La questione aperta sulla durata del blocco 2 e' CHIUSA: non rifare niente sul video 14.
+- Aperto solo su ordine: short teaser del video 14 (video correlato = video 14), risposte ai commenti.
+
+## STATO 01/11/2026 - SHORT 16 (teaser video lungo 14, manovra 2027), cartella 35-short-16-teaser-video-lungo-14
+- Copione v8 (4 blocchi, quello registrato dall'utente: blocchi 2-4 riregistrati su sua richiesta; v5 e v7 NON usare). Video correlato = video lungo 14 (id hIjjqxNQ2wQ). Il video 14 e' online con il titolo del pacchetto (verificato con curl).
+- Durate dagli screenshot (DOPPIA LETTURA, DURATE.txt): 425, 345, 405, 375 = 1550 fotogrammi (51 s e 20 f; 16,2-17,3 caratteri/secondo). Clip CIP-S16-blocco01..04.mp4 in clip/ consegnate tutte insieme e in ordine (checktempi OK, qa_slide OK su TUTTI i fotogrammi, ffprobe = durate, 1080x1920 30 fps, sequenze a 0,5 s dei 4 file guardate). Motore: sorgenti/head16.js + s16.js (build.py, render.py, checktempi.py, sheet.py, qa7.sh); per il prossimo short copiare da li' e cambiare composizioni.
+- Look nuovo (ordine utente 01/11: "un po' piu diverse, elementi un po' diversi"): titoletto a striscia notizie con tre pallini (niente numeri), schede con nastro adesivo, didascalia a fumetto con altoparlante, sfondo con fogli di documento. Composizioni: palazzo + tre schede coperte + 4 pensionati, buono + comunicato + foglio vuoto, cassaforte/uscita + righello eta' + bandiera + calcolatrice, tre schede + commento + video correlato.
+- Da fare solo su ordine: miniatura, pacchetto (titolo, descrizione, tag, commento, impostazioni).
+- (01/11) Short 16: pacchetto.txt (qa_testi OK: titolo vidIQ 69 "PENSIONI 2027: le 3 novita' della MANOVRA, chi ci guadagna DAVVERO? ⚠️", 24 tag = 488/500, 9 hashtag; vidIQ 15 crediti, saldo 48) e miniatura/miniatura-short16.png (gen16.py; layout NUOVO: facciata di palazzo con frontone e tre porte chiuse BUONO/FONDO/IRPEF con "?" dorato, titolo PENSIONI MANOVRA 2027, striscia bianca "LE 3 NOVITA' DEL GOVERNO", domanda "CHI CI GUADAGNA DAVVERO?"; nessuna cifra svelata; testi misurati e guardati).
+
+## STATO 02/11/2026 - PER LA CHAT NUOVA (Conti in Pensione)
+- FATTO: short 16 (teaser video 14, manovra 2027) COMPLETO in 35-short-16-teaser-video-lungo-14: copione v8 (registrato dall'utente), DURATE.txt (425, 345, 405, 375), clip CIP-S16-blocco01..04 consegnate, pacchetto.txt (titolo vidIQ 69), miniatura-short16.png. Il video 14 e' online e programmato dall'utente. Pubblicazione dello short: a cura dell'utente.
+- APERTO, solo su ordine: nuova tredicesima (l'utente la vuole rifare "diversa": per i dati nuovi ufficiali serve il comunicato Inps di dicembre, atteso a fine novembre; la ricerca del 01/11 non ha trovato niente di nuovo e ufficiale); aumento gennaio con la percentuale del decreto Mef (19-28/11); risposte ai commenti; miniature/pacchetti futuri.
+- vidIQ: saldo 48 crediti (rinnovo 11/11); channelId UC5Ua8A9mgOEN_5de2ACJS9A.
+- Strumenti: per i render serve `pip install playwright` (nella sessione del 01/11 il modulo Python non c'era); chromium in /opt/pw-browsers/chromium-1243.
+- Il lavoro di questa sessione e' sul branch claude/busy-mccarthy-2vroxr (unione su main: l'utente la ordina).
+- COME RIPARTIRE: leggere CLAUDE.md, conti_in_pensione/REGOLE-FISSE.md (per intero) e CHECKLIST-REGOLE.md; poi aspettare l'ordine.
