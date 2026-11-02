@@ -15,7 +15,7 @@ Economia e finanza spiegate con i numeri ufficiali.
 
 E tu? Di quanto è salita la tua ultima bolletta? Scrivilo nei commenti 👇
 
-Fonte: Istat, prezzi al consumo, ottobre 2026 (dati provvisori). Informazione generale, non consulenza finanziaria. Voce narrante e animazioni realizzate con strumenti digitali/AI. Canale non affiliato all'Istat.
+Fonte: Istat, prezzi al consumo, ottobre 2026 (dati provvisori). Informazione generale, non consulenza finanziaria. Canale non affiliato all'Istat.
 
 #inflazione #economia #finanza #bollette #istat
 ```
@@ -28,7 +28,6 @@ Sei nel mercato libero o in quello tutelato? Scrivilo qui sotto 👇
 ## Impostazioni
 - Pubblica come Reel (verticale, 58,9 s).
 - Copertina: fotogramma a circa 7,5 s (torre rossa con "+??%" e "un terzo in piu").
-- Se Facebook propone "Info IA" / etichetta contenuto generato con IA: attivala (voce narrante digitale).
 - Se compare "Genera sottotitoli": attivalo (il parlato diventa testo).
 - Nessuna musica della libreria Meta (la musica del video e originale). Nessuna promozione a pagamento.
 
