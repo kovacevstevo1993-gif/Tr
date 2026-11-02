@@ -16,9 +16,9 @@ const wL=new THREE.Mesh(new THREE.BoxGeometry(.6,.6,.6),m.chrome);wL.castShadow=
 const big=new THREE.Mesh(new THREE.BoxGeometry(1.15,1.15,1.15),m.red);big.castShadow=true;sc.userData.R.add(big);big.position.y=-1.0;
 const chair=S.chair(m);scene.add(chair);
 const mini=S.scale(m);scene.add(mini);const bell=S.bell(m);scene.add(bell);
-const tObj=st.tag(['OBIETTIVO BCE','2%'],{border:'#19A35B',sw:1.9,font:'bold 54px PM',fill:'#F3F0E8'});
-const tIta=st.tag(['ITALIA','5,4%'],{border:'#E32119',sw:1.9,font:'bold 54px PM',fill:'#F3F0E8'});
-const tEre=st.tag(['LA PARTITA','PASSA A CHI ARRIVA'],{border:'#FFE14A',sw:3.4,font:'bold 50px PM'});
+const tObj=st.tag(['OBIETTIVO BCE','2%'],{border:'#19A35B',sw:1.75,font:'bold 54px PM',fill:'#F3F0E8'});
+const tIta=st.tag(['ITALIA','5,4%'],{border:'#E32119',sw:1.75,font:'bold 54px PM',fill:'#F3F0E8'});
+const tEre=st.tag(['LA PARTITA','PASSA A CHI ARRIVA'],{border:'#FFE14A',sw:3.0,font:'bold 50px PM'});
 const tSegui=st.tag(['RESTA QUI'],{border:'#FFE14A',sw:3.0,font:'bold 78px PM',h:190,fill:'#FFE14A'});
 function draw(t){
   const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
@@ -27,12 +27,12 @@ function draw(t){
   const wp=prog(t,3.0,3.6);wL.visible=wp>0;wL.scale.setScalar(Math.max(.001,eb(wp)));
   const bp=prog(t,5.0,5.7);big.visible=bp>0;big.scale.setScalar(Math.max(.001,eb(bp)));
   const tilt=-eo(prog(t,5.6,6.9))*.34+Math.sin(t*2.2)*.012*damp*(t>6.9?1:0)+(t<5?Math.sin(t*1.6)*.02:0);sc.userData.tilt(tilt);
-  st.setSprite(tObj,-1.15,5.0,1.0,eo(prog(t,3.2,3.6))*sout);st.setSprite(tIta,1.15,5.0,1.0,eo(prog(t,5.1,5.5))*sout);
+  st.setSprite(tObj,-1.02,5.0,1.0,eo(prog(t,3.2,3.6))*sout);st.setSprite(tIta,1.02,5.0,1.0,eo(prog(t,5.1,5.5))*sout);
   // poltrona: eredita la bilancia (8.4 - 11.9)
   const cp=eb(prog(t,8.1,8.7));const cin=1-eo(prog(t,11.7,12.1));chair.visible=cp>.001&&cin>.02;chair.position.set(0,0,0);chair.scale.setScalar(Math.max(.001,.95*cp*cin));chair.rotation.y=-.4+Math.sin(t*.8)*.1*damp;
   const mp=eb(prog(t,10.2,10.9));mini.visible=mp>.001&&cin>.02;mini.scale.setScalar(Math.max(.001,.2*mp));mini.position.set(0,1.45,.1);mini.rotation.y=.5;mini.userData.tilt(-.34*mp);
   const ms=(t>8.2&&t<11.9)?1:0;
-  st.setSprite(tEre,0,4.95,1.2,eo(prog(t,10.2,10.6))*(1-eo(prog(t,11.6,12.0))));
+  st.setSprite(tEre,0,4.6,1.2,eo(prog(t,10.2,10.6))*(1-eo(prog(t,11.0,11.4))));
   // campanella: suona (12.0 - 15.3)
   const bp2=eb(prog(t,12.05,12.6));bell.visible=bp2>.001;bell.position.set(0,2.0,0);bell.scale.setScalar(Math.max(.001,1.5*bp2));
   const ring=Math.sin(t*14)*.35*Math.exp(-((t-12.9)%1.2)*1.6)*(t>12.6?1:0)*damp;bell.rotation.z=ring;bell.userData.tong.position.x=-ring*.8;

@@ -17,35 +17,35 @@ const bar=new THREE.Mesh(new THREE.BoxGeometry(.8,1,.8),baseMat);bar.castShadow=
 const gap=new THREE.Mesh(new THREE.BoxGeometry(.86,1,.86),m.red);gap.castShadow=true;grp.add(gap);
 const pFeb=new THREE.Mesh(new THREE.SphereGeometry(.24,20,20),m.paper);grp.add(pFeb);
 const pTop=new THREE.Mesh(new THREE.SphereGeometry(.28,20,20),m.gold);grp.add(pTop);
-const flag=new THREE.Group();flag.scale.setScalar(.8);const pole=new THREE.Mesh(new THREE.CylinderGeometry(.03,.03,1.1,8),m.chrome);pole.position.y=.55;flag.add(pole);const cloth=new THREE.Mesh(new THREE.BoxGeometry(.7,.42,.05),m.gold);cloth.position.set(.37,.9,0);flag.add(cloth);grp.add(flag);
+const flag=new THREE.Group();flag.scale.setScalar(.6);const pole=new THREE.Mesh(new THREE.CylinderGeometry(.03,.03,1.1,8),m.chrome);pole.position.y=.55;flag.add(pole);const cloth=new THREE.Mesh(new THREE.BoxGeometry(.7,.42,.05),m.gold);cloth.position.set(.37,.9,0);flag.add(cloth);grp.add(flag);
 const ticks=[];for(let i=0;i<=8;i++){const t=new THREE.Mesh(new THREE.BoxGeometry(.35,.03,.03),m.chrome);t.position.set(-.55,i*.62,0);grp.add(t);ticks.push(t);}
 const TOP=5.0,FEB=TOP-.47;
 const doc=S.sheet((g,W,H)=>{g.fillStyle='#F8F6EF';g.fillRect(0,0,W,H);g.fillStyle='#16181D';g.textAlign='center';g.textBaseline='middle';g.font='bold 40px PM';g.fillText('COMUNICATO UFFICIALE',W/2,70);g.fillStyle='#8A8F98';g.font='bold 30px PM';g.fillText('BANCA CENTRALE EUROPEA',W/2,118);
   g.fillStyle='#d4cfc1';for(let i=0;i<4;i++)g.fillRect(60,170+i*40,W-120-(i%2)*100,14);g.fillStyle='#16181D';g.textAlign='left';g.font='bold 46px PM';g.fillText('MOTIVO:',60,395);g.fillStyle='#d4cfc1';for(let i=0;i<4;i++)g.fillRect(60,480+i*40,W-120-(i%3)*80,14);g.strokeStyle='#d4cfc1';g.lineWidth=8;g.strokeRect(4,4,W-8,H-8);},560,720,2.5,null);scene.add(doc);
 const blk=new THREE.Mesh(new THREE.PlaneGeometry(1.5,.34),new THREE.MeshBasicMaterial({color:0x0a0a0a}));scene.add(blk);
-const tTop=st.tag(['OTTOBRE 2027'],{border:'#FFE14A',sw:2.9,font:'bold 64px PM',h:170,fill:'#FFE14A'});
+const tTop=st.tag(['OTTOBRE 2027'],{border:'#FFE14A',sw:2.7,font:'bold 64px PM',h:170,fill:'#FFE14A'});
 const tFeb=st.tag(['7 FEBBRAIO 2027'],{border:'#F3F0E8',sw:3.0,font:'bold 56px PM',h:160});
-const tGap=st.tag(['QUASI 9 MESI'],{border:'#E32119',sw:3.0,font:'bold 62px PM',h:170,fill:'#F3F0E8'});
-const stamp=st.tag(['NON LO INVENTIAMO'],{border:'#E32119',sw:3.3,font:'bold 56px PM',h:170,fill:'#E32119',bg:'rgba(243,240,232,.96)'});
+const tGap=st.tag(['QUASI 9 MESI'],{border:'#E32119',sw:2.7,font:'bold 62px PM',h:170,fill:'#F3F0E8'});
+const stamp=st.tag(['NON LO INVENTIAMO'],{border:'#E32119',sw:2.5,font:'bold 56px PM',h:170,fill:'#E32119',bg:'rgba(243,240,232,.96)'});
 function draw(t){
   const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
   const gout=1-eo(prog(t,6.25,6.65));grp.visible=gout>.02;grp.scale.setScalar(Math.max(.001,gout));
   // barra del mandato cresce fino a ottobre 2027
   const gp=eio(prog(t,.3,3.2));const h=Math.max(.001,TOP*gp);bar.scale.y=h;bar.position.y=h/2;
   ticks.forEach((k,i)=>{k.visible=i*.62<=h+.01;});
-  pTop.visible=gp>.97;pTop.position.set(0,TOP,0);pTop.scale.setScalar(eb(prog(t,3.0,3.5)));flag.visible=gp>.97;flag.position.set(0,TOP,0);flag.scale.setScalar(Math.max(.001,.8*eb(prog(t,3.1,3.6))));flag.rotation.y=Math.sin(t*1.4)*.2*damp;
-  st.setSprite(tTop,0,7.0,.8,eo(prog(t,3.0,3.4))*(1-eo(prog(t,4.5,4.9))));
+  pTop.visible=gp>.97;pTop.position.set(0,TOP,0);pTop.scale.setScalar(eb(prog(t,3.0,3.5)));flag.visible=gp>.97;flag.position.set(0,TOP,0);flag.scale.setScalar(Math.max(.001,.6*eb(prog(t,3.1,3.6))));flag.rotation.y=Math.sin(t*1.4)*.2*damp;
+  st.setSprite(tTop,0,6.2,.8,eo(prog(t,3.0,3.4))*(1-eo(prog(t,4.5,4.9))));
   // 7 febbraio e tratto rosso
   const fp=prog(t,4.3,4.9);pFeb.visible=fp>0&&gout>.02;pFeb.position.set(0,FEB,.0);pFeb.scale.setScalar(Math.max(.001,eb(fp)));
   const rp=eio(prog(t,5.0,5.9));gap.visible=rp>0;gap.scale.y=Math.max(.001,(TOP-FEB)*rp);gap.position.y=TOP-(TOP-FEB)*rp/2;gap.material.emissiveIntensity=.9+.6*Math.sin(t*6)*damp;
   st.setSprite(tFeb,0,3.95,.9,eo(prog(t,4.5,4.9))*gout);
-  st.setSprite(tGap,0,7.0,.9,eo(prog(t,5.1,5.5))*gout);
+  st.setSprite(tGap,0,6.2,.9,eo(prog(t,5.1,5.5))*gout);
   // comunicato con motivo oscurato
   const dp=eb(prog(t,6.85,7.5));doc.visible=dp>.001;doc.position.set(0,3.1+Math.sin(t*1.5)*.05*damp,.3);doc.scale.setScalar(Math.max(.001,dp));doc.rotation.z=-.03+Math.sin(t*1.1)*.015*damp;
   const bp=eio(prog(t,8.0,8.5));blk.visible=bp>0;blk.scale.set(Math.max(.001,bp),1,1);blk.position.set(-.35+.75*(bp-1)*.0+(-.0),2.38+.0,.34);blk.position.x=.05+(-.75+.75*bp)*0.0+ (-0.75+ .75*bp)*1.0 +.0 - 0;
   blk.position.set(-.1-.75*(1-bp)+.75*0,2.55+ -.0,.35);blk.position.x=.28-.75*(1-bp)*1;
   // timbro
-  const sp=prog(t,10.0,10.35),se=sp>0?eb(sp):0;st.setSprite(stamp,0,3.1,1.0,clamp(sp*3));stamp.scale.multiplyScalar(Math.max(.001,1+(1-se)*1.2));stamp.material.rotation=-.2;
+  const sp=prog(t,10.0,10.35),se=sp>0?eb(sp):0;st.setSprite(stamp,0,3.1,1.0,clamp(sp*3));stamp.scale.multiplyScalar(Math.max(.001,1+(1-se)*.2));stamp.material.rotation=-.2;
   st.render(t,{shakes:[10.0],flashes:[10.0]});
 }
 boot(st,draw);
