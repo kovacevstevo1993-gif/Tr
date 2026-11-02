@@ -21,12 +21,13 @@ const lib=S.libretto();scene.add(lib);const mag=S.magnifier(m);scene.add(mag);
 const cQ=st.counter({sw:3.0,w:720,h:300,font:'150px AB',color:'#ff6b4a',border:'#ff6b4a',bg:'rgba(255,255,255,.97)'});cQ.userData.set('? kW');
 const fin=S.sheet((g,W,H)=>{g.fillStyle='#fffaf0';g.fillRect(0,0,W,H);g.fillStyle='#17324d';g.fillRect(0,0,W,110);g.fillStyle='#ffc233';g.font='bold 54px PM';g.textAlign='center';g.textBaseline='middle';g.fillText('TESTO FINALE',W/2,58);g.fillStyle='#c9d3dc';for(let i=0;i<7;i++)g.fillRect(60,170+i*48,W-120-(i%3)*90,18);g.strokeStyle='#17324d';g.lineWidth=10;g.strokeRect(5,5,W-10,H-10);},520,640,2.0,null);scene.add(fin);
 const dst=S.dust(160,0xffc233,.08);scene.add(dst);
+const tRic=pill(['RICORDA'],{border:'#ffc233',sw:2.6,font:'bold 70px PM',h:170});
 const tVota=pill(['IL PARLAMENTO VOTA'],{border:'#17324d',sw:3.3,font:'bold 46px PM',h:150}),tCamb=pill(['TUTTO PUÒ CAMBIARE'],{border:'#ff6b4a',sw:3.4,font:'bold 46px PM',h:150,fill:'#ff6b4a'}),tCond=pill(['CONDIZIONI PRECISE'],{border:'#ffc233',sw:3.4,font:'bold 46px PM',h:150});
 const tLib=pill(['GUARDA IL LIBRETTO'],{border:'#2b5aa8',sw:3.4,font:'bold 46px PM',h:150}),tCom=pill(['SCRIVILO NEI COMMENTI'],{border:'#1f9d8a',sw:3.4,font:'bold 40px PM',h:150}),tKw=pill(['QUANTI kW HA LA TUA AUTO?'],{border:'#ff6b4a',sw:3.5,font:'bold 36px PM',h:150}),tResta=pill(['RESTA QUI'],{border:'#17324d',sw:2.9,font:'bold 80px PM',h:180,fill:'#17324d',bg:'rgba(255,194,51,.98)'}),tAgg=pill(['TI AGGIORNO SUL','TESTO FINALE'],{border:'#17324d',sw:3.2,font:'bold 46px PM'});
 function draw(t){
   const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
   // parlamento che traballa = tutto puo cambiare
-  const kp=show(parl,.8,t,1.9,7.7);const wob=eo(prog(t,3.64,4.2))*(1-eo(prog(t,6.4,7.0)));parl.rotation.z=Math.sin(t*9)*.05*wob;parl.rotation.y=Math.sin(t*.9)*.1;parl.position.y=Math.abs(Math.sin(t*9))*.12*wob;
+  const kp=show(parl,.8,t,0.1,7.7);st.setSprite(tRic,0,5.0,0,fade(t,0.1,1.4));const wob=eo(prog(t,3.64,4.2))*(1-eo(prog(t,6.4,7.0)));parl.rotation.z=Math.sin(t*9)*.05*wob;parl.rotation.y=Math.sin(t*.9)*.1;parl.position.y=Math.abs(Math.sin(t*9))*.12*wob;
   st.setSprite(tVota,0,5.0,0,fade(t,1.8,3.6));st.setSprite(tCamb,0,5.0,0,fade(t,3.7,5.0));st.setSprite(tCond,0,5.0,0,fade(t,5.1,7.6));
   dst.userData.update(3.64,t,0,2.2,0,2.4);
   // libretto

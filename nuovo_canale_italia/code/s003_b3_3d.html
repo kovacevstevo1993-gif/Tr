@@ -26,12 +26,15 @@ const pig=S.piggy(m);scene.add(pig);const pc=[];for(let i=0;i<18;i++){const c=S.
 // OVER 75: borsa medica + voucher
 const med=S.medbag(m);scene.add(med);
 const vou=S.sheet((g,W,H)=>{g.fillStyle='#fff7d6';g.fillRect(0,0,W,H);g.fillStyle='#ff6b4a';g.fillRect(0,0,W,86);g.fillStyle='#fff';g.font='bold 52px PM';g.textAlign='center';g.textBaseline='middle';g.fillText('VOUCHER',W/2,46);g.fillStyle='#17324d';g.font='400 190px AB';g.fillText('300',W/2,H*.62);g.font='bold 54px PM';g.fillText('EURO',W/2,H*.9);g.setLineDash([14,12]);g.strokeStyle='#17324d';g.lineWidth=6;g.strokeRect(10,10,W-20,H-20);},560,540,1.9,null);scene.add(vou);
+const car0=S.car(m,m.teal);scene.add(car0);const tNon=pill(['NON C\'È SOLO IL BOLLO'],{border:'#ff6b4a',sw:3.4,font:'bold 40px PM',h:150});
 const tIrp=pill(['IRPEF'],{border:'#ff6b4a',sw:2.1,font:'bold 80px PM',h:170,fill:'#ff6b4a'}),tScag=pill(['SCAGLIONE AL 33%'],{border:'#ff6b4a',sw:3.2,font:'bold 50px PM',h:150}),t55=pill(['FINO A 55.000 €'],{border:'#ffc233',sw:3.2,font:'bold 52px PM',h:150});
 const tRis=pill(['RISPARMIO MASSIMO'],{border:'#25b36a',sw:3.3,font:'bold 46px PM',h:150});const c500=st.counter({sw:2.8,w:720,h:260,font:'110px AB',color:'#25b36a',border:'#25b36a',bg:'rgba(255,255,255,.97)'});
 const tNati=pill(['DAL 2027'],{border:'#17324d',sw:2.4,font:'bold 64px PM',h:160}),tBimbo=pill(['OGNI NUOVO NATO'],{border:'#ff6b4a',sw:3.1,font:'bold 50px PM',h:150}),c100=st.counter({sw:3.0,w:720,h:260,font:'70px AB',color:'#ff6b4a',border:'#ff6b4a',bg:'rgba(255,255,255,.97)'}),tAnni=pill(['FINO A 18 ANNI'],{border:'#17324d',sw:3.0,font:'bold 52px PM',h:150});
 const tOver=pill(['OVER 75'],{border:'#2b5aa8',sw:2.4,font:'bold 70px PM',h:160}),tPens=pill(['PENSIONE SOTTO 28.000 €'],{border:'#17324d',sw:3.4,font:'bold 38px PM',h:150}),tSan=pill(['SPESE SANITARIE'],{border:'#25b36a',sw:3.1,font:'bold 50px PM',h:150});
 function draw(t){
   const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  // apertura: auto + 'non c'e solo il bollo' (0 - 2.5)
+  const k0=show(car0,1,t,0.05,2.3);car0.position.set(0,0,.4);car0.rotation.y=-.95+Math.sin(t*.7)*.05*damp+t*.12;st.setSprite(tNon,0,5.0,0,fade(t,0.1,2.2));
   // Irpef 2.58 - 12.5
   const kb=show(base,1,t,2.7,12.3);base.position.set(0,2.2+Math.sin(t*1.5)*.03*damp,0);
   const zp=eio(prog(t,5.0,7.3));zone.visible=kb>.01&&zp>.002;zone.scale.set(Math.max(.001,3.6*.9*zp*(kb>.5?1:kb*2)),1,1);zone.position.set(-1.8+3.6*.9*zp/2,2.2,0);
