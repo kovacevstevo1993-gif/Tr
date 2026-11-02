@@ -720,3 +720,7 @@
 
 ## ERRORE DEL 01/11/2026 (tre descrizioni rifatte senza ordine)
 - Alla domanda "se gli spoileri tutto nella descrizione chi lo guarda il video?" ho risposto rifacendo e mandando 3 descrizioni (video 3, video 2, short 5) e proponendo altro. Utente: "chi cazzo ti ha detto di mandarmeli tutti". Una domanda/critica = solo risposta breve (N.13). Si rifa' SOLO cio' che l'utente ordina, e solo il pezzo di cui si parla (qui il video 3).
+
+## ERRORE DEL 02/11/2026 (pacchetto Facebook short 6) - LENTO E SENZA RIGA DI STATO
+- Utente: "cosa stai facendo da 4 minuti? se hai gia' tutto il progetto di fb". Tempo perso: ID dello short non scritto nei file (curl sulla lista /shorts + oembed su 13 ID), copertina rifatta 2 volte (testo che toccava il riquadro, etichetta inutile). Nessuna riga di stato all'utente.
+- REGOLA: negli stati Facebook scrivere SEMPRE l'ID di ogni video/short appena lo si trova (qui: short 6 = pSVNnae7ORU, video 4 = T1JdRgHYmUg); misurare i testi PRIMA del primo render; se un lavoro supera 1 minuto, una riga di stato subito.
