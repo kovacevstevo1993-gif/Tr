@@ -895,3 +895,11 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 - Look nuovo (ordine utente 01/11: "un po' piu diverse, elementi un po' diversi"): titoletto a striscia notizie con tre pallini (niente numeri), schede con nastro adesivo, didascalia a fumetto con altoparlante, sfondo con fogli di documento. Composizioni: palazzo + tre schede coperte + 4 pensionati, buono + comunicato + foglio vuoto, cassaforte/uscita + righello eta' + bandiera + calcolatrice, tre schede + commento + video correlato.
 - Da fare solo su ordine: miniatura, pacchetto (titolo, descrizione, tag, commento, impostazioni).
 - (01/11) Short 16: pacchetto.txt (qa_testi OK: titolo vidIQ 69 "PENSIONI 2027: le 3 novita' della MANOVRA, chi ci guadagna DAVVERO? ⚠️", 24 tag = 488/500, 9 hashtag; vidIQ 15 crediti, saldo 48) e miniatura/miniatura-short16.png (gen16.py; layout NUOVO: facciata di palazzo con frontone e tre porte chiuse BUONO/FONDO/IRPEF con "?" dorato, titolo PENSIONI MANOVRA 2027, striscia bianca "LE 3 NOVITA' DEL GOVERNO", domanda "CHI CI GUADAGNA DAVVERO?"; nessuna cifra svelata; testi misurati e guardati).
+
+## STATO 02/11/2026 - PER LA CHAT NUOVA (Conti in Pensione)
+- FATTO: short 16 (teaser video 14, manovra 2027) COMPLETO in 35-short-16-teaser-video-lungo-14: copione v8 (registrato dall'utente), DURATE.txt (425, 345, 405, 375), clip CIP-S16-blocco01..04 consegnate, pacchetto.txt (titolo vidIQ 69), miniatura-short16.png. Il video 14 e' online e programmato dall'utente. Pubblicazione dello short: a cura dell'utente.
+- APERTO, solo su ordine: nuova tredicesima (l'utente la vuole rifare "diversa": per i dati nuovi ufficiali serve il comunicato Inps di dicembre, atteso a fine novembre; la ricerca del 01/11 non ha trovato niente di nuovo e ufficiale); aumento gennaio con la percentuale del decreto Mef (19-28/11); risposte ai commenti; miniature/pacchetti futuri.
+- vidIQ: saldo 48 crediti (rinnovo 11/11); channelId UC5Ua8A9mgOEN_5de2ACJS9A.
+- Strumenti: per i render serve `pip install playwright` (nella sessione del 01/11 il modulo Python non c'era); chromium in /opt/pw-browsers/chromium-1243.
+- Il lavoro di questa sessione e' sul branch claude/busy-mccarthy-2vroxr (unione su main: l'utente la ordina).
+- COME RIPARTIRE: leggere CLAUDE.md, conti_in_pensione/REGOLE-FISSE.md (per intero) e CHECKLIST-REGOLE.md; poi aspettare l'ordine.
