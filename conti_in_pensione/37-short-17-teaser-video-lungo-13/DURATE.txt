@@ -1,0 +1,17 @@
+# Short 17 (reversibilita') - durate dagli screenshot CapCut (02/11/2026, 30 fps), lettura N.29 con DOPPIA LETTURA
+# Riga bianca a x=359,5; marchi 1 fotogramma ciascuno (66,5 px). A = ultimo marchio prima della riga + 1; B = distanza in pixel della riga dal marchio, per eccesso. Coincidono su tutti e 6.
+# blocco | fine (s+f) | ultimo marchio (x) | riga-marchio (px) | A=B | fotogrammi totali | durata blocco | caratteri | c/s
+# 1: punto dopo 8f (x305) 55px -> 10f | 2: etichetta 00:27 (x314) 46px -> 1f | 3: etichetta 10f (x340) 20px -> 11f | 4: etichetta 20f (x305) 55px -> 21f | 5: etichetta 24f (x300) 60px -> 25f | 6: punto dopo 14f (x307) 53px -> 16f
+1 | 11s+10f | 340 | 340 | 182 | 16.1
+2 | 27s+1f | 811 | 471 | 246 | 15.7
+3 | 40s+11f | 1211 | 400 | 202 | 15.1
+4 | 48s+21f | 1461 | 250 | 158 | 19.0
+5 | 59s+25f | 1795 | 334 | 163 | 14.6
+6 | 75s+16f | 2266 | 471 | 243 | 15.5
+# TOTALE 2266 fotogrammi = 75.53 s. Coerenza voce 15-19 caratteri/secondo (blocco 4 = 19,0: al limite alto ma dentro 14-19). Testo registrato = copione v3.
+340
+471
+400
+250
+334
+471
