@@ -50,3 +50,9 @@ Tutti i video sul canale YouTube 👉 canale / Questo short su YouTube 👉 http
 - Descrizione short 1 e short 2 consegnate PRIMA delle regole 3-4: short 2 spoilera "67 anni e 1 mese", short 1 va bene ma controllare; commento con motivo.
 - Pacchetti Facebook per gli altri video lunghi e short (lista ID sopra), sempre con le regole 1-8.
 - Pagina Facebook: categoria "Creatore di contenuti digitali", biografia, foto profilo e copertina in 01-identita-canale/facebook/.
+
+## COME LEGGERE LA PAGINA FACEBOOK (03/11/2026) - FUNZIONA
+- Pagina: "Conti In Pensione A Pillole" https://www.facebook.com/people/Conti-In-Pensione-A-Pillole/61572856361386/ (share link: https://www.facebook.com/share/1JMmMPf8Mx/). 8515 follower.
+- curl e WebFetch NON funzionano (login). FUNZIONA playwright chromium (node, NODE_PATH=$(npm root -g)) con locale it-IT e user agent desktop: aprire `<pagina>?sk=reels_tab`, scorrere, raccogliere i link a[href*="/reel/"], aprire ogni reel e leggere il testo (descrizione). Script: scratchpad fb3.js (copia in conti_in_pensione/facebook-lettura/fb3.js).
+- PUBBLICATI su Facebook al 03/11 (8 reel): short invalidita' (2/11), video 3 ("il 3% NON e' il 3%"), short 5 (3%), video 2 (descrizione vecchia con "185 euro": da rifare), short 2 scadenze ("sale l'eta'! Tu ci rientri?", da rifare), short 1 cedolino, video 1 ("Pensione a 64 anni nel 2027: esiste davvero...", descrizione vecchia "Il video completo": da rifare), "Due colleghi... 64 e 67 anni" (probabilmente short 4, teaser video 2).
+- MANCANO (ordine YouTube): short 3 "Non andare in pensione prima di aver visto questo", video 4, video 5, short tredicesima detassata, video 6, short novembre -480, video 7, short rivalutazione tagliata, short cedolino dove spariscono, video 8, short estero, video 9, short dicembre, video 10, short casalinghe, video 11, short aumento 1.000 lordi, video 12, short rientri nel taglio, video 13, video 14, short manovra, short reversibilita'.
