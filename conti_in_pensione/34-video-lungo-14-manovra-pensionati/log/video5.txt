@@ -1,0 +1,2 @@
+QA OK: 459 fotogrammi controllati, nessun problema
+CONTROLLI OK: tempi, impaginazione e fotogrammi

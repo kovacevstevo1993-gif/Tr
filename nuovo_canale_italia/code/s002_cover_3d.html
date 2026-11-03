@@ -1,0 +1,18 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0b0c0f;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Copertina Facebook short 002: poltrona vuota + punto interrogativo (testi aggiunti dopo con PIL) =====
+import {THREE,createStage,boot} from '/code/lib/stage.js';
+import * as S from '/code/lib/s002.js';
+const DUR=4;
+const KF=[[0,[0,2.1,14.0],[0,1.95,0]],[DUR,[0,2.1,14.0],[0,1.95,0]]];
+const st=await createStage({dur:DUR,centers:[0],kf:KF});
+const m=S.mats();
+const chair=S.chair(m);chair.rotation.y=-.55;chair.position.set(0,0,0);st.scene.add(chair);
+const q=S.question(m);q.scale.setScalar(.62);q.position.set(0,2.45,1.0);q.rotation.y=-.1;st.scene.add(q);
+function draw(t){st.render(1.0,{shakes:[],flashes:[]});}
+boot(st,draw);
+</script></body></html>

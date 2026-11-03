@@ -1,0 +1,9 @@
+# Controllo di fidelizzazione - video lungo 14 (manovra e pensionati, regola riga 0c della checklist)
+PRIMO_MINUTO_RIVELA: nei blocchi 1-4 si scopre che le misure sono tre (buono sanitario per gli anziani, fondo per l'uscita, meno Irpef), che e' un disegno di legge, che una vale fino a cinquecento euro l'anno ma non per ogni pensionato, la cifra del fondo (ottocentocinquanta milioni) e la soglia Irpef (cinquantacinquemila); NON si dice per chi vale l'Irpef, da che eta' si esce, ne' alcun dettaglio del buono (importo, eta', soglia, platea, costo): tenuti oltre il blocco 5.
+RISPOSTA_TENUTA: blocco 12 (chi guadagna davvero con l'Irpef: zero a cinquantamila euro, duecento a cinquantaduemila, cinquecento da cinquantacinquemila)
+CERCHIO_1: aperto in blocco 1 (a chi spetta il buono), chiuso in blocco 8 (le cinque cose che non sappiamo del buono; dettagli nel blocco 6)
+CERCHIO_2: aperto in blocco 1 (quanti ci guadagnano dall'Irpef, tieni a mente la parola massimo nel blocco 6), chiuso in blocco 12
+CERCHIO_3: aperto in blocco 1 (da che eta' si potra' uscire), chiuso in blocco 9-10 (non e' scritto; vale la regola gia' fissata per il duemilaventisette)
+CIFRA_GANCIO: cinquecento euro all'anno (beneficio massimo dell'Irpef, detto dalla presidente del Consiglio): la cifra piu' grande vera per persona e per anno
+LETTI: analisi-fidelizzazione-07-10.md; trascrizioni: GkAwl5_0ZwY.txt (Mr LUL), Hl97fO6LaLU.txt (Radio UCI) - letti il 30/10 PRIMA di scrivere il copione (cartella 12-video-lungo-3-rivalutazione-2027/trascrizioni-concorrenti)
+IMPRONTA_PRIMI4: 141f10cdef

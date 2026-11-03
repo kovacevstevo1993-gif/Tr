@@ -1,0 +1,9 @@
+# Controllo di fidelizzazione - video lungo 15 (Carta Dedicata a te e aiuti per i pensionati, regola riga 0c della checklist)
+PRIMO_MINUTO_RIVELA: nei blocchi 1-4 si scopre che la carta da cinquecento euro (piu' altri cinquecento ad aprile) e' un contributo per nucleo familiare su carta Poste, per alimentari, senza domanda; che il decreto non ha una regola per i pensionati; che c'e' una regola in piu' per le famiglie piccole e una carta che puo' escludere. NON si dice chi la riceve (requisiti, Isee, esclusioni), la risposta per i pensionati che vivono soli o in coppia, il nome ne' i numeri della Carta acquisti, gli aiuti per eta' ne' il conto finale: tenuti oltre il blocco 4.
+RISPOSTA_TENUTA: blocco 10 (articolo sei: i Comuni danno le carte che avanzano anche a nuclei di una persona; una famiglia piccola puo' averla ma dipende dal Comune)
+CERCHIO_1: aperto in blocco 1 (la regola in piu' per le famiglie piccole), chiuso in blocco 10
+CERCHIO_2: aperto in blocco 2 (una carta che forse hai gia' e che puo' escluderti: confronto in euro), chiuso in blocco 13 (Carta acquisti: quattrocentoottanta euro l'anno contro cinquecento, differenza venti euro)
+CERCHIO_3: aperto in blocco 1 (quanto vale in un anno quello che hai anche senza la carta), chiuso in blocco 19 (cinquecentosettanta euro: novanta di canone piu' quattrocentoottanta di Carta acquisti)
+CIFRA_GANCIO: cinquecento euro dal quattro novembre (piu' altri cinquecento ad aprile): la cifra piu' grande vera della misura, per nucleo; il conto finale degli aiuti per gli anziani (cinquecentosettanta euro l'anno) e' tenuto per la fine
+LETTI: analisi-fidelizzazione-07-10.md; trascrizioni: GkAwl5_0ZwY.txt (Mr LUL), J0ytVqeIUaA.txt (Ciao Elsa) - letti il 02/11 PRIMA di scrivere il copione (cartella 12-video-lungo-3-rivalutazione-2027/trascrizioni-concorrenti)
+IMPRONTA_PRIMI4: 6e4023f87d

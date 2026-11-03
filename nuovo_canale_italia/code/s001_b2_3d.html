@@ -1,0 +1,70 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0b0c0f;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Short 001 - blocco 2 (3D): documento ISTAT e termometro dell'inflazione =====
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd,RED,YEL,PAPER} from '/code/lib/stage.js';
+const DUR=13.6;
+const KF=[[0,[0.3,3.2,17.5],[0.3,2.4,0]],[2.8,[1.6,5.0,16.5],[2.0,4.6,0]],[4.4,[2.4,5.3,16.2],[2.6,5.0,0]],[8,[2.5,5.3,16.2],[2.7,5.0,0]],[12.3,[2.5,5.2,15.6],[2.7,5.0,0]],[DUR,[2.5,5.2,15.6],[2.7,5.0,0]]];
+const st=await createStage({dur:DUR,centers:[0],kf:KF});
+const {scene,mats}=st;
+const y0=1.8;
+// ---- termometro ----
+const th=new THREE.Group();th.position.x=1.6;scene.add(th);const liqMat=new THREE.MeshStandardMaterial({color:0xA8100B,emissive:0xC4160F,emissiveIntensity:.45,roughness:.5});
+const stand=new THREE.Mesh(new THREE.CylinderGeometry(1.25,1.4,.3,56),mats.chrome);stand.position.y=.15;stand.castShadow=true;th.add(stand);
+const bulbGlass=new THREE.Mesh(new THREE.SphereGeometry(.88,40,28),mats.glass);bulbGlass.position.y=1.05;th.add(bulbGlass);
+const bulb=new THREE.Mesh(new THREE.SphereGeometry(.72,40,28),liqMat);bulb.position.y=1.05;th.add(bulb);
+const tubeGlass=new THREE.Mesh(new THREE.CylinderGeometry(.3,.3,7.2,40,1,true),mats.glass);tubeGlass.position.y=4.8;th.add(tubeGlass);
+const cap=new THREE.Mesh(new THREE.SphereGeometry(.3,24,16,0,Math.PI*2,0,Math.PI/2),mats.glass);cap.position.y=8.4;th.add(cap);
+const liq=new THREE.Mesh(new THREE.CylinderGeometry(.19,.19,1,32),liqMat);th.add(liq);
+function setLevel(L){const h=.8+L;liq.scale.y=Math.max(h,.01);liq.position.y=1.0+h/2;}
+// righello (piano con numeri)
+(function(){const c=document.createElement('canvas');c.width=192;c.height=1152;const g=c.getContext('2d');g.strokeStyle='#F3F0E8';g.fillStyle='#F3F0E8';g.font='bold 44px PM';g.textAlign='right';g.textBaseline='middle';
+  for(let L=0;L<=6;L++){const y=(8.4-(y0+L))*160;g.lineWidth=7;g.beginPath();g.moveTo(150,y);g.lineTo(190,y);g.stroke();g.fillText(L+'%',130,y);
+    if(L<6){const y2=(8.4-(y0+L+.5))*160;g.lineWidth=4;g.beginPath();g.moveTo(170,y2);g.lineTo(190,y2);g.stroke();}}
+  const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=4;
+  const pl=new THREE.Mesh(new THREE.PlaneGeometry(1.2,7.2),new THREE.MeshBasicMaterial({map:t,transparent:true}));pl.position.set(-.92,4.8,.05);th.add(pl);})();
+function ringAt(L,color){const m=new THREE.Mesh(new THREE.TorusGeometry(.36,.04,12,40),new THREE.MeshStandardMaterial({color,emissive:color,emissiveIntensity:1.2}));m.rotation.x=Math.PI/2;m.position.y=y0+L;m.visible=false;th.add(m);return m;}
+const ring42=ringAt(4.2,YEL),ring54=ringAt(5.4,YEL);
+// ---- documento ISTAT ----
+const doc=new THREE.Group();
+(function(){const c=document.createElement('canvas');c.width=512;c.height=672;const g=c.getContext('2d');g.fillStyle='#F3F0E8';g.fillRect(0,0,512,672);
+  g.fillStyle='#16181D';g.fillRect(0,0,512,120);g.fillStyle='#F3F0E8';g.font='80px AB';g.textAlign='left';g.textBaseline='middle';g.fillText('ISTAT',34,64);
+  g.fillStyle='#16181D';g.font='bold 40px PM';g.fillText('PREZZI AL CONSUMO',34,170);g.fillStyle='#E32119';g.font='bold 44px PM';g.fillText('OTTOBRE 2026',34,226);
+  g.fillStyle='#bdb8a8';for(let i=0;i<6;i++){g.fillRect(34,280+i*34,i%3==2?250:444,12);}
+  g.strokeStyle='#16181D';g.lineWidth=7;g.beginPath();g.moveTo(34,640);g.lineTo(34,480);g.lineTo(478,480);g.stroke();
+  g.strokeStyle='#E32119';g.lineWidth=9;g.beginPath();g.moveTo(44,610);g.lineTo(130,590);g.lineTo(220,560);g.lineTo(310,545);g.lineTo(400,510);g.lineTo(470,492);g.stroke();
+  const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=4;
+  const front=new THREE.Mesh(new THREE.BoxGeometry(2.6,3.4,.07),[mats.paper,mats.paper,mats.paper,mats.paper,new THREE.MeshStandardMaterial({map:t,roughness:.7}),mats.paper]);front.castShadow=true;doc.add(front);})();
+doc.visible=false;scene.add(doc);
+// ---- scritte ----
+const num=st.counter({sw:2.1});
+const tagSet=st.tag(['SETTEMBRE','4,2%'],{border:'#FFE14A',sw:2.1});
+const tagAgo=st.tag(['AGOSTO 2023','5,4%'],{border:'#FFE14A',sw:2.1});
+const connectors=[0,1].map(()=>{const m=new THREE.Mesh(new THREE.BoxGeometry(1,.035,.035),new THREE.MeshStandardMaterial({color:YEL,emissive:YEL,emissiveIntensity:1}));m.visible=false;th.add(m);return m;});
+function level(t){let L=5.4*eio(prog(t,3.7,6.3));if(t>=8.6)L=5.4-1.2*eio(prog(t,8.6,9.6));if(t>=10.85)L=4.2+1.2*eio(prog(t,10.85,12.3));return L;}
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  // termometro sale dal pavimento
+  const sp=prog(t,0.7,1.9);th.scale.set(1,sp>0?Math.max(.001,eb(sp)):.001,1);th.visible=sp>0;
+  // documento: vola e atterra
+  const dp=prog(t,0.0,1.3),de=eo(dp);doc.visible=true;
+  doc.position.set(-2.4+(-1.0+2.4)*de,5.2+(2.0-5.2)*de+Math.sin(t*1.6)*.06*damp*(dp>=1),3+(2.2-3)*de);doc.scale.setScalar(.8);
+  doc.rotation.set(-.12*de+.25*(1-de),.5+(1-de)*Math.PI*3,-.1*de+(1-de)*.8);
+  // livello
+  const L=level(t);setLevel(L);
+  num.userData.set(L.toFixed(1).replace('.',',')+'%');
+  st.setSprite(num,1.6,8.85+Math.sin(t*2.2)*.05*damp,.5,eo(prog(t,4.3,4.8)));
+  // segnalini
+  const a=eo(prog(t,7.96,8.5));ring42.visible=a>0;ring42.scale.setScalar(.2+.8*a);
+  st.setSprite(tagSet,1.6+1.95,y0+4.2,.5,a,eb(prog(t,7.96,8.5))||.001);
+  const b=eo(prog(t,11.88,12.4));ring54.visible=b>0;ring54.scale.setScalar(.2+.8*b);
+  st.setSprite(tagAgo,1.6+1.95,y0+5.45,.5,b,eb(prog(t,11.88,12.4))||.001);
+  connectors[0].visible=a>0;connectors[0].scale.x=.9*a;connectors[0].position.set(.36+.45*a,y0+4.2,0);
+  connectors[1].visible=b>0;connectors[1].scale.x=.9*b;connectors[1].position.set(.36+.45*b,y0+5.4,0);
+  st.render(t,{shakes:[12.3],flashes:[12.3]});
+}
+boot(st,draw);
+</script></body></html>

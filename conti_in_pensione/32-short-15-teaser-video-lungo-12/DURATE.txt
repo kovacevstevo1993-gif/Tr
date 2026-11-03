@@ -1,0 +1,16 @@
+# Short 15 (coefficienti 2027) - durate dagli screenshot CapCut (30 fps), lettura N.29 con DOPPIA LETTURA (26/10)
+# Riga bianca a x=359; marchi del righello 1 fotogramma ciascuno (~66,5 px), etichette ogni 2 f.
+# Lettura A = ultimo marchio prima della riga + 1; lettura B = posizione in pixel della riga (frazione di fotogramma, per eccesso). Devono coincidere.
+# blocco | fine (s+f) | ultimo marchio (x) | riga-marchio (px) | A | B | fotogrammi totali a fine blocco | durata blocco | caratteri | car/fotogramma
+1 | 11s+28f | punto dopo 26f (x352) | 7 px  | 28 | 27,1->28 | 358  | 358 | 198 | 0,55
+2 | 26s+13f | etichetta 12f (x312)  | 47 px | 13 | 12,7->13 | 793  | 435 | 249 | 0,57
+3 | 39s+4f  | punto dopo 2f (x321)  | 38 px | 4  | 3,6->4   | 1174 | 381 | 211 | 0,55
+4 | 52s+26f | punto dopo 24f (x332) | 27 px | 26 | 25,4->26 | 1586 | 412 | 233 | 0,57
+5 | 66s+11f | etichetta 10f (x309)  | 50 px | 11 | 10,8->11 | 1991 | 405 | 221 | 0,55
+# TOTALE 1991 fotogrammi = 66,37 s. Coerenza voce: 0,55-0,57 caratteri/fotogramma in tutti i blocchi (nessuno scarto: lettura confermata).
+# Orologio CapCut usato solo per i secondi interi (00:11, 00:26, 00:39, 00:52, 01:06); i fotogrammi vengono dal righello.
+358
+435
+381
+412
+405

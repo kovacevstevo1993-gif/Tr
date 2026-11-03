@@ -1,0 +1,21 @@
+# Video lungo 12 (coefficienti 2027) - durate dagli screenshot CapCut (30 fps), lettura N.29
+# (fine blocco = ultimo segno disegnato prima della riga bianca + 1; riga a x=359, 67 px per fotogramma;
+#  blocchi 1-5 misurati al pixel sui file, blocchi 6-15 letti sugli screenshot ricevuti in chat, stesso metodo)
+# blocco | fine (timeline) | fotogrammi fine | durata fotogrammi
+1 | 00:21 + 26f | 656   | 656
+2 | 00:45 + 2f  | 1352  | 696
+3 | 01:10 + 20f | 2120  | 768
+4 | 01:34 + 2f  | 2822  | 702
+5 | 01:55 + 9f  | 3459  | 637
+6 | 02:19 + 4f  | 4174  | 715
+7 | 02:47 + 28f | 5038  | 864
+8 | 03:14 + 2f  | 5822  | 784
+9 | 03:37 + 21f | 6531  | 709
+10 | 04:02 + 21f | 7281 | 750
+11 | 04:23 + 28f | 7918 | 637
+12 | 04:45 + 29f | 8579 | 661
+13 | 05:07 + 24f | 9234 | 655
+14 | 05:32 + 11f | 9971 | 737
+15 | 05:56 + 24f | 10704 | 733
+# totale 10704 fotogrammi = 05:56 + 24f
+# Nota: nei blocchi 6, 7 e 13 l'ultimo segno coincide quasi con la riga (0-4 px): +1 per eccesso come da N.29 (differenza possibile: 1 fotogramma).

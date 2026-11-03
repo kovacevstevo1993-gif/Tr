@@ -9,7 +9,7 @@ File di revisione: <cartella>/revisione-copione.txt, una riga per blocco:
   N | impronta | italiano OK | logica OK | persona OK | numeri OK | nota
 (italiano = suona come lo direbbe un italiano a voce; logica = soggetti, riferimenti e promesse giusti;
  persona = stessa persona tu/lei/noi nel blocco; numeri = conti rifatti e numeri annunciati contati)"""
-import hashlib,os,re,sys
+import hashlib,os,re,sys,time
 CAMPI=('italiano','logica','persona','numeri')
 def blocchi(f):
     out=[]
@@ -26,6 +26,7 @@ def fidelizzazione(f):
     CERCHIO_1: aperto in blocco A, chiuso in blocco B   (A <= 4, B oltre meta')
     CERCHIO_2: aperto in blocco A, chiuso in blocco B
     CIFRA_GANCIO: <la cifra piu' grande vera, per anno se serve>
+    LETTI: analisi-fidelizzazione-07-10.md; trascrizioni: <file1>.txt, <file2>.txt   (letti PRIMA di scrivere)
     IMPRONTA_PRIMI4: <impronta dei blocchi 1-4>   (cambia se cambia uno dei primi 4 blocchi)"""
     bl=blocchi(f); cart=os.path.basename(os.path.dirname(os.path.abspath(f)))
     m=re.match(r'^(\d+)-',cart)
@@ -44,9 +45,27 @@ def fidelizzazione(f):
         v=campo(k); mm=re.search(r'aperto in blocco\s+(\d+).*chiuso in blocco\s+(\d+)',v or '')
         if not mm or int(mm.group(1))>4 or int(mm.group(2))<=n/2: err.append(f'{k}: aperto nei primi 4 blocchi e chiuso oltre meta\'')
     if not campo('CIFRA_GANCIO'): err.append('CIFRA_GANCIO mancante')
+    lt=campo('LETTI') or ''
+    if int(m.group(1))>=33 and ('analisi-fidelizzazione-07-10.md' not in lt or len(re.findall(r'\.txt',lt))<2): err.append('LETTI mancante: scrivere "LETTI: analisi-fidelizzazione-07-10.md; trascrizioni: <file1>.txt, <file2>.txt" (riga 0c: leggerli PRIMA di scrivere il copione, 28/10 video 13)')
     h=impronta(' '.join(t for _,t in bl[:4]))
     if campo('IMPRONTA_PRIMI4')!=h: err.append('i blocchi 1-4 sono cambiati dopo il controllo di fidelizzazione (rifarlo): impronta attesa '+h)
     return err
+def hash_file(f): return impronta(' '.join(t for _,t in blocchi(f)))
+def giri(f):
+    """RILETTURA A GIRI (28/10/2026, short 15: 8 invii di un copione non riletto abbastanza, utente: 'risolvi sto problema').
+    Dalle cartelle 32 in poi: python3 qa/revisione.py giro <copione> stampa il copione frase per frase e registra un GIRO di
+    lettura per il testo attuale (giri-copione.log). Servono almeno 2 giri sullo STESSO testo, a 90 secondi di distanza:
+    se il testo cambia i giri ripartono da zero. Finche' non ci sono, la consegna e' bloccata (hook di fine risposta)."""
+    cart=os.path.basename(os.path.dirname(os.path.abspath(f))); m=re.match(r'^(\d+)-',cart)
+    if not m or int(m.group(1))<32: return []
+    lg=os.path.join(os.path.dirname(f),'giri-copione.log'); h=hash_file(f); ts=[]
+    if os.path.exists(lg):
+        for l in open(lg):
+            a=l.strip().split('|')
+            if len(a)==2 and a[0]==h: ts.append(float(a[1]))
+    if len(ts)<2: return [f'rilettura a giri: {len(ts)}/2 giri sul testo attuale (lanciare: python3 qa/revisione.py giro {f}, rileggere, correggere se serve, ripetere)']
+    if max(ts)-min(ts)<90: return ['rilettura a giri: i 2 giri sono troppo vicini (< 90 s): rileggere davvero, poi il secondo giro']
+    return []
 def controlla(f):
     rev=os.path.join(os.path.dirname(f),'revisione-copione.txt')
     if not os.path.exists(rev): return [f'manca {rev}']
@@ -54,7 +73,7 @@ def controlla(f):
     for l in open(rev,encoding='utf-8'):
         p=[x.strip() for x in l.split('|')]
         if len(p)>=6 and p[0].isdigit(): righe[int(p[0])]=p
-    err=fidelizzazione(f)
+    err=fidelizzazione(f)+giri(f)
     for n,t in blocchi(f):
         p=righe.get(n)
         if not p: err.append(f'blocco {n}: nessuna riga di revisione'); continue
@@ -66,7 +85,13 @@ def controlla(f):
 if __name__=='__main__':
     if len(sys.argv)<3: sys.exit(__doc__)
     modo,f=sys.argv[1],sys.argv[2]
-    if modo=='modello':
+    if modo=='giro':
+        for n,tx in blocchi(f):
+            print(f'--- BLOCCO {n}')
+            for i,fr in enumerate([x for x in re.split(r'(?<=[.?!:])\s+',tx) if x],1): print(f'  {n}.{i} {fr}')
+        open(os.path.join(os.path.dirname(os.path.abspath(f)),'giri-copione.log'),'a').write(f'{hash_file(f)}|{time.time()}\n')
+        print('GIRO REGISTRATO per il testo attuale (servono 2 giri a 90 s di distanza; se cambi una parola ripartono da zero)')
+    elif modo=='modello':
         for n,t in blocchi(f): print(f'{n} | {impronta(t)} | italiano ? | logica ? | persona ? | numeri ? | ')
     else:
         e=controlla(f)
