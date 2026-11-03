@@ -32,7 +32,7 @@ const pins=[[-1.05,3.0,'#e5392b'],[1.05,2.5,'#e5392b'],[-1.0,1.35,'#e5392b'],[1.
 function draw(t){
   const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
   // telefono (0 - 8.0)
-  const pin_=eb(prog(t,0,.35)),pout=1-eo(prog(t,7.7,8.1));ph.visible=pin_>.002&&pout>.01;ph.scale.setScalar(Math.max(.001,pin_*pout*.8));ph.position.set(0,2.05+Math.sin(t*1.4)*.07*damp,1.2);ph.rotation.y=Math.sin(t*.8)*.18*damp+(1-pin_)*.8;ph.rotation.z=Math.sin(t*.9)*.02*damp;
+  const pin_=.65+.35*eb(prog(t,0,.4)),pout=1-eo(prog(t,7.7,8.1));ph.visible=pin_>.002&&pout>.01;ph.scale.setScalar(Math.max(.001,pin_*pout*.8));ph.position.set(0,2.05+Math.sin(t*1.4)*.07*damp,1.2);ph.rotation.y=Math.sin(t*.8)*.18*damp+(1-pin_)*.8;ph.rotation.z=Math.sin(t*.9)*.02*damp;
   // pin: compaiono con "distributori della tua zona"
   pins.forEach((p,i)=>{const a=2.6+i*.4;const e=eb(prog(t,a,a+.4))*(1-eo(prog(t,7.5,7.9)));st.setSprite(p.s,p.x,p.y+Math.sin(t*2+i)*.06*damp,2.2,e>0.01?Math.min(1,e*1.4):0,Math.max(.001,e));});
   // pompa (8.0 -)

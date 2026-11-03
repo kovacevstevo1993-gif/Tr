@@ -27,7 +27,7 @@ const avgY=.16+price[2]*SC;const line=new THREE.Mesh(new THREE.BoxGeometry(11.6,
 const cal=S.sheet((g,W,Hh)=>{g.fillStyle='#fffaf0';g.fillRect(0,0,W,Hh);g.fillStyle='#e5392b';g.fillRect(0,0,W,150);g.fillStyle='#fff';g.font='bold 70px PM';g.textAlign='center';g.textBaseline='middle';g.fillText('LUNEDÌ',W/2,80);
   g.fillStyle='#14163a';g.font='bold 250px AB';g.fillText('26',W/2,330);g.font='bold 80px PM';g.fillText('OTTOBRE',W/2,520);g.strokeStyle='#14163a';g.lineWidth=8;g.strokeRect(4,4,W-8,Hh-8);},520,640,1.9,null);scene.add(cal);
 const doc=S.sheet((g,W,Hh)=>{g.fillStyle='#f6f8fc';g.fillRect(0,0,W,Hh);g.fillStyle='#003399';g.fillRect(0,0,W,170);S.drawFlag(g,'EU',34,35,140,100);g.fillStyle='#fff';g.font='bold 36px PM';g.textAlign='left';g.textBaseline='middle';g.fillText('COMMISSIONE EUROPEA',190,70);g.font='bold 34px PM';g.fillText('WEEKLY OIL BULLETIN',200,122);
-  g.fillStyle='#14163a';g.font='bold 56px PM';g.fillText('BOLLETTINO PETROLIFERO',34,250);g.fillStyle='#c4cbe0';for(let i=0;i<9;i++)g.fillRect(34,320+i*46,W-68-((i*5)%4)*60,22);g.fillStyle='#ffb000';g.fillRect(34,740,W-68,10);g.strokeStyle='#003399';g.lineWidth=8;g.strokeRect(4,4,W-8,Hh-8);},620,820,2.2,null);scene.add(doc);
+  g.fillStyle='#14163a';g.font='bold 40px PM';g.fillText('BOLLETTINO PETROLIFERO',34,250);g.fillStyle='#c4cbe0';for(let i=0;i<9;i++)g.fillRect(34,320+i*46,W-68-((i*5)%4)*60,22);g.fillStyle='#ffb000';g.fillRect(34,740,W-68,10);g.strokeStyle='#003399';g.lineWidth=8;g.strokeRect(4,4,W-8,Hh-8);},620,820,2.2,null);scene.add(doc);
 const tPrezzi=st.tag(['PREZZI MEDI','CON TASSE'],{border:'#ffb000',sw:2.7,font:'bold 62px PM',w:700,h:260,bg:'rgba(14,16,40,.94)'});
 const tPieno=st.tag(['PIENO','50 LITRI'],{border:'#cdee3c',sw:2.4,font:'bold 62px PM',w:620,h:250,bg:'rgba(14,16,40,.94)'});
 const tMedie=st.tag(['SONO MEDIE'],{border:'#ffb000',sw:3.4,font:'bold 70px PM',w:760,h:170,bg:'rgba(14,16,40,.94)'});
@@ -38,7 +38,7 @@ function draw(t){
   tanks.forEach((k,i)=>{k.set(price[i]*SC*eo(prog(t,tV[i]-.15,tV[i]+.9)));});
   // oggetti introduttivi
   const pin=eb(prog(t,2.2,2.7)),pout=1-eo(prog(t,3.9,4.2));cal.visible=pin>.002&&pout>.01;cal.scale.setScalar(Math.max(.001,pin*pout));cal.position.set(1.5,2.6+Math.sin(t*1.5)*.06*damp,2.6);cal.rotation.y=-.18+Math.sin(t*.8)*.04*damp;
-  const din=eb(prog(t,4.2,4.7)),dout=1-eo(prog(t,9.3,9.7));doc.visible=din>.002&&dout>.01;doc.scale.setScalar(Math.max(.001,din*dout));doc.position.set(1.7,2.6+Math.sin(t*1.3+1)*.06*damp,2.4);doc.rotation.y=.2+Math.sin(t*.7)*.04*damp;
+  const din=eb(prog(t,4.2,4.7)),dout=1-eo(prog(t,7.6,7.95));doc.visible=din>.002&&dout>.01;doc.scale.setScalar(Math.max(.001,din*dout*.9));doc.position.set(1.5,2.6+Math.sin(t*1.3+1)*.06*damp,2.4);doc.rotation.y=.2+Math.sin(t*.7)*.04*damp;
   st.setSprite(tPrezzi,2.4,4.9,0,eo(prog(t,.2,.6))*(1-eo(prog(t,3.9,4.2))));
   st.setSprite(tPieno,.9,4.9,0,eo(prog(t,8.0,8.4))*(1-eo(prog(t,9.4,9.7))));
   // bandiera + prezzo di ogni cisterna
