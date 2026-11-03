@@ -5,7 +5,7 @@ COME LAVORARE
 3. VERIFICARE PRIMA di dire "posso/non posso" (N.25): provare, poi una risposta sola. Mai dire una cosa e poi smentirsi. Mai attribuire all'utente decisioni non documentate (N.24).
 4. Ogni errore/correzione mostrata dall'utente: scriverla SUBITO in REGOLE-FISSE.md con la soluzione (commit+push) senza che lo ordini (N.4, N.23). Prima di consegnare: rileggere questa checklist e usare gli script di controllo.
 5. Mai chiedere l'audio della voce: i tempi si calcolano da testo+durate (N.16). Mai zip: clip MP4 singoli. Mai crediti vidIQ senza chiedere (saldo gratis con vidiq_balance; 5 crediti a chiamata), TRANNE per un video nuovo da far diventare virale: vidIQ si usa nella ricerca senza chiedere, piano in una riga prima (N.49); il piano e' un TETTO: finito il piano ci si FERMA e si chiede all'utente quanto serve e perche' (25/10: 80 crediti spesi su 50 detti). Titoli: generate_titles (5 crediti) da' 10 titoli GIA' col punteggio, score_title al massimo su 2-3 finalisti (1-3 punti di differenza sono rumore), sempre col channelId UC5Ua8A9mgOEN_5de2ACJS9A. A fine ricerca dire i crediti spesi. Dati pubblici canale: curl su /videos e /shorts (le pagine /watch sono bloccate).
-6. "Copiare dai virali" = copiare TUTTO cio' che funziona (parola PENSIONI grande, domanda con ?, promessa, cedolino con importo, freccia/spunta); solo colori e stile restano quelli dell'utente (N.19). Niente volti di persone reali ne' logo Inps.
+6. "Copiare dai virali" = copiare TUTTO cio' che funziona (parola chiave del tema grande, domanda con ?, promessa, cedolino con importo, freccia/spunta); solo colori e stile restano quelli dell'utente (N.19). Niente volti di persone reali ne' logo Inps.
 RICERCA E SCELTA DEL TEMA (video nuovo) - mancava: per questo gli stessi errori a ogni video (22/10)
 R1. Prima di iniziare: rileggere REGOLE-FISSE.md PER INTERO (N.10), non a memoria.
 R2. Parole DIVERSE dalle ricerche precedenti (ricerca-*.md): MAI di nuovo trending/outliers su "pensioni" (N.44, errori video 8 e 10). Prima la ricerca pubblica YouTube gratis (gl=IT, per data e per visualizzazioni) su tante parole diverse.
@@ -19,7 +19,7 @@ COPIONI (blocchi di voce)
 0c. FIDELIZZAZIONE (25/10, errore video 11; 28/10 ripetuto: nel file fidelizzazione-copione.txt serve la riga LETTI con analisi + 2 trascrizioni, controllata da revisione.py): nei primi 4 blocchi NON dare la risposta del gancio ne' la regola per fare il conto da soli; >= 2 cerchi aperti risolti dopo meta' video; cifra del gancio = la piu' grande vera (anno, non mese); rileggere 12-video-lungo-3-rivalutazione-2027/analisi-fidelizzazione-07-10.md e le trascrizioni dei virali PRIMA di scrivere.
 TESTI (titolo, descrizione, tag, commento, impostazioni) - ognuno in un RIQUADRO ``` separato, in chat
 7. Lanciare SEMPRE: python3 conti_in_pensione/qa/qa_testi.py <file pacchetto>. Se un controllo non passa, non consegnare.
-8. Titolo: contiene PENSIONI/PENSIONE, parola calda in maiuscolo, domanda con ?, promessa; senza hashtag; max 100 caratteri.
+8. Titolo: parola calda in maiuscolo, domanda con ?, promessa; PENSIONI/PENSIONE SOLO se il tema e' dei pensionati (non e' una regola dell'utente, correzione 03/11: se il tema vale per tutti non metterla); senza hashtag; max 100 caratteri.
 9a. NEI COPIONI (voce) la parola Inps si scrive "Imps" (utente 03/11, N.51: la voce legge male Inps); nei testi scritti resta Inps.
 9. "Mai Inps" SOLO a voce. Nei testi scritti: "My Inps", hashtag #myinps, tag "my inps", modello "ObisM" (N.20).
 10. Tag: niente virgole dentro un tag; conteggio YouTube = lunghezze + 2 per ogni tag con spazio + 1 per ogni separatore; restare 480-497 (N.21). Hashtag da 5 a 12. Tag senza "inps" ripetuti inutilmente.
@@ -35,7 +35,7 @@ SLIDE / CLIP (1920x1080 lunghi, 1080x1920 short, 30 fps; nomi CON PREFISSO DEL C
 19. Testi e domande coerenti con la data di pubblicazione: mai chiedere al passato cose future (N.33).
 20. Prima di consegnare: rileggere tutto come lo spettatore nel giorno di pubblicazione (date, tempi verbali, numeri coerenti ovunque). Dubbi detti PRIMA, mai dopo (N.34).
 MINIATURE
-18. Stile dei video pubblicati (sfondo verde acqua a raggi, numeri giganti con contorno scuro, palline rosso/verde, striscia bianca con bordo giallo), layout DIVERSO dalla precedente, con la parola PENSIONI grande e la frase dell'utente. Controllare ogni immagine (testi tagliati/sovrapposti) prima di mandarla.
+18. Stile dei video pubblicati (sfondo verde acqua a raggi, numeri giganti con contorno scuro, palline rosso/verde, striscia bianca con bordo giallo), layout DIVERSO dalla precedente, con la parola chiave del tema grande (PENSIONI solo se il tema e' dei pensionati) e la frase dell'utente. Controllare ogni immagine (testi tagliati/sovrapposti) prima di mandarla.
 21. Il video piu recente e il PRIMO della lista /videos o /shorts, anche se il titolo e diverso dal pacchetto: mai dire "non pubblicato" senza verificarlo (N.39).
 22. Sistemare solo il pezzo sbagliato, mai rifare tutto; misurare i testi PRIMA del primo render, un solo render finale (N.40).
 23. Video e short MAI uguali ai precedenti: chiusura, struttura/numero blocchi, apertura, frasi fisse e grafica sempre diversi (short e lunghi).
