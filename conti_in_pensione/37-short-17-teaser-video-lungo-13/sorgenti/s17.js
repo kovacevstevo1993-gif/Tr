@@ -163,7 +163,7 @@ const S=[
  o.fg=el('g',{},p);o.rip=[0,1].map(()=>el('circle',{r:30,fill:'none',stroke:'#fff','stroke-width':6},o.fg));o.hd=el('g',{},o.fg);handI(o.hd);
  o.td=pillS(p,'TOCCALO ADESSO',560,42,RED);
  o.lk=el('g',{},p);el('rect',{x:-200,y:-62,width:400,height:124,rx:62,fill:NAVY,stroke:'#fff','stroke-width':6,filter:'url(#g_sh2)'},o.lk);{const th=thumbI(o.lk,.5);th.setAttribute('transform','translate(-135 4)');}fit(o.lk,'MI PIACE',55,16,46,'#fff',230);
- o.is=el('g',{},p);el('rect',{x:-200,y:-72,width:400,height:144,rx:36,fill:'url(#g_red)',stroke:'#fff','stroke-width':6,filter:'url(#g_sh2)'},o.is);fit(o.is,'ISCRIVITI',-16,4,50,'#fff',280);fit(o.is,'A CONTI IN PENSIONE',-16,46,25,'#fff',310);{const be=bellI(o.is,.42);T(be,148,-4,0,1);}
+ o.is=el('g',{},p);el('rect',{x:-200,y:-72,width:400,height:144,rx:36,fill:'url(#g_red)',stroke:'#fff','stroke-width':6,filter:'url(#g_sh2)'},o.is);fit(o.is,'ISCRIVITI',-34,4,48,'#fff',250);fit(o.is,'A CONTI IN PENSIONE',-34,46,25,'#fff',290);{const be=bellI(o.is,.4);T(be,152,-4,0,1);}
  o.cap=strip(p,['60, 80 O 100 PER CENTO?','SCRIVILO NEI COMMENTI']);return o;},
  update(t,o){const a=plan(5,['Scrivi nei commenti','al coniuge senza figli','il sessanta','l\'ottanta','il cento','video correlato','toccalo adesso','Metti mi piace','iscriviti']);PL[5]=a;headU(t,o);bgx(t);
   fade(t,o.cm,540,335,a[0]);fade(t,o.sf,540,495,a[1],40);

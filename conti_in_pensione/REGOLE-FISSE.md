@@ -921,3 +921,10 @@ STATO 27/10/2026 (video 12, coefficienti 2027): copione + 15 clip slide CIP-V12-
 - Causa: qa_copione e le revisioni controllano forma e parole, non la verita' di ogni frase generale ("ogni", "diversa", "un caso"). Le frasi che generalizzano (ogni/tutti/un solo/diversa) vanno confrontate con la scheda Inps PRIMA dell'invio.
 - REGOLA: nel teaser ogni frase che generalizza si controlla sulla fonte (fonti-e-verifiche.md) categoria per categoria; se non regge, si riscrive in modo neutro ("cambia a seconda di chi sei", "esiste un caso").
 
+## STATO 03/11/2026 - SHORT 17: SLIDE CONSEGNATE (37-short-17-teaser-video-lungo-13)
+- Durate dagli 8 screenshot (DURATE.txt, doppia lettura confermata anche sulla timeline del blocco 4): 340, 471, 400, 250, 334, 471 = 2266 fotogrammi (75,5 s). Blocco 4 a 19,0 c/s: l'utente ha confermato che il testo e' quello dato (non e' velocizzato): la velocita' e' della voce, non un dubbio.
+- Clip CIP-S17-blocco01..06.mp4 in clip/ (1080x1920, 30 fps, ffprobe = durate; checktempi 0 errori; qa_slide OK su TUTTI i fotogrammi, rifatto da me; sequenze a 0,5 s di tutti e 6 i blocchi guardate). Costruite da un sotto-agente; look nuovo: titoletto a linguetta di fascicolo senza numero, schede a cartellina/anagrafica, didascalia a striscia di cedolino, sfondo con scalinate. Motore: sorgenti/head17.js + s17.js (build.py, render.py, checktempi.py, sheet.py, qa7.sh).
+- Limite noto: nei blocchi lunghi (2, 3, 6) gli ultimi elementi compaiono prima della voce (regola 80% N.15).
+- Da fare solo su ordine: miniatura, pacchetto (video correlato = video lungo 13, id DLWD4ZdGbDQ).
+- ERRORI di questa chat (scritti sopra): copione consegnato con frase falsa nel blocco 2 (N.42); versione corretta mandata solo nell'output di un comando e non in chat (il messaggio deve contenere il testo); scuse non verificabili ("contesto pieno") dette all'utente.
+
