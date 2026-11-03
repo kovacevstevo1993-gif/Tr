@@ -1,0 +1,56 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#1c1b48;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Short 004 - blocco 4: guarda i prezzi sull'Osservatorio del ministero, evita l'autostrada, commenti, segui =====
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s004.js';
+const DUR=16.891;
+const KF=[[0,[0,2.9,10.8],[0,2.3,0]],[8.0,[0,3.0,11.2],[0,2.3,0]],[8.4,[0,3.2,12.0],[0,2.2,0]],[DUR,[0,3.3,12.4],[0,2.2,0]]];
+const st=await createStage({dur:DUR,centers:[0],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.backdrop(scene,m);
+const ph=S.phone(m);scene.add(ph);
+const pu=S.pump(m);pu.position.set(0,0,0);scene.add(pu);
+const bub=S.speech(m);scene.add(bub);
+const dst=S.dustp(200,0xffc060,.08);scene.add(dst);
+const dk=(o)=>Object.assign({bg:'rgba(14,16,40,.94)',border:'#ffb000',fill:'#ffffff'},o);
+const tPrima=st.tag(['PRIMA DI FARE','IL PIENO'],dk({sw:2.7,font:'bold 56px PM',w:660,h:250}));
+const tZona=st.tag(['DISTRIBUTORI','DELLA TUA ZONA'],dk({sw:2.9,font:'bold 54px PM',w:700,h:250,border:'#cdee3c'}));
+const tOss=st.tag(['OSSERVATORIO','PREZZI CARBURANTI','MINISTERO'],dk({sw:3.0,font:'bold 50px PM',w:760,h:330,border:'#5a86ff'}));
+const tEvita=st.label((g,W,H)=>{g.fillStyle='rgba(0,118,64,.97)';st.rr(g,6,6,W-12,H-12,40);g.fill();g.strokeStyle='#fff';g.lineWidth=8;g.stroke();g.fillStyle='#fff';g.font='bold 56px PM';g.textAlign='left';g.textBaseline='middle';g.fillText('AUTOSTRADA',210,H/2+4);
+  g.fillStyle='#fff';g.beginPath();g.arc(112,H/2,62,0,7);g.fill();g.strokeStyle='#e5392b';g.lineWidth=16;g.beginPath();g.arc(112,H/2,50,0,7);g.stroke();g.beginPath();g.moveTo(76,H/2+36);g.lineTo(148,H/2-36);g.stroke();},700,200,3.0,'evita');
+const tCom=st.tag(['SCRIVIMI','NEI COMMENTI'],dk({sw:2.7,font:'bold 58px PM',w:660,h:250,border:'#5a86ff'}));
+const tQ=st.tag(['QUANTO PAGHI','UN PIENO?'],{bg:'rgba(255,255,255,.98)',border:'#ffb000',fill:'#14163a',sw:2.7,font:'bold 66px PM',w:700,h:260});
+const tSegui=st.label((g,W,H)=>{g.fillStyle='#ffb000';st.rr(g,6,6,W-12,H-12,80);g.fill();g.strokeStyle='#fff';g.lineWidth=8;g.stroke();g.fillStyle='#14163a';g.font='bold 78px PM';g.textAlign='center';g.textBaseline='middle';g.fillText('+  SEGUIMI',W/2,H/2+4);},640,190,2.7,'segui');
+const tNum=st.tag(['PROSSIMI','NUMERI VERI'],dk({sw:2.6,font:'bold 58px PM',w:640,h:250,border:'#cdee3c'}));
+// pin dei distributori (illustrativi, senza prezzi)
+const mkPin=(c)=>st.label((g,W,H)=>{g.fillStyle=c;g.beginPath();g.arc(W/2,H*.38,W*.36,0,7);g.fill();g.beginPath();g.moveTo(W*.2,H*.55);g.lineTo(W/2,H*.95);g.lineTo(W*.8,H*.55);g.closePath();g.fill();g.fillStyle='#fff';g.beginPath();g.arc(W/2,H*.38,W*.24,0,7);g.fill();g.fillStyle=c;g.font='bold 84px AB';g.textAlign='center';g.textBaseline='middle';g.fillText('€',W/2,H*.4);},200,260,.75,'pin');
+const pins=[[-1.05,3.0,'#e5392b'],[1.05,2.5,'#e5392b'],[-1.0,1.35,'#e5392b'],[1.05,1.25,'#25b36a']].map(p=>({s:mkPin(p[2]),x:p[0],y:p[1]}));
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  // telefono (0 - 8.0)
+  const pin_=eb(prog(t,0,.35)),pout=1-eo(prog(t,7.7,8.1));ph.visible=pin_>.002&&pout>.01;ph.scale.setScalar(Math.max(.001,pin_*pout*.8));ph.position.set(0,2.05+Math.sin(t*1.4)*.07*damp,1.2);ph.rotation.y=Math.sin(t*.8)*.18*damp+(1-pin_)*.8;ph.rotation.z=Math.sin(t*.9)*.02*damp;
+  // pin: compaiono con "distributori della tua zona"
+  pins.forEach((p,i)=>{const a=2.6+i*.4;const e=eb(prog(t,a,a+.4))*(1-eo(prog(t,7.5,7.9)));st.setSprite(p.s,p.x,p.y+Math.sin(t*2+i)*.06*damp,2.2,e>0.01?Math.min(1,e*1.4):0,Math.max(.001,e));});
+  // pompa (8.0 -)
+  const eb2=eb(prog(t,8.0,8.5));pu.visible=eb2>.002;pu.scale.setScalar(Math.max(.001,.95*eb2));pu.userData.noz.rotation.z=Math.sin(t*1.5)*.05*damp;
+  pu.userData.lcd.userData.set('BENZINA',t<10.8?'-':'?','');
+  // fumetto
+  const bi=eb(prog(t,10.8,11.3));bub.visible=bi>.002;bub.scale.setScalar(Math.max(.001,.75*bi));bub.position.set(0,1.55+Math.sin(t*1.6)*.06*damp,2.4);bub.rotation.y=Math.sin(t*.9)*.05*damp;
+  // scritte
+  st.setSprite(tPrima,0,4.6,0,eo(prog(t,.78,1.1))*(1-eo(prog(t,2.0,2.3))));
+  st.setSprite(tZona,0,4.6,0,eo(prog(t,2.3,2.65))*(1-eo(prog(t,4.8,5.05))));
+  st.setSprite(tOss,0,4.55,1.0,eo(prog(t,5.0,5.4))*(1-eo(prog(t,7.7,8.0))));
+  st.setSprite(tEvita,0,4.7,0,eo(prog(t,8.3,8.7))*(1-eo(prog(t,10.5,10.8))));
+  st.setSprite(tCom,0,4.7,0,eo(prog(t,10.85,11.25))*(1-eo(prog(t,12.0,12.3))));
+  st.setSprite(tQ,0,1.6,3.2,eo(prog(t,12.25,12.65)));
+  st.setSprite(tSegui,0,4.7,0,eo(prog(t,14.35,14.75))*(1+.04*Math.sin(t*7)));
+  st.setSprite(tNum,0,3.7,0,eo(prog(t,15.0,15.4)));
+  dst.userData.update(.1,t,0,2.6,1.5,4.0);
+  st.render(t,{shakes:[8.3,12.3,14.4],flashes:[12.3]});
+}
+boot(st,draw);
+</script></body></html>

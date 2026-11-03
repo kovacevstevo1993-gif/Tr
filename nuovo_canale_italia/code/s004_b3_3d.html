@@ -1,0 +1,62 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#1c1b48;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Short 004 - blocco 3: dentro l'Italia, MIMIT 2/11: autostrada +2,6 centesimi/litro = +1,30 euro a pieno da 50 litri; 52 pieni = 67,60 (circa 68) =====
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s004.js';
+const DUR=22.131;
+const KF=[[0,[0,3.5,12.8],[0,2.4,0]],[7.4,[.1,3.4,12.2],[0,2.4,0]],[8.6,[1.4,3.3,10.4],[1.25,2.5,0]],[13.0,[1.3,3.3,10.6],[1.25,2.5,0]],[13.8,[-1.2,3.3,10.4],[-1.25,2.5,0]],[15.0,[0,3.6,12.6],[0,2.5,0]],[18.0,[0,3.8,12.6],[0,2.3,0]],[18.9,[0,4.6,14.0],[0,1.8,2.2]],[DUR,[0,4.8,14.6],[0,1.7,2.2]]];
+const st=await createStage({dur:DUR,centers:[-1.25,1.25],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.backdrop(scene,m);
+const pL=S.pump(m);pL.position.set(-1.25,0,0);pL.scale.setScalar(.9);scene.add(pL);
+const pR=S.pump(m,{accent:m.orange});pR.position.set(1.25,0,0);pR.scale.setScalar(.9);scene.add(pR);
+const lL=pL.userData.lcd,lR=pR.userData.lcd;
+// 52 settimane = 8 colonne x 7 righe (ultima riga da 4)
+const tiles=[];for(let k=0;k<52;k++){const c=k%8,r=Math.floor(k/8);const mt=new THREE.Mesh(new THREE.BoxGeometry(.4,.09,.4),m.tile.clone());mt.position.set((c-3.5)*.5,.05,2.6+r*.5);mt.castShadow=true;mt.receiveShadow=true;mt.userData.k=k;scene.add(mt);tiles.push(mt);}
+const cal=S.sheet((g,W,Hh)=>{g.fillStyle='#fffaf0';g.fillRect(0,0,W,Hh);g.fillStyle='#e5392b';g.fillRect(0,0,W,120);g.fillStyle='#fff';g.font='bold 58px PM';g.textAlign='center';g.textBaseline='middle';g.fillText('NOVEMBRE',W/2,64);
+  g.fillStyle='#14163a';g.font='bold 260px AB';g.fillText('2',W/2,350);g.strokeStyle='#14163a';g.lineWidth=8;g.strokeRect(4,4,W-8,Hh-8);},420,500,1.5,null);scene.add(cal);
+const dst=S.dustp(200,0xffc060,.08);scene.add(dst);
+const dk=(o)=>Object.assign({bg:'rgba(14,16,40,.94)',border:'#ffb000',fill:'#ffffff'},o);
+const tIt=S.flagTag(st,"IN ITALIA",'IT',{border:'#cdee3c',sw:2.7});
+const tOss=st.tag(['OSSERVATORIO','PREZZI CARBURANTI','MINISTERO'],dk({sw:3.0,font:'bold 50px PM',w:760,h:330,border:'#5a86ff'}));
+const tSelf=st.tag(['BENZINA SELF'],dk({sw:2.9,font:'bold 56px PM',w:700,h:160,border:'#cdee3c'}));
+const tAut=st.tag(['AUTOSTRADA'],{bg:'rgba(0,118,64,.97)',border:'#ffffff',fill:'#ffffff',sw:2.7,font:'bold 62px PM',w:660,h:170});
+const tNor=st.tag(['STRADE NORMALI'],{bg:'rgba(30,76,170,.97)',border:'#ffffff',fill:'#ffffff',sw:2.4,font:'bold 50px PM',w:660,h:170});
+const t50=st.tag(['PIENO','50 LITRI'],dk({sw:2.2,font:'bold 56px PM',w:560,h:250,border:'#cdee3c'}));
+const tSett=st.tag(['1 PIENO','A SETTIMANA'],dk({sw:2.7,font:'bold 56px PM',w:640,h:250,border:'#5a86ff'}));
+const cnt=st.counter({sw:2.6,w:700,h:240,font:'120px AB',color:'#ffb000',border:'#ffb000',bg:'rgba(14,16,40,.96)'});
+const tAnno=st.tag(["CIRCA 68 €","IN UN ANNO"],{bg:'rgba(14,16,40,.97)',border:'#25d07a',fill:'#25d07a',sw:3.5,font:'bold 96px AB',w:760,h:300});
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  pL.userData.noz.rotation.z=Math.sin(t*1.5)*.05*damp;pR.userData.noz.rotation.z=Math.sin(t*1.4+1)*.05*damp;
+  // LCD
+  lL.userData.set('STRADE NORMALI',t<13.3?'—':'BASE','');
+  const rTop=t<15.3?'AUTOSTRADA':'50 LITRI';
+  const rBig=t<10.5?'—':(t<17.0?'+2,6':'+1,30 €');const rSm=t<10.5?'':(t<17.0?'CENT / LITRO':'');
+  lR.userData.set(rTop,rBig,rSm,'#ffb000');
+  // calendario 2 novembre
+  const cin=eb(prog(t,6.6,7.1)),cout=1-eo(prog(t,7.9,8.3));cal.visible=cin>.002&&cout>.01;cal.scale.setScalar(Math.max(.001,cin*cout));cal.position.set(0,1.9,3.4);cal.rotation.y=-.12+Math.sin(t*.9)*.04*damp;
+  // scritte
+  st.setSprite(tIt,0,5.2,0,eo(prog(t,2.1,2.5))*(1-eo(prog(t,3.0,3.3))));
+  st.setSprite(tOss,0,4.9,1.0,eo(prog(t,3.4,3.8))*(1-eo(prog(t,6.4,6.7))));
+  st.setSprite(tSelf,1.25,4.5,0,eo(prog(t,8.0,8.35))*(1-eo(prog(t,8.65,8.85))));
+  st.setSprite(tAut,1.25,4.5,0,eo(prog(t,8.8,9.15))*(1-eo(prog(t,12.85,13.15))));
+  st.setSprite(tNor,-1.25,4.5,0,eo(prog(t,13.6,13.95))*(1-eo(prog(t,14.5,14.75))));
+  st.setSprite(t50,0,4.5,0,eo(prog(t,15.3,15.7))*(1-eo(prog(t,18.0,18.3))));
+  st.setSprite(tSett,0,4.5,0,eo(prog(t,18.3,18.7))*(1-eo(prog(t,19.6,19.9))));
+  // 52 settimane che si accendono (18.8 - 21.4)
+  const n=Math.floor(52*eio(prog(t,18.9,21.4)));
+  tiles.forEach((x,k)=>{const on=k<n;x.material.color.set(on?0xffb000:0x3a4056);x.material.emissive.set(on?0xff8a00:0x000000);x.material.emissiveIntensity=on?.6:0;
+    const p=eb(prog(t,18.5+k*.012,18.8+k*.012));x.scale.setScalar(Math.max(.001,p));x.position.y=.05+(on&&k>=n-2?.06:0);});
+  const v=(n*1.30).toFixed(2).replace('.',',');cnt.userData.set((n===0?'0,00':v)+' €');
+  st.setSprite(cnt,0,3.5,4.0,eo(prog(t,18.8,19.2))*(1-eo(prog(t,20.9,21.2))));
+  st.setSprite(tAnno,0,3.6,4.0,eo(prog(t,20.95,21.4)));
+  dst.userData.update(.1,t,0,3,1.5,5.0);
+  st.render(t,{shakes:[8.9,13.4,17.05,21.4],flashes:[17.05,21.4]});
+}
+boot(st,draw);
+</script></body></html>
