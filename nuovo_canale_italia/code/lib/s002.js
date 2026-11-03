@@ -48,9 +48,10 @@ export function card(m){const g=new THREE.Group();
   add(g,new THREE.Mesh(new THREE.BoxGeometry(.5,.38,.02),m.gold),-.75,.28,.07);add(g,new THREE.Mesh(new THREE.BoxGeometry(1.9,.1,.02),m.paper),.0,-.45,.06);add(g,new THREE.Mesh(new THREE.BoxGeometry(1.2,.07,.02),m.paper),-.35,-.62,.06);
   return g;}
 export function question(m){const g=new THREE.Group();
-  const arc=add(g,new THREE.Mesh(new THREE.TorusGeometry(.52,.17,18,40,Math.PI*1.45),m.yel),0,.75,0);arc.rotation.z=Math.PI*.14;
-  add(g,new THREE.Mesh(new THREE.CylinderGeometry(.17,.17,.5,18),m.yel),.0,.0,0);
-  const dotm=add(g,new THREE.Mesh(new THREE.SphereGeometry(.22,18,18),m.yel),0,-.6,0);
+  // punto interrogativo corretto: l'arco parte a sinistra, passa sopra, scende a destra e curva verso il centro (arco CCW da -75 a 190 gradi)
+  const arc=add(g,new THREE.Mesh(new THREE.TorusGeometry(.52,.17,18,48,Math.PI*1.47),m.yel),-.13,.75,0);arc.rotation.z=-Math.PI*.4167;
+  add(g,new THREE.Mesh(new THREE.CylinderGeometry(.17,.17,.5,18),m.yel),0,0,0);
+  add(g,new THREE.Mesh(new THREE.SphereGeometry(.22,18,18),m.yel),0,-.6,0);
   return g;}
 // quadrante (tasso): lancetta ruotabile, 0-6 %
 export function dial(m,{R=1.5}={}){const g=new THREE.Group();
