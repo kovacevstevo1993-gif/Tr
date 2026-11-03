@@ -81,3 +81,4 @@ Titolo scelto da Claude (ordine utente "deve scegliere quello migliore per YouTu
 
 ## 03/11/2026
 - Parole dell'utente: "Mandami pacchetto per fb peefetto senza errori del short 002 E la copertina" -> pacchetto Facebook (stesso formato dello short 001: short001_inflazione/PACCHETTO-FACEBOOK.md, SENZA riga "creato con IA", niente motivo delle dimissioni inventato, fatti solo dal comunicato BCE) + copertina 1080x1920 (fascia centrale 16:9 sicura) dello short 002 BCE/Lagarde. Perfetto, senza errori: controllare ogni numero e ogni parola prima di consegnare.
+- 03/11/2026, parole dell'utente sullo short 002 (BCE): "Cmq in quel short non dico niente che senso ha bah lo mettiamo cosi" -> lo short 002 si pubblica com'e. LEZIONE per i prossimi: ogni short deve dire qualcosa di concreto e utile (cosa cambia per chi guarda, un numero, un'azione), non solo la notizia; l'argomento "una persona se ne va" senza impatto concreto non va rifatto.
