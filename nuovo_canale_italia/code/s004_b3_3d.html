@@ -27,6 +27,7 @@ const tSelf=st.tag(['BENZINA SELF'],dk({sw:2.9,font:'bold 56px PM',w:700,h:160,b
 const tAut=st.tag(['AUTOSTRADA'],{bg:'rgba(0,118,64,.97)',border:'#ffffff',fill:'#ffffff',sw:2.7,font:'bold 62px PM',w:660,h:170});
 const tNor=st.tag(['STRADE NORMALI'],{bg:'rgba(30,76,170,.97)',border:'#ffffff',fill:'#ffffff',sw:2.4,font:'bold 50px PM',w:660,h:170});
 const t50=st.tag(['PIENO','50 LITRI'],dk({sw:2.2,font:'bold 56px PM',w:560,h:250,border:'#cdee3c'}));
+const tP=st.tag(['+ 1,30 €'],{bg:'rgba(229,57,43,.97)',border:'#ffffff',fill:'#ffffff',sw:2.8,font:'bold 112px AB',w:640,h:210});
 const tSett=st.tag(['1 PIENO','A SETTIMANA'],dk({sw:2.7,font:'bold 56px PM',w:640,h:250,border:'#5a86ff'}));
 const cnt=st.counter({sw:2.6,w:700,h:240,font:'120px AB',color:'#ffb000',border:'#ffb000',bg:'rgba(14,16,40,.96)'});
 const tAnno=st.tag(["CIRCA 68 €","IN UN ANNO"],{bg:'rgba(14,16,40,.97)',border:'#25d07a',fill:'#25d07a',sw:3.5,font:'bold 96px AB',w:760,h:300});
@@ -46,7 +47,8 @@ function draw(t){
   st.setSprite(tSelf,1.25,4.5,0,eo(prog(t,8.0,8.35))*(1-eo(prog(t,8.65,8.85))));
   st.setSprite(tAut,1.25,4.5,0,eo(prog(t,8.8,9.15))*(1-eo(prog(t,12.85,13.15))));
   st.setSprite(tNor,-1.25,4.5,0,eo(prog(t,13.6,13.95))*(1-eo(prog(t,14.5,14.75))));
-  st.setSprite(t50,0,4.5,0,eo(prog(t,15.3,15.7))*(1-eo(prog(t,18.0,18.3))));
+  st.setSprite(t50,0,4.5,0,eo(prog(t,15.3,15.7))*(1-eo(prog(t,16.8,17.05))));
+  st.setSprite(tP,0,4.5,0,eo(prog(t,17.0,17.3))*(1-eo(prog(t,18.0,18.3))),1+.04*Math.sin(t*8)*(t<18?1:0));
   st.setSprite(tSett,0,4.5,0,eo(prog(t,18.3,18.7))*(1-eo(prog(t,19.6,19.9))));
   // 52 settimane che si accendono (18.8 - 21.4)
   const n=Math.floor(52*eio(prog(t,18.9,21.4)));
