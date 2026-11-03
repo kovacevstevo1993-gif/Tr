@@ -20,6 +20,7 @@ COPIONI (blocchi di voce)
 TESTI (titolo, descrizione, tag, commento, impostazioni) - ognuno in un RIQUADRO ``` separato, in chat
 7. Lanciare SEMPRE: python3 conti_in_pensione/qa/qa_testi.py <file pacchetto>. Se un controllo non passa, non consegnare.
 8. Titolo: contiene PENSIONI/PENSIONE, parola calda in maiuscolo, domanda con ?, promessa; senza hashtag; max 100 caratteri.
+9a. NEI COPIONI (voce) la parola Inps si scrive "Imps" (utente 03/11, N.51: la voce legge male Inps); nei testi scritti resta Inps.
 9. "Mai Inps" SOLO a voce. Nei testi scritti: "My Inps", hashtag #myinps, tag "my inps", modello "ObisM" (N.20).
 10. Tag: niente virgole dentro un tag; conteggio YouTube = lunghezze + 2 per ogni tag con spazio + 1 per ogni separatore; restare 480-497 (N.21). Hashtag da 5 a 12. Tag senza "inps" ripetuti inutilmente.
 11. Descrizione: gancio, elenco, CAPITOLI dalla timeline dell'utente (arrotondati per difetto), fonti, Iscriviti + link canale, "Disclaimer: ... Questo canale non e' affiliato all'Inps", hashtag. Nessun altro link. Negli SHORT: "tocca il Video correlato" (mai link), e il video correlato si imposta solo sullo short.

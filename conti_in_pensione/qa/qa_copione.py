@@ -19,6 +19,7 @@ for n, t in blocchi:
     if len(t) > maxc: err.append(f'blocco {n}: {len(t)} caratteri (max {maxc})')
     if re.search(r'my inps', t, re.I): err.append(f'blocco {n}: "My Inps" a voce (si dice Mai Inps)')
     if re.search(r'\binvalidi\b', t, re.I) and not re.search(r'invalidi al', t, re.I): err.append(f'blocco {n}: INVALIDI da solo')
+    if re.search(r'(?<!mai )(?<!my )\binps\b', t, re.I): err.append(f'blocco {n}: "Inps" a voce: dal 03/11/2026 si scrive "Imps" (la voce legge male Inps)')
     if re.search(r'45 centesimi|quarantacinque centesimi', t, re.I): err.append(f'blocco {n}: 45 centesimi')
 if blocchi:
     prime = ' '.join(blocchi[0][1].lower().split()[:8])
