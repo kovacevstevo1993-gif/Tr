@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#9fdfd2;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Copertina Facebook short 003 (manovra 2027, bollo auto): auto + bolletta barrata (testi aggiunti con PIL) =====
+import {THREE,createStage,boot} from '/code/lib/stage.js';
+import * as S from '/code/lib/s003.js';
+const DUR=4;
+const KF=[[0,[0,2.45,14.5],[0,2.35,0]],[DUR,[0,2.45,14.5],[0,2.35,0]]];
+const st=await createStage({dur:DUR,centers:[0],kf:KF,theme:S.THEME});
+const m=S.mats();
+const car=S.car(m,m.teal);car.rotation.y=-.9;car.position.set(.1,0,1.6);car.scale.setScalar(1.0);st.scene.add(car);
+const bill=S.sheet((g,W,H)=>{g.fillStyle='#fffaf0';g.fillRect(0,0,W,H);g.fillStyle='#ff6b4a';g.fillRect(0,0,W,120);g.fillStyle='#fff';g.font='bold 74px PM';g.textAlign='center';g.textBaseline='middle';g.fillText('BOLLO AUTO',W/2,64);
+  g.fillStyle='#17324d';g.font='bold 56px PM';g.fillText('DA PAGARE',W/2,230);g.fillStyle='#c9d3dc';for(let i=0;i<4;i++)g.fillRect(70,300+i*44,W-140-(i%2)*120,16);
+  g.fillStyle='#17324d';for(let i=0;i<46;i++)g.fillRect(70+i*11,H-120,(i%3)+3,70);g.strokeStyle='#ff6b4a';g.lineWidth=10;g.strokeRect(5,5,W-10,H-10);},560,720,2.3,null);
+bill.position.set(-.1,3.25,-.6);bill.rotation.z=-.05;st.scene.add(bill);
+const xa=new THREE.Mesh(new THREE.BoxGeometry(3.0,.3,.22),new THREE.MeshStandardMaterial({color:0xE32119,emissive:0x8a1008,emissiveIntensity:.6,roughness:.35}));const xb=xa.clone();xa.rotation.z=.82;xb.rotation.z=-.82;
+[xa,xb].forEach(x=>{x.position.set(-.1,3.25,.5);x.castShadow=true;st.scene.add(x);});
+function draw(t){st.render(1.0,{shakes:[],flashes:[]});}
+boot(st,draw);
+</script></body></html>
