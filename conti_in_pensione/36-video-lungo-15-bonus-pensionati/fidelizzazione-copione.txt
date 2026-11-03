@@ -6,4 +6,4 @@ CERCHIO_2: aperto in blocco 2 (una carta che forse hai gia' e che puo' escludert
 CERCHIO_3: aperto in blocco 1 (quanto vale in un anno quello che hai anche senza la carta), chiuso in blocco 19 (cinquecentosettanta euro: novanta di canone piu' quattrocentoottanta di Carta acquisti)
 CIFRA_GANCIO: cinquecento euro dal quattro novembre (piu' altri cinquecento ad aprile): la cifra piu' grande vera della misura, per nucleo; il conto finale degli aiuti per gli anziani (cinquecentosettanta euro l'anno) e' tenuto per la fine
 LETTI: analisi-fidelizzazione-07-10.md; trascrizioni: GkAwl5_0ZwY.txt (Mr LUL), J0ytVqeIUaA.txt (Ciao Elsa) - letti il 02/11 PRIMA di scrivere il copione (cartella 12-video-lungo-3-rivalutazione-2027/trascrizioni-concorrenti)
-IMPRONTA_PRIMI4: 581bcc70f4
+IMPRONTA_PRIMI4: 6e4023f87d

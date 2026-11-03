@@ -39,3 +39,7 @@ Regola: testi interi scaricati con curl dai siti ufficiali e convertiti in testo
 - Blocchi 15-16: Sistema Tessera Sanitaria 'Esenzioni da reddito' (E01 < 36.151,98 sopra i 65; E03 assegno sociale; E04 pensione al minimo, 8.263,31 / 11.362,05; Regioni possono integrare; verifica presso ASL o medico; autocertificazione).
 - Blocchi 17-19: Entrate scheda + istruzioni (8.000, anno precedente, esclusioni, conviventi, 90 euro, intero anno se 75 anni entro il 31 gennaio) e ARERA (9.796; luce 30%, gas 15%, acqua 50 litri, rifiuti 25%, sconti automatici).
 - Correzioni fatte: blocco 4 ('si basa su'), 13 ('quella carta'), 17 (reddito dell'anno precedente con esclusioni; 'imponibile' da solo era incompleto: contano anche interessi con imposta sostitutiva), 19 ('entro gennaio').
+
+## E. Seconda fonte per il ticket E01/E04 e due ritocchi (03/11/2026)
+- Ministero della Salute (pagina NSIS 'Esenzioni per reddito', letta tramite risultato di ricerca, la pagina diretta non si apre da questa rete): E01 'Cittadini di eta' inferiore a sei anni e superiore a sessantacinque anni, appartenenti ad un nucleo familiare con reddito annuo complessivo NON SUPERIORE a 36.151,98 euro'; E04 reddito sotto 8.263,31, fino a 11.362,05 con il coniuge; verifica con ASL/medico; autocertificazione se non si e' nell'elenco. Il Sistema TS scrive 'inferiore a': nel copione E01 ora dice 'fino a' (come la legge: 70 milioni di lire 'non superiore').
+- Blocco 1: 'ad aprile' -> 'da aprile' (decreto art. 10 c.1: 'a partire dal mese di aprile 2027').
