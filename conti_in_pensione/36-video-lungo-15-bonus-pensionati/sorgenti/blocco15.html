@@ -2295,10 +2295,11 @@ SPECS[2]=()=>mkBlk(TXT,TOT,[
   P('TUTTO LETTO PER INTERO',960,205,'Abbiamo letto per intero',DF_,36,'book'),
   IC(760,170,'doc',[['DECRETO INTERMINISTERIALE',34],['DEL 24 GIUGNO',32,GRN],['PUBBLICATO IN GAZZETTA UFFICIALE',24,GRN]],500,350,'il decreto interministeriale'),
   IC(760,170,'mail',[['MESSAGGIO DELL\'INPS',34],['NUMERO 2906',34,GRN]],1420,350,'il messaggio numero'),
-  I('chev',[480,140,CP15[0],'CHI RICEVE LA CARTA','E COME VIENE SCELTO',true,{fs:32}],440,590,'Prima vediamo chi riceve'),
-  I('chev',[480,140,CP15[2],'UNA CARTA CHE FORSE HAI GIÀ','CONFRONTO IN EURO',false,{fs:28}],960,590,'In mezzo'),
-  I('chev',[480,140,CP15[1],'GLI ALTRI AIUTI','PER CHI PRENDE UNA PENSIONE',false,{fs:32}],1480,590,'Poi gli altri aiuti'),
-  P('UNA CARTA CHE PUÒ ESCLUDERTI DA QUESTA',960,770,'può escluderti da questa',RF_,34,'warn')]},
+  I('chev',[480,140,CP15[0],'CHI RICEVE LA CARTA','E COME VIENE SCELTO',true,{fs:34,sfs:28}],440,590,'Prima vediamo chi riceve'),
+  I('chev',[480,140,CP15[2],'UNA CARTA','CHE FORSE HAI GIÀ',false,{fs:44,sfs:30}],960,590,'In mezzo'),
+  I('chev',[480,140,CP15[1],'GLI ALTRI AIUTI','CHI PRENDE UNA PENSIONE',false,{fs:38,sfs:28}],1480,590,'Poi gli altri aiuti'),
+  P('QUELLA CARTA PUÒ ESCLUDERTI DA QUESTA',960,745,'può escluderti da questa',RF_,34,'warn'),
+  P('TI FACCIAMO IL CONFRONTO IN EURO',960,830,'il confronto in euro',AMB,36,'calc')]},
 ]);
 SPECS[3]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'COS\'È LA CARTA',cap:'UN CONTRIBUTO PER NUCLEO FAMILIARE, DA SPENDERE IN ALIMENTARI DI PRIMA NECESSITÀ',items:[
@@ -2315,7 +2316,7 @@ SPECS[3]=()=>mkBlk(TXT,TOT,[
   BN('NEI NEGOZI CONVENZIONATI','−15 €','OGNI 100 € DI SPESA',{fs:70,fill:AMB,col:'#5A3300',subcol:'#5A3300',tfs:26,sfs:26},1330,775,'Nei negozi convenzionati')]},
 ]);
 SPECS[4]=()=>mkBlk(TXT,TOT,[
- {at:0,top:'UNA PAUSA',cap:'ADESSO LA PARTE PIÙ UTILE: CHI ENTRA NELL\'ELENCO',items:[
+ {at:0,top:'UNA PAUSA',cap:'QUESTO VIDEO SI BASA SU FONTI UFFICIALI, LETTE RIGA PER RIGA',items:[
   P('UNA PAUSA BREVE',960,205,'Una pausa breve',DF_,36,'clock'),
   BN('LETTI RIGA PER RIGA','13','ARTICOLI DI DECRETO',{fs:120,fill:GF_,col:'#fff',subcol:'#fff',minw:440,tfs:28,sfs:28},320,400,'tredici articoli di decreto'),
   BN(null,'1','MESSAGGIO DELL\'INPS',{fs:120,fill:GF_,col:'#fff',subcol:'#fff',minw:440,tfs:28,sfs:28},900,400,'un messaggio'),
@@ -2332,7 +2333,7 @@ SPECS[5]=()=>mkBlk(TXT,TOT,[
   I('chev',[520,140,CP15[0],'INPS','PREPARA LE LISTE',true,{fs:46}],380,360,'Primo'),
   I('chev',[520,140,CP15[1],'COMUNI','VERIFICANO E PUBBLICANO',false,{fs:46}],960,360,'Secondo'),
   I('chev',[520,140,AMB,'POSTE ITALIANE','CONSEGNANO O RICARICANO',false,{fs:40}],1540,360,'Terzo'),
-  IC(540,190,'web',[['PARTE DAGLI ISEE GIÀ PRESENTATI',28],['E CONTROLLA I NUCLEI',28,GRN]],380,620,'parte dagli Isee'),
+  IC(540,190,'web',[['PARTE DAGLI ISEE',32],['GIÀ PRESENTATI',32],['E CONTROLLA I NUCLEI',26,GRN]],380,620,'parte dagli Isee'),
   IC(540,190,'stato',[['VERIFICANO LE LISTE',32],['E PUBBLICANO L\'ELENCO',28,GRN]],960,620,'le verificano'),
   IC(540,190,'mail',[['CONSEGNA LA CARTA',32],['O RICARICA QUELLA',28],['CHE AVEVI GIÀ',28,GRN]],1540,620,'consegna la carta'),
   P('RAPPORTI CON I CITTADINI: I COMUNI E, PER LA CARTA, LE POSTE',960,830,'I rapporti con i cittadini',DF_,32,'people')]},
@@ -2354,7 +2355,7 @@ SPECS[7]=()=>mkBlk(TXT,TOT,[
   IC(800,170,'x',[['ALTRA MISURA CONTRO LA POVERTÀ',30],['CON SUSSIDIO NAZIONALE,',26,GRN],['REGIONALE O COMUNALE',26,GRN]],520,520,'un\'altra misura contro la povertà',{stroke:RED_}),
   IC(800,170,'x',[['NASPI, CASSA INTEGRAZIONE',32],['O SOSTEGNO SIMILE',28,GRN],['(UN COMPONENTE DEL NUCLEO)',24,GRN]],1400,520,'Non spetta nemmeno',{stroke:RED_}),
   P('SEGNATI LA CARTA ACQUISTI',470,725,'Segnati',AMB,36,'pen'),
-  IC(900,120,'people',[['È PENSATA ANCHE PER GLI ANZIANI CON REDDITI BASSI',30]],1340,725,'è pensata anche per gli anziani'),
+  IC(900,130,'people',[['È PENSATA ANCHE PER GLI ANZIANI',34],['CON REDDITI BASSI',34,GRN]],1340,725,'è pensata anche per gli anziani'),
   P('CI TORNIAMO PIÙ AVANTI',960,850,'Ci torniamo',DF_,34,'next')]},
 ]);
 SPECS[8]=()=>mkBlk(TXT,TOT,[
@@ -2373,7 +2374,7 @@ SPECS[9]=()=>mkBlk(TXT,TOT,[
   I('tier',[1400,104,1,'PRIMA FASCIA','DATA DI NASCITA DI UN COMPONENTE',CP15[0]],800,340,'Le prime due guardano'),
   I('tier',[1400,104,2,'SECONDA FASCIA','DATA DI NASCITA DI UN COMPONENTE',CP15[1]],800,460,'alla data di nascita'),
   I('tier',[1400,104,3,'TERZA FASCIA','NESSUNA DATA DI NASCITA',CP15[2]],800,580,'la terza no'),
-  IC(340,300,'people',[['ALMENO',34],['TRE PERSONE',34,GRN],['IN OGNI FASCIA',26,GRN]],1700,460,'almeno tre persone'),
+  I('card',['IN OGNI FASCIA',340,300,{hc:'#0B4A50',hfs:28,lines:[['ALMENO',46,-18,INK],['TRE PERSONE',40,36,GRN]],icon:['people',0,106,1.3,null,null,INK]}],1700,460,'almeno tre persone'),
   P('A PARITÀ DI FASCIA: PASSA AVANTI L\'ISEE PIÙ BASSO',960,700,'A parità di fascia',AMB,34,'down'),
   IC(1000,130,'x',[['PENSIONATI SOLI O IN COPPIA:',32],['NON RIENTRANO IN QUESTE FASCE',32,RED_]],600,810,'I pensionati che vivono soli',{stroke:RED_}),
   P('ALLORA SONO ESCLUSI?',1530,810,'Allora sono esclusi',RF_,40,'q')]},
@@ -2384,7 +2385,7 @@ SPECS[10]=()=>mkBlk(TXT,TOT,[
   P('ARTICOLO 6 DEL DECRETO',1300,205,'Per l\'articolo sei',DF_,34,'book'),
   I('chev',[520,150,CP15[0],'CARTE AVANZATE','DOPO LE TRE FASCE',true,{fs:42}],380,370,'le carte avanzate'),
   I('chev',[520,150,CP15[1],'IL COMUNE SCEGLIE','NELL\'ELENCO PREDISPOSTO',false,{fs:42}],960,370,'scegliendo'),
-  I('chev',[520,150,AMB,'NUCLEI IN STATO DI BISOGNO','ANCHE DI UNA PERSONA',false,{fs:34}],1540,370,'i nuclei in effettivo'),
+  I('chev',[520,150,AMB,'STATO DI BISOGNO','NUCLEI ANCHE DI UNA PERSONA',false,{fs:42,sfs:26}],1540,370,'i nuclei in effettivo'),
   IC(1100,110,'ok',[['QUINDI ANCHE UNA FAMIGLIA PICCOLA PUÒ AVERE UNA CARTA',32]],960,520,'Quindi anche una famiglia piccola'),
   P('MA DIPENDE DA DUE COSE',960,625,'ma dipende da due cose',RF_,34,'warn'),
   IC(780,140,'house',[['NEL SUO COMUNE',34],['AVANZANO CARTE',30,GRN]],500,740,'che nel suo Comune avanzino carte'),
@@ -2418,7 +2419,7 @@ SPECS[13]=()=>mkBlk(TXT,TOT,[
   IC(780,150,'people',[['DAI 65 ANNI COMPIUTI',36],['E REDDITI BASSI',30,GRN]],500,350,'Spetta a chi ha compiuto'),
   I('coins6',[],1380,360,'ogni due mesi arrivano ottanta euro'),
   BN('IN UN ANNO','480 €','6 × 80 €',{fs:96,fill:AMB,col:'#5A3300',subcol:'#5A3300',tfs:28,sfs:28,minw:420},500,570,'quattrocentoottanta euro l\'anno'),
-  IC(900,150,'cart',[['DA USARE PER COMPRARE CIBO NEGLI ESERCIZI CONVENZIONATI',26],['E PAGARE LUCE E GAS ALLE POSTE',28,GRN]],1380,570,'da usare per comprare cibo'),
+  IC(900,170,'cart',[['DA USARE PER COMPRARE CIBO',32],['NEGLI ESERCIZI CONVENZIONATI',32],['E PAGARE LUCE E GAS ALLE POSTE',28,GRN]],1380,570,'da usare per comprare cibo'),
   I('vs',[],620,790,'Se ce l\'hai'),
   P('DIFFERENZA: 20 € L\'ANNO',1560,740,'la differenza è di venti euro',AMB,32,'down'),
   P('QUELLA CARTA DIPENDE DAL COMUNE',1560,830,'quella carta dipende',RF_,24,'house')]},
@@ -2446,7 +2447,7 @@ SPECS[16]=()=>mkBlk(TXT,TOT,[
   BN('REDDITO DI FAMIGLIA, SOTTO','8.263,31 €',null,{fs:84,fill:GF_,col:'#fff',subcol:'#fff',tfs:28,minw:640},1380,350,'reddito di famiglia sotto'),
   BN('CON IL CONIUGE, SALE A','11.362,05 €',null,{fs:84,fill:AMB,col:'#5A3300',subcol:'#5A3300',tfs:28,minw:640},1380,590,'che con il coniuge sale'),
   IC(780,200,'phone',[['PER VERIFICARE, CHIEDI',30],['ALL\'AZIENDA SANITARIA',34,GRN],['O AL MEDICO DI FAMIGLIA',34,GRN]],480,590,'Per verificare'),
-  IC(1500,130,'pen',[['NON RISULTI NELL\'ELENCO ANNUALE? PUOI PRESENTARE UN\'AUTOCERTIFICAZIONE',30]],960,810,'Se non risulti')]},
+  IC(1500,130,'pen',[['NON RISULTI NELL\'ELENCO ANNUALE?',34],['PUOI PRESENTARE UN\'AUTOCERTIFICAZIONE',34,GRN]],960,810,'Se non risulti')]},
 ]);
 SPECS[17]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'IL CANONE TV',cap:'CANONE TV: ESENZIONE DAI 75 ANNI, REDDITO FINO A 8.000 €',items:[
