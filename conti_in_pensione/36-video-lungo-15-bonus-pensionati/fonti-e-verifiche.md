@@ -30,3 +30,4 @@ Regola: testi interi scaricati con curl dai siti ufficiali e convertiti in testo
 - Se assegno sociale, pensione sociale o integrazione al minimo contano come "altra misura di sostegno alla poverta'" che esclude dalla Carta: NON e' scritto nel decreto, nel messaggio 2906 ne' nelle FAQ trovate. Non affermarlo ne' in un senso ne' nell'altro.
 - Come il cittadino verifica: negli atti letti l'elenco e' pubblicato sul sito del proprio Comune (art. 7 c.3) e il Comune informa; non risulta un servizio Inps di verifica.
 - Decreto direttoriale 1/9/2026 (ripartizione delle carte per Comune): scaricato (tabella lunga) ma non analizzato.
+- Art. 6 c.3: DI CHI e' 'l'elenco predisposto'? Il decreto non lo dice (c.1-2 parlano di elenchi Inps con criteri a-c, tutti con almeno tre componenti; c.3 parla di nuclei 'anche unipersonali' nell'ambito dell'elenco predisposto). Nel copione (blocco 10) e' detto alla lettera, senza attribuirlo all'Inps (ricontrollo del 03/11).
