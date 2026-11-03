@@ -112,3 +112,12 @@ Richiesta utente: "i piu pagati in assoluto e scalabile in italiano", 5 idee. Au
 - DATO MIMIT del 2/11/2026 riportato da Radiocor/Borsa Italiana (agenzia che cita l'Osservatorio MIMIT): self rete stradale benzina 2,010 euro/l, gasolio 2,240; autostrade benzina 2,036, gasolio 2,286; 16.354 impianti (circa 82%) con benzina sotto 2,00; 8.482 (circa 42%) con gasolio sotto 2,20. Serie MIMIT via Teleborsa: 26/10 benzina 2,018 e gasolio 2,261; 27/10 2,017 e 2,261.
 - ERRORE DA NON RIPETERE: Demócrata 3/11 "benzina 95 a 1,722 e diesel 1,896" e' sbagliato/incoerente con MIMIT (2,010 / 2,240): non usarlo.
 - Conti possibili con i soli dati MIMIT 2/11 (pieno da 50 litri, self): benzina 50 x 2,010 = 100,50 euro; gasolio 50 x 2,240 = 112,00; differenza autostrada: benzina +0,026 x 50 = 1,30 euro, gasolio +0,046 x 50 = 2,30 euro. Da usare solo dopo conferma dell'utente sulla fonte.
+
+## Dodicesima ricerca (03/11/2026): FONTE UFFICIALE trovata per la benzina (MIMIT irraggiungibile: timeout dall'uscita di rete, non e un blocco di policy)
+- FONTE PRIMARIA: Commissione europea, Weekly Oil Bulletin, prezzi con tasse, rilevazione di lunedi 26/10/2026 (file "Weekly prices with Taxes" scaricato da energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en; il nome del file dice 2026-09-21 ma la cella data e 2026-10-26). Unita: euro per 1000 litri, media ponderata dei prezzi piu praticati.
+- ITALIA: Euro-super 95 = 2005,83 euro/1000 l (2,0058 al litro); gasolio = 2246,71 (2,2467). Media UE27: benzina 1954,04 e gasolio 2146,19; area euro 20: 2032,02 e 2201,23.
+- Benzina (euro/litro, 26/10): Danimarca 2,5245; Finlandia 2,3459; Paesi Bassi 2,3125; Francia 2,1807; Germania 2,1670; Grecia 2,1430; Portogallo 2,0400; ITALIA 2,0058; Irlanda 1,9708; Belgio 1,9530; Austria 1,7720; Spagna 1,7511; Lussemburgo 1,7460; Slovenia 1,7320; Polonia 1,4671; Malta 1,3400.
+- Gasolio (euro/litro, 26/10): Finlandia 2,5475; Danimarca 2,5018; Paesi Bassi 2,4690; Belgio 2,3751; Francia 2,3515; Germania 2,2980; ITALIA 2,2467; Grecia 2,1270; Austria 2,1320; Spagna 1,8878; Slovenia 1,9092; Polonia 1,7812; Malta 1,2100.
+- Coerenza con MIMIT (via agenzie): 26/10 self 2,018 benzina e 2,261 gasolio; 2/11 self 2,010 e 2,240. Metodi diversi (UE = media ponderata tutti i punti vendita), differenza sotto 1,5 centesimi.
+- Foglio accise/IVA del file UE: IVA Italia 22% (dal 2013); accise: riga Italia incompleta (solo gasolio 572,9 euro/1000 l dal 26/10, benzina vuoto) -> NON usare le accise.
+- Prossimo bollettino UE (2/11) non ancora pubblicato sulla pagina al momento della ricerca.
