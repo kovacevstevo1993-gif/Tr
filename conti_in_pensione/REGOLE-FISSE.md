@@ -724,3 +724,7 @@
 ## ERRORE DEL 02/11/2026 (pacchetto Facebook short 6) - LENTO E SENZA RIGA DI STATO
 - Utente: "cosa stai facendo da 4 minuti? se hai gia' tutto il progetto di fb". Tempo perso: ID dello short non scritto nei file (curl sulla lista /shorts + oembed su 13 ID), copertina rifatta 2 volte (testo che toccava il riquadro, etichetta inutile). Nessuna riga di stato all'utente.
 - REGOLA: negli stati Facebook scrivere SEMPRE l'ID di ogni video/short appena lo si trova (qui: short 6 = pSVNnae7ORU, video 4 = T1JdRgHYmUg); misurare i testi PRIMA del primo render; se un lavoro supera 1 minuto, una riga di stato subito.
+
+## ERRORE DEL 03/11/2026 (titolo originale dello short 3) - 8 messaggi per una domanda
+- Utente: "com'era il titolo prima della modifica?" Ho risposto con il titolo del pacchetto invece di leggere la cronologia reale. Il titolo originale su YouTube era "Pensione 2027: cosa è legge e cosa è solo una proposta" (8/10), cambiato il 16/10 in "Non andare in pensione prima di aver visto questo! #pensioni2027 #inps #lavoro" (dato vidIQ video_change_history, 5 crediti). Il titolo del pacchetto (LEGGE o TRAPPOLA) e quello pubblicato possono essere diversi.
+- REGOLA: se l'utente chiede come era un titolo/testo "prima della modifica", la fonte e' la cronologia di YouTube (vidiq_video_change_history, 5 crediti: il saldo si legge gratis con vidiq_balance), non il pacchetto nel repo. Alla domanda dei crediti l'utente ha detto di fare: farlo subito, con una riga, senza chiedere due volte.
