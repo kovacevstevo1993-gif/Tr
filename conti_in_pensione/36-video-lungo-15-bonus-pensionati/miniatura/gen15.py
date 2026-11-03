@@ -82,7 +82,7 @@ def A():
     # prima carta davanti
     o+=pcard(40,300,470,296,-7,'',0,'')
     o+=pcard_text(40,300,470,296,-7,'500 €',150,'DEDICATA A TE')
-    o+=T('PENSIONI',40,168,128,'#fff',14,'start',maxw=620)
+    o+=T('CARTA',40,168,128,'#fff',14,'start',maxw=620)
     o+=R(700,96,320,54,'url(#rd)',r=12,stroke='#fff',sw=4,rot=-2)+T('DAL 4 NOVEMBRE',860,96+27+11,30,'#fff',maxw=290,rot=-2)
     # destra: LA PRENDI?
     o+=T('LA',930,300,96,'#fff',12,maxw=300)
@@ -94,10 +94,10 @@ def A():
     return page(o,(300,330))
 # ---------------- B: ELENCO DEL COMUNE + LENTE ----------------
 def B():
-    o=T('PENSIONI',1240,150,128,'#fff',14,'end',maxw=620)
+    o=T('CARTA',1240,140,118,'#fff',14,'end',maxw=620)+T('DEDICATA A TE',1240,206,56,YEL,8,'end',maxw=600)
     # moneta 500
-    o+=coin(960,370,160,False)+T('500 €',960,405,96,'#7A4D00',0,maxw=250)
-    o+=pill_small(800,548,320,46,'NESSUNA DOMANDA',26)
+    o+=coin(960,408,150,False)+T('500 €',960,442,90,'#7A4D00',0,maxw=235)
+    o+=pill_small(800,562,320,42,'NESSUNA DOMANDA',26)
     # elenco del Comune
     X,Y,Wd,Hd=50,40,560,540
     o+=R(X,Y,Wd,Hd,'#fff',r=24,stroke='#fff',sw=5)
