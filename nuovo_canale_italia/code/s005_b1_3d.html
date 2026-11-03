@@ -1,0 +1,64 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#ffcf2e;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Short 005 - blocco 1 (HOOK): 6,10 euro in piu per ogni tipo di prodotto da fuori UE, da novembre; fino a giugno nessun dazio sotto 150 =====
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s005.js';
+import * as S4 from '/code/lib/s004.js';
+const DUR=17.811;
+const KF=[[0,[0,3.5,7.0],[0,.9,1.4]],[.9,[.1,3.8,7.8],[0,.9,1.2]],[3.0,[0,5.4,10.8],[0,.8,-2.5]],[DUR,[.15,5.5,11.4],[0,.8,-2.5]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.backdrop(scene,m);
+const belt=S.conveyor(m);scene.add(belt);
+const hero=S.parcel(m,{w:1.6,h:1.1,d:1.3});scene.add(hero);hero.userData.sticker.userData.set('+6,10 €');
+const others=[];for(let i=0;i<7;i++){const p=S.parcel(m,{w:1.3+rnd(i)*.5,h:.9+rnd(i+4)*.4,d:1.1+rnd(i+8)*.3});p.userData.sticker.userData.set('+6,10 €');p.userData.sticker.visible=false;scene.add(p);others.push(p);}
+const items=[S.tshirt(0xf2548d),S.shoe(0x2a5bff),S.charger()];items.forEach(x=>scene.add(x));
+const cal=S.sheet((g,W,H)=>{g.fillStyle='#fffaf0';g.fillRect(0,0,W,H);g.fillStyle='#e5392b';g.fillRect(0,0,W,120);g.fillStyle='#fff';g.font='bold 58px PM';g.textAlign='center';g.textBaseline='middle';g.fillText('NOVEMBRE',W/2,64);g.fillStyle='#14213d';g.font='bold 280px AB';g.fillText('1',W/2,360);g.strokeStyle='#14213d';g.lineWidth=8;g.strokeRect(4,4,W-8,H-8);},420,520,1.5,null);scene.add(cal);
+const calG=S.sheet((g,W,H)=>{g.fillStyle='#fffaf0';g.fillRect(0,0,W,H);g.fillStyle='#2a5bff';g.fillRect(0,0,W,120);g.fillStyle='#fff';g.font='bold 58px PM';g.textAlign='center';g.textBaseline='middle';g.fillText('GIUGNO',W/2,64);g.fillStyle='#14213d';g.font='bold 150px AB';g.fillText('0 €',W/2,330);g.font='bold 52px PM';g.fillText('DAZIO',W/2,450);g.strokeStyle='#14213d';g.lineWidth=8;g.strokeRect(4,4,W-8,H-8);},420,520,1.5,null);scene.add(calG);
+const dst=S.dustp(160,0xffffff,.07);scene.add(dst);
+const dk=(o)=>Object.assign({bg:'rgba(20,33,61,.95)',border:'#ffc400',fill:'#ffffff'},o);
+const tBig=st.tag(['+ 6,10 €'],{bg:'rgba(229,57,43,.97)',border:'#ffffff',fill:'#ffffff',sw:3.2,font:'bold 150px AB',w:760,h:260});
+const tNov=st.tag(['DA NOVEMBRE'],dk({sw:3.0,font:'bold 62px PM',w:680,h:170}));
+const tTipo=st.tag(['OGNI TIPO','DI PRODOTTO'],dk({sw:2.8,font:'bold 62px PM',w:660,h:260}));
+const tOn=st.tag(['ORDINI ONLINE'],dk({sw:3.0,font:'bold 56px PM',w:700,h:170,border:'#2a5bff'}));
+const tUe=S4.flagTag(st,'FUORI UNIONE EUROPEA','EU',{border:'#2a5bff',sw:3.3,w:980,h:180,font:'bold 46px PM',bg:'rgba(20,33,61,.95)'});
+const tGiu=st.tag(['FINO A GIUGNO'],dk({sw:3.0,font:'bold 60px PM',w:700,h:170,border:'#2a5bff'}));
+const t150=st.tag(['SOTTO 150 €'],dk({sw:3.0,font:'bold 72px PM',w:700,h:180,border:'#25b36a'}));
+const tZero=st.tag(['NESSUN DAZIO'],{bg:'rgba(37,179,106,.97)',border:'#ffffff',fill:'#ffffff',sw:3.2,font:'bold 66px PM',w:760,h:180});
+const tCome=st.tag(['ECCO COME','FUNZIONA'],dk({sw:3.0,font:'bold 64px PM',w:700,h:260,border:'#ffc400'}));
+const A=S.makeAnchor(st,KF);const V=.9;
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  belt.userData.scroll(t*2.2);
+  // pacco principale (hook): sul nastro dal secondo 0, adesivo che si schianta a 0.1
+  hero.scale.setScalar(1.2*Math.max(.001,1-eo(prog(t,3.0,3.5))));hero.visible=t<3.55;hero.position.set(0,.62,1.0+V*t*.3);hero.rotation.y=Math.sin(t*.9)*.05*damp;
+  const sp=eb(prog(t,.06,.34));const stk=hero.userData.sticker;stk.visible=sp>.002;stk.scale.setScalar(Math.max(.001,sp*1.9));stk.position.set(.15,.55,.68+.1*(1-sp));
+  hero.userData.lab.visible=t>2.6;
+  // altri pacchi sul nastro
+  others.forEach((p,i)=>{const z=-24+((t*V+i*4.4)%30);const vis=z<6.2;p.visible=vis&&t>.5&&z<1.6;p.position.set((rnd(i+20)-.5)*.5,.62,z);p.rotation.y=(rnd(i+30)-.5)*.5;p.scale.setScalar(Math.max(.001,clamp((z+22)/4)*(1-clamp((z-.6)/1.0))));});
+  // tag grande 6,10 (gancio)
+  const pulse=1+.04*Math.sin(t*9)*(t<3?1:0);
+  A(tBig,t,.74,.54,eo(prog(t,.08,.24))*(1-eo(prog(t,2.6,3.0))),(1+(1-eb(prog(t,.08,.4)))*.25)*pulse);
+  // calendario novembre
+  const cn=eb(prog(t,5.2,5.7))*(1-eo(prog(t,6.3,6.6)));cal.visible=cn>.002;cal.scale.setScalar(Math.max(.001,cn));cal.position.set(-1.2,2.4+Math.sin(t*1.5)*.05*damp,1.6);cal.rotation.y=.2;
+  A(tNov,t,.7,.62,eo(prog(t,5.3,5.65))*(1-eo(prog(t,6.3,6.6))));
+  // tre tipi di prodotto
+  items.forEach((x,i)=>{const a=6.4+i*.25;const e=eb(prog(t,a,a+.4))*(1-eo(prog(t,8.8,9.1)));x.visible=e>.002;x.scale.setScalar(Math.max(.001,e*1.25));x.position.set((i-1)*1.35,2.3+Math.sin(t*2+i)*.08*damp,1.4);x.rotation.y=t*.8+i;});
+  A(tTipo,t,.72,.58,eo(prog(t,6.45,6.8))*(1-eo(prog(t,7.95,8.25))));
+  A(tOn,t,.78,.62,eo(prog(t,8.3,8.6))*(1-eo(prog(t,8.95,9.2))));
+  A(tUe,t,.9,.62,eo(prog(t,9.1,9.5))*(1-eo(prog(t,11.1,11.4))));
+  // fino a giugno
+  const cg=eb(prog(t,11.5,12.0))*(1-eo(prog(t,14.6,14.9)));calG.visible=cg>.002;calG.scale.setScalar(Math.max(.001,cg));calG.position.set(0,2.5+Math.sin(t*1.5)*.05*damp,1.6);calG.rotation.y=-.12;
+  A(tGiu,t,.76,.62,eo(prog(t,11.55,11.9))*(1-eo(prog(t,12.65,12.95))));
+  A(t150,t,.76,.62,eo(prog(t,12.8,13.15))*(1-eo(prog(t,14.55,14.85))));
+  A(tZero,t,.82,.62,eo(prog(t,14.75,15.1))*(1-eo(prog(t,16.3,16.6))));
+  A(tCome,t,.74,.58,eo(prog(t,16.55,16.95)));
+  dst.userData.update(.1,t,0,2.4,1.5,4.0);
+  st.render(t,{shakes:[.1,5.3,9.1,14.75],flashes:[.1,14.75]});
+}
+boot(st,draw);
+</script></body></html>

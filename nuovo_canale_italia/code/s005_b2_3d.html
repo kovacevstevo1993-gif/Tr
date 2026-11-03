@@ -1,0 +1,65 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#ffcf2e;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s005.js';
+import * as S4 from '/code/lib/s004.js';
+// ===== Short 005 - blocco 2: dazio 3 euro (dal 1/7, fino a 150) + commissione UE 2 euro (dal 1/11, qualunque valore) = 5 euro + IVA 22% = 6,10 =====
+const DUR=21.451;
+const KF=[[0,[0,4.7,8.6],[0,1.5,-1.0]],[DUR,[0,4.9,9.2],[0,1.5,-1.0]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.backdrop(scene,m);
+const belt=S.conveyor(m);scene.add(belt);
+const gate=S.gate(m);gate.position.set(0,0,-3.2);scene.add(gate);
+const items=[S.tshirt(0xf2548d),S.shoe(0x2a5bff),S.charger()];items.forEach((x,i)=>{x.scale.setScalar(i===0?1.5:1.5);scene.add(x);});
+const par=S.parcel(m,{w:1.6,h:1.1,d:1.3});par.position.set(0,.62,-3.2);par.scale.setScalar(.8);scene.add(par);par.userData.sticker.userData.set('≤ 150 €','#2a5bff');
+const dst=S.dustp(160,0xffffff,.07);scene.add(dst);
+const dk=(o)=>Object.assign({bg:'rgba(20,33,61,.95)',border:'#ffc400',fill:'#ffffff'},o);
+const A=S.makeAnchor(st,KF);
+const T=(lines,o)=>st.tag(lines,dk(o));
+const tLug=T(['DAL 1° LUGLIO'],{sw:3,font:'bold 60px PM',w:700,h:170,border:'#2a5bff'});
+const tDaz=st.tag(['DAZIO FISSO','3 €'],{bg:'rgba(42,91,255,.97)',border:'#fff',fill:'#fff',sw:3,font:'bold 80px AB',w:700,h:280});
+const tTipo=T(['OGNI TIPO','DI PRODOTTO'],{sw:3,font:'bold 62px PM',w:660,h:260});
+const t150=T(['PACCO FINO','A 150 €'],{sw:3,font:'bold 64px PM',w:660,h:260,border:'#2a5bff'});
+const tNov=T(['DAL 1° NOVEMBRE'],{sw:3,font:'bold 54px PM',w:760,h:170,border:'#e5392b'});
+const tUe=S4.flagTag(st,'COMMISSIONE EUROPEA','EU',{border:'#2a5bff',sw:3,w:980,h:180,font:'bold 44px PM',bg:'rgba(20,33,61,.95)'});
+const tCom=st.tag(['COMMISSIONE','+ 2 €'],{bg:'rgba(229,57,43,.97)',border:'#fff',fill:'#fff',sw:3,font:'bold 74px AB',w:760,h:280});
+const tTipo2=T(['PER OGNI TIPO','DI PRODOTTO'],{sw:3,font:'bold 58px PM',w:700,h:260});
+const tQua=T(['QUALUNQUE','VALORE'],{sw:3,font:'bold 64px PM',w:660,h:260,border:'#e5392b'});
+const tSum=st.tag(['3 € + 2 € = 5 €'],{bg:'rgba(20,33,61,.97)',border:'#ffc400',fill:'#ffc400',sw:3.2,font:'bold 80px AB',w:900,h:200});
+const tIva=T(['+ IVA 22%'],{sw:3,font:'bold 78px AB',w:700,h:190,border:'#2a5bff'});
+const tTot=st.tag(['6,10 €'],{bg:'rgba(229,57,43,.98)',border:'#fff',fill:'#fff',sw:3.4,font:'bold 190px AB',w:760,h:290});
+const chip=(txt,col)=>st.tag([txt],{bg:'rgba(20,33,61,.96)',border:col,fill:'#fff',sw:1.1,font:'bold 80px AB',w:340,h:170});
+const c3=[0,1,2].map(()=>chip('3 €','#2a5bff')),c2=[0,1,2].map(()=>chip('+ 2 €','#e5392b'));
+const IX=[-.95,0,.95];
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  belt.userData.scroll(0);
+  gate.userData.laser.position.set(0,1.2+Math.sin(t*2.6)*1.0,.2);gate.userData.laser.visible=true;
+  par.visible=true;par.position.z=-3.0;
+  items.forEach((x,i)=>{const a=.3+i*.2;const e=eb(prog(t,a,a+.4));x.visible=e>.002;x.scale.setScalar(Math.max(.001,e*1.0));x.position.set(IX[i],.62+(i===0?.5:0),.4);x.rotation.y=Math.sin(t*.8+i)*.25;});
+  const fade=(a,b,c,d)=>eo(prog(t,a,b))*(1-eo(prog(t,c,d)));
+  A(tLug,t,.74,.62,fade(.05,.35,1.05,1.3));
+  A(tDaz,t,.62,.55,fade(1.3,1.65,2.7,2.95),1+.04*Math.sin(t*8)*(t<2.7?1:0));
+  A(tTipo,t,.72,.58,fade(2.95,3.3,4.9,5.15));
+  A(t150,t,.72,.58,fade(5.2,5.55,8.0,8.3));
+  A(tNov,t,.8,.62,fade(8.3,8.65,9.3,9.6));
+  A(tUe,t,.9,.62,fade(9.5,9.85,11.1,11.4));
+  A(tCom,t,.62,.55,fade(11.4,11.75,13.3,13.55),1+.04*Math.sin(t*8)*(t<13.3?1:0));
+  A(tTipo2,t,.76,.58,fade(13.5,13.85,14.8,15.05));
+  A(tQua,t,.72,.58,fade(15.0,15.35,16.45,16.7));
+  A(tSum,t,.9,.62,fade(16.6,16.95,17.6,17.85));
+  A(tIva,t,.74,.62,fade(17.7,18.05,19.55,19.8));
+  A(tTot,t,.7,.55,eo(prog(t,19.65,19.95)),(1+(1-eb(prog(t,19.65,20.1)))*.4));
+  // chip sopra gli oggetti
+  items.forEach((x,i)=>{const a3=3.4+i*.5,a2=13.45+i*.45;
+    st.setSprite(c3[i],IX[i],1.75,.4,fade(a3,a3+.3,8.0,8.3));st.setSprite(c2[i],IX[i],1.75,.4,fade(a2,a2+.3,16.45,16.7));});
+  dst.userData.update(.1,t,0,2.4,0,4.0);
+  st.render(t,{shakes:[2.0,11.5,19.65],flashes:[19.65]});
+}
+boot(st,draw);
+</script></body></html>
