@@ -33,7 +33,7 @@ function idCard(p,w,h,label,col,kind){const g=el('g',{},p);
  ps.forEach(([x,y,s])=>{const q=personI(g,s,'#0B4A50');q.setAttribute('transform','translate('+x+' '+y+')');});
  [[196,190],[196,150],[196,110]].forEach(([wd,yy],k)=>0);
  [[200,-h/2+126],[160,-h/2+160],[120,-h/2+194]].forEach(([wd,yy])=>el('rect',{x:-w/2+190,y:yy,width:wd,height:12,rx:6,fill:'#B5C6C9'},g));
- const b=el('g',{transform:'translate('+(w/2-76)+' '+(h/2-62)+')'},g);el('circle',{r:48,fill:ORG,stroke:'#fff','stroke-width':5},b);fit(b,'? %',0,13,38,'#fff',76);
+ const b=el('g',{transform:'translate('+(w/2-76)+' '+(h/2-62)+')'},g);el('circle',{r:48,fill:ORG,stroke:'#fff','stroke-width':5},b);fit(b,'? %',0,13,36,'#fff',58);
  return g;}
 // didascalia: striscia di cedolino con bordo dentellato
 function strip(p,lines,fs){fs=fs||46;const c=el('g',{},p);const w=900,h=lines.length*fs*1.3+64;
