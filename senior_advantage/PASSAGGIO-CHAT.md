@@ -1,3 +1,10 @@
+# 03/11/2026 (LEGGERE PER PRIMO) - LUNGO 10 BLACK FRIDAY: COPIONE FATTO (20 blocchi, 9.217 caratteri, qa_copione OK)
+- Tema scelto dall'utente dopo ricerca Google Trends US + YouTube (RICERCHE-VIDIQ.md sezione 20; 0 crediti vidIQ, saldo 58). Angolo: resi e price match a Black Friday da pagine ufficiali. Ordine utente: "tutto ufficiale, tutto intero, niente cagate".
+- FATTI-BLACK-FRIDAY.md (sezione AGGIORNAMENTO 03/11) + testo grezzo intero in riferimenti/black_friday/ (target.txt, walmart_corp.txt, costco_reso.txt, costco_price.txt). Nel video SOLO Target, Walmart, Costco. FUORI perche non letti per intero: Best Buy, FTC, Kohl's (403), Amazon 2026 (503), Sam's Club (403), date early deals.
+- Browser automatico su pagine con "conferma di essere umano" (Walmart help, Kohl's): negato dal sistema di sicurezza ("Bot Check Circumvention"); NON aggirare. Walmart si legge su corporate.walmart.com/policies (curl normale).
+- Date pagine: Walmart reso 9/10/2026; Walmart price match 8/6/2023 (dirlo); Target 2026; Costco reso 2/10/2025; Costco price match 15/5/2026.
+- File: COPIONE-VIDEO-BLACK-FRIDAY.md. Prossimo, SOLO su ordine: titolo/vidIQ, durate -> slide (prefisso SA-blackfriday-bloccoNN.mp4), miniature, pacchetto, short.
+
 # 26/10/2026 SERA TARDI (LEGGERE PER PRIMO) - SHORT 13 ALDI COMPLETO
 - Fatto e consegnato all'utente: copione (COPIONE-SHORT-13-ALDI.md), 7 slide verticali (video_short13/SA-aldi-short-blocco01-07.mp4, 349 227 323 196 195 224 204 fotogrammi, controllate fotogramma per fotogramma), pacchetto (PACCHETTO-SHORT-13-ALDI.md, controllato con qa/qa_pacchetto_short.py) e copertina (miniature/copertina-short-13.png, logo Aldi vero, code/cover13.py).
 - Lungo 9 Aldi gia pubblicato dall'utente. Video correlato dello short = lungo Aldi.
