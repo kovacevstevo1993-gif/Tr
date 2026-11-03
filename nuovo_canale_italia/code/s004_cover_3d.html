@@ -1,0 +1,19 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#1c1b48;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Copertina short 004 benzina: pompa grande con display "+1,30 €" (autostrada, a pieno) =====
+import {THREE,createStage,boot} from '/code/lib/stage.js';
+import * as S from '/code/lib/s004.js';
+const DUR=4;
+const KF=[[0,[0,3.95,7.3],[0,3.9,0]],[DUR,[0,3.95,7.3],[0,3.9,0]]];
+const st=await createStage({dur:DUR,centers:[0],kf:KF,theme:S.THEME});
+const m=S.mats();S.backdrop(st.scene,m);
+const p=S.pump(m,{accent:m.orange});p.scale.setScalar(1.5);p.position.set(0,0,0);st.scene.add(p);
+p.userData.lcd.userData.set('AUTOSTRADA','+1,30 €','A PIENO','#ffb000');
+const d=S.dustp(200,0xffc060,.09);d.userData.update(-.2,.6,0,4,1.5,5);st.scene.add(d);
+function draw(t){st.render(1.0,{shakes:[],flashes:[]});}
+boot(st,draw);
+</script></body></html>

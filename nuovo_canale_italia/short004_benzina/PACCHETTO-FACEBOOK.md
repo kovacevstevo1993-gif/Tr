@@ -32,7 +32,7 @@ Quanto paghi tu un pieno di benzina? Scrivilo qui sotto 👇
 
 ## Impostazioni
 - Pubblica come Reel (verticale, 87,8 s): short004_benzina/clip/S004-short-senza-finale.mp4.
-- Copertina: fotogramma a circa 11,6 s (pompa arancione con "- 13 EURO"). Copertina dedicata: da fare su ordine.
+- Copertina: short004_benzina/facebook/copertina-fb-short004.png (1080x1920; display "+1,30 €" nella fascia centrale 16:9).
 - Se compare "Genera sottotitoli": attivalo.
 - Nessuna musica della libreria Meta (la musica del video e originale). Nessuna promozione a pagamento.
 
