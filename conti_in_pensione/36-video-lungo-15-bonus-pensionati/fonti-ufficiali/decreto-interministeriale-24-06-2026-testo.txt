@@ -347,6 +347,7 @@ Carni suine, bovine, avicole, ovine, caprine, cunicole
 Pescato fresco
 Tonno e carne in scatola
 latte e suoi derivati
+uova
 oli d’oliva e di semi
 prodotti della panetteria (sia ordinaria che fine), della pasticceria e della biscotteria
 pizza e prodotti da forno surgelati
@@ -356,6 +357,7 @@ farine di cereali
 ortaggi freschi; lavati e confezionati pronti al consumo; lavorati; cotti, confezionati e pronti al
 consumo; surgelati
 pomodori pelati e conserve di pomodori
+legumi
 semi e frutti oleosi
 frutta di qualunque tipologia, anche lavata e confezionata pronta al consumo nonché cotta e
 confezionata pronta al consumo
