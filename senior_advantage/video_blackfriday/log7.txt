@@ -1,0 +1,5 @@
+ok blocco 7 911 fotogrammi
+blocco 7: durata 911 f = 30.37 s; ultimo elemento compare a 23.69 s (80% = 24.29 s); oltre l'80%: []
+  fotogrammi controllati 911; tagliati dal bordo: 0; margine minimo 6px; ultimo movimento al fotogramma: None (ultimi 20 = 891..910)
+ffprobe fotogrammi: 911
+FINITO 7

@@ -1,0 +1,5 @@
+ok blocco 17 1029 fotogrammi
+blocco 17: durata 1029 f = 34.30 s; ultimo elemento compare a 26.75 s (80% = 27.44 s); oltre l'80%: []
+  fotogrammi controllati 1029; tagliati dal bordo: 0; margine minimo 6px; ultimo movimento al fotogramma: None (ultimi 20 = 1009..1028)
+ffprobe fotogrammi: 1029
+FINITO 17
