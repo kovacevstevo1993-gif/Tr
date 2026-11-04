@@ -57,7 +57,7 @@ function draw(t){
   // due sacchetti della spesa: stessa spesa, prezzo diverso
   bag.visible=bag2.visible=t>14.3&&t<20.9;
   const bi=eb(prog(t,14.5,15.0));bag.scale.setScalar(Math.max(.001,bi));bag2.scale.setScalar(Math.max(.001,eb(prog(t,17.0,17.5))));
-  bag.position.set(1.1,0,.2);bag2.position.set(-1.1,0,.2);bag.rotation.y=-.3+Math.sin(t*.7)*.05*damp;bag2.rotation.y=.3+Math.sin(t*.6)*.05*damp;
+  bag.position.set(1.1*eio(prog(t,17.0,17.6)),0,.2);bag2.position.set(-1.1,0,.2);bag.rotation.y=-.3+Math.sin(t*.7)*.05*damp;bag2.rotation.y=.3+Math.sin(t*.6)*.05*damp;
   stack.visible=t<8.2;
   A(tOggi,t,0.62,.62,eo(prog(t,14.8,15.15))*(1-eo(prog(t,17.0,17.3))),1,0);
   A(tAgo,t,0.62,.62,eo(prog(t,17.15,17.5))*(1-eo(prog(t,19.2,19.5))),1,0);
