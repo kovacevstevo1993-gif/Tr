@@ -67,7 +67,7 @@ export function drawFlag(g,k,x,y,w,h){const R=(c,a,b,cw,ch)=>{g.fillStyle=c;g.fi
   g.strokeStyle='rgba(255,255,255,.55)';g.lineWidth=3;g.strokeRect(x,y,w,h);}
 export function flagTag(st,name,flag,{border='#ffb000',sw=2.6,w=720,h=170,font='bold 58px PM',fill='#ffffff',bg='rgba(14,16,40,.93)',sub=null}={}){
   return st.label((g,W_,H_)=>{g.fillStyle=bg;st.rr(g,6,6,W_-12,H_-12,44);g.fill();g.strokeStyle=border;g.lineWidth=8;g.stroke();drawFlag(g,flag,38,H_/2-34,100,68);
-    g.fillStyle=fill;g.font=font;g.textAlign='left';g.textBaseline='middle';g.fillText(name,170,H_/2+4);if(sub){g.fillStyle=border;g.font='bold 40px PM';g.textAlign='right';g.fillText(sub,W_-40,H_/2+4);}},w,h,sw,name);}
+    g.fillStyle=fill;g.textAlign='left';g.textBaseline='middle';{let f=font;let px=+(/(\d+)px/.exec(f)||[0,0])[1];g.font=f;while(px>20&&g.measureText(name).width>W_-170-60){px-=3;f=font.replace(/\d+px/,px+'px');g.font=f;}}g.fillText(name,170,H_/2+4);if(sub){g.fillStyle=border;g.font='bold 40px PM';g.textAlign='right';g.fillText(sub,W_-40,H_/2+4);}},w,h,sw,name);}
 // ---- telefono con mappa a pin (illustrazione generica) ----
 export function phone(m){const g=new THREE.Group();
   add(g,rbox(2.1,4.1,.24,.22,m.black),0,0,0);

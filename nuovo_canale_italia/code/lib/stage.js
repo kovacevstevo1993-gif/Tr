@@ -51,13 +51,15 @@ export async function createStage({dur,centers=[0],kf,theme={}}){
     const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=4;
     const s=new THREE.Sprite(new THREE.SpriteMaterial({map:t,transparent:true,depthTest:false,fog:false}));s.scale.set(sw,sw*h/w,1);s.renderOrder=10;s.visible=false;scene.add(s);s.userData={c,g,t,w,h,sw,name};sprites.push(s);return s;}
   function setSprite(s,x,y,z,show,sc=1){s.visible=show>.01&&sc>.001;s.material.opacity=clamp(show);s.position.set(x,y,z);s.scale.set(s.userData.sw*sc,s.userData.sw*sc*s.userData.h/s.userData.w,1);}
+  // adatta il font finche il testo entra nel riquadro (evita testi tagliati)
+  function fit(g,txt,font,maxW){let f=font;const mo=/(\d+)px/.exec(f);if(!mo)return f;let px=+mo[1];g.font=f;while(g.measureText(txt).width>maxW&&px>20){px-=3;f=font.replace(/\d+px/,px+'px');g.font=f;}return f;}
   // etichetta standard: pannello scuro con bordo e testo (una o due righe)
   function tag(lines,{border='#F3F0E8',font='bold 74px PM',w=760,h=null,sw=2.5,fill='#F3F0E8',bg='rgba(16,17,21,.9)'}={}){const hh=h||(lines.length>1?260:170);
-    return label((g,W_,H_)=>{g.fillStyle=bg;rr(g,6,6,W_-12,H_-12,40);g.fill();g.strokeStyle=border;g.lineWidth=8;g.stroke();g.fillStyle=fill;g.font=font;g.textAlign='center';g.textBaseline='middle';
-      lines.forEach((l,i)=>g.fillText(l,W_/2,H_*((i+1)/(lines.length+1))+4));},w,hh,sw,lines.join(' '));}
+    return label((g,W_,H_)=>{g.fillStyle=bg;rr(g,6,6,W_-12,H_-12,40);g.fill();g.strokeStyle=border;g.lineWidth=8;g.stroke();g.fillStyle=fill;g.textAlign='center';g.textBaseline='middle';
+      lines.forEach((l,i)=>{g.font=fit(g,l,font,W_-110);g.fillText(l,W_/2,H_*((i+1)/(lines.length+1))+4);});},w,hh,sw,lines.join(' '));}
   // numero grande che cambia (conteggio)
   function counter({w=720,h=260,sw=2.0,color='#F3F0E8',border='#F3F0E8',font='140px AB',bg='rgba(16,17,21,.92)'}={}){let cur='';
-    const s=label(()=>{},w,h,sw,'num');s.userData.set=(str)=>{if(str===cur)return;cur=str;const g=s.userData.g;g.clearRect(0,0,w,h);g.fillStyle=bg;rr(g,6,6,w-12,h-12,46);g.fill();g.strokeStyle=border;g.lineWidth=8;g.stroke();g.fillStyle=color;g.font=font;g.textAlign='center';g.textBaseline='middle';g.fillText(str,w/2,h/2+8);s.userData.t.needsUpdate=true;};return s;}
+    const s=label(()=>{},w,h,sw,'num');s.userData.set=(str)=>{if(str===cur)return;cur=str;const g=s.userData.g;g.clearRect(0,0,w,h);g.fillStyle=bg;rr(g,6,6,w-12,h-12,46);g.fill();g.strokeStyle=border;g.lineWidth=8;g.stroke();g.fillStyle=color;g.textAlign='center';g.textBaseline='middle';g.font=fit(g,str,font,w-110);g.fillText(str,w/2,h/2+8);s.userData.t.needsUpdate=true;};return s;}
   // serbatoio di vetro con liquido e tacche (1 unita = 10%)
   function tank({x,z=0,r=.55,H=5.0,color=mats.red,ticks=true}){const g=new THREE.Group();g.position.set(x,0,z);
     const glass=new THREE.Mesh(new THREE.CylinderGeometry(r,r,H,48,1,true),mats.glass);glass.position.y=H/2;g.add(glass);

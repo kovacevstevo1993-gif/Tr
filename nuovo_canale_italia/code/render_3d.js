@@ -13,7 +13,7 @@ const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.ttf': 'font/ttf
   let frames = [];
   if (b === undefined) frames = a.split(',').map(x => ({ n: 't' + x, t: +x })); else for (let f = +a; f <= +b; f++) frames.push({ n: String(f).padStart(5, '0'), t: f / 30 });
   const bad = [];
-  for (const fr of frames) { await pg.evaluate(t => draw(t), fr.t); const bo = await pg.evaluate(() => bounds()); if (bo.length) bad.push([fr.n, JSON.stringify(bo)]); if (!BO) await pg.screenshot({ path: path.join(out, fr.n + '.png') }); }
+  for (const fr of frames) { if (process.env.RESUME && !BO && fs.existsSync(path.join(out, fr.n + '.png'))) continue; await pg.evaluate(t => draw(t), fr.t); const bo = await pg.evaluate(() => bounds()); if (bo.length) bad.push([fr.n, JSON.stringify(bo)]); if (!BO) await pg.screenshot({ path: path.join(out, fr.n + '.png') }); }
   if (bad.length && process.env.RIASSUNTO) { const per = {}; bad.forEach(([n, j]) => JSON.parse(j).forEach(q => { (per[q[0]] = per[q[0]] || new Set()).add(+n); })); for (const k in per) { const a = [...per[k]].sort((x, y) => x - y); console.log('  ', k, 'fotogrammi', a[0], '-', a[a.length - 1], '(' + a.length + ')'); } }
   console.log(bad.length ? 'FUORI_LIMITI ' + bad.length + ' ' + bad.slice(0, 3).map(x => x.join(' ')).join(' | ') : 'limiti ok ' + frames.length + ' fotogrammi');
   await br.close(); srv.close();

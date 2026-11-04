@@ -11,8 +11,8 @@ nf = int(np.ceil(dur * 30 - 1e-6)); SR = 48000
 # ---- 1) fotogrammi ----
 SKIP = os.environ.get("SKIP_RENDER") and os.path.isdir(FR) and len([f for f in os.listdir(FR) if f.endswith(".png")]) == nf
 if not SKIP:
-    if os.path.isdir(FR): shutil.rmtree(FR)
-    os.makedirs(FR)
+    if os.path.isdir(FR) and not os.environ.get('RESUME'): shutil.rmtree(FR)
+    os.makedirs(FR, exist_ok=True)
 ps = []; step = (nf + 3) // 4
 for k in range(4):
     a, b = k * step, min(nf - 1, (k + 1) * step - 1)
