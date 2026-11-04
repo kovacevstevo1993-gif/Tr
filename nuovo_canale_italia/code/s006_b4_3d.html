@@ -1,0 +1,68 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0b3442;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s006.js';
+import * as S4 from '/code/lib/s004.js';
+// ===== Short 006 - blocco 4: attenzione; BOT 3,175% sotto prezzi +5,4%; non guadagni, perdi molto meno; fonti ufficiali; informazione generale; mi piace e iscriviti =====
+const DUR=25.131;
+const KF=[[0,[0,2.8,8.6],[0,1.5,0]],[1.3,[0,2.8,8.6],[0,1.5,0]],[1.4,[0,3.3,12.6],[0,2.3,0],'w'],[12.0,[0,3.3,12.6],[0,2.3,0]],[12.2,[0,2.6,8.6],[0,1.4,0],'w'],[DUR,[0,2.7,8.8],[0,1.5,0]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.backdrop(scene,m);
+const counter=S.counter(m);scene.add(counter);
+const tBot=st.tank({x:0,z:0,r:.55,H:6.2,color:m.gold,ticks:true});
+const tPre=st.tank({x:0,z:0,r:.55,H:6.2,color:m.red,ticks:true});
+const tCon=st.tank({x:0,z:0,r:.55,H:6.2,color:m.green,ticks:true});
+const stack=S.noteStack(m,{w:2.5,d:1.3,h:1.2});scene.add(stack);
+const coin=S.coin(m,{r:1.3});scene.add(coin);
+const dk=(o)=>Object.assign({bg:'rgba(10,40,52,.95)',border:'#19d37a',fill:'#ffffff'},o);
+const tAtt=st.tag(['ATTENZIONE'],{bg:'rgba(243,190,58,.98)',border:'#0b3442',fill:'#0b3442',sw:3.2,font:'bold 100px AB',w:900,h:230});
+const cBot=st.counter({w:900,h:240,sw:3.0,color:'#ffffff',border:'#f3be3a',font:'110px AB',bg:'rgba(10,40,52,.95)'});
+const cPre=st.counter({w:900,h:240,sw:3.0,color:'#ffffff',border:'#e5392b',font:'110px AB',bg:'rgba(10,40,52,.95)'});
+const tNoG=st.tag(['NON GUADAGNI'],{bg:'rgba(229,57,43,.97)',border:'#ffffff',fill:'#ffffff',sw:3.0,font:'bold 80px AB',w:900,h:200});
+const tMeno=st.tag(['PERDI MOLTO MENO'],{bg:'rgba(25,211,122,.97)',border:'#ffffff',fill:'#06222c',sw:3.0,font:'bold 76px AB',w:940,h:200});
+const tUff=st.tag(['NUMERI UFFICIALI'],dk({sw:3.0,font:'bold 66px PM',w:900,h:180,border:'#f3be3a'}));
+const tIst=S4.flagTag(st,'ISTAT','IT',{border:'#19d37a',sw:3.1,w:760,h:180,font:'bold 64px PM',bg:'rgba(10,40,52,.95)'});
+const tBce=S4.flagTag(st,'BANCA CENTRALE EUROPEA','EU',{border:'#f3be3a',sw:3.3,w:1000,h:180,font:'bold 44px PM',bg:'rgba(10,40,52,.95)'});
+const tMef=S4.flagTag(st,'MINISTERO ECONOMIA','IT',{border:'#19d37a',sw:3.3,w:1000,h:180,font:'bold 46px PM',bg:'rgba(10,40,52,.95)'});
+const tAde=S4.flagTag(st,'AGENZIA ENTRATE','IT',{border:'#f3be3a',sw:3.2,w:940,h:180,font:'bold 50px PM',bg:'rgba(10,40,52,.95)'});
+const tInfo=st.tag(['INFORMAZIONE','GENERALE'],dk({sw:3.0,font:'bold 66px PM',w:860,h:270,border:'#f3be3a'}));
+const tCons=st.tag(['NON È','CONSULENZA'],dk({sw:3.0,font:'bold 66px PM',w:860,h:270,border:'#e5392b'}));
+const tLike=st.tag(['METTI MI PIACE'],{bg:'rgba(37,99,235,.97)',border:'#ffffff',fill:'#ffffff',sw:3.0,font:'bold 70px AB',w:900,h:200});
+const tIsc=st.tag(['ISCRIVITI'],{bg:'rgba(229,57,43,.97)',border:'#ffffff',fill:'#ffffff',sw:3.0,font:'bold 90px AB',w:800,h:200});
+const tNome=st.tag(['SOLDI CHE','CONTANO'],{bg:'rgba(10,40,52,.97)',border:'#f3be3a',fill:'#f3be3a',sw:3.2,font:'bold 104px AB',w:940,h:320});
+const A=S.makeAnchor(st,KF);
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  stack.visible=t<1.45;stack.rotation.y=Math.sin(t*2)*.08;
+  const showTanks=t>1.4&&t<12.0;
+  tBot.g.visible=showTanks;tBot.g.position.set(0,0,0);tBot.set(3.175*eo(prog(t,1.6,3.6)));tBot.g.scale.setScalar(.62*Math.max(.001,eb(prog(t,1.45,1.85))));
+  tPre.g.visible=showTanks&&t>4.4;tPre.g.position.set(1.7,0,0);tPre.set(5.4*eo(prog(t,4.6,6.6)));tPre.g.scale.setScalar(.62*Math.max(.001,eb(prog(t,4.45,4.85))));
+  tCon.g.visible=showTanks&&t>10.2;tCon.g.position.set(-1.7,0,0);tCon.set(.25*eo(prog(t,10.4,11.0)));tCon.g.scale.setScalar(.62*Math.max(.001,eb(prog(t,10.25,10.65))));
+  // il vetro del BOT si sposta al centro-sinistra quando arriva quello dei prezzi
+  tBot.g.position.x=-.0;
+  coin.visible=t>12.2;coin.position.set(0,1.9+Math.sin(t*1.6)*.1*damp,.4);coin.rotation.y=t*1.2;coin.scale.setScalar(Math.max(.001,eb(prog(t,12.25,12.9))));
+  A(tAtt,t,0.88,.62,eo(prog(t,.06,.2))*(1-eo(prog(t,1.2,1.4))),(1+(1-eb(prog(t,.06,.4)))*.08));
+  cBot.userData.set('BOT 3,175 %');cPre.userData.set('PREZZI 5,4 %');
+  A(cBot,t,0.92,.62,eo(prog(t,1.5,1.85))*(1-eo(prog(t,4.3,4.55))));
+  A(cPre,t,0.92,.62,eo(prog(t,4.6,4.95))*(1-eo(prog(t,7.7,7.95))));
+  A(tNoG,t,0.88,.62,eo(prog(t,7.9,8.2))*(1-eo(prog(t,8.9,9.15))),1+.03*Math.sin(t*9)*(t<9?1:0));
+  A(tMeno,t,0.92,.62,eo(prog(t,9.05,9.4))*(1-eo(prog(t,11.9,12.15))));
+  A(tUff,t,0.88,.64,eo(prog(t,12.2,12.55))*(1-eo(prog(t,13.2,13.4))));
+  A(tIst,t,0.77,.64,eo(prog(t,13.3,13.65))*(1-eo(prog(t,14.1,14.3))));
+  A(tBce,t,0.92,.64,eo(prog(t,14.2,14.55))*(1-eo(prog(t,15.95,16.15))));
+  A(tMef,t,0.92,.64,eo(prog(t,16.0,16.35))*(1-eo(prog(t,17.45,17.65))));
+  A(tAde,t,0.92,.64,eo(prog(t,17.55,17.9))*(1-eo(prog(t,19.0,19.2))));
+  A(tInfo,t,0.84,.6,eo(prog(t,19.2,19.55))*(1-eo(prog(t,20.65,20.9))));
+  A(tCons,t,0.84,.6,eo(prog(t,20.75,21.1))*(1-eo(prog(t,22.0,22.2))));
+  A(tLike,t,0.88,.62,eo(prog(t,22.25,22.6))*(1-eo(prog(t,23.2,23.4))));
+  A(tIsc,t,0.77,.62,eo(prog(t,23.3,23.65))*(1-eo(prog(t,24.0,24.15))));
+  A(tNome,t,0.78,.6,eo(prog(t,24.05,24.4)),(1+(1-eb(prog(t,24.05,24.45)))*.08));
+  st.render(t,{shakes:[.06,7.9,24.05],flashes:[.06]});
+}
+boot(st,draw);
+</script></body></html>

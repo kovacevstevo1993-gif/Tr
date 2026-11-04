@@ -1,0 +1,70 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0b3442;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s006.js';
+import * as S4 from '/code/lib/s004.js';
+// ===== Short 006 - blocco 1 (HOOK): 512 euro persi in un anno su 10.000 fermi; prezzi +5,4% (ISTAT ott., provvisorio); 10.000 oggi = 9.488 un anno fa =====
+const DUR=23.731;
+const KF=[[0,[0,2.6,8.2],[0,1.0,0]],[.8,[.1,2.7,8.8],[0,1.0,0]],[7.0,[0,2.9,9.6],[0,1.1,0]],[8.0,[0,3.2,11.6],[0,2.2,0],'w'],[14.2,[0,3.2,11.6],[0,2.2,0]],[15.0,[0,3.2,10.8],[0,1.6,0],'w'],[22.5,[0,3.3,10.4],[0,1.6,0]],[DUR,[0,3.3,10.2],[0,1.6,0]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.backdrop(scene,m);
+const counter=S.counter(m);scene.add(counter);
+const stack=S.noteStack(m,{w:2.5,d:1.3,h:1.2});scene.add(stack);
+const fly=[];for(let i=0;i<10;i++){const n=S.flyNote();n.visible=false;scene.add(n);fly.push(n);}
+const tank=st.tank({x:0,z:0,r:.5,H:6.2,color:m.red,ticks:true});tank.g.scale.setScalar(.7);
+const bag=S.bag(m);scene.add(bag);
+const bag2=S.bag(m);scene.add(bag2);
+const dk=(o)=>Object.assign({bg:'rgba(10,40,52,.95)',border:'#19d37a',fill:'#ffffff'},o);
+const tBig=st.tag(['- 512 €'],{bg:'rgba(229,57,43,.97)',border:'#ffffff',fill:'#ffffff',sw:3.2,font:'bold 170px AB',w:820,h:280});
+const tAnno=st.tag(['IN UN ANNO'],dk({sw:3.0,font:'bold 70px PM',w:760,h:170}));
+const tFermi=st.tag(['10.000 € FERMI'],dk({sw:3.0,font:'bold 70px PM',w:860,h:180,border:'#f3be3a'}));
+const tPrezzi=st.tag(['PREZZI IN UN ANNO'],dk({sw:3.0,font:'bold 60px PM',w:900,h:170,border:'#e5392b'}));
+const cPct=st.counter({w:760,h:240,sw:2.8,color:'#ffffff',border:'#e5392b',font:'150px AB',bg:'rgba(10,40,52,.95)'});
+const tIstat=st.tag(['ISTAT · OTTOBRE'],dk({sw:3.0,font:'bold 62px PM',w:820,h:170,border:'#f3be3a'}));
+const tProv=st.tag(['DATO PROVVISORIO'],dk({sw:3.0,font:'bold 60px PM',w:860,h:170,border:'#f3be3a'}));
+const tOggi=st.tag(['OGGI','10.000 €'],dk({sw:2.8,font:'bold 84px AB',w:640,h:300,border:'#19d37a'}));
+const tAgo=st.tag(['UN ANNO FA','9.488 €'],dk({sw:2.8,font:'bold 84px AB',w:640,h:300,border:'#f3be3a'}));
+const tUguale=st.tag(['STESSA SPESA'],{bg:'rgba(25,211,122,.97)',border:'#ffffff',fill:'#06222c',sw:3.0,font:'bold 62px PM',w:760,h:170});
+const tConto=st.tag(['E IL TUO CONTO?'],{bg:'rgba(229,57,43,.97)',border:'#ffffff',fill:'#ffffff',sw:3.0,font:'bold 64px PM',w:900,h:190});
+const A=S.makeAnchor(st,KF);
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  // mazzetta: sempre in scena fino a 7,2; poi esce a sinistra
+  const sOut=eio(prog(t,7.2,8.0));const sIn=eb(prog(t,14.3,14.9));
+  const showStack=(t<8.2)||(t>=14.3&&t<20.9);
+  stack.visible=showStack;stack.position.set(t<8.2?-2.4*sOut:0,0,0);stack.rotation.y=Math.sin(t*.6)*.04*damp;
+  if(t>=14.3){stack.position.set(-1.0,0,0);}
+  counter.position.set(0,0,0);
+  // banconote che volano via (hook): 10 nel primo tratto
+  fly.forEach((n,i)=>{const a=.15+i*.16,u=(t-a)/1.8;n.visible=u>0&&u<1&&t<4;if(!n.visible)return;const e=eo(clamp(u));n.position.set((rnd(i)-.5)*1.6+Math.sin(u*5+i)*.5,1.2+e*5.2,(rnd(i+3)-.3)*1.2+e*1.5);n.rotation.set(-.8+e*2.2,u*6+i,Math.sin(u*4+i)*.5);n.material.opacity=1-clamp((u-.55)/.45);});
+  // tag grande
+  const pulse=1+.035*Math.sin(t*9)*(t<3.4?1:0);
+  A(tBig,t,0.81,.6,eo(prog(t,.08,.24))*(1-eo(prog(t,3.2,3.5))),(1+(1-eb(prog(t,.08,.4)))*.12)*pulse);
+  A(tAnno,t,0.7,.64,eo(prog(t,3.5,3.8))*(1-eo(prog(t,4.7,5.0))));
+  A(tFermi,t,0.88,.64,eo(prog(t,4.8,5.15))*(1-eo(prog(t,7.2,7.5))));
+  // vetro con i prezzi
+  const tk=prog(t,8.0,11.4);tank.g.visible=t>7.8&&t<14.3;tank.set(5.4*eo(tk)*clamp((t-7.9)/.2));tank.g.scale.setScalar(.7*Math.max(.001,eb(prog(t,7.9,8.4))));
+  A(tPrezzi,t,0.92,.66,eo(prog(t,7.7,8.1))*(1-eo(prog(t,8.5,8.8))));
+  A(tIstat,t,0.86,.66,eo(prog(t,8.5,8.85))*(1-eo(prog(t,9.95,10.2))));
+  cPct.userData.set(t>=10.2?'+ '+(Math.min(5.4,5.4*eo(prog(t,10.2,11.6)))).toFixed(1).replace('.',',')+' %':'');
+  A(cPct,t,0.86,.62,eo(prog(t,10.2,10.5))*(1-eo(prog(t,11.9,12.2))),1+.04*Math.sin(t*8)*(t<11.9?1:0));
+  A(tProv,t,0.9,.66,eo(prog(t,12.1,12.5))*(1-eo(prog(t,14.0,14.3))));
+  // due sacchetti della spesa: stessa spesa, prezzo diverso
+  bag.visible=bag2.visible=t>14.3&&t<20.9;
+  const bi=eb(prog(t,14.5,15.0));bag.scale.setScalar(Math.max(.001,bi));bag2.scale.setScalar(Math.max(.001,eb(prog(t,17.0,17.5))));
+  bag.position.set(1.1,0,.2);bag2.position.set(-1.1,0,.2);bag.rotation.y=-.3+Math.sin(t*.7)*.05*damp;bag2.rotation.y=.3+Math.sin(t*.6)*.05*damp;
+  stack.visible=t<8.2;
+  A(tOggi,t,0.62,.62,eo(prog(t,14.8,15.15))*(1-eo(prog(t,17.0,17.3))),1,0);
+  A(tAgo,t,0.62,.62,eo(prog(t,17.15,17.5))*(1-eo(prog(t,19.2,19.5))),1,0);
+  A(tUguale,t,0.86,.62,eo(prog(t,19.4,19.75))*(1-eo(prog(t,20.7,21.0))));
+  // domanda finale + carta del conto
+  A(tConto,t,0.8,.62,eo(prog(t,21.0,21.4)),1+.03*Math.sin(t*7)*damp);
+  st.render(t,{shakes:[.1,19.4],flashes:[.1]});
+}
+boot(st,draw);
+</script></body></html>

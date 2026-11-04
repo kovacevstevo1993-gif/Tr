@@ -1,0 +1,56 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0b3442;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s006.js';
+import * as S4 from '/code/lib/s004.js';
+// ===== Short 006 - blocco 2: BCE settembre, depositi a vista famiglie 0,25%; su 10.000 = 25 euro lordi; ritenuta 26% -> 18,50; valore perso 512 =====
+const DUR=22.451;
+const KF=[[0,[0,2.5,8.0],[0,1.1,0]],[5.2,[.1,2.6,8.6],[0,1.1,0]],[5.5,[0,3.2,11.6],[0,2.2,0],'w'],[10.0,[0,3.2,11.6],[0,2.2,0]],[10.1,[0,2.9,9.6],[0,1.2,0],'w'],[DUR,[0,3.0,9.8],[0,1.3,0]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.backdrop(scene,m);
+const counter=S.counter(m);scene.add(counter);
+const card=S.bankCard(m);scene.add(card);
+const tank=st.tank({x:0,z:0,r:.5,H:6.2,color:m.green,ticks:true});tank.g.scale.setScalar(.7);
+const stack=S.noteStack(m,{w:2.5,d:1.3,h:1.2});scene.add(stack);
+const fly=[];for(let i=0;i<10;i++){const n=S.flyNote();n.visible=false;scene.add(n);fly.push(n);}
+const dk=(o)=>Object.assign({bg:'rgba(10,40,52,.95)',border:'#19d37a',fill:'#ffffff'},o);
+const tBce=S4.flagTag(st,'BANCA CENTRALE EUROPEA','EU',{border:'#f3be3a',sw:3.3,w:1000,h:180,font:'bold 46px PM',bg:'rgba(10,40,52,.95)'});
+const tSet=st.tag(['SETTEMBRE 2026'],dk({sw:3.0,font:'bold 64px PM',w:860,h:170,border:'#f3be3a'}));
+const cPct=st.counter({w:760,h:240,sw:2.8,color:'#ffffff',border:'#e5392b',font:'150px AB',bg:'rgba(10,40,52,.95)'});
+const tVista=st.tag(['DEPOSITI A VISTA','DELLE FAMIGLIE'],dk({sw:3.0,font:'bold 58px PM',w:880,h:270}));
+const tDieci=st.tag(['10.000 €'],dk({sw:3.0,font:'bold 100px AB',w:760,h:200,border:'#f3be3a'}));
+const t25=st.tag(['25 € LORDI'],{bg:'rgba(25,211,122,.97)',border:'#ffffff',fill:'#06222c',sw:3.0,font:'bold 90px AB',w:860,h:200});
+const tRit=st.tag(['RITENUTA','26 %'],{bg:'rgba(229,57,43,.97)',border:'#ffffff',fill:'#ffffff',sw:3.0,font:'bold 96px AB',w:760,h:300});
+const t1850=st.tag(['RESTANO','18,50 €'],{bg:'rgba(25,211,122,.97)',border:'#ffffff',fill:'#06222c',sw:3.0,font:'bold 96px AB',w:780,h:300});
+const tAnno=st.tag(['IN UN ANNO'],dk({sw:3.0,font:'bold 70px PM',w:760,h:170}));
+const tPerso=st.tag(['VALORE PERSO'],dk({sw:3.0,font:'bold 64px PM',w:860,h:170,border:'#e5392b'}));
+const tBig=st.tag(['- 512 €'],{bg:'rgba(229,57,43,.97)',border:'#ffffff',fill:'#ffffff',sw:3.2,font:'bold 170px AB',w:820,h:280});
+const A=S.makeAnchor(st,KF);
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  card.visible=t<5.4;card.position.set(0,1.5+Math.sin(t*1.4)*.08*damp,.6);card.rotation.set(-.35,Math.sin(t*.8)*.5,.05);card.scale.setScalar(Math.max(.001,eb(prog(t,.1,.6))));
+  tank.g.visible=t>5.4&&t<10.1;tank.set(.25*eo(prog(t,5.6,6.6)));tank.g.scale.setScalar(.7*Math.max(.001,eb(prog(t,5.5,5.9))));
+  stack.visible=t>=10.1;stack.position.set(0,0,0);stack.scale.setScalar(Math.max(.001,eb(prog(t,10.15,10.6))));
+  // banconote che volano via alla fine (valore perso)
+  fly.forEach((n,i)=>{const a=19.5+i*.17,u=(t-a)/1.8;n.visible=u>0&&u<1;if(!n.visible)return;const e=eo(clamp(u));n.position.set((rnd(i)-.5)*1.6+Math.sin(u*5+i)*.5,1.2+e*5.2,(rnd(i+3)-.3)*1.2+e*1.5);n.rotation.set(-.8+e*2.2,u*6+i,Math.sin(u*4+i)*.5);n.material.opacity=1-clamp((u-.55)/.45);});
+  A(tBce,t,0.92,.64,eo(prog(t,.55,.9))*(1-eo(prog(t,2.55,2.85))));
+  A(tSet,t,0.81,.64,eo(prog(t,2.75,3.1))*(1-eo(prog(t,5.1,5.4))));
+  cPct.userData.set(t>=5.6?'0,25 %':'');
+  A(cPct,t,0.81,.62,eo(prog(t,5.6,5.95))*(1-eo(prog(t,7.1,7.4))),1+.04*Math.sin(t*8)*(t<7.1?1:0));
+  A(tVista,t,0.88,.62,eo(prog(t,7.3,7.65))*(1-eo(prog(t,9.85,10.1))));
+  A(tDieci,t,0.73,.62,eo(prog(t,10.2,10.55))*(1-eo(prog(t,11.4,11.7))));
+  A(t25,t,0.86,.62,eo(prog(t,11.5,11.85))*(1-eo(prog(t,13.3,13.6))));
+  A(tRit,t,0.73,.6,eo(prog(t,13.45,13.8))*(1-eo(prog(t,15.4,15.7))));
+  A(t1850,t,0.77,.6,eo(prog(t,15.7,16.05))*(1-eo(prog(t,17.85,18.15))));
+  A(tAnno,t,0.73,.64,eo(prog(t,18.0,18.3))*(1-eo(prog(t,19.15,19.4))));
+  A(tPerso,t,0.86,.64,eo(prog(t,19.3,19.65))*(1-eo(prog(t,20.9,21.15))));
+  A(tBig,t,0.81,.6,eo(prog(t,20.95,21.2)),(1+(1-eb(prog(t,20.95,21.3)))*.1)*(1+.03*Math.sin(t*9)*damp));
+  st.render(t,{shakes:[.55,13.45,20.95],flashes:[20.95]});
+}
+boot(st,draw);
+</script></body></html>
