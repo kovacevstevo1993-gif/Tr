@@ -1,0 +1,54 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0b0c0f;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Short 001 - blocco 3 (3D): serbatoi dell'energia (gas, luce, gasolio) contro il supermercato =====
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd,RED,YEL,PAPER} from '/code/lib/stage.js';
+const DUR=16.0;
+const KF=[[0,[-3.0,2.8,15.5],[-3.0,2.1,0]],[2.4,[-2.7,2.9,14.5],[-2.7,2.2,0]],[3.4,[-.9,3.6,16],[-.9,3.2,0]],[4.3,[.9,3.7,16],[1.0,3.3,0]],[9.5,[.9,3.7,16],[1.0,3.3,0]],[10.2,[3.0,3.7,16],[3.0,3.3,0]],[11.8,[3.0,3.7,16],[3.0,3.3,0]],[12.5,[5.2,3.8,16],[5.2,3.4,0]],[14.6,[5.2,3.8,16],[5.2,3.4,0]],[15.1,[3.0,3.6,20],[3.0,2.7,0]],[DUR,[3.0,3.6,20],[3.0,2.7,0]]];
+const st=await createStage({dur:DUR,centers:[-3,3.0],kf:KF});
+const {scene,mats}=st;
+const liqMat=new THREE.MeshStandardMaterial({color:0xA8100B,emissive:0xC4160F,emissiveIntensity:.45,roughness:.5});
+const mk=(x)=>st.tank({x,r:.58,H:5.0,color:liqMat});
+const tSup=mk(-3.0), tGas=mk(.6), tLuce=mk(3.0), tGas2=mk(5.4);
+// fulmine 3D
+const bolt=new THREE.Group();
+(function(){const sh=new THREE.Shape();[[.15,1.8],[-.65,-.15],[-.05,-.15],[-.35,-1.8],[.7,.4],[.1,.4],[.45,1.8]].forEach(([x,y],i)=>i?sh.lineTo(x,y):sh.moveTo(x,y));sh.closePath();
+  const g=new THREE.ExtrudeGeometry(sh,{depth:.35,bevelEnabled:true,bevelSize:.07,bevelThickness:.07,bevelSegments:3});g.translate(0,0,-.17);
+  const m=new THREE.Mesh(g,new THREE.MeshStandardMaterial({color:YEL,emissive:0xffc400,emissiveIntensity:1.1,roughness:.35,metalness:.2}));m.castShadow=true;bolt.add(m);})();
+bolt.visible=false;scene.add(bolt);
+// scritte
+const nSup=st.tag(['SUPERMERCATO'],{sw:2.3,font:'bold 62px PM',h:170});
+const nGas=st.tag(['GAS','MERCATO LIBERO'],{sw:2.1,font:'bold 56px PM'});
+const nLuce=st.tag(['LUCE','MERCATO LIBERO'],{sw:2.1,font:'bold 56px PM'});
+const nGaso=st.tag(['GASOLIO','RISCALDAMENTO'],{sw:2.1,font:'bold 56px PM'});
+const nEn=st.tag(['ENERGIA'],{border:'#FFE14A',sw:2.4,font:'bold 92px PM',h:200});
+const cSup=st.counter({sw:1.9}),cGas=st.counter({sw:1.9}),cLuce=st.counter({sw:1.9}),cGaso=st.counter({sw:1.9});
+const fmt=v=>'+'+v.toFixed(1).replace('.',',')+'%';
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  const back=eo(prog(t,15.15,15.6)),gasVis=clamp(1-eo(prog(t,9.6,10.0))+back),luceVis=clamp(1-eo(prog(t,11.9,12.3))+back);
+  // supermercato: livello minuscolo (2,5% = 0,25)
+  const ls=.25*eio(prog(t,.35,1.15));tSup.set(ls);cSup.userData.set(fmt(2.5*eio(prog(t,.35,1.15))));
+  const supOut=1-eo(prog(t,2.45,2.85));st.setSprite(cSup,-3.0,5.7+Math.sin(t*2.2)*.05*damp,.5,eo(prog(t,.5,.9))*supOut);
+  st.setSprite(nSup,-3.0,.62,.9,eo(prog(t,1.3,1.7))*supOut);
+  // fulmine "ENERGIA"
+  const bp=prog(t,2.64,3.1),be=bp>0?eb(bp):0;bolt.visible=bp>0&&t<4.5;bolt.position.set(-1.2,3.3+Math.sin(t*3)*.08*damp,.4);bolt.scale.setScalar(Math.max(.001,1.3*be*(1-eio(prog(t,3.9,4.4)))));bolt.rotation.y=Math.sin(t*1.5)*.25*damp+(1-bp)*2;
+  st.setSprite(nEn,-1.2,6.0,.6,eo(prog(t,2.94,3.3))*(1-eo(prog(t,4.0,4.4))));
+  // i tre serbatoi salgono
+  [[tGas,3.0],[tLuce,3.25],[tGas2,3.5]].forEach(([k,s0])=>{const p=prog(t,s0,s0+.8);k.g.visible=p>0;k.g.scale.set(1,Math.max(.001,eb(p)),1);});
+  // gas
+  const gp=eio(prog(t,5.9,8.3));tGas.set(3.57*gp);cGas.userData.set(fmt(35.7*gp));
+  st.setSprite(nGas,.6,.62,.9,eo(prog(t,4.6,5.0))*gasVis);st.setSprite(cGas,.6,6.1+Math.sin(t*2.1)*.05*damp,.5,eo(prog(t,5.9,6.3))*gasVis);
+  // luce
+  const lp=eio(prog(t,10.3,11.7));tLuce.set(3.2*lp);cLuce.userData.set(fmt(32.0*lp));
+  st.setSprite(nLuce,3.0,.62,.9,eo(prog(t,10.0,10.4))*luceVis);st.setSprite(cLuce,3.0,6.1+Math.sin(t*2.3)*.05*damp,.5,eo(prog(t,10.3,10.7))*luceVis);
+  // gasolio riscaldamento
+  const hp=eio(prog(t,14.15,15.7));tGas2.set(4.56*hp);cGaso.userData.set(fmt(45.6*hp));
+  st.setSprite(nGaso,5.4,.62,.9,eo(prog(t,12.6,13.0)));st.setSprite(cGaso,5.4,6.1+Math.sin(t*2.0)*.05*damp,.5,eo(prog(t,14.15,14.55)));
+  st.render(t,{shakes:[2.64,8.3,11.7,15.7],flashes:[2.64]});
+}
+boot(st,draw);
+</script></body></html>

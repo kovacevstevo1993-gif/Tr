@@ -14,3 +14,7 @@
 - Per video (20/08-15/10): spiaggia 85.694 view (49.358 coinvolte, 88,6% visto, +54 iscritti); versi 3.378 (94%); vecchi topolino 387-684. Nuovi: seme 28 (51%), barattolo 17 (84%), castello 8 (103%), mongolfiera 4 (78%): la percentuale vista dei nuovi non è peggiore, sono le impressioni a mancare.
 - Fonti 01-18/10: Feed Shorts 27.980, pagina canale 1.226, correlati 547, ricerca 201.
 - 18/10 vidIQ get_videos_by_ids (5 crediti, saldo 35): metadati dei 10 short uguali tra vecchi e nuovi (categoria, tag, descrizione); nessuna differenza tecnica trovata. Nuovi = 38-52 s, quelli andati bene 31-32 s (versi 44 s).
+
+## 26/10/2026 — "slittino" e "neve per bambini" (keyword research IT, 2 chiamate = 10 crediti) + score titoli (2 = 10 crediti). Saldo prima 130, dopo 110.
+- "slittino" <750 ricerche/mese (nicchia), competizione 38. "neve per bambini" <750. Correlate: "neve" 4.576 (comp. 50), "inverno" 14.566 (-44,6%), "cartoni per bambini" 9.634 (+86%), "video per bambini" 23.554 (+0,2%, comp. 46), "cartoni animati per bambini" 4.296, "filastrocche per bambini" 4.845, "italian for kids" 9.005 (+85%).
+- Score titoli short (canale Bambini Ciao Ciao): "🛷 LO SLITTINO PAZZO! Che SCHIANTO nella NEVE! ❄️ | Cartoni Animati per Bambini" = 68; "🛷 SLITTINO senza FRENI! La PALLA di NEVE GIGANTE ❄️🦊 | Cartoni per Bambini" = 77 (scelto).

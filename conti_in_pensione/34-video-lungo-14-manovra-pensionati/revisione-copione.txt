@@ -1,0 +1,15 @@
+1 | f5136ced7e | italiano OK | logica OK | persona OK | numeri OK | gancio senza cifre del buono ne' dettagli (31/10): solo 'fino a cinquecento' (cifra del gancio); tre domande aperte = tre misure; ddl dichiarato
+2 | 444e79fd49 | italiano OK | logica OK | persona OK | numeri OK | 31/10: frase sulle fonti riscritta dall'utente ('Ci basiamo solo su questi due documenti ufficiali'): vera, nessun limite falso. Letta a voce, soggetto noi, numeri 195 e 28 ottobre gia' verificati.
+3 | e49ac91d7a | italiano OK | logica OK | persona OK | numeri OK | citazione comunicato + Meloni; nessuna conclusione anticipata
+4 | 768a0f6d4f | italiano OK | logica OK | persona OK | numeri OK | citazione Meloni e comunicato; 'massimo' tenuto per il blocco 12
+5 | a70fb931b6 | italiano OK | logica OK | persona OK | numeri OK | promessa 'ogni video' tolta; 'cinque punti' = blocco 8
+6 | 505801929e | italiano OK | logica OK | persona OK | numeri OK | 28.000 e dettagli del buono spostati dopo il blocco 4 (fidelizzazione, 31/10)
+7 | 99134aaf9e | italiano OK | logica OK | persona OK | numeri OK | 5.500.000 x 300 = 1.650.000.000 vs 1,6 miliardi; conclusione prudente
+8 | e8dc4d9521 | italiano OK | logica OK | persona OK | numeri OK | cinque voci contate
+9 | 19e80e752d | italiano OK | logica OK | persona OK | numeri OK | non scritti: eta', contributi, assegno; rimanda al blocco 10
+10 | b91f36cdc5 | italiano OK | logica OK | persona OK | numeri OK | circolare Inps 28/2026 all.2 (V1); 3 x 546,24 = 1.638,72; madri 2,8/2,6
+11 | 6747878740 | italiano OK | logica OK | persona OK | numeri OK | scaglioni 2026 23/33/43 (V11); 5.000 x 10% = 500
+12 | fb9c202e8c | italiano OK | logica OK | persona OK | numeri OK | 50.000/13=3.846; 200; 400; 500; importi senza 'lordi'
+13 | d44bf1160f | italiano OK | logica OK | persona OK | numeri OK | parole assenti verificate sul testo grezzo; decreto 2025 firmato 19/11, GU 28/11
+14 | 76ba3d902e | italiano OK | logica OK | persona OK | numeri OK | ipotesi e bozze = stampa; non nei due documenti
+15 | ed6c916945 | italiano OK | logica OK | persona OK | numeri OK | tre punti coerenti con blocchi 8-12

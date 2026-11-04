@@ -44,3 +44,78 @@ Storia: in cucina il biscotto sparisce dal piatto; topolino "Io non sono stato!"
 ## AGGIORNAMENTO 22/10 00:58 CEST (biscotto)
 - Generate e controllate OK: clip1, clip2, clip3, clip4, clip6 (assets/v/biscotto/). MANCANO clip5 (briciole, 3 s) e clip7 (risata finale, 4 s).
 - HuggingFace ha risposto "exceeded your ZeroGPU runs limit" alla clip5 dopo ~10 s di clip generati nella finestra: il limite sembra a finestra mobile, senza orario di ripresa nel messaggio. Riprovare con `python3 biscotto_clips.py 5 7` (non consuma se rifiutato). Poi montare: `python3 short_biscotto.py video && ... mix && ... finale`, controllo fotogrammi, SendUserFile.
+
+## AGGIORNAMENTO 21/10 sera (UTC 23:00)
+- Generate e controllate (contact sheet) clip 1,2,3,4,5 del biscotto (assets/v/biscotto/clipN.mp4). Clip5: la rana apre un po' la bocca a meta' (difetto lieve, da valutare). Clip6 gia' fatta.
+- MANCA SOLO clip7 (finale, tutti ridono, 4.0 s): quota HF finita di nuovo dopo 5 clip (~130 s di clip generate = ~30 s GPU l'una: la quota reale e' ~150 s/giorno circa, non 400). Riprovare `python3 biscotto_clips.py 7` dopo ~23:00 UTC del 22/10, poi montaggio (video|mix|finale), controllo fotogrammi, SendUserFile.
+
+## AGGIORNAMENTO 23/10 mattina
+- Clip7 generata; aveva fotogrammi 35-42 con personaggi sdoppiati (fantasma): originale in clip7_v1.mp4, clip7.mp4 = primi 34 fotogrammi avanti+indietro (ping-pong), nessuna quota usata.
+- Montato `short_chi_ha_mangiato_il_biscotto.mp4` (20,2 s, 606 fotogrammi = 20.2x30, nessun nero, salti solo ai tagli 3,5.5,8,10,13,16 s). NON ANCORA INVIATO: nel finale (clip7) la rana e' tagliata dal bordo destro dell'inquadratura (start7.png). Chiesto all'utente se mandare cosi' o rifare start7/clip7 (serve quota HF).
+
+## AGGIORNAMENTO 23/10 (2) — NUOVO FORMATO DA VIRALI
+- Ricerca gratis su YouTube (23/10): i short virali per bambini 3D durano 6-11 s, UNA gag, niente narratore, effetti sonori (es. "feeds funny cow" 16M view, "feeds funny horse" 9M, "Monkey's pizza gone wrong" 457K). I nostri (20-45 s, narratore, storie) sono diversi. L'utente ha chiesto "fai video simili ai virali con i nostri personaggi".
+- Biscotto: l'utente l'ha giudicato uguale al video "Barattolo misterioso" (03/10, c'e' un biscotto): CONTROLLARE SEMPRE I TITOLI DEL CANALE (feed RSS UCxwr3sSMwnnAhZPm7Bez7mQ) PRIMA di scegliere una storia. Biscotto inviato su richiesta con difetto noto (rana tagliata nel finale).
+- `short_elefantino_ha_fame.mp4` (11,7 s, 351 fotogrammi): topolino offre mela a elefantino -> crunch -> getto d'acqua -> risata -> ISCRIVITI. Codice: mela_frames.py, mela_clips.py (4 clip Wan, quota usata ~110 s), voci_mela.py (audioS, solo finale), short_mela.py. clip4 ping-pong (clip4_v1 originale). Quota HF: ~5 clip al giorno, finita il 23/10 mattina+pomeriggio.
+- L'utente (arrabbiato): "sono sempre le stesse scene" = stessi personaggi/giardino/inquadrature. Prossimo: sfondi e azioni davvero diversi, gag piu' forti.
+
+## AGGIORNAMENTO 23/10 (3) — "Chi ha rubato la torta?" (schema dei virali)
+- Visti i fotogrammi dei virali (miniature i.ytimg.com/vi/ID/hq1-3.jpg, gratis; yt-dlp bloccato da YouTube): scena LARGA con tanto ambiente -> PRIMO PIANO faccia sorpresa -> scena larga col COLPO DI SCENA (arriva un elemento nuovo, es. corvo che ruba la pizza). I nostri erano sempre 3 personaggi a mezzo busto sullo stesso sfondo.
+- `short_chi_ha_rubato_la_torta.mp4` (11,4 s, 342 fotogrammi): topolino+Chip picnic su collina con torta, uccellino lontano -> primo piano topolino sconvolto (plaid vuoto) -> uccello vola via con la torta, i due saltano arrabbiati -> ISCRIVITI. Codice: torta_frames.py, torta_clips.py (3 clip Wan), voci_torta.py (audioT, solo finale), short_torta.py. Difetto noto: nel finale i due aprono la bocca arrabbiati senza parlare. Titolo/pacchetto: NON ancora fatti (solo se li chiede).
+
+## AGGIORNAMENTO 24/10 — "Lo slittino pazzo"
+- Quota HF reale: ~8 clip/giorno (23/10: 8 clip tra 09:08 e 09:50 UTC; si rinnova ~24 h dopo). Usate 4 clip il 24/10 (slitta clip1 rifatta SEED=7: la prima, slittino fermo, e' in clip1_v1.mp4).
+- `short_slittino_pazzo.mp4` (11,8 s, 354 fotogrammi): volpe+Chip su slittino (neve_discesa) -> primo piano volpe -> schianto contro palla di neve, esplosione, volano e atterrano -> ISCRIVITI. Codice: slitta_frames.py, slitta_clips.py, voci_slitta.py (audioU), short_slitta.py. Difetti dichiarati: nel primo piano la volpe cammina a fine clip; sfocatura nell'esplosione. Pacchetto testi NON fatto (solo se lo chiede).
+- Schema che funziona di piu': scena larga -> primo piano -> colpo di scena con azione fisica forte (la clip con l'esplosione di neve e' venuta bene). Le azioni "lente" (slittino che scorre) richiedono prompt con camera che segue e effetti (spruzzi).
+
+## AGGIORNAMENTO 24/10 (2) — "La mela di Spike" (storia con dialoghi, senza voce "iscrivetevi")
+- Ordine utente: storia logica, i personaggi possono parlare, NIENTE voce finale "iscrivetevi" (resta il pulsante animato). Il PROSSIMO short deve essere "tutto nuovo" (personaggi/oggetti/sfondi nuovi): ATTENZIONE, immagini nuove non si possono generare gratis (Pollinations saldo 0, Gemini quota 0): dirlo all'utente e chiedere cosa fare.
+- `short_la_mela_di_spike.mp4` (11,6 s, 348 fotogrammi): bosco; Chip "Che bella mela!" -> Spike "E' mia, solo mia!" -> Spike "Dai, facciamo a pezzi!" -> i tre mangiano la mela -> pulsante. Codice: mela2_frames.py, mela2_clips.py, voci_mela2.py (audioV), short_mela2.py.
+- Difetti dichiarati: clip3 Spike non porge la mela (clip3_v1.mp4 = quella usata; start3.png nuovo con spike_riceve+mela pronto in mela2_frames.py: rifare `SEED=7 python3 mela2_clips.py 3` dopo la ricarica quota e rimontare con short_mela2.py video|mix + mux); ultima scena personaggi piccoli in basso.
+- Quota HF 24/10: 8 clip esaurite (slitta 4 + mela2 4). Si rinnova ~24 h dopo.
+
+## AGGIORNAMENTO 24/10 (3) — NUOVO SHORT IN PREPARAZIONE: "Il regalo per la volpe" (storiella 8 scene, ~22 s, tramonto)
+- Ordine utente: "un altro meglio, non banale, una storiella, anche un po' piu' lungo". Quota HF esaurita il 24/10 (usate 8): generare domani dopo ~10:30 UTC.
+- PRONTI: regalo_frames.py (assets/v/regalo/start1-8), voci_regalo.py (audioW: t1,c1,s1,t2,v1,t3,c2,s2,v2; t3/c2/s2 = coro "Auguri, volpe!"), regalo_clips.py (8 clip, prompts, durate 3,2.5,3,2,3,2.5,3,3.5). DA FARE: `python3 regalo_clips.py` (8 clip = tutta la quota), controllare ogni clip, montare (copiare short_mela2.py -> short_regalo.py con LENS=[3,2.5,3,2,3,2.5,3,3.5], VOICES con tempi: t1 0.3, c1 3.2, s1 5.9, t2 8.6, v1 10.6, t3/c2/s2 13.6 insieme, v2 16.6; T_SUB ~19.5; nessuna voce finale), controllo TUTTI i fotogrammi, SendUserFile.
+
+## AGGIORNAMENTO 25/10 — CONSEGNATO "Il regalo per la volpe"
+- `short_il_regalo_per_la_volpe.mp4` (22,5 s, 675 fotogrammi, 8 scene, dialoghi, nessuna voce finale, pulsante ISCRIVITI). Codice: regalo_frames.py, regalo_clips.py, voci_regalo.py (audioW), short_regalo.py. 8 clip Wan generate in una sola passata (tutta la quota di un giorno, ~10:30 UTC).
+- clip8: l'abbraccio finale degenerava dopo il fotogramma 26 -> usata solo la parte buona in ping-pong (originale clip8_v1.mp4).
+- Difetti dichiarati: personaggi piccoli in basso nelle scene larghe; nessun abbraccio nel finale. Pacchetto testi/miniatura NON fatti (solo se li chiede).
+- 25/10 "Il regalo per la volpe": la voce di Chip legge "Shh!" come lettere ("s h h"). L'utente: "ormai l'hai fatto, rimane cosi'" (non rifare). TRAPPOLA voci: mai "Shh!" nei testi, usare "Silenzio!" o "Zitto, zitto!"; ascoltare le battute con effetti/onomatopee, il controllo Whisper non basta.
+
+## STATO FINALE 26/10/2026 (leggere questo per ultimo, vale piu' di tutto sopra)
+- PUBBLICATO dall'utente: regalo per la volpe (25/10). Consegnato con pacchetto + miniatura per la pubblicazione: slittino pazzo (docs/SEO_slittino_pazzo.md, miniatura_slitta_1080x1920.jpg).
+- NON pubblicati (video in parco/): short_palloncino_rosso, short_chi_ha_mangiato_il_biscotto (difetto: rana tagliata nel finale; storia simile a "Barattolo misterioso"), short_elefantino_ha_fame, short_chi_ha_rubato_la_torta (difetto: bocche aperte nel finale), short_la_mela_di_spike (difetto: Spike non porge la mela). Per ognuno pacchetto/miniatura NON fatti: farli solo se li chiede.
+- REGOLE EMERSE: decide SOLO l'utente (non tagliare/cambiare cose da solo senza chiedere: 25/10 ha tagliato l'abbraccio finale e l'utente si e' arrabbiato); prima di scegliere una storia controllare i titoli del canale (feed RSS); modello di lavoro che l'utente apprezza di piu': storiella con dialoghi, scene larghe + primi piani, 8-12 s o fino a ~22 s, senza voce finale "iscrivetevi" (solo pulsante). Evitare "Shh!" nella voce. Miniatura: SOLO da fotogrammi puliti di partenza (startN.png) o pose, mai da fotogrammi del video (ghosting).
+- Quota HF ~8 clip/giorno (si rinnova ~24 h dopo). Pollinations/Gemini a zero: niente nuovi personaggi. Personaggi: topolino, Chip, Spike, elefantino, volpe, rana. L'utente vuole "tutto nuovo" ma non e' possibile senza immagini nuove: dirlo, non inventare.
+- vidIQ: saldo 110 crediti dopo il 26/10 (spendere solo se autorizzato; ricerche in docs/RICERCHE-VIDIQ.md).
+- Reti: token HF nei segreti di rete; pip install gradio_client opencv-python-headless scipy edge-tts praat-parselmouth faster-whisper.
+
+## AGGIORNAMENTO 31/10/2026
+- PUBBLICATI dall'utente: elefantino ha fame (27/10, titolo cambiato con vidIQ), la mela di Spike (30/10). Pacchetti e miniature: docs/SEO_elefantino_ha_fame.md, docs/SEO_la_mela_di_spike.md, miniatura_mela_1080x1920.jpg, miniatura_mela2_1080x1920.jpg.
+- SCARTATI dall'utente, NON si usano e NON si riproporranno: chi ha rubato la torta ("non mi piace", 31/10), chi ha mangiato il biscotto e palloncino rosso ("non hanno senso", 31/10). Pacchetto/miniatura della torta esistono (docs/SEO_chi_ha_rubato_la_torta.md) ma il video e' scartato.
+- Non ci sono piu' short pronti da pubblicare: per un nuovo short serve una nuova storia (controllare i titoli del canale nel feed) e quota HF.
+- Dati 30/10 (feed pubblico): quasi tutti gli short dal 03/10 hanno 3-31 view; solo "Puliamo la spiaggia" (85.782) e il compleanno del 19/10 (4.686) sono andati. L'utente usa i titoli generati da vidIQ (migliori dei miei): dai prossimi pacchetti generare il titolo con vidIQ (chiedere prima i crediti, saldo 110).
+
+## AGGIORNAMENTO 31/10 (2) — ORDINE: "copia gli short del canale HeyKids con i nostri personaggi"
+- L'utente ha mandato 3 screenshot della pagina Short di HeyKids (26M, 14M compleanno con candeline, 13M mucca, ecc.): vuole gli stessi short con i NOSTRI personaggi. Limite: coniglio, mucca, ape, trattore, autobus, giraffa, dinosauro NON esistono tra i nostri personaggi (immagini nuove impossibili). Quota HF ~8 clip/giorno = circa 1 short al giorno.
+- 1) `short_soffia_le_candeline.mp4` (8,7 s, 261 fotogrammi): primo piano topolino + torta con candeline -> soffia, fumo -> topolino e Chip esultano; voci Chip "Buon compleanno, topolino!" e topolino "Grazie, amici!" (audioX). Codice: candeline_frames.py, candeline_clips.py (3 clip, usata quota ~80 s GPU), voci_candeline.py, short_candeline.py, miniatura_candeline.py. Pacchetto: docs/SEO_soffia_le_candeline.md. Inviato all'utente 31/10 con miniatura.
+- Prossimi dalla lista HeyKids fattibili con i nostri personaggi (da proporre/chiedere): scegliere in base a cosa piace all'utente.
+
+## AGGIORNAMENTO 31/10 (3) — "Tanti auguri!" con VOCE CANTATA (ordine utente: "falla cantare, trova il modo")
+- ERRORE MIO: "Soffia le candeline" non era una copia: non avevo guardato il video di HeyKids. REGOLA (31/10, utente: "devo guardarlo i video, come fai a vedere come li fanno"): per copiare uno short, PRIMA farlo guardare con vidiq_watch_shortform_content (10 crediti, saldo ora ~68) e copiare la struttura vera. Elenco short di un canale gratis: pagina /@canale/shorts (ytInitialData + continuation); ricerca video: youtube.com/results.
+- Short originale "Tanti Auguri #shorts" (_YPPFhbT-5c, 14,1 Mln, 15 s, 7 inquadrature): bambino corre in mondo di caramelle con regali con faccia -> ponte -> primo piano gioia -> papa' con cappello presenta la torta -> bambino soffia -> mani che applaudono; cantato "Tanti auguri a te", base musicale, niente dialoghi.
+- `short_tanti_auguri.mp4` (19,6 s, 588 fotogrammi, 5 inquadrature: corsa col regalo, gioia, volpe presenta la torta, soffio+fumo, festa). CANTO: `canta_auguri.py` = edge-tts (Elsa) + Praat (altezza per sillaba = melodia Happy Birthday, tonalita' D; virgola dopo "auguri" altrimenti "a te" si mangia) -> audioY/verso0-3.wav; verificata: note giuste (analisi altezza) e Whisper "Tanti auguri a te!" su ogni verso. Codice: auguri_frames.py, auguri_clips.py (3 clip nuove, clip1 rifatta con SEED=7: il regalo volava via; clip1_v1 = originale), short_auguri.py (riusa clip1-3 di assets/v/candeline), miniatura_auguri.py, docs/SEO_tanti_auguri.md. Quota HF oggi: 7 clip usate.
+
+## AGGIORNAMENTO 31/10 (4) — "Tanti auguri!" v2 con CANTO VERO (utente: "meno robotica la cantata?")
+- Il canto Praat era robotico. Soluzione: vidIQ `vidiq_generate_music` (25 crediti, saldo ora ~43) con prompt "Happy Birthday melody in Italian, female singer... Sing exactly these lyrics..." -> traccia 61 s (audioZ/vidiq_canto.wav, in realta' mp3), intro di 18 s, voce da 18,7 s: 4 versi "Tanti auguri a te / a te / a topolino / a te". Tagliata 18,2-38,4 s e velocizzata atempo 1,25 -> audioZ/canto_tagliato.wav (16,2 s).
+- ACE-Step (HF Space gratis, canta in italiano) NON usabile oggi: quota ZeroGPU 0 e il token HF e' iniettato solo per l'host del modello video (ace-step-ace-step.hf.space senza token). Da riprovare domani se serve gratis.
+- `short_tanti_auguri_v2.mp4` (20,7 s, 621 fotogrammi, nessun nero, tagli a 3,7/7,8/12,0/17,0 s): codice short_auguri_v2.py (LENS 3.7,4.1,4.2,2.5,2.5,3.7; canto in 0 s, voci c1 17,1 s e m1 19,1 s). Trascrizione Whisper del mix finale: tutti i versi + "Buon compleanno, Topolino! Grazie, amici!". v1 (voce Praat) resta in short_tanti_auguri.mp4.
+
+## REGOLE 31/10 (utente, dopo Tanti auguri v2)
+- "Muovono sempre le labbra a cazzo, avevi gia' scritto la regola di non farlo": Tanti auguri v2 va bene cosi', ma dal PROSSIMO short le labbra si muovono SOLO quando il personaggio parla/canta (regola gia' in v8 sez. 1: nei prompt "mouth closed" non basta). Prima di consegnare, controllare la bocca di ogni personaggio in ogni clip; se si muove fuori dalle battute, rifare la clip (seed diverso) o non usarla.
+- "Troverai il modo per fare i video meglio, cosi' sono ancora troppo banali": i prossimi short devono avere piu' invenzione (scene diverse, gag/azione forte, piu' inquadrature), non solo personaggi fermi che esultano. Non anticipare: aspettare l'ordine dell'utente sul prossimo short.
+
+## 31/10 — NUOVI PERSONAGGI/IMMAGINI GRATIS: SI PUO' (l'utente: "come non puoi creare i nuovi personaggi?")
+- Pollinations (402, saldo 0) e Gemini (429 quota) restano morti, router HF 401. MA lo Space HF `black-forest-labs/FLUX.1-schnell` funziona gratis anche senza token: `Client("black-forest-labs/FLUX.1-schnell").predict(prompt, seed, randomize_seed(True), width, height, steps(4), api_name="/infer")` -> immagine (testato 31/10: coniglio bianco 3D Pixar, pulito). Si puo' chiedere anche scena intera in verticale (es. 720x1280) da usare come fotogramma di partenza per Wan 2.2. Limite: nessun riferimento tra immagini = lo stesso personaggio in piu' pose/scene non e' identico: pensare ogni short con personaggi nuovi per scena, oppure una sola scena per personaggio.

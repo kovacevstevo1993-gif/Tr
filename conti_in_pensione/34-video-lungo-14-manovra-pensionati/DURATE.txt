@@ -1,0 +1,19 @@
+# Video lungo 14 (manovra e pensionati) - durate dagli screenshot CapCut (15 screenshot), 30 fps, N.29 (fine = ultimo segno + 1, doppia lettura etichetta/pixel).
+# BLOCCO 2 rifatto 31/10: il primo screenshot era di un blocco registrato incompleto. Nuovo screenshot: playhead 00:46 + 3f, ultimo segno disegnato prima della riga = 3f (dot a x=353, riga a x=360, 67 px/f; etichetta 2f a x=288) -> fine = 3f+1 = 4f = 1384 fotogrammi totali; meno 710 del blocco 1 = 674 fotogrammi, 366 caratteri = 16,3 c/s (normale).
+# blocco | fotogrammi | caratteri | c/s
+1 | 710 | 398 | 16.8
+2 | 618 | 356 | 17.3
+3 | 619 | 335 | 16.2
+4 | 674 | 371 | 16.5
+5 | 459 | 255 | 16.7
+6 | 602 | 355 | 17.7
+7 | 643 | 348 | 16.2
+8 | 696 | 347 | 15.0
+9 | 464 | 261 | 16.9
+10 | 549 | 295 | 16.1
+11 | 715 | 391 | 16.4
+12 | 792 | 394 | 14.9
+13 | 602 | 336 | 16.7
+14 | 523 | 298 | 17.1
+15 | 768 | 396 | 15.5
+# BLOCCO 2 (31/10, ultima versione): screenshot CapCut dell'utente = 20,6 s = 618 fotogrammi (testo nuovo 'Ci basiamo solo su questi due documenti ufficiali', 356 caratteri, 17,3 c/s). Le versioni da 346 e 674 erano sbagliate.

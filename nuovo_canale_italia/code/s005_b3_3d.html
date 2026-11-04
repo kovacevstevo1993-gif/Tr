@@ -1,0 +1,57 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#ffcf2e;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s005.js';
+import * as S4 from '/code/lib/s004.js';
+// ===== Short 005 - blocco 3: 1 tipo = 6,10; 2 tipi = 12,20; 3 tipi = 18,30; 3 magliette uguali = 1 tipo; conteggio della dogana, dichiarazione della piattaforma =====
+const DUR=17.131;
+const KF=[[0,[0,4.6,8.4],[0,1.3,-.6]],[DUR,[0,4.8,9.0],[0,1.3,-.6]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.backdrop(scene,m);
+const belt=S.conveyor(m);scene.add(belt);
+const par=S.parcel(m,{w:1.9,h:1.3,d:1.5});scene.add(par);
+const mk=()=>({a:[S.tshirt(0xf2548d)],b:[S.tshirt(0xf2548d),S.shoe(0x2a5bff)],c:[S.charger(),S.cable(),S.cover(0x20b8b0)],d:[S.tshirt(0xf2548d),S.tshirt(0xf2548d),S.tshirt(0xf2548d)]});
+const sets=mk();Object.values(sets).forEach(a=>a.forEach(x=>{x.visible=false;scene.add(x);}));
+const decl=S.declaration();scene.add(decl);
+const stamp=S.stampMark(st,'DOGANA',{});
+const dst=S.dustp(160,0xffffff,.07);scene.add(dst);
+const dk=(o)=>Object.assign({bg:'rgba(20,33,61,.95)',border:'#ffc400',fill:'#ffffff'},o);
+const A=S.makeAnchor(st,KF);
+const T=(lines,o)=>st.tag(lines,dk(o));
+const P=(txt,col)=>st.tag([txt],{bg:'rgba('+col+',.98)',border:'#fff',fill:'#fff',sw:3,font:'bold 120px AB',w:800,h:230});
+const t1=T(['1 TIPO','DI PRODOTTO'],{sw:3,font:'bold 62px PM',w:660,h:260}),p1=P('+ 6,10 €','229,57,43');
+const t2=T(['2 TIPI','DI PRODOTTO'],{sw:3,font:'bold 62px PM',w:660,h:260}),p2=P('+ 12,20 €','229,57,43');
+const t3=T(['3 TIPI','DI PRODOTTO'],{sw:3,font:'bold 62px PM',w:660,h:260}),p3=P('+ 18,30 €','229,57,43');
+const t4=T(['3 MAGLIETTE','UGUALI'],{sw:3,font:'bold 62px PM',w:700,h:260}),p4=st.tag(['= 1 TIPO SOLO'],{bg:'rgba(37,179,106,.98)',border:'#fff',fill:'#fff',sw:3,font:'bold 66px PM',w:820,h:180});
+const tDo=T(['IL CONTEGGIO','LO FA LA DOGANA'],{sw:3.1,font:'bold 56px PM',w:760,h:260,border:'#e5392b'});
+const tPl=T(['COME LA PIATTAFORMA','DICHIARA IL PACCO'],{sw:3.3,font:'bold 46px PM',w:860,h:260,border:'#2a5bff'});
+const states=[['a',0,3.62],['b',3.62,6.45],['c',6.45,9.52],['d',9.52,12.3]];
+function layout(arr,t0,t,damp){arr.forEach((x,i)=>{const n=arr.length;const e=eb(prog(t,t0+.25+i*.18,t0+.65+i*.18));x.visible=e>.002;x.scale.setScalar(Math.max(.001,e*(n>2?1.15:1.45)));x.position.set((i-(n-1)/2)*(n>2?1.15:1.5),2.75+Math.sin(t*2+i)*.06*damp,.2);x.rotation.y=Math.sin(t*.9+i)*.3;});}
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  belt.userData.scroll(t*1.2);
+  // pacco: appare a 0, ripassa a ogni nuovo caso
+  let off=0;states.forEach(s=>{if(t>=s[1]&&t<s[1]+.55)off=1-eo(prog(t,s[1],s[1]+.55));});
+  par.position.set(0,.62,-.5-off*7);par.scale.setScalar(1.15);par.rotation.y=Math.sin(t*.7)*.05*damp;par.visible=t<12.4||true;par.userData.sticker.visible=false;
+  Object.keys(sets).forEach(k=>{const s=states.find(q=>q[0]===k);const on=t>=s[1]&&t<s[2];if(!on){sets[k].forEach(x=>x.visible=false);}else layout(sets[k],s[1],t,damp);});
+  const fade=(a,b,c,d)=>eo(prog(t,a,b))*(1-eo(prog(t,c,d)));
+  A(t1,t,.72,.58,fade(.05,.4,1.55,1.8));A(p1,t,.78,.58,fade(1.6,1.95,3.5,3.75),1+.04*Math.sin(t*8)*(t<3.5?1:0));
+  A(t2,t,.72,.58,fade(3.65,4.0,4.6,4.85));A(p2,t,.8,.58,fade(4.65,5.0,6.3,6.55));
+  A(t3,t,.72,.58,fade(6.5,6.85,7.5,7.75));A(p3,t,.8,.58,fade(7.55,7.9,9.4,9.65));
+  A(t4,t,.76,.58,fade(9.55,9.9,10.8,11.05));A(p4,t,.86,.6,fade(10.85,11.2,12.2,12.45));
+  // dogana + timbro
+  A(tDo,t,.8,.58,fade(12.35,12.7,14.4,14.7));
+  const sl=eb(prog(t,13.6,13.85));A(stamp,t,.62,-.15,eo(prog(t,13.6,13.8))*(1-eo(prog(t,14.35,14.6))),(1+(1-sl)*1.0));
+  // dichiarazione
+  const di=eb(prog(t,14.6,15.1));decl.visible=di>.002;decl.scale.setScalar(Math.max(.001,di));decl.position.set(0,2.3+Math.sin(t*1.4)*.05*damp,1.8);decl.rotation.y=-.1;
+  A(tPl,t,.86,.6,eo(prog(t,14.55,14.95)));
+  dst.userData.update(.1,t,0,2.4,0,4.0);
+  st.render(t,{shakes:[1.6,4.65,7.55,10.85,13.6],flashes:[13.6]});
+}
+boot(st,draw);
+</script></body></html>

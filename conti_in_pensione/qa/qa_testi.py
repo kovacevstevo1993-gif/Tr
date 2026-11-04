@@ -16,7 +16,7 @@ tutto=tit+'\n'+desc+'\n'+tag+'\n'+com
 # TITOLO
 if len(tit)>100:E(f'titolo {len(tit)} caratteri (max 100)')
 if '#' in tit:E('titolo con hashtag')
-if not re.search(r'pension[ei]',tit,re.I):E('titolo senza la parola PENSIONI/PENSIONE (regola N.19)')
+if not re.search(r'pension[ei]',tit,re.I):W('titolo senza la parola PENSIONI/PENSIONE: va bene se il tema non e\' solo dei pensionati (correzione 03/11: non e\' una regola dell\'utente)')
 if '?' not in tit and '!' not in tit:W('titolo senza domanda/esclamazione: i virali usano "?"')
 if not re.search(r'\b[A-ZÀ-Ý]{5,}\b',tit):W('titolo senza parola calda in MAIUSCOLO')
 # PAROLE VIETATE NEI TESTI SCRITTI

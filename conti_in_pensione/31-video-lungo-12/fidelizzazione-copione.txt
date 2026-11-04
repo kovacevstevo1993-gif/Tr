@@ -1,0 +1,8 @@
+# Controllo di fidelizzazione - video lungo 12 (regola riga 0c della checklist, 25/10/2026)
+PRIMO_MINUTO_RIVELA: nei blocchi 1-4 si scopre solo che a gennaio la pensione contributiva scende (836 euro l'anno su 400.000 di montante a 67 anni, rispetto al 2023), che il decreto del 16/10 cambia la tabella dei coefficienti e che a 67 anni il coefficiente passa da 5,723 a 5,608 a 5,514; NON si dice come calcolare la propria perdita, chi e' colpito, come recuperarla ne' perche'.
+RISPOSTA_TENUTA: blocco 12 (il conto per recuperare: circa sei mesi per tornare al coefficiente di quest'anno, poco piu' di un anno per quello del 2023)
+CERCHIO_1: aperto in blocco 2 (chi e' dentro e chi e' fuori), chiuso in blocco 11
+CERCHIO_2: aperto in blocco 1 (il conto per recuperare quella cifra), chiuso in blocco 12
+CERCHIO_3: aperto in blocco 4 (il perche' della riduzione), chiuso in blocco 14
+CIFRA_GANCIO: 836 euro l'anno (montante 400.000 euro, uscita a 67 anni, coefficienti 2023-24 contro 2027): la cifra piu' grande vera, per anno (calcolo_coeff.py)
+IMPRONTA_PRIMI4: cb5361ba61

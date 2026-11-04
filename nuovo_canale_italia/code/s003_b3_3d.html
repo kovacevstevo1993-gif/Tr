@@ -1,0 +1,58 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#c6ebe3;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Short 003 - blocco 3: Irpef 33% fino a 55.000, 100 euro l'anno ai nuovi nati, voucher 300 euro over 75 =====
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from "/code/lib/stage.js";
+import * as S from "/code/lib/s003.js";
+const ap=(t,a,d=.5)=>eb(prog(t,a,a+d)),ou=(t,a,d=.45)=>1-eo(prog(t,a,a+d));
+const fade=(t,a,b)=>eo(prog(t,a,a+.35))*(b?1-eo(prog(t,b,b+.35)):1);
+const show=(o,s,t,a,b)=>{const k=ap(t,a)*(b?ou(t,b):1);o.visible=k>.002;o.scale.setScalar(Math.max(.001,s*k));return k;};
+const DUR=25.61;
+const KF=[[0,[0,3.9,10.4],[0,2.9,0]],[12.3,[0,3.9,10.0],[0,2.9,0]],[12.7,[0,3.7,10.6],[0,2.7,0],'w'],[19.2,[0,3.7,10.2],[0,2.7,0]],[19.6,[0,3.7,10.4],[0,2.8,0],'w'],[DUR,[0,3.7,10.0],[0,2.8,0]]];
+const st=await createStage({dur:DUR,centers:[0],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+const pill=(t,o)=>st.tag(t,Object.assign({bg:'rgba(255,255,255,.96)',border:'#17324d',fill:'#17324d',w:600},o));
+
+// IRPEF: barra del reddito con zona 33% che arriva a 55.000
+const base=new THREE.Mesh(new THREE.BoxGeometry(3.6,.4,.7),m.navy);base.position.set(0,2.2,0);base.castShadow=true;scene.add(base);
+const zone=new THREE.Mesh(new THREE.BoxGeometry(1,.46,.76),m.coral);zone.castShadow=true;scene.add(zone);
+const flag=new THREE.Group();const fp=new THREE.Mesh(new THREE.CylinderGeometry(.045,.045,1.5,10),m.chrome);fp.position.y=.75;flag.add(fp);const fc=new THREE.Mesh(new THREE.BoxGeometry(.8,.46,.05),m.sun);fc.position.set(.42,1.28,0);flag.add(fc);scene.add(flag);
+const coins=[];for(let i=0;i<5;i++){const c=S.coin(m);c.visible=false;scene.add(c);coins.push(c);}
+// NASCITE: salvadanaio + 18 monete
+const pig=S.piggy(m);scene.add(pig);const pc=[];for(let i=0;i<18;i++){const c=S.coin(m);c.visible=false;scene.add(c);pc.push(c);}
+// OVER 75: borsa medica + voucher
+const med=S.medbag(m);scene.add(med);
+const vou=S.sheet((g,W,H)=>{g.fillStyle='#fff7d6';g.fillRect(0,0,W,H);g.fillStyle='#ff6b4a';g.fillRect(0,0,W,86);g.fillStyle='#fff';g.font='bold 52px PM';g.textAlign='center';g.textBaseline='middle';g.fillText('VOUCHER',W/2,46);g.fillStyle='#17324d';g.font='400 190px AB';g.fillText('300',W/2,H*.62);g.font='bold 54px PM';g.fillText('EURO',W/2,H*.9);g.setLineDash([14,12]);g.strokeStyle='#17324d';g.lineWidth=6;g.strokeRect(10,10,W-20,H-20);},560,540,1.9,null);scene.add(vou);
+const car0=S.car(m,m.teal);scene.add(car0);const tNon=pill(['NON C\'È SOLO IL BOLLO'],{border:'#ff6b4a',sw:3.4,font:'bold 40px PM',h:150});
+const tIrp=pill(['IRPEF'],{border:'#ff6b4a',sw:2.1,font:'bold 80px PM',h:170,fill:'#ff6b4a'}),tScag=pill(['SCAGLIONE AL 33%'],{border:'#ff6b4a',sw:3.2,font:'bold 50px PM',h:150}),t55=pill(['FINO A 55.000 €'],{border:'#ffc233',sw:3.2,font:'bold 52px PM',h:150});
+const tRis=pill(['RISPARMIO MASSIMO'],{border:'#25b36a',sw:3.3,font:'bold 46px PM',h:150});const c500=st.counter({sw:2.8,w:720,h:260,font:'110px AB',color:'#25b36a',border:'#25b36a',bg:'rgba(255,255,255,.97)'});
+const tNati=pill(['DAL 2027'],{border:'#17324d',sw:2.4,font:'bold 64px PM',h:160}),tBimbo=pill(['OGNI NUOVO NATO'],{border:'#ff6b4a',sw:3.1,font:'bold 50px PM',h:150}),c100=st.counter({sw:3.0,w:720,h:260,font:'70px AB',color:'#ff6b4a',border:'#ff6b4a',bg:'rgba(255,255,255,.97)'}),tAnni=pill(['FINO A 18 ANNI'],{border:'#17324d',sw:3.0,font:'bold 52px PM',h:150});
+const tOver=pill(['OVER 75'],{border:'#2b5aa8',sw:2.4,font:'bold 70px PM',h:160}),tPens=pill(['PENSIONE SOTTO 28.000 €'],{border:'#17324d',sw:3.4,font:'bold 38px PM',h:150}),tSan=pill(['SPESE SANITARIE'],{border:'#25b36a',sw:3.1,font:'bold 50px PM',h:150});
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  // apertura: auto + 'non c'e solo il bollo' (0 - 2.5)
+  const k0=show(car0,1,t,0.05,2.3);car0.position.set(0,0,.4);car0.rotation.y=-.95+Math.sin(t*.7)*.05*damp+t*.12;st.setSprite(tNon,0,5.0,0,fade(t,0.1,2.2));
+  // Irpef 2.58 - 12.5
+  const kb=show(base,1,t,2.7,12.3);base.position.set(0,2.2+Math.sin(t*1.5)*.03*damp,0);
+  const zp=eio(prog(t,5.0,7.3));zone.visible=kb>.01&&zp>.002;zone.scale.set(Math.max(.001,3.6*.9*zp*(kb>.5?1:kb*2)),1,1);zone.position.set(-1.8+3.6*.9*zp/2,2.2,0);
+  const kf=show(flag,1,t,7.3,12.3);flag.position.set(-1.8+3.24,2.4,0);flag.rotation.y=Math.sin(t*1.4)*.15*damp;
+  st.setSprite(tIrp,0,5.0,0,fade(t,2.58,4.2));st.setSprite(tScag,0,5.0,0,fade(t,4.4,7.2));st.setSprite(t55,0,5.0,0,fade(t,7.3,9.0));st.setSprite(tRis,0,5.0,0,fade(t,9.1,12.3));
+  const cv=Math.round(500*eio(prog(t,10.58,11.9)));c500.userData.set(cv+' €');st.setSprite(c500,0,1.7+Math.sin(t*2)*.04*damp,0,fade(t,10.5,12.3));
+  coins.forEach((c,i)=>{const p=prog(t,10.6+i*.25,10.6+i*.25+.5);c.visible=p>0&&t<12.4;c.position.set(-.8+i*.4,3.8+(1-eo(p))*2.5-(i%2)*.0,.4);c.rotation.z=t*3+i;c.scale.setScalar(1.0);});
+  // nascite 12.64 - 19.3
+  const kp=show(pig,1.0,t,14.3,19.4);pig.position.set(0,.1,0);pig.rotation.y=-.5+Math.sin(t*.9)*.12*damp+prog(t,14.3,19.4)*.4;
+  st.setSprite(tNati,0,5.0,0,fade(t,12.7,14.2));st.setSprite(tBimbo,0,5.0,0,fade(t,14.4,17.0));
+  const cp=Math.round(100*eio(prog(t,16.0,16.8)));c100.userData.set(cp+' € / ANNO');st.setSprite(c100,0,1.8,0,fade(t,16.0,17.8));
+  pc.forEach((c,i)=>{const p=prog(t,17.7+i*.04,17.7+i*.04+.45);c.visible=p>0&&t<19.4;c.position.set(.25+Math.sin(i)*.0,3.8-(1-eo(p))*0.0+ (1-eo(p))*2.2-(i%6)*.0,0);c.position.x=-.9+(i%6)*.36;c.position.y=2.9+Math.floor(i/6)*.0+(1-eo(p))*2.0;c.position.z=1.4;c.rotation.z=t*2+i;});
+  st.setSprite(tAnni,0,5.0,0,fade(t,17.8,19.3));
+  // over 75 19.5 - 25.6
+  const km=show(med,.9,t,19.6,0);med.position.set(-.7,.1,0.3);med.rotation.y=.3+Math.sin(t*1.0)*.08*damp;
+  const kv=show(vou,.9,t,19.9,0);vou.position.set(.7+Math.sin(t*1.3)*.03*damp,3.0,.9);vou.rotation.y=-.25;vou.rotation.z=Math.sin(t*1.1)*.04*damp+.08;
+  st.setSprite(tOver,0,5.0,0,fade(t,21.5,23.0));st.setSprite(tSan,0,5.0,0,fade(t,20.4,21.4));st.setSprite(tPens,0,5.0,0,fade(t,23.1,0));
+  st.render(t,{shakes:[2.58,7.3,12.7,16.0,19.9],flashes:[]});
+}
+boot(st,draw);
+</script></body></html>

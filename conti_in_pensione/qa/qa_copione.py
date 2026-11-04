@@ -19,6 +19,7 @@ for n, t in blocchi:
     if len(t) > maxc: err.append(f'blocco {n}: {len(t)} caratteri (max {maxc})')
     if re.search(r'my inps', t, re.I): err.append(f'blocco {n}: "My Inps" a voce (si dice Mai Inps)')
     if re.search(r'\binvalidi\b', t, re.I) and not re.search(r'invalidi al', t, re.I): err.append(f'blocco {n}: INVALIDI da solo')
+    if re.search(r'(?<!mai )(?<!my )\binps\b', t, re.I): err.append(f'blocco {n}: "Inps" a voce: dal 03/11/2026 si scrive "Imps" (la voce legge male Inps)')
     if re.search(r'45 centesimi|quarantacinque centesimi', t, re.I): err.append(f'blocco {n}: 45 centesimi')
 if blocchi:
     prime = ' '.join(blocchi[0][1].lower().split()[:8])
@@ -34,6 +35,12 @@ if blocchi:
                 m = re.match(r'^1[ |]\s*(.+)$', l)
                 if m and ' '.join(m.group(1).lower().split()[:3]) == ' '.join(blocchi[0][1].lower().split()[:3]):
                     err.append(f'gancio uguale a {g}')
+
+# --- controllo fidelizzazione sul testo (28/10/2026, video 13: risposta data nel blocco 1) ---
+if modo == 'lungo':
+    for n, t in blocchi[:4]:
+        for m in re.finditer(r"per cento|metà|spettano|ti restano|ti arrivano|incassi", t, re.I):
+            err.append(f'blocco {n}: "{m.group(0)}" = risultato dato nei primi 4 blocchi (riga 0c: nel blocco 1 la domanda, non la risposta)')
 # --- controlli aggiunti il 22/10/2026 (N.42/N.48, short 12: difetti trovati solo dopo l'invio) ---
 def _w(t): return re.findall(r"[a-zàèéìòù']+", t.lower())
 _stop = set("il lo la i gli le un una di a da in con su per tra fra e o ma che chi non è ti ci ne si al del della dei delle nel nella sul sulla questo questa quello l' un'".split())
@@ -58,6 +65,10 @@ for n, t in blocchi:
     for m in re.finditer(r"\b(solo|soltanto|mai|tutti|tutte|nessuno|nessuna|sempre|nulla|niente|ogni volta)\b", t, re.I):
         print(f'VERIFICARE parola assoluta "{m.group(1)}" nel blocco {n}: eccezione su inps.it?')
 import os as _o,sys as _s;_s.path.insert(0,_o.path.dirname(_o.path.abspath(__file__)));from check_data import errori_data
+from qa_italiano import controlla as _ci
+_e1,_a1=_ci(blocchi)
+for _x in _a1:print('VERIFICARE italiano:',_x)
+err.extend(_e1)
 for _e in errori_data(' '.join(t for _,t in blocchi)):err.append(_e)
 print(f'{len(blocchi)} blocchi, {sum(len(t) for _, t in blocchi)} caratteri')
 for e in err: print('ERRORE:', e)

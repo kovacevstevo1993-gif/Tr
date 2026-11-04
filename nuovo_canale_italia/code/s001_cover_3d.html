@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0b0c0f;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Copertina Facebook dello short 001 (fermo immagine 3D, 1080x1920) =====
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd,RED,YEL,PAPER} from '/code/lib/stage.js';
+const KF=[[0,[0,4.2,13.6],[0,4.2,0]],[100,[0,4.2,13.6],[0,4.2,0]]];
+const st=await createStage({dur:100,centers:[0],kf:KF});
+const {scene,mats}=st;
+const prof=[[0,0],[.56,0],[.62,.03],[.62,.07],[.56,.1],[0,.1]].map(p=>new THREE.Vector2(p[0],p[1]));
+const coinGeo=new THREE.LatheGeometry(prof,56);
+function decalTex(col){const c=document.createElement('canvas');c.width=c.height=256;const g=c.getContext('2d');g.strokeStyle=col;g.lineWidth=10;g.beginPath();g.arc(128,128,108,0,7);g.stroke();g.fillStyle=col;g.font='bold 150px AB';g.textAlign='center';g.textBaseline='middle';g.fillText('€',128,138);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=4;return t;}
+const dGold=new THREE.MeshStandardMaterial({map:decalTex('#a87a05'),transparent:true,metalness:.9,roughness:.4,depthWrite:false,polygonOffset:true,polygonOffsetFactor:-2});
+const dRed=new THREE.MeshStandardMaterial({map:decalTex('#6d0a07'),transparent:true,metalness:.6,roughness:.4,depthWrite:false,polygonOffset:true,polygonOffsetFactor:-2});
+const mGold=new THREE.MeshStandardMaterial({color:0xFFD23A,metalness:1,roughness:.34});
+const mRed=new THREE.MeshStandardMaterial({color:0xE32119,metalness:.75,roughness:.28,emissive:0x5a0605,emissiveIntensity:.8});
+const decalGeo=new THREE.CircleGeometry(.5,48);
+function coin(x,y,mat,dmat,thin=1,ry=0,tilt=0,z=0){const g=new THREE.Group();const m=new THREE.Mesh(coinGeo,mat);m.castShadow=true;m.receiveShadow=true;g.add(m);const d=new THREE.Mesh(decalGeo,dmat);d.rotation.x=-Math.PI/2;d.position.y=.1004;g.add(d);g.scale.y=thin;g.position.set(x,y,z);g.rotation.set(tilt,ry,tilt*.5);scene.add(g);return g;}
+const LX=-1.2,RX=1.2,CT=.1;
+for(let i=0;i<30;i++){coin(LX+(rnd(i)-.5)*.03,i*CT,mGold,dGold,1,rnd(i+3)*6);coin(RX+(rnd(i+40)-.5)*.03,i*CT,mGold,dGold,1,rnd(i+43)*6);}
+coin(LX,3.0,mRed,dRed,.75,.8);
+for(let j=0;j<10;j++)coin(RX+(rnd(j+80)-.5)*.05,(30+j)*CT,mRed,dRed,1,rnd(j+83)*6);
+// monete rosse in aria vicino alla torre di destra
+[[1.75,7.9,.6,1.1,1.2]].forEach(([x,y,tl,ry,z])=>coin(x,y,mRed,dRed,1,ry,tl,z));
+// pannelli (due righe: etichetta piccola + numero grande)
+function panel(l1,l2,{border,bg,c1,c2,sw}){return st.label((g,w,h)=>{g.fillStyle=bg;st.rr(g,8,8,w-16,h-16,52);g.fill();g.strokeStyle=border;g.lineWidth=16;g.stroke();g.textAlign='center';g.textBaseline='middle';
+  g.fillStyle=c1;g.font='bold 78px PM';g.fillText(l1,w/2,h*.27);g.fillStyle=c2;g.font='bold 215px PM';g.fillText(l2,w/2,h*.64);},760,420,sw,l1);}
+const pL=panel('CARRELLO','+2,5%',{border:'#F3F0E8',bg:'rgba(16,17,21,.94)',c1:'#F3F0E8',c2:'#FFFFFF',sw:1.7});
+const pR=panel('IN CASA TUA','+??%',{border:'#E32119',bg:'#08080A',c1:'#FF5A4D',c2:'#E32119',sw:1.7});
+st.setSprite(pL,LX,4.25,.7,1);st.setSprite(pR,RX,4.95,.7,1);
+// cerchio rosso a penna attorno a "+??%"
+const pts=[];for(let i=0;i<=70;i++){const a=-Math.PI*.55+i/70*Math.PI*2*1.06;const k=1+.03*Math.sin(a*3);pts.push(new THREE.Vector3(Math.cos(a)*1.32*k,Math.sin(a)*.9*k,0));}
+const ring=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),90,.06,10,false),new THREE.MeshStandardMaterial({color:RED,emissive:RED,emissiveIntensity:1.2,roughness:.4}));ring.position.set(RX-.06,4.95,1.0);ring.scale.set(.76,.92,1);scene.add(ring);
+function draw(t){st.render(1.0,{});}
+boot(st,draw);
+</script></body></html>

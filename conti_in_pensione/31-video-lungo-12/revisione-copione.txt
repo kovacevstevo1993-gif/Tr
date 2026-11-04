@@ -1,0 +1,16 @@
+# Revisione scritta del copione video 12 (26/10/2026): letto blocco per blocco come lo ascolta lo spettatore
+1 | 85af28e263 | italiano OK | logica OK | persona OK | numeri OK | cifra 836 = 400.000 x (5,723-5,514)%; 'ottobre' = decreto 16/10/2026; promessa del conto mantenuta nel blocco 12
+2 | 75c8bfa3e9 | italiano OK | logica OK | persona OK | numeri OK | decreto 16/10 (Lavoro di concerto con Economia), reso noto 20/10 (notizia Ministero), in vigore 1/1/2027; 15 righe = eta' 57-71
+3 | 29482ecf06 | italiano OK | logica OK | persona OK | numeri OK | tre tabelle ufficiali: Inps comunicato 21/12/2022, decreti 20/11/2024 e 16/10/2026; -2,01 / -1,68 (Tab. D) / -3,65 calcolati
+4 | 2b4e28f9d9 | italiano OK | logica OK | persona OK | numeri OK | variazioni -1,21 e -1,97 = Tab. D nota tecnica; il perche' e' chiuso nel blocco 14
+5 | 4c6638a653 | italiano OK | logica OK | persona OK | numeri OK | iscrizione con obiettivo mille iscritti come da ordine dell'utente; rimando al decreto sull'aumento di gennaio (video 11)
+6 | 30e2253dc9 | italiano OK | logica OK | persona OK | numeri OK | montante x coefficiente = pensione annua (legge 335/1995 art. 1 c. 6; Ministero); 5.608 / 5.514 / differenza 94 calcolati
+7 | 3dc44fd671 | italiano OK | logica OK | persona OK | numeri OK | 141 / 235 / 376 euro e 11 / 18 / 29 al mese (su 13) da calcolo_coeff.py
+8 | b62ac20855 | italiano OK | logica OK | persona OK | numeri OK | 70 / 79 / 94 / 119 euro per 100.000 da calcolo_coeff.py; motivo doppio verificato con Tab. D
+9 | cdc9d79fae | italiano OK | logica OK | persona OK | numeri OK | la legge 335/1995 art. 1 c. 6 prevede l'estratto conto annuale con la progressione del montante; percorso Mai Inps come nel video 2
+10 | 83b9131e87 | italiano OK | logica OK | persona OK | numeri OK | scheda Inps 'Coefficiente di trasformazione': solo quote contributive; 1/1/1996; dal 2012 se >= 18 anni al 31/12/1995
+11 | da4a3484b9 | italiano OK | logica OK | persona OK | numeri OK | scheda Inps: opzione donna e cumulo contributivo dentro; coefficiente in base all'eta' al momento della prestazione
+12 | 29c2034c6b | italiano OK | logica OK | persona OK | numeri OK | un dodicesimo per mese (legge); 5,84-6,11 mesi per il 2025-26 e 12,64-13,91 per il 2023-24, calcolati su ogni eta' 57-70
+13 | e130446bd0 | italiano OK | logica OK | persona OK | numeri OK | requisito 67 anni e 1 mese dal 2027 (video 1, circolare Inps 28/2026); 5,530 e -1,39% calcolati con la regola dei dodicesimi
+14 | 736cb38048 | italiano OK | logica OK | persona OK | numeri OK | nota tecnica: tasso di sconto 1,5% invariato, parametri demografici Istat; 17,831 e 18,136 dai decreti; coefficiente = 1/divisore verificato
+15 | 35ffa907e9 | italiano OK | logica OK | persona OK | numeri OK | riepilogo coerente con i blocchi 3-14; disclaimer a voce nell'ultimo blocco

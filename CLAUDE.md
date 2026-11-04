@@ -7,7 +7,8 @@
   - The Senior Advantage -> `senior_advantage/PASSAGGIO-CHAT.md` + `senior_advantage/RICERCHE-VIDIQ.md` + `senior_advantage/REGOLE-VIDEO-VIRALI.md` (10 regole per scegliere e fare video con possibilita di esplodere, 04/11/2026).
   - Conti in Pensione -> `conti_in_pensione/REGOLE-FISSE.md` (per intero).
   - Bambini Ciao Ciao -> `parco/docs/PASSAGGIO_Bambini_Ciao_Ciao_v8.md` (stato e regole aggiornate al 21/10) + `parco/docs/PASSAGGIO_Bambini_Ciao_Ciao_v7.md` + `parco/docs/PASSAGGIO_Bambini_Ciao_Ciao_v6_regole.md`.
-  - Nuovo canale italiano "Trappole e conti veri" (nome da decidere) -> `nuovo_canale_italia/REGOLE-UTENTE.md` + `nuovo_canale_italia/RICERCHE-VIDIQ.md`.
+  - Lea & Leo (@lealeostories, short a cartoni di coppia, pacchetti YouTube/Facebook) -> `lea_e_leo/PASSAGGIO.md`.
+  - Nuovo canale italiano "SOLDI CHE CONTANO" (nome scelto il 04/11/2026; finanza ed economia, YouTube + Facebook) -> `nuovo_canale_italia/REGOLE-UTENTE.md` + `nuovo_canale_italia/RICERCHE-VIDIQ.md`.
 - Non aprire ne' usare file, regole o stile di un altro canale. Le regole di questo file valgono per tutti.
 - Fine di ogni lavoro: salvare nel file di stato del canale, commit e push sul branch della sessione, poi unire su main (cosi' la chat dopo trova tutto).
 

@@ -1,0 +1,4 @@
+1 | dc80fbd992 | italiano OK | logica OK | persona OK | numeri OK | v8 01/11: rilettura da spettatore; nel video = comunicato letto riga per riga, regola gia fissata 2027, conto Irpef in euro (V14 blocchi 6, 9-12); ddl dichiarato
+2 | a4d26cb4d6 | italiano OK | logica OK | persona OK | numeri OK | v8 01/11: rilettura da spettatore; nel video = comunicato letto riga per riga, regola gia fissata 2027, conto Irpef in euro (V14 blocchi 6, 9-12); ddl dichiarato
+3 | 095fd06c25 | italiano OK | logica OK | persona OK | numeri OK | v8 01/11: rilettura da spettatore; nel video = comunicato letto riga per riga, regola gia fissata 2027, conto Irpef in euro (V14 blocchi 6, 9-12); ddl dichiarato
+4 | 57af0579b9 | italiano OK | logica OK | persona OK | numeri OK | v8 01/11: rilettura da spettatore; nel video = comunicato letto riga per riga, regola gia fissata 2027, conto Irpef in euro (V14 blocchi 6, 9-12); ddl dichiarato
