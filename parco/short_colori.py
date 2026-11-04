@@ -16,7 +16,7 @@ N = 4
 DUR = sum(LENS)
 DV = json.load(open(os.path.join(HERE, "audioAB", "durate.json")))
 # battute: (chiave, inizio)
-VOICES = [("k1", 1.0), ("k2", 4.0), ("k3", 6.7)]
+VOICES = [("k1", 1.0), ("k2", 4.0), ("k3", 6.7), ("k4", 9.15)]
 T_SUB = 9.0
 TMP = os.path.join(D, "tmp")
 
