@@ -1,0 +1,5 @@
+ok blocco 13 1037 fotogrammi
+blocco 13: durata 1037 f = 34.57 s; ultimo elemento compare a 26.96 s (80% = 27.65 s); oltre l'80%: []
+  fotogrammi controllati 1037; tagliati dal bordo: 0; margine minimo 6px; ultimo movimento al fotogramma: None (ultimi 20 = 1017..1036)
+ffprobe fotogrammi: 1037
+FINITO 13

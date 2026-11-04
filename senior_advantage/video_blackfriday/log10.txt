@@ -1,0 +1,5 @@
+ok blocco 10 1044 fotogrammi
+blocco 10: durata 1044 f = 34.80 s; ultimo elemento compare a 27.13 s (80% = 27.84 s); oltre l'80%: []
+  fotogrammi controllati 1044; tagliati dal bordo: 0; margine minimo 6px; ultimo movimento al fotogramma: None (ultimi 20 = 1024..1043)
+ffprobe fotogrammi: 1044
+FINITO 10

@@ -1,0 +1,5 @@
+ok blocco 8 930 fotogrammi
+blocco 8: durata 930 f = 31.00 s; ultimo elemento compare a 24.18 s (80% = 24.80 s); oltre l'80%: []
+  fotogrammi controllati 930; tagliati dal bordo: 0; margine minimo 6px; ultimo movimento al fotogramma: None (ultimi 20 = 910..929)
+ffprobe fotogrammi: 930
+FINITO 8

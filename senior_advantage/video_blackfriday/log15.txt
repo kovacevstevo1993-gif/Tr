@@ -1,0 +1,5 @@
+ok blocco 15 1011 fotogrammi
+blocco 15: durata 1011 f = 33.70 s; ultimo elemento compare a 26.29 s (80% = 26.96 s); oltre l'80%: []
+  fotogrammi controllati 1011; tagliati dal bordo: 0; margine minimo 6px; ultimo movimento al fotogramma: None (ultimi 20 = 991..1010)
+ffprobe fotogrammi: 1011
+FINITO 15
