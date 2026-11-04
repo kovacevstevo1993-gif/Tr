@@ -960,3 +960,7 @@ ERRORE 04/11/2026 (commento di @isabellarizzi8220 sul video 6, "prendo sei cento
 - Ordine utente: "Creiamo lo short correlato dell'ultimo. Video perfetto senza errori". Ultimo video = video lungo 15 (id 71yuX4u6qD0, primo di /videos il 04/11, titolo online "ATTENZIONE! CARTA DEDICATA A TE 500 EURO: chi la prende davvero e chi resta FUORI?"). Video correlato = video 15.
 - Controllo a inizio chat: l'ultimo commit di claude/trusting-dijkstra-ae13mx (ba6b6fc, errore commento Isabella) NON era su main: unito nel branch di lavoro e portato su main.
 - Copione v1 (5 blocchi, 1172 caratteri, qa_copione + qa_italiano OK, 2 giri di lettura, revisione-copione.txt OK, nessuna cifra svelata oltre ai 500; nessun "Inps" a voce). Da fare solo su ordine: durate (screenshot dell'utente), clip CIP-S18-blocco01..05, miniatura, pacchetto.
+
+## ERRORE 04/11/2026 (copione short 18) - "IN EURO" INUTILE (parole dell'utente: "devi piantarla di dire il confronto in euro o i conti in euro, e ovvio che si fanno in euro, siamo in Italia")
+- Nel copione dello short 18 ho scritto "confronto in euro", "conto in euro", "quanti euro di differenza": "in euro" e' ovvio, e' riempitivo.
+- REGOLA: nei copioni e nei testi mai "in euro" dopo conto/confronto/importo (scrivere "il conto", "il confronto", "quanto"); "euro" solo quando e' la cifra ("cinquecento euro"). Il copione dello short 18 gia' consegnato NON si cambia senza ordine (N.13).
