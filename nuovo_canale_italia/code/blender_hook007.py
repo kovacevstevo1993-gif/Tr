@@ -61,7 +61,7 @@ def setf(f):
     # camera: spinta lenta in avanti + colpo (scossa) all'impatto
     sh=math.exp(-(t-.2)*10)*0.12 if t>.2 else 0
     cam.location=(math.sin(t*90)*sh, -10.4+t*0.3+ (0 if t>.2 else 0), 2.3+math.cos(t*80)*sh)
-    tgt=Vector((0,0,1.7)); d=tgt-cam.location; cam.rotation_euler=d.to_track_quat('-Z','Y').to_euler()
+    tgt=Vector((0,0,float(os.environ.get('LOOKZ','1.7')))); d=tgt-cam.location; cam.rotation_euler=d.to_track_quat('-Z','Y').to_euler()
 for f in range(A,B+1):
     if os.path.exists(os.path.join(OUT,'%05d.png'%f)) and os.environ.get('RESUME'): continue
     t0=time.time(); setf(f); sc.render.filepath=os.path.join(OUT,'%05d.png'%f); bpy.ops.render.render(write_still=True); print('f',f,round(time.time()-t0,1),flush=True)

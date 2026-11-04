@@ -34,7 +34,7 @@ Che tasso paghi sul tuo mutuo: fisso o variabile? Scrivilo qui sotto 👇
 
 ## Impostazioni
 - Pubblica come Reel (verticale, 89,7 s): short007_mutuo/clip/S007-short-mutuo.mp4.
-- Copertina: non ancora fatta (solo su ordine).
+- Copertina: short007_mutuo/facebook/copertina-fb-short007.png (1080x1920; "759 € AL MESE" in Blender nella fascia centrale 16:9; testi "MUTUO DA 150.000 €", "IN 25 ANNI", "QUANTO RESTITUISCI?", "TASSO MEDIO BCE 3,60 %").
 - Attiva "Genera sottotitoli" se compare.
 - Nessuna musica della libreria Meta (la musica del video e originale). Nessuna promozione a pagamento.
 - Rispondi ai commenti nelle prime ore.
