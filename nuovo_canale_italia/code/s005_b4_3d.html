@@ -1,0 +1,61 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#ffcf2e;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s005.js';
+import * as S4 from '/code/lib/s004.js';
+// ===== Short 005 - blocco 4: guarda il totale finale; stesso tipo paga una volta, tipi diversi ciascuno; magazzino europeo niente; commenti; segui =====
+const DUR=19.771;
+const KF=[[0,[0,4.6,8.6],[0,1.5,-.6]],[DUR,[0,4.8,9.2],[0,1.5,-.6]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.backdrop(scene,m);
+const belt=S.conveyor(m);scene.add(belt);
+const rc=S.receipt();rc.position.set(0,2.3,1.2);scene.add(rc);
+const same=[0,1,2,3].map(()=>S.tshirt(0xf2548d));const diff=[S.tshirt(0x20b8b0),S.shoe(0x2a5bff),S.charger(),S.cover(0xf2548d)];
+[...same,...diff].forEach(x=>{x.visible=false;scene.add(x);});
+const wh=S.warehouse(m);wh.position.set(0,.62,-.8);wh.scale.setScalar(.95);scene.add(wh);
+const bub=S4.speech(m);scene.add(bub);
+const dst=S.dustp(160,0xffffff,.07);scene.add(dst);
+const dk=(o)=>Object.assign({bg:'rgba(20,33,61,.95)',border:'#ffc400',fill:'#ffffff'},o);
+const A=S.makeAnchor(st,KF);
+const T=(lines,o)=>st.tag(lines,dk(o));
+const tPrima=T(['PRIMA DI PAGARE'],{sw:3,font:'bold 56px PM',w:760,h:170});
+const tTot=st.tag(['GUARDA IL','TOTALE FINALE'],{bg:'rgba(229,57,43,.97)',border:'#fff',fill:'#fff',sw:3,font:'bold 62px PM',w:760,h:260});
+const tStesso=T(['STESSO TIPO:','UNA VOLTA SOLA'],{sw:3.1,font:'bold 54px PM',w:780,h:260,border:'#25b36a'});
+const tDiv=T(['TIPI DIVERSI:','UNO PER UNO'],{sw:3.1,font:'bold 54px PM',w:780,h:260,border:'#e5392b'});
+const tMag=S4.flagTag(st,'MAGAZZINO IN EUROPA','EU',{border:'#2a5bff',sw:3,w:980,h:180,font:'bold 44px PM',bg:'rgba(20,33,61,.95)'});
+const tNo=st.tag(['QUESTE TASSE','NON VALGONO'],{bg:'rgba(37,179,106,.98)',border:'#fff',fill:'#fff',sw:3.1,font:'bold 58px PM',w:780,h:260});
+const tCom=T(['SCRIVIMI','NEI COMMENTI'],{sw:3,font:'bold 58px PM',w:700,h:260,border:'#2a5bff'});
+const tQ=st.tag(['QUANTO TI È COSTATO','L'+"'"+'ULTIMO PACCO?'],{bg:'rgba(255,255,255,.99)',border:'#ffc400',fill:'#14213d',sw:3.0,font:'bold 50px PM',w:840,h:270});
+const tSegui=st.label((g,W,H)=>{g.fillStyle='#e5392b';st.rr(g,6,6,W-12,H-12,80);g.fill();g.strokeStyle='#fff';g.lineWidth=8;g.stroke();g.fillStyle='#fff';g.font='bold 78px PM';g.textAlign='center';g.textBaseline='middle';g.fillText('+  SEGUIMI',W/2,H/2+4);},640,190,2.7,'segui');
+const tNum=T(['PROSSIMI','NUMERI VERI'],{sw:3,font:'bold 58px PM',w:660,h:260,border:'#25b36a'});
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  belt.userData.scroll(t*1.0);
+  const fade=(a,b,c,d)=>eo(prog(t,a,b))*(1-eo(prog(t,c,d)));
+  // scontrino (0 - 3.6)
+  const rin=.62+.2*eb(prog(t,0,.4)),rout=1-eo(prog(t,3.4,3.8));rc.visible=rout>.01;rc.scale.setScalar(Math.max(.001,rin*rout));rc.position.set(0,1.45+Math.sin(t*1.4)*.05*damp,1.2);rc.rotation.y=Math.sin(t*.8)*.1*damp;
+  A(tPrima,t,.82,.62,fade(.05,.35,1.55,1.8));A(tTot,t,.76,.58,fade(1.7,2.05,3.4,3.7));
+  // stesso tipo (3.5 - 6.7)
+  same.forEach((x,i)=>{const e=eb(prog(t,3.6+i*.25,4.0+i*.25))*(1-eo(prog(t,6.6,6.9)));x.visible=e>.002;x.scale.setScalar(Math.max(.001,e*.72));x.position.set(-1.1+i*.75,1.55+Math.sin(t*2+i)*.06*damp,.8);x.rotation.y=Math.sin(t*.9+i)*.25;});
+  A(tStesso,t,.82,.58,fade(3.55,3.9,6.6,6.9));
+  // tipi diversi (6.78 - 9.6)
+  diff.forEach((x,i)=>{const e=eb(prog(t,6.9+i*.3,7.3+i*.3))*(1-eo(prog(t,9.5,9.8)));x.visible=e>.002;x.scale.setScalar(Math.max(.001,e*.72));x.position.set(-1.1+i*.75,1.55+Math.sin(t*2+i)*.06*damp,.8);x.rotation.y=Math.sin(t*.9+i)*.3;});
+  A(tDiv,t,.82,.58,fade(6.85,7.2,9.5,9.8));
+  // magazzino europeo (9.74 - 14.2)
+  const w=eb(prog(t,9.8,10.3))*(1-eo(prog(t,14.0,14.4)));wh.visible=w>.002;wh.scale.setScalar(Math.max(.001,.95*w));wh.rotation.y=Math.sin(t*.7)*.12*damp;
+  A(tMag,t,.9,.62,fade(9.85,10.2,12.35,12.65));A(tNo,t,.8,.58,fade(12.45,12.8,14.0,14.3));
+  // commenti (14.1 - 17.4)
+  const bi=eb(prog(t,14.15,14.65));bub.visible=bi>.002;bub.scale.setScalar(Math.max(.001,.85*bi));bub.position.set(0,1.5+Math.sin(t*1.6)*.06*damp,1.0);
+  A(tCom,t,.78,.62,fade(14.15,14.5,15.4,15.7));A(tQ,t,.88,-.2,eo(prog(t,15.5,15.9)),1);
+  // segui (17.2 -)
+  A(tSegui,t,.8,.62,eo(prog(t,17.25,17.6)),1+.04*Math.sin(t*7));A(tNum,t,.74,.24,eo(prog(t,18.5,18.9)));
+  dst.userData.update(.1,t,0,2.4,0,4.0);
+  st.render(t,{shakes:[1.7,3.55,6.85,9.85,15.5,17.25],flashes:[1.7]});
+}
+boot(st,draw);
+</script></body></html>
