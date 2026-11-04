@@ -80,7 +80,7 @@ export function calendar(mese,giorno,col='#2a5bff'){return sheet((g,W,H)=>{g.fil
 export function counter(m){const g=new THREE.Group();add(g,rbox(7.4,.5,3.4,.1,m.marble),0,-.25,0);add(g,rbox(7.8,.16,3.8,.06,m.gold),0,-.58,0);return g;}
 // ---- scritte ancorate allo schermo ----
 export function makeAnchor(st,KF){const cp=new THREE.Vector3(),lv=new THREE.Vector3(),f=new THREE.Vector3(),r=new THREE.Vector3(),u=new THREE.Vector3(),w=new THREE.Vector3();
-  function pose(t){let i=0;while(i<KF.length-2&&t>KF[i+1][0])i++;const a=KF[i],b=KF[i+1];const k=t<=a[0]?0:clamp((t-a[0])/(b[0]-a[0]));const e=(a[3]==='w')?eio(k):k*k*(3-2*k);
+  function pose(t){let i=0;while(i<KF.length-2&&t>KF[i+1][0])i++;const a=KF[i],b=KF[i+1];const k=t<=a[0]?0:clamp((t-a[0])/(b[0]-a[0]));const e=(a[3]==='w')?eio(k):(a[3]==='l')?k:k*k*(3-2*k);
     cp.set(...a[1]).lerp(w.set(...b[1]),e);lv.set(...a[2]).lerp(w.set(...b[2]),e);}
   return (s,t,wf,ndcY,show,extra=1,ndcX=0)=>{pose(t);f.copy(lv).sub(cp).normalize();r.crossVectors(f,new THREE.Vector3(0,1,0)).normalize();u.crossVectors(r,f).normalize();const d=8,th=.3443;
     const p=cp.clone().addScaledVector(f,d).addScaledVector(u,ndcY*th*d).addScaledVector(r,ndcX*th*d*st.W/st.H);

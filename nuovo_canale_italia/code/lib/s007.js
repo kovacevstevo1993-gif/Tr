@@ -33,3 +33,16 @@ export function contract(){return sheet((c,W,H)=>{c.fillStyle='#fbfaf5';c.fillRe
   c.fillStyle='#c9cfda';for(let i=0;i<3;i++)c.fillRect(60,650+i*52,W-120-(i%2)*80,16);c.strokeStyle='#12263f';c.lineWidth=6;c.strokeRect(6,6,W-12,H-12);},520,760,2.5,null);}
 export function pen(m){const g=new THREE.Group();const b=new THREE.Mesh(new THREE.CylinderGeometry(.07,.07,2.2,16),m.navy);b.rotation.z=Math.PI/2;b.castShadow=true;g.add(b);
   const tip=new THREE.Mesh(new THREE.ConeGeometry(.07,.28,16),m.gold);tip.rotation.z=-Math.PI/2;tip.position.x=1.24;g.add(tip);const cl=new THREE.Mesh(new THREE.BoxGeometry(.7,.03,.05),m.gold);cl.position.set(-.5,.08,0);g.add(cl);return g;}
+
+// ---- torre di monete (ogni moneta = tot euro): n monete piene + una parziale; colori per fascia ----
+export function coinTower(m,{max=70,r=.85,h=.11}={}){const geo=new THREE.CylinderGeometry(r,r,1,40);const mat=new THREE.MeshStandardMaterial({color:0xffffff,metalness:.95,roughness:.28});
+  const mesh=new THREE.InstancedMesh(geo,mat,max);mesh.castShadow=true;mesh.receiveShadow=true;const d=new THREE.Object3D();const col=new THREE.Color();
+  const bands=[];mesh.userData={bands,h,set(x){for(let i=0;i<max;i++){const full=Math.floor(x);let sy=0;if(i<full)sy=h*.94;else if(i===full)sy=h*.94*(x-full);
+        d.position.set(0,i*h+(sy||.001)/2,0);d.rotation.y=i*.35;d.scale.set(1,Math.max(.0001,sy),1);d.updateMatrix();mesh.setMatrixAt(i,d.matrix);
+        let c=0xf3be3a;for(const b of bands){if(i>=b[0])c=b[1];}col.setHex(c);mesh.setColorAt(i,col);}mesh.instanceMatrix.needsUpdate=true;mesh.instanceColor.needsUpdate=true;}};
+  mesh.userData.set(0);return mesh;}
+// ---- moneta che cade ----
+export function fallCoin(m){const g=new THREE.Mesh(new THREE.CylinderGeometry(.5,.5,.09,28),new THREE.MeshStandardMaterial({color:0xf3be3a,metalness:1,roughness:.25}));g.castShadow=true;return g;}
+// ---- chiave d'oro ----
+export function key(m){const g=new THREE.Group();const ring=new THREE.Mesh(new THREE.TorusGeometry(.38,.1,14,32),m.gold);ring.position.y=.9;g.add(ring);
+  const sh=new THREE.Mesh(new THREE.CylinderGeometry(.09,.09,1.4,14),m.gold);sh.position.y=0;g.add(sh);[.25,.05,-.15].forEach((y,i)=>{const t=new THREE.Mesh(new THREE.BoxGeometry(.36-i*.06,.12,.1),m.gold);t.position.set(.2,y-.35,0);g.add(t);});g.traverse(o=>{o.castShadow=true;});return g;}

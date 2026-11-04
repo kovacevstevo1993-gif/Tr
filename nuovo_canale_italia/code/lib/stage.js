@@ -70,7 +70,7 @@ export async function createStage({dur,centers=[0],kf,theme={}}){
     scene.add(g);return {g,liq,set(level){const L=Math.max(level,.001);liq.scale.y=L;liq.position.y=.16+L/2;}};}
   // camera: tappe [t,[pos],[look],ease?] ('w'=stacco secco)
   const lv=new THREE.Vector3(),cp=new THREE.Vector3();
-  function camAt(t){let i=0;while(i<kf.length-2&&t>kf[i+1][0])i++;const a=kf[i],b=kf[i+1];const u=t<=a[0]?0:clamp((t-a[0])/(b[0]-a[0]));const e=(a[3]==='w')?eio(u):u*u*(3-2*u);
+  function camAt(t){let i=0;while(i<kf.length-2&&t>kf[i+1][0])i++;const a=kf[i],b=kf[i+1];const u=t<=a[0]?0:clamp((t-a[0])/(b[0]-a[0]));const e=(a[3]==='w')?eio(u):(a[3]==='l')?u:u*u*(3-2*u);
     cp.set(...a[1]).lerp(new THREE.Vector3(...b[1]),e);lv.set(...a[2]).lerp(new THREE.Vector3(...b[2]),e);}
   function render(t,{shakes=[],flashes=[]}={}){
     const damp=1-eio(prog(t,dur-0.55,dur-0.06));
