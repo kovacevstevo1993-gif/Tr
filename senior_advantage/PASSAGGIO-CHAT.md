@@ -476,3 +476,6 @@ SLIDE FATTE E MANDATE: video_short10/short10-blocco01..06.mp4 (fotogrammi = dura
 - 23/10: 2 miniature Walmart fatte e mandate (miniature/walmart-miniatura-a/b.png, code/thumb_long8.py).
 - 23/10: miniature Walmart RIFATTE (blu e giallo, logo Walmart vero, scontrino con righe coperte / cartellino $4) e mandate.
 - 23/10: slide 32 (finale): codice pronto con riquadro WATCH NEXT che compare solo negli ultimi 20 s (prima scritta BEFORE YOU GO a sinistra); render NON fatto (fermato dall'utente), il file V8-blocco32.mp4 consegnato e quello vecchio. In attesa dell'ok dell'utente.
+
+
+- 04/11/2026 Black Friday: 2 miniature fatte (code/thumb_bf10.py -> miniature/blackfriday-miniatura-a.png e -b.png; loghi veri in riferimenti/logos_bf/). A = scontrino con righe coperte, LAST DAY TO RETURN?; B = cartellino Walmart, WALMART'S OWN PAGE, NO PRICE MATCH.
