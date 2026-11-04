@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#07140f;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Soldi che Contano - immagine profilo (quadrata) e copertina (larga) per Facebook: monete d'oro, grafico verde in crescita, freccia =====
+import {THREE,createStage,boot,rnd} from '/code/lib/stage.js';
+import {rbox} from '/code/lib/s002.js';
+const W=window.innerWidth,H=window.innerHeight,WIDE=W/H>1.6;
+const TH={bg:0x06130e,fogN:40,fogF:90,keyC:0xfff1cf,keyI:520,rimC:0x19d37a,rimI:140,hemiS:0x2a6b50,hemiG:0x06130e,hemiI:.55,floor:0x081b13,fR:.55,fM:.25,ring:0x19d37a,ringK:.5,env:.95,expo:1.0,bloom:.1,flashK:.1,dustC:0xfff1cf,dustO:.25};
+const KF=WIDE?[[0,[0,3.3,13.8],[0,3.0,0]],[4,[0,3.3,13.8],[0,3.0,0]]]:[[0,[.35,2.9,12.8],[.35,2.55,0]],[4,[.35,2.9,12.8],[.35,2.55,0]]];
+const st=await createStage({dur:4,centers:[],kf:KF,theme:TH});
+const {scene}=st;
+// sfondo sfumato verde scuro con alone
+{const c=document.createElement('canvas');c.width=1024;c.height=512;const g=c.getContext('2d');const r=g.createRadialGradient(512,300,20,512,300,620);r.addColorStop(0,'#14573d');r.addColorStop(.5,'#0b2a1e');r.addColorStop(1,'#04100b');g.fillStyle=r;g.fillRect(0,0,1024,512);
+  const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;const bg=new THREE.Mesh(new THREE.PlaneGeometry(WIDE?90:56,WIDE?34:56),new THREE.MeshBasicMaterial({map:t,fog:false,toneMapped:false}));bg.position.set(0,6,-14);scene.add(bg);}
+scene.traverse(o=>{if(o.isMesh&&o.geometry&&o.geometry.type==='CircleGeometry'){o.material.color.set(0x05160e);o.material.metalness=0;o.material.roughness=.95;}});
+const gold=new THREE.MeshStandardMaterial({color:0xf3be3a,metalness:1,roughness:.26});const goldD=new THREE.MeshStandardMaterial({color:0xc9922a,metalness:1,roughness:.35});
+const green=new THREE.MeshStandardMaterial({color:0x0fb866,metalness:.3,roughness:.3,emissive:0x04502a,emissiveIntensity:.5});const white=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.3,metalness:.2,emissive:0xaaffd8,emissiveIntensity:.25});
+function faceTex(){const c=document.createElement('canvas');c.width=c.height=512;const g=c.getContext('2d');const r=g.createRadialGradient(256,230,30,256,256,260);r.addColorStop(0,'#ffe08a');r.addColorStop(1,'#d9a02c');g.fillStyle=r;g.fillRect(0,0,512,512);
+  g.strokeStyle='#b4781a';g.lineWidth=14;g.beginPath();g.arc(256,256,222,0,7);g.stroke();g.lineWidth=5;g.beginPath();g.arc(256,256,196,0,7);g.stroke();
+  g.fillStyle='#a56a12';g.font='bold 330px Arial Black, Archivo Black, sans-serif';g.textAlign='center';g.textBaseline='middle';g.fillText('€',256,276);g.fillStyle='rgba(255,246,200,.6)';g.fillText('€',250,268);
+  const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=8;t.center.set(.5,.5);t.rotation=Math.PI/2;return t;}
+const ft=faceTex();const faceM=new THREE.MeshStandardMaterial({map:ft,metalness:.9,roughness:.3});
+function coin(r=1,h=.2){const g=new THREE.Group();const geo=new THREE.CylinderGeometry(r,r,h,64);const m=new THREE.Mesh(geo,[gold,faceM,faceM]);m.castShadow=true;m.receiveShadow=true;g.add(m);
+  const rim=new THREE.Mesh(new THREE.TorusGeometry(r*.985,h*.28,14,64),goldD);rim.rotation.x=Math.PI/2;rim.position.y=h/2;g.add(rim);const rim2=rim.clone();rim2.position.y=-h/2;g.add(rim2);return g;}
+function stack(n,r,x,z,seed=0){const g=new THREE.Group();for(let i=0;i<n;i++){const c=coin(r,.2);c.position.set((rnd(i+seed)-.5)*.14,.1+i*.22,(rnd(i+seed+5)-.5)*.14);c.rotation.y=rnd(i+seed+9)*6;g.add(c);}g.position.set(x,0,z);scene.add(g);return g;}
+function standing(r,x,y,z,ry){const c=coin(r,.3);c.rotation.x=Math.PI/2;const g=new THREE.Group();g.add(c);g.position.set(x,y,z);g.rotation.y=ry;scene.add(g);return g;}
+function bars(x0,step,hs,w,z){hs.forEach((h,i)=>{const b=rbox(w,h,w,.1,green);b.position.set(x0+i*step,h/2,z);scene.add(b);const cap=new THREE.Mesh(new THREE.BoxGeometry(w*.92,.05,w*.92),white);cap.position.set(x0+i*step,h+.01,z);scene.add(cap);});}
+function arrow(pts,col){const crv=new THREE.CatmullRomCurve3(pts.map(p=>new THREE.Vector3(...p)));const tube=new THREE.Mesh(new THREE.TubeGeometry(crv,60,.1,12,false),white);tube.castShadow=true;scene.add(tube);
+  const e=pts[pts.length-1],p=pts[pts.length-2];const dir=new THREE.Vector3(e[0]-p[0],e[1]-p[1],e[2]-p[2]).normalize();const cone=new THREE.Mesh(new THREE.ConeGeometry(.3,.7,24),white);cone.position.set(...e);cone.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),dir);scene.add(cone);}
+if(WIDE){
+  // sinistra: pila di monete + moneta in piedi
+  stack(9,1.15,-8.8,0,1);stack(5,1.0,-6.8,1.3,30);standing(1.5,-7.8,1.55,2.3,.3);
+  // destra: barre che salgono + freccia
+  bars(5.4,1.12,[1.4,2.3,3.2,4.3,5.5],.95,0);arrow([[5.0,4.2,1.2],[6.3,4.9,1.2],[7.6,5.6,1.2],[9.2,6.6,1.2]]);
+}else{
+  // profilo: moneta grande in piedi, barre dietro a destra, pila a sinistra
+  standing(2.15,-.35,2.25,1.2,.28);
+  bars(1.4,1.0,[1.7,2.7,3.9],.8,-.6);arrow([[1.0,3.7,-.2],[2.0,4.5,-.2],[3.2,5.4,-.2]]);
+}
+boot(st,(t)=>{st.render(1.0,{shakes:[],flashes:[]});});
+</script></body></html>
