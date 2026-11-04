@@ -1,0 +1,52 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#8fc4ea;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s007.js';
+import * as S4 from '/code/lib/s004.js';
+const dk=(o)=>Object.assign({bg:'rgba(18,38,63,.95)',border:'#f3be3a',fill:'#ffffff'},o);
+const rd=(o)=>Object.assign({bg:'rgba(229,57,43,.97)',border:'#ffffff',fill:'#ffffff'},o);
+const gn=(o)=>Object.assign({bg:'rgba(25,211,122,.97)',border:'#ffffff',fill:'#06222c'},o);
+// ===== Short 007 - blocco 4: guarda il tuo tasso, confrontalo con la media 3,60%; dati BCE; rata formula standard; informazione generale; mi piace e iscriviti =====
+const DUR=18.371;
+const KF=[[0,[0,3.0,9.6],[0,1.6,0]],[7.5,[0,3.0,9.6],[0,1.6,0]],[8.4,[0,3.0,10.0],[0,1.8,0],'w'],[DUR,[0,3.0,10.0],[0,1.8,0]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.backdrop(scene,m);
+const ct=S.contract();scene.add(ct);const pen=S.pen(m);scene.add(pen);
+const house=S.house(m);house.scale.setScalar(.8);house.position.set(0,0,-2.5);scene.add(house);
+const coin=S.coin(m,{r:1.3});scene.add(coin);
+const tTuo=st.tag(['IL TUO TASSO'],dk({sw:3.0,font:'bold 84px AB',w:860,h:200,border:'#19d37a'}));
+const tConf=st.tag(['CONFRONTALO'],dk({sw:3.0,font:'bold 78px AB',w:860,h:190}));
+const cMed=st.counter({w:900,h:260,sw:3.0,color:'#ffffff',border:'#f3be3a',font:'100px AB',bg:'rgba(18,38,63,.95)'});
+const tBce=S4.flagTag(st,'BANCA CENTRALE EUROPEA','EU',{border:'#f3be3a',sw:3.3,w:1000,h:180,font:'bold 46px PM',bg:'rgba(18,38,63,.95)'});
+const tFor=st.tag(['RATA CALCOLATA','CON LA FORMULA','STANDARD'],dk({sw:3.0,font:'bold 62px PM',w:900,h:380}));
+const tInfo=st.tag(['INFORMAZIONE','GENERALE'],dk({sw:3.0,font:'bold 66px PM',w:860,h:270}));
+const tCons=st.tag(['NON È','CONSULENZA'],dk({sw:3.0,font:'bold 66px PM',w:860,h:270,border:'#e5392b'}));
+const tLike=st.tag(['METTI MI PIACE'],{bg:'rgba(37,99,235,.97)',border:'#ffffff',fill:'#ffffff',sw:3.0,font:'bold 70px AB',w:900,h:200});
+const tIsc=st.tag(['ISCRIVITI'],rd({sw:3.0,font:'bold 90px AB',w:800,h:200}));
+const tNome=st.tag(['SOLDI CHE','CONTANO'],{bg:'rgba(18,38,63,.97)',border:'#f3be3a',fill:'#f3be3a',sw:3.2,font:'bold 104px AB',w:940,h:320});
+const A=S.makeAnchor(st,KF);
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.moveClouds(scene,t);
+  ct.visible=t<8.4;ct.position.set(0,1.7,1.0);ct.rotation.set(-.12,Math.sin(t*.7)*.05,0);ct.scale.setScalar(Math.max(.001,.6*eb(prog(t,.05,.6))*(1-eo(prog(t,8.0,8.4)))));
+  pen.visible=t<8.4;pen.position.set(1.15+Math.sin(t*3)*.07,1.45,1.8);pen.rotation.set(0,0,.6);pen.scale.setScalar(Math.max(.001,ct.scale.x/.6));
+  house.visible=t>=8.4;house.rotation.y=Math.sin(t*.5)*.05*damp;
+  coin.visible=t>=8.4;coin.position.set(0,2.0+Math.sin(t*1.6)*.1*damp,.8);coin.rotation.y=t*1.2;coin.scale.setScalar(Math.max(.001,eb(prog(t,8.45,9.1))));
+  A(tTuo,t,.74,.64,eo(prog(t,.05,.4))*(1-eo(prog(t,2.55,2.75))));
+  A(tConf,t,.74,.64,eo(prog(t,2.8,3.15))*(1-eo(prog(t,3.85,4.05))));
+  cMed.userData.set('MEDIA 3,60 %');A(cMed,t,.82,.62,eo(prog(t,3.95,4.3))*(1-eo(prog(t,5.7,5.9))),1+.03*Math.sin(t*8)*(t<5.7?1:0));
+  A(tBce,t,.9,.64,eo(prog(t,5.9,6.25))*(1-eo(prog(t,8.3,8.5))));
+  A(tFor,t,.8,.58,eo(prog(t,8.6,8.95))*(1-eo(prog(t,12.0,12.2))));
+  A(tInfo,t,.76,.6,eo(prog(t,12.2,12.55))*(1-eo(prog(t,13.9,14.1))));
+  A(tCons,t,.76,.6,eo(prog(t,14.0,14.35))*(1-eo(prog(t,15.5,15.7))));
+  A(tLike,t,.8,.62,eo(prog(t,15.6,15.95))*(1-eo(prog(t,16.55,16.75))));
+  A(tIsc,t,.7,.62,eo(prog(t,16.65,17.0))*(1-eo(prog(t,17.3,17.45))));
+  A(tNome,t,.8,.6,eo(prog(t,17.35,17.7)),(1+(1-eb(prog(t,17.35,17.75)))*.08));
+  st.render(t,{shakes:[17.35],flashes:[]});
+}
+boot(st,draw);
+</script></body></html>

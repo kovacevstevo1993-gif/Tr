@@ -49,7 +49,7 @@ export async function createStage({dur,centers=[0],kf,theme={}}){
   function rr(g,x,y,w,h,r){g.beginPath();g.moveTo(x+r,y);g.arcTo(x+w,y,x+w,y+h,r);g.arcTo(x+w,y+h,x,y+h,r);g.arcTo(x,y+h,x,y,r);g.arcTo(x,y,x+w,y,r);g.closePath();}
   function label(draw,w,h,sw,name='?'){const c=document.createElement('canvas');c.width=w;c.height=h;const g=c.getContext('2d');draw(g,w,h);
     const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=4;
-    const s=new THREE.Sprite(new THREE.SpriteMaterial({map:t,transparent:true,depthTest:false,fog:false}));s.scale.set(sw,sw*h/w,1);s.renderOrder=10;s.visible=false;scene.add(s);s.userData={c,g,t,w,h,sw,name};sprites.push(s);return s;}
+    const s=new THREE.Sprite(new THREE.SpriteMaterial({map:t,transparent:true,depthTest:false,fog:false,toneMapped:false}));s.scale.set(sw,sw*h/w,1);s.renderOrder=10;s.visible=false;scene.add(s);s.userData={c,g,t,w,h,sw,name};sprites.push(s);return s;}
   function setSprite(s,x,y,z,show,sc=1){s.visible=show>.01&&sc>.001;s.material.opacity=clamp(show);s.position.set(x,y,z);s.scale.set(s.userData.sw*sc,s.userData.sw*sc*s.userData.h/s.userData.w,1);}
   // adatta il font finche il testo entra nel riquadro (evita testi tagliati)
   function fit(g,txt,font,maxW){let f=font;const mo=/(\d+)px/.exec(f);if(!mo)return f;let px=+mo[1];g.font=f;while(g.measureText(txt).width>maxW&&px>20){px-=3;f=font.replace(/\d+px/,px+'px');g.font=f;}return f;}

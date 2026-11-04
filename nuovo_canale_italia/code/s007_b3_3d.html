@@ -1,0 +1,53 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#8fc4ea;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s007.js';
+import * as S4 from '/code/lib/s004.js';
+const dk=(o)=>Object.assign({bg:'rgba(18,38,63,.95)',border:'#f3be3a',fill:'#ffffff'},o);
+const rd=(o)=>Object.assign({bg:'rgba(229,57,43,.97)',border:'#ffffff',fill:'#ffffff'},o);
+const gn=(o)=>Object.assign({bg:'rgba(25,211,122,.97)',border:'#ffffff',fill:'#06222c'},o);
+// ===== Short 007 - blocco 3: tasso fisso 3,67% -> circa 765 euro; variabile 3,29% (provvisorio) -> circa 734; circa 31 in meno; +1 punto sul variabile = circa +82 euro =====
+const DUR=23.171;
+const KF=[[0,[0,3.3,11.2],[0,2.0,0]],[DUR,[0,3.4,10.6],[0,2.1,0]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.backdrop(scene,m);
+const fixed=S.bar(m.blue,1.5,1.2);const vari=S.bar(m.terra,1.5,1.2);const plus=S.bar(m.red,1.5,1.2);const diff=S.bar(m.mint,.5,.5);
+[fixed,vari,plus,diff].forEach(o=>scene.add(o));
+fixed.position.set(-1.1,0,0);vari.position.set(1.1,0,0);plus.position.set(1.1,0,0);diff.position.set(0,0,.9);
+const tF=st.tag(['TASSO FISSO'],dk({sw:3.0,font:'bold 84px AB',w:860,h:200,border:'#2a6fdb'}));
+const c367=st.counter({w:760,h:260,sw:2.8,color:'#ffffff',border:'#2a6fdb',font:'150px AB',bg:'rgba(18,38,63,.95)'});
+const t765=st.tag(['CIRCA 765 €','AL MESE'],dk({sw:3.0,font:'bold 86px AB',w:860,h:300,border:'#2a6fdb'}));
+const tV=st.tag(['VARIABILE'],dk({sw:3.0,font:'bold 84px AB',w:800,h:200,border:'#d0603a'}));
+const c329=st.counter({w:760,h:260,sw:2.8,color:'#ffffff',border:'#d0603a',font:'150px AB',bg:'rgba(18,38,63,.95)'});
+const tProv=st.tag(['DATO PROVVISORIO'],dk({sw:3.0,font:'bold 62px PM',w:900,h:180}));
+const t734=st.tag(['CIRCA 734 €','AL MESE'],dk({sw:3.0,font:'bold 86px AB',w:860,h:300,border:'#d0603a'}));
+const t31=st.tag(['CIRCA 31 €','IN MENO AL MESE'],gn({sw:3.0,font:'bold 72px AB',w:900,h:300}));
+const tPunto=st.tag(['SE IL VARIABILE','SALE DI 1 PUNTO'],rd({sw:3.0,font:'bold 66px AB',w:900,h:300}));
+const t82=st.tag(['+ CIRCA 82 €','AL MESE'],rd({sw:3.0,font:'bold 90px AB',w:860,h:300}));
+const A=S.makeAnchor(st,KF);
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.moveClouds(scene,t);
+  // altezze: 1 unita = 250 euro di rata
+  fixed.userData.set(3.06*eo(prog(t,3.0,5.2)));
+  vari.userData.set(2.936*eo(prog(t,9.7,12.0)));
+  diff.userData.set(.12*eo(prog(t,15.3,15.8)),3.0);diff.visible=t>15.2;
+  plus.userData.set(.328*eo(prog(t,19.0,20.6)),2.936);plus.visible=t>18.9;
+  A(tF,t,.74,.64,eo(prog(t,.05,.4))*(1-eo(prog(t,2.0,2.25))));
+  c367.userData.set('3,67 %');A(c367,t,.7,.6,eo(prog(t,2.85,3.2))*(1-eo(prog(t,5.0,5.2))),1+.04*Math.sin(t*8)*(t<5?1:0));
+  A(t765,t,.76,.6,eo(prog(t,5.3,5.65))*(1-eo(prog(t,8.5,8.7))));
+  A(tV,t,.7,.64,eo(prog(t,8.8,9.15))*(1-eo(prog(t,9.7,9.9))));
+  c329.userData.set('3,29 %');A(c329,t,.7,.6,eo(prog(t,9.75,10.1))*(1-eo(prog(t,11.3,11.5))),1+.04*Math.sin(t*8)*(t<11.3?1:0));
+  A(tProv,t,.8,.64,eo(prog(t,11.45,11.8))*(1-eo(prog(t,12.8,13.0))));
+  A(t734,t,.76,.6,eo(prog(t,12.9,13.25))*(1-eo(prog(t,15.1,15.3))));
+  A(t31,t,.8,.6,eo(prog(t,15.35,15.7))*(1-eo(prog(t,17.9,18.1))));
+  A(tPunto,t,.8,.6,eo(prog(t,18.0,18.35))*(1-eo(prog(t,20.4,20.6))));
+  A(t82,t,.76,.6,eo(prog(t,20.5,20.85)),(1+(1-eb(prog(t,20.5,20.9)))*.1)*(1+.03*Math.sin(t*8)*damp));
+  st.render(t,{shakes:[20.5],flashes:[]});
+}
+boot(st,draw);
+</script></body></html>
