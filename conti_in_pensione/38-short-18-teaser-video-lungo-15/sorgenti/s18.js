@@ -113,8 +113,8 @@ const S=[
   el('rect',{x:-130,y:-140,width:260,height:160,rx:16,fill:'url(#g_red)'},pg);el('path',{d:'M-28 -98 L48 -60 L-28 -22Z',fill:'#fff','stroke-linejoin':'round',stroke:'#fff','stroke-width':12},pg);
   [[-130,50,200],[-130,82,150],[-130,114,220],[-130,146,120]].forEach(([x,y,w])=>el('rect',{x:x,y:y,width:w,height:12,rx:6,fill:'#B5C6C9'},pg));}
  o.fg=el('g',{},p);o.rip=[0,1].map(()=>el('circle',{r:20,fill:'none',stroke:'#fff','stroke-width':5},o.fg));o.hd=el('g',{},o.fg);{const h=handI(o.hd);o.hd.setAttribute('data-s','1');}
- o.mn=pillS(p,'POCO PIÙ DI 7 MINUTI',460,30,AMB,NAVY);
- o.cf=pillS(p,'IL CONFRONTO',460,32,GRN);o.cn=pillS(p,'IL CONTO FINALE',460,32,NAVY);
+ o.mn=pillS(p,'POCO PIÙ DI 7 MINUTI',520,30,AMB,NAVY);
+ o.cf=pillS(p,'IL CONFRONTO IN EURO',520,30,GRN);o.cn=pillS(p,'IL CONTO FINALE',520,30,NAVY);
  o.cap=strip(p,['CE L\'HAI GIÀ, LA CARTA ACQUISTI?','SCRIVILO NEI COMMENTI']);return o;},
  update(t,o){const a=plan(4,['L\'altra carta, la Carta acquisti','ce l\'hai già','Scrivi sì o no nei commenti','Metti mi piace','iscriviti a Conti in Pensione','apri il video correlato','dura poco più di sette minuti','il confronto','il conto finale']);PL[4]=a;headU(t,o);bgx(t);
   fade(t,o.c2,540,460,a[0]);T(o.qh,540,715,0,pop(t,a[1]));fade(t,o.cm,540,865,a[2]);

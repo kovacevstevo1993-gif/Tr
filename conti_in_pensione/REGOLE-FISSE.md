@@ -968,3 +968,8 @@ ERRORE 04/11/2026 (commento di @isabellarizzi8220 sul video 6, "prendo sei cento
 ## ERRORE 04/11/2026 (short 18) - UNA DOMANDA TRATTATA COME ORDINE (N.13 violata) + SLIDE CAMBIATE SENZA ORDINE
 - Utente: "Ma io ho fatto una cazzo di domanda... chi te l'ha detto di toglierle dalle slide... devi solo rispondere". Alla domanda "avevi capito di togliere ovunque euro?" ho continuato a lavorare e ho tolto "in euro" dalle slide senza ordine, e ho fatto una contro-domanda invece di rispondere.
 - REGOLA: a una domanda dell'utente si risponde SOLO con la risposta (una riga) e ci si ferma; le slide riportano cio' che dice la voce registrata; niente modifiche a slide o testi che l'utente non ha ordinato. Mai continuare a lavorare mentre l'utente fa una domanda.
+
+## STATO 04/11/2026 (sera) - SHORT 18: SLIDE CONSEGNATE (38-short-18-teaser-video-lungo-15)
+- Durate dagli 5 screenshot (DURATE.txt, doppia lettura): 437, 435, 370, 393, 393 = 2028 fotogrammi. Clip CIP-S18-blocco01..05.mp4 in clip/ consegnate tutte insieme e in ordine (checktempi 0 errori; qa_slide OK su TUTTI i fotogrammi di tutti e 5 i blocchi; ffprobe = durate, 1080x1920 30 fps; sequenze a 0,5 s dei 5 file guardate).
+- Look nuovo rispetto a S17: titoletto a pillola bianca con mini carta e chip ambra (senza numeri), schede a ticket con tacche, carte prepagate disegnate, didascalia a coupon con talloncino, sfondo con carte trasparenti. Motore: sorgenti/head18.js + s18.js (build.py, render.py, checktempi.py, sheet.py, qa7.sh).
+- Le slide riportano cio' che dice la voce registrata (blocco 5: "il confronto in euro" come nel copione). Da fare solo su ordine: miniatura, pacchetto (video correlato = video 15, id 71yuX4u6qD0).
