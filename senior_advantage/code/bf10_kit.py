@@ -183,7 +183,7 @@ def head10(img, t, label, store=None, sub=None):
         p = ease(seg(t, 0.3, 0.8))
         d = ImageDraw.Draw(img)
         x1 = 90 + 1740 * p
-        off = int(t * 24) % 22
+        off = int(min(t, END[0] - 0.95) * 24) % 22
         for x in range(90 - off + 22, int(x1), 22):
             if x >= 90:
                 d.line([(x, 146), (min(x + 11, x1), 146)], fill=GOLD, width=3)
@@ -195,7 +195,7 @@ def source10(img, t, t0, label, x=1560, y=1036):
         c.rrect((16, 12, 38, 46), 4, fill=PAPER), c.line([(21, 22), (33, 22)], SAGE_D, 3), c.line([(21, 29), (33, 29)], SAGE_D, 3),
         c.text((50, 29), "OFFICIAL PAGE", FONT_SANS_M, 19, SAGE, anchor="lm", track=3),
         c.text((262, 29), label, FONT_SANS, 22, IVORY, anchor="lm", track=2)), blur=8, dy=5)
-    show(img, t, t0, spr, min(x, 1900 - w / 2), y, mode="up", dur=0.45, fl=False)
+    show(img, t, t0, spr, min(x, 1900 - w / 2), y, mode="fade", dur=0.45, fl=False)
 
 # ------------------------------------------------------------------ mattoni
 def dossier(key, w, h, title, lines=(), accent=GOLD, size=30, tsize=30, icon=None, align="left", ink=INK, title_ink=None):

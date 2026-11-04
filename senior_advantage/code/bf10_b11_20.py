@@ -135,7 +135,7 @@ def draw16(img, t):
     S(img, t, b, "Returns counter", arrow9(100, 60, GOLD), 1450, 450, mode="fade", fl=False)
     S(img, t, b, "Returns counter", tile("rc16", 300, 340, ic_desk, "ASK AT THE\nRETURNS COUNTER", "WHERE YOU BOUGHT IT", GOLD, 1.0, 20, 15, dark=True), 1650, 450, mode="right", amp=4, ph=1)
     S(img, t, b, "sole discretion", dossier("sd16", 820, 200, "CAN DENY A REQUEST", [("AT ITS SOLE DISCRETION", INK)], CORAL, 28, 32, ic_stamp if False else ic_note2), 500, 860, mode="left", amp=3)
-    S(img, t, b, "restrict its price match policy", dossier("rs16", 900, 150, "MAY RESTRICT ITS POLICY IN THE FUTURE", [("IN THE FUTURE, IF IT DECIDES TO", INK)], GOLD, 26, 26, ic_hourglass), 1400, 830, mode="right", amp=3)
+    S(img, t, b, "restrict its price match policy", dossier("rs16", 900, 150, "MAY RESTRICT ITS PRICE MATCH POLICY", [("IN THE FUTURE", INK)], GOLD, 26, 30, ic_hourglass), 1400, 830, mode="right", amp=3)
     S(img, t, b, "point of purchase", banner10("pp16", 760, 72, "RESTRICTIONS SHOWN AT THE POINT OF PURCHASE", GOLD, GREEN_D, 22), 1400, 950, mode="up", amp=2)
 
 # ============================================================ 17
@@ -191,9 +191,9 @@ def draw18(img, t):
             d.line(pts, fill=INK, width=5, joint="curve")
         if p < 1 and pts:
             put(img, mk(("pen18", 1), 90, 90, lambda c: (c.line([(70, 20), (30, 70)], GOLD_D, 14), c.poly([(24, 64), (38, 78), (20, 86)], fill=INK)), blur=5, dy=3), pts[-1][0] + 26, pts[-1][1] - 26)
-    show(img, t, T(b, "dates on that store's own page"), flag10("FROM THE STORE'S OWN PAGE", None, GOLD, GREEN_D), 1590, 905, mode="up", amp=2)
-    S(img, t, b, "Target and Costco give you", pill9("TARGET AND COSTCO: A LIMITED NUMBER OF DAYS", 820, 52, fill=SAGE, size=21), 560, 960, mode="up", amp=2)
-    S(img, t, b, "Walmart does not match", pill9("WALMART: NO MATCH ON WALMART.COM BLACK FRIDAY DEALS", 880, 52, fill=CORAL, ink=IVORY, size=19), 1440, 960, mode="up", amp=2)
+    show(img, t, T(b, "dates on that store's own page"), flag10("FROM THE STORE'S OWN PAGE", None, GOLD, GREEN_D), 1590, 898, mode="up", amp=2)
+    S(img, t, b, "Target and Costco give you", pill9("TARGET AND COSTCO: A LIMITED NUMBER OF DAYS", 820, 52, fill=SAGE, size=21), 560, 985, mode="up", amp=2)
+    S(img, t, b, "Walmart does not match", pill9("WALMART: NO MATCH ON WALMART.COM BLACK FRIDAY DEALS", 880, 52, fill=CORAL, ink=IVORY, size=19), 1440, 985, mode="up", amp=2)
 
 # ============================================================ 19
 def draw19(img, t):

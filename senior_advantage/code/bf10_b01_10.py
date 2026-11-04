@@ -109,7 +109,7 @@ def seal(text="OFFICIAL", S_=118, col=GOLD):
             c.ell((S_ / 2 + (S_ / 2 - 12) * math.cos(a) - 9, S_ / 2 + (S_ / 2 - 12) * math.sin(a) - 9, S_ / 2 + (S_ / 2 - 12) * math.cos(a) + 9, S_ / 2 + (S_ / 2 - 12) * math.sin(a) + 9), fill=col)
         c.ell((10, 10, S_ - 10, S_ - 10), fill=col)
         c.ell((20, 20, S_ - 20, S_ - 20), outline=GREEN_D, width=3)
-        c.text((S_ / 2, S_ / 2 + 1), text, FONT_SANS, int(S_ * 0.112) if len(text) > 4 else int(S_ * 0.3), GREEN_D, track=1)
+        c.text((S_ / 2, S_ / 2 + 1), text, FONT_SANS, int(S_ * 0.112) if len(text) > 4 else int(S_ * 0.22), GREEN_D, track=1)
     return mk(("seal10", text, S_, col), S_, S_, fn, blur=8, dy=5)
 
 def draw2(img, t):
