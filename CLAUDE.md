@@ -4,7 +4,7 @@
 - Tutto il progetto (4 canali) e' su `main`: ogni chat nuova parte gia' con tutti i file. Non serve cercare altri branch.
 - I canali sono SEPARATI, ognuno nella sua cartella. Dal primo messaggio dell'utente capire su QUALE canale si lavora e leggere SOLO i file di avvio di quel canale, prima di rispondere:
   - The Money Backstory -> `money_backstory/REGOLE-UTENTE-05-10.md` (regole con le parole dell'utente) + `money_backstory/START-QUI-NUOVA-CHAT.md` (stato) + `money_backstory/RICERCHE-VIDIQ-LOG.md`.
-  - The Senior Advantage -> `senior_advantage/PASSAGGIO-CHAT.md` + `senior_advantage/RICERCHE-VIDIQ.md`.
+  - The Senior Advantage -> `senior_advantage/PASSAGGIO-CHAT.md` + `senior_advantage/RICERCHE-VIDIQ.md` + `senior_advantage/REGOLE-VIDEO-VIRALI.md` (10 regole per scegliere e fare video con possibilita di esplodere, 04/11/2026).
   - Conti in Pensione -> `conti_in_pensione/REGOLE-FISSE.md` (per intero).
   - Bambini Ciao Ciao -> `parco/docs/PASSAGGIO_Bambini_Ciao_Ciao_v8.md` (stato e regole aggiornate al 21/10) + `parco/docs/PASSAGGIO_Bambini_Ciao_Ciao_v7.md` + `parco/docs/PASSAGGIO_Bambini_Ciao_Ciao_v6_regole.md`.
   - Nuovo canale italiano "Trappole e conti veri" (nome da decidere) -> `nuovo_canale_italia/REGOLE-UTENTE.md` + `nuovo_canale_italia/RICERCHE-VIDIQ.md`.
