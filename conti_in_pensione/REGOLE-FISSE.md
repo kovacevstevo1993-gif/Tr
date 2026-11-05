@@ -994,3 +994,7 @@ ERRORE 04/11/2026 (commento di @isabellarizzi8220 sul video 6, "prendo sei cento
 ## ERRORE 05/11/2026 (video 16) - DUBBIO LASCIATO ALL'UTENTE INVECE DI VERIFICARLO (utente: "perche' devi interpretare te che fai 100 controlli, robe da matti")
 - Alla domanda "e' perfetto?" ho risposto con due punti "interpretati da me" (limite maggiorato del blocco 13, ipotesi dei conti) e ho offerto di verificare. La circolare Inps 1/2024 con la regola si poteva leggere PRIMA della consegna: fatto dopo, conferma la lettura.
 - REGOLA: ogni passaggio che dipende da un'interpretazione di una norma si verifica sulla circolare/fonte ufficiale PRIMA di consegnare; mai consegnare con un dubbio e poi offrire di verificarlo.
+
+## ERRORE 05/11/2026 (copione video 16, blocchi 1-3) - TROPPE NEGAZIONI NEL PRIMO MINUTO (utente: "chi cazzo vuoi che rimanga a vedere il video se continui a dire non e' legge, e' una bozza, non c'e'")
+- Nei blocchi 1-3 il copione dice quattro volte che il testo non e' certo ("puo' cambiare" nei blocchi 1 e 2, "non e' ancora legge", "l'indice ufficiale non c'e'"): apre il video con dubbi invece che con il motivo per restare.
+- REGOLA: l'avvertenza "ddl, non legge" si dice UNA volta sola nei primi 4 blocchi, in una frase corta e positiva; il resto dei blocchi 1-3 promette cosa si scopre. Nessun "non c'e'/non esiste" nel gancio. Copione NON modificato (N.13): si cambia solo se l'utente ordina.
