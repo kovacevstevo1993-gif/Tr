@@ -1018,3 +1018,7 @@ ERRORE 04/11/2026 (commento di @isabellarizzi8220 sul video 6, "prendo sei cento
 - Limite noto: testi piccoli (24-28 px) in cedolini e blocco 16. Da fare solo su ordine: titolo (vidIQ), miniature, pacchetto, short.
 
 - ERRORE 05/11/2026 (video 16, blocco 16): applicata a Conti la regola WATCH NEXT a sinistra di Senior Advantage (era in CLAUDE.md, sezione altro canale). Parole utente: "Come cazzo fai a confondere i progetti???". REGOLA: per Conti la schermata finale e SEMPRE disclaimer in alto e zona libera in basso al centro (riferimento CIP-V15-blocco19.mp4); prima di usare una regola di CLAUDE.md controllare a QUALE canale appartiene; le regole Senior Advantage non valgono mai per Conti.
+
+## STATO 05/11/2026 - VIDEO 16: PACCHETTO FATTO (39-video-lungo-16-rivalutazione-ddl/pacchetto.txt)
+- Ordine utente: "Fai il pacchetto perfetto senza errori, controlla ovunque come farlo virale... Seo. Ovunque e parole chiavi cerca tutto anche come fanno i video virali". vidIQ 40 crediti su tetto 60 (saldo 132). Ricerca in ricerca-pacchetto-05-11-2026.md (tag e descrizioni di 10 virali, trascrizione Mr LUL, keyword, suggerimenti YouTube). Titolo scelto (76): "RIVALUTAZIONE PENSIONI 2027 ➜ 6 SCALINI: quanto perdi col TAGLIO? Anche 1.000 EURO l'anno". qa_testi OK (21 tag = 497/500, 9 hashtag, 16 capitoli dalle durate). Miniature e short: solo su ordine.
+- Regola applicata: nel commento fissato gli scalini sono numerati come nel video (1 = il piu' alto, 6 = il piu' basso).
