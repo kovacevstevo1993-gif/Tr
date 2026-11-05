@@ -23,10 +23,11 @@ for i in range(len(b)):
         com = [c for c in com if len(set(c)) > 1 and any(w not in GEN for w in c)]
         if com: err.append(f"RIPETIZIONE tra blocco {i+1} e {j+1}: " + " | ".join(" ".join(c) for c in sorted(com)[:4]))
 # numeri in lettere ripetuti tra blocco 1 (hook) e blocco 2: stesse "cifre" dette due volte
-NUM = r"(?:uno|un|due|tre|quattro|cinque|sei|sette|otto|nove|dieci|undici|venti|trenta|quaranta|cinquanta|sessanta|settanta|ottanta|novanta|cento|mille|[a-z]+(?:cento|mila|mille))"
+NUM = r"\b(?:uno|un|due|tre|quattro|cinque|sei|sette|otto|nove|dieci|undici|venti|trenta|quaranta|cinquanta|sessanta|settanta|ottanta|novanta|cento|mille|(?:venti|trenta|quaranta|cinquanta|sessanta|settanta|ottanta|novanta|tre|due|uno|un|quattro|cinque|sei|sette|otto|nove)?(?:uno|un|due|tre|quattro|cinque|sei|sette|otto|nove|dici|dodici|tredici|quattordici|quindici|sedici|diciassette|diciotto|diciannove|ventitré)?)\b"
 def cifre(t): return re.findall(NUM + r"(?: (?:e|virgola) " + NUM + r")* (?:per cento|euro|anni|mesi|mese|anno|giorni|centesimi|mila euro)", t.lower())
 c1, c2 = set(cifre(b[0])), set(cifre(b[1])) if len(b) > 1 else set()
-if c1 & c2: err.append("hook e blocco 2 dicono le STESSE cifre: " + ", ".join(sorted(c1 & c2)[:5]))
+if len(c1 & c2) >= 2: err.append("hook e blocco 2 dicono le STESSE cifre: " + ", ".join(sorted(c1 & c2)[:5]))
+elif c1 & c2: warn.append("hook e blocco 2 condividono una cifra (ok solo se e il numero-gancio): " + ", ".join(sorted(c1 & c2)))
 for i, t in enumerate(b, 1):
     for m in re.finditer(r"\b" + NUM + r"\b(?! (?:per cento|euro|anni|mesi|mese|anno|giorni|centesimi|di|e|virgola|volte|punto|punti|categorie|mila|cento|milioni|miliardi|[a-z]+\b))", t.lower()):
         pass
