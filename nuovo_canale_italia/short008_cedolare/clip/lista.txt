@@ -1,4 +1,0 @@
-file 'S008-blocco01.mp4'
-file 'S008-blocco02.mp4'
-file 'S008-blocco03.mp4'
-file 'S008-blocco04.mp4'
