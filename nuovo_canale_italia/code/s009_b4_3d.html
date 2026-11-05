@@ -37,10 +37,10 @@ function draw(t){
   const dI=.75+.25*eb(prog(t,.1,.8)),dO=eo(prog(t,10.9,11.5));doc.visible=dO<1;doc.position.set(0,1.85+Math.sin(t*1.5)*.05,1.6);doc.rotation.set(-.08,Math.sin(t*.7)*.15,Math.sin(t*1.1)*.02);doc.scale.setScalar(Math.max(.001,.46*dI*(1-dO)));
   const mI=eb(prog(t,2.6,3.2));mag.visible=t>2.5&&dO<1;mag.position.set(.25+Math.sin(t*1.3)*.18,1.6+Math.cos(t*1.7)*.12,2.4);mag.scale.setScalar(Math.max(.001,.55*mI*(1-dO)));
   // circolare INPS (11,2 - 15,8)
-  const cI=eb(prog(t,11.3,11.9)),cO=eo(prog(t,15.6,16.1));circ.visible=t>11.2&&cO<1;circ.position.set(0,1.85+Math.sin(t*1.5)*.05,1.6);circ.rotation.set(-.08,Math.sin(t*.8)*.13,Math.sin(t*1.2)*.02);circ.scale.setScalar(Math.max(.001,.46*cI*(1-cO)));
+  const cI=eb(prog(t,11.3,11.9)),cO=eo(prog(t,18.9,19.3));circ.visible=t>11.2&&cO<1;circ.position.set(0,1.85+Math.sin(t*1.5)*.05,1.6);circ.rotation.set(-.08,Math.sin(t*.8)*.13,Math.sin(t*1.2)*.02);circ.scale.setScalar(Math.max(.001,.46*cI*(1-cO)));
   // cuore e stella (19,1 - fine)
   const hI=eb(prog(t,19.1,19.7)),hO=eo(prog(t,20.1,20.5));heart.visible=t>19.0&&hO<1;heart.position.set(0,2.0,1.6);heart.scale.setScalar(Math.max(.001,.5*hI*(1-hO)*(1+.08*Math.sin(t*7))));heart.rotation.y=Math.sin(t*1.5)*.5;
-  const sI=eb(prog(t,20.3,20.9));star.visible=t>20.2;star.position.set(0,2.1,1.6);star.scale.setScalar(Math.max(.001,.55*sI*(1+.05*Math.sin(t*6))));star.rotation.y=t*1.3;
+  const sI=eb(prog(t,20.3,20.9));star.visible=t>20.2;star.position.set(0,2.1,1.6);star.scale.setScalar(Math.max(.001,.55*sI*(1+.05*Math.sin(t*6))));star.rotation.y=Math.sin(t*1.6)*.55;
   A(tFar,t,.66,.72,W(t,.1,.45,1.2,1.5));
   A(tEst,t,.8,.66,W(t,1.35,1.7,4.6,4.9));
   A(tSp,t,.88,.64,W(t,4.8,5.15,7.5,7.8));
