@@ -1005,3 +1005,6 @@ ERRORE 04/11/2026 (commento di @isabellarizzi8220 sul video 6, "prendo sei cento
 ## ERRORE 05/11/2026 (video 16) - COPIONE MANDATO SENZA ORDINE (utente: "chi cazzo ti ha detto di mandarlo?")
 - Alla domanda sul raccordo tra i blocchi 5 e 6 ("da dove scende dalla luna?") e poi a "Rispondi e basta" ho rimandato il copione intero senza che l'utente l'avesse chiesto (ordine N.13: una domanda = solo una risposta). Prima: mandato solo un blocco (errore opposto, quando l'ordine era di mandare tutto).
 - REGOLA: il copione si manda SOLO se l'utente lo chiede ("manda tutto il copione") e allora intero; a una domanda su un punto si risponde in una riga, si corregge il file se serve, e si dice "corretto nel file".
+
+## CONTROLLO AUTOMATICO 05/11/2026 (ordine utente: "metti il controllo"): HOOK solo-risposta
+- `.claude/hooks/solo-risposta.py` (registrato in `.claude/settings.json`): se il messaggio dell'utente contiene "?" e nessun verbo di ordine, il sistema BLOCCA scritture di file, commit, push e invio di file/copioni finche' l'utente non scrive un ordine; fanno eccezione le scritture in REGOLE-FISSE.md e CHECKLIST-REGOLE.md. Provato con messaggi simulati (domanda blocca, ordine sblocca, lettura e regole passano).
