@@ -1,0 +1,52 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0a1f27;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s008.js';
+const dk=(o)=>Object.assign({bg:'rgba(8,36,44,.96)',border:'#ffb347',fill:'#ffffff'},o);
+const rd=(o)=>Object.assign({bg:'rgba(229,57,43,.97)',border:'#ffffff',fill:'#ffffff'},o);
+// ===== Short 008 - blocco 2: affitto 500 euro/mese = 6.000/anno; imposta concordato 10% = 600; 5% = 300; inquilino <36 anni 1% = 60; canone libero 21% = 1.260 (1 moneta = 60 euro) =====
+const DUR=24.072;
+const KF=[[0,[0,3.4,9.5],[0,2.6,0]],[6.2,[.6,3.0,8.6],[0,2.6,0]],[7.4,[-1.5,3.0,7.4],[-3.5,2.2,0]],[8.0,[-4.5,2.9,7.6],[-4.5,2.3,0]],[11.2,[-4.9,3.2,7.4],[-4.5,2.2,0]],[12.0,[-1.6,3.0,7.4],[-1.5,2.0,0]],[14.4,[-1.2,3.2,7.2],[-1.5,1.9,0]],[15.0,[1.5,3.0,7.4],[1.5,1.6,0]],[17.6,[1.9,3.1,7.0],[1.5,1.5,0]],[18.4,[4.5,3.2,8.4],[4.5,2.4,0]],[21.0,[4.2,3.8,8.6],[4.5,2.6,0]],[DUR,[4.5,3.4,9.2],[4.5,2.6,0]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.furnish(scene,m);
+const lease=S.lease('CONTRATTO DI LOCAZIONE','CANONE CONCORDATO');scene.add(lease);
+// 4 torri: [x, monete, inizio, fine, colore, etichetta]
+const TW=[[-4.5,10,8.2,10.9,0xf3be3a,'10 %','#f3be3a'],[-1.5,5,12.0,13.5,0xf3be3a,'5 %','#f3be3a'],[1.5,1,15.6,16.6,0x2fe0a0,'1 %','#2fe0a0'],[4.5,21,19.2,22.4,0xff5a4a,'21 %','#ff7a6a']];
+const H=.22;
+const towers=TW.map(([x,n,a,b,c,lab,lc])=>{const tw=S.coinTower(m,{max:n,r:.72,h:H});tw.position.set(x,.03,0);scene.add(tw);
+  const pl=S.plaque(lab,lc);pl.position.set(x,.6,2.1);scene.add(pl);
+  const fc=[];for(let k=0;k<n;k++){const cm=new THREE.Mesh(new THREE.CylinderGeometry(.72,.72,H*.92,40),new THREE.MeshStandardMaterial({color:c,metalness:.95,roughness:.28}));cm.castShadow=true;cm.visible=false;scene.add(cm);fc.push(cm);}
+  return {tw,pl,fc,x,n,a,b,c};});
+const tMese=st.tag(['500 € AL MESE'],dk({sw:3.0,font:'bold 92px AB',w:960,h:200}));
+const tAnno=st.tag(['6.000 € L\'ANNO'],dk({sw:3.0,font:'bold 92px AB',w:960,h:200,border:'#2fe0a0'}));
+const tConc=st.tag(['CANONE CONCORDATO'],dk({sw:3.0,font:'bold 66px AB',w:960,h:190,border:'#2fe0a0'}));
+const t5=st.tag(['AL 5 %'],dk({sw:3.0,font:'bold 100px AB',w:760,h:200}));
+const tU=st.tag(['INQUILINO SOTTO','I 36 ANNI'],dk({sw:3.0,font:'bold 78px AB',w:940,h:300,border:'#2fe0a0'}));
+const tLib=st.tag(['CANONE LIBERO','21 %'],rd({sw:3.0,font:'bold 88px AB',w:940,h:300}));
+const cn=st.counter({w:820,h:260,sw:2.8,color:'#ffffff',border:'#ffb347',font:'160px AB',bg:'rgba(8,36,44,.96)'});
+const A=S.makeAnchor(st,KF);
+const OFF=2.75;
+function draw(t){t+=OFF;
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.liveRoom(scene,t);
+  const lIn=eb(prog(t,2.7,3.3)),lOut=eo(prog(t,6.9,7.5));lease.visible=t>2.6&&lOut<1;lease.position.set(0,2.5+Math.sin(t*1.4)*.08,.8);lease.rotation.set(-.08,Math.sin(t*.7)*.15,Math.sin(t*1.1)*.03);lease.scale.setScalar(Math.max(.001,.5*lIn*(1-lOut)));
+  towers.forEach((o,i)=>{let landed=0;o.fc.forEach((cm,k)=>{const tl=o.a+(o.b-o.a)*(k+1)/o.n,tf=tl-.34;if(t>=tl)landed++;
+      if(t>=tf&&t<tl){const u=(t-tf)/.34;cm.visible=true;cm.position.set(o.x+Math.sin(k*2.1)*.05*(1-u),.03+k*H+H*.46+(1-u)*(1-u)*6.5,0);cm.rotation.set((1-u)*3,k,0);}else cm.visible=false;});
+    o.tw.userData.set(landed,o.c);const pi=eb(prog(t,o.a-.3,o.a+.2));o.pl.visible=t>o.a-.3;o.pl.scale.setScalar(Math.max(.001,.8*pi));o.pl.position.y=.58+Math.sin(t*2+i)*.03;});
+  A(tMese,t,.76,.74,eo(prog(t,3.3,3.65))*(1-eo(prog(t,5.4,5.7))));
+  A(tAnno,t,.76,.74,eo(prog(t,5.6,5.95))*(1-eo(prog(t,7.2,7.5))));
+  A(tConc,t,.8,.74,eo(prog(t,7.5,7.85))*(1-eo(prog(t,11.7,11.95))));
+  A(t5,t,.6,.74,eo(prog(t,11.9,12.25))*(1-eo(prog(t,14.4,14.65))));
+  A(tU,t,.8,.64,eo(prog(t,14.7,15.05))*(1-eo(prog(t,18.0,18.3))));
+  A(tLib,t,.8,.64,eo(prog(t,18.3,18.65)));
+  const sh=(t>=10.44&&t<11.9)?'600 €':(t>=13.54&&t<14.9)?'300 €':(t>=17.0&&t<18.2)?'60 €':(t>=21.68)?'1.260 €':'';
+  const on=(t>=10.44&&t<11.9)?eo(prog(t,10.44,10.8))*(1-eo(prog(t,11.6,11.9))):(t>=13.54&&t<14.9)?eo(prog(t,13.54,13.9))*(1-eo(prog(t,14.6,14.9))):(t>=17.0&&t<18.2)?eo(prog(t,17.0,17.35))*(1-eo(prog(t,17.9,18.2))):(t>=21.68)?eo(prog(t,21.68,22.05)):0;
+  if(sh)cn.userData.set(sh);A(cn,t,.74,.3,on,1+.04*Math.sin(t*8)*(t<DUR-.6?1:0));
+  st.render(t,{shakes:[10.44,13.54,17.0,21.68],flashes:[]});
+}
+boot(st,draw);
+</script></body></html>

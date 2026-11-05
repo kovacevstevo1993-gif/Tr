@@ -1,0 +1,58 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0a1f27;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s008.js';
+const dk=(o)=>Object.assign({bg:'rgba(8,36,44,.96)',border:'#ffb347',fill:'#ffffff'},o);
+const rd=(o)=>Object.assign({bg:'rgba(229,57,43,.97)',border:'#ffffff',fill:'#ffffff'},o);
+const gn=(o)=>Object.assign({bg:'rgba(47,224,160,.97)',border:'#ffffff',fill:'#06222c'},o);
+// ===== Short 008 - blocco 1: Dieci, cinque, uno. Aliquote tassa affitto; manovra 2027: cedolare secca canone concordato 10% -> 5%, 1% se inquilino < 36 anni; non e ancora legge =====
+const DUR=20.832;
+const KF=[[0,[0,3.4,8.2],[0,3.2,0]],[2.8,[-1.8,3.4,9.4],[0,3.4,0]],[6.4,[2.6,3.2,9.2],[0,3.0,0]],[10.0,[0,3.9,10.4],[0,3.4,0]],[13.2,[-2.4,3.2,8.4],[-.4,3.0,0]],[16.6,[2.2,3.3,8.6],[.6,3.0,0]],[DUR,[0,3.5,9.4],[0,3.2,0]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.furnish(scene,m);
+const med10=S.medal(m,'10 %',{r:.66});const med5=S.medal(m,'5 %',{r:.66});const med1=S.medal(m,'1 %',{r:.66});[med10,med5,med1].forEach(x=>scene.add(x));
+const keys=S.keychain(m,'AFFITTO');scene.add(keys);
+const doc=S.paper('MANOVRA 2027');doc.position.set(0,0,0);scene.add(doc);
+const lease=S.lease('CONTRATTO DI LOCAZIONE','CANONE CONCORDATO');scene.add(lease);
+const bozza=S.stamp('NON ANCORA LEGGE');scene.add(bozza);
+const tTassa=st.tag(['LA TASSA','SULL\'AFFITTO'],dk({sw:3.0,font:'bold 90px AB',w:900,h:300}));
+const tMan=st.tag(['MANOVRA 2027'],dk({sw:3.0,font:'bold 96px AB',w:900,h:200,border:'#2fe0a0'}));
+const tCed=st.tag(['CEDOLARE SECCA'],dk({sw:3.0,font:'bold 88px AB',w:940,h:200}));
+const tCon=st.tag(['CANONE CONCORDATO'],dk({sw:3.0,font:'bold 66px AB',w:940,h:190,border:'#2fe0a0'}));
+const c10=st.counter({w:820,h:250,sw:2.8,color:'#ffffff',border:'#ffb347',font:'150px AB',bg:'rgba(8,36,44,.96)'});
+const tInq=st.tag(['INQUILINO CON','MENO DI 36 ANNI'],dk({sw:3.0,font:'bold 74px AB',w:940,h:300,border:'#2fe0a0'}));
+const tLeg=st.tag(['NON ANCORA LEGGE','PUO CAMBIARE'],rd({sw:3.0,font:'bold 76px AB',w:940,h:300}));
+const A=S.makeAnchor(st,KF);
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.liveRoom(scene,t);
+  // --- medaglioni 10 / 5 / 1 (hook: compaiono sulla voce, uno dopo l'altro) ---
+  const sl=eio(prog(t,3.0,3.8)); // si spostano a sinistra
+  const place=(g,i,tIn,pulse)=>{const s=.55+.45*eb(prog(t,tIn,tIn+.4));const k=t<tIn?.001:1;const x=(1-sl)*0+(-1.15)*sl+Math.sin(t*1.2+i)*.04*damp;const y=(4.3-i*1.5)*(1-sl)+(3.9-i*1.2)*sl+Math.sin(t*1.6+i*1.7)*.06*damp;
+    g.position.set(x,y,0);g.scale.setScalar(k*s*(1-.2*sl)*pulse);g.rotation.y=Math.sin(t*1.5+i*1.3)*.5*damp+(t-tIn<.5?(1-eo(prog(t,tIn,tIn+.5)))*6.28:0);};
+  const p10=t>13.0&&t<14.6?1+.18*Math.sin((t-13.0)*8):1,p5=t>13.6&&t<15.0?1+.22*Math.sin((t-13.6)*8):1,p1=t>15.3&&t<17.4?1+.2*Math.sin((t-15.3)*8):1;
+  place(med10,0,0.0,p10);place(med5,1,0.94,p5);place(med1,2,2.02,p1);
+  // --- mazzo di chiavi (chi affitta casa) ---
+  const kIn=eb(prog(t,5.6,6.2));const kOut=eo(prog(t,7.2,7.7));
+  keys.visible=t>5.5&&kOut<1;keys.position.set(.7,1.9+Math.sin(t*2.0)*.1,0);keys.scale.setScalar(Math.max(.001,.85*kIn*(1-kOut)));keys.rotation.set(0,Math.sin(t*1.3)*.5,Math.sin(t*2.4)*.12);
+  // --- documento manovra ---
+  const dIn=eb(prog(t,7.6,8.3)),dOut=eo(prog(t,12.4,12.9));doc.visible=t>7.5&&dOut<1;doc.position.set(.7,3.0+Math.sin(t*1.5)*.08,.6);doc.rotation.set(-.1,Math.sin(t*.8)*.12,-.05+Math.sin(t*1.1)*.03);doc.scale.setScalar(Math.max(.001,.62*dIn*(1-dOut)));
+  // --- contratto (canone concordato) ---
+  const lIn=eb(prog(t,11.4,12.1)),lOut=eo(prog(t,17.8,18.3));lease.visible=t>11.3&&lOut<1;lease.position.set(.55,2.6,.4+Math.sin(t)*.05);lease.rotation.set(-.08,Math.sin(t*.7)*.1+.1,.04);lease.scale.setScalar(Math.max(.001,.42*lIn*(1-lOut)));
+  // --- timbro non ancora legge ---
+  const sIn=eo(prog(t,18.3,18.55));bozza.visible=t>18.3;bozza.position.set(0,2.2,1.6);bozza.rotation.z=-.1;bozza.scale.setScalar(Math.max(.001,(1.9-.9*sIn)));bozza.material.opacity=sIn;
+  A(tTassa,t,.7,.7,eo(prog(t,3.3,3.65))*(1-eo(prog(t,6.9,7.2))));
+  A(tMan,t,.72,.7,eo(prog(t,7.8,8.15))*(1-eo(prog(t,10.4,10.7))));
+  A(tCed,t,.8,.74,eo(prog(t,10.7,11.05))*(1-eo(prog(t,12.7,12.95))));
+  A(tCon,t,.8,.46,eo(prog(t,11.7,12.05))*(1-eo(prog(t,12.7,12.95))));
+  c10.userData.set(t<13.7?'10 %':'10 → 5 %');A(c10,t,.74,.7,eo(prog(t,13.0,13.35))*(1-eo(prog(t,14.9,15.15))),1+.04*Math.sin(t*8)*(t<14.9?1:0));
+  A(tInq,t,.8,.68,eo(prog(t,15.2,15.55))*(1-eo(prog(t,17.8,18.1))));
+  A(tLeg,t,.8,.68,eo(prog(t,18.4,18.75)),(1+(1-eb(prog(t,18.4,18.8)))*.1)*(1+.03*Math.sin(t*7)*damp));
+  st.render(t,{shakes:[0.05,0.95,2.03,18.4],flashes:[0.0,0.94,2.02]});
+}
+boot(st,draw);
+</script></body></html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0a1f27;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from "/code/lib/stage.js";
+import * as S from "/code/lib/s008.js";
+const dk=(o)=>Object.assign({bg:"rgba(8,36,44,.96)",border:"#ffb347",fill:"#ffffff"},o);
+const rd=(o)=>Object.assign({bg:"rgba(229,57,43,.97)",border:"#ffffff",fill:"#ffffff"},o);
+// ===== Short 008 - blocco 3: a risparmiare e il proprietario non l'inquilino; vale solo canone concordato firmati nel 2027 fino al 31/12/2031; non vale se rinnovi un contratto in corso ne se lo interrompi per rifarlo con gli stessi inquilini =====
+const DUR=19.32;
+const KF=[[0,[0,3.2,8.6],[0,2.5,0]],[3.0,[-1.4,3.0,8.0],[-.3,2.6,0]],[5.5,[1.2,3.1,8.4],[0,2.7,0]],[9.0,[-.6,3.0,7.4],[0,2.9,0]],[12.5,[1.4,3.4,8.6],[0,2.8,0]],[15.0,[-1.6,3.0,8.0],[0,2.6,0]],[17.5,[1.6,3.1,7.8],[0,2.6,0]],[DUR,[0,3.2,8.8],[0,2.6,0]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.furnish(scene,m);
+const kO=S.keychain(m,'PROPRIETARIO','#2fe0a0');const kI=S.keychain(m,'INQUILINO','#ffb347');scene.add(kO,kI);
+const ok=S.check(),no=S.cross();scene.add(ok,no);
+const lease=S.lease('CONTRATTO DI LOCAZIONE','CANONE CONCORDATO');scene.add(lease);
+const lease2=S.lease('CONTRATTO DI LOCAZIONE','CANONE CONCORDATO');scene.add(lease2);
+const pages=[2027,2028,2029,2030,2031].map((y,i)=>{const g=new THREE.Group();const p=S.calPage(y);p.position.y=-1.62;g.add(p);g.position.set(0,4.4,.7-i*.05);scene.add(g);return g;});
+const s1=S.stamp('NON VALE');scene.add(s1);const s2=S.stamp('STESSI INQUILINI');scene.add(s2);
+const tAtt=st.tag(['ATTENZIONE'],rd({sw:3.0,font:'bold 104px AB',w:900,h:210}));
+const tProp=st.tag(['RISPARMIA','IL PROPRIETARIO'],dk({sw:3.0,font:'bold 76px AB',w:940,h:300,border:'#2fe0a0'}));
+const tInq=st.tag(['NON','L\'INQUILINO'],rd({sw:3.0,font:'bold 84px AB',w:900,h:300}));
+const tCon=st.tag(['SOLO CANONE','CONCORDATO'],dk({sw:3.0,font:'bold 80px AB',w:940,h:300,border:'#2fe0a0'}));
+const t27=st.tag(['FIRMATI NEL 2027'],dk({sw:3.0,font:'bold 76px AB',w:940,h:200}));
+const t31=st.tag(['FINO AL','31 DICEMBRE 2031'],dk({sw:3.0,font:'bold 76px AB',w:940,h:300,border:'#2fe0a0'}));
+const tN1=st.tag(['NON VALE SE RINNOVI','UN CONTRATTO IN CORSO'],rd({sw:3.0,font:'bold 62px AB',w:980,h:300}));
+const tN2=st.tag(['NON VALE SE LO INTERROMPI','E LO RIFAI CON GLI','STESSI INQUILINI'],rd({sw:3.0,font:'bold 58px AB',w:1000,h:400}));
+const A=S.makeAnchor(st,KF);
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.liveRoom(scene,t);
+  // chiavi: proprietario (sinistra) e inquilino (destra), escono quando parte il calendario
+  const kIn=eb(prog(t,.0,.5)),kOut=eo(prog(t,4.9,5.4));
+  [[kO,-.7,1],[kI,.7,-1]].forEach(([k,x,s])=>{k.visible=kOut<1;k.position.set(x,2.2+Math.sin(t*2+s)*.1,0);k.scale.setScalar(Math.max(.001,.66*(.6+.4*kIn)*(1-kOut)));k.rotation.set(0,Math.sin(t*1.4+s)*.35,Math.sin(t*2.2+s)*.1);});
+  ok.visible=t>1.7&&kOut<1;ok.position.set(-.7,3.5,.5);ok.scale.setScalar(Math.max(.001,.6*eb(prog(t,1.7,2.2))*(1-kOut)));ok.rotation.y=Math.sin(t*3)*.3;
+  no.visible=t>3.7&&kOut<1;no.position.set(.7,3.5,.5);no.scale.setScalar(Math.max(.001,.6*eb(prog(t,3.7,4.2))*(1-kOut)));no.rotation.y=Math.sin(t*3)*.3;
+  // contratto + calendario (5,2 - 12,6)
+  const lIn=eb(prog(t,5.1,5.7)),lOut=eo(prog(t,12.4,12.9));lease.visible=t>5.0&&t<13.4;lease.position.set(0,1.35+Math.sin(t*1.4)*.06,1.1);lease.rotation.set(-.12,Math.sin(t*.7)*.12,0);lease.scale.setScalar(Math.max(.001,.36*lIn*(1-lOut)));
+  pages.forEach((g,i)=>{const fl=eo(prog(t,10.2+i*.4,10.2+i*.4+.35));const vis=t>8.0&&t<12.9&&(i===4||fl<1);g.visible=vis;g.rotation.x=-fl*3.0;const cin=eb(prog(t,8.0,8.6)),cout=eo(prog(t,12.4,12.9));g.scale.setScalar(Math.max(.001,.5*cin*(1-cout)));g.position.set(0,4.1+Math.sin(t*1.5)*.05,.7-i*.04);});
+  // NON VALE 1 (rinnovo) e scena 2 (interrotto e rifatto)
+  const l2In=eb(prog(t,13.0,13.6)),l2Out=eo(prog(t,15.9,16.4));
+  s1.visible=t>14.5&&t<16.4;const q1=eo(prog(t,14.5,14.75));s1.position.set(0,1.9,1.5);s1.rotation.z=-.12;s1.scale.setScalar(Math.max(.001,1.7-.7*q1)*.62);s1.material.opacity=q1;
+  const lo=lease2;lo.visible=t>13.0;const fall=eo(prog(t,16.0,17.0));const sc2=Math.max(.001,.46*l2In);
+  lo.position.set(-.3*fall,1.7-fall*.5+Math.sin(t*1.4)*.05*(1-fall),.9);lo.rotation.set(-.12,Math.sin(t*.7)*.1,-fall*.9);lo.scale.setScalar(sc2*(1-.25*fall));
+  s2.visible=t>17.9;const q2=eo(prog(t,17.9,18.15));s2.position.set(0,1.0,1.7);s2.rotation.z=-.1;s2.scale.setScalar(Math.max(.001,1.7-.7*q2)*.62);s2.material.opacity=q2;
+  A(tAtt,t,.7,.7,eo(prog(t,.15,.5))*(1-eo(prog(t,1.55,1.8))));
+  A(tProp,t,.8,.64,eo(prog(t,1.8,2.15))*(1-eo(prog(t,3.5,3.75))));
+  A(tInq,t,.7,.64,eo(prog(t,3.7,4.05))*(1-eo(prog(t,5.0,5.3))));
+  A(tCon,t,.8,.64,eo(prog(t,5.2,5.55))*(1-eo(prog(t,7.9,8.15))));
+  A(t27,t,.8,.72,eo(prog(t,8.15,8.5))*(1-eo(prog(t,10.0,10.25))));
+  A(t31,t,.8,.64,eo(prog(t,10.2,10.55))*(1-eo(prog(t,12.9,13.15))));
+  A(tN1,t,.84,.64,eo(prog(t,13.1,13.45))*(1-eo(prog(t,15.9,16.15))));
+  A(tN2,t,.86,.6,eo(prog(t,16.1,16.45)),(1+(1-eb(prog(t,16.1,16.5)))*.08)*(1+.025*Math.sin(t*7)*damp));
+  st.render(t,{shakes:[1.7,3.7,14.5,17.9],flashes:[]});
+}
+boot(st,draw);
+</script></body></html>
