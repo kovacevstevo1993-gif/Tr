@@ -26,3 +26,6 @@ Nel copione tutti gli importi sono arrotondati all'euro ("circa") e detti "lordi
 ## Punti NON detti (non verificati o non ufficiali)
 - 3,5 milioni di pensionati / "fino a 1.300 euro" (stampa, Il Messaggero 05/11): non usati.
 - Sentenze Corte costituzionale 19/2025 e 167/2025 sul sistema a blocchi (da ricerca web, non letto il testo): non usate.
+
+## Verifica 05/11 (dopo la consegna): limite maggiorato = pavimento (blocco 13)
+Inps circolare 1 del 02/01/2024 (testo letto, PDF 14590): riporta la stessa formula e la tabella 2024 con le "Fasce di Garanzia": "applicate quando, calcolando la perequazione con la percentuale della fascia, il risultato ottenuto e' inferiore al limite della fascia" (es. da 2.271,76 a 2.289,36 la pensione diventa 2.394,44 = 2.271,76 x 1,054). Quindi e' un importo minimo garantito: lettura del blocco 13 confermata. Conferma anche: soglie sul minimo dell'anno prima (2.271,76 = 4 x 567,94) e percentuale applicata all'importo complessivo. Copione non modificato.
