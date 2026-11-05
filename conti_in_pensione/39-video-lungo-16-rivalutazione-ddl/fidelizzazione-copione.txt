@@ -1,9 +1,9 @@
 # Controllo di fidelizzazione - video lungo 16 (rivalutazione pensioni 2027, ddl art. 55; regola riga 0c della checklist)
-PRIMO_MINUTO_RIVELA: nei blocchi 1-4 si scopre che il disegno di legge di bilancio (atto Camera 3174, articolo 55) cambia la rivalutazione a scalini, che per qualcuno il taglio supera mille euro in un anno, che e' un ddl e non legge, che gli scalini sono sei misurati sul minimo e che esiste una regola per chi supera una soglia di poco. NON si dicono percentuali, soglie in euro, importi dei conti, il metodo di calcolo, ne' quale scalino e' senza taglio: tenuti oltre il blocco 4.
+PRIMO_MINUTO_RIVELA: nei blocchi 1-4 si scopre che l'articolo 55 della manovra (atto Camera 3174) taglia la rivalutazione a sei scalini, che per qualcuno il taglio supera mille euro in un anno, che il testo va ancora votato (una sola volta), che gli scalini si misurano sul minimo e che esiste una regola per chi supera una soglia di poco. NON si dicono percentuali, soglie in euro, importi dei conti, il metodo di calcolo, ne' quale scalino e' senza taglio: tenuti oltre il blocco 4.
 RISPOSTA_TENUTA: blocco 14 (chi sta fino alla prima soglia non ha nessun taglio: l'aumento resta intero)
 CERCHIO_1: aperto in blocco 1 (su quale scalino ti trovi tu?), chiuso in blocco 14 (ultimo scalino, il piu' basso)
 CERCHIO_2: aperto in blocco 3 (una regola per chi sta appena oltre un limite), chiuso in blocco 13 (limite maggiorato)
 CERCHIO_3: aperto in blocco 4 (dove abbiamo gia' visto questa scala), chiuso in blocco 15 (le stesse percentuali del 2023)
 CIFRA_GANCIO: oltre mille euro in un anno (verita': 1.448 euro l'anno su 7.000 lordi al mese, indice 3%); la cifra piu' grande vera e' quella dell'ultimo scalino ed e' data al blocco 8
 LETTI: analisi-fidelizzazione-07-10.md; trascrizioni: GkAwl5_0ZwY.txt (Mr LUL), J0ytVqeIUaA.txt (Ciao Elsa) - letti il 05/11 DOPO la prima stesura e PRIMA della consegna (non prima di scrivere: errore registrato nella chat); confronto fatto: Mr LUL apre con la lista di cosa c'e' piu' una chicca e chiude con un teaser, spiega che oggi la rivalutazione e' per scaglioni (100/90/75) e dice le cifre come forbice; il copione ha il gancio con domanda e cifra senza risultati, la chicca al blocco 15, nessun risultato nei primi 4 blocchi: nessuna modifica necessaria
-IMPRONTA_PRIMI4: 384659177e
+IMPRONTA_PRIMI4: a94ea605ad

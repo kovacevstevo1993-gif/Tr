@@ -998,3 +998,6 @@ ERRORE 04/11/2026 (commento di @isabellarizzi8220 sul video 6, "prendo sei cento
 ## ERRORE 05/11/2026 (copione video 16, blocchi 1-3) - TROPPE NEGAZIONI NEL PRIMO MINUTO (utente: "chi cazzo vuoi che rimanga a vedere il video se continui a dire non e' legge, e' una bozza, non c'e'")
 - Nei blocchi 1-3 il copione dice quattro volte che il testo non e' certo ("puo' cambiare" nei blocchi 1 e 2, "non e' ancora legge", "l'indice ufficiale non c'e'"): apre il video con dubbi invece che con il motivo per restare.
 - REGOLA: l'avvertenza "ddl, non legge" si dice UNA volta sola nei primi 4 blocchi, in una frase corta e positiva; il resto dei blocchi 1-3 promette cosa si scopre. Nessun "non c'e'/non esiste" nel gancio. Copione NON modificato (N.13): si cambia solo se l'utente ordina.
+
+## ISTRUZIONE UTENTE 05/11/2026 (copione video 16): I BLOCCHI DEVONO ESSERE COLLEGATI UNO CON L'ALTRO
+- Parole dell'utente: "i blocchi devono essere collegati uno con l'altro, non sono singoli". Ogni blocco deve riprendere la fine del precedente (frase di passaggio, stesso filo), non partire come pezzo a se'. Da applicare a tutti i copioni; nel video 16 i blocchi 6-14 partono con "Secondo scalino...", "Terzo scalino..." senza collegamento: segnalato all'utente, NON modificato senza ordine (N.13).
