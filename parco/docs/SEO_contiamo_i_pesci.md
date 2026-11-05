@@ -1,9 +1,9 @@
-# SEO — Short "Contiamo i pesci!" (05/11/2026, titolo scritto da Claude, nessun credito vidIQ)
+# SEO — Short "Contiamo i pesci!" (05/11/2026) — titolo generato da vidIQ (score 81), parole chiave da vidIQ keyword research IT
 ## TITOLO
-🐧 Quanti PESCI ha pescato il pinguino? Impariamo a CONTARE! 🐟 | Bambini Ciao Ciao
+Quanti pesci ci sono? Conta insieme al pinguino! ❄️ #contare #shorts
 ## DESCRIZIONE
-🐧 Il pinguino pesca un pesce... poi due... poi tre... quanti ne ha pescati alla fine? 🐟 Contiamo insieme: 1, 2, 3, 4!
-Alza le dita con il pinguino e conta ad alta voce: UNO, DUE, TRE, QUATTRO! 🔢
+🐧 Quanti pesci ci sono? Il pinguino ne pesca uno... poi due... poi tre... e alla fine quattro! 🐟
+Conta insieme a lui, alza le dita e dì ad alta voce: UNO, DUE, TRE, QUATTRO! 🔢
 
 Un cartone animato 3D in italiano per bambini di 2-6 anni, da guardare insieme.
 
@@ -16,6 +16,6 @@ Un cartone animato 3D in italiano per bambini di 2-6 anni, da guardare insieme.
 👇 Scrivi nei commenti: quanti pesci ha pescato il pinguino?
 🔔 Iscriviti a Bambini Ciao Ciao per un nuovo cartone animato ogni settimana!
 
-#cartonianimatiperbambini #contare #numeri #bambiniciaociao #shorts
+#contare #cartonianimatiperbambini #educativo #bambiniciaociao #shorts
 ## TAG
-contare per bambini,impariamo a contare,imparare a contare,contare da 1 a 4,numeri per bambini,imparare i numeri,uno due tre quattro,pinguino cartone animato,pinguino per bambini,pesci per bambini,quanti pesci,imparare giocando,giochi educativi per bambini,video educativi per bambini,matematica per bambini,video per bambini,cartoni per bambini,cartoni animati per bambini,cartoni animati in italiano,counting for kids,learn to count for kids,bimbi,video per bimbi,shorts per bambini,bambini ciao ciao
+video per bambini,cartoni per bambini,cartoni animati per bambini,cartoni bambini,video bambini,bimbi,video per bimbi,educativo,video educativi per bambini,imparare,imparare giocando,canale per bambini,contare per bambini,impariamo a contare,imparare a contare,contare da 1 a 4,numeri per bambini,uno due tre quattro,quanti pesci,pinguino cartone animato,pinguino per bambini,matematica per bambini,cartoni animati in italiano,counting for kids,learn to count for kids,shorts per bambini,bambini ciao ciao
