@@ -1001,3 +1001,7 @@ ERRORE 04/11/2026 (commento di @isabellarizzi8220 sul video 6, "prendo sei cento
 
 ## ISTRUZIONE UTENTE 05/11/2026 (copione video 16): I BLOCCHI DEVONO ESSERE COLLEGATI UNO CON L'ALTRO
 - Parole dell'utente: "i blocchi devono essere collegati uno con l'altro, non sono singoli". Ogni blocco deve riprendere la fine del precedente (frase di passaggio, stesso filo), non partire come pezzo a se'. Da applicare a tutti i copioni; nel video 16 i blocchi 6-14 partono con "Secondo scalino...", "Terzo scalino..." senza collegamento: segnalato all'utente, NON modificato senza ordine (N.13).
+
+## ERRORE 05/11/2026 (video 16) - COPIONE MANDATO SENZA ORDINE (utente: "chi cazzo ti ha detto di mandarlo?")
+- Alla domanda sul raccordo tra i blocchi 5 e 6 ("da dove scende dalla luna?") e poi a "Rispondi e basta" ho rimandato il copione intero senza che l'utente l'avesse chiesto (ordine N.13: una domanda = solo una risposta). Prima: mandato solo un blocco (errore opposto, quando l'ordine era di mandare tutto).
+- REGOLA: il copione si manda SOLO se l'utente lo chiede ("manda tutto il copione") e allora intero; a una domanda su un punto si risponde in una riga, si corregge il file se serve, e si dice "corretto nel file".
