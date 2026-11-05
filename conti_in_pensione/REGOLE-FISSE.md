@@ -1008,3 +1008,6 @@ ERRORE 04/11/2026 (commento di @isabellarizzi8220 sul video 6, "prendo sei cento
 
 ## CONTROLLO AUTOMATICO 05/11/2026 (ordine utente: "metti il controllo"): HOOK solo-risposta
 - `.claude/hooks/solo-risposta.py` (registrato in `.claude/settings.json`): se il messaggio dell'utente contiene "?" e nessun verbo di ordine, il sistema BLOCCA scritture di file, commit, push e invio di file/copioni finche' l'utente non scrive un ordine; fanno eccezione le scritture in REGOLE-FISSE.md e CHECKLIST-REGOLE.md. Provato con messaggi simulati (domanda blocca, ordine sblocca, lettura e regole passano).
+
+## STATO 05/11/2026 - VIDEO 16: VERSIONE REGISTRATA DALL'UTENTE (screenshot della chat)
+- L'utente ha registrato la versione del copione con il blocco 5 che finisce "Grazie, e adesso si scende." e il blocco 6 che inizia "Per scendere servono i due metodi di calcolo." (non quella "torniamo ai conti"). Il file copione-blocchi.txt e' stato riportato a quel testo (altri blocchi uguali all'ultimo invio completo). Il copione registrato NON si cambia piu' (N.13/N.17); le slide si fanno sulle durate dei suoi screenshot.
