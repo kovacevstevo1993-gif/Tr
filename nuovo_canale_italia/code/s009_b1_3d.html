@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#cfe8f2;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from "/code/lib/stage.js";
+import * as S from "/code/lib/s009.js";
+const dk=(o)=>Object.assign({bg:"rgba(10,40,52,.95)",border:"#ffb347",fill:"#ffffff"},o);
+const rd=(o)=>Object.assign({bg:"rgba(229,57,43,.97)",border:"#ffffff",fill:"#ffffff"},o);
+const gn=(o)=>Object.assign({bg:"rgba(31,184,196,.97)",border:"#ffffff",fill:"#06222c"},o);
+// ===== Short 009 - blocco 1: 67 anni e 1 mese. Non e una proposta, e gia legge. Dal 1 gennaio 2027 vecchiaia +1 mese; nel 2028 +3 mesi rispetto a oggi (13,77 s) =====
+const DUR=13.77;
+const KF=[[0,[0,2.7,7.6],[0,2.0,0]],[2.6,[-.8,3.1,9.0],[0,2.1,0]],[5.2,[1.8,3.2,8.0],[.3,2.1,-1]],[7.4,[-1.2,3.1,7.5],[0,2.2,0]],[10.3,[1.2,3.2,3.5],[0,2.0,-4.5]],[DUR,[0,3.0,2.0],[0,2.0,-5.5]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.beach(scene,m);
+const sA=S.signPost(['2027','67 ANNI','E 1 MESE'],{w:3.0,h:2.0});sA.position.set(0,0,1.0);scene.add(sA);
+const sB=S.signPost(['2028','67 ANNI','E 3 MESI'],{w:3.0,h:2.0,acc:'#1fb8c4'});sB.position.set(0,0,-4.5);scene.add(sB);
+const stp=S.stamp('GIA LEGGE','#e5392b');scene.add(stp);
+const cal=S.monthPlate('1','1 GENNAIO 2027');scene.add(cal);
+const clk=S.bigClock(m,1.25);clk.position.set(0,2.4,-.5);scene.add(clk);
+const pl1=S.monthPlate('+1','MESE');scene.add(pl1);const pl3=S.monthPlate('+3','MESI','#1fb8c4');scene.add(pl3);
+const tProp=st.tag(['NON È UNA PROPOSTA','È GIÀ LEGGE'],rd({sw:3.0,font:'bold 66px AB',w:980,h:300}));
+const t27=st.tag(['DAL 1 GENNAIO','2027'],dk({sw:3.0,font:'bold 84px AB',w:900,h:300}));
+const tVec=st.tag(['PENSIONE DI','VECCHIAIA'],dk({sw:3.0,font:'bold 78px AB',w:900,h:300,border:'#1fb8c4'}));
+const c1=st.counter({w:820,h:250,sw:2.8,color:'#ffffff',border:'#ffb347',font:'150px AB',bg:'rgba(10,40,52,.95)'});
+const t28=st.tag(['NEL 2028','RISPETTO A OGGI'],dk({sw:3.0,font:'bold 74px AB',w:960,h:300,border:'#1fb8c4'}));
+const A=S.makeAnchor(st,KF);
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.moveBeach(scene,t);
+  sA.scale.setScalar(.6*(.7+.3*eb(prog(t,0,.4))));sA.rotation.y=Math.sin(t*.8)*.05*damp;
+  const sbIn=eb(prog(t,9.6,10.3));sB.visible=t>9.5;sB.scale.setScalar(Math.max(.001,.55*sbIn));
+  // timbro GIA LEGGE sul cartello 2027
+  const q=eo(prog(t,2.66,2.9));stp.visible=t>2.66;stp.position.set(0,2.0,1.25);stp.rotation.z=-.1;stp.scale.setScalar(Math.max(.001,(.9-.3*q)*.55));stp.material.opacity=q;
+  // calendario 1 gennaio 2027
+  const cIn=eb(prog(t,5.3,5.9)),cOut=eo(prog(t,7.2,7.7));cal.visible=t>5.2&&cOut<1;cal.position.set(1.25,2.2+Math.sin(t*1.6)*.07,1.6);cal.rotation.set(-.05,-.25+Math.sin(t*.9)*.08,.05);cal.scale.setScalar(Math.max(.001,.5*cIn*(1-cOut)));
+  // orologio + 1 mese
+  const kIn=eb(prog(t,7.5,8.1)),kOut=eo(prog(t,10.0,10.5));clk.visible=t>7.4&&kOut<1;clk.scale.setScalar(Math.max(.001,.55*kIn*(1-kOut)));clk.userData.set(t<7.5?0:(t-7.5)*14);clk.rotation.y=.25+Math.sin(t*.9)*.08;
+  const p1=eb(prog(t,8.9,9.5)),p1o=eo(prog(t,10.0,10.5));pl1.visible=t>8.8&&p1o<1;pl1.position.set(.9,2.0,2.8);pl1.rotation.set(-.05,-.2,.06*Math.sin(t*2));pl1.scale.setScalar(Math.max(.001,.5*p1*(1-p1o)));
+  const p3=eb(prog(t,11.4,12.0));pl3.visible=t>11.3;pl3.position.set(0,2.6+Math.sin(t*1.7)*.06,-4.3);pl3.rotation.set(-.05,-.25,.05);pl3.scale.setScalar(Math.max(.001,.5*p3));
+  A(tProp,t,.84,.62,eo(prog(t,2.7,3.05))*(1-eo(prog(t,4.8,5.1))));
+  A(t27,t,.66,.66,eo(prog(t,5.3,5.65))*(1-eo(prog(t,7.2,7.5))));
+  A(tVec,t,.66,.66,eo(prog(t,7.5,7.85))*(1-eo(prog(t,9.0,9.25))));
+  c1.userData.set(t<10.9?'+ 1 MESE':'+ 3 MESI');A(c1,t,.66,.72,eo(prog(t,9.4,9.75))*(1-eo(prog(t,10.2,10.4)))+eo(prog(t,11.4,11.75)),1+.04*Math.sin(t*8));
+  A(t28,t,.8,.34,eo(prog(t,10.45,10.8))*(1-eo(prog(t,11.0,11.25))));
+  st.render(t,{shakes:[0.05,2.7,5.3],flashes:[0.0]});
+}
+boot(st,draw);
+</script></body></html>

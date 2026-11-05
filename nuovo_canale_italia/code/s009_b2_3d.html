@@ -1,0 +1,62 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#cfe8f2;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from "/code/lib/stage.js";
+import * as S from "/code/lib/s009.js";
+const dk=(o)=>Object.assign({bg:"rgba(10,40,52,.95)",border:"#ffb347",fill:"#ffffff"},o);
+const rd=(o)=>Object.assign({bg:"rgba(229,57,43,.97)",border:"#ffffff",fill:"#ffffff"},o);
+const gn=(o)=>Object.assign({bg:"rgba(31,184,196,.97)",border:"#ffffff",fill:"#06222c"},o);
+// ===== Short 009 - blocco 2: vecchiaia 2027 67a1m con 20 anni; 2028 67a3m. Anticipata senza limite di eta: 2027 uomini 42a11m, donne 41a11m; 2028 43a1m e 42a1m (29,85 s) =====
+const DUR=29.85;
+const KF=[[0,[0,3.0,9.5],[0,2.0,0]],[8.5,[0,3.1,9.0],[0,1.8,0]],[12.0,[0,3.0,8.5],[0,1.6,.5]],[17,[-1.2,2.8,8.0],[0,1.5,1]],[22,[1.2,2.9,8.2],[0,1.5,1]],[DUR,[0,2.8,7.4],[0,1.5,1]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.beach(scene,m);
+const sL=S.signPost(['2027','67 ANNI','E 1 MESE'],{w:3.0,h:2.0});sL.position.set(-.75,0,1.6);scene.add(sL);
+const sR=S.signPost(['2028','67 ANNI','E 3 MESI'],{w:3.0,h:2.0,acc:'#1fb8c4'});sR.position.set(.85,0,.2);scene.add(sR);
+const inf=S.infinity(m);scene.add(inf);
+const tiles=S.yearTiles(m,{cols:8,max:48,s:.34});const tg=new THREE.Group();tg.add(tiles);tg.position.set(0,.18,1.4);scene.add(tg);
+const plk=new THREE.Mesh(new THREE.BoxGeometry(3.3,.18,1.0),m.woodD);plk.position.set(0,.09,1.4);plk.castShadow=true;plk.receiveShadow=true;scene.add(plk);
+const tVecc=st.tag(['PENSIONE DI','VECCHIAIA'],dk({sw:3.0,font:'bold 78px AB',w:900,h:300,border:'#1fb8c4'}));
+const t67=st.tag(['67 ANNI E 1 MESE'],dk({sw:3.0,font:'bold 78px AB',w:960,h:200}));
+const t20=st.tag(['ALMENO 20 ANNI','DI CONTRIBUTI'],dk({sw:3.0,font:'bold 74px AB',w:960,h:300,border:'#1fb8c4'}));
+const t673=st.tag(['2028:','67 ANNI E 3 MESI'],dk({sw:3.0,font:'bold 74px AB',w:960,h:300,border:'#1fb8c4'}));
+const tAnt=st.tag(['PENSIONE','ANTICIPATA'],dk({sw:3.0,font:'bold 84px AB',w:900,h:300}));
+const tLim=st.tag(['SENZA LIMITE','DI ETÀ'],dk({sw:3.0,font:'bold 82px AB',w:900,h:300,border:'#1fb8c4'}));
+const tUo=st.tag(['2027 · UOMINI','42 ANNI E 11 MESI'],dk({sw:3.0,font:'bold 70px AB',w:980,h:300}));
+const tDo=st.tag(['2027 · DONNE','41 ANNI E 11 MESI'],dk({sw:3.0,font:'bold 70px AB',w:980,h:300,border:'#ff6b57'}));
+const tUo8=st.tag(['2028 · UOMINI','43 ANNI E 1 MESE'],dk({sw:3.0,font:'bold 70px AB',w:980,h:300}));
+const tDo8=st.tag(['2028 · DONNE','42 ANNI E 1 MESE'],dk({sw:3.0,font:'bold 70px AB',w:980,h:300,border:'#ff6b57'}));
+const tCon=st.tag(['ANNI DI CONTRIBUTI'],dk({sw:3.0,font:'bold 62px AB',w:960,h:180,border:'#1fb8c4'}));
+const A=S.makeAnchor(st,KF);
+const W=(t,a,b,c,d)=>eo(prog(t,a,b))*(1-eo(prog(t,c,d)));
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.moveBeach(scene,t);
+  const aOut=eo(prog(t,12.0,12.6));
+  const lI=eb(prog(t,2.2,2.8)),rI=eb(prog(t,8.8,9.4));sL.visible=aOut<1;sR.visible=t>8.7&&aOut<1;sL.scale.setScalar(Math.max(.001,.5*(t<2.2?1:lI)*(1-aOut)));sR.scale.setScalar(Math.max(.001,.5*rI*(1-aOut)));
+  sL.rotation.y=.12+Math.sin(t*.8)*.05;sR.rotation.y=-.12+Math.sin(t*.8+1)*.05;
+  // tessere degli anni
+  const tIn=eb(prog(t,12.4,13.2));tg.visible=t>12.3;plk.visible=t>12.3;tg.scale.setScalar(Math.max(.001,.8*tIn));plk.scale.setScalar(Math.max(.001,tIn));
+  let n=0,c1=0xf3be3a,c2=0xff6b57;
+  if(t>=12.4&&t<21.8){n=42.917*eo(prog(t,12.7,16.3));}
+  else if(t>=21.8&&t<24.9){n=42.917-1*eio(prog(t,21.9,22.9));c1=t>22.4?0x1fb8c4:0xf3be3a;}
+  else if(t>=24.9){const u=eo(prog(t,25.8,27.4));const a=41.917+(43.083-41.917)*u;const b=43.083-1*eio(prog(t,28.0,28.9));n=t<27.9?a:b;c1=t>27.9?0x1fb8c4:0xf3be3a;}
+  const iI=eb(prog(t,14.6,15.2))*(1-eo(prog(t,16.3,16.8)));inf.visible=iI>.002;inf.position.set(0,2.7+Math.sin(t*2)*.05,1.2);inf.rotation.y=t*1.4;inf.scale.setScalar(Math.max(.001,.5*iI));
+  tiles.userData.set(n,c1,c2);tg.rotation.y=Math.sin(t*.5)*.15*damp;
+  A(tVecc,t,.66,.66,W(t,.1,.45,2.1,2.4));
+  A(t67,t,.8,.7,W(t,3.6,3.95,5.6,5.85));
+  A(t20,t,.8,.66,W(t,5.95,6.3,7.7,7.95));
+  A(t673,t,.8,.66,W(t,10.0,10.35,11.9,12.15));
+  A(tAnt,t,.66,.66,W(t,12.35,12.7,14.3,14.55));
+  A(tLim,t,.66,.66,W(t,14.5,14.85,16.3,16.55));
+  A(tUo,t,.84,.64,W(t,16.8,17.15,21.4,21.65));
+  A(tDo,t,.84,.64,W(t,21.6,21.95,23.9,24.15));
+  A(tUo8,t,.84,.64,W(t,25.2,25.55,27.8,28.05));
+  A(tDo8,t,.84,.64,eo(prog(t,27.9,28.25)));
+  st.render(t,{shakes:[2.3,8.84,12.3],flashes:[]});
+}
+boot(st,draw);
+</script></body></html>
