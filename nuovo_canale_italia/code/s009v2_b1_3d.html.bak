@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#cfe8f2;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from "/code/lib/stage.js";
+import * as S from "/code/lib/s010.js";
+await S.loadFont();const T=await S.loadTimes('/short009_v2/tempi.json');
+const dk=(o)=>Object.assign({bg:"rgba(10,40,52,.95)",border:"#ffb347",fill:"#ffffff"},o);
+const rd=(o)=>Object.assign({bg:"rgba(229,57,43,.97)",border:"#ffffff",fill:"#ffffff"},o);
+const gn=(o)=>Object.assign({bg:"rgba(31,184,196,.97)",border:"#ffffff",fill:"#06222c"},o);
+const W=(t,a,b,c,d)=>eo(prog(t,a,b))*(1-eo(prog(t,c,d)));
+const POP=(t,a,d=.35)=>Math.max(.001,eb(prog(t,a,a+d)));
+// ===== Short 009 v2 - blocco 1 (hook): il 2026 e l'ultimo anno a 67 anni; non e una proposta, e gia legge; circolare INPS =====
+const B='b01',DUR=S.dur(B),c67=S.cue(B,'67'),cNon=S.cue(B,'Non'),cChi=S.cue(B,'Chi'),cCirc=S.cue(B,'circolare');
+const KF=S.shots([[0,c67,[.8,1.0,7.2],[0,1.8,1.5],[-.2,1.2,5.0],[0,1.9,1.5]],[c67,cNon,[-2.6,1.7,5.2],[0,2.1,1.5],[2.2,2.0,4.8],[0,2.1,1.5]],[cNon,cChi,[0,2.0,5.4],[0,2.0,1.5],[.3,2.2,4.2],[0,2.0,1.5]],[cChi,DUR,[-1.6,1.8,3.8],[0,2.0,0],[2.0,4.6,10.5],[0,2.0,-4]]],DUR);
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});const {scene}=st;const m=S.mats();
+S.beach(scene,m);S.extras(scene,m);
+const N=(t,sz,col)=>{const g=S.num3d(t,{size:sz,color:col});scene.add(g);return g;};
+const n2026=N('2026',.95,0xf3be3a),n67=N('67',1.9,0xf3be3a),nAnni=N('ANNI',.6,0xffffff),nU=N('ULTIMO ANNO',.38,0xffffff);
+const stp=S.stamp('GIA LEGGE','#e5392b');scene.add(stp);
+const circ=S.sheet((c,W_,H_)=>{c.fillStyle='#fbfaf5';c.fillRect(0,0,W_,H_);c.fillStyle='#12303a';c.font='bold 44px AB';c.textAlign='center';c.textBaseline='middle';c.fillText('CIRCOLARE N. 28',W_/2,100);c.fillStyle='#ff6b57';c.font='bold 36px PM';c.fillText('16 MARZO 2026',W_/2,170);c.fillStyle='#c9cfda';for(let i=0;i<9;i++)c.fillRect(60,250+i*52,W_-120-(i%3)*80,14);c.strokeStyle='#12303a';c.lineWidth=6;c.strokeRect(6,6,W_-12,H_-12);},520,740,2.6,null);scene.add(circ);
+const tUlt=st.tag(['ULTIMO ANNO','A 67 ANNI'],dk({sw:3.0,font:'bold 84px AB',w:900,h:300,border:'#ff6b57'}));
+const tLeg=st.tag(['NON È UNA PROPOSTA','È GIÀ LEGGE'],rd({sw:3.0,font:'bold 66px AB',w:980,h:300}));
+const tCir=st.tag(['CIRCOLARE INPS','N. 28 · 16 MARZO 2026'],dk({sw:3.0,font:'bold 60px AB',w:1000,h:300,border:'#1fb8c4'}));
+const A=S.makeAnchor(st,KF);const g67=new THREE.Group();
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.liveBeach(scene,t);S.setDay(scene,st,S.dayU(B,t));
+  // 2026 (0 - 67)
+  const a=t<c67+.15?1:0;n2026.visible=a>0;n2026.position.set(0,1.55+Math.sin(t*1.6)*.05,1.5);n2026.rotation.y=Math.sin(t*.9)*.18;n2026.scale.setScalar(.8+.2*POP(t,0,.5));
+  nU.visible=t<c67+.15;nU.position.set(0,2.55+Math.sin(t*1.6+1)*.04,1.5);nU.rotation.y=Math.sin(t*.9)*.18;
+  // 67 (67 - Chi)
+  const b=t>=c67-.05&&t<cChi;n67.visible=b;nAnni.visible=b;const pp=POP(t,c67,.4);n67.position.set(0,2.2,1.5);n67.scale.setScalar(pp*(1+.03*Math.sin(t*3)));n67.rotation.y=Math.sin(t*.8)*.35;nAnni.position.set(0,.55,1.5);nAnni.scale.setScalar(pp);nAnni.rotation.y=n67.rotation.y;
+  // timbro
+  const q=eo(prog(t,cNon+.9,cNon+1.15));stp.visible=t>cNon+.9&&t<cChi;stp.position.set(0,1.6,2.4);stp.rotation.z=-.12;stp.scale.setScalar(Math.max(.001,(1.8-.6*q)*.8));stp.material.opacity=q;
+  // circolare
+  const cI=POP(t,cChi+.1,.5);circ.visible=t>cChi;circ.position.set(0,2.1+Math.sin(t*1.5)*.06,.9);circ.rotation.set(-.06,Math.sin(t*.8)*.2,Math.sin(t*1.1)*.03);circ.scale.setScalar(.5*cI);
+  A(tUlt,t,.66,.66,W(t,-.3,.2,c67+.2,c67+.5));
+  A(tLeg,t,.86,.64,W(t,cNon-.1,cNon+.25,cChi-.25,cChi+.05));
+  A(tCir,t,.9,.64,eo(prog(t,cChi+.05,cChi+.4)));
+  st.render(t,{shakes:[.05,c67,cNon+.9],flashes:[0,c67]});
+}
+boot(st,draw);
+</script></body></html>

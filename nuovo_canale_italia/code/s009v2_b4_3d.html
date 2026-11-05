@@ -1,0 +1,48 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#cfe8f2;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from "/code/lib/stage.js";
+import * as S from "/code/lib/s010.js";
+await S.loadFont();const T=await S.loadTimes('/short009_v2/tempi.json');
+const dk=(o)=>Object.assign({bg:"rgba(10,40,52,.95)",border:"#ffb347",fill:"#ffffff"},o);
+const rd=(o)=>Object.assign({bg:"rgba(229,57,43,.97)",border:"#ffffff",fill:"#ffffff"},o);
+const gn=(o)=>Object.assign({bg:"rgba(31,184,196,.97)",border:"#ffffff",fill:"#06222c"},o);
+const W=(t,a,b,c,d)=>eo(prog(t,a,b))*(1-eo(prog(t,c,d)));
+const POP=(t,a,d=.35)=>Math.max(.001,eb(prog(t,a,a+d)));
+// ===== blocco 4: eccezioni: lavori gravosi con 30 anni di contributi e altre categorie non hanno l'aumento; anticipata: assegno di regola 3 mesi dopo i requisiti =====
+const B='b04',DUR=S.dur(B),c30=S.cueX(B,'30'),cAlc=S.cue(B,'alcune'),cAum=S.cue(B,'aumento'),cAnt=S.cue(B,'anticipata'),cTre=S.cue(B,'tre');
+const KF=S.shots([[0,c30,[-1.0,1.9,8.4],[0,1.6,0],[-.2,2.0,7.4],[0,1.6,0]],[c30,cAlc,[.9,2.2,8.2],[.3,1.8,0],[0,2.3,7.2],[.3,1.8,0]],[cAlc,cAnt,[0,1.8,8.2],[0,1.9,0],[0,2.0,7.0],[0,1.9,0]],[cAnt,cTre,[-1.0,2.4,8.6],[0,1.9,0],[0,2.0,7.6],[0,1.9,0]],[cTre,DUR,[1.0,3.2,8.2],[0,2.2,0],[-.8,2.4,7.2],[0,2.2,0]]],DUR);
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});const {scene}=st;const m=S.mats();
+S.beach(scene,m);S.extras(scene,m);
+const ws=S.worksite(m);ws.position.set(-.7,0,0);scene.add(ws);const hat=S.hardHat(m);scene.add(hat);
+const tiles=S.yearTiles(m,{cols:6,max:30,s:.3});const tg=new THREE.Group();tg.add(tiles);tg.position.set(1.0,.2,.2);scene.add(tg);
+const n30=S.numGroup(scene,'30','ANNI DI CONTRIBUTI',0xf3be3a,{ms:1.0,ss:.17,subCol:0x12303a});n30.position.set(1.0,2.9,.2);
+const sNo=S.signPost(['NESSUN','AUMENTO'],{w:3.0,h:1.6,acc:'#1fb8c4'});sNo.position.set(0,0,0);scene.add(sNo);const ok=S.check();scene.add(ok);
+const hg=S.hourglass(m);scene.add(hg);const mp=[1,2,3].map(i=>{const p=S.monthPlate(String(i),'MESE',i===3?'#1fb8c4':'#ff6b57');scene.add(p);return p;});
+const tGra=st.tag(['LAVORI GRAVOSI','30 ANNI DI CONTRIBUTI'],dk({sw:3.0,font:'bold 62px AB',w:1000,h:300,border:'#1fb8c4'}));
+const tAlt=st.tag(['ALTRE CATEGORIE','PREVISTE DALLA LEGGE'],dk({sw:3.0,font:'bold 60px AB',w:1000,h:300}));
+const tNo=st.tag(['NIENTE','AUMENTO'],gn({sw:3.0,font:'bold 90px AB',w:900,h:300}));
+const tAnt=st.tag(['PENSIONE ANTICIPATA','L\'ASSEGNO PARTE'],dk({sw:3.0,font:'bold 62px AB',w:1000,h:300}));
+const t3=st.tag(['DI REGOLA, 3 MESI','DOPO I REQUISITI'],dk({sw:3.0,font:'bold 62px AB',w:1000,h:300,border:'#ff6b57'}));
+const A=S.makeAnchor(st,KF);
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.liveBeach(scene,t);S.setDay(scene,st,S.dayU(B,t));
+  const o1=1-eo(prog(t,cAlc,cAlc+.3));const i1=.5+.5*POP(t,0,.5);ws.visible=o1>.01;ws.scale.setScalar(Math.max(.001,i1*o1));hat.visible=o1>.01;hat.position.set(-.7,1.15,0);hat.scale.setScalar(Math.max(.001,.85*i1*o1));hat.rotation.y=t*.9;
+  tg.visible=t>c30-.4&&o1>.01;tg.scale.setScalar(Math.max(.001,.8*POP(t,c30-.4,.4)*o1));tiles.userData.set(30*eo(prog(t,c30-.2,c30+1.4)),0xf3be3a,0xf3be3a);
+  n30.visible=t>c30-.1&&o1>.01;n30.scale.setScalar(Math.max(.001,POP(t,c30,.4)*o1));n30.rotation.y=Math.sin(t*.9)*.2;
+  const s1=POP(t,cAlc-.1,.5)*(1-eo(prog(t,cAnt,cAnt+.3)));sNo.visible=t>cAlc-.12&&s1>.002;sNo.scale.setScalar(Math.max(.001,.55*s1));sNo.rotation.y=Math.sin(t*.9)*.08;
+  ok.visible=t>cAum-.5&&s1>.002;ok.position.set(0,3.0,0);ok.scale.setScalar(Math.max(.001,.7*POP(t,cAum-.5,.4)*s1));ok.rotation.y=Math.sin(t*3)*.3;
+  const h1=POP(t,cAnt-.05,.5);hg.visible=t>cAnt-.08;hg.scale.setScalar(Math.max(.001,.78*h1));hg.position.set(0,.2,0);hg.rotation.y=Math.sin(t*.6)*.25;hg.userData.set(eo(prog(t,cAnt+.3,DUR-.4)));
+  mp.forEach((p,i)=>{const t0=cTre+i*.45;const u=eo(prog(t,t0,t0+.4));p.visible=t>t0;p.position.set((i-1)*.95,3.0-(1-u)*1.2+Math.sin(t*2+i)*.04,.4);p.rotation.set(-.1,.12*(i-1),0);p.scale.setScalar(Math.max(.001,.42*u));});
+  A(tGra,t,.8,.6,W(t,-.3,.2,cAlc-.3,cAlc));
+  A(tAlt,t,.8,.6,W(t,cAlc,cAlc+.35,cAum-.3,cAum));
+  A(tNo,t,.66,.64,W(t,cAum,cAum+.35,cAnt-.3,cAnt));
+  A(tAnt,t,.8,.6,W(t,cAnt,cAnt+.35,cTre-.3,cTre));
+  A(t3,t,.8,.6,eo(prog(t,cTre,cTre+.35)));
+  st.render(t,{shakes:[c30,cAum,cTre,cTre+.45,cTre+.9],flashes:[]});
+}
+boot(st,draw);
+</script></body></html>

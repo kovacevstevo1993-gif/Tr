@@ -4,14 +4,18 @@ Uso: voce_unica.py copione.json cartella_out   -> cartella_out/b01.mp3 ... (+ tu
 import sys, os, json, subprocess, re, time
 H = os.path.dirname(os.path.abspath(__file__)); TTS = os.path.join(H, "..", "tts.py")
 cop = json.load(open(sys.argv[1])); out = sys.argv[2]; os.makedirs(out, exist_ok=True)
+MODEL = sys.argv[3] if len(sys.argv) > 3 else "gemini-2.5-flash-preview-tts"
 PRE = "Leggi in italiano con tono deciso, calmo e affermativo, da narratore di documentario d'inchiesta, con lo stesso tono dall'inizio alla fine; fai una pausa di circa un secondo e mezzo dopo ogni paragrafo. Testo: "
-full = os.path.join(out, "tutto")
-if not os.path.exists(full + ".mp3"):
-    for k in range(6):
-        r = subprocess.run(["python3", TTS, "gemini-2.5-flash-preview-tts", "Charon", full, PRE + "\n\n".join(cop)], capture_output=True, text=True)
-        if r.returncode == 0: break
-        time.sleep(20 * (k + 1))
-    else: sys.exit("ERRORE voce: " + r.stderr[-300:])
+full = os.path.join(out, "tutto"); tot_chars = sum(len(t) for t in cop); atteso = tot_chars * 0.062
+def durata(p): return float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",p],capture_output=True,text=True).stdout or 0)
+for tent in range(6):
+    if os.path.exists(full + ".mp3") and durata(full + ".mp3") >= 0.8 * atteso: break
+    for f in (full + ".mp3", full + ".pcm"):
+        if os.path.exists(f): os.remove(f)
+    r = subprocess.run(["python3", TTS, MODEL, "Charon", full, ("" if "3." in MODEL and "2.5" not in MODEL else PRE) + "\n\n".join(cop)], capture_output=True, text=True)
+    print(f"tentativo {tent+1}: durata {durata(full + '.mp3'):.1f} s (attesa circa {atteso:.0f} s)", flush=True)
+    if r.returncode != 0: time.sleep(20 * (tent + 1))
+else: sys.exit("ERRORE voce: audio troppo corto dopo 6 tentativi")
 dur = float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",full + ".mp3"],capture_output=True,text=True).stdout)
 log = subprocess.run(["ffmpeg","-hide_banner","-i",full + ".mp3","-af","silencedetect=noise=-38dB:d=0.3","-f","null","-"],capture_output=True,text=True).stderr
 st = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", log)]; en = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", log)]
@@ -19,7 +23,8 @@ sil = [(a, b) for a, b in zip(st, en)]
 tot = sum(len(t) for t in cop); cum = 0; cuts = []
 for t in cop[:-1]:
     cum += len(t); exp = cum / tot * dur
-    best = min(sil, key=lambda s: abs((s[0] + s[1]) / 2 - exp)); cuts.append((best[0] + best[1]) / 2)
+    cand = [x for x in sil if x[1] - x[0] >= 0.4 and ((x[0] + x[1]) / 2) not in cuts]
+    best = min(cand, key=lambda s_: abs((s_[0] + s_[1]) / 2 - exp) - 2.0 * (s_[1] - s_[0])); cuts.append((best[0] + best[1]) / 2)
 cuts = sorted(set(cuts))
 if len(cuts) != len(cop) - 1: sys.exit(f"ERRORE: trovati {len(cuts)} tagli su {len(cop)-1} attesi: rigenerare")
 edges = [0.0] + cuts + [dur]

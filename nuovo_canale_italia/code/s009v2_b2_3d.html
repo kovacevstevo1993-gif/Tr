@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#cfe8f2;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from "/code/lib/stage.js";
+import * as S from "/code/lib/s010.js";
+await S.loadFont();const T=await S.loadTimes('/short009_v2/tempi.json');
+const dk=(o)=>Object.assign({bg:"rgba(10,40,52,.95)",border:"#ffb347",fill:"#ffffff"},o);
+const rd=(o)=>Object.assign({bg:"rgba(229,57,43,.97)",border:"#ffffff",fill:"#ffffff"},o);
+const gn=(o)=>Object.assign({bg:"rgba(31,184,196,.97)",border:"#ffffff",fill:"#06222c"},o);
+const W=(t,a,b,c,d)=>eo(prog(t,a,b))*(1-eo(prog(t,c,d)));
+const POP=(t,a,d=.35)=>Math.max(.001,eb(prog(t,a,a+d)));
+// ===== blocco 2: vecchiaia: 2027 67 anni e 1 mese con 20 anni di contributi; 2028 67 anni e 3 mesi, +3 mesi rispetto a oggi =====
+const B='b02',DUR=S.dur(B),c27=S.cueX(B,'2027'),c20=S.cueX(B,'20'),c28=S.cueX(B,'2028'),c67b=S.cueX(B,'67',1),cOg=S.cue(B,'oggi');
+const KF=S.shots([[0,c27,[-1.4,1.9,10.8],[0,2.0,-4],[.2,1.9,8.8],[0,2.0,-4]],[c27,c20,[1.7,1.9,4.4],[.55,1.8,-4.5],[.6,1.9,3.2],[.55,1.8,-4.5]],[c20,c28,[3.9,2.0,3.6],[2.7,1.5,-2.6],[2.8,2.2,2.8],[2.7,1.5,-2.6]],[c28,DUR,[-1.3,1.9,.2],[-.55,1.8,-8],[-.25,2.0,-.8],[-.55,1.8,-8]]],DUR);
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});const {scene}=st;const m=S.mats();
+S.beach(scene,m);S.extras(scene,m);
+const gates=[[-1.0,'2026','#9aa4b2'],[-4.5,'2027','#ff6b57'],[-8.0,'2028','#1fb8c4']].map(([z,y,c])=>{const g=S.gate(m,3.4,3.0);g.position.z=z;scene.add(g);const b=S.yearBoard(y,c);b.position.set(0,3.5,z);scene.add(b);return g;});
+const g26=S.numGroup(scene,'67','ANNI',0xb8c2cf,{ms:1.15,ss:.2});g26.position.set(-.55,1.8,-1.0);
+const g27=S.numGroup(scene,'67','ANNI E 1 MESE',0xf3be3a,{ms:1.3,ss:.22});g27.position.set(.55,1.8,-4.5);
+const g28=S.numGroup(scene,'67','ANNI E 3 MESI',0x35d6e0,{ms:1.3,ss:.22});g28.position.set(-.55,1.8,-8.0);
+const tiles=S.yearTiles(m,{cols:5,max:20,s:.34});const tg=new THREE.Group();tg.add(tiles);tg.position.set(2.9,.2,-2.6);scene.add(tg);
+const n20=S.numGroup(scene,'20','ANNI DI CONTRIBUTI',0xf3be3a,{ms:.8,ss:.13});n20.position.set(2.9,2.9,-2.6);
+const p3=S.monthPlate('+3','MESI','#1fb8c4');scene.add(p3);
+const tVec=st.tag(['PENSIONE DI','VECCHIAIA'],dk({sw:3.0,font:'bold 78px AB',w:900,h:300,border:'#1fb8c4'}));
+const t20=st.tag(['ALMENO 20 ANNI','DI CONTRIBUTI'],dk({sw:3.0,font:'bold 70px AB',w:980,h:300}));
+const t28=st.tag(['+ 3 MESI','RISPETTO A OGGI'],dk({sw:3.0,font:'bold 80px AB',w:900,h:300,border:'#1fb8c4'}));
+const A=S.makeAnchor(st,KF);
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.liveBeach(scene,t);S.setDay(scene,st,S.dayU(B,t));
+  g26.visible=t<c27+.1;g26.scale.setScalar(.85+.15*POP(t,0,.5));g26.rotation.y=Math.sin(t*.8)*.2;
+  const i27=POP(t,S.cueX(B,'67',0),.4);g27.visible=t>S.cueX(B,'67',0)-.05&&t<c20-.1;g27.scale.setScalar(i27);g27.rotation.y=Math.sin(t*.9+1)*.2;
+  const i28=POP(t,c67b,.4);g28.visible=t>c67b-.05;g28.scale.setScalar(i28);g28.rotation.y=Math.sin(t*.9+2)*.2;
+  tg.visible=t>c20-.2;tiles.userData.set(20*eo(prog(t,c20,c20+1.4)),0xf3be3a,0xff6b57);tg.rotation.y=Math.sin(t*.6)*.15;
+  const n=POP(t,c20+.2,.4);n20.visible=t>c20+.15&&t<c28;n20.scale.setScalar(n*(1-eo(prog(t,c28-.3,c28))));n20.rotation.y=Math.sin(t*.9)*.2;
+  const pp=POP(t,cOg-1.0,.4);p3.visible=t>cOg-1.05;p3.position.set(1.4,2.4+Math.sin(t*1.7)*.07,-6.6);p3.rotation.set(-.05,-.3,.05);p3.scale.setScalar(.8*pp);
+  A(tVec,t,.66,.66,W(t,-.3,.2,c27-.1,c27+.2));
+  A(t20,t,.8,.66,W(t,c20-.05,c20+.3,c28-.35,c28-.05));
+  A(t28,t,.66,.66,eo(prog(t,c28+.2,c28+.55)));
+  st.render(t,{shakes:[c27,c67b,c20],flashes:[]});
+}
+boot(st,draw);
+</script></body></html>

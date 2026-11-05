@@ -1,0 +1,46 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#cfe8f2;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from "/code/lib/stage.js";
+import * as S from "/code/lib/s010.js";
+await S.loadFont();const T=await S.loadTimes('/short009_v2/tempi.json');
+const dk=(o)=>Object.assign({bg:"rgba(10,40,52,.95)",border:"#ffb347",fill:"#ffffff"},o);
+const rd=(o)=>Object.assign({bg:"rgba(229,57,43,.97)",border:"#ffffff",fill:"#ffffff"},o);
+const gn=(o)=>Object.assign({bg:"rgba(31,184,196,.97)",border:"#ffffff",fill:"#06222c"},o);
+const W=(t,a,b,c,d)=>eo(prog(t,a,b))*(1-eo(prog(t,c,d)));
+const POP=(t,a,d=.35)=>Math.max(.001,eb(prog(t,a,a+d)));
+// ===== blocco 3: anticipata senza limite di eta: 2027 uomini 42a11m, donne 41a11m; 2028 43a1m e 42a1m =====
+const B='b03',DUR=S.dur(B),cLim=S.cue(B,'limite'),cNel=S.cue(B,'Nel',0),c42=S.cueX(B,'42',0),cUo=S.cue(B,'uomini'),c41=S.cueX(B,'41'),cDo=S.cue(B,'donne'),cNel2=S.cue(B,'Nel',1),c43=S.cueX(B,'43'),c42b=S.cueX(B,'42',1),cMes=S.cue(B,'mesi',0);
+const KF=S.shots([[0,cNel,[-1.6,1.9,10.0],[0,2.4,.6],[.8,2.3,8.6],[0,2.4,.6]],[cNel,c41-.3,[2.8,1.7,8.8],[0,2.6,.6],[-.6,2.0,8.0],[0,2.6,.6]],[c41-.3,cNel2,[-2.8,2.5,8.6],[0,2.6,.6],[0,3.4,9.2],[0,2.6,.6]],[cNel2,c42b-.2,[0,1.3,9.0],[0,2.6,.6],[0,1.8,7.8],[0,2.6,.6]],[c42b-.2,DUR,[2.4,4.2,9.4],[0,2.5,.6],[-1.4,2.8,8.4],[0,2.5,.6]]],DUR);
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});const {scene}=st;const m=S.mats();
+S.beach(scene,m);S.extras(scene,m);
+const tiles=S.yearTiles(m,{cols:8,max:48,s:.34});const tg=new THREE.Group();tg.add(tiles);tg.position.set(0,.2,.6);scene.add(tg);
+const base=new THREE.Mesh(new THREE.BoxGeometry(3.3,.18,1.0),m.woodD);base.position.set(0,.09,.6);base.castShadow=base.receiveShadow=true;scene.add(base);
+const inf=S.infinity(m);scene.add(inf);
+const H=(a,b,col)=>{const g=S.numGroup(scene,a,b,col,{ms:1.1,ss:.2,subCol:0x12303a});g.position.set(0,3.35,.6);return g;};
+const nA=H('42','ANNI E 11 MESI',0xf3be3a),nB=H('41','ANNI E 11 MESI',0x35d6e0),nC=H('43','ANNI E 1 MESE',0xf3be3a),nD=H('42','ANNI E 1 MESE',0x35d6e0);
+const tLim=st.tag(['SENZA LIMITE','DI ETÀ'],dk({sw:3.0,font:'bold 82px AB',w:900,h:300,border:'#1fb8c4'}));
+const t1=st.tag(['2027 · UOMINI'],dk({sw:3.0,font:'bold 74px AB',w:940,h:200}));
+const t2=st.tag(['2027 · DONNE'],dk({sw:3.0,font:'bold 74px AB',w:940,h:200,border:'#1fb8c4'}));
+const t3=st.tag(['2028 · UOMINI'],dk({sw:3.0,font:'bold 74px AB',w:940,h:200}));
+const t4=st.tag(['2028 · DONNE'],dk({sw:3.0,font:'bold 74px AB',w:940,h:200,border:'#1fb8c4'}));
+const A=S.makeAnchor(st,KF);
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.liveBeach(scene,t);S.setDay(scene,st,S.dayU(B,t));
+  let n,c1;if(t<c41-.2){n=42.917*eo(prog(t,.3,c42+1.2));c1=0xf3be3a;}else if(t<c43-.2){n=42.917-1*eio(prog(t,c41-.2,c41+.8));c1=0x35d6e0;}else if(t<c42b-.2){n=41.917+(43.083-41.917)*eio(prog(t,c43-.2,c43+.8));c1=0xf3be3a;}else{n=43.083-1*eio(prog(t,c42b-.2,c42b+.8));c1=0x35d6e0;}
+  tiles.userData.set(n,c1,0xff6b57);tg.rotation.y=Math.sin(t*.5)*.12*damp;
+  const show=(g,a,b)=>{g.visible=t>=a&&t<b;g.scale.setScalar(POP(t,a,.4)*(1-eo(prog(t,b-.2,b))));g.rotation.y=Math.sin(t*.9+a)*.18;};
+  show(nA,c42-.1,c41-.1);show(nB,c41-.1,c43-.1);show(nC,c43-.1,c42b-.1);show(nD,c42b-.1,DUR+1);
+  const iI=POP(t,.3,.5)*(1-eo(prog(t,cNel-.3,cNel)));inf.visible=t<cNel;inf.position.set(0,3.5+Math.sin(t*2)*.06,.6);inf.rotation.y=t*1.4;inf.scale.setScalar(.55*iI);
+  A(tLim,t,.66,.66,W(t,-.3,.2,cNel-.3,cNel));
+  A(t1,t,.8,.72,W(t,c42-.5,c42-.15,c41-.4,c41-.1));
+  A(t2,t,.8,.72,W(t,c41-.1,c41+.2,cNel2-.2,cNel2));
+  A(t3,t,.8,.72,W(t,cNel2,cNel2+.3,c42b-.35,c42b-.1));
+  A(t4,t,.8,.72,eo(prog(t,c42b-.1,c42b+.2)));
+  st.render(t,{shakes:[c42,c41,c43,c42b],flashes:[]});
+}
+boot(st,draw);
+</script></body></html>

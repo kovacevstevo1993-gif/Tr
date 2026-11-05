@@ -1,0 +1,14 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#cfe8f2;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from "/code/lib/stage.js";
+import * as S from "/code/lib/s010.js";
+await S.loadFont();const T=await S.loadTimes('/short009_v2/tempi.json');
+const dk=(o)=>Object.assign({bg:"rgba(10,40,52,.95)",border:"#ffb347",fill:"#ffffff"},o);
+const rd=(o)=>Object.assign({bg:"rgba(229,57,43,.97)",border:"#ffffff",fill:"#ffffff"},o);
+const gn=(o)=>Object.assign({bg:"rgba(31,184,196,.97)",border:"#ffffff",fill:"#06222c"},o);
+const W=(t,a,b,c,d)=>eo(prog(t,a,b))*(1-eo(prog(t,c,d)));
+const POP=(t,a,d=.35)=>Math.max(.001,eb(prog(t,a,a+d)));

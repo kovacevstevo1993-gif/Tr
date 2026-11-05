@@ -32,7 +32,7 @@ export function extras(scene,m){const U=scene.userData;
   U.gulls=[];for(let i=0;i<7;i++){const g=gull();g.userData.c=[-8+rnd(i)*16,9+rnd(i+3)*5,-14-rnd(i+5)*14];g.userData.r=3+rnd(i+7)*5;g.userData.sp=.25+rnd(i+9)*.2;g.userData.ph=rnd(i+11)*6.28;scene.add(g);U.gulls.push(g);}
   // faro a righe
   const [lc,lg]=cvs(64,256);for(let i=0;i<8;i++){lg.fillStyle=i%2?'#ffffff':'#d8322a';lg.fillRect(0,i*32,64,32);}
-  const lh=new THREE.Group();lh.add(Object.assign(new THREE.Mesh(new THREE.CylinderGeometry(.8,1.3,7,24),new THREE.MeshStandardMaterial({map:tex(lc),roughness:.6})),{castShadow:true,position:new THREE.Vector3(0,3.5,0)}));
+  const lh=new THREE.Group();const tw=new THREE.Mesh(new THREE.CylinderGeometry(.8,1.3,7,24),new THREE.MeshStandardMaterial({map:tex(lc),roughness:.6}));tw.castShadow=true;tw.position.y=3.5;lh.add(tw);
   const lamp=new THREE.Mesh(new THREE.CylinderGeometry(.55,.55,.9,16),M(0xffe9a0,{emissive:0xffd060,emissiveIntensity:1.4}));lamp.position.y=7.45;lh.add(lamp);const roof=new THREE.Mesh(new THREE.ConeGeometry(.9,.8,20),M(0x2a2f36));roof.position.y=8.3;lh.add(roof);
   const [bc,bg2]=cvs(256,64);const gr=bg2.createLinearGradient(0,0,256,0);gr.addColorStop(0,'rgba(255,230,150,.95)');gr.addColorStop(1,'rgba(255,230,150,0)');bg2.fillStyle=gr;bg2.fillRect(0,0,256,64);
   const beam=new THREE.Mesh(new THREE.PlaneGeometry(14,2.2),new THREE.MeshBasicMaterial({map:tex(bc),transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,fog:false,side:THREE.DoubleSide}));beam.position.set(7,7.45,0);const bp=new THREE.Group();bp.add(beam);bp.position.y=0;lh.add(bp);U.beam=bp;
@@ -83,3 +83,35 @@ export function liveBeach(scene,t){const U=scene.userData;S9.moveBeach(scene,t);
   if(U.ball){const ph=(t*1.1)%1;U.ball.position.set(8.2+Math.sin(t*.4)*1.4,.36+Math.abs(Math.sin(ph*Math.PI))*1.9,-5.2);U.ball.rotation.set(t*2,t*1.3,0);}
   if(U.crab){U.crab.position.set(3.6+Math.sin(t*.5)*1.6,.15,2.2+Math.sin(t*.9)*.15);U.crab.rotation.y=Math.PI/2*Math.sign(Math.cos(t*.5)||1);U.crab.children.forEach((c,i)=>{if(i>0)c.rotation.x=Math.sin(t*12+i)*.12;});}
   (U.walkers||[]).forEach((w,i)=>{w.position.set(((t*.5*(i%2?1:-1)+w.userData.ph*60+40)%80)-40,Math.abs(Math.sin(t*6+i))*.05,w.userData.z);w.rotation.y=(i%2?1:-1)*Math.PI/2;});}
+// ---------------- regia: inquadrature con taglio secco ogni 2-3 s e camera sempre in movimento ----------------
+// shots: [[t0,t1,posA,lookA,posB,lookB], ...] -> KF per createStage (movimento lineare dentro l'inquadratura, taglio tra una e l'altra)
+export function shots(a,DUR){const kf=[];a.forEach((s,i)=>{const [t0,t1,pa,la,pb,lb]=s;kf.push([t0,pa,la,'l']);kf.push([Math.max(t0+.01,t1-.001),pb,lb,'l']);});kf.push([DUR,a[a.length-1][4],a[a.length-1][5]]);return kf;}
+// arco di legno con anno (cancello della linea del tempo)
+export function gate(m,w=3.4,h=3.2){const g=new THREE.Group();[-1,1].forEach(sd=>{const p=new THREE.Mesh(new THREE.BoxGeometry(.22,h,.22),M(0x6b4423,{roughness:.7}));p.position.set(sd*w/2,h/2,0);p.castShadow=true;g.add(p);});
+  const b=new THREE.Mesh(new THREE.BoxGeometry(w+.5,.3,.3),M(0x6b4423,{roughness:.7}));b.position.y=h;b.castShadow=true;g.add(b);return g;}
+// cartello 3D sospeso con scritta (anno) sul cancello
+export function yearBoard(text,col='#ff6b57'){const [c,x]=cvs(512,160);x.fillStyle='#f6ecd6';x.beginPath();x.roundRect(6,6,500,148,28);x.fill();x.strokeStyle=col;x.lineWidth=12;x.stroke();x.fillStyle=col;x.font='bold 110px AB';x.textAlign='center';x.textBaseline='middle';x.fillText(text,256,86);
+  const b=new THREE.Mesh(new THREE.BoxGeometry(2.4,.75,.12),[M(0x6b4423),M(0x6b4423),M(0x6b4423),M(0x6b4423),new THREE.MeshStandardMaterial({map:tex(c),roughness:.6}),M(0x6b4423)]);b.castShadow=true;return b;}
+// telefono (estratto conto) con schermo
+export function phone3d(m){const g=new THREE.Group();const body=S9.rbox(1.5,3.0,.14,.2,M(0x14181d,{metalness:.7,roughness:.25}));g.add(body);
+  const [c,x]=cvs(300,600);x.fillStyle='#fbfaf5';x.fillRect(0,0,300,600);x.fillStyle='#12303a';x.fillRect(0,0,300,90);x.fillStyle='#fff';x.font='bold 26px AB';x.textAlign='center';x.textBaseline='middle';x.fillText('ESTRATTO CONTO',150,48);
+  for(let i=0;i<9;i++){x.fillStyle=i%2?'#eef1f4':'#fbfaf5';x.fillRect(12,110+i*52,276,48);x.fillStyle='#9aa4b2';x.fillRect(24,126+i*52,90,12);x.fillStyle='#1fb8c4';x.fillRect(170,122+i*52,40+((i*43)%80),18);}x.fillStyle='#ff6b57';x.font='bold 30px AB';x.fillText('ANNI VERSATI',150,575);
+  const scr=new THREE.Mesh(new THREE.PlaneGeometry(1.34,2.7),new THREE.MeshStandardMaterial({map:tex(c),emissive:0xffffff,emissiveMap:tex(c),emissiveIntensity:.55,roughness:.3}));scr.position.z=.075;g.add(scr);g.userData.scr=scr;return g;}
+// banco da lavoro con carriola e sacchi (lavori gravosi)
+export function worksite(m){const g=new THREE.Group();const tb=new THREE.Mesh(new THREE.BoxGeometry(2.2,.15,1.0),M(0xa8703c,{roughness:.7}));tb.position.y=.85;tb.castShadow=tb.receiveShadow=true;g.add(tb);[[-1,-.4],[1,-.4],[-1,.4],[1,.4]].forEach(([x,z])=>{const l=new THREE.Mesh(new THREE.BoxGeometry(.12,.85,.12),M(0x6b4423));l.position.set(x,.42,z);l.castShadow=true;g.add(l);});
+  [[1.9,0],[2.3,.5]].forEach(([x,z],i)=>{const s=new THREE.Mesh(new THREE.BoxGeometry(.8,.35,.5),M(0xd8cfbd,{roughness:.95}));s.position.set(x,.2+i*.36,z);s.rotation.y=i*.3;s.castShadow=true;g.add(s);});
+  const wb=new THREE.Group();const tray=new THREE.Mesh(new THREE.BoxGeometry(1.1,.35,.7),M(0x2a6fdb,{metalness:.3,roughness:.4}));tray.position.y=.6;wb.add(tray);const wh=new THREE.Mesh(new THREE.CylinderGeometry(.28,.28,.12,20),M(0x222222));wh.rotation.x=Math.PI/2;wh.position.set(.7,.28,0);wb.add(wh);wb.position.set(-2.1,0,.2);wb.traverse(o=>o.castShadow=true);g.add(wb);return g;}
+// ---------------- tempi parola per parola (agganciano la scena alla voce) ----------------
+let TT=null;export async function loadTimes(path){TT=await (await fetch(path)).json();return TT;}
+// inizio (s) della n-esima parola che inizia con 'w' nel blocco 'b' (es. cue('b02','2027',0))
+export function cue(b,w,n=0){const L=(TT[b].parole||[]).filter(p=>p[0].toLowerCase().replace(/[^a-z0-9àèéìòù]/g,'').startsWith(w.toLowerCase()));if(!L[n])throw new Error('cue mancante '+b+' '+w+' '+n);return L[n][1];}
+export function cueEnd(b,w,n=0){const L=(TT[b].parole||[]).filter(p=>p[0].toLowerCase().replace(/[^a-z0-9àèéìòù]/g,'').startsWith(w.toLowerCase()));return L[n][2];}
+export const dur=(b)=>TT[b].durata;
+export function dayU(b,t){const ks=Object.keys(TT).sort();let a=0,tot=0;ks.forEach(k=>{if(k<b)a+=TT[k].durata;tot+=TT[k].durata;});return (a+t)/tot;}
+// coriandoli / fuochi d'artificio d'oro (InstancedMesh con fisica semplice)
+export function confetti(scene,n=90){const mesh=new THREE.InstancedMesh(new THREE.OctahedronGeometry(.07,0),new THREE.MeshStandardMaterial({color:0xffffff,metalness:.9,roughness:.25,emissive:0x553300,emissiveIntensity:.4}),n);const cols=[0xf3be3a,0xff6b57,0x1fb8c4,0xffffff,0xff3b5c];
+  for(let i=0;i<n;i++)mesh.setColorAt(i,new THREE.Color(cols[i%5]));scene.add(mesh);const d=new THREE.Object3D();
+  mesh.userData.set=(t0,t,o)=>{for(let i=0;i<n;i++){const a=rnd(i)*6.28,e=.35+rnd(i+3)*.65,sp=2.5+rnd(i+7)*4;const u=t-t0-rnd(i+9)*.25;if(u<0||u>2.6){d.scale.setScalar(.0001);d.position.set(0,-9,0);}else{d.position.set(o[0]+Math.cos(a)*sp*u*e,o[1]+Math.sin(e*1.2)*sp*u*.9-4.2*u*u,o[2]+Math.sin(a)*sp*u*e*.6);d.rotation.set(u*6,u*5+i,0);d.scale.setScalar(1);}d.updateMatrix();mesh.setMatrixAt(i,d.matrix);}mesh.instanceMatrix.needsUpdate=true;};return mesh;}
+// cue con parola identica (per i numeri: '20' non deve prendere '2027')
+export function cueX(b,w,n=0){const L=(TT[b].parole||[]).filter(p=>p[0].toLowerCase().replace(/[^a-z0-9àèéìòù]/g,'')===w.toLowerCase());if(!L[n])throw new Error('cueX mancante '+b+' '+w+' '+n);return L[n][1];}
+export function numGroup(scene,main,sub,col,{ms=1.0,ss=.2,gap=1.6,subCol=0xfff4d6}={}){const g=new THREE.Group();const a=num3d(main,{size:ms,color:col});a.position.y=gap*.32;g.add(a);if(sub){const b=num3d(sub,{size:ss,color:subCol,rough:.5});b.position.y=-gap*.42;g.add(b);}scene.add(g);return g;}
