@@ -1011,3 +1011,8 @@ ERRORE 04/11/2026 (commento di @isabellarizzi8220 sul video 6, "prendo sei cento
 
 ## STATO 05/11/2026 - VIDEO 16: VERSIONE REGISTRATA DALL'UTENTE (screenshot della chat)
 - L'utente ha registrato la versione del copione con il blocco 5 che finisce "Grazie, e adesso si scende." e il blocco 6 che inizia "Per scendere servono i due metodi di calcolo." (non quella "torniamo ai conti"). Il file copione-blocchi.txt e' stato riportato a quel testo (altri blocchi uguali all'ultimo invio completo). Il copione registrato NON si cambia piu' (N.13/N.17); le slide si fanno sulle durate dei suoi screenshot.
+
+## STATO 05/11/2026 - VIDEO 16: SLIDE CONSEGNATE (39-video-lungo-16-rivalutazione-ddl)
+- Durate dai 16 screenshot (DURATE.txt, lettura N.29; blocco 16 a 13,7 c/s: l'utente ha confermato che la voce riempie il blocco, pause e punteggiatura). 16 clip CIP-V16-blocco01..16.mp4 in clip/ (1920x1080, 30 fps, fotogrammi = DURATE.txt verificati con ffprobe da me), costruiti da un sotto-agente con motore in sorgenti/ (specs-v16.js, regia16.js); controlli render.py (tempi, impaginazione, qa_slide su TUTTI i fotogrammi) OK su tutti i 16; fogli a 0,5 s di tutti i 16 blocchi guardati da me; corretto prima della consegna il blocco 8 (calcolatrice: "111,41 x 13 = 1.448", prima "111 x 13" non tornava).
+- Look nuovo: titoletto con quadratino a gradini e indicatore dei 6 scalini (senza numero blocco), schede a foglio, scalinata 3D, cedolino, calcolatrice, documento Camera n. 3174, sfondo con griglia che scorre. Blocco 16: WATCH NEXT a sinistra (x 120-820, y 230-710), contenuti a destra e sopra y 700, zona bassa libera.
+- Limite noto: testi piccoli (24-28 px) in cedolini e blocco 16. Da fare solo su ordine: titolo (vidIQ), miniature, pacchetto, short.

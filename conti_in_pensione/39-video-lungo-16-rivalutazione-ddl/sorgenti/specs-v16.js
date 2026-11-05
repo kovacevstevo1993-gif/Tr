@@ -94,7 +94,7 @@ function stairs16(g,o){const n=o.n||6,W=o.W||620,H=o.H||380,dx=o.dx||46,dy=o.dy|
   el('rect',{x:x0,y:y0,width:sw,height:by-y0,fill:c[0]},g);el('rect',{x:x0,y:y0,width:sw,height:by-y0,fill:'url(#g16_front)'},g);
   el('polygon',{points:`${x0},${y0} ${x0+sw},${y0} ${x0+sw+dx},${y0+dy} ${x0+dx},${y0+dy}`,fill:c[1]},g);
   el('path',{d:`M${x0} ${y0} H${x0+sw} L${x0+sw+dx} ${y0+dy}`,fill:'none',stroke:'#fff','stroke-width':2.5,'stroke-opacity':.7},g);
-  if(lab[i])fitT(g,lab[i],x0+sw/2,y0+Math.min(hs*0.5,48),Math.min(34,sw*0.34),on?'#4A2E00':'#fff','900',sw-16);}
+  if(lab[i])fitT(g,lab[i],x0+sw/2,y0+Math.min(hs*0.5,48),Math.min(28,sw*0.22),on?'#4A2E00':'#fff','900',sw-16);}
  return g;}
 function cal16(g){const w=400,h=470,x0=-w/2,y0=-h/2;
  el('rect',{x:x0,y:y0,width:w,height:h,rx:22,fill:'url(#g16_paper)',filter:'url(#g_sh)'},g);
@@ -103,7 +103,7 @@ function cal16(g){const w=400,h=470,x0=-w/2,y0=-h/2;
  fitT(g,'GENNAIO',0,y0+66,50,'#fff','900',w*0.7);
  'LMMGVSD'.split('').forEach((c,i)=>fitT(g,c,x0+40+i*53,y0+150,24,MUTE16,'bold',30));
  for(let d=1;d<=31;d++){const idx=d-1+4;const c=idx%7,r=Math.floor(idx/7);const cx=x0+40+c*53,cy=y0+206+r*52;
-  if(d===1)el('circle',{cx:cx,cy:cy,r:23,fill:GOLD16,stroke:'#fff','stroke-width':3},g);
+  if(d===1)el('circle',{cx:cx,cy:cy,r:26,fill:GOLD16,stroke:'#fff','stroke-width':3},g);
   fitT(g,String(d),cx,cy,24,d===1?INK16:(c===6?RED16:INK16),'bold',34);}
  return g;}
 function cedolino16(g,o){const w=o.w||520,h=o.h||300,x0=-w/2,y0=-h/2,k=14,hdr=o.hdr||60;const rows=o.rows||[];
@@ -124,7 +124,7 @@ function calc16(g){const w=380,h=560,x0=-w/2,y0=-h/2;
  el('rect',{x:x0,y:y0,width:w,height:h,rx:34,fill:'url(#g16_dk)',stroke:'#fff','stroke-width':5,filter:'url(#g_sh)'},g);
  const dec=sub16(g);el('rect',{x:x0+8,y:y0+8,width:w-16,height:h/2,rx:28,fill:'#fff',opacity:.05},dec);
  el('rect',{x:x0+26,y:y0+30,width:w-52,height:150,rx:14,fill:'#CFE9DC',stroke:'#0A2E36','stroke-width':4},g);
- fitT(g,'111 € × 13 RATE',x0+44,y0+75,29,MUTE16,'bold',w-90,'start');
+ fitT(g,'111,41 € × 13 RATE',x0+44,y0+75,29,MUTE16,'bold',w-90,'start');
  fitT(g,'≈ 1.448 €',x0+w-44,y0+135,58,INK16,'900',w-100,'end');
  const K=[['7','8','9','÷'],['4','5','6','×'],['1','2','3','−'],['0',',','=','+']];
  K.forEach((r,ri)=>r.forEach((c,ci)=>{const kx=x0+26+ci*86,ky=y0+215+ri*82;const am=(c==='=');
@@ -218,7 +218,7 @@ function scalino(c){const Y=c.v==='Y';const mx=(x)=>Y?1920-x:x;
   TK({w:440,h:190,title:c.t5,val:'≈ '+c.oggi+' €',sub:'AL MESE',col:GRN16,fs:68},tk(0),ty,c.a5),
   TK({w:440,h:190,title:c.t6,val:'≈ '+c.testo+' €',sub:'AL MESE',col:'#C78416',fs:68},tk(1),ty,c.a6),
   TK({w:480,h:190,title:c.t7,val:'≈ '+c.loss+' €',sub:c.s7,col:RED16,fs:64},ccx,ty-5,c.a7)];
- if(c.note)it.push(TG(c.note,30,AMB_,'#4A2E00','warn',Y?990:930,c.ny||600,c.a8));
+ if(c.note)it.push(TG(c.note,28,AMB_,'#4A2E00','warn',Y?1010:930,c.ny||600,c.a8));
  return it;}
 // ======================= BLOCCHI =======================
 SPECS[1]=()=>mkBlk(TXT,TOT,[
@@ -309,16 +309,16 @@ SPECS[7]=()=>mkBlk(TXT,TOT,[
 SPECS[8]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'LA DIFFERENZA',cap:'LA DIFFERENZA: CIRCA 111 € AL MESE, CIRCA 1.448 € SU 13 RATE',items:[
   I('calc16',[],340,525,'La differenza',0.95),
-  TK({w:430,h:210,title:'DIFFERENZA',val:'≈ 111 €',sub:'OGNI MESE',col:RED16,fs:68},900,268,'centoundici euro'),
-  TK({w:430,h:210,title:'SU 13 RATE',val:'≈ 1.448 €',sub:'IN UN ANNO',col:RED16,fs:62},1400,268,'su tredici rate'),
-  CD(1000,130,'warn',[['IL TAGLIO DA PIÙ DI 1.000 €',34,INK16],['ANNUNCIATO ALL\'INIZIO',28,GRN16]],1180,440,'È il taglio da più di mille',{band:RED16}),
+  TK({w:430,h:190,title:'DIFFERENZA',val:'≈ 111 €',sub:'OGNI MESE',col:RED16,fs:64},900,262,'centoundici euro'),
+  TK({w:430,h:190,title:'SU 13 RATE',val:'≈ 1.448 €',sub:'IN UN ANNO',col:RED16,fs:58},1400,262,'su tredici rate'),
+  CD(1000,130,'warn',[['IL TAGLIO DA PIÙ DI 1.000 €',34,INK16],['ANNUNCIATO ALL\'INIZIO',28,GRN16]],1180,455,'È il taglio da più di mille',{band:RED16}),
   I('bars16',[],1180,702,'Più la pensione sale',0.74),
   ]},
 ]);
 SPECS[9]=()=>mkBlk(TXT,TOT,[{at:0,top:'SECONDO SCALINO',cap:'SECONDO SCALINO: OLTRE 4.894,80 €, 37 % SU TUTTO L\'IMPORTO',items:scalino({v:'X',step:5,thr:'4.894,80',pct:'37',pen:'5.100,00',oggi:'136',testo:'57',loss:'1.030',t5:'AUMENTO COL METODO DI OGGI',t6:'AUMENTO COL TESTO',t7:'PERDITA IN UN ANNO',s7:'SU 13 RATE',a1:'Scendiamo al secondo scalino',a2:'oltre quattromilaottocentonovantaquattro',a3:'il trentasette per cento',a4:'Passiamo a cinquemilacento',a5:'con le regole di oggi',a6:'con la nuova scala',a7:'Su base annua'})}]);
 SPECS[10]=()=>mkBlk(TXT,TOT,[{at:0,top:'TERZO SCALINO',cap:'TERZO SCALINO: OLTRE 3.671,10 €, 47 % SU TUTTA LA PENSIONE',items:scalino({v:'Y',step:4,thr:'3.671,10',pct:'47',pen:'3.800,00',oggi:'107',testo:'54',loss:'689',t5:'AUMENTO COL METODO DI OGGI',t6:'AUMENTO COL TESTO',t7:'DI MENO NELL\'ANNO',s7:'SU 13 RATE',a1:'Un gradino più giù',a2:'oltre tremilaseicentosettantuno',a3:'quarantasette per cento',a4:'A tremilaottocento euro',a5:'l\'aumento attuale',a6:'quello del testo',a7:'Sono circa seicentoottantanove'})}]);
 SPECS[11]=()=>mkBlk(TXT,TOT,[{at:0,top:'QUARTO SCALINO',cap:'QUARTO SCALINO: OLTRE 3.059,25 €, 53 % SU TUTTO L\'IMPORTO',items:scalino({v:'X',step:3,thr:'3.059,25',pct:'53',pen:'3.300,00',oggi:'95',testo:'52',loss:'558',t5:'OGGI ARRIVEREBBERO',t6:'CON LA MANOVRA',t7:'MANCANO NELL\'ANNO',s7:'SU 13 RATE',a1:'Ancora giù',a2:'oltre tremilacinquantanove',a3:'il cinquantatré per cento',a4:'Per tremilatrecento euro',a5:'oggi arriverebbero',a6:'con la manovra',a7:'Sull\'intero anno'})}]);
-SPECS[12]=()=>mkBlk(TXT,TOT,[{at:0,top:'QUINTO SCALINO',cap:'QUINTO SCALINO: OLTRE 2.447,40 €, 85 % SU TUTTA LA PENSIONE',items:scalino({v:'Y',step:2,sy:380,cy:385,ty:770,ny:605,note:'LA PERCENTUALE SCENDE DI POCO, MA VALE PER TUTTO',thr:'2.447,40',pct:'85',pen:'2.700,00',oggi:'80',testo:'69',loss:'148',t5:'AUMENTO COL METODO DI OGGI',t6:'AUMENTO COL TESTO',t7:'MANCANO NELL\'ANNO',s7:'SU 13 RATE',a1:'Siamo al quinto scalino',a2:'oltre duemilaquattrocentoquarantasette',a3:'ottantacinque per cento',a4:'Con duemilasettecento euro',a5:'l\'aumento passa da circa ottanta',a6:'a circa sessantanove',a7:'per l\'anno intero mancano',a8:'La percentuale scende di poco'})}]);
+SPECS[12]=()=>mkBlk(TXT,TOT,[{at:0,top:'QUINTO SCALINO',cap:'QUINTO SCALINO: OLTRE 2.447,40 €, 85 % SU TUTTA LA PENSIONE',items:scalino({v:'Y',step:2,sy:360,cy:385,ty:770,ny:620,note:'LA PERCENTUALE SCENDE DI POCO, MA VALE PER TUTTO',thr:'2.447,40',pct:'85',pen:'2.700,00',oggi:'80',testo:'69',loss:'148',t5:'AUMENTO COL METODO DI OGGI',t6:'AUMENTO COL TESTO',t7:'MANCANO NELL\'ANNO',s7:'SU 13 RATE',a1:'Siamo al quinto scalino',a2:'oltre duemilaquattrocentoquarantasette',a3:'ottantacinque per cento',a4:'Con duemilasettecento euro',a5:'l\'aumento passa da circa ottanta',a6:'a circa sessantanove',a7:'per l\'anno intero mancano',a8:'La percentuale scende di poco'})}]);
 SPECS[13]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'LA REGOLA DEL LIMITE',cap:'REGOLA DEL LIMITE: SOGLIA PIÙ RIVALUTAZIONE PIENA',items:[
   CD(1500,130,'ruler',[['LA REGOLA PROMESSA: PER CHI SUPERA UN LIMITE DI POCO',36,INK16],['DOPO L\'AUMENTO LA PENSIONE NON PUÒ RESTARE SOTTO UNA CIFRA',28,GRN16]],960,245,'Qui scatta la regola promessa',{band:'#2B6F8F'}),
@@ -351,7 +351,7 @@ SPECS[15]=()=>mkBlk(TXT,TOT,[
  {at:0,top:'LA SCALA GIÀ VISTA',cap:'LA SCALA GIÀ VISTA: LE PERCENTUALI DEL 2023',items:[
   I('tl16',[],960,275,'E la scala promessa'),
   TG('LA SCALA DEL 2023',32,DK_,'#fff','cal',430,400,'del duemilaventitré'),
-  I('stairs16',[{n:5,W:540,H:290,hi:[5],labels:['85 %','53 %','47 %','37 %','32 %']}],430,622,'ottantacinque, cinquantatré'),
+  I('stairs16',[{n:5,W:600,H:290,hi:[5],labels:['85 %','53 %','47 %','37 %','32 %']}],430,622,'ottantacinque, cinquantatré'),
   TG('APPLICATE ALL\'INTERO ASSEGNO',32,GRN_,'#fff','ok',1300,500,'applicate all\'intero'),
   CD(960,120,'doc',[['LEGGE DI FINE 2022: PER DUE ANNI',34,INK16]],1300,615,'Le fissò la legge',{band:'#2B6F8F'}),
   TG('2024: L\'ULTIMO SCALINO SCENDE A 22 %',32,AMB_,'#4A2E00','down',1300,715,'nel duemilaventiquattro'),

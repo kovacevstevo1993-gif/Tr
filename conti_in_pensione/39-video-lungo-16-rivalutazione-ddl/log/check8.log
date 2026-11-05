@@ -1,3 +1,2 @@
-QA: PROBLEMI TROVATI su 388 fotogrammi
- - TESTO COPERTO DA UN RIQUADRO: "PIÙ SALE LA PENSIONE  →" sotto "LA DIFFERENZA: CIRCA 111 € AL MESE, CIRCA 1.448 € SU 13 RATE" | fotogrammi 296-303 (8)
-ERRORE QA FOTOGRAMMI: RENDER BLOCCATO
+QA OK: 388 fotogrammi controllati, nessun problema
+CONTROLLI OK: tempi, impaginazione e fotogrammi

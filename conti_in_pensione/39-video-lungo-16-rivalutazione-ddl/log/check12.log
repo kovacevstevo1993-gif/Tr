@@ -1,3 +1,2 @@
-ERRORE IMPAGINAZIONE: [1, 'SOVRAPPOSTI', 'stairs16 @Siamo al quinto scalino', 'tag16 @La percentuale scende di poco', 215, 12]
-ERRORE IMPAGINAZIONE: [1, 'SOVRAPPOSTI', 'cedo16 @Con duemilasettecento euro', 'tag16 @La percentuale scende di poco', 194, 10]
-RENDER BLOCCATO
+QA OK: 602 fotogrammi controllati, nessun problema
+CONTROLLI OK: tempi, impaginazione e fotogrammi
