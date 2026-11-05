@@ -38,7 +38,7 @@ const A=S.makeAnchor(st,KF);
 function draw(t){
   const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.liveRoom(scene,t);
   // mappa (0-4,2)
-  const tw=eb(prog(t,.0,.5))*(1-eo(prog(t,3.9,4.4)));town.visible=tw>.002;town.scale.setScalar(Math.max(.001,tw));town.rotation.y=.35+Math.sin(t*.6)*.1;
+  const tw=(.45+.55*eb(prog(t,.0,.5)))*(1-eo(prog(t,3.9,4.4)));town.visible=tw>.002;town.scale.setScalar(Math.max(.001,tw));town.rotation.y=.35+Math.sin(t*.6)*.1;
   const pd=eo(prog(t,1.6,2.1));pin.visible=t>1.5&&tw>.002;pin.position.set(.9*tw,.4+(1-pd)*4+Math.abs(Math.sin(t*3))*.05*pd,.4+.6);pin.scale.setScalar(Math.max(.001,.7*tw));pin.rotation.y=t*1.5;
   // chiavi che passano dal inquilino al proprietario (4,2 - 9,2)
   const kk=eb(prog(t,4.2,4.8)),kko=eo(prog(t,9.0,9.5));kT.visible=t>4.1&&kko<1;const arc=eio(prog(t,7.3,8.9));
