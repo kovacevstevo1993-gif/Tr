@@ -4,7 +4,7 @@ Link canale: https://www.youtube.com/@lealeostories
 Link iscrizione (da mettere nelle descrizioni e nel primo commento Facebook): https://www.youtube.com/@lealeostories?sub_confirmation=1
 
 ## Lavoro dell'utente
-I video li crea e monta l'utente (CapCut/HnVideoEditor, 12-17 s, verticali). Claude NON fa i video: fa il PACCHETTO testi per ogni video che l'utente manda (mp4). Si pubblica OGNI GIORNO: scrivere "New story every day", MAI "every week" (errore del 29/10, l'utente si e' arrabbiato).
+I video li crea e monta l'utente (CapCut/HnVideoEditor, 12-17 s, verticali). Claude NON fa i video: fa il PACCHETTO testi per ogni video che l'utente manda (mp4). NON scrivere mai la frequenza ("every day", "every week") nei pacchetti: non e' vero (05/11, ordine utente: "Ovvio che devi toglierlo dal cane"). Togliere la riga "New story every day" da descrizioni, didascalie, commenti.
 Per guardare il video: ffmpeg estrae 12 fotogrammi in una griglia (fps=12/durata, scale=240, tile=6x2) e si legge l'immagine.
 
 ## Regole (parole e ordini dell'utente)
@@ -17,7 +17,7 @@ Per guardare il video: ffmpeg estrae 12 fotogrammi in una griglia (fps=12/durata
 
 ## Stile dei titoli e descrizioni (dai video che hanno funzionato: 47K, 36K, 32K view)
 - Titolo: frase breve riconoscibile + cuore 💗 + (opz.) "Cute Couple Animation" + hashtag (#shorts #couple #animation).
-- Descrizione: gancio in 1-2 righe (con 😂💗), riga "Lea & Leo — little moments every couple knows.", "New story every day. 💗", domanda al pubblico con 👇, link Subscribe, 10 hashtag (#shorts #coupleanimation #cutecouple #relatable #couplegoals #relationship #animation #funny #love #LeaAndLeo).
+- Descrizione: gancio in 1-2 righe (con 😂💗), riga "Lea & Leo — little moments every couple knows.", domanda al pubblico con 👇, link Subscribe, 10 hashtag (#shorts #coupleanimation #cutecouple #relatable #couplegoals #relationship #animation #funny #love #LeaAndLeo).
 - Tag: cute couple animation, couple animation, couple goals, relatable couple, funny couple, relationship humor, animated love story, cartoon couple, Lea & Leo, lea and leo, shorts + parole del tema.
 - Impostazioni YouTube: IA/contenuto alterato No, per bambini No, miniatura = fotogramma chiave.
 - Facebook: caricare come Reel direttamente dal file (no repost: Meta penalizza i contenuti non originali), audio originale, 3 hashtag, link in fondo, orario 19-21, rispondere ai commenti nella prima ora. Contano: primi secondi, video guardato fino in fondo/rivisto, condivisioni. Non esistono fonti serie su numero hashtag e effetto del link.
