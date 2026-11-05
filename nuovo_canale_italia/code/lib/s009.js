@@ -17,8 +17,8 @@ const tex=(c)=>{const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorS
 export function beach(scene,m){
   // cielo (sfumatura) + sole
   const [sc,sg]=cvs(16,256);const gr=sg.createLinearGradient(0,0,0,256);gr.addColorStop(0,'#1f6fbf');gr.addColorStop(.5,'#5fb0e8');gr.addColorStop(.82,'#ffcf9a');gr.addColorStop(1,'#ff9f6e');sg.fillStyle=gr;sg.fillRect(0,0,16,256);
-  const sky=new THREE.Mesh(new THREE.PlaneGeometry(260,90),new THREE.MeshBasicMaterial({map:tex(sc),fog:false}));sky.position.set(0,32,-70);scene.add(sky);
-  const sun=new THREE.Mesh(new THREE.SphereGeometry(4,32,24),new THREE.MeshBasicMaterial({color:0xfff2c8,fog:false}));sun.position.set(14,10,-62);scene.add(sun);
+  const skyTex=tex(sc);const sky=new THREE.Mesh(new THREE.PlaneGeometry(260,90),new THREE.MeshBasicMaterial({map:skyTex,fog:false}));sky.position.set(0,32,-70);scene.add(sky);scene.userData.skyCtx={g:sg,tex:skyTex};
+  const sun=new THREE.Mesh(new THREE.SphereGeometry(4,32,24),new THREE.MeshBasicMaterial({color:0xfff2c8,fog:false}));sun.position.set(14,10,-62);scene.add(sun);scene.userData.sun=sun;
   const [gc,gg]=cvs(256,256);const rg=gg.createRadialGradient(128,128,4,128,128,128);rg.addColorStop(0,'rgba(255,240,190,.9)');rg.addColorStop(1,'rgba(255,200,120,0)');gg.fillStyle=rg;gg.fillRect(0,0,256,256);
   const glow=new THREE.Sprite(new THREE.SpriteMaterial({map:tex(gc),transparent:true,depthWrite:false,fog:false,blending:THREE.AdditiveBlending}));glow.scale.set(34,34,1);glow.position.copy(sun.position);scene.add(glow);scene.userData.glow=glow;
   // nuvole

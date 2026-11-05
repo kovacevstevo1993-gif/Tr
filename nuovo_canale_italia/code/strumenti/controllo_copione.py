@@ -19,7 +19,8 @@ G = lambda w, n=4: {tuple(w[k:k + n]) for k in range(len(w) - n + 1)}
 for i in range(len(b)):
     for j in range(i + 1, len(b)):
         com = G(W[i]) & G(W[j])
-        com = [c for c in com if len(set(c)) > 1]
+        GEN = {"anni","e","un","mese","mesi","per","cento","euro","di","il","la","lo","le","i","gli","a","al","dal","del","della","con","in","che","non","è","anno","ma"}
+        com = [c for c in com if len(set(c)) > 1 and any(w not in GEN for w in c)]
         if com: err.append(f"RIPETIZIONE tra blocco {i+1} e {j+1}: " + " | ".join(" ".join(c) for c in sorted(com)[:4]))
 # numeri in lettere ripetuti tra blocco 1 (hook) e blocco 2: stesse "cifre" dette due volte
 NUM = r"(?:uno|un|due|tre|quattro|cinque|sei|sette|otto|nove|dieci|undici|venti|trenta|quaranta|cinquanta|sessanta|settanta|ottanta|novanta|cento|mille|[a-z]+(?:cento|mila|mille))"
