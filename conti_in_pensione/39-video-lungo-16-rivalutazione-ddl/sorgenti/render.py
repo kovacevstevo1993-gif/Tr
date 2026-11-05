@@ -36,7 +36,7 @@ with sync_playwright() as p:
             pg.evaluate('draw(0,%f)'%s);pg.screenshot(path=H+'/prev/b%02d_t%05.2f.png'%(b,s))
     elif mode=='video':
         os.makedirs(H+'/../clip',exist_ok=True)
-        ff=subprocess.Popen(['ffmpeg','-y','-loglevel','error','-f','image2pipe','-framerate','30','-i','-','-c:v','libx264','-pix_fmt','yuv420p','-crf','16','-preset','veryfast','-movflags','+faststart',H+'/../clip/CIP-V15-blocco%02d.mp4'%b],stdin=subprocess.PIPE)
+        ff=subprocess.Popen(['ffmpeg','-y','-loglevel','error','-f','image2pipe','-framerate','30','-i','-','-c:v','libx264','-pix_fmt','yuv420p','-crf','16','-preset','veryfast','-movflags','+faststart',H+'/../clip/CIP-V16-blocco%02d.mp4'%b],stdin=subprocess.PIPE)
         for f in range(FR[b]):
             pg.evaluate('draw(0,%f)'%(f/30));ff.stdin.write(pg.screenshot(type='jpeg',quality=94))
         ff.stdin.close();ff.wait()
