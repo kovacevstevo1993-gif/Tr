@@ -44,7 +44,7 @@ function draw(t){
   // --- contratto (canone concordato) ---
   const lIn=eb(prog(t,11.4,12.1)),lOut=eo(prog(t,17.8,18.3));lease.visible=t>11.3&&lOut<1;lease.position.set(.55,2.6,.4+Math.sin(t)*.05);lease.rotation.set(-.08,Math.sin(t*.7)*.1+.1,.04);lease.scale.setScalar(Math.max(.001,.42*lIn*(1-lOut)));
   // --- timbro non ancora legge ---
-  const sIn=eo(prog(t,18.3,18.55));bozza.visible=t>18.3;bozza.position.set(0,1.5,1.8);bozza.rotation.z=-.1;bozza.scale.setScalar(Math.max(.001,(1.0-.45*sIn)));bozza.material.opacity=sIn;
+  const sIn=eo(prog(t,18.3,18.55));bozza.visible=false;bozza.position.set(0,1.5,1.8);bozza.rotation.z=-.1;bozza.scale.setScalar(Math.max(.001,(1.0-.45*sIn)));bozza.material.opacity=sIn;
   A(tTassa,t,.7,.7,eo(prog(t,3.3,3.65))*(1-eo(prog(t,6.9,7.2))));
   A(tMan,t,.72,.7,eo(prog(t,7.8,8.15))*(1-eo(prog(t,10.4,10.7))));
   A(tCed,t,.8,.74,eo(prog(t,10.7,11.05))*(1-eo(prog(t,12.7,12.95))));

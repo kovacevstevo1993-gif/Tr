@@ -34,11 +34,11 @@ function draw(t){
   // chiavi: proprietario (sinistra) e inquilino (destra), escono quando parte il calendario
   const kIn=eb(prog(t,.0,.5)),kOut=eo(prog(t,4.9,5.4));
   [[kO,-.7,1],[kI,.7,-1]].forEach(([k,x,s])=>{k.visible=kOut<1;k.position.set(x,2.2+Math.sin(t*2+s)*.1,0);k.scale.setScalar(Math.max(.001,.66*(.6+.4*kIn)*(1-kOut)));k.rotation.set(0,Math.sin(t*1.4+s)*.35,Math.sin(t*2.2+s)*.1);});
-  ok.visible=t>1.7&&kOut<1;ok.position.set(-.7,3.5,.5);ok.scale.setScalar(Math.max(.001,.6*eb(prog(t,1.7,2.2))*(1-kOut)));ok.rotation.y=Math.sin(t*3)*.3;
-  no.visible=t>3.7&&kOut<1;no.position.set(.7,3.5,.5);no.scale.setScalar(Math.max(.001,.6*eb(prog(t,3.7,4.2))*(1-kOut)));no.rotation.y=Math.sin(t*3)*.3;
+  ok.visible=t>1.7&&kOut<1;ok.position.set(-.7,.85,.9);ok.scale.setScalar(Math.max(.001,.5*eb(prog(t,1.7,2.2))*(1-kOut)));ok.rotation.y=Math.sin(t*3)*.3;
+  no.visible=t>3.7&&kOut<1;no.position.set(.7,.85,.9);no.scale.setScalar(Math.max(.001,.5*eb(prog(t,3.7,4.2))*(1-kOut)));no.rotation.y=Math.sin(t*3)*.3;
   // contratto + calendario (5,2 - 12,6)
   const lIn=eb(prog(t,5.1,5.7)),lOut=eo(prog(t,12.4,12.9));lease.visible=t>5.0&&t<13.4;lease.position.set(0,1.35+Math.sin(t*1.4)*.06,1.1);lease.rotation.set(-.12,Math.sin(t*.7)*.12,0);lease.scale.setScalar(Math.max(.001,.36*lIn*(1-lOut)));
-  pages.forEach((g,i)=>{const fl=eo(prog(t,10.2+i*.4,10.2+i*.4+.35));const vis=t>8.0&&t<12.9&&(i===4||fl<1);g.visible=vis;g.rotation.x=-fl*3.0;const cin=eb(prog(t,8.0,8.6)),cout=eo(prog(t,12.4,12.9));g.scale.setScalar(Math.max(.001,.5*cin*(1-cout)));g.position.set(0,4.1+Math.sin(t*1.5)*.05,.7-i*.04);});
+  pages.forEach((g,i)=>{const fl=i===4?0:eo(prog(t,10.2+i*.4,10.2+i*.4+.35));const vis=t>8.0&&t<12.9&&(i===4||fl<1);g.visible=vis;g.rotation.x=-fl*3.0;const cin=eb(prog(t,8.0,8.6)),cout=eo(prog(t,12.4,12.9));g.scale.setScalar(Math.max(.001,.5*cin*(1-cout)));g.position.set(0,4.1+Math.sin(t*1.5)*.05,.7-i*.04);});
   // NON VALE 1 (rinnovo) e scena 2 (interrotto e rifatto)
   const l2In=eb(prog(t,13.0,13.6)),l2Out=eo(prog(t,15.9,16.4));
   s1.visible=t>14.5&&t<16.4;const q1=eo(prog(t,14.5,14.75));s1.position.set(0,1.9,1.5);s1.rotation.z=-.12;s1.scale.setScalar(Math.max(.001,1.7-.7*q1)*.62);s1.material.opacity=q1;
