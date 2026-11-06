@@ -1,0 +1,22 @@
+# Video lungo 15 (Carta Dedicata a te e aiuti per i pensionati) - durate dagli screenshot CapCut (19 screenshot, blocchi 1-19, 03/11/2026), 30 fps, N.29 (fine = ultimo segno disegnato + 1; doppia lettura etichetta/pixel, 67 px a fotogramma).
+# blocco | fotogrammi | caratteri | c/s | fine cumulativa | lettura (ultimo segno prima della riga)
+1 | 679 | 383 | 16.9 | 679 (00:22+19f) | 18f label x296
+2 | 667 | 383 | 17.2 | 1346 (00:44+26f) | 24f label 285 + punto x350 (25f)
+3 | 780 | 389 | 15.0 | 2126 (01:10+26f) | 24f label 254 + punto x320 (25f)
+4 | 631 | 330 | 15.7 | 2757 (01:31+27f) | 26f label x340
+5 | 737 | 376 | 15.3 | 3494 (01:56+14f) | 12f label 255 + punto x321 (13f)
+6 | 673 | 387 | 17.3 | 4167 (02:18+27f) | 26f label x358
+7 | 696 | 400 | 17.2 | 4863 (02:42+3f) | 2f label x343 (02:42 etichetta x210, punto x275)
+8 | 648 | 367 | 17.0 | 5511 (03:03+21f) | 20f label x296
+9 | 619 | 331 | 16.0 | 6130 (03:24+10f) | 8f label 264 + punto x330 (9f)
+10 | 714 | 399 | 16.8 | 6844 (03:48+4f) | 2f label 250 + punto x315 (3f)
+11 | 678 | 369 | 16.3 | 7522 (04:10+22f) | 20f label 238 + punto x301 (21f)
+12 | 710 | 398 | 16.8 | 8232 (04:34+12f) | 10f label 288 + punto x354 (11f)
+13 | 756 | 392 | 15.6 | 8988 (04:59+18f) | 16f label 242 + punto x308 (17f)
+14 | 738 | 385 | 15.7 | 9726 (05:24+6f) | 4f label 292 + punto x357 (5f)
+15 | 684 | 377 | 16.5 | 10410 (05:47+0f) | 28f label 245 + punto x310 (29f)
+16 | 703 | 372 | 15.9 | 11113 (06:10+13f) | 12f label x330 (10f x197, punto x263)
+17 | 772 | 399 | 15.5 | 11885 (06:36+5f) | 4f label x295 (punto x227)
+18 | 654 | 371 | 17.0 | 12539 (06:57+29f) | 28f label x312 (26f x180, punto x243)
+19 | 762 | 399 | 15.7 | 13301 (07:23+11f) | 10f label x328 (8f x196, punto x260)
+# totale blocchi 1-19: 13301 fotogrammi = 443.4 s. Ultimo blocco 19 = 25.4 s (>= 20 s di schermata finale).

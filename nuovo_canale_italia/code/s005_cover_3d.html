@@ -1,0 +1,19 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#ffcf2e;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot} from '/code/lib/stage.js';
+import * as S from '/code/lib/s005.js';
+const DUR=4;
+const KF=[[0,[0,3.4,10.4],[0,1.6,0]],[DUR,[0,3.4,10.4],[0,1.6,0]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const m=S.mats();S.backdrop(st.scene,m);
+const belt=S.conveyor(m);st.scene.add(belt);belt.userData.scroll(0);
+const p=S.parcel(m,{w:1.7,h:1.15,d:1.4});p.scale.setScalar(1.5);p.position.set(0,.62,0);p.rotation.y=-.18;st.scene.add(p);
+p.userData.sticker.userData.set('+6,10 €');p.userData.sticker.scale.setScalar(1.7);p.userData.sticker.position.set(.18,.55,.80);
+const items=[S.tshirt(0xf2548d),S.shoe(0x2a5bff),S.charger()];items.forEach((x,i)=>{x.scale.setScalar(1.0);x.position.set((i-1)*1.3,3.55,1.0);x.rotation.y=.5-i*.5;st.scene.add(x);});
+function draw(t){st.render(1.0,{shakes:[],flashes:[]});}
+boot(st,draw);
+</script></body></html>

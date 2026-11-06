@@ -1,0 +1,59 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#1c1b48;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Short 004 - blocco 2: prezzo medio del pieno da 50 litri (Commissione europea, 26/10/2026): ES 88, AT 89, UE 98, IT 100, DE 108, FR 109 =====
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from '/code/lib/stage.js';
+import * as S from '/code/lib/s004.js';
+const DUR=30.931;
+const X=[0,2,4,6,8,10];
+const H=4.0,SC=H/110;
+const KF=[[0,[2.4,3.5,15],[2.4,2.5,0]],[9.7,[.9,3.2,11.6],[.6,2.4,0]],[10.0,[0,3.0,9.4],[0,2.4,0]],[12.6,[0,3.0,9.4],[0,2.4,0]],[13.15,[2,3.0,9.4],[2,2.4,0]],[15.2,[2,3.0,9.4],[2,2.4,0]],[15.95,[4,3.0,9.4],[4,2.4,0]],[18.7,[4,3.0,9.4],[4,2.4,0]],[19.3,[6,3.0,9.4],[6,2.4,0]],[21.3,[6,3.0,9.4],[6,2.4,0]],[21.85,[8,3.0,9.4],[8,2.4,0]],[24.2,[8,3.0,9.4],[8,2.4,0]],[24.75,[10,3.0,9.4],[10,2.4,0]],[26.4,[10,3.0,9.4],[10,2.4,0]],[28.0,[8,4.0,18],[8,2.3,0],'w'],[DUR,[8,4.1,18.8],[8,2.3,0]]];
+const st=await createStage({dur:DUR,centers:[0,2,4,6,8,10],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.backdrop(scene,m);
+const tanks=X.map((x,i)=>st.tank({x,r:.55,H,color:i===2?m.limeIt:(i===3?m.orange:m.lime),ticks:false}));
+const price=[87.56,88.60,97.70,100.29,108.35,109.03];
+const names=['SPAGNA','AUSTRIA','MEDIA UE','ITALIA','GERMANIA','FRANCIA'];const flags=['ES','AT','EU','IT','DE','FR'];const nums=['88 €','89 €','98 €','100 €','108 €','109 €'];
+const tN=[10.0,13.22,15.98,19.32,21.86,24.74], tV=[11.18,14.12,17.64,20.46,22.98,25.68];
+const bord=['#ffb000','#ffb000','#5a86ff','#cdee3c','#ffb000','#ffb000'];
+const ftag=names.map((n,i)=>S.flagTag(st,n,flags[i],{border:bord[i],sw:1.95,w:560,h:150,font:'bold 44px PM'}));
+const vtag=nums.map((n,i)=>st.tag([n],{border:bord[i],sw:1.7,w:400,h:190,font:'bold 96px AB',fill:i===3?'#ffb000':'#ffffff',bg:'rgba(14,16,40,.95)'}));
+// linea della media europea
+const avgY=.16+price[2]*SC;const line=new THREE.Mesh(new THREE.BoxGeometry(11.6,.035,.035),m.light);line.position.set(5,avgY,.62);scene.add(line);
+// calendario 3D, documento 3D
+const cal=S.sheet((g,W,Hh)=>{g.fillStyle='#fffaf0';g.fillRect(0,0,W,Hh);g.fillStyle='#e5392b';g.fillRect(0,0,W,150);g.fillStyle='#fff';g.font='bold 70px PM';g.textAlign='center';g.textBaseline='middle';g.fillText('LUNEDÌ',W/2,80);
+  g.fillStyle='#14163a';g.font='bold 250px AB';g.fillText('26',W/2,330);g.font='bold 80px PM';g.fillText('OTTOBRE',W/2,520);g.strokeStyle='#14163a';g.lineWidth=8;g.strokeRect(4,4,W-8,Hh-8);},520,640,1.9,null);scene.add(cal);
+const doc=S.sheet((g,W,Hh)=>{g.fillStyle='#f6f8fc';g.fillRect(0,0,W,Hh);g.fillStyle='#003399';g.fillRect(0,0,W,170);S.drawFlag(g,'EU',34,35,140,100);g.fillStyle='#fff';g.font='bold 36px PM';g.textAlign='left';g.textBaseline='middle';g.fillText('COMMISSIONE EUROPEA',190,70);g.font='bold 34px PM';g.fillText('WEEKLY OIL BULLETIN',200,122);
+  g.fillStyle='#14163a';g.font='bold 40px PM';g.fillText('BOLLETTINO PETROLIFERO',34,250);g.fillStyle='#c4cbe0';for(let i=0;i<9;i++)g.fillRect(34,320+i*46,W-68-((i*5)%4)*60,22);g.fillStyle='#ffb000';g.fillRect(34,740,W-68,10);g.strokeStyle='#003399';g.lineWidth=8;g.strokeRect(4,4,W-8,Hh-8);},620,820,2.2,null);scene.add(doc);
+const tPrezzi=st.tag(['PREZZI MEDI','CON TASSE'],{border:'#ffb000',sw:2.7,font:'bold 62px PM',w:700,h:260,bg:'rgba(14,16,40,.94)'});
+const tPieno=st.tag(['PIENO','50 LITRI'],{border:'#cdee3c',sw:2.4,font:'bold 62px PM',w:620,h:250,bg:'rgba(14,16,40,.94)'});
+const tMedie=st.tag(['SONO MEDIE'],{border:'#ffb000',sw:3.4,font:'bold 70px PM',w:760,h:170,bg:'rgba(14,16,40,.94)'});
+const tDiv=st.tag(["IL TUO PREZZO","PUÒ ESSERE DIVERSO"],{border:'#5a86ff',sw:3.6,font:'bold 54px PM',w:900,h:250,bg:'rgba(14,16,40,.94)'});
+const dst=S.dustp(220,0xffc060,.08);scene.add(dst);
+function draw(t){
+  const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));
+  tanks.forEach((k,i)=>{k.set(price[i]*SC*eo(prog(t,tV[i]-.15,tV[i]+.9)));});
+  // oggetti introduttivi
+  const pin=eb(prog(t,2.2,2.7)),pout=1-eo(prog(t,3.9,4.2));cal.visible=pin>.002&&pout>.01;cal.scale.setScalar(Math.max(.001,pin*pout));cal.position.set(1.5,2.6+Math.sin(t*1.5)*.06*damp,2.6);cal.rotation.y=-.18+Math.sin(t*.8)*.04*damp;
+  const din=eb(prog(t,4.2,4.7)),dout=1-eo(prog(t,7.6,7.95));doc.visible=din>.002&&dout>.01;doc.scale.setScalar(Math.max(.001,din*dout*.9));doc.position.set(1.5,2.6+Math.sin(t*1.3+1)*.06*damp,2.4);doc.rotation.y=.2+Math.sin(t*.7)*.04*damp;
+  st.setSprite(tPrezzi,2.4,4.9,0,eo(prog(t,.2,.6))*(1-eo(prog(t,3.9,4.2))));
+  st.setSprite(tPieno,.9,4.9,0,eo(prog(t,8.0,8.4))*(1-eo(prog(t,9.4,9.7))));
+  // bandiera + prezzo di ogni cisterna
+  const leave=[12.7,15.3,18.8,21.4,24.3,26.4];
+  for(let i=0;i<6;i++){const sx=X[i];const w=eo(prog(t,28.0,28.4));
+    const f=eo(prog(t,tN[i],tN[i]+.35))*(1-eo(prog(t,leave[i]-.3,leave[i])));
+    const wide=(i>=3)?w:0;
+    st.setSprite(ftag[i],sx,4.5,0,Math.max(f,wide)*(t>=leave[i]-.3&&t<28?0:1));
+    const g=eo(prog(t,tV[i]+.25,tV[i]+.65))*(1-eo(prog(t,leave[i]-.3,leave[i])));
+    st.setSprite(vtag[i],sx,1.5,1.3,Math.max(g,wide)*(t>=leave[i]-.3&&t<28?0:1));}
+  line.visible=t>17.9;line.scale.x=Math.max(.001,eo(prog(t,17.9,18.7)));line.position.x=5;
+  const cx=10-2*(()=>{const u=prog(t,26.4,28.0);return u*u*(3-2*u);})();st.setSprite(tMedie,cx,4.5,0,eo(prog(t,26.7,27.0))*(1-eo(prog(t,27.7,28.0))));
+  st.setSprite(tDiv,8,5.2,0,eo(prog(t,28.5,28.9)));
+  dst.userData.update(.1,t,2.4,3,1.5,5.0);
+  st.render(t,{shakes:tV.map(v=>v+.9),flashes:[tV[3]+.9]});
+}
+boot(st,draw);
+</script></body></html>
