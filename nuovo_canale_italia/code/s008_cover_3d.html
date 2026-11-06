@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0a1f27;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+// ===== Copertina Facebook short 008 (cedolare secca affitti): medaglione 5% in primo piano, 10% barrato, chiavi di casa, monete; stanza di sera come nel video =====
+import {THREE,createStage,boot} from '/code/lib/stage.js';
+import * as S from '/code/lib/s008.js';
+const DUR=4;
+const KF=[[0,[0,3.3,12.6],[0,3.3,0]],[DUR,[0,3.3,12.6],[0,3.3,0]]];
+const st=await createStage({dur:DUR,centers:[],kf:KF,theme:S.THEME});
+const {scene}=st;const m=S.mats();
+S.furnish(scene,m);
+const med5=S.medal(m,'5 %',{r:1.05});med5.position.set(.3,2.7,1.6);med5.rotation.set(-.05,-.28,.04);scene.add(med5);
+const med10=S.medal(m,'10 %',{r:.75,face:'#c9c3b3',ink:'#6a6454',ring:'#e8e2d2'});med10.position.set(-1.25,4.25,.4);med10.rotation.set(0,.3,-.1);scene.add(med10);
+const xa=new THREE.Mesh(new THREE.BoxGeometry(2.2,.12,.12),new THREE.MeshStandardMaterial({color:0xE32119,emissive:0x8a1008,emissiveIntensity:.7,roughness:.35}));const xb=xa.clone();xa.rotation.z=.8;xb.rotation.z=-.8;
+[xa,xb].forEach(x=>{x.position.set(-1.25,4.25,1.1);x.castShadow=true;scene.add(x);});
+const keys=S.keychain(m,'AFFITTO');keys.position.set(1.45,3.95,.8);keys.scale.setScalar(.8);keys.rotation.set(0,-.4,.15);scene.add(keys);
+function draw(t){S.liveRoom(scene,1.0);st.render(1.0,{shakes:[],flashes:[]});}
+boot(st,draw);
+</script></body></html>
