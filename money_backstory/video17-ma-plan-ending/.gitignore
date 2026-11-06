@@ -1,0 +1,9 @@
+slide/
+pv/
+thumbref/
+consegna/
+fonti/*.html
+fonti/*.pdf
+voce/g*.wav
+*.log
+voce/*_pad.wav

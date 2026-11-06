@@ -1,0 +1,193 @@
+
+SSA - POMS: GN 02250.380 - Appeal of Initial Waiver Determination - Title II and Title XVI - 11/22/2024
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 11/22/2024 - Present
+Previous
+ | 
+Next
+TN 61 (11-24)
+GN 02250.380 
+Appeal of Initial Waiver Determination - Title II and Title XVI
+CITATIONS:
+20 C.F.R. §§ 
+404.506
+, 
+404.901
+, 
+404.907
+, 
+404.909
+, 
+404.930
+, 
+404.933
+, 
+416.557
+, 
+416.1401
+, 
+416.1407
+, 
+416.1409
+, 
+416.1420
+, 
+416.1430
+A. 
+Introduction
+A waiver determination is an initial determination and is subject to appeal.  Appeal
+ of an initial waiver determination provides an individual the opportunity to present
+ new evidence, to make arguments, and to have an independent review of the facts. We
+ may reverse the initial waiver determination and any finding based on the evidence
+ we considered in making the initial waiver determination and any other evidence we
+ receive. 
+B. 
+Policy - Title II
+The type of appeal following an initial waiver determination for a Title II overpayment
+ depends on whether:
+•
+we approved a waiver;
+•
+we denied a waiver after the individual appeared for a personal conference;
+•
+we denied a waiver based on the information in the file after the individual declined
+ a personal conference or failed to appear for a second scheduled personal conference;
+ or
+•
+the individual submitted both waiver request and an overpayment reconsideration request.
+1. 
+Level of Appeal — Waiver Approval
+•
+If we approved a waiver of a Title II overpayment, reconsideration is the next level
+ of appeal.
+2. 
+Level of Appeal — Waiver Denial
+If we denied a waiver of a Title II overpayment, the next level of appeal may be either
+ reconsideration or a hearing before an administrative law judge (ALJ).  The level
+ of appeal depends on whether the personal conference was held and whether there is
+ a pending request for reconsideration of the overpayment determination.
+a. Reconsideration is the next level of appeal if:
+•
+·       We made the determination based on the evidence in the file because the individual
+ declined a personal conference, failed to appear for a second scheduled personal conference,
+ or was otherwise unable to attend a personal conference, refer to 
+GN 02270.007G.
+; and
+•
+there is no pending request for reconsideration of the overpayment determination as
+ described in 
+GN 02250.380B.2.c.
+b. The ALJ hearing is the next level of appeal if we held the personal conference,
+ refer to 
+GN 02270.007
+.
+NOTE:
+ If we held a personal conference but the individual did not cooperate during the
+ conference, the next level of appeal is still an ALJ hearing.  For more information
+ on handling a difficult personal conference, refer to GN 02250.013C.6.
+c. The ALJ hearing is the next level of appeal, even if we did not hold a personal
+ conference, 
+if
+:
+•
+the individual requested both waiver and reconsideration of the overpayment determination;
+•
+we denied a waiver at the same time as or after we made a determination on the overpayment
+ reconsideration request; and
+•
+we denied a waiver before an ALJ hearing has been held on the overpayment reconsideration
+ determination.
+C. 
+Policy - Title XVI
+The appeal following an initial waiver determination for a Title XVI overpayment is
+ always reconsideration. After we issue an initial waiver determination for a Title
+ XVI overpayment, the individual may appeal only by requesting reconsideration.  The
+ individual may request a hearing before an ALJ after they have requested reconsideration
+ and we have made a decision on the request for reconsideration.  This is the appeal
+ process for a Title XVI waiver determination regardless of whether the initial waiver
+ determination is an approval or denial, regardless of whether the individual attended
+ the personal conference, and regardless of whether the individual also requested reconsideration
+ of the overpayment determination.
+D. 
+Request for reconsideration of a waiver determination – Title II and Title XVI
+If reconsideration is the next level of appeal after the initial waiver determination,
+ the individual must make the request within 60 days after receiving the initial waiver
+ determination.  We presume the individual received notice 5 days after the date of
+ the notice.  For more information on time limit to request reconsideration, refer
+ to 
+GN 03101.010
+ for Title II and 
+SI 04005.012
+ for Title XVI.
+If the individual requests reconsideration more than 65 days after the date of the
+ initial waiver determination, the Field Office (FO) must develop and make a determination
+ for good cause of late filing. For more information about developing for good cause,
+ refer to 
+GN 03101.020
+ for Title II and 
+SI 04005.015
+ for Title XVI.
+NOTE:
+ If the individual shows us that they did not receive the initial overpayment determination
+ within 5 days, the request is timely if made within 60 days of receiving the notice.
+ The individual does not need to show good cause if they timely requested reconsideration.
+For Title II appeals, FO technicians should develop for good cause before forwarding
+ the request to the Processing Center (PC).
+For Title II input instructions, refer to MS 01106.003. For Title XVI input instructions,
+ refer to MS 00302.007.
+E. 
+Request for ALJ hearing - Title II
+If the ALJ hearing is the next level of appeal after the initial waiver denial, the
+ individual must make the request for hearing within 60 days after receiving the initial
+ waiver determination.  We presume the individual received notice 5 days after the
+ date of the notice.  For more information on the time limit to request a hearing,
+ refer to 
+GN 03101.010
+.
+If the individual requests an ALJ hearing more than 65 days after the date of the
+ initial waiver determination, the Office of Hearings Operations (OHO) makes good cause
+ determinations for hearing requests. For more information about developing for good
+ cause, refer to 
+GN 03101.020
+.
+NOTE:
+ If the individual shows us that they did not receive the initial overpayment determination
+ within 5 days, the request is timely if made within 60 days of receiving the notice.
+ The individual does not need to show good cause if they timely requested a hearing.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202250380
+GN 02250.380 - Appeal of Initial Waiver Determination - Title II and Title XVI - 11/22/2024
+Batch run: 
+07/24/2025
+Rev:
+11/22/2024
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

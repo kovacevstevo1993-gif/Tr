@@ -25,3 +25,11 @@ Regola dell'utente: i video devono essere fatti tutti allo stesso modo. Da qui i
 - Nelle slide: `cue('parola chiave del copione')` = istante in cui la voce la dice (mai oltre l'80%); ogni elemento compare con il suo cue, la didascalia finale con l'ultimo.
 - `test_sync.py` = esempio funzionante, provato con una voce di prova (copione video 7, blocchi 1-3: 84% parole agganciate, le altre sono i numeri scritti in lettere e vengono interpolate).
 - Dopo il render: a vista i fotogrammi dei punti in cui la voce dice le parole chiave (la slide deve gia' mostrare l'oggetto).
+
+## SENZA AUDIO (10/10/2026, ordine dell'utente): sincronia CALCOLATA
+- `python3 calcola_sync.py copione.md fine_blocchi.txt sync.json` (fine_blocchi.txt = fine voce in fotogrammi dagli screenshot, una riga per blocco). Calcola il tempo di ogni parola (sillabe + pause) scalato sulla durata del blocco.
+- Nel codice del blocco: `V = Voice('sync.json')`, `tm('parola')` = istante in cui la voce dice la parola (clampato prima dell'ultimo elemento), `V.plan(blocco, n)` = tagli delle slide ai confini delle frasi, `frozen(fn)` = elementi e testi fermi dall'80%, MA sfondo e particelle dietro continuano a muoversi (`stage_live`). Esempio: `video8-bills-after-65/code/v8b1.py`.
+- Verifica fatta (10/10): 80% = ultimo elemento completo; dopo l'81% gli elementi restano identici (posizioni uguali al fotogramma finale) e solo lo sfondo (banconote, monete, punti) continua a muoversi. Errore corretto: la prima versione congelava anche lo sfondo, e l'utente ha detto che non si muoveva niente dietro.
+
+## CONTROLLO DI OGNI FOTOGRAMMA SENZA SPRECARE CREDITI (10/10/2026)
+- Problema: guardare i fotogrammi come immagini (centinaia di fogli, riletti piu' volte) ha consumato tutto il limite delle 5 ore per 5 blocchi. Soluzione: `video8-bills-after-65/code/qa8.py <modulo> <blocco>` controlla OGNI fotogramma con il codice (costo immagini zero): elementi renderizzati su sfondo nero, bordo/margine, completo a 80%, identico dall'81%, primo elemento <= 0,45 s, buco massimo <= 2 s. A vista SOLO il fotogramma finale di ogni slide (un solo foglio con tutte). Si guardano le immagini dei video SOLO per i blocchi nuovi, mai per quelli gia' consegnati.

@@ -1,0 +1,261 @@
+
+SSA - POMS: GN 02250.025 - Fault Determinations When Overpayment is Due to Earnings - Title II - 11/22/2024
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 11/22/2024 - Present
+Previous
+ | 
+Next
+TN 67 (11-24)
+GN 02250.025 
+Fault Determinations When Overpayment is Due to Earnings - Title II
+CITATIONS:
+Social Security Act §§ 
+204(b)
+20 C.F.R. §§ 
+404.507
+, 
+404.510
+, 
+404.511
+A. 
+Introduction
+This section provides guidance to make a fault determination for individuals requesting
+ a waiver of a Title II overpayment resulting from earnings.
+B. 
+Policy
+An individual is not at fault if the overpayment occurred because the individual was
+ unaware of the deduction or entitlement provisions or because the individual did not
+ understand the deduction or entitlement provisions.
+NOTE
+: In determining whether a not at fault presumption applies, consider whether the
+ individual previously had a similar overpayment. Refer to 
+GN 02250.021B.2.
+1. 
+Allegation of filing a work report
+We presume the overpaid individual is not at fault if they made a timely report, refer
+ to 
+GN 02250.016
+.B.1. If an individual did not timely report, determine whether the individual is
+ not at fault by considering the circumstances in 
+GN 02250.005
+. If the individual made a report that was not timely and we continued making payments,
+ we can presume they were not at fault for any overpayment after they made the report,
+ refer to 
+GN 02250.016B.2.
+ If there is no record of the alleged report, refer to 
+GN 02250.021B.3.
+2. 
+Trial work period
+When an individual who receives disability benefits reports they are returning to
+ work, we may notify the individual that they are entitled to a 9 month trial work
+ period (TWP) and that checks will continue for some time. If we later find the individual
+ is overpaid for any of the TWP, we presume the individual is not at fault for accepting
+ checks in the TWP.
+3. 
+Work increases to substantial gainful activity
+An individual who receives disability benefits may report that they returned to work,
+ and we will find that the work is not substantial gainful activity (SGA). We tell
+ the individual that the work is not SGA and will not change their benefit. If the
+ individual continues to work at the same job and under the same conditions, we will
+ presume the individual is not at fault in causing any overpayment that resulted from
+ a gradual increase in salary roughly equal to the rate of inflation. For information
+ regarding undocumented allegations, refer to GN02250.021B.3.
+4. 
+Special wage payments
+When an overpaid individual receives special wage payments (SWP), such as bonuses,
+ vacation pay, or similar payments, during periods of absence from work, we presume
+ the individual not at fault if they did not know that such payments constitute earnings
+ for purposes of the annual earnings test (AET). We must verify the type of special
+ payment and the amount of such payment with the employer or the individual (e.g. paystub).
+ It is immaterial whether the overpaid individual anticipated this payment, or if it
+ was unexpected.
+NOTE:
+ If the overpaid individual’s regular and ordinary earnings (exclusive of the special
+ payment) exceed the annual limit, we may still find the individual not at fault after
+ considering their circumstances. For factors to consider when making a special wage
+ payment fault determination, refer to 
+GN 02250.005
+. For examples regarding special wages payments, refer to 
+GN 02250.025C.
+For additional information on Special Wage Payments (SWP) 
+RS 02505.025
+.
+5. 
+Net and gross earnings
+We presume an individual is not at fault if they believed the earnings test was based
+ on take-home pay, rather than gross pay. We will deem recovery against equity and
+ good conscience, refer to 
+GN 02250.150
+.
+6. 
+Earnings prior to month of entitlement
+We will presume an individual is not at fault if they believed that earnings prior
+ to the Month of Entitlement (MOE) or after termination of entitlement would not count
+ as earnings for deduction purposes, unless the earnings from the months of entitlement
+ alone exceeded the earnings limitation amount for the year. If we presume the individual
+ is not at fault:
+•
+We will also deem recovery against equity and good conscience but only for months
+ in which the individual’s earnings do not exceed the total monthly benefits affected
+ for that month.
+•
+For any months that we cannot deem recovery against equity and good conscience, we
+ will develop for defeat the purpose.
+7. 
+Returning to work or increasing work
+We will presume an overpaid individual not at fault if they believed earnings over
+ the AET would only affect benefits starting the month in which earnings exceeded the
+ AET. They must have reported to us timely when their earnings reached the AET limit
+ for that particular year.
+8. 
+Overpayment from earnings or income greater than anticipated
+a. 
+A retroactive increase in pay or work at higher rate than realized
+We presume an individual is not at fault if there is:
+•
+a retroactive increase in pay (including backpay awards or retroactive pay increases);
+ or
+•
+work at a higher rate of pay than realized
+b. 
+Employer failed to keep records
+We presume an individual is not at fault if there is evidence showing an employer
+ failed to keep accurate records to restrict the amount of earnings or the number of
+ hours worked, as agreed to by the employer and the overpaid individual.
+NOTE
+: An agreement can only exist when the agreement is feasible. For example, if the
+ individual is a salesperson whose pay depends on volume of sales, they would be unable
+ to make an agreement because they cannot predict what their sales will be.
+c. 
+Calendar months with more than 4 weeks
+The occurrence of five Saturdays (or similar workdays) in a month can cause some months
+ to exceed earnings limits. An individual is not at fault when their weekly rate totals
+ less than the annual limit but, in some calendar months of more than 4 weeks, exceeds
+ the monthly limit.
+NOTE:
+ Verify all earnings allegations with the employer.
+C. 
+Examples
+This section includes examples for making the fault determination. If you find an
+ overpaid individual not at fault, you must then determine if the individual meets
+ any of these waiver provisions:
+•
+Deemed to defeat the purpose, refer to 
+GN 02250.110
+, or
+•
+Against equity and good conscience, refer to 
+GN 02250.150
+, or
+•
+Defeats the purpose of the Act, refer to 
+GN 02250.100
+.
+If you find the overpaid individual at fault, you must send the case to an independent
+ decision maker who will schedule a file review and personal conference.
+Example 1: Special wage payments
+(Not at fault)
+: Sera retired in June 2023. Sera received a lump sum payment of $5,000 instead of
+ receiving vacation leave, which resulted in an overpayment of $2,500. Sera was not
+ aware the vacation pay was included as wages for the annual earnings test. The technician
+ determined that Sera is not at fault for the overpayment. Next, the technician must
+ determine if the overpayment can be waived under any of the waiver provisions.
+Example 2: Special wage payments
+(At fault)
+: Ash filed for retirement benefits and informs us they will continue to work as a
+ substitute teacher. Before the school year begins, the school board makes an agreement
+ with substitute teachers. They will receive a $1,000 bonus as part of their regular
+ pay for every thirty days of substitute teaching. Before the school year begins, Ash
+ informs us of this agreement. The technician explains the bonus money will count as
+ earnings, and they need to report the bonus money when they receive it. The technician
+ documents the conversation on a Report of Contact (RPOC). Ash later receives a $1,000
+ bonus and is overpaid $3,000 because they did not report the bonus money. They requested
+ a waiver after receiving the overpayment notice.
+Because Ash knew the bonus money would count as earnings and there is a prior agreement
+ that they would report the bonus, the technician cannot presume that Ash is not at
+ fault for the overpayment. The technician considers all the circumstances related
+ to the overpayment and there is no evidence indicating that Ash was limited in understanding
+ the reporting instructions or unable to report. The technician determines Ash was
+ at fault and must refer the case to an independent decisionmaker who will schedule
+ a file review and personal conference.
+Example 3: Net and gross earnings
+(Not at fault)
+: Rhain filed for retirement benefits. Rhain reported only their take-home pay, rather
+ than gross pay, which resulted in an overpayment. Rhain requested a waiver. Rhain
+ alleged that they believed that the earnings test was based on take-home pay rather
+ than gross salary. The technician determines that Rhain is not at fault and deems
+ recovery against equity and good conscience.
+Example 4: Earnings prior to month of entitlement
+(Not at fault)
+: Sotoria, age 63, became entitled to retirement benefits in March 2021. They earned
+ $9,000 in January and February. The annual earnings test (AET) for 2021 is $18,960
+ per year for an individual who will not reach full retirement age (FRA) during the
+ year. Sotoria’s employer reported earnings of $27,960 for 2021 on their W-2, which
+ resulted in an overpayment of benefits for 2021. When the technician developed the
+ waiver request, Sotoria asserted that they believed that earnings prior to the month
+ of entitlement would not count as earnings. Sotoria explained that they believed they
+ could earn the allowable limit ($18,960) in the months after entitlement began.
+To determine if the presumption of not at fault applies, the technician subtracted
+ the amount Sotoria earned before the entitlement to retirement benefits began from
+ the total earnings for the year:
+$27,960 -$9,000 =$18,960
+Sotoria earned $18,960 in the months during entitlement to retirement benefits. Because
+ this amount does not exceed the annual earnings test and the individual alleged that
+ they believed the earnings in the months prior to entitlement did not count, the technician
+ presumes that Sotoria is not at fault for this overpayment. The technician will determine
+ if deemed against equity and good conscience applies, refer to 
+GN 02250.150
+.
+Example 5: Returning to work or increasing work
+(Not at fault)
+: Bele filed for retirement insurance benefits (RIB) with a month of entitlement (MOE)
+ of January 2023. Prior to filing, Bele reduced their monthly gross wages from $7,220
+ to $1,700 per month. On April 30, 2023, Bele’s coworker suddenly quit, and Bele’s
+ boss asked them to come back full time for the rest of the year.
+A few days before the end of June 2023, Bele called the local field office to report
+ that as of June 30, 2023, their wages would reach the AET limit of $21,240. As the
+ year passes, Bele does not receive any more payments from us, just as they expected.
+ In March 2024, Bele received a notice of overpayment for $21,660 due to the 2023 gross
+ wages of $64,560. Bele requested a waiver. Bele explained that they timely reported
+ their earnings and that they thought their benefits would be affected only for the
+ months after reaching the AET limit. The technician determined that Bele is not at
+ fault for causing the overpayment because they timely reported when their earnings
+ reached the AET and reasonably believed that their benefits would be affected only
+ for months after reaching the AET limit.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202250025
+GN 02250.025 - Fault Determinations When Overpayment is Due to Earnings - Title II - 11/22/2024
+Batch run: 
+08/21/2025
+Rev:
+11/22/2024
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

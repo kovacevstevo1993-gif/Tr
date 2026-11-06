@@ -1,0 +1,214 @@
+
+PolicyNet/Instructions Updates/EM-25029 REV: Change to Title II Overpayment Default Benefit Withholding Rate to 50 Percent Withholding
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Emergency Message
+Effective Dates: 08/28/2025 - Present
+Identification Number:
+EM-25029 REV
+Intended Audience:
+All RCs/ARCs/ADs/FOs/TSCs/PSCs/OCO/OCO-CSTs
+Originating Office:
+LP OISP
+Title:
+Change to Title II Overpayment Default Benefit Withholding Rate to 50 Percent Withholding
+Type:
+EM - Emergency Messages
+Program:
+Title II (RSI)
+Link To Reference:
+See References at the end of this EM.
+Retention 
+Date: 
+January 23, 2027
+Summary of Changes
+Section B
+·	
+Updated the background for clarity.
+Section C 
+·	
+Clarified the policy. 
+·	
+Updated the language for clarity.
+Section D 
+·	
+Moved previous information in section D to section E.
+·	
+Added instructions to address reconsideration requests for overpayment notices issued prior to April 25, 2025.
+·	
+Added instructions to address waiver requests for overpayment notices issued prior to April 25, 2025. 
+Section E
+·	
+Moved previous information from section D to this section.
+A.
+Purpose
+The purpose of this Emergency Message (EM) is to provide technicians with instructions for processing overpayment reconsideration and waiver requests after we changed the default Title II overpayment benefit withholding rate from 10 percent to 50 percent. In April 2025, we provided interim guidance and informed technicians that we changed our policy for the default 10 percent benefit withholding rate to recover a Title II overpayment. Effective April 25, 2025, overpayment notices provided a default Title II overpayment benefit withholding rate of 50 percent of the monthly benefit. 
+B.
+Background
+When we determine an individual receiving Title II benefits is overpaid, we send them a notice requesting a full and immediate refund and inform them (among other information) of their right to request reconsideration or waiver of recovery. We do not begin withholding right away, which provides overpaid individuals time to request a reconsideration or waiver. We will withhold up to 50 percent of their Title II benefit payment (if there is no fraud or similar fault) until we fully recover the overpayment. 
+Any new Title II overpayment determination will have the default 50 percent benefit withholding rate automatically applied for overpayment notices sent beginning April 25, 2025, which was the first day of COM 05/2025. If an overpaid individual has a prior overpayment and incurs a new overpayment, all outstanding overpayments will default to the 50 percent benefit withholding rate once withholding for the new overpayment begins (unless a lower repayment rate is separately negotiated or there is fraud or similar fault). In addition, we have updated the Title II initial overpayment notice benefit withholding language. This language replaces 10 percent withholding with 50 percent withholding of the monthly payment beginning with notices sent on or after April 25, 2025. 
+C.
+Instructions for new overpayments
+For most situations, technicians 
+do 
+not
+need to take manual actions on new overpayments that are created on or after April 25, 2025. The 50 percent benefit withholding will begin automatically without manual action. 
+If the overpayment warrants manual posting, you have two options for posting an overpayment manually to the individual’s record. You may use either the Manual Adjustment, Credit, and Award Data Entry (MACADE) system or the Debt Management System (DMS). For more information about posting an overpayment via MACADE, refer to 
+SM 00865.000
+. For more information about posting an overpayment via DMS, refer to  
+MS 01102.003
+.
+Once you have determined that we overpaid the individual, post the overpayment to their record with a recovery date (DPRD) of the COM plus 3 months (Using COM plus 3 months ensures all individuals have at least 60 days to appeal before withholding begins). You 
+must
+ notify the individual, in writing, by sending an overpayment notice. For information about the overpayment notice, refer to 
+GN 02201.009
+.
+When an overpaid individual has a prior overpayment and incurs a new overpayment, all outstanding overpayments will default to the 50 percent benefit withholding rate when withholding for the new overpayment begins (unless there is fraud or similar fault). If the individual contacts us to request a reconsideration or a waiver, we will stop collection activity until we make a determination on their request. Use the PCOPT6900 via Aurora in the initial overpayment notice. 
+The default 50 percent withholding rate applies to matured overpayments beginning COM 08/2025 and later (excluding fraud or similar fault and cross program recovery). If the 10 percent withholding rate was previously in place on the prior overpayment (because the relevant overpayment notice indicated the default withholding rate would be 10 percent), the 10 percent withholding rate applies to overpayment recovery actions through the COM 07/2025. 
+For any partial withholding requests, continue to follow normal processing procedures for 2073 cases as outlined in 
+SM 00610.710
+, Overpayment Recovery Will Continue Past 2073.
+Note:
+ Upon processing a re-entitlement or reinstatement with a prior overpayment, remember to use the underpayment to reduce or recover the overpayment, if applicable. 
+Important:
+ The 50 percent withholding rate does not impact Title XVI overpayment recovery policies. The Title XVI overpayment recovery rate will remain at 10 percent. For more information on Title XVI overpayments, refer to 
+SI 02220.001
+. For more information on cross program recovery, refer to 
+GN 02210.008.D
+ and 
+SI 02220.020A.7
+. 
+D.
+Individual requests a reconsideration or waiver of their overpayment
+An overpaid individual or their representative may request a reconsideration if they disagree with the fact or amount of an overpayment. If we affirm the initial overpayment determination, review the date on the overpayment notice to determine when we issued the notice. If we issued a notice prior to April 25, 2025, they will retain the 10 percent withholding rate when we resume overpayment recovery unless they incur a new overpayment. If the overpaid individual incurs a new overpayment, all overpayments will default to 50 percent withholding as discussed in Sections A and B of this EM. If we issued a notice of the overpayment on or after April 25, 2025, we will apply the default 50 percent rate. 
+When the 10 percent withholding rate applies, modify 
+NL 00703.119
+, “Reconsideration Affirms Overpayment Determination (Reconsideration Only Requested)—Refund Requested and Adjustment Proposed” before sending the notice to the individual using these steps:
+1.	Select the 3100A or 3104B in the creation path, as applicable.
+2.	Review the notice universal text identifiers (UTIs) and remove the 3100A or 3104B, as applicable.
+3.	Add this language where you removed the 3100A using the applicable fill-ins in 
+NL 00703.119.B
+: “
+If we do not receive your refund within 30 days, we plan to recover the overpayment by withholding 10 percent of your total monthly benefit or $10 (whichever is more) starting with the payment you will receive about *F2. If the total benefit is less than $10, we will withhold the entire benefit. We will continue withholding benefits until we fully recover the overpayment.
+” 
+OR
+Add this language where you removed the 3104B using the applicable fill-ins in 
+NL 00703.119.B
+: “
+To recover the overpayment, we will withhold 10 percent of the payment you will receive *F1 until we recover the overpayment. We will do this starting with the payment *F2 will receive on or about *F3.
+”
+4.	After the #Signature UTI, add a new line using #CTenclosure, and select the Refund Envelope.
+5.	Review the notice to ensure the correct language and Refund Envelope enclosure appears.
+6.	Send the notice to print.
+7.	Annotate the reconsideration disposition on the DMS Fact/Amount Appeal Disposition (DRAD) screen, per 
+MS 01106.011
+ and on the DMS Remarks (RMKS) screen, per 
+MS 01109.003
+.
+8.	Add a special message on the MBR with the reconsideration determination per 
+GN 03102.425.C
+.
+9.	Complete the SSA-662, Reconsideration Determination per 
+GN 03102.450
+.
+If we reverse the initial overpayment determination, refer to 
+GN 03102.425.B
+ and 
+GN 02201.025
+.
+An overpaid individual or their representative may request a waiver. If we deny the waiver request, review the date on the overpayment notice to determine when we issued the notice. If we issued the notice prior to April 25, 2025, they will retain the 10 percent withholding rate when we resume overpayment recovery unless they incur a new overpayment. If the overpaid individual incurs a new overpayment, all overpayments will default to 50 percent withholding as discussed in Sections A and B of this EM. We will also apply the 50 percent withholding rate when we resume recovery if we issued notice of the overpayment on or after April 25, 2025. For information on processing waiver requests, refer to 
+GN 02250.000
+. Before you can deny a waiver, you must follow the instructions in 
+GN 02270.000
+.
+E. Instructions for individuals convicted of fraud and similar fault determinations
+Technicians 
+must 
+thoroughly review the MBR, ROAR, DMS, and all other electronic files to determine if any of the following applies:
+·	
+Fraud conviction
+·	
+Similar fault determination
+·	
+Court-ordered restitution
+·	
+Civil monetary penalties
+If the individual has been convicted of social security fraud, been ordered by a criminal court to pay restitution to SSA, or been imposed with civil monetary penalties, or if the agency has determined the individual committed similar fault in obtaining benefits, technicians 
+must
+ set the fraud indicator to “Y” (for yes), on the specific ROAR event involving fraud, similar fault, court-ordered restitution, or civil monetary penalties. For instructions on inputting the fraud indicator, refer to 
+MS 01102.003
+.
+If you are developing fraud or similar fault, do not set the fraud indicator to “Y.” Instead, follow guidance outlined in 
+GN 02201.050B
+ and 
+GN 02201.050C
+.
+NOTE: 
+If the individual has a settlement agreement with the Office of the Inspector General (OIG) or the United States Attorneys’ Office (USAO), follow guidance outlined in 
+GN 02201.055
+ and 
+GN 02230.055B
+.
+Direct all program and technical related questions to your management.
+References:
+GN 02201.009
+ – Notification of a Title II Overpayment 
+GN 02201.025
+ – Title II Overpayment Reconsideration Request
+GN 02201.050
+ – Overpayment Fraud Referral 
+GN 02201.055
+ – Overpayment Recovery After Fraud Conviction 
+GN 02210.001
+ – Overpayment Recovery by Benefit Adjustment 
+GN 02210.008
+ – Cross Program Recovery (CPR) from Monthly Title II, Title VIII, and Title XVI Benefits to Recover Other Program Overpayments 
+GN 02210.030
+ – Request for Change in Overpayment Recovery Rate, Form SSA-634
+GN 02230.055
+ – Civil Monetary Penalty (CMP) – Posting 
+GN 03102.425
+ – Reconsideration Notices of Determination
+GN 02250.000
+ – Waiver Provisions for Title II and Title XVI Overpayments
+GN 02270.000
+  – Personal Conference Procedures When Waiver Cannot be Approved - Table of Contents
+MS 01106.011
+ – Fact/Amount Appeal Disposition (DRAD)
+MS 01106.015
+ – Establish Offset (Debtor) (DROA) 
+MS 01106.016
+ – Establish Offset (OLP) (DROL) 
+MS 01109.003
+ – Remarks (RMKS)
+SI 02220.020
+ – Cross Program Recovery (CPR) of SSI Overpayments from Monthly Title II Benefits
+EM-25029 REV - Change to Title II Overpayment Default Benefit Withholding Rate to 50 Percent Withholding - 08/28/2025
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

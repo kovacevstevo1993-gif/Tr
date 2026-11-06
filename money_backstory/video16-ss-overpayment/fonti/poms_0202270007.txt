@@ -1,0 +1,212 @@
+
+SSA - POMS: GN 02270.007 - Scheduling the File Review and Personal Conference - Title II and Title XVI - 11/22/2024
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 11/22/2024 - Present
+Previous
+ | 
+Next
+TN 18 (11-24)
+GN 02270.007 
+Scheduling the File Review and Personal Conference - Title II and Title XVI
+CITATIONS:
+Social Security Act §§
+204(b)
+,
+1631(b)(1)(B)
+20 C.F.R. §§
+404.502a
+, 
+404.506
+, 
+416.557
+A. 
+Introduction
+This section provides guidance on how to schedule a file review and personal conference
+ when we cannot approve the individual's waiver request after our initial review. This
+ section also provides guidance to follow when:
+•
+The notice scheduling the file review and personal conference is returned as undeliverable;
+•
+An individual wants a representative to take their place at a personal conference;
+•
+An individual requests to conduct the personal conference on the same day as the file
+ review; and
+•
+An individual does not appear for or declines the file review or personal conference.
+NOTE:
+ We do not need to schedule a file review or personal conference if the independent
+ decision-maker can approve the waiver request based on the evidence in file.
+B. 
+Policy
+When we cannot approve the individual's waiver request after our initial review, we
+ must provide the individual the opportunity for a file review and personal conference.
+ At the file review, the individual has the opportunity to review all overpayment-related
+ evidence in the claims file and the evidence we used to determine that we could not
+ approve the individual's waiver request. The purpose of the personal conference is
+ to give the individual the opportunity to appeal personally, to testify, and to provide
+ additional evidence and arguments to support their waiver request.
+We must send a notice to the overpaid individual that includes:
+•
+The fact that we cannot approve the waiver based on the information we have;
+•
+The dates, times, and location of the file review and personal conference. The date
+ of the personal conference must be at least five workdays after the date of the file
+ review. Refer to 
+GN 02270.007F
+ for an exception;
+•
+The procedure for reviewing the claims file prior to the personal conference;
+•
+The option to conduct the personal conference in the field office (FO), by telephone,
+ or by video teleconference. We inform the individual that if they elect to conduct
+ the personal conference by video teleconference, they will designate the location
+ for their end of the video teleconference;
+•
+All other information necessary to fully inform the individual about the personal
+ conference, including their right to be represented, present evidence, or bring witnesses
+ to question.
+Do not include this information in the notice:
+•
+Appeal rights (because you have not made an initial determination on the waiver request);
+•
+Overpayment recovery options (e.g., refund request or payment adjustment).
+NOTE:
+ If the overpaid individual's address is outside the United States, refer to 
+GN 02215.010
+.
+If the individual cannot come to the originally designated FO for a legitimate reason
+ (e.g., the individual is incapacitated) and they are unable to appear meaningfully
+ by telephone or video teleconference (e.g., the individual is hard of hearing ) the
+ decision-maker will make arrangements to travel as far as necessary to conduct the
+ conference.
+When an individual requests a face-to-face personal conference and the decision-maker
+ is from a FO other than the individual's servicing FO, the manager may arrange for
+ an employee from another office to travel to the individual's servicing FO. For more
+ information on who may be a personal conference decision-maker, refer to 
+GN 02270.003C.
+After we schedule the file review and personal conference, the individual may choose
+ to decline to attend the personal conference, or they may fail to appear at the personal
+ conference. If the individual declines a personal conference, we will make a waiver
+ determination based on the information in the file. If the individual does not appear
+ for the scheduled personal conference, reschedule the personal conference. If the
+ individual fails to appear for a second scheduled personal conference, we will make
+ a waiver determination based on the information in the file, refer to 
+GN 02270.007G.1.
+NOTE: 
+We will also make a waiver determination based on the information in the file if the
+ individual is unable to come to the FO or participate in a telephone or video teleconference
+ and the decision-maker is unable to go to the individual's location (e.g., the individual
+ is incarcerated and the facility does not allow any outside communication).
+C. 
+Procedures for scheduling the personal conference
+If you cannot 
+fully
+ approve the waiver request after initial review, do not send a waiver determination
+ notice. Instead, prepare the Personal Conference & Folder Review (Waiver/Recon) notice
+ found in the Document Processing System (DPS), under the national and overpayment
+ tabs.
+NOTE: 
+For Title XVI, 
+do not
+ input a determination on the Modernized SSI Claims System (MSSICS) Direct SSR Update
+ screens.
+D. 
+When USPS returns the notice as undeliverable
+If the United States Postal Service (USPS) returns the notice scheduling the file
+ review and personal conference as undeliverable, develop for a new address, refer
+ to 
+GN 02605.055
+ and 
+GN 02605.060
+.
+If you obtain a new address, send a new notice to the individual. If you cannot obtain
+ a new address, document your efforts on the DMS Remarks (DMS RMKS) screen for Title
+ II cases and on the Report of Contact for Title XVI cases. Process the waiver as if
+ the individual declined the personal conference and follow the steps in 
+GN 02270.007G.1.
+E. 
+When the individual wants a representative to take their place at the personal conference
+If the individual requests that their representative take their place at the personal
+ conference, explain that a representative may be present and participate in the conference.
+ However, the overpaid individual must be present at the personal conference.
+F. 
+When the individual requests to conduct the personal conference on the same day as
+ the file review
+We must schedule the personal conference at least 5 workdays after the date of the
+ file review. However, we can hold the personal conference on the same day if the individual
+ requests to conduct the personal conference on the same day as the file review. You
+ must document their request on the DMS RMKS screen for Title II cases and on the Report
+ of Contact for Title XVI cases.
+G. 
+Individual does not appear for or declines the personal conference or the file review
+We will make a waiver determination based on the information in the file if the individual:
+•
+Declines the personal conference;
+•
+Fails to appear for the second scheduled personal conference; or
+•
+Is otherwise unable to appear at the personal conference by telephone, video teleconference,
+ or in person, and the personal conference decision-maker is unable to go to the individual
+ for the personal conference.
+1. 
+Individual does not appear for or declines the file review
+If the individual does not appear for or declines the file review, no further action
+ is necessary. The file review is voluntary, and the failure to appear does not affect
+ the personal conference scheduling.
+2. 
+Individual does not appear for or declines the personal conference
+a. 
+If the individual does not appear for the personal conference, reschedule the personal
+ conference. To reschedule the personal conference, send a notice of Personal Conference
+ & Folder Review (Rescheduled). Explain that the failure to appear at the rescheduled
+ conference will result in us making the waiver determination based on the evidence
+ we have in their file.
+b. 
+If the individual does not appear for the rescheduled personal conference, make the
+ waiver determination, according to 
+GN 02270.015
+.
+c. 
+If the individual declines the personal conference, encourage the individual to come
+ to the personal conference and tell them that you are an independent decision-maker
+ and still need to make a waiver determination. If the individual still does not want
+ the personal conference, make the waiver determination, according to 
+GN 02270.015
+.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202270007
+GN 02270.007 - Scheduling the File Review and Personal Conference - Title II and Title XVI - 11/22/2024
+Batch run: 
+06/12/2026
+Rev:
+11/22/2024
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.
