@@ -1,3 +1,12 @@
+# REGOLA ASSOLUTA 0 - MAI INVENTARE (07/11/2026, parole dell'utente: "Ma chi cazzo te la detto ma perche inventi delle robe che non ho mai detto", "No si chiama inventare", "Che non capiti piu risolvi")
+Errori del 07/11: (1) scritto "hai detto tu di restare sul branch" (mai detto); (2) scritto che la copertina era fatta ma l'utente non l'aveva ricevuta (guardata solo da me con Read; si consegna con SendUserFile); (3) scritto "non so il motivo" del push su main senza controllare lo stato.
+OBBLIGHI, prima di ogni risposta:
+- Cio' che l'utente "ha detto/deciso/ordinato" si scrive SOLO se e' scritto in questo file o nel messaggio davanti a me, con le sue parole. Altrimenti: non si dice. Una mancanza in un file di regole NON e' un ordine dell'utente.
+- Cio' che e' "fatto/pronto/mandato/su main/pushato" si scrive SOLO dopo averlo verificato con un comando in QUESTO turno (git ls-tree/ls, esito di SendUserFile). Un file e' consegnato solo se SendUserFile l'ha confermato.
+- Se non ho verificato: scrivere "non l'ho verificato" o "non lo so", mai una frase plausibile.
+- Prima di scrivere un fatto su file, stato del repo, regole o cio' che e' stato detto: leggerlo/controllarlo, non ricordarlo.
+- A fine lavoro: unire SEMPRE su main da solo (CLAUDE.md REGOLA 0, ordine dell'utente: "devi sempre unirli"), poi verificare con git ls-tree origin/main che i file ci siano.
+
 # Nuovo canale italiano "Trappole e conti veri" - regole dell'utente (parola per parola)
 
 ## 11/10/2026
