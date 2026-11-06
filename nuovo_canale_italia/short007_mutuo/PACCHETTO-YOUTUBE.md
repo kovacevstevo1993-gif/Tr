@@ -30,7 +30,7 @@ Fonte: Banca centrale europea, statistiche sui tassi di interesse bancari (Itali
 Iscriviti a Soldi che Contano per non perdere i prossimi video: soldi e finanza spiegati con i numeri ufficiali.
 https://www.youtube.com/@SoldiCheContano?sub_confirmation=1
 
-Ogni video ti dice tre cose: cosa cambia, quanto ti costa o ti spetta, cosa puoi fare adesso. Argomenti: pensioni, tasse e fisco, mutui, conto corrente, risparmio, inflazione, bonus.
+Ogni video ti dice tre cose: cosa cambia, quanto ti costa o ti spetta, cosa puoi fare adesso.
 
 Disclaimer: Informazione generale, non consulenza finanziaria. Regole, importi, tassi ed età cambiano e dipendono da banca e persona: controlla sempre la fonte ufficiale e il tuo contratto prima di decidere. Questo canale non è affiliato alla Banca centrale europea.
 
