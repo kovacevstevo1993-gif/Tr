@@ -480,7 +480,7 @@ def c2(img, t):
     pp(img, t, tcs, crossed_spr("COUPON SITES"), 790, 790, sc=0.88, rot=3, shadow=8, amp=3, ph=1.5)
     s, al, a = pop(t, tf, 0.45)
     if a > 0:
-        put(img, P.magnifier_spr(), 130 + bob(t, 6, 0.6, 0), 1010 + bob(t, 6, 0.7, 1), scale=0.7 * min(1.0, s), alpha=al, shadow=8)
+        put(img, P.magnifier_spr(), 200 + bob(t, 6, 0.6, 0), 1010 + bob(t, 6, 0.7, 1), scale=0.7 * min(1.0, s), alpha=al, shadow=8)
     pp(img, t, te, tv_spr(), 330, 1200, sc=0.8, rot=-2, shadow=10, amp=4, ph=0.9)
     xtext(img, t, te + 0.1, "SOME ELECTRONICS", 320, 1380, 40, IVORY, shadow=4, track=2, maxw=500)
     pp(img, t, tck, clock_big_spr(), 300, 1590, sc=0.72, shadow=10, amp=3, ph=0.4)
