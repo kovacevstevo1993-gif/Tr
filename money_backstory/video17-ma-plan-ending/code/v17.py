@@ -116,7 +116,7 @@ S[8] = [
           'SIXTY-THREE DAYS IN A ROW', red, (255, 255, 255), tag=G3, src=SRC),
     slide('THE FORMULA', 5122, [E('card', (160, 290, 520, 590), 'one percent', head='RATE', val='1%', vsize=140, vcol=goldL, col=gold, sub='PER MONTH'),
                                E('op', (530, 380, 620, 500), None, t='x', size=100),
-                               E('card', (630, 290, 1170, 590), 'national base beneficiary premium', head='NATIONAL BASE PREMIUM', val='$38.99', vsize=110, vcol=white, col=blue, sub='LISTED FOR 2026'),
+                               E('card', (630, 290, 1170, 590), 'lists as', head='NATIONAL BASE PREMIUM', val='$38.99', vsize=110, vcol=white, col=blue, sub='LISTED FOR 2026'),
                                E('op', (1180, 380, 1270, 500), None, t='x', size=100),
                                E('card', (1280, 290, 1770, 590), 'each full month without coverage', head='EACH FULL MONTH', val='UNCOVERED', vsize=62, vcol=red, col=red, sub='WITHOUT DRUG COVERAGE')],
           'ONE PERCENT, TIMES THE BASE PREMIUM', gold, tag=G3, src=SRC),

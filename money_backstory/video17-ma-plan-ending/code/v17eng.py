@@ -43,9 +43,11 @@ def base17(t):
         pd.ellipse([px - r, yy - r, px + r, yy + r], outline=(246, 214, 140, a), width=2)               # cerchietti con anello (prima: quadratini pieni)
         pd.ellipse([px - 2, yy - 2, px + 2, yy + 2], fill=(246, 214, 140, a))
     return Image.alpha_composite(fr, P)
+ORNAMENT = True
 def stage_live17(t, title, seed, size=60):
     fr = base17(v8b1.LIVE['t']); fr = amb(fr, v8b1.LIVE['t'], seed, 5, 40)
     fr = title_layer(fr, title, t, size=size)
+    if not ORNAMENT: return fr
     a = int(255 * min(1.0, max(0.0, t / 0.5))); L = new(); d = ImageDraw.Draw(L)                    # filetto con tre punti sotto il titolo (prima: rombo)
     d.line([300, 172, 880, 172], fill=gold + (a,), width=3); d.line([1040, 172, 1620, 172], fill=gold + (a,), width=3)
     for dx in (-26, 0, 26): d.ellipse([960 + dx - 6, 166, 960 + dx + 6, 178], fill=goldL + (a,))

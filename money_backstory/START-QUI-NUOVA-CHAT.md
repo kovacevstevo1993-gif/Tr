@@ -1,4 +1,4 @@
-# >>> STATO 06/11/2026 (VIDEO 17) - LEGGERE QUESTO PER PRIMO, POI TUTTO IL RESTO <<<
+# >>> STATO 06/11/2026 (VIDEO 17 COMPLETO E CONSEGNATO) - LEGGERE QUESTO PER PRIMO, POI TUTTO IL RESTO <<<
 **Branch con il lavoro: `claude/hopeful-lovelace-t60ukg` (git fetch origin; git checkout origin/claude/hopeful-lovelace-t60ukg; non unito su main). Cartella `money_backstory/video17-ma-plan-ending/` (leggere `STATO-VIDEO17.md` li' dentro).**
 
 ## Cosa e' FATTO del video 17 (tutto salvato sul branch)
@@ -11,12 +11,10 @@
 - PACCHETTO GIA' GENERATO (testo): `PUBBLICAZIONE-VIDEO17.md` da `code/mkpack.py`. Titolo scelto "Medicare Advantage Plan Not Renewed for 2027? Why December 7 Is Not Your Last Chance" (vidIQ 95; altri due: 95 e 92). Tag 436 caratteri. NB: fatto PRIMA del tempo, senza ordine (errore, vedi regola 60): rileggerlo e rifarlo/confermarlo solo quando l'utente lo ordina.
 - vidIQ: saldo 32 (letto 06/11). Spesi 20 crediti in questa chat (1 keyword research seed <750/mese, 1 outliers inutile da 5, 3 score_title da 5 = 15... totale saldo 52 -> 32).
 
-## Cosa MANCA (solo su ORDINE dell'utente, in quest'ordine)
-1. Controllo di OGNI fotogramma dei 43 file: `code/qa16.py` copiato ma NON adattato al v17 (va adattato: prefisso v17, `python3 code/qa17.py v17 <blocco>`); primo elemento, completo all'80%, fermo dopo l'81%, niente fuori area, fotogrammi = durata.
-2. `code/pad.py` + `code/unisci.py` (adattare i nomi: oggi cercano `slide/v16-b..` e scrivono `consegna/V16-blocco..`: cambiare in v17/V17) -> `consegna/V17-blocco01..16.mp4` con la voce dentro, fotogrammi = durata voce.
-3. Miniature (2, layout diversi, 1280x720, a codice, dopo aver guardato i virali: riferimenti scaricati in `thumbref/` non nel repo; i virali hanno testo enorme bianco con parola in riquadro rosso, timbro "PLAN CANCELED/DROPPED", freccia rossa, cartellina, tessera Medicare). Codice modello `code/thumbs_video16.py`, nuovo file `thumbs_video17.py`, cartella `miniature_video17/`.
-4. Pacchetto in chat (Dove va, Titolo, Descrizione, Tag, Commento, Impostazioni, ognuno in un riquadro) + consegna con SendUserFile (MP4 + miniature). Playlist "Retirement After 50" non esiste ancora sul canale.
-5. A fine lavoro: stato qui, commit e push. Unire su main SOLO se l'utente lo ordina (regola CLAUDE.md 11/10).
+## VIDEO 17 COMPLETO E CONSEGNATO (06/11/2026, su ordine "completa il video con tutte le regole")
+- Controllo di OGNI fotogramma (`code/qa17.py v17 N`): 43 slide su 43 OK, 12374 fotogrammi controllati (una slide, blocco 8 slide 2, aveva una pausa di 5,1 s: corretta e rifatta solo quella). Unione con la voce (`code/pad.py` + `code/unisci.py`): `consegna/V17-blocco01..16.mp4` (non nel repo), fotogrammi = durata voce per tutti. Controllo a vista di 4 fotogrammi per blocco (inizio, meta', 80%, fine) e audio = video: OK.
+- CONSEGNATI all'utente con SendUserFile: 16 MP4 + 2 miniature (`miniature_video17/`, codice `code/thumbs_video17.py`) + pacchetto in chat (`PUBBLICAZIONE-VIDEO17.md`, generato da `code/mkpack.py`). Titolo "Medicare Advantage Plan Not Renewed for 2027? Why December 7 Is Not Your Last Chance"; schermata finale -> video 14 (u9VnlXdae2g); playlist "Retirement After 50" ancora da creare sul canale.
+- Cosa fa l'utente adesso: monta in CapCut e pubblica. Prossimo video: SOLO su suo ordine (check_tema.py prima di scegliere, ricerche solo sul tema del canale).
 
 ## REGOLE NUOVE DI QUESTA CHAT (06/11, in fondo a REGOLE-UTENTE-05-10.md: 59 e 60; leggerle con le sue parole)
 - 59: niente regola del canale piccolo; ricerche SOLO sul tema del canale. 60: SOLO gli ordini dell'utente, niente iniziative (voce, render, pacchetto, miniature e vidIQ solo a video finito e solo se ordinati).
