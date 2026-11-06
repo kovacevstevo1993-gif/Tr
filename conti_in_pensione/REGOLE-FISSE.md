@@ -1029,3 +1029,10 @@ ERRORE 04/11/2026 (commento di @isabellarizzi8220 sul video 6, "prendo sei cento
 
 ## STATO 06/11/2026 - PER LA CHAT NUOVA (Conti in Pensione)
 - Leggere conti_in_pensione/PASSAGGIO-CHAT-06-11-2026.md (stato completo video 16: copione registrato, slide, pacchetto, 3 miniature, ricerche, commento @vannafadda2662) e la chat intera in chat/chat-sessione-11-completa.md. Aperto solo su ordine: short teaser video 16, blocco 16 (WATCH NEXT in basso al centro), altri commenti, decreto Mef di fine novembre.
+
+## STATO 06/11/2026 - SHORT 19 (teaser video lungo 16 + iscrizione, rivalutazione 2027), cartella 40-short-19-teaser-video-lungo-16
+- Ordine utente: "short correlato all'ultimo video, senza errori e perfetto, hook che attira nei primi 3 secondi, attira iscritti (iscritti fermi a 301)". Video correlato = video lungo 16 (id DYucwfkZ7nE, online, primo di /videos il 06/11). Copione 5 blocchi (qa_copione + 2 giri + revisione OK); su ordine utente il blocco 5 dice che nel video correlato ci sono la risposta e i conti ("Nel video correlato qui sotto trovi la risposta e i conti: aprilo adesso...").
+- Durate dagli screenshot (DOPPIA LETTURA righello/pixel, DURATE.txt): 306, 357, 262, 340, 412 = 1677 fotogrammi (55,9 s). Clip CIP-S19-blocco01..05.mp4 in clip/ (1080x1920, 30 fps, ffprobe = durate; checktempi 0 errori; qa_slide OK su TUTTI i fotogrammi; sequenze a 0,5 s di tutti e 5 i file guardate). Motore: sorgenti/head19.js + s19.js (build.py, render.py, checktempi.py, sheet.py, qa7.sh).
+- Look nuovo rispetto a S18: titoletto a pannello scuro con icona scalini e barra a 5 gradini che si riempie (niente numeri), schede a foglio con angolo piegato, didascalia a pannello scuro con barra gialla, sfondo con scale traslucide e simboli % disegnati con forme (il QA considera testo le scritte decorative: usare forme).
+- Risposta al commento @maurizio9726 (video 16, "pensione lorda di 2300 euro"): proposta data in chat (2300 euro lordi sotto il primo scalino 2.447,40: aumento intero, circa 69 al mese e 897 nell'anno con indice d'esempio 3%).
+- Da fare solo su ordine: miniatura, pacchetto (video correlato = video 16).
