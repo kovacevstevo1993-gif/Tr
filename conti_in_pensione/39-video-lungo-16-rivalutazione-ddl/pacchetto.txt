@@ -1,0 +1,58 @@
+VIDEO LUNGO 16 - RIVALUTAZIONE PENSIONI 2027, TAGLIO DELL'ARTICOLO 55 (pacchetto 05/11/2026). Capitoli dalle durate dell'utente (DURATE.txt, video 5:42 = 10280 fotogrammi: ogni capitolo parte dove finisce il blocco precedente, arrotondato per difetto). vidIQ in tutto 40 crediti (piano tetto 60): get_videos_by_ids sui 10 virali del tema (tag e descrizioni) 5, keyword_research 5, generate_titles 5, 4 punteggi score_title 20, trascrizione del virale Mr LUL 422K 5; saldo 132. Nessuna ricerca ripetuta (trending/outliers/keyword 'rivalutazione pensioni 2027' gia' in ricerca-05-11-2026.md). Parole chiave (vidIQ Italia): 'rivalutazione pensioni 2027' 8.216 ricerche al mese (concorrenza 36), 'pensioni 2027' 8.742, 'pensioni' 13.246, 'notizie pensioni' 6.859 (+86,6%), 'ultime notizie pensioni' 4.913, 'taglio rivalutazione pensioni' meno di 750; suggerimenti YouTube: 'rivalutazione pensioni 2027', 'perequazione pensioni 2027', 'pensioni gennaio 2027', 'pensioni 2027 aumenti', 'adeguamento pensioni 2027'. Punteggi score_title col channelId del canale (1-3 punti sono rumore): scelto 76 'RIVALUTAZIONE PENSIONI 2027 ➜ 6 SCALINI: quanto perdi col TAGLIO? Anche 1.000 EURO l'anno'; 77 stessa frase con 'Anche 1.000 EURO in meno' (scartata: senza 'l'anno' si legge come al mese, e la perdita e' annua); 76 'RIVALUTAZIONE PENSIONI 2027 ➜ IL NUOVO SISTEMA A 6 SCALINI: chi ci rimette?'; 76 'PENSIONI 2027: TAGLIO DELLA RIVALUTAZIONE. Sei nella fascia a rischio?'. Scelto il primo per accuratezza (la cifra e' vera: 1.030 euro l'anno su 5.100 lordi, 1.448 su 7.000) e per la parola chiave piu' cercata in apertura. Cosa fanno i virali (letti: Mr LUL 422K e 342K, Pensioni e Aggiornamenti 58K e 33K, Pensioni Oggi 46K, Radio UCI 42K, Conti Chiari 53K): titolo con la parola chiave in apertura (PENSIONI 2027 / RIVALUTAZIONE) + parola calda in maiuscolo (TAGLI, UFFICIALE, CLAMOROSO) + numero (5 ASSEGNI, 68%) + promessa (ECCO QUANTO SI PERDE, TABELLA); prima riga della descrizione = il titolo ripetuto con la parola chiave; capitoli con la parola chiave dentro; 3 hashtag; 20-30 tag con pensioni, pensioni 2027, rivalutazione pensioni 2027, taglio pensioni, perequazione pensioni, articolo 55, e il nome del canale per ultimo; il piu' visto chiude con un sondaggio ai commenti (1.919 commenti). Spazio libero che nessuno copre: il conto in euro per ogni scalino dal solo testo ufficiale, con la regola del limite maggiorato (Mr LUL 'a blocchi' senza conti; Pensioni e Aggiornamenti 'fino al 68%' non verificabile: non usato).
+
+=== DOVE VA ===
+Playlist dei video lunghi. Niente da creare o cancellare. Da pubblicare subito: il tema e' quello piu' cercato di questi giorni (video virali di 3-5 giorni fa) e il decreto con l'indice e' atteso a fine novembre.
+
+=== TITOLO ===
+RIVALUTAZIONE PENSIONI 2027 ➜ 6 SCALINI: quanto perdi col TAGLIO? Anche 1.000 EURO l'anno
+
+=== DESCRIZIONE ===
+Rivalutazione pensioni 2027: l'articolo 55 della manovra taglia l'aumento di gennaio a sei scalini, e per qualcuno la perdita supera 1.000 euro in un anno. Su quale scalino sei tu? In questo video leggiamo il testo della Camera (atto 3174) e facciamo il conto in euro per ogni scalino, con esempi da 1.500 a 7.000 euro lordi al mese, confrontandolo con le regole di quest'anno.
+
+IN QUESTO VIDEO
+✅ La fonte: l'atto della Camera numero 3174, articolo 55, presentato il 30 ottobre 2026 e ancora da votare
+✅ Le soglie: sei scalini in multipli del trattamento minimo (da 2.447,40 a 6.118,50 euro lordi al mese)
+✅ I due metodi: le fasce di oggi (100%, 90%, 75%) contro una sola percentuale su tutto l'importo
+✅ Lo scalino più alto, oltre 6.118,50 euro: il 32% e il conto su 7.000 euro
+✅ Il conto sui 5.100, 3.800, 3.300 e 2.700 euro lordi al mese
+✅ La regola del limite maggiorato, per chi supera una soglia di poco
+✅ Chi non perde: fino a 2.447,40 euro l'aumento resta intero (esempi da 1.500 e 2.000 euro)
+✅ Le stesse percentuali del 2023
+
+CAPITOLI
+0:00 Rivalutazione pensioni 2027: il taglio dell'articolo 55
+0:19 La fonte: l'atto della Camera 3174
+0:38 Cosa cambia nella rivalutazione
+1:00 Le soglie: sei scalini sul trattamento minimo
+1:24 Iscriviti: è gratis
+1:41 I due metodi di calcolo: fasce di oggi e percentuale unica
+2:05 Oltre 6.118,50 euro: il 32% e il conto su 7.000 euro
+2:29 La perdita in un anno sui 7.000 euro: circa 1.448 euro
+2:42 Oltre 4.894,80 euro: il 37% e il conto su 5.100 euro
+3:04 Oltre 3.671,10 euro: il 47% e il conto su 3.800 euro
+3:25 Oltre 3.059,25 euro: il 53% e il conto su 3.300 euro
+3:42 Oltre 2.447,40 euro: l'85% e il conto su 2.700 euro
+4:02 La regola del limite maggiorato
+4:25 Fino a 2.447,40 euro: l'aumento resta intero
+4:50 La stessa scala del 2023
+5:13 In sintesi: cosa seguire
+
+Importante: la rivalutazione (o perequazione) è l'aumento che ogni gennaio adegua la pensione ai prezzi. La manovra è un disegno di legge: il Parlamento deve ancora votarla e può cambiarla. L'indice di rivalutazione 2027 lo fissa un decreto atteso a fine novembre: nei conti usiamo l'ipotesi del 3% e il trattamento minimo di 611,85 euro, e le soglie sono quelle che si ottengono se l'Inps usa il minimo dell'anno prima, come fa di solito. Gli importi sono lordi, mensili e arrotondati all'euro; la perdita in un anno è calcolata su 13 rate. Il confronto è con il metodo di quest'anno, a fasce. Lo scalino si decide sul totale delle tue pensioni, escluse ad esempio le prestazioni assistenziali.
+
+Fonti: Camera dei deputati (atto 3174, articolo 55, e scheda "Politiche previdenziali" su temi.camera.it), Inps (circolare n. 153 del 19 dicembre 2025 e circolare n. 1 del 2 gennaio 2024).
+
+📌 Iscriviti a Conti in Pensione: ogni conto lo facciamo sui testi ufficiali e ci vogliono ore. Vogliamo arrivare a 1.000 iscritti: un tocco non ti costa niente e per noi vuol dire poter andare avanti.
+Canale: https://www.youtube.com/@ContiInPensione
+
+Disclaimer: Contenuto informativo, non è consulenza previdenziale, fiscale o legale. Regole, importi e soglie cambiano: verifica sempre sui canali ufficiali (camera.it, inps.it) o rivolgiti a un patronato. Questo canale non è affiliato all'Inps, alla Camera dei deputati né al Governo.
+
+#rivalutazionepensioni #pensioni2027 #manovra2027 #taglipensioni #pensioni #pensionati #perequazione #inps #myinps
+
+=== TAG ===
+rivalutazione pensioni 2027, pensioni 2027, pensioni, taglio rivalutazione pensioni, taglio pensioni 2027, taglio pensioni, perequazione pensioni 2027, rivalutazione pensioni, pensioni gennaio 2027, pensioni 2027 aumenti, aumento pensioni gennaio 2027, articolo 55 pensioni, manovra 2027 pensioni, legge di bilancio 2027 pensioni, rivalutazione a blocchi, fasce rivalutazione pensioni, ultime notizie pensioni, notizie pensioni, pensioni novità 2027, my inps, conti in pensione
+
+=== COMMENTO DA FISSARE (dopo la pubblicazione) ===
+A che scalino sei? Scrivi il numero qui sotto 👇 1 = oltre 6.118,50 euro lordi al mese · 2 = oltre 4.894,80 · 3 = oltre 3.671,10 · 4 = oltre 3.059,25 · 5 = oltre 2.447,40 · 6 = fino a 2.447,40 (l'aumento resta intero)
+
+=== IMPOSTAZIONI ===
+IA: No. Promozione a pagamento: No. Miniatura: non ancora fatta (si fa solo su ordine). Schermata finale: 20 s (video correlato in mezzo in basso = "Pensioni 2027: quanto ci guadagni davvero? Esempi da 1.000 a 4.000 euro", 24K, id bQhQomfdstA, stesso tema delle rivalutazioni; nei pacchetti 13, 14 e 15 era "PENSIONI: TREDICESIMA 2026 DETASSATA?" (aMi8UjEO378, 124K): scegli tu quale; Iscriviti in basso a destra). Playlist: video lunghi. Il video correlato dello short teaser (da fare solo su ordine) si imposta sullo short, mai qui.

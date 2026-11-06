@@ -1,0 +1,3 @@
+{'blocco': 22, 'slide': 1, 'fotogrammi': 140, 'controllati': 140, 'fuori_area': 0, 'fuori_area_fotogrammi': [], 'ultimo_fuori_area': None, 'completo_a_80%': 1.0, 'pixel_che_cambiano_dopo_81%': 0, 'primo_elemento_s': 0.27, 'buco_max_s': 2.67, 'OK': True}
+{'blocco': 22, 'slide': 2, 'fotogrammi': 123, 'controllati': 123, 'fuori_area': 0, 'fuori_area_fotogrammi': [], 'ultimo_fuori_area': None, 'completo_a_80%': 1.0, 'pixel_che_cambiano_dopo_81%': 0, 'primo_elemento_s': 0.3, 'buco_max_s': 1.4, 'OK': True}
+{'blocco': 22, 'slide': 3, 'fotogrammi': 656, 'controllati': 656, 'fuori_area': 0, 'fuori_area_fotogrammi': [], 'ultimo_fuori_area': None, 'completo_a_80%': 1.0, 'pixel_che_cambiano_dopo_81%': 0, 'primo_elemento_s': 0.33, 'buco_max_s': 1.63, 'OK': True}

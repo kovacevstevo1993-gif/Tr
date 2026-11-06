@@ -1,0 +1,5 @@
+ok blocco 11 1002 fotogrammi
+blocco 11: durata 1002 f = 33.40 s; ultimo elemento compare a 26.05 s (80% = 26.72 s); oltre l'80%: []
+  fotogrammi controllati 1002; tagliati dal bordo: 0; margine minimo 6px; ultimo movimento al fotogramma: None (ultimi 20 = 982..1001)
+ffprobe fotogrammi: 1002
+FINITO 11

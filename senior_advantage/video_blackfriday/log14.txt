@@ -1,0 +1,5 @@
+ok blocco 14 945 fotogrammi
+blocco 14: durata 945 f = 31.50 s; ultimo elemento compare a 24.57 s (80% = 25.20 s); oltre l'80%: []
+  fotogrammi controllati 945; tagliati dal bordo: 0; margine minimo 6px; ultimo movimento al fotogramma: None (ultimi 20 = 925..944)
+ffprobe fotogrammi: 945
+FINITO 14

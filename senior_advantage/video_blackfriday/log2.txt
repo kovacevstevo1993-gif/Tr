@@ -1,0 +1,5 @@
+ok blocco 2 854 fotogrammi
+blocco 2: durata 854 f = 28.47 s; ultimo elemento compare a 22.20 s (80% = 22.77 s); oltre l'80%: []
+  fotogrammi controllati 854; tagliati dal bordo: 0; margine minimo 6px; ultimo movimento al fotogramma: None (ultimi 20 = 834..853)
+ffprobe fotogrammi: 854
+FINITO 2

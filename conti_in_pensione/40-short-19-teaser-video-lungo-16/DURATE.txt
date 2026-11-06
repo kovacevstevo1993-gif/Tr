@@ -1,0 +1,15 @@
+# Short 19 (teaser video lungo 16, rivalutazione 2027) - durate dagli screenshot CapCut (06/11/2026, 30 fps), lettura N.29 con DOPPIA LETTURA
+# Riga bianca a x=360; marchi 67 px. A = ultimo marchio prima della riga + 1; B = distanza in pixel della riga dal marchio (per eccesso). Coincidono su tutti e 5.
+# 1: punto dopo 4f (x341, = 5f) 19px -> 6f | 2: etichetta 2f (x335) 25px -> 3f | 3: etichetta 24f (x331) 29px -> 25f | 4: etichetta 4f (x341) 19px -> 5f | 5: etichetta 26f (x353) 7px -> 27f
+# blocco | fine (s+f) | fotogrammi totali | durata blocco | caratteri | c/s
+1 | 10s+6f | 306 | 306 | 157 | 15.4
+2 | 22s+3f | 663 | 357 | 202 | 17.0
+3 | 30s+25f | 925 | 262 | 157 | 18.0
+4 | 42s+5f | 1265 | 340 | 202 | 17.8
+5 | 55s+27f | 1677 | 412 | 218 | 15.9
+# TOTALE 1677 fotogrammi = 55.9 s. Tutti i blocchi tra 14 e 19 c/s. Testi in CapCut = copione v1 con blocco 5 nuovo (verificato dagli screenshot: frammenti dei blocchi 2-5 coincidono).
+306
+357
+262
+340
+412

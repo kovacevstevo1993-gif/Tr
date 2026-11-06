@@ -1,0 +1,30 @@
+[
+ {
+  "blocco": 27,
+  "slide": 1,
+  "fotogrammi": 200,
+  "controllati": 200,
+  "fuori_area": 0,
+  "fuori_area_fotogrammi": [],
+  "ultimo_fuori_area": null,
+  "completo_a_80%": 1.0,
+  "pixel_che_cambiano_dopo_81%": 0,
+  "primo_elemento_s": 0.3,
+  "buco_max_s": 1.2,
+  "OK": true
+ },
+ {
+  "blocco": 27,
+  "slide": 2,
+  "fotogrammi": 193,
+  "controllati": 193,
+  "fuori_area": 0,
+  "fuori_area_fotogrammi": [],
+  "ultimo_fuori_area": null,
+  "completo_a_80%": 1.0,
+  "pixel_che_cambiano_dopo_81%": 0,
+  "primo_elemento_s": 0.33,
+  "buco_max_s": 0.5,
+  "OK": true
+ }
+]

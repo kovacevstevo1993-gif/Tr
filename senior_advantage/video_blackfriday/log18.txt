@@ -1,0 +1,5 @@
+ok blocco 18 976 fotogrammi
+blocco 18: durata 976 f = 32.53 s; ultimo elemento compare a 25.38 s (80% = 26.03 s); oltre l'80%: []
+  fotogrammi controllati 976; tagliati dal bordo: 0; margine minimo 6px; ultimo movimento al fotogramma: None (ultimi 20 = 956..975)
+ffprobe fotogrammi: 976
+FINITO 18

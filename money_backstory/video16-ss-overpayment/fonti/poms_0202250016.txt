@@ -1,0 +1,295 @@
+
+SSA - POMS: GN 02250.016 - Presumptions of Not at Fault for Waiver Determinations - Title II and Title XVI - 11/22/2024
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 11/22/2024 - Present
+Previous
+ | 
+Next
+TN 67 (11-24)
+GN 02250.016 
+Presumptions of Not at Fault for Waiver Determinations - Title II and Title XVI
+CITATIONS:
+Social Security Act §§ 
+204(b)
+, 
+1631(b)(1)(B)
+20 C.F.R. §§ 
+404.506
+, 
+404.507
+, 
+404.510
+, 
+404.510a
+, 
+404.511
+, 
+416.550
+, 
+416.552
+A. 
+Introduction
+This section provides guidance to make a fault determination for waivers when we presume
+ an overpaid individual is not at fault for their overpayment.
+B. 
+Policy
+We make certain presumptions of not at fault for overpaid individuals. If they do
+ not meet any of these presumptions, consider making a not at fault finding under 
+GN 02250.005
+ - 
+GN 02250.025
+.
+NOTE: In determining whether a not at fault presumption applies because the individual
+ failed to report a change or accepted an incorrect payment, consider whether the individual
+ previously had a prior overpayment for the same reason. Refer to 
+GN 02250.021B.2.
+NOTE: In some of the circumstances listed below, in addition to finding the individual
+ not at fault, we will deem recovery to be against equity and good conscience and grant
+ the waiver request. Refer to 
+GN 02250.150
+.
+1. 
+Timely Reporting
+We will presume an individual is not at fault if they reported, or attempted to report,
+ the pertinent change(s) timely. For SSI changes, we consider they reported a change
+ in a timely manner if they report it within 10 calendar days after the month the change
+ occurred. For guidance on presuming not at fault for timely reported work activity,
+ refer to 
+GN 02250.025B.1.
+2. 
+Continued issuance of payments after reported changes
+We will presume an overpaid individual is not at fault for any payments made after
+ they reported a change that caused or should have caused a change in benefits, refer
+ to 
+GN 02250.023
+. If this is a subsequent overpayment, refer to 
+GN 02250.021B.2.
+3. 
+Incorrect change in benefit amount after reported change
+If an individual reported a change and we reduced benefits, when we should have terminated
+ or further reduced the benefit amount, we will presume the individual is not at fault,
+ refer to 
+GN 02250.023
+.
+4. 
+Incorrect benefit rate or insured status
+We will presume the individual not at fault if we made an error in computing the insured
+ status, benefit rate, or payment amount, refer to 
+GN 02250.023
+.
+5. 
+Overpayment due to earnings (Title II only)
+If an individual has a Title II overpayment due to earnings, determine if they meet
+ one of the criteria where we can presume the individual to be not at fault, refer
+ to 
+GN 02250.025
+.
+6. 
+Minor children and legally incompetent adults
+We will presume an individual is not at fault if they were overpaid as:
+•
+a minor child and had a representative payee (payee) when they received the overpayment,
+•
+an auxiliary child up until age 19 while they are still in high school and had a payee
+ when they received the overpayment, or
+•
+a legally incompetent adult.
+For the definition of legally incompetent adult, refer to 
+GN 00501.010B.7.
+NOTE: If a child received benefits as their own payee, make the fault determination
+ by considering all the circumstances in 
+GN 02250.005B.2.
+7. 
+Adult individual overpaid as a minor child with a representative payee
+For information on the presumption of not at fault and when we deem recovery against
+ equity and good conscience for an adult individual who was overpaid as a minor child
+ with a payee, refer to 
+GN 02250.150D.
+8. 
+When we find the number holder not at fault
+For Title II, if the number holder is not at fault in causing the overpayment, we
+ will presume that any other individual receiving benefits on the same record is not
+ at fault if they were overpaid for the same reason. For Title XVI, if an individual
+ is found not at fault in causing the overpayment, we will presume their eligible spouse
+ is not at fault if they were overpaid for the same reason.
+9. 
+Overpaid individual unaware that actions of another affect entitlement or eligibility
+ to benefits
+We will presume an individual who is overpaid because of another individual's action
+ (e.g. number holder working) is 
+not
+ at fault if:
+•
+they did not know and had no reason to know that the other individual's actions caused
+ or would cause an overpayment; and
+•
+they were not living with the individual who caused the overpayment at the time the
+ overpayment occurred.
+If the overpaid individual does not meet both criteria, you must develop the fault
+ determination under 
+GN 02250.005
+. We may still find the individual not at fault, even if they lived in the same household
+ with the number holder whose actions led to the overpayment. If we do not have evidence
+ that they knew or should have known of the number holder’s actions that led to the
+ overpayment, we will find them not at fault. Refer to example in 
+GN 02250.016C.1.
+10. 
+Misinformation from an official source
+For information on the presumption of not at fault when the overpayment was caused
+ by misinformation from an official source, refer to 
+GN 02250.061
+.
+11. 
+Cash surrender value of life insurance (Title XVI only)
+If an individual was overpaid because they were not aware that their life insurance
+ had a cash surrender value or if the cash surrender value increased over the resource
+ limit over time, we will presume they are not at fault.
+12. 
+Countable resources exceed limit (Title XVI only)
+For information on the presumption of not at fault when an overpayment was caused
+ by excess resources, refer to 
+GN 02250.090
+.
+13. 
+Medical institutionalization (Title XVI only)
+If the overpayment was caused by the individual’s admission into a medical institution,
+ we will presume they are not at fault.
+14. 
+Statutory benefit continuation of payments
+For information on the presumption of not at fault when an overpayment was caused
+ by the receipt of Statutory Benefit Continuation (SBC) and the individual appealed
+ in good faith, refer to 
+GN 02250.036
+.
+15. 
+Family maximum (Title II only)
+There is a maximum amount that we pay from an individual’s record, which includes
+ the number holder, their spouse, and children. We call this the family maximum. In
+ cases where the family maximum is involved, we will presume they are not at fault
+ when a beneficiary is retroactively entitled on the record. We also deem recovery
+ against equity and good conscience, refer to 
+GN 02250.150B.
+ For more information about family maximum, refer to 
+RS 00615.760
+ and 
+GN 02201.003
+.
+16. 
+Erroneous entitlement on more than one Social Security Number (SSN) record
+An individual may be overpaid because they received benefits based on erroneous entitlement
+ on more than one SSN record. If the individual filed for benefits and they did not
+ withhold information regarding filing for or receiving benefits on another record,
+ we can assume they thought they were entitled to separate payments from each record.
+ In these circumstances, we can presume the individual is not at fault for the overpayment.
+17. 
+We are unable to locate documents or documentation to support an overpayment
+For information on the presumption of not at fault and deeming recovery against equity
+ and good conscience when we are unable to locate documents or determine the cause
+ of the overpayment, refer to 
+GN 02250.011
+.
+18. 
+When we reopened a final determination based on a change of position
+We will presume an overpaid individual is not at fault when the overpayment resulted
+ from a revised determination on reopening due to a change in position, refer to 
+GN 04001.100
+. We also deem recovery against equity and good conscience. Refer to 
+GN 02250.150B.
+If the reopening was due to change in position but our revised determination that
+ unfavorably changed entitlement, eligibility, or payment amount was based on some
+ reason other than the change in position, we will make the fault determination by
+ considering all circumstances in 
+GN 02250.005B.2.
+19. 
+Short taxable year ending in death
+We will presume an individual is not at fault when their death caused excess earnings.
+ Effective November 11, 1988, we eliminated the short taxable year for the year of
+ death. Prior to that time, overpayments which occurred solely because of the computation
+ under the short taxable year were automatically considered for waiver. We will deem
+ recovery is against equity and good conscience, refer to 
+GN 02250.150
+.
+20. 
+Overpayments during the COVID-19 pandemic period
+We will find an overpaid individual is not at fault and deem recovery is against equity
+ and good conscience if their overpayment occurred because we deferred processing manual
+ adverse actions between March 17, 2020, and August 31, 2020. This waiver applies to
+ overpayments for the period of March 2020 through September 2020, identified on or
+ before December 31, 2020, that resulted from the pause in manual workloads. Some exceptions
+ to this waiver process are fraud, similar fault, double check negotiation, prisoner
+ suspensions and representative payee misuse.
+If the overpayment period has months within and outside of the pandemic period (March
+ 2020 through September 2020), we will make more than one waiver determination. We
+ will evaluate the fault determination for months outside the pandemic period by considering
+ the factors in 
+GN 02250.005B.2.
+ If the individual is not at fault, we will determine if we can approve the waiver
+ under one of these waiver provisions:
+•
+Deemed to defeat the purpose, refer to 
+GN 02250.110
+; or
+•
+Against equity and good conscience, refer to 
+GN 02250.150
+; or
+•
+Defeat the purpose of the Act, refer to 
+GN 02250.100
+.
+NOTE: Windfall Elimination Provision (WEP), Government Pension Offset (GPO), Bureau
+ of Worker’s Compensation (BWC) and public disability benefit (PDB) adverse actions
+ were held only from March 18, 2020, through June 22, 2020, when instructions were
+ updated to resume processing these workloads. We will presume the overpaid individual
+ is not at fault only for the months of March 2020 through June 2020 when actions were
+ held.
+C. 
+Example
+Example 1: Overpaid individual unaware that actions of another affect entitlement
+ or
+ eligibility to benefits
+Yrene returned to work but did not report their return to work timely. We stopped
+ their disability benefits, but due to Yrene’s late reporting, both Yrene and their
+ spouse, Chaol, were overpaid. Chaol lived in another state and had not communicated
+ with Yrene in years. Chaol requested a waiver of the overpayment. The technician found
+ Chaol not at fault in causing the overpayment because Chaol did not live with Yrene
+ at the time of the overpayment and did not know or have reason to know about Yrene’s
+ work activity. The technician found Chaol not at fault. The technician will next determine
+ if another waiver provision applies.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202250016
+GN 02250.016 - Presumptions of Not at Fault for Waiver Determinations - Title II and Title XVI - 11/22/2024
+Batch run: 
+08/21/2025
+Rev:
+11/22/2024
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.
