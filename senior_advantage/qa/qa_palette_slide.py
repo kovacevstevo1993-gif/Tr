@@ -15,7 +15,8 @@ def frames(path):
 def check(path):
     err = []
     for i, a in enumerate(frames(path)):
-        strip = a[1000:1080, :, :].reshape(-1, 3)
+        # video orizzontale: fascia bassa; verticale (short): bordo sinistro, dove non arrivano mai le schede (06/11/2026)
+        strip = (a[:, 0:30, :] if a.shape[0] > a.shape[1] else a[1000:1080, :, :]).reshape(-1, 3)
         r, g, b = np.median(strip, axis=0)
         if not (r < 28 and 30 <= g <= 75 and 0.68 <= b / g <= 0.92):
             err.append("fotogramma %d: sfondo (%d,%d,%d) non e verde bosco Walmart (circa 9,39,32 / 17,56,43)" % (i + 1, r, g, b))

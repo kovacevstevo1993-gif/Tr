@@ -41,6 +41,19 @@ GOLD_D = (168, 118, 40)
 CORAL_D = (150, 60, 52)
 STORES = ["WALMART", "TARGET", "COSTCO"]
 
+def _c(t0):
+    return min(t0, D() * 0.8)
+
+_pp, _xt, _pop, _bst = S.pp, xtext, S.pop, S.bst
+def pp(img, t, t0, *a, **k):
+    return _pp(img, t, _c(t0), *a, **k)
+def xtext(img, t, t0, *a, **k):
+    return _xt(img, t, _c(t0), *a, **k)
+def pop(t, t0, dur=0.45):
+    return _pop(t, _c(t0), dur)
+def bst(img, t, t0, *a, **k):
+    return _bst(img, t, _c(t0), *a, **k)
+
 def Q(key, n=1, off=0.0):
     """secondo della parola 'key' (+off), mai oltre l'80% del blocco: l'ultimo elemento compare entro l'80%"""
     return min(T(key, n) + off, D() * 0.8)
@@ -506,9 +519,9 @@ def c3(img, t):
     pp(img, t, tt, shield_spr(), 540, 1110, sc=0.74, shadow=12, amp=4, ph=0.5)
     bst(img, t, tt, 540, 1110, n=10, rad=200, seed=161, dur=0.5)
     xtext(img, t, tt + 0.15, "PROTECTS YOUR MONEY", 540, 1290, 46, GOLD, shadow=4, track=3, maxw=880)
-    pp(img, t, tl, card2_spr("long"), 290, 1590, sc=0.72, rot=-2, shadow=10, amp=4, ph=0.3)
-    pp(img, t, tpd, card2_spr("drop"), 790, 1590, sc=0.72, rot=2, shadow=10, amp=4, ph=1.3)
-    pp(img, t, ta, age_strip_spr(), 540, 1385, sc=0.62, shadow=8, amp=2, ph=0.5)
+    pp(img, t, tl, card2_spr("long"), 290, 1605, sc=0.72, rot=-2, shadow=10, amp=4, ph=0.3)
+    pp(img, t, tpd, card2_spr("drop"), 790, 1605, sc=0.72, rot=2, shadow=10, amp=4, ph=1.3)
+    pp(img, t, ta, age_strip_spr(), 540, 1372, sc=0.6, shadow=8, amp=2, ph=0.5)
 
 # ------------------------------------------------------------------ B4 (300 f = 10 s): due negozi su tre danno giorni limitati, poi la risposta puo essere no
 def c4(img, t):
@@ -526,7 +539,7 @@ def c4(img, t):
         w = int(900 * 0.96 * ease(u))
         sh = Image.new("RGBA", (max(2, w), 230), (0, 0, 0, 0))
         d = ImageDraw.Draw(sh)
-        d.rounded_rectangle([0, 4, max(2, w) - 1, 226], radius=26, fill=(70, 28, 24, 235), outline=CORAL, width=6)
+        d.rounded_rectangle([0, 4, max(2, w) - 1, 226], radius=26, fill=(70, 28, 24, 255), outline=CORAL, width=6)
         for k in range(0, max(2, w), 40):
             d.line([k, 14, k, 216], fill=(150, 60, 52, 200), width=5)
         put(img, sh, 540 - 432 + w / 2, 1300, alpha=min(1.0, u * 4))
@@ -576,7 +589,7 @@ def c6(img, t):
         pulse = 1.0 + 0.03 * math.sin(t * 6.0) * env(t)
         put(img, cta14_spr(), 540, 1700, scale=min(1.0, s) * pulse, alpha=al, shadow=12)
         bst(img, t, tn, 540, 1700, n=10, rad=120, seed=181, dur=0.5)
-    ah = seg(t, tn + 0.1, 0.5)
+    ah = seg(t, _c(tn + 0.1), 0.5)
     if ah > 0 and t < D() - 0.5:
         put(img, hand_spr(), 790 + 50 * (1 - ease(ah)), 1760 + 50 * (1 - ease(ah)) - (10 * math.sin(t * 6) * env(t) if ah >= 1 else 0), scale=0.6, alpha=min(1.0, ah * 3))
 
