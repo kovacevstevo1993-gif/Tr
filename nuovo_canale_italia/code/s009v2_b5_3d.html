@@ -22,7 +22,7 @@ const mag=new THREE.Group();mag.add(new THREE.Mesh(new THREE.TorusGeometry(.5,.0
 const nSp=S.numGroup(scene,'SPID','O CARTA D\'IDENTITÀ',0x35d6e0,{ms:.42,ss:.12,subCol:0x12303a});
 const circ=S.sheet((c,W_,H_)=>{c.fillStyle='#fbfaf5';c.fillRect(0,0,W_,H_);c.fillStyle='#12303a';c.font='bold 44px AB';c.textAlign='center';c.textBaseline='middle';c.fillText('CIRCOLARE N. 28',W_/2,100);c.fillStyle='#ff6b57';c.font='bold 36px PM';c.fillText('16 MARZO 2026',W_/2,170);c.fillStyle='#c9cfda';for(let i=0;i<9;i++)c.fillRect(60,250+i*52,W_-120-(i%3)*80,14);c.strokeStyle='#12303a';c.lineWidth=6;c.strokeRect(6,6,W_-12,H_-12);},520,740,2.6,null);scene.add(circ);
 const ok=S.check();scene.add(ok);const heart=S.heart();scene.add(heart);const star=S.star();scene.add(star);
-const nS1=S.num3d('SOLDI CHE',{size:.25,color:0xf3be3a});const nS2=S.num3d('CONTANO',{size:.33,color:0xf3be3a});scene.add(nS1,nS2);const conf=S.confetti(scene,110);
+const nS1=S.num3d('SOLDI CHE',{size:.21,color:0xf3be3a});const nS2=S.num3d('CONTANO',{size:.27,color:0xf3be3a});scene.add(nS1,nS2);const conf=S.confetti(scene,110);
 const tFar=st.tag(['COSA FARE'],dk({sw:3.0,font:'bold 92px AB',w:900,h:200,border:'#1fb8c4'}));
 const tEst=st.tag(['ESTRATTO CONTO','DELL\'INPS'],dk({sw:3.0,font:'bold 72px AB',w:960,h:300}));
 const tSp=st.tag(['CON SPID O CARTA','D\'IDENTITÀ ELETTRONICA'],dk({sw:3.0,font:'bold 56px AB',w:1000,h:300,border:'#1fb8c4'}));
@@ -36,7 +36,7 @@ function draw(t){
   const damp=1-eio(prog(t,DUR-0.55,DUR-0.06));S.liveBeach(scene,t);S.setDay(scene,st,Math.max(S.dayU(B,t),.9));
   const pI=.55+.45*POP(t,0,.5),pO=1-eo(prog(t,cInf,cInf+.4));ph.visible=pO>.01;ph.position.set(0,1.95+Math.sin(t*1.5)*.06,0);ph.rotation.set(-.05,Math.sin(t*.7)*.3,Math.sin(t*1.1)*.03);ph.scale.setScalar(Math.max(.001,.95*pI*pO));
   const mI=POP(t,cEst,.4);mag.visible=t>cEst-.05&&pO>.01;mag.position.set(.3+Math.sin(t*1.3)*.25,1.5+Math.sin(t*1.6)*.55+.3,.5);mag.scale.setScalar(Math.max(.001,.7*mI*pO));
-  const sI=POP(t,cCar,.4)*(1-eo(prog(t,cVal-.3,cVal)));nSp.visible=sI>.002;nSp.position.set(.9,3.0,.4);nSp.scale.setScalar(Math.max(.001,sI));nSp.rotation.y=Math.sin(t*.9)*.2;
+  const sI=POP(t,cCar,.4)*(1-eo(prog(t,cVal-.3,cVal)));nSp.visible=false;nSp.position.set(.9,3.0,.4);nSp.scale.setScalar(Math.max(.001,sI));nSp.rotation.y=Math.sin(t*.9)*.2;
   const kI=POP(t,cDic,.4)*pO;ok.visible=t>cDic-.05&&pO>.01;ok.position.set(1.0,2.2,.5);ok.scale.setScalar(Math.max(.001,.75*kI));ok.rotation.y=Math.sin(t*3)*.3;
   const cI=POP(t,cInf,.45)*(1-eo(prog(t,cMet-.1,cMet+.2)));circ.visible=cI>.002;circ.position.set(0,2.0+Math.sin(t*1.5)*.05,.4);circ.rotation.set(-.06,Math.sin(t*.8)*.2,Math.sin(t*1.2)*.03);circ.scale.setScalar(Math.max(.001,.5*cI));
   const hI=POP(t,cMet,.45)*(1-eo(prog(t,cIsc-.1,cIsc+.2)));heart.visible=hI>.002;heart.position.set(0,2.0+Math.sin(t*3)*.07,.6);heart.scale.setScalar(Math.max(.001,.6*hI*(1+.08*Math.sin(t*7))));heart.rotation.y=Math.sin(t*1.5)*.5;
