@@ -1,0 +1,5 @@
+ok blocco 20 770 fotogrammi
+blocco 20: durata 770 f = 25.67 s; ultimo elemento compare a 20.53 s (80% = 20.53 s); oltre l'80%: []
+  fotogrammi controllati 770; tagliati dal bordo: 0; margine minimo 90px; ultimo movimento al fotogramma: None (ultimi 20 = 750..769)
+ffprobe fotogrammi: 770
+FINITO 20

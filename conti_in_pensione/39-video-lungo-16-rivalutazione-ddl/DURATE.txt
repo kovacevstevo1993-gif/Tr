@@ -1,0 +1,20 @@
+# Durate video 16 (screenshot CapCut dell'utente del 05/11, fine di ogni blocco; lettura N.29: ultimo segno del righello + 1, doppia lettura etichetta/pixel a 66,5 px per fotogramma)
+# blocco | fine (mm:ss+f) | fotogrammi cumulati | durata blocco (fotogrammi) | caratteri | caratteri/secondo
+1 | 00:19+14f | 584 | 584 | 321 | 16.5
+2 | 00:38+22f | 1162 | 578 | 332 | 17.2
+3 | 01:00+11f | 1811 | 649 | 359 | 16.6
+4 | 01:24+12f | 2532 | 721 | 387 | 16.1
+5 | 01:41+20f | 3050 | 518 | 309 | 17.9
+6 | 02:05+3f | 3753 | 703 | 368 | 15.7
+7 | 02:29+28f | 4498 | 745 | 400 | 16.1
+8 | 02:42+26f | 4886 | 388 | 204 | 15.8
+9 | 03:04+4f | 5524 | 638 | 342 | 16.1
+10 | 03:25+5f | 6155 | 631 | 306 | 14.5
+11 | 03:42+13f | 6673 | 518 | 264 | 15.3
+12 | 04:02+15f | 7275 | 602 | 304 | 15.1
+13 | 04:25+27f | 7977 | 702 | 397 | 17.0
+14 | 04:50+15f | 8715 | 738 | 369 | 15.0
+15 | 05:13+15f | 9405 | 690 | 399 | 17.3
+16 | 05:42+20f | 10280 | 875 | 400 | 13.7  <-- FUORI 14-19
+# totale = 10280 fotogrammi = 05:42+20f
+# Dubbio +-1 fotogramma sui blocchi 7 e 9 (segno del righello sotto la riga bianca): irrilevante per le slide, l'utente puo' tagliare 1 fotogramma in CapCut.

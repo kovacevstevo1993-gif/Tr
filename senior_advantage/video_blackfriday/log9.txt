@@ -1,0 +1,5 @@
+ok blocco 9 1026 fotogrammi
+blocco 9: durata 1026 f = 34.20 s; ultimo elemento compare a 26.68 s (80% = 27.36 s); oltre l'80%: []
+  fotogrammi controllati 1026; tagliati dal bordo: 0; margine minimo 6px; ultimo movimento al fotogramma: None (ultimi 20 = 1006..1025)
+ffprobe fotogrammi: 1026
+FINITO 9

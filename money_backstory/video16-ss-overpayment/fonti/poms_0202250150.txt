@@ -1,0 +1,298 @@
+
+SSA - POMS: GN 02250.150 - Against Equity and Good Conscience - Title II and Title XVI - 12/19/2024
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 12/19/2024 - Present
+Previous
+ | 
+Next
+TN 74 (12-24)
+GN 02250.150 
+Against Equity and Good Conscience - Title II and Title XVI
+CITATIONS:
+Social Security Act §§ 
+204(b)
+,
+1631(b)(1)(B)
+20 C.F.R. §§
+404.509
+,
+404.512
+,
+416.554
+A. 
+Introduction
+This section provides guidance on how we determine that overpayment recovery is against
+ equity and good conscience after an individual has requested a waiver and we have
+ found the individual is not at fault. There are no income and resource limitations
+ for a finding of against equity and good conscience.
+B. 
+Policy
+Overpayment
+ recovery is against equity and good conscience when:
+•
+An individual relied on an expected payment after receiving notice that they would
+ receive payments from us or relied on the incorrect payment itself, and their financial
+ position changed for the worse or they relinquished a valuable right (GN 02250.150C); or
+•
+For Title II, an individual receiving benefits on the same earnings record as the
+ overpaid individual and lived in a separate household at the time of the overpayment
+ and did not receive the money that resulted in an overpayment (refer to GN 02250.016C.9. for Title II); or
+•
+For Title XVI, a spouse did not receive the money that resulted in an overpayment
+ and was legally separated from the overpaid spouse or lived in a separate household
+ from the overpaid spouse at the time of the overpayment event (refer to GN 02250.016C.9. and 
+SI 02201.022
+) for Title XVI).
+We
+ will deem recovery is against equity and good conscience in these situations:
+•
+The overpaid individual relied on misinformation from an official source (refer to
+GN 02250.061
+); or
+•
+An individual misunderstood our rules on allowable earnings and reasonably believed
+ earnings prior to the first month of entitlement would be excluded. This applies only
+ for months in which the individual’s earnings from employment did not exceed the total
+ monthly benefits for that month; and does not apply where the individual’s earnings
+ already exceeded the annual limit in the first month of entitlement, refer to GN 02250.025B.6.; or
+•
+An individual reasonably believed that we counted their net earnings (take-home pay)
+ instead of their gross earnings, refer to GN 02250.025B.5; or
+•
+A beneficiary’s death caused excess earnings, refer to GN 02250.016B.19.; or
+•
+An individual is overpaid because of the family maximum, refer to GN 02250.016B.15.; or
+•
+We are unable to locate documents or documentation to support an overpayment, refer
+ to 
+GN 02250.011
+; or
+•
+We reopened a final determination under the one-year rule based on a change of position
+ (refer to 
+GN 04001.100
+, SI 04070.010C.2., SI 04070.040C) and issued a revised determination, which resulted in an overpayment; or
+•
+An adult individual was overpaid as a child and had a representative payee at the
+ time of the overpayment, refer to GN 02250.150D in this section.
+C. 
+What does "change of position for the worse" or "relinquish a valuable right" mean?
+This information describes when an individual's position changes for the worse or
+ they relinquish a valuable right.
+1. 
+What does it mean to change a position for the worse
+We will find recovery is against equity and good conscience where the individual changed
+ their position for the worse in reliance on a notice from us that they would receive
+ benefits or in reliance on the benefits they were receiving. The type of benefits
+ or notice of benefits includes:
+•
+monthly benefits or payments; or
+•
+a lump sum payment; or
+•
+a notice of statutory benefit continuation (SBC) payments.
+An individual is in a worse position if they are in a more vulnerable financial position
+ than they would have been had they never received the benefits or a notice of benefits,
+ which have stopped or been reduced.  In considering whether the individual is in a
+ worse position now because their benefits have stopped or have been reduced, we will
+ consider whether they are receiving less benefits or no benefits because of a change
+ in eligibility or entitlement or because we are withholding benefits to recover the
+ overpayment.
+For situations when we will consider a change of position for the worse, refer to
+ GN 02250.150F in this section.
+NOTE:
+ We will not find an individual in a worse position merely because the individual
+ spent the overpaid money and must now repay the overpayment.   However, if an individual,
+ who is not at fault, already spent the overpaid money and is unable to afford repayment
+ of the overpayment, we will determine whether we can waive recovery under the deemed
+ to defeat the purpose or defeat the purpose provisions, refer to 
+GN 02250.110
+ and 
+GN 02250.100
+.
+2. 
+Situations when we will not consider a change of position for the worse
+We do not consider a change of position for the worse in situations that include but
+ are not limited to:
+•
+The individual will not be able to continue their “pay-as-you-go membership” at a
+ fitness club or gym because the individual is not financially obligated to continue
+ making payments.
+•
+The individual will not be able to continue ordering clothing and household goods
+ from an online retailer.
+•
+The individual made a non-refundable deposit on an expensive vacation. Even though
+ the individual cannot now afford to go on vacation, the individual is not in a worse
+ financial position because they would not have been able to go on vacation even if
+ they did not receive the incorrect payments. Additionally, the individual will not
+ experience negative financial repercussions, like a negative credit score, if they
+ do not pay the remaining balance.
+•
+If an adult who lives with their parents can no longer contribute to the household
+ bills, they are not in a worse financial position since they still live at home.
+Even though an individual in situations like these can no longer enjoy certain benefits,
+ they are not now in a worse financial position due to the receipt of the overpaid
+ money.  If, however, the individual cannot afford to repay the overpayment, we will
+ determine whether to waive recovery under the defeat the purpose provision. Refer
+ to 
+GN 02250.100
+.
+3. 
+What it means to relinquish a valuable right
+An individual has relinquished a valuable right if they have given up a valuable privilege,
+ claim, entitlement, or benefit having monetary worth because they relied on a notice
+ that we would pay benefits or because they relied on the actual benefit payment. 
+ For situations where an individual has relinquished a valuable right, refer to GN 02250.150G.
+D. 
+Adult individual overpaid as a minor child with a representative payee
+If we overpaid a minor child who is now an adult and the individual had a representative
+ payee at the time of the overpayment, we will find they are not at fault (refer to
+ GN 02250.016B.7.). We will deem recovery is against equity and good conscience.
+NOTE:
+The waiver would apply only to the overpayment balance remaining once the individual
+ attained age 18.
+E. 
+Situations - changed position for the worse
+These are examples of situations when an individual may be in a worse position because
+ of their reliance on the notice of or receipt of benefits, which we stopped or reduced.
+•
+Increased housing costs:
+ An individual might have moved to a more expensive residence or signed a lease based
+ on the assumption of receiving benefits. Due to the individual no longer receiving
+ benefits, the loss of the benefits could make it difficult to cover the higher housing
+ costs, putting them in a worse financial position.
+•
+Increased debt: 
+If an individual accumulated debt, such as student loans, based on the expectation
+ of ongoing benefits, the cessation of those benefits could lead to an inability to
+ repay those debts, resulting in financial hardship.
+•
+Long-term contract: 
+An individual may have entered into a long-term contract or commitment (e.g., vehicle
+ lease agreement or service contract) based on the assumption of continued benefits,
+ which could result in financial difficulty if the benefits are later reduced or stopped.
+•
+Reduced income: 
+An individual may have reduced their work hours or stopped working because they were
+ relying on Social Security benefits for their income. When benefits stop, they might
+ be in a worse financial position due to the lost income and potentially having less
+ earning potential as a result of their reduced work.
+•
+Education and training: 
+An individual may have enrolled in school or training that requires tuition based
+ on the expectation of ongoing benefits.  The cessation of those benefits could lead
+ to an inability to continue payments or could lead to increased educational expenses
+ or missed work opportunities.
+F. 
+Situations - relinquish a valuable right
+These are examples of situations where we may find an individual relinquished a valuable
+ right in reliance on the notice of an award of benefits or in reliance on the receipt
+ of benefits.
+•
+Missed
+ an opportunity: 
+An individual missed an opportunity they would have received if their benefit amount
+ were lower or if they were not receiving benefits.
+•
+Turned
+ down assistance: 
+An individual declines or does not take advantage of other forms of financial assistance
+ (like public assistance or community aid) because they expect to receive benefits
+ to support themselves. We may find the individual relinquished their right to that
+ additional support.  Public assistance could include lodging in a homeless shelter.
+•
+Assistance
+ denied: 
+An individual is denied another form of financial assistance because the individual
+ is receiving or is expected to receive SSA benefits.  We may find the individual relinquished
+ their right to that additional support.
+•
+Changed employment: 
+An individual leaves a job or reduces their working hours based on the expectation
+ of SSA benefits providing necessary income.  We may find that they have given up stable
+ employment income if they cannot return to a similar level of employment.
+G. 
+Estate or distributee requests waiver
+If an estate requests a waiver and we determine that the deceased overpaid individual
+ was not at fault for the overpayment, we will find recovery from the estate is against
+ equity and good conscience if the deceased overpaid individual meets the criteria
+ for against equity and good conscience.  If a distributee requests a waiver and we
+ determine that the distributee is not at fault for the overpayment, we will find recovery
+ from the distributee is against equity and good conscience if the distributee meets
+ the criteria for against equity and good conscience.
+For more information on evaluating fault when an estate or distributee requests waiver,
+ refer to 
+GN 02250.005
+.
+For more information on closed estates, refer to 
+GN 02215.070
+.  For more information on general recovery from an estate or distributee, refer to
+GN 02215.050
+, 
+GN 02215.055
+, 
+GN 02215.070
+.
+H. 
+Examples of an adult individual overpaid as a minor child
+Example 1:
+Xaden received SSI as a child. We determined that Xaden was overpaid $3,000 due to
+ deemed resources when they were still a child.  At that time, we notified Xaden and
+ Xaden’s representative payee of the overpayment.  We recovered a portion of the overpayment
+ by payment adjustment until Xaden’s benefits ceased at age 18.  At age 19, Xaden requested
+ a waiver of the entire original overpayment.  We presume Xaden is not at fault because
+ Xaden was a child and had a representative payee at the time of the overpayment and
+ there was no evidence of fault.  We deem recovery of the remaining amount at the time
+ that Xaden turned 18 years old, as against equity and good conscience because Xaden
+ was a child with a representative payee when they were overpaid. We will waive only
+ the portion of the outstanding overpayment while Xaden was an adult.  We will not
+ waive the overpayment amount that was recovered when Xaden was a child as against
+ equity and good conscience.
+Example 2:
+Violet received child’s benefits. We determined that they were overpaid $4,000 at
+ age 13 due to their parent’s wages. We notified Violet and the representative payee
+ of the overpayment.  Violet is now an adult and receives benefits on the same record
+ as a DAC. Violet requested a waiver.  We presume that Violet is not at fault because
+ Violet was a minor child and had a representative payee at the time of the overpayment.
+ We deem recovery is against equity and good conscience under this provision because
+ Violet is now an adult. We will waive only the portion of the outstanding overpayment
+ while Violet was an adult.  We will not waive the overpayment amount that was recovered
+ when Violet was a child as against equity and good conscience.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202250150
+GN 02250.150 - Against Equity and Good Conscience - Title II and Title XVI - 12/19/2024
+Batch run: 
+03/23/2026
+Rev:
+12/19/2024
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

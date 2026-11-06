@@ -1,0 +1,302 @@
+
+SSA - POMS: GN 02201.009 - Notification of a Title II Overpayment - 09/30/2026
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 09/30/2026 - Present
+Previous
+ | 
+Next
+TN 86 (09-26)
+GN 02201.009 
+Notification of a Title II Overpayment
+CITATIONS:
+Social Security Act
+ 204(a)
+20 C.F.R. 404.502a
+A. 
+Notifying overpaid individuals
+When you (or an automated system) discover an overpayment, send the overpaid individual
+ a notice as soon as possible, explaining that they were overpaid, the reason for and
+ the amount of the overpayment, and liability for repayment. If you discover the overpayment
+ during an oral communication (telephone call or interview), advise the individual
+ about the liability for repayment during the first oral contact. Document the conversation
+ on the Debt Management System (DMS) Remarks screen. Always send written notice using
+ the Manual Adjustment, Credit, and Award Data Entry (MACADE) system, AURORA, the Document
+ Processing System (DPS), etc.
+NOTE: 
+For exhibit notices, refer to 
+NL 00703.000
+ and for MACADE notices, refer to 
+NL 00720.000
+.
+B. 
+What the notice must include
+The overpayment notice 
+must
+ include this information:
+1. 
+The total amount of the overpayment and how and when it occurred, including:
+•
+The monthly amount the person was paid,
+•
+The monthly amount the person should have been paid,
+•
+Why a different amount was due, and
+•
+The months involved.
+NOTE: 
+If the overpayment resulted from the entitlement of another beneficiary, inform the
+ adversely affected beneficiary of the other beneficiary's name, relationship to the
+ number holder (NH), and basis for entitlement of the new beneficiary, refer to PC
+ Procedures for Handling Adverse Claims 
+GN 01010.325
+.
+You may use a single sentence, instead of a chart, when explaining what we paid versus
+ what was payable if the overpayment period does not include multiple months or multiple
+ money amounts. Here is an example of a single sentence: "We paid you $3,000 for June
+ 2026. We should have paid you $1,500. Since we should have paid you $1,500 for June
+ 2026, we paid you $1,500 more than you were due."
+For multiple overpayment periods and multiple money amounts, refer to the Notice chart
+ example.
+Notice chart example:
+What We Paid
+What We Should Have Paid
+$1,000.00 02/2023 through 11/2023
+$500.00 02/2023 through 11/2023
+$1,500.00 12/2023 through 11/2024
+$600.00 12/2023 through 11/2024
+$2,000.00 12/2024 through 11/2025
+$700.00 12/2024 through 11/2025
+Total Paid = 52,000
+Total Payable = $20,600
+Therefore, you are overpaid $31,400.
+2. 
+The right to request reconsideration of the overpayment determination. For information
+ about an overpayment reconsideration request, refer to 
+GN 02201.025
+.
+3. 
+The right to request waiver of recovery of the overpayment, and the automatic scheduling
+ of a personal conference if we cannot approve a request for waiver after the initial
+ review. For information about waiver requests, refer to 
+GN 02250.001
+. For more information about scheduling a personal conference, refer to 
+GN 02270.007
+.
+4. 
+Language requesting full and immediate refund.
+5. 
+Proposed adjustment if we do not receive the refund within 30 days and adjustment
+ is available, refer to 
+GN 02210.010
+.
+6. 
+The availability of:
+•
+Installment payments, when refund is requested and benefit withholding is not available;
+•
+Cross-program recovery, when refund is requested and the individual is receiving another
+ SSA payment (e.g., Title XVI); and
+•
+A different rate of withholding, when we propose 50 percent benefit withholding, refer
+ to 
+GN 02210.030
+.
+NOTE: 
+If the overpayment was the result of fraud (as determined by the Office of the Inspector
+ General (OIG)) or similar fault (as determined by SSA), a different rate of withholding
+ does not apply.
+7. 
+The requirement to notify the field office (FO) promptly if the individual requests:
+•
+Different rate of withholding,
+•
+Installment payments,
+•
+Waiver, or
+•
+Reconsideration.
+C. 
+Disability benefit continuation cases
+An individual who receives a medical cessation determination may elect to continue
+ receiving Title II disability payments while a request for reconsideration or for
+ a hearing before an Administrative Law Judge (ALJ) is pending. We call these payments
+ Statutory Benefit Continuation (SBC) payments.
+When an individual appeals a medical cessation determination at the reconsideration
+ or ALJ hearing level, they have 15 calendar days (10 days plus 5 mailing days) from
+ the date of the medical cessation notice to elect SBC. Upon an individual's timely
+ request for SBC, disability payments continue while we make the reconsideration determination
+ or hearing decision. For more information on SBC election and processing, refer to
+DI 12027.010
+.
+SBC payments stop after an ALJ issues a medical cessation decision even if the individual
+ continues the appeal process and requests Appeals Council (AC) review or review in
+ federal court.
+SBC payments are not overpayments until the medical cessation decision is final. The
+ medical cessation decision becomes final when the individual does not request further
+ review within the appeal period (and does not have good cause for a late appeal) or
+ has exhausted all levels of appeal. Therefore, we send an initial overpayment notice
+ to begin recovery of 
+SBC
+ payments
+ only if one of the following conditions is met:
+•
+At the reconsideration level: the individual does not appeal an unfavorable medical
+ cessation reconsideration determination to the ALJ hearing level, the 65-day (60 days
+ plus 5 mailing days) appeal period has expired, and there is no good cause for a late
+ request for a hearing;
+•
+At the hearing level: the individual does not request AC review of an unfavorable
+ ALJ medical cessation decision, the 65-day (60 days plus 5 mailing days) appeal period
+ expires, and there is no good cause for a late request for AC review. In this situation,
+ the ALJ will return the folder (electronic file) to the appropriate office, after
+ the 65-day period for requesting AC review expires;
+•
+At the AC level: the AC denies a request for review, but the individual does not request
+ judicial review of the ALJ decision and the 65-day (60 days plus 5 mailing days) period
+ to do so expires, and there is no extension or good cause for late request for judicial
+ review. In this situation the AC will return the folder (electronic file) to the appropriate
+ office, after the 65-day period for requesting judicial review expires; or
+•
+At the federal court level: the individual requests judicial review and the court(s)
+ affirms the ALJ decision. The technician will receive the final court decision.
+NOTE: 
+If the federal court remands the case and the AC then vacates the ALJ decision and
+ remands to the ALJ for another hearing and decision, please follow instructions in
+DI 12027.060
+ (Title II cases) and 
+DI 12027.065
+ (Title XVI and concurrent cases).
+IMPORTANT:
+ Before making any manual inputs to initiate recovery and issue an overpayment notice
+ related to SBC payments, technicians must review the individual's records to confirm
+ an appeal is not pending at the reconsideration, ALJ, AC, or federal court level (including
+ at the ALJ level after an AC remand) and that all the appeal time periods have expired.
+ Before making any manual inputs to initiate recovery and issue an overpayment notice
+ related to SBC payments, technicians must review the individual's records to confirm
+ an appeal is not pending at the reconsideration, ALJ, AC, or federal court level (including
+ at the ALJ level after an AC remand) and that all the appeal time periods have expired.
+D. 
+Individual has a representative
+If the overpaid individual has a representative (e.g., an attorney or non-attorney)
+ to act on their behalf, send a copy of the overpayment notice to the representative.
+For instructions on who is a representative, refer to, 
+GN 03910.020
+.
+For instructions on contacting a representative, refer to, 
+GN 03910.050
+.
+E. 
+Debtor is in a foreign country
+There are differences in the preparation and delivery of the overpayment notice when
+ the individual is located in a foreign country.
+Follow instructions in 
+GN 02215.001
+ through 
+GN 02215.015
+.
+F. 
+Advance notice
+The recovery date (i.e., the date full refund is due and, if appropriate, the date
+ adjustment will begin) must be at least 30 days after the date of the overpayment
+ notice. However, we send the individual an overpayment notice approximately 90 days
+ before initiating recovery refer to 
+GN 02210.001
+. This advance notice ensures that we grant the overpaid individual a meaningful opportunity
+ either to contest the correctness of an overpayment determination or to establish
+ the criteria for waiver.
+NOTE: 
+The automated system, as well as MADCAP, calculates this date automatically depending
+ on the debit run date, refer to SM 00610.715, Recovery when the Overpaid Person is
+ in LAF C or D.
+If the individual responds within 30 days of the date of the overpayment notice, the
+ FO 
+must
+ stop collection activity to ensure that we continue benefit payments, refer to MS
+ 01106.019. If we cannot ensure the 30-day period, the PSC must extend any proposed
+ adjustment for a longer period, refer to MS 01106.003.
+G. 
+Exception to advance notice
+Advance notice is not required if the overpaid individual has already received advance
+ notice with respect to the overpayment.
+EXAMPLE:
+ In February 2025, we sent an overpayment notice to Sally Jones, who is no longer
+ entitled to benefits. Sally subsequently became re-entitled to benefits in March 2026.
+ A new advance overpayment notice is not necessary. We initiate immediate overpayment
+ recovery in the current operating month (COM).
+In addition, advance notice is not required if:
+•
+An incorrect payment results because a payment(s) is directly deposited into a joint
+ bank account after the individual's death and the surviving joint account owner is
+not
+ entitled on the deceased's record for the month before the month of death, refer
+ to 
+GN 02201.001F
+ and 
+GN 02201.007F
+; or
+•
+Benefits are incorrectly paid for the current year based on a current year work estimate
+ of earnings, refer to 
+GN 02201.001F.
+NOTE: 
+Even where an exception to the 30-day advance notice required by 
+GN 02201.009G
+ applies, appeal and waiver considerations may still require us to provide notice
+ to the individual before suspending their benefits. For more specific instructions,
+ refer to 
+GN 03001.005
+.
+If advance notice is not required, adjustment begins effective COM. However, if the
+ individual appeals or requests waiver, stop recovery and follow normal instructions,
+ depending on the type of appeal the individual requested.
+H. 
+Failure to give adequate notice
+If we did not send a notice, the content of the notice did not comply with subsection
+GN 02201.009B
+, or the individual did not receive notice at least 30 days before adjustment action,
+ send a new notice with all of the required information specified in subsection 
+GN 02201.009B.
+ Repay the individual any money that we withheld to recover the overpayment. Update
+ the overpayment balance and the recovery date another COM plus 2 months.
+I. 
+Undeliverable notice
+If you receive a returned overpayment notice as undeliverable, follow instructions
+ for skip tracing in 
+GN 02210.213C.
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202201009
+GN 02201.009 - Notification of a Title II Overpayment - 09/30/2026
+Batch run: 
+09/30/2026
+Rev:
+09/30/2026
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

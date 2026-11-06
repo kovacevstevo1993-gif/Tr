@@ -1,0 +1,847 @@
+
+SSA - POMS: GN 02201.030 - Collection of Title II Overpayments by Tax Refund Offset (TRO) - 05/08/2025
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 05/08/2025 - Present
+Previous
+ | 
+Next
+TN 78 (05-25)
+GN 02201.030 
+Collection of Title II Overpayments by Tax Refund Offset (TRO)
+A. 
+What is the Tax Refund Offset (TRO) policy?
+1. 
+Authority for TRO
+The Omnibus Budget
+ Reconciliation Act of 1990
+, Pub. L. No. 101-508, and the Cash Management Improvement Act, Pub. L. No. 102-589
+ of 31 USC § 3720A permit the Social Security Administration (SSA) to recover delinquent
+ Title II overpayments from former beneficiaries by offsetting their federal income
+ tax refunds. The Unemployment Compensation Act of 1992 made TRO a permanent authority
+ for SSA.
+2. 
+Criteria for TRO selection
+SSA's system selects debts for recovery by TRO from the Recovery of Overpayments,
+ Accounting and Reporting (ROAR) file, the Master Beneficiary Record (MBR) and Numident
+ records. The main criteria for TRO selection is:
+•
+The debtor is alive;
+•
+The debtor is not entitled to benefits (ledger account file (LAF) code is equal to
+ T, U, X, N or P);
+•
+The debtor was 18 years or older when the debt was established on SSA's records;
+•
+The beneficiary’s own account number (BOAN) for the debtor can be identified on the
+ MBR;
+•
+The debt is $25 or more;
+•
+The debtor is not making regular installment payments, or efforts to recover the debt
+ have terminated (for example,TC-71 debts);
+•
+The debt is past due, and
+•
+The debt is legally enforceable.
+NOTE: 
+TRO runs on a weekly selection and certification cycle. The Department of the Treasury
+ (Treasury) conducts the TRO program through its automated system, the Treasury Offset
+ Program (TOP). For more information about TOP, see 
+GN
+ 02201.029
+.
+NOTE: 
+Effective May 12, 2017, SSA no longer refers Title II, Title VIII, or Title XVI debts
+ that have a delinquency date of May 19, 2002 or earlier. There is no manual action
+ necessary to prevent TOP selection or referral because TOP selection is automated.
+ Rather, our automated External Collection Operation (ECO) system no longer selects
+ these debts for external collection. Debts with a delinquency date after May 19, 2002
+ remain eligible for TOP referral.
+NOTE:
+ Due to economic challenges during the COVID-19 pandemic, SSA suspended TOP debt collection
+ activities in March 2020. TOP activities resumed in March 2025.
+3. 
+Pre-offset notice
+Once SSA's system selects a debt for TRO, SSA must send the debtor a pre-offset notice.
+ ECO retrieves a verified address for the debtor from an Address Verification Contractor
+ (AVC).
+•
+If the AVC provides a good address, then the pre-offset notice is mailed to that address.
+•
+If the AVC does not return a good address and the MBR or Supplemental Security Record
+ (SSR) was updated within the last year, the notice is mailed to the address on the
+ MBR or SSR.
+•
+If there is no good address from the AVC and the MBR or SSR address was updated more
+ than a year ago, the AVC will be checked again in six months. The pre-offset notice
+ will be mailed once a good address is obtained.
+For information on handling undeliverable pre-offset notices, refer to 
+GN 02201.030F
+ in this section.
+For more information on the selection, notification, and referral process, refer to
+GN 02201.029C
+.
+NOTE: 
+The automated address request operation is a separate project from the address requests
+ made by the Debt Management Sections (DMS). The automated operation has no impact
+ on the Direct Management Sections requests.
+The notice informs the debtor of the planned offset action and that:
+•
+The debtor owes a delinquent overpayment debt in a particular amount;
+•
+SSA plans to refer the debt to Treasury for TRO; and if applicable, administrative
+ offset, conduct administrative wage garnishment, and send information about the debt
+ to credit bureaus after 60 days have expired from the date on the notice;
+•
+SSA will not take this action if, before the end of that 60-day period, the debtor
+ pays the debt in full, makes regular installment payments under an agreement with
+ SSA, requests waiver, or furnishes evidence showing that all or part of the stated
+ amount is not owed or SSA does not have the right to collect the debt; and
+•
+The debtor has the right to review and request a copy of SSA's records regarding the
+ debt.
+NOTE: 
+ECO notices sent November 2015 or later are stored in the Online Notice Retrieval
+ System (ORS). For ECO notices sent prior to November 2015, view the ECO master query.
+ For additional information on the CO master query, see MS 01114.007.
+B. 
+What is past-due debt?
+1. 
+Definition of past-due debt
+For SSA TRO purposes, a past due debt is one in which:
+•
+Payment is delinquent; and
+•
+No appeal or waiver request is pending.
+2. 
+When a debt is delinquent
+A debt is delinquent on the later of the following dates:
+•
+The 60th day after the date the debt is established on ROAR; or
+•
+The date on which a decision on a reconsideration and waiver request is posted to
+ ROAR.
+C. 
+What is legally enforceable debt?
+A legally enforceable debt for SSA TRO purposes is a debt that is still subject to
+ recovery from the debtor because:
+•
+The debt has not been paid in full;
+•
+Recovery of the debt has not been waived;
+•
+A petition for bankruptcy is not pending in court;
+•
+The debtor is alive; and
+•
+The debtor is primarily liable for the debt.
+D. 
+How should debtor inquiries and protests, pre-offset, be handled?
+In most cases, the debtor has previously been given ample opportunity to dispute the
+ overpayment and repay the debt. However, there are situations when the selection for
+ TRO may be erroneous because SSA's records contain outdated or incorrect information.
+Although, the time period to request reconsideration of the overpayment determination
+ has passed, under the TRO process, the debtor has the right to object to the collection
+ of a debt on the basis that all or part of the debt is not past-due or not legally
+ enforceable, see 
+GN 02201.030B
+ and 
+GN 02201.030C
+ in this section.
+This section explains how to handle specific inquiries, protests and allegations prior
+ to certification and subsequent offset.
+1. 
+Request for explanation of overpayment
+For a request for an explanation of the overpayment, proceed as follows:
+a. 
+Field Office (FO) and Teleservice Center (TSC) action
+If the debtor contacts the FO or TSC requesting an explanation, use the MBR, ROAR,
+ Payment History Update (PHUS), Or Query Response Overpayment (QROP) to provide an
+ explanation of the overpayment.
+NOTE:
+ Keep explanations generic and if possible, provide the explanation immediately.
+For example: “You were no longer disabled as of 05/24 and continued to receive payments
+ through 12/24; or you remarried in 03/24 and continued to receive checks through
+ 07/24.”
+If you are able to provide adequate explanation, do not input "Explanation" on the
+ Protest Request screen DRPF for FO , see MS
+ 01106.019) and DRPT for TSC see MS
+ 01106.020.
+If online queries contain insufficient information or unresolvable discrepancies,
+ proceed as follows:
+•
+Input "Explanation" on the Protest/Stop recovery screen (DRPF for FO and DRPT for
+ TSC), see MS 01106.019 and MS 01106.020.
+•
+Refer to the Processing Center (PC) to provide an explanation to the debtor and update
+ the Debt Management System (DMS) remarks screen (RMKS) with your action.
+•
+Annotate the referral "Necessary Action - TOP/Credit Bureau Case - Do Not Backlog.”
+ If asked, advise the caller to expect a response within 30 days.
+b. 
+PC action
+If the debtor contacts the PC directly or a request is received from the FO for explanation
+ of overpayment, you must
+•
+Stop recovery (if applicable) via the Protest/Stop Recovery Request DRPF screen in
+ the Debt Management System using the "Explanation" protest reason, see MS 01106.003.
+•
+Check ORS for any notices sent to the debtor regarding the overpayment, then provide
+ explanation,
+•
+Resume recovery (if applicable) by providing a written explanation of the overpayment
+ using the following:
+–
+MBR
+–
+ROAR
+–
+PHUS
+–
+OPWIZ (located on the personal communications, Office of Quality Assurance (PCOM OQA)
+ toolbar); or
+–
+In paperless
+If online queries contain insufficient information or unresolvable discrepancies,
+ proceed as follows:
+–
+Input "Explanation" on the Protest/Stop Recovery Request (PC) screen (DRPR).
+However, if the FO has already input "Explanation" , provide the explanation to the
+ debtor, see 
+GN 02201.030D.1.a
+ in this section.
+–
+Determine if the debtor is satisfied with the response and ensure there are no additional
+ requests (e.g. request for waiver).
+–
+Review the status of the debt and process as follows:
+•
+If the debt was written off (in terminated collection status) when the debtor requested
+ an explanation, terminate the collection by using the Terminate Collection screen
+ (DFTE), see MS 01107.003.
+Terminating the collection will set the debt up for TOP selection in the next monthly
+ selection cycle; or
+•
+If the debt was in the Recovery and Collection of Overpayment Process (RECOOP) system
+ and was not written off when the debtor requested an explanation, input an installment
+ agreement on the Record Installment Agreement screen (DRIN), see MS
+ 01106.014.
+This will resume billing and allow the system to select the debt for TOP in the next
+ selection.
+2. 
+Request for waiver
+If the debtor requests a waiver, obtain a Request for Waiver of Overpayment Recovery
+ (SSA-632-BK) in accordance with current instructions, Waiver basics in 
+GN 02250.001
+ and Processing a waiver request in 
+GN
+ 02250.002
+.
+Advise the debtor that TRO remains in effect until SSA receives a completed SSA-632-BK
+ (or its equivalent).
+Input the waiver request, when the SSA-632-BK is received, in the Protest Request
+ screen (DRPF for FO and DRPT for TSC).
+Do not delay 
+recording the request once written documentation is received. Process in accordance
+ with 
+GN
+ 02250.002
+.
+3. 
+Request to review record
+•
+If the debtor asks to review records in person at the FO, obtain all systems (MBR/ROAR/PHUS)
+ queries and explain what the queries show.
+•
+If the debtor makes a request by telephone to the FO, set up an appointment for a
+ review of the MBR/ROAR/PHUS queries. Set the appointment well within the 60-day time
+ limit allowed for the debtor to submit evidence.
+•
+If the debtor makes a request to a TSC or PC, advise the FO to contact the debtor
+ to set up an appointment, and advise the requester that someone from the FO will contact
+ them to schedule an appointment.
+In all situations, the FO will attempt to satisfy the request for review without the
+ need to obtain the claims folder. However, if the debtor wishes to review the folder,
+ you must obtain it.
+If the FO has not conducted a folder review before the 60 days allowed for due process
+ has expired, input “Explanation” to the Protest/Stop Recovery request (PC) screen
+ (DRPR using code TC-23E).
+NOTE:: 
+Certification will occur no less than 60 days after the date of the pre-offset notice.
+4. 
+Request for installment payments
+If the debtor wants to repay the debt by monthly installments, to negotiate a reasonable
+ monthly payment amount, follow 
+GN
+ 02210.180
+.
+Advise the debtor that the debt will remain eligible for TRO until we receive a payment;
+ and the debt will not be referred to TRO as long as payments are made according to
+ the agreement. However, upon default of one or more installment payments, the system
+ will refer the debt to Treasury for collection; where it will remain until the debt
+ is paid in full. The debtor may, subsequently, offer to restart or resume paying regular
+ installments. We will accept and apply those payments towards the debt and the payments
+ will not deactivate TRO.
+Tell the debtor to send the installment payment(s) to the address shown on the “Payment
+ Stub” form attached to the pre-offset notice or pay online using the information provided
+ in the pre-offset notice. If the debtor does not have the form, provide the remittance
+ address (MATPSC, P.O. Box 3430, Philadelphia, PA 19122-9985). Always make sure that
+ the name and claim number are on the remittance to ensure proper posting for the beneficiary.
+Input the manual installment agreement via the Record Installment Agreement (DRIN)
+ screen, see MS 01106.014.
+5. 
+Debtor objects to collection of debt
+a. 
+Debtor objects to SSA's determination that the debt is past-due and legally enforceable
+ and an external collections review is requested.
+Under the law that authorizes TRO, a debtor has the right to object to the collection
+ of a debt on the basis that all or part of the debt is not past-due or not legally
+ enforceable (see 
+GN 02201.030B
+. and 
+GN 02201.030C
+ in this section.)
+These types of protests require submission of evidence to rebut SSA's findings. However,
+ there will be some situations in which we'll base an effective protest to collection
+ on the debtor's current statement and information in the claims folder only.
+If the debtor objects collection, SSA must receive evidence supporting the objection
+ within 60 days from the date of the pre-offset notice.
+Examples of evidence that could rebut SSA's determination that a debt is past due
+ and legally enforceable include:
+•
+Copies of checks (front and back), money orders, and receipts showing payments that
+ reduced or eliminated the debt;
+•
+A waiver approval notice,
+•
+A waiver or reconsideration request (but no SSA determination regarding that request);
+•
+A hearing request (but no SSA determination regarding that request);
+•
+A report that the debtor is deceased; or
+•
+Bankruptcy documents showing that the debt has been discharged or a bankruptcy petition
+ is pending.
+NOTE: 
+This list is not all-inclusive. SSA must evaluate any evidence submitted by the debtor
+ on a case-by-case basis.
+If evidence to support objection to collection of the debt is received 
+after
+ 60 days from the date of the pre-offset notice, SSA will accept and review the evidence.
+ However, the debt remains in the TRO program unless evaluation of the evidence proves
+ the debt is not past due and legally enforceable.
+1. 
+FO action
+If the debtor objects collection, proceed as follows:
+•
+Obtain a statement from the debtor that explains their reason(s), such as a Statement
+ or Other Person, Form SSA-795 for objection to collection of the debt. 
+DO NOT OBTAIN AN SSA-561-US
+ (Request for Reconsideration)
+.
+•
+Accept any evidence the debtor submits.
+•
+Input the protest to the DRPF screen using selection #19 Non-Enforcement. This releases
+ a TC-23Q (TRO LEG ENF/PAST DUE) code to ROAR. See Protest/Stop Recovery Request (FO)
+ (DRPF)MS 01106.019.
+•
+Forward material to the PC annotated "NECESSARY ACTION - TOP/Credit Bureau Case -
+ Do Not Backlog"
+2. 
+PC action
+If the debtor objects collection, proceed as follows:
+•
+Obtain the claims folder.
+•
+Obtain additional information if needed from the debtor prior to making a decision.
+ Contact the debtor by telephone or direct mail, if possible.
+•
+Review the evidence to determine if the debt is still past due and legally enforceable
+ as defined in 
+GN 02201.030B
+ and 
+GN 02201.030C
+ in this section. If so, and the case can be adjudicated without additional information,
+ send a notice to the debtor explaining why the debt is collectable (in whole or in
+ part).
+•
+Notify the debtor of the final decision and input the Terminate Collection (DFTE)
+ screen to re-activate ECO, see MS 01107.003.
+•
+If the final decision is the debt is NOT past due or legally enforceable and the debt
+ is still active in ECO, input the Stop Collection Action (TRSC) screen to deactivate,
+ see MS 01114.003. Make any other necessary updates or corrections to the record.
+IMPORTANT
+: Since a review to determine if a debt is past due and legally enforceable is not
+ an initial determination, do not include any appeals language in the decision notice.
+b. 
+Debtor protests the fact or amount of debt.
+If a debtor protests the fact or amount of a debt, obtain a full account (FACT) MBR
+ query.
+If there is no indication that a request for review is pending, explain that the time
+ period to appeal the overpayment determination has expired and, therefore, the determination
+ is final. If the debtor establishes good cause for extending the time limit, process
+ the request as timely filed, see 
+GN 03101.020
+.
+If the debtor indicates there is evidence that refutes SSA's records, explain that
+ we will refer the debt to Treasury unless we receive the evidence within 60 days from
+ the date of the pre-offset notice. When the evidence is received, follow 
+GN 02201.030D.5.a.1
+ and 
+GN 02201.030D.5.a.2
+ in this section.
+c. 
+Examples
+The following are case examples of objection to collection of the debt via TRO.
+1. 
+Partial payment received after TRO selection
+We propose offset of a $900 debt. The debtor protests the amount of the debt and submits
+ a copy of a receipt showing a $100 payment and an $800 debt balance. To verify receipt
+ of payment and update ROAR, follow SM 00610.296 . Advise the debtor that TRO will be for $800.
+2. 
+Full payment received after TRO selection
+If, in the above example, the verified remittance is for the total $900 debt, correct
+ the ROAR. Advise the debtor that we have corrected our records and since there is
+ not a past due debt, we will not ask the IRS to withhold their tax refund.
+3. 
+Contingent liability case
+A debtor alleges never being overpaid, but SSA was withholding another person's overpayment
+ from their benefits. ROAR and PHUS support the allegation. Delete the debt from the
+ debtor's TRO/ROAR records and reestablish the debt to the overpaid person. Advise
+ the debtor of their non-liability.
+4. 
+Debtor confuses agency owed
+The TRO notice proposes offset of a $500 debt established in 2022. The debtor protests
+ and submits a copy of a cancelled check indicating a $500 payment in 2023. However,
+ the check payee was IRS. Since SSA was not in the TRO program in 2022, there is no
+ way the debtor could mistakenly send payment to IRS for an SSA debt. Notify the debtor
+ accordingly and advise that SSA will proceed with TRO.
+IMPORTANT:
+Since a review to determine if a debt is past due and legally enforceable is not an
+ initial determination, do not include any appeals language in the decision notice.
+6. 
+Debtor alleges nonreceipt of overpayment
+If a debtor alleges nonreceipt of the overpayment, obtain an MBR, ROAR and PHUS query.
+ If the query shows no record of nonreceipt of the payment(s) in question, proceed
+ as follows:
+•
+If the debtor had a representative payee, explain that we sent the payment to the
+ payee and there is no indication that the payee did not receive the payment(s).
+•
+If there was no representative payee (payee), explain that our records do not show
+ any evidence of a nonreceipt allegation at the time we sent the initial overpayment
+ notice.
+•
+If the debtor insists that we provide a photocopy of the check(s) in question, explain
+ that we will investigate but our system will still refer the debt to Treasury for
+ offset. We will repay any erroneous offset if our investigation supports the nonreceipt
+ allegation. To handle the nonreceipt allegation (these references apply to Title II,
+ Title XVI and Black Lung payments), follow 
+GN 02406.000.
+DO NOT 
+make a ROAR input.
+NOTE:
+ If the investigation shows that a copy of the check is not available, presume that
+ the debtor received the check. We will determine the overpayment occurred and remains
+ subject to collection.
+7. 
+Debtor makes a compromise offer
+If the debtor makes a compromise offer, process in accordance with existing instructions
+ in 
+GN 02215.100
+ through 
+GN 02215.125
+.
+8. 
+Debtor alleges nonreceipt of initial overpayment notice
+If a debtor alleges never receiving the initial overpayment notice, proceed as follows:
+a. 
+TSC action
+•
+Advise the debtor to submit a statement regarding nonreceipt of the notice along with
+ a current address and telephone number to the FO in person or by mail.
+•
+Provide the address and telephone number of the FO that services the debtor.
+•
+Explain to the debtor that TRO will continue to apply unless we can confirm their
+ allegation.
+b. 
+FO action
+•
+Get a statement from the debtor regarding nonreceipt of the notice along with his
+ or her current address.
+•
+Forward material to the PSC annotated “Necessary Action TOP/Credit Bureau Case --
+ Do Not Backlog.”
+•
+Explain to the debtor that TRO will continue to apply unless we can confirm their
+ allegation through a folder review.
+If the claims folder is in the FO after a folder review is requested, check for an
+ undeliverable notice, see 
+GN
+ 02201.030D.4
+ in this section. If an undeliverable notice is present:
+•
+Advise the debtor that further investigation is necessary.
+•
+Return the folder to the PC, clearly marked “TRO - Undeliverable Overpayment Notice
+ in File - Do Not Backlog.”
+c. 
+PC action
+Review the claims folder to determine if the notice was returned as undeliverable.
+ If so, verify that we did not mail a subsequent notice. If we did not mail a subsequent
+ notice, the debtor has the right to a full administrative review process. Therefore:
+•
+Re-date and mail the notice to the debtor's current address.
+•
+Delete the old overpayment on ROAR via the Transaction Correction (SMTC) screen, see
+ MS 01102.011.
+•
+Query ROAR the following day to verify deletion. When deleted, reestablish the overpayment
+ as a new debt on ROAR via the Establish Debt (SMED) screen, see MS 01102.003. Use the current date as the establishment date.
+NOTE: 
+The above actions will delete the debt from the TRO program until the debt becomes
+ delinquent and meets all TRO selection criteria.
+If we mailed a subsequent notice, advise the debtor (by telephone, if possible) of
+ the date we sent the new notice.
+If there is no evidence to support the debtor's allegations, advise the debtor accordingly
+ (by telephone, if possible). Explain that since there is no evidence that the notice
+ was returned as undeliverable by the post office, we must proceed on the assumption
+ that the notice was received.
+Document the Debt Management System Remarks screen (RMKS) with the information about
+ debtor contact.
+9. 
+Report of death
+For a report of death, follow this procedure:
+a. 
+FO/TSC Action
+If the FO/TSC finds out that a debtor is deceased, input the death report via the
+ Death Information Processing System (DIPS). FO technicians must obtain proof of death
+ as required by 
+GN 00304.001
+.
+b. 
+PC action
+If the PC finds out that a debtor is deceased, input the death report via DIPS. Obtain
+ proof of death as required by 
+GN 00304.001
+.
+Input the death using the Stop Offset screen (TRSO) which is requested from the Debt
+ Management Menu's (DMMU) function number 12 — Treasury Offset Program Menu (TRMU)
+ screen. This input will delete the debtor from TOP, see MS
+ 01114.002 and MS 01114.003.
+Conduct any estate development in accordance with 
+GN 02215.050
+ through 
+GN 02215.070
+.
+10. 
+Report of bankruptcy action
+If the debtor alleges a bankruptcy petition is pending or the court discharged the
+ debt in bankruptcy, obtain a copy of the petition or discharge order. Input “Decision
+ Pending” via the DFBP screen (Record Bankruptcy Petition) and send the petition to
+ the PC for action. (See 
+GN 02215.185
+ for information on handling bankruptcy cases.) To process a notification of pending
+ bankruptcy, for FO procedures see
+GN 02215.190
+ and for PC procedures 
+GN 02215.195
+.
+If the debtor alleges that the court discharged the debt in a bankruptcy judgment,
+ ask the debtor to submit a copy of the discharge. If the judgment includes the SSA
+ debt, input “Decision Pending” via the DFBP screen to prevent any further collection
+ activity. If the judgment does not include the SSA debt, make no system input. The
+ PC handles the case according in accordance with 
+GN 02215.230
+.
+E. 
+How should post offset and post certification inquiries be handled?
+SSA will receive some inquiries after certification of cases to Treasury or after
+ actual offset has occurred. In many of these cases, the debtor simply failed to contact
+ us to resolve the repayment issue as specified in the pre-offset notice. There are
+ other situations, however, where certification to Treasury may have been incorrect.
+ This section explains how to handle specific post offset and post-certification inquiries.
+1. 
+Allegation of pending protest, waiver, or hearing request
+If a debtor alleges that he or she filed a protest or requested waiver or hearing
+ but never received a decision, obtain a ROAR query and proceed as follows:
+a. 
+If there is an Initial Waiver (23W), Recon Fact/Amount (23R), or Hearing (23H) posted
+ before the date of the offset but no decision has been made and released:
+•
+The PC refunds any amount offset by Treasury. This refund is known as an Agency Refund,
+ and we must notify Treasury about the refund. Input the Agency Refund using the Correct
+ Offset Amount screen (TRCA), which is requested from the Debt Management Menu (DMMU)
+ function number 12-Treasury Offset Menu (TRMU) screen, see MS
+ 01114.005.
+•
+Look for an SSA-632-BK (Request for Waiver of Overpayment Recovery), a letter from
+ the debtor or his or her representative, or a Form SSA-795 (Statement of Claimant
+ or Other Person) in FO records or in the claims folder.
+b. 
+If ROAR reflects an unfavorable reconsideration, waiver, or hearing decision:
+•
+Advise the debtor that since we resolved the issue, recovery via TRO was appropriate.
+•
+Do not refund any amounts offset by Treasury.
+c. 
+If there is no ROAR posting but the debtor still indicates filing prior to the protest
+ or waiver or hearing, look for an unprocessed SSA-632-BK, letter or SSA-795 in FO
+ records or in the claims folder. If there is no evidence in the claims folder, check
+ Debt Management System Remarks.
+•
+Documentation found of waiver or protest or hearing filed before certification or
+ offset
+–
+Process as in 
+GN 02201.030E.1.a
+ in this section.
+–
+Post the pending request to ROAR via the DRPR or DRPF screen.
+•
+No documentation found
+–
+Advise the debtor that the records review fails to produce any evidence of a pre-certification
+ protest or waiver or hearing.
+–
+If the debtor wishes to file a new waiver, follow 
+GN 02201.030E.2
+ in this section.
+2. 
+Request for waiver
+If we receive a request for waiver, proceed as follows:
+a. 
+Obtain an SSA-632-BK in accordance with current instructions in 
+GN 02250.002
+. Input the request for waiver.
+b. 
+If TRO recouped the entire debt 
+(i.e.
+ the debt balance is zero), proceed as follows:
+•
+Consider waiver of the entire overpayment amount.
+•
+Advise the debtor that SSA will refund the amount offset only if SSA approves the
+ waiver.
+•
+Refund any monies due if the waiver is approved (partially or fully). Refund any amount
+ offset by Treasury. Process the refund as in 
+GN
+ 02201.030E.1.a
+ in this section.
+c. 
+If TRO partially recouped the debt, proceed as follows:
+•
+Consider waiver on the outstanding balance unless the debtor asks for waiver for the
+ full overpayment amount. See 
+GN 02250.310A.3
+ which states for recovery to defeat the purpose of amounts already recovered, the
+ debtor must show evidence of going into debt to repay the overpayment.
+•
+Refund any monies due if we approve the waiver request (partially or fully). Process
+ the refund as in 
+GN 02201.030E.1.a
+ in this section.
+3. 
+Request for installment payments
+When a request for installment payments is received, proceed as follows:
+a. 
+If the debtor negotiated an installment agreement prior to certification and the debtor
+ made 
+payment(s)
+ in accordance with 
+that agreement 
+but offset still occurred, refund the amount offset, unless the debtor wants us to
+ retain the money as payment toward the debt.
+If you refund the offset, input an Agency Refund as in 
+GN 02201.030E.1.a
+ in this section.
+b. 
+If the request is made after certification, proceed as follows:
+•
+Input the manual installment agreement via the Record Installment Agreement (DRIN)
+ screen, see MS 01106.014.
+•
+Advise the debtor that the debt will remain in TRO until it is completely recovered.
+ Explain that SSA will not refund any offset monies (except for excess collection.
+4. 
+Excess collection
+Excess collections occur when the total amount of voluntary payments and offsets exceed
+ the debt amount. For example, when a certified debtor enters into an installment agreement
+ and fully refunds the debt after certification, an excess collection would occur if
+ Treasury offsets for the full amount of the debt.
+If one debtor is on the record, refund the excess amount using the instructions below:
+Refund Excess collection to the TRO debtor.
+•
+If the offset causes the excess collection, input an Agency Refund as in 
+GN 02201.030E.1.a
+ in this section.
+•
+If the voluntary remittance caused the excess collection, repay the excess to the
+ debtor but 
+do not input an Agency Refund because we are sending back only the voluntary remittance,
+ not
+ the TRO.
+If more than one debtor is on the record and the system posted the excess collection
+ to that other debtor, an “unverified offset alert” is generated to the PC. If this
+ occurs, proceed as follows:
+•
+Refund the excess collection to the TRO debtor. If the offset caused the excess collection,
+ input an Agency Refund as in 
+GN
+ 02201.030E.1.a
+. in this section.
+•
+If the voluntary remittance caused the excess collection, repay the excess to debtor
+ but 
+do not input an Agency Refund because we are sending back only the voluntary remittance,
+ not
+ the TRO. 
+•
+Remove the other debtor from the Recovery and Collection of Overpayment Process (RECOOP)
+ system if the other debt was loaded as a result of the posted excess refund. Correct
+ the other debtor's overpayment balance.
+5. 
+Erroneous offset due to incorrect BOAN
+If the FO discovers the incorrect BOAN, report the case to the PC; so that it can
+ be deleted from TRO. Provide the claim number, debtor's name and both the correct
+ and incorrect BOANs in the report.
+If the PC discovers the incorrect BOAN, stop the offset by using the TRSO screen.
+ Select “permanent deletion” as the reason for stopping the offset, see MS 01114.003.
+Correct the MBR once the correct BOAN is determined perSM 00613.605.
+Refund the erroneous offset to the person due the tax refund.
+6. 
+Erroneous offset to a joint taxpayer
+When a couple files a joint tax return and the person who is not an SSA debtor wishes
+ to receive his or her portion of the refund, advise the person to contact the Internal
+ Revenue Service (IRS) (
+1-800-829-1040
+) and to ask for an "injured spouse claim". The IRS is responsible for adjudicating
+ injured spouse claims and any refunds must be made by the IRS, not SSA.
+7. 
+Examples
+Following are case examples of common post offset and post-certification situation.
+a. 
+Timely protest resolved under prior certification
+A debtor contacted us in September and provided documents he felt would show that
+ the debt does not exist. In November, the PC advised him that his case was reviewed
+ and the overpayment 
+does
+ exist. The debtor has taken no further action until contacting us in early February
+ to say that he has been refused a rapid refund.
+Explain that our referral to Treasury for collection was proper. If there is a balance
+ after the offset and the person now wishes to pay that balance in full or negotiate
+ an installment agreement, we will accept it. Explain that SSA we will not return the
+ offset monies unless the total that was repaid exceeds the amount of the overpayment,
+ or if the person requests a waiver that SSA subsequently approves.
+b. 
+Alleged nonreceipt of preoffset notice
+1. 
+Undeliverable notice posted to TOP
+A debtor calls us in March complaining that Treasury offset $500 of their refund to
+ repay a debt to SSA and not receiving a pre-offset notice from SSA.
+SSA's query shows an undeliverable notice posted on March 5. Explain both the TRO
+ process and the existing overpayment to the debtor. Also explain that we received
+ the returned notice from the post office too late to stop the offset, but we will
+ take action to refund the money withheld by Treasury if the debtor wishes it. If the
+ debtor request the money be returned to them, determine their preferred method of
+ receiving the funds. Tell the debtor we will refer this debt to Treasury again if
+ the debtor becomes delinquent in repaying, where the debt will remain until it is
+ paid in full.
+2. 
+No undeliverable notice entry on TOP
+The same situation as above, except the Collection Query does not have an undeliverable
+ notice entry.
+Explain that we have a record of all notices returned as undeliverable by the Postal
+ Service and this debtor's notice was not returned. When the notice has not been returned,
+ we must assume it was delivered and proceed under the provisions for debt collection
+ under TRO. Explain to the debtor that we must keep the money collected by Treasury
+ unless the debtor establishes that:
+a. 
+The debt does not exist;
+b. 
+The debtor has no liability for repaying the debt;
+c. 
+The recovery of the debt is waived; or
+d. 
+The debtor provides clear and convincing evidence the letter was never delivered because
+ it was sent to the wrong address. This proof can include state ID, bills, bank statements,
+ or other official mail sent to an address different from the one on the pre-offset
+ notification.
+The debtor may pursue any of these options, but SSA will not refund any money unless
+ a favorable decision was reached based on the information the debtor provided us.
+F. 
+What process should be followed for Undeliverable ECO notices?
+Undeliverable External Collections notices that the United States Postal Service (USPS)
+ cannot deliver are handled differently than other returned SSA items. Most of these
+ deliverable notices are handled by the mailroom in PC7 ODO by scanning the barcodes
+ on the notices using the TRUN screen (see MS 01114.008). If scanning is not possible or the notices are returned to another location, the
+ notices are input using the TRRN screen, see MS 01114.009.
+An undeliverable pre-offset notice is recorded on the ECO Master, see MS 01114.007 and will stop any referrals to Treasury, credit bureau reporting, and Administrative
+ Wage Garnishment. If referral has already been made, an update is sent to Treasury
+ to remove the debt from TOP. ECO will request an address from the Address Verification
+ Contractor , see
+GN 02201.030A.3 
+in this section.
+G. 
+References
+GN 02201.029
+ The Treasury Offset Program (TOP)
+GN 02201.030
+ Collection of Title II Overpayments by Tax Refund Offset (TRO)
+GN 02210.180
+ Collection of Title II Overpayments by Installments
+GN 02215.000 Methods of Recovery for Title II, Title XVI, and Title XVIII Overpayments
+ - Part II
+GN 02250.000
+ Waiver Provisions for Title II and Title XVI Overpayments
+GN 02406.000
+ Failure to Receive a Check/Payment - Title II, Title XVI
+GN 03101.020
+ Good Cause for Extending the Time Limit to File an Appeal
+MS 01102.011 Transaction Correction (SMTC)
+MS 01106.000 Debt Resolution Process
+MS 01107.000 Debt Follow-up Screens
+MS 01114.000 External Collection Operation (ECO)
+SM 00610.296 Allegation of Remittance
+SM 00613.605 Field Office Procedure for Correcting MBR
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202201030
+GN 02201.030 - Collection of Title II Overpayments by Tax Refund Offset (TRO) - 05/08/2025
+Batch run: 
+10/15/2026
+Rev:
+05/08/2025
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.

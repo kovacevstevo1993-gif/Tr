@@ -1,0 +1,16 @@
+# VIDEO 12 - The $6,000 Senior Tax Deduction - FONTI UFFICIALI (verificate 21/10/2026, solo irs.gov)
+1. irs.gov Pub. 6142 (Rev. 10-2026) "Additional Deduction for Seniors": dal 2025 al 2028, eta' 65+, +$6,000 (coppia $12,000), in aggiunta alla deduzione standard; fase-out oltre MAGI $75,000 singolo / $150,000 congiunto; vale per chi deduce a forfait e per chi elenca; SSN di ogni persona; coniugati = dichiarazione congiunta; Schedule 1-A Parte V -> Form 1040 riga 13b.
+2. irs.gov Pub. 554 (2025) "Tax Guide for Seniors": $6,000 per persona ($12,000 se congiunta e entrambi); limitata se MAGI > $75,000 ($150,000 congiunta); nata prima del 2 gennaio 1961 (per il 2025); SSN valido = valido per lavoro, rilasciato da SSA prima della scadenza della dichiarazione 2025; si considera 65 anni il giorno prima del compleanno; in aggiunta alla deduzione standard maggiorata per eta'. Soglie tassazione Social Security: base $25,000 singolo / $32,000 congiunto; 85% oltre $34,000 / $44,000. VITA e TCE gratis. Form W-4P.
+3. irs.gov Schedule 1-A (Form 1040) 2025, Parte V: riga 32 $75,000 ($150,000 congiunta); riga 33 differenza; riga 34 x 6% (0.06); riga 35 = $6,000 meno riga 34, minimo 0; 36a/36b per ciascun coniuge (nato prima del 2/1/1961 e SSN valido). => azzerata a MAGI $175,000 singolo (75,000 + 6,000/0.06 = 100,000) e $250,000 congiunta.
+4. irs.gov Rev. Proc. 2025-32 (anno 2026): deduzione standard $16,100 singolo, $32,200 congiunta, $24,150 capofamiglia; extra eta'/cieco $1,650, $2,050 se non sposato. Aliquote 2026 singolo: 10% fino a $12,400; 12% fino a $50,400; 22% fino a $105,700. Congiunta: 10% fino a $24,800.
+5. irs.gov Pub. 915 (2025) Social Security Benefits Worksheet: meta' benefici + altri redditi; base $25,000/$32,000; righe 10-19 (esempio verificato: Dolores = 11,300 imponibile). Form W-4V per trattenuta volontaria sulla Social Security; altrimenti trattenuta extra da altri redditi o imposte stimate (Pub. 505 / 1040-ES).
+6. irs.gov newsroom "Check your eligibility for the new enhanced deduction for seniors": 65+, 2025-2028, $12,000 coppia, fase-out oltre $75,000/$150,000.
+
+## CALCOLI (miei, dalle formule sopra)
+- Singolo 65+ 2026: 16,100 + 2,050 + 6,000 = 24,150. Coppia entrambi 65+: 32,200 + 2x1,650 + 2x6,000 = 47,500.
+- Risparmio: 6,000 x 12% = 720; x 22% = 1,320.
+- DOLORES (singola 67): SS 24,000 + IRA 30,000. Reddito comb. = 12,000 + 30,000 = 42,000. Pub 915: r10 = 17,000; r11 = 9,000; r12 = 8,000; r13 = 9,000; r14 = 4,500; r15 = min(12,000; 4,500) = 4,500; r16 = 0.85 x 8,000 = 6,800; r17 = 11,300; r18 = 0.85 x 24,000 = 20,400; imponibile SS = 11,300. Reddito (AGI) = 41,300. Meno 24,150 = 17,150 imponibile. Imposta 2026: 1,240 + 12% x (17,150 - 12,400 = 4,750 -> 570) = 1,810. Senza i 6,000: 23,150 -> 1,240 + 12% x 10,750 (1,290) = 2,530. Differenza 720.
+- Solo Social Security singolo $30,000: meta' 15,000 < 25,000 -> 0 imponibile.
+- HANK (68): MAGI 140,000: eccedenza 65,000 x 6% = 3,900; deduzione = 2,100. A 120,000: 45,000 x 6% = 2,700 -> 3,300 (differenza 1,200 = 6% x 20,000). Ogni 1,000 in piu' di reddito = -60.
+- TOM (70) e RUTH (62): sposati congiunta, Tom 6,000, Ruth 0 finche' non compie 65.
+- NOTA: eta' "65 entro l'ultimo giorno dell'anno" (Pub 6142); NON detto a voce la data di nascita 1961/1962.

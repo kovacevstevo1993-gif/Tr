@@ -1,0 +1,30 @@
+fattore atempo gruppo 4: 0.739
+confine 4 -> 5 pausa 0.75 punteggio 6.0 | later / now the number
+GRUPPO 4,5 FATTO
+OK voce/g6.wav
+fattore atempo gruppo 6: 0.719
+confine 6 -> 7 pausa 0.88 punteggio 5.96 | agree / while the agency
+GRUPPO 6,7 FATTO
+ERR 502 [] []
+tentativo 1 fallito gruppo 8,9
+OK voce/g8.wav
+fattore atempo gruppo 8: 0.782
+confine 8 -> 9 pausa 0.63 punteggio 5.74 | account / but a waiver
+GRUPPO 8,9 FATTO
+OK voce/g10.wav
+fattore atempo gruppo 10: 0.769
+confine 10 -> 11 pausa 0.65 punteggio 6.0 | fairness / the manual calls
+GRUPPO 10,11 FATTO
+OK voce/g12.wav
+fattore atempo gruppo 12: 0.767
+confine 12 -> 13 pausa 0.62 punteggio 4.0 | 634 / move number four
+GRUPPO 12,13 FATTO
+OK voce/g14.wav
+fattore atempo gruppo 14: 0.839
+confine 14 -> 15 pausa 0.29 punteggio 6.0 | date / letters dated before
+GRUPPO 14,15 FATTO
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['17h19m44']
+tentativo 1 fallito gruppo 16,17
+ERR 429 ['GenerateRequestsPerDayPerProjectPerModel-FreeTier'] ['17h19m23']
+tentativo 2 fallito gruppo 16,17
+STOP gruppo 16,17

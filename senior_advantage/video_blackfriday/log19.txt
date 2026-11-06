@@ -1,0 +1,5 @@
+ok blocco 19 983 fotogrammi
+blocco 19: durata 983 f = 32.77 s; ultimo elemento compare a 25.76 s (80% = 26.21 s); oltre l'80%: []
+  fotogrammi controllati 983; tagliati dal bordo: 0; margine minimo 6px; ultimo movimento al fotogramma: None (ultimi 20 = 963..982)
+ffprobe fotogrammi: 983
+FINITO 19

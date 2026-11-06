@@ -19,7 +19,7 @@ if tool == "SendUserFile":
 if tool == "Bash":
     cmd = ti.get("command", "")
     cmd = cmd.split("\n")[0]          # solo la prima riga: il testo dentro heredoc/echo non conta
-    if not re.match(r"\s*(git|echo|grep|cat|sed|ls)\b", cmd) and re.search(r"runblocks9\.sh|long9_all\.py\s+\d", cmd) and not os.path.exists(os.path.join(ROOT, ".ordine-render")):
+    if not re.match(r"\s*(git|echo|grep|cat|sed|ls)\b", cmd) and re.search(r"runblocks9\.sh|long9_all\.py\s+\d|runblocks10\.sh|bf10_all\.py\s+\d", cmd) and not os.path.exists(os.path.join(ROOT, ".ordine-render")):
         print("BLOCCATO dalla guardia ordini (regola 39): render slide NON ordinato dall'utente. Se l'utente lo ha ordinato con parole esplicite, creare il file .ordine-render e riprovare; altrimenti non fare niente.", file=sys.stderr)
         sys.exit(2)
 sys.exit(0)

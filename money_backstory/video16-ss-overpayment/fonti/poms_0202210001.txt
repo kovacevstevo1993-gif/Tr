@@ -1,0 +1,118 @@
+
+SSA - POMS: GN 02210.001 - Overpayment Recovery by Benefit Adjustment - 06/25/2024
+Skip to content
+Social Security
+Search
+Menu
+Languages
+Sign in / up
+Program Operations Manual System (POMS)
+Effective Dates: 06/25/2024 - Present
+Previous
+ | 
+Next
+TN 84 (06-24)
+GN 02210.001 
+Overpayment Recovery by Benefit Adjustment
+CITATIONS:
+Section 204(a) of the Social Security Act
+20 CFR
+ 404.502
+When we determine that an individual is overpaid, we send a notice requesting full
+ and immediate refund and informing the individual of the right to request waiver and
+ reconsideration (known as a “due process request”) (see 
+GN 02201.009
+).
+If the 90-day due process recovery period expires without a due process request from
+ the individual, and the individual does not refund the overpayment, we recover the
+ overpayment by withholding the 10% of the individual’s benefit payment(s) until we
+ fully recover the overpayment. The 90-day due process recovery period begins with
+ the current operating month (COM), or in other words, the month we establish the overpayment.
+ For cases where there has been a due process request, see 
+GN 02250.001
+ and 
+GN 02201.025
+.
+A. 
+What payments to withhold
+To recover an overpayment, we withhold the following payments from the overpaid individual,
+ representative payee, or any other individual currently receiving benefits on the
+ same earnings record on which the overpayment occurred (contingent liability), as
+ applicable:
+•
+Ten percent of (10%)any current and future monthly benefit payment(s);
+•
+Any underpayment (see 
+GN 02301.001A
+);
+•
+Any lump-sum death payment (LSDP);
+•
+Any misused funds (from the representative payee) that we reissue to an overpaid individual;
+ or
+•
+Any other Social Security administered program payment(s) (i.e. cross program recovery).
+B. 
+How to withhold the payment
+When we have established an overpayment on an individual’s record, and the 90-day
+ due process recovery period has elapsed without a due process request from the individual,
+ the automated system will begin withholding 10% of the monthly benefit payment until
+ we have fully recovered the overpayment (see SM 00610.715C). The automated system
+ will withhold any payment (as applicable) listed in 
+GN 02210.001A
+ from the overpaid individual, the liable representative payee, or a contingently
+ liable individual as applicable.
+C. 
+References
+•
+GN 02205.003
+ – Primary Liability for Title II Overpayment Recovery
+•
+GN 02205.005
+ – Contingent Liability for Title II Overpayment Recovery
+•
+GN 02205.007
+ – Joint and Several Liability for Title II Overpayment Recovery
+•
+GN 02210.006
+ – Adjustment of Benefits Due the Overpaid Individual
+•
+GN 02210.007
+ – Adjustment of Benefits Due Other Than the Overpaid Individual
+•
+GN 02210.008
+ – Cross Program Recovery (CPR) from Monthly Title II, Title VIII, and Title XVI Benefits
+ to Recover Other Program Overpayments
+•
+SM 00848.385 - Coding "OP" (Overpayment Recovery) Special Entry
+To Link to this section - Use this URL: 
+http://policy.ssa.gov/poms.nsf/lnx/0202210001
+GN 02210.001 - Overpayment Recovery by Benefit Adjustment - 06/25/2024
+Batch run: 
+09/30/2026
+Rev:
+06/25/2024
+Important Information:
+Accessibility
+FOIA
+Open Government
+Glossary
+Privacy
+Report Fraud, Waste or Abuse
+Site Map
+Website Policies
+Other Government Websites:
+Benefits.gov
+Disability.gov
+Healthcare.gov
+MyMoney.gov
+Regulations.gov
+USA.gov
+Other Government Sites
+Follow:
+Twitter
+Facebook
+YouTube
+Blog
+More Social Media
+This website is produced and published at U.S. taxpayer expense.
