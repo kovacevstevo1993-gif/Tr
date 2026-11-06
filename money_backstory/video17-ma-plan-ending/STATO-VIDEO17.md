@@ -1,0 +1,6 @@
+# VIDEO 17 - Piano Medicare Advantage non rinnovato (06/11/2026) - STATO
+- Tema: "Medicare Advantage Plan Not Renewed for 2027? Why December 7 Is Not Your Last Chance" (score vidIQ 95). Zero HIT check_tema (video 10: ANOC; video 14: cenno Medigap). Fonti: fonti/*.txt (Medicare.gov, CMS 28/09/2026, guida iscrizioni 2027). Schermata finale/WATCH NEXT -> video 14 (u9VnlXdae2g).
+- Copione: code/mkblk.py -> code/blk.json (16 blocchi, 1263 parole). Voce: gemini-2.5-flash-preview-tts Fenrir, gruppi da 2, NESSUN atempo/rubberband (regola 58): voce/b1..b16.wav; sync.json + fine_blocchi.txt (12374 fotogrammi = 6:52).
+- Slide: motore code/v17eng.py (sfondo un po' diverso dal 16 + oggetti realistici), slide code/v17.py; render: cd code; seq 1 16 | xargs -P4 -I{} sh -c 'python3 v17.py render {}'. Anteprime: OUT=../pv/ python3 v17.py preview N; python3 pvsheet.py N 80.
+- DA FARE: attendere render, controllo di OGNI fotogramma (qa17), pad+unisci (V17-blocco01..16), miniature (2), PUBBLICAZIONE-VIDEO17.md (generato da code/mkpack.py), poi consegna all'utente.
+- Utente 06/11: "spostare la luce da sinistra a destra non e' un cambio": lo sfondo del video 17 cambia poco (righe orizzontali, luce dal basso, cerchietti, croce-scudo tenue); chiedere/usare le parole dell'utente per un cambio piu' visibile.
