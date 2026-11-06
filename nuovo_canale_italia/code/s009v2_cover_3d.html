@@ -1,0 +1,24 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#cfe8f2;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/code/lib/three/three.module.js","three/addons/":"/code/lib/three/jsm/"}}</script>
+</head><body>
+<script type="module">
+import {THREE,createStage,boot,prog,eo,eio,eb,clamp,rnd} from "/code/lib/stage.js";
+import * as S from "/code/lib/s010.js";
+await S.loadFont();const T=await S.loadTimes('/short009_v2/tempi.json');
+await S.loadFont();
+// ===== Copertina YouTube short 009: 67 ANNI E 1 MESE, GIA LEGGE, PENSIONE 2027 =====
+const land=window.innerWidth>window.innerHeight;
+const KF=land?[[0,[0,2.45,5.6],[0,2.35,0]],[10,[0,2.45,5.6],[0,2.35,0]]]:[[0,[0,2.2,8.6],[0,2.3,0]],[10,[0,2.2,8.6],[0,2.3,0]]];
+const st=await createStage({dur:10,centers:[],kf:KF,theme:S.THEME});const {scene}=st;const m=S.mats();
+S.beach(scene,m);S.extras(scene,m);
+const N=(t,sz,col,r)=>{const g=S.num3d(t,{size:sz,color:col,rough:r||.22});scene.add(g);return g;};
+const h67=N('67',land?1.45:1.55,0xf3be3a);h67.position.set(0,2.55,0);h67.rotation.y=-.18;
+const sub=N('ANNI E 1 MESE',land?.3:.34,0xfff4d6,.45);sub.position.set(0,1.2,.3);sub.rotation.y=-.18;
+const top=N('PENSIONE 2027',land?.3:.33,0xffffff,.35);top.position.set(0,4.3,0);top.rotation.y=-.1;
+const stp=S.stamp('GIA LEGGE','#e5392b');stp.position.set(.1,1.95,.9);stp.rotation.z=-.13;stp.scale.setScalar(land?.78:.82);scene.add(stp);
+const nm=N('SOLDI CHE CONTANO',.17,0xf3be3a);nm.position.set(0,.62,.9);
+function draw(t){S.liveBeach(scene,2.4);S.setDay(scene,st,.62);st.render(2.4,{shakes:[],flashes:[]});}
+boot(st,draw);
+</script></body></html>
