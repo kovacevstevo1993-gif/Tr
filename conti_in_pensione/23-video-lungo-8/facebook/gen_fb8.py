@@ -1,0 +1,27 @@
+S='stroke="#06242B" paint-order="stroke" stroke-linejoin="round"'
+def card(x,name,i,rot):
+    return f'''<g transform="translate({x} 430) rotate({rot} 270 190)" filter="url(#sh)"><rect width="540" height="390" rx="30" fill="#FBFDFD"/>
+<rect width="540" height="120" rx="30" fill="#0D5158"/><rect y="90" width="540" height="30" fill="#0D5158"/>
+<text x="40" y="52" font-size="30" fill="#9FD9CF" id="a{i}">ITALIA  ✈</text>
+<text x="40" y="100" font-size="50" fill="#FFD43B" id="n{i}">{name}</text>
+<line x1="40" y1="150" x2="500" y2="150" stroke="#C9D6D8" stroke-width="4" stroke-dasharray="14 10"/>
+<text x="270" y="205" font-size="36" fill="#5B7479" text-anchor="middle" id="s{i}">TI RESTA ALL'ANNO</text>
+<rect x="95" y="225" width="350" height="125" rx="24" fill="#0B1A1F"/>
+<text x="270" y="325" font-size="90" fill="#FFD43B" text-anchor="middle" id="v{i}">? €</text></g>'''
+svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" style="font-family:'DejaVu Sans','Liberation Sans',Arial,sans-serif;font-weight:900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E7C86"/><stop offset=".55" stop-color="#0A4F5C"/><stop offset="1" stop-color="#041E27"/></linearGradient>
+<linearGradient id="y" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE777"/><stop offset="1" stop-color="#FFB400"/></linearGradient>
+<linearGradient id="r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6A55"/><stop offset="1" stop-color="#C21808"/></linearGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#010d11" flood-opacity=".7"/></filter>
+<pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#fff" stroke-opacity=".06" stroke-width="2"/></pattern>
+</defs>
+<rect width="1920" height="1080" fill="url(#bg)"/><rect width="1920" height="1080" fill="url(#grid)"/>
+<g transform="translate(90 60) rotate(-3)" filter="url(#sh)"><rect width="420" height="76" rx="14" fill="url(#r)" stroke="#fff" stroke-width="5"/><text x="210" y="54" font-size="42" fill="#fff" text-anchor="middle" id="t0">⚠ ATTENZIONE</text></g>
+<text x="1040" y="185" font-size="80" fill="#fff" text-anchor="middle" {S} stroke-width="12" id="t1">PENSIONE</text>
+<text x="960" y="350" font-size="140" fill="url(#y)" text-anchor="middle" {S} stroke-width="18" id="t2">ALL'ESTERO</text>
+{card(110,"PORTOGALLO",1,-2)}{card(690,"TUNISIA",2,1.5)}{card(1270,"ALBANIA",3,-1.5)}
+<g filter="url(#sh)"><rect x="210" y="900" width="1500" height="120" rx="60" fill="#fff" stroke="#FFD43B" stroke-width="10"/>
+<text x="960" y="985" font-size="58" fill="#C0200F" text-anchor="middle" id="d1">IN QUALE PAESE <tspan fill="#0D5158">CONVIENE DAVVERO?</tspan></text></g>
+</svg>'''
+open('fb8.html','w').write('<body style="margin:0">'+svg+'</body>')

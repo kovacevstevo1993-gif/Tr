@@ -18,6 +18,7 @@ Canale YouTube: https://www.youtube.com/@ContiInPensione . Non esiste un sito: s
 - Video 7 (GBMYERVdbMY, cosa succedera ai tuoi assegni): pacchetto FB fatto (04/11): 20-video-lungo-7/facebook (pacchetto-fb.txt + miniatura-fb-video7.png).
 - Short rivalutazione tagliata (R6e_pZ_aRFE): pacchetto FB fatto (06/11): 21-short-9-teaser-video-lungo-7/facebook (pacchetto-fb.txt + copertina-reel.png).
 - Short cedolino dove spariscono i soldi (thWP1pSh1lY, iscrizione): pacchetto FB fatto (06/11): 22-short-10-iscrizione/facebook (pacchetto-fb.txt + copertina-reel.png). Per Facebook: "Seguici", niente "mille iscritti" (pagina 8.5K follower).
+- Video 8 (1XkoYu1SQpM, pensionati all estero): pacchetto FB fatto (07/11): 23-video-lungo-8/facebook (pacchetto-fb.txt + miniatura-fb-video8.png).
 - Short 6 "Stop: prima di contare l'aumento, guarda questo" (teaser invalidita', 1:05): pSVNnae7ORU; video lungo 4 invalidita' 2027: T1JdRgHYmUg. Pacchetto FB fatto (copertina in 15-short-6-teaser-video-lungo-4/facebook).
 - Altri video sul canale (non ancora fatti per Facebook): -WzZ_fQi_vk (casalinghe vs assegno sociale), 1XkoYu1SQpM (pensionati all'estero), 9jsMe2Bk8uM (dicembre tredicesima e bonus 154,94), GyQh_nMvKTo (aumento pensioni 2027 tabella netti), T1JdRgHYmUg (invalidita 2027), aMi8UjEO378 (tredicesima detassata netto), tpGncD3fN44 (pensioni a novembre), e gli altri short della lista /shorts.
 
