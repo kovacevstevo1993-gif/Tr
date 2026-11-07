@@ -1,0 +1,23 @@
+FONTE: Agenzia delle Entrate, Modello 730/2026 istruzioni (redditi 2025), Appendice, TABELLA 7 - DETRAZIONE PER I REDDITI DI PENSIONE. URL: https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_2026_istruzioni_+agg+28+05+2026.pdf - letto il 07/11/2026
+
+                                                     TABELLA 7 - DETRAZIONE PER I REDDITI DI PENSIONE
+La detrazione è rapportata al periodo di pensione nell’anno e non è cumulabile con quella prevista per i redditi di lavoro dipendente se riferito allo stesso periodo.
+
+                           REDDITO COMPLESSIVO (1)                                                                    IMPORTO DETRAZIONE (2) (4)
+
+     non superiore a euro 8.500                                                                                                  1.955 (3)
+                                                                                                                       1.255 (28.000 – reddito complessivo)
+                                                                                                              700 +
+     compreso tra euro 8.501 e 28.000                                                                                                  19.500
+
+                                                                                                                           50.000 – reddito complessivo
+                                                                                                                  700 x
+     compreso tra euro 28.001 e 50.000                                                                                                 22.000
+
+     oltre euro 50.000                                                                                                               0
+     (1) Il reddito complessivo è al netto dell’abitazione principale e relative pertinenze. Nel reddito complessivo è compreso anche il reddito dei fabbricati assoggettato
+         alla cedolare secca sulle locazioni.
+     (2) Se il risultato dei rapporti è maggiore di 0, lo stesso si assume nelle prime 4 cifre decimali.
+     (3) L’ammontare della detrazione effettivamente spettante non può essere inferiore a 713 euro.
+     (4) La detrazione spettante è aumentata di 50 euro, se il reddito complessivo è compreso tra 25.001 euro e 29.000 euro.
+

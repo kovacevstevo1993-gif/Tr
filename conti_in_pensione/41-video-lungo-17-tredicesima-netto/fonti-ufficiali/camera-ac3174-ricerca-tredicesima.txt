@@ -1,0 +1,14 @@
+FONTE: Camera dei deputati, A.C. 3174 (ddl di bilancio 2027-2029, presentato il 30/10/2026, firmato dal Ministro Giorgetti). Letti due PDF ufficiali scaricati da documenti.camera.it:
+ (a) testo degli articoli (codice 19PDL0221150), 21.321 righe: ricerca 'tredicesim|mensilita aggiuntiv|detassa': solo 'tredicesimo comma' di un articolo 43 (nessun legame con le pensioni).
+ (b) Tomo I con relazione illustrativa e relazione tecnica (codice 19PDL0221140), 29.232 righe: ricerca 'tredicesim|mensilita aggiuntiv|detassa': la 'detassazione' compare solo per i lavoratori (trattamento accessorio, imposta sostitutiva 15% fino a 800 euro per il solo 2027 per il personale non dirigenziale delle PA con reddito fino a 50.000 euro; rinnovi contrattuali e giovani); nessuna riga su tredicesima o mensilita aggiuntive dei pensionati.
+ Relazione illustrativa (riga 324-327): 'si modifica, per il solo anno 2027, la struttura delle aliquote e degli scaglioni dell'IRPEF, ampliando il secondo scaglione, di cui viene innalzato il limite superiore da 50.000 euro a 55.000 euro'. NON riguarda il 2026.
+ Art. 55 (rivalutazione automatica delle pensioni 2027) e' l'unico articolo sulla perequazione; non tocca le tredicesime.
+
+Righe trovate (a):
+12768:            terno di cui all’articolo 43, tredicesimo
+13690:all’articolo 43, tredicesimo comma, della
+13697:colo 43, tredicesimo comma, per l’anno
+Righe trovate (b):
+327:    A beneficio dei lavoratori si introducono disposizioni in materia di detassazione del trattamento
+17209:                  Detassazione accessorio
+18972:                     immettere in ruolo un numero di unità non superiore a un tredicesimo della

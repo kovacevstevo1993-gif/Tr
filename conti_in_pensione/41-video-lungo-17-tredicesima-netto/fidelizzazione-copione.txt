@@ -1,0 +1,8 @@
+# Controllo di fidelizzazione - video lungo 17 (tredicesima: quanto resta netto di ogni rata; regola riga 0c della checklist)
+PRIMO_MINUTO_RIVELA: nei blocchi 1-4 si scopre che la tredicesima arriva con la pensione di martedi primo dicembre, in automatico, che il video ha tre tappe (manovra, documento Imps, tabella con nove pensioni) e che a dicembre sparisce una voce del cedolino. NON si dice se la tredicesima e piu magra, NON si dice la regola dell'Imps, NON si danno importi netti
+RISPOSTA_TENUTA: blocco 12 (la tredicesima non e tassata piu delle altre rate per chi ha una sola pensione: imposta distribuita sulle tredici rate)
+CERCHIO_1: aperto in blocco 1 (e davvero piu magra delle altre rate?), chiuso in blocco 12 (messaggio Imps 1359 del 2021: tassazione omogenea)
+CERCHIO_2: aperto in blocco 3 (tabella con nove pensioni da settecento a tremila euro lordi), chiuso in blocco 15 (i nove importi netti per rata)
+CIFRA_GANCIO: Irpef annua di circa novemilasettecento euro su tremila euro lordi al mese (verita: 9.720 euro l'anno con aliquote 2026 e detrazione della tabella 7); la cifra piu grande vera e annua, non mensile
+LETTI: analisi-fidelizzazione-07-10.md (letta il 07/11 prima di scrivere); trascrizioni: GkAwl5_0ZwY.txt (Mr LUL, 5:42, letta per intero), J0ytVqeIUaA.txt (Ciao Elsa, 16:45, letta per intero) - lette PRIMA di scrivere il copione; confronto fatto: Mr LUL apre con la lista di cosa c'e piu una chicca (qui: tre tappe piu la voce del cedolino che sparisce), dice le cifre subito in fila e con forbice (qui: nove importi in fila) e ha un colpo di scena (qui: la tredicesima non e piu magra); Ciao Elsa e lungo e a elenco, non copiato
+IMPRONTA_PRIMI4: b193eb940b

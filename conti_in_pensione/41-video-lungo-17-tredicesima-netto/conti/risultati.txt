@@ -1,0 +1,10 @@
+lordo/mese   600 | reddito annuo    7800 | Irpef lorda   1794.00 | detrazione  1955.00 | Irpef netta annua      0.00 | netto annuo   7800.00 | NETTO PER RATA    600.00 | Irpef per rata     0.00
+lordo/mese   700 | reddito annuo    9100 | Irpef lorda   2093.00 | detrazione  1916.38 | Irpef netta annua    176.62 | netto annuo   8923.38 | NETTO PER RATA    686.41 | Irpef per rata    13.59
+lordo/mese   800 | reddito annuo   10400 | Irpef lorda   2392.00 | detrazione  1832.72 | Irpef netta annua    559.28 | netto annuo   9840.72 | NETTO PER RATA    756.98 | Irpef per rata    43.02
+lordo/mese  1000 | reddito annuo   13000 | Irpef lorda   2990.00 | detrazione  1665.38 | Irpef netta annua   1324.62 | netto annuo  11675.38 | NETTO PER RATA    898.11 | Irpef per rata   101.89
+lordo/mese  1200 | reddito annuo   15600 | Irpef lorda   3588.00 | detrazione  1498.05 | Irpef netta annua   2089.95 | netto annuo  13510.05 | NETTO PER RATA   1039.23 | Irpef per rata   160.77
+lordo/mese  1500 | reddito annuo   19500 | Irpef lorda   4485.00 | detrazione  1247.05 | Irpef netta annua   3237.95 | netto annuo  16262.05 | NETTO PER RATA   1250.93 | Irpef per rata   249.07
+lordo/mese  1800 | reddito annuo   23400 | Irpef lorda   5382.00 | detrazione   996.05 | Irpef netta annua   4385.95 | netto annuo  19014.05 | NETTO PER RATA   1462.62 | Irpef per rata   337.38
+lordo/mese  2000 | reddito annuo   26000 | Irpef lorda   5980.00 | detrazione   878.72 | Irpef netta annua   5101.28 | netto annuo  20898.72 | NETTO PER RATA   1607.59 | Irpef per rata   392.41
+lordo/mese  2500 | reddito annuo   32500 | Irpef lorda   7925.00 | detrazione   556.82 | Irpef netta annua   7368.18 | netto annuo  25131.82 | NETTO PER RATA   1933.22 | Irpef per rata   566.78
+lordo/mese  3000 | reddito annuo   39000 | Irpef lorda  10070.00 | detrazione   350.00 | Irpef netta annua   9720.00 | netto annuo  29280.00 | NETTO PER RATA   2252.31 | Irpef per rata   747.69

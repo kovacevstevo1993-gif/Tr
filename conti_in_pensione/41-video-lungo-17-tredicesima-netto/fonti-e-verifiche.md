@@ -1,0 +1,20 @@
+# Fonti e verifiche - video lungo 17 (tredicesima: quanto resta netto di ogni rata), 07/11/2026
+Regola (07/11/2026, utente): ogni fatto ha una FONTE PRIMARIA letta e salvata in fonti-ufficiali/. Siti di stampa e calcolatori non sono fonti.
+
+## Fatti detti a voce e loro fonte
+1. Pagamento: la pensione si paga il primo giorno bancabile; dicembre 2026 = valuta 1 (martedi'). Fonte: Inps circolare 153 del 19/12/2025, par. 13.1 (calendario mensile 2026, dicembre: 1) -> fonti-ufficiali/inps-circolare-153-2025-calendario-pagamenti-estratto.txt. Il 1 dicembre 2026 e' martedi' (calcolato).
+2. Tredicesima nello stesso pagamento, in automatico: circolare 153/2025 par. 12.1 ("il pagamento dell'eventuale rateo di tredicesima e' stato impostato unitamente all'ultima mensilita'") e notizia Inps cedolino dicembre 2025 ("un unico mandato di pagamento comprensivo di tutte le prestazioni") -> stessi file.
+3. Manovra: ddl bilancio 2027-2029, A.C. 3174, presentato il 30/10/2026 (frontespizio). Cercato in TUTTO il testo ufficiale (articoli, 21.321 righe) e nel Tomo I (relazione illustrativa e tecnica, 29.232 righe): nessuna norma ne' riga su tredicesima o mensilita' aggiuntive dei pensionati; le detassazioni previste riguardano lavoratori (trattamento accessorio PA, rinnovi contrattuali, giovani) -> fonti-ufficiali/camera-ac3174-ricerca-tredicesima.txt. E' un disegno di legge: dire una volta che il Parlamento puo' cambiarlo.
+4. Addizionali: recuperate da gennaio a novembre (Inps: "in 11 rate"; acconto comunale marzo-novembre per la circolare 153), a dicembre non trattenute -> Inps notizia cedolino dicembre 2025 e circolare 153/2025 par. 7.2 (calendario 2026 gen-nov).
+5. REGOLA DELL'IRPEF SULLA TREDICESIMA: Inps messaggio n. 1359 del 31/03/2021 (testo integrale in fonti-ufficiali/inps-messaggio-1359-del-31-03-2021.txt) e notizia Inps cedolino gennaio 2021 (stessa regola, riferita alla Gestione privata). Condizione: titolari che non percepiscono altre prestazioni pensionistiche. Nessun documento Inps successivo (messaggio 1772/2024, circolari 197/2021, 114/2022, 153/2025, notizie cedolino 2022-2026) la modifica o la revoca.
+6. Aliquote Irpef 2026: 23% fino a 28.000, 33% da 28.001 a 50.000, 43% oltre (Agenzia delle Entrate "Aliquote e calcolo dell'Irpef"; Mef "Principali misure della legge di bilancio 2026"; Inps comunicato 06/02/2026).
+7. Detrazione pensioni: Tabella 7 delle istruzioni 730/2026 dell'Agenzia delle Entrate (redditi 2025) -> fonti-ufficiali/agenzia-entrate-730-2026-tabella-7-detrazione-pensione-estratto.txt. Detto a voce: "la tabella delle detrazioni dell'Agenzia delle Entrate" (vero). NON trovato un documento ufficiale che dica la stessa tabella per il 2026; la sintesi Mef della legge di bilancio 2026 cambia solo la seconda aliquota (nessuna modifica delle detrazioni pensione nominata); una fonte secondaria dice testo art. 13 c.3 vigente dal 1/1/2025 valido anche per il 2026. DA DIRE ALL'UTENTE, non a voce.
+8. Numeri della tabella: conti/conti-tredicesima-netto.py (output in conti/risultati.txt): Irpef sul reddito annuo (rata x 13), meno detrazione, diviso 13; senza addizionali, senza altri redditi; arrotondati all'euro in voce. Cifra del gancio: Irpef annua su 3.000 lordi/mese = 9.720 euro (detto "circa novemilasettecento").
+9. Controllo del proprio caso: certificato di pensione (modello ObisM) con sezione "Informazioni fiscali" (messaggio 1359/2021); servizio online su MyInps (notizia Inps 30/04/2026, messaggio 1443).
+10. Decreto rivalutazione: "atteso a novembre" (prassi 19/11/2025; stessa nota del video 16).
+
+## Limiti (per l'utente, NON a voce)
+- Nessuna notizia/circolare Inps 2025-2026 ripete la regola del 2021 (non e' stata ne' cambiata ne' revocata, per quanto cercato).
+- Detrazioni 2026 = tabella 7 (reddito 2025): non confermato su fonte ufficiale 2026.
+- Il conto vale per Gestione privata con una sola pensione; per gestione pubblica o piu' pensioni la regola puo' essere diversa (non verificato).
+- Contraddice il conto del video 5 (1.000 lordi -> 770 netti la tredicesima): il video pubblicato non si tocca senza ordine dell'utente.
