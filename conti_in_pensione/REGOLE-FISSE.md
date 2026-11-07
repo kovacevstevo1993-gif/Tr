@@ -1041,3 +1041,10 @@ ERRORE 04/11/2026 (commento di @isabellarizzi8220 sul video 6, "prendo sei cento
 ## ERRORE 06/11/2026 (fine lavoro short 19) - CHIESTO DI UNIRE SU MAIN INVECE DI FARLO
 - Alla domanda "cosa scrivo alla nuova chat" ho scritto che lo short 19 non era su main e ho aspettato un ordine per unirlo. Utente: "unisci... continuate a chiedere, fallo". La regola c'era gia' (CLAUDE.md: a fine di OGNI lavoro si unisce su main senza chiedere; REGOLE-FISSE 02/11).
 - REGOLA: appena un lavoro e' consegnato (clip, pacchetto, miniatura) si salva, si pusha e si UNISCE SU MAIN nello stesso turno, senza chiedere e senza aspettare una domanda dell'utente. Il messaggio per la chat nuova non cita branch: tutto e' su main.
+
+## CRESCITA ISCRITTI 07/11/2026 (domanda dell'utente "Come posso aumentare gli iscritti su YouTube", canale Conti in Pensione; l'utente ha detto "gia' stiamo facendo tutto" sulle cose generiche)
+- Gia' fatto dal canale (non riproporlo come novita'): blocco richiesta iscrizione nei lunghi, short con iscrizione, risposte ai commenti col conto sull'importo, pacchetti completi, video correlato, schermata finale.
+- Diagnosi: le view arrivano (video 3 circa 16.000) ma gli iscritti sono fermi a 301: manca la CONVERSIONE da spettatore a iscritto, non il traffico.
+- Idee da applicare solo su ordine dell'utente (N.1/N.13), in ordine: (1) un motivo ripetibile per iscriversi legato a un aggiornamento (es. "a fine novembre esce il decreto Mef e facciamo il conto aggiornato"), non "aiutaci a crescere"; nessuna promessa di cadenza ("ogni settimana") non decisa dall'utente; (2) la richiesta di iscrizione subito DOPO il blocco in cui si da' valore (il conto sull'importo), non solo dopo il gancio; (3) commento fissato con invito specifico ("scrivi la pensione lorda e rispondo col conto, iscriviti per la notifica").
+- Dato da chiedere all'utente prima di scegliere: YouTube Studio -> Analytics -> Pubblico -> Iscritti ottenuti per video (gratis, nessun credito vidIQ), per capire quali video convertono.
+- Era solo una risposta a una domanda: nessun copione, slide o pacchetto e' stato cambiato.
