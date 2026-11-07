@@ -10,7 +10,7 @@ Per guardare il video: ffmpeg estrae 12 fotogrammi in una griglia (fps=12/durata
 ## Regole (parole e ordini dell'utente)
 - Rispondere in ITALIANO, corto, solo cio' che chiede. Testi per i video in INGLESE.
 - Ogni campo del pacchetto in un suo riquadro ``` con etichetta in grassetto.
-- Pacchetto YouTube: Titolo, Descrizione, Tag (con virgole senza spazi), Commento da fissare, Impostazioni. Pacchetto Facebook (Reel): Titolo, Didascalia, Primo commento, Impostazioni. Nei due pacchetti (descrizione/didascalia E commento Facebook) ci vuole il link di iscrizione al canale YouTube.
+- Pacchetto YouTube: Titolo, Descrizione, Tag (con virgole senza spazi), Commento da fissare, Impostazioni. Pacchetto Facebook (Reel): su Facebook NON esiste il titolo (07/11, utente: "non esiste titolo e didascalia e la stessa cosa e solo un riquadro da mettere"): dare UN SOLO riquadro "Didascalia" (testo + link + 3 hashtag), poi Primo commento, Impostazioni. Nei due pacchetti (descrizione/didascalia E commento Facebook) ci vuole il link di iscrizione al canale YouTube.
 - Se l'utente non dice se YouTube o Facebook, chiedere UNA domanda o dare entrambi solo se lo chiede.
 - Mai inventare fatti (es. frequenza): controllare prima. Dire chiaro se un video e' gia' pubblicato.
 - vidIQ: usare solo se collegato al canale Lea & Leo (user_channels deve dare "Lea & Leo"); costa 5 crediti a chiamata (saldo 12 il 28/10). Se non e' caricato, dirlo e usare i dati pubblici gratis (feed RSS: https://www.youtube.com/feeds/videos.xml?channel_id=UCXXZw3AC_-wieMAKBdYAQMA).
