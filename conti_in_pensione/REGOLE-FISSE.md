@@ -1060,3 +1060,8 @@ Risposta per Conti in Pensione: "Hai ragione, sul canale quelle cose le fate gia
 - DA APPLICARE (solo su ordine dell'utente, N.1/N.13): prossimi video su un importo che arriva o cambia, con tabella; richiesta di iscrizione subito dopo la tabella/il conto, non solo dopo il gancio; dicembre ha temi di questo tipo (tredicesima, importo aggiuntivo, quattordicesima).
 - CORREZIONE di Claude: avevo scritto "convertire l'1-2% di chi guarda": stima troppo alta, la conversione reale e' molto piu' bassa (circa 0,1%); raddoppiarla basta per arrivare a 500.
 - NO iscritti comprati/scambiati/"gratis" da siti, nemmeno pochi e nemmeno senza account Google (sono bot, rischio sul programma partner e sul canale). Detto all'utente il 07/11.
+
+## REGOLA 07/11/2026 (commento fissato di ogni short/video): UN SOLO INVITO + MOTIVO PER ISCRIVERSI (utente: "ti ho fatto salvare per avere piu' iscritti... non lo fai")
+- Errore: il commento fissato dello short 19 chiedeva di scrivere la pensione qui sotto e poi rimandava al video per il conto (due posti, nessuna risposta promessa), contro la CRESCITA ISCRITTI del 07/11 (idea 3) che era gia' salvata.
+- REGOLA: nel commento fissato (short e lunghi) l'invito e' UNO: "scrivi la tua pensione lorda e ti rispondo col conto sul tuo importo, iscriviti cosi' ti arriva la notifica" + rimando al Video correlato per il calcolo. Si risponde davvero a chi scrive (conto sull'importo, cifra come l'ha scritta la persona).
+- Short 19: commento fissato nel pacchetto.txt aggiornato: "Quanto prendi di pensione lorda al mese? Scrivilo qui sotto 👇 e ti rispondo col conto sul tuo importo. Iscriviti cosi' ti arriva la notifica. Il calcolo scalino per scalino e' nel Video correlato qui sotto."
